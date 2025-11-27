@@ -361,7 +361,7 @@ function P.Build_infantry_brigade(vIC, viManpowerTotal, voType, voProductionData
 	local lbCXBWar = voProductionData.ministerCountry:GetRelation(CCountryDataBase.GetTag('CXB')):HasWar()
 	local chiTag = CCountryDataBase.GetTag('CHI')
 	local lbControlWuHan = (CCurrentGameState.GetProvince(7508):GetController() == chiTag)
-	if not(lbUSAWar) and (voProductionData.Year <= 1939 or lbControlWuHan) then	
+	if not(lbUSAWar) and (not (voForeignMinisterData.ministerCountry:GetFlags():IsFlagSet("jap_seizes_coast"))) then	
 		-- If China still controls WuHan keep hitting them
 	         local laSupportUnit = {
 		     "artillery_brigade",
@@ -369,6 +369,15 @@ function P.Build_infantry_brigade(vIC, viManpowerTotal, voType, voProductionData
 		     "communications_company"}
 	         voType.Size = 3
 	         voType.Support = 2
+			 return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
+			elseif not(lbUSAWar) and (voForeignMinisterData.ministerCountry:GetFlags():IsFlagSet("jap_seizes_coast")) then	
+				local laSupportUnit = {
+					"artillery_brigade",
+					"engineer_brigade",
+					"communications_company"}
+					voType.Size = 2
+					voType.Support = 1
+				return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
 	end
 	if(lbUSAWar) then
 		local laSupportUnit = {
@@ -376,6 +385,7 @@ function P.Build_infantry_brigade(vIC, viManpowerTotal, voType, voProductionData
 			"field_battalion"}
 			voType.Size = 3
 			voType.Support = 2
+			return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
   end
 	if (voForeignMinisterData.ministerCountry:GetFlags():IsFlagSet("conque_Eastern_Asian")) and not(lbCXBWar) then
 				if voProductionData.ManpowerTotal > 150 and voProductionData.Year <= 1940 then
@@ -385,6 +395,7 @@ function P.Build_infantry_brigade(vIC, viManpowerTotal, voType, voProductionData
 					 "communications_company"}
 					 voType.Size = 3
 					 voType.Support = 2
+					 return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
 					elseif voProductionData.ManpowerTotal > 150 and voProductionData.Year >= 1940 then
 						local laSupportUnit = {
 							"alpine_artillery_brigade",
@@ -392,6 +403,7 @@ function P.Build_infantry_brigade(vIC, viManpowerTotal, voType, voProductionData
 							"communications_company"}
 							voType.Size = 3
 							voType.Support = 2
+							return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
 				 end
 			end
 	if(lbCXBWar) then
@@ -400,8 +412,8 @@ function P.Build_infantry_brigade(vIC, viManpowerTotal, voType, voProductionData
 			"field_battalion"}
 			voType.Size = 3
 			voType.Support = 2
+			return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
   end
-	return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
 end
 
 -- Land ratio distribution

@@ -66,6 +66,9 @@ diplomatic_decisions = {
 				set_country_flag = conque_Eastern_Asian
 				northeast_anti_japanese_united_army_base = { secede_province = CXB } 
 				}
+			CHI = {
+				set_country_flag = Japanese_puppet_Nanking
+	        }
 		ai_will_do = {
 			factor = 1
 		}
