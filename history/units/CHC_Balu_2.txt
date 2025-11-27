@@ -1,0 +1,23 @@
+corps = {
+	name = "陕甘宁留守兵团"
+	location = 7417
+	regiment = { type = hq_brigade name = "陕甘宁保安司令部" historical_model = 0 }	
+	division = {
+		name = "两延河防司令部"
+		location = 7417
+		regiment = { type = infantry_brigade experience = 40 historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 40 historical_model = 1 }
+	}
+	division = {
+		name = "五县河防司令部"
+		location = 5241
+		regiment = { type = infantry_brigade experience = 40 historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 40 historical_model = 1 }
+	}
+	division = {
+		name = "神府河防司令部"
+		location = 7391
+		regiment = { type = infantry_brigade experience = 40 historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 40 historical_model = 1 }
+	}
+}

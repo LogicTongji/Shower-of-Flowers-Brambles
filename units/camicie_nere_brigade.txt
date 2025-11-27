@@ -1,0 +1,54 @@
+camicie_nere_brigade = {
+usable_by = { ITA }
+	type = land
+	sprite = Elite
+	type = land
+	active = no
+	#limitations
+	minimum_of_type = 6 
+	max_percentage_of_type = 0.8
+
+	#Size Definitions
+	max_strength = 30
+	default_organisation = 30
+	default_morale = 0.40
+	officers = 30
+
+	#Building Costs
+	build_cost_ic = 3
+	build_cost_manpower = 2.00
+	build_time = 50
+
+	#Misc Abilities
+	maximum_speed = 5.00
+	transport_weight = 5.00
+	supply_consumption = 0.50
+	fuel_consumption = 0.00
+	radio_strength = 1
+
+	#Defensive Abilities
+	defensiveness = 2.33
+	toughness = 1.00
+	softness = 1.00
+	air_defence = 2.00
+
+	#Offensive Abilities
+	suppression = 2.00
+	soft_attack = 1.67
+	hard_attack = 0.33
+	air_attack = 0.33
+
+	urban = { attack = 0.15 }
+    amphibious =    { 
+		attack = -0.40
+		movement = -1.00
+	}
+    river = { attack = -0.05 }
+
+	
+	combat_width = 1
+
+	completion_size = 0.1
+	on_completion = militia_practical
+	priority = 6
+}

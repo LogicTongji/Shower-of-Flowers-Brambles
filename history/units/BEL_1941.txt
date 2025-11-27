@@ -1,0 +1,26 @@
+#- Congo army -----
+#theatre = {
+#	name = "刚果指挥部" 
+#	location = 10113
+#	regiment = { type = hq_brigade name = "刚果殖民军" historical_model = 0 }
+	division = {
+		name = "刚果殖民军"
+		location = 10113
+		regiment = { type = militia_brigade experience = 10 is_reserve = no historical_model = 2 }
+		regiment = { type = garrison_brigade experience = 10 is_reserve = no historical_model = 0 }
+	}
+	division = {
+		name = "刚果殖民军"
+		location = 9988#Gulu near ephiopia
+		regiment = { type = militia_brigade experience = 10 is_reserve = no historical_model = 2 }
+	}
+#}
+navy = {
+	name = "第1运输舰队"
+	base = 10113
+	location = 10113
+	ship = { type = transport_ship name = "第1运输分队" historical_model = 0 }
+}
+
+
+

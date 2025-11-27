@@ -1,0 +1,358 @@
+######################
+#   西安事变事件组   #
+######################
+country_event = {
+	id = 1000024
+	is_triggered_only = yes
+	title = "Event1000024title"
+	subtitle = "Event1000024subtitle"
+	desc = "Event1000024desc"
+	picture = "Event1000024"
+	option = {
+		name = "Event1000024option"
+		5494 = {
+						   province_event = 190021
+						   }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000025
+	is_triggered_only = yes
+	title = "Event1000025title"
+	desc = "Event1000025desc"
+	picture = "Event1000024"
+	option = {
+		name = "Event1000025option"
+		7391 = {
+						   province_event = 190021
+						   }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000026
+	is_triggered_only = yes
+	title = "Event1000026title"
+	desc = "Event1000026desc"
+	picture = "Event1000026"
+	option = {
+		name = "Event1000026option"
+		set_country_flag = xi_an_incident
+		CDB = { any_owned = { limit = { province_id = 7417 } secede_province = CHC }}
+		capital = 7417
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000027
+	major = yes
+	title = "Event1000027title"
+	desc = "Event1000027desc"
+	picture = "Event1000027"
+	trigger = {
+		tag = CDB
+		has_country_flag = Xaction_CDB
+		not = { has_global_flag = Event10000271 }
+		not = { has_global_flag = Event10000272 }
+		exists = CHI
+
+	}
+	option = {
+		name = "Event1000027option1"
+		ai_chance = { factor = 80 }
+		set_global_flag = Event10000271
+		CHC = { country_event = 1000152 }
+		CHI = { country_event = 1000153 }
+		country_event = 1000154
+	}
+	option = {
+		name = "Event1000027option2"
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0.0
+				or = {
+					CHC = { ai = no }
+					CSY = { ai = no }
+					CJC = { ai = no }
+					CSC = { ai = no }
+					CXK = { ai = no }
+				}
+			}
+			modifier = {
+				factor = 1.0
+				and = {
+					CHC = { ai = yes }
+					CSY = { ai = yes }
+					CJC = { ai = yes }
+					CSC = { ai = yes }
+					CXK = { ai = yes }
+				}
+			}
+		}
+		set_global_flag = Event10000272
+		CHI = { 
+			kill_leader = 50048
+			kill_leader = 50030
+			kill_leader = 50050
+			kill_leader = 50329
+			kill_leader = 50066
+			kill_leader = 50276
+			remove_minister = 52002
+			remove_minister = 52063
+			remove_minister = 52089
+			chief_of_army = 52048
+			head_of_state = 52048
+			national_unity = -30
+		}
+		country_event = 1000156
+	}
+}
+country_event = {
+	id = 1000152
+	is_triggered_only = yes
+	title = "Event1000152title"
+	desc = "Event1000152desc"
+	picture = "Event1000152"
+	option = {
+		name = "Event1000152option"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000153
+	is_triggered_only = yes
+	title = "Event1000153title"
+	desc = "Event1000153desc"
+	picture = "Event1000152"
+	option = {
+		name = "Event1000153option"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000154
+	is_triggered_only = yes
+	title = "Event1000154title"
+	desc = "Event1000154desc"
+	picture = "Event1000152"
+	option = {
+		name = "Event1000154option1"
+		ai_chance = { factor = 100 }
+		country_event = 1000155
+	}
+	option = {
+		name = "Event1000154option2"
+	}
+}
+country_event = {
+	id = 1000155
+	major = yes
+	is_triggered_only = yes
+	title = "Event1000155title"
+	desc = "Event1000155desc"
+	picture = "Event1000155"
+	option = {
+		name = "Event1000155option"
+		ai_chance = { factor = 100 }
+		CHI = { split_troops = 1.00 }
+		SF_china_region = { remove_core = CDB }
+		CHI = { inherit = CDB
+		        end_war = CHC }
+	}
+}
+country_event = {
+	id = 1000156
+	is_triggered_only = yes
+	title = "Event1000156title"
+	desc = "Event1000156desc"
+	picture = "CXB_Flag"
+	option = {
+		name = "Event1000156option"
+		ai_chance = { factor = 100 }
+		CDB = { any_owned = { limit = { province_id = 9170 } secede_province = CXB }}
+		SF_china_region = { add_core = CXB }
+	}
+}
+country_event = {
+	id = 1000157
+	major = yes
+	is_triggered_only = yes
+	title = "Event1000157title"
+	subtitle = "Event1000157subtitle"
+	desc = "Event1000157desc"
+	picture = "CXB_Flag"
+	option = {
+		name = "Event1000157option"
+		ai_chance = { factor = 100 }
+		CDB = { country_event = 1000158 }
+		CHC = { country_event = 1000158 }
+		JAP = {
+			war = {
+				target = CXB
+				attacker_goal = { casus_belli = conquer }
+				defender_goal = { casus_belli = conquer }
+			}
+		}
+		CHI = {
+			war = {
+				target = CXB
+				attacker_goal = { casus_belli = conquer }
+				defender_goal = { casus_belli = conquer }
+			}
+		}
+		JAP = { northeast_anti_japanese_united_army_base = { secede_province = CXB change_controller = JAP } }
+	}
+}
+country_event = {
+	id = 1000158
+	is_triggered_only = yes
+	title = "Event1000158title"
+	desc = "Event1000158desc"
+	option = {
+		name = "Event1000158option"
+		ai_chance = { factor = 100 }
+		JAP = { any_owned = { limit = { controlled_by = THIS } change_controller = FROM } }
+		CHI = { any_owned = { limit = { controlled_by = THIS } change_controller = FROM } }
+		SF_china_region = { remove_core = THIS }
+		FROM = { split_troops = 1.0 }
+		FROM = { inherit = THIS }
+	}
+}
+country_event = {
+	id = 1000159
+	trigger = {
+		tag = CXB
+		exists = CXB
+		war_with = CHI
+		war_with = JAP
+		exists = CSD
+		not = { has_country_flag = Event1000159 }
+	}
+	title = "Event1000159title"
+	desc = "Event1000159desc"
+	picture = "CXB_Flag"
+	option = {
+		name = "Event1000159option"
+		ai_chance = { factor = 100 }
+		set_country_flag = Event1000159
+		CSD = {
+			war = { target = JAP attacker_goal = { casus_belli = conquer } defender_goal = { casus_belli = conquer } }
+			war = { target = CHI attacker_goal = { casus_belli = conquer } defender_goal = { casus_belli = conquer } }
+		}
+		create_alliance = CSD
+	}
+}
+country_event = {
+	id = 1000160
+	trigger = {
+		tag = CXB
+		exists = CXB
+		war_with = CHI
+		war_with = JAP
+		exists = CGX
+		not = { has_country_flag = Event1000160 }
+	}
+	title = "Event1000160title"
+	desc = "Event1000160desc"
+	picture = "CXB_Flag"
+	option = {
+		name = "Event1000160option"
+		ai_chance = { factor = 100 }
+		set_country_flag = Event1000160
+		CGX = {
+			war = { target = JAP attacker_goal = { casus_belli = conquer } defender_goal = { casus_belli = conquer } }
+			war = { target = CHI attacker_goal = { casus_belli = conquer } defender_goal = { casus_belli = conquer } }
+		}
+		create_alliance = CGX
+	}
+}
+country_event = {
+	id = 1000163
+	major = yes
+	trigger = {
+		or = { tag = CQM tag = CNM }
+		exists = CXB
+		CXB = { war_with = CHI war_with = JAP }
+		not = { has_country_flag = Event1000163 }
+	}
+	title = "Event1000163title"
+	desc = "Event1000163desc"
+	picture = "NRA_Flag"
+	option = {
+		name = "Event1000163option"
+		ai_chance = { factor = 100 }
+		set_country_flag = Event1000163
+		war = { target = CXB attacker_goal = { casus_belli = conquer } defender_goal = { casus_belli = conquer } }
+	}
+}
+country_event = {
+	id = 1000164
+	major = yes
+	is_triggered_only = yes
+	title = "Event1000164title"
+	desc = "Event1000164desc"
+	picture = "Event1000164"
+	option = {
+		name = "Event1000164option1"
+		ai_chance = { factor = 85 }
+		create_alliance = JAP
+	}
+	option = {
+		name = "Event1000164option2"
+		ai_chance = { factor = 15 }
+		JAP = { war = { target = CHI attacker_goal = { casus_belli = conquer } defender_goal = { casus_belli = conquer } } }
+	}
+}
+country_event = {
+	id = 1000165
+	major = yes
+	trigger = {
+		tag = CHI
+		not = { has_country_flag = Event1000165 }
+		exists = CXB
+		war_with = CXB
+		JAP = { war_with = CXB }
+		alliance_with = JAP
+		not = { vassal_of = JAP }
+		lost_national = 0.6
+	}
+	title = "Event1000165title"
+	desc = "Event1000165desc"
+	picture = "CHI_Flag"
+	option = {
+		name = "Event1000165option1"
+		ai_chance = { factor = 80 }
+		set_country_flag = Event1000165
+		JAP = { create_vassal = CHI }
+		load_oob = "JAP_CHISupport.txt"
+		add_country_modifier = { name = "Japan_Support" duration = 90 }
+	}
+	option = {
+		name = "Event1000165option2"
+		ai_chance = { factor = 20 }
+		set_country_flag = Event1000165
+	}
+}
+country_event = {
+	id = 1000166
+	trigger = {
+		tag = JAP
+		not = { has_country_flag = Event1000166 }
+		not = { exists = CXB }
+		alliance_with = CHI
+		CHI = { not = { vassal_of = JAP } }
+		has_country_flag = Event10001662
+	}
+	title = "Event1000166title"
+	desc = "Event1000166desc"
+	picture = "JAP_Flag"
+	option = {
+		name = "Event1000166option"
+		ai_chance = { factor = 100 }
+		set_country_flag = Event1000166
+		leave_alliance = CHI
+		war = { target = CHI attacker_goal = { casus_belli = conquer } defender_goal = { casus_belli = conquer } }
+	}
+}

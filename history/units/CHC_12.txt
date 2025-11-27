@@ -1,0 +1,47 @@
+division = {
+	name = "新四军第1支队"
+	location = 5519
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 3 }
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 3 }
+}
+division = {
+	name = "新四军第2支队"
+	location = 5540
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 3 }
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 3 }
+}
+division = {
+	name = "新四军挺进纵队"
+	location = 5495
+	regiment = { type = partisan_bergsjaeger experience = 10 historical_model = 1 }
+	regiment = { type = partisan_bergsjaeger experience = 10 historical_model = 1 }
+}
+division = {
+	name = "新四军第3支队"
+	location = 5595
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 3 }
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 3 }
+}
+division = {
+	name = "新四军军部"
+	location = 5595
+	regiment = { type = chc_gundam experience = 20 historical_model = 3 }
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 3 }
+}
+division = {
+	name = "新四军第4支队"
+	location = 5516
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 3 }
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 3 }
+}
+division = {
+	name = "皖中第2游击纵队第2大队"
+	location = 5516
+	regiment = { type = partisan_bergsjaeger experience = 10 historical_model = 1 }
+}
+division = {
+	name = "江北挺进纵队"
+	location = 5539
+	regiment = { type = partisan_bergsjaeger experience = 10 historical_model = 1 }
+	regiment = { type = partisan_bergsjaeger experience = 10 historical_model = 1 }
+}

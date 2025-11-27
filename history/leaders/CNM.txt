@@ -1,0 +1,155 @@
+
+50235 = {
+
+	name = "马鸿逵"
+
+	country = CNM
+	type = land
+
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+
+	picture = L50235
+	add_trait = old_guard
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+
+	}
+
+}
+4000169 = {
+
+	name = "马光宗"
+
+	country = CNM
+	type = land
+
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+
+	picture = L4000169
+	add_trait = old_guard
+	history = {
+
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 1 }
+
+	}
+
+}
+4000170 = {
+
+	name = "马宝琳"
+
+	country = CNM
+	type = land
+
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+
+	picture = L4000170
+	add_trait = offensive_doctrine
+	history = {
+
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 1 }
+	}
+
+}
+4000171 = {
+
+	name = "卢忠良"
+
+	country = CNM
+	type = land
+
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+
+	picture = L4000171
+	add_trait = defensive_doctrine
+	history = {
+
+		1936.1.1 = { rank = 1 }
+		1939.12.1 = { rank = 2 }
+
+	}
+
+}
+4000172 = {
+
+	name = "马敦静"
+
+	country = CNM
+	type = land
+
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+
+	picture = L4000172
+	add_trait = offensive_doctrine
+	history = {
+
+		1930.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+
+	}
+
+}
+
+50236 = {
+
+	name = "马鸿宾"
+
+	country = CNM
+	type = land
+
+	skill = 0
+
+	max_skill = 3
+
+	loyalty = 0.00
+
+	picture = L50236
+	history = {
+
+		1930.1.1 = { rank = 1 }
+
+		1930.1.1 = { rank = 2 }
+
+		1942.1.1 = { rank = 0 }
+
+	}
+
+}
+
+4000173 = {
+
+	name = "马全良"
+
+	country = CNM
+	type = land
+
+	skill = 0
+
+	max_skill = 3
+
+	loyalty = 0.00
+
+	picture = L4000173
+	history = {
+
+		1929.6.1 = { rank = 1 }
+
+		1930.1.1 = { rank = 2 }
+		1931.1.1 = { rank = 3 }
+
+	}
+
+}

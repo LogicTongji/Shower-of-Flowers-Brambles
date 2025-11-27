@@ -1,0 +1,571 @@
+color = { 231  220  21 }
+graphical_culture = Japanese
+
+default_templates = {
+	binary_infantry = {
+		infantry_brigade
+		infantry_brigade
+	}
+	binary_milita = {
+		militia_brigade
+		militia_brigade
+	}
+	binary_armoured = {
+		armor_brigade
+		motorized_brigade
+	}
+	binary_cavalry = {
+		cavalry_brigade
+		cavalry_brigade
+	}
+}
+
+unit_names = {
+	infantry_brigade = {
+		"满洲第1师" "满洲第2师" "满洲第3师" "满洲第4师" "满洲第5师" "满洲第6师" "满洲第7师" "满洲第8师" "满洲第9师" "满洲第10师" "满洲第12师" 
+		"满洲第14师" "满洲第15师" "满洲第17师" "满洲第19师" "满洲第21师" "满洲第22师" "满洲第25师" "满洲第28师" "满洲第29师" "满洲第30师" "满洲第35师" 
+		"满洲第38师" "满洲第40师" "满洲第42师" "满洲第46师" "满洲第47师" "满洲第49师" "满洲第50师" 
+	}
+	cavalry_brigade = {
+		"满洲第1骑兵师" "满洲第2骑兵师" "满洲第3骑兵师" "满洲第4骑兵师" "满洲第5骑兵师" "满洲第6骑兵师" "满洲第7骑兵师" "满洲第8骑兵师" "满洲第9骑兵师" "满洲第10骑兵师" "满洲第11骑兵师" 
+		"满洲第12骑兵师" "满洲第13骑兵师" "满洲第14骑兵师" "满洲第15骑兵师" "满洲第16骑兵师" "满洲第17骑兵师" "满洲第18骑兵师" "满洲第19骑兵师" "满洲第20骑兵师" 
+	}
+	motorized_brigade = {
+		"满洲第1摩托化师" "满洲第2摩托化师" "满洲第3摩托化师" "满洲第4摩托化师" "满洲第5摩托化师" "满洲第6摩托化师" "满洲第7摩托化师" "满洲第8摩托化师" "满洲第9摩托化师" "满洲第10摩托化师" "满洲第12摩托化师" 
+		"满洲第14摩托化师" "满洲第15摩托化师" "满洲第17摩托化师" "满洲第19摩托化师" "满洲第21摩托化师" "满洲第22摩托化师" "满洲第25摩托化师" 
+	}
+	mechanized_brigade = {
+		"满洲第1机械化师" "满洲第2机械化师" "满洲第3机械化师" "满洲第4机械化师" "满洲第5机械化师" "满洲第6机械化师" "满洲第7机械化师" "满洲第8机械化师" "满洲第9机械化师" "满洲第10机械化师" "满洲第12机械化师" 
+		"满洲第14机械化师" "满洲第15机械化师" "满洲第17机械化师" "满洲第19机械化师" "满洲第21机械化师" "满洲第22机械化师" "满洲第25机械化师" "满洲第28机械化师" "满洲第29机械化师" 
+	}
+	light_armor_brigade = {
+		"满洲第1坦克师" "满洲第2坦克师" "满洲第3坦克师" "满洲第4坦克师" "满洲第5坦克师" "满洲第6坦克师" "满洲第7坦克师" "满洲第8坦克师" "满洲第9坦克师" "满洲第10坦克师" "满洲第11坦克师" 
+		"满洲第12坦克师" "满洲第13坦克师" "满洲第14坦克师" "满洲第15坦克师" "满洲第16坦克师" "满洲第17坦克师" "满洲第18坦克师" "满洲第19坦克师" "满洲第20坦克师" "满洲第21坦克师" "满洲第22坦克师" 
+		"满洲第23坦克师" "满洲第24坦克师" 
+	}
+	armor_brigade = {
+		"满洲第1坦克师" "满洲第2坦克师" "满洲第3坦克师" "满洲第4坦克师" "满洲第5坦克师" "满洲第6坦克师" "满洲第7坦克师" "满洲第8坦克师" "满洲第9坦克师" "满洲第10坦克师" "满洲第11坦克师" 
+		"满洲第12坦克师" "满洲第13坦克师" "满洲第14坦克师" "满洲第15坦克师" "满洲第16坦克师" "满洲第17坦克师" "满洲第18坦克师" "满洲第19坦克师" "满洲第20坦克师" "满洲第21坦克师" "满洲第22坦克师" 
+		"满洲第23坦克师" "满洲第24坦克师" 
+	}
+	paratrooper_brigade = {
+		"满洲第1降落伞师" "满洲第2降落伞师" "满洲第3降落伞师" "满洲第4降落伞师" "满洲第5降落伞师" "满洲第6降落伞师" "满洲第7降落伞师" "满洲第8降落伞师" "满洲第9降落伞师" "满洲第10降落伞师" "满洲第11降落伞师" 
+		"满洲第12降落伞师" "满洲第13降落伞师" "满洲第14降落伞师" "满洲第15降落伞师" 
+	}
+	marine_brigade = {
+		"满洲第1海军陆战师" "满洲第2海军陆战师" "满洲第3海军陆战师" "满洲第4海军陆战师" "满洲第5海军陆战师" "满洲第6海军陆战师" "满洲第7海军陆战师" "满洲第8海军陆战师" "满洲第9海军陆战师" "满洲第10海军陆战师" "满洲第11海军陆战师" 
+		"满洲第12海军陆战师" "满洲第13海军陆战师" "满洲第14海军陆战师" "满洲第15海军陆战师" "满洲第16海军陆战师" "满洲第17海军陆战师" "满洲第18海军陆战师" "满洲第19海军陆战师" "满洲第20海军陆战师" 
+	}
+	bergsjaeger_brigade = {
+		"满洲第1支队" "满洲第2支队" "满洲第3支队" "满洲第4支队" "满洲第5支队" "满洲第6支队" "满洲第7支队" "满洲第8支队" "满洲第9支队" "满洲第10支队" "满洲第12支队" 
+		"满洲第14支队" "满洲第15支队" "满洲第17支队" "满洲第19支队" "满洲第21支队" "满洲第22支队" "满洲第25支队" 
+	}
+	garrison_brigade = {
+		"满洲第1师" "满洲第2师" "满洲第3师" "满洲第4师" "满洲第5师" "满洲第6师" "满洲第7师" "满洲第8师" "满洲第9师" "满洲第10师" "满洲第12师" 
+		"满洲第14师" "满洲第15师" "满洲第17师" "满洲第19师" "满洲第21师" "满洲第22师" "满洲第25师" "满洲第28师" "满洲第29师" "满洲第30师" "满洲第35师" 
+		"满洲第38师" "满洲第40师" "满洲第42师" "满洲第46师" "满洲第47师" "满洲第49师" "满洲第50师" 
+	}
+	hq_brigade = {
+		"第1战区" "第2战区" "第3战区" "第4战区" "第5战区" "第6战区" "第7战区" "第8战区" "第9战区" 
+	}
+	militia_brigade = {
+		"满洲第7民兵师" "满洲第8民兵师" "满洲第9民兵师" "满洲第10民兵师" "满洲第12民兵师" "满洲第14民兵师" "满洲第15民兵师" "满洲第17民兵师" "满洲第19民兵师" "满洲第21民兵师" "满洲第22民兵师" 
+		"满洲第25民兵师" "满洲第28民兵师" "满洲第29民兵师" "满洲第30民兵师" "满洲第35民兵师" "满洲第38民兵师" "满洲第40民兵师" "满洲第42民兵师" "满洲第46民兵师" "满洲第47民兵师" "满洲第49民兵师" 
+		"满洲第50民兵师" "满洲第51民兵师" "满洲第57民兵师" "满洲第58民兵师" "满洲第61民兵师" 
+	}
+	multi_role = {
+		"满洲第1战斗机联队" "满洲第2战斗机联队" "满洲第3战斗机联队" "满洲第4战斗机联队" "满洲第5战斗机联队" "满洲第6战斗机联队" "满洲第7战斗机联队" "满洲第8战斗机联队" "满洲第9战斗机联队" "满洲第10战斗机联队" "满洲第11战斗机联队" 
+		"满洲第12战斗机联队" "满洲第13战斗机联队" "满洲第14战斗机联队" "满洲第15战斗机联队" 
+	}
+	interceptor = {
+		"满洲第1战斗机联队" "满洲第2战斗机联队" "满洲第3战斗机联队" "满洲第4战斗机联队" "满洲第5战斗机联队" "满洲第6战斗机联队" "满洲第7战斗机联队" "满洲第8战斗机联队" "满洲第9战斗机联队" "满洲第10战斗机联队" "满洲第11战斗机联队" 
+		"满洲第12战斗机联队" "满洲第13战斗机联队" "满洲第14战斗机联队" "满洲第15战斗机联队" 
+	}
+	strategic_bomber = {
+		"满洲第1战术轰炸机联队" "满洲第2战术轰炸机联队" "满洲第3战术轰炸机联队" "满洲第4战术轰炸机联队" "满洲第5战术轰炸机联队" "满洲第6战术轰炸机联队" "满洲第7战术轰炸机联队" "满洲第8战术轰炸机联队" "满洲第9战术轰炸机联队" "满洲第10战术轰炸机联队" "满洲第11战术轰炸机联队" 
+		"满洲第12战术轰炸机联队" "满洲第13战术轰炸机联队" "满洲第14战术轰炸机联队" "满洲第15战术轰炸机联队" 
+	}
+	tactical_bomber = {
+		"满洲第1战略轰炸机联队" "满洲第2战略轰炸机联队" "满洲第3战略轰炸机联队" "满洲第4战略轰炸机联队" "满洲第5战略轰炸机联队" "满洲第6战略轰炸机联队" "满洲第7战略轰炸机联队" "满洲第8战略轰炸机联队" "满洲第9战略轰炸机联队" "满洲第10战略轰炸机联队" "满洲第11战略轰炸机联队" 
+		"满洲第12战略轰炸机联队" "满洲第13战略轰炸机联队" "满洲第14战略轰炸机联队" "满洲第15战略轰炸机联队" 
+	}
+	naval_bomber = {
+		"满洲第1海军轰炸机联队" "满洲第2海军轰炸机联队" "满洲第3海军轰炸机联队" "满洲第4海军轰炸机联队" "满洲第5海军轰炸机联队" "满洲第6海军轰炸机联队" "满洲第7海军轰炸机联队" "满洲第8海军轰炸机联队" "满洲第9海军轰炸机联队" "满洲第10海军轰炸机联队" "满洲第11海军轰炸机联队" 
+		"满洲第满洲第12海军轰炸机联队" "满洲第13海军轰炸机联队" "满洲第14海军轰炸机联队" "满洲第15海军轰炸机联队" "1鱼雷轰炸机联队" "满洲第2鱼雷轰炸机联队" "满洲第3鱼雷轰炸机联队" "满洲第4鱼雷轰炸机联队" "满洲第5鱼雷轰炸机联队" "满洲第6鱼雷轰炸机联队" "满洲第7鱼雷轰炸机联队" 
+		"满洲第8鱼雷轰炸机联队" "满洲第9鱼雷轰炸机联队" "满洲第10鱼雷轰炸机联队" "满洲第11鱼雷轰炸机联队" "满洲第12鱼雷轰炸机联队" "满洲第13鱼雷轰炸机联队" "满洲第14鱼雷轰炸机联队" "满洲第15鱼雷轰炸机联队" 
+	}
+	cas = {
+		"满洲第1俯冲轰炸机联队" "满洲第2俯冲轰炸机联队" "满洲第3俯冲轰炸机联队" "满洲第4俯冲轰炸机联队" "满洲第5俯冲轰炸机联队" "满洲第6俯冲轰炸机联队" "满洲第7俯冲轰炸机联队" "满洲第8俯冲轰炸机联队" "满洲第9俯冲轰炸机联队" "满洲第10俯冲轰炸机联队" "满洲第11俯冲轰炸机联队" 
+		"满洲第12俯冲轰炸机联队" "满洲第13俯冲轰炸机联队" "满洲第14俯冲轰炸机联队" "满洲第15俯冲轰炸机联队" 
+	}
+	transport_plane = {
+		"满洲第1运输机联队" "满洲第2运输机联队" "满洲第3运输机联队" "满洲第4运输机联队" "满洲第5运输机联队" "满洲第6运输机联队" "满洲第7运输机联队" "满洲第8运输机联队" "满洲第9运输机联队" "满洲第10运输机联队" "满洲第11运输机联队" 
+		"满洲第12运输机联队" "满洲第13运输机联队" "满洲第14运输机联队" "满洲第15运输机联队" 
+	}
+	battleship = {
+		"溥仪" "沈阳" 
+	}
+	light_cruiser = {
+		"丰城" "庄河" "富县" "易县" "盖县" 
+	}
+	heavy_cruiser = {
+		"丰城" "庄河" "富县" "易县" "盖县" 
+	}
+	battlecruiser = {
+		"溥仪" "沈阳" 
+	}
+	destroyer = {
+		"满洲第1驱逐舰支队" "满洲第2驱逐舰支队" "满洲第3驱逐舰支队" "满洲第4驱逐舰支队" "满洲第5驱逐舰支队" "满洲第6驱逐舰支队" "满洲第7驱逐舰支队" "满洲第8驱逐舰支队" "满洲第9驱逐舰支队" "满洲第10驱逐舰支队" "满洲第11驱逐舰支队" 
+		"满洲第12驱逐舰支队" "满洲第13驱逐舰支队" "满洲第14驱逐舰支队" "满洲第15驱逐舰支队" "满洲第16驱逐舰支队" "满洲第17驱逐舰支队" "满洲第18驱逐舰支队" "满洲第19驱逐舰支队" 
+	}
+	carrier = {
+		"满洲国" "本溪" 
+	}
+	submarine = {
+		"满洲第1潜艇支队" "满洲第2潜艇支队" "满洲第3潜艇支队" "满洲第4潜艇支队" "满洲第5潜艇支队" "满洲第6潜艇支队" "满洲第7潜艇支队" "满洲第8潜艇支队" "满洲第9潜艇支队" "满洲第10潜艇支队" "满洲第11潜艇支队" 
+		"满洲第12潜艇支队" "满洲第13潜艇支队" "满洲第14潜艇支队" "满洲第15潜艇支队" "满洲第16潜艇支队" "满洲第17潜艇支队" "满洲第18潜艇支队" "满洲第19潜艇支队" 
+	}
+	transport_ship = {
+		"满洲第1运输分队" "满洲第2运输分队" "满洲第3运输分队" "满洲第4运输分队" "满洲第5运输分队" "满洲第6运输分队" "满洲第7运输分队" "满洲第8运输分队" "满洲第9运输分队" "满洲第10运输分队" 
+	}
+
+}
+
+ministers = {
+	58001 = {
+		name = "溥仪"
+		ideology = fascistic
+		loyalty = 1.00
+		picture = M58001
+		head_of_state = popular_figurehead
+		head_of_state = popular_figurehead
+		head_of_state = popular_figurehead
+		foreign_minister = great_compromiser
+		chief_of_army = guns_and_butter_doctrine
+		start_date = 1936.1.1
+	}
+	58002 = {
+		name = "张景惠"
+		ideology = fascistic
+		loyalty = 1.00
+		picture = M58002
+		head_of_government = happy_amateur
+		foreign_minister = iron_fisted_brute
+		start_date = 1936.1.1
+	}
+	58004 = {
+		name = "李紹庚"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M58004
+		armament_minister = military_entrepreneur
+		foreign_minister = biased_intellectual
+		start_date = 1936.1.1
+	}
+	58005 = {
+		name = "希春寒"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M58005
+		minister_of_security = back_stabber
+		start_date = 1936.1.1
+	}
+	58006 = {
+		name = "川岛芳子"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M58006
+		minister_of_intelligence = political_specialist
+		chief_of_staff = school_of_mass_combat
+		chief_of_army = guns_and_butter_doctrine
+		start_date = 1936.1.1
+	}
+	58007 = {
+		name = "吉興"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M58007
+		chief_of_staff = school_of_defence
+		chief_of_army = static_defence_doctrine
+		start_date = 1936.1.1
+	}
+	58009 = {
+		name = "谢尔盖 拉米尔契夫"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M58009
+		chief_of_navy = indirect_approach_doctrine
+		start_date = 1936.1.1
+	}
+	58010 = {
+		name = "横山正彦"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M58010
+		chief_of_air = vertical_envelopment_doctrine
+		start_date = 1936.1.1
+	}
+	58014 = {
+		name = "刘春福"
+		ideology = fascistic
+		loyalty = 1.00
+		picture = M58014
+		head_of_government = naive_optimist
+		armament_minister = battle_fleet_proponent
+		start_date = 1937.1.1
+	}
+	58015 = {
+		name = "魏城晨"
+		ideology = fascistic
+		loyalty = 1.00
+		picture = M58015
+		head_of_government = old_general
+		minister_of_intelligence = dismal_enigma
+		start_date = 1938.1.1
+	}
+	58016 = {
+		name = "阿达特基 米伊其诺"
+		ideology = national_socialist
+		loyalty = 1.00
+		picture = M58016
+		head_of_government = silent_workhorse
+		minister_of_security = prince_of_terror
+		start_date = 1941.1.1
+	}
+	58017 = {
+		name = "松山慎次郎"
+		ideology = national_socialist
+		loyalty = 1.00
+		picture = M58017
+		head_of_government = happy_amateur
+		minister_of_intelligence = industrial_specialist
+		start_date = 1943.1.1
+	}
+	58018 = {
+		name = "新渡户稻造"
+		ideology = national_socialist
+		loyalty = 1.00
+		picture = M58018
+		head_of_government = old_air_marshal
+		minister_of_security = efficient_sociopath
+		start_date = 1944.1.1
+	}
+	58019 = {
+		name = "娄晨"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M58019
+		head_of_government = happy_amateur
+		chief_of_air = naval_aviation_doctrine
+		start_date = 1945.1.1
+	}
+	58020 = {
+		name = "朝新竹"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M58020
+		head_of_government = political_protege
+		chief_of_navy = open_seas_doctrine
+		start_date = 1946.1.1
+	}
+	58021 = {
+		name = "蔡運升"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M58021
+		foreign_minister = ideological_crusader
+		start_date = 1937.1.1
+	}
+	58022 = {
+		name = "裴书野"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M58022
+		foreign_minister = great_compromiser
+		start_date = 1938.1.1
+	}
+	58023 = {
+		name = "饭田楠男"
+		ideology = national_socialist
+		loyalty = 0.75
+		picture = M58023
+		foreign_minister = iron_fisted_brute
+		start_date = 1941.1.1
+	}
+	58024 = {
+		name = "永井大作"
+		ideology = national_socialist
+		loyalty = 0.75
+		picture = M58024
+		foreign_minister = ideological_crusader
+		start_date = 1943.1.1
+	}
+	58026 = {
+		name = "欧会岚"
+		ideology = paternal_autocrat
+		loyalty = 0.25
+		picture = M58026
+		foreign_minister = the_cloak_n_dagger_schemer
+		start_date = 1945.1.1
+	}
+	58029 = {
+		name = "石黑四郎"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M58029
+		armament_minister = submarine_proponent
+		start_date = 1938.1.1
+	}
+	58030 = {
+		name = "津岛寿一"
+		ideology = national_socialist
+		loyalty = 0.75
+		picture = M58030
+		armament_minister = laissez_faires_capitalist
+		start_date = 1941.1.1
+	}
+	58031 = {
+		name = "石井浩三"
+		ideology = national_socialist
+		loyalty = 0.75
+		picture = M58031
+		armament_minister = strategic_air_proponent
+		start_date = 1943.1.1
+	}
+	58032 = {
+		name = "目贺田敏郎"
+		ideology = national_socialist
+		loyalty = 0.75
+		picture = M58032
+		armament_minister = air_to_ground_proponent
+		start_date = 1944.1.1
+	}
+	58033 = {
+		name = "顾维钧"
+		ideology = paternal_autocrat
+		loyalty = 0.25
+		picture = M58033
+		armament_minister = corrupt_kleptocrat
+		start_date = 1945.1.1
+	}
+	58034 = {
+		name = "李商银"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M58034
+		armament_minister = administrative_genius
+		start_date = 1946.1.1
+	}
+	58036 = {
+		name = "苏成"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M58036
+		minister_of_security = crime_fighter
+		start_date = 1938.1.1
+	}
+	58038 = {
+		name = "林权助"
+		ideology = national_socialist
+		loyalty = 0.50
+		picture = M58038
+		minister_of_security = crime_fighter
+		start_date = 1943.1.1
+	}
+	58040 = {
+		name = "唐塞佛"
+		ideology = paternal_autocrat
+		loyalty = 0.25
+		picture = M58040
+		minister_of_security = crooked_kleptocrat
+		start_date = 1945.1.1
+	}
+	58041 = {
+		name = "超出木"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M58041
+		minister_of_security = man_of_the_people
+		start_date = 1946.1.1
+	}
+	58042 = {
+		name = "汪春辉"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M58042
+		minister_of_intelligence = naval_intelligence_specialist
+		start_date = 1937.1.1
+	}
+	58044 = {
+		name = "斋藤博史"
+		ideology = national_socialist
+		loyalty = 1.00
+		picture = M58044
+		minister_of_intelligence = research_specialist
+		start_date = 1941.1.1
+	}
+	58046 = {
+		name = "深井英五"
+		ideology = national_socialist
+		loyalty = 0.75
+		picture = M58046
+		minister_of_intelligence = dismal_enigma
+		start_date = 1944.1.1
+	}
+	58047 = {
+		name = "兰方嵋"
+		ideology = paternal_autocrat
+		loyalty = 0.25
+		picture = M58047
+		minister_of_intelligence = naval_intelligence_specialist
+		start_date = 1945.1.1
+	}
+	58048 = {
+		name = "畅书里"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M58048
+		minister_of_intelligence = industrial_specialist
+		start_date = 1946.1.1
+	}
+	58049 = {
+		name = "邢士廉"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M58049
+		chief_of_staff = school_of_psychology
+		chief_of_army = elastic_defence_doctrine
+		start_date = 1937.1.1
+	}
+	58051 = {
+		name = "中岛今朝吾"
+		ideology = national_socialist
+		loyalty = 0.75
+		picture = M58051
+		chief_of_staff = school_of_defence
+		chief_of_army = elastic_defence_doctrine
+		start_date = 1941.1.1
+	}
+	58052 = {
+		name = "磯谷廉介"
+		ideology = national_socialist
+		loyalty = 0.75
+		picture = M58052
+		chief_of_staff = school_of_psychology
+		chief_of_army = guns_and_butter_doctrine
+		start_date = 1943.1.1
+	}
+	58053 = {
+		name = "伊戈尔 切尔诺科夫"
+		ideology = paternal_autocrat
+		loyalty = 0.25
+		picture = M58053
+		chief_of_staff = school_of_defence
+		start_date = 1945.1.1
+	}
+	58054 = {
+		name = "赵秋航"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M58054
+		chief_of_staff = school_of_mass_combat
+		start_date = 1946.1.1
+	}
+	58059 = {
+		name = "曼福雷德 冯 茨谢魏伦"
+		ideology = paternal_autocrat
+		loyalty = 0.25
+		picture = M58059
+		chief_of_army = armoured_spearhead_doctrine
+		start_date = 1945.1.1
+	}
+	58061 = {
+		name = "金海斯"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M58061
+		chief_of_navy = decisive_naval_battle_doctrine
+		start_date = 1937.1.1
+	}
+	58062 = {
+		name = "尹祚乾"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M58062
+		chief_of_navy = base_control_doctrine
+		start_date = 1938.1.1
+	}
+	58063 = {
+		name = "岗敬淳"
+		ideology = national_socialist
+		loyalty = 0.75
+		picture = M58063
+		chief_of_navy = indirect_approach_doctrine
+		start_date = 1941.1.1
+	}
+	58064 = {
+		name = "织田有乐"
+		ideology = national_socialist
+		loyalty = 0.75
+		picture = M58064
+		chief_of_navy = base_control_doctrine
+		start_date = 1943.1.1
+	}
+	58065 = {
+		name = "角能著黑"
+		ideology = national_socialist
+		loyalty = 0.75
+		picture = M58065
+		chief_of_navy = power_projection_doctrine
+		chief_of_air = air_superiority_doctrine
+		start_date = 1944.1.1
+	}
+	58066 = {
+		name = "泰迟全"
+		ideology = paternal_autocrat
+		loyalty = 0.25
+		picture = M58066
+		chief_of_navy = power_projection_doctrine
+		start_date = 1945.1.1
+	}
+	58068 = {
+		name = "矶野裕三"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M58068
+		chief_of_air = air_superiority_doctrine
+		start_date = 1937.1.1
+	}
+	58069 = {
+		name = "中岛真司"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M58069
+		chief_of_air = naval_aviation_doctrine
+		start_date = 1938.1.1
+	}
+	58070 = {
+		name = "宫崎彰"
+		ideology = national_socialist
+		loyalty = 0.75
+		picture = M58070
+		chief_of_air = army_aviation_doctrine
+		start_date = 1941.1.1
+	}
+	58071 = {
+		name = "伊藤述史"
+		ideology = national_socialist
+		loyalty = 0.75
+		picture = M58071
+		chief_of_air = carpet_bombing_doctrine
+		start_date = 1943.1.1
+	}
+	58074 = {
+		name = "曹秉森"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M58074
+		chief_of_air = army_aviation_doctrine
+		start_date = 1946.1.1
+	}
+}

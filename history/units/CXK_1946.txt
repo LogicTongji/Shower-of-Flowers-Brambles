@@ -1,0 +1,19 @@
+corps = {
+	       	name = "川黔湘鄂绥靖公署"				
+	location = 9444
+	regiment = { type = hq_brigade name = "绥署长官部" experience = 60  historical_model = 4 }
+division= {
+	name = "整编第24师"
+	location = 9444
+regiment = { type = infantry_brigade name = "第136旅" experience = 35 historical_model = 2 }
+regiment = { type = infantry_brigade name = "第137旅" experience = 35 historical_model = 2 }
+         }
+   division= {
+	name = "整编第39师"
+	location = 9444
+regiment = { type = infantry_brigade name = "第126旅" experience = 35 historical_model = 2 }
+regiment = { type = infantry_brigade name = "新编第9旅" experience = 25 historical_model = 2 }
+      }      
+}
+
+

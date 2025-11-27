@@ -1,0 +1,65 @@
+color = { 200  151  109 }
+graphical_culture = Japanese
+
+default_templates = {
+	binary_infantry = {
+		infantry_brigade
+		infantry_brigade
+	}
+	binary_milita = {
+		militia_brigade
+		militia_brigade
+	}
+	binary_armoured = {
+		armor_brigade
+		motorized_brigade
+	}
+	binary_cavalry = {
+		cavalry_brigade
+		cavalry_brigade
+	}
+}
+
+unit_names = {
+	infantry_brigade = {
+		"第136师" "第137师" "第138师"
+	}
+	garrison_brigade = {
+		"西康警备司令部"
+	}
+	militia_brigade = {
+		"第1旅" "第2旅" "第3旅" "第4旅" "第5旅" "第6旅"
+	}
+}
+
+ministers = {
+	301004 = {
+		name = "刘文辉"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M301004
+		head_of_state = power_hungry_demagogue
+		head_of_government = silent_workhorse
+		foreign_minister = biased_intellectual
+		armament_minister = military_entrepreneur
+		chief_of_army = guns_and_butter_doctrine
+		start_date = 1931.1.1
+	}
+	3000025 = {
+		name = "冷寅东"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M3000025
+		minister_of_security = man_of_the_people
+		minister_of_intelligence = industrial_specialist
+		start_date = 1931.1.1
+	}
+	3000026 = {
+		name = "夏首勋"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M3000026
+		chief_of_staff = general_staffer
+		start_date = 1931.1.1
+	}
+}

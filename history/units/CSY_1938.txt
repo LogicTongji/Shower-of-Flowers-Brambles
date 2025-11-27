@@ -1,0 +1,46 @@
+theatre = {
+	name = "第八战区副司令长官部"
+	location = 5017
+	regiment = { type = hq_brigade name = "第八战区副司令长官部部" historical_model = 1 }
+	army = {
+		name = "第7集团军"
+		location = 5017
+		regiment = { type = hq_brigade name = "第7集团军指挥部" historical_model = 1 }	
+                regiment = { type = militia_brigade name = "211旅" experience = 60  historical_model = 1 }
+		corps = {
+			name = "第35军"
+			location = 5017
+			regiment = { type = hq_brigade name = "第35军指挥部" experience = 60  historical_model = 1 }
+			division= {
+				name = "第73师"
+				location = 5017
+				regiment = { type = militia_brigade experience = 60  historical_model = 1 }
+				regiment = { type = militia_brigade experience = 60  historical_model = 1 }
+			}
+			division= {
+				name = "第101师"
+				location = 5017
+				regiment = { type = militia_brigade name = "218旅" experience = 60  historical_model = 1 }
+				regiment = { type = infantry_brigade name = "山西警备第7旅" experience = 60  historical_model = 1 }
+                                regiment = { type = militia_brigade name = "山西警备第3、9团" experience = 60  historical_model = 1 }
+			}
+
+		}
+		corps = {
+			name = "第17军"
+			location = 5017
+			regiment = { type = hq_brigade name = "第17军指挥部" experience = 60  historical_model = 1 }
+			division= {
+				name = "第21师"
+				location = 5017
+				regiment = { type = militia_brigade experience = 60  historical_model = 1 }
+				regiment = { type = militia_brigade experience = 60  historical_model = 1 }
+			}
+			division= {
+				name = "第84师"
+				location = 5017
+				regiment = { type = militia_brigade experience = 60  historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 60  historical_model = 1 }
+			}
+
+		}

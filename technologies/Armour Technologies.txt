@@ -1,0 +1,860 @@
+
+lighttank_brigade = {
+
+	activate_unit = light_armor_brigade 
+	activate_unit = glider_armor_brigade
+	activate_unit = amph_armour_brigade
+
+
+	research_bonus_from = {
+		automotive_theory = 1.0
+	}
+	
+	on_completion = automotive_theory
+	
+	difficulty = 3
+	
+	#common for all techs.
+	start_year = 1918
+	folder = armour_folder
+}	
+
+lighttank_gun = {
+hobart_armor_brigade = {
+		soft_attack = 0.5
+		hard_attack = 0.5
+		toughness  = -0.3
+		maximum_speed = -0.1
+	}
+amph_armour_brigade = {
+		soft_attack = 0.5
+		hard_attack = 0.5
+		toughness  = -0.3
+		maximum_speed = -0.1
+	}
+glider_armor_brigade = {
+		soft_attack = 0.5
+		hard_attack = 0.5
+		toughness  = -0.3
+		maximum_speed = -0.1
+	}
+GER_ss = {
+		soft_attack = 0.35
+		hard_attack = 0.4
+		toughness  = -0.2
+		maximum_speed = -0.1
+	}
+	light_armor_brigade = {
+		soft_attack = 0.5
+		hard_attack = 0.5
+		toughness  = -0.3
+		maximum_speed = -0.1
+	}
+        mechanized_brigade = {
+            soft_attack = 0.3
+	    hard_attack = 0.2
+	    toughness  = -0.1
+	    maximum_speed = -0.1
+        }
+
+	allow = {
+		lighttank_brigade = 1
+	}
+	
+	research_bonus_from = {
+		automotive_theory = 0.3
+		artillery_practical = 0.6
+		human_wave_theory = 0.1
+	}
+
+	on_completion = automotive_theory
+
+	difficulty = 1
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1936	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+                max_level = 12
+	folder = armour_folder
+}
+
+lighttank_engine = {
+hobart_armor_brigade = {
+		maximum_speed = 0.4
+        toughness  = -0.1
+	}
+amph_armour_brigade = {
+		maximum_speed = 0.4
+        toughness  = -0.1
+	}
+glider_armor_brigade = {
+	maximum_speed = 0.4
+        toughness  = -0.1
+	}
+GER_ss = {
+	maximum_speed = 0.4
+        toughness  = -0.1
+	}
+	light_armor_brigade = {
+		maximum_speed = 1.00
+		toughness  = -0.3
+	}
+
+    mechanized_brigade = {
+        maximum_speed = 0.5
+        toughness  = -0.1
+    }
+
+    motorized_brigade = {
+        maximum_speed = 0.2
+    }
+
+
+    armored_car_brigade = {
+        maximum_speed = 0.2
+        toughness = -0.4
+    }
+
+	allow = {
+		lighttank_brigade = 1
+	}
+	
+	research_bonus_from = {
+		automotive_theory = 0.3
+		armour_practical = 0.6
+		mechanicalengineering_theory = 0.1
+	}
+
+	on_completion = automotive_theory
+
+	difficulty = 1
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1936	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+                max_level = 12
+	folder = armour_folder
+}
+
+lighttank_armour = {
+
+	activate_unit = tank_destroyer_brigade
+	activate_unit = hobart_armor_brigade
+	hobart_armor_brigade = {
+		        maximum_speed = -0.1
+        defensiveness  = 0.15
+	}
+amph_armour_brigade = {
+	maximum_speed = -0.40
+		defensiveness  = 0.6
+                toughness = 0.3
+	}
+glider_armor_brigade = {
+	maximum_speed = -0.40
+		defensiveness  = 0.6
+                toughness = 0.3
+	}
+GER_ss = {
+	  softness  = -0.01
+        maximum_speed = -0.1
+        defensiveness  = 0.15
+        toughness = 0.1
+	}
+	light_armor_brigade = {
+		maximum_speed = -0.40
+		defensiveness  = 0.6
+                toughness = 0.3
+	}
+
+    mechanized_brigade = {
+        softness  = -0.01
+        maximum_speed = -0.2
+        defensiveness  = 0.1
+        toughness = 0.1
+    }
+
+    motorized_brigade = {
+        softness  = -0.01
+        maximum_speed = -0.1
+    }
+
+
+	allow = {
+		lighttank_brigade = 1
+	}
+	
+	research_bonus_from = {
+		automotive_theory = 0.3
+		armour_practical = 0.6
+		grand_battleplan_theory = 0.1
+	}
+
+	on_completion = automotive_theory
+
+	difficulty = 1
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1936	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+                max_level = 12
+	folder = armour_folder
+}
+
+lighttank_reliability = {
+hobart_armor_brigade = {
+		       toughness = 0.3
+	}
+amph_armour_brigade = {
+	 toughness = 0.85
+	}
+glider_armor_brigade = {
+	 toughness = 0.9
+	}
+GER_ss = {
+	  softness  = -0.01
+                   toughness = 0.25
+	}
+	light_armor_brigade = {
+	    toughness = 0.9
+	}
+
+	mechanized_brigade = {
+            toughness = 0.3
+        }
+     
+        armored_car_brigade = {
+            toughness = 0.8
+        }
+
+
+	allow = {
+		lighttank_brigade = 1
+	}
+	
+	research_bonus_from = {
+		automotive_theory = 0.3
+		armour_practical = 0.6
+		spearhead_theory = 0.1
+	}
+
+	on_completion = automotive_theory
+
+	difficulty = 1
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1936	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+                max_level = 12
+	folder = armour_folder
+}
+
+tank_brigade = {
+
+	activate_unit = armor_brigade 
+
+	
+	allow = {
+		lighttank_gun = 2
+		lighttank_engine = 2
+		lighttank_armour = 2
+		lighttank_reliability = 2
+	}
+	
+	research_bonus_from = {
+		automotive_theory = 0.3
+		armour_practical = 0.7
+	}
+	
+	on_completion = automotive_theory
+	
+	difficulty = 2
+	
+	#common for all techs.
+	start_year = 1936
+	folder = armour_folder
+}	
+
+tank_gun = {
+amph_armour_brigade = {
+	soft_attack = 0.75
+		hard_attack = 0.75
+		toughness  = -0.2
+		maximum_speed = -0.15
+	}
+glider_armor_brigade = {
+	 soft_attack = 0.95
+		hard_attack = 1.0
+		toughness  = -0.5
+		maximum_speed = -0.25
+	}
+	armor_brigade = {
+		soft_attack = 1.0
+		hard_attack = 1.0
+		toughness  = -0.5
+		maximum_speed = -0.25
+	}
+
+	allow = {
+		tank_brigade = 1
+	}
+	
+	research_bonus_from = {
+		automotive_theory = 0.3
+		artillery_practical = 0.6
+		armour_practical = 0.1
+	}
+
+	on_completion = automotive_theory
+
+	difficulty = 2
+	
+	#common for all techs.
+	start_year = 1936
+	first_offset = 1938	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+                max_level = 12
+	folder = armour_folder
+}
+
+tank_engine = {
+amph_armour_brigade = {
+	maximum_speed = 1.00
+		toughness  = -0.5
+	}
+glider_armor_brigade = {
+	 maximum_speed = 1.00
+		toughness  = -0.5
+	}
+	armor_brigade = {
+		maximum_speed = 1.00
+		toughness  = -0.5
+	}
+
+	sp_artillery_brigade = {
+		maximum_speed = 1.00
+		toughness  = -0.3
+	}
+
+	sp_rct_artillery_brigade = {
+		maximum_speed = 1.00
+		toughness  = -0.3
+	}
+
+	tank_destroyer_brigade = {
+		maximum_speed = 1.00
+		toughness  = -0.3
+	}
+
+	allow = {
+		tank_brigade = 1
+	}
+	
+	research_bonus_from = {
+		automotive_theory = 0.3
+		armour_practical = 0.6
+		mechanicalengineering_theory = 0.1
+	}
+
+	on_completion = automotive_theory
+
+	difficulty = 2
+	
+	#common for all techs.
+	start_year = 1936
+	first_offset = 1938	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+                max_level = 12
+	folder = armour_folder
+}
+
+tank_armour = {
+	armor_brigade = {
+		maximum_speed = -0.25
+		defensiveness  = 1
+		toughness = 0.5
+	}
+
+	sp_artillery_brigade = {
+		maximum_speed = -0.50
+		defensiveness  = 0.6
+		toughness = 0.2
+	}
+
+	sp_rct_artillery_brigade = {
+		maximum_speed = -0.50
+		defensiveness  = 0.6
+		toughness = 0.2
+	}
+
+	tank_destroyer_brigade = {
+		maximum_speed = -0.50
+		defensiveness  = 0.6
+		toughness = 0.2
+	}
+
+	allow = {
+		tank_brigade = 1
+	}
+	
+	research_bonus_from = {
+		automotive_theory = 0.3
+		armour_practical = 0.6
+		spearhead_theory = 0.1
+	}
+
+	on_completion = automotive_theory
+	difficulty = 2
+	
+	#common for all techs.
+	start_year = 1936
+	first_offset = 1938	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+                max_level = 12
+	folder = armour_folder
+}
+
+tank_reliability = {
+	armor_brigade = {
+		toughness = 1.5
+	}
+
+	sp_artillery_brigade = {
+		toughness = 0.4
+	}
+
+	sp_rct_artillery_brigade = {
+		toughness = 0.4
+	}
+
+	tank_destroyer_brigade = {
+		toughness = 0.4
+	}
+
+	allow = {
+		tank_brigade = 1
+	}
+	
+	research_bonus_from = {
+		automotive_theory = 0.3
+		armour_practical = 0.6
+		spearhead_theory= 0.1
+	}
+
+	on_completion = automotive_theory
+
+	difficulty = 2
+	
+	#common for all techs.
+	start_year = 1936
+	first_offset = 1938	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+                max_level = 12
+	folder = armour_folder
+}
+
+heavy_tank_brigade = {
+
+	activate_unit = heavy_armor_brigade
+
+	allow = {
+		tank_gun = 2
+		tank_engine = 2
+		tank_armour = 2
+		tank_reliability = 2
+	}
+	
+	research_bonus_from = {
+		automotive_theory = 0.3
+		armour_practical = 0.7
+	}
+	
+	on_completion = automotive_theory
+	
+	difficulty = 3
+	
+	#common for all techs.
+	start_year = 1938
+	folder = armour_folder
+}	
+
+heavy_tank_gun = {
+	heavy_armor_brigade = {
+		soft_attack = 1
+		hard_attack = 1.25
+		toughness  = -0.3
+		maximum_speed = -0.25
+	}
+
+	allow = {
+		heavy_tank_brigade = 1
+	}
+	
+	research_bonus_from = {
+		automotive_theory = 0.3
+		artillery_practical = 0.6
+		grand_battleplan_theory = 0.1
+	}
+
+	on_completion = automotive_theory
+
+	difficulty = 3
+	
+	#common for all techs.
+	start_year = 1938
+	first_offset = 1939	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+                max_level = 12
+	folder = armour_folder
+}
+
+heavy_tank_engine = {
+	heavy_armor_brigade = {
+		maximum_speed = 0.7
+		toughness  = -0.3
+	}
+
+
+	allow = {
+		heavy_tank_brigade = 1
+	}
+	
+	research_bonus_from = {
+		automotive_theory = 0.3
+		armour_practical = 0.6
+		mechanicalengineering_theory = 0.1
+	}
+
+	on_completion = automotive_theory
+
+	difficulty = 3
+	
+	#common for all techs.
+	start_year = 1938
+	first_offset = 1939	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+                max_level = 12
+	folder = armour_folder
+}
+
+heavy_tank_armour = {
+	heavy_armor_brigade = {
+		maximum_speed = -0.25
+		defensiveness  = 1.5
+		toughness = 0.3
+	}
+
+	tank_destroyer_brigade = {
+		maximum_speed = -0.25
+		softness = -0.01
+		defensiveness  = 0.3
+	}
+
+
+	allow = {
+		heavy_tank_brigade = 1
+	}
+	
+	research_bonus_from = {
+		automotive_theory = 0.3
+		armour_practical = 0.6
+		grand_battleplan_theory = 0.1
+	}
+
+	on_completion = automotive_theory
+
+	difficulty = 3
+	
+	#common for all techs.
+	start_year = 1938
+	first_offset = 1939	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+                max_level = 12
+	folder = armour_folder
+}
+
+heavy_tank_reliability = {
+	heavy_armor_brigade = {
+		toughness = 0.9
+	}
+
+	allow = {
+		heavy_tank_brigade = 1
+	}
+	
+	research_bonus_from = {
+		automotive_theory = 0.3
+		armour_practical = 0.6
+		human_wave_theory = 0.1
+	}
+
+	on_completion = automotive_theory
+
+	difficulty = 3
+	
+	#common for all techs.
+	start_year = 1938
+	first_offset = 1939	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+                max_level = 12
+	folder = armour_folder
+}
+
+armored_car_armour = {
+
+	armored_car_brigade = {
+            softness  = -0.01
+            maximum_speed = -0.1
+            defensiveness  = 0.8
+            toughness = 0.4
+	}
+
+	allow = {
+		lighttank_brigade = 1
+	}
+	
+	research_bonus_from = {
+		automotive_theory = 0.3
+		mobile_practical = 0.6
+		spearhead_theory = 0.1
+	}
+
+	on_completion = automotive_theory
+
+	difficulty = 1
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1938	#2nd model is from 1936
+	additional_offset = 3	#one new every 2 years
+                max_level = 12
+	folder = armour_folder
+}
+
+armored_car_gun = {
+
+	armored_car_brigade = {
+		soft_attack = 0.8
+	}
+
+	allow = {
+		lighttank_brigade = 1
+	}
+	
+	research_bonus_from = {
+		automotive_theory = 0.3
+		mobile_practical = 0.6
+		spearhead_theory = 0.1 
+	}
+
+	on_completion = automotive_theory
+	difficulty = 1
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1938	#2nd model is from 1936
+	additional_offset = 3	#one new every 2 years
+                max_level = 12
+	folder = armour_folder
+}
+
+SP_brigade = {
+
+
+	activate_unit = sp_artillery_brigade
+	activate_unit = glider_anti_tank_brigade 
+
+	
+	
+	
+	allow = {
+		lighttank_gun = 3
+		lighttank_engine = 3
+		lighttank_armour = 3
+		lighttank_reliability = 3
+	}
+	
+	research_bonus_from = {
+		automotive_theory = 0.3
+		armour_practical = 0.6
+		superior_firepower_theory = 0.1
+	}
+	
+	on_completion = automotive_theory
+	
+	difficulty = 1
+	
+	#common for all techs.
+	start_year = 1938
+	folder = armour_folder
+}	
+
+mechanised_infantry = {
+
+	activate_unit = mechanized_brigade 
+
+	allow = {
+		mortorised_infantry = 1
+		tank_brigade = 1
+		smallarms_technology = 3
+		infantry_support = 3
+		infantry_guns = 3
+		infantry_at = 3
+		
+	}
+
+	research_bonus_from = {
+		mobile_theory = 0.3
+		mobile_practical = 0.6
+		superior_firepower_theory = 0.1
+	}
+
+	
+	on_completion = mobile_theory
+	
+	difficulty = 3
+	start_year = 1941
+	folder = infantry_folder
+}
+
+super_heavy_tank_brigade = {
+
+	activate_unit = super_heavy_armor_brigade
+
+	allow = {
+		heavy_tank_gun = 2
+		heavy_tank_engine = 2
+		heavy_tank_armour = 2
+		heavy_tank_reliability = 2
+	}
+	
+	research_bonus_from = {
+		automotive_theory = 0.3
+		armour_practical = 0.7
+	}
+	
+	on_completion = automotive_theory
+	
+	difficulty = 5
+	
+	#common for all techs.
+	start_year = 1943
+	folder = armour_folder
+}
+
+super_heavy_tank_gun = {
+	super_heavy_armor_brigade = {
+		soft_attack = 1
+		hard_attack = 1.25
+		toughness  = -0.25
+		maximum_speed = -0.25
+	}
+
+	allow = {
+		super_heavy_tank_brigade = 1
+	}
+	
+	research_bonus_from = {
+		automotive_theory = 0.3
+		artillery_practical = 0.6
+		spearhead_theory = 0.1
+	}
+
+	on_completion = automotive_theory
+
+	difficulty = 5
+	
+	#common for all techs.
+	start_year = 1943
+	first_offset = 1944	#2nd model is from 1944
+	additional_offset = 3	#one new every 2 years
+                max_level = 12
+	folder = armour_folder
+}
+
+super_heavy_tank_engine = {
+	super_heavy_armor_brigade = {
+		maximum_speed = 0.7
+		toughness  = -0.25
+	}
+
+	allow = {
+		super_heavy_tank_brigade = 1
+	}
+	
+	research_bonus_from = {
+		automotive_theory = 0.3
+		armour_practical = 0.6
+		mechanicalengineering_theory = 0.1
+	}
+
+	on_completion = automotive_theory
+
+	difficulty = 5
+	
+	#common for all techs.
+	start_year = 1943
+	first_offset = 1944	#2nd model is from 1944
+	additional_offset = 3	#one new every 2 years
+                max_level = 12
+	folder = armour_folder
+}
+
+super_heavy_tank_armour = {
+	super_heavy_armor_brigade = {
+		maximum_speed = -0.25
+		defensiveness  = 1.5
+		toughness = 0.25
+	}
+
+	allow = {
+		super_heavy_tank_brigade = 1
+	}
+	
+	research_bonus_from = {
+		automotive_theory = 0.3
+		armour_practical = 0.6
+		spearhead_theory = 0.1
+	}
+
+	on_completion = automotive_theory
+
+	difficulty = 5
+	
+	#common for all techs.
+	start_year = 1943
+	first_offset = 1944	#2nd model is from 1944
+	additional_offset = 3	#one new every 2 years
+                max_level = 12
+	folder = armour_folder
+}
+
+super_heavy_tank_reliability = {
+	super_heavy_armor_brigade = {
+		toughness = 0.75
+	}
+
+	allow = {
+		super_heavy_tank_brigade = 1
+	}
+	
+	research_bonus_from = {
+		automotive_theory = 0.3
+		armour_practical = 0.6
+		spearhead_theory = 0.1
+	}
+
+	on_completion = automotive_theory
+
+	difficulty = 5
+	
+	#common for all techs.
+	start_year = 1943
+	first_offset = 1944	#2nd model is from 1944
+	additional_offset = 3	#one new every 2 years
+                max_level = 12
+	folder = armour_folder
+}

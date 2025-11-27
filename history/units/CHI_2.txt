@@ -1,0 +1,114 @@
+army = {
+	name = "中国远征军第一路军"
+	location = 9602
+	expeditionary_owner = CHI
+	regiment = { type = hq_brigade name = "远征军司令部" historical_model = 3 }
+	corps = {
+		name = "第5军"
+		location = 9602
+	expeditionary_owner = CHI
+		regiment = { type = hq_brigade name = "远征军第5军司令部" historical_model = 3 }
+		division= {
+			name = "第200师"
+			location = 9602
+	expeditionary_owner = CHI
+			regiment = { type = mechanized_brigade experience = 25 historical_model = 3 }
+			regiment = { type = motorized_brigade experience = 25 historical_model = 3 }
+			regiment = { type = armored_car_brigade experience = 25 historical_model = 3 }
+			regiment = { type = armored_car_brigade experience = 25 historical_model = 3 }
+		}
+		division= {
+			name = "新编第22师"
+			location = 9602
+	expeditionary_owner = CHI
+			regiment = { type = infantry_brigade experience = 25 historical_model = 3 }
+			regiment = { type = infantry_brigade experience = 25 historical_model = 3 }
+			regiment = { type = artillery_brigade experience = 25 historical_model = 3 }
+			regiment = { type = anti_tank_brigade experience = 25 historical_model = 3 }
+		}
+		division= {
+			name = "新编第96师"
+			location = 9602
+	expeditionary_owner = CHI
+			regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+			regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+			regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+			regiment = { type = artillery_brigade experience = 10 historical_model = 3 }
+		}
+	}
+	corps = {
+		name = "第6军"
+		location = 9602
+	expeditionary_owner = CHI
+		regiment = { type = hq_brigade name = "远征军第6军司令部" historical_model = 3 }
+		division= {
+			name = "第49师"
+			location = 9602
+	expeditionary_owner = CHI
+			regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+			regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+			regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+			regiment = { type = artillery_brigade experience = 10 historical_model = 3 }
+		}
+		division= {
+			name = "第93师"
+			location = 9602
+	expeditionary_owner = CHI
+			regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+			regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+			regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+			regiment = { type = artillery_brigade experience = 10 historical_model = 3 }
+		}
+		division= {
+			name = "暂编第55师"
+			location = 9602
+	expeditionary_owner = CHI
+			regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+			regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+			regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+			regiment = { type = artillery_brigade experience = 10 historical_model = 3 }
+		}
+	}
+	corps = {
+		name = "第66军"
+		location = 9602
+	expeditionary_owner = CHI
+		regiment = { type = hq_brigade name = "远征军第66军司令部" historical_model = 3 }
+		division= {
+			name = "新编第38师"
+			location = 9602
+	expeditionary_owner = CHI
+			regiment = { type = infantry_brigade experience = 25 historical_model = 3 }
+			regiment = { type = infantry_brigade experience = 25 historical_model = 3 }
+			regiment = { type = artillery_brigade experience = 25 historical_model = 3 }
+			regiment = { type = anti_tank_brigade experience = 25 historical_model = 3 }
+		}
+		division= {
+			name = "新编第28师"
+			location = 9602
+	expeditionary_owner = CHI
+			regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+			regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+			regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+			regiment = { type = artillery_brigade experience = 10 historical_model = 3 }
+		}
+		division= {
+			name = "新编第29师"
+			location = 9602
+	expeditionary_owner = CHI
+			regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+			regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+			regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+			regiment = { type = artillery_brigade experience = 10 historical_model = 3 }
+		}
+	}
+	division= {
+		name = "第36师"
+		location = 9602
+	expeditionary_owner = CHI
+		regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+		regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+		regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+		regiment = { type = artillery_brigade experience = 10 historical_model = 3 }
+	}
+}

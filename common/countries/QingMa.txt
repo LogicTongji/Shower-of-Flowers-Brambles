@@ -1,0 +1,72 @@
+color = { 117  107  100 }
+graphical_culture = Japanese
+
+default_templates = {
+	binary_infantry = {
+		infantry_brigade
+		infantry_brigade
+	}
+	binary_milita = {
+		militia_brigade
+		militia_brigade
+	}
+	binary_armoured = {
+		armor_brigade
+		motorized_brigade
+	}
+	binary_cavalry = {
+		cavalry_brigade
+		cavalry_brigade
+	}
+}
+
+unit_names = {
+	infantry_brigade = {
+		"第100师"
+	}
+	cavalry_brigade = {
+		"骑兵第5师" "青海南部警备司令部"
+	}
+}
+
+
+Ministers = {
+	504009 = {
+		name = "马步芳"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M504009
+		head_of_state = ruthless_powermonger
+		minister_of_security = prince_of_terror
+		minister_of_intelligence = dismal_enigma
+		foreign_minister = the_cloak_n_dagger_schemer
+		start_date = 1936.1.1
+	}
+	504007 = {
+		name = "马步青"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M504007
+		chief_of_staff = the_cloak_n_dagger_schemer
+		armament_minister = guns_and_butter_doctrine
+		start_date = 1936.1.1
+	}
+	3000054 = {
+		name = "马继援"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M3000054
+		head_of_government = military_entrepreneur
+		chief_of_staff = school_of_psychology
+		start_date = 1936.1.1
+	}
+	3000055 = {
+		name = "马步銮"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = L4000181
+		minister_of_security = silent_lawyer
+		chief_of_army = infantry_proponent
+		start_date = 1936.1.1
+	}
+}

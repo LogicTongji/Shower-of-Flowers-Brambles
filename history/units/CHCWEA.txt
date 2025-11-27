@@ -1,0 +1,40 @@
+corps = {
+	name = "抗日救国军第一军"
+	location = 7417
+	regiment = { type = hq_brigade name = "抗日救国军司令部"  experience = 75 historical_model = 1 }
+	division = {
+		name = "抗日救国军第1纵队"
+		location = 7417
+		regiment = { type = infantry_brigade  experience = 75 historical_model = 1  }
+		regiment = { type = infantry_brigade  experience = 75 historical_model = 1  }
+		regiment = { type = infantry_brigade  experience = 75 historical_model = 1  }
+	}
+	division = {
+		name = "抗日救国军第2纵队"
+		location = 7417
+		regiment = { type = infantry_brigade  experience = 75 historical_model = 1  }
+		regiment = { type = infantry_brigade  experience = 75 historical_model = 1  }
+		regiment = { type = infantry_brigade  experience = 75 historical_model = 1  }
+	}
+	division = {
+		name = "抗日救国军第3纵队"
+		location = 7417
+		regiment = { type = infantry_brigade  experience = 75 historical_model = 1  }
+		regiment = { type = infantry_brigade  experience = 75 historical_model = 1  }
+		regiment = { type = infantry_brigade  experience = 75 historical_model = 1  }
+	}
+	division = {
+		name = "抗日救国军第4纵队"
+		location = 7417
+		regiment = { type = infantry_brigade  experience = 75 historical_model = 1  }
+		regiment = { type = infantry_brigade  experience = 75 historical_model = 1  }
+		regiment = { type = infantry_brigade  experience = 75 historical_model = 1  }
+	}
+	division = {
+		name = "抗日救国军第5纵队"
+		location = 7417
+		regiment = { type = infantry_brigade  experience = 75 historical_model = 1  }
+		regiment = { type = infantry_brigade  experience = 75 historical_model = 1  }
+		regiment = { type = infantry_brigade  experience = 75 historical_model = 1  }
+	}
+}

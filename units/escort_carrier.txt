@@ -1,0 +1,52 @@
+escort_carrier = {
+	type = naval
+	sprite = Carrier
+	capital = yes
+	active = no
+	
+	hull = 0.8
+	
+	#Size Definitions
+	max_strength = 100
+	default_organisation = 30
+	default_morale = 0.30
+	officers = 0
+
+	carrier_size = 2
+
+	#Building Costs
+	build_cost_ic = 4.50
+	build_cost_manpower = 2.00
+	build_time = 350
+	repair_cost_multiplier = 0.05
+
+	#Misc Abilities
+	maximum_speed = 18.00
+	transport_capability = 0.00
+	supply_consumption = 1.00
+	fuel_consumption = 0.92
+	range = 2000.00
+	distance = 1.00
+	radio_strength = 1.1
+
+	#Detection Abilities
+	surface_detection = 1.00
+	air_detection = 2.00
+	sub_detection = 1.00
+	visibility = 80.00
+
+	#Defensive Abilities
+	sea_defence = 5.00
+	air_defence = 1.50
+
+	#Offensive Abilities
+	convoy_attack = 0.00
+	sea_attack = 0.00
+	sub_attack = 0.00
+	air_attack = 1.00
+	shore_bombardment = 0.00
+
+	completion_size = 1.6
+	on_completion = carrier_practical
+	priority = 7
+}

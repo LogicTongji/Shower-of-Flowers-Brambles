@@ -1,0 +1,734 @@
+interceptor.0 = {
+	basic_aeroengine = 0 
+	basic_small_fueltank = 0 
+	basic_single_engine_airframe = 0 
+	basic_aircraft_machinegun = 0 
+	aeroengine = 0
+	small_fueltank = 0 
+	single_engine_airframe = 0
+	single_engine_aircraft_armament = 0 
+	small_bomb = 0 
+	small_airsearch_radar = 0 
+	small_navagation_radar = 0 
+	drop_tanks = 0 
+	jet_engine = 0 
+	fighter_pilot_training = 0 
+	fighter_groundcrew_training = 0 
+	pilot_rescue = 0 
+	aam = 0 
+}
+
+interceptor.1 = {
+	basic_aeroengine = 1 
+	basic_small_fueltank = 1 
+	basic_single_engine_airframe = 1 
+	basic_aircraft_machinegun = 1
+	aeroengine = 0
+	small_fueltank = 0
+	single_engine_airframe = 0
+	single_engine_aircraft_armament = 0
+	small_bomb = 0
+	small_airsearch_radar = 0 
+	small_navagation_radar = 0 
+	drop_tanks = 0 
+	jet_engine = 0 
+	fighter_pilot_training = 0 
+	fighter_groundcrew_training = 0 
+	pilot_rescue = 0 
+	aam = 0 
+}
+
+interceptor.2 = {
+	basic_aeroengine = 1 
+	basic_small_fueltank = 1
+	basic_single_engine_airframe = 1 
+	basic_aircraft_machinegun = 1
+	aeroengine = 1
+	small_fueltank = 2
+	single_engine_airframe = 2
+	single_engine_aircraft_armament = 1
+	small_bomb = 0
+	small_airsearch_radar = 0 
+	small_navagation_radar = 0 
+	drop_tanks = 0 
+	jet_engine = 0 
+	fighter_pilot_training = 0 
+	fighter_groundcrew_training = 0 
+	pilot_rescue = 0 
+	aam = 0 
+}
+
+interceptor.3 = {
+	basic_aeroengine = 1 
+	basic_small_fueltank = 1 
+	basic_single_engine_airframe = 1 
+	basic_aircraft_machinegun = 1
+	aeroengine = 3
+	small_fueltank = 2
+	single_engine_airframe = 3
+	single_engine_aircraft_armament = 3
+	small_bomb = 1
+	small_airsearch_radar = 0 
+	small_navagation_radar = 0 
+	drop_tanks = 1 
+	jet_engine = 0 
+	fighter_pilot_training = 0 
+	fighter_groundcrew_training = 0 
+	pilot_rescue = 0 
+	aam = 0 
+}
+
+interceptor.4 = {
+	basic_aeroengine = 1 
+	basic_small_fueltank = 1 
+	basic_single_engine_airframe = 1 
+	basic_aircraft_machinegun = 1
+	aeroengine = 4
+	small_fueltank = 4
+	single_engine_airframe = 4
+	single_engine_aircraft_armament = 3 
+	small_bomb = 2
+	small_airsearch_radar = 1 
+	small_navagation_radar = 0 
+	drop_tanks = 1 
+	jet_engine = 0 
+	fighter_pilot_training = 0 
+	fighter_groundcrew_training = 0 
+	pilot_rescue = 0 
+	aam = 0 
+}
+
+interceptor.5 = {
+	basic_aeroengine = 1 
+	basic_small_fueltank = 1 
+	basic_single_engine_airframe = 1 
+	basic_aircraft_machinegun = 1
+	aeroengine = 4
+	small_fueltank = 4
+	single_engine_airframe = 4
+	single_engine_aircraft_armament = 4 
+	small_bomb = 2
+	small_airsearch_radar = 1 
+	small_navagation_radar = 0 
+	drop_tanks = 1 
+	jet_engine = 1 
+	fighter_pilot_training = 0 
+	fighter_groundcrew_training = 0 
+	pilot_rescue = 0 
+	aam = 0 
+}
+
+
+
+multi_role.0 = {
+	aeroengine = 0
+	small_fueltank = 0
+	single_engine_airframe = 0
+	single_engine_aircraft_armament = 0
+	small_bomb = 0
+	small_airsearch_radar = 0 
+	small_navagation_radar = 0 
+	drop_tanks = 0
+	jet_engine = 0 
+	fighter_pilot_training = 0 
+	fighter_groundcrew_training = 0 
+	pilot_rescue = 0 
+	aam = 0 
+}
+
+multi_role.1 = {
+	aeroengine = 1
+	small_fueltank = 1
+	single_engine_airframe = 0
+	single_engine_aircraft_armament = 1
+	small_bomb = 0
+	small_airsearch_radar = 0 
+	small_navagation_radar = 0 
+	drop_tanks = 0
+	jet_engine = 0 
+	fighter_pilot_training = 0 
+	fighter_groundcrew_training = 0 
+	pilot_rescue = 0 
+	aam = 0 
+}
+
+multi_role.2 = {
+	aeroengine = 2
+	small_fueltank = 2
+	single_engine_airframe = 2
+	single_engine_aircraft_armament = 2
+	small_bomb = 1
+	small_airsearch_radar = 0 
+	small_navagation_radar = 0 
+	drop_tanks = 1
+	jet_engine = 0 
+	fighter_pilot_training = 0 
+	fighter_groundcrew_training = 0 
+	pilot_rescue = 0 
+	aam = 0 
+}
+
+multi_role.3 = {
+	aeroengine = 3
+	small_fueltank = 3
+	single_engine_airframe = 3
+	single_engine_aircraft_armament = 3
+	small_bomb = 0
+	small_airsearch_radar = 0 
+	small_navagation_radar = 0 
+	drop_tanks = 1
+	jet_engine = 1
+	fighter_pilot_training = 0 
+	fighter_groundcrew_training = 0 
+	pilot_rescue = 0 
+	aam = 0 
+}
+
+cas.0 = {
+	aeroengine = 0
+	small_fueltank = 0
+	single_engine_airframe = 0
+	single_engine_aircraft_armament = 0
+	small_bomb = 0
+	small_airsearch_radar = 0 
+	small_navagation_radar = 0 
+	drop_tanks = 0
+	jet_engine = 0
+	cas_pilot_training = 0 
+	cas_groundcrew_training = 0
+	radar_guided_missile = 0 
+}
+
+cas.1 = {
+	aeroengine = 0
+	small_fueltank = 0
+	single_engine_airframe = 0
+	single_engine_aircraft_armament = 1
+	small_bomb = 1
+	small_airsearch_radar = 0 
+	small_navagation_radar = 0 
+	drop_tanks = 0
+	jet_engine = 0
+	cas_pilot_training = 0 
+	cas_groundcrew_training = 0
+	radar_guided_missile = 0 
+}
+
+cas.2 = {
+	aeroengine = 1
+	small_fueltank = 2
+	single_engine_airframe = 2
+	single_engine_aircraft_armament = 2
+	small_bomb = 2
+	small_airsearch_radar = 0 
+	small_navagation_radar = 0 
+	drop_tanks = 0
+	jet_engine = 0
+	cas_pilot_training = 0 
+	cas_groundcrew_training = 0
+	radar_guided_missile = 0 
+}
+
+cas.3 = {
+	aeroengine = 3
+	small_fueltank = 3
+	single_engine_airframe = 3
+	single_engine_aircraft_armament = 3
+	small_bomb = 3
+	small_airsearch_radar = 1
+	small_navagation_radar = 0 
+	drop_tanks = 1
+	jet_engine = 0
+	cas_pilot_training = 0 
+	cas_groundcrew_training = 0
+	radar_guided_missile = 0 
+}
+
+tactical_bomber.0 = {
+	basic_aeroengine = 0 
+	basic_medium_fueltank = 0 
+	basic_twin_engine_airframe = 0 
+	basic_aircraft_machinegun = 0
+	basic_bomb = 0  
+	aeroengine = 0
+	medium_fueltank = 0 
+	twin_engine_airframe = 0 
+	twin_engine_aircraft_armament = 0 
+	medium_bomb = 0 
+	medium_airsearch_radar = 0 
+	medium_navagation_radar = 0 
+	jet_engine = 0
+	tac_pilot_training = 0 
+	tac_groundcrew_training = 0 
+	radar_guided_missile = 0 
+	radar_guided_bomb = 0
+}
+
+tactical_bomber.1 = {
+	basic_aeroengine = 0 
+	basic_medium_fueltank = 0 
+	basic_twin_engine_airframe = 1 
+	basic_aircraft_machinegun = 1
+	basic_bomb = 0  
+	aeroengine = 0
+	medium_fueltank = 0 
+	twin_engine_airframe = 0 
+	twin_engine_aircraft_armament = 0 
+	medium_bomb = 0 
+	medium_airsearch_radar = 0 
+	medium_navagation_radar = 0 
+	jet_engine = 0
+	tac_pilot_training = 0 
+	tac_groundcrew_training = 0 
+	radar_guided_missile = 0 
+	radar_guided_bomb = 0
+}
+
+tactical_bomber.2 = {
+	basic_aeroengine = 1 
+	basic_medium_fueltank = 1 
+	basic_twin_engine_airframe = 1 
+	basic_aircraft_machinegun = 1
+	basic_bomb = 1  
+	aeroengine = 0
+	medium_fueltank = 0
+	twin_engine_airframe = 1
+	twin_engine_aircraft_armament = 1
+	medium_bomb = 1 
+	medium_airsearch_radar = 0 
+	medium_navagation_radar = 0 
+	jet_engine = 0
+	tac_pilot_training = 0 
+	tac_groundcrew_training = 0 
+	radar_guided_missile = 0 
+	radar_guided_bomb = 0
+}
+
+tactical_bomber.3 = {
+	basic_aeroengine = 1 
+	basic_medium_fueltank = 1 
+	basic_twin_engine_airframe = 1 
+	basic_aircraft_machinegun = 1
+	basic_bomb = 1  
+	aeroengine = 2
+	medium_fueltank = 1
+	twin_engine_airframe = 2
+	twin_engine_aircraft_armament = 1
+	medium_bomb = 2 
+	medium_airsearch_radar = 1 
+	medium_navagation_radar = 0 
+	jet_engine = 0
+	tac_pilot_training = 0 
+	tac_groundcrew_training = 0 
+	radar_guided_missile = 0 
+	radar_guided_bomb = 0
+}
+
+tactical_bomber.4 = {
+	basic_aeroengine = 1 
+	basic_medium_fueltank = 1 
+	basic_twin_engine_airframe = 1 
+	basic_aircraft_machinegun = 1
+	basic_bomb = 1  
+	aeroengine = 2
+	medium_fueltank = 2
+	twin_engine_airframe = 3
+	twin_engine_aircraft_armament = 2
+	medium_bomb = 2 
+	medium_airsearch_radar = 1 
+	medium_navagation_radar = 1 
+	jet_engine = 0
+	tac_pilot_training = 0 
+	tac_groundcrew_training = 0 
+	radar_guided_missile = 0 
+	radar_guided_bomb = 0
+}
+
+tactical_bomber.5 = {
+	basic_aeroengine = 1 
+	basic_medium_fueltank = 1 
+	basic_twin_engine_airframe = 1 
+	basic_aircraft_machinegun = 1
+	basic_bomb = 1  
+	aeroengine = 3
+	medium_fueltank = 3
+	twin_engine_airframe = 2
+	twin_engine_aircraft_armament = 2
+	medium_bomb = 3
+	medium_airsearch_radar = 1 
+	medium_navagation_radar = 1 
+	jet_engine = 1
+	tac_pilot_training = 0 
+	tac_groundcrew_training = 0 
+	radar_guided_missile = 0 
+	radar_guided_bomb = 0
+}
+
+naval_bomber.0 = {
+	aeroengine = 0
+	medium_fueltank = 0
+	twin_engine_airframe = 0
+	twin_engine_aircraft_armament = 0
+	air_launched_torpedo = 0 
+	medium_bomb = 0 
+	medium_airsearch_radar = 0 
+	medium_navagation_radar = 0 
+	jet_engine = 0
+	nav_pilot_training = 0 
+	nav_groundcrew_training = 0
+	radar_guided_bomb = 0 
+}
+
+naval_bomber.1 = {
+	aeroengine = 1
+	medium_fueltank = 1
+	twin_engine_airframe = 1
+	twin_engine_aircraft_armament = 1
+	air_launched_torpedo = 1 
+	medium_bomb = 0 
+	medium_airsearch_radar = 0 
+	medium_navagation_radar = 0 
+	jet_engine = 0
+	nav_pilot_training = 0 
+	nav_groundcrew_training = 0
+	radar_guided_bomb = 0 
+}
+
+naval_bomber.2 = {
+	aeroengine = 2
+	medium_fueltank = 2
+	twin_engine_airframe = 2
+	twin_engine_aircraft_armament = 2
+	air_launched_torpedo = 1
+	medium_bomb = 2
+	medium_airsearch_radar = 1 
+	medium_navagation_radar = 1 
+	jet_engine = 0
+	nav_pilot_training = 0 
+	nav_groundcrew_training = 0
+	radar_guided_bomb = 0 
+}
+
+naval_bomber.3 = {
+	aeroengine = 2
+	medium_fueltank = 3
+	twin_engine_airframe = 3
+	twin_engine_aircraft_armament = 3
+	air_launched_torpedo = 1
+	medium_bomb = 2
+	medium_airsearch_radar = 1 
+	medium_navagation_radar = 1 
+	jet_engine = 1
+	nav_pilot_training = 0 
+	nav_groundcrew_training = 0
+	radar_guided_bomb = 0 
+}
+
+strategic_bomber.0 = {
+	aeroengine = 0
+	large_fueltank = 0 
+	four_engine_airframe = 0 
+	strategic_bomber_armament = 0 
+	large_bomb = 0 
+	large_airsearch_radar = 0 
+	large_navagation_radar = 0 
+	jet_engine = 0 
+	heavy_bomber_pilot_training = 0
+	heavy_bomber_groundcrew_training = 0 
+}
+
+strategic_bomber.1 = {
+	aeroengine = 1 
+	large_fueltank = 1
+	four_engine_airframe = 1
+	strategic_bomber_armament = 1 
+	large_bomb = 0
+	large_airsearch_radar = 0 
+	large_navagation_radar = 1
+	jet_engine = 0 
+	heavy_bomber_pilot_training = 0
+	heavy_bomber_groundcrew_training = 0 
+}
+
+strategic_bomber.2 = {
+	aeroengine = 3 
+	large_fueltank = 3
+	four_engine_airframe = 3
+	strategic_bomber_armament = 3
+	large_bomb = 1
+	large_airsearch_radar = 1 
+	large_navagation_radar = 2
+	jet_engine = 0 
+	heavy_bomber_pilot_training = 0
+	heavy_bomber_groundcrew_training = 0 
+}
+
+strategic_bomber.3 = {
+	aeroengine = 3 
+	large_fueltank = 3
+	four_engine_airframe = 3
+	strategic_bomber_armament = 3
+	large_bomb = 2
+	large_airsearch_radar = 1 
+	large_navagation_radar = 2
+	jet_engine = 1 
+	heavy_bomber_pilot_training = 0
+	heavy_bomber_groundcrew_training = 0 
+}
+
+transport_plane.0 = {
+	large_fueltank = 0
+	four_engine_airframe = 0
+	cargo_hold = 0
+	large_airsearch_radar = 0
+	heavy_bomber_pilot_training = 0
+	heavy_bomber_groundcrew_training = 0 
+}
+
+transport_plane.1 = {
+	large_fueltank = 1
+	four_engine_airframe = 1
+	cargo_hold = 1
+	large_airsearch_radar = 0
+	heavy_bomber_pilot_training = 0
+	heavy_bomber_groundcrew_training = 0 
+}
+
+transport_plane.2 = {
+	large_fueltank = 2
+	four_engine_airframe = 2
+	cargo_hold = 2
+	large_airsearch_radar = 0
+	heavy_bomber_pilot_training = 0
+	heavy_bomber_groundcrew_training = 0 
+}
+
+cag.0 = {
+	aeroengine = 0
+	small_fueltank = 0
+	single_engine_airframe = 0
+	single_engine_aircraft_armament = 0
+	air_launched_torpedo = 0
+	small_bomb = 0
+	small_airsearch_radar = 0
+	small_navagation_radar = 0
+	drop_tanks = 0 
+	jet_engine = 0
+	fleet_auxiliary_carrier_doctrine = 0	
+	fighter_pilot_training = 0 
+	fighter_groundcrew_training = 0 
+	cas_pilot_training = 0
+	cas_groundcrew_training = 0
+	nav_pilot_training = 0
+	nav_groundcrew_training = 0
+}
+cag.1 = {
+	aeroengine = 1
+	small_fueltank = 1
+	single_engine_airframe = 1
+	single_engine_aircraft_armament = 1
+	air_launched_torpedo = 1
+	small_bomb = 0
+	small_airsearch_radar = 0
+	small_navagation_radar = 0
+	drop_tanks = 0
+	jet_engine = 0
+	fleet_auxiliary_carrier_doctrine = 0
+	fighter_pilot_training = 0 
+	fighter_groundcrew_training = 0 
+	cas_pilot_training = 0
+	cas_groundcrew_training = 0
+	nav_pilot_training = 0
+	nav_groundcrew_training = 0
+}
+cag.2 = {
+	aeroengine = 1
+	small_fueltank = 1
+	single_engine_airframe = 1
+	single_engine_aircraft_armament = 1
+	air_launched_torpedo = 1
+	small_bomb = 1
+	small_airsearch_radar = 0
+	small_navagation_radar = 0
+	drop_tanks = 0
+	jet_engine = 0
+	fleet_auxiliary_carrier_doctrine = 1
+	fighter_pilot_training = 0 
+	fighter_groundcrew_training = 0 
+	cas_pilot_training = 0
+	cas_groundcrew_training = 0
+	nav_pilot_training = 0
+	nav_groundcrew_training = 0
+}
+cag.3 = {
+	aeroengine = 2
+	small_fueltank = 2
+	single_engine_airframe = 2
+	single_engine_aircraft_armament = 2
+	air_launched_torpedo = 1
+	small_bomb = 1
+	small_airsearch_radar = 0
+	small_navagation_radar = 0
+	drop_tanks = 1
+	jet_engine = 0
+	fleet_auxiliary_carrier_doctrine = 1
+	fighter_pilot_training = 0 
+	fighter_groundcrew_training = 0 
+	cas_pilot_training = 0
+	cas_groundcrew_training = 0
+	nav_pilot_training = 0
+	nav_groundcrew_training = 0
+}
+cag.4 = {
+	aeroengine = 2
+	small_fueltank = 2
+	single_engine_airframe = 3
+	single_engine_aircraft_armament = 2
+	air_launched_torpedo = 2
+	small_bomb = 2
+	small_airsearch_radar = 0
+	small_navagation_radar = 0
+	drop_tanks = 1
+	jet_engine = 0
+	fleet_auxiliary_carrier_doctrine = 1
+	fighter_pilot_training = 0 
+	fighter_groundcrew_training = 0 
+	cas_pilot_training = 0
+	cas_groundcrew_training = 0
+	nav_pilot_training = 0
+	nav_groundcrew_training = 0
+}
+
+shipborne_attack.0 = {
+	aeroengine = 0
+	small_fueltank = 0
+	single_engine_airframe = 0
+	single_engine_aircraft_armament = 0
+	air_launched_torpedo = 0
+	small_bomb = 0
+	small_airsearch_radar = 0
+	small_navagation_radar = 0
+	drop_tanks = 0 
+	jet_engine = 0
+	cag_anti_submarine = 0
+}
+shipborne_attack.1 = {
+	aeroengine = 1
+	small_fueltank = 1
+	single_engine_airframe = 1
+	single_engine_aircraft_armament = 1
+	air_launched_torpedo = 1
+	small_bomb = 0
+	small_airsearch_radar = 0
+	small_navagation_radar = 0
+	drop_tanks = 0
+	jet_engine = 0
+	cag_anti_submarine = 0
+}
+shipborne_attack.2 = {
+	aeroengine = 1
+	small_fueltank = 1
+	single_engine_airframe = 1
+	single_engine_aircraft_armament = 1
+	air_launched_torpedo = 1
+	small_bomb = 1
+	small_airsearch_radar = 0
+	small_navagation_radar = 0
+	drop_tanks = 0
+	jet_engine = 0
+	cag_anti_submarine = 1
+}
+shipborne_attack.3 = {
+	aeroengine = 2
+	small_fueltank = 2
+	single_engine_airframe = 2
+	single_engine_aircraft_armament = 2
+	air_launched_torpedo = 1
+	small_bomb = 1
+	small_airsearch_radar = 0
+	small_navagation_radar = 0
+	drop_tanks = 1
+	jet_engine = 0
+	cag_anti_submarine = 1
+}
+shipborne_attack.4 = {
+	aeroengine = 2
+	small_fueltank = 2
+	single_engine_airframe = 3
+	single_engine_aircraft_armament = 2
+	air_launched_torpedo = 2
+	small_bomb = 2
+	small_airsearch_radar = 0
+	small_navagation_radar = 0
+	drop_tanks = 1
+	jet_engine = 0
+	cag_anti_submarine = 2
+}
+
+shipborne_bomber.0 = {
+	aeroengine = 0
+	small_fueltank = 0
+	single_engine_airframe = 0
+	single_engine_aircraft_armament = 0
+	air_launched_torpedo = 0
+	small_bomb = 0
+	small_airsearch_radar = 0
+	small_navagation_radar = 0
+	drop_tanks = 0 
+	jet_engine = 0
+	fleet_auxiliary_carrier_doctrine = 0	
+	fighter_pilot_training = 0 
+	fighter_groundcrew_training = 0 
+	cas_pilot_training = 0
+	cas_groundcrew_training = 0
+	nav_pilot_training = 0
+	nav_groundcrew_training = 0
+}
+shipborne_bomber.1 = {
+	aeroengine = 1
+	small_fueltank = 1
+	single_engine_airframe = 1
+	single_engine_aircraft_armament = 1
+	air_launched_torpedo = 1
+	small_bomb = 0
+	small_airsearch_radar = 0
+	small_navagation_radar = 0
+	drop_tanks = 0
+	jet_engine = 0
+}
+shipborne_bomber.2 = {
+	aeroengine = 1
+	small_fueltank = 1
+	single_engine_airframe = 1
+	single_engine_aircraft_armament = 1
+	air_launched_torpedo = 1
+	small_bomb = 1
+	small_airsearch_radar = 0
+	small_navagation_radar = 0
+	drop_tanks = 0
+	jet_engine = 0
+}
+shipborne_bomber.3 = {
+	aeroengine = 2
+	small_fueltank = 2
+	single_engine_airframe = 2
+	single_engine_aircraft_armament = 2
+	air_launched_torpedo = 1
+	small_bomb = 1
+	small_airsearch_radar = 0
+	small_navagation_radar = 0
+	drop_tanks = 1
+	jet_engine = 0
+}
+shipborne_bomber.4 = {
+	aeroengine = 2
+	small_fueltank = 2
+	single_engine_airframe = 3
+	single_engine_aircraft_armament = 2
+	air_launched_torpedo = 2
+	small_bomb = 2
+	small_airsearch_radar = 0
+	small_navagation_radar = 0
+	drop_tanks = 1
+	jet_engine = 0
+}

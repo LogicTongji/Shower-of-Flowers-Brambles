@@ -1,0 +1,76 @@
+guiTypes = {
+	windowType = {
+		name = "EventWindow"
+		backGround="Background"
+		position = { x=112 y=84 }	
+		size = { x=820 y=680 }
+		moveable = 1
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		guiButtonType = {
+			name = "Background"	
+			quadTextureSprite ="GFX_bg_event_2"
+			tooltip = ""	
+			tooltipText =""
+			delayedTooltipText = ""
+		}
+		iconType =
+		{
+			name ="event_images"
+			spriteType = "GFX_event_no_image"
+			position = { x= 142 y = 33 }
+			Orientation = "UPPER_LEFT"
+		}	
+		textBoxType = {
+				name = "Title"
+				position = { x = 388 y = 64 }
+				textureFile = ""
+				font = "Arial16_black"
+				borderSize = {x = 0 y = 0}
+				text = "Long text here!"	
+				maxWidth = 310
+				maxHeight = 36
+				format = left
+			}
+			
+		textBoxType = {
+				name = "Subtitle"
+				position = { x = 388 y = 94 }
+				textureFile = ""
+				font = "Arial14_black"
+				borderSize = {x = 0 y = 0}
+				text = ""
+				maxWidth = 310
+				maxHeight = 16
+				format = left
+			}
+		
+		instantTextBoxType = {
+				name = "Description"
+				position = { x = 388 y = 125 }
+				textureFile = ""
+				font = "Arial14_black"
+				borderSize = {x = 0 y = 0}
+				text = "Long text here!"	
+				maxWidth = 310
+				maxHeight = 435
+				format = left
+			}
+	}
+	guiButtonType = {
+		name = "EventOptionButton"
+		position = { x = 406 y = 609 }
+		quadTextureSprite ="GFX_button_standard_511"
+		tooltip = ""
+		tooltipText =""
+		delayedTooltipText = ""
+		buttonText = "I Do."
+		buttonFont = "Arial12_black"
+	}
+	positionType = {
+		name = "event_option_offset"
+		position = { x = 406 y = 30 }
+	}
+}

@@ -1,0 +1,55 @@
+armygroup = {
+		name = "第四战区"
+		location = 5834
+		regiment = { type = hq_brigade name = "第四战区长官部" historical_model = 0 }
+                army = {
+		name = "第12集团军"
+		location = 5834
+		regiment = { type = hq_brigade name = "第12集团军指挥部" historical_model = 1 }	
+		corps = {
+			name = "第31军"
+			location = 5834
+			regiment = { type = hq_brigade name = "第31军指挥部" historical_model = 0 }
+			division= {
+				name = "第135师"
+				location = 5834
+				regiment = { type = infantry_brigade historical_model = 1 }
+				regiment = { type = infantry_brigade historical_model = 1 }
+			}
+			division= {
+				name = "第173师"
+				location = 5834
+				regiment = { type = infantry_brigade historical_model = 1 }
+				regiment = { type = infantry_brigade historical_model = 1 }
+
+			}
+			division= {
+				name = "第174师"
+				location = 5834
+				regiment = { type = infantry_brigade historical_model = 1 }
+				regiment = { type = infantry_brigade historical_model = 1 }	
+		}
+	}
+}
+       army = {
+		name = "第4集团军"
+		location = 5834
+		regiment = { type = hq_brigade name = "第12集团军指挥部" historical_model = 1 }	
+		corps = {
+			name = "第2军"
+			location = 5834
+			regiment = { type = hq_brigade name = "第31军指挥部" historical_model = 0 }
+			division= {
+				name = "第80师"
+				location = 5834
+				regiment = { type = infantry_brigade historical_model = 1 }
+				regiment = { type = infantry_brigade historical_model = 1 }
+			}
+			division= {
+				name = "第3师"
+				location = 5834
+				regiment = { type = infantry_brigade name = "第8旅"  historical_model = 2 }
+				regiment = { type = infantry_brigade  name = "第8旅" historical_model = 2 }
+      }
+   }
+}

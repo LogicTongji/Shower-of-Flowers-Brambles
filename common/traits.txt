@@ -1,0 +1,310 @@
+#######################################
+# Each trait can have ONE effect of the following
+#
+# xp_gain surprise_chance supply_consumption defence_modifier offence_modifier combat_move_speed winter_attrition river_attack
+# fort_attack combined_arms_bonus out_of_supply_modifier submarine_attack disengage_timer spread_out spotting_chance defender_softness
+# strategic_attack naval_attack night_attack  tactical_attack dissent_impact encirclement_bonus envelopment_bonus experience_bonus
+# fort_defence amph_attack digin_bonus  paradrop_mission terrain_speed terrain_attack terrain_defence
+# 
+# Extended modifiers (like terrain_speed or terrain_attack) must have type = xxx value = yyy defined in exact order.
+#######################################
+
+
+##################################
+# Common Traits
+##################################
+old_guard = { 
+	allowed_leader = { land sea air }
+	xp_gain = -0.5
+}
+
+##################################
+# Land traits.
+##################################
+
+trickster = { 
+	allowed_leader = { land }
+	surprise_chance = 0.1
+}
+
+logistics_wizard = { 
+	allowed_leader = { land }
+	supply_consumption = -0.25
+}
+
+defensive_doctrine = { 
+	allowed_leader = { land }
+	defence_modifier = 0.1
+}
+
+offensive_doctrine = { 
+	allowed_leader = { land }
+	offence_modifier = 0.1
+}
+
+winter_specialist = { 
+	allowed_leader = { land }
+	winter_attrition = -0.5
+}
+
+
+engineer = { 
+	allowed_leader = { land }
+	river_attack = 0.1
+}
+
+fortress_buster = { 
+	allowed_leader = { land }
+	fort_attack = 0.1
+}
+
+panzer_leader = {
+	allowed_leader = { land }
+	combined_arms_bonus = 0.1
+}
+
+commando = { 
+	allowed_leader = { land }
+	out_of_supply_modifier = -0.2
+}
+
+desert_fox = { 
+	allowed_leader = { land }
+	terrain_speed = {
+		type = desert
+		value = 0.05
+	}
+	terrain_attack = {
+		type = desert
+		value = 0.1
+	}
+	terrain_defence = {
+		type = desert
+		value = 0.1
+	}
+}
+
+swamp_fox = { 
+	allowed_leader = { land }
+	terrain_speed = {
+		type = marsh
+		value = 0.05
+	}
+	terrain_attack = {
+		type = marsh
+		value = 0.1
+	}
+	terrain_defence = {
+		type = marsh
+		value = 0.1
+	}
+}
+
+mountaineer = { 
+	allowed_leader = { land }
+	terrain_speed = {
+		type = mountain
+		value = 0.05
+	}
+	terrain_attack = {
+		type = mountain
+		value = 0.1
+	}
+	terrain_defence = {
+		type = mountain
+		value = 0.1
+	}
+}
+
+hill_fighter = { 
+	allowed_leader = { land }
+	terrain_speed = {
+		type = hills
+		value = 0.05
+	}
+	terrain_attack = {
+		type = hills
+		value = 0.1
+	}
+	terrain_defence = {
+		type = hills
+		value = 0.1
+	}
+}
+
+jungle_rat = { 
+	allowed_leader = { land }
+	terrain_speed = {
+		type = jungle
+		value = 0.05
+	}
+	terrain_attack = {
+		type = jungle
+		value = 0.1
+	}
+	terrain_defence = {
+		type = jungle
+		value = 0.1
+	}
+}
+
+ranger = { 
+	allowed_leader = { land }
+	terrain_speed = {
+		type = woods
+		value = 0.05
+	}
+	terrain_attack = {
+		type = woods
+		value = 0.1
+	}
+	terrain_defence = {
+		type = woods
+		value = 0.1
+	}
+	terrain_speed = {
+		type = forest
+		value = 0.05
+	}
+	terrain_attack = {
+		type = forest
+		value = 0.1
+	}
+	terrain_defence = {
+		type = forest
+		value = 0.1
+	}
+}
+
+urban_assault_specialist = { 
+	allowed_leader = { land }
+	terrain_speed = {
+		type = urban
+		value = 0.05
+	}
+	terrain_attack = {
+		type = urban
+		value = 0.1
+	}
+	terrain_defence = {
+		type = urban
+		value = 0.1
+	}
+}
+
+
+
+
+##################################
+# Naval traits.
+##################################
+
+seawolf = { 
+	allowed_leader = { sea }
+	submarine_attack = 0.2
+}
+
+blockade_runner = { 
+	allowed_leader = { sea }
+	disengage_timer = 1
+}
+
+superior_tactician = { 
+	allowed_leader = { sea }
+	spread_out = 0.1
+}
+
+spotter = { 
+	allowed_leader = { sea air }
+	spotting_chance = 0.1
+}
+
+
+##################################
+# Air traits.
+##################################
+
+tank_buster = { 
+	allowed_leader = { air }
+	tactical_attack = 0.2
+}
+
+carpet_bomber = { 
+	allowed_leader = { air }
+	strategic_attack = 0.1
+}
+
+night_flyer = { 	
+	allowed_leader = { air }
+	night_attack = 0.1
+}
+
+fleet_destroyer = { 
+	allowed_leader = { air }
+	naval_attack = 0.1
+}
+
+superior_air_tactician = {
+	allowed_leader = { air }
+	offence_modifier = 0.1
+}
+
+#SF-Editing
+tactical_genius = { 
+	allowed_leader = { land sea air }
+	xp_gain = 0.3
+}
+defense_army = { 
+	allowed_leader = { land }
+	defence_modifier = 0.2
+}
+serious_general = {
+	allowed_leader = { land }
+	combined_arms_bonus = 0.15
+}
+friction_specialist = {
+	allowed_leader = { land }
+	combined_arms_bonus = -0.05
+}
+believed_general = {
+	allowed_leader = { land }
+	offence_modifier = 0.1
+	defence_modifier = 0.1
+}
+sincere_seeker = {
+	allowed_leader = { land }
+	offence_modifier = 0.15
+	defence_modifier = 0.1
+}
+mao_army_1 = {
+	allowed_leader = { land }
+	offence_modifier = 0.2
+}
+zhude_thought = {
+	allowed_leader = { land }
+	out_of_supply_modifier = -0.8
+	offence_modifier = 0.05
+}
+mao_army_3 = {
+	allowed_leader = { land }
+	surprise_chance = 0.15
+}
+mao_army_4 = {
+	allowed_leader = { land }
+	offence_modifier = 0.1
+	defence_modifier = 0.15
+}
+mao_army_5 = {
+	allowed_leader = { land }
+	defence_modifier = 0.15
+	offence_modifier = 0.15
+}
+mao_army_6 = {
+	allowed_leader = { land }
+	combined_arms_bonus = 0.2
+}
+mao_army_7 = {
+	allowed_leader = { land }
+	out_of_supply_modifier = -0.4
+	night_attack = 0.5
+}

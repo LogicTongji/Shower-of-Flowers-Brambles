@@ -1,0 +1,81 @@
+color = { 218  165  32 }
+graphical_culture = Japanese
+
+default_templates = {
+	binary_infantry = {
+		infantry_brigade
+		infantry_brigade
+	}
+	binary_milita = {
+		militia_brigade
+		militia_brigade
+	}
+	binary_armoured = {
+		armor_brigade
+		motorized_brigade
+	}
+	binary_cavalry = {
+		cavalry_brigade
+		cavalry_brigade
+	}
+}
+
+unit_names = {
+	infantry_brigade = {
+		"第35师" "第168师"
+	}
+
+}
+
+
+Ministers = {
+	700001 = {
+		name = "阿合买提江·哈斯木"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M700001
+		head_of_state = political_protege
+		head_of_government = compassionate_gentleman
+		foreign_minister = apologetic_clerk
+		start_date = 1936.1.1
+}
+	700002 = {
+		name = "伊斯哈克伯克·穆努诺夫"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = L5023
+		head_of_state = political_protege
+		head_of_government = compassionate_gentleman
+		foreign_minister = apologetic_clerk
+		start_date = 1936.1.1
+}
+	700003 = {
+		name = "阿不都克里木·阿巴索夫"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = L5023
+		head_of_state = political_protege
+		head_of_government = compassionate_gentleman
+		foreign_minister = apologetic_clerk
+		start_date = 1936.1.1
+}
+700004 = {
+		name = "达列力汗·苏古尔巴也夫"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = L5023
+		head_of_state = political_protege
+		head_of_government = compassionate_gentleman
+		foreign_minister = apologetic_clerk
+		start_date = 1936.1.1
+}
+700005 = {
+		name = "罗志"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = L5023
+		head_of_state = political_protege
+		head_of_government = compassionate_gentleman
+		foreign_minister = apologetic_clerk
+		start_date = 1936.1.1
+}

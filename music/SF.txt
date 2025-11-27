@@ -1,0 +1,888 @@
+song = {
+	name = "SF001.mp3"#日本1936
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = JAP }
+				war_with = CHI
+				war_with = CXB
+				war_with = USA
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = JAP
+			not = { war_with = CHI }
+			not = { war_with = CXB }
+			not = { war_with = USA }
+		}
+	}
+}
+song = {
+	name = "SF002.mp3"#日本预备侵华
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = JAP }
+				not = { has_country_flag = Japan_Preparing_3 }
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = JAP
+			has_country_flag = Japan_Preparing_3
+		}
+	}
+}
+song = {
+	name = "SF003.mp3"#平津作战
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = JAP }
+				not = { has_country_flag = the_marco_polo_bridge_incident }
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = JAP
+			has_country_flag = the_marco_polo_bridge_incident
+		}
+	}
+}
+song = {
+	name = "SF004.mp3"#百人斩
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = JAP }
+				not = { has_global_flag = Nanking_japan }
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = JAP
+			has_global_flag = Nanking_japan
+		}
+	}
+}
+song = {
+	name = "SF005.mp3"#华北治安肃正计划
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = JAP }
+				not = { has_global_flag = thenorthchinapolice }
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = JAP
+			has_global_flag = thenorthchinapolice
+		}
+	}
+}
+song = {
+	name = "SF006.mp3"#中原大捷
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = JAP }
+				not = { has_country_flag = zhongtiaoshan_j }
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = JAP
+			has_country_flag = zhongtiaoshan_j
+		}
+	}
+}
+song = {
+	name = "SF007.mp3"#占领济南
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = JAP }
+				not = { and = { JAP = { controls = 5275 } CHB = { controls = 5275 } WJW = { controls = 5275 } } }
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = JAP
+			or = { JAP = { controls = 5275 } CHB = { controls = 5275 } WJW = { controls = 5275 } }
+		}
+	}
+}
+song = {
+	name = "SF008.mp3"#占领太原
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = JAP }
+				not = { and = { JAP = { controls = 5174 } CHB = { controls = 5174 } WJW = { controls = 5174 } } }
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = JAP
+			or = { JAP = { controls = 5174 } CHB = { controls = 5174 } WJW = { controls = 5174 } }
+		}
+	}
+}
+song = {
+	name = "SF009.mp3"#征服中国
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = JAP }
+				and = ( exists = CHI not = { CHI = { vassal_of = JAP } } }
+				and = ( exists = CHC not = { CHC = { vassal_of = JAP } } }
+				and = ( exists = CXB not = { CXB = { vassal_of = JAP } } }
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = JAP
+			or = ( not = { exists = CHI } CHI = { vassal_of = JAP } }
+			or = ( not = { exists = CHC } CHC = { vassal_of = JAP } }
+			or = ( not = { exists = CXB } CXB = { vassal_of = JAP } }
+		}
+	}
+}
+song = {
+	name = "SF010.mp3"#黄埔
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = CHI }
+				year = 1937
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = CHI
+			NOT = { year = 1937 }
+		}
+	}
+}
+song = {
+	name = "SF011.mp3"#自卫宣言
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = CHI }
+				not = { has_country_flag = CHI_Kangzhan }
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = CHI
+			has_country_flag = CHI_Kangzhan
+		}
+	}
+}
+song = {
+	name = "SF012.mp3"
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = CHI }
+				NOT = { war_with = JAP }
+				not = { has_global_flag = SF_anti_japanese_war }
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = CHI
+			war_with = JAP
+			has_global_flag = SF_anti_japanese_war
+		}
+	}
+}
+song = {
+	name = "SF013.mp3"#淞沪会战
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = CHI }
+				not = { has_country_flag = songhu }
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = CHI
+			has_country_flag = songhu
+		}
+	}
+}
+song = {
+	name = "SF014.mp3"#台儿庄会战
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = CHI }
+				not = { has_country_flag = Taierzhuang }
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = CHI
+			has_country_flag = Taierzhuang
+		}
+	}
+}
+song = {
+	name = "SF015.mp3"#苏维埃的失落
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = CHC }
+				year = 1937
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = CHC
+			NOT = { year = 1937 }
+		}
+	}
+}
+song = {
+	name = "SF016.mp3"#长征
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { tag = CHC }
+		}
+		modifier = {
+			factor = 4
+			tag = CHC
+			has_global_flag = Long_March
+		}
+	}
+}
+song = {
+	name = "SF017.mp3"#抗联
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = CHC }
+				not = { has_global_flag = Kanglian_1 }
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = CHC
+			has_global_flag = Kanglian_1
+		}
+	}
+}
+song = {
+	name = "SF018.mp3"#西路军
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = CHC }
+				not = { has_global_flag = Event1000084 }
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = CHC
+			has_global_flag = Event1000084
+		}
+	}
+}
+song = {
+	name = "SF019.mp3"
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = CHC }
+				not = { has_country_flag = CHC_defense }
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = CHC
+			has_country_flag = CHC_defense
+		}
+	}
+}
+song = {
+	name = "SF020.mp3"#游击战
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = CHC }
+				not = { has_country_flag = luochuan_meeting_2 }
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = CHC
+			has_country_flag = luochuan_meeting_2
+		}
+	}
+}
+song = {
+	name = "SF021.mp3"#八路军
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = CHC }
+				not = { has_global_flag = luochuan_meeting }
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = CHC
+			has_global_flag = luochuan_meeting
+		}
+	}
+}
+song = {
+	name = "SF022.mp3"#新四军
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = CHC }
+				not = { has_country_flag = new_fourth_army }
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = CHC
+			has_country_flag = new_fourth_army
+		}
+	}
+}
+song = {
+	name = "SF023.mp3"#晋察冀边区
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = CHC }
+				not = { has_global_flag = chc_jinchaji }
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = CHC
+			has_global_flag = chc_jinchaji
+		}
+	}
+}
+song = {
+	name = "SF024.mp3"#反扫荡
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = CHC }
+				not = { has_global_flag = Sanguang }
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = CHC
+			has_global_flag = Sanguang
+		}
+	}
+}
+song = {
+	name = "SF025.mp3"#百团大战
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = CHC }
+				not = { has_country_flag = baituandazhan }
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = CHC
+			has_country_flag = baituandazhan
+		}
+	}
+}
+song = {
+	name = "SF026.mp3"#正规战
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = CHC }
+				not = { has_country_flag = luochuan_meeting_1 }
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = CHC
+			has_country_flag = luochuan_meeting_1
+		}
+	}
+}
+song = {
+	name = "SF027.mp3"
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = CHC }
+				not = { has_country_flag = luochuan_meeting_1 }
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = CHC
+			has_country_flag = luochuan_meeting_1
+		}
+	}
+}
+song = {
+	name = "SF028.mp3"
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = CHC }
+				not = { has_country_flag = luochuan_meeting_1 }
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = CHC
+			has_country_flag = luochuan_meeting_1
+		}
+	}
+}
+song = {
+	name = "SF029.mp3"
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = CHC }
+				not = { has_country_flag = luochuan_meeting_1 }
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = CHC
+			has_country_flag = luochuan_meeting_1
+		}
+	}
+}
+song = {
+	name = "SF030.mp3"#誓师出征
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = CXB }
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = CXB
+		}
+	}
+}
+song = {
+	name = "SF031.mp3"#西北建政
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = CXB }
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = CXB
+		}
+	}
+}
+song = {
+	name = "SF032.mp3"#战斗
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = CXB }
+				war = no
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = CXB
+			war = yes
+		}
+	}
+}
+song = {
+	name = "SF033.mp3"#战斗
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = CXB }
+				war = no
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = CXB
+			war = yes
+		}
+	}
+}
+song = {
+	name = "SF053.mp3"#战斗
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = CXB }
+				war = no
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = CXB
+			war = yes
+		}
+	}
+}
+song = {
+	name = "SF054.mp3"#战斗
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = CXB }
+				war = no
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = CXB
+			war = yes
+		}
+	}
+}
+song = {
+	name = "SF034.mp3"#战斗
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = CXB }
+				war = no
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = CXB
+			war = yes
+		}
+	}
+}
+song = {
+	name = "SF035.mp3"#战斗
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = CXB }
+				war = no
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = CXB
+			war = yes
+		}
+	}
+}
+song = {
+	name = "SF036.mp3"#渔光曲
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				and = { NOT = { tag = CHI } NOT = { tag = CHC } NOT = { tag = CXB } NOT = { tag = CYN } NOT = { tag = CGX } NOT = { tag = CGD } NOT = { tag = CXK } NOT = { tag = CSC } NOT = { tag = CDB } NOT = { tag = CQM } NOT = { tag = CNM } NOT = { tag = CJC } NOT = { tag = CSX } NOT = { tag = CSD } NOT = { tag = CSY } NOT = { tag = SIK } NOT = { tag = TIB } }
+				NOT = { year = 1937 }
+				has_country_flag = China_shutdown
+			}
+		}
+		modifier = {
+			factor = 4
+			or = { TAG = CHC TAG = CHI TAG = CXB TAG = CYN TAG = CXK TAG = CSC TAG = CDB TAG = CQM TAG = CNM TAG = CSX TAG = CSY TAG = CSD TAG = CJC TAG = CGD TAG = CGX TAG = SIK TAG = TIB }
+			year = 1937
+			not = { has_country_flag = China_shutdown }
+		}
+	}
+}
+song = {
+	name = "SF037.mp3"#夜上海
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				and = { NOT = { tag = CHI } NOT = { tag = CHC } NOT = { tag = CXB } NOT = { tag = CYN } NOT = { tag = CGX } NOT = { tag = CGD } NOT = { tag = CXK } NOT = { tag = CSC } NOT = { tag = CDB } NOT = { tag = CQM } NOT = { tag = CNM } NOT = { tag = CJC } NOT = { tag = CSX } NOT = { tag = CSD } NOT = { tag = CSY } NOT = { tag = SIK } NOT = { tag = TIB } }
+				NOT = { year = 1938 }
+				has_country_flag = China_shutdown
+			}
+		}
+		modifier = {
+			factor = 4
+			or = { TAG = CHC TAG = CHI TAG = CXB TAG = CYN TAG = CXK TAG = CSC TAG = CDB TAG = CQM TAG = CNM TAG = CSX TAG = CSY TAG = CSD TAG = CJC TAG = CGD TAG = CGX TAG = SIK TAG = TIB }
+			year = 1938
+			not = { has_country_flag = China_shutdown }
+		}
+	}
+}
+song = {
+	name = "SF038.mp3"#南京大屠杀
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				and = { NOT = { tag = CHI } NOT = { tag = CHC } NOT = { tag = CXB } NOT = { tag = CYN } NOT = { tag = CGX } NOT = { tag = CGD } NOT = { tag = CXK } NOT = { tag = CSC } NOT = { tag = CDB } NOT = { tag = CQM } NOT = { tag = CNM } NOT = { tag = CJC } NOT = { tag = CSX } NOT = { tag = CSD } NOT = { tag = CSY } NOT = { tag = SIK } NOT = { tag = TIB } }
+				not = { has_global_flag = Nanking_japan }
+			}
+		}
+		modifier = {
+			factor = 4
+			or = { TAG = CHC TAG = CHI TAG = CXB TAG = CYN TAG = CXK TAG = CSC TAG = CDB TAG = CQM TAG = CNM TAG = CSX TAG = CSY TAG = CSD TAG = CJC TAG = CGD TAG = CGX TAG = SIK TAG = TIB }
+			has_global_flag = Nanking_japan
+		}
+	}
+}
+song = {
+	name = "SF039.mp3"#战胜日本
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				and = { NOT = { tag = CHI } NOT = { tag = CHC } NOT = { tag = CXB } NOT = { tag = CYN } NOT = { tag = CGX } NOT = { tag = CGD } NOT = { tag = CXK } NOT = { tag = CSC } NOT = { tag = CDB } NOT = { tag = CQM } NOT = { tag = CNM } NOT = { tag = CJC } NOT = { tag = CSX } NOT = { tag = CSD } NOT = { tag = CSY } NOT = { tag = SIK } NOT = { tag = TIB } }
+				and = ( exists = JAP JAP = { is_subject = no } }
+			}
+		}
+		modifier = {
+			factor = 4
+			or = { TAG = CHC TAG = CHI TAG = CXB TAG = CYN TAG = CXK TAG = CSC TAG = CDB TAG = CQM TAG = CNM TAG = CSX TAG = CSY TAG = CSD TAG = CJC TAG = CGD TAG = CGX TAG = SIK TAG = TIB }
+			or = ( not = { exists = JAP } JAP = { is_subject = yes } }
+			has_global_flag = JAP_Lost
+		}
+	}
+}
+song = {
+	name = "SF040.mp3"#中华人民共和国
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { tag = PRC }
+		}
+		modifier = {
+			factor = 4
+			tag = PRC
+		}
+	}
+}
+song = {
+	name = "SF041.mp3"
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { tag = PRC }
+		}
+		modifier = {
+			factor = 4
+			tag = PRC
+		}
+	}
+}
+song = {
+	name = "SF042.mp3"
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { tag = PRC }
+		}
+		modifier = {
+			factor = 4
+			tag = PRC
+		}
+	}
+}
+song = {
+	name = "SF043.mp3"
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { tag = PRC }
+		}
+		modifier = {
+			factor = 4
+			tag = PRC
+		}
+	}
+}
+song = {
+	name = "SF044.mp3"
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { tag = PRC }
+		}
+		modifier = {
+			factor = 4
+			tag = PRC
+		}
+	}
+}
+song = {
+	name = "SF045.mp3"
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { tag = PRC }
+		}
+		modifier = {
+			factor = 4
+			tag = PRC
+		}
+	}
+}
+song = {
+	name = "SF046.mp3"
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { tag = PRC }
+		}
+		modifier = {
+			factor = 4
+			tag = PRC
+		}
+	}
+}
+song = {
+	name = "SF047.mp3"
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { tag = PRC }
+		}
+		modifier = {
+			factor = 4
+			tag = PRC
+		}
+	}
+}
+song = {
+	name = "SF048.mp3"#中华民国
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { tag = ROC }
+		}
+		modifier = {
+			factor = 4
+			tag = ROC
+		}
+	}
+}
+song = {
+	name = "SF049.mp3"
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { tag = ROC }
+		}
+		modifier = {
+			factor = 4
+			tag = ROC
+		}
+	}
+}
+song = {
+	name = "SF050.mp3"
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { tag = ROC }
+		}
+		modifier = {
+			factor = 4
+			tag = ROC
+		}
+	}
+}
+song = {
+	name = "SF051.mp3"
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { tag = ROC }
+		}
+		modifier = {
+			factor = 4
+			tag = ROC
+		}
+	}
+}
+song = {
+	name = "SF052.mp3"#大进军
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				and = { NOT = { tag = CHI } NOT = { tag = CHC } NOT = { tag = CXB } NOT = { tag = CYN } NOT = { tag = CGX } NOT = { tag = CGD } NOT = { tag = CXK } NOT = { tag = CSC } NOT = { tag = CDB } NOT = { tag = CQM } NOT = { tag = CNM } NOT = { tag = CJC } NOT = { tag = CSX } NOT = { tag = CSD } NOT = { tag = CSY } NOT = { tag = SIK } NOT = { tag = TIB } }
+				not = { war_with = JAP }
+				not = { has_global_flag = Kanglian_3 }
+				exists = MAN
+				exists = MEA
+				exists = MEB
+				exists = CHB
+			}
+		}
+		modifier = {
+			factor = 4
+			or = { TAG = CHC TAG = CHI TAG = CXB TAG = CYN TAG = CXK TAG = CSC TAG = CDB TAG = CQM TAG = CNM TAG = CSX TAG = CSY TAG = CSD TAG = CJC TAG = CGD TAG = CGX TAG = SIK TAG = TIB }
+			war_with = JAP
+			has_global_flag = Kanglian_3
+			not = { exists = MAN }
+			not = { exists = MEA }
+			not = { exists = MEB }
+			not = { exists = CHB }
+		}
+	}
+}

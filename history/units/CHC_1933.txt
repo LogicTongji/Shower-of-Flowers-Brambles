@@ -1,0 +1,249 @@
+theatre = {
+	name = "中央革命军事委员会"
+	location = 5725
+	regiment = { type = hq_brigade name = "中共中央" strength = 5 experience = 50 historical_model = 0 }
+	regiment = { type = chc_gundam name = "总参谋部" experience = 60 historical_model = 0 }
+                regiment = { type = chc_gundam name = "红军大学" experience = 60 historical_model = 0 }
+                                                 division= {
+				name = "瑞金卫戍司令部"
+				location = 5725
+				regiment = { type = infantry_brigade name = "中国工农红军第22师" strength = 5 experience = 25 historical_model = 0 }
+				regiment = { type = infantry_brigade name = "中国工农红军第24师" strength = 5 experience = 25 historical_model = 0 }
+			}
+			division= {
+				name = "中国工农红军第35军"
+				location = 5725
+				regiment = { type = partisan_bergsjaeger strength = 5 experience = 25 historical_model = 0 }
+				regiment = { type = partisan_bergsjaeger strength = 5 experience = 25 historical_model = 0 }
+				regiment = { type = partisan_bergsjaeger strength = 5 experience = 25 historical_model = 0 }
+			}
+			division= {
+				name = "中国工农红军第21军"
+				location = 5725
+				regiment = { type = infantry_brigade strength = 5 experience = 25 historical_model = 0 }
+				regiment = { type = partisan_bergsjaeger strength = 5 experience = 25 historical_model = 0 }
+			}
+                                                division= {
+				name = "中国工农红军第22军"
+				location = 5725
+				regiment = { type = infantry_brigade name = "中国工农红军第36师" strength = 5 experience = 25 historical_model = 0 }
+				regiment = { type = partisan_bergsjaeger name = "中国工农红军第34师" strength = 5 experience = 25 historical_model = 0 }
+			}
+           corps = {
+	name = "陕北红军"
+	location = 7391
+	regiment = { type = hq_brigade name = "陕北红军" strength = 5 experience = 80 historical_model = 0 }
+	division= {
+		name = "中国工农红军第26军"
+		location = 7391
+		regiment = { type = partisan_bergsjaeger name = "红1、2团" experience = 70 strength = 15 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger name = "红3、4团" experience = 70 strength = 15 historical_model = 0 }
+	}
+	division= {
+		name = "中国工农红军第27军"
+		location = 7398
+		regiment = { type = partisan_bergsjaeger name = "第87师" experience = 70 strength = 15 historical_model = 0 }
+                   regiment = { type = partisan_bergsjaeger name = "游击部队" experience = 70 strength = 15 historical_model = 0 }
+	   } 
+            division= {
+		name = "游击部队"
+		location = 7398
+		regiment = { type = partisan_bergsjaeger experience = 70 strength = 15 historical_model = 0 }
+                   regiment = { type = partisan_bergsjaeger experience = 70 strength = 15 historical_model = 0 }
+	   } 
+}
+                  corps = {
+	name = "中国工农红军第二军团"
+	location = 5620
+	regiment = { type = hq_brigade name = "红二军团指挥部" strength = 5 experience = 80 historical_model = 0 }
+	division= {
+		name = "中国工农红军第2军"
+		location = 5620
+		regiment = { type = infantry_brigade name = "第4师" experience = 70 strength = 15 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger name = "第6师" experience = 70 strength = 15 historical_model = 0 }
+	}
+	division= {
+		name = "中国工农红军第6军"
+		location = 5620
+		regiment = { type = partisan_bergsjaeger name = "第16师" experience = 70 strength = 15 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger name = "第17师" experience = 70 strength = 15 historical_model = 0 }
+		regiment = { type = partisan_bergsjaeger name = "第18师" experience = 70 strength = 15 historical_model = 0 }
+	   } 
+}
+	armygroup = { 
+		name = "中国工农红军"
+		location = 5725
+		regiment = { type = hq_brigade name = "红军前敌总指挥部" strength = 5 experience = 90 historical_model = 0 }	
+		army = {
+			name = "中国工农红军第一方面军"
+			location = 5725
+			regiment = { type = hq_brigade name = "红一方面军指挥部" strength = 5 experience = 90 historical_model = 0 }	
+			corps = {
+				name = "中国工农红军第一军团"
+				location = 5725
+				regiment = { type = hq_brigade name = "红一军团指挥部" strength = 5 experience = 90 historical_model = 0 }
+				division= {
+					name = "中国工农红军第1师"
+					location = 5716
+					regiment = { type = bergsjaeger_brigade name = "第1团" experience = 70 strength = 7 historical_model = 0 }
+					regiment = { type = bergsjaeger_brigade name = "第2、3团" experience = 50 strength = 7 historical_model = 0 }
+			
+				}
+				division= {
+					name = "中国工农红军第2师"
+					location = 5724
+					regiment = { type = bergsjaeger_brigade name = "第4团" experience = 60 strength = 7 historical_model = 0 }
+					regiment = { type = bergsjaeger_brigade name = "第5、6团" experience = 60 strength = 7 historical_model = 0 }
+	
+				}
+				division= {
+					name = "中国工农红军第15师"
+					location = 5724
+					regiment = { type = infantry_brigade name = "少共国际师" experience = 30 strength = 7 historical_model = 0 }
+					
+				}
+                                                               division= {
+					name = "中国工农红军第15军"
+					location = 5724
+					regiment = { type = infantry_brigade name = "工农红军第43师" strength = 10.5 experience = 70 historical_model = 0 }
+					regiment = { type = partisan_bergsjaeger name = "工农红军第44师" strength = 10.5 experience = 70 historical_model = 0 }
+                                                                                regiment = { type = partisan_bergsjaeger name = "工农红军第45师" strength = 10.5 experience = 70 historical_model = 0 }
+				}
+			}
+			corps = {
+				name = "中国工农红军第三军团"
+				location = 5716
+				regiment = { type = hq_brigade name = "红三军团指挥部" strength = 5 experience = 70 historical_model = 0 }
+				division= {
+					name = "中国工农红军第4师"
+					location = 5716
+					regiment = { type = bergsjaeger_brigade name = "第7团" strength = 10.5 experience = 70 historical_model = 0 }
+					regiment = { type = partisan_bergsjaeger name = "第8、9团" strength = 10.5 experience = 70 historical_model = 0 }
+				}
+				division= {
+					name = "中国工农红军第5师"
+					location = 5716
+					regiment = { type = infantry_brigade name = "第10团" strength = 10.5 experience = 70 historical_model = 0 }
+					regiment = { type = partisan_bergsjaeger name = "第11、12团" strength = 10.5 experience = 70 historical_model = 0 }
+				}
+				division= {
+					name = "中国工农红军第6师"
+					location = 5716
+					regiment = { type = partisan_bergsjaeger name = "第13团" strength = 10.5 experience = 70 historical_model = 0 }
+					regiment = { type = partisan_bergsjaeger name = "第14、15团" strength = 10.5 experience = 70 historical_model = 0 }
+				}
+			}
+                                                corps = {
+				name = "中国工农红军第五军团"
+				location = 5716
+				regiment = { type = hq_brigade name = "红五军团指挥部" strength = 5 experience = 70 historical_model = 0 }
+				division= {
+					name = "中国工农红军第13师"
+					location = 5708
+					regiment = { type = bergsjaeger_brigade name = "第27团" strength = 10.5 experience = 70 historical_model = 0 }
+					regiment = { type = bergsjaeger_brigade name = "第38、39团" strength = 10.5 experience = 70 historical_model = 0 }
+				}
+				division= {
+					name = "中国工农红军第14师"
+					location = 5716
+					regiment = { type = partisan_bergsjaeger name = "第10团" strength = 10.5 experience = 70 historical_model = 0 }
+					regiment = { type = partisan_bergsjaeger name = "第41、42团" strength = 10.5 experience = 70 historical_model = 0 }
+				}			
+			}
+                     }
+}
+armygroup = {
+	name = "川陕苏区"
+	location = 4739
+	regiment = { type = hq_brigade name = "川陕苏区" strength = 5 experience = 90 historical_model = 0 }
+	regiment = { type = chc_gundam name = "干部团" experience = 90 historical_model = 0 }
+		army = {
+			name = "中国工农红军第四方面军"
+			location = 4739
+			regiment = { type = hq_brigade name = "红四方面军指挥部" strength = 5 experience = 90 historical_model = 0 }		
+                                       corps = {
+	name = "中国工农红军第4军"
+	location = 4739
+	regiment = { type = hq_brigade name = "红4军指挥部" strength = 5 experience = 80 historical_model = 0 }
+				division= {
+					name = "中国工农红军第10师"
+					location = 4739
+					regiment = { type = partisan_bergsjaeger name = "第28团" experience = 80 strength = 7 historical_model = 0 }
+					regiment = { type = bergsjaeger_brigade name = "第20、30团" experience = 80 strength = 7 historical_model = 0 }
+	
+				}
+				division= {
+					name = "中国工农红军第11师"
+					location = 4739
+					regiment = { type = bergsjaeger_brigade name = "第31团" experience = 80 strength = 7 historical_model = 0 }
+                                                                                regiment = { type = partisan_bergsjaeger name = "第32、33团" experience = 80 strength = 7 historical_model = 0 }
+				}
+                  }
+                                                                      corps = {
+	name = "中国工农红军第9军"
+	location = 4739
+	regiment = { type = hq_brigade name = "红9军指挥部" strength = 5 experience = 80 historical_model = 0 }
+                                               division= {
+					name = "中国工农红军第25师"
+					location = 4739
+					regiment = { type = partisan_bergsjaeger experience = 80 strength = 7 historical_model = 0 }
+					regiment = { type = partisan_bergsjaeger experience = 80 strength = 7 historical_model = 0 }
+	
+				}
+				division= {
+					name = "中国工农红军第27师"
+					location = 4739
+					regiment = { type = partisan_bergsjaeger experience = 80 strength = 7 historical_model = 0 }
+                                                                                regiment = { type = partisan_bergsjaeger experience = 80 strength = 7 historical_model = 0 }
+				}
+                  }
+                   corps = {
+                   name = "中国工农红军第30军"
+	location = 4739
+	regiment = { type = hq_brigade name = "红30军指挥部" strength = 5 experience = 80 historical_model = 0 }
+                                               division= {
+					name = "中国工农红军第88师"
+					location = 4739
+					regiment = { type = partisan_bergsjaeger experience = 80 strength = 7 historical_model = 0 }
+					regiment = { type = partisan_bergsjaeger experience = 80 strength = 7 historical_model = 0 }
+	
+				}
+				division= {
+					name = "中国工农红军第89师"
+					location = 4739
+					regiment = { type = partisan_bergsjaeger experience = 80 strength = 7 historical_model = 0 }
+                                                                                regiment = { type = partisan_bergsjaeger experience = 80 strength = 7 historical_model = 0 }
+				}
+                                     division= {
+					name = "中国工农红军第90师"
+					location = 4739
+					regiment = { type = partisan_bergsjaeger experience = 80 strength = 7 historical_model = 0 }
+                                                                                regiment = { type = partisan_bergsjaeger experience = 80 strength = 7 historical_model = 0 }
+				}
+                  }
+                  corps = {
+                                                                name = "中国工农红军第31军"
+	location = 4739
+	regiment = { type = hq_brigade name = "红31军指挥部" strength = 5 experience = 80 historical_model = 0 }
+                                               division= {
+					name = "中国工农红军第91师"
+					location = 4739
+					regiment = { type = bergsjaeger_brigade experience = 80 strength = 7 historical_model = 0 }
+					regiment = { type = bergsjaeger_brigade experience = 80 strength = 7 historical_model = 0 }
+	
+				}
+				division= {
+					name = "中国工农红军第92师"
+					location = 4739
+					regiment = { type = bergsjaeger_brigade experience = 80 strength = 7 historical_model = 0 }
+                                                                                regiment = { type = partisan_bergsjaeger experience = 80 strength = 7 historical_model = 0 }
+				}
+                                     division= {
+					name = "中国工农红军第93师"
+					location = 4739
+					regiment = { type = bergsjaeger_brigade experience = 80 strength = 7 historical_model = 0 }
+                                                                                regiment = { type = partisan_bergsjaeger experience = 80 strength = 7 historical_model = 0 }
+				}
+                  }
+                             }
+}

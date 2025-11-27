@@ -1,0 +1,99 @@
+CSY = { military_access = yes }
+theatre = {
+	name = "太原绥靖公署"
+	location = 5174
+	regiment = { type = hq_brigade name = "太原指挥部" historical_model = 0 }
+	corps = {
+		name = "第32军"
+		location = 7411
+		regiment = { type = hq_brigade name = "第32军司令部" historical_model = 0 }
+		division= {
+			name = "第66师"
+			location = 7411
+			regiment = { type = infantry_brigade name = "第196旅" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第211旅" historical_model = 0 }
+		}
+		division= {
+			name = "第67师"
+			location = 7411
+			regiment = { type = infantry_brigade historical_model = 0 }
+			regiment = { type = infantry_brigade historical_model = 0 }
+		}
+	}
+	corps = {
+		name = "第33军"
+		location = 5206
+		regiment = { type = hq_brigade name = "第33军司令部" historical_model = 0 }
+		division= {
+			name = "第68师"
+			location = 4977
+			regiment = { type = infantry_brigade name = "第200旅" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第218旅" historical_model = 0 }
+		}
+		division= {
+			name = "第69师"
+			location = 7418
+			regiment = { type = infantry_brigade name = "第203旅" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第209旅" historical_model = 0 }
+		}
+	}
+	corps = {
+		name = "第34军"
+		location = 7411
+		regiment = { type = hq_brigade name = "第34军司令部" historical_model = 0 }
+		division= {
+			name = "第70师"
+			location = 5174
+			regiment = { type = infantry_brigade name = "第205旅" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第215旅" historical_model = 0 }
+		}
+		division= {
+			name = "第71师"
+			location = 5174
+			regiment = { type = infantry_brigade name = "第202旅" strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第214旅" strength = 20 historical_model = 0 }
+		}
+	}
+	division= {
+		name = "第101师"
+		location = 4977
+		regiment = { type = infantry_brigade name = "第201旅" strength = 20 historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第213旅" strength = 20 historical_model = 0 }
+	}
+	division= {
+		name = "山西警备"
+		location = 5174
+		regiment = { type = militia_brigade name = "新编第1师" historical_model = 0 }
+		regiment = { type = militia_brigade name = "独立第1旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "独立第2旅" historical_model = 0 }
+	}
+	division= {
+		name = "山西警备"
+		location = 5174
+		regiment = { type = militia_brigade name = "独立第3旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "独立第7旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "独立第8旅" historical_model = 0 }
+	}
+	division = {
+		name = "山西炮兵司令部"
+		location = 5141
+		is_reserve = yes
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = artillery_brigade historical_model = 0 }
+		regiment = { type = artillery_brigade historical_model = 0 }
+		regiment = { type = artillery_brigade historical_model = 0 }
+		regiment = { type = artillery_brigade historical_model = 0 }
+		regiment = { type = artillery_brigade historical_model = 0 }
+		regiment = { type = artillery_brigade historical_model = 0 }
+		regiment = { type = artillery_brigade historical_model = 0 }
+		regiment = { type = artillery_brigade historical_model = 0 }
+		regiment = { type = artillery_brigade historical_model = 0 }
+		regiment = { type = artillery_brigade historical_model = 0 }
+	}
+	division= {
+		name = "骑兵第1军"
+		location = 4977
+		regiment = { type = cavalry_brigade historical_model = 0 }
+		regiment = { type = cavalry_brigade historical_model = 0 }
+	}
+}

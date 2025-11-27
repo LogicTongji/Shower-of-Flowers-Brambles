@@ -1,0 +1,170 @@
+ armygroup = {
+		name = "华中方面军"
+		location = 5494
+		regiment = { type = hq_brigade name = "华北方面军指挥部" historical_model = 0 }
+		regiment = { type = cavalry_brigade name = "司令部守备" strength = 20 historical_model = 3 }
+                   division = {
+	           	name = "歩兵第103师团"
+			location = 5494
+			regiment = { type = infantry_brigade experience = 60 historical_model = 1 }
+			regiment = { type = infantry_brigade experience = 60 historical_model = 1 }
+                        regiment = { type = infantry_brigade experience = 60 historical_model = 1 }
+                   }
+                   division = {
+				name = "第13师团"
+				location = 5494
+				regiment = { type = imperial_brigade name = "歩兵第58联队" experience = 80 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "歩兵第65联队" experience = 80 historical_model = 3 }
+        regiment = { type = infantry_brigade name = "歩兵第104联队" experience = 80 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "歩兵第116联队" experience = 80 historical_model = 3 }
+                  }
+                  corps = {
+			name = "第3名古屋甲种师团'幸'"
+			location = 5494
+			regiment = { type = hq_brigade name = "师团部" experience = 80 historical_model = 3 }
+			regiment = { type = imperial_brigade name = "留守联队" experience = 80 historical_model = 3 }
+			division = {
+				name = "歩兵第5旅团"
+				location = 5494
+				regiment = { type = imperial_brigade name = "歩兵第6联队" experience = 80 historical_model = 3 }
+				regiment = { type = imperial_brigade name = "歩兵第68联队" experience = 80 historical_model = 3 }
+				regiment = { type = engineer_brigade name = "工兵第3联队" experience = 80 historical_model = 3 }
+				regiment = { type = alpine_artillery_brigadeB name = "独立山炮第1联队" experience = 80 historical_model = 3 }
+			}
+			division = {
+				name = "歩兵第29旅团"
+				location = 5494
+				regiment = { type = imperial_brigade name = "歩兵第18联队" experience = 80 historical_model = 3 }
+				regiment = { type = imperial_brigade name = "歩兵第34联队" experience = 80 historical_model = 3 }
+								regiment = { type = artillery_brigadeB name = "野炮兵第3联队" experience = 80 historical_model = 3 }
+				regiment = { type = anti_air_brigade name = "高射炮第1联队" experience = 80 historical_model = 3 }
+			}
+			division = {
+				name = "骑兵第4旅团"
+				location = 5494
+				regiment = { type = cavalry_brigade name = "骑兵第3联队" experience = 80 historical_model = 3 }
+				regiment = { type = cavalry_brigade name = "骑兵第25联队" experience = 80 historical_model = 3 }
+				regiment = { type = cavalry_brigade name = "骑兵第26联队" experience = 80 historical_model = 3 }
+			}
+			division = {
+				name = "野战重炮兵第1旅团"
+				location = 5494
+				regiment = { type = imperial_brigade name = "加强联队" experience = 80 historical_model = 3 }
+				regiment = { type = artillery_brigadeB name = "野战重炮兵第2联队" experience = 80 historical_model = 3 }
+				regiment = { type = artillery_brigadeB name = "野战重炮兵第3联队" experience = 80 historical_model = 3 }
+                              }
+                      }
+                      corps = {
+			name = "第9金泽甲种师团'武'"
+			location = 5494
+			regiment = { type = hq_brigade experience = 80 name = "师团部" historical_model = 3 }
+			regiment = { type = imperial_brigade name = "留守联队" experience = 80 historical_model = 3 }		
+			division = {
+				name = "歩兵第6旅团"
+				location = 5494
+				regiment = { type = imperial_brigade name = "歩兵第7联队" experience = 80 historical_model = 3 }
+				regiment = { type = imperial_brigade name = "歩兵第35联队" experience = 80 historical_model = 3 }
+				regiment = { type = engineer_brigade name = "工兵第9联队" experience = 80 historical_model = 3 }
+			}
+			division = {
+				name = "歩兵第18旅团"
+				location = 5494
+				regiment = { type = imperial_brigade name = "歩兵第19联队" experience = 80 historical_model = 3 }
+				regiment = { type = imperial_brigade name = "歩兵第36联队" experience = 80 historical_model = 3 }
+				regiment = { type = alpine_artillery_brigadeB name = "山炮兵第9联队" experience = 80 historical_model = 3 }
+				regiment = { type = cavalry_brigade name = "骑兵第9联队" experience = 80 historical_model = 3 }
+                       }
+               }		
+	       corps = {		
+			name = "第11善通寺甲种师团'锦'"
+			location = 5494
+			regiment = { type = hq_brigade experience = 80 name = "师团部" historical_model = 3 }
+						regiment = { type = imperial_brigade name = "留守联队" experience = 80 historical_model = 3 }			
+			division = {
+				name = "歩兵第10旅团"
+				location = 5494
+				regiment = { type = imperial_brigade name = "歩兵第12联队" experience = 80 historical_model = 3 }
+				regiment = { type = imperial_brigade name = "歩兵第22联队" experience = 80 historical_model = 3 }
+				regiment = { type = engineer_brigade name = "工兵第11联队" experience = 80 historical_model = 3 }
+				regiment = { type = alpine_artillery_brigadeB name = "山炮兵第11联队" experience = 80 historical_model = 3 }
+			}
+			division = {
+				name = "歩兵第22旅团"
+				location = 5494
+				regiment = { type = imperial_brigade name = "歩兵第43联队" experience = 80 historical_model = 3 }
+				regiment = { type = imperial_brigade name = "歩兵第44联队" experience = 80 historical_model = 3 }
+				regiment = { type = cavalry_brigade name = "骑兵第11联队" experience = 80 historical_model = 3 }
+			} 
+                }                    
+		army = {
+			name = "第10军"
+			location = 5494
+			regiment = { type = hq_brigade name = "第10军司令部" historical_model = 0 }
+                        regiment = { type = artillery_brigadeB historical_model = 3 }
+                        regiment = { type = light_armor_brigade historical_model = 3 }    
+                        division = {
+				name = "第18师团"
+				location = 5494
+				regiment = { type = imperial_brigade name = "歩兵第55联队" experience = 80 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "歩兵第56联队" experience = 80 historical_model = 3 }
+                                regiment = { type = infantry_brigade name = "歩兵第114联队" experience = 80 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "歩兵第124联队" experience = 80 historical_model = 3 }
+                        }
+	         	corps = {
+			name = "第6熊本甲种师团'明'"
+			location = 5494
+			regiment = { type = hq_brigade experience = 80 name = "师团部" historical_model = 3 }
+						regiment = { type = imperial_brigade name = "留守联队" experience = 80 historical_model = 3 }
+			division = {
+				name = "歩兵第11旅团"
+				location = 5494
+				regiment = { type = imperial_brigade name = "歩兵第13联队" experience = 80 historical_model = 3 }
+				regiment = { type = imperial_brigade name = "歩兵第47联队" experience = 80 historical_model = 3 }
+				regiment = { type = engineer_brigade name = "工兵第6联队" experience = 80 historical_model = 3 }
+				regiment = { type = artillery_brigadeB name = "野炮兵第6联队" experience = 80 historical_model = 3 }
+			}
+			division = {
+				name = "歩兵第36旅团"
+				location = 5494
+				regiment = { type = imperial_brigade name = "歩兵第23联队" experience = 80 historical_model = 3 }
+				regiment = { type = imperial_brigade name = "歩兵第45联队" experience = 80 historical_model = 3 }
+								regiment = { type = cavalry_brigade name = "骑兵第6联队" experience = 80 historical_model = 3 }
+		            }
+                    }
+		    corps = {
+			name = "第114师团"
+			location = 5494
+			regiment = { type = hq_brigade experience = 80 historical_model = 3 }
+				regiment = { type = engineer_brigade name = "工兵第114联队" experience = 80 historical_model = 3 }
+				regiment = { type = artillery_brigadeB name = "野炮兵第120联队" experience = 80 historical_model = 3 }
+				regiment = { type = cavalry_brigade name = "骑兵第18大队联队" experience = 80 historical_model = 3 }
+                                 regiment = { type = infantry_brigade name = "轻重兵114联队" experience = 80 historical_model = 3 }
+			division = {
+				name = "歩兵第127旅团"
+				location = 5494
+				regiment = { type = infantry_brigade name = "歩兵第102联队" experience = 80 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "歩兵第66联队" experience = 80 historical_model = 3 }
+			}
+			division = {
+				name = "歩兵第128旅团"
+				location = 5494
+				regiment = { type = infantry_brigade name = "歩兵第115联队" experience = 80 historical_model = 3 }
+				regiment = { type = imperial_brigade name = "歩兵第150联队" experience = 80 experience = 60 historical_model = 1}
+                               }
+                      }
+            }
+}
+armygroup = {
+        name = "日本侵华海军"
+	location = 5474
+        regiment = { type = hq_brigade experience = 80 historical_model = 3 }
+        navy = {
+	name = "日本海军侵华第3舰队"
+	base = 5474
+	location = 5474
+	ship = { type = heavy_cruiser name = "出云号" experience = 80 historical_model = 3 }
+        ship = { type = destroyer name = "第1驱逐舰支队" experience = 80 historical_model = 3 }
+	ship = { type = destroyer name = "第2驱逐舰支队" experience = 80 historical_model = 3 }
+	ship = { type = destroyer name = "第3驱逐舰支队" experience = 80 historical_model = 3 }
+        ship = { type = submarine name = "第1潜艇分队" experience = 80 historical_model = 3 } 
+}

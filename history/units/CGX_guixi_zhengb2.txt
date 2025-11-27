@@ -1,0 +1,98 @@
+army = {
+		name = "国民革命军第16集团军"
+		location = 7553
+                expeditionary_owner = CGX
+		regiment = { type = hq_brigade name = "国民革命军第16集团军军司令部" historical_model = 0 }
+		regiment = { type = cavalry_brigade name = "司令部守备部队" strength = 20 historical_model = 0 }
+                regiment = { type = artillery_brigade name = "国民革命军第16集团军山炮团" experience = 25 strength = 20 historical_model = 3 }
+}
+		corps = {
+			name = "第46军"
+			location = 7553
+                        expeditionary_owner = CGX
+			regiment = { type = hq_brigade name = "第46军司令部" historical_model = 0 }
+			division= {
+				name = "国民革命军第175师"
+				location = 7553
+                                expeditionary_owner = CGX
+				regiment = { type = infantry_brigade name = "第526旅" historical_model = 0 }
+				regiment = { type = infantry_brigade name = "第528旅" historical_model = 0 }
+			}
+			division= {
+				name = "国民革命军新编19师"
+				location = 7553
+                                expeditionary_owner = CGX
+				regiment = { type = militia_brigade historical_model = 0 }
+				regiment = { type = militia_brigade historical_model = 0 }
+		}
+	}
+             	corps = {
+			name = "第64军"
+			location = 7553
+                        expeditionary_owner = CGX
+			regiment = { type = hq_brigade name = "第64军司令部" historical_model = 0 }
+			division= {
+				name = "国民革命军第187师"
+				location = 7553
+                                expeditionary_owner = CGX
+				regiment = { type = militia_brigade historical_model = 0 }
+				regiment = { type = infantry_brigade historical_model = 0 }
+			}
+			division= {
+				name = "国民革命军第155师"
+				location = 7553
+                                expeditionary_owner = CGX
+				regiment = { type = militia_brigade historical_model = 0 }
+				regiment = { type = infantry_brigade historical_model = 0 }
+		}
+	}
+army = {
+		name = "国民革命军第11集团军"
+		location = 7553
+                expeditionary_owner = CGX
+		regiment = { type = hq_brigade name = "国民革命军第11集团军军司令部" historical_model = 0 }
+		regiment = { type = cavalry_brigade name = "司令部守备部队" strength = 20 historical_model = 0 }
+                regiment = { type = artillery_brigade name = "国民革命军第11集团军山炮团" experience = 25 strength = 20 historical_model = 3 }
+}
+		corps = {
+			name = "第84军"
+			location = 7553
+                        expeditionary_owner = CGX
+			regiment = { type = hq_brigade name = "第84军司令部" historical_model = 0 }
+			division= {
+				name = "国民革命军第131师"
+				location = 7553
+                                expeditionary_owner = CGX
+				regiment = { type = infantry_brigade historical_model = 0 }
+				regiment = { type = infantry_brigade historical_model = 0 }
+			}
+			division= {
+				name = "国民革命军第188师"
+				location = 7553
+                                expeditionary_owner = CGX
+				regiment = { type = militia_brigade historical_model = 0 }
+				regiment = { type = militia_brigade historical_model = 0 }
+                        }
+			division= {
+				name = "国民革命军第189师"
+				location = 7553
+                                expeditionary_owner = CGX
+				regiment = { type = militia_brigade historical_model = 0 }
+				regiment = { type = militia_brigade historical_model = 0 }
+                                regiment = { type = infantry_brigade historical_model = 0 }
+				regiment = { type = infantry_brigade historical_model = 0 
+		}
+	}
+             	corps = {
+			name = "第39军"
+			location = 7553
+                        expeditionary_owner = CGX
+			regiment = { type = hq_brigade name = "第39军司令部" historical_model = 0 }
+			division= {
+				name = "国民革命军暂编51师"
+				location = 7553
+                                expeditionary_owner = CGX
+				regiment = { type = militia_brigade historical_model = 0 }
+				regiment = { type = infantry_brigade historical_model = 0 }
+		}
+	}		

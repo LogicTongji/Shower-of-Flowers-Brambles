@@ -1,0 +1,52 @@
+assault = {
+	is_attacker = yes
+
+	attacker = 0.25			#attacker gets a bonus to doing damage
+}
+
+encirclement = {
+	is_attacker = yes
+
+	combat_width = 5		#increased combat_width
+	attacker = 0.25
+	defender = 0.05
+}
+
+delay = {
+	is_attacker = no
+	movement_speed = -0.25		#
+	attacker = -0.25
+	defender = -0.15
+}
+
+
+shock = {
+	is_attacker = yes
+	defender = -0.25
+}
+
+
+counterattack = {
+	is_attacker = no
+	defender = 0.25			#defender gets a bonus to doing damage
+}
+
+tactical_withdrawal = {
+	is_attacker = no
+	combat_width = -5		#decreased combat_width
+	attacker = -0.25
+	defender = -0.05
+}
+
+breakthrough = {
+	is_attacker = yes
+	movement_speed = 0.25		#
+	attacker = 0.25
+	defender = 0.15
+}
+
+ambush = {
+	is_attacker = no
+	attacker = -0.25
+}
+

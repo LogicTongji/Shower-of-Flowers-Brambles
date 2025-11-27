@@ -1,0 +1,816 @@
+#########################################################################
+# Spearhead Theories
+#########################################################################
+
+mobile_warfare = {
+
+    hq_brigade = {
+        maximum_speed = 0.5
+    }
+   communications_company = {
+     maximum_speed = 0.5
+    }
+   tactic_breakthrough = 5
+   tactic_superior_breakthrough = 2
+
+    research_bonus_from = {
+        spearhead_theory = 0.3
+        land_doctrine_practical = 0.7
+    }
+
+    change = no
+    on_completion = spearhead_theory
+
+    difficulty = 5
+
+    #common for all techs.
+    start_year = 1918
+    first_offset = 1936 #2nd model is from 1936
+    additional_offset = 2   #one new every 2 years
+    max_level = 12
+    folder = land_doctrine_folder
+}
+
+elastic_defence = {
+    hq_brigade = {
+        default_organisation = 5
+    }
+    communications_company = {
+        default_organisation = 5
+    }
+	sp_artillery_brigade = {    
+		default_morale = 0.05   
+	}
+	sp_rct_artillery_brigade = {    
+		default_morale = 0.05   
+	}
+	mot_aa_brigade = {    
+		default_morale = 0.05   
+	}
+	air_engineer_brigade = {   
+		default_morale = 0.05   
+	}
+
+
+
+    tactic_tactical_withdrawal = 3
+	tactic_elastic_defence = 3
+	tactic_backhand_blow = 1
+
+    research_bonus_from = {
+        spearhead_theory = 0.3
+        land_doctrine_practical = 0.7
+    }
+
+    change = no
+    on_completion = spearhead_theory
+
+    difficulty = 5
+
+    #common for all techs.
+    start_year = 1918
+    first_offset = 1936 #2nd model is from 1936
+    additional_offset = 2   #one new every 2 years
+    max_level = 12
+    folder = land_doctrine_folder
+}
+
+
+spearhead_doctrine = {
+    armor_brigade = {
+        combat_width = -1
+    }
+    heavy_armor_brigade = {
+        combat_width = -1
+    }
+    light_armor_brigade = {
+        combat_width = -1
+    }
+    allow = {
+        mobile_warfare = 3
+        # land_doctrine_practical = 10
+    }
+    research_bonus_from = {
+        spearhead_theory = 0.3
+        land_doctrine_practical = 0.7
+    }
+
+    change = no
+    on_completion = spearhead_theory
+
+    difficulty = 5
+    start_year = 1940
+    folder = land_doctrine_folder
+}
+
+schwerpunkt = {
+    armor_brigade = {       default_morale = 0.05   }
+    heavy_armor_brigade = {     default_morale = 0.05   }
+    light_armor_brigade = {     default_morale = 0.05   }
+    super_heavy_armor_brigade = {   default_morale = 0.05   }
+    tank_destroyer_brigade  = { default_morale = 0.05   }
+    armored_car_brigade = {     default_morale = 0.05   }
+    sp_anti_air_brigade = {     default_morale = 0.05   }
+    motorized_artillery_brigade = {     default_morale = 0.05   }
+    motorized_anti_air_brigade = {     default_morale = 0.05   }
+    glider_armor_brigade = {     default_morale = 0.05   }
+    glider_anti_tank_brigade = {     default_morale = 0.05   }
+    assault_gun_brigade = {     default_morale = 0.05   }
+    amph_armour_brigade = {     default_morale = 0.05   }
+
+    research_bonus_from = {
+        spearhead_theory = 0.3
+        land_doctrine_practical = 0.7
+    }
+
+    change = no
+    on_completion = spearhead_theory
+
+    difficulty = 10
+
+    #common for all techs.
+    start_year = 1918
+    first_offset = 1936 #2nd model is from 1936
+    additional_offset = 2   #one new every 2 years
+    max_level = 12
+    folder = land_doctrine_folder
+}
+
+blitzkrieg = {
+    armor_brigade = {       default_organisation = 5    }
+    heavy_armor_brigade = {     default_organisation = 5    }
+    light_armor_brigade = {     default_organisation = 5    }
+    super_heavy_armor_brigade = {   default_organisation = 5    }
+    tank_destroyer_brigade  = { default_organisation = 5    }
+    armored_car_brigade = {     default_organisation = 5    }
+	mot_aa_brigade = {    default_organisation = 5    }
+	 sp_anti_air_brigade = { default_organisation = 5    }
+    motorized_artillery_brigade = { default_organisation = 5    }
+    motorized_anti_air_brigade = { default_organisation = 5    }
+    glider_armor_brigade = { default_organisation = 5    }
+    glider_anti_tank_brigade = { default_organisation = 5    }
+    assault_gun_brigade  = { default_organisation = 5    }
+    amph_armour_brigade = { default_organisation = 5    }
+	
+	tactic_blitz = 3
+	tactic_super_blitz = 1
+
+
+    research_bonus_from = {
+        spearhead_theory = 0.3
+        land_doctrine_practical = 0.7
+    }
+
+    change = no
+    on_completion = spearhead_theory
+
+    difficulty = 10
+
+    #common for all techs.
+    start_year = 1918
+    first_offset = 1936 #2nd model is from 1936
+    additional_offset = 2   #one new every 2 years
+    max_level = 12
+    folder = land_doctrine_folder
+}
+
+
+
+operational_level_command_structure = {
+
+    attack_movement_speed = 0.02
+
+    research_bonus_from = {
+        spearhead_theory = 0.3
+        land_doctrine_practical = 0.7
+    }
+
+    change = no
+    on_completion = spearhead_theory
+
+    difficulty = 5
+
+    #common for all techs.
+    start_year = 1918
+    first_offset = 1936 #2nd model is from 1936
+    additional_offset = 2   #one new every 2 years
+    max_level = 12
+    folder = land_doctrine_folder
+}
+
+
+
+
+#########################################################################
+# Superior Firepower Theories
+#########################################################################
+
+tactical_command_structure = {
+
+    mechanized_brigade = {      default_morale = 0.05   }
+    motorized_brigade = {       default_morale = 0.05   }
+    cavalry_brigade = {     default_morale = 0.05   }
+	waffen_brigade = {       default_morale = 0.05   }
+    hobart_armor_brigade = {       default_morale = 0.05   }
+    air_engineer_brigade = {   
+		default_morale = 0.05   
+	}
+    research_bonus_from = {
+        superior_firepower_theory = 0.3
+        land_doctrine_practical = 0.7
+    }
+
+    change = no
+    on_completion = superior_firepower_theory
+
+    difficulty = 5
+
+    #common for all techs.
+    start_year = 1918
+    first_offset = 1937 #2nd model is from 1936
+    additional_offset = 2   #one new every 2 years
+    max_level = 12
+    folder = land_doctrine_folder
+}
+
+delay_doctrine = {
+    hq_brigade = {
+        soft_attack = 0.1
+    }
+	    communications_company = {
+soft_attack = 0.1
+    }     
+    hobart_armor_brigade = {
+soft_attack = 0.1
+    }     
+    air_engineer_brigade = {   
+		soft_attack = 0.1
+	}
+
+	anti_air_brigade = {      default_morale = 0.05   }
+	alpine_artillery_brigade = {      default_morale = 0.05   }
+	anti_tank_brigade = {      default_morale = 0.05   }
+	artillery_brigade = {      default_morale = 0.05   }
+	rocket_artillery_brigade = {      default_morale = 0.05   }
+	sp_anti_air_brigade = {      default_morale = 0.05   }
+	motorized_artillery_brigade = {      default_morale = 0.05   }
+	motorized_anti_air_brigade = {      default_morale = 0.05   }
+	assault_gun_brigade = {      default_morale = 0.05   }
+	glider_anti_tank_brigade = {      default_morale = 0.05   }
+	
+    tactic_delay = 3
+	tactic_slower_delay = 1
+
+    research_bonus_from = {
+        superior_firepower_theory = 0.3
+        land_doctrine_practical = 0.7
+    }
+
+    change = no
+    on_completion = superior_firepower_theory
+
+    difficulty = 5
+
+    #common for all techs.
+    start_year = 1918
+    first_offset = 1936 #2nd model is from 1936
+    additional_offset = 2   #one new every 2 years
+    max_level = 12
+    folder = land_doctrine_folder
+}
+
+integrated_support_doctrine = {
+    hq_brigade = {
+        hard_attack = 0.1
+    }
+     communications_company = {
+        hard_attack = 0.1
+    }   
+	paratrooper_brigade = {
+		default_morale = 0.05
+			}
+	marine_brigade = {
+		default_morale = 0.05
+			}
+	bergsjaeger_brigade = {
+		default_morale = 0.05
+			}
+	
+	alpini_brigade = {
+		default_morale = 0.05
+	}
+	alpins_brigade = {
+		default_morale = 0.05
+	}
+	gurkha_brigade = {
+		default_morale = 0.05
+	}
+	guards_brigade = {
+		default_morale = 0.05
+	}
+		GER_ss = {
+		default_morale = 0.05
+	}
+		For_the_occasion_brigade = {
+		default_morale = 0.05
+	}
+		field_battalion = {
+		default_morale = 0.05
+	}
+	chc_gundam = {
+		default_morale = 0.05
+	}
+	chi_star_destroyer = {
+		default_morale = 0.05
+	}
+	imperial_brigade = {
+		default_morale = 0.05
+	}
+	ranger_brigade = {
+		default_morale = 0.05
+	}
+	hobart_armor_brigade = {
+		default_morale = 0.05
+	}
+	air_engineer_brigade = {   
+		default_morale = 0.05
+	}
+	
+    tactic_encirclement = 3
+
+    research_bonus_from = {
+        superior_firepower_theory = 0.3
+        land_doctrine_practical = 0.7
+    }
+
+    change = no
+    on_completion = superior_firepower_theory
+
+    difficulty = 5
+
+    #common for all techs.
+    start_year = 1918
+    first_offset = 1936 #2nd model is from 1936
+    additional_offset = 2   #one new every 2 years
+    max_level = 12
+    folder = land_doctrine_folder
+}
+
+superior_firepower = {
+
+    division_size = 1   #allow 1 extra brigade
+
+    allow = {
+        tactical_command_structure = 3
+        # land_doctrine_practical = 10
+    }
+
+    research_bonus_from = {
+        superior_firepower_theory = 0.3
+        land_doctrine_practical = 0.7
+    }
+
+    change = no
+    on_completion = superior_firepower_theory
+
+    difficulty = 5
+    start_year = 1940
+    folder = land_doctrine_folder
+}
+
+mechanized_offensive = {
+    mechanized_brigade = {      default_organisation = 5    }
+    motorized_brigade = {       default_organisation = 5    }
+    cavalry_brigade = {         default_organisation = 5    }
+	waffen_brigade = {       default_organisation = 5    }
+	GER_ss = {   default_organisation = 5    }
+	 sp_anti_air_brigade = {      default_organisation = 5    }
+    motorized_artillery_brigade  = {      default_organisation = 5    }
+    motorized_anti_air_brigade  = {      default_organisation = 5    }
+     hobart_armor_brigade  = {      default_organisation = 5    }
+     air_engineer_brigade = {   
+		 default_organisation = 5 
+	}
+
+
+    research_bonus_from = {
+        superior_firepower_theory = 0.3
+        land_doctrine_practical = 0.7
+    }
+
+    change = no
+    on_completion = superior_firepower_theory
+
+    difficulty = 10
+
+    #common for all techs.
+    start_year = 1935
+    first_offset = 1937 #2nd model is from 1936
+    additional_offset = 2   #one new every 2 years
+    max_level = 12
+    folder = land_doctrine_folder
+}
+
+combined_arms_warfare = {
+
+    # combined_arms_bonus = 0.1
+    armor_unit_type = 0.1
+
+	activate_unit = sp_rct_artillery_brigade 
+	activate_unit = sp_anti_air_brigade 
+	activate_unit = motorized_artillery_brigade 
+	activate_unit = motorized_anti_air_brigade
+	activate_unit = assault_gun_brigade 
+
+    research_bonus_from = {
+        superior_firepower_theory = 0.3
+        land_doctrine_practical = 0.7
+    }
+
+    allow = {
+        mechanized_offensive = 3
+    }
+
+    change = no
+    on_completion = superior_firepower_theory
+
+    difficulty = 10
+
+    #common for all techs.
+    start_year = 1940
+    folder = land_doctrine_folder
+}
+
+
+#########################################################################
+# Grand Battleplan Theories  grand_battleplan_theory
+#########################################################################
+
+
+infantry_warfare = {
+    infantry_brigade = {        default_organisation = 5    }
+      For_the_occasion_brigade = {        default_organisation = 5    }
+        field_battalion = {        default_organisation = 5    }
+
+
+    research_bonus_from = {
+        grand_battleplan_theory = 0.3
+        land_doctrine_practical = 0.7
+    }
+
+    change = no
+    on_completion = grand_battleplan_theory
+
+    difficulty = 5
+
+    #common for all techs.
+    start_year = 1918
+    first_offset = 1936 #2nd model is from 1936
+    additional_offset = 2   #one new every 2 years
+    max_level = 12
+    folder = land_doctrine_folder
+}
+
+special_forces = {
+    paratrooper_brigade = {     default_organisation = 5    }
+    bergsjaeger_brigade = {     default_organisation = 5    }
+    marine_brigade = {      default_organisation = 5    }
+    hobart_armor_brigade = {        
+		default_organisation = 5    
+	}
+	air_engineer_brigade = {   
+		 default_organisation = 5 
+	}
+
+	engineer_brigade = {        
+		default_organisation = 5    
+	}
+	alpini_brigade = {
+		default_organisation = 5
+	}
+	alpins_brigade = {
+		default_organisation = 5
+	}
+	gurkha_brigade = {
+		default_organisation = 5
+	}
+	guards_brigade = {
+		default_organisation = 5
+	}
+	chc_gundam = {
+		default_organisation = 5
+	}
+	chi_star_destroyer = {
+		default_organisation = 5
+	}
+	imperial_brigade = {
+		default_organisation = 5
+	}
+	ranger_brigade = {
+		default_organisation = 5
+	}
+GER_ss = {
+		default_organisation = 5
+	}
+	communications_company = {
+		default_organisation = 5
+	}
+    research_bonus_from = {
+        grand_battleplan_theory = 0.3
+        land_doctrine_practical = 0.7
+    }
+
+    change = no
+    on_completion = grand_battleplan_theory
+
+    difficulty = 5
+
+    #common for all techs.
+    start_year = 1918
+    first_offset = 1936 #2nd model is from 1936
+    additional_offset = 2   #one new every 2 years
+    max_level = 12
+    folder = land_doctrine_folder
+}
+
+central_planning = {
+
+    hq_brigade = {
+        toughness = 1
+    }
+communications_company = { 
+toughness = 1
+    }
+    tactic_counterattack = 3
+    research_bonus_from = {
+        grand_battleplan_theory = 0.3
+        land_doctrine_practical = 0.7
+    }
+
+    change = no
+    on_completion = grand_battleplan_theory
+
+    difficulty = 5
+
+    #common for all techs.
+    start_year = 1918
+    first_offset = 1936 #2nd model is from 1936
+    additional_offset = 2   #one new every 2 years
+    max_level = 12
+    folder = land_doctrine_folder
+}
+
+mass_assault = {
+    tactic_assault = 3
+	tactic_reckless_assault = 1
+    communications_company = {
+        defensiveness = 1
+    }
+    hq_brigade = {
+        defensiveness = 1
+    }
+		For_the_occasion_brigade = {
+		default_morale = 0.05
+			}
+infantry_brigade = {
+		default_morale = 0.05
+			}
+    research_bonus_from = {
+        grand_battleplan_theory = 0.3
+        land_doctrine_practical = 0.7
+    }
+    assault_gun_brigade = {     default_morale = 0.05
+      }
+
+    change = no
+    on_completion = grand_battleplan_theory
+
+    difficulty = 5
+
+    #common for all techs.
+    start_year = 1918
+    first_offset = 1936 #2nd model is from 1936
+    additional_offset = 2   #one new every 2 years
+    max_level = 12
+    folder = land_doctrine_folder
+}
+
+
+
+grand_battle_plan = {
+
+    reinforce_chance = 0.05
+
+    research_bonus_from = {
+        grand_battleplan_theory = 0.3
+        land_doctrine_practical = 0.7
+    }
+    allow = {
+        central_planning = 3
+    }
+
+    change = no
+    on_completion = grand_battleplan_theory
+
+    difficulty = 5
+
+    #common for all techs.
+    start_year = 1940
+    folder = land_doctrine_folder
+}
+
+
+assault_concentration = {
+    anti_air_brigade = {        default_organisation = 5    }
+    anti_tank_brigade = {       default_organisation = 5    }
+    sp_artillery_brigade = {    default_organisation = 5    }
+    sp_rct_artillery_brigade = {    default_organisation = 5    }
+    rocket_artillery_brigade = {    default_organisation = 5    }
+    artillery_brigade = {       default_organisation = 5    }
+	alpine_artillery_brigade = {       default_organisation = 5    }
+anti_air_company = {       default_organisation = 5    }
+artillery_brigadeB = {       default_organisation = 5    }
+	alpine_artillery_brigadeB = {       default_organisation = 5    }
+    research_bonus_from = {
+        grand_battleplan_theory = 0.3
+        land_doctrine_practical = 0.7
+    }
+     sp_anti_air_brigade = {        default_organisation = 5    }
+    motorized_artillery_brigade = {        default_organisation = 5    }
+    motorized_anti_air_brigade = {        default_organisation = 5    }
+    glider_armor_brigade = {        default_organisation = 5    }
+    glider_anti_tank_brigade = {        default_organisation = 5    }
+    assault_gun_brigade = {        default_organisation = 5    }
+
+    change = no
+    on_completion = grand_battleplan_theory
+
+    difficulty = 5
+
+    #common for all techs.
+    start_year = 1918
+    first_offset = 1936 #2nd model is from 1936
+    additional_offset = 2   #one new every 2 years
+    max_level = 12
+    folder = land_doctrine_folder
+}
+
+#########################################################################
+# Human Wave Theories  human_wave_theory
+#########################################################################
+operational_level_organisation = {
+
+    attack_delay = 24
+
+    research_bonus_from = {
+        human_wave_theory = 0.3
+        land_doctrine_practical = 0.7
+    }
+
+    change = no
+    on_completion = human_wave_theory
+
+    difficulty = 4
+
+    #common for all techs.
+    start_year = 1918
+    first_offset = 1936
+    additional_offset = 4
+    max_level = 12
+    folder = land_doctrine_folder
+}
+
+large_front = {
+
+    hq_brigade = {
+        supply_consumption = -0.01
+    }
+For_the_occasion_brigade = {
+		default_morale = 0.03
+			}
+	militia_brigade = {
+		default_morale = 0.05
+			}
+	garrison_brigade = {
+		default_morale = 0.02
+			}
+			camicie_nere_brigade = {
+			 default_morale = 0.02
+			  }
+
+    tactic_shock = 3
+    research_bonus_from = {
+        human_wave_theory = 0.3
+        land_doctrine_practical = 0.7
+    }
+
+    change = no
+    on_completion = human_wave_theory
+
+    difficulty = 5
+
+    #common for all techs.
+    start_year = 1918
+    first_offset = 1936 #2nd model is from 1936
+    additional_offset = 2   #one new every 2 years
+    max_level = 12
+    folder = land_doctrine_folder
+}
+
+guerilla_warfare = {
+
+    hq_brigade = {
+        supply_consumption = -0.01
+    }
+
+    tactic_ambush = 3
+    research_bonus_from = {
+        human_wave_theory = 0.3
+        land_doctrine_practical = 0.7
+    }
+
+    change = no
+    on_completion = human_wave_theory
+
+    difficulty = 5
+
+    #common for all techs.
+    start_year = 1918
+    first_offset = 1936 #2nd model is from 1936
+    additional_offset = 2   #one new every 2 years
+    max_level = 12
+    folder = land_doctrine_folder
+}
+
+peoples_army = {
+camicie_nere_brigade = { default_organisation = 5 }
+For_the_occasion_brigade = {     default_organisation = 5    }
+    militia_brigade = {     default_organisation = 5    }
+    partisan_brigade = {        default_organisation = 5    }
+    garrison_brigade = {        default_organisation = 5    }
+
+
+    research_bonus_from = {
+        human_wave_theory = 0.3
+        land_doctrine_practical = 0.7
+    }
+
+    change = no
+    on_completion = human_wave_theory
+
+    difficulty = 3
+
+    #common for all techs.
+    start_year = 1918
+    first_offset = 1936 #2nd model is from 1936
+    additional_offset = 2   #one new every 2 years
+    max_level = 12
+    folder = land_doctrine_folder
+}
+
+large_formations = {
+camicie_nere_brigade = { combat_width = -0.5 }
+For_the_occasion_brigade = { combat_width = -0.3 }
+    militia_brigade = { combat_width = -0.5 }
+    partisan_brigade = { combat_width = -0.5 }
+    allow = {
+        large_front = 3
+        peoples_army = 3
+    }
+
+    change = no
+    research_bonus_from = {
+        human_wave_theory = 0.3
+        land_doctrine_practical = 0.7
+    }
+
+    on_completion = human_wave_theory
+
+    difficulty = 3
+    #common for all techs.
+    start_year = 1939
+    folder = land_doctrine_folder
+}
+
+human_wave = {
+
+    unit_cooperation = 0.05
+
+    research_bonus_from = {
+        human_wave_theory = 0.3
+        land_doctrine_practical = 0.7
+    }
+
+    change = no
+    on_completion = human_wave_theory
+
+    difficulty = 5
+
+    allow = {
+        large_front = 3
+    }
+
+    #common for all techs.
+    start_year = 1940
+    folder = land_doctrine_folder
+}

@@ -1,0 +1,157 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new buildings, make sure they are uniquely named.
+#
+# Order in here matters for selection priority if icons are overlapping,
+# so leave bases on top
+
+# 
+# cost = x #==> cost in ic to build (subject to other modifiers)
+# time = x #==> number of day to build.
+#
+
+air_base = {
+	on_completion = construction_practical
+	completion_size = 0.13
+
+	air_capacity = 1
+	capital = yes
+	onmap = yes
+	cost = 4
+	time = 90
+	max_level = 10
+	visibility = yes
+}
+
+naval_base = {
+	on_completion = construction_practical
+	completion_size = 0.33
+	naval_capacity = 1
+	capital = yes
+	onmap = yes
+	port = yes
+	cost = 5
+	time = 180
+	max_level = 10
+	visibility = yes
+}
+
+
+coastal_fort = {
+	on_completion = construction_practical
+	completion_size = 0.33
+
+	coastal_fort_level = 1
+	onmap = yes
+	visibility = yes
+	port = yes
+	orientation = yes
+	
+	cost = 5
+	time = 180
+	max_level = 10
+}
+
+land_fort = {
+	on_completion = construction_practical
+	completion_size = 0.33
+
+	fort_level = 1
+	onmap = yes
+	visibility = yes
+	
+	cost = 5
+	time = 180
+	max_level = 10
+}
+
+anti_air = {
+	completion_size = 0.25
+	on_completion = artillery_practical
+	local_anti_air = 1
+	capital = yes
+	onmap = yes
+	visibility = yes
+	
+	cost = 3
+	time = 60
+	max_level = 10
+	
+	damage_factor = 0.25
+	
+}
+
+
+radar_station = {
+	on_completion = electornicegineering_practical
+	completion_size = 0.5
+	radar_level = 1
+	capital = yes
+	onmap = yes
+	visibility = yes
+	cost = 2
+	time = 180
+	max_level = 10
+}
+
+underground = {
+	onmap = yes
+	
+	capital = yes
+	local_underground = 1
+	visibility = yes
+	cost = 4
+	time = 180
+	on_completion = militia_theory
+	completion_size = 0.1
+	max_level = 1
+	show_for_province = no
+	repair = no
+}
+
+nuclear_reactor = {
+	
+	on_completion = nuclear_bomb
+	completion_size = 6
+	capital = yes
+	onmap = yes
+	visibility = yes
+	cost = 50
+	time = 180
+	max_level = 10
+}
+
+rocket_test = {
+	on_completion = rocket_practical
+	completion_size = 6
+	capital = yes
+	onmap = yes
+	visibility = yes
+	cost = 20
+	time = 180
+	max_level = 10
+}
+
+
+industry = {
+	on_completion = construction_practical
+	completion_size = 0.67
+
+	ic = 1
+	capital = yes
+	onmap = no
+	
+	cost = 5
+	time = 365
+	max_level = 10
+}
+
+infra = {
+	on_completion = construction_practical
+	completion_size = 0.13
+	infrastructure = 0.1
+	onmap = no
+	cost = 0.5
+	time = 180
+	max_level = 10
+	damage_factor = 0.25
+}

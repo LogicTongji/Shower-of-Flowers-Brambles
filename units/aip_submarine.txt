@@ -1,0 +1,51 @@
+aip_submarine = {
+	type = naval
+	sprite = Aip_submarine
+	is_sub = yes
+	active = no
+	
+	hull = 1.0
+	
+	#Size Definitions
+	max_strength = 100
+	default_organisation = 25
+	default_morale = 0.35
+	officers = 0
+
+
+	#Building Costs
+	build_cost_ic =  8.00
+	build_cost_manpower = 0.6
+	build_time = 300
+	repair_cost_multiplier = 0.10
+
+	#Misc Abilities
+	maximum_speed = 14.00
+	transport_capability = 0.00
+	supply_consumption = 0.45
+	fuel_consumption = 0.60
+	range = 1400
+	distance = 0.20
+	radio_strength = 1
+	
+	#Detection Abilities
+	surface_detection = 2.00
+	air_detection = 1.00
+	sub_detection = 1.00
+	visibility = 2
+
+	#Defensive Abilities
+	sea_defence = 7.00
+	air_defence = 3.00
+
+	#Offensive Abilities
+	convoy_attack = 2.00
+	sea_attack = 3.00
+	sub_attack = 0.00
+	air_attack = 2.00
+	shore_bombardment = 0.00
+
+	completion_size = 2
+	on_completion = submarine_practical
+	priority = 4
+}

@@ -1,0 +1,48 @@
+communications_company = {
+	type = land
+	sprite = Infantry
+	is_buildable = no
+        	unit_group = support_unit_type
+	can_paradrop = yes
+
+	#Size Definitions
+	max_strength = 1
+	default_organisation = 30
+	default_morale = 0.50
+	officers = 10
+
+	#Building Costs
+	build_cost_ic = 0.20
+	build_cost_manpower = 0.10
+	build_time = 100
+	repair_cost_multiplier = 0.05
+
+	#Misc Abilities
+	maximum_speed = 6.00
+	transport_weight = 10.00
+	supply_consumption = 0.50
+	fuel_consumption = 0.00
+	radio_strength = 2
+
+	#Defensive Abilities
+	defensiveness = 0.40	# was 5.67
+	toughness = 0.20
+	softness = 0.10
+	air_defence = 0.02
+
+	#Offensive Abilities
+	suppression = 0.05
+	soft_attack = 0.01
+	hard_attack = 0.00
+	air_attack = 0.00
+
+   	amphibious = { attack = -0.10 }
+    	river = { attack = -0.05 }
+	
+	combat_width = 0		# was 1
+
+	completion_size = 0.2
+	on_completion = land_doctrine_practical
+
+	priority = 11
+}

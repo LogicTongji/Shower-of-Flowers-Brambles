@@ -1,0 +1,166 @@
+guiTypes = {
+#################################################################################
+# Lend-Lease Distribution Window
+#################################################################################	
+	windowType = {
+		name = "lendlease_distribution_window"
+		backGround=""
+		position = { x=104 y=-232 }	
+		Orientation = "CENTER"
+		size = { x=500 y= 500 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+	
+		iconType = {
+			name = "detail_background"
+			spriteType = "GFX_bg_lendlease"
+			position = { x= 3 y = -38 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		listboxType = {
+			name = "country_list"
+			position = { x = 28 y = -32 }
+			backGround=""
+			size = { x=348 y = 413}
+			Orientation = "UPPER_LEFT"
+			spacing = 0
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}
+        
+		
+		guiButtonType = {
+			name = "close"
+			position = { x=138 y = 385}
+			quadTextureSprite ="GFX_button_128wide"
+			buttonText = "CLOSE"
+			buttonFont = "Arial12_black"
+		}		
+	}
+	
+	#### ENTRY
+	windowType = 
+	{
+		name = "lendlease_country_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=32 y= 59 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+		
+		iconType = 
+		{
+			name ="lendlease_entry"
+			spriteType = "GFX_lendlease_entry"
+			position = { x= 0 y =0 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		iconType = 
+		{
+			name ="flag"
+			spriteType = "GFX_minishield"
+			position = { x= 8 y = 15 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		instantTextBoxType = 
+		{
+			name = "country_name"
+			position = { x = 50 y = 9 }
+			textureFile = ""
+			font = "Arial12"
+			borderSize = {x = 0 y = 0}
+			text = "x/y"	
+			maxWidth = 175
+			maxHeight = 20	
+			fixedsize = yes
+		}
+		
+		## slider
+		scrollbarType = 
+		{
+			name = "actual_slider"	
+			slider = "ds_SliderButton"
+			track= "ds_TrackButton"
+			leftbutton = "ds_upButton"
+			rightbutton = "ds_downButton"
+			size = {x =180 y =16 }
+			position = {x= 51 y =33}
+			priority = 100			
+			borderSize = {x =16 y = 16}	
+			maxValue = 100
+			minValue = 0
+			stepSize =0.01
+			startValue = 50
+			horizontal = 1
+			lockable = yes
+
+			guiButtonType = 
+			{
+				name = "ds_SliderButton"	
+				quadTextureSprite = "yearslider_slider"
+				tooltip = ""
+				tooltipText =""	
+				delayedTooltipText = ""
+				position = { x=0 y =0}
+			}
+
+			guiButtonType = 
+			{
+				name = "ds_TrackButton"
+				quadTextureSprite = "techslider_background"
+				position = { x=0 y =20}	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""	
+			}	
+
+			guiButtonType = 
+			{
+				parent = "ds_SliderButton"
+				name = "ds_upButton"
+				quadTextureSprite = "techslider_leftbutton"
+				position = { x=0 y =0}	
+			}
+			
+			guiButtonType = 
+			{
+				parent = "ds_SliderButton"
+				name = "ds_downButton"
+				quadTextureSprite = "techslider_rightbutton"
+				position = { x=0 y =120}	
+			}
+		}
+		
+		###
+		
+		instantTextBoxType = 
+		{
+			name = "actual_IC"
+			position = { x = 233 y = 22 }
+			textureFile = ""
+			font = "Arial16"
+			borderSize = {x = 4 y = 0}
+			text = "100.0"	
+			maxWidth = 70
+			maxHeight = 32
+			format = centre
+		}
+		
+		guiButtonType = 
+		{
+			name = "cancel"
+			quadTextureSprite = "GFX_production_cancel_button"
+			position = { x=310 y =14}	
+		}
+	}		
+}
+

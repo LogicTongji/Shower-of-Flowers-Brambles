@@ -1,0 +1,43 @@
+#山西新军决死队正规序列
+division = {
+	name = "山西新军决死第1纵队"
+	location = 5174
+	regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+	regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+}
+division = {
+	name = "山西新军决死第2纵队"
+	location = 5174
+	regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+	regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+}
+division = {
+	name = "山西新军决死第3纵队"
+	location = 5174
+	regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+	regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+}
+division = {
+	name = "山西新军决死第4纵队"
+	location = 5174
+	regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+	regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+}
+division = {
+	name = "山西新军工人武装自卫纵队"
+	location = 5174
+	regiment = { type = infantry_brigade name = "第1总队" experience = 25 historical_model = 2 }
+	regiment = { type = infantry_brigade name = "第2总队" experience = 25 historical_model = 2 }
+}
+division = {
+	name = "山西新军政治保卫队"
+	location = 5174
+	regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+	regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+}
+division = {
+	name = "山西新军暂编第1师"
+	location = 5174
+	regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+	regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+}

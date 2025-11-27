@@ -1,0 +1,69 @@
+glider_anti_tank_brigade = {
+	type = land
+	sprite = Infantry
+	active = no
+	can_paradrop = yes
+	
+	#Size Definitions
+	max_strength = 10
+	default_organisation = 30
+	default_morale = 0.30
+	officers = 100
+
+	#Building Costs
+	build_cost_ic = 4.50
+	build_cost_manpower = 1.33
+	build_time = 150
+
+	#Misc Abilities
+	maximum_speed = 4.00
+	transport_weight = 4.00
+	supply_consumption = 0.70
+	fuel_consumption = 0.00
+	radio_strength = 1
+
+	#Defensive Abilities
+	defensiveness = 2.00
+	toughness = 0.67
+	softness = 1.00
+	air_defence = 1.50
+
+	#Offensive Abilities
+	suppression = 0.00
+	soft_attack = 2.33
+	hard_attack = 2.33
+	air_attack = 0.10
+	
+   	amphibious =    { 
+		attack = -0.40
+		movement = -1.00
+	}
+    river = { 
+		attack = -0.20
+	}
+   	marsh = { 
+		movement = -0.10
+	}
+	jungle = {
+		movement = -0.10
+	}
+	forest = { 
+		movement = -0.05
+	}
+	mountain = 	{
+		attack = -0.10
+		movement = -0.10
+	}
+	fort = {
+		attack = 0.10
+		defence = 0.10
+	}	
+
+	combat_width = 0
+
+	completion_size = 0.3
+	on_completion = artillery_practical
+	
+	priority = 4
+
+}

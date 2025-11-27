@@ -1,0 +1,126 @@
+81101 = {
+	name = "胡志明"
+	country = YUE
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L81101
+	history = {
+		1945.1.1 = { rank = 5 }
+		1969.1.1 = { rank = 0 }
+	}
+}
+81107 = {
+	name = "黄文泰"
+	country = YUE
+	type = land
+	skill = 1
+	max_skill = 4
+	add_trait = mao_army_5
+	loyalty = 0.00
+	picture = L81107
+	history = {
+		1945.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+81117 = {
+	name = "洪水"
+	country = YUE
+	type = land
+	skill = 3
+	max_skill = 5
+	add_trait = panzer_leader
+	add_trait = mao_army_7
+	loyalty = 0.00
+	picture = L81117
+	history = {
+		1936.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+81118 = {
+	name = "阮志清"
+	country = YUE
+	type = land
+	skill = 2
+	max_skill = 4
+	add_trait = mao_army_4
+	loyalty = 0.00
+	picture = L81118
+	history = {
+		1936.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+81119 = {
+	name = "文进勇"
+	country = YUE
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L81119
+	add_trait = trickster
+	add_trait = mao_army_6
+	history = {
+		1945.1.1 = { rank = 1 }
+		1985.1.1 = { rank = 0 }
+	}
+}
+81120 = {
+	name = "武元甲"
+	country = YUE
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L81120
+	history = {
+		1945.1.1 = { rank = 3 }
+		1984.1.1 = { rank = 0 }
+	}
+}
+81121 = {
+	name = "朱文晋"
+	country = YUE
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L81121
+	add_trait = trickster
+	history = {
+		1936.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+81122 = {
+	name = "黎仲迅"
+	country = YUE
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L81122
+	add_trait = trickster
+	history = {
+		1936.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+81123 = {
+	name = "黎德英"
+	country = YUE
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L81123
+	add_trait = trickster
+	history = {
+		1936.1.1 = { rank = 4 }
+		1970.1.1 = { rank = 0 }
+	}
+}

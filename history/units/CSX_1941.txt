@@ -1,0 +1,322 @@
+armygroup = {
+		expeditionary_owner = CSX
+		name = "第二战区"
+		location = 7467
+		leader = 50205
+		regiment = { type = hq_brigade name = "第二战区长官部" experience = 20  historical_model = 2 }
+		regiment = { type = infantry_brigade name = "直属警卫旅" experience = 20 historical_model = 2 }
+		regiment = { type = artillery_brigade name = "直属炮兵团" experience = 15 historical_model = 1 }
+		regiment = { type = armored_car_brigade name = "直辖装甲车队" experience = 15 historical_model = 1 }
+	army = {
+		expeditionary_owner = CSX
+		name = "第6集团军"
+		location = 7425
+		regiment = { type = hq_brigade name = "第6集团军总司令部" historical_model = 1 }	
+		corps = {
+			expeditionary_owner = CSX
+			name = "第19军"
+			location = 7467
+			regiment = { type = hq_brigade name = "第19军指挥部" historical_model = 0 }
+			division= {
+				expeditionary_owner = CSX
+				name = "第68师"
+				location = 7467
+				regiment = { type = infantry_brigade historical_model = 2 }
+				regiment = { type = infantry_brigade historical_model = 2 }
+			}
+			division= {
+				expeditionary_owner = CSX
+				name = "暂编第37师"
+				location = 7467
+				regiment = { type = infantry_brigade historical_model = 2 }
+				regiment = { type = infantry_brigade historical_model = 2 }
+			}
+			division= {
+				expeditionary_owner = CSX
+				name = "暂编第38师"
+				location = 5404
+				regiment = { type = infantry_brigade historical_model = 2 }
+				regiment = { type = infantry_brigade historical_model = 2 }
+			}
+		}
+		corps = {
+			expeditionary_owner = CSX
+			name = "第23军"
+			location = 5404
+			regiment = { type = hq_brigade name = "第23军指挥部" historical_model = 0 }
+			division= {
+				expeditionary_owner = CSX
+				name = "第73师"
+				location = 5404
+				regiment = { type = infantry_brigade historical_model = 2 }
+				regiment = { type = infantry_brigade historical_model = 2 }
+			}
+			division= {
+				expeditionary_owner = CSX
+				name = "第196旅"
+				location = 5404
+				regiment = { type = infantry_brigade historical_model = 2 }
+			}
+			division= {
+				expeditionary_owner = CSX
+				name = "独立第2旅"
+				location = 5404
+				regiment = { type = infantry_brigade historical_model = 2 }
+			}
+		}
+	}
+	army = {
+		expeditionary_owner = CSX
+		name = "第7集团军"
+		location = 5404
+		regiment = { type = hq_brigade name = "第7集团军指挥部" historical_model = 1 }	
+		corps = {
+			expeditionary_owner = CSX
+			name = "第33军"
+			location = 7425
+			regiment = { type = hq_brigade name = "第33军指挥部" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "独立44旅" historical_model = 0 }
+			division= {
+				expeditionary_owner = CSX
+				name = "第73师"
+				location = 7425
+				regiment = { type = infantry_brigade historical_model = 2 }
+				regiment = { type = infantry_brigade historical_model = 2 }
+			}
+			division= {
+				expeditionary_owner = CSX
+				name = "第30师"
+				location = 5404
+				regiment = { type = infantry_brigade historical_model = 2 }
+				regiment = { type = infantry_brigade historical_model = 2 }
+			}
+			division= {
+				expeditionary_owner = CSX
+				name = "第31师"
+				location = 7467
+				regiment = { type = infantry_brigade historical_model = 2 }
+				regiment = { type = infantry_brigade historical_model = 2 }
+			}
+		}
+		corps = {
+			expeditionary_owner = CSX
+			name = "第34军"
+			location = 7467
+			regiment = { type = hq_brigade name = "第34军指挥部" historical_model = 0 }
+			division= {
+				expeditionary_owner = CSX
+				name = "第71师"
+				location = 7467
+				regiment = { type = infantry_brigade historical_model = 2 }
+				regiment = { type = infantry_brigade historical_model = 2 }
+			}
+			division= {
+				expeditionary_owner = CSX
+				name = "新编第2师"
+				location = 7467
+				regiment = { type = infantry_brigade historical_model = 2 }
+				regiment = { type = infantry_brigade historical_model = 2 }
+			}
+		}
+		corps = {
+			expeditionary_owner = CSX
+			name = "第35军"
+			location = 7467
+			regiment = { type = hq_brigade name = "第35军指挥部" historical_model = 0 }
+			division= {
+				expeditionary_owner = CSX
+				name = "第101师"
+				location = 7467
+				regiment = { type = infantry_brigade historical_model = 2 }
+				regiment = { type = infantry_brigade historical_model = 2 }
+			}
+			division= {
+				expeditionary_owner = CSX
+				name = "第73师"
+				location = 7467
+				regiment = { type = infantry_brigade historical_model = 2 }
+				regiment = { type = infantry_brigade historical_model = 2 }
+			}
+		}
+	corps = {
+			expeditionary_owner = CSX
+			name = "挺进军"
+			location = 7425
+			regiment = { type = hq_brigade name = "挺进军指挥部" historical_model = 0 }
+			regiment = { type = cavalry_brigade name = "暂编骑兵第1旅" historical_model = 0 }
+			division= {
+				expeditionary_owner = CSX
+				name = "骑兵第6师"
+				location = 7425
+				regiment = { type = cavalry_brigade historical_model = 2 }
+				regiment = { type = cavalry_brigade historical_model = 2 }
+			}
+			division= {
+				expeditionary_owner = CSX
+				name = "新编骑兵第3师"
+				location = 7425
+				regiment = { type = cavalry_brigade historical_model = 2 }
+				regiment = { type = cavalry_brigade historical_model = 2 }
+			}
+		}
+	}	
+	army = {
+		expeditionary_owner = CSX
+		name = "第8集团军"
+		location = 7425
+		regiment = { type = hq_brigade name = "第8集团军总司令部" historical_model = 1 }	
+		corps = {
+			expeditionary_owner = CSX
+			name = "第43军"
+			location = 7425
+			regiment = { type = hq_brigade name = "第43军指挥部" historical_model = 0 }
+			division= {
+				expeditionary_owner = CSX
+				name = "第70师"
+				location = 7425
+				regiment = { type = infantry_brigade historical_model = 2 }
+				regiment = { type = infantry_brigade historical_model = 2 }
+			}
+			division= {
+				expeditionary_owner = CSX
+				name = "暂编第46师"
+				location = 7425
+				regiment = { type = infantry_brigade historical_model = 2 }
+				regiment = { type = infantry_brigade historical_model = 2 }
+			}
+			division= {
+				expeditionary_owner = CSX
+				name = "暂编第47师"
+				location = 7425
+				regiment = { type = infantry_brigade historical_model = 2 }
+				regiment = { type = infantry_brigade historical_model = 2 }
+			}
+		}
+		corps = {
+			expeditionary_owner = CSX
+			name = "第61军"
+			location = 7467
+			regiment = { type = hq_brigade name = "第61军指挥部" historical_model = 0 }
+			division= {
+				expeditionary_owner = CSX
+				name = "第69师"
+				location = 7467
+				regiment = { type = infantry_brigade historical_model = 2 }
+				regiment = { type = infantry_brigade historical_model = 2 }
+			}
+			division= {
+				expeditionary_owner = CSX
+				name = "第72师"
+				location = 7467
+				regiment = { type = infantry_brigade historical_model = 2 }
+				regiment = { type = infantry_brigade historical_model = 2 }
+			}
+			division= {
+				expeditionary_owner = CSX
+				name = "暂编第48师"
+				location = 7467
+				regiment = { type = infantry_brigade historical_model = 2 }
+				regiment = { type = infantry_brigade historical_model = 2 }
+			}
+		}
+	}
+	army = {
+		expeditionary_owner = CSX
+		name = "第13集团军"
+		location = 5404
+		regiment = { type = hq_brigade name = "第13集团军指挥部" historical_model = 1 }	
+		corps = {
+			expeditionary_owner = CSX
+			name = "骑兵第1军"
+			location = 5404
+			regiment = { type = hq_brigade name = "骑兵第6军指挥部" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "新编第5旅" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "绥保1旅" historical_model = 0 }
+			division= {
+				expeditionary_owner = CSX
+				name = "骑兵第1师"
+				location = 5404
+				regiment = { type = cavalry_brigade historical_model = 2 }
+				regiment = { type = cavalry_brigade historical_model = 2 }
+			}
+			division= {
+				expeditionary_owner = CSX
+				name = "骑兵第2师"
+				location = 5404
+				regiment = { type = cavalry_brigade historical_model = 2 }
+				regiment = { type = cavalry_brigade historical_model = 2 }
+			}
+			division= {
+				expeditionary_owner = CSX
+				name = "骑兵第6师"
+				location = 5404
+				regiment = { type = cavalry_brigade historical_model = 2 }
+				regiment = { type = cavalry_brigade historical_model = 2 }
+			}
+			division= {
+				expeditionary_owner = CSX
+				name = "骑兵第7师"
+				location = 5404
+				regiment = { type = cavalry_brigade historical_model = 2 }
+				regiment = { type = cavalry_brigade historical_model = 2 }
+			}
+		}	
+		corps = {
+			expeditionary_owner = CSX
+			name = "第83军"
+			location = 5404
+			regiment = { type = hq_brigade name = "第83军指挥部" historical_model = 0 }
+			division= {
+				expeditionary_owner = CSX
+				name = "第66师"
+				location = 5404
+				regiment = { type = infantry_brigade historical_model = 2 }
+				regiment = { type = infantry_brigade historical_model = 2 }
+			}
+			division= {
+				expeditionary_owner = CSX
+				name = "暂编第49师"
+				location = 5404
+				regiment = { type = infantry_brigade historical_model = 2 }
+				regiment = { type = infantry_brigade historical_model = 2 }
+
+			}
+			division= {
+				expeditionary_owner = CSX
+				name = "暂编第50师"
+				location = 7425
+				regiment = { type = infantry_brigade historical_model = 2 }
+				regiment = { type = infantry_brigade historical_model = 2 }
+			}
+		}
+	}			
+			division= {
+				expeditionary_owner = CSX
+				name = "暂编第1师"
+				location = 7425
+				regiment = { type = infantry_brigade historical_model = 2 }
+				regiment = { type = infantry_brigade historical_model = 2 }
+			}
+			division= {
+				expeditionary_owner = CSX
+				name = "暂编第2师"
+				location = 7425
+				regiment = { type = infantry_brigade historical_model = 2 }
+				regiment = { type = infantry_brigade historical_model = 2 }
+
+			}
+			division= {
+				expeditionary_owner = CSX
+				name = "第66师"
+				location = 7425
+				regiment = { type = infantry_brigade historical_model = 2 }
+				regiment = { type = infantry_brigade historical_model = 2 }
+			}
+			division= {
+				expeditionary_owner = CSX
+				name = "第71师"
+				location = 7467
+				regiment = { type = infantry_brigade historical_model = 2 }
+				regiment = { type = infantry_brigade historical_model = 2 }
+			}
+}

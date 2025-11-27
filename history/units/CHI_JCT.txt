@@ -1,0 +1,89 @@
+	armygroup = {
+		name = "冀察战区"
+		location = 5054
+		leader = 50278
+		regiment = { type = hq_brigade name = "冀察战区长官部" historical_model = 1 }
+			corps = {
+				name = "第69军"
+				location = 5054
+				leader = 50197
+				regiment = { type = hq_brigade name = "第69军司令部" historical_model = 1 }
+				division = {
+					name = "第181师"
+					location = 5054
+					regiment = { type = infantry_brigade historical_model = 1 }
+					regiment = { type = infantry_brigade historical_model = 1 }
+				}
+				division = {
+					name = "新编第6师"
+					location = 5054
+					regiment = { type = For_the_occasion_brigade historical_model = 1 }
+					regiment = { type = For_the_occasion_brigade historical_model = 1 }
+				}
+				division = {
+					name = "骑兵第9师"
+					location = 5054
+					expeditionary_owner = CJC
+					regiment = { type = cavalry_brigade experience = 25 historical_model = 1 }
+					regiment = { type = cavalry_brigade experience = 25 historical_model = 1 }
+					regiment = { type = cavalry_brigade experience = 25 historical_model = 1 }
+				}
+				division = {
+					name = "新编第4旅"
+					location = 5054
+					regiment = { type = For_the_occasion_brigade historical_model = 1 }
+				}
+					division = {
+					name = "独立第13旅"
+					location = 5054
+					regiment = { type = For_the_occasion_brigade historical_model = 1 }
+				}
+				division = {
+					name = "骑兵第8师"
+					location = 5054
+					regiment = { type = cavalry_brigade experience = 25 historical_model = 1 }
+					regiment = { type = cavalry_brigade experience = 25 historical_model = 1 }
+					regiment = { type = cavalry_brigade experience = 25 historical_model = 1 }
+				}
+			}
+				corps = {
+				name = "豫北自卫军"
+				location = 5144
+				leader = 50197
+				regiment = { type = hq_brigade name = "自卫军长官部" historical_model = 1 }
+				division = {
+					name = "骑兵第4师"
+					location = 5144
+					regiment = { type = cavalry_brigade historical_model = 1 }
+					regiment = { type = cavalry_brigade historical_model = 1 }
+				}
+				division = {
+					name = "第94师"
+					location = 5144
+					regiment = { type = infantry_brigade historical_model = 1 }
+					regiment = { type = infantry_brigade historical_model = 1 }
+				}
+		}
+		division = {
+					name = "新编第5军"
+					location = 5144
+					regiment = { type = militia_brigade historical_model = 1 }
+					regiment = { type = militia_brigade historical_model = 1 }
+					regiment = { type = militia_brigade historical_model = 1 }
+				}		
+		division = {
+					name = "河北民军"
+					location = 5178
+					regiment = { type = militia_brigade historical_model = 1 }
+					regiment = { type = militia_brigade historical_model = 1 }
+					regiment = { type = militia_brigade historical_model = 1 }
+				}		
+		division = {
+					name = "游击纵队"
+					location = 5178
+					regiment = { type = militia_brigade historical_model = 1 }
+					regiment = { type = militia_brigade historical_model = 1 }
+					regiment = { type = militia_brigade historical_model = 1 }
+				}	
+		}	
+	

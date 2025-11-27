@@ -1,0 +1,29 @@
+division = {
+	name = "海丰抗日游击队"
+	location = 5837
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 1 }
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 1 }
+}
+division = {
+	name = "陆丰抗日游击队"
+	location = 5837
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 0 }
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 0 }
+}
+division = {
+	name = "东江抗日游击队"
+	location = 5819
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 0 }
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 0 }
+}
+division = {
+	name = "东江抗日游击队"
+	location = 5819
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 1 }
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 1 }
+}
+division = {
+	name = "东江抗日游击队"
+	location = 5820
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 0 }
+}

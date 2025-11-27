@@ -1,0 +1,14 @@
+division= {
+		name = "兀鹰军团"
+		location = 3611
+		regiment = { type = GER_ss experience = 55 historical_model = 2 }
+		regiment = { type = GER_ss experience = 55 historical_model = 2 }	
+		regiment = { type = GER_ss experience = 55 historical_model = 2 }
+		regiment = { type = GER_ss experience = 55 historical_model = 2 }	
+	}
+air = {
+	name = "兀鹰军团"
+	base = 3610
+	location = 3610
+	wing = { type = tactical_bomber historical_model = 0 }
+	wing = { type = interceptor historical_model = 0 }

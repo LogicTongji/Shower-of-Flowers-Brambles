@@ -1,0 +1,69 @@
+color = { 148  139  25 }
+graphical_culture = Japanese
+
+default_templates = {
+	binary_infantry = {
+		infantry_brigade
+		infantry_brigade
+	}
+	binary_milita = {
+		militia_brigade
+		militia_brigade
+	}
+	binary_armoured = {
+		armor_brigade
+		motorized_brigade
+	}
+	binary_cavalry = {
+		cavalry_brigade
+		cavalry_brigade
+	}
+}
+
+unit_names = {
+	infantry_brigade = {
+		"第35师" "第168师"
+	}
+
+}
+
+
+Ministers = {
+	504006 = {
+		name = "马鸿宾"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = L50236
+		head_of_state = political_protege
+		head_of_government = compassionate_gentleman
+		foreign_minister = apologetic_clerk
+		start_date = 1936.1.1
+	}
+	504001 = {
+		name = "马鸿逵"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = L50235
+		head_of_state = power_hungry_demagogue
+		chief_of_army = old_general
+		armament_minister = administrative_genius
+		minister_of_intelligence = research_specialist
+		start_date = 1936.1.1
+	}
+	3000052 = {
+		name = "马敦静"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = L4000172
+		chief_of_staff = corrupt_kleptocrat
+		start_date = 1936.1.1
+	}
+	3000053 = {
+		name = "卢忠良"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = L4000171
+		minister_of_security = silent_lawyer
+		start_date = 1936.1.1
+	}
+}

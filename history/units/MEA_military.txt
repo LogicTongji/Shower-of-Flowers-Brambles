@@ -1,0 +1,24 @@
+division= {					
+	name = "第1军"				
+	location = 7338
+	regiment = { type = militia_brigade name = "第1师" historical_model = 0 }			
+	regiment = { type = militia_brigade name = "第2师" historical_model = 0 }		
+	regiment = { type = militia_brigade name = "第3师" historical_model = 0 }		
+	regiment = { type = militia_brigade name = "第4师" historical_model = 0 }			
+}					
+division = {					
+	name = "第2军"				
+	location = 4932
+	regiment = { type = cavalry_brigade name = "第5师" historical_model = 0 }	
+	regiment = { type = cavalry_brigade name = "第6师" historical_model = 0 }	
+	regiment = { type = cavalry_brigade name = "第7师" historical_model = 0 }	
+	regiment = { type = cavalry_brigade name = "第8师" historical_model = 0 }	
+	regiment = { type = cavalry_brigade name = "警卫师" historical_model = 0 }	
+}
+division = {
+	name = "大汉义军"
+	location = 4932
+	regiment = { type = militia_brigade name = "第1旅" historical_model = 0 }
+	regiment = { type = militia_brigade name = "第2旅" historical_model = 0 }
+	regiment = { type = militia_brigade name = "第3旅" historical_model = 0 }
+}

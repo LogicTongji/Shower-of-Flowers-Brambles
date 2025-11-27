@@ -1,0 +1,11 @@
+#维利阿修斯
+division= {
+		name = "维利阿修斯志愿军团"
+		location = 4548
+		is_reserve = yes
+		regiment = { type = infantry_brigade experience = 45 historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 45 historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 45 historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 45 historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 45 historical_model = 1 }
+	}

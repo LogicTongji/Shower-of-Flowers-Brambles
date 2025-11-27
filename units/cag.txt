@@ -1,0 +1,47 @@
+cag = {
+	type = air
+	active = no
+	sprite = Fighter
+	is_cag = yes
+	
+	#Size Definitions
+	max_strength = 100
+	default_organisation = 30
+	default_morale = 0.30
+	officers = 0
+
+	#Building Costs
+	build_cost_ic = 5.0
+	build_cost_manpower = 0.70
+	build_time = 150
+	repair_cost_multiplier = 0.06
+
+	#Misc Abilities
+	maximum_speed = 300.00
+	transport_capability = 0.00
+	supply_consumption = 0.90
+	fuel_consumption = 1.40
+	range = 450.00
+	radio_strength = 1
+
+	#Detection Abilities
+	surface_detection = 2.50
+	air_detection = 3.00
+
+	#Defensive Abilities
+	surface_defence = 4.00
+	air_defence = 8.00
+
+	#Offensive Abilities
+	soft_attack = 0.50
+	hard_attack = 0.50
+	sea_attack = 1.00
+	air_attack = 6.00
+	strategic_attack = 0.00
+	sub_attack = 0.00
+
+	completion_size = 1.3
+	on_completion = single_engine_aircraft_practical
+	
+	priority = 5
+}

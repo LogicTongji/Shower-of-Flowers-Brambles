@@ -1,0 +1,156 @@
+
+	corps = {
+		name = "支那驻屯军"
+		location = 4936
+		leader = 101170 # 多田骏
+		regiment = { type = hq_brigade name = "支那驻屯军司令部" historical_model = 1 }
+		regiment = { type = garrison_brigade name = "支那驻屯宪兵队" historical_model = 1 }
+		division = {
+			name = "支那驻屯步兵旅团"
+			location = 4936
+			regiment = { type = infantry_brigade name = "支那驻屯步兵第1联队" experience = 30 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "支那驻屯步兵第2联队" experience = 30 historical_model = 1 }
+			regiment = { type = artillery_brigade name = "支那驻屯炮兵联队" experience = 30 historical_model = 1 }
+		}
+		division = {
+			name = "支那驻屯军直属"
+			location = 4936
+			regiment = { type = light_armor_brigade name = "支那驻屯战车队" experience = 15 historical_model = 1 }
+			regiment = { type = cavalry_brigade name = "支那驻屯骑兵队" experience = 30 historical_model = 1 }
+			regiment = { type = engineer_brigade name = "支那驻屯工兵队" experience = 30 historical_model = 1 }
+		}
+		division = {
+			name = "独立第1混成旅团"
+			location = 4936
+			regiment = { type = infantry_brigade name = "独立步兵第1联队" experience = 30 historical_model = 1 }
+			regiment = { type = light_armor_brigade name = "战车第3、4大队" experience = 30 historical_model = 1 }
+			regiment = { type = artillery_brigade name = "独立野炮兵第1大队" experience = 30 historical_model = 1 }
+			regiment = { type = engineer_brigade name = "独立工兵第1中队" experience = 30 historical_model = 1 }
+		}
+		division = {
+			name = "独立第11混成旅团"
+			location = 4936
+			regiment = { type = infantry_brigade name = "独立步兵第11联队" experience = 30 historical_model = 1 }
+			regiment = { type = artillery_brigade name = "独立野炮兵第11大队" experience = 30 historical_model = 1 }
+			regiment = { type = artillery_brigade name = "独立山炮兵第11大队" experience = 30 historical_model = 1 }
+		}
+	}
+division = {
+	name = "独立第2混成旅团"
+	location = 4936
+	regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+	regiment = { type = artillery_brigade experience = 30 historical_model = 1 }
+	regiment = { type = engineer_brigade experience = 30 historical_model = 1 }
+}
+division = {
+	name = "独立第3混成旅团"
+	location = 4936
+	regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+	regiment = { type = artillery_brigade experience = 30 historical_model = 1 }
+	regiment = { type = engineer_brigade experience = 30 historical_model = 1 }
+}
+division = {
+	name = "独立第4混成旅团"
+	location = 4936
+	regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+	regiment = { type = artillery_brigade experience = 30 historical_model = 1 }
+	regiment = { type = engineer_brigade experience = 30 historical_model = 1 }
+}
+division = {
+	name = "独立第5混成旅团"
+	location = 4936
+	regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+	regiment = { type = artillery_brigade experience = 30 historical_model = 1 }
+	regiment = { type = engineer_brigade experience = 30 historical_model = 1 }
+}
+division = {
+	name = "独立第6混成旅团"
+	location = 4936
+	regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+	regiment = { type = artillery_brigade experience = 30 historical_model = 1 }
+	regiment = { type = engineer_brigade experience = 30 historical_model = 1 }
+}
+division = {
+	name = "独立第7混成旅团"
+	location = 4936
+	regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+	regiment = { type = artillery_brigade experience = 30 historical_model = 1 }
+	regiment = { type = engineer_brigade experience = 30 historical_model = 1 }
+}
+division = {
+	name = "独立第8混成旅团"
+	location = 4936
+	regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+	regiment = { type = artillery_brigade experience = 30 historical_model = 1 }
+	regiment = { type = engineer_brigade experience = 30 historical_model = 1 }
+}
+division = {
+	name = "独立第9混成旅团"
+	location = 4936
+	regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+	regiment = { type = artillery_brigade experience = 30 historical_model = 1 }
+	regiment = { type = engineer_brigade experience = 30 historical_model = 1 }
+}
+division = {
+	name = "独立第10混成旅团"
+	location = 5181
+	regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+	regiment = { type = artillery_brigade experience = 30 historical_model = 1 }
+	regiment = { type = engineer_brigade experience = 30 historical_model = 1 }
+}
+division = {
+	name = "独立第11混成旅团"
+	location = 5181
+	regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+	regiment = { type = artillery_brigade experience = 30 historical_model = 1 }
+	regiment = { type = engineer_brigade experience = 30 historical_model = 1 }
+}
+division = {
+	name = "独立第12混成旅团"
+	location = 5181
+	regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+	regiment = { type = artillery_brigade experience = 30 historical_model = 1 }
+	regiment = { type = engineer_brigade experience = 30 historical_model = 1 }
+}
+division = {
+	name = "独立第13混成旅团"
+	location = 5181
+	regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+	regiment = { type = artillery_brigade experience = 30 historical_model = 1 }
+	regiment = { type = engineer_brigade experience = 30 historical_model = 1 }
+}
+division = {
+	name = "独立第14混成旅团"
+	location = 5181
+	regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+	regiment = { type = artillery_brigade experience = 30 historical_model = 1 }
+	regiment = { type = engineer_brigade experience = 30 historical_model = 1 }
+}
+division = {
+	name = "独立第15混成旅团"
+	location = 5181
+	regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+	regiment = { type = artillery_brigade experience = 30 historical_model = 1 }
+	regiment = { type = engineer_brigade experience = 30 historical_model = 1 }
+}
+division = {
+	name = "独立第16混成旅团"
+	location = 5181
+	regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+	regiment = { type = artillery_brigade experience = 30 historical_model = 1 }
+	regiment = { type = engineer_brigade experience = 30 historical_model = 1 }
+}
+division = {
+	name = "独立第17混成旅团"
+	location = 5181
+	regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+	regiment = { type = artillery_brigade experience = 30 historical_model = 1 }
+	regiment = { type = engineer_brigade experience = 30 historical_model = 1 }
+}
+division = {
+	name = "独立第18混成旅团"
+	location = 5181
+	regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+	regiment = { type = artillery_brigade experience = 30 historical_model = 1 }
+	regiment = { type = engineer_brigade experience = 30 historical_model = 1 }
+}

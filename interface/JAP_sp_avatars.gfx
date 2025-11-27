@@ -1,0 +1,241 @@
+objectTypes = 
+{
+	EMFXActorType = 
+	{
+		name = "JAP_super_heavy_battleship_0_actor"
+		actorfile = "gfx\anims\JAP_super_heavy_battleship_0.xac"
+		
+		idle   = "gfx\anims\JAP_super_heavy_battleship_0_Idle.xsm"
+		move   = "gfx\anims\JAP_super_heavy_battleship_0_Idle.xsm"
+		attack = "gfx\anims\JAP_super_heavy_battleship_0_Attack.xsm"
+		scale = 1.8
+	}
+	
+	EMFXActorType = 
+	{
+		name = "JAP_battlecruiser_1_actor"
+		actorfile = "gfx\anims\JAP_battlecruiser_1.xac"
+		
+		idle   = "gfx\anims\JAP_battlecruiser_1_Idle.xsm"
+		move   = "gfx\anims\JAP_battlecruiser_1_Idle.xsm"
+		attack = "gfx\anims\JAP_battlecruiser_1_Attack.xsm"
+		scale = 2
+	}
+	
+	EMFXActorType = 
+	{
+		name = "JAP_carrier_3_actor"
+		actorfile = "gfx\anims\JAP_carrier_3.xac"
+		
+		idle   = "gfx\anims\JAP_carrier_3_Idle.xsm"
+		move   = "gfx\anims\JAP_carrier_3_Idle.xsm"
+		attack = "gfx\anims\JAP_carrier_3_Idle.xsm"
+		scale = 2
+	}
+	
+	EMFXActorType = 
+	{
+		name = "JAP_submarine_5_actor"
+		actorfile = "gfx\anims\JAP_submarine_5.xac"
+		
+		idle   = "gfx\anims\JAP_submarine_5_Idle.xsm"
+		move   = "gfx\anims\JAP_submarine_5_Idle.xsm"
+		attack = "gfx\anims\JAP_submarine_5_Idle.xsm"
+		scale = 1.8
+	}
+	
+	EMFXActorType = 
+	{
+		name = "JAP_destroyer_4_actor"
+		actorfile = "gfx\anims\JAP_destroyer_4.xac"
+		
+		idle   = "gfx\anims\JAP_destroyer_4_Idle.xsm"
+		move   = "gfx\anims\JAP_destroyer_4_Idle.xsm"
+		attack = "gfx\anims\JAP_destroyer_4_Attack.xsm"
+		scale = 2
+	}
+	
+	EMFXActorType = 
+	{
+		name = "JAP_heavy_cruiser_3_actor"
+		actorfile = "gfx\anims\JAP_heavy_cruiser_3.xac"
+		
+		idle   = "gfx\anims\JAP_heavy_cruiser_3_Idle.xsm"
+		move   = "gfx\anims\JAP_heavy_cruiser_3_Idle.xsm"
+		attack = "gfx\anims\JAP_heavy_cruiser_3_Attack.xsm"
+		scale = 2
+	}
+	
+	EMFXActorType = 
+	{
+		name = "JAP_light_cruiser_2_actor"
+		actorfile = "gfx\anims\JAP_light_cruiser_2.xac"
+		
+		idle   = "gfx\anims\JAP_light_cruiser_2_Idle.xsm"
+		move   = "gfx\anims\JAP_light_cruiser_2_Idle.xsm"
+		attack = "gfx\anims\JAP_light_cruiser_2_Attack.xsm"
+		scale = 1.8
+	}
+	
+	EMFXActorType = 
+	{
+		name = "JAP_cag_5_actor"
+		actorfile = "gfx\anims\JAP_cag_5.xac"
+		
+		idle   = "gfx\anims\JAP_3_plane_idle.xsm"
+		move   = "gfx\anims\JAP_3_plane_idle.xsm"
+		attack = "gfx\anims\JAP_3_plane_attack.xsm"
+		scale = 2
+	}
+	
+	EMFXActorType = 
+	{
+		name = "JAP_tactical_bomber_0_actor"
+		actorfile = "gfx\anims\JAP_tactical_bomber_0.xac"
+		
+		idle   = "gfx\anims\JAP_tactical_bomber_0_Idle.xsm"
+		move   = "gfx\anims\JAP_tactical_bomber_0_Idle.xsm"
+		attack = "gfx\anims\JAP_2_plane_attack.xsm"
+		scale = 2.35
+	}
+	
+	EMFXActorType = 
+	{
+		name = "JAP_cas_2_actor"
+		actorfile = "gfx\anims\JAP_cas_2.xac"
+		
+		idle   = "gfx\anims\JAP_cas_2_Idle.xsm"
+		move   = "gfx\anims\JAP_cas_2_Idle.xsm"
+		attack = "gfx\anims\JAP_2_plane_attack.xsm"
+		scale = 2.5
+	}
+	
+	EMFXActorType = 
+	{
+		name = "JAP_multi_role_2_actor"
+		actorfile = "gfx\anims\JAP_multi_role_2.xac"
+		
+		idle   = "gfx\anims\JAP_3_plane_idle.xsm"
+		move   = "gfx\anims\JAP_3_plane_idle.xsm"
+		attack = "gfx\anims\JAP_3_plane_attack.xsm"
+		scale = 1.8
+	}
+	
+	EMFXActorType = 
+	{
+		name = "JAP_interceptor_6_actor"
+		actorfile = "gfx\anims\JAP_interceptor_6.xac"
+		
+		idle   = "gfx\anims\JAP_3_plane_idle.xsm"
+		move   = "gfx\anims\JAP_3_plane_idle.xsm"
+		attack = "gfx\anims\JAP_3_plane_attack.xsm"
+		scale = 1.8
+	}
+	
+	EMFXActorType = {
+		name = "JAP_armor_brigade_4_actor"
+		actorfile = "gfx\anims\JAP_armor_brigade_4.xac"
+		scale = 0.7
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\JAP_armor_brigade_4_Idle_2.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\JAP_armor_brigade_4_Idle.xsm"
+			defaultAnimationTime = 2.8
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\JAP_armor_brigade_4_Attack.xsm"
+			defaultAnimationTime = 0.0
+		}
+	}
+	
+	
+	
+	EMFXActorType = {
+		name = "JAP_heavy_armor_brigade_0_actor"
+		actorfile = "gfx\anims\JAP_heavy_armor_brigade_0.xac"
+		scale = 0.7
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\JAP_heavy_armor_brigade_0_Idle_2.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\JAP_heavy_armor_brigade_0_Idle.xsm"
+			defaultAnimationTime = 2.8
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\JAP_heavy_armor_brigade_0_Attack.xsm"
+			defaultAnimationTime = 0.0
+		}
+	}
+	
+
+	
+	EMFXActorType = {
+		name = "JAP_mechanized_brigade_0_actor"
+		actorfile = "gfx\anims\JAP_mechanized_brigade_0.xac"
+		scale = 0.7
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\JAP_mechanized_brigade_0_Idle_2.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\JAP_mechanized_brigade_0_Idle.xsm"
+			defaultAnimationTime = 2.8
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\JAP_mechanized_brigade_0_Attack.xsm"
+			defaultAnimationTime = 0.0
+		}
+	}
+	
+	
+	
+		EMFXActorType = {
+		name = "JAP_super_heavy_armor_brigade_0_actor"
+		actorfile = "gfx\anims\JAP_super_heavy_armor_brigade_0.xac"
+		scale = 0.9
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\JAP_super_heavy_armor_brigade_0_Idle_2.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\JAP_super_heavy_armor_brigade_0_Idle.xsm"
+			defaultAnimationTime = 2.8
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\JAP_super_heavy_armor_brigade_0_Attack.xsm"
+			defaultAnimationTime = 0.0
+		}
+	}
+
+}
+
+
+
+	

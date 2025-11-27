@@ -1,0 +1,51 @@
+army = {
+		name = "云南保安部队"
+		location = 7561
+		regiment = { type = hq_brigade name = "云南警备司令部" experience = 50 historical_model = 3 }
+		regiment = { type = artillery_brigade name = "直属炮兵部队" experience = 30 builder = USA historical_model = 3 }
+     corps = {
+	       	name = "陆军第93军"				
+	location = 7561	
+	regiment = { type = hq_brigade name = "第93军司令部" experience = 20  historical_model = 4 }
+		division= {
+	name = "陆军第184师"
+	location = 7561
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+}
+		division= {
+	name = "陆军第159师"
+	location = 7561
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+}
+        }  
+ corps = {
+	       	name = "陆军第74军"				
+	location = 7561	
+	regiment = { type = hq_brigade name = "第74军司令部" experience = 20  historical_model = 4 }
+		division= {
+	name = "陆军第277师"
+	location = 7561
+regiment = { type = motorized_brigade experience = 50 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+}
+		division= {
+	name = "陆军第278师"
+	location = 7561
+regiment = { type = motorized_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+}
+division= {
+	name = "保安部队"
+	location = 7561
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+                                   }  
+                    }                     
+        }          

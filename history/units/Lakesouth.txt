@@ -1,0 +1,58 @@
+army = {
+		name = "中国人民解放军第21兵团"
+		location = 7508
+		regiment = { type = hq_brigade name = "第21兵团总司令部" historical_model = 4 }
+		regiment = { type = cavalry_brigade name = "长官部守备" strength = 20 historical_model = 1 }
+		regiment = { type = artillery_brigade name = "直属炮兵部队" experience = 30 builder = USA historical_model = 3 }
+     corps = {
+	       	name = "中国人民解放军第52军"				
+	location = 7508	
+	regiment = { type = hq_brigade name = "第52军司令部" experience = 20  historical_model = 4 }
+		division= {
+	name = "中国人民解放军第214师"
+	location = 7508
+regiment = { type = motorized_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+}
+		division= {
+	name = "中国人民解放军第215师"
+	location = 7508
+regiment = { type = motorized_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+}
+division= {
+	name = "中国人民解放军第216师"
+	location = 7508
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+                    }  
+        }  
+ corps = {
+	       	name = "中国人民解放军第53军"				
+	location = 7508	
+	regiment = { type = hq_brigade name = "第53军司令部" experience = 20  historical_model = 4 }
+		division= {
+	name = "中国人民解放军第217师"
+	location = 7508
+regiment = { type = motorized_brigade experience = 50 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+}
+		division= {
+	name = "中国人民解放军第218师"
+	location = 7508
+regiment = { type = motorized_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+}
+division= {
+	name = "中国人民解放军第219师"
+	location = 7508
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+                                   }  
+                    }                     
+        }          

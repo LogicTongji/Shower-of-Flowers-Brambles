@@ -1,0 +1,192 @@
+army = {
+	name = "上海派遣军"
+	location = 14181
+	regiment = { type = hq_brigade name = "上海派遣军司令部" historical_model = 0 }
+corps = {
+	name = "第3师团·幸"
+	location = 14181
+	regiment = { type = hq_brigade name = "师团指挥部" historical_model = 0 }
+	division = {
+		name = "第5旅团"
+		location = 14181
+		regiment = { type = infantry_brigade name = "步兵第6联队" experience = 80 historical_model = 2 }
+		regiment = { type = infantry_brigade name = "步兵第68联队" experience = 80 historical_model = 2 }
+		regiment = { type = artillery_brigadeB name = "野战重炮第2联队" experience = 80 historical_model = 2 }
+		regiment = { type = artillery_brigadeB name = "野战重炮第3联队" experience = 80 historical_model = 2 }
+	}
+	division = {
+		name = "第29旅团"
+		location = 14181
+		regiment = { type = infantry_brigade name = "步兵第18联队" experience = 80 historical_model = 2 }
+		regiment = { type = infantry_brigade name = "步兵第34联队" experience = 80 historical_model = 2 }
+		regiment = { type = artillery_brigadeB name = "野炮兵第3联队" experience = 80 historical_model = 0 }
+		regiment = { type = engineer_brigade name = "工兵第3联队" experience = 80 historical_model = 2 }
+	}
+	division = {
+		name = "第4旅团"
+		location = 14181
+		regiment = { type = cavalry_brigade name = "骑兵第3联队" experience = 80 historical_model = 2 }
+		regiment = { type = cavalry_brigade name = "骑兵第25联队" experience = 80 historical_model = 2 }
+		regiment = { type = cavalry_brigade name = "骑兵第26联队" experience = 80 historical_model = 2 }
+	}
+}
+corps = {
+	name = "第9师团·武"
+	location = 14181
+	regiment = { type = hq_brigade name = "师团指挥部" historical_model = 2 }
+	division = {
+		name = "第6旅团"
+		location = 14181
+		regiment = { type = infantry_brigade name = "步兵第7联队" experience = 90 historical_model = 2 }
+		regiment = { type = infantry_brigade name = "步兵第35联队" experience = 90 historical_model = 2 }
+		regiment = { type = cavalry_brigade name = "骑兵第9联队" experience = 90 historical_model = 2 }
+	}
+	division = {
+		name = "第18旅团"
+		location = 14181
+		regiment = { type = infantry_brigade name = "步兵第19联队" experience = 90 historical_model = 2 }
+		regiment = { type = infantry_brigade name = "步兵第36联队" experience = 90 historical_model = 2 }
+		regiment = { type = artillery_brigadeB name = "野炮兵第9联队" experience = 90 historical_model = 2 }
+		regiment = { type = engineer_brigade name = "工兵第9联队" experience = 90 historical_model = 2 }
+	}
+}
+corps = {
+	name = "第11师团·锦"
+	location = 14181
+	regiment = { type = hq_brigade name = "师团指挥部" historical_model = 2 }
+	division = {
+		name = "第10旅团"
+		location = 14181
+		regiment = { type = infantry_brigade name = "步兵第12联队" experience = 80 historical_model = 2 }
+		regiment = { type = infantry_brigade name = "步兵第22联队" experience = 80 historical_model = 2 }
+		regiment = { type = cavalry_brigade name = "骑兵第11联队" experience = 80 historical_model = 2 }
+	}
+	division = {
+		name = "第22旅团"
+		location = 14181
+		regiment = { type = infantry_brigade name = "步兵第43联队" experience = 80 historical_model = 2 }
+		regiment = { type = infantry_brigade name = "步兵第44联队" experience = 80 historical_model = 2 }
+		regiment = { type = artillery_brigadeB name = "野炮兵第11联队" experience = 80 historical_model = 2 }
+		regiment = { type = engineer_brigade name = "工兵第11联队" experience = 80 historical_model = 2 }
+	}
+}
+corps = {
+	name = "第13师团·镜"
+	location = 14181
+	regiment = { type = hq_brigade name = "师团指挥部" historical_model = 0 }
+	division = {
+		name = "步兵第103旅团"
+		location = 14181
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "步兵第104联队" experience = 75 historical_model = 2 }
+		regiment = { type = infantry_brigade name = "步兵第65联队" experience = 75 historical_model = 2 }
+		regiment = { type = cavalry_brigade name = "骑兵第17联队" experience = 75 historical_model = 2 }
+		regiment = { type = artillery_brigadeB name = "山炮兵第19联队" experience = 75 historical_model = 2 }
+	}
+	division = {
+		name = "步兵第26旅团"
+		location = 14181
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "步兵第116联队" experience = 75 historical_model = 2 }
+		regiment = { type = infantry_brigade name = "步兵第58联队" experience = 75 historical_model = 2 }
+		regiment = { type = engineer_brigade name = "工兵第13联队" experience = 75 historical_model = 2 }
+	}
+}
+corps = {
+	name = "第101师团·なし"
+	location = 14181
+	regiment = { type = hq_brigade name = "师团指挥部" historical_model = 0 }
+	division = {
+		name = "步兵第101旅团"
+		location = 14181
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "步兵第101联队" historical_model = 2 }
+		regiment = { type = infantry_brigade name = "步兵第149联队" historical_model = 2 }
+		regiment = { type = cavalry_brigade name = "骑兵第101联队" historical_model = 2 }
+		regiment = { type = artillery_brigadeB name = "野炮兵第101联队" historical_model = 2 }
+	}
+	division = {
+		name = "步兵第102旅团"
+		location = 14181
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "步兵第103联队" historical_model = 2 }
+		regiment = { type = infantry_brigade name = "步兵第157联队" historical_model = 2 }
+		regiment = { type = engineer_brigade name = "工兵第101联队" historical_model = 2 }
+	}
+}
+}
+
+army = {
+	name = "第21军"
+	location = 5809
+	regiment = { type = hq_brigade name = "第21军司令部" historical_model = 0 }
+corps = {
+	name = "第5师团·鲤"
+	location = 5809
+	regiment = { type = hq_brigade name = "师团指挥部" historical_model = 0 }
+	division = {
+		name = "第9旅团"
+		location = 5809
+		regiment = { type = infantry_brigade name = "步兵第11联队" experience = 90 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "步兵第41联队" experience = 90 historical_model = 1 }
+		regiment = { type = cavalry_brigade name = "骑兵第5联队" experience = 90 historical_model = 1 }
+	}
+	division = {
+		name = "第21旅团"
+		location = 5809
+		regiment = { type = infantry_brigade name = "步兵第21联队" experience = 90 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "步兵第42联队" experience = 90 historical_model = 1 }
+		regiment = { type = artillery_brigadeB name = "野炮兵第5联队" experience = 90 historical_model = 0 }
+		regiment = { type = engineer_brigade name = "工兵第5联队" experience = 90 historical_model = 1 }
+	}
+}
+corps = {
+	name = "第18师团·菊"
+	location = 5809
+	regiment = { type = hq_brigade name = "师团指挥部" historical_model = 0 }
+	division = {
+		name = "第23旅团"
+		location = 5809
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "步兵第46联队" experience = 75 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "步兵第55联队" experience = 75 historical_model = 1 }
+		regiment = { type = cavalry_brigade name = "骑兵第22联队" experience = 75 historical_model = 1 }
+	}
+	division = {
+		name = "第24旅团"
+		location = 5809
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "步兵第48联队" experience = 75 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "步兵第56联队" experience = 75 historical_model = 1 }
+		regiment = { type = artillery_brigadeB name = "野炮兵第24联队" experience = 75 historical_model = 0 }
+	}
+	division = {
+		name = "第35旅团"
+		location = 5809
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "步兵第116联队" experience = 75 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "步兵第124联队" experience = 75 historical_model = 1 }
+		regiment = { type = artillery_brigadeB name = "独立山炮兵第3联队" experience = 75 historical_model = 0 }
+	}
+}
+division = {
+	name = "第104师团·凤"
+	location = 5809
+	is_reserve = yes
+	regiment = { type = infantry_brigade experience = 45 historical_model = 1 }
+	regiment = { type = infantry_brigade experience = 45 historical_model = 1 }
+	regiment = { type = infantry_brigade experience = 45 historical_model = 1 }
+	regiment = { type = infantry_brigade experience = 45 historical_model = 1 }
+	regiment = { type = artillery_brigadeB name = "野炮兵第104联队" experience = 45 historical_model = 0 }
+}
+}
+division= {
+		name = "海军陆战队"
+		location = 6119
+		regiment = { type = marine_brigade experience = 45 historical_model = 2 }
+		regiment = { type = marine_brigade experience = 45 historical_model = 2 }
+		regiment = { type = marine_brigade experience = 45 historical_model = 2 }
+		regiment = { type = artillery_brigade experience = 45 historical_model = 0 }
+	}
+}
+}

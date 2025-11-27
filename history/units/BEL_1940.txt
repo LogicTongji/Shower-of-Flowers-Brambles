@@ -1,0 +1,352 @@
+theatre = {
+	name = "陆军指挥部" 
+	location = 2311#Brussels#2255
+	regiment = { type = hq_brigade name = "陆军指挥部" historical_model = 0 }
+	corps = {
+		name = "第1军"
+		leader = 68029 #van der Veken
+		location = 2312 #Tongeren(Liege)
+		regiment = { type = hq_brigade name = "第1军" historical_model = 0 }
+		division= {
+			name = "第4步兵师"
+			leader = 68006 #de Grave
+			location = 2255#Hoeselt(Hasselt)
+			is_reserve = yes
+			regiment = { type = infantry_brigade experience = 20 name = "第7线列步兵团" historical_model = 1 }
+			regiment = { type = infantry_brigade experience = 20 name = "第11线列步兵团" historical_model = 1 }
+			regiment = { type = infantry_brigade experience = 20 name = "第15线列步兵团" historical_model = 1 }
+		}
+		division= {
+			name = "第7步兵师"
+			leader = 68036 #Daumerie
+			location = 2312#Tongeren(Liege)
+			is_reserve = yes
+			regiment = { type = infantry_brigade experience = 14 name = "第2掷弹兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade experience = 14 name = "第2卡宾枪团" historical_model = 0 }
+			regiment = { type = infantry_brigade experience = 14 name = "第18线列步兵团" historical_model = 0 }
+		}
+	}
+	corps = {
+		name = "第2军"
+		location = 2254 #Aarschot(Leuven)
+		leader = 68068 #Michem
+		regiment = { type = hq_brigade name = "第2军" historical_model = 0 }
+		division = {
+			name = "第6步兵师"
+			leader = 68014 #Janssens
+			location = 2255 #Diest (Hasselt)
+			is_reserve = yes
+			regiment = { type = infantry_brigade experience = 20 name = "第1掷弹兵团" historical_model = 1 }
+			regiment = { type = infantry_brigade experience = 20 name = "第1卡宾枪团" historical_model = 1 }
+			regiment = { type = infantry_brigade experience = 20 name = "第9线列步兵团" historical_model = 1 }
+		}
+		division= {
+			name = "第9步兵师"
+			leader = 68029 #van der Hofstadt
+			location = 2254 #Heist-op-den-Berg (Leuven)
+			is_reserve = yes
+			regiment = { type = infantry_brigade experience = 14 name = "第8线列步兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade experience = 14 name = "第16线列步兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade experience = 14 name = "第17线列步兵团" historical_model = 0 }
+		}
+		division= {
+			name = "第11步兵师"
+			leader = 68063 #Lebert
+			location = 2255 #Leopoldsburg (Hasselt)
+			is_reserve = yes
+			regiment = { type = infantry_brigade experience = 14 name = "第14线列步兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade experience = 14 name = "第20线列步兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade experience = 14 name = "第29线列步兵团" historical_model = 0 }
+		}
+	}
+	corps = {
+		name = "第3军"
+		leader = 68007 #de Krahe
+		location = 2312 #Liege
+		regiment = { type = hq_brigade name = "第3军" historical_model = 0 }
+		division= {
+			name = "第2步兵师"
+			leader = 68057 #Colpin
+			location = 2312 #Liege
+			is_reserve = yes
+			regiment = { type = infantry_brigade experience = 20 name = "第5线列步兵团" historical_model = 1 }
+			regiment = { type = infantry_brigade experience = 20 name = "第6线列步兵团" historical_model = 1 }
+			regiment = { type = infantry_brigade experience = 20 name = "第28线列步兵团" historical_model = 1 }
+			regiment = { type = artillery_brigade experience = 20 name = "第2炮兵团" historical_model = 2 }
+		}
+		division= {
+			name = "第3步兵师"
+			leader = 68067 #Lozet
+			location = 2312 #Liege
+			is_reserve = yes
+			regiment = { type = infantry_brigade experience = 20 name = "第1线列步兵团" historical_model = 1 }
+			regiment = { type = infantry_brigade experience = 20 name = "第12线列步兵团" historical_model = 1 }
+			regiment = { type = infantry_brigade experience = 20 name = "第25线列步兵团" historical_model = 1 }
+			regiment = { type = artillery_brigade experience = 20 name = "第3炮兵团" historical_model = 2 }
+		}
+	}
+	corps = {
+		name = "第4军"
+		leader = 68054 #Bogaerts
+		location = 2197#Lier(Antwerp)2489
+		regiment = { type = hq_brigade name = "第4军" historical_model = 0 }
+		division= {
+			name = "第12步兵师"
+			leader = 68061 #de Wulf
+			location = 2196#Wijnegem(Antwerpen)
+			is_reserve = yes
+			regiment = { type = infantry_brigade experience = 14 name = "第2线列步兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade experience = 14 name = "第22线列步兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade experience = 14 name = "第23线列步兵团" historical_model = 0 }
+		}
+		division= {
+			name = "第15预备步兵师"
+			leader = 68059 #de Hennin de Boussu-Walcourt
+			location = 2196#Kessel(Antwerpen)
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "第31线列步兵团" experience = 4 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第42线列步兵团" experience = 4 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第43线列步兵团" experience = 4 historical_model = 0 }
+		}
+		division= {
+			name = "第18预备步兵师"
+			leader = 68023 #Six
+			location = 10685#Turnhout
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "第3掷弹兵团" experience = 4 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第3卡宾枪团" experience = 4 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第39线列步兵团" experience = 4 historical_model = 0 }
+		}
+	}
+	corps = {
+		name = "陆军指挥部"
+		#leader = 
+		location = 2137 #Brugge
+		regiment = { type = hq_brigade name = "陆军指挥部" historical_model = 0 }
+		division= {#was attached to coastal command but this corps is out of the game not to have too much hq's
+			name = "第16预备步兵师"
+			leader = 68078 #van Egroo
+			location = 2196#Gent
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "第37线列步兵团" experience = 4 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第41线列步兵团" experience = 4 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第44线列步兵团" experience = 4 historical_model = 0 }
+		}
+	}
+	corps = {
+		name = "第5军"
+		leader = 68027 #van den Bergen
+		location = 2197#Antwerpen
+		regiment = { type = hq_brigade name = "第5军" historical_model = 0 }
+		division= {
+			name = "第13预备步兵师"
+			leader = 68073 #van Parijs
+			#leader = 68012 #Duthoy
+			location = 2197 #Antwerpen
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "第32线列步兵团" experience = 4 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第33线列步兵团" experience = 4 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第34线列步兵团" experience = 4 historical_model = 0 }
+		}
+		division= {
+			name = "第17预备步兵师"
+			leader = 68004 #Daufresne de la Chevalerie 
+			location = 2197 #Antwerpen
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "第39猎兵团" experience = 4 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第40猎兵团" experience = 4 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第41猎兵团" experience = 4 historical_model = 0 }
+		}
+	}
+	corps = {
+		name = "第6军"
+		leader = 68070 #Verstraete
+		location = 2311 #Brussels
+		regiment = { type = hq_brigade name = "第6军" historical_model = 0 }
+		division = {
+			name = "第5步兵师"
+			leader = 68069 #Spinette
+			location = 2255 #Diest (Hasselt)
+			is_reserve = yes
+			regiment = { type = infantry_brigade experience = 20 name = "第1猎兵团" historical_model = 1 }
+			regiment = { type = infantry_brigade experience = 20 name = "第2猎兵团" historical_model = 1 }
+			regiment = { type = infantry_brigade experience = 20 name = "第4猎兵团" historical_model = 1 }
+		}
+		division= {
+			name = "第10步兵师"
+			leader = 68020 #Pire
+			location = 2196 #Meerbleek (Leuven)
+			is_reserve = yes
+			regiment = { type = infantry_brigade experience = 14 name = "第3猎兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade experience = 14 name = "第5猎兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade experience = 14 name = "第6猎兵团" historical_model = 0 }
+		}
+	}
+	corps = {
+		name = "第7军"
+		leader = 68008 #Deffontaine 
+		location = 2369#Namur
+		regiment = { type = hq_brigade name = "第7军" historical_model = 0 }
+		division = {
+			name = "第2阿登猎兵团"
+			leader = 68066 #Ley
+			location = 2370
+			is_reserve = yes
+			regiment = { type = motorized_brigade experience = 20 is_reserve = yes name = "第4阿登猎兵团" historical_model = 0 }
+			regiment = { type = motorized_brigade experience = 20 is_reserve = yes name = "第5阿登猎兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade experience = 20 is_reserve = no name = "第6阿登猎兵团" historical_model = 1 }
+		}
+		division= {
+			name = "第8步兵师"
+			leader = 68072 #Lesaffre
+			location = 2369
+			is_reserve = yes
+			regiment = { type = infantry_brigade experience = 14 name = "第13线列步兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade experience = 14 name = "第19线列步兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade experience = 14 name = "第21线列步兵团" historical_model = 0 }
+		}
+	}
+	
+	corps = {
+		name = "骑兵军"
+		leader = 68060 #de Neve de Roden
+		#leader = 68000 #Bastin (Chief of Staff of cav corps, not a commander)
+		location = 2254 #sint-truiden(Leuven)
+		regiment = { type = hq_brigade name = "骑兵军" historical_model = 0 }
+		division = {
+			name = "第1步兵师"
+			leader = 68076 #Coppens
+			location = 2255
+			is_reserve = yes
+			regiment = { type = infantry_brigade experience = 20 name = "第3线列步兵团" historical_model = 1 }
+			regiment = { type = infantry_brigade experience = 20 name = "第4线列步兵团" historical_model = 1 }
+			regiment = { type = infantry_brigade experience = 20 name = "第24线列步兵团" historical_model = 1 }
+			regiment = { type = artillery_brigade experience = 20 name = "第1炮兵团" historical_model = 2 }
+		}
+			
+		division= {
+			name = "第14预备步兵师"
+			leader = 68074 #Massart
+			location = 2255 #Herk(Hasselt)
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "第35线列步兵团" experience = 4 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第36线列步兵团" experience = 4 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第38线列步兵团" experience = 4 historical_model = 0 }
+		}
+		division= {
+			name = "第2摩托化骑兵师"
+			leader = 68075 #Ninitte
+			#leader = 68001 #Beernaerts (staff officer)
+			location = 2254 #Leuven
+			is_reserve = yes
+			regiment = { type = cavalry_brigade experience = 20 name = "第1枪骑兵团" historical_model = 1 }
+			regiment = { type = armored_car_brigade experience = 20 name = "第1猎兵团" historical_model = 1 }
+			regiment = { type = motorized_brigade experience = 20 name = "第2-4卡宾枪团" historical_model = 1 }
+			regiment = { type = armored_car_brigade experience = 20 name = "第2猎兵团" historical_model = 0 }
+		}
+		division= {
+			name = "摩托化骑兵旅"
+			location = 2311#???
+			is_reserve = yes
+			regiment = { type = cavalry_brigade experience = 20 name = "第4枪骑兵团" historical_model = 1 }
+			#regiment = { type = artillery_brigade experience = 20 name = "第19炮兵团" historical_model = 1 }#motor artilery???
+			regiment = { type = armored_car_brigade experience = 20 name = "第2禁卫团" historical_model = 0 }
+		}
+
+	}
+
+	corps = {
+		name = "K战斗群"
+		leader = 68015 #Keyaerts
+		location = 2311#st hubert(Brussels)
+		regiment = { type = hq_brigade name = "K战斗群" historical_model = 0 }
+		division = {
+			name = "第1阿登猎兵团"
+			leader = 68010 #Descamps
+			location = 2370
+			is_reserve = yes
+			regiment = { type = motorized_brigade is_reserve = no name = "第1阿登猎兵团" experience = 26 historical_model = 0 }
+			regiment = { type = motorized_brigade is_reserve = yes name = "第2阿登猎兵团" experience = 26 historical_model = 0 }
+			regiment = { type = infantry_brigade is_reserve = yes name = "第3阿登猎兵团" experience = 26 historical_model = 1 }
+		}
+		division= {
+			name = "第1摩托化骑兵师"
+			
+			location = 2311#st hubert(Brussels)
+			is_reserve = yes
+			regiment = { type = cavalry_brigade experience = 20 name = "第1禁卫骑兵团" historical_model = 1 }
+			regiment = { type = armored_car_brigade experience = 20 name = "第2枪骑兵团" historical_model = 1 }
+			regiment = { type = motorized_brigade experience = 20 name = "第2-4卡宾枪团" historical_model = 1 }
+			regiment = { type = armored_car_brigade experience = 20 name = "第3枪骑兵团" historical_model = 0 }
+		}
+	}
+	
+	#-- Garrisons ------
+	division = {
+		name = "列日要塞"
+		location = 2312
+		is_reserve = yes
+		regiment = { type = garrison_brigade is_reserve = yes name = "要塞团" historical_model = 1 }
+		regiment = { type = garrison_brigade is_reserve = yes name = "要塞团" historical_model = 1 }
+		regiment = { type = artillery_brigade is_reserve = yes name = "要塞炮兵团" historical_model = 3 }
+		#regiment = { type = anti_tank_brigade is_reserve = yes name = "要塞团" historical_model = 1 }
+	}
+	division = {
+		name = "纳慕尔要塞"
+		location = 2369
+		is_reserve = yes
+		regiment = { type = garrison_brigade is_reserve = yes name = "要塞团" historical_model = 1 }
+		regiment = { type = garrison_brigade is_reserve = yes name = "要塞团" historical_model = 1 }
+		regiment = { type = artillery_brigade is_reserve = yes name = "要塞炮兵团" historical_model = 1 }
+	}
+	division = {
+		name = "安特卫普要塞"#, Anvers 
+		location = 2197
+		is_reserve = yes
+		regiment = { type = garrison_brigade is_reserve = yes name = "要塞团" historical_model = 1 }
+		regiment = { type = garrison_brigade is_reserve = yes name = "要塞团" historical_model = 1 }
+	}
+	
+#- Congo army -----
+#theatre = {
+#	name = "刚果殖民军" 
+#	location = 10113
+#	regiment = { type = hq_brigade name = "刚果殖民军" historical_model = 0 }
+	division = {
+		name = "刚果殖民军"
+		leader = 68062 #Gilliart
+		location = 10113
+		regiment = { type = militia_brigade experience = 4 is_reserve = no historical_model = 2 }
+		#regiment = { type = militia_brigade experience = 4 is_reserve = no historical_model = 2 }
+		regiment = { type = garrison_brigade experience = 4 is_reserve = no historical_model = 0 }
+	}
+#}
+}
+
+air = {
+	name = "第1团"
+	base = 2311
+	location = 2311
+	wing = {
+		type = interceptor experience = 14
+		name = "第1战斗机编队" historical_model = 1 
+	}
+}
+air = {
+	name = "第2团"
+	base = 2311
+	location = 2311
+	wing = {
+		type = cas
+		experience = 12
+		name = "第1轰炸机大队" historical_model = 0 
+	}
+}
+
+navy = {
+	name = "第1运输舰队"
+	base = 2137
+	location = 2137
+	ship = { type = transport_ship name = "第1运输船队" historical_model = 0 }
+	ship = { type = transport_ship name = "第2运输船队" historical_model = 0 }
+}

@@ -1,0 +1,25 @@
+501214 = {
+
+	name = "Íõ¼ÒÁÒ"
+
+	country = CQS
+	type = land
+
+	skill = 1
+
+	max_skill = 3
+	loyalty = 1.00
+
+	picture =  M20211241
+	add_trait = defensive_doctrine
+
+	history = {
+
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1930.1.1 = { rank = 4 }
+
+	}
+
+}

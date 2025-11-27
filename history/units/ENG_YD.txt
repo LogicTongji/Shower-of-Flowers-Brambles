@@ -1,0 +1,75 @@
+
+		division= {
+			name = "第77摩托化步兵师"
+			location = 9406
+			regiment = { type = motorized_brigade name = "第9步兵旅" historical_model = 3 }
+			regiment = { type = motorized_brigade name = "第10步兵旅" historical_model = 3 }
+			regiment = { type = motorized_brigade name = "第12步兵旅" historical_model = 3 }
+		}
+		division= {
+			name = "第1装甲师"
+			location = 9406
+			regiment = { type = armor_brigade name = "第10装甲骑兵旅" historical_model = 3 }
+			regiment = { type = motorized_brigade name = "第3步兵旅" historical_model = 3 }
+		}
+		division= {
+			name = "第9装甲师"
+			location = 9406
+			regiment = { type = armor_brigade name = "第28装甲旅" historical_model = 3 }
+			regiment = { type = motorized_brigade name = "第7步兵旅" historical_model = 3 }
+	}
+		division= {
+			name = "第52低地摩托化师"
+			location = 9406
+			leader = 1152 #Hakewell-Smith
+			regiment = { type = bergsjaeger_brigade name = "第155步兵旅" historical_model = 2 }
+			regiment = { type = bergsjaeger_brigade name = "第156步兵旅" historical_model = 2 }
+			regiment = { type = bergsjaeger_brigade name = "第157步兵旅" historical_model = 2 }
+		}
+		division= {
+			name = "第55西兰开夏摩托化师"
+			location = 9406
+			leader = 1078 #Clutterbuck
+			regiment = { type = motorized_brigade name = "第164步兵旅" historical_model = 3 }
+			regiment = { type = motorized_brigade name = "第165步兵旅" historical_model = 3 }
+			regiment = { type = motorized_brigade name = "第199步兵旅" historical_model = 3 }
+		}
+		division= {
+			name = "第38威尔士摩托化师"
+			location = 9406
+			regiment = { type = motorized_brigade name = "第113步兵旅" historical_model = 3 }
+			regiment = { type = motorized_brigade name = "第114步兵旅" historical_model = 3 }
+			regiment = { type = motorized_brigade name = "第115步兵旅" historical_model = 3 }
+  }
+		division= {
+			name = "英印军第39师"
+			location = 9545
+			regiment = { type = bergsjaeger_brigade name = "第106印度步兵旅" historical_model = 3 }
+			regiment = { type = bergsjaeger_brigade name = "第113印度步兵旅" historical_model = 3 }
+			regiment = { type = bergsjaeger_brigade name = "第115印度步兵旅" historical_model = 3 }
+		}
+		division= {
+			name = "英印军第2步兵师"
+			location = 7560
+			regiment = { type = infantry_brigade name = "第4步兵旅" historical_model = 4 }
+			regiment = { type = infantry_brigade name = "第5步兵旅" historical_model = 4 }
+			regiment = { type = infantry_brigade name = "第6步兵旅" historical_model = 4 }
+		}
+		division= {
+			name = "英缅军第1师"
+			location = 9545
+			regiment = { type = infantry_brigade name = "第4步兵旅" historical_model = 4 }
+			regiment = { type = infantry_brigade name = "第5步兵旅" historical_model = 4 }
+			regiment = { type = infantry_brigade name = "第6步兵旅" historical_model = 4 }
+		}
+		division= {
+			name = "英印军第23旅"
+			location = 9545
+			regiment = { type = infantry_brigade name = "第23印度步兵旅" historical_model = 4 }
+		}
+		division= {
+			name = "第50坦克旅"
+			location = 9545
+			regiment = { type = armor_brigade name = "第50坦克旅" historical_model = 3 }
+		}
+	}	

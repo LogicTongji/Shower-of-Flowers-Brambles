@@ -1,0 +1,106 @@
+4000475 = {
+
+	name = "ÌïËÌÒ¢"
+
+	country = CTS
+	type = land
+
+	skill = 0
+
+	max_skill = 4
+
+	loyalty = 1.00
+
+	picture = L4000075
+	history = {
+
+			1930.1.1 = { rank = 2 }
+		1937.8.13 = { rank = 0 }
+
+	}
+
+}
+4000476 = {
+
+	name = "ÌÆÊ½×ñ"
+
+	country = CTS
+	type = land
+
+	skill = 1
+
+	max_skill = 4
+
+	loyalty = 1.00
+
+	picture = L4000076
+	add_trait = fortress_buster
+	history = {
+
+			1930.1.1 = { rank = 2 }
+		1937.8.13 = { rank = 0 }
+	}
+
+}
+4000477 = {
+
+	name = "ÅËÎÄ»ª"
+
+	country = CTS
+	type = land
+
+	skill = 0
+	max_skill = 4
+
+	loyalty = 1.00
+
+	picture = L4000077
+	add_trait = old_guard
+	add_trait = fortress_buster
+	history = {
+
+		1930.1.1 = { rank = 2 }
+		1937.8.13 = { rank = 0 }
+
+	}
+
+}
+4000478 = {
+
+	name = "ºÎ¹âÁÒ"
+
+	country = CTS
+	type = land
+
+	skill = 1
+	max_skill = 4
+
+	loyalty = 1.00
+
+	picture = L4000078
+	add_trait = old_guard
+	history = {
+
+		1930.1.1 = { rank = 1 }
+		1937.8.13 = { rank = 0 }
+
+	}
+
+}
+4000499 = {
+	name = "Áõ´æºñ"
+    	country = CTS
+	type = land
+
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+
+	picture = M3000033
+	add_trait = old_guard
+	history = {
+
+		1930.1.1 = { rank = 1 }
+		1937.8.13 = { rank = 0 }
+	}
+}

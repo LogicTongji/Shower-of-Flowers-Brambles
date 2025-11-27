@@ -1,0 +1,342 @@
+art_barrell_ammo = {
+motorized_artillery_brigade = {
+soft_attack = 0.6
+}
+alpine_artillery_brigadeB = {
+soft_attack = 0.6
+}
+	artillery_brigadeB = {
+		soft_attack = 0.6
+	}
+
+alpine_artillery_brigade = {
+soft_attack = 0.6
+}
+	artillery_brigade = {
+		soft_attack = 0.6
+	}
+
+	sp_artillery_brigade = {
+		soft_attack = 0.6
+	}
+
+	allow = {
+		infantry_activation = 1
+	}
+	
+	research_bonus_from = {
+		artillery_theory = 0.3
+		artillery_practical = 0.6
+		superior_firepower_theory = .1
+	}
+	
+	on_completion = artillery_theory
+
+	difficulty = 1
+
+	start_year = 1918
+	first_offset = 1932
+	additional_offset = 2
+	max_level = 12
+	folder = armour_folder
+}
+
+art_carriage_sights = {
+motorized_artillery_brigade = {
+defensiveness = 0.2
+		toughness = 0.1
+		hard_attack = 0.1
+}
+alpine_artillery_brigadeB = {
+defensiveness = 0.2
+		toughness = 0.1
+		hard_attack = 0.1
+}
+	artillery_brigadeB = {
+	defensiveness = 0.2
+		toughness = 0.1
+		hard_attack = 0.1
+	}
+
+alpine_artillery_brigade = {
+defensiveness = 0.2
+		toughness = 0.1
+		hard_attack = 0.1
+}
+	artillery_brigade = {
+		defensiveness = 0.2
+		toughness = 0.1
+		hard_attack = 0.1
+	}
+assault_gun_brigade = {
+hard_attack = 0.1
+		defensiveness = 0.1
+		toughness = 0.1
+}
+	sp_artillery_brigade = {
+		hard_attack = 0.1
+		defensiveness = 0.1
+		toughness = 0.1
+	}
+
+	allow = {
+		infantry_activation = 1
+	}
+	
+	research_bonus_from = {
+		artillery_theory = 0.3
+		artillery_practical = 0.6
+		human_wave_theory = 0.1
+	}
+	
+	on_completion = artillery_theory
+
+	difficulty = 1
+
+	start_year = 1918
+	first_offset = 1932
+	additional_offset = 2
+	max_level = 12
+	folder = armour_folder
+}
+
+at_barrell_sights = {
+    anti_tank_brigade = {
+        defensiveness = 0.2
+        hard_attack = 0.2
+    }
+
+    tank_destroyer_brigade = {
+        hard_attack = 0.5
+    }
+glider_anti_tank_brigade {
+ hard_attack = 0.5
+    }
+
+    allow = {
+        infantry_activation = 1
+    }
+
+    research_bonus_from = {
+        artillery_theory = 0.3
+        artillery_practical = 0.6
+        spearhead_theory = 0.1
+    }
+
+    on_completion = artillery_theory
+
+    difficulty = 1
+
+    start_year = 1918
+    first_offset = 1936
+    additional_offset = 2
+    max_level = 12
+    folder = armour_folder
+}
+
+at_ammo_muzzel = {
+    anti_tank_brigade = {
+        hard_attack = 0.8
+		ap_attack = 1
+    }
+
+    tank_destroyer_brigade = {
+        hard_attack = 0.8
+		ap_attack = 1
+    }
+     assault_gun_brigade = {
+        hard_attack = 0.8
+		ap_attack = 1
+    }
+
+    allow = {
+        infantry_activation = 1
+    }
+
+    research_bonus_from = {
+        artillery_theory = 0.3
+        artillery_practical = 0.6
+        grand_battleplan_theory = 0.1
+    }
+
+    on_completion = artillery_theory
+
+    difficulty = 1
+
+    start_year = 1918
+    first_offset = 1936
+    additional_offset = 2
+    max_level = 12
+    folder = armour_folder
+}
+
+aa_barrell_ammo = {
+motorized_anti_air_brigade = { 
+air_attack = 0.3
+		air_defence = 0.3
+	}
+anti_air_company = {
+air_attack = 0.3
+		air_defence = 0.3
+	}
+	anti_air_brigade = {
+		air_attack = 0.3
+		air_defence = 0.3
+	}
+	mot_aa_brigade = {
+		air_attack = 0.3
+		air_defence = 0.3
+	}
+		sp_anti_air_brigade = {
+		air_attack = 0.3
+		air_defence = 0.3
+	}
+
+	allow = {
+		infantry_activation = 1
+	}
+	
+	research_bonus_from = {
+		artillery_theory = 0.3
+		artillery_practical = 0.6
+		aeronautic_engineering = 0.1
+	}
+	
+	on_completion = artillery_theory
+
+	difficulty = 1
+
+	start_year = 1918
+	first_offset = 1936
+	additional_offset = 2
+	max_level = 12
+	folder = armour_folder
+}
+
+aa_carriage_sights = {
+motorized_anti_air_brigade = { 
+ard_attack = 0.3
+		soft_attack = 0.3
+		defensiveness = 0.2
+	}
+sp_anti_air_brigade = { 
+ard_attack = 0.3
+		soft_attack = 0.3
+		defensiveness = 0.2
+	}
+anti_air_company = {
+hard_attack = 0.3
+		soft_attack = 0.3
+		defensiveness = 0.2
+}
+	anti_air_brigade = {
+		hard_attack = 0.3
+		soft_attack = 0.3
+		defensiveness = 0.2
+	}
+	mot_aa_brigade = {
+		hard_attack = 0.3
+		soft_attack = 0.3
+		defensiveness = 0.2
+	}
+
+	allow = {
+		infantry_activation = 1
+	}
+	
+	research_bonus_from = {
+		artillery_theory = 0.3
+		artillery_practical = 0.6
+		air_doctrine_practical = 0.1
+	}
+	
+	on_completion = artillery_theory
+
+	difficulty = 1
+
+	start_year = 1918
+	first_offset = 1936
+	additional_offset = 2
+	max_level = 12
+	folder = armour_folder
+}
+
+rocket_art = {
+
+	activate_unit = rocket_artillery_brigade 
+
+	allow = {
+		infantry_activation = 1
+		art_carriage_sights = 2
+	}
+
+	research_bonus_from = {
+		rocket_science = 0.3
+		artillery_practical = 0.7
+	}
+	
+	on_completion = rocket_science
+
+	difficulty = 3
+	start_year = 1939
+	folder = armour_folder
+}
+	
+rocket_art_ammo = {
+	rocket_artillery_brigade = {
+		soft_attack = 1
+	}
+
+	sp_rct_artillery_brigade = {
+		soft_attack = 1
+	}
+
+
+	allow = {
+		rocket_art = 1
+	}
+	
+	research_bonus_from = {
+		rocket_science = 0.3
+		artillery_practical = 0.7
+	}
+	
+	on_completion = rocket_science
+
+	difficulty = 1
+
+	start_year = 1939
+	first_offset = 1940
+	additional_offset = 2
+	max_level = 12
+	folder = armour_folder
+}
+
+rocket_carriage_sights = {
+	rocket_artillery_brigade = {
+		defensiveness = 0.2
+		toughness = 0.2
+	}
+	sp_rct_artillery_brigade = {
+		toughness = 0.2
+	}
+
+	allow = {
+		rocket_art = 1
+	}
+	
+	research_bonus_from = {
+		rocket_science = 0.3
+		artillery_practical = 0.7
+	}
+	
+	on_completion = rocket_science
+
+	difficulty = 1
+
+	start_year = 1939
+	first_offset = 1940
+	additional_offset = 2
+	max_level = 12
+	folder = armour_folder
+}

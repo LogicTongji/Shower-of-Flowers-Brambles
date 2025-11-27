@@ -1,0 +1,105 @@
+
+		corps = {
+			name = "国民革命军第1军"
+			location = 7435
+			regiment = { type = hq_brigade name = "第1军司令部" historical_model = 0 }
+                        regiment = { type =artillery_brigade name = "第1军炮兵团" historical_model = 3 }
+			division= {
+				name = "国民革命军第1师"
+				location = 7435
+				regiment = { type = chi_star_destroyer name = "第1旅" experience = 10 strength = 20 builder = SOV historical_model = 1 }
+				regiment = { type = chi_star_destroyer name = "第2旅" experience = 10 strength = 20 builder = SOV historical_model = 1 }
+				
+			}
+			division= {
+				name = "国民革命军第78师"
+				location = 7435
+				regiment = { type = chi_star_destroyer name = "第232旅" experience = 10 strength = 20 builder = SOV historical_model = 1 }
+				regiment = { type = chi_star_destroyer name = "第234旅" experience = 10 strength = 20 builder = SOV historical_model = 1 }
+                        }
+			division= {
+				name = "国民革命军第167师"
+				location = 7435
+				regiment = { type = chi_star_destroyer name = "第500旅" experience = 10 strength = 20 builder = SOV historical_model = 1 }
+				regiment = { type = infantry_brigade name = "第501旅" experience = 10  strength = 20 historical_model = 1 }	
+			}		
+}
+                 corps = {
+			name = "国民革命军第2军"
+			location = 7435
+			regiment = { type = hq_brigade name = "第2军司令部" historical_model = 0 }
+                        regiment = { type =artillery_brigade name = "第2军炮兵团" historical_model = 3 }
+			division= {
+				name = "国民革命军第9师"
+				location = 7435
+				regiment = { type = chi_star_destroyer name = "第25旅" experience = 10 strength = 20 builder = SOV historical_model = 1 }
+				regiment = { type = chi_star_destroyer name = "第26旅" experience = 10 strength = 20 builder = SOV historical_model = 1 }
+				
+			}
+			division= {
+				name = "国民革命军第76师"
+				location = 7435
+				regiment = { type = chi_star_destroyer name = "第227旅" experience = 10 strength = 20 builder = SOV historical_model = 1 }
+				regiment = { type = infantry_brigade name = "第228旅" experience = 10 strength = 20 builder = SOV historical_model = 1 }
+                        }
+                        division= {
+			       name = "国民革命军新编33师"
+			       location = 7435
+			       regiment = { type = chi_star_destroyer name = "第238旅" experience = 10 strength = 20 builder = SOV historical_model = 1 }
+			       regiment = { type = infantry_brigade name = "第239旅" experience = 10 strength = 20 builder = SOV historical_model = 1 }
+ 	
+  			}		
+} 
+                 corps = {
+			name = "国民革命军第18军"
+			location = 9383
+			regiment = { type = hq_brigade name = "第18军司令部" historical_model = 0 }
+                        regiment = { type =artillery_brigade name = "第18军炮兵团" historical_model = 3 }
+			division= {
+				name = "国民革命军第11师"
+				location = 9383
+				regiment = { type = chi_star_destroyer name = "第31旅" experience = 10 strength = 20 historical_model = 3 }
+				regiment = { type = chi_star_destroyer name = "第33旅" experience = 10 strength = 20 builder = SOV historical_model = 1 }
+				regiment = { type = infantry_brigade name = "11师补充团" experience = 10 strength = 20 builder = SOV historical_model = 1 }
+			}
+			division= {
+				name = "国民革命军第18师"
+				location = 9383
+				regiment = { type = chi_star_destroyer name = "第52旅" experience = 10 strength = 20 builder = SOV historical_model = 1 }
+				regiment = { type = infantry_brigade name = "第54旅" experience = 10 strength = 20 builder = SOV historical_model = 1 }
+                                regiment = { type = infantry_brigade name = "18师补充团" experience = 10 strength = 20 historical_model = 2 } 
+                        } 
+                        division= {
+			       name = "国民革命军199师"
+			       location = 9383
+			       regiment = { type = infantry_brigade experience = 10 strength = 20 builder = SOV historical_model = 1 }
+			       regiment = { type = infantry_brigade experience = 10 strength = 20 builder = SOV historical_model = 1 }
+ 	                       regiment = { type = infantry_brigade experience = 10 strength = 20 historical_model = 2 }
+  			}		
+}
+                 corps = {
+			name = "国民革命军第74军"
+			location = 7519
+			regiment = { type = hq_brigade name = "第74军司令部" historical_model = 0 }
+                        regiment = { type =artillery_brigade name = "第74军炮兵团" historical_model = 3 }
+			division= {
+				name = "国民革命军第51师"
+				location = 7519
+				regiment = { type = chi_star_destroyer name = "第151旅" experience = 10 strength = 20 historical_model = 2 }
+				regiment = { type = chi_star_destroyer name = "第153旅" experience = 10 strength = 20 builder = SOV historical_model = 1 }
+				regiment = { type = infantry_brigade name = "51师补充团" experience = 10 strength = 20 builder = SOV historical_model = 1 }
+			}
+			division= {
+				name = "国民革命军第57师"
+				location = 7519
+				regiment = { type = chi_star_destroyer name = "第169旅" experience = 10 strength = 20 builder = SOV historical_model = 1 }
+				regiment = { type = chi_star_destroyer name = "第171旅" experience = 10 strength = 20 builder = SOV historical_model = 1 }
+                        }
+                        division= {
+			       name = "国民革命军58师"
+			       location = 7519
+			       regiment = { type = chi_star_destroyer name = "第172旅" experience = 10 strength = 20 builder = SOV historical_model = 1 }
+			       regiment = { type = chi_star_destroyer name = "第174旅" experience = 10 strength = 20 builder = SOV historical_model = 1 }
+                               regiment = { type = infantry_brigade name = "58师补充团" experience = 10 strength = 20 historical_model = 2 }
+  			}		
+}                  

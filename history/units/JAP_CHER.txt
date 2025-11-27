@@ -1,0 +1,32 @@
+  armygroup = {
+			name = "关东军察哈尔派遣兵团"
+			location = 4977
+                        regiment = { type = hq_brigade name = "关东军察哈尔派遣军司令部" experience = 60 historical_model = 3 }
+			division = {
+				name = "混成第1旅团"
+				location = 4977
+				regiment = { type = imperial_brigade name = "歩兵第1联队" experience = 60 historical_model = 3 }
+				 regiment = { type = light_armor_brigade name = "装甲混编旅" experience = 60 historical_model = 3 }
+                                 regiment = { type = engineer_brigade name = "工兵联队" experience = 60 historical_model = 3 }
+			}
+			division = {
+				name = "混成第15旅团"
+				location = 4977
+				regiment = { type = imperial_brigade name = "歩兵第16联队" experience = 60 historical_model = 3 }
+				regiment = { type = imperial_brigade name = "歩兵第30联队" experience = 60 historical_model = 3 }
+                                regiment = { type = engineer_brigade name = "工兵第2联队" experience = 60 historical_model = 3 }
+				regiment = { type = artillery_brigade name = "野炮兵第2联队" experience = 60 historical_model = 3 }
+				regiment = { type = cavalry_brigade name = "骑兵第3大队联队" experience = 60 historical_model = 3 }
+                                 regiment = { type = infantry_brigade name = "轻重兵联队" experience = 60 historical_model = 3 }
+			}
+			division = {
+				name = "混成第2旅团"
+				location = 4977
+				regiment = { type = imperial_brigade name = "步兵第3联队" experience = 60 historical_model = 3 }
+				regiment = { type = imperial_brigade name = "骑兵57第联队" experience = 60 historical_model = 3 }
+				regiment = { type = cavalry_brigade name = "骑兵第1联队" experience = 60 historical_model = 3 }
+                                 regiment = { type = engineer_brigade name = "工兵第1联队" experience = 60 historical_model = 3 }
+				regiment = { type = artillery_brigade name = "野炮兵第1联队" experience = 60 historical_model = 1 }   
+				}
+				}
+				}

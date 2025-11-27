@@ -1,0 +1,670 @@
+4000761 = {
+	name = "Ñî¸É²Å"
+	country = CSC
+	type = land
+	skill = 2
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000761
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+50343 = {
+	name = "ÑîÉ­"
+	country = CSC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50343
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+		1936.1.1 = { rank = 3 }
+	}
+}
+4000766 = {
+	name = "º«È«ÆÓ"
+	country = CSC
+	type = land
+	skill = 2
+	max_skill = 3
+	loyalty = 0.00
+	history = {
+		1936.1.1 = { rank = 1 }
+		1937.1.1 = { rank = 2 }
+	}
+}
+4000767 = {
+	name = "³ÂÁ¼»ù"
+	country = CSC
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 0.00
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+4000768 = {
+	name = "¸µÒí"
+	country = CSC
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 0.00
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+4000769 = {
+	name = "ÏÄÊ×Ñ«"
+	country = CSC
+	type = land
+	skill = 2
+	max_skill = 3
+	loyalty = 1.00
+	picture = M3000026
+	history = {
+		1937.1.1 = { rank = 1 }
+		1937.1.1 = { rank = 2 }
+	}
+} 
+4000770 = {
+	name = "ÌÆÛ¨²®"
+	country = CSC
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 0.00
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+4000771 = {
+	name = "ÎâÊØÈ¨"
+	country = CSC
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 0.00
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+50161 = {
+	name = "¹ùÑ«ì÷"
+	country = CSC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50161
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 2 }
+	}
+}
+4000074 = {
+
+	name = "ÍõçÚÐ÷"
+
+	country = CSC
+	type = land
+
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+
+	picture = L4000074
+	history = {
+
+		1936.1.1 = { rank = 1 }
+
+	}
+
+}
+4000075 = {
+
+	name = "ÌïËÌÒ¢"
+
+	country = CSC
+	type = land
+
+	skill = 0
+
+	max_skill = 4
+
+	loyalty = 1.00
+
+	picture = L4000075
+	history = {
+
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+
+	}
+
+}
+4000076 = {
+
+	name = "ÌÆÊ½×ñ"
+
+	country = CSC
+	type = land
+
+	skill = 1
+
+	max_skill = 4
+
+	loyalty = 1.00
+
+	picture = L4000076
+	add_trait = fortress_buster
+	history = {
+
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+
+	}
+
+}
+4000077 = {
+
+	name = "ÅËÎÄ»ª"
+
+	country = CSC
+	type = land
+
+	skill = 0
+	max_skill = 4
+
+	loyalty = 1.00
+
+	picture = L4000077
+	add_trait = old_guard
+	add_trait = fortress_buster
+	history = {
+
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+		1936.1.1 = { rank = 3 }
+
+	}
+
+}
+4000078 = {
+
+	name = "ºÎ¹âÁÒ"
+
+	country = CSC
+	type = land
+
+	skill = 1
+	max_skill = 4
+
+	loyalty = 1.00
+
+	picture = L4000078
+	add_trait = old_guard
+	history = {
+
+		1936.1.1 = { rank = 1 }
+
+	}
+
+}
+4000079 = {
+
+	name = "·ëµÂÕ«"
+
+	country = CSC
+	type = land
+
+	skill = 0
+	max_skill = 3
+
+	loyalty = 1.00
+
+	picture = L4000079
+	add_trait = old_guard
+	history = {
+
+		1936.1.1 = { rank = 1 }
+
+	}
+
+}
+4000080 = {
+
+	name = "ÂÞÔóÖÞ"
+
+	country = CSC
+	type = land
+
+	skill = 1
+	max_skill = 3
+	loyalty = 1.00
+
+	picture = L4000080
+	history = {
+
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+
+	}
+
+}
+50322 = {
+
+	name = "ÍõÃúÕÂ"
+
+	country = CSC
+	type = land
+
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+
+	picture = L4000081
+	add_trait = offensive_doctrine
+	add_trait = sincere_seeker
+	history = {
+
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+
+	}
+
+}
+4000082 = {
+
+	name = "ÈÄ¹ú»ª"
+
+	country = CSC
+	type = land
+
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+
+	picture = L4000082
+	add_trait = sincere_seeker
+	history = {
+
+		1936.1.1 = { rank = 1 }
+
+	}
+
+}
+4000083 = {
+
+	name = "¶­ËÎçñ"
+
+	country = CSC
+	type = land
+
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+
+	picture = L4000083
+	history = {
+
+		1936.1.1 = { rank = 1 }
+
+	}
+
+}
+4000084 = {
+
+	name = "·¶ÉÜÔö"
+    	country = CSC
+	type = land
+
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+
+	picture = L4000084
+	add_trait = sincere_seeker
+	add_trait = defensive_doctrine
+	history = {
+
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+		1940.11.1 = { rank = 3 }
+
+	}
+
+}
+4000085 = {
+
+	name = "ÂíØ¹ÖÇ"
+    	country = CSC
+	type = land
+
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+
+	picture = L4000085
+	history = {
+
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+}
+4000086 = {
+
+	name = "»ÆÒþ"
+    	country = CSC
+	type = land
+
+	skill = 2
+	max_skill = 3
+	loyalty = 1.00
+
+	picture = L4000086
+	add_trait = offensive_doctrine
+	history = {
+
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+
+}
+4000087 = {
+
+	name = "³Â¶¦Ñ«"
+    	country = CSC
+	type = land
+
+	skill = 1
+	max_skill = 3
+	loyalty = 1.00
+
+	picture = L4000087
+	history = {
+
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+
+}
+4000088 = {
+
+	name = "Ñî¹úìõ"
+    	country = CSC
+	type = land
+
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+
+	picture = L4000088
+	history = {
+
+		1936.1.1 = { rank = 1 }
+	}
+
+}
+4000089 = {
+
+	name = "³ÂÍòØð"
+    	country = CSC
+	type = land
+
+	skill = 2
+	max_skill = 3
+	loyalty = 1.00
+
+	picture = L4000089
+	add_trait = defensive_doctrine
+	add_trait = sincere_seeker
+	history = {
+
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+		1937.10.1 = { rank = 3 }
+	}
+}
+4000090 = {
+
+	name = "¹ù²ýÃ÷"
+    	country = CSC
+	type = land
+
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+
+	picture = L4000090
+	history = {
+
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+}
+4000091 = {
+
+	name = "ÁÎÕð"
+    	country = CSC
+	type = land
+
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+
+	picture = L4000091
+	add_trait = winter_specialist
+	history = {
+
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+}
+4000092 = {
+
+	name = "³ÂÀ¼Í¤"
+    	country = CSC
+	type = land
+
+	skill = 1
+	max_skill = 3
+	loyalty = 1.00
+
+	picture = L4000092
+	history = {
+
+		1936.1.1 = { rank = 1 }
+	}
+}
+4000093 = {
+
+	name = "ÑîººÓò"
+    	country = CSC
+	type = land
+
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+
+	picture = L4000093
+	history = {
+
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+}
+4000094 = {
+
+	name = "ÏÄ¾¼"
+    	country = CSC
+	type = land
+
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+
+	picture = L4000094
+	history = {
+
+		1936.1.1 = { rank = 1 }
+	}
+}
+4000095 = {
+	name = "ÁõÏæ"
+    	country = CSC
+	type = land
+
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+
+	picture = M3000027
+	add_trait = sincere_seeker
+	history = {
+
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+		1936.1.1 = { rank = 3 }
+		1936.1.1 = { rank = 4 }
+	}
+}
+4000096 = {
+	name = "ËïÕð"
+    	country = CSC
+	type = land
+
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+
+	picture = M3000030
+	add_trait = trickster
+	history = {
+
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+}
+4000097 = {
+	name = "µËÎýºî"
+    	country = CSC
+	type = land
+
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+
+	picture = M3000031
+	add_trait = logistics_wizard
+	add_trait = old_guard
+	history = {
+
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+}
+4000098 = {
+	name = "ÍõÁê»ù"
+    	country = CSC
+	type = land
+
+	skill = 3
+	max_skill = 3
+	loyalty = 1.00
+
+	picture = M3000032
+	add_trait = old_guard
+	history = {
+
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+		1936.1.1 = { rank = 3 }
+	}
+}
+4000099 = {
+	name = "Áõ´æºñ"
+    	country = CSC
+	type = land
+
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+
+	picture = M3000033
+	add_trait = old_guard
+	history = {
+
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+}
+4000100 = {
+	name = "Àî¼ÒîÚ"
+    	country = CSC
+	type = land
+
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+
+	picture = M3000034
+	add_trait = sincere_seeker
+	history = {
+
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+}
+4000101 = {
+
+	name = "ÔøÏÜ¶°"
+    	country = CSC
+	type = land
+
+	skill = 1
+	max_skill = 3
+	loyalty = 1.00
+
+	picture = L40000920000
+	history = {
+
+		1936.1.1 = { rank = 1 }
+	}
+}
+4000102 = {
+
+	name = "³ÂÁÁÎõ"
+    	country = CSC
+	type = land
+
+	skill = 1
+	max_skill = 3
+	loyalty = 1.00
+
+	picture = L400009999
+	history = {
+
+		1936.1.1 = { rank = 1 }
+	}
+}
+4000103 = {
+
+	name = "³ÂÀë"
+    	country = CSC
+	type = land
+
+	skill = 1
+	max_skill = 3
+	loyalty = 1.00
+
+	picture = L400009990
+	history = {
+
+		1936.1.1 = { rank = 1 }
+	}
+}

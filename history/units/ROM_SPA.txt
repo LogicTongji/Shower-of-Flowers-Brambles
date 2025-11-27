@@ -1,0 +1,8 @@
+#罗马尼亚志愿军
+division= {
+		name = "铁卫团"
+		location = 4548
+		regiment = { type = infantry_brigade experience = 45 historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 45 historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 45 historical_model = 1 }
+}

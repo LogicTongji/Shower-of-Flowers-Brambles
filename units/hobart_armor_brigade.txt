@@ -1,0 +1,82 @@
+hobart_armor_brigade = {
+	type = land
+	sprite = Infantry
+	active = no
+	
+	is_mobile = yes
+	is_armor = yes
+
+	#Size Definitions
+	max_strength = 10
+	default_organisation = 30
+	default_morale = 0.30
+	officers = 100
+
+	#Building Costs
+	build_cost_ic = 12.00
+	build_cost_manpower = 1.67
+	build_time = 210
+	
+	#Misc Abilities
+	maximum_speed = 5.00
+	transport_weight = 20.00
+	supply_consumption = 3.33
+	fuel_consumption = 4.00
+	radio_strength = 1
+
+	#Defensive Abilities
+	defensiveness = 6.00
+	toughness = 4.00
+	softness = 0.10
+	air_defence = 0.60
+
+	#Offensive Abilities
+	suppression = 0.00
+	soft_attack = 4.00
+	hard_attack = 3.5
+	air_attack = 0.50
+
+	urban = {
+		attack = -0.50
+		defence = -0.10
+	}
+   	amphibious =    { 
+		attack = 0.30
+	}
+    river = { 
+		attack = 0.30
+	}
+   	marsh = { 
+		attack = 0.30
+		movement = -0.30
+	}
+	jungle = {
+		attack = -0.50
+		movement = -0.80
+	}
+	forest = { 
+		attack = -0.30
+		movement = -0.50
+	}
+	woods = { 
+		attack = -0.15
+		movement = -0.20		
+	}
+	mountain = 	{
+		attack = -0.60
+		movement = -0.60
+	}
+	hills = {
+		attack = -0.10
+		movement = -0.10
+	}
+   
+	
+	combat_width = 0
+
+	completion_size = 1.7
+	on_completion = armour_practical
+	
+	priority = 4
+
+}

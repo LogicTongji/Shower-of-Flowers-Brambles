@@ -1,0 +1,647 @@
+color = { 130  206  113 }
+graphical_culture = Japanese
+
+default_templates = {
+	generic_infantry = {
+		infantry_brigade
+		infantry_brigade
+		infantry_brigade
+	}
+	generic_milita = {
+		militia_brigade
+		militia_brigade
+		militia_brigade
+	}
+	generic_armoured = {
+		armor_brigade
+		motorized_brigade
+		motorized_brigade
+	}
+	generic_cavalry = {
+		cavalry_brigade
+		cavalry_brigade
+	}
+}
+unit_names = {
+	infantry_brigade = {
+		"步兵第1师" "步兵第2师" "步兵第3师" "步兵第4师" "步兵第5师" "步兵第6师" "步兵第7师" "步兵第8师" "步兵第9师" "步兵第10师" "步兵第12师" 
+		"步兵第14师" "步兵第15师" "步兵第17师" "步兵第19师" "步兵第21师" "步兵第22师" "步兵第25师" "步兵第28师" "步兵第29师" "步兵第30师" "步兵第35师" 
+		"步兵第38师" "步兵第40师" "步兵第42师" "步兵第46师" "步兵第47师" "步兵第49师" "步兵第50师" "步兵第51师" "步兵第57师" "步兵第58师" "步兵第61师" 
+		"步兵第62师" "步兵第63师" "步兵第64师" "步兵第65师" "步兵第66师" "步兵第69师" "步兵第70师" "步兵第76师" "步兵第78师" "步兵第79师" "步兵第80师" 
+		"步兵第81师" "步兵第82师" "步兵第83师" "步兵第89师" "步兵第91师" "步兵第93师" "步兵第96师" "步兵第98师" "步兵第100师" 
+	}
+	cavalry_brigade = {
+		"骑兵第1师" "骑兵第2师" "骑兵第3师" "骑兵第4师" "骑兵第5师" "骑兵第6师" "骑兵第7师" "骑兵第8师" "骑兵第9师" "骑兵第10师" "骑兵第11师" 
+		"骑兵第12师" "骑兵第13师" "骑兵第14师" "骑兵第15师" "骑兵第16师" "骑兵第17师" "骑兵第18师" "骑兵第19师" "骑兵第20师" 
+	}
+	motorized_brigade = {
+		"摩步第1师" "摩步第2师" "摩步第3师" "摩步第4师" "摩步第5师" "摩步第6师" "摩步第7师" "摩步第8师" "摩步第9师" "摩步第10师" 
+	}
+	mechanized_brigade = {
+		"机步第1师" "机步第2师" "机步第3师" "机步第4师" "机步第5师" "机步第6师" "机步第7师" "机步第8师" "机步第9师" "机步第10师" "机步第12师" 
+			}
+	light_armor_brigade = {
+		"第1装甲预备师" "第2装甲预备师" "第3装甲预备师" "第4装甲预备师" "第5装甲预备师" "第6装甲预备师" "第7装甲预备师" "第8装甲预备师" "第9装甲预备师" "第10装甲预备师" 
+	}
+	armor_brigade = {
+		"第1装甲预备师" "第2装甲预备师" "第3装甲预备师" "第4装甲预备师" "第5装甲预备师" "第6装甲预备师" "第7装甲预备师" "第8装甲预备师" "第9装甲预备师" "第10装甲预备师" 
+	}
+	paratrooper_brigade = {
+		"降落伞兵1师" "降落伞兵2师" "降落伞兵3师" "降落伞兵4师" "降落伞兵5师" 
+	}
+	marine_brigade = {
+		"海军陆战队第1师" "海军陆战队第2师" "海军陆战队第3师" "海军陆战队第4师" "海军陆战队第5师" 
+	}
+	bergsjaeger_brigade = {
+		"山地第1师" "山地第2师" "山地第3师" "山地第4师" "山地第5师" "山地第6师" "山地第7师" "山地第8师" "山地第9师" "山地第10师" 
+	}
+	garrison_brigade = {
+	        "第1防卫团" "第2防卫团" "第3防卫团" "第4防卫团" "第5防卫团" "第6防卫团" "第7防卫团" "第8防卫团" "第9防卫团" "第10防卫团" "第11防卫团"
+                "第12防卫团" "第13防卫团" "第14防卫团" "第15防卫团"
+	}
+	hq_brigade = {
+		"第1印度支那军" "第2印度支那军" "第3印度支那军" 
+	}
+	militia_brigade = {
+		"第1守备师" "第2守备师" "第3守备师" "第4守备师" "第5守备师" "第6守备师" "第7守备师" "第8守备师" "第9守备师" "第10守备师" "第11守备师"
+		"第12守备师" "第13守备师" 
+	}
+	multi_role = {
+		"第1多任务战斗机大队" "第2多任务战斗机大队" "第3多任务战斗机大队" "第4多任务战斗机大队" "第5多任务战斗机大队" "第6多任务战斗机大队" "第7多任务战斗机大队" "第8多任务战斗机大队" "第9多任务战斗机大队" "第10多任务战斗机大队" "第11多任务战斗机大队" 
+		"第12多任务战斗机大队" "第13多任务战斗机大队" "第14多任务战斗机大队" "第15多任务战斗机大队" "第16多任务战斗机大队" "第17多任务战斗机大队" "第18多任务战斗机大队" "第19多任务战斗机大队" "第20多任务战斗机大队" 
+	}
+	interceptor = {
+		"第1截击机大队" "第2截击机大队" "第3截击机大队" "第4截击机大队" "第5截击机大队" "第6截击机大队" "第7截击机大队" "第8截击机大队" "第9截击机大队" "第10截击机大队" "第11截击机大队" 
+		"第12截击机大队" "第13截击机大队" "第14截击机大队" "第15截击机大队" "第16截击机大队" "第17截击机大队" "第18截击机大队" "第19截击机大队" "第20截击机大队" 
+	}
+	strategic_bomber = {
+		"第1战略轰炸机大队" "第2战略轰炸机大队" "第3战略轰炸机大队" "第4战略轰炸机大队" "第5战略轰炸机大队" "第6战略轰炸机大队" "第7战略轰炸机大队" "第8战略轰炸机大队" "第9战略轰炸机大队" "第10战略轰炸机大队" "第11战略轰炸机大队" 
+		"第12战略轰炸机大队" "第13战略轰炸机大队" "第14战略轰炸机大队" "第15战略轰炸机大队" "第16战略轰炸机大队" "第17战略轰炸机大队" "第18战略轰炸机大队" "第19战略轰炸机大队" "第20战略轰炸机大队" 
+	}
+	tactical_bomber = {
+		" 第1战术轰炸机大队" " 第2战术轰炸机大队" " 第3战术轰炸机大队" " 第4战术轰炸机大队" " 第5战术轰炸机大队" " 第6战术轰炸机大队" " 第7战术轰炸机大队" " 第8战术轰炸机大队" " 第9战术轰炸机大队" " 第10战术轰炸机大队" " 第11战术轰炸机大队" 
+		" 第12战术轰炸机大队" " 第13战术轰炸机大队" " 第14战术轰炸机大队" " 第15战术轰炸机大队" " 第16战术轰炸机大队" " 第17战术轰炸机大队" " 第18战术轰炸机大队" " 第19战术轰炸机大队" " 第20战术轰炸机大队" "第21战术轰炸机大队" "第22战术轰炸机大队" 
+		"第23战术轰炸机大队" "第24战术轰炸机大队" "第25战术轰炸机大队" "第26战术轰炸机大队" "第27战术轰炸机大队" "第28战术轰炸机大队" "第29战术轰炸机大队" "第30战术轰炸机大队" "第31战术轰炸机大队" "第32战术轰炸机大队" "第33战术轰炸机大队" 
+		"第34战术轰炸机大队" "第35战术轰炸机大队" "第36战术轰炸机大队" "第37战术轰炸机大队" "第38战术轰炸机大队" "第39战术轰炸机大队" "第40战术轰炸机大队" 
+	}
+	naval_bomber = {
+		"第1海军轰炸机大队" "第2海军轰炸机大队" "第3海军轰炸机大队" "第4海军轰炸机大队" "第5海军轰炸机大队" "第6海军轰炸机大队" "第7海军轰炸机大队" "第8海军轰炸机大队" "第9海军轰炸机大队" "第10海军轰炸机大队" "第11海军轰炸机大队" 
+		"第12海军轰炸机大队" "第13海军轰炸机大队" "第14海军轰炸机大队" "第15海军轰炸机大队" "第16海军轰炸机大队" "第17海军轰炸机大队" "第18海军轰炸机大队" "第19海军轰炸机大队" "第20海军轰炸机大队" 
+	}
+	cas = {
+		"第1近距离空援大队" "第2近距离空援大队" "第3近距离空援大队" "第4近距离空援大队" "第5近距离空援大队" "第6近距离空援大队" "第7近距离空援大队" "第8近距离空援大队" "第9近距离空援大队" "第10近距离空援大队" "第11近距离空援大队" 
+		"第12近距离空援大队" "第13近距离空援大队" "第14近距离空援大队" "第15近距离空援大队" "第16近距离空援大队" "第17近距离空援大队" "第18近距离空援大队" "第19近距离空援大队" "第20近距离空援大队" 
+	}
+	transport_plane = {
+		"第1空运机大队" "第2空运机大队" "第3空运机大队" "第4空运机大队" "第5空运机大队" "第6空运机大队" "第7空运机大队" "第8空运机大队" "第9空运机大队" "第10空运机大队" 
+	}
+	battleship = {
+		"步兵号" "自由号" "平等号" "博爱号" "祖国号" 
+	}
+	light_cruiser = {
+		"步兵号" "自由号" "平等号" "博爱号" "祖国号" 
+	}
+	heavy_cruiser = {
+		"步兵号" "自由号" "平等号" "博爱号" "祖国号" 
+	}
+	battlecruiser = {
+		"步兵号" "自由号" "平等号" "博爱号" "祖国号"  
+	}
+	destroyer = {
+		"第1驱逐舰大队" "第2驱逐舰大队" "第3驱逐舰大队" "第4驱逐舰大队" "第5驱逐舰大队" 
+	}
+	submarine = {
+		"第1潜艇编队" "第2潜艇编队" "第3潜艇编队" "第4潜艇编队" "第5潜艇编队"  
+	}
+	transport_ship = {
+		"第1运输大队" "第2运输大队" "第3运输大队" "第4运输大队" "第5运输大队"  
+	}
+
+}
+
+ministers = {
+	543001 = {
+		name = "H.M.保大"
+		ideology = social_liberal
+		loyalty = 1.00
+		picture = M542001
+		head_of_state = weary_stiff_neck
+		start_date = 1936.1.1
+	}
+	543002 = {
+		name = "吴庭艳"
+		ideology = social_liberal
+		loyalty = 1.00
+		picture = M542018
+		head_of_government = political_protege
+		head_of_government = flamboyant_tough_guy
+		start_date = 1936.1.1
+	}
+	543003 = {
+		name = "东德芳"
+		ideology = social_liberal
+		loyalty = 1.00
+		picture = M542003
+		foreign_minister = apologetic_clerk
+		start_date = 1936.1.1
+	}
+	543004 = {
+		name = "阮文海"
+		ideology = social_liberal
+		loyalty = 0.75
+		picture = M542004
+		armament_minister = resource_industrialist
+		start_date = 1936.1.1
+	}
+	543005 = {
+		name = "胡德中"
+		ideology = social_liberal
+		loyalty = 0.75
+		picture = M542005
+		minister_of_security = man_of_the_people
+		start_date = 1936.1.1
+	}
+	543006 = {
+		name = "陈加瑞"
+		ideology = social_liberal
+		loyalty = 0.75
+		picture = M542032
+		minister_of_intelligence = naval_intelligence_specialist
+		start_date = 1936.1.1
+	}
+	543007 = {
+		name = "黎光"
+		ideology = social_liberal
+		loyalty = 0.75
+		picture = M542042
+		chief_of_staff = school_of_fire_support
+		start_date = 1936.1.1
+	}
+	543008 = {
+		name = "杨文明"
+		ideology = social_liberal
+		loyalty = 0.75
+		picture = M542046
+		chief_of_army = armoured_spearhead_doctrine
+		chief_of_army = decisive_battle_doctrine
+		chief_of_air = naval_aviation_doctrine
+		start_date = 1936.1.1
+	}
+	543009 = {
+		name = "阮文厅"
+		ideology = social_liberal
+		loyalty = 0.75
+		picture = M542025
+		chief_of_navy = indirect_approach_doctrine
+		start_date = 1936.1.1
+	}
+	543010 = {
+		name = "阮永春"
+		ideology = social_liberal
+		loyalty = 1.00
+		picture = M542023
+		chief_of_air = carpet_bombing_doctrine
+		foreign_minister = ideological_crusader
+		start_date = 1936.1.1
+	}
+	543011 = {
+		name = "波布"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M541014
+		head_of_state = power_hungry_demagogue
+		minister_of_security = efficient_sociopath
+		start_date = 1936.1.1
+	}
+	543013 = {
+		name = "H.R.H.苏发努冯"
+		ideology = left_wing_radical
+		loyalty = 1.00
+		picture = M540012
+		head_of_state = die_hard_reformer
+		chief_of_staff = school_of_psychology
+		chief_of_navy = open_seas_doctrine
+		start_date = 1936.1.1
+	}
+	543014 = {
+		name = "H.M.西索瓦·莫尼旺"
+		ideology = social_democrat
+		loyalty = 1.00
+		picture = M541001
+		head_of_state = benevolent_gentleman
+		start_date = 1936.1.1
+	}
+	543015 = {
+		name = "诺罗敦·苏拉玛里特"
+		ideology = market_liberal
+		loyalty = 1.00
+		picture = M541012
+		head_of_state = barking_buffoon
+		start_date = 1936.1.1
+	}
+	543016 = {
+		name = "H.M.苏萨冯冯"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M540001
+		head_of_state = pig_headed_isolationist
+		start_date = 1936.1.1
+	}
+	543017 = {
+		name = "西索瓦·摩尼蓬"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M541003
+		head_of_state = popular_figurehead
+		foreign_minister = great_compromiser
+		start_date = 1936.1.1
+	}
+	543018 = {
+		name = "H.R.H.启定"
+		ideology = fascistic
+		loyalty = 1.00
+		picture = M542011
+		head_of_state = stern_imperialist
+		start_date = 1936.1.1
+	}
+	543019 = {
+		name = "H.R.H·西萨旺·恒那"
+		ideology = national_socialist
+		loyalty = 1.00
+		picture = M540011
+		head_of_state = autocratic_charmer
+		start_date = 1936.1.1
+	}
+	543020 = {
+		name = "乔森潘"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M541022
+		head_of_government = smiling_oilman
+		start_date = 1936.1.1
+	}
+	543021 = {
+		name = "张震"
+		ideology = leninist
+		loyalty = 1.00
+		picture = M542019
+		head_of_government = backroom_backstabber
+		start_date = 1936.1.1
+	}
+	543022 = {
+		name = "哈布拉多·奥马乌"
+		ideology = left_wing_radical
+		loyalty = 1.00
+		picture = M540019
+		head_of_government = happy_amateur
+		minister_of_intelligence = technical_specialist
+		start_date = 1936.1.1
+	}
+	543023 = {
+		name = "H.R.H.·诺罗敦·西哈努克"
+		ideology = social_democrat
+		loyalty = 1.00
+		picture = M541011
+		head_of_government = old_admiral
+		start_date = 1936.1.1
+	}
+	543024 = {
+		name = "宋双"
+		ideology = market_liberal
+		loyalty = 1.00
+		picture = M541020
+		head_of_government = silent_workhorse
+		start_date = 1936.1.1
+	}
+	543025 = {
+		name = "H.R.H.坎貌"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M540003
+		head_of_government = corporate_suit
+		start_date = 1936.1.1
+	}
+	543026 = {
+		name = "西索瓦·马塔克"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M541021
+		head_of_government = naive_optimist
+		start_date = 1936.1.1
+	}
+	543028 = {
+		name = "菲萨拉斯·玛浩法塔特"
+		ideology = national_socialist
+		loyalty = 1.00
+		picture = M540008
+		head_of_government = old_general
+		minister_of_security = prince_of_terror
+		chief_of_army = elastic_defence_doctrine
+		start_date = 1936.1.1
+	}
+	543029 = {
+		name = "萨利"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M541027
+		foreign_minister = the_cloak_n_dagger_schemer
+		start_date = 1936.1.1
+	}
+	543030 = {
+		name = "范文同"
+		ideology = leninist
+		loyalty = 1.00
+		picture = M542024
+		foreign_minister = ideological_crusader
+		start_date = 1936.1.1
+	}
+	543031 = {
+		name = "丰威汉·凯山"
+		ideology = left_wing_radical
+		loyalty = 1.00
+		picture = M540020
+		foreign_minister = iron_fisted_brute
+		minister_of_security = prince_of_terror
+		start_date = 1936.1.1
+	}
+	543033 = {
+		name = "范·西纳"
+		ideology = market_liberal
+		loyalty = 1.00
+		picture = M541025
+		foreign_minister = biased_intellectual
+		start_date = 1936.1.1
+	}
+	543034 = {
+		name = "沙苏瑞斯·坎代"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M540021
+		foreign_minister = the_cloak_n_dagger_schemer
+		start_date = 1936.1.1
+	}
+	543035 = {
+		name = "加纳"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M541026
+		foreign_minister = general_staffer
+		start_date = 1936.1.1
+	}
+	543037 = {
+		name = "H.R.H.·欧莫"
+		ideology = national_socialist
+		loyalty = 1.00
+		picture = M540010
+		foreign_minister = iron_fisted_brute
+		armament_minister = infantry_proponent
+		chief_of_air = air_superiority_doctrine
+		start_date = 1936.1.1
+	}
+	543038 = {
+		name = "诺契尔"
+		ideology = stalinist
+		loyalty = 0.75
+		picture = M541033
+		armament_minister = corrupt_kleptocrat
+		start_date = 1936.1.1
+	}
+	543039 = {
+		name = "黎笋"
+		ideology = leninist
+		loyalty = 0.75
+		picture = M542030
+		armament_minister = military_entrepreneur
+		start_date = 1936.1.1
+	}
+	543041 = {
+		name = "西索瓦·莫瑞斯"
+		ideology = social_democrat
+		loyalty = 0.75
+		picture = M541004
+		armament_minister = tank_proponent
+		chief_of_staff = school_of_defence
+		chief_of_army = decisive_battle_doctrine
+		start_date = 1936.1.1
+	}
+	543042 = {
+		name = "山安"
+		ideology = market_liberal
+		loyalty = 0.75
+		picture = M541031
+		armament_minister = battle_fleet_proponent
+		start_date = 1936.1.1
+	}
+	543043 = {
+		name = "H.R.H.苏凡那·拉"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M540009
+		armament_minister = laissez_faires_capitalist
+		armament_minister = administrative_genius
+		chief_of_navy = power_projection_doctrine
+		start_date = 1936.1.1
+	}
+	543044 = {
+		name = "诺罗敦·苏发冯"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M541032
+		armament_minister = submarine_proponent
+		start_date = 1936.1.1
+	}
+	543045 = {
+		name = "黎范华"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M542027
+		armament_minister = theoretical_scientist
+		start_date = 1936.1.1
+	}
+	543048 = {
+		name = "勒鲁"
+		ideology = leninist
+		loyalty = 0.75
+		picture = M542035
+		minister_of_security = silent_lawyer
+		start_date = 1936.1.1
+	}
+	543050 = {
+		name = "西索瓦·尤德邦"
+		ideology = social_democrat
+		loyalty = 0.75
+		picture = M541005
+		minister_of_security = compassionate_gentleman
+		minister_of_intelligence = technical_specialist
+		chief_of_air = vertical_envelopment_doctrine
+		start_date = 1936.1.1
+	}
+	543051 = {
+		name = "西索瓦·莫尼卡"
+		ideology = market_liberal
+		loyalty = 1.00
+		picture = M541023
+		minister_of_security = crime_fighter
+		start_date = 1936.1.1
+	}
+	543052 = {
+		name = "銮阿派·库"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M540034
+		minister_of_security = crooked_kleptocrat
+		chief_of_staff = school_of_fire_support
+		chief_of_navy = indirect_approach_doctrine
+		start_date = 1936.1.1
+	}
+	543053 = {
+		name = "萨卡瓦·皮伦"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M541037
+		minister_of_security = efficient_sociopath
+		start_date = 1936.1.1
+	}
+	543054 = {
+		name = "吴定如"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M542033
+		minister_of_security = silent_lawyer
+		start_date = 1936.1.1
+	}
+	543056 = {
+		name = "迪班"
+		ideology = stalinist
+		loyalty = 0.75
+		picture = M541043
+		minister_of_intelligence = dismal_enigma
+		start_date = 1936.1.1
+	}
+	543057 = {
+		name = "潘輝括"
+		ideology = leninist
+		loyalty = 0.75
+		picture = M542039
+		minister_of_intelligence = political_specialist
+		start_date = 1936.1.1
+	}
+	543059 = {
+		name = "山玉成"
+		ideology = social_democrat
+		loyalty = 0.75
+		picture = M541006
+		minister_of_intelligence = industrial_specialist
+		start_date = 1936.1.1
+	}
+	543060 = {
+		name = "浩宇"
+		ideology = market_liberal
+		loyalty = 0.75
+		picture = M541041
+		minister_of_intelligence = dismal_enigma
+		chief_of_navy = base_control_doctrine
+		start_date = 1936.1.1
+	}
+	543061 = {
+		name = "西萨旺"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M540037
+		minister_of_intelligence = political_specialist
+		chief_of_army = armoured_spearhead_doctrine
+		start_date = 1936.1.1
+	}
+	543063 = {
+		name = "范族权"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M542038
+		minister_of_intelligence = industrial_specialist
+		start_date = 1936.1.1
+	}
+	543064 = {
+		name = "范萨里·客诺"
+		ideology = national_socialist
+		loyalty = 0.75
+		picture = M540031
+		minister_of_intelligence = naval_intelligence_specialist
+		start_date = 1936.1.1
+	}
+	543065 = {
+		name = "金旺"
+		ideology = stalinist
+		loyalty = 0.75
+		picture = M541047
+		chief_of_staff = school_of_mass_combat
+		start_date = 1936.1.1
+	}
+	543067 = {
+		name = "斐正觉"
+		ideology = left_wing_radical
+		loyalty = 0.75
+		picture = M540035
+		chief_of_staff = school_of_defence
+		start_date = 1936.1.1
+	}
+	543068 = {
+		name = "诺罗敦·西哈努克"
+		ideology = social_democrat
+		loyalty = 0.75
+		picture = M541044
+		chief_of_staff = school_of_manoeuvre
+		chief_of_navy = open_seas_doctrine
+		chief_of_air = army_aviation_doctrine
+		start_date = 1936.1.1
+	}
+	543078 = {
+		name = "西索瓦·瓦西亚冯"
+		ideology = market_liberal
+		loyalty = 0.75
+		picture = M541049
+		chief_of_army = guns_and_butter_doctrine
+		start_date = 1936.1.1
+	}
+	543080 = {
+		name = "龙诺"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M541035
+		chief_of_army = static_defence_doctrine
+		chief_of_navy = decisive_naval_battle_doctrine
+		start_date = 1936.1.1
+	}
+	543083 = {
+		name = "育胡基"
+		ideology = stalinist
+		loyalty = 0.75
+		picture = M541055
+		chief_of_navy = base_control_doctrine
+		start_date = 1936.1.1
+	}
+	543084 = {
+		name = "庄图多"
+		ideology = leninist
+		loyalty = 0.75
+		picture = M542052
+		chief_of_navy = power_projection_doctrine
+		start_date = 1936.1.1
+	}
+	543092 = {
+		name = "索卡"
+		ideology = stalinist
+		loyalty = 0.75
+		picture = M541059
+		chief_of_air = vertical_envelopment_doctrine
+		start_date = 1936.1.1
+	}
+	543100 = {
+		name = "沙苏瑞斯"
+		ideology = national_socialist
+		loyalty = 0.75
+		picture = M540043
+		chief_of_air = carpet_bombing_doctrine
+		start_date = 1936.1.1
+	}
+}
+

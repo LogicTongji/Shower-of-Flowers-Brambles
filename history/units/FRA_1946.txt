@@ -1,0 +1,170 @@
+theatre = {		
+	name = "法兰西最高指挥部"	
+	location = 2613	
+	regiment = { type = hq_brigade name = "法兰西指挥部" historical_model = 0 }
+	division = {
+		name = "Troupes de Caledonie Nouvelle"
+		location = 2613
+		regiment = { type = militia_brigade historical_model = 1 }
+		regiment = { type = militia_brigade historical_model = 1 }
+		regiment = { type = militia_brigade historical_model = 1 }
+	}
+	
+	corps = {
+		name = "Troupes de Afrique"
+		location = 2613
+		regiment = { type = hq_brigade name = "Troupes de Afrique HQ" historical_model = 0 }
+		division= {
+			name = "第一步兵师"
+			location = 2613
+			regiment = { type = infantry_brigade historical_model = 4 }
+			regiment = { type = infantry_brigade historical_model = 4 }
+			regiment = { type = infantry_brigade historical_model = 4 }
+		}
+		division= {
+			name = "第二步兵师"
+			location = 2613
+			regiment = { type = infantry_brigade historical_model = 4 }
+			regiment = { type = infantry_brigade historical_model = 4 }
+			regiment = { type = infantry_brigade historical_model = 4 }
+		}
+		division= {
+			name = "第三步兵师"
+			location = 2613
+			regiment = { type = infantry_brigade historical_model = 4 }
+			regiment = { type = infantry_brigade historical_model = 4 }
+			regiment = { type = infantry_brigade historical_model = 4 }
+		}
+	}
+}
+navy = {
+	name = "轻型驱逐舰编队"
+	base = 4229
+	location = 4229
+	ship = { type = light_cruiser historical_model = 1 }
+	ship = { type = light_cruiser historical_model = 1 }
+	ship = { type = light_cruiser istorical_model = 2 }
+	ship = { type = transport_ship historical_model = 0 }
+	ship = { type = transport_ship historical_model = 0 }
+	ship = { type = transport_ship historical_model = 0 }
+	ship = { type = transport_ship historical_model = 0 }
+	ship = { type = transport_ship historical_model = 0 }
+}
+navy = {
+	name = "第二驱逐舰编队"
+	base = 4229
+	location = 4229
+	ship = { type = destroyer historical_model = 0 }
+	ship = { type = destroyer historical_model = 1 }
+	ship = { type = destroyer historical_model = 2 }
+	ship = { type = destroyer historical_model = 2 }
+	ship = { type = submarine historical_model = 2 }
+	ship = { type = submarine historical_model = 1 }
+	ship = { type = submarine historical_model = 1 }
+	ship = { type = submarine historical_model = 1 }
+	ship = { type = submarine historical_model = 1 }
+}
+air = {
+	name = "留守飞行中队"
+	base = 2746
+	location = 2746
+	wing = { type = multi_role name = "Groupe de Chasse 'Lorraine'" historical_model = 2 }
+	wing = { type = tactical_bomber name = "Groupe de Bomb. Tact. 'Alsace'" historical_model = 2 }
+}
+air = {
+	name = "中东飞行队"
+	base = 2746
+	location = 2746
+	wing = { type = multi_role name = "Groupe de Chasse 21" historical_model = 2 }
+	wing = { type = tactical_bomber name = "Groupe de Bombardement Tactique 1" historical_model = 1 }
+}
+
+
+
+
+army = {		
+	name = "法国非洲集团军"	
+	location = 10037	
+	regiment = { type = hq_brigade name = "法国非洲集团军司令部" historical_model = 0 }
+	division = {
+		name = "新喀里多尼亚步兵师"
+		location = 6616
+		regiment = { type = militia_brigade historical_model = 1 }
+		regiment = { type = militia_brigade historical_model = 1 }
+		regiment = { type = militia_brigade historical_model = 1 }
+	}
+	division = {
+		name = "吉布提步兵师"
+		location = 9867
+		regiment = { type = militia_brigade historical_model = 1 }
+		regiment = { type = militia_brigade historical_model = 1 }
+		regiment = { type = militia_brigade historical_model = 1 }
+	}
+	division = {
+		name = "法兰西堡步兵师"
+		location = 10627
+		regiment = { type = militia_brigade historical_model = 1 }
+		regiment = { type = militia_brigade historical_model = 1 }
+		regiment = { type = militia_brigade historical_model = 1 }
+	}
+	division = {
+		name = "加蓬步兵师"
+		location = 10021
+		regiment = { type = militia_brigade historical_model = 1 }
+		regiment = { type = militia_brigade historical_model = 1 }
+		regiment = { type = militia_brigade historical_model = 1 }
+	}
+	division = {
+		name = "阿勒颇步兵师"
+		location = 5134
+		regiment = { type = militia_brigade historical_model = 1 }
+		regiment = { type = militia_brigade historical_model = 1 }
+		regiment = { type = militia_brigade historical_model = 1 }
+	}
+	division = {
+		name = "大马士革步兵师"
+		location = 5134
+		regiment = { type = militia_brigade historical_model = 1 }
+		regiment = { type = militia_brigade historical_model = 1 }
+		regiment = { type = militia_brigade historical_model = 1 }
+	}
+	corps = {
+		name = "非洲步兵军"
+		location = 9741
+		regiment = { type = hq_brigade name = "非洲步兵军司令部" historical_model = 0 }
+		division= {
+			name = "第1殖民地步兵师"
+			location = 9741
+			regiment = { type = infantry_brigade historical_model = 4 }
+			regiment = { type = infantry_brigade historical_model = 4 }
+			regiment = { type = infantry_brigade historical_model = 4 }
+		}
+		division= {
+			name = "第2殖民地步兵师"
+			location = 9741
+			regiment = { type = infantry_brigade historical_model = 4 }
+			regiment = { type = infantry_brigade historical_model = 4 }
+			regiment = { type = infantry_brigade historical_model = 4 }
+		}
+		division= {
+			name = "第3殖民地步兵师"
+			location = 9741
+			regiment = { type = infantry_brigade historical_model = 4 }
+			regiment = { type = infantry_brigade historical_model = 4 }
+			regiment = { type = infantry_brigade historical_model = 4 }
+		}
+	}
+}
+
+air = {
+	name = "新喀里多尼亚航空队"
+	base = 6616
+	location = 6616
+	wing = { type = naval_bomber name = "第1海军轰炸机联队" historical_model = 2 }
+}
+air = {
+	name = "西非航空队"
+	base = 9741
+	location = 9741
+	wing = { type = naval_bomber name = "第2海军轰炸机联队" historical_model = 2 }
+}

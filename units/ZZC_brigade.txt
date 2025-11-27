@@ -1,0 +1,110 @@
+For_the_occasion_brigade = {
+	usable_by = { SOV CHI JAP }
+	type = land
+	sprite = Infantry
+	active = no
+	can_upgrade = no
+	unit_group = infantry_unit_type 
+
+	#Size Definitions
+	max_strength = 32
+	default_organisation = 25
+	default_morale = 0.25
+	officers = 15
+
+	#Building Costs
+	build_cost_ic = 1.45
+	build_cost_manpower = 2.25
+	build_time = 60
+	repair_cost_multiplier = 0.01
+
+	#Misc Abilities
+	maximum_speed = 3.20
+	transport_weight = 2.00
+	supply_consumption = 0.02
+	fuel_consumption = 0.00
+	radio_strength = 1
+
+	#Defensive Abilities
+	defensiveness = 4.50	# was 4.33
+	toughness = 3.55
+	softness = 1.00
+	air_defence = 2.00
+
+	#Offensive Abilities
+	suppression = 0.5
+	soft_attack = 1.50
+	hard_attack = 0.15
+	air_attack = 0.15
+
+	plains = {
+		attack = -0.2
+		defence = -0.2
+		movement = -0.1
+	}
+	river = {
+		attack = -0.1
+		defence = 0.05
+		movement = -0.15
+	}
+	amphibious = { 
+		attack = 0.1
+		defence = 0.1	
+	}
+	urban = { 
+		attack = 0.45
+		defence = 0.25 					
+		movement = -0.05
+	}
+	arctic = {
+		attack = 0.05		
+		defence = 0.05 					
+		movement = -0.075	
+	}
+	desert = {
+		attack = -0.15
+		defence = 0.1
+		movement = -0.075
+	}
+	woods = { 
+		attack = 0.15
+		defence = 0.2
+		movement = -0.1
+	}
+	forest = { 
+		attack = 0.2
+		defence = 0.3
+		movement = -0.1
+	}
+	jungle = { 
+		attack = 0.2
+		defence = 0.3
+		movement = -0.1
+	}
+	hills = {
+		attack = 0.15
+		defence = 0.1
+		movement = -0.075
+	}
+	mountain = { 
+		attack = 0.15
+		defence = 0.2
+		movement = -0.1
+	}
+	marsh = { 
+		attack = 0.25
+		defence = 0.35 
+		movement = -0.15
+	}
+
+	fort = { 
+		attack = 1.50
+	}
+
+	combat_width = 0.1
+
+	completion_size = 0.1
+	on_completion = militia_practical
+	
+	priority = 82
+}

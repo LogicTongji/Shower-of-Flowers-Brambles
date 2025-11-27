@@ -1,0 +1,70 @@
+#第六波党卫军
+#31--38
+	division= {
+		name = "党卫军第31掷弹兵师"
+		location = 906 		
+	 	regiment = { type = GER_ss experience = 15 name = "SS-Freiwilligen-Grenadier-Regiment 78" historical_model = 2 }
+		regiment = { type = GER_ss experience = 15 name = "SS-Freiwilligen-Grenadier-Regiment 79" historical_model = 2 }
+		regiment = { type = GER_ss experience = 15 name = "SS-Freiwilligen-Grenadier-Regiment 80" historical_model = 2 }
+		regiment = { type = artillery_brigade name = "SS-Waffen-Artillerie-Regiment 31" experience = 15  historical_model = 2 }	
+	}
+division= {
+		name = "党卫军第32“一月三十日”掷弹兵师"
+		location = 906 		
+	 	regiment = { type = GER_ss experience = 15 name = "SS-Freiwilligen-Grenadier-Regiment 86" historical_model = 2 }
+		regiment = { type = GER_ss experience = 15 name = "SS-Freiwilligen-Grenadier-Regiment 87" historical_model = 2 }
+		regiment = { type = GER_ss experience = 15 name = "SS-Freiwilligen-Grenadier-Regiment 88" historical_model = 2 }
+		regiment = { type = artillery_brigade name = "SS-Waffen-Artillerie-Regiment 32" experience = 15  historical_model = 2 }	
+	}
+#匈牙利第三师
+	division= {
+		name = "党卫军第33武装骑兵师"
+		location = 1928
+					 expeditionary_owner = HUN
+			 	regiment = { type = cavalry_brigade experience = 15 name = "SS-Freiwilligen-Kavallerie-Regiment 33" historical_model = 2 }
+	}	
+#法兰西第一师
+	division= {
+		name = "党卫军第33“查理曼”武装掷弹兵师"
+		location = 1910
+		regiment = { type = infantry_brigade name = "反布尔什维克志愿军" experience = 5  historical_model = 2 }			
+		regiment = { type = infantry_brigade name = "" experience = 5  historical_model = 2 }	
+	}	
+#荷兰第二师
+	division= {
+		name = "党卫军第34“尼德兰国土风暴”志愿掷弹兵师"
+		location = 3306
+regiment = { type = GER_ss experience = 15 name = "SS-Freiwilligen-Grenadier-Regiment 83" historical_model = 2 }
+		regiment = { type = GER_ss experience = 15 name = "SS-Freiwilligen-Grenadier-Regiment 84" historical_model = 2 }
+			regiment = { type = alpine_artillery_brigade name = "Waffen-Gebirgs-Artillerie-Regiment der SS 34" experience = 15  historical_model = 2 }	
+	}		
+division= {
+		name = "党卫军第35警察掷弹兵师"
+		location = 2509
+		regiment = { type = infantry_brigade name = "SS-Polizei-Grenadier-Regiment 89 (I. – III.)" experience = 35  historical_model = 2 }			
+		regiment = { type = infantry_brigade name = "SS-Polizei-Grenadier-Regiment 90 (I. – II.)" experience = 35  historical_model = 2 }	
+		regiment = { type = infantry_brigade name = "SS-Polizei-Grenadier-Regiment 91 (I. – II.)" experience = 35  historical_model = 2 }	
+			regiment = { type = artillery_brigade name = "Waffen-Artillerie-Regiment der SS 35 " experience = 15  historical_model = 2 }	
+	}		
+#本土	
+division= {
+		name = "党卫军第36武装掷弹兵旅"
+		location = 2509
+		regiment = { type = GER_ss name = "Waffen-Grenadier-Regiment der SS 72" experience = 5  historical_model = 2 }			
+		regiment = { type = GER_ss name = "Waffen-Grenadier-Regiment der SS 73" experience = 5  historical_model = 2 }					
+		regiment = { type = artillery_brigade name = "Waffen-Artillerie-Regiment der SS 36 " experience = 15  historical_model = 2 }	
+	}	
+division= {
+		name = "党卫军第37“吕佐”武装骑兵师"
+		location = 1928
+			 	regiment = { type = cavalry_brigade experience = 15 name = "SS-Freiwilligen-Kavallerie-Regiment 92" historical_model = 2 }
+			 	regiment = { type = cavalry_brigade experience = 15 name = "SS-Freiwilligen-Kavallerie-Regiment 93" historical_model = 2 }
+		    regiment = { type = artillery_brigade name = "Waffen-Artillerie-Regiment der SS 37" experience = 15  historical_model = 2 }	
+	}	
+division= {
+		name = "党卫军第38“尼伯龙根”掷弹兵师"
+		location = 3306
+regiment = { type = GER_ss experience = 15 name = "SS-Freiwilligen-Grenadier-Regiment 95" historical_model = 2 }
+		regiment = { type = GER_ss experience = 15 name = "SS-Freiwilligen-Grenadier-Regiment 95" historical_model = 2 }
+			regiment = { type = alpine_artillery_brigade name = "Waffen-Gebirgs-Artillerie-Regiment der SS 68" experience = 15  historical_model = 2 }	
+	}			

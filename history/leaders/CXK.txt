@@ -1,0 +1,196 @@
+501004 = {
+
+	name = "ÁõÎÄ»Ô"
+
+	country = CXK
+	type = land
+
+	skill = 1
+
+	max_skill = 3
+	loyalty = 1.00
+
+	picture = M501004
+	add_trait = defensive_doctrine
+
+	history = {
+
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+		1936.1.1 = { rank = 3 }
+		1936.1.1 = { rank = 4 }
+
+	}
+
+}
+4000065 = {
+
+	name = "³Â¹âÔå"
+
+	country = CXK
+	type = land
+
+	skill = 0
+
+	max_skill = 2
+	loyalty = 1.00
+
+	picture = L4000065
+	history = {
+
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+
+	}
+
+}
+4000066 = {
+
+	name = "ÑîÑ§¶Ë"
+
+	country = CXK
+	type = land
+
+	skill = 0
+
+	max_skill = 2
+	loyalty = 1.00
+
+	picture = L4000066
+	add_trait = old_guard
+	history = {
+
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+
+	}
+
+}
+4000067 = {
+
+	name = "ÁõÔª¬u"
+
+	country = CXK
+	type = land
+
+	skill = 0
+
+	max_skill = 3
+	loyalty = 1.00
+
+	picture = L4000067
+	history = {
+
+		1936.1.1 = { rank = 1 }
+
+	}
+
+}
+4000068 = {
+
+	name = "ÁõÔªè©"
+
+	country = CXK
+	type = land
+
+	skill = 0
+
+	max_skill = 1
+	loyalty = 1.00
+
+	picture = L4000068
+	add_trait = old_guard
+	history = {
+
+		1936.1.1 = { rank = 1 }
+
+	}
+
+}
+4000070 = {
+
+	name = "ÌÆÓ¢"
+
+	country = CXK
+	type = land
+
+	skill = 2
+
+	max_skill = 3
+	loyalty = 1.00
+
+	picture = L4000070
+	add_trait = old_guard
+	add_trait = trickster
+	history = {
+
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+
+	}
+
+}
+4000071 = {
+
+	name = "ÕÅÙãÖĞ"
+
+	country = CXK
+	type = land
+
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+
+	picture = L4000071
+	add_trait = old_guard
+	history = {
+
+		1936.1.1 = { rank = 1 }
+
+	}
+
+} 
+4000072 = {
+
+	name = "ÁõÔªçı"
+
+	country = CXK
+	type = land
+
+	skill = 2
+	max_skill = 2
+	loyalty = 1.00
+
+	picture = L4000072
+	add_trait = old_guard
+	add_trait = fortress_buster
+	history = {
+
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+
+	}
+
+} 
+4000073 = {
+
+	name = "ÓàËÉÁÕ"
+
+	country = CXK
+	type = land
+
+	skill = 2
+	max_skill = 3
+	loyalty = 1.00
+
+	picture = L4000073
+	add_trait = old_guard
+	add_trait = trickster
+	history = {
+
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+
+	}
+
+} 

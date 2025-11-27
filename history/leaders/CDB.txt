@@ -1,0 +1,457 @@
+50011 = {
+	name = "张学良"
+	country = CDB
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50011
+	add_trait = offensive_doctrine
+	add_trait = sincere_seeker
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1930.1.1 = { rank = 4 }
+	}
+}
+50233 = {
+	name = "马占山"
+	country = CDB
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50233
+	add_trait = winter_specialist
+	add_trait = trickster
+	history = {
+		1942.1.1 = { rank = 1 }
+		1944.1.1 = { rank = 2 }
+	}
+}
+50340 = {
+	name = "杨虎城"
+	country = CDB
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50340
+	add_trait = sincere_seeker
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1930.1.1 = { rank = 4 }
+	}
+}
+50243 = {
+	name = "牟中珩"
+	country = CDB
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50243
+	history = {
+		1930.1.1 = { rank = 1 }
+		1944.1.1 = { rank = 0 }
+	}
+}
+50005 = {
+	name = "常恩多"
+	country = CDB
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50005
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+50319 = {
+	name = "王以哲"
+	country = CDB
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50319
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+	}
+}
+50059 = {
+	name = "周福成"
+	country = CDB
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50059
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+50091 = {
+	name = "何柱国"
+	country = CDB
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50091
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1943.1.1 = { rank = 0 }
+	}
+}
+50212 = {
+	name = "刘桂五"
+	country = CDB
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50212
+	history = {
+		1930.1.1 = { rank = 1 }
+		1940.1.1 = { rank = 0 }
+	}
+}
+50216 = {
+	name = "刘多荃"
+	country = CDB
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50216
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1945.1.1 = { rank = 0 }
+	}
+}
+50305 = {
+	name = "万福麟"
+	country = CDB
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50305
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+	}
+}
+50127 = {
+	name = "黄显声"
+	country = CDB
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50127
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1941.1.1 = { rank = 0 }
+	}
+}
+50082 = {
+	name = "冯钦哉"
+	country = CDB
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50082
+	history = {
+		1930.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 0 }
+	}
+}
+50270 = {
+	name = "孙蔚如"
+	country = CDB
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50270
+	history = {
+		1936.1.1 = { rank = 1 }
+		1938.1.1 = { rank = 2 }
+		1946.1.1 = { rank = 0 }
+	}
+}
+50026 = {
+	name = "赵寿山"
+	country = CDB
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50026
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+50157 = {
+	name = "孔从周"
+	country = CDB
+	type = land
+	skill = 0
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50157
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+50336 = {
+	name = "武士敏"
+	country = CDB
+	type = land
+	skill = 0
+	max_skill = 3
+	add_trait = sincere_seeker
+	loyalty = 0.00
+	picture = L50336
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 0 }
+	}
+}
+50145 = {
+	name = "高桂滋"
+	country = CDB
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50145
+	history = {
+		1936.1.1 = { rank = 1 }
+		1940.1.1 = { rank = 2 }
+	}
+}
+50285 = {
+	name = "邓宝珊"
+	country = CDB
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50285
+	history = {
+		1936.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+	}
+}
+50348 = {
+	name = "高福源"
+	country = CDB
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = 2L50348
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+503005 = {
+	name = "吴克仁"
+	country = CDB
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+	picture = L503005
+	add_trait = panzer_leader
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+503006 = {
+	name = "郭希鹏"
+	country = CDB
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+	picture = L503006
+	add_trait = commando
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+503009 = {
+	name = "檀自新"
+	country = CDB
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 0.00
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+503012 = {
+	name = "沈克"
+	country = CDB
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+503013 = {
+	name = "张文清"
+	country = CDB
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+503014 = {
+	name = "李振唐"
+	country = CDB
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 1.00
+	history = {
+		1930.1.1 = { rank = 1 }
+
+	}
+}
+503015 = {
+	name = "刘翰东"
+	country = CDB
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 1.00
+	picture = L503015
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+503017 = {
+	name = "赵毅"
+	country = CDB
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 1.00
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+503018 = {
+	name = "于学忠"
+	country = CDB
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L503018
+	add_trait = offensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+	}
+}
+50207 = {
+	name = "缪澄流"
+	country = CDB
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50207
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+	}
+}
+50269 = {
+	name = "刘启文"
+	country = CDB
+	type = land
+	skill = 2
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50269
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+50279 = {
+	name = "冯占海"
+	country = CDB
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50279
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+50284 = {
+	name = "周光烈"
+	country = CDB
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+	}
+}
+50291 = {
+	name = "霍守义"
+	country = CDB
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50291
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+50309 = {
+	name = "朱鸿勋"
+	country = CDB
+	type = land
+	skill = 1
+	max_skill = 4
+	add_trait = trickster
+	loyalty = 0.00
+	picture = L50309
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+}

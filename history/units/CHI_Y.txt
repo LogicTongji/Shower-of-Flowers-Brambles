@@ -1,0 +1,169 @@
+armygroup = {
+		name = "中国远征军Y部队"
+		location = 9547
+		regiment = { type = hq_brigade name = "远征军Y部队参谋总部" historical_model = 1 }
+army = {
+		name = "中国远征军第11集团军"
+		location = 9526
+		regiment = { type = hq_brigade name = "中国远征军第11集团军司令部" historical_model = 1 }
+		regiment = { type = cavalry_brigade name = "司令部守备部队" strength = 20 historical_model =  }
+                regiment = { type = artillery_brigade name = "第5军炮兵营" experience = 25 strength = 20 historical_model = 3 }
+                regiment = { type = armored_car_brigade experience = 70 name = "战车防御营" historical_model = 2 }
+                	division= {
+				name = "中国远征军第200师"
+				location = 9526
+				regiment = { type = mechanized_brigade experience = 55 builder = USA historical_model = 4 }
+				regiment = { type = mechanized_brigade experience = 55 builder = USA historical_model = 4 }
+        regiment = { type = mechanized_brigade experience = 55 builder = USA historical_model = 4 }
+
+			}
+			division= {
+				name = "中国远征军第36师"
+				location = 9525
+				regiment = { type = chi_star_destroyer experience = 55 builder = USA historical_model = 3 }
+				regiment = { type = chi_star_destroyer experience = 55 builder = USA historical_model = 3 }
+        regiment = { type = chi_star_destroyer experience = 55 builder = USA historical_model = 3 }
+		}
+	}       
+corps = {
+				name = "中国远征军第2军"
+				location = 9526
+				regiment = { type = hq_brigade name = "中国远征军第2军参谋总部" historical_model = 0 organisation = 10 }
+		    regiment = { type = artillery_brigade experience = 55 builder = USA historical_model = 3 } 
+			division= {
+				name = "中国远征军第9师"
+				location = 9526
+				regiment = { type = chi_star_destroyer experience = 55 builder = USA historical_model = 3 }
+				regiment = { type = chi_star_destroyer experience = 55 builder = USA historical_model = 3 }
+        regiment = { type = chi_star_destroyer experience = 55 builder = USA historical_model = 3 }
+
+			}
+			division= {
+				name = "中国远征军新编33师"
+				location = 9526
+				regiment = { type = chi_star_destroyer experience = 55 builder = USA historical_model = 3 }
+				regiment = { type = chi_star_destroyer experience = 55 builder = USA historical_model = 3 }
+                                regiment = { type = chi_star_destroyer experience = 55 builder = USA historical_model = 3 }
+		}
+	}
+	   corps = {
+				name = "中国远征军第5军"
+				location = 9526
+				regiment = { type = hq_brigade name = "中国远征军第5军参谋总部" historical_model = 0 organisation = 10 }
+		    regiment = { type = artillery_brigade experience = 55 builder = USA historical_model = 3 } 
+			division= {
+				name = "中国远征军预备第2师"
+				location = 9526
+				regiment = { type = chi_star_destroyer experience = 55 builder = USA historical_model = 3 }
+				regiment = { type = chi_star_destroyer experience = 55 builder = USA historical_model = 3 }
+        regiment = { type = chi_star_destroyer experience = 55 builder = USA historical_model = 3 }
+
+			}
+			division= {
+				name = "中国远征军新编39师"
+				location = 9526
+				regiment = { type = chi_star_destroyer experience = 55 builder = USA historical_model = 3 }
+				regiment = { type = chi_star_destroyer experience = 55 builder = USA historical_model = 3 }
+                                regiment = { type = chi_star_destroyer experience = 55 builder = USA historical_model = 3 }
+		}
+	}  
+	       corps = {
+				name = "中国远征军第71军"
+				location = 9526
+				regiment = { type = hq_brigade name = "中国远征军第71军参谋总部" historical_model = 0 organisation = 10 }
+		    regiment = { type = artillery_brigade experience = 55 builder = USA historical_model = 3 } 
+			division= {
+				name = "中国远征军新编28师"
+				location = 9526
+				regiment = { type = chi_star_destroyer experience = 55 builder = USA historical_model = 3 }
+				regiment = { type = chi_star_destroyer experience = 55 builder = USA historical_model = 3 }
+        regiment = { type = chi_star_destroyer experience = 55 builder = USA historical_model = 3 }
+
+			}
+			division= {
+				name = "中国远征军第87师"
+				location = 9547
+				regiment = { type = chi_star_destroyer experience = 55 builder = USA historical_model = 3 }
+				regiment = { type = chi_star_destroyer experience = 55 builder = USA historical_model = 3 }
+                                regiment = { type = chi_star_destroyer experience = 55 builder = USA historical_model = 3 }
+		}
+	}  
+	     army = {
+		name = "中国远征军第20集团军"
+		location = 9547
+		regiment = { type = hq_brigade name = "中国远征军第20集团军司令部" historical_model = 1 }
+		regiment = { type = cavalry_brigade name = "司令部守备部队" strength = 20 historical_model =  }
+                regiment = { type = artillery_brigade name = "野炮营" experience = 25 strength = 20 historical_model = 3 }
+                regiment = { type = anti_air_brigade experience = 70 name = "高炮营" historical_model = 1 }
+                regiment = { type = alpine_artillery_brigade experience = 70 name = "山炮营" historical_model = 2 }
+                regiment = { type = engineer_brigade name = "工兵部队" experience = 20 historical_model = 1 }
+corps = {
+				name = "中国远征军第53军"
+				location = 9547
+				regiment = { type = hq_brigade name = "中国远征军第53军参谋总部" historical_model = 0 organisation = 10 }
+		    regiment = { type = artillery_brigade experience = 55 builder = USA historical_model = 3 } 
+			division= {
+				name = "中国远征军第116师"
+				location = 9547
+				regiment = { type = chi_star_destroyer experience = 35 builder = USA historical_model = 3 }
+				regiment = { type = chi_star_destroyer experience = 35 builder = USA historical_model = 3 }
+        regiment = { type = chi_star_destroyer experience = 35 builder = USA historical_model = 3 }
+
+			}
+			division= {
+				name = "中国远征军第130师"
+				location = 9475
+				regiment = { type = chi_star_destroyer experience = 25 builder = USA historical_model = 3 }
+				regiment = { type = chi_star_destroyer experience = 25 builder = USA historical_model = 3 }
+                                regiment = { type = chi_star_destroyer experience = 25 builder = USA historical_model = 3 }
+		}
+	}
+	   corps = {
+				name = "中国远征军第54军"
+				location = 9475
+				regiment = { type = hq_brigade name = "中国远征军第6军参谋总部" historical_model = 0 organisation = 10 }
+		    regiment = { type = artillery_brigade experience = 55 builder = USA historical_model = 3 } 
+			division= {
+				name = "中国远征军第14师"
+				location = 9413
+				regiment = { type = chi_star_destroyer experience = 55 builder = USA historical_model = 3 }
+				regiment = { type = chi_star_destroyer experience = 55 builder = USA historical_model = 3 }
+        regiment = { type = chi_star_destroyer experience = 55 builder = USA historical_model = 3 }
+
+			}
+			division= {
+				name = "中国远征军第50师"
+				location = 9413
+				regiment = { type = chi_star_destroyer experience = 55 builder = USA historical_model = 3 }
+				regiment = { type = chi_star_destroyer experience = 55 builder = USA historical_model = 3 }
+                                regiment = { type = chi_star_destroyer experience = 55 builder = USA historical_model = 3 }
+      }
+			division= {
+				name = "中国远征军第198师"
+				location = 9413
+				regiment = { type = chi_star_destroyer experience = 35 builder = USA historical_model = 3 }
+				regiment = { type = chi_star_destroyer experience = 35 builder = USA historical_model = 3 }
+                                regiment = { type = chi_star_destroyer experience = 35 builder = USA historical_model = 3 }                
+		}
+	}  
+	       corps = {
+				name = "中国远征军第6军"
+				location = 9475
+				regiment = { type = hq_brigade name = "中国远征军第6军参谋总部" historical_model = 0 organisation = 10 }
+		    regiment = { type = artillery_brigade experience = 55 builder = USA historical_model = 3 } 
+			division= {
+				name = "荣誉第1师"
+				location = 9526
+				regiment = { type = chi_star_destroyer experience = 65 builder = USA historical_model = 3 }
+				regiment = { type = chi_star_destroyer experience = 65 builder = USA historical_model = 3 }
+        regiment = { type = chi_star_destroyer experience = 65 builder = USA historical_model = 3 }
+
+			}
+			division= {
+				name = "中国远征军第103师"
+				location = 9526
+				regiment = { type = chi_star_destroyer experience = 35 builder = USA historical_model = 3 }
+				regiment = { type = chi_star_destroyer experience = 35 builder = USA historical_model = 3 }
+                                regiment = { type = chi_star_destroyer experience = 35 builder = USA historical_model = 3 }
+		}
+	}       

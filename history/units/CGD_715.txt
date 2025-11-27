@@ -1,0 +1,83 @@
+corps = {					
+	name = "广东绥靖公署"				
+	location = 5834				
+	leader = 4000124
+	regiment = { type = hq_brigade name = "广州指挥部" historical_model = 0 }
+	division= {				
+		name = "第151师"			
+		location = 5818			
+		leader = 4000125
+		regiment = { type = infantry_brigade name = "第451旅" strength = 20 historical_model = 0 }		
+		regiment = { type = infantry_brigade name = "第453旅" strength = 20 historical_model = 0 }	
+	}
+	division= {				
+		name = "第152师"			
+		location = 5965			
+		leader = 4000126
+		regiment = { type = infantry_brigade name = "第454旅" strength = 20 historical_model = 0 }		
+		regiment = { type = infantry_brigade name = "第456旅" strength = 20 historical_model = 0 }	
+	}
+	division= {				
+		name = "第153师"			
+		location = 5819			
+		leader = 4000127
+		regiment = { type = infantry_brigade name = "第457旅" strength = 20 historical_model = 0 }		
+		regiment = { type = infantry_brigade name = "第459旅" strength = 20 historical_model = 0 }	
+	}
+	division= {				
+		name = "第154师"			
+		location = 5884			
+		leader = 4000128
+		regiment = { type = infantry_brigade name = "第460旅" strength = 20 historical_model = 0 }		
+		regiment = { type = infantry_brigade name = "第462旅" strength = 20 historical_model = 0 }	
+	}
+	division= {				
+		name = "第155师"			
+		location = 5806			
+		leader = 50175
+		regiment = { type = infantry_brigade name = "第463旅" strength = 20 historical_model = 0 }		
+		regiment = { type = infantry_brigade name = "第465旅" strength = 20 historical_model = 0 }	
+	}
+	division= {				
+		name = "第156师"			
+		location = 5852			
+		leader = 4000129
+		regiment = { type = infantry_brigade name = "第466旅" strength = 20 historical_model = 0 }		
+		regiment = { type = infantry_brigade name = "第468旅" strength = 20 historical_model = 0 }	
+	}
+	division= {				
+		name = "第157师"			
+		location = 5768			
+		leader = 50133
+		regiment = { type = infantry_brigade name = "第469旅" strength = 20 historical_model = 0 }		
+		regiment = { type = infantry_brigade name = "第471旅" strength = 20 historical_model = 0 }	
+	}
+	division= {				
+		name = "第158师"			
+		location = 5777			
+		leader = 4000130
+		regiment = { type = infantry_brigade name = "第472旅" strength = 20 historical_model = 0 }		
+		regiment = { type = infantry_brigade name = "第474旅" strength = 20 historical_model = 0 }	
+	}
+	division= {				
+		name = "第159师"			
+		location = 5902			
+		leader = 4000131
+		regiment = { type = infantry_brigade name = "第475旅" strength = 20 historical_model = 0 }		
+		regiment = { type = infantry_brigade name = "第476旅" strength = 20 historical_model = 0 }	
+	}
+	division= {				
+		name = "第160师"			
+		location = 5819 			
+		leader = 4000132
+		regiment = { type = infantry_brigade name = "第478旅" strength = 20 historical_model = 0 }		
+		regiment = { type = infantry_brigade name = "第480旅" strength = 20 historical_model = 0 }	
+	}
+}
+air = {
+	name = "广东空军"
+	base = 5834
+	location = 5834
+	leader = 50374
+	wing = { type = interceptor name = "广东空军" historical_model = 1 }
+}

@@ -1,0 +1,96 @@
+theatre = {
+	name = "德国国防军最高统帅部"
+	location = 1861
+	regiment = { type = hq_brigade name = "德国国防军最高统帅部" historical_model = 0 }
+	regiment = { type = anti_air_brigade experience = 20 historical_model = 1 }
+	regiment = { type = artillery_brigade experience = 20 historical_model = 1 }
+	regiment = { type = alpine_artillery_brigade experience = 20 historical_model = 1 }
+corps = {
+	name = "国防军第I军"
+	location = 1527
+	regiment = { type = hq_brigade name = "国防军第I军指挥部" historical_model = 0 }
+	regiment = { type = artillery_brigade experience = 20 historical_model = 1 }
+	division= {
+		name = "国防军第1步兵师"
+		location = 1527
+		is_reserve = yes
+		regiment = { type = infantry_brigade experience = 45 name = "国防军第1步兵团" historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 45 name = "国防军第22步兵团" historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 45 name = "国防军第43步兵团" historical_model = 1 }
+	}
+	division= {
+		name = "国防军第11步兵师"
+		location = 1748
+		is_reserve = yes
+		regiment = { type = infantry_brigade experience = 45 name = "国防军第2步兵团" historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 45 name = "国防军第23步兵团" historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 45 name = "国防军第44步兵团" historical_model = 1 }
+	}
+	division= {
+		name = "国防军第21步兵师"
+		location = 1627
+		is_reserve = yes
+		regiment = { type = infantry_brigade experience = 45 name = "国防军第3步兵团" historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 45 name = "国防军第24步兵团" historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 45 name = "国防军第45步兵团" historical_model = 1 }
+	}
+}
+corps = {
+	name = "国防军第II军"
+	location = 1742
+	regiment = { type = hq_brigade name = "国防军第II军指挥部" historical_model = 0 }
+	division= {
+		name = "国防军第2步兵师"
+		location = 1742
+		is_reserve = yes
+		regiment = { type = infantry_brigade experience = 45 name = "国防军第5步兵团" historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 45 name = "国防军第25步兵团" historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 45 name = "国防军第92步兵团" historical_model = 1 }
+	}
+	division= {
+		name = "国防军第12步兵师"
+		location = 1798
+		is_reserve = yes
+		regiment = { type = infantry_brigade experience = 45 name = "国防军第27步兵团" historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 45 name = "国防军第48步兵团" historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 45 name = "国防军第89步兵团" historical_model = 1 }
+	}
+	division= {
+		name = "国防军第32步兵师"
+		location = 1624
+		is_reserve = yes
+		regiment = { type = infantry_brigade experience = 45 name = "国防军第4步兵团" historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 45 name = "国防军第94步兵团" historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 45 name = "国防军第96步兵团" historical_model = 1 }
+	}
+}
+corps = {
+	name = "国防军第V军"
+	location = 2687
+	regiment = { type = hq_brigade name = "国防军第V军指挥部" historical_model = 0 }
+	division= {
+		name = "国防军第5步兵师"
+		location = 2884
+		is_reserve = yes
+		regiment = { type = infantry_brigade experience = 45 name = "国防军第14步兵团" historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 45 name = "国防军第56步兵团" historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 45 name = "国防军第75步兵团" historical_model = 1 }
+	}
+	division= {
+		name = "国防军第25步兵师"
+		location = 2687
+		is_reserve = yes
+		regiment = { type = infantry_brigade experience = 45 name = "国防军第13步兵团" historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 45 name = "国防军第35步兵团" historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 45 name = "国防军第119步兵团" historical_model = 1 }
+		regiment = { type = artillery_brigade name = "国防军第25炮兵团" historical_model = 3 }
+	}
+	division= {
+		name = "国防军第35步兵师"
+		location = 2751
+		is_reserve = yes
+		regiment = { type = infantry_brigade experience = 45 name = "国防军第34步兵团" historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 45 name = "国防军第109步兵团" historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 45 name = "国防军第111步兵团" historical_model = 1 }
+	}
+}

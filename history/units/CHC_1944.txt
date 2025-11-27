@@ -1,0 +1,805 @@
+theatre = {					
+	name = "中革军委"				
+	location = 7417 #Yan'an				
+	leader = 76331 #Mao Zhedong				
+	regiment = { type = hq_brigade name = "中共中央革命军事委员会" historical_model = 5 }		
+	regiment = { type = chc_gundam name = "中央警备团" experience = 100 historical_model = 1 }		
+	armygroup = {				
+		name = "第十八集团军"			
+		location = 7417			
+		leader = 76312 # Zhu De			
+		regiment = { type = hq_brigade name = "第十八集团军总司令部" historical_model = 3 }	
+		regiment = { type = chc_gundam name = "八路军总部特务团" experience = 30 historical_model = 1 }
+		army = {			
+			name = "一一五师"		
+			location = 7398	
+			regiment = { type = hq_brigade name = "山东军区" historical_model = 1 }	
+			regiment = { type = chc_gundam name = "特务团" historical_model = 1 }		
+			regiment = { type = bergsjaeger_brigade name = "教导第1团" historical_model = 3 }
+			corps = {		
+				name = "滨海军区"	
+				location = 5278
+				regiment = { type = hq_brigade name = "滨海军区" historical_model = 1 }	
+				regiment = { type = partisan_bergsjaeger name = "第4团" historical_model = 1 }	
+				regiment = { type = partisan_bergsjaeger name = "第6团" historical_model = 1 }	
+				regiment = { type = partisan_bergsjaeger name = "第13团" historical_model = 1 }
+				regiment = { type = partisan_bergsjaeger name = "第23团" historical_model = 1 }	
+			regiment = { type = bergsjaeger_brigade name = "警备团" historical_model = 1 }			
+				division= {			
+					name = "第一军分区"		
+					location = 5278
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}		
+				division= {			
+					name = "第二军分区"		
+					location = 5306
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}			
+				division= {			
+					name = "第三军分区"		
+					location = 5338
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}		
+				division= {			
+					name = "海陵独立团"		
+					location = 5180
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }	
+				}
+			}
+			corps = {		
+				name = "鲁中军区"	
+				location = 5365
+				leader = 76315 # Xu Haidong
+				regiment = { type = hq_brigade name = "鲁中军区" historical_model = 1 }	
+				regiment = { type = partisan_bergsjaeger name = "第1团" historical_model = 1 }	
+				regiment = { type = partisan_bergsjaeger name = "第4团" historical_model = 1 }	
+				regiment = { type = partisan_bergsjaeger name = "第11团" historical_model = 1 }
+				regiment = { type = partisan_bergsjaeger name = "第12团" historical_model = 1 }
+				division= {			
+					name = "第一军分区"		
+					location = 5365
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}
+				division= {			
+					name = "第二军分区"		
+					location = 5364
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}
+				division= {			
+					name = "第三军分区"		
+					location = 5305
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}
+				division= {			
+					name = "第四军分区"		
+					location = 5337
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}
+				division= {			
+					name = "第五军分区"		
+					location = 5403
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}	
+			}corps = {		
+				name = "鲁南军区"	
+				location = 5419
+				regiment = { type = hq_brigade name = "鲁南军区" historical_model = 1 }	
+			regiment = { type = bergsjaeger_brigade name = "警备团" historical_model = 1 }			
+				division= {			
+					name = "第一军分区"		
+					location = 5418
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}		
+				division= {			
+					name = "第二军分区"		
+					location = 5419
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}			
+				division= {			
+					name = "第三军分区"		
+					location = 5418
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}
+			}
+			corps = {		
+				name = "渤海军区"	
+				location = 5211
+				leader = 76315 # Xu Haidong
+				regiment = { type = hq_brigade name = "渤海军区" historical_model = 1 }	
+				regiment = { type = bergsjaeger_brigade name = "直属团" historical_model = 1 }
+				division= {			
+					name = "第一军分区"		
+					location = 5243
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}
+				division= {			
+					name = "第二军分区"		
+					location = 5179
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}
+				division= {			
+					name = "第三军分区"		
+					location = 5178
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}
+				division= {			
+					name = "第四军分区"		
+					location = 5179
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}
+				division= {			
+					name = "第五军分区"		
+					location = 5178
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}	
+				division= {				
+					name = "第六军分区"			
+					location = 5211
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }
+				}		
+			}
+			corps = {		
+				name = "胶东军区"	
+				location = 5181
+				regiment = { type = hq_brigade name = "胶东军区" historical_model = 1 }	
+				regiment = { type = bergsjaeger_brigade name = "第13团" historical_model = 1 }	
+				regiment = { type = bergsjaeger_brigade name = "第14团" historical_model = 1 }	
+				regiment = { type = partisan_bergsjaeger name = "第16团" historical_model = 1 }
+			regiment = { type = chc_gundam name = "教导第2团" historical_model = 3 }
+				division= {			
+					name = "东海军分区"		
+					location = 5181	
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}
+				division= {			
+					name = "北海军分区"		
+					location = 5180
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+				}
+	
+				division= {			
+					name = "西海军分区"		
+					location = 5145
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+				}
+				division= {			
+					name = "南海军分区"		
+					location = 5181
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}
+				division= {			
+					name = "中海军分区"		
+					location = 5212
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}
+				division= {			
+					name = "海防支队"		
+					location = 5245
+					regiment = { type = marine_brigade historical_model = 0 }		
+					regiment = { type = marine_brigade historical_model = 0 }		
+				}
+			}
+		}
+		army = {			
+			name = "一二零师"		
+			location = 4977
+			leader = 76312 # He Long		
+			regiment = { type = hq_brigade name = "晋绥军区" historical_model = 3 }	
+			regiment = { type = militia_brigade name = "第21团" historical_model = 0 }
+			regiment = { type = chc_gundam name = "教导团" historical_model = 0 }	
+			corps = {		
+				name = "三五八旅"	
+				location = 4977
+				leader = 75022 # Zhang Zongxun
+				regiment = { type = hq_brigade name = "三五八旅兼第三军分区" historical_model = 0 }
+				regiment = { type = bergsjaeger_brigade name = "第8团" historical_model = 1 }	
+				regiment = { type = bergsjaeger_brigade name = "第17团" historical_model = 1 }
+				regiment = { type = bergsjaeger_brigade name = "第715团" historical_model = 1 }	
+				regiment = { type = bergsjaeger_brigade name = "第716团" historical_model = 1 }
+				regiment = { type = partisan_bergsjaeger name = "离石支队" historical_model = 0 }		
+				regiment = { type = partisan_bergsjaeger name = "临县支队" historical_model = 0 }		
+			division = {
+				name = "独立第一旅"
+				location = 5083
+				regiment = { type = bergsjaeger_brigade name = "第2团" experience = 40 historical_model = 1 }
+				regiment = { type = partisan_bergsjaeger name = "第714团" experience = 40 historical_model = 1 }
+				regiment = { type = partisan_bergsjaeger name = "第32团" experience = 40 historical_model = 1 }
+			}
+			division = {
+				name = "独立第二旅兼第二军分区"
+				location = 5175
+				regiment = { type = partisan_bergsjaeger name = "偏清支队" experience = 40 historical_model = 1 }
+				regiment = { type = bergsjaeger_brigade name ="第36团 " experience = 40 historical_model = 1 }
+				regiment = { type = partisan_bergsjaeger name = "第9团" experience = 40 historical_model = 1 }
+			}
+				division= {			
+					name = "第三军分区"		
+					location = 7405
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}		
+				division= {			
+					name = "第六军分区"		
+					location = 5083
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}		
+				division= {			
+					name = "第八军分区"		
+					location = 5051
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}			
+			}		
+				division= {			
+					name = "塞北军分区"		
+					location = 7360
+					regiment = { type = bergsjaeger_brigade name = "第1团" experience = 40 historical_model = 1 }
+					regiment = { type = bergsjaeger_brigade name = "第2团" experience = 40 historical_model = 1 }
+					regiment = { type = bergsjaeger_brigade name = "第3团" experience = 40 historical_model = 1 }	
+				regiment = { type = partisan_bergsjaeger name = "雁北支队" historical_model = 1 }
+				}		
+				division= {			
+					name = "直属军分区"		
+					location = 5015
+					regiment = { type = bergsjaeger_brigade name = "第27团" experience = 40 historical_model = 1 }
+					regiment = { type = partisan_bergsjaeger name = "兴岚支队" experience = 40 historical_model = 1 }	
+				}		
+				division = {
+					name = "神府河防司令部"
+					location = 5241
+					regiment = { type = infantry_brigade experience = 40 historical_model = 1 }
+					regiment = { type = infantry_brigade experience = 40 historical_model = 1 }
+				}
+				division= {			
+					name = "大青山骑兵纵队"		
+					location = 5015	
+					regiment = { type = cavalry_brigade historical_model = 0 }	
+					regiment = { type = cavalry_brigade historical_model = 0 }	
+					regiment = { type = cavalry_brigade historical_model = 0 }		
+				}		
+		}			
+		army = {			
+			name = "一二九师"		
+			location = 5176
+			leader = 76312 # Liu Bocheng		
+			regiment = { type = hq_brigade name = "一二九师兼八路军前总指" historical_model = 0 }	
+			regiment = { type = chc_gundam name = "教导团" historical_model = 0 }
+				division= {			
+					name = "第一军分区"		
+					location = 5176
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}		
+				division= {			
+					name = "第二军分区"		
+					location = 5207	
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}			
+				division= {			
+					name = "第三军分区"		
+					location = 5207
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}		
+				division= {			
+					name = "第四军分区"		
+					location = 5175
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}			
+				division= {			
+					name = "第五军分区"		
+					location = 5239
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}		
+				division= {			
+					name = "第六军分区"		
+					location = 5272
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}		
+				division= {			
+					name = "第七军分区"		
+					location = 7418
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}			
+				division= {			
+					name = "第八军分区"		
+					location = 7418
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}		
+			corps = {			
+				name = "三八六旅"	
+				location = 5207
+				leader = 76308 # Chen Geng
+				regiment = { type = hq_brigade name = "三八六旅并太岳军区（纵队）" historical_model = 0 }	
+				regiment = { type = bergsjaeger_brigade name = "第771团" historical_model = 1 }	
+				regiment = { type = bergsjaeger_brigade name = "第772团" historical_model = 1 }
+				division= {			
+					name = "第一军分区"		
+					location = 5207
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}		
+				division= {			
+					name = "第二军分区"		
+					location = 5207	
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}			
+				division= {			
+					name = "第三军分区"		
+					location = 5175
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}		
+				division= {			
+					name = "第四军分区"		
+					location = 5176
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}			
+				division= {			
+					name = "第五军分区"		
+					location = 5272
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}		
+				division= {			
+					name = "独立团"		
+					location = 5051
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }	
+					regiment = { type = cavalry_brigade historical_model = 0 }		
+				}
+			}
+			corps = {			
+				name = "冀鲁豫军区"	
+				location = 5209
+				leader = 76308 # Chen Geng
+				regiment = { type = hq_brigade name = "冀鲁豫军区" historical_model = 0 }
+				division= {			
+					name = "第一军分区"		
+					location = 5209
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }
+				}		
+				division= {			
+					name = "第二军分区"		
+					location = 5053
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }
+				}			
+				division= {			
+					name = "第三军分区"		
+					location = 5144	
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}		
+				division= {			
+					name = "第四军分区"		
+					location = 5274
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }
+				}			
+				division= {			
+					name = "第五军分区"		
+					location = 5274
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }	
+				}		
+				division= {			
+					name = "第六军分区"		
+					location = 5209
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }
+				}		
+				division= {			
+					name = "第七军分区"		
+					location = 5053
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }	
+				}		
+				division= {			
+					name = "第八军分区"		
+					location = 5086
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }	
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}			
+				division= {			
+					name = "第九军分区"		
+					location = 4981
+					regiment = { type = cavalry_brigade historical_model = 0 }		
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }	
+				}		
+				division= {			
+					name = "第十军分区"		
+					location = 4981
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }	
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }	
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}			
+				division= {			
+					name = "第十一军分区"		
+					location = 5055
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }	
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }	
+				}		
+				division= {			
+					name = "水东军分区"		
+					location = 5178
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}		
+			}
+			corps = {			
+				name = "河南人民抗日义勇军"	
+				location = 7457
+				leader = 76308 # Chen Geng
+				regiment = { type = hq_brigade name = "河南人民抗日义勇军" historical_model = 0 }	
+				division= {			
+					name = "第一支队"		
+					location = 7457
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}		
+				division= {			
+					name = "第二支队"		
+					location = 7457
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}			
+				division= {			
+					name = "第三支队"		
+					location = 7457
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}		
+				division= {			
+					name = "第四支队"		
+					location = 7457
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}			
+			}
+		}
+			army = {
+				name = "晋察冀边区"	
+				location = 5176
+				regiment = { type = hq_brigade name = "晋察冀边区" historical_model = 1 }
+			corps = {		
+				name = "冀察军区"	
+				location = 5053
+				leader = 76315 # Xu Haidong
+				regiment = { type = hq_brigade name = "冀察军区" historical_model = 1 }	
+				division= {			
+					name = "第一军分区"		
+					location = 5053
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+				}
+				division= {			
+					name = "第十一军分区"		
+					location = 5175
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+				}	
+				division= {			
+					name = "第十二军分区"		
+					location = 7391	
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}
+				division= {
+					name = "第十三军分区"		
+					location = 5176
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }	
+					regiment = { type = cavalry_brigade historical_model = 0 }		
+				}
+			}
+			corps = {		
+				name = "冀晋军区"	
+				location = 5144
+				regiment = { type = hq_brigade name = "冀晋军区" historical_model = 1 }	
+				division= {			
+					name = "第一军分区"		
+					location = 5144
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}		
+				division= {			
+					name = "第二军分区"		
+					location = 5144
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}			
+				division= {			
+					name = "第三军分区"		
+					location = 5176
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }	
+					regiment = { type = cavalry_brigade historical_model = 0 }		
+				}		
+				division= {			
+					name = "第四军分区"		
+					location = 5176
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}	
+			}			
+			corps = {		
+				name = "冀中军区"	
+				location = 5144
+				regiment = { type = hq_brigade name = "冀中军区" historical_model = 1 }	
+				division= {			
+					name = "第六军分区"		
+					location = 5209
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}		
+				division= {			
+					name = "第七军分区"		
+					location = 5209
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}		
+				division= {			
+					name = "第八军分区"		
+					location = 5209
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}			
+				division= {			
+					name = "第九军分区"		
+					location = 5209
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }	
+					regiment = { type = cavalry_brigade historical_model = 0 }		
+				}		
+				division= {			
+					name = "第十军分区"		
+					location = 5209
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}
+			}
+			corps = {		
+				name = "冀热辽军区"	
+				location = 4933
+				regiment = { type = hq_brigade name = "冀热辽军区" historical_model = 1 }	
+				division= {			
+					name = "第十四军分区"		
+					location = 4886
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}
+				division= {			
+					name = "第十五军分区"		
+					location = 5112
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}	
+				division= {			
+					name = "第十六军分区"		
+					location = 	4981
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+				}
+				division= {
+					name = "第十七军分区"		
+					location = 4981
+					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }	
+					regiment = { type = cavalry_brigade historical_model = 0 }		
+				}
+				division= {
+					name = "第十八军分区"		
+					location = 5055
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
+					regiment = { type = partisan_bergsjaeger historical_model = 0 }	
+					regiment = { type = cavalry_brigade historical_model = 0 }		
+				}
+			}
+		}
+	}
+	army = {
+			name = "新四军"
+			leader = 76351 
+			location = 5406
+			regiment = { type = hq_brigade name = "新四军军部" historical_model = 1 }
+			corps = {
+				name = "第1支队"
+				location = 5406
+				regiment = { type = hq_brigade name = "第1支队" historical_model = 1 }
+				division= {
+				name = "新四军第1师"
+				location = 5436
+				regiment = { type = bergsjaeger_brigade name = "第1步兵旅" historical_model = 1 }
+				regiment = { type = bergsjaeger_brigade name = "第2步兵旅" historical_model = 2 	}
+				regiment = { type = bergsjaeger_brigade name = "第3步兵旅" historical_model = 3 	}
+				regiment = { type = partisan_bergsjaeger name = "第4步兵旅" historical_model = 4 	}
+			}
+				division= {
+				name = "新四军第2师"
+				location = 5436
+				regiment = { type = partisan_bergsjaeger name = "第5步兵旅" historical_model = 1 }
+			}
+		}
+			corps = {
+				name = "第2支队"
+				location = 5471
+				regiment = { type = hq_brigade name = "第2支队" historical_model = 1 }
+				division= {
+				name = "新四军第3师"
+				location = 5471
+				regiment = { type = militia_brigade name = "第6步兵旅" historical_model = 1 }
+				regiment = { type = militia_brigade name = "第7步兵旅" historical_model = 2 }
+				regiment = { type = militia_brigade name = "第8步兵旅" historical_model = 3 }
+			}
+				division= {
+				name = "新四军第4师"
+				location = 5471
+				regiment = { type = militia_brigade name = "第9步兵旅" historical_model = 1 }
+				regiment = { type = militia_brigade name = "第10步兵旅" historical_model = 2 }
+			}
+		}
+			division= {
+				name = "第3支队"
+				location = 5452
+		
+				regiment = { type = bergsjaeger_brigade name = "新四军第5师" historical_model = 1 }
+		
+				regiment = { type = partisan_bergsjaeger name = "新四军第5师" historical_model = 2 }
+		
+				regiment = { type = partisan_bergsjaeger name = "新四军第5师" historical_model = 3 }
+			}
+			corps = {
+				name = "第4支队"
+				location = 5492
+				regiment = { type = hq_brigade name = "第4支队" historical_model = 1 }
+				division= {
+				name = "新四军第6师"
+				location = 5452
+					regiment = { type = bergsjaeger_brigade name = "第1旅" historical_model = 1 }		
+					regiment = { type = partisan_bergsjaeger name = "第2旅" historical_model = 2 }
+				}
+				division= {
+					name = "新四军第7师"
+					location = 5492
+					regiment = { type = partisan_bergsjaeger name = "新四军第7师" historical_model = 1 }	
+				}
+			}
+		}		
+army = {
+		name = "陕甘宁晋绥联防军"
+		leader = 76351 
+		location = 5492
+		regiment = { type = hq_brigade name = "陕甘宁晋绥联防军军部" historical_model = 1 }	
+			corps = {		
+				name = "三八五旅"	
+				location = 7405	
+				leader = 75870 # Wang Hongkun
+				regiment = { type = bergsjaeger_brigade name = "第4团" historical_model = 1 }	
+				regiment = { type = bergsjaeger_brigade name = "第5团" historical_model = 1 }	
+				regiment = { type = bergsjaeger_brigade name = "第770团" historical_model = 1 }
+				division = {
+					name = "中国人民抗日军政大学总校"
+					location = 7417
+					regiment = { type = chc_gundam name = "第1大队" historical_model = 1 }
+					regiment = { type = chc_gundam name = "第2大队" historical_model = 1 }
+					regiment = { type = chc_gundam name = "第3大队" historical_model = 1 }
+					regiment = { type = chc_gundam name = "第4大队" historical_model = 1 }
+					regiment = { type = chc_gundam name = "第5大队" historical_model = 1 }
+				}
+				division = {
+					name = "抗日军政大学第7分校"
+					location = 7417
+					regiment = { type = chc_gundam historical_model = 1 }
+				}
+						}		
+			corps = {		
+				name = "三五九旅"	
+				location = 7417
+				leader = 75025 # Chen Bojun
+				regiment = { type = hq_brigade name = "三五九旅兼绥德警备司令部" historical_model = 0 }	
+				regiment = { type = chc_gundam name = "特务团" experience = 40 historical_model = 1 }
+				regiment = { type = bergsjaeger_brigade name = "第717团" historical_model = 0 }	
+				regiment = { type = bergsjaeger_brigade name = "第718团" historical_model = 0 }	
+				regiment = { type = bergsjaeger_brigade name = "第719团" historical_model = 0 }	
+				regiment = { type = partisan_bergsjaeger name = "第四支队" historical_model = 2 }
+			division = {
+				name = "警备第一旅"
+				location = 7417
+				regiment = { type = infantry_brigade name = "警备第一团" experience = 40 historical_model = 1 }
+				regiment = { type = infantry_brigade name = "警备第二团" experience = 40 historical_model = 1 }
+				regiment = { type = infantry_brigade name = "警备第三团" experience = 40 historical_model = 1 }
+			}
+			division = {
+				name = "警备第二旅"
+				location = 5241
+				regiment = { type = infantry_brigade name = "警备第七团" experience = 40 historical_model = 1 }
+				regiment = { type = infantry_brigade name = "警备第八团" experience = 40 historical_model = 1 }
+				regiment = { type = infantry_brigade name = "警备第九团" experience = 40 historical_model = 1 }
+			}
+		}			
+			corps = {
+			name = "晋陕甘宁联防警备司令部"
+			location = 7417
+			regiment = { type = hq_brigade name = "陕甘宁保安司令部" historical_model = 0 }	
+			regiment = { type = artillery_brigade name = "炮兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "保安第一团" experience = 40 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "保安第二团" experience = 40 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "保安第四团" experience = 40 historical_model = 1 }
+			division = {
+				name = "延属军分区"
+				location = 7417
+				regiment = { type = infantry_brigade experience = 40 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 40 historical_model = 1 }
+			}
+			division = {
+				name = "关中军分区"
+				location = 5241
+				regiment = { type = infantry_brigade experience = 40 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 40 historical_model = 1 }
+			}
+			division = {
+				name = "陇东军分区"
+				location = 7391
+				regiment = { type = infantry_brigade experience = 40 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 40 historical_model = 1 }
+			}
+			division = {
+				name = "三边军分区"
+				location = 7391
+				regiment = { type = infantry_brigade experience = 40 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 40 historical_model = 1 }
+			}
+			division = {
+				name = "绥德军分区"
+				location = 7417
+				regiment = { type = infantry_brigade experience = 40 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 40 historical_model = 1 }
+			}
+			division = {
+				name = "神府军分区"
+				location = 5241
+				regiment = { type = infantry_brigade experience = 40 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 40 historical_model = 1 }
+			}
+		}			
+}					

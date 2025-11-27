@@ -1,0 +1,94 @@
+chc_gundam = {
+	usable_by = { CHC }
+	type = land
+	sprite = Elite
+	unit_group = infantry_unit_type
+	active = no 
+	can_paradrop = yes
+	
+	#limitations
+	minimum_of_type = 6 
+	max_percentage_of_type = 0.09
+
+	#Size Definitions
+	max_strength = 12
+	default_organisation = 45
+	default_morale = 0.60
+	officers = 180
+
+	#Building Costs
+	build_cost_ic = 1.50
+	build_cost_manpower = 1.00
+	build_time = 150
+	repair_cost_multiplier = 0.05
+
+	#Misc Abilities
+	maximum_speed = 6
+	transport_weight = 5.00
+	supply_consumption = 0.00
+	fuel_consumption = 0.00
+	radio_strength = 1
+
+	#Defensive Abilities
+	defensiveness = 0
+	toughness = 3.25
+	softness = 1.00
+	air_defence = 2.00
+
+	#Offensive Abilities
+	suppression = 1.00
+	soft_attack = 4.33
+	hard_attack = 0.67
+	air_attack = 0.33
+	ap_attack = 1
+
+	amphibious = {
+		attack = 0.10
+		defence = -0.10
+	}
+	river = {
+		attack = 0.10
+		defence = -0.10
+	}
+	urban = {
+		attack = 0.15
+		defence = -0.10
+	}
+	mountain = {
+		attack = 0.50
+		defence = -0.10
+		movement = 0.10	
+	}
+	hills = {
+		attack = 0.40
+		defence = 0.10
+		movement = 0.10
+		}
+	arctic = { 
+		movement = 0.10	
+		}
+	jungle = 	{
+        attack = 0.20
+		movement = 0.10
+	}
+	forest = 	{
+        attack = 0.15 defence = -0.10
+		movement = 0.10
+	}
+	woods = 	{
+        attack = 0.1 defence = -0.10
+		movement = 0.10
+	}	
+	marsh = 	{
+		movement = 0.10
+	}
+	night = { 
+		attack = 0.5
+	}
+
+	combat_width = 0
+
+	completion_size = 0.3
+	on_completion = land_doctrine_practical
+	priority = 10
+}

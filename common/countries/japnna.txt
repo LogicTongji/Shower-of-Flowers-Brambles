@@ -1,0 +1,562 @@
+color = { 201  158  103 }
+graphical_culture = Japanese
+
+major = yes
+
+default_templates = {
+	generic_infantry = {
+		infantry_brigade
+		infantry_brigade
+                infantry_brigade
+		artillery_brigade
+	}
+	generic_milita = {
+		infantry_brigade
+		militia_brigade
+		militia_brigade
+                anti_air_brigade
+	}
+	generic_armoured = {
+		armor_brigade
+		mechanized_brigade
+                armored_car_brigade
+                sp_rct_artillery_brigade
+                engineer_brigade
+	}
+}
+
+unit_names = {
+	imperial_brigade = {
+                "第1保安队" "第2保安队" "第3保安队" "第4保安队" 
+        }
+	infantry_brigade = {
+		"第1保安队" "第2保安队" "第3保安队" "第4保安队" 
+	}
+	cavalry_brigade = {
+		"骑兵团" 
+	}
+	motorized_brigade = {	
+		"第1机动保安队" "第2机动保安队" "第3机动保安队" "第4机动保安队" "第5机动保安队" 
+	}
+	mechanized_brigade = {
+		"第1机械化保安队" "第2机械化保安队" "第3机械化保安队"
+	}
+	light_armor_brigade = {
+		"第1战车团"
+	}
+	armor_brigade = {
+		"第1战车团"
+	}
+	paratrooper_brigade = {
+		"第1伞兵团"
+	}
+	marine_brigade = {
+		"佐世保陆战队"
+	}
+	bergsjaeger_brigade = {
+		"第1山地团"
+	}
+	garrison_brigade = {
+		"警备团"
+	}
+	hq_brigade = {
+		"保安队" 
+	}
+	militia_brigade = {
+		"警备队" 
+	}
+	multi_role = {
+		"航空自卫队飞行团" 
+	}
+	interceptor = {
+		"航空自卫队飞行团" 
+	}
+	strategic_bomber = {
+		"航空自卫队飞行团" 
+	}
+	tactical_bomber = {
+		"航空自卫队飞行团" 
+	}
+	naval_bomber = {
+		"航空自卫队飞行团" 
+			}
+	cas = {
+		"航空自卫队飞行团" 
+	}
+	transport_plane = {
+		"第49运输飞行团" "第50运输飞行团" "第51运输飞行团" "第52运输飞行团" "第53运输飞行团" "第54运输飞行团" "第55运输飞行团" "第56运输飞行团" "第57运输飞行团" "第58运输飞行团" "第93运输飞行团" 
+		"第94运输飞行团" "第179运输飞行团" "第180运输飞行团" 
+	}
+	super_heavy_battleship = {
+		"大和" "武藏" "信浓"
+	}
+	battleship = {
+		"扶桑" "山城" "伊势" "日向" "长门" "陆奥" "加贺" "纪伊" 
+		"尾张" "石见" "相模" "周防" "肥前" "丹后" "壹岐" 
+	}
+	light_cruiser = {
+		"铃谷" "熊野" "香取" "鹿岛" "香椎" "柏原" "阿贺野" "能代" "矢矧" "酒匈" "大淀" 
+		"八十岛" "五百岛" "淀" "矢矧" "平户" "天龙" "龙田" "球磨" "多摩" "北上" "大井" 
+		"木曾" "长良" "五十铃" "名取" "由良" "鬼怒" "阿武隈" "那珂" "川内" "神通" "加古" 
+		"夕张" "最上" "三隈" 
+	}
+	heavy_cruiser = {
+		"利根" "筑摩" "古鹰" "加古" "青叶" "衣笠" "那智" "羽黑" "妙高" "足柄" "高雄" 
+		"爱宕" "摩耶" "鸟海" "阿苏" "津轻" "宗谷" 
+	}
+	battlecruiser = {
+		"筑波" "生驹" "伊吹" "鞍马" "金刚" "比叡" "榛名" "雾岛" "天城" "赤城" "三隈" 
+		"Takao" 
+	}
+	destroyer = {
+		"第1驱逐舰队" "第2驱逐舰队" "第3驱逐舰队" "第4驱逐舰队" "第5驱逐舰队" "第6驱逐舰队" "第7驱逐舰队" "第8驱逐舰队" "第9驱逐舰队" "第10驱逐舰队" "第11驱逐舰队" 
+		"第12驱逐舰队" "第13驱逐舰队" "第14驱逐舰队" "第15驱逐舰队" "第16驱逐舰队" "第17驱逐舰队" "第18驱逐舰队" "第19驱逐舰队" "第20驱逐舰队" "第21驱逐舰队" "第22驱逐舰队" 
+		"第23驱逐舰队" "第24驱逐舰队" "第25驱逐舰队" "第26驱逐舰队" "第27驱逐舰队" "第28驱逐舰队" "第29驱逐舰队" "第30驱逐舰队" "第31驱逐舰队" "第32驱逐舰队" "第33驱逐舰队" 
+		"第34驱逐舰队" "第35驱逐舰队" "第36驱逐舰队" "第37驱逐舰队" "第38驱逐舰队" "第39驱逐舰队" "第40驱逐舰队" "第41驱逐舰队" "第42驱逐舰队" "第43驱逐舰队" "第44驱逐舰队" 
+		"第45驱逐舰队" "第46驱逐舰队" "第47驱逐舰队" "第48驱逐舰队" "第49驱逐舰队" "第50驱逐舰队" "第51驱逐舰队" "第52驱逐舰队" "第53驱逐舰队" "第54驱逐舰队" "第55驱逐舰队" 
+		"第56驱逐舰队" "第57驱逐舰队" "第58驱逐舰队" "第59驱逐舰队" "第60驱逐舰队" "第61驱逐舰队" "第62驱逐舰队" "第63驱逐舰队" "第64驱逐舰队" "第65驱逐舰队" "第66驱逐舰队" 
+		"第67驱逐舰队" "第68驱逐舰队" "第69驱逐舰队" "第70驱逐舰队" "第71驱逐舰队" "第72驱逐舰队" "第73驱逐舰队" "第74驱逐舰队" "第75驱逐舰队" "第76驱逐舰队" "第77驱逐舰队" 
+		"第78驱逐舰队" "第79驱逐舰队" "第80驱逐舰队" "第81驱逐舰队" "第82驱逐舰队" "第83驱逐舰队" "第84驱逐舰队" "第85驱逐舰队" "第86驱逐舰队" "第87驱逐舰队" "第88驱逐舰队" 
+		"第89驱逐舰队" "第90驱逐舰队" "第91驱逐舰队" "第92驱逐舰队" "第93驱逐舰队" "第94驱逐舰队" "第95驱逐舰队" "第96驱逐舰队" "第97驱逐舰队" "第98驱逐舰队" "第99驱逐舰队" 
+		"第100驱逐舰队" 
+	}
+	carrier = {
+		"龙骧" "赤城" "天城" "加贺" "苍龙" "飞龙" "翔鹤" "瑞鹤" "隼鹰" "飞鹰" "大凤" 
+		"云龙" "阿苏" "葛城" "笠置" "阿苏" "生驹" "信浓" "凤翔" "千岁" "千代田" "瑞凤" 
+		"祥凤" "龙凤" "伊吹" 
+	}
+	escort_carrier = {
+		"凤翔" "千岁" "千代田" "瑞凤" "祥凤" "龙凤" "伊吹" "大鹰" "云鹰" "冲鹰" "海鹰" 
+			}
+	submarine = {
+		"第1潜水舰队" "第2潜水舰队" "第3潜水舰队" "第4潜水舰队" "第5潜水舰队" "第6潜水舰队" "第7潜水舰队" "第8潜水舰队" "第9潜水舰队" "第10潜水舰队" "第11潜水舰队" 
+		"第12潜水舰队" "第13潜水舰队" "第14潜水舰队" "第15潜水舰队" "第16潜水舰队" "第17潜水舰队" "第18潜水舰队" "第19潜水舰队" "第20潜水舰队" "第21潜水舰队" "第22潜水舰队" 
+		"第23潜水舰队" "第24潜水舰队" "第25潜水舰队" "第26潜水舰队" "第27潜水舰队" "第28潜水舰队" "第29潜水舰队" "第30潜水舰队" "第31潜水舰队" "第32潜水舰队" "第33潜水舰队" 
+		"第34潜水舰队" "第35潜水舰队" "第36潜水舰队" "第37潜水舰队" "第38潜水舰队" "第39潜水舰队" "第40潜水舰队" "第41潜水舰队" "第42潜水舰队" "第43潜水舰队" "第44潜水舰队" 
+		"第45潜水舰队" "第46潜水舰队" "第47潜水舰队" "第48潜水舰队" "第49潜水舰队" "第50潜水舰队" "第51潜水舰队" "第52潜水舰队" "第53潜水舰队" "第54潜水舰队" "第55潜水舰队" 
+		"第56潜水舰队" "第57潜水舰队" "第58潜水舰队" "第59潜水舰队" "第60潜水舰队" "第61潜水舰队" "第62潜水舰队" "第63潜水舰队" "第64潜水舰队" "第65潜水舰队" "第66潜水舰队" 
+		"第67潜水舰队" "第68潜水舰队" "第69潜水舰队" "第70潜水舰队" "第71潜水舰队" "第72潜水舰队" "第73潜水舰队" "第74潜水舰队" "第75潜水舰队" "第76潜水舰队" "第77潜水舰队" 
+		"第78潜水舰队" "第79潜水舰队" "第80潜水舰队" "第81潜水舰队" "第82潜水舰队" "第83潜水舰队" "第84潜水舰队" "第85潜水舰队" "第86潜水舰队" "第87潜水舰队" "第88潜水舰队" 
+		"第89潜水舰队" "第90潜水舰队" "第91潜水舰队" "第92潜水舰队" "第93潜水舰队" "第94潜水舰队" "第95潜水舰队" "第96潜水舰队" "第97潜水舰队" "第98潜水舰队" "第99潜水舰队" 
+		"第100潜水舰队" 
+	}
+	transport_ship = {
+		"第1输送舰队" "第2输送舰队" "第3输送舰队" "第4输送舰队" "第5输送舰队" "第6输送舰队" "第7输送舰队" "第8输送舰队" "第9输送舰队" "第10输送舰队" "第11输送舰队" 
+		"第12输送舰队" "第13输送舰队" "第14输送舰队" "第15输送舰队" "第16输送舰队" "第17输送舰队" "第18输送舰队" "第19输送舰队" "第20输送舰队" "第21输送舰队" "第22输送舰队" 
+		"第23输送舰队" "第24输送舰队" "第25输送舰队" "第26输送舰队" "第27输送舰队" "第28输送舰队" "第29输送舰队" "第30输送舰队" "第31输送舰队" "第32输送舰队" "第33输送舰队" 
+		"第34输送舰队" "第35输送舰队" "第36输送舰队" "第37输送舰队" "第38输送舰队" "第39输送舰队" "第40输送舰队" "第41输送舰队" "第42输送舰队" "第43输送舰队" "第44输送舰队" 
+		"第45输送舰队" "第46输送舰队" "第47输送舰队" "第48输送舰队" "第49输送舰队" "第50输送舰队" "第51输送舰队" "第52输送舰队" "第53输送舰队" "第54输送舰队" "第55输送舰队" 
+		"第56输送舰队" "第57输送舰队" "第58输送舰队" "第59输送舰队" "第60输送舰队" "第61输送舰队" "第62输送舰队" "第63输送舰队" "第64输送舰队" "第65输送舰队" "第66输送舰队" 
+		"第67输送舰队" "第68输送舰队" "第69输送舰队" "第70输送舰队" "第71输送舰队" "第72输送舰队" "第73输送舰队" "第74输送舰队" "第75输送舰队" "第76输送舰队" "第77输送舰队" 
+		"第78输送舰队" "第79输送舰队" "第80输送舰队" "第81输送舰队" "第82输送舰队" "第83输送舰队" "第84输送舰队" "第85输送舰队" "第86输送舰队" "第87输送舰队" "第88输送舰队" 
+		"第89输送舰队" "第90输送舰队" "第91输送舰队" "第92输送舰队" "第93输送舰队" "第94输送舰队" "第95输送舰队" "第96输送舰队" "第97输送舰队" "第98输送舰队" "第99输送舰队" 
+		"第100输送舰队" 
+	}
+	invasion_transport_ship = {
+		"第1输送舰队" "第2输送舰队" "第3输送舰队" "第4输送舰队" "第5输送舰队" "第6输送舰队" "第7输送舰队" "第8输送舰队" "第9输送舰队" "第10输送舰队" "第11输送舰队" 
+		"第12输送舰队" "第13输送舰队" "第14输送舰队" "第15输送舰队" "第16输送舰队" "第17输送舰队" "第18输送舰队" "第19输送舰队" "第20输送舰队" "第21输送舰队" "第22输送舰队" 
+		"第23输送舰队" "第24输送舰队" "第25输送舰队" "第26输送舰队" "第27输送舰队" "第28输送舰队" "第29输送舰队" "第30输送舰队" "第31输送舰队" "第32输送舰队" "第33输送舰队" 
+		"第34输送舰队" "第35输送舰队" "第36输送舰队" "第37输送舰队" "第38输送舰队" "第39输送舰队" "第40输送舰队" "第41输送舰队" "第42输送舰队" "第43输送舰队" "第44输送舰队" 
+		"第45输送舰队" "第46输送舰队" "第47输送舰队" "第48输送舰队" "第49输送舰队" "第50输送舰队" "第51输送舰队" "第52输送舰队" "第53输送舰队" "第54输送舰队" "第55输送舰队" 
+		"第56输送舰队" "第57输送舰队" "第58输送舰队" "第59输送舰队" "第60输送舰队" "第61输送舰队" "第62输送舰队" "第63输送舰队" "第64输送舰队" "第65输送舰队" "第66输送舰队" 
+		"第67输送舰队" "第68输送舰队" "第69输送舰队" "第70输送舰队" "第71输送舰队" "第72输送舰队" "第73输送舰队" "第74输送舰队" "第75输送舰队" "第76输送舰队" "第77输送舰队" 
+		"第78输送舰队" "第79输送舰队" "第80输送舰队" "第81输送舰队" "第82输送舰队" "第83输送舰队" "第84输送舰队" "第85输送舰队" "第86输送舰队" "第87输送舰队" "第88输送舰队" 
+		"第89输送舰队" "第90输送舰队" "第91输送舰队" "第92输送舰队" "第93输送舰队" "第94输送舰队" "第95输送舰队" "第96输送舰队" "第97输送舰队" "第98输送舰队" "第99输送舰队" 
+		"第100输送舰队" 
+	}
+	assault_ship = {
+		"第1输送舰队" "第2输送舰队" "第3输送舰队" "第4输送舰队" "第5输送舰队" "第6输送舰队" "第7输送舰队" "第8输送舰队" "第9输送舰队" "第10输送舰队" "第11输送舰队" 
+		"第12输送舰队" "第13输送舰队" "第14输送舰队" "第15输送舰队" "第16输送舰队" "第17输送舰队" "第18输送舰队" "第19输送舰队" "第20输送舰队" "第21输送舰队" "第22输送舰队" 
+		"第23输送舰队" "第24输送舰队" "第25输送舰队" "第26输送舰队" "第27输送舰队" "第28输送舰队" "第29输送舰队" "第30输送舰队" "第31输送舰队" "第32输送舰队" "第33输送舰队" 
+		"第34输送舰队" "第35输送舰队" "第36输送舰队" "第37输送舰队" "第38输送舰队" "第39输送舰队" "第40输送舰队" "第41输送舰队" "第42输送舰队" "第43输送舰队" "第44输送舰队" 
+		"第45输送舰队" "第46输送舰队" "第47输送舰队" "第48输送舰队" "第49输送舰队" "第50输送舰队" "第51输送舰队" "第52输送舰队" "第53输送舰队" "第54输送舰队" "第55输送舰队" 
+		"第56输送舰队" "第57输送舰队" "第58输送舰队" "第59输送舰队" "第60输送舰队" "第61输送舰队" "第62输送舰队" "第63输送舰队" "第64输送舰队" "第65输送舰队" "第66输送舰队" 
+		"第67输送舰队" "第68输送舰队" "第69输送舰队" "第70输送舰队" "第71输送舰队" "第72输送舰队" "第73输送舰队" "第74输送舰队" "第75输送舰队" "第76输送舰队" "第77输送舰队" 
+		"第78输送舰队" "第79输送舰队" "第80输送舰队" "第81输送舰队" "第82输送舰队" "第83输送舰队" "第84输送舰队" "第85输送舰队" "第86输送舰队" "第87输送舰队" "第88输送舰队" 
+		"第89输送舰队" "第90输送舰队" "第91输送舰队" "第92输送舰队" "第93输送舰队" "第94输送舰队" "第95输送舰队" "第96输送舰队" "第97输送舰队" "第98输送舰队" "第99输送舰队" 
+		"第100输送舰队" 
+	}
+
+}
+
+ministers = {
+	5001 = {
+		name = "裕仁"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M5001
+		head_of_state = stern_imperialist
+		head_of_state = benevolent_gentleman
+		head_of_state = benevolent_gentleman
+		start_date = 1936.1.1
+	}
+	5002 = {
+		name = "冈田启介"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M5002
+		head_of_government = happy_amateur
+		foreign_minister = iron_fisted_brute
+		start_date = 1936.1.1
+	}
+	5003 = {
+		name = "广田弘毅"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M5003
+		foreign_minister = great_compromiser
+		head_of_government = happy_amateur
+		start_date = 1936.1.1
+	}
+	5004 = {
+		name = "町田忠治"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M5004
+		armament_minister = laissez_faires_capitalist
+		minister_of_intelligence = technical_specialist
+		start_date = 1936.1.1
+	}
+	5005 = {
+		name = "后藤文夫"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M5005
+		minister_of_security = silent_lawyer
+		head_of_government = naive_optimist
+		minister_of_security = silent_lawyer
+		start_date = 1936.1.1
+	}
+	5007 = {
+		name = "闲院宫载仁亲王"
+		ideology = paternal_autocrat
+		loyalty = 0.25
+		picture = M5007
+		chief_of_staff = school_of_defence
+		chief_of_army = static_defence_doctrine
+		start_date = 1936.1.1
+	}
+	5009 = {
+		name = "大角岑生"
+		ideology = fascistic
+		loyalty = 1.00
+		picture = M5009
+		chief_of_navy = power_projection_doctrine
+		start_date = 1936.1.1
+	}
+	5011 = {
+		name = "秩父宫雍仁亲王"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M5207
+		head_of_state = ruthless_powermonger
+		start_date = 1936.1.1
+	}
+	5025 = {
+		name = "野坂参三"
+		ideology = social_democrat
+		loyalty = 1.00
+		picture = M5011
+		head_of_state = barking_buffoon
+		minister_of_security = man_of_the_people
+		start_date = 1936.1.1
+	}
+	5033 = {
+		name = "林铣十郎"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M5033
+		head_of_government = smiling_oilman
+		foreign_minister = general_staffer
+		start_date = 1936.1.1
+	}
+	5034 = {
+		name = "近卫文縻"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M5034
+		head_of_government = flamboyant_tough_guy
+		foreign_minister = apologetic_clerk
+		head_of_government = flamboyant_tough_guy
+		start_date = 1937.1.1
+	}
+	5035 = {
+		name = "阿部信行"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M5035
+		head_of_government = political_protege
+		foreign_minister = iron_fisted_brute
+		chief_of_staff = school_of_fire_support
+		start_date = 1938.1.1
+	}
+	5036 = {
+		name = "米内光政"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M5036
+		head_of_government = ambitious_union_boss
+		armament_minister = battle_fleet_proponent
+		start_date = 1940.1.1
+	}
+	5037 = {
+		name = "铃木贯太郎"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M5037
+		head_of_government = corporate_suit
+		minister_of_intelligence = political_specialist
+		foreign_minister = biased_intellectual
+		start_date = 1945.1.1
+	}
+	5038 = {
+		name = "东久迩宫稔彦王"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M5038
+		head_of_government = silent_workhorse
+		chief_of_air = carpet_bombing_doctrine
+		start_date = 1945.1.1
+	}
+	5039 = {
+		name = "寺内寿一"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M5039
+		head_of_government = naive_optimist
+		armament_minister = tank_proponent
+		start_date = 1946.1.1
+	}
+	5041 = {
+		name = "平沼骐一郎"
+		ideology = fascistic
+		loyalty = 1.00
+		picture = M5041
+		head_of_government = old_admiral
+		minister_of_security = prince_of_terror
+		start_date = 1939.1.1
+	}
+	5042 = {
+		name = "东条英机"
+		ideology = fascistic
+		loyalty = 1.00
+		picture = M5042
+		head_of_government = old_general
+		armament_minister = infantry_proponent
+		minister_of_security = prince_of_terror
+		chief_of_staff = school_of_psychology
+		chief_of_army = elastic_defence_doctrine
+		chief_of_air = army_aviation_doctrine
+		foreign_minister = general_staffer
+		start_date = 1941.1.1
+	}
+	5043 = {
+		name = "小矶国昭"
+		ideology = fascistic
+		loyalty = 1.00
+		picture = M5043
+		head_of_government = corporate_suit
+		minister_of_intelligence = industrial_specialist
+		start_date = 1944.1.1
+	}
+	5027 = {
+		name = "片山哲"
+		ideology = social_democrat
+		loyalty = 1.00
+		picture = M5027
+		head_of_government = political_protege
+		minister_of_intelligence = naval_intelligence_specialist
+		start_date = 1945.1.1
+	}
+	5028 = {
+		name = "宇垣一成"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M5028
+		head_of_government = silent_workhorse
+		foreign_minister = biased_intellectual
+		minister_of_intelligence = political_specialist
+		start_date = 1936.1.1
+	}
+	5029 = {
+		name = "铃木喜三郎"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M5029
+		head_of_government = happy_amateur
+		foreign_minister = the_cloak_n_dagger_schemer
+		start_date = 1941.1.1
+	}
+	5030 = {
+		name = "币原喜重郎"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M5030
+		head_of_government = naive_optimist
+		armament_minister = tank_proponent
+		start_date = 1945.1.1
+	}
+	5031 = {
+		name = "吉田茂"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M5031
+		head_of_government = backroom_backstabber
+		foreign_minister = apologetic_clerk
+		armament_minister = strategic_air_proponent
+		start_date = 1946.1.1
+	}
+	5032 = {
+		name = "鸠山一郎"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M5032
+		head_of_government = political_protege
+		armament_minister = administrative_genius
+		start_date = 1954.1.1
+	}
+	5044 = {
+		name = "宫本贤治"
+		ideology = leninist
+		loyalty = 1.00
+		picture = M5012
+		head_of_government = smiling_oilman
+		minister_of_intelligence = industrial_specialist
+		start_date = 1936.1.1
+	}
+	5045 = {
+		name = "野坂参三"
+		ideology = social_democrat
+		loyalty = 0.50
+		picture = M5011
+		foreign_minister = the_cloak_n_dagger_schemer
+		minister_of_intelligence = industrial_specialist
+		start_date = 1937.1.1
+	}
+	5046 = {
+		name = "芦田均"
+		ideology = social_liberal
+		loyalty = 1.00
+		picture = M5046
+		foreign_minister = apologetic_clerk
+		head_of_government = smiling_oilman
+		start_date = 1945.1.1
+	}
+	5047 = {
+		name = "芳泽谦吉"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M5047
+		foreign_minister = ideological_crusader
+		start_date = 1936.1.1
+	}
+	5050 = {
+		name = "重光葵"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M5050
+		foreign_minister = great_compromiser
+		foreign_minister = great_compromiser
+		start_date = 1941.1.1
+	}
+	5053 = {
+		name = "佐藤尚武"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M5053
+		foreign_minister = the_cloak_n_dagger_schemer
+		start_date = 1937.1.1
+	}
+	5057 = {
+		name = "有田八郎"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M5057
+		foreign_minister = ideological_crusader
+		start_date = 1936.1.1
+	}
+	5059 = {
+		name = "野村吉三郎"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M5059
+		foreign_minister = general_staffer
+		start_date = 1939.1.1
+	}
+	5060 = {
+		name = "松冈洋右"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M5060
+		foreign_minister = ideological_crusader
+		start_date = 1940.1.1
+	}
+	5061 = {
+		name = "丰田贞次郎"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M5061
+		foreign_minister = iron_fisted_brute
+		armament_minister = air_to_ground_proponent
+		chief_of_air = vertical_envelopment_doctrine
+		start_date = 1941.1.1
+	}
+	5065 = {
+		name = "东乡茂德"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M5065
+		foreign_minister = biased_intellectual
+		start_date = 1941.1.1
+	}
+	5066 = {
+		name = "东乡茂德"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M5066
+		foreign_minister = apologetic_clerk
+		start_date = 1942.1.1
+	}
+	5068 = {
+		name = "志贺义雄"
+		ideology = leninist
+		loyalty = 0.25
+		picture = M5013
+		foreign_minister = biased_intellectual
+		start_date = 1936.1.1
+	}
+	5069 = {
+		name = "吉野信次"
+		ideology = social_democrat
+		loyalty = 1.00
+		picture = M5069
+		armament_minister = laissez_faires_capitalist
+		start_date = 1937.1.1
+	}
+	5070 = {
+		name = "水谷长三郎"
+		ideology = social_democrat
+		loyalty = 1.00
+		picture = M5070
+		armament_minister = resource_industrialist
+		start_date = 1945.1.1
+	}
+	5071 = {
+		name = "星岛二郎"
+		ideology = social_democrat
+		loyalty = 0.75
+		picture = M5071
+		armament_minister = administrative_genius
+		armament_minister = military_entrepreneur
+		start_date = 1947.1.1
+	}
+	5072 = {
+		name = "小川乡太郎"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M5072
+		armament_minister = resource_industrialist
+		minister_of_intelligence = dismal_enigma
+		start_date = 1936.1.1
+	}
+}

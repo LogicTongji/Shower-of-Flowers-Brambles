@@ -1,0 +1,34 @@
+color = { 231  220  21 }
+graphical_culture = Japanese
+
+default_templates = {
+	binary_infantry = {
+		infantry_brigade
+		infantry_brigade
+	}
+	binary_milita = {
+		militia_brigade
+		militia_brigade
+	}
+}
+
+unit_names = {
+	infantry_brigade = {
+		"第298军" "第299军" 
+	}
+	militia_brigade = {
+		"第298军" "第299军"
+	}
+}
+
+
+ministers = {
+	7000001 = {
+		name = "夏恭"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M5201
+		minister_of_security = silent_lawyer
+		start_date = 1936.1.1
+	}
+}

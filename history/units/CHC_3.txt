@@ -1,0 +1,24 @@
+division = {
+	name = "115师师部"
+	location = 7411
+	regiment = { type = chc_gundam experience = 10 historical_model = 2 }
+	regiment = { type = partisan_bergsjaeger experience = 45 historical_model = 2 }
+}
+division = {
+	name = "115师343旅685团"
+	location = 7411
+	regiment = { type = partisan_bergsjaeger experience = 45 historical_model = 2 }
+	regiment = { type = partisan_bergsjaeger  experience = 45 historical_model = 2 }
+}
+division = {
+	name = "115师343旅686团"
+	location = 7411
+	regiment = { type = partisan_bergsjaeger experience = 45 historical_model = 2 }
+	regiment = { type = partisan_bergsjaeger experience = 45 historical_model = 2 }
+}
+division = {
+	name = "115师343旅补充团"
+	location = 7411
+	regiment = { type = partisan_bergsjaeger experience = 15 historical_model = 1 }
+	regiment = { type = partisan_bergsjaeger experience = 15 historical_model = 1 }
+}

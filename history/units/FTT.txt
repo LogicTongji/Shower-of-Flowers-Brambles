@@ -1,0 +1,10 @@
+air = {
+	name = "中国空军美国志愿大队"
+        leader = 50370
+	base = 9415
+	location = 9415
+        wing = { type = interceptor name = "中国空军美国志愿大队“亚当”中队" historical_model = 3 }
+	wing = { type = interceptor name = "中国空军美国志愿大队“夏娃”中队" historical_model = 3 }
+	wing = { type = interceptor name = "中国空军美国志愿大队“熊猫”中队" historical_model = 3 }
+        wing = { type = interceptor name = "中国空军美国志愿大队“地狱天使”中队" historical_model = 3 }
+}

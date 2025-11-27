@@ -1,0 +1,95 @@
+corps = {
+	name = "第21军"
+	location = 9478
+	regiment = { type = hq_brigade name = "第21军司令部" historical_model = 0 }
+	regiment = { type = infantry_brigade name = "直属旅"  strength = 80 historical_model = 0 }
+	division= {
+		name = "第1师"
+		location = 9478
+		regiment = { type = infantry_brigade name = "第1旅"  strength = 80 historical_model = 0 }
+		regiment = { type = militia_brigade name = "第2旅"  strength = 80 historical_model = 0 }
+	}
+	division= {
+		name = "第2师"
+		location = 9446
+		regiment = { type = infantry_brigade name = "第3旅"  strength = 80 historical_model = 0 }
+		regiment = { type = militia_brigade name = "第4旅"  strength = 80 historical_model = 0 }
+	}
+	division= {
+		name = "第3师"
+		location = 9383
+		regiment = { type = infantry_brigade name = "第5旅"  strength = 80 historical_model = 0 }
+		regiment = { type = militia_brigade name = "第6旅"  strength = 80 historical_model = 0 }
+	}
+	division= {
+		name = "第4师"
+		location = 9478
+		regiment = { type = infantry_brigade name = "第7旅"  strength = 80 historical_model = 0 }
+		regiment = { type = militia_brigade name = "第8旅"  strength = 80 historical_model = 0 }
+	}
+	division= {
+		name = "第150师"
+		location = 9478
+		regiment = { type = infantry_brigade name = "第1旅" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第2旅" historical_model = 0 }
+	}
+	division= {
+		name = "模范师"
+		location = 9478
+		regiment = { type = infantry_brigade name = "第1模范旅" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第2模范旅" historical_model = 0 }
+	}
+	division= {
+		name = "川东边防第1路司令部"
+		location = 9478
+		regiment = { type = militia_brigade  strength = 80 historical_model = 0 }
+		regiment = { type = militia_brigade  strength = 80 historical_model = 0 }
+	}
+	division= {
+		name = "川东边防第2路司令部"
+		location = 7502
+		regiment = { type = militia_brigade  strength = 80 historical_model = 0 }
+		regiment = { type = militia_brigade  strength = 80 historical_model = 0 }
+	}
+	division= {
+		name = "川东边防第3路司令部"
+		location = 7502
+		regiment = { type = militia_brigade  strength = 80 historical_model = 0 }
+		regiment = { type = militia_brigade  strength = 80 historical_model = 0 }
+	}
+	division= {
+		name = "川东边防第4路司令部"
+		location = 7502
+		regiment = { type = militia_brigade  strength = 80 historical_model = 0 }
+		regiment = { type = militia_brigade  strength = 80 historical_model = 0 }
+	}
+	division= {
+		name = "川东第1警备司令部"
+		location = 7502
+		regiment = { type = militia_brigade  strength = 80 historical_model = 0 }
+		regiment = { type = police_brigade strength = 80 historical_model = 0 }
+	}
+	division= {
+		name = "川东第2警备司令部"
+		location = 9478
+		regiment = { type = militia_brigade  strength = 80 historical_model = 0 }
+		regiment = { type = police_brigade strength = 80 historical_model = 0 }
+	}
+	division= {
+		name = "川东第3警备司令部"
+		location = 9478
+		regiment = { type = militia_brigade  strength = 80 historical_model = 0 }
+		regiment = { type = police_brigade strength = 80 historical_model = 0 }
+	}
+	division= {
+		name = "重庆城防警备司令部"
+		location = 9478
+		regiment = { type = garrison_brigade historical_model = 0 }
+		regiment = { type = garrison_brigade historical_model = 0 }
+	}
+	division= {
+		name = "独立支队"
+		location = 9478
+		regiment = { type = militia_brigade name = "独立旅" historical_model = 0 }
+	}
+}

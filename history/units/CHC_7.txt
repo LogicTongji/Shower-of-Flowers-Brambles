@@ -1,0 +1,19 @@
+division = {
+	name = "东进抗日挺进纵队第5支队"
+	location = 5209
+	regiment = { type = partisan_bergsjaeger experience = 20 historical_model = 1 }
+	regiment = { type = partisan_bergsjaeger experience = 20 historical_model = 1 }
+	regiment = { type = partisan_bergsjaeger experience = 20 historical_model = 1 }
+}
+division = {
+	name = "东进抗日挺进纵队第6支队"
+	location = 5242
+	regiment = { type = partisan_bergsjaeger historical_model = 1 }
+	regiment = { type = partisan_bergsjaeger historical_model = 1 }
+}
+division = {
+	name = "东进抗日挺进纵队津浦支队"
+	location = 5242
+	regiment = { type = partisan_bergsjaeger experience = 10 historical_model = 1 }
+	regiment = { type = partisan_bergsjaeger experience = 10 historical_model = 1 }
+}

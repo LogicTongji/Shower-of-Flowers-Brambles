@@ -1,0 +1,63 @@
+theatre = {
+	name = "第十五路军"
+	location = 9143
+	regiment = { type = hq_brigade name = "银川指挥部" historical_model = 0 }
+	corps = {
+		name = "第11军"
+		location = 9143
+		regiment = { type = hq_brigade name = "第11军司令部" historical_model = 0 }
+		division = {
+			name = "第168师"
+			location = 9143
+			regiment = { type = infantry_brigade name = "第1旅" strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第2旅" strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第3旅" strength = 20 historical_model = 0 }
+		}
+		division = {
+			name = "独立第10旅"
+			location = 9143
+			regiment = { type = infantry_brigade strength = 10 historical_model = 0 }
+			regiment = { type = infantry_brigade strength = 10 historical_model = 0 }
+		}
+	}
+	division = {
+		name = "第35师"
+		location = 9143
+		regiment = { type = infantry_brigade name = "第103旅" strength = 20 historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第104旅" strength = 20 historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第105旅" strength = 20 historical_model = 0 }
+		regiment = { type = cavalry_brigade name = "骑兵团" strength = 10 historical_model = 0 }
+	}
+	division = {
+		name = "宁夏民团"
+		location = 9143
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+	}
+	division = {
+		name = "宁夏民团"
+		location = 9143
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+	}
+	division = {
+		name = "宁夏民团"
+		location = 9143
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+	}
+	division = {
+		name = "宁夏民团"
+		location = 9143
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+	}
+}

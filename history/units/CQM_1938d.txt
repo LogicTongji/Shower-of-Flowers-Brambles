@@ -1,0 +1,70 @@
+army = {
+		name = "第八战区长官部"
+		location = 9200
+		regiment = { type = hq_brigade name = "第八战区长官部" historical_model = 1 }	
+		corps = {
+			name = "第83军"
+			location = 9200
+			regiment = { type = hq_brigade name = "第83军指挥部" experience = 60  historical_model = 1 }
+			division= {
+				name = "第38师"
+				location = 9171
+				regiment = { type = militia_brigade experience = 60  historical_model = 1 }
+				regiment = { type = militia_brigade experience = 60  historical_model = 1 }
+			}
+			division= {
+				name = "第180师"
+				location = 9201
+				regiment = { type = militia_brigade experience = 60  historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 60  historical_model = 1 }
+			}
+
+		}
+		corps = {
+                        expeditionary_owner = CHI
+			name = "第80军"
+			location = 7390
+			regiment = { type = hq_brigade name = "第683军指挥部" experience = 60  historical_model = 1 }
+			division= {
+				name = "第80军"
+				location = 7390
+				regiment = { type = militia_brigade experience = 60  historical_model = 1 }
+				regiment = { type = militia_brigade experience = 60  historical_model = 1 }
+			}
+			division= {
+                                name = "第80军"
+				location = 7390
+				regiment = { type = militia_brigade experience = 60  historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 60  historical_model = 1 }
+			}
+
+		}
+		corps = {
+			name = "新编第2军"
+			location = 7404
+			regiment = { type = hq_brigade name = "第68军指挥部" experience = 60  historical_model = 1 }
+			division= {
+                                name = "新编第2军"				
+				location = 7390
+				regiment = { type = militia_brigade experience = 60  historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 60  historical_model = 1 }
+			}          
+			division= {
+				name = "骑兵2军"
+				location = 7404
+				regiment = { type = cavalry_brigade experience = 60  historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 60  historical_model = 1 }
+			}
+			division= {
+				name = "骑兵5军"
+				location = 9200
+				regiment = { type = cavalry_brigade experience = 60  historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 60  historical_model = 1 }
+			}
+			division= {
+				name = "骑兵6军"
+				location = 9200
+				regiment = { type = cavalry_brigade experience = 60  historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 60  historical_model = 1 }			
+			}
+		}

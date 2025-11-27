@@ -1,0 +1,171 @@
+theatre = {
+	name = "中央革命军事委员会"
+	location = 7417
+	leader = 76331
+	regiment = { type = hq_brigade name = "中央革命军事委员会总司令部" experience = 90 historical_model = 1 }
+	regiment = { type = chc_gundam name = "红军大学" experience = 90 historical_model = 1 }	
+	armygroup = { 
+		name = "红军前敌总指挥部"
+		location = 7417
+		leader = 76312
+		regiment = { type = hq_brigade name = "红军前敌总指挥部" experience = 90 historical_model = 1 }	
+		regiment = { type = artillery_brigade name = "总部特务团" experience = 30 historical_model = 1 }	
+		army = {
+			name = "红1方面军"
+			location = 7417
+			leader = 76336
+			regiment = { type = hq_brigade name = "红1方面军指挥部" experience = 90 historical_model = 1 }	
+			corps = {
+				name = "第1军团"
+				location = 7417
+				regiment = { type = hq_brigade name = "第1军团指挥部" experience = 90 historical_model = 1 }
+				division= {
+					name = "第1师"
+					location = 7417
+					regiment = { type = bergsjaeger_brigade name = "第1师" experience = 80 historical_model = 1 }
+				}
+				division= {
+					name = "第2师"
+					location = 7417
+					regiment = { type = bergsjaeger_brigade name = "第2师" experience = 80 historical_model = 1 }
+				}
+				division= {
+					name = "第4师"
+					location = 7417
+					regiment = { type = bergsjaeger_brigade name = "第4师" experience = 80 historical_model = 1 }
+				}
+			}
+			corps = {
+				name = "第15军团"
+				location = 7417
+				regiment = { type = hq_brigade name = "第15军团指挥部" experience = 60 historical_model = 1 }
+				division= {
+					name = "第73师"
+					location = 7417
+					regiment = { type = bergsjaeger_brigade name = "第73师" experience = 60 historical_model = 1 }
+				}
+				division= {
+					name = "第75师"
+					location = 7417
+					regiment = { type = bergsjaeger_brigade name = "第75师" experience = 60 historical_model = 1 }
+				}
+				division= {
+					name = "第78师"
+					location = 7417
+					regiment = { type = bergsjaeger_brigade name = "第78师" experience = 60 historical_model = 1 }
+				}
+				division= {
+					name = "回民师"
+					location = 7417
+					regiment = { type = infantry_brigade name = "回民师" experience = 30 historical_model = 1 }
+				}
+			}
+			division= {
+				name = "第28军"
+				location = 7417
+				regiment = { type = bergsjaeger_brigade name = "第28军" experience = 70 historical_model = 1 }
+			}
+			division= {
+				name = "第29军"
+				location = 7417
+				regiment = { type = bergsjaeger_brigade name = "第29军" experience = 70 historical_model = 1 }
+			}
+			division= {
+				name = "第30军"
+				location = 7417
+				regiment = { type = bergsjaeger_brigade name = "第30军" experience = 70 historical_model = 1 }
+			}
+			division= {
+				name = "第74师"
+				location = 7417
+				regiment = { type = infantry_brigade name = "第74师" experience = 70 historical_model = 1 }
+			}
+			division= {
+				name = "第81师"
+				location = 7417
+				regiment = { type = infantry_brigade name = "第81师" experience = 70 historical_model = 1 }
+			}
+			division= {
+				name = "陕南抗日联军第1军"
+				location = 7417
+				regiment = { type = infantry_brigade name = "陕南抗日联军第1军" experience = 30 historical_model = 1 }
+			}
+		}
+		army = {
+			name = "红2方面军"
+			regiment = { type = hq_brigade name = "红2方面军指挥部" experience = 60 historical_model = 1 }	
+			location = 7410
+			corps = {
+				name = "第2军团"
+				location = 7410
+				regiment = { type = hq_brigade name = "第2军团指挥部" experience = 60 historical_model = 1 }
+				division= {
+					name = "第4师"
+					location = 7410
+					regiment = { type = infantry_brigade name = "第四师" experience = 50 historical_model = 1 }
+				}
+				division= {
+					name = "第6师"
+					location = 7410
+					regiment = { type = infantry_brigade name = "第6师" experience = 50 historical_model = 1 }
+				}
+			}
+			division= {
+				name = "第6军团"
+				location = 7410
+				regiment = { type = chc_gundam name = "第49团" experience = 50 historical_model = 1 }
+				regiment = { type = infantry_brigade name = "第51、52、53团" experience = 50 historical_model = 1 }
+			}
+			division= {
+				name = "第32军"
+				location = 7410
+				regiment = { type = infantry_brigade name = "第32军" experience = 60 historical_model = 1 }
+			}
+		}
+		army = {
+			name = "红4方面军"
+			regiment = { type = hq_brigade name = "红4方面军指挥部" experience = 60 historical_model = 1 }	
+			location = 5335
+			corps = {
+				name = "第4军"
+				location = 5335
+				regiment = { type = hq_brigade name = "第4军指挥部" experience = 60 historical_model = 1 }
+				division= {
+					name = "第10师"
+					location = 5335
+					regiment = { type = infantry_brigade name = "第10师" experience = 60 historical_model = 1 }
+				}
+				division= {
+					name = "第11师"
+					location = 5335
+					regiment = { type = infantry_brigade name = "第11师" experience = 60 historical_model = 1 }
+				}
+				division= {
+					name = "第12师"
+					location = 5335
+					regiment = { type = infantry_brigade name = "第12师" experience = 60 historical_model = 1 }
+				}
+				division= {
+					name = "独立师"
+					location = 5335
+					regiment = { type = infantry_brigade name = "独立师" experience = 60 historical_model = 1 }
+				}
+			}
+			corps = {
+				name = "第31军"
+				location = 5335
+				regiment = { type = hq_brigade name = "第31军指挥部" experience = 60 historical_model = 1 }
+				division= {
+					name = "第91师"
+					location = 5335
+					regiment = { type = infantry_brigade name = "第91师" experience = 60 historical_model = 1 }
+				}
+				division= {
+					name = "第93师"
+					location = 5335
+					regiment = { type = infantry_brigade name = "第93师" experience = 60 historical_model = 1 }
+				}
+			}
+		}
+	}
+}

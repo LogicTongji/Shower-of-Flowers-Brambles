@@ -1,0 +1,516 @@
+theatre = {
+	name = "第九战区"
+	location = 7520
+	regiment = { type = hq_brigade name = "第九战区长官部" historical_model = 1 }
+	regiment = { type = cavalry_brigade name = "第九战区长官部守备" strength = 20 historical_model = 1 }
+	regiment = { type = artillery_brigade name = "直属炮兵团" experience = 30 historical_model = 1 }
+	armygroup = {
+		name = "第一兵团"
+		location = 7520
+		regiment = { type = hq_brigade name = "第一兵团长官部" historical_model = 0 }
+		regiment = { type = cavalry_brigade name = "长官部守备" strength = 20 historical_model = 1 }
+      corps = {
+			name = "国民革命军第74军"
+			location = 7520
+			regiment = { type = hq_brigade name = "第74军长官部" experience = 25 historical_model = 0 }
+				regiment = { type = artillery_brigade name = "炮兵团" experience = 25 historical_model = 2 }
+				regiment = { type = engineer_brigade name = "工兵营" experience = 25 historical_model = 1 }	
+			division = {
+				name = "国民革命军第51师"
+				location = 7520
+				regiment = { type = infantry_brigade name = "第151旅" experience = 25 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "第153旅" experience = 25 historical_model = 2 }
+			}
+			division = {
+				name = "国民革命军第58师"
+				location = 7520
+				regiment = { type = infantry_brigade name = "第172旅" experience = 25 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "第174旅" experience = 25 historical_model = 2 }
+		       }
+		            }
+		         corps = {
+			name = "国民革命军第29军"
+			location = 7520
+			regiment = { type = hq_brigade name = "第29军长官部" experience = 15 historical_model = 0 }
+			division = {
+				name = "国民革命军第40师"
+				location = 7520
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+			}
+			division = {
+				name = "国民革命军第79师"
+				location = 7520
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+               } 
+                    }                      
+	       army = {
+		name = "国民革命军第9集团军"
+		location = 7520
+		regiment = { type = hq_brigade name = "第9集团军长官部" experience = 25 historical_model = 0 }
+	            corps = {
+			name = "国民革命军第4军"
+			location = 7520
+			regiment = { type = hq_brigade name = "第4军长官部" experience = 25 historical_model = 0 }
+				regiment = { type = artillery_brigade name = "炮兵团" experience = 25 historical_model = 2 }
+			division = {
+				name = "国民革命军第59师"
+				location = 7520
+				regiment = { type = infantry_brigade experience = 25 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 25 historical_model = 1 }
+			}
+			division = {
+				name = "国民革命军第90师"
+				location = 7520
+				regiment = { type = infantry_brigade experience = 25 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 25 historical_model = 1 }
+		       }
+		            }
+		         corps = {
+			name = "国民革命军第8军"
+			location = 7520
+			regiment = { type = hq_brigade name = "第8军长官部" experience = 15 historical_model = 0 }
+			division = {
+				name = "国民革命军第3师"
+				location = 7520
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+			}
+			division = {
+				name = "国民革命军第15师"
+				location = 7520
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+                       }
+                }
+                    corps = {
+			name = "国民革命军第66军"
+			location = 7520
+			regiment = { type = hq_brigade name = "第66军长官部" experience = 15 historical_model = 0 }
+			division = {
+				name = "国民革命军第159师"
+				location = 7520
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+			}
+			division = {
+				name = "国民革命军第160师"
+				location = 7520
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+				}
+				}
+				}
+	     army = {
+		name = "国民革命军第20集团军"
+		location = 7523
+		regiment = { type = hq_brigade name = "第20集团军长官部" experience = 25 historical_model = 0 }
+	            corps = {
+			name = "国民革命军第32军"
+			location = 7523
+			regiment = { type = hq_brigade name = "第32军长官部" experience = 30 historical_model = 0 }
+			division = {
+				name = "国民革命军第139师"
+				location = 7523
+				regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 30 historical_model = 2 }
+			}
+			division = {
+				name = "国民革命军第141师"
+				location = 7523
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 30 historical_model = 2 }
+		       }
+		  division = {
+				name = "国民革命军第142师"
+				location = 7523
+				regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 30 historical_model = 2 }
+		       }
+		            }
+		         corps = {
+			name = "国民革命军第18军"
+			location = 7523
+			regiment = { type = hq_brigade name = "第18军长官部" experience = 25 historical_model = 0 }
+				regiment = { type = artillery_brigade name = "炮兵团" experience = 25 historical_model = 2 }
+				regiment = { type = engineer_brigade name = "工兵营" experience = 25 historical_model = 1 }	
+			division = {
+				name = "国民革命军第11师"
+				location = 7523
+				regiment = { type = infantry_brigade name = "第31旅" experience = 25 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "第33旅" experience = 25 historical_model = 2 }
+			}
+			division = {
+				name = "国民革命军第60师"
+				location = 7523
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+			}
+			division = {
+				name = "国民革命军第67师"
+				location = 7523
+				regiment = { type = infantry_brigade name = "第199旅" experience = 25 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "第201旅" experience = 25 historical_model = 2 }
+                       }
+                }  
+           }             
+                 army = {
+			name = "国民革命军第29军团"
+			location = 7493
+			regiment = { type = hq_brigade name = "第29军团长官部" historical_model = 0 }
+	         corps = {
+			name = "国民革命军第64军"
+			location = 7493
+			regiment = { type = hq_brigade name = "第64军长官部" experience = 30 historical_model = 0 }
+			division = {
+				name = "国民革命军第155师"
+				location = 7493
+				regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+			}
+			division = {
+				name = "国民革命军第187师"
+				location = 7493
+				regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 30 historical_model = 1 }		
+					}
+			division = {
+				name = "预备第9师"
+				location = 7493
+				regiment = { type = militia_brigade experience = 20 historical_model = 0 }
+				regiment = { type = militia_brigade experience = 20 historical_model = 0 }			
+                           }	                  
+                   }
+		    corps = {
+			name = "国民革命军第70军"
+			location = 7493
+			regiment = { type = hq_brigade name = "第70军长官部" experience = 30 historical_model = 0 }
+			division = {
+				name = "国民革命军第19师"
+				location = 7493
+				regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+			}
+			division = {
+				name = "国民革命军第91师"
+				location = 7493
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }		
+						}
+			division = {
+				name = "国民革命军第128师"
+				location = 7493
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }		
+					}
+			division = {
+				name = "预备第6师"
+				location = 7493
+				regiment = { type = militia_brigade experience = 20 historical_model = 0 }
+				regiment = { type = militia_brigade experience = 20 historical_model = 0 }		
+					               }
+                } 
+                }              
+                 army = {
+			name = "国民革命军第37军团"
+			location = 7493
+			regiment = { type = hq_brigade name = "第37军团长官部" historical_model = 0 }
+			regiment = { type = cavalry_brigade name = "长官部守备" strength = 20 historical_model = 1 }
+	         corps = {
+			name = "国民革命军第25军"
+			location = 7493
+			regiment = { type = hq_brigade name = "第25军长官部" experience = 30 historical_model = 0 }
+			division = {
+				name = "国民革命军第52师"
+				location = 7493
+				regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+			}
+			division = {
+				name = "国民革命军第190师"
+				location = 7493
+				regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 30 historical_model = 1 }		
+	                                     }
+                              }
+                    }
+           }
+        armygroup = {
+		name = "第二兵团"
+		location = 7508
+		regiment = { type = hq_brigade name = "第二兵团长官部" historical_model = 0 }
+		regiment = { type = artillery_brigade name = "直属炮兵团" experience = 30 historical_model = 1 }
+     army = {
+		name = "国民革命军第3集团军"
+		location = 7508
+		regiment = { type = hq_brigade name = "第3集团军长官部" experience = 15 historical_model = 0 }
+	            corps = {
+			name = "国民革命军第12军"
+			location = 7508
+			regiment = { type = hq_brigade name = "第12军长官部" experience = 30 historical_model = 0 }
+			division = {
+				name = "国民革命军第20师"
+				location = 7508
+				regiment = { type = infantry_brigade experience = 25 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 25 historical_model = 1 }
+			}
+			division = {
+				name = "国民革命军第22师"
+				location = 7508
+				regiment = { type = infantry_brigade experience = 25 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 25 historical_model = 1 }
+			}
+			division = {
+				name = "国民革命军第81师"
+				location = 7508
+				regiment = { type = infantry_brigade experience = 25 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 25 historical_model = 1 }
+		       }
+		            }
+		                    }
+		 army = {
+		name = "国民革命军第31集团军"
+		location = 7508
+		regiment = { type = hq_brigade name = "第31集团军长官部" experience = 15 historical_model = 0 }
+	            corps = {
+			name = "国民革命军第13军"
+			location = 7508
+			regiment = { type = hq_brigade name = "第13军长官部" experience = 30 historical_model = 0 }
+			division = {
+				name = "国民革命军第23师"
+				location = 7508
+				regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+			}
+			division = {
+				name = "国民革命军第89师"
+				location = 7508
+				regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+			}
+			division = {
+				name = "新编第35师"
+				location = 7508
+				regiment = { type = militia_brigade experience = 20 historical_model = 0 }
+				regiment = { type = militia_brigade experience = 20 historical_model = 0 }
+				           }
+				}
+				       corps = {
+			name = "国民革命军第98军"
+			location = 7508
+			regiment = { type = hq_brigade name = "第98军长官部" experience = 30 historical_model = 0 }
+			division = {
+				name = "国民革命军第152师"
+				location = 7508
+				regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+			}
+			division = {
+				name = "国民革命军第193师"
+				location = 7508
+				regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+			}
+			division = {
+				name = "国民革命军第195师"
+				location = 7508
+				regiment = { type = infantry_brigade experience = 20 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 20 historical_model = 1 }
+                              }
+                      }
+              }
+                   army = {
+		name = "国民革命军第32集团军"
+		location = 7508
+		regiment = { type = hq_brigade name = "第32集团军长官部" experience = 20 historical_model = 0 }
+	            corps = {
+			name = "国民革命军第72军"
+			location = 7508
+			regiment = { type = hq_brigade name = "第72军长官部" experience = 20 historical_model = 0 }
+			division = {
+				name = "新编第13师"
+				location = 7508
+				regiment = { type = militia_brigade experience = 10 historical_model = 1 }
+				regiment = { type = militia_brigade experience = 10 historical_model = 1 }
+			}
+			division = {
+				name = "新编第14师"
+				location = 7508
+				regiment = { type = militia_brigade experience = 10 historical_model = 1 }
+				regiment = { type = militia_brigade experience = 10 historical_model = 1 }
+				           }
+				}
+				       corps = {
+			name = "国民革命军第78军"
+			location = 7508
+			regiment = { type = hq_brigade name = "第78军长官部" experience = 20 historical_model = 0 }
+			division = {
+				name = "新编第15师"
+				location = 7508
+				regiment = { type = militia_brigade experience = 10 historical_model = 1 }
+				regiment = { type = militia_brigade experience = 10 historical_model = 1 }
+			}
+			division = {
+				name = "新编第16师"
+				location = 7508
+				regiment = { type = militia_brigade experience = 10 historical_model = 1 }
+				regiment = { type = militia_brigade experience = 10 historical_model = 1 }
+                      }
+              }
+			}                
+		          army = {
+		name = "国民革命军第32军团"
+		location = 7508
+		regiment = { type = hq_brigade name = "第32军团长官部" experience = 15 historical_model = 0 }
+	            corps = {
+			name = "国民革命军第52军"
+			location = 7508
+			regiment = { type = hq_brigade name = "第52军长官部" experience = 15 historical_model = 0 }
+			division = {
+				name = "国民革命军第2师"
+				location = 7508
+				regiment = { type = infantry_brigade experience = 50 historical_model = 2 }
+				regiment = { type = infantry_brigade experience = 50 historical_model = 2 }
+			}
+			division = {
+				name = "国民革命军第25师"
+				location = 7508
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+				                  }
+              }
+			}                  
+		          army = {
+		name = "国民革命军第11军团"
+		location = 7493
+		regiment = { type = hq_brigade name = "第11军团长官部" experience = 20 historical_model = 0 }
+	            corps = {
+			name = "国民革命军第2军"
+			location = 7493
+			regiment = { type = hq_brigade name = "第2军长官部" experience = 20 historical_model = 0 }
+			division = {
+				name = "国民革命军第9师"
+				location = 7493
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+			}
+			division = {
+				name = "国民革命军第57师"
+				location = 7493
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+				                  }
+              }
+			}                  
+		          army = {
+		name = "国民革命军第26军团"
+		location = 7493
+		regiment = { type = hq_brigade name = "第26军团长官部" experience = 20 historical_model = 0 }
+	            corps = {
+			name = "国民革命军第53军"
+			location = 7493
+			regiment = { type = hq_brigade name = "第53军长官部" experience = 20 historical_model = 0 }
+			division = {
+				name = "国民革命军第130师"
+				location = 7493
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+			}
+			division = {
+				name = "国民革命军第116师"
+				location = 7493
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+				                  }
+              }
+			}                  
+		          army = {
+		name = "武汉守备区"
+		location = 7508
+		regiment = { type = hq_brigade name = "武汉卫戍司令部" experience = 20 historical_model = 0 }
+	            corps = {
+			name = "国民革命军第94军"
+			location = 7508
+			regiment = { type = hq_brigade name = "第94军长官部" experience = 20 historical_model = 0 }
+			division = {
+				name = "国民革命军第55师"
+				location = 7508
+				regiment = { type = garrison_brigade experience = 15 historical_model = 1 }
+				regiment = { type = garrison_brigade experience = 15 historical_model = 1 }
+			}
+			division = {
+				name = "国民革命军第185师"
+				location = 7508
+				regiment = { type = garrison_brigade experience = 15 historical_model = 1 }
+				regiment = { type = garrison_brigade experience = 15 historical_model = 1 }
+				                  }
+              }
+			}                  
+		          army = {
+		name = "江南指挥部"
+		location = 7523
+		regiment = { type = hq_brigade name = "江南指挥部" experience = 20 historical_model = 0 }
+	            corps = {
+			name = "国民革命军第75军"
+			location = 7523
+			regiment = { type = hq_brigade name = "第75军长官部" experience = 20 historical_model = 0 }
+			division = {
+				name = "国民革命军第6师"
+				location = 7523
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+			}
+			division = {
+				name = "国民革命军第13师"
+				location = 7523
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+					                  }
+              }
+			}                  
+		          army = {
+		name = "江北指挥部"
+		location = 7493
+		regiment = { type = hq_brigade name = "江北指挥部" experience = 20 historical_model = 0 }
+		         corps = {
+			name = "国民革命军第16军"
+			location = 7493
+			regiment = { type = hq_brigade name = "第16军长官部" experience = 20 historical_model = 0 }
+			}
+			   }
+	            corps = {
+			name = "国民革命军第6军"
+			location = 7493
+			regiment = { type = hq_brigade name = "第6军长官部" experience = 20 historical_model = 0 }
+			division = {
+				name = "国民革命军第93师"
+				location = 7493
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+					                  }
+              }                 
+		          army = {
+		name = "田南要塞指挥部"
+		location = 7508
+		regiment = { type = hq_brigade name = "田南要塞指挥部" experience = 20 historical_model = 0 }		 
+	            corps = {
+			name = "国民革命军第54军"
+			location = 7508
+			regiment = { type = hq_brigade name = "第54军长官部" experience = 20 historical_model = 0 }
+			division = {
+				name = "国民革命军第14师"
+				location = 7508
+				regiment = { type = garrison_brigade experience = 15 historical_model = 1 }
+				regiment = { type = garrison_brigade experience = 15 historical_model = 1 }
+			}
+			division = {
+				name = "国民革命军第18师"
+				location = 7508
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 1 }
+			}
+		}
+	}
+}
+			

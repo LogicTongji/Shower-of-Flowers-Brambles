@@ -1,0 +1,40 @@
+#北非集团
+		army = {
+			name = "北非装甲集团军"
+			location = 5533
+			leader = 230 # Rommel
+			regiment = { type = hq_brigade name = "北非装甲集团军指挥部" historical_model = 0 }
+			division= {
+				name = "第90轻装甲师"
+				location = 5510
+				leader = 972 # S黰merman
+				regiment = { type = motorized_brigade experience = 70 name = "第155步兵团" historical_model = 1 }
+				regiment = { type = motorized_brigade experience = 70 name = "第361步兵团" historical_model = 1 }
+				regiment = { type = artillery_brigade experience = 70 name = "炮兵团" historical_model = 4 }
+				regiment = { type = anti_air_brigade experience = 70 historical_model = 4 }
+			}
+			corps = {
+				name = "德意志北非军团"
+				location = 5533
+				leader = 43 # Cr黽ell
+				regiment = { type = hq_brigade name = "德意志北非军团指挥部" historical_model = 0 }		
+				division= {
+					name = "国防军第15装甲师"
+					location = 5533
+					leader = 347 # von Vaerst
+					regiment = { type = armor_brigade experience = 70 name = "第8装甲团" historical_model = 3 }
+					regiment = { type = motorized_brigade experience = 70 name = "第115步枪团" historical_model = 2 }
+					regiment = { type = artillery_brigade experience = 70 name = "炮兵团" historical_model = 4 }
+					regiment = { type = anti_air_brigade experience = 70 historical_model = 4 }
+				}
+				division= {
+					name = "国防军第21装甲师"
+					location = 5533
+					leader = 37 # B鰐tcher
+					regiment = { type = armor_brigade experience = 70 name = "第5装甲团" historical_model = 3 }
+					regiment = { type = motorized_brigade experience = 70 name = "第104步枪团" historical_model = 2 }
+					regiment = { type = artillery_brigade experience = 70 name = "第155炮兵团" historical_model = 4 }
+					regiment = { type = anti_air_brigade experience = 70 historical_model = 4 }
+				}
+			}
+		}

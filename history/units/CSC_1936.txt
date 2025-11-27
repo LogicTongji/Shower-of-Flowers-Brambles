@@ -1,0 +1,208 @@
+CXK = { military_access = yes }
+theatre = {
+	name = "川康绥靖公署"
+	location = 9415
+	regiment = { type = hq_brigade name = "川康绥靖公署" historical_model = 0 }
+	corps = {
+		name = "第20军"
+		location = 9415
+		regiment = { type = hq_brigade name = "第20军司令部" historical_model = 0 }
+		division= {
+			name = "第133师"
+			location = 9415
+			regiment = { type = infantry_brigade name = "第1旅" strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第2旅" strength = 20 historical_model = 0 }
+		}
+		division= {
+			name = "第134师"
+			location = 9415
+			regiment = { type = militia_brigade name = "第1旅" strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade name = "第2旅" strength = 20 historical_model = 0 }
+		}
+		division= {
+			name = "第135师"
+			location = 9415
+			regiment = { type = militia_brigade name = "第1旅" strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade name = "第2旅" strength = 20 historical_model = 0 }
+		}
+	army = {
+		name = "第七路军"
+		location = 9415
+		regiment = { type = hq_brigade name = "第七路军司令部" historical_model = 0 }
+		corps = {
+			name = "第21军"
+			location = 9415
+			regiment = { type = hq_brigade name = "第21军司令部" historical_model = 0 }
+			division= {
+				name = "第145师"
+				location = 9415
+				regiment = { type = infantry_brigade name = "第1旅" strength = 20 historical_model = 0 }
+				regiment = { type = infantry_brigade name = "第2旅" strength = 20 historical_model = 0 }
+				regiment = { type = infantry_brigade name = "第3旅" strength = 20 historical_model = 0 }
+			}
+			division= {
+				name = "第146师"
+				location = 9415
+				regiment = { type = infantry_brigade name = "第1旅" strength = 20 historical_model = 0 }
+				regiment = { type = infantry_brigade name = "第2旅" strength = 20 historical_model = 0 }
+				regiment = { type = infantry_brigade name = "第3旅" strength = 20 historical_model = 0 }
+			}
+			division= {
+				name = "第162师"
+				location = 9415
+				regiment = { type = militia_brigade name = "第1旅" strength = 20 historical_model = 0 }
+				regiment = { type = militia_brigade name = "第2旅" strength = 20 historical_model = 0 }
+			}
+		}
+		corps = {
+			name = "第23军"
+			location = 9415
+			regiment = { type = hq_brigade name = "第23军司令部" historical_model = 0 }
+			division= {
+				name = "第147师"
+				location = 9415
+				regiment = { type = infantry_brigade name = "第1旅" strength = 20 historical_model = 0 }
+				regiment = { type = infantry_brigade name = "第2旅" strength = 20 historical_model = 0 }
+				regiment = { type = infantry_brigade name = "第3旅" strength = 20 historical_model = 0 }
+			}
+			division= {
+				name = "第148师"
+				location = 5113
+				regiment = { type = infantry_brigade name = "第1旅" historical_model = 0 }
+				regiment = { type = infantry_brigade name = "第2旅" historical_model = 0 }
+			}
+		}
+		corps = {
+			name = "第44军"
+			location = 9415
+			regiment = { type = hq_brigade name = "第44军司令部" historical_model = 0 }
+			division= {
+				name = "第149师"
+				location = 9415
+				regiment = { type = infantry_brigade name = "第1旅" strength = 20 historical_model = 0 }
+				regiment = { type = infantry_brigade name = "第2旅" strength = 20 historical_model = 0 }
+				regiment = { type = infantry_brigade name = "第3旅" strength = 20 historical_model = 0 }
+			}
+			division= {
+				name = "第150师"
+				location = 9478
+				regiment = { type = infantry_brigade name = "第1旅" strength = 20 historical_model = 0 }
+				regiment = { type = infantry_brigade name = "第2旅" strength = 20 historical_model = 0 }
+				regiment = { type = infantry_brigade name = "第3旅" strength = 20 historical_model = 0 }
+			}
+			division= {
+				name = "第163师"
+				location = 9445
+				regiment = { type = infantry_brigade name = "第1旅" strength = 20 historical_model = 0 }
+				regiment = { type = infantry_brigade name = "第2旅" strength = 20 historical_model = 0 }
+			}
+		}
+	}
+	army = {
+		name = "第十四路军"
+		location = 9478
+		regiment = { type = hq_brigade name = "第十四路军司令部" historical_model = 0 }
+		corps = {
+			name = "第45军"
+			location = 9381
+			regiment = { type = hq_brigade name = "第45军司令部" historical_model = 0 }
+			division= {
+				name = "第125师"
+				location = 9381
+				regiment = { type = militia_brigade name = "第1旅" historical_model = 0 }
+				regiment = { type = militia_brigade name = "第2旅" strength = 20 historical_model = 0 }
+			}
+			division= {
+				name = "第126师"
+				location = 9381
+				regiment = { type = militia_brigade name = "第1旅" historical_model = 0 }
+				regiment = { type = militia_brigade name = "第2旅" strength = 20 historical_model = 0 }
+			}
+			division= {
+				name = "第127师"
+				location = 9381
+				regiment = { type = militia_brigade name = "第1旅" strength = 20 historical_model = 0 }
+				regiment = { type = militia_brigade name = "第2旅" strength = 20 historical_model = 0 }
+			}
+			division= {
+				name = "第128师"
+				location = 9381
+				regiment = { type = militia_brigade name = "第1旅" strength = 20 historical_model = 0 }
+				regiment = { type = militia_brigade name = "第2旅" strength = 20 historical_model = 0 }
+			}
+		}
+		division= {
+			name = "第104师"
+			location = 9501
+			regiment = { type = infantry_brigade name = "第1旅" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第2旅" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第3旅" historical_model = 0 }
+		}
+		division= {
+			name = "第131师"
+			location = 9415
+			regiment = { type = militia_brigade name = "第1旅" strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade name = "第2旅" strength = 20 historical_model = 0 }
+		}
+	}
+	corps = {
+		name = "第41军"
+		location = 9351
+		regiment = { type = hq_brigade name = "第41军司令部" historical_model = 0 }
+		division= {
+			name = "第122师"
+			location = 9351
+			regiment = { type = infantry_brigade name = "第1旅" strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第2旅" strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第3旅" strength = 20 historical_model = 0 }
+		}
+		division= {
+			name = "第123师"
+			location = 9351
+			regiment = { type = infantry_brigade name = "第4旅" strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第5旅" strength = 20 historical_model = 0 }
+		}
+		division= {
+			name = "第124师"
+			location = 9351
+			regiment = { type = infantry_brigade name = "第6旅" strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第7旅" strength = 20 historical_model = 0 }
+		}
+	}
+	division= {
+		name = "第144师"
+		location = 9477
+		regiment = { type = militia_brigade name = "第1旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "第2旅" strength = 20 historical_model = 0 }
+		regiment = { type = militia_brigade name = "第3旅" strength = 20 historical_model = 0 }
+	}
+	division= {
+		name = "第161师"
+		location = 9478
+		regiment = { type = militia_brigade name = "第1旅" strength = 20 historical_model = 0 }
+		regiment = { type = militia_brigade name = "第2旅" strength = 20 historical_model = 0 }
+		regiment = { type = militia_brigade name = "第3旅" strength = 20 historical_model = 0 }
+		regiment = { type = militia_brigade name = "第4旅" strength = 20 historical_model = 0 }
+	}
+	division= {
+		name = "第164师"
+		location = 9445
+		regiment = { type = militia_brigade name = "第1旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "第2旅" historical_model = 0 }
+	}
+	division= {
+		name = "四川警备"
+		location = 9445
+		regiment = { type = militia_brigade name = "独立第11旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "独立第12旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "独立第13旅" historical_model = 0 }
+	}
+	division= {
+		name = "四川警备"
+		location = 9444
+		regiment = { type = militia_brigade name = "独立第14旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "独立第15旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "独立第16旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "独立第17旅" historical_model = 0 }
+	}
+}

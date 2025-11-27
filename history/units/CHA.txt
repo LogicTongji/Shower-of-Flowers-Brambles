@@ -1,0 +1,151 @@
+#察哈尔抗日民主同盟军作战序列
+theatre = {
+	name = "察哈尔抗日民众同盟军"
+	location = 4978
+	regiment = { type = hq_brigade name = "同盟军总部" historical_model = 0 }
+	corps = {
+		name = "抗日同盟军第1军"
+		location = 4885
+		regiment = { type = hq_brigade name = "抗日同盟军第1军司令部" historical_model = 0 }
+		division= {
+			name = "抗日同盟军第1师"
+			location = 4885
+			regiment = { type = militia_brigade strength = 20 experience = 20 historical_model = 0 }
+			regiment = { type = militia_brigade strength = 20 experience = 20 historical_model = 0 }
+			
+		}
+		division= {
+			name = "抗日同盟军第2师"
+			location = 7313
+			regiment = { type = militia_brigade strength = 20 experience = 20 historical_model = 0 }
+			regiment = { type = militia_brigade strength = 20 experience = 20 historical_model = 0 }
+	
+		}
+		division= {
+			name = "抗日同盟军第24师"
+			location = 7313
+			regiment = { type = militia_brigade experience = 20 historical_model = 0 }
+			regiment = { type = militia_brigade strength = 20 experience = 20 historical_model = 0 }
+		}
+		division= {
+			name = "抗日同盟军第25师"
+			location = 4885
+			regiment = { type = infantry_brigade name = "抗日同盟军第1旅" experience = 20 historical_model = 0 }
+			regiment = { type = militia_brigade name = "抗日同盟军第2旅" strength = 20 experience = 20 historical_model = 0 }
+		}
+                                division= {
+			name = "独立抗日同盟军第1旅"
+			location = 7326
+			regiment = { type = militia_brigade name = "抗日同盟军第1旅" experience = 20 historical_model = 0 }
+		}
+	}
+                corps = {
+		name = "抗日同盟军第2军"
+		location = 4681
+		regiment = { type = hq_brigade name = "抗日同盟军第2军司令部" historical_model = 0 }
+		division= {
+			name = "抗日同盟军第4师"
+			location = 4681
+			regiment = { type = militia_brigade strength = 20 experience = 20 historical_model = 0 }
+			regiment = { type = militia_brigade strength = 20 experience = 20 historical_model = 0 }
+			
+		}
+		division= {
+			name = "抗日同盟军第5师"
+			location = 7233
+			regiment = { type = militia_brigade strength = 20 experience = 20 historical_model = 0 }
+			regiment = { type = militia_brigade strength = 20 experience = 20 historical_model = 0 }
+	
+		}
+		division= {
+			name = "抗日同盟军第6师"
+			location = 4682
+			regiment = { type = militia_brigade experience = 20 historical_model = 0 }
+			regiment = { type = militia_brigade strength = 20 experience = 20 historical_model = 0 }
+		}
+		division= {
+			name = "骑兵抗日同盟军第3师"
+			location = 7208
+			regiment = { type = cavalry_brigade experience = 20 historical_model = 0 }
+		}
+	}
+                corps = {
+		name = "抗日同盟军第5军"
+		location = 7159
+		regiment = { type = hq_brigade name = "抗日同盟军第5军司令部" historical_model = 0 }
+		division= {
+			name = "抗日同盟军第16师"
+			location = 7159
+			regiment = { type = infantry_brigade strength = 20 experience = 20 historical_model = 0 }
+			regiment = { type = militia_brigade strength = 20 experience = 20 historical_model = 0 }
+			
+		}
+		division= {
+			name = "抗日同盟军第18师"
+			location = 7159
+			regiment = { type = militia_brigade strength = 20 experience = 20 historical_model = 0 }
+			regiment = { type = militia_brigade strength = 20 experience = 20 historical_model = 0 }
+	
+		}
+	}
+                corps = {
+		name = "抗日同盟军第18军"
+		location = 7296
+		regiment = { type = hq_brigade name = "抗日同盟军第18军司令部" historical_model = 0 }
+		division= {
+			name = "抗日同盟军第13师"
+			location = 7296
+			regiment = { type = infantry_brigade strength = 20 experience = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade strength = 20 experience = 20 historical_model = 0 }
+			
+		}
+		division= {
+			name = "抗日同盟军第32师"
+			location = 7233
+			regiment = { type = infantry_brigade strength = 20 experience = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade strength = 20 experience = 20 historical_model = 0 }
+	
+		}
+		division= {
+			name = "抗日同盟军第33师"
+			location = 7233
+			regiment = { type = infantry_brigade experience = 20 historical_model = 0 }
+			regiment = { type = militia_brigade strength = 20 experience = 20 historical_model = 0 }
+		}
+		division= {
+			name = "抗日同盟军第34师"
+			location = 4682
+			regiment = { type = militia_brigade experience = 20 historical_model = 0 }
+			regiment = { type = militia_brigade name strength = 20 experience = 20 historical_model = 0 }
+		}
+                                division= {
+			name = "游击师"
+			location = 4978
+			regiment = { type = militia_brigade experience = 20 historical_model = 0 }
+		}
+		division= {
+			name = "骑兵抗日同盟军第4师"
+			location = 4978
+			regiment = { type = cavalry_brigade experience = 20 historical_model = 0 }
+		}
+	}
+                division= {
+		name = "抗日同盟军第5路军"
+		location = 4978
+		regiment = { type = cavalry_brigade name = "骑兵11师" experience = 20 historical_model = 0 }
+		regiment = { type = cavalry_brigade name = "骑兵12师" experience = 20 historical_model = 0 }
+                                regiment = { type = cavalry_brigade name = "骑兵1、21旅" experience = 20 historical_model = 0 }
+	}
+	division= {
+		name = "抗日同盟军第6路军"
+		location = 4978
+		regiment = { type = militia_brigade name = "抗日同盟军第1挺进军" experience = 20 historical_model = 0 }
+		regiment = { type = militia_brigade name = "抗日同盟军第2挺进军" experience = 20 historical_model = 0 }
+	}
+	division= {
+		name = "蒙古军"
+		location = 4978
+		regiment = { type = militia_brigade name = "抗日同盟军第1、2军" experience = 20 historical_model = 0 }
+		regiment = { type = militia_brigade name = "自卫军" experience = 20 historical_model = 0 }
+	}
+}

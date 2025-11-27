@@ -1,0 +1,69 @@
+
+                 army = {
+		name = "豫鄂皖游击区"
+    expeditionary_owner = CGX
+		location = 5448
+		regiment = { type = hq_brigade name = "豫鄂皖游击区长官部" historical_model = 1 }                            
+	    corps = {
+			name = "第48军"
+			location = 5448
+       expeditionary_owner = CGX
+			regiment = { type = hq_brigade name = "第48军司令部" historical_model = 0 }
+			division = {
+				name = "第173师"
+				location = 5448
+         expeditionary_owner = CGX
+				regiment = { type = militia_brigade name = "第510旅" experience = 15 historical_model = 1 }
+				regiment = { type = infantry_brigade name = "第517旅" experience = 15 historical_model = 1 }
+			                }
+			 division = {
+				name = "第174师"
+				location = 5468
+        expeditionary_owner = CGX
+				regiment = { type = infantry_brigade name = "第528旅" experience = 15 historical_model = 1 }
+				regiment = { type = infantry_brigade name = "第528旅" experience = 15 historical_model = 1 }			
+		                                }
+		                division = {
+			               name = "第176师"
+			               location = 5468
+                      expeditionary_owner = CGX
+			               regiment = { type = militia_brigade name = "第1050团" experience = 15 historical_model = 1 }
+			               regiment = { type = militia_brigade name = "第1051团" experience = 15 historical_model = 1 }
+			               regiment = { type = infantry_brigade name = "第1052团" experience = 15 historical_model = 1 }			               
+                                                              }
+                         division = {
+		                              name = "皖西地方武装"
+		                              location = 5469
+		                              regiment = { type = militia_brigade historical_model = 0 }
+		                              regiment = { type = militia_brigade historical_model = 0 }
+	                                             }
+	                              division = {
+		                             name = "皖西地方武装"
+		                             location = 5514
+		                             regiment = { type = militia_brigade historical_model = 0 }
+		                             regiment = { type = militia_brigade historical_model = 0 }
+	                                            }
+	                             division = {
+		                            name = "豫东地方武装"
+		                            location = 5537
+		                            regiment = { type = militia_brigade historical_model = 0 }
+		                            regiment = { type = militia_brigade historical_model = 0 }
+	                                          }      
+                                           division = {
+		                          name = "豫东地方武装"
+		                          location = 5568
+		                          regiment = { type = militia_brigade historical_model = 0 }
+		                          regiment = { type = militia_brigade historical_model = 0 }
+	                                          }
+	                           division = {
+	                              	          name = "鄂北地方武装"
+		                          location = 5594
+		                          regiment = { type = militia_brigade historical_model = 0 }
+		                          regiment = { type = militia_brigade historical_model = 0 }
+                                                          }
+                                           division = {
+		                          name = "鄂北地方武装"
+		                          location = 5594
+		                          regiment = { type = militia_brigade historical_model = 0 }
+		                          regiment = { type = militia_brigade historical_model = 0 }
+                                                        }		            		

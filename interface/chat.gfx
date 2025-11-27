@@ -1,0 +1,51 @@
+spriteTypes = {
+	spriteType = {
+		norefcount = yes
+		name = "GFX_button_close_chat"
+		texturefile = "gfx\\interface\\button_close_chat.dds"
+		clicksound = click
+	}
+
+	spriteType = {
+		norefcount = yes
+		name = "GFX_chatback"
+		texturefile = "gfx\\interface\\chatback.dds"
+	}
+
+	spriteType = {
+		norefcount = yes
+		name = "GFX_channelback"
+		texturefile = "gfx\\interface\\channelback.dds"
+		noOfFrames = 3
+		clicksound = click
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_chat_message_alert"
+		texturefile = "gfx\\interface\\chat_message_alert.dds"
+		noOfFrames = 2
+		clicksound = click
+	}
+	spriteType = {
+		norefcount = yes
+		name = "GFX_chat_kick"
+		texturefile = "gfx\\interface\\chat_kick.dds"
+	}
+	spriteType = {
+		norefcount = yes
+		name = "GFX_chat_whisper"
+		texturefile = "gfx\\interface\\chat_whisper.dds"
+	}
+	spriteType = {
+		norefcount = yes
+		name = "GFX_chat_player_entry"
+		texturefile = "gfx\\interface\\chat_player_entry.dds"
+	}
+	spriteType = {
+		norefcount = yes
+		name = "GFX_chat_close_channel"
+		texturefile = "gfx\\interface\\chat_close_channel.dds"
+	}
+	
+}

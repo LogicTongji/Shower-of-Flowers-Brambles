@@ -1,0 +1,4204 @@
+4000467 = {
+	name = "毛泽东"
+	country = PRC
+	type = land
+	skill = 9
+	max_skill = 10
+	loyalty = 1.00
+	picture = L4000467
+	add_trait = mao_army_1
+	add_trait = mao_army_3
+	add_trait = mao_army_4
+	add_trait = mao_army_5
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1930.1.1 = { rank = 4 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000468 = {
+	name = "朱德"
+	country = PRC
+	type = land
+	skill = 7
+	max_skill = 9
+	loyalty = 1.00
+	picture = L4000468
+	add_trait = zhude_thought
+	add_trait = mao_army_6
+	add_trait = mao_army_5
+	add_trait = mao_army_3
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1930.1.1 = { rank = 4 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000469 = {
+	name = "彭德怀"
+	country = PRC
+	type = land
+	skill = 7
+	max_skill = 8
+	loyalty = 1.00
+	picture = L4000469
+	add_trait = mao_army_1
+	add_trait = mao_army_3
+	add_trait = mao_army_4
+	add_trait = mao_army_5
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1930.1.1 = { rank = 4 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000470 = {
+	name = "林彪"
+	country = PRC
+	type = land
+	skill = 6
+	max_skill = 8
+	loyalty = 1.00
+	picture = L4000470
+	add_trait = tactical_genius
+	add_trait = mao_army_1
+	add_trait = mao_army_3
+	add_trait = mao_army_7
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1930.1.1 = { rank = 4 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000471 = {
+	name = "刘伯承"
+	country = PRC
+	type = land
+	skill = 5
+	max_skill = 8
+	loyalty = 1.00
+	picture = L4000471
+	add_trait = tactical_genius
+	add_trait = mao_army_3
+	add_trait = mao_army_4
+	add_trait = mao_army_6
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1930.1.1 = { rank = 4 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000472 = {
+	name = "贺龙"
+	country = PRC
+	type = land
+	skill = 5
+	max_skill = 7
+	loyalty = 1.00
+	picture = L4000472
+	add_trait = logistics_wizard
+	add_trait = zhude_thought
+	add_trait = mao_army_4
+	add_trait = mountaineer
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1930.1.1 = { rank = 4 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000473 = {
+	name = "陈毅"
+	country = PRC
+	type = land
+	skill = 4
+	max_skill = 6
+	loyalty = 1.00
+	picture = L4000473
+	add_trait = logistics_wizard
+	add_trait = mao_army_4
+	add_trait = mao_army_7
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1930.1.1 = { rank = 4 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000474 = {
+	name = "罗荣桓"
+	country = PRC
+	type = land
+	skill = 4
+	max_skill = 6
+	loyalty = 1.00
+	picture = L4000474
+	add_trait = mao_army_3
+	add_trait = mao_army_4
+	add_trait = mao_army_5
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1930.1.1 = { rank = 4 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000475 = {
+	name = "徐向前"
+	country = PRC
+	type = land
+	skill = 6
+	max_skill = 8
+	loyalty = 1.00
+	picture = L4000475
+	add_trait = tactical_genius
+	add_trait = mao_army_4
+	add_trait = mao_army_6
+	add_trait = zhude_thought
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1930.1.1 = { rank = 4 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000476 = {
+	name = "聂荣臻"
+	country = PRC
+	type = land
+	skill = 5
+	max_skill = 6
+	loyalty = 1.00
+	picture = L4000476
+	add_trait = logistics_wizard
+	add_trait = mao_army_4
+	add_trait = mao_army_5
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1930.1.1 = { rank = 4 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000477 = {
+	name = "叶剑英"
+	country = PRC
+	type = land
+	skill = 4
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000477
+	add_trait = mao_army_4
+	add_trait = tactical_genius
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1930.1.1 = { rank = 4 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000478 = {
+	name = "粟裕"
+	country = PRC
+	type = land
+	skill = 6
+	max_skill = 8
+	loyalty = 1.00
+	picture = L4000478
+	add_trait = mao_army_1
+	add_trait = mao_army_3
+	add_trait = mao_army_6
+	add_trait = mao_army_7
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000479 = {
+	name = "徐海东"
+	country = PRC
+	type = land
+	skill = 5
+	max_skill = 7
+	loyalty = 1.00
+	picture = L4000479
+	add_trait = zhude_thought
+	add_trait = mao_army_3
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000480 = {
+	name = "黄克诚"
+	country = PRC
+	type = land
+	skill = 4
+	max_skill = 6
+	loyalty = 1.00
+	picture = L4000480
+	add_trait = mao_army_3
+	add_trait = mao_army_4
+	add_trait = mao_army_5
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000481 = {
+	name = "陈赓"
+	country = PRC
+	type = land
+	skill = 5
+	max_skill = 7
+	loyalty = 1.00
+	picture = L4000481
+	add_trait = mao_army_1
+	add_trait = zhude_thought
+	add_trait = mao_army_6
+	add_trait = mao_army_7
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000482 = {
+	name = "谭政"
+	country = PRC
+	type = land
+	skill = 4
+	max_skill = 6
+	loyalty = 1.00
+	picture = L4000482
+	add_trait = zhude_thought
+	add_trait = mao_army_4
+	add_trait = mao_army_5
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000483 = {
+	name = "萧劲光"
+	country = PRC
+	type = land
+	skill = 5
+	max_skill = 6
+	loyalty = 1.00
+	picture = L4000483
+	add_trait = zhude_thought
+	add_trait = defensive_doctrine
+	add_trait = fortress_buster
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000484 = {
+	name = "张云逸"
+	country = PRC
+	type = land
+	skill = 4
+	max_skill = 6
+	loyalty = 1.00
+	picture = L4000484
+	add_trait = zhude_thought
+	add_trait = mao_army_3
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000485 = {
+	name = "罗瑞卿"
+	country = PRC
+	type = land
+	skill = 4
+	max_skill = 6
+	loyalty = 1.00
+	picture = L4000485
+	add_trait = tactical_genius
+	add_trait = mao_army_4
+	add_trait = engineer
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000486 = {
+	name = "王树声"
+	country = PRC
+	type = land
+	skill = 5
+	max_skill = 6
+	loyalty = 1.00
+	picture = L4000486
+	add_trait = mao_army_1
+	add_trait = zhude_thought
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000487 = {
+	name = "许光达"
+	country = PRC
+	type = land
+	skill = 5
+	max_skill = 6
+	loyalty = 1.00
+	picture = L4000487
+	add_trait = panzer_leader
+	add_trait = defensive_doctrine
+	add_trait = mao_army_3
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000488 = {
+	name = "萧克"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000488
+	add_trait = tactical_genius
+	add_trait = mao_army_1
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000489 = {
+	name = "李达"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000489
+	add_trait = zhude_thought
+	add_trait = mao_army_7
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000490 = {
+	name = "张宗逊"
+	country = PRC
+	type = land
+	skill = 4
+	max_skill = 6
+	loyalty = 1.00
+	picture = L4000490
+	add_trait = zhude_thought
+	add_trait = mao_army_1
+	add_trait = mao_army_3
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000491 = {
+	name = "李克农"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000491
+	add_trait = engineer
+	add_trait = commando
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000492 = {
+	name = "王震"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000492
+	add_trait = logistics_wizard
+	add_trait = mao_army_1
+	add_trait = desert_fox
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000493 = {
+	name = "许世友"
+	country = PRC
+	type = land
+	skill = 4
+	max_skill = 6
+	loyalty = 1.00
+	picture = L4000493
+	add_trait = fortress_buster
+	add_trait = mao_army_1
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000494 = {
+	name = "邓华"
+	country = PRC
+	type = land
+	skill = 5
+	max_skill = 6
+	loyalty = 1.00
+	picture = L4000494
+	add_trait = defensive_doctrine
+	add_trait = zhude_thought
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000495 = {
+	name = "彭绍辉"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000495
+	add_trait = serious_general
+	add_trait = zhude_thought
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000496 = {
+	name = "张爱萍"
+	country = PRC
+	type = land
+	skill = 4
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000496
+	add_trait = tactical_genius
+	add_trait = zhude_thought
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000497 = {
+	name = "杨成武"
+	country = PRC
+	type = land
+	skill = 4
+	max_skill = 7
+	loyalty = 1.00
+	picture = L4000497
+	add_trait = zhude_thought
+	add_trait = mao_army_1
+	add_trait = mao_army_3
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000498 = {
+	name = "韩先楚"
+	country = PRC
+	type = land
+	skill = 4
+	max_skill = 6
+	loyalty = 1.00
+	picture = L4000498
+	add_trait = engineer
+	add_trait = commando
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000499 = {
+	name = "李涛"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000499
+	add_trait = mao_army_4
+	add_trait = mao_army_5
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000500 = {
+	name = "傅秋涛"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000500
+	add_trait = zhude_thought
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000501 = {
+	name = "王平"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000501
+	add_trait = tactical_genius
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000502 = {
+	name = "吕正操"
+	country = PRC
+	type = land
+	skill = 4
+	max_skill = 6
+	loyalty = 1.00
+	picture = L4000502
+	add_trait = sincere_seeker
+	add_trait = zhude_thought
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000503 = {
+	name = "傅钟"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000503
+	add_trait = tactical_genius
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000504 = {
+	name = "萧华"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000504
+	add_trait = zhude_thought
+	add_trait = mao_army_4
+	add_trait = mao_army_5
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000505 = {
+	name = "甘泗淇"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000505
+	add_trait = mao_army_4
+	add_trait = mao_army_5
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000506 = {
+	name = "宋任穷"
+	country = PRC
+	type = land
+	skill = 4
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000506
+	add_trait = mao_army_4
+	add_trait = commando
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000507 = {
+	name = "赖传珠"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000507
+	add_trait = mao_army_4
+	add_trait = mao_army_5
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000508 = {
+	name = "洪学智"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000508
+	add_trait = logistics_wizard
+	add_trait = mao_army_4
+	add_trait = mao_army_5
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000509 = {
+	name = "周士第"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000509
+	add_trait = fortress_buster
+	add_trait = mao_army_7
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000510 = {
+	name = "郭天民"
+	country = PRC
+	type = land
+	skill = 4
+	max_skill = 6
+	loyalty = 1.00
+	picture = L4000510
+	add_trait = zhude_thought
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000511 = {
+	name = "周纯全"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000511
+	add_trait = logistics_wizard
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000512 = {
+	name = "杨至成"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000512
+	add_trait = logistics_wizard
+	add_trait = tactical_genius
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000513 = {
+	name = "陈再道"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000513
+	add_trait = commando
+	add_trait = mao_army_3
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000514 = {
+	name = "陈奇涵"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000514
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000515 = {
+	name = "王宏坤"
+	country = PRC
+	type = land
+	skill = 4
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000515
+	add_trait = zhude_thought
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000516 = {
+	name = "苏振华"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000516
+	add_trait = mao_army_4
+	add_trait = mao_army_5
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000517 = {
+	name = "刘亚楼"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000517
+	add_trait = mao_army_4
+	add_trait = tactical_genius
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000518 = {
+	name = "刘震"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000518
+	add_trait = zhude_thought
+	add_trait = mao_army_3
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000519 = {
+	name = "陈锡联"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000519
+	add_trait = panzer_leader
+	add_trait = fortress_buster
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000520 = {
+	name = "韦国清"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000520
+	add_trait = defensive_doctrine
+	add_trait = engineer
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000521 = {
+	name = "陈士榘"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000521
+	add_trait = commando
+	add_trait = panzer_leader
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000522 = {
+	name = "陈伯钧"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 6
+	loyalty = 1.00
+	picture = L4000522
+	add_trait = offensive_doctrine
+	add_trait = mao_army_1
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000523 = {
+	name = "钟期光"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000523
+	add_trait = mao_army_4
+	add_trait = tactical_genius
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000524 = {
+	name = "宋时轮"
+	country = PRC
+	type = land
+	skill = 4
+	max_skill = 6
+	loyalty = 1.00
+	picture = L4000524
+	add_trait = mao_army_6
+	add_trait = defensive_doctrine
+	add_trait = fortress_buster
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000525 = {
+	name = "朱良才"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000525
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000526 = {
+	name = "董其武"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000526
+	add_trait = sincere_seeker
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000527 = {
+	name = "唐亮"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000527
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000528 = {
+	name = "叶飞"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 6
+	loyalty = 1.00
+	picture = L4000528
+	add_trait = mao_army_6
+	add_trait = mao_army_7
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000529 = {
+	name = "杨得志"
+	country = PRC
+	type = land
+	skill = 4
+	max_skill = 6
+	loyalty = 1.00
+	picture = L4000529
+	add_trait = mao_army_1
+	add_trait = zhude_thought
+	add_trait = mao_army_6
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000530 = {
+	name = "王新亭"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000530
+	add_trait = mao_army_4
+	add_trait = fortress_buster
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000531 = {
+	name = "黄永胜"
+	country = PRC
+	type = land
+	skill = 4
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000531
+	add_trait = serious_general
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000532 = {
+	name = "李天佑"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000532
+	add_trait = zhude_thought
+	add_trait = fortress_buster
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000533 = {
+	name = "陈明仁"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000533
+	add_trait = sincere_seeker
+	add_trait = mao_army_6
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000534 = {
+	name = "贺炳炎"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000534
+	add_trait = defensive_doctrine
+	add_trait = mao_army_3
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000535 = {
+	name = "阎红彦"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000535
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000536 = {
+	name = "谢富治"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000536
+	add_trait = mao_army_4
+	add_trait = mao_army_5
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000537 = {
+	name = "陶峙岳"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000537
+	add_trait = defensive_doctrine
+	add_trait = offensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000538 = {
+	name = "乌兰夫"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000538
+	add_trait = logistics_wizard
+	add_trait = zhude_thought
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000539 = {
+	name = "周桓"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000539
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000540 = {
+	name = "杨勇"
+	country = PRC
+	type = land
+	skill = 4
+	max_skill = 6
+	loyalty = 1.00
+	picture = L4000540
+	add_trait = mao_army_1
+	add_trait = mao_army_3
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000541 = {
+	name = "李志民"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000541
+	add_trait = mao_army_4
+	add_trait = mao_army_5
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000542 = {
+	name = "赵尔陆"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000542
+	add_trait = logistics_wizard
+	add_trait = zhude_thought
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000543 = {
+	name = "王建安"
+	country = PRC
+	type = land
+	skill = 4
+	max_skill = 6
+	loyalty = 1.00
+	picture = L4000543
+	add_trait = mao_army_1
+	add_trait = mao_army_3
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000544 = {
+	name = "李聚奎"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000544
+	add_trait = panzer_leader
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000545 = {
+	name = "丁秋生"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000545
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000546 = {
+	name = "万毅"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000546
+	add_trait = sincere_seeker
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000547 = {
+	name = "王诤"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000547
+	add_trait = panzer_leader
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000548 = {
+	name = "王必成"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000548
+	add_trait = mao_army_1
+	add_trait = offensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000549 = {
+	name = "王近山"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000549
+	add_trait = mao_army_3
+	add_trait = offensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000550 = {
+	name = "王尚荣"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000550
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000551 = {
+	name = "王秉璋"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000551
+	add_trait = panzer_leader
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000552 = {
+	name = "王宗槐"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000552
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000553 = {
+	name = "王恩茂"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000553
+	add_trait = mao_army_5
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000554 = {
+	name = "王紫峰"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000554
+	add_trait = mao_army_5
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000555 = {
+	name = "王辉球"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000555
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000556 = {
+	name = "王道邦"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000556
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000557 = {
+	name = "韦杰"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000557
+	add_trait = mao_army_3
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000558 = {
+	name = "文年生"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000558
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000559 = {
+	name = "方强"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000559
+	add_trait = mao_army_5
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000560 = {
+	name = "方正平"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000560
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000561 = {
+	name = "邓逸凡"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000561
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000562 = {
+	name = "孔从周"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000562
+	add_trait = panzer_leader
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000563 = {
+	name = "孔石泉"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000563
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000564 = {
+	name = "孔庆德"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000564
+	add_trait = mao_army_1
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000565 = {
+	name = "甘渭汉"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000565
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000566 = {
+	name = "卢胜"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000566
+	add_trait = mao_army_5
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000567 = {
+	name = "田维扬"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000567
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000568 = {
+	name = "邝任农"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000568
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000569 = {
+	name = "皮定均"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000569
+	add_trait = zhude_thought
+	add_trait = mao_army_3
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000570 = {
+	name = "成钧"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000570
+	add_trait = offensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000571 = {
+	name = "毕占云"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000571
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000572 = {
+	name = "匡裕民"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000572
+	add_trait = panzer_leader
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000573 = {
+	name = "朱明"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000573
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000574 = {
+	name = "朱辉照"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000574
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000575 = {
+	name = "向仲华"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000575
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000576 = {
+	name = "刘飞"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000576
+	add_trait = mao_army_6
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000577 = {
+	name = "刘忠"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000577
+	add_trait = mao_army_3
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000578 = {
+	name = "刘少文"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000578
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000579 = {
+	name = "刘西元"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000579
+	add_trait = winter_specialist
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000580 = {
+	name = "刘先胜"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000580
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000581 = {
+	name = "刘兴元"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000581
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000582 = {
+	name = "刘志坚"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000582
+	add_trait = mao_army_5
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000583 = {
+	name = "刘转连"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000583
+	add_trait = zhude_thought
+	add_trait = winter_specialist
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000584 = {
+	name = "刘昌毅"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000584
+	add_trait = mao_army_7
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000585 = {
+	name = "刘金轩"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000585
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000586 = {
+	name = "刘浩天"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000586
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000587 = {
+	name = "刘培善"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000587
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000588 = {
+	name = "刘道生"
+	country = PRC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000588
+	add_trait = mao_army_5
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000589 = {
+	name = "庄田"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000589
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000590 = {
+	name = "汤平"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000590
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000591 = {
+	name = "孙毅"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000591
+	add_trait = zhude_thought
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000592 = {
+	name = "孙继先"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000592
+	add_trait = mao_army_3
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000593 = {
+	name = "朵噶·彭错饶杰"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000593
+	add_trait = sincere_seeker
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000594 = {
+	name = "杜平"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000594
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000595 = {
+	name = "杜义德"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000595
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000596 = {
+	name = "杨秀山"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000596
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000597 = {
+	name = "杨国夫"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000597
+	add_trait = mao_army_1
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000598 = {
+	name = "杨梅生"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000598
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000599 = {
+	name = "苏静"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000599
+	add_trait = mao_army_5
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000600 = {
+	name = "李耀"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000600
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000601 = {
+	name = "李天焕"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000601
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000602 = {
+	name = "李成芳"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000602
+	add_trait = mao_army_7
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000603 = {
+	name = "李寿轩"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000603
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000604 = {
+	name = "李作鹏"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000604
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000605 = {
+	name = "李雪三"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000605
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000606 = {
+	name = "旷伏兆"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000606
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000607 = {
+	name = "吴先恩"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000607
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000608 = {
+	name = "吴克华"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000608
+	add_trait = panzer_leader
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000609 = {
+	name = "吴法宪"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000609
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000610 = {
+	name = "吴信泉"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000610
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000611 = {
+	name = "吴富善"
+	country = PRC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000611
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000612 = {
+	name = "吴瑞林"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000612
+	add_trait = mao_army_6
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000613 = {
+	name = "何德全"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000613
+	add_trait = mao_army_5
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000614 = {
+	name = "邱创成"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000614
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000615 = {
+	name = "邱会作"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000615
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000616 = {
+	name = "余立金"
+	country = PRC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000616
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000617 = {
+	name = "余秋里"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000617
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000618 = {
+	name = "张震"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000618
+	add_trait = zhude_thought
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000619 = {
+	name = "张藩"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000619
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000620 = {
+	name = "张才千"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000620
+	add_trait = mao_army_1
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000621 = {
+	name = "张天云"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000621
+	add_trait = zhude_thought
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000622 = {
+	name = "张仁初"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000622
+	add_trait = mao_army_7
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000623 = {
+	name = "张令彬"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000623
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000624 = {
+	name = "张达志"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000624
+	add_trait = panzer_leader
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000625 = {
+	name = "张池明"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000625
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000626 = {
+	name = "张贤约"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000626
+	add_trait = mao_army_3
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000627 = {
+	name = "张国华"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000627
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000628 = {
+	name = "张经武"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000628
+	add_trait = zhude_thought
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000629 = {
+	name = "张南生"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000629
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000630 = {
+	name = "张祖谅"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000630
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000631 = {
+	name = "张翼翔"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000631
+	add_trait = engineer
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000632 = {
+	name = "阿沛·阿旺晋美"
+	country = PRC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000632
+	add_trait = sincere_seeker
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000633 = {
+	name = "陈康"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000633
+	add_trait = mao_army_3
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000634 = {
+	name = "陈仁麒"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000634
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000635 = {
+	name = "陈正湘"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000635
+	add_trait = mao_army_1
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000636 = {
+	name = "陈先瑞"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000636
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000637 = {
+	name = "陈庆先"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000637
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000638 = {
+	name = "林维先"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000638
+	add_trait = mao_army_3
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000639 = {
+	name = "范朝利"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000639
+	add_trait = mao_army_3
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000640 = {
+	name = "欧阳文"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000640
+	add_trait = mao_army_7
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000641 = {
+	name = "欧阳毅"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000641
+	add_trait = panzer_leader
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000642 = {
+	name = "罗元发"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000642
+	add_trait = mao_army_6
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000643 = {
+	name = "罗舜初"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000643
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000644 = {
+	name = "周彪"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000644
+	add_trait = panzer_leader
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000645 = {
+	name = "周仁杰"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000645
+	add_trait = offensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000646 = {
+	name = "周玉成"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000646
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000647 = {
+	name = "周志坚"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000647
+	add_trait = engineer
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000648 = {
+	name = "周赤萍"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000648
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000649 = {
+	name = "周希汉"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000649
+	add_trait = zhude_thought
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000650 = {
+	name = "周贯五"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000650
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000651 = {
+	name = "冼恒汉"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000651
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000652 = {
+	name = "郑维山"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000652
+	add_trait = mao_army_3
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000653 = {
+	name = "胡奇才"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000653
+	add_trait = defense_army
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000654 = {
+	name = "赵熔"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000654
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000655 = {
+	name = "赵启民"
+	country = PRC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000655
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000656 = {
+	name = "钟汉华"
+	country = PRC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000656
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000657 = {
+	name = "钟赤兵"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000657
+	add_trait = mao_army_1
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000658 = {
+	name = "饶子健"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000658
+	add_trait = zhude_thought
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000659 = {
+	name = "饶正锡"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000659
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000660 = {
+	name = "饶守坤"
+	country = PRC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000660
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000661 = {
+	name = "姚喆"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000661
+	add_trait = winter_specialist
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000662 = {
+	name = "贺诚"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000662
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000663 = {
+	name = "秦基伟"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000663
+	add_trait = mao_army_1
+	add_trait = defense_army
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000664 = {
+	name = "袁子钦"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000664
+	add_trait = commando
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000665 = {
+	name = "袁升平"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000665
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000666 = {
+	name = "莫文骅"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000666
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000667 = {
+	name = "聂凤智"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000667
+	add_trait = mao_army_3
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000668 = {
+	name = "聂鹤亭"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000668
+	add_trait = mao_army_6
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000669 = {
+	name = "顿星云"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000669
+	add_trait = mao_army_6
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000670 = {
+	name = "晏福生"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000670
+	add_trait = zhude_thought
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000671 = {
+	name = "钱钧"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000671
+	add_trait = zhude_thought
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000672 = {
+	name = "倪志亮"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000672
+	add_trait = mao_army_3
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000673 = {
+	name = "徐立清"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000673
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000674 = {
+	name = "徐深吉"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000674
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000675 = {
+	name = "徐斌州"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000675
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000676 = {
+	name = "郭鹏"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000676
+	add_trait = mao_army_6
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000677 = {
+	name = "郭化若"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000677
+	add_trait = panzer_leader
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000678 = {
+	name = "唐天际"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000678
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000679 = {
+	name = "唐延杰"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000679
+	add_trait = zhude_thought
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000680 = {
+	name = "陶勇"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000680
+	add_trait = mao_army_3
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000681 = {
+	name = "萧向荣"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000681
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000682 = {
+	name = "萧望东"
+	country = PRC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000682
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000683 = {
+	name = "萧新槐"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000683
+	add_trait = mao_army_3
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000684 = {
+	name = "黄火星"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000684
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000685 = {
+	name = "黄志勇"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000685
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000686 = {
+	name = "黄新廷"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000686
+	add_trait = mao_army_6
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000687 = {
+	name = "曹里怀"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000687
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000688 = {
+	name = "崔田民"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000688
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000689 = {
+	name = "康志强"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000689
+	add_trait = mao_army_6
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000690 = {
+	name = "阎挨要"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000690
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000691 = {
+	name = "梁从学"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000691
+	add_trait = offensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000692 = {
+	name = "梁必业"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000692
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000693 = {
+	name = "梁兴初"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000693
+	add_trait = mao_army_1
+	add_trait = mao_army_3
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000694 = {
+	name = "韩伟"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000694
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000695 = {
+	name = "韩练成"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000695
+	add_trait = sincere_seeker
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000696 = {
+	name = "韩振纪"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000696
+	add_trait = panzer_leader
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000697 = {
+	name = "彭林"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000697
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000698 = {
+	name = "彭明治"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000698
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000699 = {
+	name = "彭嘉庆"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000699
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000700 = {
+	name = "覃健"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000700
+	add_trait = mao_army_5
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000701 = {
+	name = "程世才"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000701
+	add_trait = mao_army_5
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000702 = {
+	name = "傅连璋"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000702
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000703 = {
+	name = "温玉成"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000703
+	add_trait = mao_army_5
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000704 = {
+	name = "曾国华"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000704
+	add_trait = mao_army_6
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000705 = {
+	name = "曾泽生"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000705
+	add_trait = sincere_seeker
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000706 = {
+	name = "曾绍山"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000706
+	add_trait = zhude_thought
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000707 = {
+	name = "曾思玉"
+	country = PRC
+	type = land
+	skill = 3
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000707
+	add_trait = mao_army_3
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000708 = {
+	name = "谢有法"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000708
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000709 = {
+	name = "赖毅"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000709
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000710 = {
+	name = "鲍先志"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000710
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000711 = {
+	name = "詹才芳"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000711
+	add_trait = mao_army_3
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000712 = {
+	name = "蔡顺礼"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000712
+	add_trait = mao_army_5
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000713 = {
+	name = "廖汉生"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000713
+	add_trait = mao_army_5
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000714 = {
+	name = "廖容标"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000714
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000715 = {
+	name = "赛福鼎·艾则孜"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000715
+	add_trait = sincere_seeker
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000716 = {
+	name = "谭甫仁"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000716
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000717 = {
+	name = "谭希林"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000717
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000718 = {
+	name = "谭冠三"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000718
+	add_trait = mao_army_4
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000719 = {
+	name = "谭家述"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000719
+	add_trait = panzer_leader
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000720 = {
+	name = "滕海清"
+	country = PRC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000720
+	add_trait = zhude_thought
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000721 = {
+	name = "张爱萍"
+	country = PRC
+	type = sea
+	skill = 1
+	max_skill = 3
+	add_trait = tactical_genius
+	loyalty = 0.00
+	picture = L4000496
+	history = {
+		1936.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000722 = {
+	name = "张学思"
+	country = PRC
+	type = sea
+	skill = 2
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000722
+	add_trait = seawolf
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000723 = {
+	name = "苏振华"
+	country = PRC
+	type = sea
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000516
+	history = {
+		1930.1.1 = { rank = 1 }
+		1946.1.1 = { rank = 0 }
+	}
+}
+4000724 = {
+	name = "罗湘涛"
+	country = PRC
+	type = sea
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000724
+	history = {
+		1936.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000725 = {
+	name = "刘道生"
+	country = PRC
+	type = sea
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000588
+	history = {
+		1936.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000726 = {
+	name = "王宏坤"
+	country = PRC
+	type = sea
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000515
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000728 = {
+	name = "刘昌毅"
+	country = PRC
+	type = sea
+	skill = 2
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000584
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+4000729 = {
+	name = "刘浩天"
+	country = PRC
+	type = sea
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000586
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+4000730 = {
+	name = "李作鹏"
+	country = PRC
+	type = sea
+	skill = 2
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000604
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+}
+4000731 = {
+	name = "叶飞"
+	country = PRC
+	type = sea
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000528
+	history = {
+		1936.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000732 = {
+	name = "陶勇"
+	country = PRC
+	type = sea
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000680
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000733 = {
+	name = "萧劲光"
+	country = PRC
+	type = sea
+	skill = 3
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000483
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000734 = {
+	name = "周仁杰"
+	country = PRC
+	type = sea
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000645
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000735 = {
+	name = "安志敏"
+	country = PRC
+	type = air
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000735
+	history = {
+		1936.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000736 = {
+	name = "常乾坤"
+	country = PRC
+	type = air
+	skill = 2
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000736
+	history = {
+		1936.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000737 = {
+	name = "陈熙"
+	country = PRC
+	type = air
+	skill = 2
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000737
+	history = {
+		1936.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000738 = {
+	name = "方槐"
+	country = PRC
+	type = air
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000738
+	history = {
+		1936.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000739 = {
+	name = "方子翼"
+	country = PRC
+	type = air
+	skill = 2
+	max_skill = 4
+	loyalty = 0.00
+	picture = L76365
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000740 = {
+	name = "夏伯勋"
+	country = PRC
+	type = air
+	skill = 2
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000740
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000741 = {
+	name = "聂凤智"
+	country = PRC
+	type = air
+	skill = 2
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000667
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000742 = {
+	name = "刘亚楼"
+	country = PRC
+	type = air
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000517
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000743 = {
+	name = "萧华"
+	country = PRC
+	type = air
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000504
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000744 = {
+	name = "吴法宪"
+	country = PRC
+	type = air
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000609
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000745 = {
+	name = "吕黎平"
+	country = PRC
+	type = air
+	skill = 1
+	max_skill = 5
+	loyalty = 0.00
+	picture = L4000745
+	add_trait = superior_air_tactician
+	history = {
+		1930.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000746 = {
+	name = "袁彬"
+	country = PRC
+	type = air
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000746
+	history = {
+		1936.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000747 = {
+	name = "马宁"
+	country = PRC
+	type = air
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000747
+	history = {
+		1936.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000748 = {
+	name = "王海"
+	country = PRC
+	type = air
+	skill = 2
+	max_skill = 5
+	loyalty = 0.00
+	picture = L4000748
+	history = {
+		1936.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000749 = {
+	name = "刘震"
+	country = PRC
+	type = air
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000518
+	history = {
+		1936.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000750 = {
+	name = "徐深吉"
+	country = PRC
+	type = air
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000674
+	history = {
+		1936.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000751 = {
+	name = "吴富善"
+	country = PRC
+	type = air
+	skill = 2
+	max_skill = 4
+	loyalty = 0.00
+	picture = L4000611
+	history = {
+		1936.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000752 = {
+	name = "余立金"
+	country = PRC
+	type = air
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000616
+	history = {
+		1936.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}
+4000753 = {
+	name = "顿星云"
+	country = PRC
+	type = air
+	skill = 2
+	max_skill = 5
+	loyalty = 0.00
+	add_trait = fleet_destroyer
+	picture = L4000669
+	history = {
+		1936.1.1 = { rank = 1 }
+		1970.1.1 = { rank = 0 }
+	}
+}

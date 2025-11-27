@@ -1,0 +1,43 @@
+division = {
+	name = "SS“威斯特法伦”装甲旅"
+	location = 6236
+	regiment = { type = armor_brigade name = "SS“威斯特法伦”装甲旅" historical_model = 1 }
+	}
+division = {
+				name = "外籍兵团"
+				location = 6236
+				regiment = { type = foring_brigade name = "外籍第1团" experience = 20 historical_model = 1 }
+				regiment = { type = foring_brigade name = "外籍第2团" experience = 20 historical_model = 1 }
+				regiment = { type = foring_brigade name = "外籍第3团" experience = 20 historical_model = 1 }
+			}
+division = {
+				name = "外籍兵团"
+				location = 6236
+				regiment = { type = foring_brigade name = "外籍第4团" experience = 20 historical_model = 1 }
+				regiment = { type = foring_brigade name = "外籍第5团" experience = 20 historical_model = 1 }
+				regiment = { type = foring_brigade name = "外籍第6团" experience = 20 historical_model = 1 }
+			}
+division = {
+				name = "外籍兵团"
+				location = 6236
+				regiment = { type = foring_brigade name = "外籍第7团" experience = 20 historical_model = 1 }
+			}
+division= {
+	  			name = "印支殖民军第1军"
+					location = 6236
+					regiment = { type = imperial_brigade historical_model = 2 }
+					regiment = { type = imperial_brigade historical_model = 2 }
+					regiment = { type = imperial_brigade historical_model = 2 }
+				}
+				division= {
+					name = "印支殖民军第2军"
+					location = 6236
+					regiment = { type = imperial_brigade historical_model = 2 }
+					regiment = { type = imperial_brigade historical_model = 2 }
+					regiment = { type = imperial_brigade historical_model = 2 }
+				}
+				division= {
+					name = "印支殖民军第3军"
+					location = 6236
+					regiment = { type = mechanized_brigade historical_model = 2 }
+				}

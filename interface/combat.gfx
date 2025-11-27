@@ -1,0 +1,416 @@
+spriteTypes = {
+
+	spriteType = {
+		norefcount = yes
+		name = "GFX_may_retreat"	
+		texturefile = "gfx\\interface\\icon_noretreat.tga"
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_combat_attack_indicator"	
+		texturefile = "gfx\\interface\\combat_attack_indicator.dds"
+		noOfFrames = 3
+	}
+	spriteType = {
+		norefcount = yes
+		name = "GFX_combat_initiative_indicator"	
+		texturefile = "gfx\\interface\\combat_initiative_indicator.dds"
+	}
+	
+	progressbartype = {
+		name = "combat_progress"
+		color = { 0.0 0.5 0.0 }
+		colortwo = { 1.0 0.0 0.0 }
+		textureFile1 = "gfx\\interface\\progress_bar_combat_a.dds"
+		textureFile2 = "gfx\\interface\\progress_bar_combat_d.dds"
+		size = { x = 256 y = 12 }
+		effectFile = "gfx\\FX\\progress.fx"
+	}
+	
+	progressbartype = {
+		name = "strength_progress"
+		color = { 0.0 0.5 0.0 }
+		colortwo = { 1.0 0.0 0.0 }
+		textureFile1 = "gfx\\interface\\progress_bar_strength1.dds"
+		textureFile2 = "gfx\\interface\\progress_bar_strength2.dds"
+		size = { x = 24 y = 8 }
+		effectFile = "gfx\\FX\\progress.fx"
+	}
+	
+	progressbartype = {
+		name = "org_progress"
+		color = { 0.0 0.5 0.0 }
+		colortwo = { 1.0 0.0 0.0 }
+		textureFile1 = "gfx\\interface\\progress_bar_org1.dds"
+		textureFile2 = "gfx\\interface\\progress_bar_org2.dds"
+		size = { x = 24 y = 8 }
+		effectFile = "gfx\\FX\\progress.fx"
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_combat_bg"	
+		texturefile = "gfx\\interface\\combat_land_bg.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_combat_naval_bg"	
+		texturefile = "gfx\\interface\\combat_naval_bg.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_combat_air_bg"	
+		texturefile = "gfx\\interface\\combat_air_bg.dds"
+		transparencecheck = yes
+	}
+	
+	
+	progressbartype = {
+		name = "GFX_combat_unit_bg"
+		color = { 0.0 0.5 0.0 }
+		colortwo = { 1.0 0.0 0.0 }
+		textureFile1 = "gfx\\interface\\combat_unit_bg.dds"
+		textureFile2 = "gfx\\interface\\combat_unit_bg2.dds"
+		size = { x = 168 y = 32 }
+		effectFile = "gfx\\FX\\progress.fx"
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_combat_air_unit_bg"	
+		texturefile = "gfx\\interface\\combat_air_unit_bg.tga"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_resources_pool"
+		texturefile = "gfx\\interface\\resources_pool.tga"
+		noOfFrames = 7
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_resources_produced"
+		texturefile = "gfx\\interface\\resources_produced.tga"
+		noOfFrames = 7
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_combat_battle_events"
+		texturefile = "gfx\\interface\\combat_battle_events.tga"
+		noOfFrames = 9
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_combat_terrain_frame"	
+		texturefile = "gfx\\interface\\combat_terrain_frame.tga"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_combat_close"
+		texturefile = "gfx\\interface\\combat_close.tga"
+		noOfFrames = 1
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_combat_retreat"
+		texturefile = "gfx\\interface\\retreat.tga"
+		noOfFrames = 1
+		effectFile = "gfx\\FX\\buttonstate.fx"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_fort_icon"	
+		texturefile = "gfx\\interface\\fort_icon.tga"
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_navalcombat_unit_bg"	
+		texturefile = "gfx\\interface\\navalcombat_unit_bg.tga"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_navalcombat_l_carrier"	
+		texturefile = "gfx\\interface\\navalcombat_carrier_left.tga"
+		transparencecheck = yes
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_navalcombat_l_battleship"	
+		texturefile = "gfx\\interface\\navalcombat_battleship_left.tga"
+		transparencecheck = yes
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_navalcombat_l_super_heavy_battleship"	
+		texturefile = "gfx\\interface\\navalcombat_sh_battleship_left.tga"
+		transparencecheck = yes
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_navalcombat_l_escort_carrier"	
+		texturefile = "gfx\\interface\\navalcombat_escort_carrier_left.tga"
+		transparencecheck = yes
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		norefcount = yes
+		name = "GFX_navalcombat_l_battlecruiser"	
+		texturefile = "gfx\\interface\\navalcombat_battlecruiser_left.tga"
+		transparencecheck = yes
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_navalcombat_l_heavy_cruiser"	
+		texturefile = "gfx\\interface\\navalcombat_heavy_cruiser_left.tga"
+		transparencecheck = yes
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_navalcombat_l_light_cruiser"	
+		texturefile = "gfx\\interface\\navalcombat_light_cruiser_left.tga"
+		transparencecheck = yes
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_navalcombat_l_destroyer"	
+		texturefile = "gfx\\interface\\navalcombat_destroyer_left.tga"
+		transparencecheck = yes
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_navalcombat_l_transport_ship"	
+		texturefile = "gfx\\interface\\navalcombat_transport_left.tga"
+		transparencecheck = yes
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_navalcombat_l_invasion_transport_ship"	
+		texturefile = "gfx\\interface\\navalcombat_transport_left.tga"
+		transparencecheck = yes
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		norefcount = yes
+		name = "GFX_navalcombat_l_assault_ship"	
+		texturefile = "gfx\\interface\\navalcombat_transport_left.tga"
+		transparencecheck = yes
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_navalcombat_l_submarine"	
+		texturefile = "gfx\\interface\\navalcombat_submarine_left.tga"
+		transparencecheck = yes
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_navalcombat_l_nuclear_submarine"	
+		texturefile = "gfx\\interface\\navalcombat_nuclear_submarine_left.tga"
+		transparencecheck = yes
+		noOfFrames = 2
+	}
+	
+
+	spriteType = {
+		norefcount = yes
+		name = "GFX_navalcombat_r_carrier"	
+		texturefile = "gfx\\interface\\navalcombat_carrier.tga"
+		transparencecheck = yes
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_navalcombat_r_battleship"	
+		texturefile = "gfx\\interface\\navalcombat_battleship.tga"
+		transparencecheck = yes
+		noOfFrames = 2
+	}
+	spriteType = {
+		norefcount = yes
+		name = "GFX_navalcombat_r_super_heavy_battleship"	
+		texturefile = "gfx\\interface\\navalcombat_sh_battleship.tga"
+		transparencecheck = yes
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_navalcombat_r_escort_carrier"	
+		texturefile = "gfx\\interface\\navalcombat_escort_carrier.tga"
+		transparencecheck = yes
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		norefcount = yes
+		name = "GFX_navalcombat_r_battlecruiser"	
+		texturefile = "gfx\\interface\\navalcombat_battlecruiser.tga"
+		transparencecheck = yes
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_navalcombat_r_heavy_cruiser"	
+		texturefile = "gfx\\interface\\navalcombat_heavy_cruiser.tga"
+		transparencecheck = yes
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_navalcombat_r_light_cruiser"	
+		texturefile = "gfx\\interface\\navalcombat_light_cruiser.tga"
+		transparencecheck = yes
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_navalcombat_r_destroyer"	
+		texturefile = "gfx\\interface\\navalcombat_destroyer.tga"
+		transparencecheck = yes
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_navalcombat_r_transport_ship"	
+		texturefile = "gfx\\interface\\navalcombat_transport.tga"
+		transparencecheck = yes
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_navalcombat_r_invasion_transport_ship"	
+		texturefile = "gfx\\interface\\navalcombat_transport.tga"
+		transparencecheck = yes
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		norefcount = yes
+		name = "GFX_navalcombat_r_assault_ship"	
+		texturefile = "gfx\\interface\\navalcombat_transport.tga"
+		transparencecheck = yes
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_navalcombat_r_submarine"	
+		texturefile = "gfx\\interface\\navalcombat_submarine.tga"
+		transparencecheck = yes
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_navalcombat_r_nuclear_submarine"	
+		texturefile = "gfx\\interface\\navalcombat_nuclear_submarine.tga"
+		transparencecheck = yes
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_combat_modifier_leader"	
+		texturefile = "gfx\\interface\\combat_modifier_leader.tga"
+	}
+	
+
+
+
+	spriteType = {
+		norefcount = yes
+		name = "gfx_battlemodifiers"
+		texturefile = "gfx\\interface\\battle_modifiers.tga"
+		noOfFrames = 5
+	}
+
+	spriteType = {
+		norefcount = yes
+		name = "gfx_counters"
+		texturefile = "gfx\\interface\\unit_counter.tga"
+		noOfFrames = 3
+	}
+
+
+
+	progressbartype = {
+		name = "moralebar"
+		color = { 0.0 0.5 0.0 }
+		colortwo = { 1.0 0.0 0.0 }
+		size = { x = 130 y = 12 }
+		effectFile = "gfx\\FX\\progress.fx"
+	}
+
+
+
+
+
+	spriteType = {
+		norefcount = yes
+		name = "GFX_combatdivider"	
+		texturefile = "gfx\\interface\\combat_divider.tga"
+	}
+
+	spriteType = {
+		norefcount = yes
+		name = "GFX_attritionicon"	
+		texturefile = "gfx\\interface\\attrition_icon.tga"
+	}
+	
+
+	spriteType = {
+		norefcount = yes
+		name = "GFX_empty_tactics"
+		texturefile = "gfx\\interface\\empty_tactic.dds"
+		norefcount = yes
+	}
+
+}

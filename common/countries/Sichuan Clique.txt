@@ -1,0 +1,110 @@
+color = { 255  244  190 }
+graphical_culture = Japanese
+
+default_templates = {
+	binary_infantry = {
+		infantry_brigade
+		infantry_brigade
+	}
+	binary_milita = {
+		militia_brigade
+		militia_brigade
+	}
+	binary_armoured = {
+		armor_brigade
+		motorized_brigade
+	}
+	binary_cavalry = {
+		cavalry_brigade
+		cavalry_brigade
+	}
+}
+
+unit_names = {
+	infantry_brigade = {
+		"第104师" "第122师" "第123师" "第124师"
+		"第125师" "第126师" "第127师" "第128师" "第131师"
+		"第133师" "第134师" "第135师"
+		"第145师" "第146师" "第162师"
+		"第147师" "第148师"
+		"第149师" "第150师" "第163师"
+	}
+	garrison_brigade = {
+		"四川警备司令部"
+	}
+	militia_brigade = {
+		"独立第14旅" "独立第15旅""独立第17旅"
+	}
+}
+
+ministers = {
+	3000027 = {
+		name = "刘湘"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M3000027
+		head_of_state = resigned_generalissimo
+		start_date = 1936.1.1
+	}
+	3000028 = {
+		name = "杨森"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M3000028
+		armament_minister = corrupt_kleptocrat
+		minister_of_intelligence = efficient_sociopath
+		start_date = 1936.1.1
+	}
+	502010 = {
+		name = "邓锡侯"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M3000029
+		head_of_state = resigned_generalissimo
+		head_of_government = insignificant_layman
+		chief_of_staff = back_stabber
+		armament_minister = military_entrepreneur
+		start_date = 1936.1.1
+	}
+	3000030 = {
+		name = "孙震"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M3000030
+		minister_of_security = benevolent_gentleman
+		start_date = 1936.1.1
+	}
+	3000031 = {
+		name = "贺国光"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M3000031
+		foreign_minister = apologetic_clerk
+		chief_of_army = school_of_defence
+		start_date = 1936.1.1
+	}
+	3000032 = {
+		name = "王陵基"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M3000032
+		head_of_government = pig_headed_isolationist
+		start_date = 1936.1.1
+	}
+	3000033 = {
+		name = "刘存厚"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M3000033
+		minister_of_security = back_stabber
+		start_date = 1936.1.1
+	}
+	3000034 = {
+		name = "李家钰"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M3000034
+		chief_of_army = school_of_fire_support
+		start_date = 1936.1.1
+	}
+}

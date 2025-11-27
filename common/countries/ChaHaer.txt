@@ -1,0 +1,71 @@
+color = { 104  132  91 }
+graphical_culture = Japanese
+
+default_templates = {
+	binary_infantry = {
+		infantry_brigade
+		infantry_brigade
+	}
+	binary_milita = {
+		militia_brigade
+		militia_brigade
+	}
+	binary_armoured = {
+		armor_brigade
+		motorized_brigade
+	}
+	binary_cavalry = {
+		cavalry_brigade
+		cavalry_brigade
+	}
+}
+
+unit_names = {
+	infantry_brigade = {
+		"第71师" "第72师"
+	}
+	garrison_brigade = {
+		"归绥保安总队" "北平保安总队" "天津保安总队"
+	}
+}
+
+
+ministers = {
+	8000047 = {
+		name = "冯玉祥"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M202121121
+		head_of_government = flamboyant_tough_guy
+                                chief_of_army = decisive_battle_doctrine
+		start_date = 1932.1.1
+	}
+	813184 = {
+		name = "吉鸿昌"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M202121122
+		head_of_state = weary_stiff_neck
+		foreign_minister = apologetic_clerk
+		chief_of_army = decisive_battle_doctrine
+		start_date = 1932.1.1
+	}
+	903109 = {
+		name = "方振武"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M202121123
+		minister_of_security = man_of_the_people
+		minister_of_intelligence = undistinguished_suit
+                                armament_minister = military_entrepreneur
+		start_date = 1932.1.1
+	}
+	8000043 = {
+		name = "佟麟阁"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = L50301
+		chief_of_army = static_defence_doctrine
+		start_date = 1932.1.1
+	}
+}

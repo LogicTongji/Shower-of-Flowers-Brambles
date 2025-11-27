@@ -1,0 +1,36 @@
+#意大利志愿军
+corps = {
+	name = " Italian Royal Army"
+	location = 4548
+	regiment = { type = hq_brigade name = " Italian Royal Army" historical_model = 0 }
+	regiment = { type = artillery_brigade experience = 20 historical_model = 1 }
+division= {
+		name = "4th Infantry Division Littorio"
+		location = 4548
+		regiment = { type = infantry_brigade experience = 45 name = "1st Infantry Regiment" historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 45 name = "2nd Infantry Regiment “Osa l’Inosabile" historical_model = 1 }
+		regiment = { type = artillery_brigade experience = 55 name = "3rd Artillery Regiment" historical_model = 2 }
+	}
+division= {
+		name = "1st CCNN Division "Dio lo Vuole""
+		location = 4548
+		regiment = { type = infantry_brigade experience = 45 name = "1st Group of Banderas – Lt. Coronel Aristide Frezza" historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 45 name = "2nd Group of Banderas – Colonel Constantino Salvi" historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 45 name = "3rd Grupo de Banderas – Coronel Mario Mazza" historical_model = 1 }
+	}	
+division= {
+		name = "2nd "Fiamme Nere" Blackshirt Infantry Division"
+		location = 4548
+		regiment = { type = infantry_brigade experience = 45 name = "6th Group of Banderas - Console Mario Pittau" historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 45 name = "7th Group of Banderas - Console Marino Marino" historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 45 name = "8th Grupo de Banderas - Console Fausto Vandelli" historical_model = 1 }
+		regiment = { type = artillery_brigade experience = 55 name = "Division Artillery" historical_model = 2 }
+	}	
+division= {
+		name = "3rd CCNN Division "Penne Nere"
+		location = 4548
+		regiment = { type = infantry_brigade experience = 45 name = "9th Group of Banderas - Console Mario Pittau" historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 45 name = "10th Group of Banderas - Console Generale" historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 45 name = "11th Grupo de Banderas - Console Generale" historical_model = 1 }
+		regiment = { type = artillery_brigade experience = 55 name = "Division Artillery" historical_model = 2 }
+	}	

@@ -1,0 +1,69 @@
+color = { 234  212  145 }
+graphical_culture = Japanese
+
+default_templates = {
+	binary_infantry = {
+		infantry_brigade
+		infantry_brigade
+	}
+	binary_milita = {
+		militia_brigade
+		militia_brigade
+	}
+	binary_armoured = {
+		armor_brigade
+		motorized_brigade
+	}
+	binary_cavalry = {
+		cavalry_brigade
+		cavalry_brigade
+	}
+}
+
+
+ministers = {
+	502004 = {
+		name = "ÓàººÄ±"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M502004
+		chief_of_staff = school_of_mass_combat
+		armament_minister = infantry_proponent
+		start_date = 1936.1.1
+	}
+	502008 = {
+		name = "³Â¼ÃÌÄ"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M502008
+		head_of_state = power_hungry_demagogue
+		head_of_government = ambitious_union_boss
+		chief_of_army = guns_and_butter_doctrine
+		foreign_minister = ideological_crusader
+		start_date = 1936.1.1
+	}
+	3000035 = {
+		name = "ÁÖÒíÖĞ"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M3000035
+		minister_of_intelligence = political_specialist
+		start_date = 1936.1.1
+	}
+	3000036 = {
+		name = "Ïãº²ÆÁ"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M3000036
+		minister_of_security = silent_lawyer
+		start_date = 1936.1.1
+	}
+	3000037 = {
+		name = "»Æ¹âÈñ"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M3000037
+		chief_of_air = army_aviation_doctrine
+		start_date = 1936.1.1
+	}
+}

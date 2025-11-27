@@ -1,0 +1,26 @@
+#第三波党卫军
+	division= {
+		name = "党卫军第1“阿道夫希特勒警卫旗队”师"
+		location = 1928
+		regiment = { type = artillery_brigade name = "第一装甲炮兵团" experience = 55  historical_model = 2 }			
+		regiment = { type = light_armor_brigade experience = 55 name = "第1装甲兵团" historical_model = 2 }
+		regiment = { type = GER_ss experience = 55 name = "第1装甲掷弹兵团" historical_model = 2 }
+		regiment = { type = GER_ss experience = 55 name = "第2装甲掷弹兵团" historical_model = 2 }
+		regiment = { type = engineer_brigade name = "后勤部队" experience = 20 historical_model = 1 }
+	}
+		division= {
+		name = "党卫军第7“欧根亲王”志愿师"
+		location = 3767
+		 regiment = { type = bergsjaeger_brigade name = "第13山地掷弹兵团" experience = 40 historical_model = 1 }
+		 regiment = { type = bergsjaeger_brigade name = "第14山地掷弹兵团" experience = 40 historical_model = 1 }
+		regiment = { type = artillery_brigade experience = 55 name = "突击炮团" historical_model = 2 }	
+	}
+		division= {
+		name = "党卫队第8“弗洛里安·盖尔”骑兵师"
+		location = 1861
+		regiment = { type = cavalry_brigade name = "第15骑兵团" experience = 20 historical_model = 1 }
+		regiment = { type = cavalry_brigade name = "第16骑兵团" experience = 20 historical_model = 1 }
+		regiment = { type = cavalry_brigade name = "第17骑兵团" experience = 20 historical_model = 1 }
+		regiment = { type = cavalry_brigade name = "第18骑兵团" experience = 20 historical_model = 1 }
+		regiment = { type = artillery_brigade experience = 55 name = "炮兵团" historical_model = 2 }	
+	}

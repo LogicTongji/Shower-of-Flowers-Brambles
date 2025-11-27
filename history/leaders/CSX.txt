@@ -1,0 +1,225 @@
+503003 = {
+	name = "Àî·þâß"
+	country = CSX
+	type = land
+	skill = 2
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50174
+	history = {
+		1930.1.1 = { rank = 1 }
+		1940.1.1 = { rank = 2 }
+		1942.1.1 = { rank = 3 }
+	}
+}
+503007 = {
+	name = "ÉÌÕð"
+	country = CSX
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 1.00
+	picture = L503007
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1938.1.1 = { rank = 2 }
+	}
+}
+503008 = {
+	name = "Ê·Ôó²¨"
+	country = CSX
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 1.00
+	picture = L503008
+	history = {
+		1930.1.1 = { rank = 1 }
+		1938.1.1 = { rank = 2 }
+	}
+}
+503010 = {
+	name = "Íõ¾¸¹ú"
+	country = CSX
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 0.00
+	picture = L50314
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1943.1.1 = { rank = 0 }
+	}
+}
+503011 = {
+	name = "ÑÖÎýÉ½"
+	country = CSX
+	type = land
+	skill = 2
+	max_skill = 3
+	loyalty = 1.00
+	picture = L50348
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1930.1.1 = { rank = 4 }
+	}
+}
+50113 = {
+	name = "ÐìÓÀ²ý"
+	country = CSX
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50113
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1941.1.1 = { rank = 3 }
+	}
+}
+50020 = {
+	name = "ÕÅÒñÎà"
+	country = CSX
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 0.00
+	picture = L50020
+	add_trait = friction_specialist
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+50021 = {
+	name = "ÕÔ³Ðç·"
+	country = CSX
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50021
+	history = {
+		1930.1.1 = { rank = 1 }
+		1945.1.1 = { rank = 0 }
+	}
+}
+50337 = {
+	name = "Ñî°®Ô´"
+	country = CSX
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50337
+	add_trait = offensive_doctrine
+	add_trait = old_guard
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+50264 = {
+	name = "Ëï³þ"
+	country = CSX
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50264
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+50029 = {
+	name = "³Â³¤½Ý"
+	country = CSX
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50029
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+50164 = {
+	name = "¹ù×Ú·Ú"
+	country = CSX
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50164
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+503001 = {
+	name = "ÖÜçé"
+	country = CSX
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 0.00
+	picture = L503001
+	add_trait = panzer_leader
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+503000 = {
+	name = "³þÏª´º"
+	country = CSX
+	type = land
+	skill = 2
+	max_skill = 3
+	loyalty = 1.00
+	picture = L503000
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+503019 = {
+	name = "Ñî³ÎÔ´"
+	country = CSX
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 1.00
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+503002 = {
+	name = "ÑîÐ§Å·"
+	country = CSX
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+	picture = L503002
+	history = {
+		1930.1.1 = { rank = 1 }
+		1937.5.31 = { rank = 0 }
+	}
+}
+503004 = {
+	name = "¶Å´ºÒÊ"
+	country = CSX
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}

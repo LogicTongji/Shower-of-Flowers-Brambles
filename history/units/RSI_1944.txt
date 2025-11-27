@@ -1,0 +1,96 @@
+division= {
+	name = "第1'蒙泰罗萨'山地师"
+	location = 3559
+	regiment = { type = bergsjaeger_brigade experience = 85 name = "第1步兵团" historical_model = 8 }
+	regiment = { type = bergsjaeger_brigade experience = 85 name = "第2步兵团" historical_model = 8 }
+}
+division= {
+	name = "第2'利托里奥'装甲师"
+	location = 3559
+	regiment = { type = mechanized_brigade experience = 80 name = "第3步兵团" historical_model = 5 }
+	regiment = { type = mechanized_brigade experience = 80 name = "第4山地团" historical_model = 5 }
+}
+division = {
+	name = "第3'圣马可'师"
+	location = 3559
+	regiment = { type = elite_infantry_brigade name = "第5步兵团" historical_model = 8 }
+	regiment = { type = elite_infantry_brigade name = "第6步兵团" historical_model = 8 }
+}
+division = {
+	name = "第4'意大利'师"
+	location = 3559
+	regiment = { type = elite_infantry_brigade name = "第7贝尔萨格里步兵团" historical_model = 9 }
+	regiment = { type = elite_infantry_brigade name = "第8步兵团" historical_model = 8 }
+}
+division = {
+	name = "第5师"
+	location = 3559
+	regiment = { type = camicie_nere_brigade historical_model = 8 }
+	regiment = { type = camicie_nere_brigade historical_model = 8 }
+}
+division = {
+	name = "第6师"
+	location = 3559
+	regiment = { type = camicie_nere_brigade historical_model = 8 }
+	regiment = { type = camicie_nere_brigade historical_model = 8 }
+}
+division = {
+	name = "第7师"
+	location = 3559
+	regiment = { type = camicie_nere_brigade historical_model = 1 }
+	regiment = { type = camicie_nere_brigade historical_model = 1 }
+}
+division = {
+	name = "第8师"
+	location = 3559
+	regiment = { type = camicie_nere_brigade historical_model = 1 }
+	regiment = { type = camicie_nere_brigade historical_model = 1 }
+}
+division = {
+	name = "第9师"
+	location = 3559
+	regiment = { type = camicie_nere_brigade historical_model = 1 }
+	regiment = { type = camicie_nere_brigade historical_model = 1 }
+}
+division = {
+	name = "第10师"
+	location = 3559
+	regiment = { type = camicie_nere_brigade historical_model = 1 }
+	regiment = { type = camicie_nere_brigade historical_model = 1 }
+}
+division = {
+	name = "第11师"
+	location = 3559
+	regiment = { type = camicie_nere_brigade historical_model = 1 }
+	regiment = { type = camicie_nere_brigade historical_model = 1 }
+}
+division = {
+	name = "第12师"
+	location = 3559
+	regiment = { type = camicie_nere_brigade historical_model = 1 }
+	regiment = { type = camicie_nere_brigade historical_model = 1 }
+}
+division = {
+	name = "第13师"
+	location = 3559
+	regiment = { type = camicie_nere_brigade historical_model = 1 }
+	regiment = { type = camicie_nere_brigade historical_model = 1 }
+}
+division = {
+	name = "第14师"
+	location = 3559
+	regiment = { type = camicie_nere_brigade historical_model = 1 }
+	regiment = { type = camicie_nere_brigade historical_model = 1 }
+}
+division = {
+	name = "第15师"
+	location = 3559
+	regiment = { type = camicie_nere_brigade historical_model = 1 }
+	regiment = { type = camicie_nere_brigade historical_model = 1 }
+}
+division = {
+	name = "第16师"
+	location = 3559
+	regiment = { type = camicie_nere_brigade historical_model = 1 }
+	regiment = { type = camicie_nere_brigade historical_model = 1 }
+}

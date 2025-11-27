@@ -1,0 +1,21 @@
+division = {
+       name = "国民革命军第88师"
+       location = 5541
+       regiment = { type = chi_star_destroyer name = "第262旅" experience = 35 strength = 20  historical_model = 1 }
+       regiment = { type = chi_star_destroyer name = "第264旅" experience = 35 strength = 20  historical_model = 1 }
+       regiment = { type = infantry_brigade name = "88师补充团" experience = 25 strength = 20  historical_model = 1 }
+}
+division = {
+       name = "国民革命军第87师"
+       location = 5518
+       regiment = { type = chi_star_destroyer name = "第259旅" experience = 35 strength = 20  historical_model = 1 }
+       regiment = { type = chi_star_destroyer name = "第261旅" experience = 35 strength = 20  historical_model = 1 }
+       regiment = { type = infantry_brigade name = "87师补充团" experience = 25 strength = 20  historical_model = 1 }
+}
+division = {
+       name = "国民革命军第36师"
+       location = 5518
+       regiment = { type = chi_star_destroyer name = "第106旅" experience = 35 strength = 20  historical_model = 1 }
+       regiment = { type = chi_star_destroyer name = "第108旅" experience = 35 strength = 20  historical_model = 1 }
+       regiment = { type = infantry_brigade name = "36师补充团" experience = 25 strength = 20  historical_model = 1 }
+}

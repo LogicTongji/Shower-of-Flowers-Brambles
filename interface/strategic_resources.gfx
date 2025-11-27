@@ -1,0 +1,145 @@
+spriteTypes = {
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_uranium_small"
+		texturefile = "gfx\mapitems\strategic_resources\\strategic_resource_uranium_small.tga"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+	
+
+	spriteType = {
+		norefcount = yes
+		name = "GFX_aluminium_small"
+		texturefile = "gfx\mapitems\strategic_resources\\strategic_resource_aluminium_small.tga"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_rubber_small"
+		texturefile = "gfx\mapitems\strategic_resources\\strategic_resource_rubber_small.tga"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+		
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_heavy_water_small"
+		texturefile = "gfx\mapitems\strategic_resources\\strategic_resource_heavy_water_small.tga"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+	
+	
+	spriteType = {
+		norefcount = yes
+		name = "GFX_tungsten_small"
+		texturefile = "gfx\mapitems\strategic_resources\\strategic_resource_tungsten_small.tga"
+		loadType = "INGAME"
+		norefcount = yes
+	}	
+
+
+	spriteType = {
+		norefcount = yes
+		name = "GFX_fur_small"
+		texturefile = "gfx\mapitems\strategic_resources\\strategic_resource_fur_small.tga"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+
+
+	spriteType = {
+		norefcount = yes
+		name = "GFX_black_soil_small"
+		texturefile = "gfx\mapitems\strategic_resources\\strategic_resource_black_soil_small.tga"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+
+	spriteType = {
+		norefcount = yes
+		name = "GFX_cinchona_small"
+		texturefile = "gfx\mapitems\strategic_resources\\strategic_resource_cinchona_small.tga"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+
+	spriteType = {
+		norefcount = yes
+		name = "GFX_helium_small"
+		texturefile = "gfx\mapitems\strategic_resources\\strategic_resource_helium_small.tga"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+
+	spriteType = {
+		norefcount = yes
+		name = "GFX_gold_small"
+		texturefile = "gfx\mapitems\strategic_resources\\strategic_resource_gold_small.tga"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+
+	spriteType = {
+		norefcount = yes
+		name = "GFX_horses_small"
+		texturefile = "gfx\mapitems\strategic_resources\\strategic_resource_horses_small.tga"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+	spriteType = {
+		norefcount = yes
+		name = "GFX_antibiotics_small"
+		texturefile = "gfx\mapitems\strategic_resources\\strategic_resource_antibiotics_small.tga"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+
+	spriteType = {
+		norefcount = yes
+		name = "GFX_ballbearings_small"
+		texturefile = "gfx\mapitems\strategic_resources\\strategic_resource_ballbearings_small.tga"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+
+	spriteType = {
+		norefcount = yes
+		name = "GFX_prefab_ship_facilities_small"
+		texturefile = "gfx\mapitems\strategic_resources\\strategic_resource_prefab_ship_facilities_small.tga"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+
+	spriteType = {
+		norefcount = yes
+		name = "GFX_dockyard_facilities_small"
+		texturefile = "gfx\mapitems\strategic_resources\\strategic_resource_dockyard_facilities_small.tga"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+
+	spriteType = {
+		norefcount = yes
+		name = "GFX_oil_refinery_small"
+		texturefile = "gfx\mapitems\strategic_resources\\strategic_resource_oil_refinery_small.tga"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+
+	spriteType = {
+		norefcount = yes
+		name = "GFX_automotive_industry_small"
+		texturefile = "gfx\mapitems\strategic_resources\\strategic_resource_automotive_industry_small.tga"
+		loadType = "INGAME"
+		norefcount = yes
+	}
+	
+	
+	
+}

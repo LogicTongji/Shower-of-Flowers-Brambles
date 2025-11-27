@@ -1,0 +1,291 @@
+objectTypes = {
+	EMFXActorType = {
+		name = "ENG_anti_tank_brigade_2_actor"
+		actorfile = "gfx\anims\British_17pounder_ATGun.xac"
+		
+		idle   = "gfx\anims\British_17pounder_ATGUN_Idle.xsm"
+		move   = "gfx\anims\British_17pounder_ATGUN_Idle.xsm"
+		attack = "gfx\anims\British_17pounder_ATGUN_Attack.xsm"
+		block_attachment = yes
+		scale = 0.15
+	}	
+	
+	EMFXActorType = {
+		name = "ENG_anti_air_brigade_0_actor"
+		actorfile = "gfx\anims\British_Bofors_AAGun.xac"
+		
+		idle   = "gfx\anims\British_Bofors_AAGun_Idle.xsm"
+		move   = "gfx\anims\British_Bofors_AAGun_Idle.xsm"
+		attack = "gfx\anims\British_Bofors_AAGun_Attack.xsm"
+		block_attachment = yes
+		scale = 0.15
+	}	
+	
+	EMFXActorType = {
+		name = "ENG_armor_brigade_4_actor"
+		actorfile = "gfx\anims\British_Cromwell_MKVI.xac"
+		scale = 0.87
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\British_Cromwell_MKVI_Idle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\British_Cromwell_MKVI_Moving.xsm"
+			defaultAnimationTime = 2.8
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\British_Cromwell_MKVI_Attack.xsm"
+			defaultAnimationTime = 0.0
+		}
+	}
+	
+	EMFXActorType = {
+		name = "ENG_heavy_armor_brigade_1_actor"
+		actorfile = "gfx\anims\British_Churchill_Heavy_Tank.xac"
+		scale = 0.87
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\British_Churhill_Heavy_Tank_Idle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\British_Churhill_Heavy_Tank_Moving.xsm"
+			defaultAnimationTime = 2.8
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\British_Churhill_Heavy_Tank_Attack.xsm"
+			defaultAnimationTime = 0.0
+		}
+	}
+	
+	EMFXActorType = {
+		name = "ENG_heavy_armor_brigade_2_actor"
+		actorfile = "gfx\anims\British_Churchill_Heavy_Tank.xac"
+		scale = 0.87
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\British_Churhill_Heavy_Tank_Idle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\British_Churhill_Heavy_Tank_Moving.xsm"
+			defaultAnimationTime = 2.8
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\British_Churhill_Heavy_Tank_Attack.xsm"
+			defaultAnimationTime = 0.0
+		}
+	}
+	
+		
+	EMFXActorType = {
+		name = "ENG_armor_brigade_5_actor"
+		actorfile = "gfx\anims\British_Comet_Tank.xac"
+		scale = 0.87
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\British_Comet_Tank_Idle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\British_Comet_Tank_Moving.xsm"
+			defaultAnimationTime = 2.8
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\British_Comet_Tank_Attack.xsm"
+			defaultAnimationTime = 0.0
+		}
+	}
+	
+	EMFXActorType = {
+		name = "ENG_heavy_armor_brigade_3_actor"
+		actorfile = "gfx\anims\British_Black_Prince.xac"
+		scale = 0.87
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\British_Black_Prince_Idle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\British_Black_Prince_Moving.xsm"
+			defaultAnimationTime = 2.8
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\British_Black_Prince_Attack.xsm"
+			defaultAnimationTime = 0.0
+		}
+	}
+	
+	EMFXActorType = {
+		name = "ENG_armor_brigade_3_actor"
+		actorfile = "gfx\anims\British_Sherman_Firefly.xac"
+		scale = 0.87
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\British_Sherman_Firefly_Idle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\British_Sherman_Firefly_Moving.xsm"
+			defaultAnimationTime = 2.8
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\British_Sherman_Firefly_Attack.xsm"
+			defaultAnimationTime = 0.0
+		}
+	}
+			
+	EMFXActorType = {
+		name = "ENG_cag_0_actor"
+		actorfile = "gfx\anims\British_Swordfish.xac"
+		
+		idle   = "gfx\anims\British_Bomber.xsm"
+		move   = "gfx\anims\British_Bomber.xsm"
+		attack = "gfx\anims\British_2_plane_attack.xsm"
+		scale = 2.25
+	}	
+	
+	EMFXActorType = {
+		name = "ENG_cag_1_actor"
+		actorfile = "gfx\anims\British_Swordfish.xac"
+		
+		idle   = "gfx\anims\British_Bomber.xsm"
+		move   = "gfx\anims\British_Bomber.xsm"
+		attack = "gfx\anims\British_2_plane_attack.xsm"
+		scale = 2.25
+	}
+	
+	EMFXActorType = {
+		name = "ENG_cag_2_actor"
+		actorfile = "gfx\anims\British_Swordfish.xac"
+		
+		idle   = "gfx\anims\British_Bomber.xsm"
+		move   = "gfx\anims\British_Bomber.xsm"
+		attack = "gfx\anims\British_2_plane_attack.xsm"
+		scale = 2.25
+	}
+	
+	EMFXActorType = {
+		name = "ENG_cag_3_actor"
+		actorfile = "gfx\anims\British_Swordfish.xac"
+		
+		idle   = "gfx\anims\British_Bomber.xsm"
+		move   = "gfx\anims\British_Bomber.xsm"
+		attack = "gfx\anims\British_2_plane_attack.xsm"
+		scale = 2.25
+	}
+	
+	EMFXActorType = {
+		name = "ENG_tactical_bomber_2_actor"
+		actorfile = "gfx\anims\British_Vickers_Willington.xac"
+		
+		idle   = "gfx\anims\British_Bomber.xsm"
+		move   = "gfx\anims\British_Bomber.xsm"
+		attack = "gfx\anims\British_2_plane_attack.xsm"
+		scale = 2.25
+	}	
+	
+	EMFXActorType = {
+		name = "ENG_submarine_2_actor"
+		actorfile = "gfx\anims\British_T_Class_Submarine.xac"
+		
+		idle   = "gfx\anims\British_T_Class_Idle.xsm"
+		move   = "gfx\anims\British_T_Class_Idle.xsm"
+		attack = "gfx\anims\British_T_Class_Idle.xsm"
+		scale = 0.6
+	}	
+	
+	EMFXActorType = {
+		name = "ENG_battleship_4_actor"
+		actorfile = "gfx\anims\British_LionClass.xac"
+		
+		idle   = "gfx\anims\British_LionClass_Idle.xsm"
+		move   = "gfx\anims\British_LionClass_Idle.xsm"
+		attack = "gfx\anims\British_LionClass_Attack.xsm"
+		scale = 2.0
+	}	
+	
+	EMFXActorType = {
+		name = "ENG_battlecruiser_1_actor"
+		actorfile = "gfx\anims\British_Renown_Class_Battlecruiser.xac"
+		
+		idle   = "gfx\anims\British_Renown_Class_Battlecruiser_Idle.xsm"
+		move   = "gfx\anims\British_Renown_Class_Battlecruiser_Idle.xsm"
+		attack = "gfx\anims\British_Renown_Class_Battlecruiser_Attack.xsm"
+		scale = 2.2
+	}	
+	
+	EMFXActorType = {
+		name = "ENG_battleship_3_actor"
+		actorfile = "gfx\anims\British_King_George_V.xac"
+		
+		idle   = "gfx\anims\British_King_George_V_Idle.xsm"
+		move   = "gfx\anims\British_King_George_V_Idle.xsm"
+		attack = "gfx\anims\British_King_George_V_Attack.xsm"
+		scale = 2.0
+	}	
+	
+	EMFXActorType = {
+		name = "ENG_carrier_3_actor"
+		actorfile = "gfx\anims\British_Illustrious.xac"
+		
+		idle   = "gfx\anims\British_Illustrious_Idle.xsm"
+		move   = "gfx\anims\British_Illustrious_Idle.xsm"
+		attack = "gfx\anims\British_Illustrious_Idle.xsm"
+		scale = 2.5
+	}	
+	
+	EMFXActorType = {
+		name = "ENG_interceptor_3_actor"
+		actorfile = "gfx\anims\British_Hawker_Typhoon.xac"
+		
+		idle   = "gfx\anims\British_3_plane_idle.xsm"
+		move   = "gfx\anims\British_3_plane_idle.xsm"
+		attack = "gfx\anims\British_3_plane_attack.xsm"
+		scale = 2.25
+	}	
+
+	
+	EMFXActorType = {
+		name = "ENG_interceptor_5_actor"
+		actorfile = "gfx\anims\British_Gloster_Meteor.xac"
+		
+		idle   = "gfx\anims\British_3_plane_idle.xsm"
+		move   = "gfx\anims\British_3_plane_idle.xsm"
+		attack = "gfx\anims\British_3_plane_attack.xsm"
+		scale = 2.25
+	}
+	
+	
+}

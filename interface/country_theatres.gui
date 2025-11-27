@@ -1,0 +1,558 @@
+guiTypes = {
+
+	windowType = {
+		name = "topcolor_theatres"
+		backGround =""
+		position = { x=0 y=0 }	
+		size = { x=1120 y=768 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = "0"
+		verticalBorder = ""
+		fullScreen = no
+		orientation="UPPER_LEFT"
+	
+		iconType = {
+			name = "topcolor_icon"
+			spriteType = "GFX_topcolor_theatres"
+			position = { x= 0 y = -1 }
+			Orientation = "UPPER_LEFT"
+		}
+	}
+	
+	windowType = {
+		name = "country_theatres"
+		backGround =""
+		position = { x=-555 y=-344 }	
+		size = { x=1120 y=768 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = "0"
+		verticalBorder = ""
+		fullScreen = no
+		orientation="CENTER"
+		
+		iconType = {
+			name ="bg_mainshadow"
+			spriteType = "GFX_bg_mainshadow"
+			position = { x= -3 y = 9 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		iconType = {
+			name ="bg_countryskin"
+			spriteType = "GFX_country_bg"
+			position = { x= 44 y = 54 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		iconType = {
+			name ="bg_theatres"
+			spriteType = "GFX_theatres_bg"
+			position = { x= 44 y = -30 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		guiButtonType = {
+			name = "close_button"
+			position = { x= -98 y = 24}
+			quadTextureSprite = "GFX_close_button"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Arial12_black"
+			Orientation = "UPPER_RIGHT"
+			shortcut = "ESCAPE"
+			clicksound = click
+		}
+		
+		textBoxType = { 
+			name = "headline_theatres"
+			position = { x = 710 y = 8 }
+			textureFile = ""
+			font = "impact"
+			borderSize = {x = 0 y = 4}
+			text = "headline_theatres"	
+			maxWidth = 300
+			maxHeight = 64	
+			format = right
+		}
+		
+		
+		textBoxType = { 
+			name = "my_theatres_label"
+			position = { x = 775 y = 80 }
+			textureFile = ""
+			font = "Arial12"
+			borderSize = {x = 0 y = 0}
+			text = "THEATRE_THEATRES"	
+			maxWidth = 200
+			maxHeight = 20	
+			fixedsize = yes
+			format = centre
+		}
+		textBoxType = { 
+			name = "allied_theatres_label"
+			position = { x = 775 y = 405 }
+			textureFile = ""
+			font = "Arial12"
+			borderSize = {x = 0 y = 0}
+			text = "THEATRE_ALLIED_THEATRES"	
+			maxWidth = 200
+			maxHeight = 20	
+			fixedsize = yes
+			format = centre
+		}
+		listboxType = {
+			name ="my_theatres"
+			position = { x = 720 y = 108 }
+			backGround=""
+			size = { x= 314 y =270}
+			Orientation = "UPPER_LEFT"
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 4 y = 4 }
+			offset = { x=0 y = 0 }
+		}
+		
+		listboxType = {
+			name ="allied_theatres"
+			position = { x = 720 y = 433 }
+			backGround=""
+			size = { x= 314 y =270}
+			Orientation = "UPPER_LEFT"
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 4 y = 4 }
+			offset = { x=0 y = 0 }
+		}
+		
+		### selected theatre
+		windowType = {
+			name = "selected_theatre"
+			backGround =""
+			position = { x=60 y=80 }	
+			size = { x=1120 y=768 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder = "0"
+			verticalBorder = ""
+			fullScreen = no
+			orientation="UPPER_LEFT"
+			
+			guiButtonType = {
+				name ="country_icon"
+				quadTextureSprite = "GFX_minishield"
+				position = { x= 5 y = 4}
+				Orientation = "UPPER_LEFT"
+			}
+
+			instantTextBoxType= {
+				position = { x=60 y =-1 }
+				name = "title"
+				font = "Arial16"
+				borderSize = {x = 0 y = 0}	
+				maxWidth = 460
+				maxHeight = 32
+				text = ""	
+				fixedsize = yes
+				orientation = "UPPER_LEFT"
+				format = left
+			}
+			
+			iconType = {
+				name ="land_stance_icon"
+				spriteType = "GFX_theatres_land_icon"
+				position = { x= 53 y = 17 }
+				Orientation = "UPPER_LEFT"
+			}
+			iconType = {
+				name ="air_stance_icon"
+				spriteType = "GFX_theatres_air_icon"
+				position = { x= 187 y = 19 }
+				Orientation = "UPPER_LEFT"
+			}
+			iconType = {
+				name ="naval_stance_icon"
+				spriteType = "GFX_theatres_naval_icon"
+				position = { x= 321 y = 19 }
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType= {
+				position = { x=77 y =24 }
+				name = "land_stance"
+				font = "Arial12_black"
+				borderSize = {x = 0 y = 0}	
+				maxWidth = 110
+				maxHeight = 20
+				text = "Defensive Stance"	
+				fixedsize = yes
+				orientation = "UPPER_LEFT"
+				format = left
+			}
+			instantTextBoxType= {
+				position = { x=211 y =24 }
+				name = "air_stance"
+				font = "Arial12_black"
+				borderSize = {x = 0 y = 0}	
+				maxWidth = 110
+				maxHeight = 20
+				text = "Defensive Stance"	
+				fixedsize = yes
+				orientation = "UPPER_LEFT"
+				format = left
+			}
+			instantTextBoxType= {
+				position = { x=345 y =24 }
+				name = "naval_stance"
+				font = "Arial12_black"
+				borderSize = {x = 0 y = 0}	
+				maxWidth = 110
+				maxHeight = 20
+				text = "Defensive Stance"	
+				fixedsize = yes
+				orientation = "UPPER_LEFT"
+				format = left
+			}
+			
+			guiButtonType = {
+				name = "goto_button"
+				position = { x=455 y =18 }
+				quadTextureSprite ="GFX_theatres_goto"
+				buttonText = "GOTO"
+				buttonFont = "Arial12_black"
+			}
+			
+			instantTextBoxType = {
+				name = "forces_label"
+				position = { x = 5 y = 49 }
+				textureFile = ""
+				font = "Arial12"
+				borderSize = {x = 4 y = 0}
+				text = "THEATRE_FORCES"	
+				maxWidth = 400
+				maxHeight = 16	
+				fixedsize = yes
+				Orientation = "UPPER_LEFT"
+			}
+			
+			instantTextBoxType = {
+				name = "forces"
+				position = { x = 5 y = 70 }
+				textureFile = ""
+				font = "Arial12_black"
+				borderSize = {x = 4 y = 0}
+				text = "needs"	
+				maxWidth = 600
+				maxHeight = 60	
+				fixedsize = yes
+				Orientation = "UPPER_LEFT"
+			}
+			
+			instantTextBoxType = {
+				name = "immediate_needs_label"
+				position = { x = 5 y = 106 }
+				textureFile = ""
+				font = "Arial12"
+				borderSize = {x = 4 y = 0}
+				text = "IMMEDIATE_NEEDS"	
+				maxWidth = 400
+				maxHeight = 16	
+				fixedsize = yes
+				Orientation = "UPPER_LEFT"
+			}
+			
+			instantTextBoxType = {
+				name = "immediate_needs"
+				position = { x = 5 y = 128 }
+				textureFile = ""
+				font = "Arial12_black"
+				borderSize = {x = 4 y = 0}
+				text = "needs"	
+				maxWidth = 600
+				maxHeight = 60	
+				fixedsize = yes
+				Orientation = "UPPER_LEFT"
+			}
+			
+			guiButtonType = {
+				name = "build"
+				position = { x=542 y =126}
+				quadTextureSprite ="GFX_build_theatre_need"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "Arial12"
+			}
+			
+			instantTextBoxType = {
+				name = "build_text"
+				position = { x = 564 y = 131 }
+				textureFile = ""
+				font = "Arial12"
+				borderSize = {x = 4 y = 0}
+				text = "BUILD"	
+				maxWidth = 400
+				maxHeight = 180	
+				Orientation = "UPPER_LEFT"
+			}
+			
+			instantTextBoxType = {
+				name = "objective_label"
+				position = { x = 5 y = 154 }
+				textureFile = ""
+				font = "Arial12"
+				borderSize = {x = 4 y = 0}
+				text = "THEATRE_CURRENT_OBJECTIVES"	
+				maxWidth = 400
+				maxHeight = 16	
+				fixedsize = yes
+				Orientation = "UPPER_LEFT"
+			}
+			
+			instantTextBoxType = {
+				name = "objective"
+				position = { x = 5 y = 174 }
+				textureFile = ""
+				font = "Arial12_black"
+				borderSize = {x = 4 y = 0}
+				text = "None"	
+				maxWidth = 600
+				maxHeight = 60	
+				fixedsize = yes
+				Orientation = "UPPER_LEFT"
+			}
+			
+			instantTextBoxType = {
+				name = "current_operation_label"
+				position = { x = 5 y = 192 }
+				textureFile = ""
+				font = "Arial12"
+				borderSize = {x = 4 y = 0}
+				text = "THEATRE_CURRENT_OPERATION"	
+				maxWidth = 400
+				maxHeight = 16	
+				fixedsize = yes
+				Orientation = "UPPER_LEFT"
+			}
+			
+			instantTextBoxType = {
+				name = "current_operation"
+				position = { x = 5 y = 212 }
+				textureFile = ""
+				font = "Arial12_black"
+				borderSize = {x = 4 y = 0}
+				text = "None"	
+				maxWidth = 600
+				maxHeight = 60	
+				fixedsize = yes
+				Orientation = "UPPER_LEFT"
+			}
+			
+			instantTextBoxType = {
+				name = "areas_label"
+				position = { x = 106 y = 249 }
+				textureFile = ""
+				font = "Arial12"
+				borderSize = {x = 4 y = 0}
+				text = "THEATRE_FRONT_PLANNING"	
+				maxWidth = 400
+				maxHeight = 20	
+				fixedsize = yes
+				format = centre
+				Orientation = "UPPER_LEFT"
+			}
+			
+			listboxType = {
+				name ="areas"
+				position = { x = 16 y = 268 }
+				backGround=""
+				size = { x= 582 y =357}
+				Orientation = "UPPER_LEFT"
+				spacing = 2
+				scrollbartype = "standardlistbox_slider"
+				borderSize = {x = 0 y = 0 }
+				offset = { x=0 y = 0 }
+			}
+		}
+	}
+	
+	### theatre entry
+	windowType = {
+		name = "theatre_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=256 y= 29 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+		guiButtonType = {
+			name = "background_button"
+			position = { x=-5  y = 2}
+			quadTextureSprite ="GFX_theatres_entry_bg"
+		}
+		
+		guiButtonType = {
+			name ="country_icon"
+			quadTextureSprite = "GFX_minishield"
+			position = { x= -20 y = 0}
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType= {
+			position = { x=23 y =10 }
+			name = "title"
+			font = "Arial12_black"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 328
+			maxHeight = 20
+			text = ""	
+			orientation = "UPPER_LEFT"
+			format = left
+		}
+
+		iconType = {
+			name = "theatre_plupp"
+			spriteType = "GFX_theatres_plupp"
+			position = { x= 275 y = 4 }
+			Orientation = "UPPER_LEFT"
+		}
+	}
+	
+	### area entry
+	windowType = {
+		name = "area_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=256 y= 119 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+		iconType = {
+			name = "theatres_front_bg"
+			spriteType = "GFX_theatres_front_bg"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name = "theatres_continent"
+			spriteType = "GFX_theatres_continent_europe"
+			position = { x= -10 y = -3 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		instantTextBoxType= {
+			position = { x=96 y =8 }
+			name = "title"
+			font = "Arial12"  
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 440
+			maxHeight = 20
+			text = ""	
+			orientation = "UPPER_LEFT"
+			format = left
+			fixedsize = yes
+		}
+		
+		
+		guiButtonType = {
+			name ="stance"
+			quadTextureSprite ="GFX_stance_button"	
+			position = { x= 90 y = 24 }
+			Orientation = "UPPER_LEFT"
+			buttonText = "Cat-charge"
+			buttonFont = "Arial12_black"
+		}
+		
+		guiButtonType = {
+				name = "goto_button"
+				position = { x=420 y =28 }
+				quadTextureSprite ="GFX_theatres_goto"
+				buttonText = "GOTO"
+				buttonFont = "Arial12_black"
+			}
+		
+		instantTextBoxType= {
+			position = { x=96 y =60 }
+			name = "odds_description"
+			font = "Arial12_black"  
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 460
+			maxHeight = 20
+			text = "test"	
+			orientation = "UPPER_LEFT"
+			format = left
+			fixedsize = yes
+		}
+		
+		iconType = {
+			name = "current_odds"
+			spriteType = "GFX_theatres_plupp"
+			position = { x= 550 y = 3 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		##remove
+		iconType = {
+			name = "odds_with_reinforcements"
+			spriteType = "GFX_theatres_plupp"
+			position = { x= 9585 y = 134 }
+			Orientation = "UPPER_LEFT"
+		}
+		###
+		
+		instantTextBoxType = {
+			name = "needs_label"
+			position = { x = 96 y = 81 }
+			textureFile = ""
+			font = "Arial12"
+			borderSize = {x = 0 y = 0}
+			text = "NEEDS"	
+			maxWidth = 400
+			maxHeight = 20	
+			fixedsize = yes
+			Orientation = "UPPER_LEFT"
+		}
+		
+		instantTextBoxType = {
+			name = "forces_needs"
+			position = { x = 91 y = 100 }
+			textureFile = ""
+			font = "Arial12_black"
+			borderSize = {x = 4 y = 0}
+			text = "needs"	
+			maxWidth = 420
+			maxHeight = 26	
+			fixedsize = yes
+			Orientation = "UPPER_LEFT"
+		}
+		
+		guiButtonType = {
+			name = "build"
+			position = { x=508 y =93}
+			quadTextureSprite ="GFX_build_theatre_need"
+		}
+			
+		instantTextBoxType = {
+			name = "build_text"
+			position = { x = 530 y = 98 }
+			textureFile = ""
+			font = "Arial12"
+			borderSize = {x = 4 y = 0}
+			text = "BUILD"	
+			maxWidth = 400
+			maxHeight = 180	
+			Orientation = "UPPER_LEFT"
+		}
+	}
+}
+
+

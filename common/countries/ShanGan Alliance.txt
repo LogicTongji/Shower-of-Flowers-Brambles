@@ -1,0 +1,82 @@
+color = { 188  123  103 }
+graphical_culture = Japanese
+
+default_templates = {
+	binary_infantry = {
+		infantry_brigade
+		infantry_brigade
+	}
+	binary_milita = {
+		militia_brigade
+		militia_brigade
+	}
+	binary_armoured = {
+		armor_brigade
+		motorized_brigade
+	}
+	binary_cavalry = {
+		cavalry_brigade
+		cavalry_brigade
+	}
+}
+
+unit_names = {
+	infantry_brigade = {
+		"第37师" "第38师" "第132师" "第143师"
+	}
+	cavalry_brigade = {
+		"骑兵第9师"
+	}
+}
+ministers = {
+	3000050 = {
+		name = "张学良"
+		ideology = paternal_autocrat
+		loyalty = 0.50
+		picture = M52008
+		head_of_state = die_hard_reformer
+		start_date = 1936.1.1
+	}
+	3000051 = {
+		name = "杨虎城"
+		ideology = paternal_autocrat
+		loyalty = 0.50
+		picture = L50340
+		head_of_government = silent_workhorse
+		armament_minister = military_entrepreneur
+		start_date = 1936.1.1
+	}
+	3000052 = {
+		name = "邵力子"
+		ideology = paternal_autocrat
+		loyalty = 0.50
+		picture = M3000048
+		foreign_minister = ideological_crusader
+		start_date = 1936.1.1
+	}
+	3000053 = {
+		name = "邓宝珊"
+		ideology = paternal_autocrat
+		loyalty = 0.50
+		picture = L50285
+		minister_of_security = man_of_the_people
+		start_date = 1936.1.1
+	}
+	3000054 = {
+		name = "王以哲"
+		ideology = paternal_autocrat
+		loyalty = 0.50
+		picture = L50319
+		minister_of_intelligence = technical_specialist
+		chief_of_staff = school_of_fire_support
+		start_date = 1936.1.1
+	}
+	3000055 = {
+		name = "于学忠"
+		ideology = paternal_autocrat
+		loyalty = 0.50
+		picture = L503018
+		chief_of_army = guns_and_butter_doctrine
+		start_date = 1936.1.1
+	}
+}

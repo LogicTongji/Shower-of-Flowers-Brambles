@@ -1,0 +1,82 @@
+amph_armour_brigade = {
+	type = land
+	sprite = Tank
+	active = no
+	unit_group = armor_unit_type
+	
+	is_mobile = yes
+	is_armor = yes
+
+	#Size Definitions
+	max_strength = 10
+	default_organisation = 30
+	default_morale = 0.30
+	officers = 100
+
+	#Building Costs
+	build_cost_ic = 10.00
+	build_cost_manpower = 1.67
+	build_time = 240
+
+	#Misc Abilities
+	maximum_speed = 6.00
+	transport_weight = 20.00
+	supply_consumption = 2.00
+	fuel_consumption = 2.00
+	radio_strength = 1
+
+	#Defensive Abilities
+	defensiveness = 2.50
+	toughness = 2.50
+	softness = 0.30
+	air_defence = 0.80
+	armor_value = 5
+
+	#Offensive Abilities
+	suppression = 0.00
+	soft_attack = 2.33
+	hard_attack = 2.33
+	air_attack = 0.33
+
+	urban = {
+		attack = -0.40
+		defence = -0.10
+	}
+   	amphibious = { 
+		attack = 0.40
+	}
+    river = { 
+		attack = -0.20
+	}
+   	marsh = { 
+		attack = -0.10
+		movement = -0.40
+	}
+	jungle = {
+		attack = -0.50
+		movement = -0.60
+	}
+	forest = { 
+		attack = -0.30
+		movement = -0.40
+	}
+	woods = { 
+		attack = -0.05
+		movement = -0.10		
+	}
+	mountain = 	{
+		attack = -0.60
+		movement = -0.40
+	}
+	hills = {
+		attack = -0.10
+		movement = -0.10
+	}
+	
+	combat_width = 0
+
+	completion_size = 1.0
+	on_completion = armour_practical
+	priority = 4
+
+}

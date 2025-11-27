@@ -1,0 +1,1564 @@
+cavalry_smallarms = {
+	
+	cavalry_brigade = {
+		soft_attack = 0.5
+		
+	}
+
+	research_bonus_from = {
+		mobile_theory = 0.3
+		mobile_practical = 0.6
+		human_wave_theory = 0.1
+	}
+	
+	on_completion = mobile_theory
+	difficulty = 0
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1934	#2nd model is from 1934
+	additional_offset = 2	#one new every 2 years
+	max_level = 12
+	folder = infantry_folder
+}
+
+
+cavalry_support  = {
+	
+	cavalry_brigade = {
+		defensiveness = 0.5
+		
+	}
+
+	research_bonus_from = {
+		mobile_theory = 0.3
+		mobile_practical = 0.6
+		militia_practical = 0.1
+	}
+	
+	on_completion = mobile_theory
+	difficulty = 0
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1934	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 12
+	folder = infantry_folder
+}
+
+
+cavalry_guns = {
+	
+	cavalry_brigade = {
+		toughness = 0.4
+		
+	}
+
+	research_bonus_from = {
+		mobile_theory = 0.3
+		mobile_practical = 0.5
+		artillery_practical = 0.2
+	}
+	
+	on_completion = mobile_theory
+	difficulty = 0
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1934	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 12
+	folder = infantry_folder
+}
+
+
+cavalry_at = {
+	
+	cavalry_brigade = {
+		hard_attack = 0.1
+		ap_attack = 0.5
+		
+	}
+
+	research_bonus_from = {
+		mobile_theory = 0.3
+		mobile_practical = 0.6
+		artillery_practical = 0.1
+	}
+	
+	on_completion = mobile_theory
+	difficulty = 0
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1934	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 12
+	folder = infantry_folder
+}
+
+militia_smallarms = {
+
+	activate_building = land_fort 
+	activate_unit = camicie_nere_brigade 
+	camicie_nere_brigade = {
+soft_attack = 0.3
+	}
+
+	militia_brigade = {
+		soft_attack = 0.3
+		
+	}
+	partisan_brigade = {
+		soft_attack = 0.3
+		
+	}
+	garrison_brigade = {
+		soft_attack = 0.4
+		
+	}
+
+	research_bonus_from = {
+		militia_theory = 0.3
+		militia_practical = 0.6
+		human_wave_theory = 0.1
+	}
+	
+	on_completion = militia_theory
+	difficulty = 0
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1934	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 12
+	folder = infantry_folder
+}
+
+
+militia_support  = {
+	#TODO: move this somwhere it makes sense
+	activate_building = underground
+	camicie_nere_brigade = {
+defensiveness = 0.5
+	}
+
+	militia_brigade = {
+		defensiveness = 0.5
+		
+	}
+	partisan_brigade = {
+		defensiveness = 0.5
+		
+	}
+	garrison_brigade = {
+		defensiveness = 0.5
+		
+	}
+
+	research_bonus_from = {
+		militia_theory = 0.3
+		militia_practical = 0.6
+		infantry_practical = 0.1
+	}
+	
+	on_completion = militia_theory
+	difficulty = 0
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1934	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 12
+	folder = infantry_folder
+}
+
+
+militia_guns = {
+camicie_nere_brigade = {
+toughness = 0.1
+	}
+	
+	
+	militia_brigade = {
+		toughness = 0.1
+		
+	}
+	partisan_brigade = {
+		toughness = 0.1
+		
+	}
+	garrison_brigade = {
+		toughness = 0.1
+		
+	}
+
+	research_bonus_from = {
+		militia_theory = 0.3
+		militia_practical = 0.5
+		artillery_practical = 0.2
+	}
+	
+	on_completion = militia_theory
+	difficulty = 0
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1934	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 12
+	folder = infantry_folder
+}
+
+
+militia_at = {
+camicie_nere_brigade = {
+hard_attack = 0.1
+		ap_attack = 0.5
+	}
+	
+	militia_brigade = {
+		hard_attack = 0.1
+		ap_attack = 0.5
+	}
+	partisan_brigade = {
+		hard_attack = 0.1
+		ap_attack = 0.5
+	}
+	garrison_brigade = {
+		hard_attack = 0.15
+		ap_attack = 0.5
+	}
+
+	research_bonus_from = {
+		militia_theory = 0.3
+		militia_practical = 0.6
+		artillery_practical = 0.1
+	}
+	
+	on_completion = militia_theory
+	difficulty = 0
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1934	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 12
+	folder = infantry_folder
+}
+
+
+infantry_activation = {
+	activate_unit = infantry_brigade 
+	activate_unit = Guards_brigade
+	activate_unit = chi_star_destroyer
+	activate_unit = GER_ss
+	activate_unit = For_the_occasion_brigade
+	activate_unit = foring_brigade
+
+	allow = {
+		militia_smallarms = 1
+		militia_support = 1
+		militia_guns = 1
+		militia_at = 1
+	}
+
+	research_bonus_from = {
+		infantry_theory = 0.3
+		infantry_practical = 0.7
+	}
+	
+	on_completion = infantry_theory
+	
+	difficulty = 1
+	start_year = 1918
+	folder = infantry_folder
+}
+
+
+
+smallarms_technology = {
+
+	#each model gets this added to it.
+	field_battalion = {
+		soft_attack = 0.6
+	}
+		For_the_occasion_brigade = {
+	soft_attack = 0.6
+	}
+	GER_ss = {
+		soft_attack = 0.6
+	}
+	chi_star_destroyer = {
+		soft_attack = 0.6
+	}
+	chc_gundam = {
+		soft_attack = 0.6
+	}
+	infantry_brigade = {
+		soft_attack = 0.6
+		
+	}
+	marine_brigade = {
+		soft_attack = 0.6
+		
+	}
+	paratrooper_brigade = {
+		soft_attack = 0.6
+		
+	}
+	bergsjaeger_brigade = {
+		soft_attack = 0.6
+		
+	}
+	motorized_brigade = {
+		soft_attack = 0.6
+		
+	}
+	mechanized_brigade= {
+		soft_attack = 0.6
+		
+	}
+	alpini_brigade = {
+		soft_attack = 0.6
+	}
+	alpins_brigade = {
+		soft_attack = 0.6
+	}
+	gurkha_brigade = {
+		soft_attack = 0.6
+	}
+	waffen_brigade = {
+		soft_attack = 0.6
+	}
+	guards_brigade = {
+		soft_attack = 0.6
+	}
+	imperial_brigade = {
+		soft_attack = 0.6
+	}
+	ranger_brigade = {
+		soft_attack = 0.6
+	}
+
+	allow = {
+		infantry_activation = 1
+	}
+
+	research_bonus_from = {
+		infantry_theory = 0.3
+		infantry_practical = 0.6
+		grand_battleplan_theory = 0.1
+	}
+	
+	on_completion = infantry_theory
+	
+	difficulty = 0
+	
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1936	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 12
+	folder = infantry_folder
+}
+
+
+
+
+infantry_support = {
+	#each model gets this added to it.
+	field_battalion = {
+defensiveness = 0.8
+	}
+	For_the_occasion_brigade = {
+	defensiveness = 0.65
+	}
+		GER_ss = {
+		defensiveness = 0.9
+	}
+	chi_star_destroyer = {
+		defensiveness = 0.8
+	}
+	chc_gundam = {
+		defensiveness = 0.4
+	}
+	infantry_brigade = {
+		defensiveness = 0.8
+		
+	}
+	marine_brigade = {
+		defensiveness = 0.8
+		
+	}
+	paratrooper_brigade = {
+		defensiveness = 0.8
+		
+	}
+	bergsjaeger_brigade = {
+		defensiveness = 0.8
+		
+	}
+	motorized_brigade = {
+		defensiveness = 0.8
+		
+	}
+	mechanized_brigade = {
+		defensiveness = 0.8
+		
+	}
+	foring_brigade = { 
+	defensiveness = 0.8
+	}
+	alpini_brigade = {
+		defensiveness = 0.8
+	}
+	alpins_brigade = {
+		defensiveness = 0.8
+	}
+	gurkha_brigade = {
+		defensiveness = 0.8
+	}
+	waffen_brigade = {
+		defensiveness = 0.8
+	}
+	guards_brigade = {
+		defensiveness = 0.8
+	}
+	imperial_brigade = {
+		defensiveness = 0.8
+	}
+	ranger_brigade = {
+		defensiveness = 0.8
+	}
+
+	allow = {
+		infantry_activation = 1
+	}
+
+	research_bonus_from = {
+		infantry_theory = 0.3
+		infantry_practical = 0.6
+		superior_firepower_theory = 0.1
+	}
+	
+	on_completion = infantry_theory
+	
+	difficulty = 0
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1936	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 12
+	folder = infantry_folder
+}
+
+infantry_guns = {
+foring_brigade = { 
+	toughness = 0.6
+	}
+field_battalion = {
+	toughness = 0.6
+	}
+For_the_occasion_brigade = {
+	toughness = 0.6
+	}
+	GER_ss = {
+		toughness = 0.6
+	}
+	chc_gundam = {
+		toughness = 0.6
+	}
+	chi_star_destroyer = {
+		toughness = 0.6
+	}
+	#each model gets this added to it.
+	infantry_brigade = {
+		toughness = 0.6
+		
+	}
+	marine_brigade = {
+		toughness = 0.6
+		
+	}
+	paratrooper_brigade = {
+		toughness = 0.6
+		
+	}
+	bergsjaeger_brigade = {
+		toughness = 0.6
+		
+	}
+	motorized_brigade = {
+		toughness = 0.6
+		
+	}
+	mechanized_brigade= {
+		toughness = 0.6
+		
+	}
+	
+	alpini_brigade = {
+		toughness = 0.6
+	}
+	alpins_brigade = {
+		toughness = 0.6
+	}
+	gurkha_brigade = {
+		toughness = 0.6
+	}
+	waffen_brigade = {
+		toughness = 0.6
+	}
+	guards_brigade = {
+		toughness = 0.6
+	}
+	imperial_brigade = {
+		toughness = 0.6
+	}
+	ranger_brigade = {
+		toughness = 0.6
+	}
+
+	allow = {
+		infantry_activation = 1
+		gun_base = 1
+	}
+
+	research_bonus_from = {
+		infantry_theory = 0.3
+		infantry_practical = 0.5
+		artillery_practical = 0.2
+	}
+	
+	on_completion = infantry_theory
+	
+	difficulty = 1
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1936	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 12
+	folder = infantry_folder
+}
+
+infantry_at = {
+	#each model gets this added to it.
+		foring_brigade = {
+		hard_attack = 0.25
+		ap_attack = 1
+	}
+	field_battalion = {
+	hard_attack = 0.25
+		ap_attack = 1
+	}
+	For_the_occasion_brigade = {
+	hard_attack = 0.15
+		ap_attack = 1
+	}
+		GER_ss = {
+		hard_attack = 0.40
+		ap_attack = 1
+	}
+	chi_star_destroyer = {
+		hard_attack = 0.25
+		ap_attack = 1
+	}
+	chc_gundam = {
+		hard_attack = 0.25
+		ap_attack = 1
+	}
+	infantry_brigade = {
+		hard_attack = 0.25
+		ap_attack = 1
+	}
+	marine_brigade = {
+		hard_attack = 0.2
+		ap_attack = 0.5
+	}
+	paratrooper_brigade = {
+		hard_attack = 0.2
+		ap_attack = 0.5
+	}
+	bergsjaeger_brigade = {
+		hard_attack = 0.2
+		ap_attack = 0.5
+	}
+	motorized_brigade = {
+		hard_attack = 0.25
+		ap_attack = 1
+	}
+	mechanized_brigade= {
+		hard_attack = 0.25
+		ap_attack = 1
+	}
+	
+	alpini_brigade = {
+		hard_attack = 0.25
+		ap_attack = 1
+	}
+	alpins_brigade = {
+		hard_attack = 0.25
+		ap_attack = 1
+	}
+	gurkha_brigade = {
+		hard_attack = 0.25
+		ap_attack = 1
+	}
+	waffen_brigade = {
+		hard_attack = 0.25
+		ap_attack = 1
+	}
+	guards_brigade = {
+		hard_attack = 0.25
+		ap_attack = 1
+	}
+	imperial_brigade = {
+		hard_attack = 0.25
+		ap_attack = 1
+	}
+	ranger_brigade = {
+		hard_attack = 0.25
+		ap_attack = 1
+	}
+
+	allow = {
+		infantry_activation = 1
+		gun_base = 1
+	}
+
+	research_bonus_from = {
+		infantry_theory = 0.3
+		infantry_practical = 0.6
+		artillery_practical = 0.1
+	}
+	
+	on_completion = infantry_theory
+	
+	difficulty = 1
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1936	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 12
+	folder = infantry_folder
+}
+
+mountain_infantry = {
+	activate_unit = bergsjaeger_brigade
+	activate_unit = Gurkha_brigade
+	activate_unit = Alpins_brigade
+	activate_unit = Alpini_brigade
+	activate_unit = chc_gundam
+	activate_unit = field_battalion
+	
+	
+
+	allow = {
+		smallarms_technology = 1
+		infantry_support = 1
+		infantry_guns = 1
+		infantry_at = 1
+	}
+
+	research_bonus_from = {
+		infantry_theory = 0.3
+		infantry_practical = 0.7
+	}
+	
+	on_completion = infantry_theory
+	
+	difficulty = 3
+	start_year = 1918
+	folder = infantry_folder
+}
+
+marine_infantry = {
+	activate_unit = marine_brigade 
+	activate_unit = Imperial_brigade
+
+	allow = {
+		smallarms_technology = 2
+		infantry_support = 2
+		infantry_guns = 2
+		infantry_at = 2
+	}
+
+	research_bonus_from = {
+		infantry_theory = 0.3
+		infantry_practical = 0.6
+		land_doctrine_practical = 0.1
+	}
+	
+	on_completion = infantry_theory
+	
+	difficulty = 3
+	start_year = 1937
+	folder = infantry_folder
+}
+
+paratrooper_infantry = {
+	activate_unit = paratrooper_brigade 
+	activate_unit = air_engineer_brigade 
+	activate_unit = ranger_brigade
+
+	allow = {
+		smallarms_technology = 3
+		infantry_support = 3
+		infantry_guns = 3
+		infantry_at = 3
+	}
+
+	research_bonus_from = {
+		infantry_theory = 0.3
+		infantry_practical = 0.6
+		land_doctrine_practical = 0.1
+	}
+	
+	on_completion = infantry_theory
+	
+	difficulty = 3
+	start_year = 1939
+	folder = infantry_folder
+}
+
+
+night_goggles = {
+foring_brigade = {
+		night = { 
+			attack = 0.15
+			defence = 0.4
+		}
+	}
+field_battalion = { 
+night = { 
+			attack = 0.15
+			defence = 0.4
+		}
+	}
+For_the_occasion_brigade = {
+		night = { 
+			attack = 0.1
+			#defence = 0.3
+		}
+GER_ss = {
+		night = { 
+			attack = 0.1
+			defence = 0.4
+		}
+	}
+	chc_gundam = {
+		night = { 
+			attack = 0.1
+		}
+	}
+	chi_star_destroyer = {
+		night = { 
+			attack = 0.1
+		}
+	}
+	infantry_brigade = {
+		night = { 
+			attack = 0.1
+			#defence = 0.3
+		}
+	}
+	marine_brigade = {
+		night = { 
+			attack = 0.1
+			#defence = 0.3
+		}	
+	}
+	paratrooper_brigade = {
+		night = { 
+			attack = 0.1
+			#defence = 0.3
+		}
+	}
+	bergsjaeger_brigade = {
+		night = { 
+			attack = 0.1
+			#defence = 0.3
+		}
+	}
+	alpini_brigade = {
+		night = { 
+			attack = 0.1
+		}
+	}
+	alpins_brigade = {
+		night = { 
+			attack = 0.1
+		}
+	}
+	gurkha_brigade = {
+		night = { 
+			attack = 0.1
+		}
+	}
+	waffen_brigade = {
+		night = { 
+			attack = 0.1
+		}
+	}
+	guards_brigade = {
+		night = { 
+			attack = 0.1
+		}
+	}
+	imperial_brigade = {
+		night = { 
+			attack = 0.1
+		}
+	}
+	ranger_brigade = {
+		night = { 
+			attack = 0.1
+		}
+	}
+	
+	
+	allow = {
+		radio_technology = 1
+	}
+
+	research_bonus_from = {
+		infantry_theory = 0.3
+		infantry_practical = 0.6
+		land_doctrine_practical = 0.1
+	}
+	
+	on_completion = infantry_theory
+
+	difficulty = 10
+	start_year = 1944
+	folder = infantry_folder
+}
+
+engineer_brigade_activation = {
+	
+
+	activate_unit = engineer_brigade
+	
+	
+	allow = {
+		industral_production = 1
+	}
+	 
+		
+	research_bonus_from = {
+		infantry_theory = 0.3
+		infantry_practical = 0.6
+		land_doctrine_practical = 0.1
+	}
+	
+	on_completion = infantry_theory
+	
+	difficulty = 3
+	start_year = 1935
+	folder = infantry_folder
+}
+
+engineer_bridging_equipment = {
+	
+
+	engineer_brigade = {
+		river = {
+			attack = 0.05
+			movement = 0.05
+		}
+	}
+	
+	
+	allow = {
+		engineer_brigade_activation = 1
+	}
+	 
+		
+	research_bonus_from = {
+		infantry_theory = 0.3
+		infantry_practical = 0.6
+		spearhead_theory = 0.1
+	}
+	
+	on_completion = infantry_theory
+	
+	difficulty = 3
+	start_year = 1939
+	first_offset = 1940
+	additional_offset = 2
+	max_level = 12
+	folder = infantry_folder
+}
+
+engineer_assault_equipment = {
+	
+
+	engineer_brigade = {
+     	   	soft_attack = 0.2
+        	hard_attack = 0.2
+        	fort = {
+            		attack = 0.1
+        	}
+	        urban = {
+        	    attack = 0.02
+        	}
+        	jungle = {
+            		attack = 0.02
+        	}
+        	forest = {
+            		attack = 0.01
+        	}
+    	}
+	
+	
+	allow = {
+		engineer_brigade_activation = 1
+	}
+	 
+		
+	research_bonus_from = {
+		infantry_theory = 0.3
+		infantry_practical = 0.6
+		superior_firepower_theory = 0.1
+	}
+	
+	on_completion = infantry_theory
+	
+	difficulty = 3
+	start_year = 1939
+	first_offset = 1940
+	additional_offset = 2
+	max_level = 12
+	folder = infantry_folder
+}
+
+imporved_police_brigade = {
+
+	garrison_brigade = {
+		suppression = 2
+	}
+
+		
+	research_bonus_from = {
+		infantry_theory = 0.3
+		infantry_practical = 0.7
+	}
+	
+	on_completion = infantry_theory
+	
+	difficulty = 1
+	start_year = 1939
+	first_offset = 1942
+	additional_offset = 3
+	max_level = 12
+	folder = infantry_folder
+}
+
+mortorised_infantry = {
+
+	activate_unit = motorized_brigade 
+	activate_unit = mot_aa_brigade
+
+	allow = {
+		cavalry_smallarms = 3
+		cavalry_support = 3
+		cavalry_guns = 3
+		cavalry_at = 3
+	}
+
+	research_bonus_from = {
+		mobile_theory = 0.3
+		mobile_practical = 0.6
+		armour_practical = 0.1
+	}
+
+	
+	on_completion = mobile_theory
+	
+	difficulty = 3
+	start_year = 1938
+	folder = infantry_folder
+}
+
+desert_warfare_equipment = {
+foring_brigade = {
+		desert = { 
+						attrition = -1
+		}
+	}
+field_battalion = { 
+desert = { 
+						attrition = -1
+		}
+	}
+For_the_occasion_brigade = {
+		desert = { 
+			attrition = -1
+		}
+}
+GER_ss = {
+	desert = {
+			attrition = -1
+		}
+	}
+	chi_star_destroyer = {
+		desert = {
+			attrition = -1
+		}
+	}
+	chc_gundam = {
+		desert = {
+			attrition = -1
+		}
+	}
+
+	infantry_brigade = {
+		desert = {
+			attrition = -1
+		}
+	}
+	marine_brigade = {
+		desert = {
+			attrition = -1
+		}	
+	}
+	paratrooper_brigade = {
+		desert = {
+			attrition = -1
+		}
+	}
+	bergsjaeger_brigade = {
+		desert = {
+			attrition = -1
+		}
+	}
+	alpini_brigade = {
+		desert = {
+			attrition = -1
+		}
+	}
+	alpins_brigade = {
+		desert = {
+			attrition = -1
+		}
+	}
+	gurkha_brigade = {
+		desert = {
+			attrition = -1
+		}
+	}
+	waffen_brigade = {
+		desert = {
+			attrition = -1
+		}
+	}
+	guards_brigade = {
+		desert = {
+			attrition = -1
+		}
+	}
+	imperial_brigade = {
+		desert = {
+			attrition = -1
+		}
+	}
+	ranger_brigade = {
+		desert = {
+			attrition = -1
+		}
+	}
+	
+	allow = {
+		smallarms_technology = 2
+		infantry_support = 2
+		infantry_guns = 2
+		infantry_at = 2
+	}
+
+	research_bonus_from = {
+		spearhead_theory = 0.3
+		land_doctrine_practical = 0.7
+	}
+
+	on_completion = spearhead_theory
+
+	difficulty = 4
+	start_year = 1938
+	folder = infantry_folder
+}
+
+
+jungle_warfare_equipment = {
+foring_brigade = {
+		jungle = {
+			attrition = -1
+		}
+	}
+	infantry_brigade = {
+		jungle = {
+			attrition = -1
+		}
+	}
+
+	marine_brigade = {
+		jungle = {
+			attrition = -1
+		}	
+	}
+	paratrooper_brigade = {
+		jungle = {
+			attrition = -1
+		}
+	}
+	bergsjaeger_brigade = {
+		jungle = {
+			attrition = -1
+		}
+	}
+	alpini_brigade = {
+		jungle = {
+			attrition = -1
+		}
+	}
+	alpins_brigade = {
+		jungle = {
+			attrition = -1
+		}
+	}
+	gurkha_brigade = {
+		jungle = {
+			attrition = -1
+		}
+	}
+	waffen_brigade = {
+		jungle = {
+			attrition = -1
+		}
+	}
+	guards_brigade = {
+		jungle = {
+			attrition = -1
+		}
+	}
+	imperial_brigade = {
+		jungle = {
+			attrition = -1
+		}
+	}
+	ranger_brigade = {
+		jungle = {
+			attrition = -1
+		}
+	}
+	chc_gundam = {
+		jungle = {
+			attrition = -1
+		}
+	}
+	chi_star_destroyer = {
+		jungle = {
+			attrition = -1
+		}
+	}
+GER_ss = {
+		jungle = {
+			attrition = -1
+		}
+	}
+For_the_occasion_brigade = {
+		jungle = {
+			attrition = -1
+		}
+	}
+field_battalion = { 
+jungle = {
+			attrition = -1
+		}
+	}
+	
+	allow = {
+		smallarms_technology = 2
+		infantry_support = 2
+		infantry_guns = 2
+		infantry_at = 2
+	}
+	
+
+	research_bonus_from = {
+		grand_battleplan_theory = 0.3
+		land_doctrine_practical = 0.7
+	}
+
+	on_completion = grand_battleplan_theory
+
+	difficulty = 4
+	start_year = 1939
+	folder = infantry_folder
+}
+
+mountain_warfare_equipment = {
+foring_brigade = {
+mountain = {
+			attrition = -1
+		}
+}
+field_battalion = { 
+mountain = {
+			attrition = -1
+		}
+}
+For_the_occasion_brigade = {
+mountain = {
+			attrition = -1
+		}
+}
+GER_ss = {
+		mountain = {
+			attrition = -1.2
+			 attack = 0.1
+       defence = 0.1
+		}
+	}
+
+	chc_gundam = {
+		mountain = {
+			attrition = -1
+		}
+	}
+	chi_star_destroyer = {
+		mountain = {
+			attrition = -1
+		}
+	}
+
+	infantry_brigade = {
+		mountain = {
+			attrition = -1
+		}
+	}
+
+	marine_brigade = {
+		mountain = {
+			attrition = -1
+		}	
+	}
+	paratrooper_brigade = {
+		mountain = {
+			attrition = -1
+		}
+	}
+	bergsjaeger_brigade = {
+		mountain = {
+	            attrition = -1.5
+	            attack = 0.1
+        	    defence = 0.1
+		}
+	}
+	alpini_brigade = {
+		mountain = {
+	            attrition = -1.5
+	            attack = 0.1
+        	    defence = 0.1
+		}
+	}
+	alpins_brigade = {
+		mountain = {
+	            attrition = -1.5
+	            attack = 0.1
+        	    defence = 0.1
+		}
+	}
+	gurkha_brigade = {
+		mountain = {
+	            attrition = -1.5
+	            attack = 0.1
+        	    defence = 0.1
+		}
+	}
+	waffen_brigade = {
+		mountain = {
+			attrition = -1
+		}
+	}
+	guards_brigade = {
+		mountain = {
+			attrition = -1
+		}
+	}
+	imperial_brigade = {
+		mountain = {
+			attrition = -1
+		}
+	}
+	ranger_brigade = {
+		mountain = {
+			attrition = -1
+		}
+	}
+
+	allow = {
+		smallarms_technology = 2
+		infantry_support = 2
+		infantry_guns = 2
+		infantry_at = 2
+	}
+
+
+	research_bonus_from = {
+		human_wave_theory = 0.3
+		land_doctrine_practical = 0.7
+	}
+
+	on_completion = human_wave_theory
+
+	difficulty = 4
+	start_year = 1936
+	folder = infantry_folder
+}
+
+artic_warfare_equipment = {
+foring_brigade = {
+arctic = {
+			attrition = -1
+			 attack = 0.1
+       defence = 0.1
+		}
+}
+field_battalion = { 
+mountain = {
+				arctic = {
+			attrition = -1
+			 attack = 0.1
+       defence = 0.1
+		}
+	}
+GER_ss = {
+		arctic = {
+			attrition = -1
+			 attack = 0.1
+       defence = 0.1
+		}
+	}
+	For_the_occasion_brigade = {
+		arctic = {
+			attrition = -1
+		}
+	}
+	chc_gundam = {
+		arctic = {
+			attrition = -1
+		}
+	}
+	chi_star_destroyer = {
+		arctic = {
+			attrition = -1
+		}
+	}
+
+	infantry_brigade = {
+		arctic = {
+			attrition = -1
+		}
+	}
+	marine_brigade = {
+		arctic = {
+			attrition = -1
+		}	
+	}
+	paratrooper_brigade = {
+		arctic = {
+			attrition = -1
+		}
+	}
+	bergsjaeger_brigade = {
+		arctic = {
+			attrition = -1
+		}
+	}
+	alpini_brigade = {
+		arctic = {
+			attrition = -1
+		}
+	}
+	alpins_brigade = {
+		arctic = {
+			attrition = -1
+		}
+	}
+	gurkha_brigade = {
+		arctic = {
+			attrition = -1
+		}
+	}
+	waffen_brigade = {
+		arctic = {
+			attrition = -1
+		}
+	}
+	guards_brigade = {
+		arctic = {
+			attrition = -1
+		}
+	}
+	imperial_brigade = {
+		arctic = {
+			attrition = -1
+		}
+	}
+	ranger_brigade = {
+		arctic = {
+			attrition = -1
+		}
+	}
+	
+	allow = {
+		smallarms_technology = 2
+		infantry_support = 2
+		infantry_guns = 2
+		infantry_at = 2
+	}
+
+
+	research_bonus_from = {
+		human_wave_theory = 0.3
+		land_doctrine_practical = 0.7
+	}
+
+	on_completion = human_wave_theory 
+
+	difficulty = 4
+	start_year = 1936
+	folder = infantry_folder
+}
+
+amphibious_warfare_equipment = {
+foring_brigade = {
+	amphibious = {
+			attrition = -1
+			 attack = 0.1
+       defence = 0.1
+		}
+}
+field_battalion = { 
+	amphibious = {
+			attrition = -1
+			 attack = 0.1
+       defence = 0.1
+		}
+	}
+GER_ss = {
+			amphibious = {
+			attrition = -1
+			 attack = 0.1
+       defence = 0.1
+		}
+	}
+	For_the_occasion_brigade = {
+		amphibious = {
+			attack = 0.1
+		}
+	}
+	chc_gundam = {
+		amphibious = {
+			attack = 0.1
+		}
+	}
+
+	marine_brigade = {
+		amphibious = {
+			attack = 0.1
+		}
+	}
+	guards_brigade = {
+		amphibious = {
+			attack = 0.1
+		}
+	}
+
+	allow = {
+		marine_infantry = 1
+	}
+
+
+	research_bonus_from = {
+		superior_firepower_theory = 0.3
+		land_doctrine_practical = 0.7
+	}
+
+	on_completion = superior_firepower_theory
+
+	difficulty = 7
+	start_year = 1940
+	folder = infantry_folder
+}
+
+airborne_warfare_equipment = {
+	chc_gundam = {
+		transport_weight = -1
+		supply_consumption = -0.1
+	}
+
+	paratrooper_brigade = {
+		transport_weight = -1
+		supply_consumption = -0.1
+	}
+	gurkha_brigade = {
+		transport_weight = -1
+		supply_consumption = -0.1
+	}
+	ranger_brigade = {
+		transport_weight = -1
+		supply_consumption = -0.1
+	}
+
+	allow = {
+		paratrooper_infantry = 1
+	}
+
+
+	research_bonus_from = {
+		grand_battleplan_theory = 0.3
+		land_doctrine_practical = 0.7
+	}
+
+	on_completion = artillery_theory
+
+	difficulty = 7
+	start_year = 1941
+	folder = infantry_folder
+}
+
+gun_base = {
+	activate_unit = artillery_brigade
+	activate_unit = alpine_artillery_brigade
+	activate_unit = anti_tank_brigade
+	activate_unit = anti_air_brigade
+	activate_unit = alpine_artillery_brigadeB
+	activate_unit = artillery_brigadeB
+	activate_unit = anti_air_company
+
+	allow = {
+		industral_production = 3
+		industral_efficiency = 3
+		total_ic = 50
+	}
+
+
+	research_bonus_from = {
+		artillery_theory = 0.3
+		artillery_practical = 0.6
+		superior_firepower_theory = .1
+	}
+
+	on_completion = grand_battleplan_theory
+
+	difficulty = 3
+	start_year = 1934
+	folder = infantry_folder
+}

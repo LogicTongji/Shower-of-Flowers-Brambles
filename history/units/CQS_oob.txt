@@ -1,0 +1,28 @@
+
+corps = {
+	name = "国民革命军第25军"
+	location = 7541
+	regiment = { type = hq_brigade name = "国民革命军第25军" experience = 5 historical_model = 0 }
+	division= {
+		name = "第1师"
+		location = 7541
+		regiment = { type = militia_brigade experience = 2 historical_model = 0 }
+		regiment = { type = militia_brigade experience = 2 historical_model = 0 }
+		
+	}
+	division= {
+		name = "第2师"
+		location = 7541
+		regiment = { type = militia_brigade experience = 5 historical_model = 0 }
+		regiment = { type = militia_brigade experience = 5 historical_model = 0 }
+		
+	}
+	division= {
+		name = "第3师"
+		location = 7541
+		regiment = { type = militia_brigade experience = 5 historical_model = 0 }
+		regiment = { type = militia_brigade experience = 5 historical_model = 0 }
+		
+	}
+	
+}

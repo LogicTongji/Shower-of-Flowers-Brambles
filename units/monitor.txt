@@ -1,0 +1,49 @@
+monitor = {
+	type = naval
+	sprite = Monitor
+	active = no
+
+	hull = 1.1
+	
+	#Size Definitions
+	max_strength = 100
+	default_organisation = 30
+	default_morale = 0.30
+	officers = 0
+
+	#Building Costs
+	build_cost_ic = 4.50
+	build_cost_manpower = 1.00
+	build_time = 200
+	repair_cost_multiplier = 0.05
+
+	#Misc Abilities
+	maximum_speed = 16.00
+	transport_capability = 0.00
+	supply_consumption = 0.30
+	fuel_consumption = 0.35
+	range = 300
+	distance = 0.24
+	radio_strength = 1
+
+	#Detection Abilities
+	surface_detection = 1.00
+	air_detection = 1.00
+	sub_detection = 2.00
+	visibility = 70.00
+
+	#Defensive Abilities
+	sea_defence = 10.00
+	air_defence = 4.00
+
+	#Offensive Abilities
+	convoy_attack = 2.50
+	sea_attack = 4.00
+	sub_attack = 1.00
+	air_attack = 3.00
+	shore_bombardment = 0.75
+
+	completion_size = 1.0
+	on_completion = cruiser_practical
+	priority = 5
+}

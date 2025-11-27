@@ -1,0 +1,62 @@
+corps = {
+	name = "新编第2军"
+	location = 9200
+	regiment = { type = hq_brigade name = "新编第2军司令部" historical_model = 0 }
+	division= {
+		name = "第100师"
+		location = 9200
+		regiment = { type = infantry_brigade name = "第298旅" strength = 20 historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第299旅" strength = 20 historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第300旅" strength = 20 historical_model = 0 }
+		regiment = { type = cavalry_brigade name = "骑兵旅" strength = 20 historical_model = 0 }
+		regiment = { type = infantry_brigade name = "手枪团" strength = 10 historical_model = 1 }
+		regiment = { type = artillery_brigade name = "炮兵团" historical_model = 0 }
+	}
+	division= {
+		name = "青海南部警备司令部"
+		location = 9262
+		regiment = { type = cavalry_brigade strength = 20 historical_model = 0 }
+		regiment = { type = cavalry_brigade strength = 20 historical_model = 0 }
+	}
+	division= {
+		name = "骑兵第5师"
+		location = 9201
+		regiment = { type = cavalry_brigade name = "第1旅" strength = 20 historical_model = 0 }
+		regiment = { type = cavalry_brigade name = "第2旅" strength = 20 historical_model = 0 }
+		regiment = { type = infantry_brigade name = "步兵旅" strength = 20 historical_model = 0 }
+		regiment = { type = infantry_brigade name = "手枪团" strength = 10 historical_model = 1 }
+		regiment = { type = artillery_brigade name = "炮兵团" historical_model = 0 }
+	}
+}
+division= {
+	name = "青海民团"
+	location = 9200
+	regiment = { type = militia_brigade historical_model = 0 }
+	regiment = { type = militia_brigade historical_model = 0 }
+	regiment = { type = militia_brigade historical_model = 0 }
+	regiment = { type = militia_brigade historical_model = 0 }
+}
+division= {
+	name = "青海民团"
+	location = 9200
+	regiment = { type = militia_brigade historical_model = 0 }
+	regiment = { type = militia_brigade historical_model = 0 }
+	regiment = { type = militia_brigade historical_model = 0 }
+	regiment = { type = militia_brigade historical_model = 0 }
+}
+division= {
+	name = "青海民团"
+	location = 9200
+	regiment = { type = militia_brigade historical_model = 0 }
+	regiment = { type = militia_brigade historical_model = 0 }
+	regiment = { type = militia_brigade historical_model = 0 }
+	regiment = { type = militia_brigade historical_model = 0 }
+}
+division= {
+	name = "青海民团"
+	location = 9200
+	regiment = { type = militia_brigade historical_model = 0 }
+	regiment = { type = militia_brigade historical_model = 0 }
+	regiment = { type = militia_brigade historical_model = 0 }
+	regiment = { type = militia_brigade historical_model = 0 }
+}

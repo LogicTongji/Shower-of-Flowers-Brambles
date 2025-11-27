@@ -1,0 +1,57 @@
+submarine_carrier = {
+	usable_by = { JAP }
+	type = naval
+	sprite = Submarine_carrier
+	is_sub = yes
+	active = no
+	
+	hull = 0.6
+	
+	#limitations
+	minimum_of_type = 5
+	max_percentage_of_type = 0.05
+
+	#Size Definitions
+	max_strength = 100
+	default_organisation = 30
+	default_morale = 0.30
+	officers = 0
+
+	carrier_size = 1
+
+	#Building Costs
+	build_cost_ic = 8.00
+	build_cost_manpower = 0.80
+	build_time = 300
+	repair_cost_multiplier = 0.10
+
+	#Misc Abilities
+	maximum_speed = 12.00
+	transport_capability = 0.00
+	supply_consumption = 1.60
+	fuel_consumption = 1.20
+	range = 4000.00
+	distance = 1.00
+	radio_strength = 1
+
+	#Detection Abilities
+	surface_detection = 2.00
+	air_detection = 4.00
+	sub_detection = 2.00
+	visibility = 75.00
+
+	#Defensive Abilities
+	sea_defence = 8.00
+	air_defence = 4.00
+
+	#Offensive Abilities
+	convoy_attack = 1.00
+	sea_attack = 2.50
+	sub_attack = 0.00
+	air_attack = 3.00
+	shore_bombardment = 0.00
+
+	completion_size = 1.5
+	on_completion = submarine_practical
+	priority = 6
+}
