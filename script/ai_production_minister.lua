@@ -51,11 +51,12 @@ local UnitTypes = {
 		Index = 79,
 		Serial = 4,
 		Size = 2,
-		Support = 2,
-		SupportGroup = "Militia",
+		Support = 1,
+		SecondaryMain = "anti_tank_brigade",
+		SupportGroup = "Infantry",
 		Type = "Land",
 		SubType = "Infantry"},
-	infantry_brigade = {
+		infantry_brigade = {
 		Index = 4,
 		Serial = 4,
 		Size = 2,
@@ -202,12 +203,14 @@ local UnitTypes = {
 		Type = "Land",
 		SubType = "Support",
 		SupportType = Utils.Set {
+			"Infantry",
 			"bergsjaeger_brigade"}},
 	alpine_artillery_brigadeB = {
 		Index = 70,
 		Type = "Land",
 		SubType = "Support",
 		SupportType = Utils.Set {
+			"Infantry",
 			"bergsjaeger_brigade"}},
 	engineer_brigade = {
 		Index = 18,

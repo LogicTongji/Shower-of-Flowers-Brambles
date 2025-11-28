@@ -356,18 +356,18 @@ function P.Build_infantry_brigade(vIC, viManpowerTotal, voType, voProductionData
 			return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
   end
 	if (voForeignMinisterData.ministerCountry:GetFlags():IsFlagSet("Japanese_puppet_Nanking")) and not(lbCXBWar) then
-				if voProductionData.ManpowerTotal > 150 and voProductionData.Year <= 1940 then
+				if (voProductionData.ManpowerTotal > 150 and voProductionData.Year <= 1940) and (voProductionData.LandCountTotal < 600)then
 					 local laSupportUnit = {
 							"field_battalion"}
 					 voType.Size = 3
 					 voType.Support = 1
 					 return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
-					elseif voProductionData.ManpowerTotal > 150 and voProductionData.Year >= 1940 then
+					elseif (voProductionData.ManpowerTotal > 150 and voProductionData.Year >= 1940) and (voProductionData.LandCountTotal < 800)then
 						local laSupportUnit = {
 							"alpine_artillery_brigade",
 							"field_battalion"}
 							voType.Size = 3
-							voType.Support = 2
+							voType.Support = 1
 							return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
 				 end
 			end

@@ -359,23 +359,19 @@ end
 function P.Build_infantry_brigade(vIC, viManpowerTotal, voType, voProductionData, viUnitQuantity, voForeignMinisterData)
 	local lbUSAWar = voProductionData.ministerCountry:GetRelation(CCountryDataBase.GetTag('USA')):HasWar()
 	local lbCXBWar = voProductionData.ministerCountry:GetRelation(CCountryDataBase.GetTag('CXB')):HasWar()
-	local chiTag = CCountryDataBase.GetTag('CHI')
-	local lbControlWuHan = (CCurrentGameState.GetProvince(7508):GetController() == chiTag)
-	if not(lbUSAWar) and (not (voForeignMinisterData.ministerCountry:GetFlags():IsFlagSet("jap_seizes_coast"))) then	
+	if not(lbUSAWar and not (voForeignMinisterData.ministerCountry:GetFlags():IsFlagSet("jap_seizes_coast"))) and (voProductionData.LandCountTotal < 400) then	
 		-- If China still controls WuHan keep hitting them
 	         local laSupportUnit = {
 		     "artillery_brigade",
-		     "engineer_brigade",
-		     "communications_company"}
-	         voType.Size = 3
-	         voType.Support = 2
+		     "engineer_brigade"}
+	         voType.Size = 4
+	         voType.Support = 1
 			 return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
-			elseif not(lbUSAWar) and (voForeignMinisterData.ministerCountry:GetFlags():IsFlagSet("jap_seizes_coast")) then	
+			elseif not(lbUSAWar and voForeignMinisterData.ministerCountry:GetFlags():IsFlagSet("jap_seizes_coast")) and (voProductionData.LandCountTotal < 400) then	
 				local laSupportUnit = {
 					"artillery_brigade",
-					"engineer_brigade",
-					"communications_company"}
-					voType.Size = 2
+					"engineer_brigade"}
+					voType.Size = 3
 					voType.Support = 1
 				return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
 	end
@@ -384,34 +380,32 @@ function P.Build_infantry_brigade(vIC, viManpowerTotal, voType, voProductionData
 			"alpine_artillery_brigade",
 			"field_battalion"}
 			voType.Size = 3
-			voType.Support = 2
+			voType.Support = 1
 			return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
   end
 	if (voForeignMinisterData.ministerCountry:GetFlags():IsFlagSet("conque_Eastern_Asian")) and not(lbCXBWar) then
-				if voProductionData.ManpowerTotal > 150 and voProductionData.Year <= 1940 then
+				if (voProductionData.ManpowerTotal > 150 and voProductionData.Year <= 1940) and (voProductionData.LandCountTotal < 600) then
 					 local laSupportUnit = {
 					 "artillery_brigade",
-					 "engineer_brigade",
-					 "communications_company"}
-					 voType.Size = 3
-					 voType.Support = 2
+					 "engineer_brigade"}
+					 voType.Size = 4
+					 voType.Support = 1
 					 return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
-					elseif voProductionData.ManpowerTotal > 150 and voProductionData.Year >= 1940 then
+					elseif (voProductionData.ManpowerTotal > 150 and voProductionData.Year >= 1940) then
 						local laSupportUnit = {
-							"alpine_artillery_brigade",
-							"field_battalion",
-							"communications_company"}
-							voType.Size = 3
-							voType.Support = 2
+							"alpine_artillery_brigadeB",
+							"field_battalion"}
+							voType.Size = 4
+							voType.Support = 1
 							return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
 				 end
 			end
-	if(lbCXBWar) then
+	if(lbCXBWar) and (voProductionData.LandCountTotal < 800) then
 		local laSupportUnit = {
-			"alpine_artillery_brigade",
+			"artillery_brigadeB",
 			"field_battalion"}
 			voType.Size = 3
-			voType.Support = 2
+			voType.Support = 1
 			return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
   end
 end
@@ -470,9 +464,7 @@ end
 -- Air ratio distribution
 function P.AirRatio(voProductionData)
        local laArray
-       local chiTag = CCountryDataBase.GetTag('CHI')
-       local lbControlShanghai = (CCurrentGameState.GetProvince(5542):GetController() == chiTag)
-       if voProductionData.Year <= 1938 or lbControlShanghai then
+       if not(voForeignMinisterData.ministerCountry:GetFlags():IsFlagSet("jap_seizes_coast")) then
 	laArray = {
 		interceptor = 2,
 		multi_role = 0.5,
