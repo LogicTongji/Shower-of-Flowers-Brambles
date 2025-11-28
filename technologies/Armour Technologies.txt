@@ -694,7 +694,8 @@ SP_brigade = {
 
 mechanised_infantry = {
 
-	activate_unit = mechanized_brigade
+	activate_unit = mechanized_brigade 
+	 activate_unit = hobart_armor_brigade
 
 	allow = {
 		mortorised_infantry = 1
