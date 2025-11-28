@@ -722,9 +722,9 @@ end
 
 function P.ForeignMinister_ProposeWar(voForeignMinisterData)
 	local lsIdeology = voForeignMinisterData.ministerCountry:GetRulingIdeology():GetGroup():GetKey()
-
+    local lbnoPreparingWartoUSA = voForeignMinisterData.ministerCountry:GetFlags():IsFlagSet("conque_Eastern_Asian")
 	-- Japan just make sure their Ideology is leaning toward Fascist as they may not be part of the Axis
-	if lsIdeology == "fascist" or voForeignMinisterData.FactionName == "axis" then
+	if (lsIdeology == "fascist" or voForeignMinisterData.FactionName == "axis") and not(lbnoPreparingWartoUSA) then
 		local liMajorWars = 0
 		local laMajorWars = {}
 	
@@ -745,7 +745,6 @@ function P.ForeignMinister_ProposeWar(voForeignMinisterData)
 				end
 			end
 		end
-		
 		local loAxisTag = CCurrentGameState.GetFaction("axis"):GetFactionLeader()
 		local loCominternTag = CCurrentGameState.GetFaction("cominterm"):GetFactionLeader()
 		local lbPreparingWar = false -- Make sure that we do not check other war conditions
