@@ -369,7 +369,7 @@ function P.Build_infantry_brigade(vIC, viManpowerTotal, voType, voProductionData
 			 return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
 			elseif not(lbUSAWar and voForeignMinisterData.ministerCountry:GetFlags():IsFlagSet("jap_seizes_coast")) and (voProductionData.LandCountTotal < 400) then	
 				local laSupportUnit = {
-					"artillery_brigade",
+					"alpine_artillery_brigade",
 					"engineer_brigade"}
 					voType.Size = 3
 					voType.Support = 1
@@ -377,7 +377,6 @@ function P.Build_infantry_brigade(vIC, viManpowerTotal, voType, voProductionData
 	end
 	if(lbUSAWar) then
 		local laSupportUnit = {
-			"alpine_artillery_brigade",
 			"field_battalion"}
 			voType.Size = 3
 			voType.Support = 1
@@ -393,7 +392,7 @@ function P.Build_infantry_brigade(vIC, viManpowerTotal, voType, voProductionData
 					 return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
 					elseif (voProductionData.ManpowerTotal > 150 and voProductionData.Year >= 1940) then
 						local laSupportUnit = {
-							"alpine_artillery_brigadeB",
+							"alpine_artillery_brigade",
 							"field_battalion"}
 							voType.Size = 4
 							voType.Support = 1
@@ -409,7 +408,23 @@ function P.Build_infantry_brigade(vIC, viManpowerTotal, voType, voProductionData
 			return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
   end
 end
-
+function P.Build_bergsjaeger_brigade(vIC, viManpowerTotal, voType, voProductionData, viUnitQuantity, voForeignMinisterData)
+	local lbCXBWar = voProductionData.ministerCountry:GetRelation(CCountryDataBase.GetTag('CXB')):HasWar()
+	if ((voForeignMinisterData.ministerCountry:GetFlags():IsFlagSet("conque_Eastern_Asian")) and not(lbCXBWar)) and (voProductionData.LandCountTotal < 800)   then
+		local laSupportUnit = {
+			"alpine_artillery_brigade",
+			"field_battalion"}
+			voType.Size = 4
+			voType.Support = 1
+			return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
+		elseif (lbCXBWar)  then
+			local laSupportUnit = {
+				"alpine_artillery_brigade"}
+				voType.Size = 2
+				voType.Support = 1
+				return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
+	end
+end
 -- Land ratio distribution
 function P.LandRatio(voProductionData)
 	local laArray
@@ -883,6 +898,8 @@ function P.ForeignMinister_Influence(voForeignMinisterData)
 	
 	return laWatch, laIgnoreWatch, laIgnore
 end
+
+
 
 
 return AI_JAP
