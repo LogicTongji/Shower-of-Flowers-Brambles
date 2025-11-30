@@ -323,7 +323,7 @@ function P.ProductionWeights(voProductionData)
 	
 	-- Check to see if manpower is to low
 	-- More than 150 brigades so build stuff that does not use manpower
-	if voProductionData.ManpowerTotal < 150 then
+	if voProductionData.ManpowerTotal  < 100 then
 		laArray = {
 			0.0, -- Land
 			0.45, -- Air
@@ -331,35 +331,47 @@ function P.ProductionWeights(voProductionData)
 			0.05}; -- Other	
 	else
 		local lbUSAWar = voProductionData.ministerCountry:GetRelation(CCountryDataBase.GetTag('USA')):HasWar()
-		
+		local lbCHIWar = voProductionData.ministerCountry:GetRelation(CCountryDataBase.GetTag('CHI')):HasWar()
+		local lbCXBWar = voProductionData.ministerCountry:GetRelation(CCountryDataBase.GetTag('CXB')):HasWar()
 		-- If Japan not at war with the USA
 		if not(lbUSAWar) then
-			local chiTag = CCountryDataBase.GetTag('CHI')
-			local lbControlWuHan = (CCurrentGameState.GetProvince(7508):GetController() == chiTag)
 		-- If China still controls Shanghai keep hitting them
-	         if voProductionData.Year <= 1939 or lbControlWuHan  then
+	         if lbCHIWar and not (voProductionData.ministerCountry:GetFlags():IsFlagSet("jap_seizes_coast"))  then
 				laArray = {
-					0.65, -- Land
-					0.15, -- Air
+					0.70, -- Land
+					0.10, -- Air
 					0.15, -- Sea
 					0.05}; -- Other
-			else
+				elseif lbCHIWar and (voProductionData.ministerCountry:GetFlags():IsFlagSet("jap_seizes_coast")) then
 				laArray = {
-					0.30, -- Land
-					0.25, -- Air
+					0.25, -- Land
+					0.30, -- Air
 					0.40, -- Sea
 					0.05}; -- Other
 			end
+		end
+		if  ((voProductionData.ministerCountry:GetFlags():IsFlagSet("conque_Eastern_Asian")) and not(lbCXBWar))  then
+			laArray = {
+				0.35, -- Land
+				0.15, -- Air
+				0.45, -- Sea
+				0.05}; -- Other
+			elseif lbCXBWar then
+				laArray = {
+					0.50, -- Land
+					0.35, -- Air
+					0.10, -- Sea
+					0.05}; -- Other
 		end
 	end
 	
 	return laArray
 end
 --define japneseese production infantry
-function P.Build_infantry_brigade(vIC, viManpowerTotal, voType, voProductionData, viUnitQuantity, voForeignMinisterData)
+function P.Build_infantry_brigade(vIC, viManpowerTotal, voType, voProductionData, viUnitQuantity)
 	local lbUSAWar = voProductionData.ministerCountry:GetRelation(CCountryDataBase.GetTag('USA')):HasWar()
 	local lbCXBWar = voProductionData.ministerCountry:GetRelation(CCountryDataBase.GetTag('CXB')):HasWar()
-	if not(lbUSAWar and not (voForeignMinisterData.ministerCountry:GetFlags():IsFlagSet("jap_seizes_coast"))) and (voProductionData.LandCountTotal < 400) then	
+	if (not lbUSAWar and not (voProductionData.ministerCountry:GetFlags():IsFlagSet("jap_seizes_coast"))) and (voProductionData.LandCountTotal < 400) then	
 		-- If China still controls WuHan keep hitting them
 	         local laSupportUnit = {
 		     "artillery_brigade",
@@ -367,7 +379,7 @@ function P.Build_infantry_brigade(vIC, viManpowerTotal, voType, voProductionData
 	         voType.Size = 4
 	         voType.Support = 1
 			 return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
-			elseif not(lbUSAWar and voForeignMinisterData.ministerCountry:GetFlags():IsFlagSet("jap_seizes_coast")) and (voProductionData.LandCountTotal < 400) then	
+			elseif (not lbUSAWar and voProductionData.ministerCountry:GetFlags():IsFlagSet("jap_seizes_coast")) and (voProductionData.LandCountTotal < 400) then	
 				local laSupportUnit = {
 					"alpine_artillery_brigade",
 					"engineer_brigade"}
@@ -382,7 +394,7 @@ function P.Build_infantry_brigade(vIC, viManpowerTotal, voType, voProductionData
 			voType.Support = 1
 			return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
   end
-	if (voForeignMinisterData.ministerCountry:GetFlags():IsFlagSet("conque_Eastern_Asian")) and not(lbCXBWar) then
+	if (voProductionData.ministerCountry:GetFlags():IsFlagSet("conque_Eastern_Asian")) and not(lbCXBWar) then
 				if (voProductionData.ManpowerTotal > 150 and voProductionData.Year <= 1940) and (voProductionData.LandCountTotal < 600) then
 					 local laSupportUnit = {
 					 "artillery_brigade",
@@ -407,10 +419,16 @@ function P.Build_infantry_brigade(vIC, viManpowerTotal, voType, voProductionData
 			voType.Support = 1
 			return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
   end
+  local laSupportUnit = {
+	"artillery_brigade"}
+	voType.Size = 3
+	voType.Support = 1
+	return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
 end
-function P.Build_bergsjaeger_brigade(vIC, viManpowerTotal, voType, voProductionData, viUnitQuantity, voForeignMinisterData)
+
+function P.Build_bergsjaeger_brigade(vIC, viManpowerTotal, voType, voProductionData, viUnitQuantity)
 	local lbCXBWar = voProductionData.ministerCountry:GetRelation(CCountryDataBase.GetTag('CXB')):HasWar()
-	if ((voForeignMinisterData.ministerCountry:GetFlags():IsFlagSet("conque_Eastern_Asian")) and not(lbCXBWar)) and (voProductionData.LandCountTotal < 800)   then
+	if ((voProductionData.ministerCountry:GetFlags():IsFlagSet("conque_Eastern_Asian")) and not(lbCXBWar)) and (voProductionData.LandCountTotal < 800)   then
 		local laSupportUnit = {
 			"alpine_artillery_brigade",
 			"field_battalion"}
@@ -424,6 +442,11 @@ function P.Build_bergsjaeger_brigade(vIC, viManpowerTotal, voType, voProductionD
 				voType.Support = 1
 				return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
 	end
+	local laSupportUnit = {
+		"alpine_artillery_brigade"}
+		voType.Size = 3
+		voType.Support = 1
+		return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
 end
 -- Land ratio distribution
 function P.LandRatio(voProductionData)
@@ -479,7 +502,7 @@ end
 -- Air ratio distribution
 function P.AirRatio(voProductionData)
        local laArray
-       if not(voForeignMinisterData.ministerCountry:GetFlags():IsFlagSet("jap_seizes_coast")) then
+       if not(voProductionData.ministerCountry:GetFlags():IsFlagSet("jap_seizes_coast")) then
 	laArray = {
 		interceptor = 2,
 		multi_role = 0.5,
@@ -527,10 +550,10 @@ end
 --- NOTE: If goverment is in Exile these parms are ignored
 function P.ConvoyRatio(voProductionData)
 	local laArray = {
-		10, -- Percentage extra (adds to 100 percent so if you put 10 it will make it 110% of needed amount)
-		100, -- If Percentage extra is less than this it will force it up to the amount entered
-		200, -- If Percentage extra is greater than this it will force it down to this
-		5} -- Escort to Convoy Ratio (Number indicates how many convoys needed to build 1 escort)
+		0, -- Percentage extra (adds to 100 percent so if you put 10 it will make it 110% of needed amount)
+		10, -- If Percentage extra is less than this it will force it up to the amount entered
+		40, -- If Percentage extra is greater than this it will force it down to this
+		10} -- Escort to Convoy Ratio (Number indicates how many convoys needed to build 1 escort)
   
 	return laArray
 end
@@ -739,7 +762,7 @@ function P.ForeignMinister_ProposeWar(voForeignMinisterData)
 	local lsIdeology = voForeignMinisterData.ministerCountry:GetRulingIdeology():GetGroup():GetKey()
     local lbnoPreparingWartoUSA = voForeignMinisterData.ministerCountry:GetFlags():IsFlagSet("conque_Eastern_Asian")
 	-- Japan just make sure their Ideology is leaning toward Fascist as they may not be part of the Axis
-	if (lsIdeology == "fascist" or voForeignMinisterData.FactionName == "axis") and not(lbnoPreparingWartoUSA) then
+	if (lsIdeology == "fascist" or voForeignMinisterData.FactionName == "axis") then
 		local liMajorWars = 0
 		local laMajorWars = {}
 	
@@ -761,7 +784,7 @@ function P.ForeignMinister_ProposeWar(voForeignMinisterData)
 			end
 		end
 		local loAxisTag = CCurrentGameState.GetFaction("axis"):GetFactionLeader()
-		local loCominternTag = CCurrentGameState.GetFaction("cominterm"):GetFactionLeader()
+		local loCominternTag = CCurrentGameState.GetFaction("comintern"):GetFactionLeader()
 		local lbPreparingWar = false -- Make sure that we do not check other war conditions
 		local loUSATag = CCountryDataBase.GetTag("USA")
 		local loUSACountry = loUSATag:GetCountry()
@@ -786,7 +809,7 @@ function P.ForeignMinister_ProposeWar(voForeignMinisterData)
 			end
 			
 			-- Check to see if USA is in the war early
-			if not(lbPreparingWar) then
+			if not(lbPreparingWar) and not(lbnoPreparingWartoUSA) then
 				-- Check to see if the USA is at war with the axis
 				if loUSACountry:GetRelation(loAxisTag):HasWar() then
 					-- They are at war with the Axis so come help them

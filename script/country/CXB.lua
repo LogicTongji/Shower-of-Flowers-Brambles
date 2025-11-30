@@ -290,14 +290,14 @@ function P.DiploScore_GiveMilitaryAccess(viScore, voAI, voCountry)
 	return viScore
 end
 
-function P.Build_infantry_brigade(vIC, viManpowerTotal, voType, voProductionData, viUnitQuantity, voForeignMinisterData)
+function P.Build_infantry_brigade(vIC, viManpowerTotal, voType, voProductionData, viUnitQuantity)
 	local lbJAPWar = voProductionData.ministerCountry:GetRelation(CCountryDataBase.GetTag('JAP')):HasWar()
 	local lbCHIWar = voProductionData.ministerCountry:GetRelation(CCountryDataBase.GetTag('CHI')):HasWar()
 	local lbartillery = voProductionData.TechStatus:IsUnitAvailable(CSubUnitDataBase.GetSubUnit("artillery_brigade"))
 	local lbalpineArtillery = voProductionData.TechStatus:IsUnitAvailable(CSubUnitDataBase.GetSubUnit("alpine_artillery_brigade"))
 	if (not (lbJAPWar) and not (lbCHIWar)) and (voProductionData.LandCountTotal < 400) then	
 		-- If China still controls WuHan keep hitting them
-	         local laSupportUnit = {nil}
+	         local laSupportUnit = nil
 	         voType.Size = 3
 	         voType.Support = 0
 			 return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
@@ -315,20 +315,23 @@ function P.Build_infantry_brigade(vIC, viManpowerTotal, voType, voProductionData
 					voType.Support = 1
 				return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
 	end
-	if(lbCHIWar) then
+	if(lbCHIWar and lbJAPWar) then
 		local laSupportUnit = {
 			"alpine_artillery_brigade",
 			"field_battalion"}
 			voType.Size = 3
 			voType.Support = 1
 			return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
-        elseif (lbCHIWar and lbJAPWar)  then
-			local laSupportUnit = {nil}
+        elseif lbCHIWar then
+			local laSupportUnit = nil
 			voType.Size = 3
 			voType.Support = 0
 			return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
 	end
-	
+	local laSupportUnit = nil
+			voType.Size = 3
+			voType.Support = 0
+			return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
 end
 
 return AI_CXB 
