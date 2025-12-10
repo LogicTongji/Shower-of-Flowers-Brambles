@@ -395,7 +395,7 @@ function P.Build_infantry_brigade(vIC, viManpowerTotal, voType, voProductionData
 			return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
   end
 	if (voProductionData.ministerCountry:GetFlags():IsFlagSet("conque_Eastern_Asian")) and not(lbCXBWar) then
-				if (voProductionData.ManpowerTotal > 150 and voProductionData.Year <= 1940) and (voProductionData.LandCountTotal < 600) then
+				if (voProductionData.ManpowerTotal > 150 and voProductionData.Year <= 1940) and (voProductionData.LandCountTotal < 200) then
 					 local laSupportUnit = {
 					 "artillery_brigade",
 					 "engineer_brigade"}
