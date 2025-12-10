@@ -1,5 +1,5 @@
 song = {
-	name = "SF001.mp3"#ÈÕ±¾1936
+	name = "SF001.mp3"#ï¿½Õ±ï¿½1936
 	chance = {
 		modifier = {
 			factor = 0
@@ -20,7 +20,7 @@ song = {
 	}
 }
 song = {
-	name = "SF002.mp3"#ÈÕ±¾Ô¤±¸ÇÖ»ª
+	name = "SF002.mp3"#ï¿½Õ±ï¿½Ô¤ï¿½ï¿½ï¿½Ö»ï¿½
 	chance = {
 		modifier = {
 			factor = 0
@@ -37,7 +37,7 @@ song = {
 	}
 }
 song = {
-	name = "SF003.mp3"#Æ½½ò×÷Õ½
+	name = "SF003.mp3"#Æ½ï¿½ï¿½ï¿½ï¿½Õ½
 	chance = {
 		modifier = {
 			factor = 0
@@ -54,7 +54,7 @@ song = {
 	}
 }
 song = {
-	name = "SF004.mp3"#°ÙÈËÕ¶
+	name = "SF004.mp3"#ï¿½ï¿½ï¿½ï¿½Õ¶
 	chance = {
 		modifier = {
 			factor = 0
@@ -71,7 +71,7 @@ song = {
 	}
 }
 song = {
-	name = "SF005.mp3"#»ª±±ÖÎ°²ËàÕý¼Æ»®
+	name = "SF005.mp3"#ï¿½ï¿½ï¿½ï¿½ï¿½Î°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ»ï¿½
 	chance = {
 		modifier = {
 			factor = 0
@@ -88,7 +88,7 @@ song = {
 	}
 }
 song = {
-	name = "SF006.mp3"#ÖÐÔ­´ó½Ý
+	name = "SF006.mp3"#ï¿½ï¿½Ô­ï¿½ï¿½ï¿½
 	chance = {
 		modifier = {
 			factor = 0
@@ -105,7 +105,7 @@ song = {
 	}
 }
 song = {
-	name = "SF007.mp3"#Õ¼Áì¼ÃÄÏ
+	name = "SF007.mp3"#Õ¼ï¿½ï¿½ï¿½ï¿½ï¿½
 	chance = {
 		modifier = {
 			factor = 0
@@ -122,7 +122,7 @@ song = {
 	}
 }
 song = {
-	name = "SF008.mp3"#Õ¼ÁìÌ«Ô­
+	name = "SF008.mp3"#Õ¼ï¿½ï¿½Ì«Ô­
 	chance = {
 		modifier = {
 			factor = 0
@@ -139,28 +139,28 @@ song = {
 	}
 }
 song = {
-	name = "SF009.mp3"#Õ÷·þÖÐ¹ú
+	name = "SF009.mp3"#ï¿½ï¿½ï¿½ï¿½ï¿½Ð¹ï¿½
 	chance = {
 		modifier = {
 			factor = 0
 			OR = {
 				NOT = { tag = JAP }
-				and = ( exists = CHI not = { CHI = { vassal_of = JAP } } }
-				and = ( exists = CHC not = { CHC = { vassal_of = JAP } } }
-				and = ( exists = CXB not = { CXB = { vassal_of = JAP } } }
+				and = { exists = CHI not = { CHI = { vassal_of = JAP } } }
+				and = { exists = CHC not = { CHC = { vassal_of = JAP } } }
+				and = { exists = CXB not = { CXB = { vassal_of = JAP } } }
 			}
 		}
 		modifier = {
 			factor = 4
 			tag = JAP
-			or = ( not = { exists = CHI } CHI = { vassal_of = JAP } }
-			or = ( not = { exists = CHC } CHC = { vassal_of = JAP } }
-			or = ( not = { exists = CXB } CXB = { vassal_of = JAP } }
+			or = { not = { exists = CHI } CHI = { vassal_of = JAP } }
+			or = { not = { exists = CHC } CHC = { vassal_of = JAP } }
+			or = { not = { exists = CXB } CXB = { vassal_of = JAP } }
 		}
 	}
 }
 song = {
-	name = "SF010.mp3"#»ÆÆÒ
+	name = "SF010.mp3"#ï¿½ï¿½ï¿½ï¿½
 	chance = {
 		modifier = {
 			factor = 0
@@ -177,7 +177,7 @@ song = {
 	}
 }
 song = {
-	name = "SF011.mp3"#×ÔÎÀÐûÑÔ
+	name = "SF011.mp3"#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	chance = {
 		modifier = {
 			factor = 0
@@ -213,7 +213,7 @@ song = {
 	}
 }
 song = {
-	name = "SF013.mp3"#äÁ»¦»áÕ½
+	name = "SF013.mp3"#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ½
 	chance = {
 		modifier = {
 			factor = 0
@@ -230,7 +230,7 @@ song = {
 	}
 }
 song = {
-	name = "SF014.mp3"#Ì¨¶ù×¯»áÕ½
+	name = "SF014.mp3"#Ì¨ï¿½ï¿½×¯ï¿½ï¿½Õ½
 	chance = {
 		modifier = {
 			factor = 0
@@ -247,7 +247,7 @@ song = {
 	}
 }
 song = {
-	name = "SF015.mp3"#ËÕÎ¬°£µÄÊ§Âä
+	name = "SF015.mp3"#ï¿½ï¿½Î¬ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½
 	chance = {
 		modifier = {
 			factor = 0
@@ -264,7 +264,7 @@ song = {
 	}
 }
 song = {
-	name = "SF016.mp3"#³¤Õ÷
+	name = "SF016.mp3"#ï¿½ï¿½ï¿½ï¿½
 	chance = {
 		modifier = {
 			factor = 0
@@ -278,7 +278,7 @@ song = {
 	}
 }
 song = {
-	name = "SF017.mp3"#¿¹Áª
+	name = "SF017.mp3"#ï¿½ï¿½ï¿½ï¿½
 	chance = {
 		modifier = {
 			factor = 0
@@ -295,7 +295,7 @@ song = {
 	}
 }
 song = {
-	name = "SF018.mp3"#Î÷Â·¾ü
+	name = "SF018.mp3"#ï¿½ï¿½Â·ï¿½ï¿½
 	chance = {
 		modifier = {
 			factor = 0
@@ -329,7 +329,7 @@ song = {
 	}
 }
 song = {
-	name = "SF020.mp3"#ÓÎ»÷Õ½
+	name = "SF020.mp3"#ï¿½Î»ï¿½Õ½
 	chance = {
 		modifier = {
 			factor = 0
@@ -346,7 +346,7 @@ song = {
 	}
 }
 song = {
-	name = "SF021.mp3"#°ËÂ·¾ü
+	name = "SF021.mp3"#ï¿½ï¿½Â·ï¿½ï¿½
 	chance = {
 		modifier = {
 			factor = 0
@@ -363,7 +363,7 @@ song = {
 	}
 }
 song = {
-	name = "SF022.mp3"#ÐÂËÄ¾ü
+	name = "SF022.mp3"#ï¿½ï¿½ï¿½Ä¾ï¿½
 	chance = {
 		modifier = {
 			factor = 0
@@ -380,7 +380,7 @@ song = {
 	}
 }
 song = {
-	name = "SF023.mp3"#½ú²ì¼½±ßÇø
+	name = "SF023.mp3"#ï¿½ï¿½ï¿½ì¼½ï¿½ï¿½ï¿½ï¿½
 	chance = {
 		modifier = {
 			factor = 0
@@ -397,7 +397,7 @@ song = {
 	}
 }
 song = {
-	name = "SF024.mp3"#·´É¨µ´
+	name = "SF024.mp3"#ï¿½ï¿½É¨ï¿½ï¿½
 	chance = {
 		modifier = {
 			factor = 0
@@ -414,7 +414,7 @@ song = {
 	}
 }
 song = {
-	name = "SF025.mp3"#°ÙÍÅ´óÕ½
+	name = "SF025.mp3"#ï¿½ï¿½ï¿½Å´ï¿½Õ½
 	chance = {
 		modifier = {
 			factor = 0
@@ -431,7 +431,7 @@ song = {
 	}
 }
 song = {
-	name = "SF026.mp3"#Õý¹æÕ½
+	name = "SF026.mp3"#ï¿½ï¿½ï¿½ï¿½Õ½
 	chance = {
 		modifier = {
 			factor = 0
@@ -499,7 +499,7 @@ song = {
 	}
 }
 song = {
-	name = "SF030.mp3"#ÊÄÊ¦³öÕ÷
+	name = "SF030.mp3"#ï¿½ï¿½Ê¦ï¿½ï¿½ï¿½ï¿½
 	chance = {
 		modifier = {
 			factor = 0
@@ -514,7 +514,7 @@ song = {
 	}
 }
 song = {
-	name = "SF031.mp3"#Î÷±±½¨Õþ
+	name = "SF031.mp3"#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	chance = {
 		modifier = {
 			factor = 0
@@ -529,24 +529,7 @@ song = {
 	}
 }
 song = {
-	name = "SF032.mp3"#Õ½¶·
-	chance = {
-		modifier = {
-			factor = 0
-			OR = {
-				NOT = { tag = CXB }
-				war = no
-			}
-		}
-		modifier = {
-			factor = 4
-			tag = CXB
-			war = yes
-		}
-	}
-}
-song = {
-	name = "SF033.mp3"#Õ½¶·
+	name = "SF032.mp3"#Õ½ï¿½ï¿½
 	chance = {
 		modifier = {
 			factor = 0
@@ -563,7 +546,7 @@ song = {
 	}
 }
 song = {
-	name = "SF053.mp3"#Õ½¶·
+	name = "SF033.mp3"#Õ½ï¿½ï¿½
 	chance = {
 		modifier = {
 			factor = 0
@@ -580,7 +563,7 @@ song = {
 	}
 }
 song = {
-	name = "SF054.mp3"#Õ½¶·
+	name = "SF053.mp3"#Õ½ï¿½ï¿½
 	chance = {
 		modifier = {
 			factor = 0
@@ -597,7 +580,7 @@ song = {
 	}
 }
 song = {
-	name = "SF034.mp3"#Õ½¶·
+	name = "SF054.mp3"#Õ½ï¿½ï¿½
 	chance = {
 		modifier = {
 			factor = 0
@@ -614,7 +597,7 @@ song = {
 	}
 }
 song = {
-	name = "SF035.mp3"#Õ½¶·
+	name = "SF034.mp3"#Õ½ï¿½ï¿½
 	chance = {
 		modifier = {
 			factor = 0
@@ -631,7 +614,24 @@ song = {
 	}
 }
 song = {
-	name = "SF036.mp3"#Óæ¹âÇú
+	name = "SF035.mp3"#Õ½ï¿½ï¿½
+	chance = {
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { tag = CXB }
+				war = no
+			}
+		}
+		modifier = {
+			factor = 4
+			tag = CXB
+			war = yes
+		}
+	}
+}
+song = {
+	name = "SF036.mp3"#ï¿½ï¿½ï¿½ï¿½ï¿½
 	chance = {
 		modifier = {
 			factor = 0
@@ -650,7 +650,7 @@ song = {
 	}
 }
 song = {
-	name = "SF037.mp3"#Ò¹ÉÏº£
+	name = "SF037.mp3"#Ò¹ï¿½Ïºï¿½
 	chance = {
 		modifier = {
 			factor = 0
@@ -669,7 +669,7 @@ song = {
 	}
 }
 song = {
-	name = "SF038.mp3"#ÄÏ¾©´óÍÀÉ±
+	name = "SF038.mp3"#ï¿½Ï¾ï¿½ï¿½ï¿½ï¿½ï¿½É±
 	chance = {
 		modifier = {
 			factor = 0
@@ -686,25 +686,25 @@ song = {
 	}
 }
 song = {
-	name = "SF039.mp3"#Õ½Ê¤ÈÕ±¾
+	name = "SF039.mp3"#Õ½Ê¤ï¿½Õ±ï¿½
 	chance = {
 		modifier = {
 			factor = 0
 			OR = {
 				and = { NOT = { tag = CHI } NOT = { tag = CHC } NOT = { tag = CXB } NOT = { tag = CYN } NOT = { tag = CGX } NOT = { tag = CGD } NOT = { tag = CXK } NOT = { tag = CSC } NOT = { tag = CDB } NOT = { tag = CQM } NOT = { tag = CNM } NOT = { tag = CJC } NOT = { tag = CSX } NOT = { tag = CSD } NOT = { tag = CSY } NOT = { tag = SIK } NOT = { tag = TIB } }
-				and = ( exists = JAP JAP = { is_subject = no } }
+				and = { exists = JAP JAP = { is_subject = no } }
 			}
 		}
 		modifier = {
 			factor = 4
 			or = { TAG = CHC TAG = CHI TAG = CXB TAG = CYN TAG = CXK TAG = CSC TAG = CDB TAG = CQM TAG = CNM TAG = CSX TAG = CSY TAG = CSD TAG = CJC TAG = CGD TAG = CGX TAG = SIK TAG = TIB }
-			or = ( not = { exists = JAP } JAP = { is_subject = yes } }
+			or = { not = { exists = JAP } JAP = { is_subject = yes } }
 			has_global_flag = JAP_Lost
 		}
 	}
 }
 song = {
-	name = "SF040.mp3"#ÖÐ»ªÈËÃñ¹²ºÍ¹ú
+	name = "SF040.mp3"#ï¿½Ð»ï¿½ï¿½ï¿½ï¿½ñ¹²ºÍ¹ï¿½
 	chance = {
 		modifier = {
 			factor = 0
@@ -808,7 +808,7 @@ song = {
 	}
 }
 song = {
-	name = "SF048.mp3"#ÖÐ»ªÃñ¹ú
+	name = "SF048.mp3"#ï¿½Ð»ï¿½ï¿½ï¿½ï¿½
 	chance = {
 		modifier = {
 			factor = 0
@@ -860,7 +860,7 @@ song = {
 	}
 }
 song = {
-	name = "SF052.mp3"#´ó½ø¾ü
+	name = "SF052.mp3"#ï¿½ï¿½ï¿½ï¿½ï¿½
 	chance = {
 		modifier = {
 			factor = 0

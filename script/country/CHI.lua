@@ -317,10 +317,11 @@ end
 
 function P.DiploScore_GiveMilitaryAccess(viScore, voAI, voCountry)
 	local lsCountry = tostring(voCountry)
-
 	-- Do not let Japan in our territory
-	if lsCountry == "JAP" then
+	if lsCountry == "JAP" and not (voCountry.ministerCountry:GetFlags():IsFlagSet("Japanese_puppet_Nanking")) then
 		viScore = 0
+	    elseif lsCountry == "JAP" and (voCountry.ministerCountry:GetFlags():IsFlagSet("Japanese_puppet_Nanking")) then
+			viScore = 100
 	end
 	
 	return viScore
