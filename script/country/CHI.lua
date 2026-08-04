@@ -217,7 +217,7 @@ end
 
 function P.LandRatio(voProductionData)
 	local lbAtWarJAP = voProductionData.ministerCountry:GetRelation(CCountryDataBase.GetTag("JAP")):HasWar()
-	local lbAtWarCXB = voProductionData.ministerCountry:GetRelation(CCountryDataBase.GetTag("CXB")):HasWar()
+	local lbCXBWar = voProductionData.ministerCountry:GetRelation(CCountryDataBase.GetTag('CXB')):HasWar()
 	local laArray
 	if lbAtWarJAP then
 		laArray = {
@@ -228,11 +228,11 @@ function P.LandRatio(voProductionData)
 			infantry_brigade = 4,
 			militia_brigade = 2};
 	end
-	if (voProductionData.ministerCountry:GetFlags():IsFlagSet("Japanese_puppet_Nanking")) and not(lbAtWarCXB) then
+	if (voForeignMinisterData.ministerCountry:GetFlags():IsFlagSet("Japanese_puppet_Nanking")) and not(lbCXBWar) then
 		laArray = {
 			infantry_brigade = 10,
 			militia_brigade = 2};
-		elseif (lbAtWarCXB) then
+		elseif (lbCXBWar) then
 		laArray = {
 			infantry_brigade = 10,
 			militia_brigade = 0};
@@ -317,11 +317,10 @@ end
 
 function P.DiploScore_GiveMilitaryAccess(viScore, voAI, voCountry)
 	local lsCountry = tostring(voCountry)
+
 	-- Do not let Japan in our territory
-	if lsCountry == "JAP" and not (voCountry.ministerCountry:GetFlags():IsFlagSet("Japanese_puppet_Nanking")) then
+	if lsCountry == "JAP" then
 		viScore = 0
-	    elseif lsCountry == "JAP" and (voCountry.ministerCountry:GetFlags():IsFlagSet("Japanese_puppet_Nanking")) then
-			viScore = 100
 	end
 	
 	return viScore
@@ -334,30 +333,30 @@ function P.CallLaw_training_laws(minister, voCurrentLaw)
 	return CLawDataBase.GetLaw(_MINIMAL_TRAINING_)
 end
 --define China's production of infantry_activation
-function P.Build_infantry_brigade(vIC, viManpowerTotal, voType, voProductionData, viUnitQuantity)
+function P.Build_infantry_brigade(vIC, viManpowerTotal, voType, voProductionData, viUnitQuantity, voForeignMinisterData)
 	local lbCXBWar = voProductionData.ministerCountry:GetRelation(CCountryDataBase.GetTag('CXB')):HasWar()
 	local lbJAPWar = voProductionData.ministerCountry:GetRelation(CCountryDataBase.GetTag('JAP')):HasWar()
 	local chiTag = CCountryDataBase.GetTag('CHI')
 	local lbControlWuHan = (CCurrentGameState.GetProvince(7508):GetController() == chiTag)
-	if not(lbJAPWar) and not (voProductionData.ministerCountry:GetFlags():IsFlagSet("Japanese_puppet_Nanking")) then	
+	if not(lbJAPWar) then	
 		-- If China still controls WuHan keep hitting them
-	         local laSupportUnit = nil
+	         local laSupportUnit = {nil}
 	         voType.Size = 3
 	         voType.Support = 0
 			 return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
-			elseif (lbJAPWar) and not(voProductionData.ministerCountry:GetFlags():IsFlagSet("jap_seizes_coast_chi")) then	
-				local laSupportUnit = nil
+			elseif (lbJAPWar) and not(voForeignMinisterData.ministerCountry:GetFlags():IsFlagSet("jap_seizes_coast_chi")) then	
+				local laSupportUnit = {nil}
 					voType.Size = 2
 					voType.Support = 0
 				return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
-	        elseif(lbJAPWar) and (voProductionData.ministerCountry:GetFlags():IsFlagSet("jap_seizes_coast_chi")) then
+	        elseif(lbJAPWar) and (voForeignMinisterData.ministerCountry:GetFlags():IsFlagSet("jap_seizes_coast_chi")) then
 		        local laSupportUnit = {
 			           "field_battalion"}
 			       voType.Size = 2
 			       voType.Support = 1
 			return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
   end
-	if (voProductionData.ministerCountry:GetFlags():IsFlagSet("Japanese_puppet_Nanking")) and not(lbCXBWar) then
+	if (voForeignMinisterData.ministerCountry:GetFlags():IsFlagSet("Japanese_puppet_Nanking")) and not(lbCXBWar) then
 				if (voProductionData.ManpowerTotal > 150 and voProductionData.Year <= 1940) and (voProductionData.LandCountTotal < 600)then
 					 local laSupportUnit = {
 							"field_battalion"}
@@ -372,10 +371,6 @@ function P.Build_infantry_brigade(vIC, viManpowerTotal, voType, voProductionData
 							voType.Support = 1
 							return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
 				 end
-				 local laSupportUnit = nil
-		voType.Size = 2
-		voType.Support = 0
-		return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
 			end
 	if(lbCXBWar) then
 		local laSupportUnit = {
@@ -386,30 +381,26 @@ function P.Build_infantry_brigade(vIC, viManpowerTotal, voType, voProductionData
   end
 end
 --define China's production of militia_activation
-function P.Build_militia_brigade(vIC, viManpowerTotal, voType, voProductionData, viUnitQuantity)
+function P.Build_militia_brigade(vIC, viManpowerTotal, voType, voProductionData, viUnitQuantity, voForeignMinisterData)
 	-- Early war: standard infantry brigade with artillery and engineer support
 	
 local lbJAPWar = voProductionData.ministerCountry:GetRelation(CCountryDataBase.GetTag('JAP')):HasWar()
 	if not(lbJAPWar) then	
-		local laSupportUnit = nil
+		local laSupportUnit = {nil}
 		voType.Size = 3
 		voType.Support = 0
 		return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
-    elseif (lbJAPWar) and not(voProductionData.ministerCountry:GetFlags():IsFlagSet("jap_seizes_coast_chi")) then	
-		local laSupportUnit = nil
+    elseif (lbJAPWar) and not(voForeignMinisterData.ministerCountry:GetFlags():IsFlagSet("jap_seizes_coast_chi")) then	
+		local laSupportUnit = {nil}
 		voType.Size = 2
 		voType.Support = 0
 		return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
-	elseif (lbJAPWar) and (voProductionData.ministerCountry:GetFlags():IsFlagSet("jap_seizes_coast_chi"))  then
-		local laSupportUnit = nil
+	elseif (lbJAPWar) and not(voForeignMinisterData.ministerCountry:GetFlags():IsFlagSet("jap_seizes_coast_chi"))  then
+		local laSupportUnit = {nil}
 		voType.Size = 3
 		voType.Support = 0
 		return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
 	end
-	local laSupportUnit = nil
-		voType.Size = 2
-		voType.Support = 0
-		return Support.CreateUnit(voType, vIC, viUnitQuantity, voProductionData, laSupportUnit)
 end
 
 return AI_CHI
