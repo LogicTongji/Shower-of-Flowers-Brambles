@@ -884,5 +884,9 @@ function P.ForeignMinister_Influence(voForeignMinisterData)
 	return laWatch, laIgnoreWatch, laIgnore
 end
 
+function P.DiploScore_SendExpeditionaryForce(voAI, voActorTag, voRecipientTag, voObserverTag, action)
+	local  score = 0
+	return score
+end
 
 return AI_JAP

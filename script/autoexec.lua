@@ -19,6 +19,7 @@ require('ai_support_functions')
 require('ai_tech_minister')
 require('ai_trade')
 require('ai_license')
+require('overlay_gui')
 
 -- Default Files
 require('DEFAULT_LAND')
@@ -71,3 +72,4 @@ require('TIB')
 require('TUR')
 require('VIC')
 require('YUG')
+require('WJW')

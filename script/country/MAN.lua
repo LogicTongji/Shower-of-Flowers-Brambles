@@ -257,5 +257,10 @@ function P.CallLaw_training_laws(minister, voCurrentLaw)
 	return CLawDataBase.GetLaw(_MINIMAL_TRAINING_)
 end
 
+function P.DiploScore_SendExpeditionaryForce(voAI, voActorTag, voRecipientTag, voObserverTag, action)
+	local  score = 0
+	return score
+end
+
 return AI_MAN 
 
