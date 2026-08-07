@@ -1,4 +1,9 @@
 require('ai_diplomacy')
+local ChinaWarMapAdapter = require('war_map_adapter')
+
+local function UpdateChinaWarMapOncePerDay()
+	ChinaWarMapAdapter.Tick()
+end
 
 local ForeignMinisterData = {}
 
@@ -72,6 +77,8 @@ end
 -- # Called by the EXE
 -- #####################################
 function ForeignMinister_Tick(minister)
+	UpdateChinaWarMapOncePerDay()
+
 	-- Execute Decisions
 	minister:ExecuteDiploDecisions()
 	
