@@ -1,0 +1,205 @@
+guiTypes = {
+
+	windowType = {
+		name = "chat_window"
+		backGround=""
+		position = { x=0 y=-416 }	
+		size =   { x=400 y= 416 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "LOWER_LEFT"
+
+		
+		iconType =
+		{
+			name ="chatback"
+			spriteType = "GFX_chatback"
+			position = { x= 0 y = 0 }
+		}
+		guiButtonType =
+		{
+			name = "close"
+			quadTextureSprite = "GFX_button_close_chat"
+			position = { x= 368 y = 8 }
+			Orientation = "UPPER_LEFT"
+			buttonFont = "standard_font"
+			shortcut = "TAB"
+		}
+
+		OverlappingElementsBoxType = {
+			name = "channels"	
+			position = { x = 8  y = 5  }
+			size = { x=356 y= 18 }
+			spacing = 0
+		}
+
+		listboxType = 
+		{
+			name ="chat"
+			position = { x = 13 y = 43 }
+			backGround=""
+			size = { x=225 y =330}
+			Orientation = "UPPER_LEFT"
+			spacing = 0
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}
+
+		listboxType = 
+		{
+			name ="users"
+			position = { x = 255 y = 38 }
+			backGround=""
+			size = { x=122 y =368}
+			Orientation = "UPPER_LEFT"
+			spacing = 0
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}
+
+		editBoxType = {
+			position = { x = 15 y = 385  }
+			name = "chat_input"
+			textureFile = ""
+			cursor = { x=-7 y =-4 }
+			font = "chat_input_font"
+			size = { x=240 y=120 }
+			text = ""
+			orientation = "UPPER_LEFT"
+		}
+	}
+	
+	### CHAT ITEM
+	windowType = {
+		name = "chat_item"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=215 y= 18 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+		instantTextBoxType={
+			position = {x = 0 y = 0 }
+			name = "text"
+			font = "standard_font"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 215
+			maxHeight = 18
+			text = ""	
+		}
+	}
+
+	### CHAT INBOX WINDOW (indicator shown in top left corner beside alerts)
+	windowType = {
+		name = "chat_inbox_window"
+		backGround=""
+		position = { x=9 y=67 }	
+		size = { x=276 y= 18 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "UPPER_LEFT"
+
+		guiButtonType = {
+			name = "open"
+			quadTextureSprite = "GFX_chat_message_alert"
+			position = { x=0 y =0}	
+		}
+	}
+
+	### CHANNEL WINDOW
+	windowType = {
+		name = "channel_window"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=102 y= 18 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+		guiButtonType = {
+			name = "select"
+			quadTextureSprite = "GFX_channelback"
+			position = { x=0 y =0}	
+		}
+		instantTextBoxType={
+			position = {x = 5 y = 8 }
+			name = "name"
+			font = "standard_font"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 75
+			maxHeight = 18
+			fixedsize = yes
+			text = ""	
+		}
+		guiButtonType =
+		{
+			name = "close"
+			quadTextureSprite = "GFX_chat_close_channel"
+			position = { x= 83 y = 8 }
+			Orientation = "UPPER_LEFT"
+			buttonFont = "standard_font"
+		}
+	}
+	
+
+	### USER ITEM
+	windowType = {
+		name = "user_item"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=100 y= 46 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+		iconType =
+		{
+			name ="chat_player_entry"
+			spriteType = "GFX_chat_player_entry"
+			position = { x= 0 y = 22 }
+		}
+		guiButtonType = {
+			name = "whisper"
+			quadTextureSprite = "GFX_chat_whisper"
+			position = { x=0 y =0}	
+		}
+		instantTextBoxType={
+			position = {x = 7 y = 4 }
+			name = "name"
+			font = "standard_font"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 125
+			maxHeight = 18
+			fixedsize = yes
+			text = ""	
+		}
+
+		guiButtonType =
+		{
+			name = "kick"
+			quadTextureSprite = "GFX_chat_kick"
+			position = { x= 100 y = 24 }
+			buttonFont = "standard_font"
+		}
+
+		guiButtonType = {
+			name ="country_icon"
+			quadTextureSprite = "GFX_flag_tiny"
+			position = { x= 3 y = 19}
+		}
+		
+	}
+}

@@ -16,6 +16,7 @@ if(WIN32)
     add_executable(
         war_map_preview
         src/war_map_preview.cpp
+        src/gui_interpreter.cpp
         src/region_color_core.cpp
         src/war_map_state.cpp
     )
@@ -47,6 +48,7 @@ if(APPLE)
     add_executable(
         war_map_preview_macos
         src/war_map_preview_macos.cpp
+        src/gui_interpreter.cpp
         src/region_color_core.cpp
         src/war_map_state.cpp
     )
@@ -66,3 +68,14 @@ if(APPLE)
         "-framework ImageIO"
     )
 endif()
+
+add_executable(
+    gui_interpreter_probe
+    src/gui_interpreter_probe.cpp
+    src/gui_interpreter.cpp
+)
+
+target_compile_features(
+    gui_interpreter_probe
+    PRIVATE cxx_std_17
+)

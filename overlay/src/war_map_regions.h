@@ -3,7 +3,7 @@
 #include <array>
 #include <string_view>
 
-inline constexpr std::array<std::string_view, 40>
+inline constexpr std::array<std::string_view, 41>
 kWarMapRegionNames = {
     "guangdong_region",
     "shanxi_region",
@@ -44,6 +44,7 @@ kWarMapRegionNames = {
 	"utang_region",
 	"taiwan_region",
 	"Mongolia_Regions",
+    "SF_Shanghai",
 	"tannuuriankhai_region"
 };
 

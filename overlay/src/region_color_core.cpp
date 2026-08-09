@@ -103,6 +103,11 @@ RegionColor GetRegionColor(
         return {240, 210, 60, 190};
     }
 
+    if (controlledPercentage > 0.0f)
+    {
+        return {255, 245, 170, 180};
+    }
+
     return {80, 130, 80, 160};
 }
 

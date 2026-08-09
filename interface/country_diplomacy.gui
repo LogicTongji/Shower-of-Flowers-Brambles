@@ -1,0 +1,1353 @@
+guiTypes = {
+
+	windowType = {
+		name = "topcolor_diplomacy"
+		backGround =""
+		position = { x=0 y=0 }	
+		size = { x=1120 y=768 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = "0"
+		verticalBorder = ""
+		fullScreen = no
+		orientation="UPPER_LEFT"
+	
+		iconType = {
+			name = "topcolor_icon"
+			spriteType = "GFX_topcolor_diplomacy"
+			position = { x= 0 y = -1 }
+			Orientation = "UPPER_LEFT"
+		}
+	}
+	
+
+	windowType = {
+		name = "country_diplomacy"
+		backGround =""
+		position = { x=-555 y=-344 }	
+		#position = { x=0 y=3 }	
+		#size = { x=1120 y=768 }
+		size = { x=1120 y=768 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = "0"
+		verticalBorder = ""
+		fullScreen = no
+		orientation="CENTER"
+		
+		iconType = {
+			name ="bg_mainshadow"
+			spriteType = "GFX_bg_mainshadow"
+			position = { x= -3 y = 9 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		iconType = {
+			name ="bg_countryskin"
+			spriteType = "GFX_country_bg"
+			position = { x= 44 y = 54 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		iconType = {
+			name ="bg_diplomacy"
+			spriteType = "GFX_bg_diplomacy"
+			position = { x= 44 y = -30 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		# CGM image (hide for normal)
+		iconType = {
+			name ="cgm_diplo_bg"
+			spriteType = "GFX_cgm_diplo_bg"
+			position = { x= 53 y = 526 }
+		}
+		
+		
+		#### DRIFT
+		
+		instantTextBoxType = { 
+			name = "drift_label"
+			position = { x = 817 y = 267 }
+			textureFile = ""
+			font = "Arial12"
+			borderSize = {x = 0 y = 4}
+			text = "Influences"	
+			maxWidth = 300
+			maxHeight = 64	
+			format = centre
+		}
+		
+		listboxType = 
+			{
+			name ="drift_list"
+			position = { x = 890 y = 289 }
+			backGround=""
+			size = { x= 155 y =96}
+			Orientation = "UPPER_LEFT"
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 4 y = 4 }
+			offset = { x=0 y = 0 }
+		}		
+
+
+###############
+		
+		guiButtonType = {
+			name = "close_button"
+			position = { x= -98 y = 24 }
+			quadTextureSprite = "GFX_close_button"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Arial12_black"
+			Orientation = "UPPER_RIGHT"
+			shortcut = "ESCAPE"
+		}
+		
+		textBoxType = { 
+		name = "headline_diplo"
+		position = { x = 710 y = 8 }
+		textureFile = ""
+		font = "impact"
+		borderSize = {x = 0 y = 4}
+		text = "headline_diplo"	
+		maxWidth = 300
+		maxHeight = 64	
+		format = right
+		}
+		
+		instantTextBoxType = { 
+			name = "automation_setting"
+			position = { x = 804 y = 41 }
+			textureFile = ""
+			font = "Arial16"
+			borderSize = {x = 0 y = 4}
+			text = "Expert"	
+			maxWidth = 300
+			maxHeight = 64	
+			format = centre
+		}
+		
+		guiButtonType = {
+			name ="mode_arrow_left"
+			quadTextureSprite = "GFX_mode_arrow_left"
+			position = { x= 896 y = 43}
+			Orientation = "UPPER_LEFT"
+		}
+		guiButtonType = {
+			name ="mode_arrow_right"
+			quadTextureSprite = "GFX_mode_arrow_right"
+			position = { x= 996 y = 43}
+			Orientation = "UPPER_LEFT"
+		}
+		
+
+		
+		### ALIGNMENT SORTBUTTONS###
+		
+		windowType = {
+		name = "alignment"
+		backGround =""
+		position = { x=0 y=0 }	
+		size = { x=1120 y=768 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = "0"
+		verticalBorder = ""
+		fullScreen = no
+		orientation="UPPER_LEFT"
+		
+			guiButtonType = {
+				name = "majors_button"
+				position = { x=57 y =111}
+				quadTextureSprite ="GFX_button_filter_country"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "DIP_MAJORS"
+				buttonFont = "Arial12_black"
+			}
+			
+			guiButtonType = {
+				name = "neighbours_button"
+				position = { x=117 y =111}
+				quadTextureSprite ="GFX_button_filter_country"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "DIP_NEIGHBOURS"
+				buttonFont = "Arial12_black"
+			}
+			
+			guiButtonType = {
+				name = "unaligned_button"
+				position = { x=177 y =111}
+				quadTextureSprite ="GFX_button_filter_country"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "DIP_UNALIGNED"
+				buttonFont = "Arial12_black"
+			}
+			
+			guiButtonType = {
+				name = "self_button"
+				position = { x=237 y =111}
+				quadTextureSprite ="GFX_button_filter_country"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "DIP_SELF"
+				buttonFont = "Arial12_black"
+			}
+			
+			guiButtonType = {
+				name = "all_button"
+				position = { x=297 y =111}
+				quadTextureSprite ="GFX_button_filter_country"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "DIP_ALL"
+				buttonFont = "Arial12_black"
+			}
+		}
+		
+		#####   COUNTRIES LIST ######
+	
+		
+	
+		listboxType = 
+			{
+			name ="country_listbox"
+			position = { x = 65 y = 202 }
+			backGround=""
+			size = { x=276 y =320}
+			Orientation = "UPPER_LEFT"
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}
+		
+		guiButtonType = {
+			name = "sortby_name_button"
+			position = { x=65 y = 178}
+			quadTextureSprite ="GFX_sort_button4"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "DIP_NAME_TITLE"
+			buttonFont = "Arial12_black"
+		}
+	
+		guiButtonType = {
+			name = "sortby_threat_button"
+			position = { x=156 y = 178}
+			quadTextureSprite ="GFX_sort_button1"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "DIP_THREAT_TITLE"
+			buttonFont = "Arial12_black"
+		}
+		
+		guiButtonType = {
+			name = "sortby_energy_button"
+			position = { x=214 y =183 }
+			quadTextureSprite ="GFX_icon_energy_mini"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = ""
+		}
+		
+		guiButtonType = {
+			name = "sortby_metal_button"
+			position = { x=233 y =183}
+			quadTextureSprite ="GFX_icon_metal_mini"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = ""
+		}
+		
+		guiButtonType = {
+			name = "sortby_raremet_button"
+			position = { x=254 y =183}
+			quadTextureSprite ="GFX_icon_raremat_mini"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = ""
+		}
+		
+		guiButtonType = {
+			name = "sortby_oil_button"
+			position = { x=271 y =183}
+			quadTextureSprite ="GFX_icon_oil_mini"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = ""
+		}
+		
+		guiButtonType = {
+			name = "sortby_supplies_button"
+			position = { x=289 y =183}
+			quadTextureSprite ="GFX_icon_supplies_mini"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = ""
+		}
+		guiButtonType = {
+			name = "sortby_fuel_button"
+			position = { x=306 y =183}
+			quadTextureSprite ="GFX_icon_fuel_mini"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = ""
+		}
+		
+		guiButtonType = {
+			name = "sortby_money_button"
+			position = { x=322 y =183}
+			quadTextureSprite ="GFX_icon_money_mini"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = ""
+		}
+		
+		listboxType = 
+			{
+			name ="diploaction_list"
+			position = { x = 350 y = 383 }
+			backGround=""
+			size = { x= 210 y = 333}
+			Orientation = "UPPER_LEFT"
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}
+
+		checkboxType = {
+			name = "trade_automate_checkbox"
+			position = { x=120 y = 528 }
+			quadTextureSprite ="GFX_checkbox_square"
+						
+			Orientation = "UPPER_LEFT"
+		}
+		
+		textBoxType = {
+			name = "trade_automate_checkbox_label"
+			position = { x= 155 y = 532 }
+			textureFile = ""
+			font = "Arial12"
+			borderSize = {x = 4 y = 4}
+			text = "AUTOMATE_TRADE"	
+			maxWidth = 256
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = left
+		}
+		
+		listboxType = {
+			name ="decisions_listbox"
+			position = { x=50 y=565}
+			backGround=""
+			size = { x=290 y =135}
+			Orientation = "UPPER_LEFT"
+			spacing = 1
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 10 y = 10}
+		}
+		
+		########## Country information subwindow
+		windowType = {
+		name = "country_info"
+		backGround=""
+		position = { x=366 y=71 }	
+		size = { x=500 y=320 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "UPPER_LEFT"
+
+
+		iconType =
+			{
+				name ="country_flag"
+				spriteType = "GFX_thinshield"
+				position = { x= 0 y = 11 }
+				Orientation = "UPPER_LEFT"
+				rotation = -1.5708
+				
+			}
+
+		iconType = {
+			name ="faction_symbol_icon"
+			spriteType = "GFX_icon_factions_small"
+			position = { x= 64 y = 26}
+			Orientation = "UPPER_LEFT"
+		}
+		
+		textBoxType = {
+			name = "label_nation"
+			position = { x = 64 y = 0 }
+			textureFile = ""
+			font = "Arial12"
+			borderSize = {x = 4 y = 4}
+			text = " "	
+			maxWidth = 256
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = left
+		}
+		
+		textBoxType = {
+			name = "ruler_label"
+			position = { x = 64 y = 15 }
+			textureFile = ""
+			font = "Arial12"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 256
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = left
+		}
+		
+		textBoxType = {
+			name = "ruler_value"
+			position = { x = 64 y = 15 }
+			textureFile = ""
+			font = "Arial12"
+			borderSize = {x = 4 y = 4}
+			text = "party"	
+			maxWidth = 153
+			maxHeight = 32
+			fixedsize = yes
+			Orientation = "UPPER_LEFT"
+
+			format = left
+		}
+
+		textBoxType = {
+			name = "label_relation"
+			position = { x = 2 y = 69 }
+			textureFile = ""
+			font = "Arial12"
+			borderSize = {x = 4 y = 4}
+			text = "DIP_CURRENT_RELATION"	
+			maxWidth = 250
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = left
+		}
+		
+		textBoxType = {
+			name = "label_relation_value"
+			position = { x = 98 y = 69 }
+			textureFile = ""
+			font = "Arial12"
+			borderSize = {x = 4 y = 4}
+			text = "0"	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = right
+		}
+
+		textBoxType = {
+			name = "label_threat_us"
+			position = { x = 2 y = 84 }
+			textureFile = ""
+			font = "Arial12"
+			borderSize = {x = 4 y = 4}
+			text = "DIP_THREAT_US"	
+			maxWidth = 250
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = left
+		}
+		
+		textBoxType = {
+			name = "label_threat_us_value"
+			position = { x = 98 y = 84 }
+			textureFile = ""
+			font = "Arial12"
+			borderSize = {x = 4 y = 4}
+			text = "0"	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = right
+		}
+		
+		textBoxType = {
+			name = "label_threat_them"
+			position = { x = 2 y = 99 }
+			textureFile = ""
+			font = "Arial12"
+			borderSize = {x = 4 y = 4}
+			text = "DIP_THREAT_THEM"	
+			maxWidth = 250
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = left
+		}
+		
+		textBoxType = {
+			name = "label_threat_them_value"
+			position = { x = 98 y = 99 }
+			textureFile = ""
+			font = "Arial12"
+			borderSize = {x = 4 y = 4}
+			text = "0"	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = right
+		}
+		
+		textBoxType = {
+			name = "label_neutrality"
+			position = { x = 2 y = 114 }
+			textureFile = ""
+			font = "Arial12"
+			borderSize = {x = 4 y = 4}
+			text = "DIP_NEUTRALITY"	
+			maxWidth = 250
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = left
+		}
+		
+		textBoxType = {
+			name = "label_neutrality_value"
+			position = { x = 98 y = 114 }
+			textureFile = ""
+			font = "Arial12"
+			borderSize = {x = 4 y = 4}
+			text = "0"	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = right
+		}
+		
+		textBoxType = {
+			name = "label_our_neutrality"
+			position = { x = 2 y = 129 }
+			textureFile = ""
+			font = "Arial12"
+			borderSize = {x = 4 y = 4}
+			text = "DIP_OUR_NEUTRALITY"	
+			maxWidth = 250
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = left
+		}
+		
+		textBoxType = {
+			name = "label_our_neutrality_value"
+			position = { x = 98 y = 129 }
+			textureFile = ""
+			font = "Arial12"
+			borderSize = {x = 4 y = 4}
+			text = "0"	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = right
+		}
+		
+		textBoxType = {
+			name = "label_highest_threat"
+			position = { x = 2 y = 144 }
+			textureFile = ""
+			font = "Arial12"
+			borderSize = {x = 4 y = 4}
+			text = "DIP_HIGHEST_THREAT"	
+			maxWidth = 250
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = left
+		}
+		
+		textBoxType = {
+			name = "label_highest_threat_value"
+			position = { x = 72 y = 144 }
+			textureFile = ""
+			font = "Arial12"
+			borderSize = {x = 4 y = 4}
+			text = "0"	
+			maxWidth = 100
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = right
+		}
+		
+		iconType =
+			{
+				name ="highest_threat_flag"
+				spriteType = "GFX_flag_tiny"
+				position = { x= 170 y = 139 }
+				Orientation = "UPPER_LEFT"
+			}
+		
+		iconType =
+		{
+			name ="surrender_progress"
+			spriteType = "surrender_progress"
+			position = { x= 68 y = 56 }
+			Orientation = "UPPER_LEFT"
+		}
+				
+		listboxType = {
+			name ="diplostatus_list"
+			position = { x = 20 y = 195 }
+			backGround=""
+			size = { x=170 y =112 }
+			Orientation = "UPPER_LEFT"
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 4 y = 4 }
+			offset = { x=0 y = 0 }
+		}
+		
+	
+		
+		####RELATIONLIST
+		
+		windowType = {
+			name = "relation_list_window"
+			backGround=""
+			position = { x=4 y=139 }	
+			size = { x=400 y=400 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no
+			
+			guiButtonType = {
+					name = "sortby_nation_button"
+					position = { x=3 y =49 }
+					quadTextureSprite ="GFX_sort_button5"	
+					tooltip = ""
+					tooltipText =""
+					delayedTooltipText = ""
+					buttonText = "DOMESTIC_NATION"
+					buttonFont = "Arial12_black"
+				}
+	
+			guiButtonType = {
+					name = "sortby_relation_button"
+					position = { x=109 y =49 }
+					quadTextureSprite ="GFX_sort_button2"	
+					tooltip = ""
+					tooltipText =""
+					delayedTooltipText = ""
+					buttonText = "DOMESTIC_RELATION"
+					buttonFont = "Arial12_black"
+				}
+	
+	
+			listboxType = {
+				name ="domestictext_relationlist"
+				position = { x = 4 y = 62 }
+				backGround=""
+				size = { x=183 y =107 }
+				Orientation = "UPPER_LEFT"
+				spacing = 2
+				scrollbartype = "standardlistbox_slider"
+				borderSize = {x = 0 y = 0}
+			}
+		}
+		
+		# goals #######
+		windowType = {
+			name = "goal_list_window"
+			backGround=""
+			position = { x=4 y=139 }	
+			size = { x=400 y=400 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no
+			
+			
+			iconType =
+			{
+				name ="label_bg1"
+				spriteType = "GFX_diplo_wargoal_banner"
+				position = { x= -7 y = 47 }
+				Orientation = "UPPER_LEFT"
+			}
+			iconType =
+			{
+				name ="label_bg2"
+				spriteType = "GFX_diplo_wargoal_banner"
+				position = { x= -7 y = 107 }
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "our_label"
+				position = { x=-5 y=50 }
+				textureFile = ""
+				font = "Arial12"
+				borderSize = {x = 4 y = 0}
+				text = "OUR_GOALS"	
+				maxWidth = 200
+				maxHeight = 16	
+				fixedsize = yes
+				Orientation = "UPPER_LEFT"
+			}
+			
+			OverlappingElementsBoxType = {
+				name = "goals_by_us"
+				position = { x = 0 y = 65 }
+				size = { x=200 y= 32 }
+				Orientation = "UPPER_LEFT"
+				format = left
+				spacing = 1.0
+			}
+			
+			instantTextBoxType = {
+				name = "their_label"
+				position = { x=-5 y=110 }
+				textureFile = ""
+				font = "Arial12"
+				borderSize = {x = 4 y = 0}
+				text = "GOALS_VS_US"	
+				maxWidth = 200
+				maxHeight = 16	
+				fixedsize = yes
+				Orientation = "UPPER_LEFT"
+			}
+			
+			OverlappingElementsBoxType = {
+				name = "goals_at_us"
+				position = { x = 0 y = 125 }
+				size = { x=200 y= 32 }
+				Orientation = "UPPER_LEFT"
+				format = left
+				spacing = 1.0
+			}
+		}
+		#####
+		
+		guiButtonType = {
+			name = "toggle_diploview_button_country"
+			position = { x=-4 y = 164}
+			quadTextureSprite ="GFX_diplo_tab_button"	
+		}
+		guiButtonType = {
+			name = "toggle_diploview_button_relation"
+			position = { x=67 y = 164}
+			quadTextureSprite ="GFX_diplo_tab_button"	
+		}
+		guiButtonType = {
+			name = "toggle_diploview_button_goals"
+			position = { x=138 y = 164}
+			quadTextureSprite ="GFX_diplo_tab_button"	
+		}
+			instantTextBoxType = {
+				name = "info_label"
+				position = { x=-5 y=168 }
+				textureFile = ""
+				font = "Arial12"
+				borderSize = {x = 0 y = 0}
+				text = "DIPLO_INFO"	
+				maxWidth = 70
+				maxHeight = 16	
+				fixedsize = yes
+				format = centre
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "relation_label"
+				position = { x=66 y=168 }
+				textureFile = ""
+				font = "Arial12"
+				borderSize = {x = 0 y = 0}
+				text = "DIPLO_RELATIONS"	
+				maxWidth = 70
+				maxHeight = 16	
+				fixedsize = yes
+				format = centre
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "wargoals_label"
+				position = { x=137 y=168 }
+				textureFile = ""
+				font = "Arial12"
+				borderSize = {x = 0 y = 0}
+				text = "DIPLO_WARGOALS"	
+				maxWidth = 70
+				maxHeight = 16	
+				fixedsize = yes
+				format = centre
+				Orientation = "UPPER_LEFT"
+			}
+			
+			
+		}
+		
+	}
+	
+	# goal entry
+	windowType = {
+		name = "goal_overview_entry"
+		position = { x=0 y=0 }	
+		size = { x=32 y= 32 }
+		
+		iconType = {
+			name ="wargoal_icon"
+			spriteType = "GFX_diplo_wargoal_icons"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType =
+		{
+			name ="wargoal_flag"
+			spriteType = "GFX_flag_tiny"
+			position = { x= -3 y = 18 }
+			Orientation = "UPPER_LEFT"
+		}
+	}
+	
+	### COUNTRY LIST ENTRY ###
+	windowType = {
+		name = "diplomatic_country_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=256 y= 29 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+		checkboxType = {
+			name = "country_button"
+			position = { x=-5  y = 0}
+			quadTextureSprite ="GFX_big_listbutton_1"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Arial12"
+
+		}
+
+		instantTextBoxType= {
+			position = { x=23 y =10 }
+			name = "name"
+			font = "Arial12_black"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 20
+			text = ""	
+			orientation = "UPPER_LEFT"
+			format = left
+		}
+		
+		instantTextBoxType= {
+			position = { x=122 y =10 }
+			name = "threat"
+			font = "Arial12"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 20
+			text = "0"	
+			orientation = "UPPER_LEFT"
+			format = left
+		}
+		
+		guiButtonType = {
+			name ="country_icon"
+			quadTextureSprite = "GFX_minishield"
+			position = { x= -12 y = 0}
+			Orientation = "UPPER_LEFT"
+		}
+		
+		iconType =
+		{
+			name ="icon_energy"
+			spriteType = "GFX_icon_energy_mini"
+			position = { x= 148 y = 8 }
+			Orientation = "UPPER_LEFT"
+		}
+						
+		iconType =
+		{
+			name ="icon_metal"
+			spriteType = "GFX_icon_metal_mini"
+			position = { x= 169 y = 8 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		iconType =
+		{
+			name ="icon_raremet"
+			spriteType = "GFX_icon_raremat_mini"
+			position = { x= 190 y =  8 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		iconType =
+		{
+			name ="icon_oil"
+			spriteType = "GFX_icon_oil_mini"
+			position = { x= 205 y = 8 }
+			Orientation = "UPPER_LEFT"
+		}
+				
+		iconType =
+		{
+			name ="icon_supplies"
+			spriteType = "GFX_icon_supplies_mini"
+			position = { x= 221 y = 8 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		iconType =
+		{
+			name ="icon_fuel"
+			spriteType = "GFX_icon_fuel_mini"
+			position = { x= 240 y = 8 }
+			Orientation = "UPPER_LEFT"
+		}		
+		iconType =
+		{
+			name ="icon_money"
+			spriteType = "GFX_icon_money_mini"
+			position = { x= 255 y = 8 }
+			Orientation = "UPPER_LEFT"
+		}
+	
+	}
+
+	###FACTION BOXes###
+	
+	positionType = {
+		name = "diplomacy_sort_faction_start"
+		position = { x = 56 y = 75 }
+	}
+	
+	
+	positionType = {
+		name = "diplomacy_sort_faction_offset"
+		position = { x = 101 y = 0 }
+	}
+	
+	windowType = {
+		
+		name = "diplomacy_faction_sort_window"
+		backGround =""
+		position = { x=0 y=0 }	
+		size = { x = 32 y = 32 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = ""
+		verticalBorder = ""
+		fullScreen = no
+		orientation = "UPPER_LEFT"
+		
+		guiButtonType = {
+			name = "faction_symbol_big_button"
+			quadTextureSprite = "GFX_sort_axis"
+			position = { x = 0 y = 0}
+			Orientation = "UPPER_LEFT"
+			buttonText = "AXIS"
+			buttonFont = "Arial12_black"
+		}
+			
+	}
+	
+	windowType = {
+		
+		name = "faction_box_window"
+		backGround =""
+		position = { x=0 y=0 }	
+		size = { x = 32 y = 32 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = ""
+		verticalBorder = ""
+		fullScreen = no
+		orientation = "UPPER_LEFT"
+		
+		guiButtonType = {
+			name = "faction_symbol_button"
+			position = { x=-91 y = 20}
+			quadTextureSprite ="GFX_icon_factions"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = ""
+		}
+		
+		OverlappingElementsBoxType = {
+			name = "faction_box"
+			position = { x = -45 y = 27 }
+			size = { x=400 y= 32 }
+			Orientation = "UPPER_LEFT"
+			format = left
+			spacing = 1.0
+		}
+		
+		instantTextBoxType= {
+			position = { x=-135 y =8 }
+			name = "name"
+			font = "Arial12"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 20
+			text = ""	
+			orientation = "UPPER_LEFT"
+			format = centre
+		}
+	
+		iconType =
+		{
+			name ="victory_progress"
+			spriteType = "faction_progress"
+			position = { x= -25 y = 7 }
+			Orientation = "UPPER_LEFT"
+		}
+			
+	}
+
+	windowType = {
+		name = "faction_member_entry"
+		backGround =""
+		position = { x=0 y=0 }	
+		size = { x = 32 y = 32 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = ""
+		verticalBorder = ""
+		fullScreen = no
+		
+		guiButtonType = {
+			name = "faction_button"
+			position = { x=0 y =0 }
+			quadTextureSprite ="GFX_minishield"	
+		}
+		
+		iconType = {
+			name ="cgm_faction_leave_icon"
+			spriteType = "GFX_cgm_faction_leave_cross"
+			position = { x= 0 y = 0}
+			Orientation = "UPPER_LEFT"
+		}
+		
+		#iconType = {
+		#	name ="faction_icon"
+		#	spriteType = "GFX_minishield"
+		#	position = { x= 0 y = 0}
+		#	Orientation = "UPPER_LEFT"
+		#}
+	}
+	
+	guiButtonType = {
+			name = "alignment_button"
+			position = { x=0 y =0 }
+			quadTextureSprite ="GFX_minishield_small"	
+			}
+	
+	iconType = {
+			name ="alignment_icon"
+			spriteType = "GFX_minishield"
+			position = { x= 0 y = 0}
+			Orientation = "UPPER_LEFT"
+		}
+	
+	positionType = {
+		name = "faction_start"
+		position = { x = 700 y =79 }
+	}
+	
+	positionType = {
+		name = "faction_offset"
+		position = { x = 0 y = 60 }
+	}
+		
+	positionType = {
+		name = "alignment_origo"
+		position = { x = 805 y = 465 }
+	}
+	
+	positionType = {
+		name = "diplo_request_pos"
+		position = { x =10 y = -100 }
+	}
+	
+	iconType = {
+			name ="faction_symbol_icon"
+			spriteType = "GFX_icon_factions"
+			position = { x= 0 y = 0}
+			Orientation = "UPPER_LEFT"
+		}
+		
+	#RELATION LIST ENTRY#
+	windowType = {
+		name = "domesticpanel_relation_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=150 y= 16 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+		instantTextBoxType = {
+			name = "name"
+			position = { x = 0 y =10 }
+			format = left
+			font = "Arial12"
+			##font = "Arial12"
+			maxWidth = 134
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+			fixedsize = yes
+		}
+
+		instantTextBoxType = {
+			name = "value"
+			position = { x = 105 y =10 }
+			format = right
+			font = "Arial12"
+			maxWidth = 64
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+		}
+
+
+	}
+	
+	### COUNTRY DIPLOMATIC INFO ###
+	
+	windowType = {
+		name = "diplo_status_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=128 y= 16 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+		instantTextBoxType={
+			position = { x=-20 y =0}
+			name = "text"
+			font = "Arial12"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 180
+			maxHeight = 16
+			text = ""	
+			orientation = "UPPER_LEFT"
+			format = left
+		}
+
+
+
+
+
+	}
+	
+	## DIPLOACTION ENTRY ##
+	
+	windowType = 
+	{
+		name = "diploactionentry"
+		backGround=""
+		position = { x=0 y=20 }	
+		size = { x=220 y=25 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+		guiButtonType = {
+			name = "button_diploaction"
+			position = { x=16 y =0 }
+			quadTextureSprite ="GFX_small_listbutton_1"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "PW_DIPLOMACY_ACTION"
+			buttonFont = "Arial12_black"
+		}
+
+	}
+	
+	###DECISION ENTRY###
+	
+	windowType = {
+		name = "diplomatic_decision_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=300 y= 20 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+				
+		instantTextBoxType= {
+			position = { x=0 y =-5}
+			name = "name"
+			font = "Arial12"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 230
+			maxHeight = 20
+			text = ""	
+			orientation = "UPPER_LEFT"
+			format = left
+		}
+		iconType = {
+			name = "info_icon"
+			spriteType = "GFX_info_diplo_decision"	
+			position = { x=210 y =-11}
+			orientation = "UPPER_LEFT"
+		}
+		guiButtonType = {
+			name = "select_button"
+			position = { x=246 y =-11}
+			quadTextureSprite = "GFX_button_diplo_decision"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "SELECT"
+			buttonFont = "Arial12_black"
+		}
+	}
+	
+	
+	### SORT BUTTONS CONTINENTS ###
+	
+	guiButtonType = 
+	{
+		name = "continent_button"
+		position = { x = 0 y = 0}
+		quadTextureSprite ="GFX_button_filter_continent"
+		tooltip = ""
+		tooltipText =""
+		delayedTooltipText = ""
+		buttonText = ""
+		buttonFont = "Arial12_black"
+		Orientation = "UPPER_LEFT"
+	}
+	
+
+	#position!
+	positionType = {
+		name = "continent_offset"
+		position = { x = 57 y = 133 }
+	}
+	#offset!
+	positionType = {
+		name = "continent_start"
+		position = { x = 100 y = 0 }
+	}
+	
+	positionType = {
+		name = "continent_end"
+		position = { x = 356 y = 20 }
+	}	
+	
+	
+	### DRIFT ENTRY ###
+	windowType = {
+		name = "drift_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=256 y= 16 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+		guiButtonType = {
+			name = "bg_button"
+			position = { x= 0 y = 0 }
+			quadTextureSprite = ""	
+			buttonText = " "
+			buttonFont = "Arial12_black"
+			Orientation = "UPPER_LEFT"
+			shortcut = ""
+			size = { x=256 y= 16 }
+		}
+
+		instantTextBoxType= {
+			position = { x=-15 y =-4 }
+			name = "name"
+			font = "Arial12"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 20
+			fixedsize = yes
+			text = ""	
+			orientation = "UPPER_LEFT"
+			format = left
+		}
+		
+		instantTextBoxType= {
+			position = { x=22 y =-4 }
+			name = "influence"
+			font = "Arial12"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 20
+			text = "0"	
+			orientation = "UPPER_LEFT"
+			format = right
+		}
+		
+		
+
+		
+	
+	}
+	
+}

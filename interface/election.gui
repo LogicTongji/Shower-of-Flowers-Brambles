@@ -1,0 +1,200 @@
+guiTypes = {
+#################################################################################
+# Minister Listing ENTRY
+#################################################################################		
+		
+	windowType = {
+		name = "minister_entry2"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=200 y=80 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		
+		iconType = {
+			name = "photo"
+			spriteType = "GFX_empty_position"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType = {
+			name = "legend_color"
+			spriteType = "GFX_legend_icon"
+			position = { x= -25 y = 12 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		instantTextBoxType = {
+			name = "title"
+			position = { x = 40 y =0 }
+			format = left
+
+			textureFile = ""
+			font = "Arial12_headline"
+			borderSize = {x = 4 y = 0}
+			text = ""	
+			maxWidth = 218
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"	
+		}
+		
+		instantTextBoxType = {
+			name = "name"
+			position = { x = 40 y =14 }
+			format = left
+
+			textureFile = ""
+			font = "Arial12"
+			borderSize = {x = 4 y = 0}
+			text = ""	
+			maxWidth = 218
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "personality"
+			position = { x = 40 y =28 }
+			format = left
+
+			textureFile = ""
+			font = "Arial12"
+			borderSize = {x = 4 y = 0}
+			text = ""	
+			maxWidth = 218
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "ability"
+			position = { x = 40 y =42 }
+			format = left
+
+			textureFile = ""
+			font = "Arial12"
+			borderSize = {x = 4 y = 0}
+			text = ""	
+			maxWidth = 218
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+		}
+
+	}
+
+	eu3dialogtype = {
+		name = "ElectionResultPopup"
+		backGround="Background"
+		position = { x=-465 y=-333 }	
+		size = { x=888 y=520 }
+		orientation="CENTER"
+		moveable = 1
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		
+		guiButtonType = {
+			name = "Background"	
+			quadTextureSprite ="GFX_bg_ministers_election"
+		}
+		
+		textBoxType = {
+			name = "Title"
+			position = { x = 202 y = 22 }
+			textureFile = ""
+			font = "Arial16"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 500
+			maxHeight = 32
+
+			format = centre
+		}
+		
+		iconType = {
+			name = "result_chart"
+			spriteType = "GFX_election_result_chart"
+			position = { x= 127 y = 190 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		listboxType = {
+			name = "minister_list1"
+			position = { x = 270 y = 103 }
+			backGround=""
+			size = { x=300 y = 400}
+			Orientation = "UPPER_LEFT"
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}
+		
+		listboxType = {
+			name = "minister_list2"
+			position = { x = 600 y = 103 }
+			backGround=""
+			size = { x=300 y = 400}
+			Orientation = "UPPER_LEFT"
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}		
+		
+		textBoxType = {
+			name = "Description"
+			position = { x = 202 y = 67 }
+			textureFile = ""
+			font = "Arial12_black"
+			borderSize = {x = 4 y = 4}
+			text = "Long text here!"	
+			maxWidth = 500
+			maxHeight = 230	
+
+			format = centre
+		}
+		
+		
+		guiButtonType = {
+			name = "AgreeButton"
+			position = { x = 536 y =700}
+			quadTextureSprite ="GFX_button_128wide"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "OK"
+			buttonFont = "Arial12_black"
+			shortcut = "ENTER"
+		}
+
+
+		guiButtonType = {
+			name = "DeclineButton"
+			position = { x=236 y =700}
+			quadTextureSprite ="GFX_button_128wide"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "CANCEL"
+			buttonFont = "Arial12_black"
+			shortcut = "ESCAPE"
+		}
+		
+		guiButtonType = {
+			name = "CenterOK"
+			position = { x=386 y =700}
+			quadTextureSprite ="GFX_button_128wide"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "OK"
+			buttonFont = "Arial12_black"
+			shortcut = "ENTER"
+		}
+	}
+	
+}

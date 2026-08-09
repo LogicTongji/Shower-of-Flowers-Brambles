@@ -2,7 +2,7 @@ local P = {}
 
 local ChinaWarMap = require('overlay_gui')
 
-P.Version = 2
+P.Version = 3
 P.RegionNames = {}
 P.LastDay = nil
 P.LastSnapshot = nil
@@ -33,7 +33,8 @@ function P.BuildSnapshot()
 		playerTag = state.playerTag,
 		regionCount = #P.RegionNames,
 		percentages = {},
-		populations = {}
+		populations = {},
+		warProgress = state.warProgress
 	}
 
 	for regionId, regionName in ipairs(P.RegionNames) do

@@ -46,10 +46,12 @@ inline const std::unordered_map<
     {"qinghai_region", {"青海省", "西宁"}},
     {"gansu_region", {"甘肃省", "兰州"}},
     {"ningxia_region", {"宁夏省", "银川"}},
-    {"xinjiang_regions", {"新疆省", "迪化"}},
+    {"xinjiang_region", {"新疆省", "迪化"}},
     {"Mongolia_Regions", {"蒙古地方", "乌兰巴托"}},
     {"tannuuriankhai_region", {"唐努乌梁海", "乌里雅苏台"}},
     {"utang_region", {"卫藏地方", "拉萨"}},
+    {"SF_Shanghai", {"上海市", "上海"}},
+    {"xikang_region", {"西康省", "康定"}},
     {"taiwan_region", {"台湾省", "台北"}}
 };
 

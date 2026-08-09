@@ -1,4 +1,5 @@
 local P = {}
+local WarProgress = require('war_progress')
 China_aginst_japan_map = P
 
 P.VisibleTags = {
@@ -47,6 +48,7 @@ P.DisplayRegionNames = {
 	"utang_region",
 	"taiwan_region",
 	"Mongolia_Regions",
+	"SF_Shanghai",
 	"tannuuriankhai_region"
 }
 P.Regions = {}
@@ -92,6 +94,7 @@ P.RegionPopulation = {
 	["utang_region"] = 1100000,
 	["taiwan_region"] = 5291000,
 	["Mongolia_Regions"] = 616000,
+	["SF_Shanghai"] = 3000000,
 	["tannuuriankhai_region"] = 800000 
 }
 P.PopulationLossExponent = 1.2
@@ -101,6 +104,9 @@ P.JapaneseControlTags = {
 	WJW = true,
 	CHB = true,
 	MEB = true,
+	CJD = true,
+	CJB = true,
+	CJS = true,
 	MEA = true,
 	MEC = true
 }
@@ -380,12 +386,19 @@ function P.Update()
 		playerTag = playerName,
 		date =
 			CCurrentGameState.GetCurrentDate():GetTotalDays(),
-		regions = {}
+		regions = {},
+		warProgress = nil
 	}
 
 	if not visible then
 		return P.State
 	end
+
+	P.State.warProgress =
+		WarProgress.Collect(
+			P.Regions,
+			playerName
+		)
 
 	for regionName, region in pairs(P.Regions) do
 		P.State.regions[regionName] =

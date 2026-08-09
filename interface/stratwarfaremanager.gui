@@ -1,0 +1,874 @@
+guiTypes = {
+	
+	# Strategic Warfare Manager window
+	windowType = {
+		name = "swm_window"
+		backGround="bg"
+		position = { x = 200 y = 120 }
+		size = { x=550 y=487 }	
+		moveable = 1
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "UPPER_LEFT"
+
+		# Background
+		guiButtonType = {
+			name = "bg"	
+			quadTextureSprite ="GFX_swm_background"
+		}
+		
+		# Title
+		
+		instantTextBoxType = { 
+			name = "window_title"
+			position = { x = 131 y = 13 }
+			font = "Arial16"
+			text = "SWM_STRATEGIC_WARFARE_OVERVIEW"
+			maxWidth = 400
+			maxHeight = 24
+			format = center
+		}
+		
+		# Close button
+		guiButtonType = {
+			name = "close_button"
+			position = { x= 631 y = 4 }
+			quadTextureSprite = "GFX_close_button"	
+			shortcut = "ESCAPE"
+		}
+		
+		# Listbox for countries
+		listboxType = {
+			name ="listbox_countries"
+			position = { x = 417 y = 115 }
+			backGround=""
+			size = { x=223 y =414 }
+			Orientation = "UPPER_LEFT"
+			spacing = 1
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}
+		
+		# TAB - Naval
+		guiButtonType = {
+			name = "tab_naval"
+			position = { x = 10 y = 38 }
+			quadTextureSprite ="GFX_swm_tab_button"
+		}
+		instantTextBoxType = { 
+			name = "tab_naval_title"
+			position = { x = 13 y = 46 }
+			textureFile = ""
+			font = "Arial16"
+			borderSize = {x = 0 y = 0}
+			text = "Naval"	
+			maxWidth = 120
+			maxHeight = 18
+			format = center
+			allwaystransparent = yes
+		}
+		
+		# TAB - Air
+		guiButtonType = {
+			name = "tab_air"
+			position = { x = 138 y = 38 }
+			quadTextureSprite ="GFX_swm_tab_button"
+		}
+		instantTextBoxType = { 
+			name = "tab_air_title"
+			position = { x = 141 y = 46 }
+			textureFile = ""
+			font = "Arial16"
+			borderSize = {x = 0 y = 0}
+			text = "Air"	
+			maxWidth = 120
+			maxHeight = 18
+			format = center
+			allwaystransparent = yes
+		}
+		
+		# TAB - Land
+		guiButtonType = {
+			name = "tab_land"
+			position = { x = 266 y = 38 }
+			quadTextureSprite ="GFX_swm_tab_button"
+		}
+		instantTextBoxType = { 
+			name = "tab_land_title"
+			position = { x = 269 y = 46 }
+			textureFile = ""
+			font = "Arial16"
+			borderSize = {x = 0 y = 0}
+			text = "Land"	
+			maxWidth = 120
+			maxHeight = 18
+			format = center
+			allwaystransparent = yes
+		}
+		
+		# Selection buttons (All,Present,None)
+		guiButtonType = {
+			name = "select_all"
+			position = { x = 400 y = 535 }
+			quadTextureSprite ="GFX_swm_small_button"
+			buttonText = "SWM_SELECT_ALL"
+			buttonFont = "Arial12_black"
+		}
+		guiButtonType = {
+			name = "select_present"
+			position = { x = 486 y = 535 }
+			quadTextureSprite ="GFX_swm_small_button"
+			buttonText = "SWM_SELECT_PRESENT"
+			buttonFont = "Arial12_black"
+		}
+		guiButtonType = {
+			name = "select_none"
+			position = { x = 572 y = 535 }
+			quadTextureSprite ="GFX_swm_small_button"
+			buttonText = "SWM_SELECT_NONE"
+			buttonFont = "Arial12_black"
+		}
+		
+		# Duration buttons (last month,last year,entire conflict)
+		guiButtonType = {
+			name = "duration_1"
+			position = { x = 401 y = 40 }
+			quadTextureSprite ="GFX_swm_btn_duration"
+		}
+		instantTextBoxType = { 
+			name = "duration_1_title"
+			position = { x = 401 y = 45 }
+			textureFile = ""
+			font = "Arial12_black"
+			borderSize = {x = 0 y = 0}
+			text = "SWM_DURATION_1"	
+			maxWidth = 250
+			maxHeight = 18
+			format = center
+			allwaystransparent = yes
+		}
+		guiButtonType = {
+			name = "duration_2"
+			position = { x = 401 y = 64 }
+			quadTextureSprite ="GFX_swm_btn_duration"
+		}
+		instantTextBoxType = { 
+			name = "duration_2_title"
+			position = { x = 401 y = 69 }
+			textureFile = ""
+			font = "Arial12_black"
+			borderSize = {x = 0 y = 0}
+			text = "SWM_DURATION_2"	
+			maxWidth = 250
+			maxHeight = 18
+			format = center
+			allwaystransparent = yes
+		}
+		guiButtonType = {
+			name = "duration_3"
+			position = { x = 401 y = 88 }
+			quadTextureSprite ="GFX_swm_btn_duration"
+		}
+		instantTextBoxType = { 
+			name = "duration_3_title"
+			position = { x = 401 y = 93 }
+			textureFile = ""
+			font = "Arial12_black"
+			borderSize = {x = 0 y = 0}
+			text = "SWM_DURATION_3"	
+			maxWidth = 250
+			maxHeight = 18
+			format = center
+			allwaystransparent = yes
+		}
+		
+		
+		# Inner window - TAB NAVAL
+		windowType = {
+			name = "sub_naval"
+			backGround=""
+			position = { x = 7 y = 68 }
+			size = { x=315 y=439 }	
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no
+			Orientation = "UPPER_LEFT"
+			
+			# Background of subwindow
+			iconType = {
+				name ="bg"
+				spriteType = "GFX_swm_background_naval"
+				position = { x = 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			# Line charts
+			iconType = {
+				name = "linechart_our_convoy_ic"
+				spriteType = "GFX_swm_linechart"
+				position = { x = 13 y = 47 }
+			}	
+			iconType = {
+				name = "linechart_our_enemy_ic"
+				spriteType = "GFX_swm_linechart"
+				position = { x = 227 y = 47 }
+			}	
+			iconType = {
+				name = "linechart_our_convoy_cargo"
+				spriteType = "GFX_swm_linechart"
+				position = { x = 13 y = 158 }
+			}	
+			iconType = {
+				name = "linechart_their_convoy_ic"
+				spriteType = "GFX_swm_linechart"
+				position = { x = 227 y = 281 }
+			}	
+			iconType = {
+				name = "linechart_their_enemy_ic"
+				spriteType = "GFX_swm_linechart"
+				position = { x = 13 y = 281 }
+			}	
+			iconType = {
+				name = "linechart_their_convoy_cargo"
+				spriteType = "GFX_swm_linechart"
+				position = { x = 227 y = 392 }
+			}
+			
+			# Comparators
+			iconType = {
+				name = "comparator_our"
+				spriteType = "GFX_swm_comparators"
+				position = { x = 181 y = 80 }
+			}
+			iconType = {
+				name = "comparator_their"
+				spriteType = "GFX_swm_comparators"
+				position = { x = 181 y = 314 }
+			}
+			###
+			instantTextBoxType = { 
+				name = "our_defender_avg_ic"
+				position = { x = 16 y = 138 }
+				font = "Arial12_black"
+				text = "SWM_GRAPH_AVG_VAL"
+				maxWidth = 140
+				maxHeight = 18
+				format = centre
+				allwaystransparent = yes
+			}
+			instantTextBoxType = { 
+				name = "our_attacker_avg_ic"
+				position = { x = 230 y = 138 }
+				font = "Arial12_black"
+				text = "SWM_GRAPH_AVG_VAL"
+				maxWidth = 140
+				maxHeight = 18
+				format = centre
+				allwaystransparent = yes
+			}
+			instantTextBoxType = { 
+				name = "their_defender_avg_ic"
+				position = { x = 230 y = 372 }
+				font = "Arial12_black"
+				text = "SWM_GRAPH_AVG_VAL"
+				maxWidth = 140
+				maxHeight = 18
+				format = centre
+				allwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "their_attacker_avg_ic"
+				position = { x = 16 y = 372 }
+				font = "Arial12_black"
+				text = "SWM_GRAPH_AVG_VAL"
+				maxWidth = 140
+				maxHeight = 18
+				format = centre
+				allwaystransparent = yes
+			}
+			
+			# Line chart descriptions
+			instantTextBoxType = { 
+				name = "our_graph_ic_max"
+				position = { x = 149 y = 33 }
+				font = "Arial12_black"
+				text = "SWM_GRAPH_MAX_IC_VAL"
+				maxWidth = 90
+				maxHeight = 18
+				format = center
+				allwaystransparent = yes
+			}
+			instantTextBoxType = { 
+				name = "our_cargo_max"
+				position = { x = 171 y = 161 }
+				font = "Arial12_black"
+				text = "SWM_GRAPH_MAX_TONS_VAL"
+				maxWidth = 100
+				maxHeight = 18
+				format = centre
+				allwaystransparent = yes
+			}
+			instantTextBoxType = { 
+				name = "their_graph_ic_max"
+				position = { x = 149 y = 267 }
+				font = "Arial12_black"
+				text = "SWM_GRAPH_MAX_IC_VAL"
+				maxWidth = 90
+				maxHeight = 18
+				format = center
+				allwaystransparent = yes
+			}
+			instantTextBoxType = { 
+				name = "their_cargo_max"
+				position = { x = 116 y = 395 }
+				font = "Arial12_black"
+				text = "SWM_GRAPH_MAX_TONS_VAL"
+				maxWidth = 100
+				maxHeight = 18
+				format = centre
+				allwaystransparent = yes
+			}
+			
+			# Line chart headers
+			instantTextBoxType = { 
+				name = "header_our"
+				position = { x = 16 y = 10 }
+				font = "Arial12_black"
+				text = "SWM_GRAPH_HEADER_US"
+				maxWidth = 140
+				maxHeight = 18
+				format = center
+			}
+			instantTextBoxType = { 
+				name = "header_their"
+				position = { x = 230 y = 10 }
+				font = "Arial12_black"
+				text = "SWM_GRAPH_HEADER_THEM"
+				maxWidth = 140
+				maxHeight = 18
+				format = center
+			}
+			instantTextBoxType = { 
+				name = "our_header_convoy"
+				position = { x = 16 y = 33 }
+				font = "Arial12_black"
+				text = "SWM_GRAPH_HEADER_CONVOYS"
+				maxWidth = 140
+				maxHeight = 18
+				format = center
+			}
+			instantTextBoxType = { 
+				name = "our_header_attacker"
+				position = { x = 230 y = 33 }
+				font = "Arial12_black"
+				text = "SWM_GRAPH_HEADER_NAVIES"
+				maxWidth = 140
+				maxHeight = 18
+				format = center
+			}
+			instantTextBoxType = { 
+				name = "their_header_convoy"
+				position = { x = 230 y = 267 }
+				font = "Arial12_black"
+				text = "SWM_GRAPH_HEADER_CONVOYS"
+				maxWidth = 140
+				maxHeight = 18
+				format = center
+			}
+			instantTextBoxType = { 
+				name = "their_header_attacker"
+				position = { x = 16 y = 267 }
+				font = "Arial12_black"
+				text = "SWM_GRAPH_HEADER_NAVIES"
+				maxWidth = 140
+				maxHeight = 18
+				format = center
+			}
+			
+			# Cargo descriptions
+			instantTextBoxType = { 
+				name = "cargo_desc_our"
+				position = { x = 173 y = 190 }
+				font = "Arial12_black"
+				text = ""
+				maxWidth = 100
+				maxHeight = 59
+				format = center
+			}
+			instantTextBoxType = { 
+				name = "cargo_desc_their"
+				position = { x = 118 y = 424 }
+				font = "Arial12_black"
+				text = ""
+				maxWidth = 100
+				maxHeight = 59
+				format = center
+			}
+		}
+		
+		
+		# Inner window - TAB AIR
+		windowType = {
+			name = "sub_air"
+			backGround=""
+			position = { x = 7 y = 68 }
+			size = { x=315 y=439 }	
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no
+			Orientation = "UPPER_LEFT"
+			
+			# Background of subwindow
+			iconType = {
+				name ="bg"
+				spriteType = "GFX_swm_background_air"
+				position = { x = 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			# Line charts
+			iconType = {
+				name = "linechart_our_bombers"
+				spriteType = "GFX_swm_linechart"
+				position = { x = 227 y = 47 }
+			}
+			iconType = {
+				name = "linechart_our_province"
+				spriteType = "GFX_swm_linechart"
+				position = { x = 13 y = 47  }
+			}
+			iconType = {
+				name = "linechart_their_bombers"
+				spriteType = "GFX_swm_linechart"
+				position = { x = 13 y = 281 }
+			}
+			iconType = {
+				name = "linechart_their_province"
+				spriteType = "GFX_swm_linechart"
+				position = { x = 227 y = 281 }
+			}
+			
+			# Line chart descriptions
+			instantTextBoxType = { 
+				name = "our_province_title"
+				position = { x = 16 y = 33 }
+				font = "Arial12_black"
+				text = "SWM_LOSSES_PROVINCE"
+				maxWidth = 140
+				maxHeight = 18
+				format = center
+			}
+			instantTextBoxType = { 
+				name = "our_bombers_title"
+				position = { x = 230 y = 33 }
+				font = "Arial12_black"
+				text = "SWM_LOSSES_BOMBERS"
+				maxWidth = 140
+				maxHeight = 18
+				format = center
+			}
+			instantTextBoxType = { 
+				name = "their_bombers_title"
+				position = { x = 16 y = 267 }
+				font = "Arial12_black"
+				text = "SWM_LOSSES_BOMBERS"
+				maxWidth = 140
+				maxHeight = 18
+				format = center
+			}
+			instantTextBoxType = { 
+				name = "their_province_title"
+				position = { x = 230 y = 267 }
+				font = "Arial12_black"
+				text = "SWM_LOSSES_PROVINCE"
+				maxWidth = 140
+				maxHeight = 18
+				format = center
+			}
+			
+			# Line chart max values
+			instantTextBoxType = {
+				name = "our_province_total_dam"
+				position = { x = 16 y = 138 } 
+				font = "Arial12_black"
+				text = "SWM_MAX_DAMAGE"
+				maxWidth = 140
+				maxHeight = 18
+				format = center
+				allwaystransparent = yes
+			}
+			instantTextBoxType = { 
+				name = "our_bombers_total_dam"
+				position = { x = 230 y = 138 }
+				font = "Arial12_black"
+				text = "SWM_MAX_DAMAGE"
+				maxWidth = 140
+				maxHeight = 18
+				format = center
+				allwaystransparent = yes
+			}
+			instantTextBoxType = { 
+				name = "their_province_total_dam"
+				position = { x = 230 y = 372 }
+				font = "Arial12_black"
+				text = "SWM_MAX_DAMAGE"
+				maxWidth = 140
+				maxHeight = 18
+				format = center
+				allwaystransparent = yes
+			}
+			instantTextBoxType = { 
+				name = "their_bombers_total_dam"
+				position = { x = 16 y = 372 }
+				font = "Arial12_black"
+				text = "SWM_MAX_DAMAGE"
+				maxWidth = 140
+				maxHeight = 18
+				format = center
+				allwaystransparent = yes
+			}
+
+			# Line chart max IC
+			instantTextBoxType = { 
+				name = "our_graph_ic_max"
+				position = { x = 149 y = 33 }
+				font = "Arial12_black"
+				text = "SWM_GRAPH_MAX_IC_VAL"
+				maxWidth = 90
+				maxHeight = 18
+				format = center
+				allwaystransparent = yes
+			}
+			instantTextBoxType = { 
+				name = "their_graph_ic_max"
+				position = { x = 149 y = 267 }
+				font = "Arial12_black"
+				text = "SWM_GRAPH_MAX_IC_VAL"
+				maxWidth = 90
+				maxHeight = 18
+				format = center
+				allwaystransparent = yes
+			}
+			
+			# Line chart headers
+			instantTextBoxType = { 
+				name = "header_our"
+				position = { x = 16 y = 10 }
+				font = "Arial12_black"
+				text = "SWM_GRAPH_HEADER_US"
+				maxWidth = 140
+				maxHeight = 18
+				format = center
+			}
+			instantTextBoxType = { 
+				name = "header_their"
+				position = { x = 230 y = 10 }
+				font = "Arial12_black"
+				text = "SWM_GRAPH_HEADER_THEM"
+				maxWidth = 140
+				maxHeight = 18
+				format = center
+			}
+			
+			# Descriptions
+			instantTextBoxType = {
+				name = "our_province_desc"
+				position = { x = 21 y = 161 } 
+				font = "Arial12_black"
+				text = ""
+				maxWidth = 130
+				maxHeight = 62
+				format = center
+			}
+			instantTextBoxType = {
+				name = "our_bombers_desc"
+				position = { x = 235 y = 161 } 
+				font = "Arial12_black"
+				text = ""
+				maxWidth = 130
+				maxHeight = 62
+				format = center
+			}
+			instantTextBoxType = {
+				name = "their_bombers_desc"
+				position = { x = 21 y = 396 } 
+				font = "Arial12_black"
+				text = ""
+				maxWidth = 130
+				maxHeight = 62
+				format = center
+			}
+			instantTextBoxType = {
+				name = "their_province_desc"
+				position = { x = 235 y = 396 } 
+				font = "Arial12_black"
+				text = ""
+				maxWidth = 130
+				maxHeight = 62
+				format = center
+			}
+		}
+		
+		
+		# Inner window - TAB LAND
+		windowType = {
+			name = "sub_land"
+			backGround=""
+			position = { x = 7 y = 68 }
+			size = { x=315 y=439 }	
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no
+			Orientation = "UPPER_LEFT"
+			
+			# Background of subwindow
+			iconType = {
+				name ="bg"
+				spriteType = "GFX_swm_background_land"
+				position = { x = 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			# Line charts
+			iconType = {
+				name = "linechart_ic_loss_to_us"
+				spriteType = "GFX_swm_linechart"
+				position = { x = 13 y = 47 }
+			}
+			iconType = {
+				name = "linechart_ic_loss_to_them"
+				spriteType = "GFX_swm_linechart"
+				position = { x = 227 y = 47 }
+			}
+			iconType = {
+				name = "linechart_man_loss_to_us"
+				spriteType = "GFX_swm_linechart"
+				position = { x = 13 y = 281 }
+			}
+			iconType = {
+				name = "linechart_man_loss_to_them"
+				spriteType = "GFX_swm_linechart"
+				position = { x = 227 y = 281 }
+			}
+			
+			# Line chart max values
+			instantTextBoxType = {
+				name = "ic_loss_max_val"
+				position = { x = 149 y = 33 } 
+				font = "Arial12_black"
+				text = "SWM_GRAPH_MAX_IC_VAL"
+				maxWidth = 90
+				maxHeight = 18
+				format = center
+				allwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "man_loss_max_val"
+				position = { x = 149 y = 267 } 
+				font = "Arial12_black"
+				text = "SWM_GRAPH_MAX_MAN_VAL"
+				maxWidth = 90
+				maxHeight = 18
+				format = center
+				allwaystransparent = yes
+			}
+			
+			# Line chart avg values
+			instantTextBoxType = { 
+				name = "ic_loss_avg_us"
+				position = { x = 16 y = 138 }
+				font = "Arial12_black"
+				text = "SWM_GRAPH_AVG_VAL"
+				maxWidth = 140
+				maxHeight = 18
+				format = center
+				allwaystransparent = yes
+			}
+			instantTextBoxType = { 
+				name = "ic_loss_avg_them"
+				position = { x = 230 y = 138 }
+				font = "Arial12_black"
+				text = "SWM_GRAPH_AVG_VAL"
+				maxWidth = 140
+				maxHeight = 18
+				format = center
+				allwaystransparent = yes
+			}
+			instantTextBoxType = { 
+				name = "man_loss_avg_us"
+				position = { x = 16 y = 372 }
+				font = "Arial12_black"
+				text = "SWM_GRAPH_AVG_VAL"
+				maxWidth = 140
+				maxHeight = 18
+				format = center
+				allwaystransparent = yes
+			}
+			instantTextBoxType = { 
+				name = "man_loss_avg_them"
+				position = { x = 230 y = 372 }
+				font = "Arial12_black"
+				text = "SWM_GRAPH_AVG_VAL"
+				maxWidth = 140
+				maxHeight = 18
+				format = center
+				allwaystransparent = yes
+			}
+			
+			# Comparators
+			iconType = {
+				name = "comparator_ic"
+				spriteType = "GFX_swm_comparators"
+				position = { x = 181 y = 80 }
+			}
+			iconType = {
+				name = "comparator_man"
+				spriteType = "GFX_swm_comparators"
+				position = { x = 181 y = 314 }
+			}
+			
+			# Line chart headers
+			instantTextBoxType = { 
+				name = "header_our"
+				position = { x = 16 y = 10 }
+				font = "Arial12_black"
+				text = "SWM_GRAPH_HEADER_US"
+				maxWidth = 140
+				maxHeight = 18
+				format = center
+			}
+			instantTextBoxType = { 
+				name = "header_their"
+				position = { x = 230 y = 10 }
+				font = "Arial12_black"
+				text = "SWM_GRAPH_HEADER_THEM"
+				maxWidth = 140
+				maxHeight = 18
+				format = center
+			}
+			instantTextBoxType = { 
+				name = "ic_title_us"
+				position = { x = 16 y = 33 }
+				font = "Arial12_black"
+				text = "SWM_GRAPH_HEADER_IC"
+				maxWidth = 140
+				maxHeight = 18
+				format = center
+			}
+			instantTextBoxType = { 
+				name = "ic_title_them"
+				position = { x = 230 y = 33 }
+				font = "Arial12_black"
+				text = "SWM_GRAPH_HEADER_IC"
+				maxWidth = 140
+				maxHeight = 18
+				format = center
+			}
+			instantTextBoxType = { 
+				name = "man_title_us"
+				position = { x = 16 y = 267 }
+				font = "Arial12_black"
+				text = "SWM_GRAPH_HEADER_MANPOWER"
+				maxWidth = 140
+				maxHeight = 18
+				format = center
+			}
+			instantTextBoxType = { 
+				name = "man_title_them"
+				position = { x = 230 y = 267 }
+				font = "Arial12_black"
+				text = "SWM_GRAPH_HEADER_MANPOWER"
+				maxWidth = 140
+				maxHeight = 18
+				format = center
+			}
+		}
+	}
+	
+	
+	
+	# country list entry
+	windowType = {
+		name = "swm_list_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=426 y= 46 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+		# Clickable backgrounds (only one is visible at the time)
+		checkboxType = {
+			name = "background_button_present"
+			position = { x=0  y = 0}
+			quadTextureSprite ="GFX_swm_list_entry"
+		}
+		checkboxType = {
+			name = "background_button_past"
+			position = { x=0  y = 0}
+			quadTextureSprite ="GFX_swm_list_entry_past"
+		}
+		
+		# Color icon (white image - color modulated in code)
+		iconType = {
+			name ="color_icon"
+			spriteType = "GFX_swm_list_entry_color"
+			position = { x = 3 y = 6 }
+		}
+				
+		# Country name + flag
+		iconType = {
+			name ="country_flag"
+			spriteType = "GFX_flag_tiny"
+			position = { x = 26 y = -2 }
+		}
+		instantTextBoxType = { 
+			name = "country"
+			position = { x = 60 y = 6 }
+			textureFile = ""
+			font = "Arial12_black"
+			borderSize = {x = 0 y = 0}
+			text = "?"	
+			maxWidth = 156
+			maxHeight = 16
+			format = left
+			fixedsize = yes
+		}
+		
+		# War begin/end dates
+		instantTextBoxType = { 
+			name = "date_begin"
+			position = { x = 30 y = 22 }
+			textureFile = ""
+			font = "Arial12_black"
+			borderSize = {x = 0 y = 0}
+			text = "?"	
+			maxWidth = 186
+			maxHeight = 16
+			format = left
+			fixedsize = yes
+		}
+		instantTextBoxType = { 
+			name = "date_end"
+			position = { x = 30 y = 32 }
+			textureFile = ""
+			font = "Arial12_black"
+			borderSize = {x = 0 y = 0}
+			text = "?"	
+			maxWidth = 186
+			maxHeight = 16
+			format = left
+			fixedsize = yes
+		}
+	}
+}

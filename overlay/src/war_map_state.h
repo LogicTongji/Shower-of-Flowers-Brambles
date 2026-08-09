@@ -16,12 +16,20 @@ struct RegionPopulationState
     uint32_t remaining = 0;
 };
 
+struct WarProgressState
+{
+    bool known = false;
+    float own = 0.0f;
+    float enemy = 0.0f;
+};
+
 struct WarMapState
 {
     bool visible = false;
     bool active = false;
     int64_t date = 0;
     std::string viewerTag;
+    WarProgressState warProgress;
 
     std::array<float, kWarMapRegionCount + 1>
         controlledPercentages{};

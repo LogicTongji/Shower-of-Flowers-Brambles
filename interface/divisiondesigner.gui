@@ -1,0 +1,1503 @@
+guiTypes = {
+	windowType = {
+		name = "on_complete_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=32 y= 50 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+		iconType =
+		{
+			name ="on_complete_icon"
+			spriteType = "icon_tech_unknown"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+			
+		}	
+		iconType =
+		{
+			name ="on_complete_frame"
+			spriteType = "GFX_on_complete_frame"
+			position = { x= -5 y = 22 }
+			Orientation = "UPPER_LEFT"
+			
+		}		
+
+		instantTextBoxType = {
+			position = { x = -13 y = 27 }
+			name = "on_complete_impact"
+			font = "Arial12_black"
+			borderSize = {x = 4 y = 2}
+			text = ""	
+			maxWidth = 40
+			maxHeight = 10
+			orientation = "UPPER_LEFT"
+			format = centre
+		}
+	}
+########################################
+# Main Division Designer Interface
+########################################
+
+	windowType = {
+		name = "division_designer"
+		backGround=""
+		#position = { x=550 y=150 }	
+		#size = { x=360 y= 500 }
+		size = { x=1024 y=768 }
+		position = { x=-512 y=-344 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+		orientation="CENTER"
+		
+		
+		# iconType = {
+			# name ="bg_mainshadow"
+			# spriteType = "GFX_bg_mainshadow"
+			# position = { x= -46 y = 9 }
+			# Orientation = "UPPER_LEFT"
+		# }
+		
+		# iconType = {
+			# name ="production_topitem"
+			# spriteType = "GFX_production_topitem"
+			# position = { x= 517 y = -97 }
+			# Orientation = "UPPER_LEFT"
+		# }
+		
+		# guiButtonType = {
+			# name = "close_button"
+			# position = { x= 979 y = 30}
+			# quadTextureSprite = "GFX_close_button"	
+			# tooltip = ""
+			# tooltipText =""
+			# delayedTooltipText = ""
+			# buttonText = ""
+			# buttonFont = "Arial12_black"
+			# Orientation = "UPPER_LEFT"
+			# shortcut = "ESCAPE"
+		# }
+		
+		# textBoxType = { 
+			# name = "headline_prod"
+			# position = { x = 667 y = 8 }
+			# textureFile = ""
+			# font = "impact"
+			# borderSize = {x = 0 y = 4}
+			# text = "headline_prod"	
+			# maxWidth = 300
+			# maxHeight = 64	
+			# format = right
+			# Orientation = "UPPER_LEFT"
+		# }
+		
+		iconType = {
+			name = "divdesign_bg"
+			spriteType = "GFX_production_divdesign_bg"
+			position = { x= 1 y = 58 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		
+		
+		
+		## template buttons ##
+		
+		guiButtonType = {
+			name = "divdesign_button1"
+			#position = { x=95 y =9}
+			position = { x=591 y =72}
+			quadTextureSprite ="GFX_divdesign_button"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "PW_TEMPLATE_1"
+			buttonFont = "Arial12_black"
+		}
+		
+		guiButtonType = {
+			name = "divdesign_button2"
+			position = { x=697 y =72}
+			quadTextureSprite ="GFX_divdesign_button"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "PW_TEMPLATE_2"
+			buttonFont = "Arial12_black"
+		}
+		guiButtonType = {
+			name = "divdesign_button3"
+			position = { x=803 y =72}
+			quadTextureSprite ="GFX_divdesign_button"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "PW_TEMPLATE_3"
+			buttonFont = "Arial12_black"
+		}
+		guiButtonType = {
+			name = "divdesign_button4"
+			position = { x=909 y =72}
+			quadTextureSprite ="GFX_divdesign_button"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "PW_TEMPLATE_4"
+			buttonFont = "Arial12_black"
+		}
+		guiButtonType = {
+			name = "divdesign_button5"
+			position = { x=591 y =96}
+			quadTextureSprite ="GFX_divdesign_button"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "PW_TEMPLATE_5"
+			buttonFont = "Arial12_black"
+		}
+		guiButtonType = {
+			name = "divdesign_button6"
+			position = { x=697 y =96}
+			quadTextureSprite ="GFX_divdesign_button"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "PW_TEMPLATE_6"
+			buttonFont = "Arial12_black"
+		}
+		guiButtonType = {
+			name = "divdesign_button7"
+			position = { x=803 y =96}
+			quadTextureSprite ="GFX_divdesign_button"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "PW_TEMPLATE_7"
+			buttonFont = "Arial12_black"
+		}
+		guiButtonType = {
+			name = "divdesign_button8"
+			position = { x=909 y =96}
+			quadTextureSprite ="GFX_divdesign_button"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "PW_TEMPLATE_8"
+			buttonFont = "Arial12_black"
+		}
+		guiButtonType = {
+			name = "divdesign_button9"
+			position = { x=591 y =120}
+			quadTextureSprite ="GFX_divdesign_button"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "PW_TEMPLATE_9"
+			buttonFont = "Arial12_black"
+		}
+		guiButtonType = {
+			name = "divdesign_button10"
+			position = { x=697 y =120}
+			quadTextureSprite ="GFX_divdesign_button"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "PW_TEMPLATE_10"
+			buttonFont = "Arial12_black"
+		}
+		guiButtonType = {
+			name = "divdesign_button11"
+			position = { x=803 y =120}
+			quadTextureSprite ="GFX_divdesign_button"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "PW_TEMPLATE_11"
+			buttonFont = "Arial12_black"
+		}
+		guiButtonType = {
+			name = "divdesign_button12"
+			position = { x=909 y =120}
+			quadTextureSprite ="GFX_divdesign_button"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "PW_TEMPLATE_12"
+			buttonFont = "Arial12_black"
+		}
+		
+		
+		
+		
+		
+		
+		################
+
+
+		#Overview Stats
+		
+		iconType = {
+			name = "selected_photo"
+			spriteType = "GFX_no_ship_selected"
+			position = { x= 615 y = 154 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		iconType = {
+			name = "model_overlay"
+			spriteType = "GFX_model_overlay"
+			position = { x= 607 y = 146 }	#-8, #-8
+			Orientation = "UPPER_LEFT"
+		}
+
+		OverlappingElementsBoxType = {
+			name = "on_complete_box"
+			position = { x = 825 y = 200 }
+			size = { x=200 y= 32 }
+			Orientation = "UPPER_LEFT"
+			format = left
+			spacing = 1.0
+		}
+
+		
+		
+		guiButtonType = {
+			name = "save_template"
+			position = { x=886 y =150}
+			quadTextureSprite ="GFX_divdesign_button"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "PW_SAVE_TEMP"
+			buttonFont = "Arial12_black"
+		}		
+		
+		instantTextBoxType = {
+			#position = { x = 110 y = 208 }
+			position = { x = 595 y = 269 }
+			name = "size_label"
+			font = "Arial12"
+			borderSize = {x = 4 y = 2}
+			text = "PW_NUM_BRIGADES"	
+			maxWidth = 170
+			maxHeight = 10
+			orientation = "UPPER_LEFT"
+		}	
+		
+		instantTextBoxType = {
+			position = { x = 655 y = 269 }
+			name = "size_value"
+			font = "Arial12"
+			borderSize = {x = 4 y = 2}
+			text = "xxx"	
+			maxWidth = 170
+			maxHeight = 10
+			orientation = "UPPER_LEFT"
+		}	
+
+		instantTextBoxType = {
+			position = { x = 715 y = 269}
+			name = "allowed_label"
+			font = "Arial12"
+			borderSize = {x = 4 y = 2}
+			text = "PW_ALLOWED_BRIGADES"	
+			maxWidth = 170
+			maxHeight = 10
+			orientation = "UPPER_LEFT"
+		}	
+
+		instantTextBoxType = {
+			position = { x = 770 y = 269 }
+			name = "allowed_value"
+			font = "Arial12"
+			borderSize = {x = 4 y = 2}
+			text = "xxx"	
+			maxWidth = 170
+			maxHeight = 10
+			orientation = "UPPER_LEFT"
+		}			
+		
+		
+		iconType = {
+			name = "selected_brigade_green"
+			spriteType = "GFX_selected_brigade_green"
+			position = { x= 674 y = 597 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		iconType = {
+			name = "selected_brigade_orange"
+			spriteType = "GFX_selected_brigade_orange"
+			position = { x= 674 y = 597 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		iconType = {
+			name = "selected_brigade_red"
+			spriteType = "GFX_selected_brigade_red"
+			position = { x= 674 y = 597 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		instantTextBoxType = {
+			position = { x = 705 y = 606 }
+			name = "ic_cost_label"
+			font = "Arial12"
+			borderSize = {x = 4 y = 2}
+			text = "PW_IC_COST"	
+			maxWidth = 170
+			maxHeight = 10
+			orientation = "UPPER_LEFT"
+		}
+		
+		instantTextBoxType = {
+			position = { x = 835 y = 606 }
+			name = "ic_cost_value"
+			font = "Arial12"
+			borderSize = {x = 4 y = 2}
+			text = "xxx"	
+			maxWidth = 170
+			maxHeight = 10
+			orientation = "UPPER_LEFT"
+		}	
+		
+		instantTextBoxType = {
+			position = { x = 705 y = 620 }
+			name = "mp_cost_label"
+			font = "Arial12"
+			borderSize = {x = 4 y = 2}
+			text = "PW_MP_COST"	
+			maxWidth = 170
+			maxHeight = 10
+			orientation = "UPPER_LEFT"
+		}
+		
+		instantTextBoxType = {
+			position = { x = 835 y = 620 }
+			name = "mp_cost_value"
+			font = "Arial12"
+			borderSize = {x = 4 y = 2}
+			text = "xxx"	
+			maxWidth = 170
+			maxHeight = 10
+			orientation = "UPPER_LEFT"
+		}	
+		
+		instantTextBoxType = {
+			position = { x = 705 y = 634 }
+			name = "build_time_label"
+			font = "Arial12"
+			borderSize = {x = 4 y = 2}
+			text = "PW_BUILD_TIME"	
+			maxWidth = 170
+			maxHeight = 10
+			orientation = "UPPER_LEFT"
+		}
+		
+		instantTextBoxType = {
+			position = { x = 835 y =634 }
+			name = "build_time_value"
+			font = "Arial12"
+			borderSize = {x = 4 y = 2}
+			text = "xxx"	
+			maxWidth = 170
+			maxHeight = 10
+			orientation = "UPPER_LEFT"
+		}			
+
+
+###values###
+		
+		instantTextBoxType = {
+			position = { x = 861 y = 275 }
+			name = "str_value"
+			font = "Arial12"
+			borderSize = {x = 4 y = 2}
+			text = "xxx"	
+			maxWidth = 50
+			maxHeight = 10
+			format = left
+			orientation = "UPPER_LEFT"
+		}	
+			
+		instantTextBoxType = {
+			position = { x = 951 y = 275 }
+			name = "org_value"
+			font = "Arial12"
+			borderSize = {x = 4 y = 2}
+			text = "org"	
+			maxWidth = 50
+			maxHeight = 10
+			format = left
+			orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			position = { x = 861 y = 297 }
+			name = "cw_value"
+			font = "Arial12_headline"
+			borderSize = {x = 4 y = 2}
+			text = "cw"	
+			maxWidth = 50
+			maxHeight = 10
+			format = left
+			orientation = "UPPER_LEFT"
+		}						
+		instantTextBoxType = {
+			position = { x = 951 y = 297 }
+			name = "sa_value"
+			font = "Arial12_headline"
+			borderSize = {x = 4 y = 2}
+			text = "SA"	
+			maxWidth = 50
+			maxHeight = 10
+			format = left
+			orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			position = { x = 861 y = 319 }
+			name = "ha_value"
+			font = "Arial12_headline"
+			borderSize = {x = 4 y = 2}
+			text = "HA"	
+			maxWidth = 50
+			maxHeight = 10
+			format = left
+			orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			position = { x = 951 y = 319 }
+			name = "piercing_value"
+			font = "Arial12_headline"
+			borderSize = {x = 4 y = 2}
+			text = "99"	
+			maxWidth = 50
+			maxHeight = 10
+			format = left
+			orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			position = { x = 951 y = 341}
+			name = "armored_value"
+			font = "Arial12_headline"
+			borderSize = {x = 4 y = 2}
+			text = "99"	
+			maxWidth = 50
+			maxHeight = 10
+			format = left
+			orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			position = { x = 861 y = 341 }
+			name = "aa_value"
+			font = "Arial12_headline"
+			borderSize = {x = 4 y = 2}
+			text = "AA"	
+			maxWidth = 50
+			maxHeight = 10
+			format = left
+			orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			position = { x = 861 y = 363 }
+			name = "def_value"
+			font = "Arial12_headline"
+			borderSize = {x = 4 y = 2}
+			text = "def"	
+			maxWidth = 50
+			maxHeight = 10
+			format = left
+			orientation = "UPPER_LEFT"
+		}	
+		instantTextBoxType = {
+			position = { x = 951 y = 363 }
+			name = "tou_value"
+			font = "Arial12_headline"
+			borderSize = {x = 4 y = 2}
+			text = "tou"	
+			maxWidth = 50
+			maxHeight = 10
+			format = left
+			orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			position = { x = 861 y = 385 }
+			name = "ad_value"
+			font = "Arial12_headline"
+			borderSize = {x = 4 y = 2}
+			text = "AD"	
+			maxWidth = 50
+			maxHeight = 10
+			format = left
+			orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			position = { x = 951 y = 385 }
+			name = "sof_value"
+			font = "Arial12_headline"
+			borderSize = {x = 4 y = 2}
+			text = "sof"	
+			maxWidth = 50
+			maxHeight = 10
+			format = left
+			orientation = "UPPER_LEFT"
+		}		
+		
+		instantTextBoxType = {
+			position = { x =861 y = 407 }
+			name = "speed_value"
+			font = "Arial12"
+			borderSize = {x = 4 y = 2}
+			text = "speed"	
+			maxWidth = 50
+			maxHeight = 10
+			format = left
+			orientation = "UPPER_LEFT"
+		}													
+		instantTextBoxType = {
+			position = { x = 951 y = 407 }
+			name = "sup_value"
+			font = "Arial12"
+			borderSize = {x = 4 y = 2}
+			text = "sup"	
+			maxWidth = 50
+			maxHeight = 10
+			format = left
+			orientation = "UPPER_LEFT"
+		}													
+		instantTextBoxType = {
+			position = { x = 861 y = 429 }
+			name = "sc_value"
+			font = "Arial12"
+			borderSize = {x = 4 y = 2}
+			text = "sc"	
+			maxWidth = 50
+			maxHeight = 10
+			format = left
+			orientation = "UPPER_LEFT"
+		}	
+		instantTextBoxType = {
+			position = { x = 951 y = 429 }
+			name = "fc_value"
+			font = "Arial12"
+			borderSize = {x = 4 y = 2}
+			text = "fc"	
+			maxWidth = 50
+			maxHeight = 10
+			format = left
+			orientation = "UPPER_LEFT"
+		}		
+			
+		##########
+
+		instantTextBoxType = {
+			position = { x = 823 y = 176 }
+			name = "terrainbonusname"
+			font = "Arial12"
+			borderSize = {x = 4 y = 2}
+			text = "BM_TERRAIN"	
+			maxWidth = 75
+			maxHeight = 10
+			format = left
+			orientation = "UPPER_LEFT"
+		}		
+		iconType = {
+			name = "terrainbonus"
+			spriteType = "CMOD_BM_TERRAIN"
+			position = { x= 830 y = 148 }
+		}
+
+        ##########	
+		
+		
+		iconType = {
+			name = "total_str"
+			spriteType = "GFX_icon_str"
+			position = { x= 838 y = 271 }
+		}
+		
+		iconType = {
+			name = "total_org"
+			spriteType = "GFX_icon_org"
+			position = { x= 925 y = 271 }
+		}
+		
+		iconType = {
+			name = "total_cw"
+			spriteType = "GFX_icon_cw"
+			position = { x= 838 y = 293 }
+		}
+		
+		iconType = {
+			name = "total_sa"
+			spriteType = "GFX_icon_sa"
+			position = { x= 925 y = 293 }
+		}
+		
+		iconType = {
+			name = "total_ha"
+			spriteType = "GFX_icon_ha"
+			position = { x= 838 y = 315 }
+		}
+		
+		iconType = {
+			name = "total_piercing"
+			spriteType = "GFX_icon_piercing"
+			position = { x= 925 y = 315 }
+		}
+		
+		iconType = {
+			name = "total_armored"
+			spriteType = "GFX_icon_armored"
+			position = { x= 925 y = 337 }
+		}
+		
+		iconType = {
+			name = "total_aa"
+			spriteType = "GFX_icon_aa"
+			position = { x= 838 y = 337 }
+		}
+		
+		iconType = {
+			name = "total_def"
+			spriteType = "GFX_icon_def"
+			position = { x= 838 y = 359 }
+		}
+		
+		iconType = {
+			name = "total_tou"
+			spriteType = "GFX_icon_tou"
+			position = { x= 925 y = 359 }
+		}
+		
+		iconType = {
+			name = "total_ad"
+			spriteType = "GFX_icon_ad"
+			position = { x= 838 y = 381 }
+		}
+		
+		iconType = {
+			name = "total_sof"
+			spriteType = "GFX_icon_soft2"
+			position = { x= 925 y = 381 }
+		}
+		
+		iconType = {
+			name = "total_speed"
+			spriteType = "GFX_icon_speed"
+			position = { x= 838 y = 403 }
+		}
+		
+		iconType = {
+			name = "total_sup"
+			spriteType = "GFX_icon_sup"
+			position = { x= 925 y = 403 }
+		}
+		
+		iconType = {
+			name = "total_sc"
+			spriteType = "GFX_icon_sc"
+			position = { x=838 y = 425 }
+		}
+		
+		iconType = {
+			name = "total_oc"
+			spriteType = "GFX_icon_oc"
+			position = { x= 925 y = 425 }
+		}
+		
+		
+		# combined arms overview
+		iconType = {
+			name = "combined_arms_indicator_1"
+			spriteType = "GFX_ca_groups"
+			frame = 1
+			position = { x= 661 y = 457 }
+		}
+		iconType = {
+			name = "combined_arms_indicator_2"
+			spriteType = "GFX_ca_groups"
+			frame = 2
+			position = { x= 721 y = 457 }
+		}
+		iconType = {
+			name = "combined_arms_indicator_3"
+			spriteType = "GFX_ca_groups"
+			frame = 3
+			position = { x= 761 y = 457 }
+		}
+		iconType = {
+			name = "combined_arms_indicator_4"
+			spriteType = "GFX_ca_groups"
+			frame = 4
+			position = { x= 801 y = 457 }
+		}
+		iconType = {
+			name = "combined_arms_indicator_5"
+			spriteType = "GFX_ca_groups"
+			frame = 5
+			position = { x= 841 y = 457 }
+		}
+
+		instantTextBoxType = {
+			position = { x = 888 y = 471 }
+			name = "combined_arms_bonus_value"
+			font = "Arial12"
+			borderSize = {x = 4 y = 2}
+			text = "15%"	
+			maxWidth = 44
+			maxHeight = 16
+			format = centre
+			orientation = "UPPER_LEFT"
+		}	
+		
+		#interactive parts.
+	
+		
+		listboxType = {
+			name = "brigade_queue"
+			position = { x = 585 y = 292 }
+			backGround=""
+			size = { x=580 y = 555}
+			Orientation = "UPPER_LEFT"
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}		
+	
+	
+		guiButtonType = {
+			name = "accept"
+			position = { x=667 y =668}
+			quadTextureSprite ="GFX_button_build_division"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "START_PRODUCTION"
+			buttonFont = "Arial12"
+
+		}
+		
+		guiButtonType = {
+			name = "cancel"
+			position = { x=105 y =668}
+			quadTextureSprite ="GFX_button_cancel_prod"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "CLOSE"
+			buttonFont = "Arial12"
+
+		}
+		
+		checkboxType = {
+			name = "as_reserves"
+			position = { x= 742 y = 570 }
+			quadTextureSprite ="GFX_checkbox_square"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+		}		
+		instantTextBoxType = {
+			position = { x = 769 y = 577 }
+			name = "reserves_label"
+			font = "Arial12"
+			borderSize = {x = 4 y = 2}
+			text = "As Reseves"	
+			maxWidth = 170
+			maxHeight = 10
+			format = left
+			orientation = "UPPER_LEFT"
+		}	
+		
+		guiButtonType = {
+			name = "serial_plus"
+			position = { x=892 y =515}
+			quadTextureSprite ="GFX_serial_plus"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Arial12"
+
+		}	
+		
+		guiButtonType = {
+			name = "serial_minus"
+			position = { x=831 y =515}
+			quadTextureSprite ="GFX_serial_minus"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Arial12"
+
+		}	
+		
+		instantTextBoxType = {
+			position = { x = 673 y = 518 }
+			name = "serial_label"
+			font = "Arial12"
+			borderSize = {x = 4 y = 2}
+			text = "PW_SERIAL"	
+			maxWidth = 170
+			maxHeight = 10
+			orientation = "UPPER_LEFT"
+		}		
+		
+		instantTextBoxType = {
+			position = { x = 784 y = 518 }
+			name = "serial_value"
+			font = "Arial12"
+			borderSize = {x = 4 y = 2}
+			text = "0"	
+			maxWidth = 170
+			maxHeight = 10
+			format = centre
+			orientation = "UPPER_LEFT"
+		}				
+	
+		
+		guiButtonType = {
+			name = "parallell_plus"
+			position = { x= 892 y = 543}
+			quadTextureSprite ="GFX_serial_plus"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Arial12"
+
+		}	
+		
+		guiButtonType = {
+			name = "parallel_minus"
+			position = { x= 831 y = 543}
+			quadTextureSprite ="GFX_serial_minus"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Arial12"
+
+		}		
+		
+		instantTextBoxType = {
+			position = { x = 673 y = 547 }
+			name = "paralell_label"
+			font = "Arial12"
+			borderSize = {x = 4 y = 2}
+			text = "PW_PARALELL"	
+			maxWidth = 170
+			maxHeight = 10
+			orientation = "UPPER_LEFT"
+		}		
+		
+		instantTextBoxType = {
+			position = { x = 784 y = 547 }
+			name = "paralell_value"
+			font = "Arial12"
+			borderSize = {x = 4 y = 2}
+			text = "0"	
+			maxWidth = 170
+			maxHeight = 10
+			format = centre
+			orientation = "UPPER_LEFT"
+		}		
+	}
+
+########################################
+# Entry for selected brigade.
+########################################
+	
+	windowType = {
+		name = "brigade_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=50 y= 30 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+		
+		iconType = {
+			name = "selected_brigade_frame"
+			spriteType = "GFX_selected_brigade_frame"
+			position = { x= 7 y = -3 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		iconType = {
+			name ="counter_type"
+			spriteType = "GFX_unit_icon_trans"
+			position = { x= -5 y = -11 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name ="counter_size"
+			spriteType = "GFX_counter_size"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}		
+		
+		instantTextBoxType = {
+			position = { x = 42 y = 4 }
+			name = "name"
+			font = "Arial12_black"
+			borderSize = {x = 4 y = 2}
+			text = ""	
+			maxWidth = 170
+			maxHeight = 10
+			orientation = "UPPER_LEFT"
+			fixedsize = yes
+		}
+		
+		guiButtonType = {
+			name = "cancel"
+			position = { x=218 y =2}
+			quadTextureSprite ="GFX_remove_button"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Arial12"
+		}		
+	}	
+	
+########################################
+# Brigade Picker Window
+########################################
+	
+	windowType = {
+		name = "brigade_picker"
+		backGround=""
+		#position = { x=-13 y=90 }	
+		#size = { x=360 y= 700 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+		size = { x=1024 y=768 }
+		position = { x=-590 y=-344 }
+		orientation="CENTER"
+		
+		
+		guiButtonType = {
+			name = "sort_prio" 
+			position = { x=135 y =83}
+			quadTextureSprite ="GFX_icon_prio"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Arial12_black"
+		}		
+
+		guiButtonType = {
+			name = "sort_str"  #strength
+			position = { x=225 y =79 }
+			quadTextureSprite ="GFX_icon_str"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Arial12_black"
+		}
+		
+		
+		guiButtonType = {
+			name = "sort_org"  #organiztaion
+			position = { x=247 y =79 }
+			quadTextureSprite ="GFX_icon_org"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Arial12_black"
+		}			
+		guiButtonType = {
+			name = "sort_cw"  #combat width
+			position = { x=265 y =79 }
+			quadTextureSprite ="GFX_icon_cw"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Arial12_black"
+		}		
+
+		guiButtonType = {
+			name = "sort_sa" #soft attack
+			position = { x=283 y =79 }
+			quadTextureSprite ="GFX_icon_sa"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Arial12_black"
+		}
+		
+		guiButtonType = {
+			name = "sort_ha"  #hard attack
+			position = { x=301 y =79 }
+			quadTextureSprite ="GFX_icon_ha"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Arial12_black"
+		}
+
+		guiButtonType = {
+			name = "sort_piercing" #piercing
+			position = { x=319 y =79 }
+			quadTextureSprite ="GFX_icon_piercing"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Arial12_black"
+		}
+		
+		guiButtonType = {
+			name = "sort_armored" #armored
+			position = { x=337 y =79 }
+			quadTextureSprite ="GFX_icon_armored"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Arial12_black"
+		}
+
+		guiButtonType = {
+			name = "sort_aa" # airattack
+			position = { x=354 y =79 }
+			quadTextureSprite ="GFX_icon_aa"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Arial12_black"
+		}
+		
+		guiButtonType = {
+			name = "sort_def"  #defensivness
+			position = { x=375 y =79 }
+			quadTextureSprite ="GFX_icon_def"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Arial12_black"
+		}	
+			
+		guiButtonType = {
+			name = "sort_tou"  #toughness
+			position = { x=394 y =79 }
+			quadTextureSprite ="GFX_icon_tou"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Arial12_black"
+		}
+		guiButtonType = {
+			name = "sort_ad"  #air defense
+			position = { x=411 y =79 }
+			quadTextureSprite ="GFX_icon_ad"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Arial12_black"
+		}
+
+		guiButtonType = {
+			name = "sort_sof"  #softness
+			position = { x=435 y =79 }
+			quadTextureSprite ="GFX_icon_soft"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Arial12_black"
+		}		
+
+		guiButtonType = {
+			name = "sort_speed"
+			position = { x=460 y =79 }
+			quadTextureSprite ="GFX_icon_speed"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Arial12_black"
+		}		
+		guiButtonType = {
+			name = "sort_sup"  #supression
+			position = { x=479 y =79 }
+			quadTextureSprite ="GFX_icon_sup"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Arial12_black"
+		}			
+		guiButtonType = {
+			name = "sort_sc"  #supply consumption
+			position = { x=502 y =79 }
+			quadTextureSprite ="GFX_icon_sc"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Arial12_black"
+		}	
+		guiButtonType = {
+			name = "sort_fc"  #fuel consumption
+			position = { x=527 y =79 }
+			quadTextureSprite ="GFX_icon_oc"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Arial12_black"
+		}
+
+		guiButtonType = {
+			name = "sort_off"
+			position = { x=552 y =80 }
+			quadTextureSprite ="GFX_icon_off"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Arial12_black"
+		}		
+				
+		guiButtonType = {
+			name = "sort_ic"
+			position = { x=579 y =79 }
+			quadTextureSprite ="GFX_icon_icneed"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Arial12_black"
+		}	
+		guiButtonType = {
+			name = "sort_mp"
+			position = { x=609 y =79 }
+			quadTextureSprite ="GFX_icon_mp"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Arial12_black"
+		}	
+		guiButtonType = {
+			name = "sort_time"
+			position = { x=638 y =79 }
+			quadTextureSprite ="GFX_icon_time"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Arial12_black"
+		}	
+					
+			
+							
+		listboxType = {
+			name = "queue"
+			position = { x = 89 y = 103 }
+			backGround=""
+			size = { x= 533 y = 620}
+			Orientation = "UPPER_LEFT"
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}
+		
+		
+	}	
+########################################
+# Entry for brigade to select
+########################################
+	
+	windowType = {
+		name = "brigade_entry_2"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=360 y= 23 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+		
+		guiButtonType = {
+			name = "select"
+			quadTextureSprite ="GFX_divdesigner_listbutton"
+			position = { x= 3 y = 1 }
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Arial12"
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType = {
+			name ="counter_type"
+			spriteType = "GFX_temp_unit_icon"
+			position = { x= -12 y = -11 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name ="counter_size"
+			spriteType = "GFX_counter_size"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}		
+				
+		
+		instantTextBoxType = {
+			position = { x = 33 y = 4 }
+			name = "name"
+			font = "Arial12_black"
+			borderSize = {x = 4 y = 2}
+			text = "name"	
+			maxWidth = 96
+			maxHeight = 16
+			fixedsize = yes
+			orientation = "UPPER_LEFT"
+		}		
+		
+		instantTextBoxType = {
+			position = { x = 136 y = 4 }
+			name = "str"
+			font = "Arial12"
+			borderSize = {x = 4 y = 2}
+			text = "str"	
+			maxWidth = 170
+			maxHeight = 10
+			orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			position = { x = 80 y = 4 }
+			name = "org"
+			font = "Arial12"
+			borderSize = {x = 4 y = 2}
+			text = "org"	
+			maxWidth = 170
+			maxHeight = 10
+			format = centre
+			orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			position = { x = 99 y = 4 }
+			name = "cw"
+			font = "Arial12_headline"
+			borderSize = {x = 4 y = 2}
+			text = "cw"	
+			maxWidth = 170
+			maxHeight = 10
+			format = centre
+			orientation = "UPPER_LEFT"
+		}						
+		instantTextBoxType = {
+			position = { x = 117 y = 4 }
+			name = "sa"
+			font = "Arial12_headline"
+			borderSize = {x = 4 y = 2}
+			text = "SA"	
+			maxWidth = 170
+			maxHeight = 10
+			format = centre
+			orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			position = { x = 135 y = 4 }
+			name = "ha"
+			font = "Arial12_headline"
+			borderSize = {x = 4 y = 2}
+			text = "HA"	
+			maxWidth = 170
+			maxHeight = 10
+			format = centre
+			orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			position = { x = 153 y = 4 }
+			name = "piercing"
+			font = "Arial12_headline"
+			borderSize = {x = 4 y = 2}
+			text = "9"	
+			maxWidth = 170
+			maxHeight = 10
+			format = centre
+			orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			position = { x = 171 y = 4 }
+			name = "armored"
+			font = "Arial12_headline"
+			borderSize = {x = 4 y = 2}
+			text = "9"	
+			maxWidth = 170
+			maxHeight = 10
+			format = centre
+			orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			position = { x = 189 y = 4 }
+			name = "aa"
+			font = "Arial12_headline"
+			borderSize = {x = 4 y = 2}
+			text = "AA"	
+			maxWidth = 170
+			maxHeight = 10
+			format = centre
+			orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			position = { x = 207 y = 4 }
+			name = "def"
+			font = "Arial12_headline"
+			borderSize = {x = 4 y = 2}
+			text = "def"	
+			maxWidth = 170
+			maxHeight = 10
+			format = centre
+			orientation = "UPPER_LEFT"
+		}	
+		instantTextBoxType = {
+			position = { x = 225 y = 4 }
+			name = "tou"
+			font = "Arial12_headline"
+			borderSize = {x = 4 y = 2}
+			text = "tou"	
+			maxWidth = 170
+			maxHeight = 10
+			format = centre
+			orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			position = { x = 243 y = 4 }
+			name = "ad"
+			font = "Arial12_headline"
+			borderSize = {x = 4 y = 2}
+			text = "AD"	
+			maxWidth = 170
+			maxHeight = 10
+			format = centre
+			orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			position = { x = 339 y = 4 }
+			name = "sof"
+			font = "Arial12_headline"
+			borderSize = {x = 4 y = 2}
+			text = "tou"	
+			maxWidth = 170
+			maxHeight = 10
+			orientation = "UPPER_LEFT"
+		}		
+		
+		instantTextBoxType = {
+			position = { x = 374 y = 4 }
+			name = "speed"
+			font = "Arial12"
+			borderSize = {x = 4 y = 2}
+			text = "speed"	
+			maxWidth = 170
+			maxHeight = 10
+			orientation = "UPPER_LEFT"
+		}													
+		instantTextBoxType = {
+			position = { x = 393 y = 4 }
+			name = "sup"
+			font = "Arial12"
+			borderSize = {x = 4 y = 2}
+			text = "sup"	
+			maxWidth = 170
+			maxHeight = 10
+			orientation = "UPPER_LEFT"
+		}													
+		instantTextBoxType = {
+			position = { x = 409 y = 4 }
+			name = "sc"
+			font = "Arial12"
+			borderSize = {x = 4 y = 2}
+			text = "sc"	
+			maxWidth = 170
+			maxHeight = 10
+			orientation = "UPPER_LEFT"
+		}	
+		instantTextBoxType = {
+			position = { x = 435 y = 4 }
+			name = "fc"
+			font = "Arial12"
+			borderSize = {x = 4 y = 2}
+			text = "fc"	
+			maxWidth = 170
+			maxHeight = 10
+			orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			position = { x = 462 y = 4 }
+			name = "off"
+			font = "Arial12"
+			borderSize = {x = 4 y = 2}
+			text = "time"	
+			maxWidth = 170
+			maxHeight = 10
+			orientation = "UPPER_LEFT"
+		}		
+		instantTextBoxType = {
+			position = { x = 487 y = 4 }
+			name = "ic"
+			font = "Arial12"
+			borderSize = {x = 4 y = 2}
+			text = "ic"	
+			maxWidth = 170
+			maxHeight = 10
+			orientation = "UPPER_LEFT"
+		}	
+		instantTextBoxType = {
+			position = { x = 518 y = 4 }
+			name = "mp"
+			font = "Arial12"
+			borderSize = {x = 4 y = 2}
+			text = "mp"	
+			maxWidth = 170
+			maxHeight = 10
+			orientation = "UPPER_LEFT"
+		}																
+		instantTextBoxType = {
+			position = { x = 548 y = 4 }
+			name = "time"
+			font = "Arial12"
+			borderSize = {x = 4 y = 2}
+			text = "time"	
+			maxWidth = 170
+			maxHeight = 10
+			orientation = "UPPER_LEFT"
+		}																
+																		
+		
+	}	
+
+}
+

@@ -1,0 +1,79 @@
+spriteTypes = {
+
+	spriteType = {
+		norefcount = yes
+		name = "GFX_swm_background"
+		texturefile = "gfx\\interface\\swm_bg.dds"
+	}
+	spriteType = {
+		norefcount = yes
+		name = "GFX_swm_background_naval"
+		texturefile = "gfx\\interface\\swm_subwin_naval.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		norefcount = yes
+		name = "GFX_swm_background_air"
+		texturefile = "gfx\\interface\\swm_subwin_air.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		norefcount = yes
+		name = "GFX_swm_background_land"
+		texturefile = "gfx\\interface\\swm_subwin_land.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		norefcount = yes
+		name = "GFX_swm_tab_button"
+		texturefile = "gfx\\interface\\swm_tab_button.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		norefcount = yes
+		name = "GFX_swm_list_entry"
+		texturefile = "gfx\\interface\\swm_list_entry.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		norefcount = yes
+		name = "GFX_swm_list_entry_past"
+		texturefile = "gfx\\interface\\swm_list_entry_past.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		norefcount = yes
+		name = "GFX_swm_list_entry_color"
+		texturefile = "gfx\\interface\\swm_list_entry_color.dds"
+	}
+	textSpriteType = {
+		norefcount = yes
+		name = "GFX_swm_small_button"
+		texturefile = "gfx\\interface\\swm_small_button.dds"
+	}
+	spriteType = {
+		norefcount = yes
+		name = "GFX_swm_btn_duration"
+		texturefile = "gfx\\interface\\swm_btn_duration.dds"
+		noOfFrames = 2
+	}
+	LineChartType = {
+		name = "GFX_swm_linechart"
+		size = { x = 154 y = 88 }
+		linewidth = 3
+		outline = yes
+		allwaystransparent = no
+	}
+	spriteType = {
+		norefcount = yes
+		name = "GFX_swm_comparators"
+		texturefile = "gfx\\interface\\swm_comparators.dds"
+		noOfFrames = 3
+	}
+	spriteType = {
+		norefcount = yes
+		name = "GFX_landgcombatbg_bg"
+		texturefile = "gfx\\interface\\GFX_GreatWall_bg.dds"
+		noOfFrames = 3
+	}
+}
