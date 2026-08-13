@@ -1,0 +1,10 @@
+guiBehaviors = {
+	behavior = {
+		name = "activate_item"
+		function = "ProbeGui.ActivateItem"
+		phases = { click }
+		enabledWhen = "state.visible"
+		fallback = "select_item"
+		target = "selected.id"
+	}
+}

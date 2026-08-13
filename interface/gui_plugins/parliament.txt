@@ -1,0 +1,17 @@
+guiPlugins = {
+	guiPlugin = {
+		id = "parliament"
+		displayName = "Parliament Seat Diagram"
+		factory = "declarative_gui"
+		startup = no
+		visibleWhen = "state.visible && state.active"
+		options = {
+			window = "parliament_window"
+			title = "Parliament"
+			data_provider = "file"
+			data = "script_gui/data/parliament_common.txt"
+			watch = no
+			tick_interval = 100
+		}
+	}
+}

@@ -20,6 +20,8 @@ require('ai_tech_minister')
 require('ai_trade')
 require('ai_license')
 require('overlay_gui')
+require('gui_action_bridge')
+require('gui_data_bridge')
 
 -- Default Files
 require('DEFAULT_LAND')

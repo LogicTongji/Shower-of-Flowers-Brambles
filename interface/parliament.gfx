@@ -1,0 +1,78 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_parliament_background"
+		texturefile = "gfx\\parliament\\parliament_background.png"
+		noOfFrames = 1
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_parliament_party_green"
+		texturefile = "gfx\\parliament\\parliament_party_1.png"
+		noOfFrames = 1
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_parliament_party_1"
+		texturefile = "gfx\\parliament\\parliament_party_1.png"
+		noOfFrames = 1
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_parliament_party_red"
+		texturefile = "gfx\\parliament\\parliament_party_2.png"
+		noOfFrames = 1
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_parliament_party_2"
+		texturefile = "gfx\\parliament\\parliament_party_2.png"
+		noOfFrames = 1
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_parliament_party_blue"
+		texturefile = "gfx\\parliament\\parliament_party_3.png"
+		noOfFrames = 1
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_parliament_party_3"
+		texturefile = "gfx\\parliament\\parliament_party_3.png"
+		noOfFrames = 1
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_parliament_party_yellow"
+		texturefile = "gfx\\parliament\\parliament_party_4.png"
+		noOfFrames = 1
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_parliament_party_4"
+		texturefile = "gfx\\parliament\\parliament_party_4.png"
+		noOfFrames = 1
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_parliament_slider_cursor"
+		texturefile = "gfx\\parliament\\small_circle.png"
+		noOfFrames = 1
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_parliament_transparent"
+		texturefile = "gfx\\parliament\\transparent.png"
+		noOfFrames = 1
+		loadType = "INGAME"
+	}
+}

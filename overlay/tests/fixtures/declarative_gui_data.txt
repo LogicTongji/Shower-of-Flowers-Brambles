@@ -1,0 +1,27 @@
+guiData = {
+	state.visible = yes
+	counter = 2
+	progress = 0.25
+	title = "声明式界面测试"
+
+	value = {
+		name = "formatted_code"
+		type = "string"
+		value = "007"
+	}
+
+	list = {
+		name = "task_list"
+		revision = 4
+
+		item = {
+			id = 11
+			text = "第一项"
+		}
+
+		item = {
+			id = 22
+			text = "第二项"
+		}
+	}
+}

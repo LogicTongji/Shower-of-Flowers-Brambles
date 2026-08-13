@@ -1,0 +1,62 @@
+guiBehaviors = {
+	behavior = {
+		name = "select_combat_region"
+		function = "select_combat_region"
+		phases = { click }
+		enabledWhen = "state.visible && state.active"
+		fallback = "select_item"
+		target = "selectedregion.id"
+		set.selectedregion.source = "combat"
+		persist = yes
+	}
+
+	behavior = {
+		name = "select_war_map_region"
+		function = "select_war_map_region"
+		phases = { click }
+		enabledWhen = "state.visible && state.active"
+		fallback = "select_item"
+		target = "selectedregion.id"
+		set.selectedregion.source = "map"
+		persist = yes
+	}
+
+	behavior = {
+		name = "assign_war_map_leader"
+		function = "assign_war_map_leader"
+		phases = { click }
+		enabledWhen = "state.visible && state.active && selectedregion.id != 0"
+		fallback = "copy_list_item"
+		target = "assigned_leader_list"
+		field.regionid = "$data:selectedregion.id"
+		field.x = -1
+		field.y = -1
+		sequence_field = "assignmentorder"
+		reject_existing = yes
+		reject_matching_fields = "regionid,leadertype"
+		persist = yes
+	}
+
+	behavior = {
+		name = "move_war_map_leader"
+		function = "move_war_map_leader"
+		phases = { drag_end }
+		enabledWhen = "state.visible && state.active"
+		fallback = "update_list_item"
+		target = "assigned_leader_list"
+		field.x = "$parameter:normalizedx"
+		field.y = "$parameter:normalizedy"
+		update_matching_field = "regionid"
+		persist = yes
+	}
+
+	behavior = {
+		name = "step_down_war_map_leader"
+		function = "step_down_war_map_leader"
+		phases = { click }
+		enabledWhen = "state.visible && state.active"
+		fallback = "remove_list_item"
+		target = "assigned_leader_list"
+		persist = yes
+	}
+}

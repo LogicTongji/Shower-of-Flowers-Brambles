@@ -1,0 +1,207 @@
+guiData = {
+	selectedregion.id = 0
+	selectedregion.source = "none"
+
+	regions.1.name = "广东省"
+	regions.1.capital = "省会：广州"
+	regions.1.totalPopulation = "总人口：3245.3 万"
+
+	regions.2.name = "山西省"
+	regions.2.capital = "省会：太原"
+	regions.2.totalPopulation = "总人口：1160.1 万"
+
+	regions.3.name = "云南省"
+	regions.3.capital = "省会：昆明"
+	regions.3.totalPopulation = "总人口：1204.2 万"
+
+	regions.4.name = "广西省"
+	regions.4.capital = "省会：南宁"
+	regions.4.totalPopulation = "总人口：1338.5 万"
+
+	regions.5.name = "西康省"
+	regions.5.capital = "省会：康定"
+	regions.5.totalPopulation = "总人口：165.1 万"
+
+	regions.6.name = "宁夏省"
+	regions.6.capital = "省会：银川"
+	regions.6.totalPopulation = "总人口：97.8 万"
+
+	regions.7.name = "甘肃省"
+	regions.7.capital = "省会：兰州"
+	regions.7.totalPopulation = "总人口：671.6 万"
+
+	regions.8.name = "青海省"
+	regions.8.capital = "省会：西宁"
+	regions.8.totalPopulation = "总人口：119.6 万"
+
+	regions.9.name = "察哈尔省"
+	regions.9.capital = "省会：张家口"
+	regions.9.totalPopulation = "总人口：203.6 万"
+
+	regions.10.name = "绥远省"
+	regions.10.capital = "省会：呼和浩特"
+	regions.10.totalPopulation = "总人口：208.4 万"
+
+	regions.11.name = "四川省"
+	regions.11.capital = "省会：成都"
+	regions.11.totalPopulation = "总人口：5367.4 万"
+
+	regions.12.name = "贵州省"
+	regions.12.capital = "省会：贵阳"
+	regions.12.totalPopulation = "总人口：991.9 万"
+
+	regions.13.name = "陕西省"
+	regions.13.capital = "省会：西安"
+	regions.13.totalPopulation = "总人口：998.6 万"
+
+	regions.14.name = "河北省"
+	regions.14.capital = "省会：保定"
+	regions.14.totalPopulation = "总人口：3141.0 万"
+
+	regions.15.name = "东河北地区"
+	regions.15.capital = "省会：待补充"
+	regions.15.totalPopulation = "总人口：300.0 万"
+
+	regions.16.name = "山东省"
+	regions.16.capital = "省会：济南"
+	regions.16.totalPopulation = "总人口：3883.7 万"
+
+	regions.17.name = "福建省"
+	regions.17.capital = "省会：福州"
+	regions.17.totalPopulation = "总人口：1175.6 万"
+
+	regions.18.name = "湖南省"
+	regions.18.capital = "省会：长沙"
+	regions.18.totalPopulation = "总人口：2829.4 万"
+
+	regions.19.name = "江苏省"
+	regions.19.capital = "省会：南京"
+	regions.19.totalPopulation = "总人口：4121.5 万"
+
+	regions.20.name = "江西省"
+	regions.20.capital = "省会：南昌"
+	regions.20.totalPopulation = "总人口：1580.5 万"
+
+	regions.21.name = "浙江省"
+	regions.21.capital = "省会：杭州"
+	regions.21.totalPopulation = "总人口：2124.0 万"
+
+	regions.22.name = "安徽省"
+	regions.22.capital = "省会：合肥"
+	regions.22.totalPopulation = "总人口：2335.4 万"
+
+	regions.23.name = "河南省"
+	regions.23.capital = "省会：开封"
+	regions.23.totalPopulation = "总人口：3429.0 万"
+
+	regions.24.name = "湖北省"
+	regions.24.capital = "省会：武汉"
+	regions.24.totalPopulation = "总人口：2551.6 万"
+
+	regions.25.name = "兴安省"
+	regions.25.capital = "省会：海拉尔"
+	regions.25.totalPopulation = "总人口：212.2 万"
+
+	regions.26.name = "热河省"
+	regions.26.capital = "省会：承德"
+	regions.26.totalPopulation = "总人口：218.5 万"
+
+	regions.27.name = "奉天省"
+	regions.27.capital = "省会：沈阳"
+	regions.27.totalPopulation = "总人口：756.5 万"
+
+	regions.28.name = "辽宁省"
+	regions.28.capital = "省会：沈阳"
+	regions.28.totalPopulation = "总人口：300.5 万"
+
+	regions.29.name = "安东省"
+	regions.29.capital = "省会：安东"
+	regions.29.totalPopulation = "总人口：223.1 万"
+
+	regions.30.name = "嫩江省"
+	regions.30.capital = "省会：齐齐哈尔"
+	regions.30.totalPopulation = "总人口：68.0 万"
+
+	regions.31.name = "黑河省"
+	regions.31.capital = "省会：黑河"
+	regions.31.totalPopulation = "总人口：14.9 万"
+
+	regions.32.name = "黑龙江省"
+	regions.32.capital = "省会：哈尔滨"
+	regions.32.totalPopulation = "总人口：209.3 万"
+
+	regions.33.name = "松江省"
+	regions.33.capital = "省会：哈尔滨"
+	regions.33.totalPopulation = "总人口：68.8 万"
+
+	regions.34.name = "间岛省"
+	regions.34.capital = "省会：延吉"
+	regions.34.totalPopulation = "总人口：84.8 万"
+
+	regions.35.name = "吉林省"
+	regions.35.capital = "省会：吉林"
+	regions.35.totalPopulation = "总人口：560.8 万"
+
+	regions.36.name = "新疆省"
+	regions.36.capital = "省会：迪化"
+	regions.36.totalPopulation = "总人口：436.0 万"
+
+	regions.37.name = "卫藏地方"
+	regions.37.capital = "省会：拉萨"
+	regions.37.totalPopulation = "总人口：110.0 万"
+
+	regions.38.name = "台湾省"
+	regions.38.capital = "省会：台北"
+	regions.38.totalPopulation = "总人口：529.1 万"
+
+	regions.39.name = "蒙古地方"
+	regions.39.capital = "省会：乌兰巴托"
+	regions.39.totalPopulation = "总人口：61.6 万"
+
+	regions.40.name = "上海市"
+	regions.40.capital = "省会：上海"
+	regions.40.totalPopulation = "总人口：300.0 万"
+
+	regions.41.name = "唐努乌梁海"
+	regions.41.capital = "省会：乌里雅苏台"
+	regions.41.totalPopulation = "总人口：80.0 万"
+
+	list = {
+		name = "leader_candidate_list"
+		revision = 1
+
+		item = {
+			id = 1
+			text = "WARMAP_LEADER_LIST_LI_ZONGREN"
+			textkey = "WARMAP_LEADER_LIST_LI_ZONGREN"
+			leaderid = "li_zongren"
+			role = "military"
+			leadertype = "military"
+			buttonsprite = "GFX_warmap_leader_button_chi"
+			enabledwhen = "selectedregion.source == combat && regions.{selectedregion.id}.combatmilitaryeligible || selectedregion.source == map && regions.{selectedregion.id}.mapmilitaryeligible"
+			portrait = "GFX_warmap_leader_li_zongren"
+			namekey = "WARMAP_LEADER_LI_ZONGREN"
+			descriptionkey = "WARMAP_LEADER_LI_ZONGREN_DESC"
+		}
+
+		item = {
+			id = 2
+			text = "WARMAP_LEADER_LIST_JU_ZHENG"
+			textkey = "WARMAP_LEADER_LIST_JU_ZHENG"
+			leaderid = "ju_zheng"
+			role = "administrative"
+			leadertype = "administrative"
+			buttonsprite = "GFX_warmap_leader_button_chi"
+			enabledwhen = "selectedregion.source == combat && regions.{selectedregion.id}.combatadministrativeeligible || selectedregion.source == map && regions.{selectedregion.id}.mapadministrativeeligible"
+			portrait = "GFX_warmap_officer_ju_zheng"
+			namekey = "WARMAP_LEADER_JU_ZHENG"
+			descriptionkey = "WARMAP_LEADER_JU_ZHENG_DESC"
+		}
+	}
+
+	list = {
+		name = "assigned_leader_list"
+		revision = 1
+	}
+
+}

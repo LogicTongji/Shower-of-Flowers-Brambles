@@ -1,4 +1,88 @@
 spriteTypes = {
+	indexedMapResourceType = {
+		name = "GFX_china_anti_jap_region_map"
+		texturefile = "china_map.bmp"
+		indexfile = "china_region_ids.bin"
+		sourceDefinitionFile = "map\\definition.csv"
+		sourceProvinceFile = "map\\provinces.bmp"
+		sourceGroupFile = "map\\region.txt"
+		cropPadding = 16
+		flipVertical = yes
+		sourceFillColor = { 0.855 0.855 0.824 1.0 }
+		sourceBoundaryColor = { 0.235 0.235 0.235 1.0 }
+
+		sourceItem = { id = 1 name = "guangdong_region" }
+		sourceItem = { id = 2 name = "shanxi_region" }
+		sourceItem = { id = 3 name = "yunnan_region" }
+		sourceItem = { id = 4 name = "guangxi_region" }
+		sourceItem = { id = 5 name = "xikang_region" }
+		sourceItem = { id = 6 name = "ningxia_region" }
+		sourceItem = { id = 7 name = "gansu_region" }
+		sourceItem = { id = 8 name = "qinghai_region" }
+		sourceItem = { id = 9 name = "chahar_region" }
+		sourceItem = { id = 10 name = "suiyuan_region" }
+		sourceItem = { id = 11 name = "sichuan_region" }
+		sourceItem = { id = 12 name = "guizhou_region" }
+		sourceItem = { id = 13 name = "shaanxi_region" }
+		sourceItem = { id = 14 name = "hebei_region" }
+		sourceItem = { id = 15 name = "east_hebei_region" }
+		sourceItem = { id = 16 name = "shandong_region" }
+		sourceItem = { id = 17 name = "fujian_region" }
+		sourceItem = { id = 18 name = "hunan_region" }
+		sourceItem = { id = 19 name = "jiangsu_region" }
+		sourceItem = { id = 20 name = "jiangxi_region" }
+		sourceItem = { id = 21 name = "chekiang_region" }
+		sourceItem = { id = 22 name = "anhui_region" }
+		sourceItem = { id = 23 name = "henan_region" }
+		sourceItem = { id = 24 name = "hubei_region" }
+		sourceItem = { id = 25 name = "xingan_region" }
+		sourceItem = { id = 26 name = "rehe_region" }
+		sourceItem = { id = 27 name = "fengtian_region" }
+		sourceItem = { id = 28 name = "liaonning_region" }
+		sourceItem = { id = 29 name = "andong_region" }
+		sourceItem = { id = 30 name = "nenjiang_region" }
+		sourceItem = { id = 31 name = "heihe_region" }
+		sourceItem = { id = 32 name = "heilongjiang_region" }
+		sourceItem = { id = 33 name = "songjiang_region" }
+		sourceItem = { id = 34 name = "jiandao_region" }
+		sourceItem = { id = 35 name = "jilin_region" }
+		sourceItem = { id = 36 name = "xinjiang_region" }
+		sourceItem = { id = 37 name = "utang_region" }
+		sourceItem = { id = 38 name = "taiwan_region" }
+		sourceItem = { id = 39 name = "Mongolia_Regions" }
+		sourceItem = { id = 40 name = "SF_Shanghai" }
+		sourceItem = { id = 41 name = "tannuuriankhai_region" }
+		boundaryColor = { 0.016 0.059 0.071 0.922 }
+		hoverColor = { 0.902 0.941 1.0 0.471 }
+		boundaryWidth = 1
+		drawBoundaries = yes
+
+		colorStop = {
+			minimum = 0
+			color = { 0.314 0.510 0.314 0.627 }
+		}
+		colorStop = {
+			minimum = 0.000001
+			color = { 1.0 0.961 0.667 0.706 }
+		}
+		colorStop = {
+			minimum = 20
+			color = { 0.941 0.824 0.235 0.745 }
+		}
+		colorStop = {
+			minimum = 60
+			color = { 0.902 0.392 0.392 0.784 }
+		}
+		colorStop = {
+			minimum = 80
+			color = { 0.588 0.078 0.078 0.824 }
+		}
+		colorStop = {
+			minimum = 90
+			color = { 0.314 0.0 0.0 0.863 }
+		}
+	}
+
 	spriteType = {
 		name = "GFX_china_war_sidebar"
 		texturefile = "gfx\\war_map\\china_anti_jap\\sidebar.png"
@@ -33,4 +117,89 @@ spriteTypes = {
 		noOfFrames = 1
 		loadType = "INGAME"
 	}
+
+	progressbartype = {
+		name = "china_war_progress_bar"
+		width = 270
+		height = 22
+		horizontal = yes
+		color = { 0.27 0.71 0.37 }
+		colortwo = { 0.73 0.27 0.27 }
+	}
+	spriteType = {
+	name = "GFX_china_war_combat_button_normal"
+	texturefile = "gfx\\war_map\\china_anti_jap\\combat_region_button_normal.png"
+	noOfFrames = 1
+	loadType = "INGAME"
+}
+
+spriteType = {
+	name = "GFX_china_war_combat_button_pressed"
+	texturefile = "gfx\\war_map\\china_anti_jap\\combat_region_button_pressed.png"
+	noOfFrames = 1
+	loadType = "INGAME"
+}
+
+spriteType = {
+	name = "combat_region_scroll_track"
+	texturefile = "gfx\\war_map\\china_anti_jap\\combat_region_scroll_track.png"
+	noOfFrames = 1
+	loadType = "INGAME"
+}
+
+spriteType = {
+	name = "combat_region_scroll_thumb"
+	texturefile = "gfx\\war_map\\china_anti_jap\\combat_region_scroll_thumb.png"
+	noOfFrames = 1
+	loadType = "INGAME"
+}
+
+spriteType = {
+	name = "GFX_warmap_leader_li_zongren"
+	texturefile = "gfx\\war_map\\china_anti_jap\\leader_pictures\\leader1.png"
+	noOfFrames = 1
+	loadType = "INGAME"
+}
+
+spriteType = {
+	name = "GFX_warmap_officer_ju_zheng"
+	texturefile = "gfx\\war_map\\china_anti_jap\\leader_pictures\\officer1.png"
+	noOfFrames = 1
+	loadType = "INGAME"
+}
+
+spriteType = {
+	name = "GFX_warmap_leader_panel"
+	texturefile = "gfx\\war_map\\china_anti_jap\\leader_panel.png"
+	noOfFrames = 1
+	loadType = "INGAME"
+}
+
+spriteType = {
+	name = "GFX_warmap_leader_button_chi"
+	texturefile = "gfx\\war_map\\china_anti_jap\\leaderanofficer_bottom_chi.png"
+	noOfFrames = 1
+	loadType = "INGAME"
+}
+
+spriteType = {
+	name = "GFX_warmap_leader_button_chc"
+	texturefile = "gfx\\war_map\\china_anti_jap\\leaderanofficer_bottom_chc.png"
+	noOfFrames = 1
+	loadType = "INGAME"
+}
+
+spriteType = {
+	name = "GFX_warmap_leader_button_jap"
+	texturefile = "gfx\\war_map\\china_anti_jap\\leaderanofficer_bottom_jap.png"
+	noOfFrames = 1
+	loadType = "INGAME"
+}
+
+spriteType = {
+	name = "GFX_warmap_step_down"
+	texturefile = "gfx\\war_map\\china_anti_jap\\step_down.png"
+	noOfFrames = 1
+	loadType = "INGAME"
+}
 }

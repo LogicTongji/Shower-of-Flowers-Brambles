@@ -1,0 +1,485 @@
+guiTypes = {
+	windowType = {
+		name = "china_anti_jap"
+		borderSprite = "GFX_china_war_border"
+		position = { x = 0 y = 0 }
+		size = { x = 1600 y = 800 }
+		moveable = yes
+		dragHeight = 72
+		fullScreen = no
+
+		iconType = {
+			name = "china_war_sidebar"
+			spriteType = "GFX_china_war_sidebar"
+			position = { x = 1280 y = 0 }
+			size = { x = 320 y = 800 }
+		}
+
+		iconType = {
+			name = "china_war_legend"
+			spriteType = "GFX_china_war_legend"
+			position = { x = 40 y = 75 }
+		}
+
+		iconType = {
+			name = "china_war_info_panel"
+			spriteType = "GFX_china_war_legend_panel"
+			position = { x = 40 y = 245 }
+			visibleWhen = "state.visible && state.active && warProgress.known"
+		}
+
+		iconType = {
+			name = "china_war_progress_frame"
+			spriteType = "GFX_china_war_progress"
+			position = { x = 60 y = 293 }
+			size = { x = 280 y = 32 }
+			visibleWhen = "state.visible && state.active && warProgress.known"
+		}
+
+		progressBarType = {
+			name = "china_war_progress_own"
+			progressBar = "china_war_progress_bar"
+			position = { x = 65 y = 298 }
+			size = { x = 270 y = 22 }
+			valueSource = "warProgress.own"
+			progressColor = 0
+			visibleWhen = "state.visible && state.active"
+		}
+
+		progressBarType = {
+			name = "china_war_progress_enemy"
+			progressBar = "china_war_progress_bar"
+			position = { x = 65 y = 298 }
+			size = { x = 270 y = 22 }
+			valueSource = "warProgress.enemy"
+			progressColor = 1
+			fillFromEnd = yes
+			drawBackground = no
+			visibleWhen = "state.visible && state.active"
+		}
+
+		indexedMapType = {
+			name = "china_region_map"
+			mapResource = "GFX_china_anti_jap_region_map"
+			valueSource = "regions.{id}.controlledPercentage"
+			onClick = "select_war_map_region"
+			visibleWhen = "state.visible && state.active"
+			position = { x = 380 y = 120 }
+			size = { x = 880 y = 600 }
+		}
+
+		markerLayerType = {
+			name = "china_war_leader_markers"
+			dataSource = "assigned_leader_list"
+			mapWidget = "china_region_map"
+			frameSprite = "GFX_warmap_leader_panel"
+			portraitSource = "item.portrait"
+			regionSource = "item.regionid"
+			xSource = "item.x"
+			ySource = "item.y"
+			nameSource = "item.namekey"
+			descriptionSource = "item.descriptionkey"
+			stackSource = "item.regionid"
+			stackOrderSource = "item.assignmentorder"
+			stackDirection = "vertical"
+			stackSpacing = 4
+			position = { x = 0 y = 0 }
+			size = { x = 1600 y = 800 }
+			markerSize = { x = 68 y = 84 }
+			portraitPosition = { x = 2 y = 2 }
+			portraitSize = { x = 64 y = 80 }
+			tooltipSize = { x = 300 y = 150 }
+			tooltipPlacement = "right"
+			avoidTooltipOverlap = yes
+			tooltipPadding = 12
+			tooltipColor = { 0.0 0.0 0.0 0.76 }
+			lineColor = { 0.04 0.25 0.70 1.0 }
+			lineWidth = 3
+			font = "pixel_china"
+			fontSize = 15
+			lineSpacing = 4
+			color = { 0.82 0.94 1.0 }
+			localizeTooltip = yes
+			draggable = yes
+			onDragEnd = "move_war_map_leader"
+			markerActionSprite = "GFX_warmap_step_down"
+			markerActionPosition = { x = -80 y = 0 }
+			markerActionSize = { x = 80 y = 15 }
+			onMarkerAction = "step_down_war_map_leader"
+			markerActionLocalizationKey = "WARMAP_STEP_DOWN"
+			markerActionFontSize = 11
+			visibleWhen = "state.visible && state.active"
+			zOrder = 120
+		}
+
+		colorBoxType = {
+			name = "legend_swatch_combat_light"
+			color = { 1.0 0.96 0.67 }
+			position = { x = 53 y = 110 }
+			size = { x = 10 y = 10 }
+			visibleWhen = "state.visible"
+		}
+
+		colorBoxType = {
+			name = "legend_swatch_combat"
+			color = { 0.94 0.82 0.24 }
+			position = { x = 76 y = 110 }
+			size = { x = 10 y = 10 }
+			visibleWhen = "state.visible"
+		}
+
+		colorBoxType = {
+			name = "legend_swatch_partial"
+			color = { 0.90 0.39 0.39 }
+			position = { x = 53 y = 139 }
+			size = { x = 10 y = 10 }
+			visibleWhen = "state.visible"
+		}
+
+		colorBoxType = {
+			name = "legend_swatch_basic"
+			color = { 0.59 0.08 0.08 }
+			position = { x = 53 y = 168 }
+			size = { x = 10 y = 10 }
+			visibleWhen = "state.visible"
+		}
+
+		colorBoxType = {
+			name = "legend_swatch_total"
+			color = { 0.31 0.0 0.0 }
+			position = { x = 53 y = 197 }
+			size = { x = 10 y = 10 }
+			visibleWhen = "state.visible"
+		}
+
+		textBoxType = {
+			name = "china_war_banner_left"
+			font = "jap_font1"
+			fontSize = 26
+			alignment = "right"
+			color = { 0.30 0.84 0.85 }
+			localizationKey = "WARMAP_BANNER_LEFT"
+			position = { x = 20 y = 34 }
+			size = { x = 380 y = 48 }
+			visibleWhen = "state.visible && state.active && state.viewertag != JAP"
+			zOrder = 1000100
+		}
+
+		textBoxType = {
+			name = "china_war_banner_title"
+			font = "maozedong_art"
+			fontSize = 44
+			alignment = "center"
+			color = { 0.34 0.90 0.90 }
+			localizationKey = "WARMAP_BANNER_TITLE"
+			position = { x = 400 y = 12 }
+			size = { x = 480 y = 76 }
+			visibleWhen = "state.visible && state.active && state.viewertag != JAP"
+			zOrder = 1000100
+		}
+
+		textBoxType = {
+			name = "china_war_banner_right"
+			font = "jap_font1"
+			fontSize = 26
+			alignment = "left"
+			color = { 0.30 0.84 0.85 }
+			localizationKey = "WARMAP_BANNER_RIGHT"
+			position = { x = 860 y = 34 }
+			size = { x = 400 y = 48 }
+			visibleWhen = "state.visible && state.active && state.viewertag != JAP"
+			zOrder = 1000100
+		}
+
+		textBoxType = {
+			name = "japan_war_banner_title"
+			font = "jap_font1"
+			fontSize = 44
+			alignment = "center"
+			color = { 0.34 0.90 0.90 }
+			localizationKey = "WARMAP_BANNER_JAPAN"
+			position = { x = 400 y = 12 }
+			size = { x = 480 y = 76 }
+			visibleWhen = "state.visible && state.active && state.viewertag == JAP"
+			zOrder = 1000100
+		}
+
+		textBoxType = {
+			name = "legend_title"
+			font = "jap_font1"
+			fontSize = 18
+			alignment = "center"
+			color = { 0.30 0.84 0.85 }
+			localizationKey = "WARMAP_LEGEND"
+			position = { x = 340 y = 129 }
+			size = { x = 20 y = 41 }
+			wrap = yes
+			lineSpacing = 5
+			visibleWhen = "state.visible"
+		}
+
+		textBoxType = {
+			name = "legend_combat_zone"
+			font = "jap_font1"
+			fontSize = 16
+			color = { 0.30 0.84 0.85 }
+			localizationKey = "WARMAP_COMBAT_ZONE"
+			position = { x = 98 y = 104 }
+			size = { x = 220 y = 20 }
+			visibleWhen = "state.visible"
+		}
+
+		textBoxType = {
+			name = "legend_partial_loss"
+			font = "jap_font1"
+			fontSize = 16
+			color = { 0.30 0.84 0.85 }
+			localizationKey = "WARMAP_PARTIAL_LOSS"
+			position = { x = 98 y = 133 }
+			size = { x = 180 y = 20 }
+			visibleWhen = "state.visible && state.viewertag != JAP"
+		}
+
+		textBoxType = {
+			name = "legend_basic_loss"
+			font = "jap_font1"
+			fontSize = 16
+			color = { 0.30 0.84 0.85 }
+			localizationKey = "WARMAP_BASIC_LOSS"
+			position = { x = 98 y = 162 }
+			size = { x = 180 y = 20 }
+			visibleWhen = "state.visible && state.viewertag != JAP"
+		}
+
+		textBoxType = {
+			name = "legend_total_loss"
+			font = "jap_font1"
+			fontSize = 16
+			color = { 0.30 0.84 0.85 }
+			localizationKey = "WARMAP_TOTAL_LOSS"
+			position = { x = 98 y = 191 }
+			size = { x = 180 y = 20 }
+			visibleWhen = "state.visible && state.viewertag != JAP"
+		}
+
+		textBoxType = {
+			name = "legend_initial_occupation"
+			font = "jap_font1"
+			fontSize = 16
+			color = { 0.30 0.84 0.85 }
+			localizationKey = "WARMAP_INITIAL_OCCUPATION"
+			position = { x = 98 y = 133 }
+			size = { x = 180 y = 20 }
+			visibleWhen = "state.visible && state.viewertag == JAP"
+		}
+
+		textBoxType = {
+			name = "legend_basic_occupation"
+			font = "jap_font1"
+			fontSize = 16
+			color = { 0.30 0.84 0.85 }
+			localizationKey = "WARMAP_BASIC_OCCUPATION"
+			position = { x = 98 y = 162 }
+			size = { x = 180 y = 20 }
+			visibleWhen = "state.visible && state.viewertag == JAP"
+		}
+
+		textBoxType = {
+			name = "legend_total_occupation"
+			font = "jap_font1"
+			fontSize = 16
+			color = { 0.30 0.84 0.85 }
+			localizationKey = "WARMAP_TOTAL_OCCUPATION"
+			position = { x = 98 y = 191 }
+			size = { x = 180 y = 20 }
+			visibleWhen = "state.visible && state.viewertag == JAP"
+		}
+
+		textBoxType = {
+			name = "war_progress_title"
+			font = "jap_font1"
+			fontSize = 22
+			alignment = "center"
+			color = { 0.30 0.84 0.85 }
+			localizationKey = "WARMAP_WAR_PROGRESS"
+			position = { x = 40 y = 245 }
+			size = { x = 320 y = 44 }
+			visibleWhen = "state.visible && state.active"
+		}
+
+		textBoxType = {
+			name = "combat_region_header"
+			font = "jap_font1"
+			fontSize = 18
+			alignment = "center"
+			color = { 0.30 0.84 0.85 }
+			localizationKey = "WARMAP_COMBAT_ZONE"
+			position = { x = 40 y = 333 }
+			size = { x = 320 y = 32 }
+			visibleWhen = "state.visible && state.active"
+		}
+
+		textBoxType = {
+			name = "selected_region_name"
+			font = "pixel_china"
+			fontSize = 20
+			alignment = "center"
+			color = { 0.0 0.0 0.0 }
+			textSource = "regions.{selectedregion.id}.name"
+			position = { x = 1280 y = 45 }
+			size = { x = 320 y = 26 }
+			visibleWhen = "state.visible && state.active && selectedregion.id != 0"
+		}
+
+		textBoxType = {
+			name = "selected_region_capital"
+			font = "pixel_china"
+			fontSize = 16
+			color = { 0.0 0.0 0.0 }
+			textSource = "regions.{selectedregion.id}.capital"
+			position = { x = 1305 y = 140 }
+			size = { x = 280 y = 20 }
+			visibleWhen = "state.visible && state.active && selectedregion.id != 0"
+		}
+
+		textBoxType = {
+			name = "selected_region_total_population"
+			font = "pixel_china"
+			fontSize = 16
+			color = { 0.0 0.0 0.0 }
+			textSource = "regions.{selectedregion.id}.totalPopulation"
+			position = { x = 1305 y = 176 }
+			size = { x = 280 y = 20 }
+			visibleWhen = "state.visible && state.active && selectedregion.id != 0"
+		}
+
+		textBoxType = {
+			name = "selected_region_affected_population"
+			font = "pixel_china"
+			fontSize = 16
+			color = { 0.0 0.0 0.0 }
+			textSource = "regions.{selectedregion.id}.affectedPopulation"
+			position = { x = 1305 y = 212 }
+			size = { x = 280 y = 20 }
+			visibleWhen = "state.visible && state.active && selectedregion.id != 0"
+		}
+
+		textBoxType = {
+			name = "selected_region_controlled_percentage"
+			font = "pixel_china"
+			fontSize = 16
+			color = { 0.0 0.0 0.0 }
+			textSource = "regions.{selectedregion.id}.controlledPercentageText"
+			position = { x = 1305 y = 248 }
+			size = { x = 280 y = 20 }
+			visibleWhen = "state.visible && state.active && selectedregion.id != 0"
+		}
+
+		textBoxType = {
+			name = "selected_region_remaining_population"
+			font = "pixel_china"
+			fontSize = 16
+			color = { 0.0 0.0 0.0 }
+			textSource = "regions.{selectedregion.id}.remainingPopulation"
+			position = { x = 1305 y = 284 }
+			size = { x = 280 y = 20 }
+			visibleWhen = "state.visible && state.active && selectedregion.id != 0"
+		}
+
+		listboxType = {
+			name = "combat_region_list"
+			position = { x = 54 y = 369 }
+			size = { x = 280 y = 190 }
+			itemTemplate = "combat_region_button"
+			scrollbarType = "combat_region_scrollbar"
+			spacing = 6
+			columnSpacing = 8
+		}
+
+		textBoxType = {
+			name = "leader_appointment_header"
+			font = "jap_font1"
+			fontSize = 17
+			alignment = "center"
+			color = { 0.30 0.84 0.85 }
+			localizationKey = "WARMAP_APPOINTABLE_LEADERS"
+			position = { x = 40 y = 574 }
+			size = { x = 320 y = 28 }
+			visibleWhen = "state.visible && state.active && selectedregion.id != 0 && selectedregion.source == combat && regions.{selectedregion.id}.combatappointmenteligible || state.visible && state.active && selectedregion.id != 0 && selectedregion.source == map && regions.{selectedregion.id}.mapappointmenteligible"
+		}
+
+		listBoxType = {
+			name = "leader_candidate_list"
+			position = { x = 44 y = 608 }
+			size = { x = 300 y = 117 }
+			itemTemplate = "leader_candidate_button"
+			scrollbarType = "leader_candidate_scrollbar"
+			disableItemsInList = "assigned_leader_list"
+			disableMatchingField = "leadertype"
+			disableFilterField = "regionid"
+			disableFilterValueSource = "selectedregion.id"
+			spacing = 4
+			visibleWhen = "state.visible && state.active && selectedregion.id != 0 && selectedregion.source == combat && regions.{selectedregion.id}.combatappointmenteligible || state.visible && state.active && selectedregion.id != 0 && selectedregion.source == map && regions.{selectedregion.id}.mapappointmenteligible"
+		}
+
+		scrollbarType = {
+			name = "leader_candidate_scrollbar"
+			position = { x = 348 y = 608 }
+			size = { x = 8 y = 117 }
+			slider = "combat_region_scroll_thumb"
+			track = "combat_region_scroll_track"
+		}
+
+		guiButtonType = {
+			name = "leader_candidate_button"
+			spriteSource = "item.buttonsprite"
+			pressedSpriteSource = "item.buttonsprite"
+			onClick = "assign_war_map_leader"
+			enabledWhen = "state.visible && state.active && selectedregion.id != 0"
+			position = { x = 0 y = 0 }
+			size = { x = 300 y = 50 }
+
+			iconType = {
+				name = "leader_candidate_portrait"
+				spriteSource = "item.portrait"
+				position = { x = 6 y = 3 }
+				size = { x = 34 y = 43 }
+			}
+
+			textBoxType = {
+				name = "leader_candidate_name"
+				textSource = "item.textkey"
+				localized = yes
+				font = "pixel_china"
+				fontSize = 15
+				alignment = "center"
+				color = { 0.30 0.84 0.85 }
+				position = { x = 48 y = 0 }
+				size = { x = 205 y = 50 }
+			}
+		}
+
+		scrollbarType = {
+			name = "combat_region_scrollbar"
+			position = { x = 340 y = 369 }
+			size = { x = 8 y = 190 }
+			slider = "combat_region_scroll_thumb"
+			track = "combat_region_scroll_track"
+		}
+
+			guiButtonType = {
+				name = "combat_region_button"
+				quadTextureSprite = "GFX_china_war_combat_button_normal"
+				pressedTextureSprite = "GFX_china_war_combat_button_pressed"
+				onClick = "select_combat_region"
+				enabledWhen = "state.visible && state.active"
+				font = "pixel_china"
+				fontSize = 14
+				alignment = "center"
+				color = { 0.30 0.84 0.85 }
+				position = { x = 0 y = 0 }
+			size = { x = 136 y = 30 }
+		}
+
+	}
+}

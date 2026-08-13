@@ -1,0 +1,273 @@
+guiTypes = {
+	windowType = {
+		name = "parliament_window"
+		position = { x = 0 y = 0 }
+		size = { x = 450 y = 320 }
+		moveable = yes
+		dragHeight = 32
+		fullScreen = no
+
+		colorBoxType = {
+			name = "parliament_window_background"
+			color = { 0.075 0.082 0.082 }
+			position = { x = 0 y = 0 }
+			size = { x = 450 y = 320 }
+			zOrder = -100
+		}
+
+		iconType = {
+			name = "parliament_background"
+			spriteType = "GFX_parliament_background"
+			visibleWhen = "state.visible && state.active"
+			position = { x = 0 y = 0 }
+			size = { x = 450 y = 250 }
+			zOrder = 0
+		}
+
+		listBoxType = {
+			name = "parliament_seat_list"
+			position = { x = 0 y = 0 }
+			size = { x = 450 y = 210 }
+			itemTemplate = "parliament_seat_button"
+			layout = "polar"
+			polarCenter = { x = 225 y = 195 }
+			polarInnerRadius = 58
+			polarOuterRadius = 133
+			polarRingSpacing = 15
+			polarStartAngle = 184.3
+			polarEndAngle = 355.7
+			polarRingItemCounts = { 12 16 19 22 24 27 }
+			visibleWhen = "state.visible && state.active"
+			zOrder = 10
+		}
+
+		guiButtonType = {
+			name = "parliament_seat_button"
+			spriteSource = "scenarios.{parliament.scenario}.seats.{id}"
+			spriteValuePrefix = "GFX_parliament_party_"
+			onClick = "select_parliament_seat"
+			position = { x = 0 y = 0 }
+			size = { x = 9 y = 9 }
+			zOrder = 10
+		}
+
+		textBoxType = {
+			name = "parliament_title"
+			localizationKey = "PARLIAMENT_TITLE"
+			font = "pixel_china"
+			fontSize = 24
+			alignment = "center"
+			color = { 0.78 0.89 0.88 }
+			position = { x = 100 y = 10 }
+			size = { x = 250 y = 32 }
+			zOrder = 20
+		}
+
+		textBoxType = {
+			name = "parliament_selected_seat_label"
+			localizationKey = "PARLIAMENT_SELECTED_SEAT"
+			font = "pixel_china"
+			fontSize = 12
+			alignment = "right"
+			color = { 0.66 0.75 0.74 }
+			position = { x = 328 y = 14 }
+			size = { x = 82 y = 18 }
+			visibleWhen = "parliament.selectedseat != 0"
+			zOrder = 20
+		}
+
+		textBoxType = {
+			name = "parliament_selected_seat_value"
+			textSource = "parliament.selectedseat"
+			font = "pixel_china"
+			fontSize = 12
+			alignment = "center"
+			color = { 0.92 0.94 0.82 }
+			position = { x = 410 y = 14 }
+			size = { x = 28 y = 18 }
+			visibleWhen = "parliament.selectedseat != 0"
+			zOrder = 20
+		}
+
+		iconType = {
+			name = "parliament_party_green_icon"
+			spriteType = "GFX_parliament_party_green"
+			position = { x = 16 y = 220 }
+			size = { x = 9 y = 9 }
+			zOrder = 20
+		}
+
+		textBoxType = {
+			name = "parliament_party_green_name"
+			localizationKey = "PARLIAMENT_PARTY_GREEN"
+			font = "pixel_china"
+			fontSize = 13
+			color = { 0.72 0.86 0.75 }
+			position = { x = 30 y = 214 }
+			size = { x = 48 y = 22 }
+			zOrder = 20
+		}
+
+		textBoxType = {
+			name = "parliament_party_green_seats"
+			textSource = "scenarios.{parliament.scenario}.party1"
+			font = "pixel_china"
+			fontSize = 13
+			alignment = "right"
+			color = { 0.82 0.94 0.84 }
+			position = { x = 76 y = 214 }
+			size = { x = 27 y = 22 }
+			zOrder = 20
+		}
+
+		iconType = {
+			name = "parliament_party_red_icon"
+			spriteType = "GFX_parliament_party_red"
+			position = { x = 118 y = 220 }
+			size = { x = 9 y = 9 }
+			zOrder = 20
+		}
+
+		textBoxType = {
+			name = "parliament_party_red_name"
+			localizationKey = "PARLIAMENT_PARTY_RED"
+			font = "pixel_china"
+			fontSize = 13
+			color = { 0.94 0.73 0.71 }
+			position = { x = 132 y = 214 }
+			size = { x = 48 y = 22 }
+			zOrder = 20
+		}
+
+		textBoxType = {
+			name = "parliament_party_red_seats"
+			textSource = "scenarios.{parliament.scenario}.party2"
+			font = "pixel_china"
+			fontSize = 13
+			alignment = "right"
+			color = { 1.0 0.82 0.80 }
+			position = { x = 178 y = 214 }
+			size = { x = 27 y = 22 }
+			zOrder = 20
+		}
+
+		iconType = {
+			name = "parliament_party_blue_icon"
+			spriteType = "GFX_parliament_party_blue"
+			position = { x = 220 y = 220 }
+			size = { x = 9 y = 9 }
+			zOrder = 20
+		}
+
+		textBoxType = {
+			name = "parliament_party_blue_name"
+			localizationKey = "PARLIAMENT_PARTY_BLUE"
+			font = "pixel_china"
+			fontSize = 13
+			color = { 0.70 0.82 1.0 }
+			position = { x = 234 y = 214 }
+			size = { x = 48 y = 22 }
+			zOrder = 20
+		}
+
+		textBoxType = {
+			name = "parliament_party_blue_seats"
+			textSource = "scenarios.{parliament.scenario}.party3"
+			font = "pixel_china"
+			fontSize = 13
+			alignment = "right"
+			color = { 0.80 0.88 1.0 }
+			position = { x = 280 y = 214 }
+			size = { x = 27 y = 22 }
+			zOrder = 20
+		}
+
+		iconType = {
+			name = "parliament_party_yellow_icon"
+			spriteType = "GFX_parliament_party_yellow"
+			position = { x = 322 y = 220 }
+			size = { x = 9 y = 9 }
+			zOrder = 20
+		}
+
+		textBoxType = {
+			name = "parliament_party_yellow_name"
+			localizationKey = "PARLIAMENT_PARTY_YELLOW"
+			font = "pixel_china"
+			fontSize = 13
+			color = { 0.96 0.88 0.66 }
+			position = { x = 336 y = 214 }
+			size = { x = 48 y = 22 }
+			zOrder = 20
+		}
+
+		textBoxType = {
+			name = "parliament_party_yellow_seats"
+			textSource = "scenarios.{parliament.scenario}.party4"
+			font = "pixel_china"
+			fontSize = 13
+			alignment = "right"
+			color = { 1.0 0.94 0.75 }
+			position = { x = 382 y = 214 }
+			size = { x = 27 y = 22 }
+			zOrder = 20
+		}
+
+		colorBoxType = {
+			name = "parliament_slider_track"
+			color = { 0.36 0.45 0.44 }
+			position = { x = 89 y = 279 }
+			size = { x = 272 y = 2 }
+			zOrder = 10
+		}
+
+		iconType = {
+			name = "parliament_slider_bounds"
+			spriteType = "GFX_parliament_transparent"
+			position = { x = 85 y = 275 }
+			size = { x = 281 y = 9 }
+			zOrder = 9
+		}
+
+		iconType = {
+			name = "parliament_slider_cursor"
+			spriteType = "GFX_parliament_slider_cursor"
+			position = { x = 85 y = 275 }
+			size = { x = 9 y = 9 }
+			draggable = yes
+			dragAxis = "horizontal"
+			dragTrack = "parliament_slider_bounds"
+			dragValueSource = "parliament.slider"
+			dragMinimum = 1
+			dragMaximum = 9
+			dragSteps = 9
+			onDrag = "drag_parliament_scenario"
+			zOrder = 40
+		}
+
+		textBoxType = {
+			name = "parliament_scenario_label"
+			localizationKey = "PARLIAMENT_SCENARIO_LABEL"
+			font = "pixel_china"
+			fontSize = 13
+			alignment = "right"
+			color = { 0.55 0.66 0.65 }
+			position = { x = 18 y = 296 }
+			size = { x = 96 y = 20 }
+			zOrder = 20
+		}
+
+		textBoxType = {
+			name = "parliament_scenario_name"
+			textSource = "scenarios.{parliament.scenario}.namekey"
+			localized = yes
+			font = "pixel_china"
+			fontSize = 13
+			alignment = "left"
+			color = { 0.78 0.86 0.84 }
+			position = { x = 122 y = 296 }
+			size = { x = 306 y = 20 }
+			zOrder = 20
+		}
+	}
+}

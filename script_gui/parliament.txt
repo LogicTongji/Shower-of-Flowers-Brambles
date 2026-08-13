@@ -1,0 +1,22 @@
+guiBehaviors = {
+	behavior = {
+		name = "drag_parliament_scenario"
+		function = "drag_parliament_scenario"
+		phases = { drag }
+		enabledWhen = "state.visible && state.active"
+		fallback = "set_drag_value"
+		target = "parliament.slider"
+		stepTarget = "parliament.scenario"
+		persist = yes
+	}
+
+	behavior = {
+		name = "select_parliament_seat"
+		function = "select_parliament_seat"
+		phases = { click }
+		enabledWhen = "state.visible && state.active"
+		fallback = "select_item"
+		target = "parliament.selectedseat"
+		persist = yes
+	}
+}

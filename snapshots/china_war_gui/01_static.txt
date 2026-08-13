@@ -1,0 +1,291 @@
+guiData = {
+	state.visible = yes
+	state.active = yes
+	state.viewertag = "CHI"
+	state.date = 1
+	warProgress.known = yes
+	warProgress.own = 0.62
+	warProgress.enemy = 0.38
+
+	regions.1.controlledPercentage = 15.0
+	regions.1.combatMilitaryEligible = yes
+	regions.1.combatAdministrativeEligible = yes
+	regions.1.combatAppointmentEligible = yes
+	regions.1.affectedPopulation = "沦陷人口：333.1 万"
+	regions.1.controlledPercentageText = "沦陷程度：15.0%"
+	regions.1.remainingPopulation = "剩余人口：2912.2 万"
+
+	regions.2.controlledPercentage = 65.0
+	regions.2.combatMilitaryEligible = yes
+	regions.2.combatAdministrativeEligible = yes
+	regions.2.combatAppointmentEligible = yes
+	regions.2.affectedPopulation = "沦陷人口：691.8 万"
+	regions.2.controlledPercentageText = "沦陷程度：65.0%"
+	regions.2.remainingPopulation = "剩余人口：468.3 万"
+
+	regions.3.controlledPercentage = 0.0
+	regions.3.affectedPopulation = "沦陷人口：0"
+	regions.3.controlledPercentageText = "沦陷程度：0.0%"
+	regions.3.remainingPopulation = "剩余人口：1204.2 万"
+
+	regions.4.controlledPercentage = 0.0
+	regions.4.affectedPopulation = "沦陷人口：0"
+	regions.4.controlledPercentageText = "沦陷程度：0.0%"
+	regions.4.remainingPopulation = "剩余人口：1338.5 万"
+
+	regions.5.controlledPercentage = 0.0
+	regions.5.affectedPopulation = "沦陷人口：0"
+	regions.5.controlledPercentageText = "沦陷程度：0.0%"
+	regions.5.remainingPopulation = "剩余人口：165.1 万"
+
+	regions.6.controlledPercentage = 0.0
+	regions.6.affectedPopulation = "沦陷人口：0"
+	regions.6.controlledPercentageText = "沦陷程度：0.0%"
+	regions.6.remainingPopulation = "剩余人口：97.8 万"
+
+	regions.7.controlledPercentage = 0.0
+	regions.7.affectedPopulation = "沦陷人口：0"
+	regions.7.controlledPercentageText = "沦陷程度：0.0%"
+	regions.7.remainingPopulation = "剩余人口：671.6 万"
+
+	regions.8.controlledPercentage = 0.0
+	regions.8.affectedPopulation = "沦陷人口：0"
+	regions.8.controlledPercentageText = "沦陷程度：0.0%"
+	regions.8.remainingPopulation = "剩余人口：119.6 万"
+
+	regions.9.controlledPercentage = 95.0
+	regions.9.affectedPopulation = "沦陷人口：191.4 万"
+	regions.9.controlledPercentageText = "沦陷程度：95.0%"
+	regions.9.remainingPopulation = "剩余人口：12.2 万"
+
+	regions.10.controlledPercentage = 5.0
+	regions.10.combatMilitaryEligible = yes
+	regions.10.combatAdministrativeEligible = yes
+	regions.10.combatAppointmentEligible = yes
+	regions.10.affectedPopulation = "沦陷人口：5.7 万"
+	regions.10.controlledPercentageText = "沦陷程度：5.0%"
+	regions.10.remainingPopulation = "剩余人口：202.7 万"
+
+	regions.11.controlledPercentage = 0.0
+	regions.11.affectedPopulation = "沦陷人口：0"
+	regions.11.controlledPercentageText = "沦陷程度：0.0%"
+	regions.11.remainingPopulation = "剩余人口：5367.4 万"
+
+	regions.12.controlledPercentage = 0.0
+	regions.12.affectedPopulation = "沦陷人口：0"
+	regions.12.controlledPercentageText = "沦陷程度：0.0%"
+	regions.12.remainingPopulation = "剩余人口：991.9 万"
+
+	regions.13.controlledPercentage = 0.0
+	regions.13.affectedPopulation = "沦陷人口：0"
+	regions.13.controlledPercentageText = "沦陷程度：0.0%"
+	regions.13.remainingPopulation = "剩余人口：998.6 万"
+
+	regions.14.controlledPercentage = 95.0
+	regions.14.affectedPopulation = "沦陷人口：2953.5 万"
+	regions.14.controlledPercentageText = "沦陷程度：95.0%"
+	regions.14.remainingPopulation = "剩余人口：187.5 万"
+
+	regions.15.controlledPercentage = 0.0
+	regions.15.affectedPopulation = "沦陷人口：0"
+	regions.15.controlledPercentageText = "沦陷程度：0.0%"
+	regions.15.remainingPopulation = "剩余人口：300.0 万"
+
+	regions.16.controlledPercentage = 95.0
+	regions.16.affectedPopulation = "沦陷人口：3651.9 万"
+	regions.16.controlledPercentageText = "沦陷程度：95.0%"
+	regions.16.remainingPopulation = "剩余人口：231.8 万"
+
+	regions.17.controlledPercentage = 15.0
+	regions.17.combatMilitaryEligible = yes
+	regions.17.combatAdministrativeEligible = yes
+	regions.17.combatAppointmentEligible = yes
+	regions.17.affectedPopulation = "沦陷人口：120.7 万"
+	regions.17.controlledPercentageText = "沦陷程度：15.0%"
+	regions.17.remainingPopulation = "剩余人口：1054.9 万"
+
+	regions.18.controlledPercentage = 15.0
+	regions.18.combatMilitaryEligible = yes
+	regions.18.combatAdministrativeEligible = yes
+	regions.18.combatAppointmentEligible = yes
+	regions.18.affectedPopulation = "沦陷人口：290.4 万"
+	regions.18.controlledPercentageText = "沦陷程度：15.0%"
+	regions.18.remainingPopulation = "剩余人口：2539.0 万"
+
+	regions.19.controlledPercentage = 95.0
+	regions.19.affectedPopulation = "沦陷人口：3875.5 万"
+	regions.19.controlledPercentageText = "沦陷程度：95.0%"
+	regions.19.remainingPopulation = "剩余人口：246.0 万"
+
+	regions.20.controlledPercentage = 35.0
+	regions.20.combatMilitaryEligible = yes
+	regions.20.combatAdministrativeEligible = yes
+	regions.20.combatAppointmentEligible = yes
+	regions.20.affectedPopulation = "沦陷人口：448.4 万"
+	regions.20.controlledPercentageText = "沦陷程度：35.0%"
+	regions.20.remainingPopulation = "剩余人口：1132.1 万"
+
+	regions.21.controlledPercentage = 15.0
+	regions.21.combatMilitaryEligible = yes
+	regions.21.combatAdministrativeEligible = yes
+	regions.21.combatAppointmentEligible = yes
+	regions.21.affectedPopulation = "沦陷人口：218.0 万"
+	regions.21.controlledPercentageText = "沦陷程度：15.0%"
+	regions.21.remainingPopulation = "剩余人口：1906.0 万"
+
+	regions.22.controlledPercentage = 95.0
+	regions.22.affectedPopulation = "沦陷人口：2196.0 万"
+	regions.22.controlledPercentageText = "沦陷程度：95.0%"
+	regions.22.remainingPopulation = "剩余人口：139.4 万"
+
+	regions.23.controlledPercentage = 10.0
+	regions.23.combatMilitaryEligible = yes
+	regions.23.combatAdministrativeEligible = yes
+	regions.23.combatAppointmentEligible = yes
+	regions.23.affectedPopulation = "沦陷人口：216.4 万"
+	regions.23.controlledPercentageText = "沦陷程度：10.0%"
+	regions.23.remainingPopulation = "剩余人口：3212.6 万"
+
+	regions.24.controlledPercentage = 85.0
+	regions.24.combatMilitaryEligible = yes
+	regions.24.combatAdministrativeEligible = yes
+	regions.24.combatAppointmentEligible = yes
+	regions.24.affectedPopulation = "沦陷人口：2099.5 万"
+	regions.24.controlledPercentageText = "沦陷程度：85.0%"
+	regions.24.remainingPopulation = "剩余人口：452.1 万"
+
+	regions.25.controlledPercentage = 95.0
+	regions.25.affectedPopulation = "沦陷人口：199.5 万"
+	regions.25.controlledPercentageText = "沦陷程度：95.0%"
+	regions.25.remainingPopulation = "剩余人口：12.7 万"
+
+	regions.26.controlledPercentage = 95.0
+	regions.26.affectedPopulation = "沦陷人口：205.5 万"
+	regions.26.controlledPercentageText = "沦陷程度：95.0%"
+	regions.26.remainingPopulation = "剩余人口：13.0 万"
+
+	regions.27.controlledPercentage = 95.0
+	regions.27.affectedPopulation = "沦陷人口：711.3 万"
+	regions.27.controlledPercentageText = "沦陷程度：95.0%"
+	regions.27.remainingPopulation = "剩余人口：45.2 万"
+
+	regions.28.controlledPercentage = 95.0
+	regions.28.affectedPopulation = "沦陷人口：282.6 万"
+	regions.28.controlledPercentageText = "沦陷程度：95.0%"
+	regions.28.remainingPopulation = "剩余人口：17.9 万"
+
+	regions.29.controlledPercentage = 95.0
+	regions.29.affectedPopulation = "沦陷人口：209.8 万"
+	regions.29.controlledPercentageText = "沦陷程度：95.0%"
+	regions.29.remainingPopulation = "剩余人口：13.3 万"
+
+	regions.30.controlledPercentage = 95.0
+	regions.30.affectedPopulation = "沦陷人口：63.9 万"
+	regions.30.controlledPercentageText = "沦陷程度：95.0%"
+	regions.30.remainingPopulation = "剩余人口：4.1 万"
+
+	regions.31.controlledPercentage = 95.0
+	regions.31.affectedPopulation = "沦陷人口：14.0 万"
+	regions.31.controlledPercentageText = "沦陷程度：95.0%"
+	regions.31.remainingPopulation = "剩余人口：8895"
+
+	regions.32.controlledPercentage = 95.0
+	regions.32.affectedPopulation = "沦陷人口：196.8 万"
+	regions.32.controlledPercentageText = "沦陷程度：95.0%"
+	regions.32.remainingPopulation = "剩余人口：12.5 万"
+
+	regions.33.controlledPercentage = 95.0
+	regions.33.affectedPopulation = "沦陷人口：64.7 万"
+	regions.33.controlledPercentageText = "沦陷程度：95.0%"
+	regions.33.remainingPopulation = "剩余人口：4.1 万"
+
+	regions.34.controlledPercentage = 95.0
+	regions.34.affectedPopulation = "沦陷人口：79.7 万"
+	regions.34.controlledPercentageText = "沦陷程度：95.0%"
+	regions.34.remainingPopulation = "剩余人口：5.1 万"
+
+	regions.35.controlledPercentage = 95.0
+	regions.35.affectedPopulation = "沦陷人口：527.3 万"
+	regions.35.controlledPercentageText = "沦陷程度：95.0%"
+	regions.35.remainingPopulation = "剩余人口：33.5 万"
+
+	regions.36.controlledPercentage = 0.0
+	regions.36.affectedPopulation = "沦陷人口：0"
+	regions.36.controlledPercentageText = "沦陷程度：0.0%"
+	regions.36.remainingPopulation = "剩余人口：436.0 万"
+
+	regions.37.controlledPercentage = 0.0
+	regions.37.affectedPopulation = "沦陷人口：0"
+	regions.37.controlledPercentageText = "沦陷程度：0.0%"
+	regions.37.remainingPopulation = "剩余人口：110.0 万"
+
+	regions.38.controlledPercentage = 0.0
+	regions.38.affectedPopulation = "沦陷人口：0"
+	regions.38.controlledPercentageText = "沦陷程度：0.0%"
+	regions.38.remainingPopulation = "剩余人口：529.1 万"
+
+	regions.39.controlledPercentage = 0.0
+	regions.39.affectedPopulation = "沦陷人口：0"
+	regions.39.controlledPercentageText = "沦陷程度：0.0%"
+	regions.39.remainingPopulation = "剩余人口：61.6 万"
+
+	regions.40.controlledPercentage = 95.0
+	regions.40.affectedPopulation = "沦陷人口：282.1 万"
+	regions.40.controlledPercentageText = "沦陷程度：95.0%"
+	regions.40.remainingPopulation = "剩余人口：17.9 万"
+
+	regions.41.controlledPercentage = 0.0
+	regions.41.affectedPopulation = "沦陷人口：0"
+	regions.41.controlledPercentageText = "沦陷程度：0.0%"
+	regions.41.remainingPopulation = "剩余人口：80.0 万"
+
+	list = {
+		name = "combat_region_list"
+		revision = 1
+
+		item = {
+			id = 1
+			text = "广东省"
+		}
+
+		item = {
+			id = 2
+			text = "山西省"
+		}
+
+		item = {
+			id = 10
+			text = "绥远省"
+		}
+
+		item = {
+			id = 17
+			text = "福建省"
+		}
+
+		item = {
+			id = 18
+			text = "湖南省"
+		}
+
+		item = {
+			id = 20
+			text = "江西省"
+		}
+
+		item = {
+			id = 21
+			text = "浙江省"
+		}
+
+		item = {
+			id = 23
+			text = "河南省"
+		}
+
+		item = {
+			id = 24
+			text = "湖北省"
+		}
+	}
+}

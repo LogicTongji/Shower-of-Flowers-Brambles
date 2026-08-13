@@ -1,0 +1,17 @@
+guiPlugins = {
+	guiPlugin = {
+		id = "china_anti_jap"
+		displayName = "China Anti-Japanese War Map"
+		factory = "declarative_gui"
+		startup = yes
+		visibleWhen = "state.visible && state.active"
+		options = {
+			window = "china_anti_jap"
+			title = "China War Map"
+			data_provider = "sequence"
+			data = "snapshots/china_war_gui/01_static.txt"
+			base_data = "script_gui/data/china_anti_jap_common.txt"
+			tick_interval = 100
+		}
+	}
+}

@@ -1,0 +1,220 @@
+guiData = {
+	state.visible = no
+	state.active = no
+	state.viewertag = "CHI"
+	state.date = 3100
+	warProgress.known = no
+	warProgress.own = 0
+	warProgress.enemy = 0
+
+	regions.1.controlledPercentage = 0.0
+	regions.1.affectedPopulation = "沦陷人口：0"
+	regions.1.controlledPercentageText = "沦陷程度：0.0%"
+	regions.1.remainingPopulation = "剩余人口：3245.3 万"
+
+	regions.2.controlledPercentage = 0.0
+	regions.2.affectedPopulation = "沦陷人口：0"
+	regions.2.controlledPercentageText = "沦陷程度：0.0%"
+	regions.2.remainingPopulation = "剩余人口：1160.1 万"
+
+	regions.3.controlledPercentage = 0.0
+	regions.3.affectedPopulation = "沦陷人口：0"
+	regions.3.controlledPercentageText = "沦陷程度：0.0%"
+	regions.3.remainingPopulation = "剩余人口：1204.2 万"
+
+	regions.4.controlledPercentage = 0.0
+	regions.4.affectedPopulation = "沦陷人口：0"
+	regions.4.controlledPercentageText = "沦陷程度：0.0%"
+	regions.4.remainingPopulation = "剩余人口：1338.5 万"
+
+	regions.5.controlledPercentage = 0.0
+	regions.5.affectedPopulation = "沦陷人口：0"
+	regions.5.controlledPercentageText = "沦陷程度：0.0%"
+	regions.5.remainingPopulation = "剩余人口：165.1 万"
+
+	regions.6.controlledPercentage = 0.0
+	regions.6.affectedPopulation = "沦陷人口：0"
+	regions.6.controlledPercentageText = "沦陷程度：0.0%"
+	regions.6.remainingPopulation = "剩余人口：97.8 万"
+
+	regions.7.controlledPercentage = 0.0
+	regions.7.affectedPopulation = "沦陷人口：0"
+	regions.7.controlledPercentageText = "沦陷程度：0.0%"
+	regions.7.remainingPopulation = "剩余人口：671.6 万"
+
+	regions.8.controlledPercentage = 0.0
+	regions.8.affectedPopulation = "沦陷人口：0"
+	regions.8.controlledPercentageText = "沦陷程度：0.0%"
+	regions.8.remainingPopulation = "剩余人口：119.6 万"
+
+	regions.9.controlledPercentage = 0.0
+	regions.9.affectedPopulation = "沦陷人口：0"
+	regions.9.controlledPercentageText = "沦陷程度：0.0%"
+	regions.9.remainingPopulation = "剩余人口：203.6 万"
+
+	regions.10.controlledPercentage = 0.0
+	regions.10.affectedPopulation = "沦陷人口：0"
+	regions.10.controlledPercentageText = "沦陷程度：0.0%"
+	regions.10.remainingPopulation = "剩余人口：208.4 万"
+
+	regions.11.controlledPercentage = 0.0
+	regions.11.affectedPopulation = "沦陷人口：0"
+	regions.11.controlledPercentageText = "沦陷程度：0.0%"
+	regions.11.remainingPopulation = "剩余人口：5367.4 万"
+
+	regions.12.controlledPercentage = 0.0
+	regions.12.affectedPopulation = "沦陷人口：0"
+	regions.12.controlledPercentageText = "沦陷程度：0.0%"
+	regions.12.remainingPopulation = "剩余人口：991.9 万"
+
+	regions.13.controlledPercentage = 0.0
+	regions.13.affectedPopulation = "沦陷人口：0"
+	regions.13.controlledPercentageText = "沦陷程度：0.0%"
+	regions.13.remainingPopulation = "剩余人口：998.6 万"
+
+	regions.14.controlledPercentage = 0.0
+	regions.14.affectedPopulation = "沦陷人口：0"
+	regions.14.controlledPercentageText = "沦陷程度：0.0%"
+	regions.14.remainingPopulation = "剩余人口：3141.0 万"
+
+	regions.15.controlledPercentage = 0.0
+	regions.15.affectedPopulation = "沦陷人口：0"
+	regions.15.controlledPercentageText = "沦陷程度：0.0%"
+	regions.15.remainingPopulation = "剩余人口：300.0 万"
+
+	regions.16.controlledPercentage = 0.0
+	regions.16.affectedPopulation = "沦陷人口：0"
+	regions.16.controlledPercentageText = "沦陷程度：0.0%"
+	regions.16.remainingPopulation = "剩余人口：3883.7 万"
+
+	regions.17.controlledPercentage = 0.0
+	regions.17.affectedPopulation = "沦陷人口：0"
+	regions.17.controlledPercentageText = "沦陷程度：0.0%"
+	regions.17.remainingPopulation = "剩余人口：1175.6 万"
+
+	regions.18.controlledPercentage = 0.0
+	regions.18.affectedPopulation = "沦陷人口：0"
+	regions.18.controlledPercentageText = "沦陷程度：0.0%"
+	regions.18.remainingPopulation = "剩余人口：2829.4 万"
+
+	regions.19.controlledPercentage = 0.0
+	regions.19.affectedPopulation = "沦陷人口：0"
+	regions.19.controlledPercentageText = "沦陷程度：0.0%"
+	regions.19.remainingPopulation = "剩余人口：4121.5 万"
+
+	regions.20.controlledPercentage = 0.0
+	regions.20.affectedPopulation = "沦陷人口：0"
+	regions.20.controlledPercentageText = "沦陷程度：0.0%"
+	regions.20.remainingPopulation = "剩余人口：1580.5 万"
+
+	regions.21.controlledPercentage = 0.0
+	regions.21.affectedPopulation = "沦陷人口：0"
+	regions.21.controlledPercentageText = "沦陷程度：0.0%"
+	regions.21.remainingPopulation = "剩余人口：2124.0 万"
+
+	regions.22.controlledPercentage = 0.0
+	regions.22.affectedPopulation = "沦陷人口：0"
+	regions.22.controlledPercentageText = "沦陷程度：0.0%"
+	regions.22.remainingPopulation = "剩余人口：2335.4 万"
+
+	regions.23.controlledPercentage = 0.0
+	regions.23.affectedPopulation = "沦陷人口：0"
+	regions.23.controlledPercentageText = "沦陷程度：0.0%"
+	regions.23.remainingPopulation = "剩余人口：3429.0 万"
+
+	regions.24.controlledPercentage = 0.0
+	regions.24.affectedPopulation = "沦陷人口：0"
+	regions.24.controlledPercentageText = "沦陷程度：0.0%"
+	regions.24.remainingPopulation = "剩余人口：2551.6 万"
+
+	regions.25.controlledPercentage = 0.0
+	regions.25.affectedPopulation = "沦陷人口：0"
+	regions.25.controlledPercentageText = "沦陷程度：0.0%"
+	regions.25.remainingPopulation = "剩余人口：212.2 万"
+
+	regions.26.controlledPercentage = 0.0
+	regions.26.affectedPopulation = "沦陷人口：0"
+	regions.26.controlledPercentageText = "沦陷程度：0.0%"
+	regions.26.remainingPopulation = "剩余人口：218.5 万"
+
+	regions.27.controlledPercentage = 0.0
+	regions.27.affectedPopulation = "沦陷人口：0"
+	regions.27.controlledPercentageText = "沦陷程度：0.0%"
+	regions.27.remainingPopulation = "剩余人口：756.5 万"
+
+	regions.28.controlledPercentage = 0.0
+	regions.28.affectedPopulation = "沦陷人口：0"
+	regions.28.controlledPercentageText = "沦陷程度：0.0%"
+	regions.28.remainingPopulation = "剩余人口：300.5 万"
+
+	regions.29.controlledPercentage = 0.0
+	regions.29.affectedPopulation = "沦陷人口：0"
+	regions.29.controlledPercentageText = "沦陷程度：0.0%"
+	regions.29.remainingPopulation = "剩余人口：223.1 万"
+
+	regions.30.controlledPercentage = 0.0
+	regions.30.affectedPopulation = "沦陷人口：0"
+	regions.30.controlledPercentageText = "沦陷程度：0.0%"
+	regions.30.remainingPopulation = "剩余人口：68.0 万"
+
+	regions.31.controlledPercentage = 0.0
+	regions.31.affectedPopulation = "沦陷人口：0"
+	regions.31.controlledPercentageText = "沦陷程度：0.0%"
+	regions.31.remainingPopulation = "剩余人口：14.9 万"
+
+	regions.32.controlledPercentage = 0.0
+	regions.32.affectedPopulation = "沦陷人口：0"
+	regions.32.controlledPercentageText = "沦陷程度：0.0%"
+	regions.32.remainingPopulation = "剩余人口：209.3 万"
+
+	regions.33.controlledPercentage = 0.0
+	regions.33.affectedPopulation = "沦陷人口：0"
+	regions.33.controlledPercentageText = "沦陷程度：0.0%"
+	regions.33.remainingPopulation = "剩余人口：68.8 万"
+
+	regions.34.controlledPercentage = 0.0
+	regions.34.affectedPopulation = "沦陷人口：0"
+	regions.34.controlledPercentageText = "沦陷程度：0.0%"
+	regions.34.remainingPopulation = "剩余人口：84.8 万"
+
+	regions.35.controlledPercentage = 0.0
+	regions.35.affectedPopulation = "沦陷人口：0"
+	regions.35.controlledPercentageText = "沦陷程度：0.0%"
+	regions.35.remainingPopulation = "剩余人口：560.8 万"
+
+	regions.36.controlledPercentage = 0.0
+	regions.36.affectedPopulation = "沦陷人口：0"
+	regions.36.controlledPercentageText = "沦陷程度：0.0%"
+	regions.36.remainingPopulation = "剩余人口：436.0 万"
+
+	regions.37.controlledPercentage = 0.0
+	regions.37.affectedPopulation = "沦陷人口：0"
+	regions.37.controlledPercentageText = "沦陷程度：0.0%"
+	regions.37.remainingPopulation = "剩余人口：110.0 万"
+
+	regions.38.controlledPercentage = 0.0
+	regions.38.affectedPopulation = "沦陷人口：0"
+	regions.38.controlledPercentageText = "沦陷程度：0.0%"
+	regions.38.remainingPopulation = "剩余人口：529.1 万"
+
+	regions.39.controlledPercentage = 0.0
+	regions.39.affectedPopulation = "沦陷人口：0"
+	regions.39.controlledPercentageText = "沦陷程度：0.0%"
+	regions.39.remainingPopulation = "剩余人口：61.6 万"
+
+	regions.40.controlledPercentage = 0.0
+	regions.40.affectedPopulation = "沦陷人口：0"
+	regions.40.controlledPercentageText = "沦陷程度：0.0%"
+	regions.40.remainingPopulation = "剩余人口：300.0 万"
+
+	regions.41.controlledPercentage = 0.0
+	regions.41.affectedPopulation = "沦陷人口：0"
+	regions.41.controlledPercentageText = "沦陷程度：0.0%"
+	regions.41.remainingPopulation = "剩余人口：80.0 万"
+
+	list = {
+		name = "combat_region_list"
+		revision = 3100
+	}
+}
+

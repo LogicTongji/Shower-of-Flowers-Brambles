@@ -131,7 +131,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=war_map_preview
+CMAKE_PROJECT_NAME:STATIC=scripted_gui_overlay
 
 //Value Computed by CMake
 CMAKE_PROJECT_SPDX_LICENSE:STATIC=
@@ -205,13 +205,13 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 SDL2_DIR:PATH=/opt/homebrew/lib/cmake/SDL2
 
 //Value Computed by CMake
-war_map_preview_BINARY_DIR:STATIC=/Users/mogichuang/Desktop/Shower of Flowers Brambles/overlay/build
+scripted_gui_overlay_BINARY_DIR:STATIC=/Users/mogichuang/Desktop/Shower of Flowers Brambles/overlay/build
 
 //Value Computed by CMake
-war_map_preview_IS_TOP_LEVEL:STATIC=ON
+scripted_gui_overlay_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-war_map_preview_SOURCE_DIR:STATIC=/Users/mogichuang/Desktop/Shower of Flowers Brambles/overlay
+scripted_gui_overlay_SOURCE_DIR:STATIC=/Users/mogichuang/Desktop/Shower of Flowers Brambles/overlay
 
 
 ########################

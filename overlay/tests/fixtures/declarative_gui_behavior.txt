@@ -1,0 +1,27 @@
+guiBehaviors = {
+	behavior = {
+		name = "toggle_visibility"
+		function = "toggle_visibility"
+		phases = { click }
+		fallback = "toggle_value"
+		target = "state.visible"
+	}
+
+	behavior = {
+		name = "increase_counter"
+		function = "increase_counter"
+		phases = { click }
+		fallback = "add_value"
+		target = "counter"
+		amount = 3
+	}
+
+	behavior = {
+		name = "rename_title"
+		function = "rename_title"
+		phases = { click }
+		fallback = "set_text"
+		target = "title"
+		value = "动作已执行"
+	}
+}
