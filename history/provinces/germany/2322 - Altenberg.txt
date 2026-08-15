@@ -1,0 +1,21 @@
+owner = GER
+controller = GER
+add_core = GER
+
+metal = 1.00
+energy = 2.00
+industry = 2
+infra = 9
+manpower = 1.00
+leadership = 0.10
+1945.6.7 = {
+	controller = SOV
+	owner = SOV
+	add_core = DDR
+	remove_core  = GER
+}
+
+1949.10.7 = {
+	controller = DDR
+	owner = DDR
+}

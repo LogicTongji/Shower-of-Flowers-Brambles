@@ -1,0 +1,139 @@
+######################
+#   国军会战事件组   #
+######################
+#江阴海战
+country_event = {
+	id = 1000067
+	title = "jiangyin"
+	subtitle = "jiangyin_subtitle"
+	desc = "jiangyin_desc"
+	picture = "jiangyin"
+	trigger = {
+		tag = CHI
+		war_with = JAP
+		not = { has_country_flag = jiangyin }
+		not = { CHI = { controls = 5599 } }
+		not = { has_global_flag = Event10000272 }
+		not = { year = 1938 }
+	}
+	mean_time_to_happen =  {
+		days = 1
+	}
+	option = {
+		name = "jiangyin_option"
+		set_country_flag = jiangyin
+		remove_brigade = "宁海"
+		remove_brigade = "海容"
+		remove_brigade = "海筹"
+		remove_brigade = "海圻"
+		remove_brigade = "第1运输大队"
+		remove_brigade = "应瑞"
+		remove_brigade = "肇和"
+		remove_brigade = "海琛"
+		remove_brigade = "通济"
+		remove_brigade = "第1驱逐舰大队"
+		remove_brigade = "第2驱逐舰大队"
+		ai_chance = { factor = 100 }
+	}
+}
+#淞沪会战
+country_event = {
+	id = 1000068
+	title = "songhu"
+	subtitle = "songhu_subtitle"
+	desc = "songhu_desc"
+	picture = "songhu"
+	trigger = {
+		tag = CHI
+		war_with = JAP
+		not = { has_country_flag = songhu }
+		not = { CHI = { controls = 5519 } }
+		not = { CHI = { controls = 5541 } }
+		not = { CHI = { controls = 5573 } }
+		not = { CHI = { controls = 5621 } }
+		not = { has_global_flag = Event10000272 }
+		not = { year = 1938 }
+	}
+	mean_time_to_happen =  {
+		days = 1
+	}
+	option = {
+		name = "CHI_Event_1000021_option"
+		set_country_flag = songhu
+		kill_leader = 50016
+		kill_leader = 50129
+		kill_leader = 50338
+		CGX = { kill_leader = 50292 }
+		kill_leader = 50331
+		9478 = { industry = 1 }
+		ai_chance = { factor = 100 }
+	}
+}
+#台儿庄会战
+country_event = {
+	id = 1000069
+	title = "taierzhuang"
+	subtitle = "taierzhuang_subtitle"
+	desc = "taierzhuang_desc"
+	picture = "taierzhuang"
+	trigger = {
+		tag = CHI
+		war_with = JAP
+		not = { has_country_flag = Taierzhuang }
+		not = { CHI = { controls = 5386 } }
+		not = { has_global_flag = Event10000272 }
+		year = 1936
+	}
+	mean_time_to_happen =  {
+		days = 1
+	}
+	option = {
+		name = "taierzhuang_option"
+		set_country_flag = Taierzhuang
+		CSC = { kill_leader = 50322 }
+		national_unity = 5
+		ai_chance = { factor = 100 }
+	}
+}
+#中条山会战
+country_event = {
+	id = 1000070
+	title = "zhongtiaoshan"
+	subtitle = "zhongtiaoshan_subtitle"
+	desc = "zhongtiaoshan_desc"
+	picture = "zhongtiaoshan"
+	trigger = {
+		tag = CHI
+		war_with = JAP
+		not = { has_country_flag = zhongtiaoshan }
+		not = { CSX = { controls = 5404 } }
+		not = { CHI = { controls = 7467 } }
+		not = { has_global_flag = Event10000272 }
+	}
+	mean_time_to_happen =  {
+		days = 1
+	}
+	option = {
+		name = "zhongtiaoshan_option"
+		set_country_flag = zhongtiaoshan
+		CYN = { kill_leader = 50320 }
+		CYN = { kill_leader = 50297 }
+		CDB = { kill_leader = 50336 }
+		kill_leader = 50192
+		kill_leader = 50038
+		JAP = { country_event = 1000071 }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000071
+	is_triggered_only = yes
+	title = "JAP_Event_1000071"
+	desc = "JAP_Event_1000071_desc"
+	picture = "zhongtiaoshan"
+	option = {
+		name = "Kanglian_4_option"
+		ai_chance = { factor = 100 }
+		set_country_flag = zhongtiaoshan_j
+	}
+}

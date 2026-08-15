@@ -1,0 +1,99 @@
+#####################
+#    北非决议组                 #
+#####################
+diplomatic_decisions = {
+     Africa_zero = {
+		potential = {
+			tag = ITA
+			year = 1936		
+			not = { has_country_flag = Itali_in_sea_in_land } 
+		}
+		allow = {
+		not = { year = 1938 }
+		}
+		effect = {
+			set_country_flag = Itali_in_sea_in_land	
+		  national_unity = 40
+			     }			
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	         Africa_second = {
+		potential = {
+			tag = ENG
+			not = { has_global_flag = England_in_africa } 
+		ITA = {
+			has_country_flag = Itali_in_sea_in_land 
+			has_country_flag = Itali_in_africa
+			}
+		}
+		allow = {	
+		  5611 = {
+				controller = {
+					faction = allies
+			}
+		}
+			5586 = {
+				controller = {
+					faction = allies
+			}
+		}
+			5608 = {
+				controller = {
+					faction = allies
+			}
+		}
+		OR = {
+		      war_with = GER
+		      war_with = ITA
+		      }
+		}
+		effect = {
+			set_global_flag = England_in_africa
+		 ENG = { load_oob = "Afiric_theth_army.txt" }
+			     }			
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	 Africa_third = {
+		potential = {
+			tag = GER
+			has_global_flag = England_in_africa
+			not = { has_global_flag = Germany_in_africa } 
+		ITA = {
+			has_country_flag = Itali_in_sea_in_land 
+			has_country_flag = Itali_in_africa
+			}
+		}
+		allow = {
+		5611 = {
+				controller = {
+					faction = allies
+			}
+		}
+		5586 = {
+				controller = {
+					faction = allies
+			}
+		}
+		5608 = {
+				controller = {
+					faction = allies
+			}
+		}
+		OR = {
+		      war_with = FRA
+		      war_with = ENG
+		      }
+		}
+		effect = {
+			set_global_flag = Germany_in_africa
+		 GER = { load_oob = "Afiric_FOX_army.txt" }
+			     }			
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,25 @@
+owner = FRA
+controller = FRA
+add_core = FRA
+add_core = IDC
+infra = 4
+
+infra = 4
+1940.6.22 = {
+	owner = VIC
+	controller = VIC
+	add_core = VIC
+}
+
+1941.5.9 = {
+	owner = SIA
+	controller = SIA	
+	add_core = SIA
+	remove_core = VIC
+}
+
+1945.9.3 = {
+	owner = FRA
+	controller = FRA	
+	remove_core = SIA
+}

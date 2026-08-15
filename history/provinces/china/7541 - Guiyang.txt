@@ -1,0 +1,16 @@
+owner = CQS
+controller = CQS
+add_core = CQS
+add_core = CHI
+add_core = CHC
+energy = 15.00
+industry = 1
+infra = 3
+manpower = 4.00
+leadership = 0.20
+1935.5.1 = {
+owner = CHI
+controller = CHI
+remove_core = CQS
+}
+

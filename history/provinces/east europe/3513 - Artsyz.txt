@@ -1,0 +1,10 @@
+owner = ROM
+controller = ROM
+add_core = ROM
+
+infra = 8
+1945.6.7 = {
+	controller = SOV
+	owner = SOV
+	remove_core = ROM
+}

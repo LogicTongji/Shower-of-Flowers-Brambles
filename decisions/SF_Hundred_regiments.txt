@@ -1,0 +1,87 @@
+######################
+#   百团大战决议组   #
+######################
+diplomatic_decisions = {
+	#华北治安肃正计划
+	northchinapolice = {
+		potential = {
+			tag = JAP
+			not = { has_global_flag = thenorthchinapolice }
+			war_with = CHC
+			has_global_flag = luochuan_meeting_2
+			has_global_flag = Sanguang
+			has_country_flag = jap_seizes_coast
+		}
+		allow = {
+			CHC = { total_amount_of_brigades = 100 }
+			CHC = { controls = 5084 }
+			CHC = { controls = 7338 }
+			CHC = { controls = 7384 }
+			CHC = { controls = 5333 }
+		}
+		effect = {
+			set_global_flag = thenorthchinapolice
+			country_event = 1000072
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#百团大战
+	baituandazhan = {
+		major = yes
+		potential = {
+			tag = CHC
+			war_with = JAP
+			exists = CHB
+			has_global_flag = luochuan_meeting_2
+			has_global_flag = thenorthchinapolice
+			JAP = {
+			has_country_flag = jap_seizes_coast
+			}
+			not = { has_global_flag = baituandazhan }
+		}
+		allow = {
+			has_global_flag = secret_talk_to_China_find 
+		}
+		effect = {
+			set_global_flag = baituandazhan
+			country_event = 1000074
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+	#大扫荡
+	DASADAnapolice = {
+		potential = {
+			tag = JAP
+			not = { has_global_flag = thenorthchinapolice1 }
+			war_with = CHC
+			has_global_flag = baituandazhan
+			has_global_flag = luochuan_meeting_2
+			has_global_flag = Sanguang
+		}
+		allow = {
+			JAP = { total_amount_of_brigades = 100 }
+			JAP = { controls = 5174
+			        controls = 4977 
+			        controls = 5271 }
+		}
+		effect = {
+			set_global_flag = thenorthchinapolice1
+			        add_country_modifier = {
+			name = "TCNOLOGYPOLICE_modifier"
+			duration = 300
+		}
+		CHC = { add_country_modifier = {
+			name = "POLICEDA_modifier"
+			duration = 300
+		          }
+		    }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}

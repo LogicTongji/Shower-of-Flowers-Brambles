@@ -1,0 +1,16 @@
+
+owner = CYS
+controller = CYS
+add_core = CYS
+add_core = CHI
+add_core = CHC
+infra = 3
+1935.8.13 = {
+owner = CSC
+controller = CSC
+remove_core = CYS
+}
+
+1938.1.1 = {
+	owner = CHI
+}

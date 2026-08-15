@@ -1,0 +1,131 @@
+####################################
+# Destruction of the French Fleet  #
+####################################
+# Mers-el-Kébir
+diplomatic_decisions = {
+
+	destruction_of_french_fleet = {
+		potential = {
+			tag = ENG
+			not = { has_country_flag = destruction_of_the_french_fleet }
+			exists = VIC
+			ENG = { war_with = GER }
+			VIC = {
+				or = {
+					10561 = { units_in_province = 1 }
+					10563 = { units_in_province = 1 }
+				}
+			}
+		}
+		allow = {
+			VIC = { not = { war_with = GER } }
+		}
+		effect = {
+			set_country_flag = destruction_of_the_french_fleet
+			relation = { who = VIC value = -30 }
+			national_unity = 2
+			VIC = { country_event = 2601 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+##########################################
+# UK Occupation of Iceland and Greenland #
+##########################################
+
+	uk_occupation_of_iceland_greenland = {
+		potential = {
+			tag = ENG
+			ENG = { government_in_exile = no }
+			not = { has_country_flag = uk_occupation_of_iceland_and_greenland }
+			not = {	alliance_with = GER }
+			GER = {
+				# Denmark
+				controls = 1482 # Kopenhagen	
+				controls = 1437
+				controls = 1436
+				controls = 1526
+				controls = 1481
+				controls = 1391
+				controls = 1435
+				controls = 1434
+				controls = 1390
+				controls = 1346
+				controls = 1345
+				controls = 1300
+				controls = 1256
+				controls = 1301
+				controls = 1257
+				controls = 1212
+				controls = 1130
+				controls = 1170
+				controls = 1211
+			}
+		}
+		allow = {
+			not = {
+				OR = {
+					ENG = {
+						# Iceland
+						owns = 8084
+						owns = 8086
+						owns = 8089
+					
+						# Greenland
+						owns = 6643
+						owns = 8418
+						owns = 8524
+						owns = 10675
+						owns = 10683
+						
+						# Faroe Islands
+						owns = 14153
+					}
+					USA = {
+					# Iceland
+					owns = 8084
+					owns = 8086
+					owns = 8089
+				
+					# Greenland
+					owns = 6643
+					owns = 8418
+					owns = 8524
+					owns = 10675
+					owns = 10683
+					
+					# Faroe Islands
+					owns = 14153
+					}
+				}
+			}
+		}
+		effect = {
+				set_country_flag = uk_occupation_of_iceland_and_greenland
+				
+				# Iceland
+				add_core = 8084
+				add_core = 8086
+				add_core = 8089
+
+				# Greenland
+				add_core = 6643
+				add_core = 8418
+				add_core = 8524
+				add_core = 10675
+				add_core = 10683
+				
+				# Faroe Islands
+				add_core = 14153
+				
+				DEN = { country_event = 9004 }
+				GER = { country_event = 9004 }
+				}						
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

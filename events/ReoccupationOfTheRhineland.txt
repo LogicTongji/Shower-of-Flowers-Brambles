@@ -1,0 +1,36 @@
+#################################
+# Reoccupation of the Rhineland #
+#################################
+# Informs the UK
+country_event = {
+	
+	id = 1001
+
+	is_triggered_only = yes
+
+	title = "EVTNAME1001"
+	desc = "EVTDESC1001"
+	#picture = "factory"
+
+	option = {
+		name = "EVTOPTA1001"			# OK
+		neutrality = -3
+	}
+}
+
+# Informs France
+country_event = {
+	
+	id = 1002
+
+	is_triggered_only = yes
+
+	title = "EVTNAME1002"
+	desc = "EVTDESC1002"
+	#picture = "factory"
+
+	option = {
+		name = "EVTOPTA1002"			# OK
+		neutrality = -3
+	}
+}

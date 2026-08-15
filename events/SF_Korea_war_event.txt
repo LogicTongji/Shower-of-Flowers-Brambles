@@ -1,0 +1,128 @@
+#安理会82号决议
+country_event = {
+	id = 390073
+	is_triggered_only = yes
+	title = "Korean_Conflict1title"
+	subtitle = "Korean_Conflict1subtitle"
+	desc = "Korean_Conflict1desc"
+	picture = "Korean_Conflict1picture"
+	option = {
+		name = "Korean_Conflict1option"
+		PRC = { country_event = 390076 }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 390074
+	title = "Korean_Conflict1title"
+	subtitle = "Korean_Conflict1subtitle"
+	desc = "Korean_Conflict1desc"
+	picture = "Korean_Conflict1picture"
+	trigger = {
+		NOT = { has_country_flag = Korean_Conflict_onwer }
+		has_global_flag = Korean_Conflict
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "Korean_Conflict1option"
+		set_country_flag = Korean_Conflict_onwer
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 390075
+	title = "Korean_Conflict2title"
+	desc = "Korean_Conflict2desc"
+	picture = "Korean_Conflict2picture"
+	trigger = {
+		NOT = { has_country_flag = Korean_Conflict_onwer1 }
+		has_global_flag = Korean_Conflict
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "Korean_Conflict2option"
+		set_country_flag = Korean_Conflict_onwer1
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 390076
+	is_triggered_only = yes
+	title = "Korean_Conflict3title"
+	desc = "Korean_Conflict3desc"
+	picture = "Korean_Conflict3picture"
+	option = {
+		name = "Korean_Conflict3option"
+        11929 = { 
+			add_province_modifier = {
+				name = "usa_banning_sea"
+				duration = -1
+			}
+		}
+        12013 = { 
+			add_province_modifier = {
+				name = "usa_banning_sea"
+				duration = -1
+			}
+		}
+		ai_chance = { factor = 100 }
+       	}
+}
+#安理会84号决议
+country_event = {
+	id = 390077
+	is_triggered_only = yes
+	title = "Korean_Conflict4title"
+	desc = "Korean_Conflict4desc"
+	trigger = {
+		NOT = { has_country_flag = Korean_Conflict_onwer2 }
+		UNN = { has_country_flag = Korean_Conflict_unn }
+		has_global_flag = Korean_Conflict
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	picture = "Korean_Conflict4picture"
+	option = {
+		name = "Korean_Conflict4option"
+		set_country_flag = Korean_Conflict_onwer2
+		ai_chance = { factor = 100 }
+	}
+}
+#仁川登陆
+country_event = {
+	id = 390078
+	is_triggered_only = yes
+	title = "Korean_Conflict5title"
+	desc = "Korean_Conflict5desc"
+	trigger = {
+		NOT = { has_country_flag = Korean_Conflict_onwer3 }
+		UNN = { has_country_flag = Korean_Conflict_renchuan_battle }
+		has_global_flag = Korean_Conflict
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	picture = "Korean_Conflict5picture"
+	option = {
+		name = "Korean_Conflict5option"
+		set_country_flag = Korean_Conflict_onwer3
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 390079
+	is_triggered_only = yes
+	title = "Korean_Conflict6title"
+	subtitle = "Korean_Conflict6subtitle"
+	desc = "Korean_Conflict6desc"
+	picture = "Korean_Conflict6picture"
+	option = {
+		name = "Korean_Conflict6option"
+		ai_chance = { factor = 100 }
+	}
+}

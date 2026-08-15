@@ -1,0 +1,205 @@
+theatre = {
+	name = "陕西绥靖公署"
+	location = 7435
+	regiment = { type = hq_brigade name = "西安指挥部" historical_model = 0 }
+	armygroup = { 
+		name = "西北剿匪总司令部"
+		location = 7435
+		regiment = { type = hq_brigade name = "西北剿匪总司令部"  historical_model = 0 }	
+		army = {
+			name = "东北边防军"
+			location = 7435
+			regiment = { type = hq_brigade name = "东北边防军司令部" historical_model = 0 }	
+			regiment = { type = infantry_brigade name = "直属特务团" experience = 15 historical_model = 0 }
+			regiment = { type = artillery_brigade name = "直属炮兵团" experience = 15 historical_model = 0 }
+			corps = {
+				name = "第51军"
+				location = 9170
+				regiment = { type = hq_brigade name = "第51军司令部"  historical_model = 0 }
+				division= {
+					name = "第113师"
+					location = 9170
+					regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+					regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+				}
+				division= {
+					name = "第114师"
+					location = 9170
+					regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+					regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+				}
+				division= {
+					name = "第118师"
+					location = 9170
+					regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+					regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+				}
+			}
+			corps = {
+				name = "第57军"
+				location = 9234
+				regiment = { type = hq_brigade name = "第57军司令部"  historical_model = 0 }
+				division= {
+					name = "第109师"
+					location = 9234
+					regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+					regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+				}
+				division= {
+					name = "第111师"
+					location = 9234
+					regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+					regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+				}
+				division= {
+					name = "第112师"
+					location = 9234
+					regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+					regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+				}
+				division= {
+					name = "第120师"
+					location = 9234
+					regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+					regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+				}
+			}
+			corps = {
+				name = "第67军"
+				location = 9266
+				regiment = { type = hq_brigade name = "第67军司令部"  historical_model = 0 }
+				division= {
+					name = "第107师"
+					location = 9266
+					regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+					regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+				}
+				division= {
+					name = "第108师"
+					location = 9266
+					regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+					regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+				}
+				division= {
+					name = "第117师"
+					location = 9266
+					regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+					regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+				}
+				division= {
+					name = "第129师"
+					location = 9266
+					regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+					regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+				}
+			}
+			corps = {
+				name = "骑兵军"
+				location = 9233
+				regiment = { type = hq_brigade name = "骑兵军司令部"  historical_model = 0 }
+				division= {
+					name = "骑兵第3师"
+					location = 9233
+					regiment = { type = cavalry_brigade experience = 15 historical_model = 0 }
+					regiment = { type = cavalry_brigade experience = 15 historical_model = 0 }
+				}
+				division= {
+					name = "骑兵第6师"
+					location = 9233
+					regiment = { type = cavalry_brigade experience = 15 historical_model = 0 }
+					regiment = { type = cavalry_brigade experience = 15 historical_model = 0 }
+				}
+				division= {
+					name = "骑兵第7师"
+					location = 9233
+					regiment = { type = cavalry_brigade experience = 15 historical_model = 0 }
+					regiment = { type = cavalry_brigade experience = 15 historical_model = 0 }
+				}
+				division= {
+					name = "骑兵第10师"
+					location = 9233
+					regiment = { type = cavalry_brigade experience = 15 historical_model = 0 }
+					regiment = { type = cavalry_brigade experience = 15 historical_model = 0 }
+				}
+			}
+			corps = {
+				name = "第53军"
+				location = 7417
+				regiment = { type = hq_brigade name = "第53军司令部"  historical_model = 0 }
+				division= {
+					name = "第116师"
+					location = 7417
+					regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+					regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+				}
+				division= {
+					name = "第119师"
+					location = 7417
+					regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+					regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+				}
+				division= {
+					name = "第130师"
+					location = 7417
+					regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+					regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+				}
+			}
+			division= {
+				name = "独立第105师"
+				location = 7435
+				regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+			}
+			division= {
+				name = "第106师"
+				location = 9296
+				regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+			}
+			division= {
+				name = "第115师"
+				location = 7435
+				regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+			}
+			division= {
+				name = "第63军"
+				location = 7435
+				regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+			}
+		}
+		corps = {
+			name = "第17路军"
+			location = 7425
+			regiment = { type = hq_brigade name = "第17路军司令部"  historical_model = 0 }
+			division= {
+				name = "第7军"
+				location = 7425
+				regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+			}
+			division= {
+				name = "第38军"
+				location = 7425
+				regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 0 }
+			}
+			division= {
+				name = "陕西警备"
+				location = 7209
+				regiment = { type = militia_brigade experience = 15 historical_model = 0 }
+				regiment = { type = militia_brigade experience = 15 historical_model = 0 }
+				regiment = { type = militia_brigade experience = 15 historical_model = 0 }
+			}
+			division= {
+				name = "直属特务团"
+				location = 7425
+				regiment = { type = militia_brigade experience = 15 historical_model = 0 }
+				regiment = { type = militia_brigade experience = 15 historical_model = 0 }
+				regiment = { type = militia_brigade experience = 15 historical_model = 0 }
+			}
+		}
+	}
+}

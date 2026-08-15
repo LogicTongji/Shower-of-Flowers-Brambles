@@ -1,0 +1,142 @@
+#第五波党卫军
+#18--30
+#外籍兵团
+#拉脱维亚第二师
+	division= {
+		name = "党卫军第19武装掷弹兵师"
+		location = 906 		
+	 	regiment = { type = infantry_brigade experience = 15 name = "Waffen-Gebirgs-Jger-Regiment der SS 43" historical_model = 2 }
+		regiment = { type = infantry_brigade experience = 15 name = "Waffen-Gebirgs-Jger-Regiment der SS 43" historical_model = 2 }
+		regiment = { type = infantry_brigade experience = 15 name = "Waffen-Gebirgs-Jger-Regiment der SS 44" historical_model = 2 }
+		regiment = { type = artillery_brigade name = "SS-Waffen-Artillerie-Regiment 20" experience = 15  historical_model = 2 }	
+	}
+#爱沙尼亚第一师
+	division= {
+		name = "党卫军第20武装掷弹兵师"
+		location = 906
+	 	regiment = { type = infantry_brigade experience = 15 name = "Waffen-Gebirgs-Jger-Regiment der SS 45" historical_model = 2 }
+		regiment = { type = infantry_brigade experience = 15 name = "Waffen-Gebirgs-Jger-Regiment der SS 46" historical_model = 2 }
+		regiment = { type = infantry_brigade experience = 15 name = "Waffen-Gebirgs-Jger-Regiment der SS 47" historical_model = 2 }
+		regiment = { type = artillery_brigade name = "SS-Waffen-Artillerie-Regiment 20" experience = 15  historical_model = 2 }	
+	}
+#阿尔巴尼亚
+	division= {
+		name = "党卫军第21“斯坎培德”武装山地师"
+		location = 3912
+	 	regiment = { type = bergsjaeger_brigade experience = 15 name = "Waffen-Gebirgs-Jger-Regiment der SS 50" historical_model = 2 }
+		regiment = { type = bergsjaeger_brigade experience = 15 name = "Waffen-Gebirgs-Jger-Regiment der SS 51" historical_model = 2 }
+		regiment = { type = alpine_artillery_brigade name = "SS-Waffen-Artillerie-Regiment 21" experience = 15  historical_model = 2 }	
+	}
+#本土
+	division= {
+		name = "党卫军第22“玛丽亚*特蕾莎”志愿骑兵师"
+		location = 1928
+			 	regiment = { type = cavalry_brigade experience = 15 name = "SS-Freiwilligen-Kavallerie-Regiment 53" historical_model = 2 }
+		regiment = { type = cavalry_brigade experience = 15 name = "SS-Freiwilligen-Kavallerie-Regiment 52" historical_model = 2 }
+	 	regiment = { type = cavalry_brigade experience = 15 name = "SS-Freiwilligen-Kavallerie-Regiment 54" historical_model = 2 }
+		regiment = { type = cavalry_brigade experience = 15 name = "SS-Freiwilligen-Kavallerie-Regiment 17" historical_model = 2 }
+		
+	}	
+#尼德兰
+	division= {
+		name = "党卫军第23“尼德兰”志愿装甲掷弹兵师"
+		location = 1910
+		regiment = { type = GER_ss name = "SS-Freiwilligen-Panzergrenadier-Regiment 48" experience = 5  historical_model = 2 }			
+		regiment = { type = GER_ss name = "SS-Freiwilligen-Panzergrenadier-Regiment 49'" experience = 5  historical_model = 2 }	
+			regiment = { type = artillery_brigade name = "SS-Waffen-Artillerie-Regiment 54" experience = 15  historical_model = 2 }	
+	}	
+#罗马尼亚第二师
+	division= {
+		name = "党卫军第23“卡玛”武装山地师"
+		location = 3306
+			 expeditionary_owner = ROM
+regiment = { type = bergsjaeger_brigade experience = 15 name = "Waffen-Gebirgsjager-Regiment der SS 55" historical_model = 2 }
+		regiment = { type = bergsjaeger_brigade experience = 15 name = "Waffen-Gebirgsjager-Regiment der SS 56" historical_model = 2 }
+			regiment = { type = alpine_artillery_brigade name = "Waffen-Gebirgs-Artillerie-Regiment der SS 23" experience = 15  historical_model = 2 }	
+	}	
+division= {
+		name = "党卫军第24“卡斯特猎手”武装山地师"
+		location = 3706
+regiment = { type = bergsjaeger_brigade experience = 5 historical_model = 2 }
+	}		
+#匈牙利第一师	
+division= {
+		name = "党卫军第25“匈雅提”武装掷弹兵师"
+		location = 2509
+		expeditionary_owner = HUN
+		regiment = { type = infantry_brigade name = "Waffen-Grenadier-Regiment der SS 61 (ungarisches Nr. 1)" experience = 35  historical_model = 2 }			
+		regiment = { type = infantry_brigade name = "Waffen-Grenadier-Regiment der SS 62 (ungarisches Nr. 2)" experience = 35  historical_model = 2 }	
+		regiment = { type = infantry_brigade name = "Waffen-Grenadier-Regiment der SS 63 (ungarisches Nr. 3)" experience = 35  historical_model = 2 }	
+			regiment = { type = artillery_brigade name = "Waffen-Artillerie-Regiment der SS 25" experience = 15  historical_model = 2 }	
+	}		
+#本土	
+division= {
+		name = "党卫军第49装甲掷弹兵旅"
+		location = 2509
+		regiment = { type = GER_ss name = "Waffen-Grenadier-Regiment der SS 49" experience = 5  historical_model = 2 }			
+	}	
+division= {
+		name = "党卫军第51装甲掷弹兵旅"
+		location = 1178
+		regiment = { type = GER_ss name = "Waffen-Grenadier-Regiment der SS 51" experience = 5  historical_model = 2 }			
+	}		
+#匈牙利第二师	
+division= {
+		name = "党卫军第26武装掷弹兵师"
+		location = 2509
+		expeditionary_owner = HUN
+		regiment = { type = infantry_brigade name = "Waffen-Grenadier-Regiment der SS 64 (ungarisches Nr. 4)" experience = 35  historical_model = 2 }			
+		regiment = { type = infantry_brigade name = "Waffen-Grenadier-Regiment der SS 65 (ungarisches Nr. 5)" experience = 35  historical_model = 2 }	
+		regiment = { type = infantry_brigade name = "Waffen-Grenadier-Regiment der SS 66 (ungarisches Nr. 6)" experience = 35  historical_model = 2 }	
+			regiment = { type = artillery_brigade name = "Waffen-Artillerie-Regiment der SS 26" experience = 15  historical_model = 2 }	
+	}	
+#本土
+	division= {
+		name = "党卫军第27“兰格马克”志愿掷弹兵师"
+		location = 1178
+		regiment = { type = GER_ss name = "SS-Panzergrenadier-Regiment 67" experience = 45  historical_model = 2 }			
+		regiment = { type = GER_ss name = "SS-Panzergrenadier-Regiment 68" experience = 45  historical_model = 2 }	
+			regiment = { type = light_armor_brigade experience = 25 name = "SS-Panzerj?ger-Abteilung 27" historical_model = 2 }
+			regiment = { type = artillery_brigade name = "SS-Waffen-Artillerie-Regiment 27" experience = 15  historical_model = 2 }	
+	}				
+		division= {
+		name = "党卫军第28“瓦隆”志愿装甲掷弹兵师"
+		location = 1178
+		regiment = { type = GER_ss name = "SS-Panzergrenadier-Regiment 60" experience = 45  historical_model = 2 }			
+		regiment = { type = GER_ss name = "SS-Panzergrenadier-Regiment 70" experience = 45  historical_model = 2 }	
+			regiment = { type = light_armor_brigade experience = 25 name = "SS-Panzerj?ger-Abteilung 28" historical_model = 2 }
+			regiment = { type = artillery_brigade name = "SS-Waffen-Artillerie-Regiment 28" experience = 15  historical_model = 2 }	
+	}	
+#俄罗斯第一师	
+division= {
+		name = "党卫军第29“罗纳”武装掷弹兵师"
+		location = 1178
+		regiment = { type = infantry_brigade name = "Waffen-Grenadier-Regiment der SS 72 (ungarisches Nr. 1)" experience = 35  historical_model = 2 }			
+		regiment = { type = infantry_brigade name = "Waffen-Grenadier-Regiment der SS 73 (ungarisches Nr. 2)" experience = 35  historical_model = 2 }	
+		regiment = { type = infantry_brigade name = "Waffen-Grenadier-Regiment der SS 74 (ungarisches Nr. 3)" experience = 35  historical_model = 2 }	
+			regiment = { type = artillery_brigade name = "Waffen-Artillerie-Regiment der SS 29(russisches Nr. 1)" experience = 15  historical_model = 2 }	
+	}	
+#意大利第一师	
+division= {
+		name = "党卫军第29“罗纳”武装掷弹兵师"
+		location = 1178
+		expeditionary_owner = ITA
+		regiment = { type = infantry_brigade name = "Waffen-Grenadier-Regiment der SS 81 (ungarisches Nr. 1)" experience = 35  historical_model = 2 }			
+		regiment = { type = infantry_brigade name = "Waffen-Grenadier-Regiment der SS 81 (ungarisches Nr. 2)" experience = 35  historical_model = 2 }	
+			regiment = { type = artillery_brigade name = "Waffen-Artillerie-Regiment der SS 29(russisches Nr. 1)" experience = 15  historical_model = 2 }	
+	}	
+#俄罗斯第二师	
+division= {
+		name = "党卫军第30武装掷弹兵师"
+		location = 1178
+		regiment = { type = infantry_brigade name = "Waffen-Grenadier-Regiment der SS 75 (ungarisches Nr. 4)" experience = 35  historical_model = 2 }			
+		regiment = { type = infantry_brigade name = "Waffen-Grenadier-Regiment der SS 76 (ungarisches Nr. 5)" experience = 35  historical_model = 2 }	
+		regiment = { type = infantry_brigade name = "Waffen-Grenadier-Regiment der SS 77 (ungarisches Nr. 6)" experience = 35  historical_model = 2 }	
+			regiment = { type = artillery_brigade name = "Waffen-Artillerie-Regiment der SS 29(russisches Nr. 2)" experience = 15  historical_model = 2 }	
+	}		
+#白俄罗斯第一师	
+division= {
+		name = "党卫军第30武装掷弹兵师"
+		location = 1178
+		regiment = { type = infantry_brigade name = "Waffen-Grenadier-Regiment der SS 75 (ungarisches Nr. 1)" experience = 5  historical_model = 2 }			
+	}				

@@ -1,0 +1,39 @@
+#############################
+# Vichy goal #
+#############################
+country_event = {
+	
+	id = 4500
+
+	trigger = {
+		tag = GER
+		war_with = FRA
+		NOT = { has_wargoal = FRA }
+		FRA = { NOT = { has_country_flag = fr_signs_peace } }
+		NOT = { has_country_flag = fr_goal_nag }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	title = "EVTNAME4500"
+	desc = "EVTDESC4500"
+	#picture = "VIC"
+
+	option = {
+		name = "EVTOPTA4500"
+		ai_chance = { factor = 100 }
+		GER = {	add_wargoal = {	
+					target = FRA
+					war_goal = { casus_belli=vichy_war_goal }
+					} 
+				}  
+		set_country_flag = fr_goal_nag			
+	}
+	option = {
+		name = "EVTOPTB4500"
+		set_country_flag = fr_goal_nag			
+		  #     	
+	}
+}

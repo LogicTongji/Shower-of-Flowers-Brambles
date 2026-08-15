@@ -1,0 +1,16 @@
+owner = CSJ
+controller = CSJ
+add_core = CSJ
+
+add_core = CHI
+add_core = CHC
+infra = 6
+1934.1.20 = {
+	owner = CHI
+	controller = CHI
+remove_core = CSJ
+}
+1949.10.1 = {
+	owner = PRC
+	controller = PRC
+}

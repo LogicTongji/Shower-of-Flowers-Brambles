@@ -1,0 +1,2832 @@
+#Bombing of Wielun
+province_event = {
+	id = 800
+	title = "EVTNAME800"
+	desc = "EVTDESC800"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2155
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_wielun_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Guernica
+province_event = {
+	id = 801
+	title = "EVTNAME801"
+	desc = "EVTDESC801"
+	picture = "okinawa_airbattle"
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 3885
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_guernica_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of London
+province_event = {
+	id = 802
+	title = "EVTNAME802"
+	desc = "EVTDESC802"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1964
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_london_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Chongqing
+province_event = {
+	id = 803
+	title = "EVTNAME803"
+	desc = "EVTDESC803"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 9478
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_chongqing_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Berlin
+province_event = {
+	id = 804
+	title = "EVTNAME804"
+	desc = "EVTDESC804"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1861
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_berlin_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Helsinki
+province_event = {
+	id = 805
+	title = "EVTNAME805"
+	desc = "EVTDESC805"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 739
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_helsinki_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Tallinn
+province_event = {
+	id = 806
+	title = "EVTNAME806"
+	desc = "EVTDESC806"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 906
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_tallin_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Lubeck
+province_event = {
+	id = 807
+	title = "EVTNAME807"
+	desc = "EVTDESC807"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1679
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_lubeck_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Darwin
+province_event = {
+	id = 808
+	title = "EVTNAME808"
+	desc = "EVTDESC808"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6596
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_darwin_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Attack on Pearl Harbor
+province_event = {
+	id = 809
+	title = "EVTNAME809"
+	desc = "EVTDESC809"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 5825 #Honolulu
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_pearlharbor_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Atomic Bombings on Hiroshima
+province_event = {
+	id = 810
+	title = "EVTNAME810"
+	desc = "EVTDESC810"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 5425 #Hiroshima
+		controller = {
+			faction = axis
+		}
+
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_hiroshima_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Wewak
+province_event = {
+	id = 811
+	title = "EVTNAME811"
+	desc = "EVTDESC811"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6439
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_wewak_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Attack on Broome
+province_event = {
+	id = 812
+	title = "EVTNAME812"
+	desc = "EVTDESC812"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 10262
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = attack_broome_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Belfast Blitz
+province_event = {
+	id = 813
+	title = "EVTNAME813"
+	desc = "EVTDESC813"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1341
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = belfast_blitz_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Minsk Blitz
+province_event = {
+	id = 814
+	title = "EVTNAME814"
+	desc = "EVTDESC814"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1694
+		controller = {
+			faction = comintern
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = minsk_blitz_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Warszawa
+province_event = {
+	id = 815
+	title = "EVTNAME815"
+	desc = "EVTDESC815"
+	picture = "stalingrad4"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1928
+		controller = {
+			faction = comintern
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_warszawa_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Innsbruck
+province_event = {
+	id = 816
+	title = "EVTNAME816"
+	desc = "EVTDESC816"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 3289
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_innsbruck_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Amien
+province_event = {
+	id = 817
+	title = "EVTNAME817"
+	desc = "EVTDESC817"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2425
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_amien_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Kassel
+province_event = {
+	id = 818
+	title = "EVTNAME818"
+	desc = "EVTDESC818"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = "okinawa_airbattle"
+	
+	trigger = {
+		province_id = 2145
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_kassel_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Coventry Blitz
+province_event = {
+	id = 819
+	title = "EVTNAME819"
+	desc = "EVTDESC819"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1787
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = coventry_blitz_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Kobenhavn
+province_event = {
+	id = 820
+	title = "EVTNAME820"
+	desc = "EVTDESC820"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1482
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_kobenhavn_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Oslo
+province_event = {
+	id = 821
+	title = "EVTNAME821"
+	desc = "EVTDESC821"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 812
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_oslo_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Schweinfurt-Regensburg
+province_event = {
+	id = 822
+	title = "EVTNAME822"
+	desc = "EVTDESC822"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 2376 #Schweinfurt
+			province_id = 2690 #Regensburg
+		}
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_schweinfurt_regensburg_won
+			duration = 25
+		}
+		set_province_flag = schweinfurt
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+		set_province_flag = schweinfurt
+	}
+}
+
+#Swansea Blitz
+province_event = {
+	id = 823
+	title = "EVTNAME823"
+	desc = "EVTDESC823"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1904
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = swansea_blitz_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Hamamatsu
+province_event = {
+	id = 824
+	title = "EVTNAME824"
+	desc = "EVTDESC824"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = "okinawa_airbattle"
+	
+	trigger = {
+		province_id = 5394
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_hamamatsu_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Numazu
+province_event = {
+	id = 825
+	title = "EVTNAME825"
+	desc = "EVTDESC825"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 5372
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_numazu_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Tokyo
+province_event = {
+	id = 826
+	title = "EVTNAME826"
+	desc = "EVTDESC826"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 5315
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_tokyo_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Braunschweig
+province_event = {
+	id = 827
+	title = "EVTNAME827"
+	desc = "EVTDESC827"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1917
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_braunschweig_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Augsburg
+province_event = {
+	id = 828
+	title = "EVTNAME828"
+	desc = "EVTDESC828"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2885
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_augsburg_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Bremen
+province_event = {
+	id = 829
+	title = "EVTNAME829"
+	desc = "EVTDESC829"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1736
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_bremen_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Darmstadt
+province_event = {
+	id = 830
+	title = "EVTNAME830"
+	desc = "EVTDESC830"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2433
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_darmstadt_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Dresden
+province_event = {
+	id = 831
+	title = "EVTNAME831"
+	desc = "EVTDESC831"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2208
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_dresden_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Cardiff Blitz
+province_event = {
+	id = 832
+	title = "EVTNAME832"
+	desc = "EVTDESC832"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1905
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_cardiff_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Dublin
+province_event = {
+	id = 833
+	title = "EVTNAME833"
+	desc = "EVTDESC833"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1563
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_dublin_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Duisburg
+province_event = {
+	id = 834
+	title = "EVTNAME834"
+	desc = "EVTDESC834"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2084
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_duisburg_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Frankfurt am Main
+province_event = {
+	id = 835
+	title = "EVTNAME835"
+	desc = "EVTDESC835"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1977
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_frankfurtammain_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+			add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Hamburg
+province_event = {
+	id = 836
+	title = "EVTNAME836"
+	desc = "EVTDESC836"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1737
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_hamburg_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Leipzig
+province_event = {
+	id = 837
+	title = "EVTNAME837"
+	desc = "EVTDESC837"
+	picture = "okinawa_airbattle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2207
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_leipzig_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Zadar
+province_event = {
+	id = 838
+	title = "EVTNAME838"
+	desc = "EVTDESC838"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 4171
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_zadar_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Zagreb
+province_event = {
+	id = 839
+	title = "EVTNAME839"
+	desc = "EVTDESC839"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 3633
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_zagreb_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Southampton Blitz 
+province_event = {
+	id = 840
+	title = "EVTNAME840"
+	desc = "EVTDESC840"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2078
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = southampton_blitz_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Stuttgart
+province_event = {
+	id = 841
+	title = "EVTNAME841"
+	desc = "EVTDESC841"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2687
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_stuttgart_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Second Bombing of Schweinfurt
+province_event = {
+	id = 842
+	title = "EVTNAME842"
+	desc = "EVTDESC842"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_province_flag = schweinfurt
+		province_id = 2376 #Schweinfurt
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_schweinfurt_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Podgorica
+province_event = {
+	id = 843
+	title = "EVTNAME843"
+	desc = "EVTDESC843"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 4429
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_podgorica_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Pforzheim
+province_event = {
+	id = 844
+	title = "EVTNAME844"
+	desc = "EVTDESC844"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2621
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_pforzheim_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Plymouth Blitz
+province_event = {
+	id = 845
+	title = "EVTNAME845"
+	desc = "EVTDESC845"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2250
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = plymouth_blitz_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Birmingham Blitz
+province_event = {
+	id = 846
+	title = "EVTNAME846"
+	desc = "EVTDESC846"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1728
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = birmingham_blitz_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Hull Blitz
+province_event = {
+	id = 847
+	title = "EVTNAME847"
+	desc = "EVTDESC847"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1524
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = hull_blitz_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Norwich
+province_event = {
+	id = 848
+	title = "EVTNAME848"
+	desc = "EVTDESC848"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1731
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_norwich_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Roma
+province_event = {
+	id = 849
+	title = "EVTNAME849"
+	desc = "EVTDESC849"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 4549
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_roma_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Kiel
+province_event = {
+	id = 850
+	title = "EVTNAME850"
+	desc = "EVTDESC850"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1572
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_kiel_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bristol Blitz
+province_event = {
+	id = 851
+	title = "EVTNAME851"
+	desc = "EVTDESC851"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2018
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bristol_blitz_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Sheffield Blitz
+province_event = {
+	id = 852
+	title = "EVTNAME852"
+	desc = "EVTDESC852"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1567
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = sheffield_blitz_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Liverpool Blitz
+province_event = {
+	id = 853
+	title = "EVTNAME853"
+	desc = "EVTDESC853"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1521
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = liverpool_blitz_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Manchester Blitz
+province_event = {
+	id = 854
+	title = "EVTNAME854"
+	desc = "EVTDESC854"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1522
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = manchester_blitz_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Nottingham Blitz
+province_event = {
+	id = 855
+	title = "EVTNAME855"
+	desc = "EVTDESC855"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1615
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = nottingham_blitz_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Brighton Blitz
+province_event = {
+	id = 856
+	title = "EVTNAME856"
+	desc = "EVTDESC856"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2079
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = brighton_blitz_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Foggia
+province_event = {
+	id = 857
+	title = "EVTNAME857"
+	desc = "EVTDESC857"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 4662
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_foggia_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Air Raid on Bari
+province_event = {
+	id = 858
+	title = "EVTNAME858"
+	desc = "EVTDESC858"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 4768
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = airraid_bari_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Emden
+province_event = {
+	id = 859
+	title = "EVTNAME859"
+	desc = "EVTDESC859"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1619
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_emden_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Bombing of Singapore
+province_event = {
+	id = 860
+	title = "EVTNAME860"
+	desc = "EVTDESC860"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6394
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_singapore_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Atomic Bombings on Nagasaki
+province_event = {
+	id = 861
+	title = "EVTNAME861"
+	desc = "EVTDESC861"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 5543 #Nagasaki
+		controller = {
+			faction = axis
+		}
+
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_nagasaki_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Effective Bombing of Crete
+province_event = {
+	id = 862
+	title = "EVTNAME862"
+	desc = "EVTDESC862"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 5379
+			province_id = 5380
+			province_id = 5381
+			province_id = 5398
+		}
+		TAG = GRE
+		controller = {
+			faction = allies
+		}
+		war_with = GER
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_crete_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Air Raid of Colombo
+province_event = {
+	id = 863
+	title = "EVTNAME863"
+	desc = "EVTDESC863"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6320
+		TAG = ENG
+		controller = {
+			faction = allies
+		}
+		war_with = JAP
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_crete_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Air Raid on Venezia
+province_event = {
+	id = 864
+	title = "EVTNAME864"
+	desc = "EVTDESC864"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 3696
+		TAG = ITA
+		controller = {
+			faction = axis
+		}
+		war_with = ENG
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_venezia_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Air Raid on Ploiesti
+province_event = {
+	id = 865
+	title = "EVTNAME865"
+	desc = "EVTDESC865"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 3778
+		TAG = ROM
+		controller = {
+			faction = axis
+		}
+		OR = {
+			war_with = ENG
+			war_with = USA
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_ploiesti_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Air Raid on Bucuresti
+province_event = {
+	id = 866
+	title = "EVTNAME866"
+	desc = "EVTDESC866"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 3917
+		TAG = ROM
+		OR = {
+			war_with = GER
+			war_with = ENG
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_bucuresti_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Air Raid on Köln
+province_event = {
+	id = 867
+	title = "EVTNAME867"
+	desc = "EVTDESC867"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2257
+		TAG = GER
+		war_with = ENG
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_koln_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Air Raid on Milano
+province_event = {
+	id = 868
+	title = "EVTNAME868"
+	desc = "EVTDESC868"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 3692
+		TAG = ITA
+		OR = {
+			war_with = ENG
+			war_with = GER
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_milano_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Air Raid on Dusseldorf
+province_event = {
+	id = 869
+	title = "EVTNAME869"
+	desc = "EVTDESC869"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2142
+		TAG = GER
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_dusseldorf_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Air Raid on Rostock
+province_event = {
+	id = 870
+	title = "EVTNAME870"
+	desc = "EVTDESC870"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2142
+		TAG = GER
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_rostock_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Air Raid on Hildesheim
+province_event = {
+	id = 871
+	title = "EVTNAME871"
+	desc = "EVTDESC871"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1972
+		TAG = GER
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_hildesheim_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Air Raid on Mannheim
+province_event = {
+	id = 872
+	title = "EVTNAME872"
+	desc = "EVTDESC872"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2493
+		TAG = GER
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_mannheim_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Air Raid on Hannover
+province_event = {
+	id = 873
+	title = "EVTNAME873"
+	desc = "EVTDESC873"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1857
+		TAG = GER
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_hannover_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Budapest
+province_event = {
+	id = 874
+	title = "EVTNAME874"
+	desc = "EVTDESC874"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 3164
+		NOT = {
+			controller = {
+				faction = allies
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_budapest_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_lost
+			duration = 25
+		}
+	}
+}
+
+#Air Raid on Osaka
+province_event = {
+	id = 875
+	title = "EVTNAME875"
+	desc = "EVTDESC875"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 5370
+		TAG = JAP
+		NOT = {
+			controller = {
+				faction = allies
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_osaka_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Air Raid on Wien
+province_event = {
+	id = 876
+	title = "EVTNAME876"
+	desc = "EVTDESC876"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 3026
+		TAG = AUS
+		OR = {
+			war_with = USA
+			war_with = ENG
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_wien_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Air Raid on Munchen
+province_event = {
+	id = 877
+	title = "EVTNAME877"
+	desc = "EVTDESC877"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2952
+		TAG = GER
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_munchen_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Air Raid on Tel Aviv
+province_event = {
+	id = 878
+	title = "EVTNAME878"
+	desc = "EVTDESC878"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 5535
+		TAG = ENG
+		controller = {
+			faction = allies
+		}
+		war_with = ITA
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_telaviv_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Air Raid on Kure
+province_event = {
+	id = 879
+	title = "EVTNAME879"
+	desc = "EVTDESC879"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 4185
+		TAG = JAP
+		OR = {
+			war_with = ENG
+			war_with = USA
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_kure_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Air Raid on Aomori
+province_event = {
+	id = 880
+	title = "EVTNAME880"
+	desc = "EVTDESC880"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 4897
+		TAG = JAP
+		OR = {
+			war_with = ENG
+			war_with = USA
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_aomori_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}
+
+#Air Raid on Taipei
+province_event = {
+	id = 881
+	title = "EVTNAME881"
+	desc = "EVTDESC881"
+	picture = "Flying_fortress2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 5737
+		TAG = JAP
+		war_with = USA
+	}
+	
+	option = {
+		name = "EVTOPTA800"
+		add_country_modifier = {
+			name = bombing_taipei_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB800"
+		add_country_modifier = {
+			name = big_bomb_won
+			duration = 25
+		}
+	}
+}

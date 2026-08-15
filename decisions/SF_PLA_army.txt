@@ -1,0 +1,64 @@
+####################
+#   野战军议决组   #
+####################
+diplomatic_decisions = {
+	HUAYEA_chi = {            
+		potential = {
+			tag = CHC
+                        exists = CHC
+			war_with = CHI
+			not = { has_country_flag = CHC_third_army } 
+			date = 1947.1.2
+			not = { year = 1948 } 
+		}
+		allow = {
+			CHI = { controls = 5494 }
+		}
+		effect = {
+			set_country_flag = CHC_third_army
+			load_oob = "CHC_third_army.txt"
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	    DBY_chi = {               
+		potential = {
+			tag = CHC
+                        exists = CHC
+			not = { has_country_flag = CHC_fourth_army } 
+			date = 1946.7.7
+			not = { year = 1947 } 
+		}
+		allow = {
+                         CHI = { controls = 5494 }
+		}
+		effect = {
+			set_country_flag = CHC_fourth_army 
+			load_oob = "CHC_fourth_army.txt"
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	XBY_chi = {               
+		potential = {
+			tag = CHC
+                        exists = CHC
+			war_with = CHI
+			not = { has_country_flag = CHC_frist_army }
+			date = 1947.11.1
+			not = { year = 1948 } 
+		}
+		allow = {
+			CHI = { controls = 5494 }
+		}
+		effect = {
+			set_country_flag = CHC_frist_army
+			load_oob = "CHC_frist_army.txt"
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,327 @@
+######################
+#   满洲开发事件组   #
+######################
+#产业五年计划
+country_event = {
+	id = 19310
+	major = yes
+	is_triggered_only = yes
+	title = "Man1title"
+	desc = "Man1desc"
+	picture = "ManZhou_developP1"
+	option = {
+		name = "Man1option"
+                ai_chance = { factor = 100 }
+	}
+}
+#满洲移民
+country_event = {
+	id = 19311
+	major = yes
+	is_triggered_only = yes
+	title = "Man2title"
+	desc = "Man2desc"
+	picture = "ManZhou_developP2"
+	option = {
+		name = "Man1option"
+               CHC = { country_event = 193111 }
+               CHI = { country_event = 193111 }
+                5286 = { change_manpower = -1 }
+                5315 = { change_manpower = -3 } 
+                5520 = { change_manpower = -1 }
+                5020 = { change_manpower = 3 }   
+                4738 = { change_manpower = 3 }              
+                national_unity = 10
+	}
+}
+country_event = {
+	id = 193112
+		fire_only_once = yes
+	title = "Man2title"
+	desc = "Man2desc"
+	picture = "CHI_flag"
+	trigger = {
+		tag = MAN
+	  exists = MAN
+		has_global_flag = ManChu_develop_desicion2
+	  not = { year = 1945 }       
+	}
+		mean_time_to_happen = {
+		years = 1
+	}
+	option = {
+		name = "Man1option"
+                dissent = -15
+                5020 = { change_manpower = 3 }   
+                4738 = { change_manpower = 1 } 
+	}
+}
+country_event = {
+	id = 193111
+	is_triggered_only = yes
+	title = "Man2title"
+	desc = "Man2desc"
+	picture = "Event19362"
+	option = {
+		name = "Man11option"
+                           national_unity = 5    
+	}
+}
+#满铁设立铁道总局
+country_event = {
+	id = 19313
+		fire_only_once = yes
+	title = "Man3title"
+	desc = "Man3desc"
+	picture = "ManChu_developP3"
+	trigger = {
+		tag = MAN
+	  not = { year = 1937 }       
+		date = 1936.10.1
+	}
+	option = {
+		name = "Man1option"
+             add_country_modifier = {
+			name = "Event19365_modifier"
+			duration = 365
+		}
+                        ai_chance = { factor = 100 }  		
+	}
+}
+#打通抚顺、龙凤大竖井
+country_event = {
+	id = 19314
+		fire_only_once = yes
+	title = "Man4title"
+	desc = "Man4desc"
+	picture = "ManChu_developP4"
+	trigger = {
+		tag = MAN
+	  not = { year = 1937 }       
+		date = 1936.6.1
+	}
+	option = {
+		name = "Man1option"
+             add_country_modifier = {
+			name = "ManChu_Coal_modifier"
+			duration = 120
+		}
+                        ai_chance = { factor = 100 }  		
+	}
+}
+#撤销在满治外法权
+country_event = {
+	id = 19315
+		fire_only_once = yes
+	title = "Man5title"
+	desc = "Man5desc"
+	picture = "ManChu_developP5"
+	trigger = {
+		tag = JAP
+	  not = { year = 1937 }       
+		date = 1936.6.4
+	}
+	option = {
+		name = "Man1option"       
+      ai_chance = { factor = 100 }  		
+	}
+}
+#紧急贸易统制法
+country_event = {
+	id = 19316
+		fire_only_once = yes
+	title = "Man6title"
+	desc = "Man6desc"
+	picture = "ManChu_developP6"
+	trigger = {
+		tag = MAN
+	  not = { year = 1937 }       
+		date = 1936.8.14
+	}
+	option = {
+		name = "Man1option"   
+		     add_country_modifier = {
+			name = "ManChu_money_modifier"
+			duration = 365
+		}
+      ai_chance = { factor = 100 }  		
+	}
+}
+country_event = {
+	id = 19317
+	is_triggered_only = yes
+	title = "Man7title"
+	desc = "Man7desc"
+	picture = "ManZhou_developP7"
+	option = {
+		name = "Man1option"
+       7139 = { industry = 2 }              
+       4686 = { industry = 1 }              
+       5020 = { industry = 3 }              
+       4685 = { industry = 2 }              
+                MAN = { 7139 = { energy = 2 } } 
+                MAN = { 4686 = { metal  = 1 } }
+                MAN = { 5020 = { energy = 2 } } 
+                MAN = { 4686 = { coal  = 8 } }
+	}
+}
+country_event = {
+	id = 193118
+		fire_only_once = yes
+	title = "Man2title"
+	desc = "Man2desc"
+	picture = "CHI_flag"
+	trigger = {
+		tag = MAN
+	  exists = MAN
+	  or = {
+		has_global_flag = ManChu_develop_desicion1
+		has_global_flag = ManChu_develop_desicion4
+		}
+	  not = { year = 1945 }       
+	}
+		mean_time_to_happen = {
+		years = 1
+	}
+	option = {
+		name = "Man1option"
+                dissent = -15
+               7139 = { industry = 2 }              
+       4686 = { industry = 1 }              
+       5020 = { industry = 3 }              
+       4685 = { industry = 2 }                 
+       4633 = { industry = 1 }              
+       7096 = { industry = 3 }              
+       4785 = { industry = 2 }
+                MAN = { 7139 = { energy = 2 } } 
+                MAN = { 4686 = { metal  = 1 } }
+                MAN = { 5020 = { energy = 2 } } 
+                MAN = { 4686 = { coal  = 8 } }
+	}
+}
+#满洲粮谷会社
+country_event = {
+	id = 19318
+	fire_only_once = yes
+	title = "Man8title"
+	desc = "Man8desc"
+	picture = "ManChu_developP8"
+	trigger = {
+		tag = MAN
+	  not = { year = 1940 }       
+		date = 1938.10.14
+	}
+	option = {
+		name = "Man1option"     
+		  add_country_modifier = {
+			name = "ManChu_eat_modifier"
+			duration = 365
+		}
+      ai_chance = { factor = 100 }  		
+	}
+}
+#劳动统制法
+country_event = {
+	id = 19319
+	fire_only_once = yes
+	title = "Man9title"
+	desc = "Man9desc"
+	picture = "ManChu_developP9"
+	trigger = {
+		tag = MAN
+	  not = { year = 1940 }       
+		date = 1938.12.4
+	}
+	option = {
+		name = "MSNop"
+		add_country_modifier = {
+			name = "ManChu_person_modifier"
+			duration = 365
+		}
+      ai_chance = { factor = 100 }  		
+	}
+}
+#国民储蓄运动
+country_event = {
+	id = 19319
+	fire_only_once = yes
+	title = "Man10title"
+	desc = "Man10desc"
+	picture = "ManChu_developP9"
+	trigger = {
+		tag = MAN
+	  not = { year = 1940 }       
+		date = 1939.6.6
+	}
+	option = {
+		name = "MSNop" 
+		      add_country_modifier = {
+			name = "ManChu_money2_modifier"
+			duration = 365
+		}
+      ai_chance = { factor = 100 }  		
+	}
+}
+#粮谷管理法
+country_event = {
+	id = 19320
+	fire_only_once = yes
+	title = "Man11title"
+	desc = "Man11desc"
+	picture = "ManChu_developP10"
+	trigger = {
+		tag = MAN
+	  not = { year = 1941 }       
+		date = 1940.9.18
+	}
+	option = {
+		name = "MSNop"  
+		     add_country_modifier = {
+			name = "ManChu_eat2_modifier"
+			duration = 365
+		}
+      ai_chance = { factor = 100 }  		
+	}
+}
+#日满华经济建设联系纲要
+country_event = {
+	id = 19321
+	fire_only_once = yes
+	title = "Man12title"
+	desc = "Man12desc"
+	picture = "ManChu_developP11"
+	trigger = {
+		tag = JAP
+	  not = { year = 1941 }       
+		date = 1940.10.14
+	}
+	option = {
+		name = "MSNop"       
+      ai_chance = { factor = 100 }  		
+	}
+}
+#满洲农产公社
+country_event = {
+	id = 19322
+	fire_only_once = yes
+	title = "Man13title"
+	desc = "Man13desc"
+	picture = "ManChu_developP12"
+	trigger = {
+		tag = JAP
+	  not = { year = 1942 }       
+		date = 1941.6.14
+	}
+	option = {
+		name = "MSNop"  
+		 add_country_modifier = {
+			name = "ManChu_eat4_modifier"
+			duration = 365
+		MAN = { add_country_modifier = {
+			name = "ManChu_eat3_modifier"
+			duration = 365
+		     } 
+		}
+      ai_chance = { factor = 100 }  		
+	}
+}

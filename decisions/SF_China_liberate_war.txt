@@ -1,0 +1,344 @@
+#解放战争
+diplomatic_decisions = {
+        China_CivilWar1 = {
+        potential = {
+            tag = CHI   
+            exists = CHC
+            has_global_flag = Chongqing_negotiations                                          
+      not = { has_global_flag = China_CivilWar }	
+        not = { war_with = JAP }
+        not = { war_with = CHC }		    
+        }
+        allow = {
+         not = { has_country_modifier = china_stop_war }
+        }
+        effect = {
+            set_global_flag = China_CivilWar
+            war = { target = CHC }
+            5494 = {
+                           province_event = 190035
+                           }
+            7417 = {
+                           province_event = 190034
+                           }
+        }
+        ai_will_do = {
+            factor = 1
+             }
+    }
+ China_CivilWar2 = {
+         major = yes
+        potential = {
+            tag = CHI   
+            exists = CHC
+            has_global_flag = Chongqing_negotiations 
+            has_global_flag = JUNE_negotiations 
+            has_global_flag = China_CivilWar
+      not = { has_global_flag = China_CivilWar2 }	
+        not = { war_with = JAP }
+        not = { war_with = CHC }		    
+        }
+        allow = {
+         not = { has_country_modifier = china_stop_war }
+         date = 1946.6.26
+          not = ( year = 1947 }
+        }
+        effect = {
+            set_global_flag = China_CivilWar2
+            country_event = 1000312
+        }
+        ai_will_do = {
+            factor = 1
+             }
+    }
+#华北军政事务
+ China_CivilWar3 = {
+        potential = {
+            tag = CHI 
+            exists = CSY
+            exists = CHC	
+        war_with = CHC
+        not = { CHC = { controls = 4979 }		    
+        }
+        allow = {
+        has_global_flag = China_CivilWar
+     not = { has_global_flag = China_CivilWar3 }	
+     not = ( year = 1947 }
+        }
+        effect = {
+            set_global_flag = China_CivilWar3
+            any_owned = { limit = { province_id = 4979 } secede_province = CSY }
+            any_owned = { limit = { province_id = 5018 } secede_province = CSY }
+            any_owned = { limit = { province_id = 5053 } secede_province = CSY }
+            any_owned = { limit = { province_id = 5086 } secede_province = CSY }
+            CSY = { load_oob = "CSY_1946.txt" } 
+        }
+        ai_will_do = {
+            factor = 1
+             }
+    }        
+#傅作义起义
+ China_CivilWar4 = {
+        potential = {
+            tag = CSY  
+            exists = CHI
+            exists = CHC	
+            CHC = { 	
+            controls = 4575
+            controls = 4452
+            controls = 4685
+            controls = 4936
+            controls = 4978
+            controls = 4788
+            }				    
+        }
+        allow = {
+        has_global_flag = China_CivilWar
+      not = { has_global_flag = China_CivilWar4 }	
+        }
+        effect = {
+            any_owned = { limit = { province_id = 4979 } secede_province = CHC }
+            any_owned = { limit = { province_id = 5018 } secede_province = CHC }
+            any_owned = { limit = { province_id = 5053 } secede_province = CHC }
+            any_owned = { limit = { province_id = 5086 } secede_province = CHC }
+            set_global_flag = China_CivilWar4
+            CHC = { country_event = 1000176 }
+            CHI = { country_event = 1000177 }
+        }
+        ai_will_do = {
+            factor = 1
+             }
+    }  
+    #傅作义起义AI
+ China_CivilWar4_AI = {
+        potential = {
+            tag = CSY  
+            exists = CHI
+            exists = CHC	
+            CHC = { ai = yes }
+                    CHC = { 	
+          controls = 4575
+            controls = 4452
+          controls = 4788
+          }				    
+        }
+        allow = {
+        has_global_flag = China_CivilWar
+      not = { has_global_flag = China_CivilWar4 }	
+        }
+        effect = {
+            set_global_flag = China_CivilWar4
+            any_owned = { limit = { province_id = 4979 } secede_province = CHC }
+            any_owned = { limit = { province_id = 5018 } secede_province = CHC }
+            any_owned = { limit = { province_id = 5053 } secede_province = CHC }
+            any_owned = { limit = { province_id = 5086 } secede_province = CHC }
+            CHC = { country_event = 1000176 }
+            CHI = { country_event = 1000177 }
+        }
+        ai_will_do = {
+            factor = 1
+             }
+    }      
+#刘文辉起义
+ China_CivilWar5 = {
+        potential = {
+            tag = CXK  
+            exists = CHI
+            exists = PRC
+            PRC = { war_with = CHI  }    
+        }
+        allow = {
+        has_global_flag = China_CivilWar
+        has_global_flag = China_CivilWar4
+        has_global_flag = China_CivilWar_Yunnan
+      not = { has_global_flag = China_CivilWar5 }	
+        }
+        effect = {
+            set_global_flag = China_CivilWar5		
+             PRC = { inherit = CXK }
+     PRC = {  load_oob = "CXK_1946.txt" }
+     SF_china_region = { remove_core = CXK }
+     PRC = { country_event = 1000179 }
+        }
+        ai_will_do = {
+            factor = 1
+             }
+    }  
+China_CivilWar51 = {
+        potential = {
+            tag = CXK  
+            exists = CHC
+            CHC = { war_with = CHI  }			    
+        }
+        allow = {
+        has_global_flag = China_CivilWar
+        has_global_flag = China_CivilWar4
+        has_global_flag = China_CivilWar_Yunnan
+      not = { has_global_flag = China_CivilWar5 }	
+        }
+        effect = {
+            set_global_flag = China_CivilWar5		
+             CHC = { inherit = CXK }
+     CHC = {  load_oob = "CXK_1946.txt" }
+     SF_china_region = { remove_core = CXK }
+     CHC = { country_event = 1000179 }
+        }
+        ai_will_do = {
+            factor = 1
+             }
+    }  
+#组建快速纵队
+ China_CivilWar6 = {
+        potential = {
+            tag = CHI 
+            exists = CHI
+            exists = CHC		
+            war_with = CHC
+     CHC = { 	
+          controls = 4979
+            controls = 5018
+        }				    		    
+    }
+        allow = {
+      not = { has_country_flag = China_CivilWar6 }	
+        }
+        effect = {
+            set_country_flag = China_CivilWar6		
+            CHI = { load_oob = "CHI_mechine_army.txt" }
+        }
+        ai_will_do = {
+            factor = 1
+             }
+    }   
+    #国府迁台
+    Taibei_chance = {
+        potential = {	
+            tag = CHI
+                            exists = CHI
+                                OR = {
+        CHC = { 	
+            controls = 4979
+            controls = 5018
+            controls = 5275
+            controls = 5383
+            controls = 5435
+            controls = 5515
+            }
+        PRC = { 	
+            controls = 4979
+            controls = 5018
+            controls = 5275
+            controls = 5383
+            controls = 5435
+            controls = 5515
+                  }
+            }
+                            has_global_flag = China_CivilWar
+                            not = { has_global_flag = Taibei_chance }	
+        }
+        allow = {
+        OR = {
+        war_with = CHC
+        war_with = PRC
+                         exists = CHC
+                                         exists = PRC
+        }
+        OR = {
+                         exists = CHC
+                                         exists = PRC
+        }
+        }
+        effect = {
+            set_global_flag = Taibei_chance
+                    capital = 5737
+        taiwan_region = { remove_core = CHC }
+            CHC = { country_event = 1000180 }
+            PRC = { country_event = 1000180 }
+        }
+    }
+    #解放西南
+Uaction_ALLPRC = {
+        major = yes
+        potential = {
+            tag = PRC
+            has_country_flag = Uaction_PRC
+            not = { has_country_flag = Uaction_ALLPRC } 
+        }
+        effect = {
+            set_country_flag = Uaction_ALLPRC
+            country_event = 1000171
+        }
+    }
+    #解放西藏
+Uaction_Tibet = {
+        major = yes
+        potential = {
+            tag = PRC
+            has_country_flag = Uaction_ALLPRC
+            has_country_flag = Uaction_Hainan 
+            not = { has_country_flag = Uaction_Tibet } 
+        }
+        allow = {
+        sichuan_region = { controlled_by = PRC }
+        yunnan_region = { controlled_by = PRC }
+        guangxi_region = { controlled_by = PRC }
+        guizhou_region = { controlled_by = PRC }
+        }
+        effect = {
+            set_country_flag = Uaction_Tibet
+            country_event = 1000172
+        }
+    }
+    #解放海南
+Uaction_Hainan = {
+        potential = {
+            tag = PRC
+            has_global_flag = China_CivilWar5
+            not = { 
+            has_country_flag = Uaction_Hainan 
+            has_country_modifier = usa_banning_sea
+            } 
+        }
+        effect = {
+            set_country_flag = Uaction_Hainan
+            PRC = {  load_oob = "hainan_1950.txt" }
+        }
+    }
+    #解放台湾
+Uaction_Taiwan = {
+        major = yes
+        potential = {
+            tag = PRC
+            has_country_flag = Uaction_Hainan
+            not = { 
+            has_country_flag = Uaction_Taiwan 
+            } 
+}
+        allow = {
+  OR = {
+        AND = {
+        11929 = {
+         not = { 
+            has_province_modifier = usa_banning_sea
+            }
+        } 
+        12013 = {
+         not = { 
+            has_province_modifier = usa_banning_sea
+            }
+        }
+    }
+        has_country_flag = Uaction_Taiwan_prepare
+        } 
+}
+        effect = {
+            set_country_flag = Uaction_Taiwan
+            PRC = { war = { target = CHI } }
+            4979 = {
+						   province_event = 190037
+						   }
+            country_event = 1000186
+            PRC = {  load_oob = "taiwan_1950.txt" }
+        }
+    }
+}         

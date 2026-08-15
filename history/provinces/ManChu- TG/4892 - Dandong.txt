@@ -1,0 +1,19 @@
+owner = MAN
+controller = MAN
+add_core = MAN
+add_core = CHC
+
+
+infra = 5
+naval_base = 2
+1945.9.28 = {
+	owner = CHC
+	controller = CHC
+	add_core = CHI
+	remove_core = MAN
+}
+1949.10.1 = {
+	owner = PRC
+	controller = PRC
+	add_core = PRC
+}

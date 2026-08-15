@@ -1,0 +1,42 @@
+######################
+#   百团大战事件组   #
+######################
+#华北治安肃正计划
+country_event = {
+	id = 1000072
+	is_triggered_only = yes
+	title = "northchinapolice_title"
+	desc = "JAP_Event_1000072_desc"
+	picture = "SF_HundredRegiments1"
+	option = {
+		name = "JAP_Event_1000072_option"
+		CHC = { country_event = 1000073 }
+	}
+}
+country_event = {
+	id = 1000073
+	is_triggered_only = yes
+	title = "CHC_Event_1000073"
+	desc = "CHC_Event_1000073_desc"
+	picture = "SF_HundredRegiments1"
+	option = {
+		name = "CHC_Event_1000073_option"
+	}
+}
+#百团大战
+country_event = {
+	id = 1000074
+	major = yes
+	is_triggered_only = yes
+	title = "baituandazhan_title"
+	subtitle = "CHC_Event_1000074_subtitle"
+	desc = "CHC_Event_1000074_desc"
+	picture = "SF_HundredRegiments2"
+	option = {
+		name = "CHC_Event_1000074_option"
+		add_country_modifier = {
+			name = "chc_fighting"
+			duration = 150
+		}
+	}
+}

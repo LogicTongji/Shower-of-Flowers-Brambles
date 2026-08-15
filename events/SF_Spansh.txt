@@ -1,0 +1,273 @@
+#############################################
+################西班牙内战###################
+#############################################
+#德国干涉
+country_event = {
+	id = 2020215
+	major = yes
+	fire_only_once = yes
+	title = "GER_SPR"
+	desc = "GER_SPRD"
+	picture = "SPA"
+	trigger = {
+		tag = GER		
+		SRA = { war_with = SPR }
+		has_country_flag = german_intervention_spanish_civil_war
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "OKPPP"
+		relation = { who = SPR value = -100 }
+		SPA = { country_event = 2151 }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 2151
+	title = "FHCND2"
+	desc = "FDCND2_decs"
+	picture = "SPA"
+	option = {
+		name = "OK"
+         SPA = {  
+         add_country_modifier = {
+			name = "SPA_modifier"
+			duration = 120
+		}
+		}
+		set_country_flag = Event9111101
+		load_oob = "GER_SPA.txt"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 2020216
+	fire_only_once = yes
+	title = "GER_SPR"
+	desc = "GER_SPRD2"
+	picture = "VCTO"
+	trigger = {
+		tag = GER		
+		not = { exists = SPR }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "OK"
+		load_oob = "GER_SPA.txt"
+		ai_chance = { factor = 100 }
+	}
+}
+#葡萄牙干涉
+country_event = {
+	id = 2020217
+	fire_only_once = yes
+	title = "GER_SPR"
+	desc = "PTY_SPRD"
+	picture = "vcty"
+	trigger = {
+		tag = POR
+		SRA = { war_with = SPR }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "OK"
+		SPA = { load_oob = "PTY.txt" }
+		ai_chance = { factor = 100 }
+	}
+}
+#苏联干涉
+country_event = {
+	id = 2020218
+	fire_only_once = yes
+	title = "GER_SPR"
+	desc = "SOV_SPRD"
+	picture = "vcty"
+	trigger = {
+		tag = SOV
+		SRA = { war_with = SPR }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "OK"
+		relation = { who = SPR value = -100 }
+		ai_chance = { factor = 0 }
+       	}
+	option = {
+		name = "干涉"
+		relation = { who = SPA value = -100 }
+		set_country_flag = SOV_join_war
+		ai_chance = { factor = 100 }
+	}
+}
+#墨西哥干预
+country_event = {
+	id = 2020219
+	fire_only_once = yes
+	title = "GER_SPR"
+	desc = "MOX_SPRD"
+	picture = "vcty"
+	trigger = {
+		tag = MEX	
+SRA = { war_with = SPR }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "OK"
+    supplies = -2500
+    SPR = { supplies = 2500 } 
+		ai_chance = { factor = 100 }
+	}
+}
+#罗马尼亚干预
+country_event = {
+	id = 2020220
+	fire_only_once = yes
+	title = "GER_SPR"
+	desc = "ROM_SPRD"
+	picture = "vcty"
+	trigger = {
+		tag = ROM
+		SRA = { war_with = SPR }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "OK"
+		load_oob = "ROM_SPA.txt"
+		ai_chance = { factor = 100 }
+	}
+}
+#意大利干预
+country_event = {
+	id = 2020221
+	title = "GER_SPR"
+	desc = "ITA_SPRD1"
+	picture = "SPA"
+	trigger = {
+		tag = ITA
+		SRA = { war_with = SPR }
+		has_country_flag = italian_intervention_spanish_civil_war
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "OK"
+		country_event = 15571
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 15571
+	is_triggered_only = yes
+	major = yes
+	title = "GER_SPR"
+	desc = "ITA_SPRD"
+	picture = "SPA"
+	option = {
+		name = "OK"
+		load_oob = "ITA_SPA.txt"
+		supplies = -2500
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 2020216
+	fire_only_once = yes
+	title = "GER_SPR"
+	desc = "GER_SPRD2"
+	picture = "VCTO"
+	trigger = {
+		tag = ITA	
+		not = { exists = SPR }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "OK"
+		load_oob = "ITA_SPA.txt"
+		ai_chance = { factor = 100 }
+	}
+}
+#组建国际纵队
+country_event = {
+	id = 2020222
+	fire_only_once = yes
+	major = yes
+	title = "SOV_SPR1"
+	desc = "SOV_SPRD1"
+	picture = "CCCPD"
+	trigger = {
+		tag = SOV
+		SRA = { war_with = SPR }
+		has_country_flag = SOV_join_war
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "OK"
+		SPR = { load_oob = "CCCP.txt" }
+		ai_chance = { factor = 100 }
+	}
+}
+#国际纵队89、150、129纵队
+country_event = {
+	id = 2020223
+	fire_only_once = yes
+	title = "SOV_SPR2"
+	desc = "SOV_SPRD2"
+	picture = "CCCPD"
+	trigger = {
+		tag = SOV
+		SRA = { war_with = SPR }
+		SPR = { controls = 4540 } 
+		has_country_flag = SOV_join_war
+		year = 1937
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "OK"
+		SPR = { load_oob = "CCCP2.txt" }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 2020224
+	fire_only_once = yes
+	title = "GER_SPR"
+	desc = "ENG_SPRD"
+	picture = "EFU"
+	trigger = {
+		tag = ENG
+SRA = { war_with = SPR }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "OK"
+    supplies = -2500
+    SPR = { supplies = 2500 } 
+		ai_chance = { factor = 100 }
+	}
+	option = {
+		name = "OK"
+		SPR = { load_oob = "ENG_spr.txt" }
+		ai_chance = { factor = 100 }
+	}
+}

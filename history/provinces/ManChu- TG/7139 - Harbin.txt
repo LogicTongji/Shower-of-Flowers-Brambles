@@ -1,0 +1,28 @@
+owner = MAN
+controller = MAN
+add_core = MAN
+add_core = CHC
+points = 1
+metal = 3.00
+energy = 6.00
+industry = 6
+land_fort = 2
+anti_air = 2
+infra = 6
+air_base = 2
+manpower = 2.00
+leadership = 0.20
+1945.9.1 = {
+infra = 6
+industry = 10
+}
+1945.9.28 = {
+	owner = CHC
+	controller = CHC
+add_core = CHI
+	remove_core = MAN
+}
+1949.10.1 = {
+	owner = PRC
+	controller = PRC
+}

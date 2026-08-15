@@ -1,0 +1,31 @@
+
+owner = CXK
+controller = CXK
+add_core = CXK
+add_core = CHI
+add_core = CHC
+infra = 5
+air_base = 3
+manpower = 30.00
+leadership = 1.00
+industry = 1
+land_fort = 8
+points = 1
+metal = 3.00
+energy = 16.00
+rare_materials = 2.00
+1935.8.1 = {
+owner = CSC
+controller = CSC
+remove_core = CXK
+add_core = CSC
+}
+1938.2.13 = {
+owner = CHI
+controller = CHI
+remove_core = CSC
+}
+1945.9.1 = {
+industry = 5
+}
+

@@ -1,0 +1,89 @@
+# If you add types, and use those tags, do not change them without changing everywhere they are used.
+fascism = {
+
+	national_socialist = {
+		color = { 40 40 40 }
+	}
+	
+	fascistic = {
+		color = { 60 60 60 }
+	}
+	
+	paternal_autocrat = {
+		color = { 90 90 90 }
+	}
+	
+	faction = {
+		tag = axis
+		icon = 2
+		rule = { limited_war = yes }
+		modifier = { territorial_pride = 0.1 } #10% extra
+		influence = align_towards_axis
+		
+		neutrality = 25			#can declare wars when they have 25 more in neutrality.
+	}
+	
+	position = { x = 200 y = 200 }
+
+}
+
+democracy = {
+	social_conservative = {
+		color = { 30 30 100 }
+	}
+
+	market_liberal = {
+		color = { 10 10 150 }
+	}
+
+	social_liberal = {
+		color = { 0 0 190 }
+	}
+
+	social_democrat = {
+		color = { 0 0 255 }
+	}
+
+	faction = {
+		tag = allies
+		icon = 3
+		rule = { allience_wide_guarantee = yes }
+		modifier = { 
+			war_consumer_goods_demand = -0.1 #10% less
+			peace_consumer_goods_demand = 0.1 #10% extra
+			} 
+		influence = align_towards_allies
+	}
+	
+	position = { x = 0 y = -146 }
+}
+
+communism = {
+	
+	left_wing_radical = {
+		color = { 150 10 10 }
+	}
+	
+	leninist = {
+		color = { 190 0 0 }
+	}
+	
+	stalinist = {
+		color = { 255 0 0 }
+	}
+	
+	faction = {
+		tag = comintern
+		icon = 1
+		
+		rule = { free_resource_gifts = yes }
+		modifier = { 
+			supply_consumption = -0.33
+			espionage_bonus = 0.1 
+		}
+		
+		influence = align_towards_comintern
+	}
+	
+	position = { x = -200 y = 200 }
+}

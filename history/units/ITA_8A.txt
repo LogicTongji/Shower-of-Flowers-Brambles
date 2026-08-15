@@ -1,0 +1,75 @@
+#以下为第10集团军序列
+	armygroup= {
+		name = "第10集团军"
+		location = 5484
+		leader = 6077 # Gariboldi
+		regiment = { type = hq_brigade name = "第10集团军总司令部" historical_model = 0 }
+		corps = {
+				name = "第20军"
+				location = 5484
+				leader = 6074 # Gambara
+				regiment = { type = hq_brigade name = "第20军指挥部" historical_model = 0 }
+				division= {
+					name = "第60'萨布拉塔'步兵师"
+					location = 5445 # Tarabulus
+					regiment = { type = motorized_brigade name = "第85步兵团" historical_model = 1 }
+					regiment = { type = infantry_brigade name = "第86步兵团" historical_model = 2 }
+					regiment = { type = anti_air_brigade experience = 70 historical_model = 4 }
+				}
+		} 
+		corps = {
+				name = "第21军"
+				location = 5510 # Gazala
+				leader = 6267 # Navarini
+				regiment = { type = hq_brigade name = "第21军指挥部" historical_model = 0 }
+				division= {
+					name = "第28黑衫步兵师"
+					location = 5510 # Gazala
+					leader = 6243 # Bitossi
+					regiment = { type = camicie_nere_brigade historical_model = 1 }
+					regiment = { type = camicie_nere_brigade historical_model = 1 }
+					regiment = { type = camicie_nere_brigade historical_model = 4 }
+				}
+				division= {
+			name = "第63'瑟瑞尼'步兵师"
+			location = 5138 # Rodos
+			regiment = { type = infantry_brigade "第91步兵团" historical_model = 2 }
+			regiment = { type = infantry_brigade name = "第92步兵团" historical_model = 2 }
+			regiment = { type = artillery_brigade name = "炮兵团" historical_model = 1 }
+		}
+}
+corps = {
+				name = "第22军"
+				location = 5510 # Gazala
+				leader = 6267 # Navarini
+				regiment = { type = hq_brigade name = "第22军指挥部" historical_model = 0 }
+				division= {
+			name = "第61'苏尔特'步兵师"
+			location = 5138 # Rodos
+			regiment = { type = infantry_brigade "第87步兵团" historical_model = 2 }
+			regiment = { type = infantry_brigade name = "第88步兵团" historical_model = 2 }
+			regiment = { type = artillery_brigade name = "炮兵团" historical_model = 1 }
+		}
+}
+corps = {
+				name = "第23军"
+				location = 5510 # Gazala
+				leader = 6267 # Navarini
+				regiment = { type = hq_brigade name = "第23军指挥部" historical_model = 0 }
+				division= {
+			name = "第64'卡坦扎罗'步兵师"
+			location = 5138 # Rodos
+			regiment = { type = infantry_brigade "第92步兵团" historical_model = 2 }
+			regiment = { type = infantry_brigade name = "第93步兵团" historical_model = 2 }
+			regiment = { type = artillery_brigade name = "炮兵团" historical_model = 1 }
+		}
+			division= {
+					name = "第3黑衫步兵师"
+					location = 5510 # Gazala
+					leader = 6243 # Bitossi
+					regiment = { type = camicie_nere_brigade historical_model = 1 }
+					regiment = { type = camicie_nere_brigade historical_model = 1 }
+					regiment = { type = camicie_nere_brigade historical_model = 4 }
+				}
+    }
+}

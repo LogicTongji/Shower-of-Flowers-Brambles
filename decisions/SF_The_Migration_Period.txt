@@ -1,0 +1,143 @@
+
+#工业内迁第一阶段
+diplomatic_decisions = {
+   Migration_Period_chi = {            
+		potential = {
+			tag = CHI
+                        exists = CHI
+			war_with = JAP
+			JAP = { has_country_flag = shanghai_incident }
+			not = { has_country_flag = The_Migration_Period_WuHan  } 
+			not = { year = 1938 } 
+		}
+		allow = {
+			CHI = { controls = 5494 
+                                controls = 7435 
+                                controls = 7520 
+                                controls = 7508 }
+		}
+		effect = {                      
+			set_country_flag =  The_Migration_Period_WuHan 
+			country_event = 1550
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#工业内迁第二阶段
+   Migration_Period2_chi = {               
+		potential = {
+			tag = CHI
+                                                CHI = { war_with = JAP }
+                       has_country_flag =  The_Migration_Period_WuHan 
+			not = { has_country_flag = The_Migration_Period_ChongQing } 
+			date = 1938.7.20
+			not = { year = 1939 } 
+		}
+		allow = {
+			 exists = CHI
+                         CHI = { controls = 7520 
+                                 controls = 9478 
+                                 controls = 7435 }
+                         CYN = { controls = 7561 }
+		}
+		effect = {
+			set_country_flag = The_Migration_Period_ChongQing
+			country_event = 1551 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+           #教育内迁
+	   education_chi = {               
+		potential = {
+			tag = CHI
+			CHI = { war_with = JAP }
+                        has_country_flag = The_Migration_Period_WuHan
+			not = { has_country_flag = The_Migration_Period_education } 
+			date = 1937.11.20
+			not = { year = 1938 } 
+		}
+		allow = {
+			 exists = CHI
+                          CHI = { controls = 7520 
+                                  controls = 9478 }
+		}
+		effect = {                        
+			set_country_flag = The_Migration_Period_education
+			country_event = 1553
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+           #西南联大
+	   education2_chi = {               
+		potential = {
+			tag = CHI
+			CHI = { war_with = JAP }
+                        has_country_flag = The_Migration_Period_education
+			not = { has_country_flag = The_Migration_Period_education2 } 
+			date = 1938.2.1
+			not = { year = 1939 } 
+		}
+		allow = {
+			 exists = CHI
+                         CHI = { controls = 7520 
+                                 controls = 9478 
+                                 controls = 7435 }
+                         CYN = { controls = 7561 }
+		}
+		effect = {
+			set_country_flag = The_Migration_Period_education2
+			country_event = 1557
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	 #西北联合大学
+	   educationXB_chi = {               
+		potential = {
+			tag = CHI
+			CHI = { war_with = JAP }
+                        has_country_flag = The_Migration_Period_education
+			not = { has_country_flag = The_Migration_Period_education4 } 
+			date = 1938.3.18
+		}
+		allow = {
+			 exists = CHI
+                         CHI = { controls = 7435 
+                                 controls = 9296 }
+		}
+		effect = {
+			set_country_flag = The_Migration_Period_education4
+			country_event = 1558
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	 #华西坝五校
+	   education5_chi = {               
+		potential = {
+			tag = CHI
+			CHI = { war_with = JAP }
+                        has_country_flag = The_Migration_Period_education
+			not = { has_country_flag = The_Migration_Period_education5 } 
+      year = 1939 
+		}
+		allow = {
+			 exists = CHI
+                         CHI = { controls = 9478 }
+		}
+		effect = {
+			set_country_flag = The_Migration_Period_education5
+			country_event = 1559
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

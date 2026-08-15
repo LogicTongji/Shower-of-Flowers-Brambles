@@ -1,0 +1,166 @@
+#######################
+#   武装党卫军决议组  #
+#######################
+
+diplomatic_decisions = {
+#帝国、骷髅、警察
+	GerSS_FIRST = {            
+		potential = {
+			tag = GER
+      not = { exists = POL }
+			war_with = ENG
+		  war_with = FRA
+			not = { has_country_flag = GER_gun_frigth_ssfirst } 
+			not = { year = 1940 } 
+		}
+		allow = {
+			GER = { 
+			controls = 1861
+			controls = 1928
+			 }
+		}
+		effect = {
+	    set_country_flag = GER_gun_frigth_ssfirst
+			load_oob="GER_SS1.txt"
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+            #希特勒警卫旗队、欧根亲王、弗洛里安
+	    GerSS_SECOND = {               
+		potential = {
+			tag = GER
+		  war_with = SOV
+			not = { has_country_flag = GER_gun_frigth_sssecond } 
+			date = 1942.6.1
+			not = { year = 1943 } 
+		}
+		allow = {
+         	          SOV = { controls = 1409 }	
+         	          GER = { 
+		          controls = 2223
+		          controls = 1694 }		
+		}
+		effect = {
+			set_country_flag = GER_gun_frigth_sssecond 
+			load_oob="GER_SS2.txt"
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+      #维京、北方
+	    GerSS_THIRD = {               
+		potential = {
+			tag = GER
+			not = { has_country_flag = GER_gun_frigth_ssthird } 
+			year = 1940
+			not = { year = 1941 } 
+		}
+		allow = {		         
+		}
+		effect = {
+			set_country_flag = GER_gun_frigth_ssthird
+			load_oob="GER_SS3.txt"
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+        #9--18
+	    GerSS_forth = {               
+		potential = {
+			tag = GER
+			war_with = SOV
+			not = { has_country_flag = GER_gun_frigth_ssforth } 
+			year = 1943
+			not = { year = 1944 } 
+		}
+		allow = {		
+		          SOV = { 
+		          controls = 1409
+		          controls = 2857 }		
+		          GER = { 
+		          controls = 2223
+		          controls = 1694 }		
+		}
+		effect = {
+			set_country_flag = GER_gun_frigth_ssforth
+			 load_oob="GER_SS4.txt"
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+           #18-30
+	    GerSS_fifth = {               
+		potential = {
+			tag = GER
+			manpower = 1000
+			war_with = SOV
+			not = { has_country_flag = GER_gun_frigth_ssfifth } 
+			year = 1944
+			not = { year = 1945 } 
+		}
+		allow = {		
+		          SOV = { 
+		          controls = 1409
+		          controls = 2857
+		          controls = 906
+		          controls = 1178 }	
+		          OR = {
+		          ENG = { 
+		          controls = 7938
+		          controls = 2422
+		          controls = 
+		          controls = 1178 }
+		           USA = { 
+		          controls = 1409
+		          controls = 2857
+		          controls = 2481
+		          controls = 2543  }
+		          }         
+		}
+		effect = {
+			set_country_flag = GER_gun_frigth_ssfifth
+			load_oob="GER_SS5.txt"
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+           #31--38
+	    GerSS_sixth = {               
+		potential = {
+			tag = GER
+			manpower = 1000
+			war_with = SOV
+			not = { has_country_flag = GER_gun_frigth_sssixth } 
+			year = 1945
+		}
+		allow = {		
+		          SOV = { 
+		          controls = 1928
+		          }	
+		          OR = {
+		          ENG = { 
+		          controls = 2613
+		           }
+		           USA = { 
+		          controls = 2613
+		           }
+		            FRA = { 
+		          controls = 2613
+		           }
+		          }         
+		}
+		effect = {
+			set_country_flag = GER_gun_frigth_sssixth
+			load_oob="GER_SS6.txt"
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

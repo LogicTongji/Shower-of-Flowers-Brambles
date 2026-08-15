@@ -1,0 +1,351 @@
+color = { 230  0  18 }
+graphical_culture = Soviet
+
+default_templates = {
+	generic_infantry = {
+		infantry_brigade
+		infantry_brigade
+		infantry_brigade
+	}
+	generic_milita = {
+		militia_brigade
+		militia_brigade
+		militia_brigade
+	}
+	generic_armoured = {
+		armor_brigade
+		motorized_brigade
+		motorized_brigade
+	}
+	generic_cavalry = {
+		cavalry_brigade
+		cavalry_brigade
+	}
+}
+
+unit_names = {
+	infantry_brigade = {
+		"第1师" "第2师" "第3师" "第4师" "第5师" "第6师" "第7师" "第8师" "第9师" "第10师" "第12师" 
+		"第14师" "第15师" "第17师" "第19师" "第21师" "第22师" "第25师" "第28师" "第29师" "第30师" "第35师" 
+		"第38师" "第40师" "第42师" "第46师" "第47师" "第49师" "第50师" "第51师" "第57师" "第58师" "第61师" 
+		"第62师" "第63师" "第64师" "第65师" "第66师" "第69师" 
+	}
+	cavalry_brigade = {
+		"骑兵第1师" "骑兵第2师" "骑兵第3师" "骑兵第4师" "骑兵第5师" "骑兵第6师" "骑兵第7师" "骑兵第8师" "骑兵第9师" "骑兵第10师" "骑兵第11师" 
+		"骑兵第12师" "骑兵第13师" "骑兵第14师" "骑兵第15师" 
+	}
+	motorized_brigade = {
+		"摩托化步兵第1师" "摩托化步兵第2师" "摩托化步兵第3师" "摩托化步兵第4师" "摩托化步兵第5师" "摩托化步兵第6师" "摩托化步兵第7师" "摩托化步兵第8师" "摩托化步兵第9师" "摩托化步兵第10师" "摩托化步兵第12师" 
+		"摩托化步兵第14师" "摩托化步兵第15师" 
+	}
+	mechanized_brigade = {
+		"机械化第1师" "机械化第2师" "机械化第3师" "机械化第4师" "机械化第5师" "机械化第6师" "机械化第7师" "机械化第8师" "机械化第9师" "机械化第10师" "机械化第12师" 
+		"机械化第14师" "机械化第15师" 
+	}
+	light_armor_brigade = {
+		"装甲兵第1师" "装甲兵第2师" "装甲兵第3师" "装甲兵第4师" "装甲兵第5师" "装甲兵第6师" "装甲兵第7师" "装甲兵第8师" "装甲兵第9师" "装甲兵第10师" "装甲兵第11师" 
+		"装甲兵第12师" "装甲兵第13师" "装甲兵第14师" "装甲兵第15师" "装甲兵第16师" "装甲兵第17师" "装甲兵第18师" "装甲兵第19师" "装甲兵第20师" 
+	}
+	armor_brigade = {
+		"装甲兵第1师" "装甲兵第2师" "装甲兵第3师" "装甲兵第4师" "装甲兵第5师" "装甲兵第6师" "装甲兵第7师" "装甲兵第8师" "装甲兵第9师" "装甲兵第10师" "装甲兵第11师" 
+		"装甲兵第12师" "装甲兵第13师" "装甲兵第14师" "装甲兵第15师" "装甲兵第16师" "装甲兵第17师" "装甲兵第18师" "装甲兵第19师" "装甲兵第20师" 
+	}
+	paratrooper_brigade = {
+		"第1空降部队" "空降部队第2师" "空降部队第3师" "空降部队第4师" "空降部队第5师" "空降部队第6师" "空降部队第7师" "空降部队第8师" "空降部队第9师" "空降部队第10师" "空降部队第11师" 
+		"空降部队第12师" "空降部队第13师" "空降部队第14师" "空降部队第15师" 
+	}
+	marine_brigade = {
+		"陆战队第1师" "陆战队第2师" "陆战队第3师" "陆战队第4师" "陆战队第5师" "陆战队第6师" "陆战队第7师" "陆战队第8师" "陆战队第9师" "陆战队第10师" "陆战队第11师" 
+		"陆战队第12师" "陆战队第13师" "陆战队第14师" "陆战队第15师" 
+	}
+	bergsjaeger_brigade = {
+		"山地第1师" "山地第2师" "山地第3师" "山地第4师" "山地第5师" "山地第6师" "山地第7师" "山地第8师" "山地第9师" "山地第10师" "山地第12师" 
+		"山地第14师" "山地第15师" "山地第17师" "山地第19师" 
+	}
+	garrison_brigade = {
+		"乌鲁木齐保安中队" "第1师" "第2师" "第3师" "第4师" "第5师" "第6师" "第7师" "第8师" "第10师" "第12师" 
+		"第14师" "第15师" "第17师" "第19师" "第21师" "第22师" "第25师" "第28师" "第29师" "第30师" "第35师" 
+		"第38师" "第40师" "第42师" "第46师" "第47师" "第49师" "第50师" 
+	}
+	hq_brigade = {
+		"第1战斗司令部" "第2战斗司令部" "第3战斗司令部" "第4战斗司令部" "第5战斗司令部" "第6战斗司令部" "第7战斗司令部" "第8战斗司令部" "第9战斗司令部" 
+	}
+	militia_brigade = {
+		"西藏保安中队" "第8民兵师" "第9民兵师" "第10民兵师" "第12民兵师" "第14民兵师" "第15民兵师" "第17民兵师" "第19民兵师" "第21民兵师" "第22民兵师" 
+		"第25民兵师" "第28民兵师" "第29民兵师" "第30民兵师" "第35民兵师" "第38民兵师" "第40民兵师" "第42民兵师" "第46民兵师" "第47民兵师" "第49民兵师" 
+		"第50民兵师" "第51民兵师" 
+	}
+	multi_role = {
+		"第1歼击机大队" "第2歼击机大队" "第3歼击机大队" "第4歼击机大队" "第5歼击机大队" "第6歼击机大队" "第7歼击机大队" "第8歼击机大队" "第9歼击机大队" "第10歼击机大队" 
+	}
+	interceptor = {
+		"第1战斗机大队" "第2战斗机大队" "第3战斗机大队" "第4战斗机大队" "第5战斗机大队" "第6战斗机大队" "第7战斗机大队" "第8战斗机大队" "第9战斗机大队" "第10战斗机大队" 
+	}
+	strategic_bomber = {
+		"第1战略轰炸机大队" "第2战略轰炸机大队" "第3战略轰炸机大队" "第4战略轰炸机大队" "第5战略轰炸机大队" "第6战略轰炸机大队" "第7战略轰炸机大队" "第8战略轰炸机大队" "第9战略轰炸机大队" "第10战略轰炸机大队" 
+	}
+	tactical_bomber = {
+		"第1战术轰炸机大队" "第2战术轰炸机大队" "第3战术轰炸机大队" "第4战术轰炸机大队" "第5战术轰炸机大队" "第6战术轰炸机大队" "第7战术轰炸机大队" "第8战术轰炸机大队" "第9战术轰炸机大队" "第10战术轰炸机大队" 
+	}
+	naval_bomber = {
+		"第1海军轰炸机大队" "第2海军轰炸机大队" "第3海军轰炸机大队" "第4海军轰炸机大队" "第5海军轰炸机大队" "第6海军轰炸机大队" "第7海军轰炸机大队" "第8海军轰炸机大队" "第9海军轰炸机大队" "第10海军轰炸机大队" "第11海军轰炸机大队" 
+		"第12海军轰炸机大队" "第13海军轰炸机大队" "第14海军轰炸机大队" "第15海军轰炸机大队" "第16海军轰炸机大队" "第17海军轰炸机大队" "第18海军轰炸机大队" "第19海军轰炸机大队" "第20海军轰炸机大队" 
+	}
+	cas = {
+		"第1俯冲轰炸机大队" "第2俯冲轰炸机大队" "第3俯冲轰炸机大队" "第4俯冲轰炸机大队" "第5俯冲轰炸机大队" "第6俯冲轰炸机大队" "第7俯冲轰炸机大队" "第8俯冲轰炸机大队" "第9俯冲轰炸机大队" "第10俯冲轰炸机大队" 
+	}
+	transport_plane = {
+		"第1空运机大队" "第2空运机大队" "第3空运机大队" "第4空运机大队" "第5空运机大队" "第6空运机大队" "第7空运机大队" "第8空运机大队" "第9空运机大队" 
+	}
+	battleship = {
+		"南星" "宝宁" 
+	}
+	light_cruiser = {
+		"海神" "赢威" 
+	}
+	heavy_cruiser = {
+		"平海" "宁海" 
+	}
+	battlecruiser = {
+		"飞鸿" "潮合" 
+	}
+	destroyer = {
+		"第1驱逐舰大队" "第2驱逐舰大队" "第3驱逐舰大队" 
+	}
+	carrier = {
+		"南星" "宝宁" 
+	}
+	submarine = {
+		"第1潜艇部队" "第2潜艇部队" 
+	}
+	transport_ship = {
+		"第1运输大队" "第2运输大队" "第3运输大队" 
+	}
+
+}
+
+
+ministers = {
+	173001 = {
+		name = "达赖十四世丹增嘉错"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M73001
+		head_of_state = pig_headed_isolationist
+		start_date = 1936.1.1
+	}
+	173002 = {
+		name = "五世热振活佛"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M73002
+		head_of_government = old_general
+		foreign_minister = apologetic_clerk
+		minister_of_security = compassionate_gentleman
+		armament_minister = laissez_faires_capitalist
+		start_date = 1936.1.1
+	}
+	173004 = {
+		name = "孜本夏格巴"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M73004
+		armament_minister = corrupt_kleptocrat
+		minister_of_security = prince_of_terror
+		start_date = 1936.1.1
+	}
+	173006 = {
+		name = "W.G·昆德林"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M73006
+		minister_of_intelligence = research_specialist
+		armament_minister = administrative_genius
+		start_date = 1936.1.1
+	}
+	173007 = {
+		name = "甲多旺堆"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M73007
+		chief_of_staff = school_of_manoeuvre
+		foreign_minister = general_staffer
+		armament_minister = tank_proponent
+		chief_of_army = armoured_spearhead_doctrine
+		chief_of_air = army_aviation_doctrine
+		start_date = 1936.1.1
+	}
+	173008 = {
+		name = "丹巴絳央"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M73008
+		chief_of_army = elastic_defence_doctrine
+		armament_minister = infantry_proponent
+		minister_of_intelligence = research_specialist
+		chief_of_staff = school_of_fire_support
+		start_date = 1936.1.1
+	}
+	173009 = {
+		name = "嘉瑪桑佩"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M73009
+		chief_of_navy = decisive_naval_battle_doctrine
+		armament_minister = battle_fleet_proponent
+		minister_of_security = efficient_sociopath
+		minister_of_intelligence = political_specialist
+		start_date = 1936.1.1
+	}
+	173010 = {
+		name = "桑颇·才旺仁增"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M73010
+		chief_of_air = army_aviation_doctrine
+		armament_minister = air_to_ground_proponent
+		start_date = 1936.1.1
+	}
+	173041 = {
+		name = "大扎·阿旺松绕旦白坚参"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M73041
+		head_of_government = backroom_backstabber
+		foreign_minister = great_compromiser
+		minister_of_security = compassionate_gentleman
+		start_date = 1941.1.1
+	}
+	173042 = {
+		name = "根敦群培"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M73012
+		foreign_minister = biased_intellectual
+		minister_of_security = silent_lawyer
+		start_date = 1936.1.1
+	}
+	173043 = {
+		name = "克特西格·萨马尔·里莫波切"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M73043
+		foreign_minister = ideological_crusader
+		start_date = 1936.1.1
+	}
+	173045 = {
+		name = "吉姆·塔尔林"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M73045
+		foreign_minister = apologetic_clerk
+		armament_minister = military_entrepreneur
+		start_date = 1943.1.1
+	}
+	173047 = {
+		name = "甘霍吉姆·卡奇恩"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M73047
+		foreign_minister = the_cloak_n_dagger_schemer
+		start_date = 1944.1.1
+	}
+	173048 = {
+		name = "敦珠活佛"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M73048
+		foreign_minister = iron_fisted_brute
+		start_date = 1945.1.1
+	}
+	173050 = {
+		name = "卡霍西恩·特卡塞尔"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M73050
+		armament_minister = theoretical_scientist
+		minister_of_intelligence = technical_specialist
+		start_date = 1938.1.1
+	}
+	173052 = {
+		name = "拉鲁·才旺多吉"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M73019
+		armament_minister = submarine_proponent
+		chief_of_navy = indirect_approach_doctrine
+		start_date = 1939.1.1
+	}
+	173053 = {
+		name = "土普西恩·林根"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M73014
+		armament_minister = resource_industrialist
+		minister_of_intelligence = industrial_specialist
+		start_date = 1940.1.1
+	}
+	173055 = {
+		name = "巴巴益西"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M73020
+		armament_minister = air_superiority_proponent
+		minister_of_security = man_of_the_people
+		chief_of_staff = school_of_manoeuvre
+		chief_of_army = elastic_defence_doctrine
+		chief_of_air = air_superiority_doctrine
+		start_date = 1942.1.1
+	}
+	173060 = {
+		name = "嘉瑪桑佩"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M73016
+		minister_of_security = back_stabber
+		minister_of_intelligence = dismal_enigma
+		start_date = 1936.1.1
+	}
+	173064 = {
+		name = "肯帕·里拉波伊"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M73064
+		minister_of_security = crime_fighter
+		start_date = 1939.1.1
+	}
+	173073 = {
+		name = "恩珠·贡布扎西"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M73017
+		chief_of_staff = school_of_psychology
+		start_date = 1938.1.1
+	}
+	173074 = {
+		name = "津巴嘉措"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M73018
+		chief_of_staff = school_of_defence
+		chief_of_army = static_defence_doctrine
+		start_date = 1939.1.1
+	}
+	173078 = {
+		name = "夏格·朗吉多杰"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M73078
+		chief_of_army = decisive_battle_doctrine
+		chief_of_navy = open_seas_doctrine
+		start_date = 1942.1.1
+	}
+	173081 = {
+		name = "凯墨·索南旺堆"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M73081
+		chief_of_army = guns_and_butter_doctrine
+		start_date = 1943.1.1
+	}
+}

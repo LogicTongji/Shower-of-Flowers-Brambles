@@ -1,0 +1,45 @@
+###############################
+# Political Crisis in Austria #
+###############################
+country_event = {
+	
+	id = 3301
+
+	trigger = {
+		tag = AUS
+		national_unity = 30
+		year = 1938
+		not = { year = 1939 }
+		not = { has_country_modifier = political_crisis_in_austria }
+	}
+
+	mean_time_to_happen =  {
+		months = 1
+
+		modifier = {
+			factor = 0.6
+			month = 6
+		}
+		modifier = {
+			factor = 0.6
+			month = 8
+		}
+		modifier = {
+			factor = 0.6
+			month = 10
+		}
+	}
+
+	title = "EVTNAME3301"
+	desc = "EVTDESC3301"
+	#picture = "politics1"
+
+	option = {
+		name = "EVTOPTA3301"			# OK
+		national_unity = -10
+		add_country_modifier = {
+			name = "political_crisis_in_austria"
+			duration = 720
+		}
+	}
+}

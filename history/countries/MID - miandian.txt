@@ -1,0 +1,45 @@
+capital = 6070
+government = right_wing_autocrat
+ideology = social_liberal
+head_of_state = 804006
+head_of_government = 804006
+foreign_minister = 804006
+armament_minister = 804006
+minister_of_security = 804006
+minister_of_intelligence = 804006
+chief_of_staff = 804006
+chief_of_army = 804006
+chief_of_navy = 804006
+chief_of_air = 804006
+alignment = { x = 100 y = 78.9 }
+neutrality = 75
+national_unity = 70
+
+oob = "empty.txt"
+
+
+popularity = { 
+	national_socialist = 0
+	fascistic = 16
+	paternal_autocrat = 5
+	social_conservative = 14
+	market_liberal = 36
+	social_liberal = 21
+	social_democrat = 3
+	left_wing_radical = 5
+	leninist = 0
+	stalinist = 0
+}
+
+organization = { 
+	national_socialist = 0
+	fascistic = 35
+	paternal_autocrat = 25
+	social_conservative = 35
+	market_liberal = 65
+	social_liberal = 30
+	social_democrat = 15
+	left_wing_radical = 25
+	leninist = 0
+	stalinist = 0
+}

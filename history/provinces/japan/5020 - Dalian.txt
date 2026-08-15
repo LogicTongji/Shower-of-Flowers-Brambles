@@ -1,0 +1,26 @@
+owner = JAP
+controller = JAP
+
+add_core = JAP
+add_core = CHC
+add_core = CHI
+
+anti_air = 4
+points = 1
+infra = 6
+air_base = 7
+naval_base = 5
+
+energy = 1.00
+1946.1.1 = {
+	owner = CHI
+	controller = CHI
+}
+1946.5.1 = {
+	owner = SOV
+	controller = SOV
+}
+1950.5.1 = {
+	owner = PRC
+	controller = PRC
+}

@@ -1,0 +1,101 @@
+##################
+#   朝鲜战争决议组  #
+##################
+diplomatic_decisions = {
+	Korean_Conflict1 = {
+		potential = {
+			tag = PRK
+			exists = KOR
+			exists = PRC
+			not = { has_country_flag = Korean_Conflict_prk }
+			PRC = { has_country_flag = China_mainland_libration }
+		}
+		allow = {
+			NOT = { war_with = USA }
+		}
+		effect = {
+			PRK = { 
+				manpower = 500
+				war = { target = KOR }
+				load_oob = "PRK_Amry.txt"
+			}
+			UNN = { country_event = 390073 }
+			set_country_flag = Korean_Conflict_prk
+			set_global_flag = Korean_Conflict
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		#联合国军
+			Korean_Conflict2 = {
+		potential = {
+			tag = UNN
+			exists = KOR
+			exists = PRC
+			has_global_flag = Korean_Conflict
+			not = { has_country_flag = Korean_Conflict_unn }
+		}
+		allow = {
+			NOT = { war_with = USA }
+		}
+		effect = {
+			KOR = { 
+				manpower = 500
+				load_oob = "KOR_Amry1.txt"
+			}
+			KOR = { set_country_flag = Korean_Conflict_kor }
+			set_country_flag = Korean_Conflict_unn
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#仁川登陆
+			Korean_Conflict3 = {
+		potential = {
+			tag = UNN
+			exists = KOR
+			exists = PRK
+			has_global_flag = Korean_Conflict
+			not = { has_country_flag = Korean_Conflict_renchuan_battle }
+		}
+		allow = {
+		}
+		effect = {
+			UNN = { 
+				load_oob = "KOR_Amry2.txt"
+			}
+			set_country_flag = Korean_Conflict_renchuan_battle
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#中国人民志愿军
+			Korean_Conflict4 = {
+		potential = {
+			tag = PRC
+			exists = KOR
+			exists = PRK
+			has_global_flag = Korean_Conflict
+			not = { has_country_flag = Korean_Conflict_prc_army }
+		}
+		allow = {
+
+		}
+		effect = {
+			PRK = { 
+				manpower = 500
+			}
+			war = { target = KOR }
+			create_alliance = PRK
+			4979 = {
+						   province_event = 190026
+						   }
+			set_country_flag = Korean_Conflict_prc_army
+			country_event = 390079
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}

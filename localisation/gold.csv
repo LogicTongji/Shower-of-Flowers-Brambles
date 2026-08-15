@@ -1,0 +1,282 @@
+AND_TRIGGER_STARTS;以下全部;;;;;;;;;;X
+IDEOLOGYG_IS_NOT_TRIGGER;执政党不是 $NAME$。\n;;;;;;;;;;X
+IDEOLOGYG_IS_EQUAL_TO_TRIGGER;执政党是 $NAME$。\n;;;;;;;;;;X
+SPYMISSION_RAISE_NATIONAL_UNITY_TITLE;提升国家凝聚力;;;;;;;;;;X
+SPYMISSION_RAISE_NATIONAL_UNITY_DESC;劝导、赞助、贿赂或拘捕可以让国内的重要人物更加支持\n我们的政权，让我们的政权更加稳固。;;;;;;;;;;X
+SURRENDER_DETAILS_THEY;他们 $OCCUPATION$% 的重要城市被占领，\n现在的国家凝聚力为 $UNITY$%。\n占领度一旦高于国家凝聚力他们就会投降。;;;;;;;;;;X
+Default;基本;;;;;;;;;;X
+UTM_LACK_OF_SUPPLIES;这支部队需要补给才能攻击敌人领土。;;;;;;;;;;X
+RETREAT_TO_OI;正在向$WHERE$撤退。;;;;;;;;;;X
+ATTACKING_TO_OI;正在攻击$WHERE$。;;;;;;;;;;X
+DEFENDING_OI;正在防守。;;;;;;;;;;X
+RECOVERING_OI;正在增援;;;;;;;;;;X
+NEED_FUEL_OI;等待燃料;;;;;;;;;;X
+NEED_SUPPLIES_OI;等待补给;;;;;;;;;;X
+USA_carrier_3;约克城级;;;;;;;;;;X
+MODIFIER_OFFICER_RECRUITMENT;招募军官;;;;;;;;;;X
+headline_statistics;统计;;;;;;;;;;X
+NAMED_THEATHRE;$PROV$指挥部;;;;;;;;;;X
+AND_MORE;以及更多……;;;;;;;;;;X
+CHANGESPYMISSIONTITLE;更改间谍任务？;;;;;;;;;;X
+CHANGESPYMISSIONDESC;你确定要更改在$COUNTRY$的间谍任务;;;;;;;;;;X
+DCG_TOTAL_NEED;我们需要将 $PERC$% IC投入到生活消费品的生产中。;;;;;;;;;;X
+DCG_MONEY_MOD;从IC中得到的金钱改变：;;;;;;;;;;X
+UTM_NO_ACCESS;我们不能进入中立地区。;;;;;;;;;;X
+UTM_NOT_LEGAL_RETREAT;我们不能向有敌军的地区撤退。;;;;;;;;;;X
+UTM_TOO_WEAK_TO_FIGHT;这支部队因为组织度太低而无法进行移动。;;;;;;;;;;X
+UTM_LACK_OF_FUEL;这支部队需要燃料才能攻击敌人领土。;;;;;;;;;;X
+UTM_MAY_SHATTER;这支部队的兵力过少, 交战的话有可能会溃散。;;;;;;;;;;X
+EVTNAME513;西班牙内战-战败!;;;;;;;;;;X
+EVTDESC513;经过漫长而血腥的征战，共和军终于击败了国民军并使其投\n降。;;;;;;;;;;X
+EVTOPTA513;这怎么可能？;;;;;;;;;;X
+OV_NO_VALID_ORDER;没有有效命令被选。;;;;;;;;;;X
+OV_NO_VALID_PROVINCES;没有有效省被选;;;;;;;;;;X
+CONFIRM_CHANGE_LAW_TITLE;改变法案;;;;;;;;;;X
+CONFIRM_CHANGE_LAW_DESC;你确定要通过新法案 $LAW$？;;;;;;;;;;X
+ESP_ESTIMATE_RES;我们的间谍估计他们一共有 $NUM$的 $ITEM$;;;;;;;;;;X
+ESP_NUM_SPIES;我们现在有 $NUM$ 名间谍在 $NATION$。;;;;;;;;;;X
+ESP_NUM_SPIES_DELAYED;新的间谍将会以 $PRIO$ 的优先度被送到这里。\n你最多可以有10个间谍在一个国家内活动。;;;;;;;;;;X
+ESP_ESTIMATE_RES_DELAY;这是个估计值。\n其准确度可以通过增加间谍或任命相关特\n性的部长来提高。\n;;;;;;;;;;X
+ESP_ESTIMATE_RES_DELAY_SPEC;你还可以给与你的间谍 $MISS$ 的任务。;;;;;;;;;;X
+attach_label;选择指挥部;;;;;;;;;;X
+OUR_NEUTRALITY;我们的中立性;;;;;;;;;;X
+SPIES_CAUGHT;抓获间谍;;;;;;;;;;X
+INTERNAL;内部;;;;;;;;;;X
+EXTERNAL;外部;;;;;;;;;;X
+ESP_SPIES_CAUGHT;上个月里我们共抓获 $NUM$ 名外国间谍。;;;;;;;;;;X
+ESP_NEUTRALITY;我们的中立性现在是 $NUM$。;;;;;;;;;;X
+SPYMISSION_NONE;无;;;;;;;;;;X
+ESP_NATIONAL_UNITY;国家凝聚力;;;;;;;;;;X
+UNITY_NOT_TRIGGER;国家凝聚力低于 $VALUE$%\n;;;;;;;;;;X
+DIP_TO_NEUTR_THREAT;我们的中立性与对我们最大的威胁度差距过大。\n这个差现在是 $VAL$ ，\n它应该被控制在 $LIM$以下;;;;;;;;;;X
+DIP_THEY_TO_NEUTR_THREAT;他们的中立性与和对他们最大的威胁度差距过大。\n这个差现在是 $VAL$ ，\n它应该被控制在 $LIM$以下;;;;;;;;;;X
+PROV14127;大善塔尔岛;;;;;;;;;;X
+PROV14128;果夫岛;;;;;;;;;;X
+coastal_fort;CF 海岸要塞;;;;;;;;;;X
+southern_france_region;法国南部;;;;;;;;;;X
+DIP_HIGHEST_THREAT;最大的威胁度:;;;;;;;;;;X
+DIP_HIGHEST_THREAT_TOOLTIP;国际上造成最大威胁的国家是 $COUNTRY$。\n他们对我们的威胁度是 $VAL$;;;;;;;;;;X
+DIP_HIGHEST_THREAT_TOOLTIP_DELAYED;你可能并没有感到被这个国家威胁，\n他们的好战度可以合理化你的侵略行为;;;;;;;;;;X
+VASSALPROVNUM;他们将得到 $NUMBER$ 个省。;;;;;;;;;;X
+IS_NOT_VASSAL_OF;不是傀儡于 ;;;;;;;;;;X
+IS_VASSAL_OF;是傀儡于 ;;;;;;;;;;X
+TRADENEWDESCTWO;我们每天向$COUNTRY$$TYPE$ $SELL$，价格为$BUY$。;;;;;;;;;;X
+TRADE_SELL;购买;;;;;;;;;;X
+TRADE_BUY;出售;;;;;;;;;;X
+TRADE_TRADE;交易;;;;;;;;;;X
+TRADE_TOOL_REQDESC;$COUNTRY$希望每天以$TO$来换取$FROM$。;;;;;;;;;;X
+northern_spain_region;西班牙北部;;;;;;;;;;X
+eastern_spain_region;西班牙南部;;;;;;;;;;X
+west_germany_region;德国西部;;;;;;;;;;X
+POL_EVENTS;事件: ;;;;;;;;;;X
+POL_SPIES;间谍: ;;;;;;;;;;X
+POL_PARTY_POP_FACTORS;国内因素: ;;;;;;;;;;X
+POL_PARTY_MINISTER_DISSENT;部长带来的不满度惩罚：;;;;;;;;;;X
+POL_PARTY_DISTANCE_FROM_ORG;与组织度数值的差距：;;;;;;;;;;X
+PO_NO_CHANGE;本月没有变化;;;;;;;;;;X
+FE_NONE_FOUND;无;;;;;;;;;;X
+EVTNAME2007;西班牙内战-法国干涉;;;;;;;;;;X
+EVTDESC2007;1936年初，在社会党选举胜出之后，对社会地位平等的普遍\n要求演变成一场实质上的反对教士、地主、君主制主义者的\n革命。暴动者们袭击教堂并尝试将农场集体化。各联盟开始\n罢工，无政府主义者暗杀人民的敌人，新建立的政府无法恢\n复秩序。西班牙军队加入保守派和天主教徒去镇压社会的革\n命，他们因此称为国家主义者。政府面对军队的反叛自称为共\n和党，并决定与革命力量一起加入斗争。西班牙内战开始!\n很多国家如德国、意大利和苏联以武力干涉了西班牙内战。;;;;;;;;;;X
+EVTOPTA2007;我们需要一切可以得到的援助;;;;;;;;;;X
+EVTNAME2008;西班牙内战-英国干涉;;;;;;;;;;X
+EVTNAME2009;西班牙内战-苏联干涉;;;;;;;;;;X
+EVTNAME2010;西班牙内战-德国干涉;;;;;;;;;;X
+EVTNAME2011;西班牙内战-意大利干涉;;;;;;;;;;X
+POL_CURRENT_LAW;这是现行法案;;;;;;;;;;X
+EVTNAME514;$FROMCOUNTRY$投降!;;;;;;;;;;X
+EVTDESC514;$FROMCOUNTRY$ 终于明白他们除了投降之外别无选择。\n他们的部队疲于作战，\n而且也缺乏财政手段来维持军队。;;;;;;;;;;X
+EVTOPTA514;末日!;;;;;;;;;;X
+EVTNAME515;$FROMCOUNTRY$ 拒绝投降!;;;;;;;;;;X
+EVTDESC515;$FROMCOUNTRY$ 拒不承认他们除了投降之外别无选择。\n他们的部队疲于作战，\n而且也缺乏财政手段来维持军队，\n他们还是决定继续战斗。;;;;;;;;;;X
+EVTOPTA515;很明显，他们不知道现实;;;;;;;;;;X
+national_socialist_AST;国家社会主义联盟;;;;;;;;;;X
+fascistic_AST;澳大利亚法西斯主义联盟;;;;;;;;;;X
+paternal_autocrat_AST;国家党;;;;;;;;;;X
+social_conservative_AST;自由与国家联盟;;;;;;;;;;X
+market_liberal_AST;澳大利亚联合党;;;;;;;;;;X
+social_liberal_AST;道格拉斯信誉党;;;;;;;;;;X
+social_democrat_AST;劳动党;;;;;;;;;;X
+left_wing_radical_AST;反法西斯反战运动;;;;;;;;;;X
+leninist_AST;国家劳动党;;;;;;;;;;X
+stalinist_AST;澳大利亚共产党;;;;;;;;;;X
+LEDGER_TRADED_FOR;获取;;;;;;;;;;X
+LEDGER_TRADED_AWAY;支付;;;;;;;;;;X
+ICON_EXPEDITION;远征军;;;;;;;;;;X
+SAVED_GAMES;储存游戏;;;;;;;;;;X
+national_socialist_CZE;苏台德党;;;;;;;;;;X
+fascistic_CZE;国家社会主义法西斯党;;;;;;;;;;X
+paternal_autocrat_CZE;斯洛伐克人民党;;;;;;;;;;X
+social_conservative_CZE;捷克斯洛伐克人民党;;;;;;;;;;X
+market_liberal_CZE;捷克斯洛伐克国家民主党;;;;;;;;;;X
+social_liberal_CZE;捷克斯洛伐克国家社会主义党;;;;;;;;;;X
+social_democrat_CZE;土地党;;;;;;;;;;X
+left_wing_radical_CZE;捷克斯洛伐克社会民主劳动党;;;;;;;;;;X
+leninist_CZE;捷克斯洛伐克共产党;;;;;;;;;;X
+stalinist_CZE;捷克斯洛伐克共产党;;;;;;;;;;X
+FE_PAUSED_TEXT;暂停;;;;;;;;;;X
+construction_practical;建筑经验;;;;;;;;;;X
+PV_OCEAN_DESC;只有船只可以进入这片海域;;;;;;;;;;X
+#PROV14129;Bonin Islands;;;;;;;;;;X
+#PROV14130;Lake Michigan;;;;;;;;;;X
+#PROV14131;Lake Huron;;;;;;;;;;X
+#PROV14132;Lake Superior;;;;;;;;;;X
+#PROV14133;Lake Erie;;;;;;;;;;X
+#PROV14134;Lake Ontario;;;;;;;;;;X
+CONFIRM_CANCEL_CONSTRUCTION_TITLE;取消建设？;;;;;;;;;;X
+CONFIRM_CANCEL_CONSTRUCTION_DESC;你是否确认你希望取消这个建设？;;;;;;;;;;X
+#PROV14135;Lake Winnipeg;;;;;;;;;;X
+#PROV14136;Northern Caspian Sea;;;;;;;;;;X
+#PROV14137;Western Caspian Sea;;;;;;;;;;X
+#PROV14138;Eastern Caspian Sea;;;;;;;;;;X
+#PROV14139;Southern Caspian Sea;;;;;;;;;;X
+#PROV14140;Aral Sea;;;;;;;;;;X
+#PROV14141;Lake Balkhash;;;;;;;;;;X
+#PROV14142;Lake Baikal;;;;;;;;;;X
+#PROV14143;Lake Nyasa;;;;;;;;;;X
+#PROV14144;Lake Tanganyika;;;;;;;;;;X
+#PROV14145;Lake Victoria;;;;;;;;;;X
+#PROV14146;Lake Ladoga;;;;;;;;;;X
+#PROV14147;Lake Onega;;;;;;;;;;X
+#PROV14148;V鋘ern;;;;;;;;;;X
+#PROV14149;Lake Volta;;;;;;;;;;X
+DIP_THEY_PUPPET;他们是$OVERLORD$的傀儡国;;;;;;;;;;X
+UV_UNDER_ATTACK;这个单位正被攻击;;;;;;;;;;X
+UV_ATTACKING;这个单位正在攻击;;;;;;;;;;X
+UV_MOVING;这个单位正在移动;;;;;;;;;;X
+UV_RETREAT;这个单位正在撤退;;;;;;;;;;X
+UV_NOT_MOBILE;这个单位被禁止移动;;;;;;;;;;X
+PAUSE_RESUME;继续;;;;;;;;;;X
+MESSAGECAT_COMBAT;战斗信息;;;;;;;;;;X
+MESSAGECAT_DIPLOMACY;外交信息;;;;;;;;;;X
+MESSAGECAT_UNITS;单位信息;;;;;;;;;;X
+MESSAGECAT_PROVS;省份信息;;;;;;;;;;X
+MESSAGECAT_EVENTS;事件信息;;;;;;;;;;X
+MESSAGECAT_OTHERS;其他信息;;;;;;;;;;X
+MESSAGECAT_ALL;所有信息;;;;;;;;;;X
+MS_PASS;密码:;;;;;;;;;;X
+MS_NOT_CONNECTED;并未连接;;;;;;;;;;X
+MS_CONNECTING;连接中...;;;;;;;;;;X
+MS_FAILED;连接失败;;;;;;;;;;X
+MS_CANCEL;取消;;;;;;;;;;X
+MS_CONNECT;连接;;;;;;;;;;X
+MS_EMPTY_USERNAME;你必须输入用户名!;;;;;;;;;;X
+MS_LOGGED_AS;以如下名称登陆:;;;;;;;;;;X
+MS_CREDITS;可用点数:;;;;;;;;;;X
+MS_MY_ITEMS;我的项目;;;;;;;;;;X
+MS_CLOSE;关闭;;;;;;;;;;X
+MS_PURCHASE_BONUS_CONTENT;购买增值内容;;;;;;;;;;X
+MS_DOWNLOAD;下载;;;;;;;;;;X
+MS_INSTALL;安装;;;;;;;;;;X
+MS_BUY_ITEM;购买项目;;;;;;;;;;X
+ME_ERROR;错误: ;;;;;;;;;;X
+ME_STATUS_OK;情况良好;;;;;;;;;;X
+GGCOINS_ERR_NO_MEM;内存分配错误;;;;;;;;;;X
+GGCOINS_ERR_NET;网络错误;;;;;;;;;;X
+GGCOINS_ERR_HANDSHAKE;连接错误-请确认你的防火墙设置;;;;;;;;;;X
+GGCOINS_ERR_INVALID_RESPONSE;错误的用户名与密码;;;;;;;;;;X
+GGCOINS_ERR_NOT_SIGNED_IN;尚未登陆;;;;;;;;;;X
+GGCOINS_ERR_NOT_FOUND;项目未找到;;;;;;;;;;X
+GGCOINS_ERR_PRICE_INCREASED;商品已经增加，请更新你的列表;;;;;;;;;;X
+GGCOINS_ERR_OUT_OF_CREDITS;你的点数不足。;;;;;;;;;;X
+GGCOINS_ERR_DUPLICATE;你已经拥有这个项目;;;;;;;;;;X
+ME_PURCHASE_SUCCESSFUL;购买成功!请查看已有项目的说明并安装。;;;;;;;;;;X
+ME_BUY_ITEM;购买项目;;;;;;;;;;X
+ME_BUY_ITEM_DESC;你确认将以$CREDITS$点数购买 $NAME$ 吗？这个命令不能取消。;;;;;;;;;;X
+MS_AVAILABLE_ITEMS;可用项目;;;;;;;;;;X
+MESSAGESETTINGS_ALL;所有;;;;;;;;;;X
+MESSAGESETTINGS_COMBAT;战斗;;;;;;;;;;X
+MESSAGESETTINGS_DIPLOMACY;外交;;;;;;;;;;X
+MESSAGESETTINGS_UNITS;单位;;;;;;;;;;X
+MESSAGESETTINGS_PROVINCES;省份;;;;;;;;;;X
+MESSAGESETTINGS_EVENTS;事件;;;;;;;;;;X
+MESSAGESETTINGS_OTHER;其他;;;;;;;;;;X
+ME_CLICK_BUY;点击这里用你的蓝色点数购买项目;;;;;;;;;;X
+ME_DOWNLOAD;点击这里下载你的项目;;;;;;;;;;X
+ME_DOWNLOAD_ERROR;下载错误!;;;;;;;;;;X
+ME_INSTALL;点击这里安装你的项目。要让其产生效果你可能需要重新运行游戏。;;;;;;;;;;X
+ME_BAD_VERSION;这个点数是提供给更高版本游戏的，你至少需要更新到 $NUMBER$ 版本。;;;;;;;;;;X
+ME_NO_FILE;这个项目并不包括文件;;;;;;;;;;X
+ME_INSTALL_SUCCESS;安装成功!;;;;;;;;;;X
+ME_INSTALL_FAIL;安装失败!;;;;;;;;;;X
+FE_MICRO;购买增值项目;;;;;;;;;;X
+EVTOPTA516;我们将按我们要求的那样来安排;;;;;;;;;;X
+EVTOPTB516;建立一个傀儡国;;;;;;;;;;X
+EVTOPTC516;吞并他们;;;;;;;;;;X
+LE_SUPPLIES;需要补给的单位;;;;;;;;;;X
+LE_FUEL;需要燃料的单位;;;;;;;;;;X
+LEDGER_SUNK_SHIP;击沉舰船;;;;;;;;;;X
+MOVE_ORDER_DESC;移动到一个省份;;;;;;;;;;X
+ORDER_JOIN_FLEET_DESC;加入现有的舰队;;;;;;;;;;X
+ORDER_REBASE_DESC;重新部署到一个新基地;;;;;;;;;;X
+ORDER_RESERVE_DESC;保留为预备部队。有需求时舰船将被增援到属于基地的其\n他舰船;;;;;;;;;;X
+ORDER_PATROL_DESC;在选定的区域及其周围巡逻;;;;;;;;;;X
+ORDER_INTERCEPT_DESC;当敌对单位出现在选定的区域及其周围时尝试拦截及作战。;;;;;;;;;;X
+ORDER_SORTIE_DESC;突击选定的区域并与找到的敌军作战。如果没有发现敌对力\n量，则返回基地;;;;;;;;;;X
+ORDER_CONVOY_ESCORT_DESC;尝试保护此区域的友方护航舰队;;;;;;;;;;X
+ORDER_CONVOY_RAID_DESC;尝试搜寻并摧毁此区域的敌方护航舰队;;;;;;;;;;X
+ORDER_TRANSPORT_DESC;将陆军单位运输到友方陆地省份，然后返回基地。;;;;;;;;;;X
+ORDER_INVADE_DESC;选定区域的陆军部队已经登上船只;;;;;;;;;;X
+OUT_OF_RANGE;目标超出航程。你的舰队航程为 $MYRANGE$ 千米，而需要的航程为 $RANGE$ 千米;;;;;;;;;;X
+north_africa_region;非洲北部;;;;;;;;;;X
+syrian_region;叙利亚;;;;;;;;;;X
+SELECT_ALL_CHILDUNITS;选择所有;;;;;;;;;;X
+DETRAWITHUS_SETUP;当他国拒绝我们提议的贸易协议;;;;;;;;;;X
+DETRAWITHUS_HEADER;$foreign_minister$ 报告:;;;;;;;;;;X
+DETRAWITHUS_1;$MONARCHTITLE$,我们遗憾地告知您;;;;;;;;;;X
+DETRAWITHUS_2;$RECIPIENT$;;;;;;;;;;X
+DETRAWITHUS_3;拒绝了我们提议的;;;;;;;;;;X
+DETRAWITHUS_4;贸易协协议;;;;;;;;;;X
+DETRAWITHUS_5;*;;;;;;;;;;X
+DETRAWITHUS_6;*;;;;;;;;;;X
+DETRAWITHUS_LOG;$RECIPIENT$ 拒绝了我们提议的贸易协议;;;;;;;;;;X
+DETRAWITHUS_BTN1;好的;;;;;;;;;;X
+DETRAWITHUS_BTN2;好的;;;;;;;;;;X
+DETRAWITHUS_BTN3;查看;;;;;;;;;;X
+DETRAWITHUS_MAP;*;;;;;;;;;;X
+AT_WAR_WITH_FACTION;我们处于同他们阵营的战争。;;;;;;;;;;X
+THEY_AT_WAR_WITH_FACTION;他们出于同其他阵营的战争。;;;;;;;;;;X
+MODIFIER_NEUTRALITY;中立性;;;;;;;;;;X
+TRADE_IS_INACTIVE;交易停止，似乎需要缴付的资源不足;;;;;;;;;;X
+FACTION_DRIFT_REVANCH_NEW;-$VAL$由于$FACTION$成员控制了$COUNTRY$的核心省份。;;;;;;;;;;X
+MESSAGE_IS_PAUSE;这种类型的信息将 $TRUTH$ 显示为一个弹出窗口并暂停游戏。;;;;;;;;;;X
+LICBUYDECLINE_6;我们的下列要求已经被拒绝。 \n 我们必须生产 $NUM$ \n$NAME$ \n 我们必须找到其他方法加强我们的军事力量。;;;;;;;;;;X
+MICRO_ERROR_TITLE;错误!;;;;;;;;;;X
+MICRO_ERROR_DESC;无法打开 ggcoins.dll，请确认这个文件存在或者重新安装游戏。;;;;;;;;;;X
+TRADE_INACTIVE_CONVOY;$COUNTRY$ 未被分配足够的护航舰队。;;;;;;;;;;X
+TRADE_INACTIVE_NO_RES;$COUNTRY$ 拥有的 $RES$ 不足。;;;;;;;;;;X
+UV_NO_MORALE;在低组织度下无法移动。当前组织度为$ORG$而移动需要$NEED$组织度。;;;;;;;;;;X
+UV_NO_STRENGHT;在低兵力下无法移动。当前兵力为$STR$而移动需要$NEED$兵力。;;;;;;;;;;X
+TR_CANT_CONVOY;$ACTOR$ 无法描绘一条护航线路来集中其货物;;;;;;;;;;X
+Influences;影响力;;;;;;;;;;X
+Diplomacy;外交;;;;;;;;;;X
+Production;生产;;;;;;;;;;X
+Technology;科研;;;;;;;;;;X
+Politics;政治;;;;;;;;;;X
+Intelligence;情报;;;;;;;;;;X
+Statistics;统计;;;;;;;;;;X
+Land;陆军;;;;;;;;;;X
+Naval;海军;;;;;;;;;;X
+Air;空军;;;;;;;;;;X
+Doctrines;学说;;;;;;;;;;X
+Industry;工业;;;;;;;;;;X
+Secret;秘密;;;;;;;;;;X
+Popularity;支持度;;;;;;;;;;X
+Overview;概要;;;;;;;;;;X
+Economy;经济;;;;;;;;;;X
+Misc;其它;;;;;;;;;;X
+Military;军事;;;;;;;;;;X
+none;无;;;;;;;;;;X
+Nation Statistics;国家统计;;;;;;;;;;X
+fascism;法西斯主义;;;;;;;;;;X
+democracy;民主主义;;;;;;;;;;X
+communism;共产主义;;;;;;;;;;X
+Start Research;开始研究;;;;;;;;;;X
+Build;建造;;;;;;;;;;X
+OV_STANCE;决定部队执行这个任务的积极性。;;;;;;;;;;X
+OV_PRIO;决定这支部队优先被增援;;;;;;;;;;X
+THEATRE_RECALC;定义战区;;;;;;;;;;X
+THEATRE_RECALC_DESC;定义此时最为适合的战区，按照需求创建或移除战区指挥部。;;;;;;;;;;X
+THEATRE_ASSIGN_TROOPS;战区部队;;;;;;;;;;X
+THEATRE_ASSIGN_TROOPS_DESC;为战区自动配备最佳部队组合。;;;;;;;;;;X
+FACTION_DISTANCE_2;他们的联盟需要在$FACTION$少于$VAL$。他们的联盟当前为$VALC$。;;;;;;;;;;X
+MODIFIER_RESEARCH_EFFICIENCY;科研效率;;;;;;;;;;X

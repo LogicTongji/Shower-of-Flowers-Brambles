@@ -1,0 +1,87 @@
+######################
+#   东征战役事件组   #
+######################
+#发布《关于红军东进抗日及讨伐卖国贼阎锡山的命令》
+country_event = {
+	id = 19362
+	major = yes
+		fire_only_once = yes
+	title = "Event19362title"
+	subtitle = "Event19362subtitle"
+	desc = "Event19362desc"
+	picture = "EastwardAttack1"
+	trigger = {
+		tag = CHC
+	        war_with = JAP 
+	   not = { year = 1937 }
+	   has_country_flag = Anti_jap_united_front_first
+		date = 1936.1.15
+	}
+	option = {
+		name = "Event19362option"
+                national_unity = 10
+		set_country_flag = Eattack_papre
+	}
+}
+country_event = {
+	id = 1000077
+	is_triggered_only = yes
+	title = "Event1000077title"
+	desc = "Event1000077desc"
+	picture = "EastwardAttack2"
+	option = {
+		name = "Event1000077option"
+		CHC = {	
+			war = {
+				target = CSX
+			}
+		}
+		CSX = {	country_event = 1000078 }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000078
+	is_triggered_only = yes
+	title = "Event1000078title"
+	desc = "Event1000078desc"
+	picture = "EastwardAttack2"
+	option = {
+		name = "Event1000078option"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000079
+	is_triggered_only = yes
+	title = "Event1000079title"
+	desc = "Event1000079desc"
+	picture = "EastwardAttack3"
+	option = {
+		name = "Event1000079option"
+		ai_chance = { factor = 100 }
+		CHC = {	end_war = CSX
+		        end_war = CSY }
+		CSX = {	leave_alliance = CHI 
+		leave_alliance = CSY
+		country_event = 1000080 }
+		CSX = { any_owned = { limit = { province_id = 7391 } secede_province = CHC } }
+		manpower = 60
+		kill_leader = 76325
+		remove_minister = 51023
+		head_of_government = 51037
+	}
+}
+country_event = {
+	id = 1000080
+	is_triggered_only = yes
+	title = "Event1000080title"
+	desc = "Event1000080desc"
+	picture = "EastwardAttack3"
+	option = {
+		name = "Event1000080option"
+		ai_chance = { factor = 100 }
+		military_access = CHI
+		CHI = { military_access = CSX }
+	}
+}

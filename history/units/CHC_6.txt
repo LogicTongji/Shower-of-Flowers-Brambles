@@ -1,0 +1,81 @@
+division = {
+	name = "晋冀豫独立支队兼第1军分区"
+	location = 5175
+	regiment = { type = partisan_bergsjaeger experience = 5 historical_model = 1 }
+	regiment = { type = partisan_bergsjaeger experience = 5 historical_model = 1 }
+}
+division = {
+	name = "晋冀豫第4军分区"
+	location = 5271
+	regiment = { type = partisan_bergsjaeger name = "汪乃贵支队" experience = 10 historical_model = 1 }
+	regiment = { type = partisan_bergsjaeger name = "谢张大队" experience = 10 historical_model = 1 }
+}
+division = {
+	name = "129师386旅补充团"
+	location = 5271
+	regiment = { type = partisan_bergsjaeger experience = 25 historical_model = 1 }
+	regiment = { type = partisan_bergsjaeger experience = 25 historical_model = 1 }
+}
+division = {
+	name = "129师独立团"
+	location = 5271
+	regiment = { type = partisan_bergsjaeger experience = 15 historical_model = 1 }
+	regiment = { type = partisan_bergsjaeger experience = 15 historical_model = 1 }
+}
+division = {
+	name = "晋冀豫游击支队兼第2军分区"
+	location = 5207
+	regiment = { type = partisan_bergsjaeger historical_model = 1 }
+	regiment = { type = partisan_bergsjaeger historical_model = 1 }
+}
+division = {
+	name = "晋冀豫先遣支队兼第3军分区"
+	location = 5273
+	regiment = { type = partisan_bergsjaeger experience = 10 historical_model = 1 }
+	regiment = { type = partisan_bergsjaeger experience = 10 historical_model = 1 }
+}
+division = {
+	name = "晋冀豫独立游击支队兼第5军分区"
+	location = 5272
+	regiment = { type = partisan_bergsjaeger experience = 5 historical_model = 1 }
+	regiment = { type = partisan_bergsjaeger experience = 5 historical_model = 1 }
+}
+division = {
+	name = "129师直属部队"
+	location = 7436
+	regiment = { type = partisan_bergsjaeger name = "129师骑兵团" experience = 35 historical_model = 1 }
+	regiment = { type = partisan_bergsjaeger name = "晋豫边游击支队" experience = 10 historical_model = 1 }
+}
+division = {
+	name = "冀西游击总队"
+	location = 7436
+	regiment = { type = partisan_bergsjaeger experience = 10 historical_model = 1 }
+}
+division = {
+	name = "晋冀豫人民抗日游击总队"
+	location = 7436
+	regiment = { type = partisan_bergsjaeger experience = 10 historical_model = 1 }
+}
+division = {
+	name = "太岳游击大队"
+	location = 7436
+	regiment = { type = partisan_bergsjaeger experience = 10 historical_model = 1 }
+}
+division = {
+	name = "129师386旅"
+	location = 5207
+	regiment = { type = partisan_bergsjaeger name = "第771团" experience = 40 historical_model = 2 }
+	regiment = { type = partisan_bergsjaeger name = "第772团" experience = 40 historical_model = 2 }
+}
+division = {
+	name = "129师385旅"
+	location = 5207
+	regiment = { type = partisan_bergsjaeger name = "第770团" experience = 40 historical_model = 2 }
+	regiment = { type = partisan_bergsjaeger name = "补充团" experience = 10 historical_model = 1 }
+}
+division = {
+	name = "129师385旅769团"
+	location = 5273
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 2 }
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 2 }
+}

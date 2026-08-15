@@ -1,0 +1,44 @@
+xxxx;;;;;;;;;;;;;;x
+EVTNAME2704;ÃÉ¹Å¹úµÄÀ©ÕÅ ;;Expansion von Megkukuo;;Expansión de Mengkukuo;;;;;;;;;x
+EVTDESC2704;ÕâĞ©Ê¡·İÏÖÔÚÊôÓÚÃÉ¹Å¹ú ;;Diese Provinzen gehören nun zu Megkukuo;;Estas provincias pertenecen ahora a Mengkukuo.;;;;;;;;;x
+expand_mengkukuo_title;ÃÉ¹Å¹úµÄÀ©ÕÅ ;;Die Expansion von Megkukuo;;La expansión de Mengkukuo;;;;;;;;;x
+expand_mengkukuo_desc;¸ü¶àÃÉ¹Å¹úĞû³ÆµÄÍÁµØÂäÈëÁËÎÒÃÇÊÖÖĞ£¬ÎÒÃÇÓ¦µ±½«ÕâĞ©µØ\n·½ÄÉÈëÃÉ¹Å¹ú²¢°´ÕÕÎÒÃÇµÄÒâÖ¾À´Í³ÖÎËüÃÇ¡£ ;;Mehr Land, das von Megkukuo beansprucht wird, ist uns in die Hände gefallen, wir sollten es in Megkukuo integrierren damit sie es in unserem Namen regieren.;;Nos hemos apoderado de más tierras reclamadas por Mengkukuo. Hemos de incorporarlas a este territorio para que puedan gobernarlas bajo nuestra supervisión.;;;;;;;;;x
+MODIFIER_LOCAL_RESOURCES;±¾µØ×ÊÔ´ ;;Lokale Ressourcen;;Recursos locales;;;;;;;;;x
+POL_MOBILIZE_DRO_V3;ÒªÍêÈ«¶¯Ô±Ô¤±¸ÒÛÎÒÃÇĞèÒª §Y$MP$§W ÈËÁ¦¡£ ;;Um unsere Reserven komplett zu mobilisieren benötigen wir §Y$MP$§W Männer.;;Para movilizar completamente nuestras reservas necesitamos §Y$MP$§W de recursos humanos.;;;;;;;;;x,,,
+PORT_SHIPS;Õâ¸ö¸Û¿ÚÃ¿Ìì¿ÉÒÔÊäÈë §Y$SIZE$§W µ¥Î»µÄ²¹¸øºÍÈ¼ÁÏ¡£ ;;Der Hafen hier kann täglich §Y$SIZE$§W Einheiten Nachschub und Treibstoff aufnehmen.;;El puerto local puede enviar §Y$SIZE$§W unidades de suministros y combustibles cada día.;;;;;;;;;x,,,
+THE_DATE_IS_BEFORE;ÔçÓÚ §Y$DATE$§\n;Ceci est antérieur §Y$DATE$§\n;Es ist vor §Y$DATE$§\n;;Es antes de §Y$DATE$§\n;;;;;;;;;x,,,
+THE_DATE_IS_AFTER;ÍíÓÚ §Y$DATE$§\n ;C'est au moins §Y$DATE$§\n;Es ist zumindest §Y$DATE$§\n;;Es al menos §Y$DATE$§\n ;;;;;;;;;x,,,
+EVTNAME2902;¹â¸´·¨¹ú ;;Die Wiedererrichtung Frankreichs;;La restauración de Francia;;;;;;;;;x
+EVTDESC2902;Í¨¹ıÊÕ¸´°ÍÀè£¬´÷¸ßÀÖÖ¤Ã÷ÁËËûÑ¡Ôñ³ÖĞø¶·ÕùµÄÕıÈ·²¢»Ö¸´\nÁË·¨À¼Î÷µÄÈÙÓş¡£Î¬Ï£Ö¤È¯ÒÑ¾­ÍêÈ«É¥Ê§ÁËÉùÍû£¬ÏÖÔÚ×ÔÓÉ\n·¨¹úÔË¶¯ÒÑ¾­³ÉÎªÁË·¨¹úÈËÃñÎ¨Ò»¡¢ÕıÍ³²¢ºÏ·¨µÄÉùÒô¡£Î¬\nÏ£ÕşÈ¨²»µÃ²»Í¶½µ²¢½«ËüÃÇµÄÈ¨Á¦ÒÆ½»¸ø´÷¸ßÀÖ¡£ ;;Mit der Rückeroberung von Paris hat De Gaulle sein Versprechen wahrgemacht als er gesagt hat dass er den Kampf fortsetzen und die Ehre Frankreichs wiederherstellen wolle. Das Vichy-Regime wurde komplett diskreditiert und die freifranzösische Bewegung ist die einzig wahre, legitime Stimme des französischen Volkes. Das Vichy-Regime hat das Unvermeidbare akzeptiert und ihre Authorität an De Gaulle abgeben. ;;Al recuperar París, De Gaulle ha reivindicado su decisión de continuar la lucha y restaurar el honor de Francia. El régimen de Vichy ha quedado completamente desacreditado y ahora el movimiento de la Francia libre es la única voz legítima del pueblo francés. El régimen de Vichy ha aceptado lo inevitable y ha rendido su autoridad a De Gaulle. ;;;;;;;;;x
+EVTOPTA2902;·¨À¼Î÷ÍòËê ;;Vive la France;;Vive la France;;;;;;;;;x
+mengkukuo_region;ÃÉ¹Å¹ú ;;Mengkukuo;;Mengkukuo;;;;;;;;;x
+independent_mengkukuo_title;ÃÉ¹Å¹ú³ÉÁ¢ ;;Die Errichtung Mengkukuos;;La formación de Mengkukuo;;;;;;;;;x
+independent_mengkukuo_desc;¹Ø¶«¾üË¾Áî²¿ÓëÄÚÃÉ¹ÅµÄÒ»Ğ©ÒªÈË±£³Ö×ÅÁªÏµ¡£Í¨¹ıÕâĞ©ÀÖ\nÒâµÄºÏ×÷ÕßÎÒÃÇ¿ÉÒÔÔÚÕâÀï³ÉÁ¢Ò»¸öÕşÈ¨´Ó¶ø±£Ö¤´ËµØÔÚÎÒ\nÃÇÕ÷·ş±ğ´¦Ê±µÄ°²Äş¡£ ;;Das Oberkommando der Kwangtung-Armee hat mit mehreren wichtigen Persönlichkeiten in der inneren Mongolei gute Beziehungen gepflegt. Mit der Hilfe dieser willigen Kollaborateure können wir ein Regime einrichten, dass diese Gebiete ruhig halten wird, während wir andere Gebiete erobern.;;El mando del ejército de Kwangtung se ha mantenido en contacto con importantes personajes de la Mongolia Interior. A través de estos voluntariosos colaboracionistas podemos organizar un régimen que mantendrá la zona tranquila mientras realizamos conquistas en otra parte.;;;;;;;;;x
+EVTNAME5040;¾­¼Ã¸ÄÉÆ ;;Wirtschaftlicher Aufschwung;;Auge económico;;;;;;;;;x
+EVTDESC5040;ÓÉÓÚÉú²úÁ¦µÄÌá¸ßÎÒÃÇµÄ¹¤³§ÏÖÔÚÉú²úÁË¸ü¶àµÄ²úÆ·£¬µ«ÎÒ\nÃÇ²¢²»È·¶¨ÕâÖÖ×´¿öÄÜ³ÖĞø¶à¾Ã¡£ ;;Aufgrund einer Steigerung der Produktivität produzieren unsere Fabriken derzeit mehr Güter, jedoch sind wir nicht sicher wie lange das anhalten wird.;;Gracias a un aumento de productividad en nuestras fábricas ahora disponemos de más mercancías, aunque no sabemos durante cuánto tiempo se podrá mantener esta situación.;;;;;;;;;x
+EVTOPTA5040;Õ½»ğÎŞÇé ;;Härter, nicht klüger kämpfen;;Guerread con más ímpetu, no con más inteligencia.;;;;;;;;;x
+EVTNAME5041;Ö¾Ô¸ÕßÔö¼Ó ;;Freiwilligenwelle;;Auge de voluntarios;;;;;;;;;x
+EVTDESC5041;´óÅúÓÂ¸ÒµÄĞ¡»ï×ÓÕ¾³öÀ´ËµËûÃÇÒÑ¾­×¼±¸ºÃÎª×æ¹ú¶øÕ½¡£ ;;Die tapferen Männer stehen auf und bekünden, dass sie bereit sind für unser Land zu kämpfen;;Los hombres en edad de servicio se han alzado y están listos para luchar por nuestro país. ;;;;;;;;;x
+EVTOPTA5041;ÈÃÎÒÃÇÕ½¶·°É ;;Lasst uns kämpfen;;Luchemos.;;;;;;;;;x
+EVTNAME5042;ÃºÌ¿¾èÔù ;;Kohlegeschenke;;Donaciones de carbón;;;;;;;;;x
+EVTDESC5042;ÎªÁË¸øÎÒÃÇµÄÕ½Õù»úÆ÷Ìá¹©È¼ÁÏ£¬ÎÒÃÇµÄÈËÃñ½«ËûÃÇ×Ô¼ºµÄ\nÃºÌ¿¾è¸øÁËÕş¸®¡£ ;;Um unsere Kriegsmaschinerie anzutreiben haben unsere Leute ihre eigenen Kohlevorräte an uns übergeben.;;Para alimentar nuestro aparato bélico, nuestra gente ha donado parte de sus propias reservas de carbón al gobierno.;;;;;;;;;x
+EVTOPTA5042;ÎÒÃÇ½«È¼ÉÕÕû¸öÊÀ½ç¡£ ;;Wir werden die Welt in Brand setzen;;Vamos a incendiar el mundo.;;;;;;;;;x
+EVTNAME5043;½ğÊô¾èÔù ;;Metallgeschenke;;Donaciones de metal;;;;;;;;;x
+EVTDESC5043;Õ½ÕùµÄ³É¹ûĞèÒª½ğÊô£¬ÎÒÃÇµÄÈËÃñÊÕ¼¯ËûÃÇµÄ´¶¾ß¡¢Õ¤À¸£¬\nÎª¹¤ÒµÌá¹©ÁË¸ü¶àµÄ½ğÊô¡£ ;;Der Krieg benötigt Rohstoffe und unsere Zivilbevölkerung hat Töpfe, Pfannen und Zaunrollen gesammelt, um uns das Metall zur Verfügung zu stellen.;;El esfuerzo de guerra necesita materiales y nuestra población civil ha reunido cosas como ollas, sartenes y barras metálicas de rejas para proporcionar más metal a la industria.;;;;;;;;;x
+EVTOPTA5043;ÔÙ¶à¸øÒ»Ğ©£¡ ;;Ich will mehr, verdammt!;;¡Dadme más, malditos!;;;;;;;;;x
+EVTNAME5044;Ï¡ÓĞÔ­ÁÏ¾èÔù ;;Geschenke an seltenen Materialien;;Donaciones de materiales raros;;;;;;;;;x
+EVTDESC5044;ÎªÁËÔÚÕ½ÕùÖĞÖ¾Ô¸ÎÒÃÇ£¬ºó·½¿ªÊ¼¾èÔù±¸ÓÃÂÖÌ¥µÈµÈÎï×ÊÒÔ\nÖ§³ÅÎÒÃÇµÄÉú²úÄÜÁ¦¡£ ;;Um unseren Krieg zu unterstützen hat die Heimatfront Dinge wie Ersatzreifen und Ähnliches gesammelt, um unsere Produktion zu stärken.;;Para ayudarnos en el esfuerzo de guerra, en casa han estado donando neumáticos de repuesto y cosas parecidas para ayudar a mantener nuestra capacidad de producción.;;;;;;;;;x
+EVTOPTA5044;ÎÒÃÇ½«ÎªÁËÊ¤ÀûÊ¹ÓÃËüÃÇ ;;Wir werden sie zum Sieg nutzen;;Lo utilizaremos para alcanzar la victoria.;;;;;;;;;x
+economic_boost;¾­¼Ã¸ÄÉÆ ;;Wirtschaftlicher Aufschwung;;Auge económico;;;;;;;;;x
+desc_economic_boost;ÎÒÃÇµÄ¾­¼Ã¸ÄÉÆÁË ;;Unsere Wirtschaft wurde verbessert;;Nuestra economía se ha visto impulsada.;;;;;;;;;x
+volunteer_surge;Ö¾Ô¸ÕßÔö¼Ó ;;Freiwilligenwelle;;Auge de voluntarios;;;;;;;;;x
+desc_volunteer_surge;ÎÒÃÇµÄÖ¾Ô¸ÕßÓ»Ô¾²Î¾ü ;;Freiwillige strömen unserer Armee zu;;Nuestros voluntarios van en aumento;;;;;;;;;x
+STRMONTHLY_CHANGE;Ã¿ÔÂ¸Ä±ä£º ;;Monatsänderung:;;Cambio mensual:;;;;;;;;;x
+STW_CONV;»¤º½/·´Ç± ×÷Õ½£º ;;Konvoi/ASW-Kriegsführung;;Guerra Convoy/ASW: ;;;;;;;;;x
+STW_ALLIES;Í¬ÃËÖ§Ô®£º ;;Alliierte Hilfe:;;Ayuda aliada: ;;;;;;;;;x
+STW_BOMB;Õ½ÂÔºäÕ¨£º ;;Strategische Bombardierung:;;Bombardeo estratégico: ;;;;;;;;;x
+non_core;·ÇºËĞÄ ;;Nicht-Stamm;;No núcleo;;;;;;;;;x
+MILACCOFFDESC;$COUNTRY$ ÏòÎÒÃÇÌá¹©ÁË¾üÊÂÍ¨ĞĞÈ¨¡£\nÕâ½«ÔÊĞíÎÒÃÇ½«Õ½½¢ºÍ¾ü¶ÓÒÆ¶¯µ½ËûÃÇµÄ½®ÓòÄÚ¡£ ;;$COUNTRY$ bietet uns Transitrechte an. Wenn wir annehmen können wir Schiffe und Armeen in ihr Gebiet schicken.;;$COUNTRY$ nos ofrece derechos de tránsito. Si los aceptamos, podremos mover barcos y ejércitos por su territorio.;;;;;;;;;x
+EVTNAME31001;Ê¤ÀûÕß·ÖÔß ;Pour les vainqueurs, le butin;Die Sieger gehen die Beute;;Los despojos para el vencedor;;;;;;;;x;
+EVTDESC31001;ËÕÁªÔÚ¶«·½µÄÍşĞ²ÒÑ¾­±»´İ»Ù£¬ÏÖÔÚÊÇÊ±ºòÀ´»®·ÖÕ½ÀûÆ·ÁË\nÄãµÄÃË¹úÏ£Íû»ñµÃËÕÁª´ÓËûÃÇÄÇÀïÇÔÈ¡µÄÍÁµØ¡£ ;Avec la menace soviétique au Moyen-détruits, il est temps de partager le butin. Vos alliés voudront que les terres les Soviétiques en volant de leur part.;Mit der sowjetischen Bedrohung im Osten zerstört, ist es Zeit, die Beute zu teilen. Ihre Verbündeten wollen die Länder die Sowjets besiegt und von ihnen.;;Con la amenaza soviética en el Oriente destruida, es el momento de dividir el botín. Tus aliados querrán las tierras que los soviéticos les robaron.;;;;;;;;x;
+EVTOPTA31001;½±ÉÍÄãµÄÃË¹ú ;Récompensez vos alliés;Belohnen Sie Ihre Verbündeten;;Recompensa a tus aliados;;;;;;;;x;

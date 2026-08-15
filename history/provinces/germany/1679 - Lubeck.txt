@@ -1,0 +1,19 @@
+owner = GER
+controller = GER
+add_core = GER
+
+anti_air = 1
+naval_base = 1
+
+infra = 10
+1945.6.7 = {
+	controller = USA
+	owner = USA
+	add_core = DFR
+	remove_core  = GER
+}
+
+1949.5.23 = {
+	controller = DFR
+	owner = DFR
+}

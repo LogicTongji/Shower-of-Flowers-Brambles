@@ -1570,7 +1570,10 @@ bool GuiInterpreter::LoadDirectory(
 		}
 
 		const std::string extension = entry.path().extension().string();
-		if (extension != ".gfx" && extension != ".gui")
+		if (extension != ".gfx"
+			&& extension != ".gui"
+			&& extension != ".sgfx"
+			&& extension != ".sgui")
 		{
 			continue;
 		}
@@ -1595,7 +1598,7 @@ bool GuiInterpreter::LoadDirectory(
 
 	if (!loadedAny && error.empty())
 	{
-		error = "no .gfx or .gui files found in: "
+		error = "no GUI definition files found in: "
 			+ root.string();
 	}
 

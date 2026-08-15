@@ -1,0 +1,167 @@
+######################
+#   东北抗联事件组   #
+######################
+#东北抗日联军建立
+country_event = {
+	id = 1000008
+	major = yes
+	title = "Kanglian_1"
+	subtitle = "Kanglian_1_subtitle"
+	desc = "Kanglian_1_desc"
+	picture = "Kanglian_1"
+	trigger = {
+		tag = CHC
+		war_with = JAP
+		exists = MAN
+		not = { has_global_flag = Kanglian_1 }
+                not= { year = 1938 }
+		date = 1936.2.20
+	}
+	mean_time_to_happen =  {
+		days = 1
+	}
+	option = {
+		name = "Kanglian_1_option"
+		northeast_anti_japanese_united_army_base = { remove_core = MAN }
+		MAN = { northeast_anti_japanese_united_army_base = { secede_province = CHC change_controller = JAP } }
+		load_oob = "CHC_Kanglian.txt"
+		set_global_flag = Kanglian_1
+		ai_chance = { factor = 100 }
+	}
+}
+#陷入困境
+country_event = {
+	id = 1000009
+	title = "Kanglian_2"
+	subtitle = "Kanglian_2_subtitle"
+	desc = "Kanglian_2_desc"
+	picture = "Kanglian_2"
+	trigger = {
+		tag = CHC
+		war_with = JAP
+		exists = MAN
+		not = { has_global_flag = Kanglian_2 }
+		has_global_flag = Kanglian_1
+		has_global_flag = Kanglian_4
+		northeast_anti_japanese_united_army_base = { controlled_by = JAP }
+		manchu_china_region = { controlled_by = MAN }
+		not= { year = 1938 } 
+	}
+	mean_time_to_happen =  {
+		days = 1
+	}
+	option = {
+		name = "Kanglian_2_option"
+		set_global_flag = Kanglian_2
+		kill_leader = 76348
+		kill_leader = 76311
+		kill_leader = 76305
+		kill_leader = 76306
+		kill_leader = 76345
+		kill_leader = 76371
+		kill_leader = 76372
+		kill_leader = 76302
+		kill_leader = 76300
+		kill_leader = 76352
+		kill_leader = 76349
+		kill_leader = 76347
+		kill_leader = 76346
+		remove_brigade = "1.东北抗日联军第1军"
+		remove_brigade = "2.东北抗日联军第1军"
+		remove_brigade = "1.东北抗日联军第2军"
+		remove_brigade = "2.东北抗日联军第2军"
+		remove_brigade = "1.东北抗日联军第3军第1纵队"
+		remove_brigade = "2.东北抗日联军第3军第1纵队"
+		remove_brigade = "3.东北抗日联军第3军第1纵队"
+		remove_brigade = "1.东北抗日联军第3军第2纵队"
+		remove_brigade = "2.东北抗日联军第3军第2纵队"
+		remove_brigade = "1.东北抗日联军第3军第3纵队"
+		remove_brigade = "2.东北抗日联军第3军第3纵队"
+		remove_brigade = "1.东北抗日联军第4军"
+		remove_brigade = "2.东北抗日联军第4军"
+		remove_brigade = "1.东北抗日联军第5军"
+		remove_brigade = "2.东北抗日联军第5军"
+		remove_brigade = "1.东北抗日联军第6军"
+		remove_brigade = "2.东北抗日联军第6军"
+		remove_brigade = "1.东北抗日联军第7军"
+		remove_brigade = "2.东北抗日联军第7军"
+		remove_brigade = "1.东北抗日联军第8军"
+		remove_brigade = "2.东北抗日联军第8军"
+		remove_brigade = "1.东北抗日联军第9军"
+		remove_brigade = "2.东北抗日联军第9军"
+		remove_brigade = "1.东北抗日联军第10军"
+		remove_brigade = "2.东北抗日联军第10军"
+		remove_brigade = "1.东北抗日联军第11军"
+		remove_brigade = "2.东北抗日联军第11军"
+		ai_chance = { factor = 100 }
+	}
+}
+
+#东北抗联失败
+country_event = {
+	id = 1000010
+	title = "Kanglian_3"
+	subtitle = "Kanglian_3_subtitle"
+	desc = "Kanglian_3_desc"
+	picture = "CHC_Flag"
+	trigger = {
+		tag = CHC
+		war_with = JAP
+		exists = MAN
+		not = { has_global_flag = Kanglian_3 }
+		has_global_flag = Kanglian_2
+		not = { year = 1938 }
+		not = { northeast_anti_japanese_united_army_base = { controlled_by = CHC } }
+	}
+	option = {
+		name = "Kanglian_3_option"
+		set_global_flag = Kanglian_3
+		ai_chance = { factor = 100 }
+	}
+}
+
+#集团部落
+country_event = {
+	id = 1000011
+	title = "Kanglian_4"
+	desc = "Kanglian_4_desc"
+	picture = "Kanglian_4"
+	trigger = {
+		tag = JAP
+		war_with = CHC
+		exists = MAN
+		not = { has_global_flag = Kanglian_4 }
+		not = { year = 1938 }
+		has_global_flag = Kanglian_1
+	}
+	mean_time_to_happen =  {
+		days = 16
+	}
+	option = {
+		name = "Kanglian_4_option"
+		set_global_flag = Kanglian_4
+		CHC = { country_event = 1000012 }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000012
+	title = "Kanglian_5"
+	subtitle = "Kanglian_5_subtitle"
+	desc = "Kanglian_5_desc"
+	picture = "Kanglian_4"
+	is_triggered_only = yes
+	mean_time_to_happen =  {
+		days = 1
+	}
+	trigger = {
+		tag = CHC
+		war_with = JAP
+		exists = MAN
+		not= { year = 1938 }
+	}
+	option = {
+		name = "Kanglian_5_option"
+		ai_chance = { factor = 100 }
+	}
+}

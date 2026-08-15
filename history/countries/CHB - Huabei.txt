@@ -1,0 +1,56 @@
+capital = 4979
+government = right_wing_autocrat
+ideology = paternal_autocrat
+alignment = { x = 160 y = 165.4 }
+neutrality = 70
+national_unity = 70
+militia_smallarms = 1
+militia_support = 1
+militia_guns = 1
+militia_at = 1
+head_of_state = 52032
+head_of_government = 52008
+foreign_minister = 52032
+armament_minister = 3000003
+minister_of_security = 3000005
+minister_of_intelligence = 3000002
+chief_of_army = 52094
+chief_of_staff = 3000004
+popularity = { 
+	national_socialist = 0
+	fascistic = 10
+	paternal_autocrat = 60
+	social_conservative = 25
+	market_liberal = 0
+	social_liberal = 5
+	social_democrat = 0
+	left_wing_radical = 0
+	leninist = 0
+	stalinist = 0
+}
+
+organization = { 
+	national_socialist = 0
+	fascistic = 10
+	paternal_autocrat = 70
+	social_conservative = 30
+	market_liberal = 0
+	social_liberal = 20
+	social_democrat = 0
+	left_wing_radical = 10
+	leninist = 0
+	stalinist = 0
+}
+
+training_laws = minimal_training
+press_laws = censored_press
+industrial_policy_laws = consumer_product_orientation
+education_investment_law = minimal_education_investment
+economic_law = full_civilian_economy
+conscription_law = volunteer_army
+civil_law = totalitarian_system
+
+1936.11.25 = {
+	join_faction = axis
+	neutrality = 0
+}

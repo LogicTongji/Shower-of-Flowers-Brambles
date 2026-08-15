@@ -1,0 +1,26 @@
+owner = GER
+controller = GER
+add_core = GER
+points = 10
+metal = 8.00
+energy = 25.00
+industry = 10
+manpower = 5.00
+leadership = 1.50
+
+infra = 10
+
+1941.1.1 = {
+	radar_station = 1
+}
+1945.6.7 = {
+	controller = USA
+	owner = USA
+	add_core = DFR
+	remove_core  = GER
+}
+
+1949.5.23 = {
+	controller = DFR
+	owner = DFR
+}

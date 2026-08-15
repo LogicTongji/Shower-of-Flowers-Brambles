@@ -1,0 +1,15 @@
+LIBRARY scripted_gui_overlay
+EXPORTS
+    ScriptedGui_AttachDevice=_ScriptedGui_AttachDevice@4
+    ScriptedGui_AttachLua51=_ScriptedGui_AttachLua51@8
+    ScriptedGui_AreHooksInstalled=_ScriptedGui_AreHooksInstalled@0
+    ScriptedGui_GetLastError=_ScriptedGui_GetLastError@8
+    ScriptedGui_HandleWindowMessage=_ScriptedGui_HandleWindowMessage@16
+    ScriptedGui_InstallHooks=_ScriptedGui_InstallHooks@0
+    ScriptedGui_IsLuaAttached=_ScriptedGui_IsLuaAttached@0
+    ScriptedGui_OnAfterReset=_ScriptedGui_OnAfterReset@8
+    ScriptedGui_OnBeforeReset=_ScriptedGui_OnBeforeReset@0
+    ScriptedGui_OnEndScene=_ScriptedGui_OnEndScene@4
+    ScriptedGui_SetRootW=_ScriptedGui_SetRootW@4
+    ScriptedGui_Shutdown=_ScriptedGui_Shutdown@0
+    ScriptedGui_UninstallHooks=_ScriptedGui_UninstallHooks@0

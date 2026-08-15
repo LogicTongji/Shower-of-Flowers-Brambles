@@ -1,0 +1,38 @@
+name = "³¯ÏÊÕ½Õù"
+
+1950.6.25 = {
+	add_attacker = PRK
+	add_defender = KOR
+	add_defender = USA
+	war_goal= 
+	{
+		casus_belli=conquer
+		actor="PRK"
+		receiver="KOR"
+	}
+}
+	
+
+name = "ÈÊ´¨µÇÂ½"
+
+1950.9.15 = {
+  add_defender = ENG
+  add_defender = FRA
+	}
+
+name = "¿¹ÃÀÔ®³¯"
+
+1950.9.28 = {
+		add_attacker = PRC
+	}
+	
+name = "°åÃÅµêºÍÌ¸"
+
+1953.7.25 = {
+	rem_attacker = PRK
+	rem_attacker = PRC
+	rem_defender = USA
+	rem_defender = ENG
+	rem_defender = FRA
+	rem_defender = KOR
+	}	

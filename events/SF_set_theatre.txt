@@ -1,0 +1,184 @@
+country_event = {
+	id = 390062
+	is_triggered_only = yes
+	title = "diyizhanqu"
+	desc = "diyizhanqudesc"
+	picture = "CHI_Flag"
+	option = {
+		name = "theatreop"
+		CJC = { load_oob = "CHI_SF_FT.txt" }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 390064
+	is_triggered_only = yes
+	title = "disanzhanqu"
+	desc = "disanzhanqudesc"
+	picture = "CHI_Flag"
+	option = {
+		name = "theatreop"
+		load_oob = "CHI_SF_ST.txt"
+		ai_chance = { factor = 100 }
+		CHI = {
+			remove_brigade = "第262旅"
+			remove_brigade = "第264旅"
+			remove_brigade = "88师补充团"
+			remove_brigade = "第106旅"
+			remove_brigade = "第108旅"
+			remove_brigade = "36师补充团"
+			remove_brigade = "第259旅"
+			remove_brigade = "第261旅"
+			remove_brigade = "87师补充团"
+			remove_brigade = "税警总团第1团"
+			remove_brigade = "税警总团第1团"
+			remove_brigade = "税警总团第2团"
+			remove_brigade = "税警总团第2团"
+			remove_brigade = "税警总团第3团"
+			remove_brigade = "税警总团第3团"
+			remove_brigade = "税警总团第4团"
+			remove_brigade = "税警总团第4团"
+      remove_brigade = "税警总团第5团"
+			remove_brigade = "税警总团第5团"
+			}
+	}
+}
+country_event = {
+	id = 390063
+	is_triggered_only = yes
+	title = "SCTL"
+	desc = "SCTD"
+	picture = "CHI_Flag"
+	option = {
+		name = "theatreop"
+		load_oob = "CHI_SF_CT.txt"
+		ai_chance = { factor = 100 }
+               remove_brigade = "32军司令部"
+	      remove_brigade = "太原指挥部"
+	      remove_brigade = "第196旅"
+	      remove_brigade = "第211旅"
+	      remove_brigade = "第67师"
+	      remove_brigade = "第33军司令部" 
+              remove_brigade = "第200旅"
+	      remove_brigade = "第218旅" 
+              remove_brigade = "第203旅"
+	      remove_brigade = "第209旅"
+	      remove_brigade = "第34军司令部" 
+	      remove_brigade = "第202旅" 
+	      remove_brigade = "第214旅" 
+	      remove_brigade = "第201旅" 
+	      remove_brigade = "第213旅"
+	      remove_brigade = "独立第1旅"
+              remove_brigade = "新编第1师" 
+              remove_brigade = "独立第2旅" 
+              remove_brigade = "独立第3旅" 
+              remove_brigade = "独立第7旅" 
+              remove_brigade = "独立第8旅"
+	}
+}
+country_event = {
+	id = 390065
+	is_triggered_only = yes
+	title = "diwuzhanqu"
+	desc = "diwuzhanqudesc"
+	picture = "CHI_Flag"
+	option = {
+		name = "theatreop1"
+		load_oob = "CHI_SF_3T.txt"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 390066
+	is_triggered_only = yes
+	title = "12A"
+	desc = "12Adesc"
+	picture = "CHI_Flag"
+	option = {
+		name = "theatreop"
+		load_oob = "12A.txt"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 390067
+	is_triggered_only = yes
+	title = "CHI_TSA"
+	desc = "DBZQ"
+	picture = "CHI_Flag"
+	option = {
+		name = "theatreop"
+		load_oob = "CHI_TSA.txt"
+		 CQM = { 
+		  fujian_region = { limit = { controlled_by = CQM } secede_province = CHI change_controller = CHI }
+		  fujian_region = { limit = { not = { controlled_by = CQM } } secede_province = CHI }
+		  }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id =  390068
+	is_triggered_only = yes
+	title = "DJZQT"
+	desc = "DJZQD"
+	picture = "CHI_Flag"
+	option = {
+		name = "theatreop"
+		load_oob = "CHI_NIT.txt"
+		CHI = {
+			remove_brigade = "第151旅"
+			remove_brigade = "第153旅"
+			remove_brigade = "第172旅"
+			remove_brigade = "第174旅"
+			}
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id =  390069
+	is_triggered_only = yes
+	title = "YEWT"
+	desc = "TEWD"
+	picture = "CHI_Flag"
+	option = {
+		name = "theatreop"
+		load_oob = "CHI_HENY.txt"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 390070
+	is_triggered_only = yes
+	title = "DLZQ"
+	desc = "DLZQD"
+	picture = "CHI_Flag"
+	option = {
+		name = "theatreop"
+		load_oob = "CHI_SIT.txt"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 390071
+	is_triggered_only = yes
+	title = "SLZQ"
+	desc = "SLZQD"
+	picture = "CHI_Flag"
+	option = {
+		name = "theatreop"
+		load_oob = "CHI_SLT.txt"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 390072
+	is_triggered_only = yes
+	title = "JCZQ"
+	desc = "JCZQD"
+	picture = "CHI_Flag"
+	option = {
+		name = "theatreop"
+		load_oob = "CHI_JCT.txt"
+		ai_chance = { factor = 100 }
+	}
+}

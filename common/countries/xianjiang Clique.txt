@@ -1,0 +1,61 @@
+color = { 218  165  32 }
+graphical_culture = Japanese
+
+default_templates = {
+	binary_infantry = {
+		infantry_brigade
+		infantry_brigade
+	}
+	binary_milita = {
+		militia_brigade
+		militia_brigade
+	}
+	binary_armoured = {
+		armor_brigade
+		motorized_brigade
+	}
+	binary_cavalry = {
+		cavalry_brigade
+		cavalry_brigade
+	}
+}
+
+unit_names = {
+	infantry_brigade = {
+		"第35师" "第168师"
+	}
+
+}
+
+
+Ministers = {
+	600001 = {
+		name = "马虎山"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = L50236
+		head_of_state = political_protege
+		head_of_government = compassionate_gentleman
+		foreign_minister = apologetic_clerk
+		start_date = 1936.1.1
+}
+	600002 = {
+		name = "马仲杰"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = L5023
+		head_of_state = political_protege
+		head_of_government = compassionate_gentleman
+		foreign_minister = apologetic_clerk
+		start_date = 1936.1.1
+}
+	600003 = {
+		name = "金树仁"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = L5023
+		head_of_state = political_protege
+		head_of_government = compassionate_gentleman
+		foreign_minister = apologetic_clerk
+		start_date = 1936.1.1
+}

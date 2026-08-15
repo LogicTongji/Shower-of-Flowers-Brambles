@@ -1,0 +1,269 @@
+theatre = {
+	name ="芬兰陆军"
+	location = 504
+	leader = 9750 # Mannerheim
+	regiment = { type = hq_brigade experience = 50 name = "芬兰陆军" historical_model = 9 }
+	armygroup= {
+		name = "陆军指挥部"
+		location = 504
+		regiment = { type = hq_brigade experience = 50 name = "陆军指挥部" historical_model = 7 }
+		leader = 9710 # Heinrichs
+		army = {
+			name = "芬兰军"
+			leader = 9729 # Oesch
+			location = 657
+			regiment = {  type = hq_brigade experience = 50 name = "芬兰军" historical_model = 5 }
+			corps = {
+				name = "第IV军"
+				leader = 9720 # Laatikainen
+				location = 698
+				regiment = { type = hq_brigade experience = 50 name = "第IV军指挥部" historical_model = 3 }
+				regiment = { type = ski_brigade experience = 75 historical_model = 9 }
+				division= {
+					name = "第20旅"
+					location = 698
+					regiment = { type = ski_brigade experience = 35 name = "凯努第20旅" historical_model = 9 }
+				}
+				division= {
+					name = "第3旅"
+					location = 698
+					regiment = { type = ski_brigade experience = 50 name = "凯努第3旅" historical_model = 9 }
+				}
+				division= {
+					name = "第18师"
+					leader = 9731 # Paalu
+					location = 698
+					regiment = { type = infantry_brigade experience = 50 name = "第6步兵团" historical_model = 9 }
+					regiment = { type = infantry_brigade experience = 50 name = "第48步兵团" historical_model = 9 }
+				}
+				division= {
+					name = "第4师"
+					leader = 9703 # Autti
+					location = 698
+					regiment = { type = infantry_brigade experience = 50 name = "第5步兵团" historical_model = 9 }
+					regiment = { type = infantry_brigade experience = 50 name = "第25步兵团" historical_model = 9 }
+				}
+				division= {
+					name = "第3师"
+					leader = 9732 # Pajari
+					location = 698
+					regiment = { type = infantry_brigade experience = 70 name = "第11步兵团" historical_model = 9 }
+					regiment = { type = infantry_brigade experience = 70 name = "第200步兵团" historical_model = 9 }
+				}
+			}
+			division= {
+				name = "第10师"
+				leader = 9738 # Sihvo J.
+				location = 657
+				regiment = { type = infantry_brigade experience = 50 name = "第1步兵团" historical_model = 9 }
+				regiment = { type = infantry_brigade experience = 50 name = "第58步兵团" historical_model = 9 }
+			}
+			division= {
+				name = "骑兵旅"
+				leader = 9726 # Melander
+				location = 697
+				regiment = { type = cavalry_brigade experience = 50 name = "骑兵旅" historical_model = 7 }
+			}
+			division= {
+				name = "机械化师"
+				leader = 9721 # Lagus
+				
+				location = 657
+				regiment = { type = motorized_brigade experience = 80 name = "机械化猎兵旅" historical_model = 9 }
+				regiment = { type = sp_artillery_brigade experience = 80 name = "装甲旅" historical_model = 3 }
+			}		
+			corps = {
+				name = "第III军"
+				experience = 50 
+				leader = 9739 # Siilasvuo
+				location = 581
+				regiment = { type = hq_brigade name = "第III军指挥部" historical_model = 3 }
+				division= {
+					name = "第2师"
+					leader = 9709 # Hannuksela
+					location = 658
+					regiment = { type = infantry_brigade experience = 50 name = "第7步兵团" historical_model = 9 }
+					regiment = { type = infantry_brigade experience = 50 name = "第49步兵团" historical_model = 9 }
+				}
+				division= {
+					name = "第15师"
+					leader = 9713 # Hersalo
+					location = 658
+					regiment = { type = infantry_brigade experience = 50 name = "第15步兵团" historical_model = 9 }
+					regiment = { type = infantry_brigade experience = 50 name = "第57步兵团" historical_model = 9 }
+				}
+				division= {
+					name = "第19旅"
+					location = 658
+					regiment = { type = infantry_brigade experience = 35 name = "第19旅" historical_model = 9 }
+				}
+			}
+		}
+		army = {
+			name = "阿努克森军"
+			location = 543
+			regiment = { type = hq_brigade experience = 50 name = "阿努克森军指挥部" historical_model = 5 }
+			corps = {
+				name = "第VI军"
+				leader = 9725 # Martola
+				location = 544
+				regiment = { type = hq_brigade experience = 50 name = "第VI军指挥部" historical_model = 3 }
+				division= {
+					name = "第15旅"
+					location = 620
+					regiment = { type = infantry_brigade experience = 35 name = "第15旅" historical_model = 9 }
+				}
+				division= {
+					name = "第5师"
+					leader = 9745 # Tapola
+					location = 620
+					regiment = { type = infantry_brigade experience = 50 name = "第2步兵团" historical_model = 9 }
+					regiment = { type = infantry_brigade experience = 50 name = "第44步兵团" historical_model = 9 }
+				}
+				division= {
+					name = "第8师"
+					leader = 9719 # K滗ri鋓nen
+					location = 225
+					regiment = { type = infantry_brigade experience = 50 name = "第4步兵团" historical_model = 9 }
+					regiment = { type = infantry_brigade experience = 50 name = "第24步兵团" historical_model = 9 }
+				}
+				division= {
+					name = "第7师"
+					leader = 9716 # Isakson
+					location = 545
+					regiment = { type = infantry_brigade experience = 50 name = "第9步兵团" historical_model = 9 }
+					regiment = { type = infantry_brigade experience = 50 name = "第30步兵团" historical_model = 9 }
+				}
+			}
+		}
+		army = {
+			name = "马塞尔军"
+			experience = 50 
+			location = 404
+			regiment = { type = hq_brigade name = "马塞尔军指挥部" historical_model = 3 }
+			corps = {
+				name = "第II军"
+				leader = 9727 # M鋕inen
+				location = 405
+				regiment = { type = hq_brigade experience = 50 name = "第II军指挥部" historical_model = 3 }
+				division= {
+					name = "第1师"
+					leader = 9706 # Fagern鋝
+					location = 405
+					regiment = { type = infantry_brigade experience = 50 name = "第35步兵团" historical_model = 9 }
+					regiment = { type = infantry_brigade experience = 50 name = "第56步兵团" historical_model = 9 }
+				}
+				division= {
+					name = "第21旅"
+					location = 405
+					regiment = { type = infantry_brigade experience = 35 name = "第21旅" historical_model = 9 }
+				}
+			}
+			division= {
+				name = "独立旅"
+				location = 403
+				regiment = { type = infantry_brigade name = "独立旅" historical_model = 9 }
+			}
+		}
+		corps = {
+			name = "第V军"
+			experience = 50 
+			leader = 9743 # Svensson
+			location = 542
+			regiment = { type = hq_brigade name = "第V军指挥部" historical_model = 3 }
+				division= {
+					name = "第11师"
+					leader = 9712 # Heiskanen K.A.
+					location = 542
+					regiment = { type = infantry_brigade experience = 50 name = "第8步兵团" historical_model = 9 }
+					regiment = { type = infantry_brigade experience = 50 name = "第50步兵团" historical_model = 9 }
+				}
+				division= {
+					name = "第17师"
+					leader = 9741 # Sundman
+					location = 542
+					regiment = { type = infantry_brigade experience = 50 name = "第13步兵团" historical_model = 9 }
+					regiment = { type = infantry_brigade experience = 50 name = "第61步兵团" historical_model = 9 }
+				}
+			division= {
+				name = "第6师"
+				leader = 9748 # Vihma
+				location = 542
+				regiment = { type = infantry_brigade experience = 70 name = "第12步兵团" historical_model = 9 }
+				regiment = { type = infantry_brigade experience = 70 name = "第33步兵团" historical_model = 9 }
+			}
+		}
+		division= {
+			name = "第14师"
+			leader = 9735 # Raappana
+			location = 307
+			regiment = { type = infantry_brigade experience = 70 name = "第10步兵团" historical_model = 9 }
+			regiment = { type = infantry_brigade experience = 70 name = "第52步兵团" historical_model = 9RR }
+		}
+	}
+	army = {
+		name = "守备部队"
+		location = 739
+		regiment = { type = hq_brigade name = "守备部队指挥部" historical_model = 3 }	
+		division = {
+			name = "奥兰战斗群"
+			location = 778
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "奥兰战斗群" historical_model = 8 }
+		}	
+		division = {
+			name = "汉科守备部队"
+			location = 779
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "汉科守备部队" historical_model = 8 }
+		}	
+		division = {
+			name = "图尔库战斗群"
+			location = 736
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "图尔库战斗群" historical_model = 8 }
+		}	
+		division = {
+			name = "瓦萨守备部队"
+			location = 396
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "瓦萨守备部队" historical_model = 8 }
+		}	
+		division = {
+			name = "奥卢守备部队"
+			location = 234
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "奥卢守备部队" historical_model = 8 }
+		}			
+		division = {
+			name = "拉托坎守备部队" 
+			location = 542
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "拉托坎守备部队" historical_model = 8 }
+		}			
+		division = {
+			name = "芬兰守备部队" 
+			location = 697
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "RR 2" historical_model = 8 }
+			regiment = { type = garrison_brigade name = "RTR 22" historical_model = 8 }
+		}	
+	}
+}
+navy = {
+	name = "芬兰海军"
+	base = 739
+	location = 739
+	ship = { type = heavy_cruiser name = "维纳莫伊宁号" historical_model = 2 pride = yes }
+	ship = { type = destroyer name = "第1驱逐舰支队" historical_model = 0 }
+	ship = { type = destroyer name = "第2驱逐舰支队" historical_model = 1 }
+	ship = { type = submarine name = "第1潜艇大队" historical_model = 1 }
+}
+air = {
+	name = "芬兰空军"
+	base = 739
+	location = 739
+	wing = { type = interceptor name = "第1芬兰空军" historical_model = 4 }
+	wing = { type = interceptor name = "第2芬兰空军" historical_model = 4 }
+	wing = { type = interceptor name = "第3芬兰空军" historical_model = 4 }
+}

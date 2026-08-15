@@ -1,0 +1,36 @@
+division = {
+	name = "120师358旅714团"
+	location = 5110
+	regiment = { type = partisan_bergsjaeger experience = 20 historical_model = 2 }
+	regiment = { type = partisan_bergsjaeger experience = 20 historical_model = 2 }
+}
+division = {
+	name = "120师358旅716团"
+	location = 5110
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 2 }
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 2 }
+}
+division = {
+	name = "120师359旅717团"
+	location = 7385
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 2 }
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 2 }
+}
+division = {
+	name = "120师359旅718团"
+	location = 7385
+	regiment = { type = partisan_bergsjaeger experience = 15 historical_model = 2 }
+	regiment = { type = partisan_bergsjaeger experience = 15 historical_model = 2 }
+}
+division = {
+	name = "120师359旅719团"
+	location = 7385
+	regiment = { type = partisan_bergsjaeger experience = 15 historical_model = 2 }
+	regiment = { type = partisan_bergsjaeger experience = 15 historical_model = 2 }
+}
+division = {
+	name = "晋西北独立支队"
+	location = 7385
+	regiment = { type = partisan_bergsjaeger historical_model = 1 }
+	regiment = { type = partisan_bergsjaeger historical_model = 1 }
+}

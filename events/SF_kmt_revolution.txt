@@ -1,0 +1,165 @@
+#新生活运动
+country_event = {
+    id = 12234
+    is_triggered_only = yes
+    major = yes
+    title = "chi_gov_revolution1title"
+    subtitle = "chi_gov_revolution1_subtitle"
+    desc = "chi_gov_revolution1desc"
+    picture = "chi_gov_revolution1picture"
+    option = {
+        name = "chi_gov_revolution1_option"
+        national_unity = 1
+        ai_chance = { factor = 100 }
+    }
+}
+country_event = {
+    id = 12235
+          fire_only_once = yes
+    title = "chi_gov_revolution2title"
+    desc = "chi_gov_revolution2desc"
+    picture = "chi_gov_revolution2picture"
+    trigger = {
+        tag = CHI
+        has_country_flag = chi_newdailylife_revolution
+        date = 1934.7.1
+        not = { year = 1936 }
+    }
+    mean_time_to_happen =  {
+        days = 1
+    }
+    option = {
+        name = "chi_gov_revolution2_option"
+        ai_chance = { factor = 100 }
+    }
+}
+country_event = {
+    id = 12236
+          fire_only_once = yes
+    title = "chi_gov_revolution3title"
+    desc = "chi_gov_revolution3desc"
+    picture = "chi_gov_revolution3picture"
+    trigger = {
+        tag = CHI
+        has_country_flag = chi_newdailylife_revolution
+        has_country_flag = jap_seizes_coast_chi
+        war_with = JAP
+    }
+    mean_time_to_happen =  {
+        days = 1
+    }
+    option = {
+        name = "chi_gov_revolution3_option"
+        ai_chance = { factor = 100 }
+    }
+}
+country_event = {
+    id = 12237
+          fire_only_once = yes
+    title = "chi_gov_revolution4title"
+    desc = "chi_gov_revolution4desc"
+    picture = "chi_gov_revolution4picture"
+    trigger = {
+        tag = CHI
+        has_country_flag = chi_newdailylife_revolution
+        has_global_flag = China_CivilWar4 
+    }
+    mean_time_to_happen =  {
+        days = 1
+    }
+    option = {
+        name = "chi_gov_revolution4_option"
+        ai_chance = { factor = 100 }
+    }
+}
+#国民政府军事改革
+country_event = {
+    id = 12238
+          fire_only_once = yes
+    title = "chi_gov_revolution5title"
+    desc = "chi_gov_revolution5desc"
+    picture = "chi_gov_revolution5picture"
+    trigger = {
+        tag = CHI
+        date = 1934.1.1
+        not = { year = 1936 }
+        has_global_flag = Anti_jap_front_great_wall
+        has_country_flag = GersupportA_chi
+    }
+    mean_time_to_happen =  {
+        days = 1
+    }
+    option = {
+        name = "chi_gov_revolution5_option"
+        ai_chance = { factor = 100 }
+    }
+}
+country_event = {
+    id = 12239
+          fire_only_once = yes
+    title = "chi_gov_revolution6title"
+    subtitle = "chi_gov_revolution6_subtitle"
+    desc = "chi_gov_revolution6desc"
+    picture = "chi_gov_revolution6picture"
+    trigger = {
+        tag = CHI
+        date = 1936.9.1
+        not = { year = 1937 }
+        has_country_flag = GersupportA_chi
+    }
+    mean_time_to_happen =  {
+        days = 1
+    }
+    option = {
+        name = "chi_gov_revolution6_option"
+        CHI = { load_oob = "CHI_GER_SupportA.txt" }
+        ai_chance = { factor = 100 }
+    }
+}
+country_event = {
+    id = 12240
+          fire_only_once = yes
+    title = "chi_gov_revolution7title"
+    desc = "chi_gov_revolution7desc"
+    picture = "chi_gov_revolution7picture"
+    trigger = {
+        tag = CHI
+        not = { year = 1937 }
+        has_global_flag = SF_anti_japanese_war
+        has_country_flag = GersupportA_chi
+    }
+    mean_time_to_happen =  {
+        days = 1
+    }
+    option = {
+        name = "chi_gov_revolution7_option"
+        ai_chance = { factor = 100 }
+    }
+}
+country_event = {
+    id = 12241
+    is_triggered_only = yes
+    title = "chi_gov_revolution8title"
+    desc = "chi_gov_revolution8desc"
+    picture = "chi_gov_revolution8picture"
+    option = {
+        name = "chi_gov_revolution8_option"
+        ai_chance = { factor = 100 }
+    }
+}
+#抗战建国纲领
+country_event = {
+	id = 12242
+	is_triggered_only = yes
+	title = "chi_gov_revolution10title"
+	desc = "chi_gov_revolution10desc"
+	picture = "chi_gov_revolution10picture"
+	option = {
+		name = "chi_gov_revolution10_option"
+		add_country_modifier = {
+			name = "EVENT_15000_MODIFIER"
+			duration = 730
+		}
+		head_of_government = 52025 
+	}
+}

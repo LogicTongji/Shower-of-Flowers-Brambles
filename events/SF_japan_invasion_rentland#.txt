@@ -1,0 +1,71 @@
+country_event = {
+	id = 20190710
+	major = yes
+	fire_only_once = yes
+	title = "Event20190710title"
+	subtitle = "Event20190710subtitle"
+	desc = "Event20190710desc"
+	picture = "JAP_flag"
+	trigger = {
+		tag = JAP
+		 war_with = USA
+		  war_with = ENG
+		has_global_flag = JAPsouthing
+	}
+        mean_time_to_happen =  {
+		days = 1
+	}
+	option = {
+		name = "ZUJIE1"
+   	dissent = -5
+		money = 1000
+			relation = { who = ENG value = -300 
+                   who = USA value = -300 }
+                ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 201907101
+	major = yes
+	fire_only_once = yes
+	title = "Event201907101title"
+	desc = "Event201907101desc"
+	picture = "JAP_flag"
+	trigger = {
+		tag = JAP
+		war_with = CHI
+		not = { year = 1938 }
+		or = {
+		JAP = { controls = 5494
+		        controls = 5542
+		    }
+		WJW = { controls = 5494
+		        controls = 5542
+		    }
+		}
+	}
+        mean_time_to_happen =  {
+		days = 1
+	}
+	option = {
+		name = "2019070101OP"
+		set_global_flag = Event201907101
+			relation = { who = ENG value = -100 
+                   who = USA value = -100 }
+		USA = { country_event = 380019 }
+		ENG = { country_event = 380019 }
+		dissent = -5
+		national_unity = 10
+                ai_chance = { factor = 100 }
+    	}
+}
+country_event = {
+	id = 380019
+	is_triggered_only = yes
+	title = "Event2019071011title"
+	desc = "Event2019071011desc"
+	picture = "_flag"
+	option = {
+		name = "20190701011OP"
+	}
+}

@@ -1,0 +1,74 @@
+####################
+#   日本侵华决议   #
+####################
+diplomatic_decisions = {
+	# 平津作战
+	the_north_china_incident = {
+		major = yes
+		potential = {
+			tag = JAP
+			not = { has_country_flag = the_marco_polo_bridge_incident }
+			exists = CHI
+			not = { vassal_of = CHI }
+			not = { war_with = CHI }
+			CHI = {
+				not = { alliance_with = SOV }
+				not = { alliance_with = USA }
+				not = { alliance_with = ENG }
+				not = { vassal_of = JAP }
+			}
+			not = { controls = 4979 }	# Beiping
+			has_country_flag = Japan_Preparing_3
+			not = { has_global_flag = Event10000272 }
+		}
+		allow = {
+			not = { alliance_with = CHI }
+			date = 1937.7.7
+		}
+		effect = {
+			set_country_flag = the_marco_polo_bridge_incident
+			set_global_flag = SF_anti_japanese_war
+			JAP = { country_event = 390103 }
+			5315 = { province_event = 190027 }
+			officer_pool = 5000
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# 进攻上海
+	shanghai_incident = {
+		major = yes
+		potential = {
+			tag = JAP
+			not = { has_country_flag = shanghai_incident }
+			exists = CHI
+			not = { vassal_of = CHI }
+			CHI = {
+				not = { vassal_of = JAP }
+			}
+			not = { controls = 5542 }	
+			has_country_flag = Japan_Preparing_3
+			has_global_flag = CHI_Event_1000021
+			not = { has_global_flag = Event10000272 }
+		}
+		allow = {
+		JAP = { 
+			controls = 5018
+			controls = 4979 
+			}
+			not = { alliance_with = CHI }
+			date = 1937.8.13
+		}
+		effect = {
+			set_country_flag = shanghai_incident
+			JAP = { country_event = 1000019 }
+			CHI = {  inherit = CSH
+			     }
+			officer_pool = 5000
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

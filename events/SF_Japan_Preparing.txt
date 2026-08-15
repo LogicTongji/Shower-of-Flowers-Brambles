@@ -1,0 +1,112 @@
+######################
+#   日本备战事件组   #
+######################
+#226
+country_event = {
+	id = 1000013
+	major = yes
+	title = "Japan_Preparing_1"
+	desc = "Japan_Preparing_1_desc"
+	picture = "Japan_Preparing_1"
+	trigger = {
+		tag = JAP
+		not = { has_country_flag = Japan_Preparing_1 }
+		date = 1936.2.26
+		not = { year = 1938 }
+	}
+	mean_time_to_happen =  {
+		days = 1
+	}
+	option = {
+		name = "Japan_Preparing_1_option"
+		set_country_flag = Japan_Preparing_1
+		head_of_government = 5003
+		dissent = -1
+		paternal_autocrat = {
+			popularity = 10 
+			organisation = 10
+		}
+		5315 = {
+						   province_event = 190031
+						   }
+		national_unity = 15
+		ai_chance = { factor = 100 }
+	}
+}
+#五月文件
+country_event = {
+	id = 1000014
+	title = "Japan_Preparing_2"
+	desc = "Japan_Preparing_2_desc"
+	picture = "JAP_Flag"
+	trigger = {
+		tag = JAP
+		not = { war_with = CHI }
+		not = { has_country_flag = Japan_Preparing_2 }
+		has_country_flag = Japan_Preparing_1
+		and = {
+			year = 1936
+			month = 4
+		}
+	}
+	mean_time_to_happen =  {
+		days = 1
+	}
+	option = {
+		name = "Japan_Preparing_2_option"
+		set_country_flag = Japan_Preparing_2
+		add_country_modifier = {
+			name = "Japan_Preparing"
+			duration = 180
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+#九月计划
+country_event = {
+	id = 1000015
+	title = "Japan_Preparing_3"
+	desc = "Japan_Preparing_3_desc"
+	picture = "Japan_Preparing_3"
+	trigger = {
+		tag = JAP
+		not = { has_country_flag = Japan_Preparing_3 }
+		has_country_flag = Japan_Preparing_1
+		and = {
+			year = 1936
+			month = 8
+		}
+	}
+	mean_time_to_happen =  {
+		days = 1
+	}
+	option = {
+		name = "Japan_Preparing_3_option"
+		set_country_flag = Japan_Preparing_3
+		national_unity = 10
+		ai_chance = { factor = 100 }
+	}
+}
+#反共协定
+country_event = {
+	id = 1000016
+	major = yes
+	title = "Japan_Preparing_4"
+	desc = "Japan_Preparing_4_desc"
+	picture = "Japan_Preparing_4"
+	trigger = {
+		tag = JAP
+		not = { has_country_flag = Japan_Preparing_4 }
+		has_country_flag = Japan_Preparing_1
+		date = 1936.11.25
+	}
+	mean_time_to_happen =  {
+		days = 1
+	}
+	option = {
+		name = "Japan_Preparing_4_option"
+		set_country_flag = Japan_Preparing_4
+		join_faction = axis
+		ai_chance = { factor = 100 }
+	}
+}

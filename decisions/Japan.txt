@@ -1,0 +1,86 @@
+##########
+# Japan  #
+##########
+diplomatic_decisions = {
+	# Japan demands bases in French Indochine
+	japan_demands_bases_in_indochine = {
+		potential = {
+			not = { has_country_flag = japan_demands_bases_in_indochina }
+			exists = VIC
+			tag = JAP
+			not = { french_indochine_region = { not = { controlled_by = VIC } } }
+		}
+		allow = {
+			faction = axis
+		}
+		effect = {
+			set_country_flag = japan_demands_bases_in_indochina
+			relation = { who = VIC value = -10 }
+			relation = { who = USA value = -15 }
+			relation = { who = CGX value = -25 }
+			relation = { who = CYN value = -20 }
+			threat = { who = VIC value = 5 }
+			threat = { who = USA value = 5 }
+			neutrality = -5
+			VIC = { country_event = 1801 }
+			USA = { country_event = 1802 }
+			set_country_flag = indochine_to_japan
+			end_non_aggression_pact = VIC
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Japan puts pressure on Siam
+	japan_puts_pressure_on_siam = {
+		potential = {
+			tag = JAP
+			not = { has_country_flag = japanese_pressure_on_siam }
+			exists = SIA
+			exists = VIC
+			has_country_flag = indochine_to_japan
+			JAP = {
+				controls = 6178
+				controls = 6186
+				controls = 6193				
+				controls = 6201
+				controls = 6203
+				controls = 6209
+				controls = 6212
+				controls = 6220
+				controls = 6221
+				controls = 6222
+				controls = 6232
+				controls = 6233
+				controls = 6242
+				controls = 7709
+				controls = 7712
+				controls = 7713
+				controls = 7714
+				controls = 7715
+				controls = 7716
+				controls = 7718
+				controls = 7719
+				controls = 7724
+				controls = 7725
+				controls = 7727
+				controls = 7731
+			}
+		}
+		allow = {
+			faction = axis
+			not = { war_with = SIA }
+		}
+		effect = {
+			set_country_flag = japanese_pressure_on_siam
+			relation = { who = SIA value = 5 }
+			neutrality = -3
+			threat = { who = SIA value = 5 }
+			SIA = { country_event = 2701 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

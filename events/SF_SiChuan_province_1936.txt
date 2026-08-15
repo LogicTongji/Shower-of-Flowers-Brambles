@@ -1,0 +1,54 @@
+#贺国光
+country_event = {
+	id = 390019
+	 fire_only_once = yes
+       	trigger = {
+		tag = CHI
+		has_country_flag = Intagrate_China_SiChuan
+		has_country_flag = CHI_Kangzhan
+		war_with = JAP
+		not = { year = 1938 }
+	}
+	title = "EVENT390019title"
+	desc = "EVENT390019desc"
+	picture = "CHI_flag"
+	option = {
+		name = "EVENT390019op"
+		 set_country_flag = HeGuoguang_goto_SiChuan
+                national_unity = 5
+        }
+}
+#张群
+country_event = {
+	id = 3100102
+	 fire_only_once = yes
+       	trigger = {
+		tag = CHI
+		has_country_flag = Intagrate_China_SiChuan
+                has_global_flag = Event1000101
+		war_with = JAP
+		year = 1938
+	}
+	title = "EVENT3100102title"
+	desc = "EVENT3100102desc"
+	picture = "CHI_flag"
+	option = {
+		name = "EVENT3100102op"
+		CSC = { country_event = 290019 }
+                national_unity = 5
+        }
+}
+country_event = {
+	id = 290019
+    is_triggered_only = yes
+	title = "EVENT190019title"
+	desc = "EVENT190019desc"
+	picture = "CHI_flag"
+        option = {
+		name = "EVENT190019op"
+                CHI = { split_troops = 1.0 }
+		CHI = { inherit = CSC } 
+                national_unity = 5
+                ai_chance = { factor = 100 }
+	}
+}

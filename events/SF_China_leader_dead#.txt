@@ -1,0 +1,237 @@
+#####################
+#  将领牺牲事件组   #
+#####################
+country_event = {
+	id = 3220
+	fire_only_once = yes
+	title = "3220title"
+	desc = "3220decs"
+	picture = "CHI_flag"
+	trigger = {
+		tag = CSX	
+		not = { year = 1938 }
+                JAP = { controls = 4977 }
+	}
+        mean_time_to_happen =  {
+	        month = 1
+        }
+	option = {
+		name = "3220option1"             
+               CHI = { country_event = 3221 }
+			   kill_leader = 503003
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+        is_triggered_only = yes
+	id = 3221
+	title = "3220title"
+	desc = "3220decs"
+	picture = "CHI_flag"
+	option = {
+		name = "3220option1"               			           	
+	}
+}
+country_event = {
+	id = 3222
+	fire_only_once = yes
+	title = "3222title"
+	desc = "3222decs"
+	picture = "CHI_flag"
+	trigger = {
+		tag = CHI
+		not = { year = 1938 }
+		JAP = { controls = 5051 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "3223OP"   
+                kill_leader = 50089                                   
+	}
+}
+country_event = {
+	id = 3223
+	fire_only_once = yes
+	title = "3223title"
+	desc = "3223decs"
+	picture = "CHI_flag"
+	trigger = {
+		tag = CHI
+		JAP = { controls = 7510 }
+	}
+	    mean_time_to_happen =  {
+	        month = 1
+        }
+	option = {
+		name = "3223OP"   
+			 CHI = { country_event = 32224 }
+                CGX = { country_event = 32224 }
+                CYN = { country_event = 32224 }
+                CSY = { country_event = 32224 }
+                CHC = { country_event = 32224 }
+                kill_leader = 4000154                                  
+	}
+}
+country_event = {
+	id = 3224
+	fire_only_once = yes
+	title = "3224title"
+	desc = "3224decs"
+	picture = "CHI_flag"
+	trigger = {
+		tag = CSC
+		not = { year = 1938 }
+		JAP = { controls = 5541 }
+	}
+	    mean_time_to_happen =  {
+	        month = 1
+        }
+	option = {
+		name = "3224OP"  
+		 CHI = { country_event = 32223 }
+                CGX = { country_event = 32223 }
+                CYN = { country_event = 32223 }
+                CSY = { country_event = 32223 }
+                CHC = { country_event = 32223 }
+                kill_leader = 4000082                                  
+	}
+}
+ country_event = {
+        is_triggered_only = yes
+	id = 32223
+	title = "3224title"
+	desc = "3224decs"
+	picture = "CHI_flag"
+	option = {
+		name = "32225OP"                			           	
+	}
+}   
+country_event = {
+        is_triggered_only = yes
+	id = 32224
+	title = "3223title"
+	desc = "3223decs"
+	picture = "CHI_flag"
+	option = {
+		name = "3223OP"                			           	
+	}
+} 
+country_event = {
+	id = 3225
+	fire_only_once = yes
+	title = "3225title"
+	desc = "3225decs"
+	picture = "CHC_flag"
+	trigger = {
+		tag = CHC
+		has_global_flag = thenorthchinapolice1
+		has_global_flag = baituandazhan
+	}
+	    mean_time_to_happen =  {
+	        month = 1
+        }
+	option = {
+		name = "3225OP"  
+                CGX = { country_event = 32225 }
+                CYN = { country_event = 32225 }
+                CSY = { country_event = 32225 }
+                CHI = { country_event = 32225 }
+                kill_leader = 76343                                  
+	}
+}
+country_event = {
+        is_triggered_only = yes
+	id = 32225
+	title = "3225title"
+	desc = "3225decs"
+	picture = "CHI_flag"
+	option = {
+		name = "3224OP"                			           	
+	}
+}
+country_event = {
+	id = 3226
+	fire_only_once = yes
+	title = "3226title"
+	desc = "3226decs"
+	picture = "CHI_flag"
+	trigger = {
+		tag = CHI
+		not = { year = 1938 }
+		JAP = { controls = 5494 }
+	}
+	    mean_time_to_happen =  {
+	        month = 1
+        }
+	option = {
+		name = "3226OP"  
+                kill_leader = 4000155                                 
+	}
+}
+country_event = {
+	id = 3227
+	fire_only_once = yes
+	title = "3227title"
+	desc = "3227decs"
+	picture = "CHI_flag"
+	trigger = {
+		tag = CHI
+		not = { year = 1938 }
+		JAP = { controls = 5494 }
+	}
+	    mean_time_to_happen =  {
+	        month = 1
+        }
+	option = {
+		name = "3227OP"  
+                kill_leader = 4000156                               
+	}
+}
+country_event = {
+	id = 3228
+	fire_only_once = yes
+	title = "3228title"
+	desc = "3228decs"
+	picture = "CHI_flag"
+	trigger = {
+		tag = CHI
+		has_country_flag = china_yuanzhengjun
+		JAP = { controls = 6070
+		        controls = 7610 }
+	}
+	    mean_time_to_happen =  {
+	        month = 1
+        }
+	option = {
+		name = "3228OP"  
+		 CGX = { country_event = 32227 }
+                CYN = { country_event = 32227 }
+                CSY = { country_event = 32227 }
+                CHC = { country_event = 32227
+                        country_event = 32228 }
+                kill_leader = 50274                               
+	}
+}
+country_event = {
+        is_triggered_only = yes
+	id = 32227
+	title = "3228title"
+	desc = "3228decs"
+	picture = "CH_flag"
+	option = {
+		name = "3228OP"                			           	
+	}
+}
+country_event = {
+        is_triggered_only = yes
+	id = 32228
+	title = "32228title"
+	subtitle = "32228subtitle"
+	desc = "32228decs"
+	picture = "CHC_flag"
+	option = {
+		name = "3228OP"                			           	
+	}
+}

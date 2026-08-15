@@ -1,0 +1,124 @@
+#新疆决议组
+diplomatic_decisions = {
+ CXM_west_attck = {
+		potential = {
+			tag = CXM                                            
+     exists = SIK
+      year = 1935
+			not = { year = 1936 } 
+		}
+		allow = {
+			not = { alliance_with = CHI 
+                    has_global_flag = CXM_west_attck_1935 
+					}	
+		}
+		effect = {
+			set_global_flag = CXM_west_attck_1935
+ any_owned = { limit = { province_id = 9166 } secede_province = CXM } 
+ any_owned = { limit = { province_id = 9058 } secede_province = CXM }  
+ any_owned = { limit = { province_id = 9030 } secede_province = CXM } 
+ any_owned = { limit = { province_id = 9137 } secede_province = CXM } 
+ any_owned = { limit = { province_id = 9194 } secede_province = CXM } 
+ any_owned = { limit = { province_id = 9111 } secede_province = CXM } 
+ any_owned = { limit = { province_id = 9136 } secede_province = CXM } 
+ any_owned = { limit = { province_id = 9082 } secede_province = CXM } 
+ any_owned = { limit = { province_id = 9056 } secede_province = CXM }   
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	     CXM_Briger = {
+		potential = {
+			tag = CXM                                            
+     exists = SIK
+      date = 1937.1.1
+			not = { year = 1938 } 
+		}
+		allow = {
+			not = { alliance_with = CHI 
+                    has_global_flag = CXM_WAR }	
+		}
+		effect = {
+			set_global_flag = CXM_WAR
+			country_event = 7180
+			SIK = { country_event = 7181 } 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+     Peace_SOV = {
+		potential = {
+			tag = SIK                                            
+       has_global_flag = soviet_help_anti_japan 
+      not = { has_global_flag = SIK_Peace }		
+		}
+		allow = {
+			not = { alliance_with = CHI }
+		}
+		effect = {
+			set_global_flag = SIK_Peace
+			SOV = { country_event = 7183 } 
+			non_aggression_pact = SOV
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+     SIK_Briger = {
+		potential = {
+			tag = SIK                                           
+                                                exists = SIK
+      not = { has_global_flag = CXM_PEACE }	
+      date = 1936.1.2	
+			not = { year = 1938 } 
+		}
+		allow = {
+			not = { alliance_with = CHI }
+		}
+		effect = {
+			set_global_flag = CXM_PEACE
+			SIK = { country_event = 7185 }  
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	SIK_Clean = {
+		potential = {
+			tag = SIK                                           
+     exists = SIK
+      not = { has_global_flag = SIK_CLEANING }		
+			 year = 1937
+			 not = { year = 1938 }  
+		}
+		allow = {
+		}
+		effect = {
+			set_global_flag = SIK_CLEANING
+			SIK = { country_event = 7187 } 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}				
+	SIK_Clean2 = {
+		potential = {
+			tag = SIK                                           
+     exists = SIK
+      not = { has_global_flag = SIK_CLEANING2 }		
+			 year = 1941
+			 not = { year = 1942 }  
+		}
+		allow = {
+		}
+		effect = {
+			set_global_flag = SIK_CLEANING2
+			SIK = { country_event = 7188 } 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}				
+}						

@@ -1,0 +1,3637 @@
+#Battle of the Bzura
+province_event = {
+	id = 600
+	title = "EVTNAME600"
+	desc = "EVTDESC600"
+	picture = "Bzura"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1982
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = bzura_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Kobryn
+province_event = {
+	id = 601
+	title = "EVTNAME601"
+	desc = "EVTDESC601"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1931
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = kobryn_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Tomaszow Lubelski
+province_event = {
+	id = 602
+	title = "EVTNAME602"
+	desc = "EVTDESC602"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2332
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = tomazovlubelski_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Kock
+province_event = {
+	id = 603
+	title = "EVTNAME603"
+	desc = "EVTDESC603"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2042
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = kock_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Stalingrad
+province_event = {
+	id = 604
+	title = "EVTNAME604"
+	desc = "EVTDESC604"
+	picture = "Stalingrad"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2857
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = stalingrad_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Bialystok–Minsk
+province_event = {
+	id = 605
+	title = "EVTNAME605"
+	desc = "EVTDESC605"
+	picture = "Bialystok_Minsk"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id =  1694
+			province_id = 1810
+			}
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = minsk_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Raseiniai
+province_event = {
+	id = 606
+	title = "EVTNAME606"
+	desc = "EVTDESC606"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1397
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = raseiniai_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Dubna
+province_event = {
+	id = 607
+	title = "EVTNAME607"
+	desc = "EVTDESC607"
+	subtitle = "EVTSUB600"
+	picture = "airdrop"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1274
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = dubna_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Kursk
+province_event = {
+	id = 608
+	title = "EVTNAME608"
+	desc = "EVTDESC608"
+	picture = "Kursk"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2170
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = kursk_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Smolensk
+province_event = {
+	id = 609
+	title = "EVTNAME609"
+	desc = "EVTDESC609"
+	subtitle = "EVTSUB600"
+	picture = "resupply"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1535
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = smolensk_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Uman
+province_event = {
+	id = 610
+	title = "EVTNAME610"
+	desc = "EVTDESC610"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2837
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = uman_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Moskva
+province_event = {
+	id = 611
+	title = "EVTNAME611"
+	desc = "EVTDESC611"
+	picture = "moscow_offensive"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1409
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = moskva_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Murmansk
+province_event = {
+	id = 612
+	title = "EVTNAME612"
+	desc = "EVTDESC612"
+	picture = "silverfox"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 46
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = murmansk_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Brest-Litovsk
+province_event = {
+	id = 613
+	title = "EVTNAME613"
+	desc = "EVTDESC613"
+	picture = "BrestFortress"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1986
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = brest_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Mlawa
+province_event = {
+	id = 614
+	title = "EVTNAME614"
+	desc = "EVTDESC614"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1868
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = mlawa_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Warszawa
+province_event = {
+	id = 615
+	title = "EVTNAME615"
+	desc = "EVTDESC615"
+	picture = "Warsaw"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1928
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = warszawa_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Den Haag
+province_event = {
+	id = 616
+	title = "EVTNAME616"
+	desc = "EVTDESC616"
+	picture = "bombing_eastern"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2022
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = haag_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#The Rotterdam Blitz
+province_event = {
+	id = 617
+	title = "EVTNAME617"
+	desc = "EVTDESC617"
+	picture = "rotterdam"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2081
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = rotterdam_blitz_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#The Battle for Caen
+province_event = {
+	id = 618
+	title = "EVTNAME618"
+	desc = "EVTDESC618"
+	picture = "Caen"
+	subtitle = "EVTSUB600"
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2482
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = caen_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Carentan
+province_event = {
+	id = 619
+	title = "EVTNAME619"
+	desc = "EVTDESC619"
+	picture = "Carentan"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2481
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = carentan_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Cherbourg
+province_event = {
+	id = 620
+	title = "EVTNAME620"
+	desc = "EVTDESC620"
+	picture = "Cherbourg"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2481
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = cherbourg_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Dodacanese
+province_event = {
+	id = 621
+	title = "EVTNAME621"
+	desc = "EVTDESC621"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	subtitle = "EVTSUB600"
+	
+	trigger = {
+		province_id = 10731
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = dodacanese_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Groningen
+province_event = {
+	id = 622
+	title = "EVTNAME622"
+	desc = "EVTDESC622"
+	picture = "groningen"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1673
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = groningen_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of San Marino
+province_event = {
+	id = 623
+	title = "EVTNAME623"
+	desc = "EVTDESC623"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 4109
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = sanmarino_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Maastricht
+province_event = {
+	id = 624
+	title = "EVTNAME624"
+	desc = "EVTDESC624"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2140
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = maastricht_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Arnhem
+province_event = {
+	id = 625
+	title = "EVTNAME625"
+	desc = "EVTDESC625"
+	picture = "Arnhem"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2025
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = arnhem_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Metz
+province_event = {
+	id = 626
+	title = "EVTNAME626"
+	desc = "EVTDESC626"
+	picture = "Metz"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2618
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = metz_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Monte Castello
+province_event = {
+	id = 627
+	title = "EVTNAME627"
+	desc = "EVTDESC627"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 4361
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = montecastello_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Rovaniemi
+province_event = {
+	id = 628
+	title = "EVTNAME628"
+	desc = "EVTDESC628"
+	picture = "Rovaniemi"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 161
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = rovaniemi_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Lille
+province_event = {
+	id = 629
+	title = "EVTNAME629"
+	desc = "EVTDESC629"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2309
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = lille_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Ulm
+province_event = {
+	id = 630
+	title = "EVTNAME630"
+	desc = "EVTDESC630"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2884
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = ulm_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Aachen
+province_event = {
+	id = 631
+	title = "EVTNAME631"
+	desc = "EVTDESC631"
+	subtitle = "EVTSUB600"
+	picture = "aachen"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2256
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = aachen_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Monte Cassino
+province_event = {
+	id = 632
+	title = "EVTNAME632"
+	desc = "EVTDESC632"
+	picture = "MonteCassino"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 4660
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = montecassino_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Nancy
+province_event = {
+	id = 633
+	title = "EVTNAME633"
+	desc = "EVTDESC633"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2683
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = nancy_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Bastogne
+province_event = {
+	id = 634
+	title = "EVTNAME634"
+	desc = "EVTDESC634"
+	subtitle = "EVTSUB600"
+	picture = "Bastogne"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2370
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = bastogne_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Debrecen
+province_event = {
+	id = 635
+	title = "EVTNAME635"
+	desc = "EVTDESC635"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 3300
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = debrecen_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#First Battle of El Alamain
+province_event = {
+	id = 636
+	title = "EVTNAME636"
+	desc = "EVTDESC636"
+	picture = "ElAlamein1"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 5609
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		owner = {
+			add_country_modifier = {
+				name = elalamain_first_battle_won
+				duration = 25
+			}
+		}
+		set_province_flag = first_alamain
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Second Battle of El Alamain
+province_event = {
+	id = 637
+	title = "EVTNAME637"
+	desc = "EVTDESC637"
+	picture = "Elalamein2"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 5609
+		has_province_flag = first_alamain
+		NOT = {
+			ENG = {
+				controls = 5609
+			}
+		}
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = elalamain_second_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Malaya
+province_event = {
+	id = 638
+	title = "EVTNAME638"
+	desc = "EVTDESC638"
+	picture = "Malaya"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6378
+		ENG = {
+			controls = 6378 #Kuala Lampur, Malay does not exist in HoI3
+		}
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = malaya_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Luzon
+province_event = {
+	id = 639
+	title = "EVTNAME639"
+	desc = "EVTDESC639"
+	picture = "Luzon"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6101
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = luzon_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Guadalcanal
+province_event = {
+	id = 640
+	title = "EVTNAME640"
+	desc = "EVTDESC640"
+	picture = "Guadalcanal"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6545
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = guadalcanal_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Saipan
+province_event = {
+	id = 641
+	title = "EVTNAME641"
+	desc = "EVTDESC641"
+	picture = "Saipan"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 5966
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = saipan_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Bryanskaja
+province_event = {
+	id = 642
+	title = "EVTNAME642"
+	desc = "EVTDESC642"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1877
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = bryanskaja_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#First Battle of Kharkov
+province_event = {
+	id = 643
+	title = "EVTNAME643"
+	desc = "EVTDESC643"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2401
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		set_province_flag = kharkov_first
+		add_country_modifier = {
+			name = kharkov_first_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		set_province_flag = kharkov_first
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Second Battle of Kharkov
+province_event = {
+	id = 644
+	title = "EVTNAME644"
+	desc = "EVTDESC644"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2401
+		has_province_flag = kharkov_first
+		NOT = {
+			SOV = {
+				controls = 2401
+			}
+		}
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		set_province_flag = second_kharkov
+		add_country_modifier = {
+			name = kharkov_second_battle_won
+			duration = 25
+		}
+		
+	}
+	
+	option = {
+		name = "EVTOPTB600"	
+		set_province_flag = second_kharkov
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Third Battle of Kharkov
+province_event = {
+	id = 645
+	title = "EVTNAME645"
+	desc = "EVTDESC645"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2401
+		has_province_flag = second_kharkov
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		clr_province_flag = second_kharkov
+		add_country_modifier = {
+			name = kharkov_third_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		clr_province_flag = second_kharkov
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Odessa
+province_event = {
+	id = 646
+	title = "EVTNAME646"
+	desc = "EVTDESC646"
+	picture = "odessa"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 3309
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = odessa_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Bautzen
+province_event = {
+	id = 647
+	title = "EVTNAME647"
+	desc = "EVTDESC647"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2209
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = bautzen_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Orsha
+province_event = {
+	id = 648
+	title = "EVTNAME648"
+	desc = "EVTDESC648"
+	picture = "bulge"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1582
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = orsha_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Belgorod
+province_event = {
+	id = 649
+	title = "EVTNAME649"
+	desc = "EVTDESC649"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2286
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = belgorod_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Halbe
+province_event = {
+	id = 650
+	title = "EVTNAME650"
+	desc = "EVTDESC650"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2031 #Halberstadt
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = halbe_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Narva
+province_event = {
+	id = 651
+	title = "EVTNAME651"
+	desc = "EVTDESC651"
+	picture = "eastern5"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 820
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = narva_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Hanko
+province_event = {
+	id = 652
+	title = "EVTNAME652"
+	desc = "EVTDESC652"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 779
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = hanko_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Ilomantsi
+province_event = {
+	id = 653
+	title = "EVTNAME653"
+	desc = "EVTDESC653"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 433
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = ilomantsi_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Ancona
+province_event = {
+	id = 654
+	title = "EVTNAME654"
+	desc = "EVTDESC654"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 4170
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = ancona_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Bologna
+province_event = {
+	id = 655
+	title = "EVTNAME655"
+	desc = "EVTDESC655"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 3903
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = bologna_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Ortona
+province_event = {
+	id = 656
+	title = "EVTNAME656"
+	desc = "EVTDESC656"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 4490
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = ortona_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Rimini
+province_event = {
+	id = 657
+	title = "EVTNAME657"
+	desc = "EVTDESC657"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 4043
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = rimini_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Breslau
+province_event = {
+	id = 658
+	title = "EVTNAME658"
+	desc = "EVTDESC658"
+	picture = "Breslau"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2153
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = breslau_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Borodino
+province_event = {
+	id = 659
+	title = "EVTNAME659"
+	desc = "EVTDESC659"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 8245
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = borodino_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Budapest
+province_event = {
+	id = 660
+	title = "EVTNAME660"
+	desc = "EVTDESC660"
+	picture = "budapest2"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 3164
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = budapest_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Kerch
+province_event = {
+	id = 661
+	title = "EVTNAME661"
+	desc = "EVTDESC661"
+	picture = "Kerch_Peninsula"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 3449
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = kerch_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Kolberg
+province_event = {
+	id = 662
+	title = "EVTNAME662"
+	desc = "EVTDESC662"
+	picture = "Kolberg"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1683
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = kolberg_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Sevastopol
+province_event = {
+	id = 663
+	title = "EVTNAME663"
+	desc = "EVTDESC663"
+	picture = "Sevastopol"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 3581
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = sevastopol_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle for Velikie Luki
+province_event = {
+	id = 664
+	title = "EVTNAME664"
+	desc = "EVTDESC664"
+	picture = "moscow_offensive"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1357
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = velikieluki_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Voronez
+province_event = {
+	id = 665
+	title = "EVTNAME665"
+	desc = "EVTDESC665"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2233
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = voronez_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Calais
+province_event = {
+	id = 666
+	title = "EVTNAME666"
+	desc = "EVTDESC666"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2194
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = calais_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Gazala
+province_event = {
+	id = 667
+	title = "EVTNAME667"
+	desc = "EVTDESC667"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		controller = {
+			faction = axis
+		}
+		province_id = 5510
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = gazala_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Kassel
+province_event = {
+	id = 668
+	title = "EVTNAME668"
+	desc = "EVTDESC668"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2145
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = kassel_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Tornio
+province_event = {
+	id = 669
+	title = "EVTNAME669"
+	desc = "EVTDESC669"
+	picture = "Tornio"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 179
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = tornio_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Malta
+province_event = {
+	id = 670
+	title = "EVTNAME670"
+	desc = "EVTDESC670"
+	picture = "Malta"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 5359
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = malta_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Grudziadz
+province_event = {
+	id = 671
+	title = "EVTNAME671"
+	desc = "EVTDESC671"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1746
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = grudziadz_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Jaroslaw
+province_event = {
+	id = 672
+	title = "EVTNAME672"
+	desc = "EVTDESC672"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2447
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = jaroslaw_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Kaluszyn
+province_event = {
+	id = 673
+	title = "EVTNAME673"
+	desc = "EVTDESC673"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1984
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = kaluszyn_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Lodz
+province_event = {
+	id = 674
+	title = "EVTNAME674"
+	desc = "EVTDESC674"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2040
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = lodz_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Lwow
+province_event = {
+	id = 675
+	title = "EVTNAME675"
+	desc = "EVTDESC675"
+	picture = "lviv"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2509
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = lwow_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Radom
+province_event = {
+	id = 676
+	title = "EVTNAME676"
+	desc = "EVTDESC676"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2157
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = radom_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Hong Kong
+province_event = {
+	id = 677
+	title = "EVTNAME677"
+	desc = "EVTDESC677"
+	picture = "hongkong"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 5868
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = hongkong_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Ambon
+province_event = {
+	id = 678
+	title = "EVTNAME678"
+	desc = "EVTDESC678"
+	picture = "okinawa_airbattle"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 7780
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = ambon_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Balikpapan
+province_event = {
+	id = 679
+	title = "EVTNAME679"
+	desc = "EVTDESC679"
+	picture = "Balikpapan"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6434
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = balikpapan_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Beirut
+province_event = {
+	id = 680
+	title = "EVTNAME680"
+	desc = "EVTDESC680"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 5299
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = beirut_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Kranj
+province_event = {
+	id = 681
+	title = "EVTNAME681"
+	desc = "EVTDESC681"
+	picture = "Kranji"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 3498
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = kranj_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Wau
+province_event = {
+	id = 682
+	title = "EVTNAME682"
+	desc = "EVTDESC682"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6526
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = wau_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Singapore
+province_event = {
+	id = 683
+	title = "EVTNAME683"
+	desc = "EVTDESC683"
+	picture = "Singapore"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6394
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = singapore_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Tarakan
+province_event = {
+	id = 684
+	title = "EVTNAME684"
+	desc = "EVTDESC684"
+	picture = "Tarakan"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6380
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = tarakan_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle in Berlin
+province_event = {
+	id = 685
+	title = "EVTNAME685"
+	desc = "EVTDESC685"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1861
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = berlin_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Pegu
+province_event = {
+	id = 686
+	title = "EVTNAME686"
+	desc = "EVTDESC686"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6055
+		war_with = JAP
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = pegu_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Tampere
+province_event = {
+	id = 687
+	title = "EVTNAME687"
+	desc = "EVTDESC687"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 537
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = tampere_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Wilno
+province_event = {
+	id = 688
+	title = "EVTNAME688"
+	desc = "EVTDESC688"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1532
+		OR = {
+			POL = {
+				controls = 1532
+			}
+			SOV = {
+				controls = 1532
+			}
+			GER = {
+				controls = 1532
+			}
+		}
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = wilno_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Palmyra
+province_event = {
+	id = 689
+	title = "EVTNAME689"
+	desc = "EVTDESC689"
+	picture = "aus_lebanon"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 7397
+		OR = {
+			FRA = {
+				controls = 7397
+			}
+			VIC = {
+				controls = 7397
+			}
+		}
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = palmyra_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Leningrad
+province_event = {
+	id = 690
+	title = "EVTNAME690"
+	desc = "EVTDESC690"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 782
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = leningrad_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Iwo Jima
+province_event = {
+	id = 691
+	title = "EVTNAME691"
+	desc = "EVTDESC691"
+	picture = "Iwo_Jima"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 10642
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = iwojima_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Dakar
+province_event = {
+	id = 692
+	title = "EVTNAME692"
+	desc = "EVTDESC692"
+	picture = "french_africa"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 9741
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = dakar_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Nanchang
+province_event = {
+	id = 693
+	title = "EVTNAME693"
+	desc = "EVTDESC693"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 5681
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = nanchang_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#First Battle of Guam
+province_event = {
+	id = 694
+	title = "EVTNAME694"
+	desc = "EVTDESC694"
+	picture = "Guam1"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6119
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+		NOT = {
+			has_province_flag = guam_first
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		set_province_flag = guam_first
+		add_country_modifier = {
+			name = guam_first_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		set_province_flag = guam_first
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Second Battle of Guam
+province_event = {
+	id = 695
+	title = "EVTNAME695"
+	desc = "EVTDESC695"
+	picture = "Guam2"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6119
+		has_province_flag = guam_first
+		JAP = {
+			controls = 6119
+		}
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		clr_province_flag = guam_first
+		add_country_modifier = {
+			name = guam_second_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		clr_province_flag = guam_first
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Rabaul
+province_event = {
+	id = 696
+	title = "EVTNAME696"
+	desc = "EVTDESC696"
+	picture = "landing"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6467
+		war_with = JAP
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		add_country_modifier = {
+			name = rabaul_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#First Battle of Changsha
+province_event = {
+	id = 697
+	title = "EVTNAME697"
+	desc = "EVTDESC697"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 5777
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		set_province_flag = changsha_first
+		add_country_modifier = {
+			name = changsha_first_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		set_province_flag = changsha_first
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Second Battle of Changsha
+province_event = {
+	id = 698
+	title = "EVTNAME698"
+	desc = "EVTDESC698"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 5777
+		has_province_flag = changsha_first
+		JAP = {
+			controls = 5777
+		}
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		clr_province_flag = changsha_first
+		set_province_flag = changsha_second
+		add_country_modifier = {
+			name = changsha_second_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		clr_province_flag = changsha_first
+		set_province_flag = changsha_second
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}
+
+#Third Battle of Changsha
+province_event = {
+	id = 699
+	title = "EVTNAME699"
+	desc = "EVTDESC699"
+	subtitle = "EVTSUB600"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 5777
+		has_province_flag = changsha_second
+		NOT = {
+			CGX = {
+				controls = 5777
+			}
+			JAP = {
+				controls = 5777
+			}
+		}
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA600"
+		clr_province_flag = changsha_second
+		add_country_modifier = {
+			name = changsha_third_battle_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB600"
+		clr_province_flag = changsha_second
+		add_country_modifier = {
+			name = battle_won
+			duration = 25
+		}
+	}
+}

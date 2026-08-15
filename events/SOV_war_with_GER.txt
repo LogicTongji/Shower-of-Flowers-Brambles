@@ -1,0 +1,79 @@
+country_event = {
+	id = 2020302
+	fire_only_once = yes
+	major = yes
+	title = "333title"
+	subtitle = "BBS"
+	desc = "33decs"
+	picture = "YJ"
+	trigger = {
+		tag = SOV
+		war_with = GER
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "祖国万岁！"
+			national_unity = 50
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = 2020303
+	fire_only_once = yes
+	major = yes
+	title = "335title"
+	subtitle = "ELX"
+	desc = "33decs"
+	picture = "JH"
+	trigger = {
+		tag = SOV
+		war_with = GER
+		GER = { 
+			controls = 2223
+			controls = 1694
+			controls = 1819
+		  controls = 1178
+			controls = 906
+			controls = 3309
+			controls = 2975
+			controls = 1534
+			controls = 1536
+			}
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "Lostgroly"
+			set_country_flag = The_army_is_lost
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = 2020304
+	fire_only_once = yes
+	major = yes
+	title = "334title"
+	subtitle = "YBYB"
+	desc = "33decs"
+	picture = "YB"
+	trigger = {
+		tag = SOV
+		war_with = GER
+		GER = { 
+			controls = 1542
+			controls = 1365
+			controls = 1275
+			}
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "祖国万岁！"
+			set_country_flag = The_army_in_mosc
+		ai_chance = { factor = 0 }
+	}
+}

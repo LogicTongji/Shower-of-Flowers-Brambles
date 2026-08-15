@@ -1,0 +1,7 @@
+#国际纵队SECOND
+division= {
+		name = "国际纵队"
+		location = 4540
+		is_reserve = yes
+		regiment = { type = infantry_brigade experience = 45 name = "第89纵队、第129纵队、第150纵队" historical_model = 1 }
+	}

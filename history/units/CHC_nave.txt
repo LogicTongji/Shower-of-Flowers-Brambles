@@ -1,0 +1,19 @@
+	armygroup = {				
+		name = "华东军区海军"			
+		location = 5018				
+		regiment = { type = hq_brigade name = "华东军区海军司令部" experience = 15 historical_model = 3 }
+		regiment = { type = infantry_brigade name = "直属警卫旅" experience = 15 historical_model = 2 }
+	navy = {
+			name = "华东军区海军第1舰队"
+			base = 5018
+			location = 5018		
+			ship = { type = light_cruiser name = "重庆号" experience = 25 historical_model = 3 }
+		}
+	navy = {
+			name = "华东军区海军第2舰队"
+			base = 5018
+			location = 5018
+		ship = { type = torpedo_boat experience = 15 historical_model = 2 }
+		}
+}
+			

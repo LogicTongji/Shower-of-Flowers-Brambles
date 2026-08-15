@@ -1,0 +1,158 @@
+######################
+#   国府新军事件组   #
+######################
+#青年军
+country_event = {
+	id = 1000064
+	is_triggered_only = yes
+	title = "CHI_Event_1000064"
+	subtitle = "CHI_Event_1000064_subtitle"
+	desc = "CHI_Event_1000064_desc"
+	picture = "CHI_Flag"
+	option = {
+		name = "CHI_Event_1000064_option"
+		load_oob = "CHI_1.txt"
+		ai_chance = { factor = 100 }
+	}
+}
+#远征军
+country_event = {
+	id = 1000065
+	major = yes
+	is_triggered_only = yes
+	title = "CHI_Event_1000065"
+	subtitle = "CHI_Event_1000065_subtitle"
+	desc = "CHI_Event_1000065_desc"
+	picture = "CHI_Event_1000065"
+	option = {
+		name = "CHI_Event_1000065_option"
+		manpower = -100
+		ENG = { country_event = 1000066 }
+		load_oob = "CHI_2.txt"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000066
+	is_triggered_only = yes
+	title = "ENG_Event_1000066"
+	desc = "ENG_Event_1000066_desc"
+	picture = "CHI_Event_1000065"
+	option = {
+		name = "CHI_Event_1000030_option"
+		ai_chance = { factor = 100 }
+	}
+}
+#组建军委会直属装甲团
+country_event = {
+         id = 553
+         is_triggered_only = yes
+         title = "CHI_Event_553_title"
+         desc = "CHI_Event_553_decs"
+         picture = "CHI_Flag"
+         option = {
+                 name = "CHI_Event_550_op"
+                 load_oob="CHI_TK_SupportA.txt"
+        } 
+}
+#组建苏械攻击军
+country_event = {
+         id = 551
+         is_triggered_only = yes
+         title = "CHI_Event_551_title"
+         desc = "CHI_Event_551_decs"
+         picture = "China_Event_1000020"
+         option = {
+                 name = "CHI_Event_550_op"
+                 load_oob = "CHI_SOV_SupportA.txt"
+                 remove_brigade = "国民革命军第1旅"
+		 remove_brigade = "国民革命军第2旅"
+		 remove_brigade = "国民革命军第232旅"
+		 remove_brigade = "国民革命军第234旅"
+		 remove_brigade = "国民革命军第500旅"
+		 remove_brigade = "国民革命军第501旅"
+		 remove_brigade = "国民革命军第25旅"
+		 remove_brigade = "国民革命军第26旅"
+                 remove_brigade = "国民革命军第227旅"
+		 remove_brigade = "国民革命军第228旅"
+		 remove_brigade = "国民革命军第31旅"
+		 remove_brigade = "国民革命军第33旅"
+		 remove_brigade = "国民革命军第52旅"
+		 remove_brigade = "国民革命军第54旅"
+		 remove_brigade = "国民革命军第172旅"
+		 remove_brigade = "国民革命军第174旅"
+                 remove_brigade = "58师补充团"
+                 remove_brigade = "国民革命军第169旅"
+                 remove_brigade = "国民革命军第171旅"
+                 remove_brigade = "国民革命军第151旅"
+                 remove_brigade = "国民革命军第153旅"
+        }
+}
+#组建美械师
+country_enent = {
+         id = 552
+         is_triggered_only = yes
+         title = "CHI_Event_552_title"
+         desc = "CHI_Event_552_decs"
+         picture = "China_Event_1000020"
+         option = {
+                 name = "CHI_Event_550_op"
+                 load_oob = "CHI_USA_SupportA.txt"
+        }
+}
+ country_event = {
+         id = 559
+         is_triggered_only = yes
+         title = "CHI_Event_3019_title"
+         desc = "CHI_Event_3019_decs"
+         picture = "CHI_flag"
+         option = {
+                 name = "CHI_Event_559_op1"
+                       remove_brigade = "远征军第一路军司令部"
+	        remove_brigade = "远征军第5军司令部"
+	        remove_brigade = "第200师"
+	        remove_brigade = "第200师"
+	        remove_brigade = "第200师"
+	        remove_brigade = "第200师" 
+                remove_brigade = "新编第22师"
+	        remove_brigade = "新编第22师" 
+                remove_brigade = "新编第22师"
+	        remove_brigade = "新编第22师"
+	        remove_brigade = "新编第22师" 
+	        remove_brigade = "新编第96师" 
+ 	        remove_brigade = "新编第96师" 
+                remove_brigade = "新编第96师"
+	        remove_brigade = "新编第96师"
+	        remove_brigade = "远征军第6军司令部"
+	        remove_brigade = "远征军第66军司令部"
+	        remove_brigade = "第49师"
+	        remove_brigade = "第49师" 
+                remove_brigade = "第49师"
+	        remove_brigade = "第49师" 
+                remove_brigade = "第93师"
+	        remove_brigade = "第93师"
+	        remove_brigade = "第93师" 
+	        remove_brigade = "第93师"  
+	         remove_brigade = "暂编第55师"
+	        remove_brigade = "暂编第55师" 
+                remove_brigade = "暂编第55师"
+	        remove_brigade = "暂编第55师" 
+                remove_brigade = "新编第38师"
+	        remove_brigade = "新编第38师"
+	        remove_brigade = "新编第38师" 
+	        remove_brigade = "新编第38师"  
+	          remove_brigade = "新编第28师"
+	        remove_brigade = "新编第28师" 
+                remove_brigade = "新编第28师"
+	        remove_brigade = "新编第28师" 
+	         remove_brigade = "新编第29师"
+	        remove_brigade = "新编第29师" 
+                remove_brigade = "新编第29师"
+	        remove_brigade = "新编第29师" 
+	         remove_brigade = "第36师"
+	        remove_brigade = "第36师" 
+                remove_brigade = "第36师"
+	        remove_brigade = "第36师"      
+                 load_oob = "CHI_Y.txt"
+        }
+}   

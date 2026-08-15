@@ -1,0 +1,15 @@
+owner = ITA
+controller = ITA
+add_core = ITA
+
+infra = 7
+naval_base = 1
+1943.9.8 = {
+	owner = GER	controller = GER}
+
+1945.6.7 = {
+	owner = YUG
+	controller = YUG 
+	add_core = YUG 
+	remove_core = ITA
+}

@@ -1,0 +1,37 @@
+owner = CSX controller = CSX
+points = 8
+add_core = CSX
+add_core = CHI
+add_core = CHC
+metal = 6.00
+energy = 11.00
+rare_materials = 3.00
+industry = 3
+land_fort = 5
+infra = 7
+manpower = 9.00
+leadership = 0.90
+
+1937.11.11 = { owner = JAP controller = JAP }
+1938.9.1 = { owner = JAP }
+1940.3.1 = {
+owner = WJW
+controller = WJW
+add_core = WJW
+
+}
+1945.9.28 = {
+	owner = CHI
+	controller = CHI
+	remove_core = WJW
+}
+1946.1.1 = {
+	owner = CSX
+
+	controller = CSX
+	land_fort = 10
+}
+1949.10.1 = { 
+owner = PRC
+controller = PRC
+}

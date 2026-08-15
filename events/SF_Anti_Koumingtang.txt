@@ -1,0 +1,138 @@
+######################
+#   反围剿事件组   #
+######################
+country_event = {
+	id = 202312
+          is_triggered_only = yes
+          major = yes
+	title = "jiangxi1"
+	desc = "jiangxi1desc"
+	picture = "SF_Anti_Koumingtang1"
+	option = {
+		name = "jiangxiname"
+                   CHI = {
+                   create_alliance = CGX
+                   create_alliance = CGD
+                   create_alliance = CSC
+                   create_alliance = CXK
+                   create_alliance = CYS
+                   create_alliance = CTS
+                   create_alliance = CQS
+                   create_alliance = CYN
+                   create_alliance = CDX
+                   } 
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 12212
+          is_triggered_only = yes
+	title = "jiangxi2"
+    subtitle = "jiangxi2_subtitle"
+	desc = "jiangxi2desc"
+	picture = "SF_Anti_Koumingtang2"
+	option = {
+		name = "jiangxi1name"
+                   head_of_state = 51037
+                   head_of_government = 51037
+                   head_of_government = 51007
+	          remove_minister = 3000023
+                    remove_minister = 510131
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 12213
+          is_triggered_only = yes
+          major = yes
+	title = "jiangxi3"
+	desc = "jiangxi3desc"
+	picture = "SF_Anti_Koumingtang3"
+	option = {
+		name = "shanxiame"
+  any_owned = { limit = { province_id = 7425 } secede_province = CDB } 
+ any_owned = { limit = { province_id = 4517 } secede_province = CDB } 
+ any_owned = { limit = { province_id = 5177 } secede_province = CHC } 
+ any_owned = { limit = { province_id = 9202 } secede_province = CHC } 
+ any_owned = { limit = { province_id = 9170 } secede_province = CDB } 
+ any_owned = { limit = { province_id = 9265 } secede_province = CDB } 
+ any_owned = { limit = { province_id = 9232 } secede_province = CDB } 
+ any_owned = { limit = { province_id = 9233 } secede_province = CDB } 
+ any_owned = { limit = { province_id = 9295 } secede_province = CDB } 
+ any_owned = { limit = { province_id = 9325 } secede_province = CDB } 
+ any_owned = { limit = { province_id = 9266 } secede_province = CDB } 
+ any_owned = { limit = { province_id = 9234 } secede_province = CDB } 
+ any_owned = { limit = { province_id = 9296 } secede_province = CDB } 
+ any_owned = { limit = { province_id = 5451 } secede_province = CDB } 
+ any_owned = { limit = { province_id = 7435 } secede_province = CDB } 
+ any_owned = { limit = { province_id = 7209 } secede_province = CDB } 
+ any_owned = { limit = { province_id = 5472 } secede_province = CDB } 
+ any_owned = { limit = { province_id = 7486 } secede_province = CDB } 
+any_owned = { limit = { province_id = 7417 } secede_province = CDB } 
+                      leave_alliance = CYN
+                     leave_alliance = CSC
+                       leave_alliance = CDX
+                     leave_alliance = CYS
+                        leave_alliance = CTS
+                     leave_alliance = CGD
+                       leave_alliance = CGX
+                     leave_alliance = CXK
+                     create_alliance = CDB
+					  CDB = { war = { target = CHC } }
+                     CDB = { load_oob = "CDB_1936.txt" }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 12214
+          is_triggered_only = yes
+          major = yes
+	title = "guizhou1"
+	desc = "guizhou1desc"
+	picture = "SF_Anti_Koumingtang4"
+	option = {
+		name = "guizhouname"
+                   CHI = { load_oob = "25A.txt" }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 12215
+          is_triggered_only = yes
+          major = yes
+	title = "shaanxi"
+	desc = "shaanxidesc"
+	picture = "SF_Anti_Koumingtang5"
+	option = {
+		name = "shaanxiname"
+		          CTS = { end_war = CHC }
+                  CQS = { end_war = CHC }
+                  CYN = { end_war = CHC }
+                  CXK = { end_war = CHC }
+                  CYS = { end_war = CHC }
+                  CHN = { end_war = CHC }
+                  CDX = { end_war = CHC }
+                  CSC = { end_war = CHC }
+		ai_chance = { factor = 100 }
+	}
+}
+#文本事件
+country_event = {
+	id = 390060
+	fire_only_once = yes
+	title = "longmarch1"
+	desc = "longmarch1desc"
+	picture = "SF_Anti_Koumingtang6"
+	trigger = {
+		tag = CHC
+	has_global_flag = NanChang_war_JiangXi_Commist
+	not = { year = 1935 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+    }
+	option = {
+		name = "longmarch1op"
+		ai_chance = { factor = 100 }
+       	}
+}

@@ -1,0 +1,109 @@
+armygroup = {
+		name = "第八战区"
+		location = 9200
+		regiment = { type = hq_brigade name = "第八战区司令长官部" historical_model = 0 }
+                army = {
+		name = "第7集团军"
+                expeditionary_owner = CSY
+		location = 7367
+		regiment = { type = hq_brigade name = "第7集团军指挥部" historical_model = 1 }	
+                regiment = { type = militia_brigade name = "211旅" experience = 10  historical_model = 1 }
+		corps = {
+			name = "第35军"
+                        expeditionary_owner = CSY
+			location = 7378
+			regiment = { type = hq_brigade name = "第59军指挥部" experience = 10  historical_model = 1 }
+			division= {
+				name = "第73师"
+                                expeditionary_owner = CSY
+				location = 7384
+				regiment = { type = militia_brigade experience = 10  historical_model = 1 }
+				regiment = { type = militia_brigade experience = 10  historical_model = 1 }
+			}
+			division= {
+				name = "第101师"
+                                expeditionary_owner = CSY
+				location = 7385
+				regiment = { type = militia_brigade name = "218旅" experience = 10  historical_model = 1 }
+				regiment = { type = infantry_brigade name = "山西警备第7旅" experience = 10  historical_model = 1 }
+                                regiment = { type = militia_brigade name = "山西警备第3、9团" experience = 10  historical_model = 1 }
+			}
+		}
+		corps = {
+			name = "第17军"
+                        expeditionary_owner = CSY
+			location = 7368
+			regiment = { type = hq_brigade name = "第68军指挥部" experience = 10  historical_model = 1 }
+			division= {
+				name = "第21师"
+                                expeditionary_owner = CSY
+				location = 7368
+				regiment = { type = militia_brigade experience = 10  historical_model = 1 }
+				regiment = { type = militia_brigade experience = 10  historical_model = 1 }
+			}
+			division= {
+				name = "第84师"
+                                expeditionary_owner = CSY
+				location = 5050
+				regiment = { type = militia_brigade experience = 10  historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 10  historical_model = 1 }
+			}
+		}
+	}
+	army = {
+		name = "第17集团军"
+                expeditionary_owner = CNM
+		location = 9200
+		regiment = { type = hq_brigade name = "第17集团军指挥部" historical_model = 1 }
+		corps = {
+			name = "第81军"
+                        expeditionary_owner = CNM
+			location = 9200
+			regiment = { type = hq_brigade name = "第81军指挥部" historical_model = 0 }
+			division= {
+				name = "第35师"
+                                expeditionary_owner = CNM
+				location = 9143
+				regiment = { type = infantry_brigade name = "第103旅"  historical_model = 1 }
+				regiment = { type = infantry_brigade name = "第104旅" historical_model = 1 }
+                                regiment = { type = infantry_brigade name = "第105旅" historical_model = 1 }
+			}
+			division= {
+				name = "独立第35旅"
+                                expeditionary_owner = CNM
+				location = 7404
+				regiment = { type = infantry_brigade historical_model = 2 }
+			}
+		}
+        }
+		corps = {
+		name = "第80军"
+		location = 7404
+		regiment = { type = hq_brigade name = "第80军团指挥部" historical_model = 1 }
+                division= {
+				name = "第79师"
+				location = 9170
+				regiment = { type = infantry_brigade name = "第235旅" historical_model = 0 }
+				regiment = { type = militia_brigade "第237旅"  historical_model = 0 }
+                }
+                   division= {
+				name = "第97师"
+				location = 9170
+				regiment = { type = infantry_brigade historical_model = 0 }
+				regiment = { type = militia_brigade historical_model = 0 }
+               		}
+		}	
+		corps = {
+			name = "第82军"
+                        expeditionary_owner = CQM
+			location = 7404
+			regiment = { type = hq_brigade name = "第37军指挥部" historical_model = 0 }
+			division= {
+				name = "第100师"
+				location = 7404
+				regiment = { type = militia_brigade historical_model = 1 }
+				regiment = { type = militia_brigade historical_model = 0 }
+			}
+		}
+	}
+}

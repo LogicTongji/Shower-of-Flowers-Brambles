@@ -1,0 +1,22 @@
+owner = JAP
+controller = JAP
+add_core = JAP
+points = 5
+metal = 4.00
+energy = 2.00
+industry = 2
+infra = 6
+manpower = 2.00
+leadership = 0.40
+
+infra = 10
+
+infra = 8
+
+
+1945.9.3 = {
+	owner = JPN
+	controller = JPN
+	add_core = JPN
+	remove_core = JAP
+}

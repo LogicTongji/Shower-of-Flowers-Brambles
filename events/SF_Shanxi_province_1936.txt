@@ -1,0 +1,42 @@
+
+country_event = {
+	id = 3000098
+	fire_only_once = yes
+	major = yes
+	title = "Event_3000098title"
+	desc = "Event_3000098decs"
+	picture = "Event3000089"
+	trigger = {
+		tag = CSX
+		not = { year = 1937 }
+                date = 1936.9.1 	
+	}
+        mean_time_to_happen =  {
+		days = 1
+        }
+	option = {
+		name = "Event_3000098option"
+                relation = { who = CHC value = 50 }
+                dissent = -5
+                national_unity = 10
+		ai_chance = { factor = 100 }
+        }
+}
+country_event = {
+	id = 193616
+		fire_only_once = yes
+	title = "ZQH"	
+	desc = "ZQHD"
+	picture = "Event19362"
+	trigger = {
+		tag = CSX  
+		not = { year = 1937 }   
+		date = 1936.3.25
+	}
+	option = {
+		name = "SXZQ" 
+		 dissent = -10
+     national_unity = 5
+     set_country_flag = Event193616
+	}
+}

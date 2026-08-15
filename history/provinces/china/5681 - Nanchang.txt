@@ -1,0 +1,25 @@
+owner = CHI controller = CHI add_core = CHI
+add_core = CHC
+metal = 2.00
+energy = 4.00
+rare_materials = 1.00
+industry = 2
+infra = 7
+air_base = 10
+manpower = 7.00
+land_fort = 1
+leadership = 0.35
+points = 2
+1938.7.1 = { 	controller = JAP land_fort = 8 } 
+1940.3.1 = { 	
+	owner = WJW
+	controller = WJW
+	add_core = WJW } 
+1946.1.1 = { 	
+	owner = CHI
+	controller = CHI
+	remove_core = WJW } 
+1949.10.1 = {
+	owner = PRC
+	controller = PRC
+}

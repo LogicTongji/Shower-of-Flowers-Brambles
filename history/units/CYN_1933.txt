@@ -1,0 +1,53 @@
+theatre = {
+	name = "滇黔绥靖公署"
+	location = 7561
+	regiment = { type = hq_brigade name = "昆明指挥部" historical_model = 0 }
+	corps = { 
+		name = "第十路军"
+		location = 7561
+		regiment = { type = hq_brigade name = "第十路军司令部" historical_model = 0 }	
+		division= {		
+			name = "云南陆军第1旅"	
+			location = 7561
+			regiment = { type = bergsjaeger_brigade experience = 25 historical_model = 1 }
+			regiment = { type = bergsjaeger_brigade experience = 25 historical_model = 1 }
+		}
+		division= {		
+			name = "云南陆军第2旅"	
+			location = 7561
+			regiment = { type = infantry_brigade experience = 25 historical_model = 1 }
+			regiment = { type = infantry_brigade experience = 25 historical_model = 1 }
+		}
+		division= {		
+			name = "云南陆军第3旅"	
+			location = 7561
+			regiment = { type = infantry_brigade experience = 25 historical_model = 1 }
+			regiment = { type = infantry_brigade experience = 25 historical_model = 1 }
+		}
+		division= {		
+			name = "云南陆军第5旅"	
+			location = 7561
+			regiment = { type = infantry_brigade experience = 25 historical_model = 1 }
+			regiment = { type = infantry_brigade experience = 25 historical_model = 1 }
+		}
+		division= {		
+			name = "云南陆军第7旅"	
+			location = 7561
+			regiment = { type = infantry_brigade experience = 25 historical_model = 1 }
+			regiment = { type = infantry_brigade experience = 25 historical_model = 1 }
+		}
+		division= {		
+			name = "云南陆军第9旅"	
+			location = 7561
+			regiment = { type = infantry_brigade experience = 25 historical_model = 1 }
+			regiment = { type = infantry_brigade experience = 25 historical_model = 1 }
+		}
+	}
+	division= {
+		name = "云南警备"
+		location = 7561
+		regiment = { type = militia_brigade name = "独立第21旅"  historical_model = 0 }
+		regiment = { type = militia_brigade name = "独立第22旅"  historical_model = 0 }
+		regiment = { type = militia_brigade name = "独立第23旅"  historical_model = 0 }
+	}
+}

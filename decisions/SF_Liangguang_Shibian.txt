@@ -1,0 +1,78 @@
+######################
+#   两广事变决议组   #
+######################
+
+diplomatic_decisions = {
+	Lsupport_CHC = {
+		major = yes
+		potential = {
+			tag = CHC
+			not = { has_country_flag = Lsupport_CHC } 
+			exists = CGX
+			exists = CGD
+			or = { has_global_flag = Event10000971 has_global_flag = Event10000972 }
+		}
+		effect = {
+			set_country_flag = Lsupport_CHC
+			relation = { who = CGX value = 50 }
+			relation = { who = CGD value = 50 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Lsupport_CDB = {
+		major = yes
+		potential = {
+			tag = CDB
+			not = { has_country_flag = Lsupport_CDB } 
+			exists = CGX
+			exists = CGD
+			or = { has_global_flag = Event10000971 has_global_flag = Event10000972 }
+		}
+		effect = {
+			set_country_flag = Lsupport_CDB
+			relation = { who = CGX value = 50 }
+			relation = { who = CGD value = 50 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Lsupport_CJC = {
+		major = yes
+		potential = {
+			tag = CJC
+			not = { has_country_flag = Lsupport_CJC } 
+			exists = CGX
+			exists = CGD
+			or = { has_global_flag = Event10000971 has_global_flag = Event10000972 }
+		}
+		effect = {
+			set_country_flag = Lsupport_CJC
+			relation = { who = CGX value = 50 }
+			relation = { who = CGD value = 50 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Lsupport_CSD = {
+		major = yes
+		potential = {
+			tag = CSD
+			not = { has_country_flag = Lsupport_CSD } 
+			exists = CGX
+			exists = CGD
+			or = { has_global_flag = Event10000971 has_global_flag = Event10000972 }
+		}
+		effect = {
+			set_country_flag = Lsupport_CSD
+			relation = { who = CGX value = 50 }
+			relation = { who = CGD value = 50 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

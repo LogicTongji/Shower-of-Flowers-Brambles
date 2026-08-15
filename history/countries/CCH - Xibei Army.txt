@@ -1,0 +1,51 @@
+capital = 7313
+government = chinese_warlord
+ideology = paternal_autocrat
+head_of_state = 3000041
+head_of_government = 3000042
+foreign_minister = 3000044
+armament_minister = 3000045
+minister_of_security = 3000046
+minister_of_intelligence = 3000042
+chief_of_staff = 3000044
+chief_of_army = 3000043
+alignment = { x = 0 y = 0 }
+neutrality = 100
+national_unity = 90
+
+oob = "CJC_1933.txt"
+
+popularity = { 
+	national_socialist = 0
+	fascistic = 0
+	paternal_autocrat = 62
+	social_conservative = 27
+	market_liberal = 11
+	social_liberal = 0
+	social_democrat = 0
+	left_wing_radical = 0
+	leninist = 0
+	stalinist = 0
+}
+
+organization = { 
+	national_socialist = 0
+	fascistic = 0
+	paternal_autocrat = 65
+	social_conservative = 40
+	market_liberal = 15
+	social_liberal = 0
+	social_democrat = 0
+	left_wing_radical = 0
+	leninist = 0
+	stalinist = 0
+}
+
+training_laws = basic_training
+press_laws = propaganda_press
+industrial_policy_laws = mixed_industry
+education_investment_law = minimal_education_investment
+economic_law = full_civilian_economy
+conscription_law = service_by_requirement
+civil_law = totalitarian_system
+

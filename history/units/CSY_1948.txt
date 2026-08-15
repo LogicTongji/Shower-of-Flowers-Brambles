@@ -1,0 +1,310 @@
+theatre = {					
+	name = "华北剿匪总司令部"				
+	location = 5017	
+	regiment = { type = hq_brigade name = "剿总长官部" experience = 20  historical_model = 4 }
+	regiment = { type = chi_star_destroyer name = "教导师" experience = 30 builder = USA historical_model = 3 }
+	regiment = { type = artillery_brigade name = "直属炮兵部队" experience = 30 builder = USA historical_model = 3 }
+	army = {
+	       	name = "陆军第11兵团"				
+	location = 4979
+	regiment = { type = hq_brigade name = "第11兵团长官部" experience = 20  historical_model = 4 }
+	regiment = { type = artillery_brigade name = "直属炮兵部队" experience = 30 builder = USA historical_model = 3 }
+        corps = {
+	       	name = "陆军第105军"	
+	location = 7368
+	regiment = { type = hq_brigade name = "第105军长官部" experience = 20  historical_model = 4 }
+		division= {
+	name = "陆军第210师"
+	location = 7368
+regiment = { type = infantry_brigade experience = 10 historical_model = 3 } 
+regiment = { type = infantry_brigade experience = 10 historical_model = 3 } 
+regiment = { type = infantry_brigade experience = 10 historical_model = 3 }    
+}
+division= {
+	name = "陆军第259师"
+	location = 7368
+regiment = { type = infantry_brigade experience = 10 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 10 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 10 historical_model = 2 }
+}
+division= {
+				name = "整编骑兵第5旅"
+				location = 5018			
+				regiment = { type = cavalry_brigade experience = 35 historical_model = 3 }		  
+              }
+division= {
+				name = "整编骑兵第11旅"
+				location = 5018			
+				regiment = { type = cavalry_brigade experience = 35 historical_model = 3 }
+				}
+division= {
+				name = "整编骑兵第12旅"
+				location = 5018			
+				regiment = { type = cavalry_brigade experience = 35 historical_model = 3 }				              
+        }
+}
+	army = {
+		name = "第4兵团"
+		location = 4979
+		regiment = { type = hq_brigade name = "第4兵团长官部" historical_model = 4 }
+		regiment = { type = cavalry_brigade name = "长官部守备" strength = 20 historical_model = 1 }
+		regiment = { type = artillery_brigade name = "直属炮兵部队" experience = 30 builder = USA historical_model = 3 }
+     corps = {
+	       	name = "陆军第16军"				
+	location = 5018	
+	regiment = { type = hq_brigade name = "第16军长官部" experience = 20  historical_model = 4 }
+		division= {
+	name = "陆军第22师"
+	location = 5018
+regiment = { type = motorized_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+}
+		division= {
+	name = "陆军第94师"
+	location = 5018
+regiment = { type = motorized_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+}
+division= {
+	name = "陆军第109师"
+	location = 4979
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+                    }  
+        }  
+ corps = {
+	       	name = "陆军第94军"				
+	location = 5018	
+	regiment = { type = hq_brigade name = "第94军长官部" experience = 20  historical_model = 4 }
+		division= {
+	name = "陆军第5师"
+	location = 5018
+regiment = { type = motorized_brigade experience = 50 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+}
+		division= {
+	name = "陆军第12师"
+	location = 5018
+regiment = { type = motorized_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+}
+division= {
+	name = "陆军第13师"
+	location = 4979
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+                    }  
+division= {
+	name = "陆军第105师"
+	location = 4979
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+                    }                     
+        }          
+}
+	army = {
+		name = "第9兵团"
+		location = 4979
+		leader = 50085 
+		 expeditionary_owner = CSY
+		regiment = { type = hq_brigade name = "第9兵团长官部" historical_model = 4 }
+		regiment = { type = cavalry_brigade name = "长官部守备" strength = 20 historical_model = 1 }
+		regiment = { type = artillery_brigade name = "直属炮兵部队" experience = 30 builder = USA historical_model = 3 }
+	 corps = {
+	       	name = "陆军第4军"				
+	location = 4979
+	regiment = { type = hq_brigade name = "第4军长官部" experience = 20  historical_model = 4 }
+		division= {
+	name = "陆军第4师"
+	location = 4979
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = artillery_brigade name = "直属炮兵部队" experience = 30 builder = USA historical_model = 3 }
+}
+division= {
+	name = "陆军第89师"
+	location = 4979
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = artillery_brigade name = "直属炮兵部队" experience = 30 builder = USA historical_model = 3 }
+ }
+division= {
+	name = "陆军第155师"
+	location = 4979
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 20  historical_model = 2 } 
+                    }  
+division= {
+	name = "陆军第299师"
+	location = 4979
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 20  historical_model = 2 } 
+                    }    
+division= {
+	name = "陆军第79师"
+	location = 4979
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 20  historical_model = 2 } 
+                    }                                      
+           }  
+      corps = {    
+        name = "陆军第31军"
+        location = 4979
+        expeditionary_owner = CSY
+        regiment = { type = hq_brigade name = "第31军长官部" historical_model = 3 }	
+	division= {
+	name = "陆军第205师"
+	location = 4979
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 20  historical_model = 2 } 
+       }
+}   
+ corps = {    
+        name = "陆军第35军"
+        location = 5018
+        regiment = { type = hq_brigade name = "第35军长官部" historical_model = 3 }	
+	division= {
+	name = "陆军第101师"
+	location = 4979
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 20  historical_model = 2 } 
+		}
+		division= {
+	name = "陆军第62师"
+	location = 4979
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 20  historical_model = 2 } 
+   }
+   division= {
+	name = "陆军第67师"
+	location = 4979
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 20  historical_model = 2 } 
+	 }
+}
+corps = {    
+        name = "陆军第101军"
+        location = 5018
+        regiment = { type = hq_brigade name = "第101军长官部" historical_model = 3 }	
+	division= {
+	name = "陆军第250师"
+	location = 4979
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+		}
+		division= {
+	name = "陆军第258师"
+	location = 4979
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+   }
+   division= {
+	name = "陆军第269师"
+	location = 4979
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+	 }
+division= {
+	name = "陆军第209师"
+	location = 4979
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+		}
+		division= {
+	name = "陆军第310师"
+	location = 4979
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+   }
+   division= {
+	name = "陆军第311师"
+	location = 4979
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+	 }	 
+	 division= {
+				name = "新骑4师"
+				location = 4979
+				regiment = { type = cavalry_brigade experience = 35 historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 35 historical_model = 1 }
+				}
+       }
+      }
+ army = {
+		name = "第十二战区"
+		location = 5017
+		leader = 50085 
+		regiment = { type = hq_brigade name = "第十二战区长官部" historical_model = 4 }
+		regiment = { type = cavalry_brigade name = "长官部守备" strength = 20 historical_model = 1 }
+		regiment = { type = artillery_brigade name = "直属炮兵部队" experience = 30 builder = USA historical_model = 3 }
+		division= {
+				name = "新骑4师"
+				location = 5017
+				regiment = { type = cavalry_brigade experience = 35 historical_model = 3 }
+				regiment = { type = cavalry_brigade experience = 35 historical_model = 3 }
+			}
+	 corps = {
+	       	name = "陆军第35军"				
+	location = 5017
+	leader = 4000158
+	regiment = { type = hq_brigade name = "第35军长官部" experience = 20  historical_model = 4 }
+		division= {
+	name = "陆军第101师"
+	location = 5017
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+}
+division= {
+	name = "新31师"
+	location = 5017
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+ }
+division= {
+	name = "新32师"
+	location = 5017
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 20  historical_model = 2 } 
+                    }  
+           }  
+      corps = {    
+        name = "暂编第3军"
+        location = 5017
+        regiment = { type = hq_brigade name = "暂3军长官部" historical_model = 3 }	
+	division= {		
+		name = "暂编第10师"
+		location = 7378
+regiment = { type = infantry_brigade experience = 30 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 30 historical_model = 2 } 	
+	}		
+	division= {		
+		name = "暂编第11师"
+		location = 7385
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+        }
+	division= {		
+		name = "暂编第17师"
+		location = 7385
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+regiment = { type = infantry_brigade experience = 20 historical_model = 2 } 
+	        }
+}   
+}    
+}

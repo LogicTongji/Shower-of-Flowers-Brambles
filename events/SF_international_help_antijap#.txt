@@ -1,0 +1,371 @@
+
+country_event = {
+	
+	id = 2201
+
+	trigger = {
+		tag = SOV
+		NOT = { has_country_flag = operation_zet_fired }
+		exists = CHI
+		exists = JAP
+		JAP = { not = { faction = comintern } }
+		JAP = { war_with = CHI }
+		not = { war_with = CHI }
+		not = { year = 1940 }
+		has_global_flag = soviet_help_anti_japan
+	}
+
+	mean_time_to_happen =  {
+		months = 16
+	}
+
+	title = "EVTNAME2201"
+	desc = "EVTDESC2201"
+	picture = "international_help1"
+
+	option = {
+		name = "EVTOPTA2201"			# Send aid to China
+  		neutrality = -3
+		money = -500
+		supplies = -1000
+		CHI = {
+			country_event = 2202
+		}
+		set_country_flag = operation_zet_fired
+	}
+}
+
+# China - Response from the Soviet Union
+country_event = {
+	
+	id = 2202
+
+	is_triggered_only = yes
+
+	title = "EVTNAME2202"
+	desc = "EVTDESC2202"
+	picture = "international_help1"
+
+	option = {
+		name = "EVTOPTA2202"			# This will strengthen us greatly
+		ai_chance = { factor = 100 }
+		# Chengdu
+		9415 = { air_base = 1 }
+		9415 = { industry = 2 }
+		9415 =  { strategic_bomber = current }
+		9415 = { interceptor = current }	
+		relation = { who = SOV value = 10 }
+		supplies = 1000
+	}
+}
+
+
+country_event = {
+		  id = 2000077
+		   fire_only_once = yes
+		  trigger = {
+		tag = CHI
+				exists = CHI
+		war_with = JAP
+				date = 1937.9.1
+				not = { year = 1938 }
+				not = { has_global_flag = JAPsouthing }
+				has_country_flag = CHI_Kangzhan
+		  }
+		  title = "CHI_Event_title2000077"
+		  desc = "CHI_Event_decs2000077"
+		 picture = "international_help2"
+		 option = {
+		   name = "CHI_Event_option2000077"
+		   set_country_flag = Event2000077
+		   7561 = { industry = 1 }
+		   ai_chance = { factor = 100 }
+		 }
+}
+country_event = {
+	id = 2000079
+	 fire_only_once = yes
+	trigger = {
+		tag = CHI
+		exists = CHI
+		war_with = JAP
+		ENG = { controls = 6070 }
+		date = 1938.8.20
+		has_country_flag = CHI_Kangzhan
+		has_country_flag = jap_seizes_coast_chi
+		not = { year = 1939 }
+	}
+	title = "CHI_Event_title2000079"
+	desc = "CHI_Event_decs2000079"
+	picture = "international_help3"
+	option = {
+		name = "CHI_Event_option2000079"
+		7561 = { industry = 3 }
+	}
+}			
+country_event={
+		  id = 390094
+		  is_triggered_only = yes        
+		  title="ENG_Event_title2000086"
+		  desc="ENG_Event_decs2000086"
+		  picture="news_paper"
+		  option={
+		   name="ENG_Event_option2000086"              
+			  national_unity = 5
+			  dissent = 5
+			  relation = { who = JAP value = -100 }
+		   
+		 }
+}            
+country_enent = {
+		  id = 2000087
+		  fire_only_once = yes
+		  trigger = {
+		tag = CHI
+				exists = CHI
+		war_with = JAP 
+				JAP = { controls = 6070 }
+				has_global_flag = JAPsouthing 
+				has_country_flag = CHI_Kangzhan
+				has_country_flag = jap_seizes_coast_chi
+				year = 1943
+				not = { year = 1945 }         
+		  }
+		  mean_time_to_happen = {
+				  days = 1
+		  }
+		  title = "CHI_Event_title2000087"
+		  desc = "CHI_Event_decs2000087"
+		 picture = "international_help4"
+		 option={
+		   name="CHI_Event_op2000087"
+		   set_global_flag = Event1000087
+		   9415 = { industry = 1 }
+		 } 
+}
+country_enent={
+		  id=2000088
+		  fire_only_once = yes
+		  trigger = {
+		tag = CHI
+				exists = CHI
+		war_with = jAP 
+				JAP = { controls = 6070 }
+				has_global_flag = JAPsouthing 
+				has_global_flag = Event1000087
+				year = 1943
+				not = { year = 1945 }
+		  }
+		  mean_time_to_happen = {
+				  days = 1
+		  }
+		  title="CHI_Event_title2000088"
+		  desc = "CHI_Event_decs2000088"
+		 picture = "international_help5"
+		 option = {
+		   name = "CHI_Event_option2000088"
+		   set_country_flag = Event1000088
+		   9415 = { industry = 1 }
+		 } 
+}   
+country_event = {
+		  id = 2020228
+		  trigger = {
+		  OR = {
+			   tag = ENG
+			   tag = FRA
+			   }
+			   exists = ENG
+			   exists = FRA
+			   OR = {
+			   war_with = JAP 
+			   war_with = GER
+			   war_with = ITA
+			   }
+			   has_global_flag = War_in_East_eroup_gizuiAmriac
+			   ENG = { controls = 6070 }
+		  }
+		  mean_time_to_happen = {
+				  months = 1
+		  }
+		  title = "USA_Event_T2000088"
+		  desc = "USA_Event_D2000088"
+		  picture = "ZZFA"
+		  option = {
+		   name = "USA_Event_OP2000088"              
+			  supplies = 1250
+			  fuel = 50 
+			 energy = 20
+			 metal  = 100            
+			 coal  = 800
+			 USA = { -supplies = 2250 }
+		 }
+}
+country_event = {
+		  id = 2020229
+		  trigger = {
+			   tag = SOV
+			   exists = SOV
+			   exists = GER
+			   OR = {
+			   war_with = JAP 
+			   war_with = GER
+			   war_with = ITA
+			   }
+			   has_global_flag = War_in_East_eroup_gizuiAmriac
+			   ENG = { controls = 6070 }
+		  }
+
+		  mean_time_to_happen = {
+				  months = 1
+		  }
+		   title = "USA_Event_T2000088"
+		  desc = "USA_Event_D2000088"
+		  picture = "ZZFA"
+		  option = {
+		   name = "USA_Event_OP2000088"              
+			  supplies = 1250
+			  fuel = 50 
+			 energy = 20
+			 metal  = 100            
+			 coal  = 800
+			 USA = { -supplies = 2250 }
+		 }
+}
+country_event = {
+		  id = 2020319
+		  fire_only_once = yes
+		  trigger = {
+			   tag = USA
+			   SOV ={ war_with = GER }  
+			   ENG = { controls = 6070 }
+			   exists = SOV
+			   not = { year = 1942 }
+			   GER = { 
+			controls = 2223
+			controls = 1694
+			controls = 1819
+		  controls = 1178
+			controls = 906
+			controls = 3309
+			controls = 2975
+			controls = 1534
+			controls = 1536
+			}
+		   has_global_flag = War_in_East_eroup_gizuiAmriac         
+		  }
+			}
+			  mean_time_to_happen = {
+				  days = 1
+		  }
+		  title = "UUUST"
+		  desc = "UUUSS"
+		  picture = "news_paper"
+		  option = {
+		   name = "SSSSOP1"
+			  dissent = 5 
+			  set_global_flag = SOV_need
+			  ai_chance = { factor = 100 }
+		  }
+		  option = {
+		   name = "SSSSOP2"
+			  national_unity = 5
+			  ai_chance = { factor = 0 }
+		 }
+}               
+country_event = {
+		  id = 2020400
+		  major = yes
+		  trigger = {
+			   tag = USA
+			   SOV ={ war_with = GER }  
+			   ENG = { controls = 6070 }
+			   exists = SOV
+			   has_global_flag = SOV_need
+				 has_global_flag = War_in_East_eroup_gizuiAmriac           
+		  }
+					}
+			  mean_time_to_happen = {
+				  days = 1
+		  }
+		  title = "NHT"
+		  desc = "NHD"
+		  picture = "ZZFA"
+		  option = {
+		   name = "NHTOP"   
+		   supplies = 50000           
+			 set_global_flag = Nothern_most 
+		 }
+	}
+country_event = {
+		  id = 2020300
+		  trigger = {
+			   tag = SOV
+			   SOV ={ war_with = GER }  
+			   ENG = { controls = 6070 }
+			   exists = SOV
+			   has_global_flag = SOV_need
+				 has_global_flag = War_in_East_eroup_gizuiAmriac
+							  has_global_flag = Nothern_most 
+		  }
+					}
+			  mean_time_to_happen = {
+				  months = 1
+		  }
+		  title = "AAAT"
+		  desc = "AAADE"
+		  picture = "ZZFA"
+		  option = {
+		   name = "AAAOP"              
+			  supplies = 3250
+			  fuel = 250 
+			 energy = 80
+			 metal  = 1000            
+			 coal  = 1800
+			 USA = { -supplies = 3250 }
+		 }
+	}            
+country_event = {
+		  id = 2020301
+		  trigger = {
+		  OR = {
+			   tag = ENG
+			   tag = SOV
+			   }
+			   exists = ENG
+			   exists = SOV
+			   OR = {
+			   war_with = JAP 
+			   war_with = GER
+			   war_with = ITA
+			   }
+			   has_global_flag = War_in_East_eroup_gizuiAmriac
+			   has_global_flag = SOV_need
+										  has_global_flag = Nothern_most 
+													has_global_flag = provide_ic_to_euroup
+
+		  }
+
+		  mean_time_to_happen = {
+				  months = 10
+		  }
+		  title = "AAAT1"
+		  desc = "AAADE2"
+		  picture = "ICP"
+		  option = {
+		   name = "AAAOP2"              
+	   1052 = { industry = 1 }              
+	   1964 = { industry = 1 }              
+	   1341 = { industry = 1 }                 
+	   1522 = { industry = 1 }              
+	   1617 = { industry = 1 }              
+	   4390 = { industry = 1 }
+	   3064 = { industry = 1 }              
+	   2992 = { industry = 1 }              
+	   8592 = { industry = 1 }                 
+	   6776 = { industry = 1 }              
+	   6766 = { industry = 1 }              
+	   6755 = { industry = 1 }
+	   6799 = { industry = 1 }              
+		 }
+}

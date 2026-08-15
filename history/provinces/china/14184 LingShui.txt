@@ -1,0 +1,22 @@
+owner = CGD
+
+controller = CGD
+add_core = CHI
+add_core = CHC
+
+infra = 2
+
+air_base = 5
+1936.7.26 = {
+	 owner = CHI
+
+controller = CHI
+remove_core = CGD
+}
+1940.7.26 = {
+controller = JAP
+}
+1945.11.26 = {
+owner = CHI
+	controller = CHI
+}

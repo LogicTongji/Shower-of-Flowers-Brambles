@@ -1,0 +1,356 @@
+# to match puppets ####
+
+# Soviet Union - Tannu Tuva
+alliance = {
+	first = SOV
+	second = TAN
+	start_date = 1936.1.1
+	end_date = 1944.10.11
+}
+
+# Soviet Union - Mongolia
+alliance = {
+	first = SOV
+	second = MON
+	start_date = 1936.1.1
+	end_date = 1945.9.2
+}
+
+# USA - Philippines
+alliance = {
+	first = USA
+	second = PHI
+	start_date = 1936.1.1
+	end_date = 1946.7.4
+}
+
+
+
+
+# United Kingdom - Bhutan
+alliance = {
+	first = ENG
+	second = BHU
+	start_date = 1936.1.1
+	end_date = 1945.1.1
+}
+
+# United Kingdom - Nepal
+alliance = {
+	first = ENG
+	second = NEP
+	start_date = 1936.1.1
+	end_date = 1945.1.1
+}
+
+# United Kingdom - Oman
+alliance = {
+	first = ENG
+	second = OMN
+	start_date = 1936.1.1
+	end_date = 1945.1.1
+}
+
+# United Kingdom - Yemen
+alliance = {
+	first = ENG
+	second = YEM
+	start_date = 1936.1.1
+	end_date = 1945.1.1
+}
+
+# Germany - Slovakia
+alliance = {
+	first = GER
+	second = SLO
+	start_date = 1939.3.14
+	end_date = 1945.5.8
+}
+
+# United Kingdom - Ethiopia
+alliance = {
+	first = ENG
+	second = ETH
+	start_date = 1940.6.10
+	end_date = 1944.12.19
+}
+
+# Germany - Croatia
+alliance = {
+	first = GER
+	second = CRO
+	start_date = 1941.4.10
+	end_date = 1945.5.8
+}
+
+# United Kingdom - Iraq
+alliance = {
+	first = ENG
+	second = IRQ
+	start_date = 1936.1.1
+	end_date = 1941.5.2
+}
+
+# United Kingdom - Iran
+alliance = {
+	first = ENG
+	second = PER
+	start_date = 1941.5.31
+	end_date = 1945.5.8
+}
+
+# France - Lebanon
+alliance = {
+	first = FRA
+	second = LEB
+	start_date = 1943.11.22
+	end_date = 1946.12.31
+}
+
+# Germany - Italian Social Republic
+alliance = {
+	first = GER
+	second = RSI
+	start_date = 1943.9.23
+	end_date = 1945.4.25
+}
+
+#SF_Editing
+alliance = {
+	first = CHI
+	second = CDB
+	start_date = 1936.1.1
+	end_date = 1936.12.12
+}
+alliance = {
+	first = CHI
+	second = CSC
+	start_date = 1937.9.2
+	end_date = 1949.12.10
+}
+alliance = {
+	first = CHI
+	second = CYN
+	start_date = 1937.9.2
+	end_date = 1949.12.10
+}
+alliance = {
+	first = CHI
+	second = CHC
+	start_date = 1937.4.16
+	end_date = 1941.1.6
+}
+alliance = {
+	first = CHI
+	second = CGX
+	start_date = 1937.9.2
+	end_date = 1949.12.10
+}
+alliance = {
+	first = CHI
+	second = CQM
+	start_date = 1937.9.2
+	end_date = 1949.12.10
+}
+alliance = {
+	first = CHI
+	second = CSY
+	start_date = 1937.9.2
+	end_date = 1949.5.10
+}
+alliance = {
+	first = CHI
+	second = CSX
+	start_date = 1937.9.2
+	end_date = 1949.12.10
+}
+alliance = {
+	first = CHC
+	second = CSX
+	start_date = 1937.9.2
+	end_date = 1940.1.1
+}
+#SF_抗美援朝
+alliance = {
+	first = USA
+	second = KOR
+	start_date = 1950.6.25
+	end_date = 1953.7.25
+}
+alliance = {
+	first = PRC
+	second = PRK
+	start_date = 1950.6.25
+	end_date = 1953.7.25
+}
+#1941
+alliance = {
+	first = ENG
+	second = CHI
+	start_date = 1941.6.1
+	end_date = 1945.9.1
+}
+alliance = {
+	first = USA
+	second = CHI
+	start_date = 1941.6.1
+	end_date = 1945.9.1
+}
+#联合国
+alliance = {
+	first = USA
+	second = UNN
+	start_date = 1945.6.25
+	end_date = 1989.7.25
+}
+alliance = {
+	first = ENG
+	second = UNN
+	start_date = 1945.6.25
+	end_date = 1989.7.25
+}
+alliance = {
+	first = CHI
+	second = UNN
+	start_date = 1945.6.25
+	end_date = 1971.7.25
+}
+alliance = {
+	first = SOV
+	second = UNN
+	start_date = 1945.6.25
+	end_date = 1989.7.25
+}
+alliance = {
+	first = FRA
+	second = UNN
+	start_date = 1945.6.25
+	end_date = 1989.7.25
+}
+alliance = {
+	first = ROC
+	second = UNN
+	start_date = 1945.6.25
+	end_date = 1971.7.25
+}
+alliance = {
+	first = PRC
+	second = UNN
+	start_date = 1971.6.25
+	end_date = 1989.7.25
+}
+#SF_SiChuan
+alliance = {
+	first = CSC
+	second = CYS
+	start_date = 1931.1.1
+	end_date = 1936.1.1
+}
+alliance = {
+	first = CSC
+	second = CTS
+	start_date = 1931.1.1
+	end_date = 1936.1.1
+}
+alliance = {
+	first = CSC
+	second = CXK
+	start_date = 1931.1.1
+	end_date = 1936.1.1
+}
+alliance = {
+	first = CSC
+	second = CDX
+	start_date = 1931.1.1
+	end_date = 1936.1.1
+}
+alliance = {
+	first = CYS
+	second = CSC
+	start_date = 1931.1.1
+	end_date = 1936.1.1
+}
+alliance = {
+	first = CYS
+	second = CTS
+	start_date = 1931.1.1
+	end_date = 1936.1.1
+}
+alliance = {
+	first = CYS
+	second = CXK
+	start_date = 1931.1.1
+	end_date = 1936.1.1
+}
+alliance = {
+	first = CYS
+	second = CDX
+	start_date = 1931.1.1
+	end_date = 1936.1.1
+}
+alliance = {
+	first = CTS
+	second = CYS
+	start_date = 1931.1.1
+	end_date = 1936.1.1
+}
+alliance = {
+	first = CTS
+	second = CSC
+	start_date = 1931.1.1
+	end_date = 1936.1.1
+}
+alliance = {
+	first = CTS
+	second = CXK
+	start_date = 1931.1.1
+	end_date = 1936.1.1
+}
+alliance = {
+	first = CTS
+	second = CDX
+	start_date = 1931.1.1
+	end_date = 1936.1.1
+}
+alliance = {
+	first = CDX
+	second = CYS
+	start_date = 1931.1.1
+	end_date = 1936.1.1
+}
+alliance = {
+	first = CDX
+	second = CTS
+	start_date = 1931.1.1
+	end_date = 1936.1.1
+}
+alliance = {
+	first = CDX
+	second = CXK
+	start_date = 1931.1.1
+	end_date = 1936.1.1
+}
+alliance = {
+	first = CDX
+	second = CSC
+	start_date = 1931.1.1
+	end_date = 1936.1.1
+}
+alliance = {
+	first = CHI
+	second = CRH
+	start_date = 1931.1.1
+	end_date = 1935.10.1
+}
+alliance = {
+	first = CGX
+	second = CGD
+	start_date = 1932.6.25
+	end_date = 1936.9.1
+}
+alliance = {
+	first = CGD
+	second = CGX
+	start_date = 1932.6.25
+	end_date = 1936.9.1
+}

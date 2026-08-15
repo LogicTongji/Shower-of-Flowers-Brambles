@@ -1,0 +1,325 @@
+#政府革新
+#抗战前
+diplomatic_decisions = {
+    #国民政府军事改革
+	chi_army_revolution = {            
+		potential = {
+			tag = CHI
+                        exists = CHI
+			not = { has_country_flag = GersupportA_chi } 
+			date = 1933.1.2
+			not = { year = 1936 
+			        war_with = JAP
+					} 
+		}
+		allow = {
+			CHI = { controls = 5494 }
+		}
+		effect = {
+			set_country_flag = GersupportA_chi
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	chi_army_revolution2 = {            
+		potential = {
+			tag = CHI
+                        exists = CHI
+			not = { has_country_flag = GersupportA_chi2 } 
+			date = 1936.1.2
+			has_country_flag = GersupportA_chi
+			not = { year = 1938
+			        war_with = JAP
+					} 
+		}
+		allow = {
+			CHI = { controls = 5494 }
+		}
+		effect = {
+			set_country_flag = GersupportA_chi2
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	  #新生活运动
+	chi_newdailylife_revolution = {            
+		potential = {
+			tag = CHI
+                        exists = CHI
+			not = { has_country_flag = chi_newdailylife_revolution } 
+			date = 1934.2.17
+			not = { year = 1936 } 
+		}
+		allow = {
+			CHI = { controls = 5494 }
+		}
+		effect = {
+			set_country_flag = chi_newdailylife_revolution
+			event = 12234
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	 #调停青藏冲突
+	Stopping_Qinghai_tibet_war = {            
+		potential = {
+			tag = CHI
+                        exists = CQM
+						exists = TIB
+			not = { has_country_flag = Stopping_Qinghai_tibet_war } 
+			date = 1933.10.1
+			not = { year = 1936 } 
+		}
+		allow = {
+			CQM = {
+		war_with = TIB
+                   }
+		}
+		effect = {
+		    TIB = { end_war = CQM }
+			CQM = { end_war = TIB }
+			set_country_flag = Stopping_Qinghai_tibet_war
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#刘湘输诚
+	Intagrate_China_SiChuan = {
+                             major = yes
+		potential = {
+			tag = CHI
+			CHC = { has_country_flag = Postpone_war_ShanXi_Commist }
+			 not = { has_country_flag = Intagrate_China_SiChuan } 	
+	                    date = 1935.4.1
+						not = { year = 1936 }
+                    }
+		allow = {
+		 exists = CSC
+		 }
+		effect = {
+			set_country_flag = Intagrate_China_SiChuan	
+			  CXK = { 
+		  sichuan_region = { limit = { controlled_by = CXK } secede_province = CSC change_controller = CSC }
+		  sichuan_region = { limit = { not = { controlled_by = CXK } } secede_province = CSC }
+		  }
+		   CDX = { 
+		  sichuan_region = { limit = { controlled_by = CSC } secede_province = CSC change_controller = CSC }
+		  sichuan_region = { limit = { not = { controlled_by = CSC } } secede_province = CSC }
+		  }
+		   CYS = { 
+		  sichuan_region = { limit = { controlled_by = CDX } secede_province = CSC change_controller = CSC }
+		  sichuan_region = { limit = { not = { controlled_by = CDX } } secede_province = CSC }
+		  }
+		   CTS = { 
+		  sichuan_region = { limit = { controlled_by = CTS } secede_province = CSC change_controller = CSC }
+		  sichuan_region = { limit = { not = { controlled_by = CTS } } secede_province = CSC }
+		  }
+		   CHC = { 
+		  sichuan_region = { limit = { controlled_by = CHC } secede_province = CSC change_controller = CSC }
+		  sichuan_region = { limit = { not = { controlled_by = CHC } } secede_province = CSC }
+		  }
+		   CHI = { 
+		  sichuan_region = { limit = { controlled_by = CHI } secede_province = CSC change_controller = CSC }
+		  sichuan_region = { limit = { not = { controlled_by = CHI } } secede_province = CSC }
+		  }
+                             SF_china_region = { remove_core = CTS
+                                                            remove_core = CDX
+                                                            remove_core = CYS
+                             }
+ }		
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+#瓦解王家烈
+Intagrate_China_GuiZhou = {
+		potential = {
+			tag = CHI
+			CHC = { has_country_flag = Postpone_war_ShanXi_Commist }
+			 not = { has_country_flag = Intagrate_China_GuiZhou } 	
+	                    date = 1935.5.1
+						not = { year = 1936 }
+                    }
+		allow = {
+		 exists = CQS
+		 }
+		effect = {
+			set_country_flag = Intagrate_China_GuiZhou
+                            country_event = 12214	
+		         CHI = {  inherit = CQS
+			     }	
+                             SF_china_region = { remove_core = CQS
+                             }
+ }		
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	#抗战中
+	#空间换时间
+	Chinese_Defence = {
+		potential = {
+			tag = CHI
+			not = { 
+				has_country_flag = Chinese_Defence
+				has_country_flag = Chinese_Counterattack
+			}
+			JAP = { 
+			controls = 5018
+			controls = 4979 
+			}
+		}
+		allow = {
+			has_country_flag = CHI_Passive_defense
+		}
+		effect = {
+			set_country_flag = Chinese_Defence
+			7467 = { land_fort = 1 }
+			7457 = { land_fort = 1 }
+			7447 = { land_fort = 1 }
+			5400 = { land_fort = 1 }
+			5385 = { land_fort = 1 }
+			5401 = { land_fort = 1 }
+			5435 = { land_fort = 1 }
+			country_event = 12241
+			CHC = { country_event = 12241 }
+			CGX = { country_event = 12241 }
+			CSC = { country_event = 12241 }
+			CSX = { country_event = 12241 }
+			CYN = { country_event = 12241 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	 #瓦解何键
+	Enter_into_Hunan_province = {            
+		potential = {
+			tag = CHI
+            exists = CHN
+			has_global_flag = SF_anti_japanese_war
+			not = { has_country_flag = Enter_into_Hunan_province } 
+			not = { year = 1938 } 
+		}
+		allow = {
+			exists = CHN
+			has_global_flag = SF_anti_japanese_war
+		}
+		effect = {
+		   CHI = {  
+		   inherit = CHN
+		   }	
+           SF_china_region = { remove_core = CQS }		
+			set_country_flag = Enter_into_Hunan_province
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#桂系
+	       guangxi_army_anti_jap = {  
+		potential = {
+			tag = CGX
+                        exists = CGX
+                        exists = CHI
+			war_with = JAP
+			CHI = { has_country_flag = Unit_front_to_antiJap }
+			not = { has_country_flag = guangxi_army_anti_jap }			
+		}
+		allow = {		
+			JAP = { has_country_flag = shanghai_incident }
+			not = { year = 1938 } 
+			has_country_flag = GersupportA_chi2
+		}
+		effect = {
+			set_country_flag = guangxi_army_anti_jap
+			country_event = 300000
+			load_oob = "18D.txt"
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#军阀整编抗日部队
+	       Unit_front_to_antiJap = {  
+		potential = {
+			tag = CHI
+                        exists = CSC
+                        exists = CYN
+		has_country_flag = GersupportA_chi2
+		war_with = JAP		
+		}
+		allow = {	
+		    not = { year = 1938 
+		        has_country_flag = Unit_front_to_antiJap
+		      }	
+			JAP = { has_country_flag = shanghai_incident }
+		}
+		effect = {
+			set_country_flag = Unit_front_to_antiJap
+			 CYN = { country_event = 33331 } 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#全面抗战作战指导方案
+	#抗战建国纲领
+	  AntiJapan_create_guide = {  
+	  major = yes
+		potential = {
+			tag = CHI
+		has_country_flag = defence_wuhan
+		not = { has_country_flag = jap_seizes_coast_chi 			 
+		        has_country_flag = AntiJapan_create_guide
+		      }	
+		}
+		allow = {	
+			  war_with = JAP
+		}
+		effect = {
+			set_country_flag = AntiJapan_create_guide
+			 CHI = { country_event = 12242 } 
+			 CHC = { country_event = 12242 }
+			 CSX = { country_event = 12242 }
+			 CYN = { country_event = 12242 }
+			 CQM = { country_event = 12242 }
+			 CNM = { country_event = 12242 }
+			 CXK = { country_event = 12242 }
+			 CSY = { country_event = 12242 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#成立最高国防委员会
+	#瓦解盛世才
+	 Intagrate_China_XinJiang = {
+		potential = {
+			tag = CHI                                           
+                                                exists = SIK
+      has_global_flag = SIK_CLEANING2
+	  has_country_flag = jap_seizes_coast_chi
+      not = { has_global_flag = CHI_Briger }		
+			 date = 1944.9.11
+			 not = { year = 1945 }  
+		}
+		allow = {
+		}
+		effect = {
+			set_global_flag = CHI_Briger
+			  CHI = { split_troops = 1.0 
+			          inherit = SIK } 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#内战
+	#重庆谈判
+	#制宪国大
+}

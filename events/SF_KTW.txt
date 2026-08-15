@@ -1,0 +1,173 @@
+#####################
+#  三次反共事件组   #
+#####################
+country_event = {
+        major = yes
+	id = 700000
+	title = "70title"
+	desc = "70decs"
+	picture = "komingtang_destory_anti1"
+	trigger = {
+		tag = CHI
+                exists = CHI
+		date = 1939.1.1
+		not = { year = 1940 }
+                not = { has_country_flag = Event700000 }
+				has_country_flag = jap_seizes_coast_chi
+                CHI = { controls = 9478 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "70option1"
+                 add_country_modifier = {
+			name = "Event70_modifier"
+			duration = 120
+		}
+		set_country_flag = Event700000
+                CHC = { country_event = 7012 }
+		ai_chance = { factor = 100 }
+       	}
+}
+country_event = {
+	id = 7012
+	is_triggered_only = yes
+	title = "70title"
+	desc = "70decs"
+	picture = "komingtang_destory_anti2"
+	option = {
+		name = "70option1"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 7222
+	title = "FG1qh"
+	desc = "FG1desc"
+	picture = "komingtang_destory_anti3"
+	trigger = {
+		tag = CHC
+		CHI = { has_country_flag = Event700000 }
+        year = 1940 
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "FG1qhop"
+                add_country_modifier = {
+			name = "Event69_modifier"
+			duration = 120
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+        major = yes
+         fire_only_once = yes
+	id = 700002
+	title = "73title"
+	desc = "73decs"
+	picture = "komingtang_destory_anti4"
+	trigger = {
+		tag = CHI
+                exists = CHC
+		date = 1941.1.1
+		not = { year = 1942 }
+		has_country_flag = Event700000
+                CHI = { controls = 9478 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "73option1"
+		set_global_flag = Event700001
+		CHC = { country_event = 7223 }
+		ai_chance = { factor = 100 }
+       	}
+}
+country_event = {
+	id = 7223
+	is_triggered_only = yes
+	title = "73title"
+	desc = "73decs"
+	picture = "komingtang_destory_anti5"
+	option = {
+		name = "73option2"
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = 7226
+	 fire_only_once = yes
+	title = "FG6qh"
+	desc = "FG6desc"
+	picture = "komingtang_destory_anti6"
+                 trigger = {
+		tag = CHI
+		date = 1941.1.7
+                exists = CHC
+                has_global_flag = Event700004
+                CHI = { controls = 9478 }
+	}
+	option = {
+		name = "FG6qhop"
+                CHC = { country_event = 7227 }
+                CSC = { country_event = 7228 }
+                CNM = { country_event = 7228 }
+                CQM = { country_event = 7228 }
+                CGX = { country_event = 7228 }
+                CYN = { country_event = 7228 }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 7227
+	is_triggered_only = yes
+	title = "FG7qh"
+	subtitle = "FG7qh_subtitle"
+	desc = "FG6desc"
+	picture = "komingtang_destory_anti7"
+	option = {
+		name = "FG6"
+                kill_leader = 76314
+				leave_alliance = CHI
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 7228
+	is_triggered_only = yes
+	title = "FG8qh"
+	desc = "FG6desc"
+	picture = "komingtang_destory_anti8"
+	option = {
+		name = "FG8qhop"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 7111
+	 fire_only_once = yes
+	title = "FG108qh"
+	desc = "FG10desc"
+	picture = "komingtang_destory_anti9"
+                trigger = {
+		tag = CHI
+                exists = CHI
+                has_global_flag = Event700004
+				date = 1941.1.17
+                CHI = { controls = 9478 }
+	}
+	option = {
+		name = "FG10qhoop"
+                  add_country_modifier = {
+			name = "Event72_modifier"
+			duration = 120
+		}
+		ai_chance = { factor = 100 }
+	}
+}

@@ -1,0 +1,154 @@
+army = {
+		name = "西北方面军"
+		location = 1184 # Ostaskov
+		leader = 10068 # Kuznetsov  A.I
+		regiment = { type = hq_brigade name = "西北方面军司令部" experience = 60  historical_model = 2 }
+		division= {
+			is_reserve = yes
+			name = "第53步兵师"
+			location = 1184 # Ostaskov
+			regiment = { type = infantry_brigade name = "第12步兵团" experience = 60  historical_model = 2 }
+			regiment = { type = infantry_brigade name = "第223步兵团" experience = 60  historical_model = 2 }
+			regiment = { type = infantry_brigade name = "第475步兵团" experience = 60  historical_model = 2 }
+			regiment = { type = artillery_brigade name = "火力团" experience = 60  historical_model = 2 }
+			regiment = { type = anti_tank_brigade name = "突击团" experience = 60  historical_model = 2 }
+		}
+		corps = {
+	       	name = "第11集团军"
+	       	location = 1029 # Derglets
+	       	regiment = { type = hq_brigade name = "第11集团军司令部" experience = 60  historical_model = 2 }
+			division= {
+				name = "第58近卫步兵师"
+				location = 1029 # Derglets
+				regiment = { type = bergsjaeger_brigade name = "第170步兵团" experience = 60  historical_model = 2 }
+				regiment = { type = bergsjaeger_brigade name = "第279步兵团" experience = 60  historical_model = 2 }
+				regiment = { type = bergsjaeger_brigade name = "第335步兵团" experience = 60  historical_model = 2 }
+				regiment = { type = artillery_brigade name = "火力团" experience = 60  historical_model = 2 }
+			regiment = { type = anti_tank_brigade name = "突击团" experience = 60  historical_model = 2 }
+			}
+			division= {
+				name = "第165步兵师"
+							is_reserve = yes
+				location = 1029 # Derglets
+				regiment = { type = infantry_brigade name = "第562步兵团" experience = 60  historical_model = 2 }
+				regiment = { type = infantry_brigade name = "第641步兵团" experience = 60  historical_model = 2 }
+				regiment = { type = infantry_brigade name = "第751步兵团" experience = 60  historical_model = 2 }
+				regiment = { type = artillery_brigade name = "火力团" experience = 60  historical_model = 2 }
+			regiment = { type = anti_tank_brigade name = "突击团" experience = 60  historical_model = 2 }
+			}
+			division= {
+				name = "第250步兵师"
+							is_reserve = yes
+				location = 1029 # Derglets
+				regiment = { type = infantry_brigade experience = 60  historical_model = 2 }
+				regiment = { type = infantry_brigade experience = 60  historical_model = 2 }
+				regiment = { type = infantry_brigade experience = 60  historical_model = 2 }
+				regiment = { type = artillery_brigade name = "火力团" experience = 60  historical_model = 2 }
+			regiment = { type = anti_tank_brigade name = "突击团" experience = 60  historical_model = 2 }
+			}
+		}
+		corps = {
+			name = "第34集团军"
+			location = 991 # Polnovo
+			regiment = { type = hq_brigade name = "第34集团军司令部" experience = 60  historical_model = 2 }
+			division= {
+				name = "第163步兵师"
+				location = 991 # Polnovo
+							is_reserve = yes
+				regiment = { type = infantry_brigade experience = 60  historical_model = 2 }
+				regiment = { type = infantry_brigade experience = 60  historical_model = 2 }
+				regiment = { type = infantry_brigade experience = 60  historical_model = 2 }
+				regiment = { type = artillery_brigade name = "火力团" experience = 60  historical_model = 2 }
+			regiment = { type = anti_tank_brigade name = "突击团" experience = 60  historical_model = 2 }
+			}
+			division= {
+				name = "第100步兵师"
+				location = 991 # Polnovo
+							is_reserve = yes
+				regiment = { type = infantry_brigade name = "第85步兵团" experience = 60  historical_model = 2 }
+				regiment = { type = infantry_brigade name = "第331步兵团" experience = 60  historical_model = 2 }
+				regiment = { type = infantry_brigade name = "第355步兵团" experience = 60  historical_model = 2 }
+				regiment = { type = artillery_brigade name = "火力团" experience = 60  historical_model = 2 }
+			regiment = { type = anti_tank_brigade name = "突击团" experience = 60  historical_model = 2 }
+			}
+		}
+		army = {
+			name = "第27集团军"
+			leader = 10456
+			location = 1178
+			regiment = { type = hq_brigade name = "第27集团军司令部" historical_model = 0 organisation = 10 }
+			division = {
+				name = "第16'乌尔扬'步兵师"
+				location = 1178
+							is_reserve = yes
+				regiment = { type = infantry_brigade name = "第156步兵团" historical_model = 2 organisation = 10 }
+				regiment = { type = infantry_brigade name = "第167步兵团" historical_model = 2 organisation = 10 }
+				regiment = { type = infantry_brigade name = "第249步兵团" historical_model = 2 organisation = 10 }
+			}
+			division = {
+				name = "第67步兵师"
+				location = 1178
+							is_reserve = yes
+				regiment = { type = infantry_brigade name = "第56步兵团" historical_model = 2 organisation = 10 }
+				regiment = { type = infantry_brigade name = "第114步兵团" historical_model = 2 organisation = 10 }
+				regiment = { type = infantry_brigade name = "第281步兵团" historical_model = 2 organisation = 10 }
+			}
+			division = {
+				name = "第3'提霍坎'步兵师"
+				location = 1178
+							is_reserve = yes
+				regiment = { type = infantry_brigade name = "第8步兵团" historical_model = 2 organisation = 10 }
+				regiment = { type = infantry_brigade name = "第18步兵团" historical_model = 2 organisation = 10 }
+				regiment = { type = infantry_brigade name = "第70步兵团" historical_model = 2 organisation = 10 }
+			}
+			corps = {
+				name = "第22步兵军"
+				location = 1178
+							is_reserve = yes
+				regiment = { type = hq_brigade name = "第22军指挥部" historical_model = 0 organisation = 10 }
+				division = {
+					name = "第180步兵师"
+					location = 1178
+					regiment = { type = infantry_brigade name = "第21步兵团" historical_model = 2 organisation = 10 }
+					regiment = { type = infantry_brigade name = "第42步兵团" historical_model = 2 organisation = 10 }
+					regiment = { type = infantry_brigade name = "第86步兵团" historical_model = 2 organisation = 10 }
+				}
+				division = {
+					name = "第182步兵师"
+					location = 1178
+					regiment = { type = infantry_brigade name = "第140步兵团" historical_model = 2 organisation = 10 }
+					regiment = { type = infantry_brigade name = "第171步兵团" historical_model = 2 organisation = 10 }
+					regiment = { type = infantry_brigade name = "第232步兵团" historical_model = 2 organisation = 10 }
+				}
+			}
+			corps = {
+				name = "第24军"
+				location = 1178
+				regiment = { type = hq_brigade name = "第24军指挥部" historical_model = 0 organisation = 10 }
+				division = {
+					name = "第181步兵师"
+					location = 1178
+					regiment = { type = infantry_brigade name = "第186步兵团" historical_model = 2 organisation = 10 }
+					regiment = { type = infantry_brigade name = "第195步兵团" historical_model = 2 organisation = 10 }
+					regiment = { type = infantry_brigade name = "第243步兵团" historical_model = 2 organisation = 10 }
+				}
+				division = {
+					name = "第183 步兵师"
+					location = 1178
+					regiment = { type = infantry_brigade name = "第227步兵团" historical_model = 2 organisation = 10 }
+					regiment = { type = infantry_brigade name = "第285步兵团" historical_model = 2 organisation = 10 }
+					regiment = { type = infantry_brigade name = "第295步兵团" historical_model = 2 organisation = 10 }
+				}
+			}
+			air = {
+	name = "西北方面军航空军"
+	base = 782
+	location = 782
+	wing = { type = cas historical_model = 1 }
+	wing = { type = multi_role historical_model = 1 }
+	wing = { type = multi_role historical_model = 1 } 
+	wing = { type = multi_role historical_model = 1 }
+	wing = { type = multi_role historical_model = 1 }
+}
+		}
+}

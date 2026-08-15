@@ -1,0 +1,2743 @@
+MODEL_TAG;型号;;;;;;;;;;X
+################################################;;;;;;;;;;;X
+# Unit Model Names;;;;;;;;;;;X
+################################################;;;;;;;;;;;X
+AFG_light_armor_brigade_0;CV-33;;;;;;;;;;X
+AFG_light_armor_brigade_1;LT vs.35;;;;;;;;;;X
+AFG_light_armor_brigade_2;BT-7;;;;;;;;;;X
+AFG_armor_brigade_0;T-18;;;;;;;;;;X
+AFG_armor_brigade_1;T-28;;;;;;;;;;X
+AFG_armor_brigade_2;BT-7M;;;;;;;;;;X
+AFG_armor_brigade_3;T-34 m.41;;;;;;;;;;X
+AFG_armor_brigade_4;T-34 m.44;;;;;;;;;;X
+AFG_interceptor_0;霍克 '雌鹿';;;;;;;;;;X
+AFG_cas_0;布雷达 Ba.25;;;;;;;;;;X
+ALB_light_armor_brigade_0;CV-35;;;;;;;;;;X
+ALB_light_armor_brigade_1;L.3/38;;;;;;;;;;X
+ALB_light_armor_brigade_2;L.6/40;;;;;;;;;;X
+ALB_armor_brigade_0;菲亚特 2000;;;;;;;;;;X
+ALB_armor_brigade_1;M.11/39;;;;;;;;;;X
+ALB_armor_brigade_2;M.13/40;;;;;;;;;;X
+ALB_armor_brigade_3;M.15/42;;;;;;;;;;X
+ALB_armor_brigade_4;M.18/43 '撒哈拉';;;;;;;;;;X
+ARG_light_armor_brigade_0;M1A2;;;;;;;;;;X
+ARG_light_armor_brigade_1;L-60S;;;;;;;;;;X
+ARG_light_armor_brigade_2;LT vz.38;;;;;;;;;;X
+ARG_armor_brigade_0;雷诺 FT17;;;;;;;;;;X
+ARG_armor_brigade_1;T4E1;;;;;;;;;;X
+ARG_armor_brigade_2;那伊 D.L.43;;;;;;;;;;X
+ARG_armor_brigade_3;M4A1 '谢尔曼';;;;;;;;;;X
+ARG_armor_brigade_4;M4/E8 '谢尔曼';;;;;;;;;;X
+ARG_armor_brigade_5;M26 '潘兴';;;;;;;;;;X
+ARG_multi_role_3;FMA I.Ae.33 '飞箭' II;;;;;;;;;;X
+ARG_interceptor_0;寇蒂斯 '鹰' III;;;;;;;;;;X
+ARG_interceptor_1;寇蒂斯 '鹰' 75H;;;;;;;;;;X
+ARG_interceptor_2;FMA I.Ae-22 DL;;;;;;;;;;X
+ARG_interceptor_6;FMA I.Ae.27 '飞箭';;;;;;;;;;X
+ARG_naval_bomber_0;改进型 P2Y-3A '游骑兵';;;;;;;;;;X
+ARG_cas_0;FMA Ae-MB2 '勃比';;;;;;;;;;X
+ARG_transport_plane_0;道古拉斯 C-32;;;;;;;;;;X
+ARG_battleship_0;里瓦达维亚级;;;;;;;;;;X
+ARG_light_cruiser_1;阿根廷级;;;;;;;;;;X
+ARG_heavy_cruiser_0;五月二十五日级;;;;;;;;;;X
+ARG_destroyer_0;彻卢卡级;;;;;;;;;;X
+ARG_destroyer_1;布宜诺斯艾利斯级;;;;;;;;;;X
+ARG_submarine_0;圣达菲级;;;;;;;;;;X
+AST_light_armor_brigade_0;卡登.洛伊德 M1933;;;;;;;;;;X
+AST_light_armor_brigade_1;维克斯 Mk.VIc;;;;;;;;;;X
+AST_light_armor_brigade_2;斯图亚特 Mk.V;;;;;;;;;;X
+AST_armor_brigade_0;快速轻型坦克;;;;;;;;;;X
+AST_armor_brigade_1;'巡洋坦克' Mk.I A9;;;;;;;;;;X
+AST_armor_brigade_2;AC1 '哨兵';;;;;;;;;;X
+AST_armor_brigade_3;AC4 '哨兵';;;;;;;;;;X
+AST_armor_brigade_4;A34 '彗星';;;;;;;;;;X
+AST_armor_brigade_5;'百夫长' Mk.I;;;;;;;;;;X
+AST_armor_brigade_6;'百夫长' Mk.III;;;;;;;;;;X
+AST_armor_brigade_7;'百夫长' Mk.V;;;;;;;;;;X
+AST_multi_role_0;寇蒂斯 '小鹰';;;;;;;;;;X
+AST_multi_role_1;'喷火式' Mk.IX;;;;;;;;;;X
+AST_multi_role_2;CAC CA-15 '袋鼠';;;;;;;;;;X
+AST_multi_role_3;'流星式' Mk.III;;;;;;;;;;X
+AST_multi_role_4;'流星式' F.8;;;;;;;;;;X
+AST_interceptor_0;霍克 '魔鬼';;;;;;;;;;X
+AST_interceptor_1;霍克 '飓风' Mk.I;;;;;;;;;;X
+AST_interceptor_2;霍克 '飓风' Mk.II;;;;;;;;;;X
+AST_interceptor_3;CAC CA-12 '回旋镖';;;;;;;;;;X
+AST_interceptor_4;CAC CA-19 '回旋镖';;;;;;;;;;X
+AST_interceptor_5;'流星式' Mk.I;;;;;;;;;;X
+AST_interceptor_6;'佩刀';;;;;;;;;;X
+AST_interceptor_7;幻影III型;;;;;;;;;;X
+AST_rocket_interceptor_0;霍克 P.1052;;;;;;;;;;X
+AST_strategic_bomber_0;阿姆斯特朗-威特伍斯 '惠特利';;;;;;;;;;X
+AST_strategic_bomber_1;改进型 B-24 '解放者';;;;;;;;;;X
+AST_strategic_bomber_2;兰开斯特;;;;;;;;;;X
+AST_strategic_bomber_3;维克斯 '勇士';;;;;;;;;;X
+AST_tactical_bomber_0;布里斯托尔 '波弗特';;;;;;;;;;X
+AST_tactical_bomber_1;汉德利-佩济 '汉普顿';;;;;;;;;;X
+AST_tactical_bomber_2;维克斯-阿布斯特朗 '惠灵顿' Mk.III;;;;;;;;;;X
+AST_tactical_bomber_3;米切尔 Mk.II;;;;;;;;;;X
+AST_tactical_bomber_4;德.哈维兰 '蚁式' B.XVI;;;;;;;;;;X
+AST_tactical_bomber_5;德.哈维兰 '蛇毒';;;;;;;;;;X
+AST_tactical_bomber_6;英国 '堪培拉';;;;;;;;;;X
+AST_naval_bomber_0;洛克希德 '哈德森';;;;;;;;;;X
+AST_naval_bomber_1;洛克希德 '宣泄';;;;;;;;;;X
+AST_naval_bomber_2;CAC CA-11 '伍默拉';;;;;;;;;;X
+AST_naval_bomber_4;洛克希德 P2V '海王星';;;;;;;;;;X
+AST_cas_0;CAC CA-10 '挑战';;;;;;;;;;X
+AST_cas_1;伏尔提 '复仇者';;;;;;;;;;X
+AST_cas_2;波弗特战斗机;;;;;;;;;;X
+AST_transport_plane_0;阿姆斯特朗-威特伍斯 AW.41 '阿尔博马里';;;;;;;;;;X
+AST_transport_plane_1;道古拉斯 '达科他';;;;;;;;;;X
+AST_transport_plane_2;爱维罗 685 '约克';;;;;;;;;;X
+AST_light_cruiser_0;加里东级;;;;;;;;;;X
+AST_light_cruiser_1;'祖母绿'级;;;;;;;;;;X
+AST_light_cruiser_2;安菲翁级;;;;;;;;;;X
+AST_light_cruiser_3;南普顿级;;;;;;;;;;X
+AST_light_cruiser_4;快速级;;;;;;;;;;X
+AST_heavy_cruiser_1;澳大利亚级;;;;;;;;;;X
+AST_heavy_cruiser_2;萨里级;;;;;;;;;;X
+AST_destroyer_0;V级;;;;;;;;;;X
+AST_destroyer_1;A级;;;;;;;;;;X
+AST_destroyer_2;阿鲁恩塔级;;;;;;;;;;X
+AST_destroyer_3;安扎克级;;;;;;;;;;X
+AST_destroyer_4;航海者级;;;;;;;;;;X
+AST_destroyer_5;珀斯级;;;;;;;;;;X
+AST_carrier_0;赫尔墨斯级;;;;;;;;;;X
+AST_carrier_1;墨尔本级;;;;;;;;;;X
+AST_escort_carrier_0;赫尔墨斯级;;;;;;;;;;X
+AST_escort_carrier_1;鹰级;;;;;;;;;;X
+AST_escort_carrier_2;独角兽级;;;;;;;;;;X
+AST_escort_carrier_3;墨尔本级;;;;;;;;;;X
+AST_escort_carrier_4;半人马级;;;;;;;;;;X
+AST_escort_carrier_5;无畏级;;;;;;;;;;X
+AST_submarine_0;H-艇级;;;;;;;;;;X
+AST_submarine_1;剑鱼级;;;;;;;;;;X
+AST_submarine_2;海神级;;;;;;;;;;X
+AST_submarine_3;A-艇级;;;;;;;;;;X
+AST_submarine_5;奥克斯利级;;;;;;;;;;X
+AUS_light_armor_brigade_0;CV-35;;;;;;;;;;X
+AUS_light_armor_brigade_1;LT vz.35;;;;;;;;;;X
+AUS_light_armor_brigade_2;兰德斯沃克 L-60;;;;;;;;;;X
+AUS_armor_brigade_0;'突击装甲战车' A7V;;;;;;;;;;X
+AUS_armor_brigade_1;兰德斯沃克 L-61;;;;;;;;;;X
+AUS_armor_brigade_2;斯柯达 SP-III;;;;;;;;;;X
+AUS_armor_brigade_3;PzKpfw.IV;;;;;;;;;;X
+AUS_armor_brigade_4;PzKpfw.V 豹;;;;;;;;;;X
+AUS_armor_brigade_5;PzKpfw.VF 豹 II;;;;;;;;;;X
+AUS_armor_brigade_6;E-50 标准豹;;;;;;;;;;X
+AUS_armor_brigade_7;SK105;;;;;;;;;;X
+AUS_interceptor_0;菲亚特 CR.32 '箭';;;;;;;;;;X
+AUS_tactical_bomber_0;容克 Ju-86;;;;;;;;;;X
+AUS_naval_bomber_0;卡普隆尼 Ca.111;;;;;;;;;;X
+AUS_cas_0;布雷达 Ba.28;;;;;;;;;;X
+AUS_transport_plane_0;卡普隆尼 Ca.133;;;;;;;;;;X
+BEL_light_armor_brigade_0;卡登.洛伊德 M1933;;;;;;;;;;X
+BEL_light_armor_brigade_1;T-13;;;;;;;;;;X
+BEL_light_armor_brigade_2;ACG-1;;;;;;;;;;X
+BEL_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+BEL_armor_brigade_1;雷诺 R35;;;;;;;;;;X
+BEL_armor_brigade_2;Mk.VI A15 '十字军战士';;;;;;;;;;X
+BEL_armor_brigade_3;M4A1 '谢尔曼';;;;;;;;;;X
+BEL_armor_brigade_4;M4/E8 '谢尔曼';;;;;;;;;;X
+BEL_armor_brigade_5;M26 '潘兴';;;;;;;;;;X
+BEL_interceptor_0;比利时航空 '狐'VI;;;;;;;;;;X
+BEL_interceptor_1;勒纳尔 R.36;;;;;;;;;;X
+BEL_interceptor_2;勒纳尔 R-40;;;;;;;;;;X
+BEL_naval_bomber_0;比利时航空 S.47;;;;;;;;;;X
+BEL_cas_0;比利时航空 '战争';;;;;;;;;;X
+BOL_light_armor_brigade_0;CV-33;;;;;;;;;;X
+BOL_light_armor_brigade_1;M2A4;;;;;;;;;;X
+BOL_light_armor_brigade_2;M5 '斯图亚特';;;;;;;;;;X
+BOL_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+BOL_armor_brigade_1;维克斯 Mk.E;;;;;;;;;;X
+BOL_armor_brigade_2;M3 '李';;;;;;;;;;X
+BOL_armor_brigade_3;M4A1 '谢尔曼';;;;;;;;;;X
+BOL_armor_brigade_4;M4/E8 '谢尔曼';;;;;;;;;;X
+BOL_armor_brigade_5;M26 '潘兴';;;;;;;;;;X
+BOL_interceptor_0;寇蒂斯 '鹰' II;;;;;;;;;;X
+BOL_tactical_bomber_0;容克 Ju-86;;;;;;;;;;X
+BRA_light_armor_brigade_0;CV-33;;;;;;;;;;X
+BRA_light_armor_brigade_1;M2A4;;;;;;;;;;X
+BRA_light_armor_brigade_2;M5 '斯图亚特';;;;;;;;;;X
+BRA_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+BRA_armor_brigade_1;维克斯 Mk.E;;;;;;;;;;X
+BRA_armor_brigade_2;M3 '李';;;;;;;;;;X
+BRA_armor_brigade_3;M4A1 '谢尔曼';;;;;;;;;;X
+BRA_armor_brigade_4;M4/E8 '谢尔曼';;;;;;;;;;X
+BRA_armor_brigade_5;M26 '潘兴';;;;;;;;;;X
+BRA_multi_role_0;寇蒂斯 '小鹰';;;;;;;;;;X
+BRA_multi_role_1;共和 P-47D '雷电';;;;;;;;;;X
+BRA_interceptor_0;波音 P-12;;;;;;;;;;X
+BRA_interceptor_1;寇蒂斯 P-36;;;;;;;;;;X
+BRA_interceptor_2;寇蒂斯 '雄鹰';;;;;;;;;;X
+BRA_tactical_bomber_0;波音 B-18A '大刀';;;;;;;;;;X
+BRA_tactical_bomber_3;波音 B-25D '米切尔';;;;;;;;;;X
+BRA_tactical_bomber_4;波音 B-25J '米切尔';;;;;;;;;;X
+BRA_naval_bomber_0;洛克希德 '哈德森';;;;;;;;;;X
+BRA_naval_bomber_1;洛克希德 '宣泄';;;;;;;;;;X
+BRA_naval_bomber_2;洛克希德 '鱼叉';;;;;;;;;;X
+BRA_transport_plane_1;道格拉斯 C-47 '空中列车';;;;;;;;;;X
+BRA_battleship_0;米纳斯吉拉斯级;;;;;;;;;;X
+BRA_light_cruiser_0;巴伊亚级;;;;;;;;;;X
+BRA_destroyer_0;马拉尼昂级;;;;;;;;;;X
+BRA_destroyer_1;马塞奥.迪亚兹级;;;;;;;;;;X
+BRA_submarine_0;胡迈塔级;;;;;;;;;;X
+BUL_light_armor_brigade_0;CV-33;;;;;;;;;;X
+BUL_light_armor_brigade_1;斯柯达 Lt-35;;;;;;;;;;X
+BUL_light_armor_brigade_2;布拉格 Lt-38;;;;;;;;;;X
+BUL_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+BUL_armor_brigade_1;维克斯 Mk.II;;;;;;;;;;X
+BUL_armor_brigade_2;迈巴赫T-III;;;;;;;;;;X
+BUL_armor_brigade_3;迈巴赫T-IV;;;;;;;;;;X
+BUL_armor_brigade_4;迈巴赫T-V;;;;;;;;;;X
+BUL_multi_role_0;阿维亚 B-534'杜安';;;;;;;;;;X
+BUL_multi_role_1;梅塞施密特 Bf-109G;;;;;;;;;;X
+BUL_interceptor_0;亨克尔 He 51'捷克鹰';;;;;;;;;;X
+BUL_interceptor_1;PZL P.24 威斯特雷柏;;;;;;;;;;X
+BUL_interceptor_2;梅塞施密特 Bf-109E 斯特莱拉;;;;;;;;;;X
+BUL_interceptor_3;阿维亚 B.135 莱斯托维卡;;;;;;;;;;X
+BUL_interceptor_4;拉萨罗夫 Laz-14;;;;;;;;;;X
+BUL_strategic_bomber_0;安诺 MB.200 En-4 布哈尔;;;;;;;;;;X
+BUL_tactical_bomber_0;道尼尔 Do-11 普利莱普;;;;;;;;;;X
+BUL_tactical_bomber_1;道尼尔 Do-17 尤莱甘;;;;;;;;;;X
+BUL_tactical_bomber_2;DAR-10 贝卡斯;;;;;;;;;;X
+BUL_tactical_bomber_3;佩特利亚柯夫 Pe-2 '彼什卡';;;;;;;;;;X
+BUL_naval_bomber_0;阿拉道 Ar-196A 阿库拉;;;;;;;;;;X
+BUL_cas_0;保尔加拉 KB-6 帕拉高;;;;;;;;;;X
+BUL_cas_1;DAR-10 贝卡斯;;;;;;;;;;X
+BUL_transport_plane_0;容克 Ju-52/3m 索瓦;;;;;;;;;;X
+CAN_light_armor_brigade_0;卡登.洛伊德 Mk.VI;;;;;;;;;;X
+CAN_light_armor_brigade_1;维克斯 Mk.VIc;;;;;;;;;;X
+CAN_light_armor_brigade_2;斯图亚特 Mk.V;;;;;;;;;;X
+CAN_armor_brigade_0;快速轻型坦克;;;;;;;;;;X
+CAN_armor_brigade_1;'巡洋坦克' Mk.I A9;;;;;;;;;;X
+CAN_armor_brigade_2;公羊 I;;;;;;;;;;X
+CAN_armor_brigade_3;灰熊 I;;;;;;;;;;X
+CAN_armor_brigade_4;A34 '彗星';;;;;;;;;;X
+CAN_armor_brigade_5;M26 '潘兴';;;;;;;;;;X
+CAN_armor_brigade_6;'百夫长' Mk.3;;;;;;;;;;X
+CAN_armor_brigade_7;美洲豹 1;;;;;;;;;;X
+CAN_multi_role_0;寇蒂斯 '小鹰';;;;;;;;;;X
+CAN_multi_role_1;'喷火式' Mk.IX;;;;;;;;;;X
+CAN_multi_role_2;北美 '野马' Mk.IV;;;;;;;;;;X
+CAN_multi_role_3;'流星式' Mk.III;;;;;;;;;;X
+CAN_multi_role_4;德.哈维兰 '吸血鬼';;;;;;;;;;X
+CAN_multi_role_5;阿伏罗 CF-100 '科纳克';;;;;;;;;;X
+CAN_interceptor_0;格鲁曼 C-23 '精灵';;;;;;;;;;X
+CAN_interceptor_1;霍克 '飓风' Mk.I;;;;;;;;;;X
+CAN_interceptor_2;格鲁曼 F4F '圣马丁鸟';;;;;;;;;;X
+CAN_interceptor_3;霍克 '台风';;;;;;;;;;X
+CAN_interceptor_4;霍克 '暴风';;;;;;;;;;X
+CAN_interceptor_5;'流星式' Mk.I;;;;;;;;;;X
+CAN_interceptor_6;CL-13 '佩刀';;;;;;;;;;X
+CAN_interceptor_7;阿伏罗 CF-105 '箭式';;;;;;;;;;X
+CAN_rocket_interceptor_0;霍克 P.1052;;;;;;;;;;X
+CAN_strategic_bomber_0;阿姆斯特朗-威特伍斯 '惠特利';;;;;;;;;;X
+CAN_strategic_bomber_1;哈利法克斯;;;;;;;;;;X
+CAN_strategic_bomber_2;兰开斯特;;;;;;;;;;X
+CAN_strategic_bomber_3;维克斯 '勇士';;;;;;;;;;X
+CAN_tactical_bomber_0;B-18 迪格比;;;;;;;;;;X
+CAN_tactical_bomber_1;布伦汉姆 Mk.IV;;;;;;;;;;X
+CAN_tactical_bomber_2;维克斯-阿布斯特朗 '惠灵顿' Mk.III;;;;;;;;;;X
+CAN_tactical_bomber_3;米切尔 Mk.II;;;;;;;;;;X
+CAN_tactical_bomber_4;德.哈维兰 '蚁式' B.XVI;;;;;;;;;;X
+CAN_tactical_bomber_5;德.哈维兰 '蛇毒';;;;;;;;;;X
+CAN_tactical_bomber_6;英国 '堪培拉';;;;;;;;;;X
+CAN_naval_bomber_0;洛克希德 '哈德森';;;;;;;;;;X
+CAN_naval_bomber_1;洛克希德 '宣泄';;;;;;;;;;X
+CAN_naval_bomber_2;洛克希德 '鱼叉';;;;;;;;;;X
+CAN_naval_bomber_4;洛克希德 CP-127 '海王星';;;;;;;;;;X
+CAN_cas_0;费尔利 '战争';;;;;;;;;;X
+CAN_cas_1;伏尔提 '复仇者';;;;;;;;;;X
+CAN_cas_2;波弗特战斗机 I;;;;;;;;;;X
+CAN_transport_plane_0;阿姆斯特朗-威特伍斯 AW.41 '阿尔博马里';;;;;;;;;;X
+CAN_transport_plane_1;道格拉斯 '达科他';;;;;;;;;;X
+CAN_transport_plane_2;道格拉斯 '北极星';;;;;;;;;;X
+CAN_light_cruiser_0;加里东级;;;;;;;;;;X
+CAN_light_cruiser_1;'祖母绿'级;;;;;;;;;;X
+CAN_light_cruiser_2;利安得级;;;;;;;;;;X
+CAN_light_cruiser_3;魁北克级;;;;;;;;;;X
+CAN_light_cruiser_4;安大略级;;;;;;;;;;X
+CAN_heavy_cruiser_1;肯特级;;;;;;;;;;X
+CAN_heavy_cruiser_2;萨里级;;;;;;;;;;X
+CAN_destroyer_0;V级;;;;;;;;;;X
+CAN_destroyer_1;A级;;;;;;;;;;X
+CAN_destroyer_2;阿萨帕斯卡级;;;;;;;;;;X
+CAN_destroyer_3;战斗级;;;;;;;;;;X
+CAN_destroyer_4;勇猛级;;;;;;;;;;X
+CAN_destroyer_5;圣劳伦级;;;;;;;;;;X
+CAN_carrier_0;赫尔墨斯级;;;;;;;;;;X
+CAN_carrier_1;博纳文特级;;;;;;;;;;X
+CAN_escort_carrier_0;赫尔墨斯级;;;;;;;;;;X
+CAN_escort_carrier_1;鹰级;;;;;;;;;;X
+CAN_escort_carrier_2;独角兽级;;;;;;;;;;X
+CAN_escort_carrier_3;墨尔本级;;;;;;;;;;X
+CAN_escort_carrier_4;半人马级;;;;;;;;;;X
+CAN_escort_carrier_5;无畏级;;;;;;;;;;X
+CAN_submarine_0;H-艇级;;;;;;;;;;X
+CAN_submarine_1;剑鱼级;;;;;;;;;;X
+CAN_submarine_2;海神级;;;;;;;;;;X
+CAN_submarine_3;幼鲑级;;;;;;;;;;X
+CAN_submarine_5;奥杰布韦级;;;;;;;;;;X
+CHI_light_armor_brigade_0;CV-33;;;;;;;;;;X
+CHI_light_armor_brigade_1;PzKpfw.I;;;;;;;;;;X
+CHI_light_armor_brigade_2;M5 '斯图亚特';;;;;;;;;;X
+CHI_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+CHI_armor_brigade_1;维克斯 Mk.E;;;;;;;;;;X
+CHI_armor_brigade_2;M3 '李';;;;;;;;;;X
+CHI_armor_brigade_3;M4A1 '谢尔曼';;;;;;;;;;X
+CHI_armor_brigade_4;M4/E8 '谢尔曼';;;;;;;;;;X
+CHI_armor_brigade_5;M26 '潘兴';;;;;;;;;;X
+CHI_multi_role_0;寇蒂斯 '小鹰';;;;;;;;;;X
+CHI_multi_role_1;共和 P-47D '雷电';;;;;;;;;;X
+CHI_multi_role_2;P-51D '野马';;;;;;;;;;X
+CHI_multi_role_4;北美 F-86F '佩刀';;;;;;;;;;X
+CHI_multi_role_5;北美 F-100 '超级佩刀';;;;;;;;;;X
+CHI_interceptor_0;寇蒂斯 '鹰' III;;;;;;;;;;X
+CHI_interceptor_1;寇蒂斯 '鹰' 75-A;;;;;;;;;;X
+CHI_interceptor_2;寇蒂斯 '雄鹰';;;;;;;;;;X
+CHI_interceptor_3;北美 P-51B '野马';;;;;;;;;;X
+CHI_interceptor_6;北美 F-86 '佩刀';;;;;;;;;;X
+CHI_interceptor_7;北美 F-100 '超级佩刀';;;;;;;;;;X
+CHI_strategic_bomber_1;改进型 B-24 '解放者';;;;;;;;;;X
+CHI_tactical_bomber_0;图波列夫 SB-2;;;;;;;;;;X
+CHI_tactical_bomber_1;菲亚特 BR.20 齐科尼亚;;;;;;;;;;X
+CHI_tactical_bomber_2;A-20 '波士顿';;;;;;;;;;X
+CHI_tactical_bomber_3;B-25C '米切尔';;;;;;;;;;X
+CHI_tactical_bomber_4;'蚊式' FB Mk.VI;;;;;;;;;;X
+CHI_naval_bomber_0;洛克希德 '哈德森';;;;;;;;;;X
+CHI_cas_0;伏尔提 V-12;;;;;;;;;;X
+CHI_transport_plane_0;道古拉斯 C-32;;;;;;;;;;X
+CHI_transport_plane_1;C-47 '达科他';;;;;;;;;;X
+CHI_transport_plane_3;C-119G '飞行车厢';;;;;;;;;;X
+CHI_light_cruiser_0;应瑞级;;;;;;;;;;X
+CHI_light_cruiser_1;宁海级;;;;;;;;;;X
+CHC_light_armor_brigade_0;T-27;;;;;;;;;;X
+CHC_light_armor_brigade_1;BT-5;;;;;;;;;;X
+CHC_light_armor_brigade_2;BT-7;;;;;;;;;;X
+CHC_armor_brigade_0;T-18;;;;;;;;;;X
+CHC_armor_brigade_1;T-28;;;;;;;;;;X
+CHC_armor_brigade_2;BT-7M;;;;;;;;;;X
+CHC_armor_brigade_3;T-34 m.41;;;;;;;;;;X
+CHC_armor_brigade_4;T-34 m.44;;;;;;;;;;X
+CHC_armor_brigade_5;62式;;;;;;;;;;X
+CHC_armor_brigade_6;59式;;;;;;;;;;X
+CHC_armor_brigade_7;69式 II;;;;;;;;;;X
+CHC_multi_role_0;米格-3;;;;;;;;;;X
+CHC_multi_role_1;拉-5;;;;;;;;;;X
+CHC_multi_role_2;拉-7;;;;;;;;;;X
+CHC_multi_role_3;米格-9;;;;;;;;;;X
+CHC_multi_role_4;歼-2;;;;;;;;;;X
+CHC_multi_role_5;强-5;;;;;;;;;;X
+CHC_interceptor_0;伊-15;;;;;;;;;;X
+CHC_interceptor_1;伊-16;;;;;;;;;;X
+CHC_interceptor_2;拉格-3;;;;;;;;;;X
+CHC_interceptor_3;雅克-7;;;;;;;;;;X
+CHC_interceptor_4;雅克-3;;;;;;;;;;X
+CHC_interceptor_5;雅克-15;;;;;;;;;;X
+CHC_interceptor_6;歼-5;;;;;;;;;;X
+CHC_interceptor_7;歼-6;;;;;;;;;;X
+CHC_strategic_bomber_0;TB-3;;;;;;;;;;X
+CHC_strategic_bomber_1;Pe-8;;;;;;;;;;X
+CHC_strategic_bomber_2;图-4;;;;;;;;;;X
+CHC_strategic_bomber_3;B-6;;;;;;;;;;X
+CHC_tactical_bomber_0;图波列夫 SB-2;;;;;;;;;;X
+CHC_tactical_bomber_1;DB-3;;;;;;;;;;X
+CHC_tactical_bomber_2;雅克-4;;;;;;;;;;X
+CHC_tactical_bomber_3;佩特利亚柯夫 Pe-2 '彼什卡';;;;;;;;;;X
+CHC_tactical_bomber_4;图-2;;;;;;;;;;X
+CHC_tactical_bomber_5;图-14;;;;;;;;;;X
+CHC_tactical_bomber_6;B-5;;;;;;;;;;X
+CHC_naval_bomber_0;阿尔-2;;;;;;;;;;X
+CHC_naval_bomber_1;伊尔-4;;;;;;;;;;X
+CHC_naval_bomber_2;图-2T;;;;;;;;;;X
+CHC_naval_bomber_3;别-6;;;;;;;;;;X
+CHC_naval_bomber_4;轰-5;;;;;;;;;;X
+CHC_cas_0;苏-2;;;;;;;;;;X
+CHC_cas_1;伊尔-2M;;;;;;;;;;X
+CHC_cas_2;伊尔-10;;;;;;;;;;X
+CHC_cas_3;歼-3;;;;;;;;;;X
+CHC_cas_4;歼-4;;;;;;;;;;X
+CHC_cas_5;强-5;;;;;;;;;;X
+CHC_transport_plane_0;里-2;;;;;;;;;;X
+CHC_transport_plane_1;里-2V;;;;;;;;;;X
+CHC_transport_plane_2;伊尔-12;;;;;;;;;;X
+CHC_transport_plane_3;伊尔-18;;;;;;;;;;X
+CHC_transport_plane_4;安-12;;;;;;;;;;X
+CHC_flying_rocket_0;东风-1型;;;;;;;;;;X
+CHC_flying_rocket_1;东风-2型;;;;;;;;;;X
+CHC_flying_rocket_2;东风-3型;;;;;;;;;;X
+CHC_destroyer_0;鞍山级;;;;;;;;;;X
+CHC_destroyer_1;旅大I级;;;;;;;;;;X
+CHC_destroyer_2;旅大II级;;;;;;;;;;X
+CHC_destroyer_3;旅大III级;;;;;;;;;;X
+CHC_destroyer_4;旅沪级;;;;;;;;;;X
+CHC_destroyer_5;旅海级;;;;;;;;;;X
+CHC_destroyer_6;现代级;;;;;;;;;;X
+CHC_submarine_0;M级;;;;;;;;;;X
+CHC_submarine_1;C级;;;;;;;;;;X
+CHC_submarine_2;W级;;;;;;;;;;X
+CHC_submarine_3;R级;;;;;;;;;;X
+CHC_submarine_4;G级;;;;;;;;;;X
+CHC_submarine_5;明级;;;;;;;;;;X
+CHC_submarine_6;汉级;;;;;;;;;;X
+CHC_nuclear_submarine_0;汉级;;;;;;;;;;X
+CHL_light_armor_brigade_0;CV-33;;;;;;;;;;X
+CHL_light_armor_brigade_1;M2A4;;;;;;;;;;X
+CHL_light_armor_brigade_2;M5 '斯图亚特';;;;;;;;;;X
+CHL_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+CHL_armor_brigade_1;维克斯 Mk.E;;;;;;;;;;X
+CHL_armor_brigade_2;M3 '李';;;;;;;;;;X
+CHL_armor_brigade_3;M4A1 '谢尔曼';;;;;;;;;;X
+CHL_armor_brigade_4;M4/E8 '谢尔曼';;;;;;;;;;X
+CHL_armor_brigade_5;M26 '潘兴';;;;;;;;;;X
+CHL_interceptor_0;费尔利 IV '海豹';;;;;;;;;;X
+CHL_tactical_bomber_0;容克 Ju-86;;;;;;;;;;X
+CHL_cas_0;布雷达 Ba.65;;;;;;;;;;X
+CHL_battleship_1;阿尔米兰特 拉托雷级;;;;;;;;;;X
+CHL_destroyer_0;塞拉诺级;;;;;;;;;;X
+CHL_submarine_0;奥布赖恩上尉级;;;;;;;;;;X
+COL_light_armor_brigade_0;CV-33;;;;;;;;;;X
+COL_light_armor_brigade_1;M2A4;;;;;;;;;;X
+COL_light_armor_brigade_2;M5 '斯图亚特';;;;;;;;;;X
+COL_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+COL_armor_brigade_1;维克斯 Mk.E;;;;;;;;;;X
+COL_armor_brigade_2;M3 '李';;;;;;;;;;X
+COL_armor_brigade_3;M4A1 '谢尔曼';;;;;;;;;;X
+COL_armor_brigade_4;M4/E8 '谢尔曼';;;;;;;;;;X
+COL_armor_brigade_5;M26 '潘兴';;;;;;;;;;X
+COL_destroyer_0;乌加河级;;;;;;;;;;X
+CRO_light_armor_brigade_0;CV-35;;;;;;;;;;X
+CRO_light_armor_brigade_1;PzKpfw.I;;;;;;;;;;X
+CRO_light_armor_brigade_2;PzKpfw.IIf;;;;;;;;;;X
+CRO_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+CRO_armor_brigade_1;PzKpfw.IIc;;;;;;;;;;X
+CRO_armor_brigade_2;PzKpfw.III;;;;;;;;;;X
+CRO_armor_brigade_3;PzKpfw.IV;;;;;;;;;;X
+CRO_armor_brigade_4;PzKpfw.V;;;;;;;;;;X
+CRO_multi_role_0;马基 MC.202 '闪电';;;;;;;;;;X
+CRO_multi_role_1;梅塞施密特 Bf-109G '古斯塔夫';;;;;;;;;;X
+CRO_multi_role_2;依凯 S-49;;;;;;;;;;X
+CRO_interceptor_0;福克 F.VII;;;;;;;;;;X
+CRO_interceptor_1;莫拉纳-索尼埃 M.S.406;;;;;;;;;;X
+CRO_interceptor_2;梅塞施密特 Bf-109E '艾米尔';;;;;;;;;;X
+CRO_tactical_bomber_0;布伦汉姆 Mk.I;;;;;;;;;;X
+CRO_tactical_bomber_1;道尼尔 Do-17;;;;;;;;;;X
+CRO_tactical_bomber_2;康特 Z.1007 '翠鸟';;;;;;;;;;X
+CRO_naval_bomber_0;道尼尔 Do-22;;;;;;;;;;X
+CRO_naval_bomber_1;萨伏亚-马尔盖蒂 SM.84;;;;;;;;;;X
+CRO_cas_0;容克 Ju-87B '斯图卡';;;;;;;;;;X
+CRO_cas_1;容克 Ju-87D '斯图卡';;;;;;;;;;X
+CRO_transport_plane_0;阿维亚 '福克' F.39;;;;;;;;;;X
+CRO_destroyer_1;杜布罗尼克级;;;;;;;;;;X
+CRO_destroyer_2;贝尔格莱德级;;;;;;;;;;X
+CRO_submarine_0;奥斯威尼克级;;;;;;;;;;X
+CSA_light_armor_brigade_0;Mk I 沃蒂;;;;;;;;;;X
+CSA_light_armor_brigade_1;Mk III 福雷斯特;;;;;;;;;;X
+CSA_light_armor_brigade_2;Mk V 斯图亚特;;;;;;;;;;X
+CSA_armor_brigade_0;Mk A 惠比特;;;;;;;;;;X
+CSA_armor_brigade_1;Mk II 保里格;;;;;;;;;;X
+CSA_armor_brigade_2;Mk IV 李;;;;;;;;;;X
+CSA_armor_brigade_3;Mk VI 杰克逊;;;;;;;;;;X
+CSA_armor_brigade_4;Mk VII 朗斯特里特;;;;;;;;;;X
+CSA_armor_brigade_5;Mk VIII 约翰斯顿;;;;;;;;;;X
+CSA_armor_brigade_6;Mk XIV 约翰斯顿;;;;;;;;;;X
+CSA_armor_brigade_7;Mk XV 巴顿;;;;;;;;;;X
+CSA_multi_role_0;海上 '烈火' Mk.I;;;;;;;;;;X
+CSA_multi_role_1;'喷火式' Mk.IX;;;;;;;;;;X
+CSA_multi_role_2;海上 '烈火' Mk.XIV;;;;;;;;;;X
+CSA_multi_role_3;'流星式' Mk.III;;;;;;;;;;X
+CSA_multi_role_4;'流星式' F.8;;;;;;;;;;X
+CSA_multi_role_5;标枪;;;;;;;;;;X
+CSA_interceptor_0;角斗士;;;;;;;;;;X
+CSA_interceptor_1;霍克 '飓风' Mk.I;;;;;;;;;;X
+CSA_interceptor_2;霍克 '飓风' Mk.II;;;;;;;;;;X
+CSA_interceptor_3;霍克 '台风';;;;;;;;;;X
+CSA_interceptor_4;霍克 '暴风';;;;;;;;;;X
+CSA_interceptor_5;'流星式' Mk.I;;;;;;;;;;X
+CSA_interceptor_6;德.哈维兰 '吸血鬼';;;;;;;;;;X
+CSA_interceptor_7;英国 '闪电';;;;;;;;;;X
+CSA_rocket_interceptor_0;霍克 P.1052;;;;;;;;;;X
+CSA_strategic_bomber_0;阿姆斯特朗-威特伍斯 '惠特利';;;;;;;;;;X
+CSA_strategic_bomber_1;哈利法克斯;;;;;;;;;;X
+CSA_strategic_bomber_2;兰开斯特;;;;;;;;;;X
+CSA_strategic_bomber_3;维克斯 '勇士';;;;;;;;;;X
+CSA_strategic_bomber_4;阿弗洛 '火神';;;;;;;;;;X
+CSA_strategic_bomber_5;汉德利-佩奇 '胜利者';;;;;;;;;;X
+CSA_tactical_bomber_0;布伦汉姆 Mk.I;;;;;;;;;;X
+CSA_tactical_bomber_1;汉德利-佩济 '汉普顿';;;;;;;;;;X
+CSA_tactical_bomber_2;维克斯-阿布斯特朗 '惠灵顿' Mk.III;;;;;;;;;;X
+CSA_tactical_bomber_3;布里斯托 '白金汉';;;;;;;;;;X
+CSA_tactical_bomber_4;德.哈维兰 '蚁式' B.XVI;;;;;;;;;;X
+CSA_tactical_bomber_5;德.哈维兰 '蛇毒';;;;;;;;;;X
+CSA_tactical_bomber_6;英国 '堪培拉';;;;;;;;;;X
+CSA_naval_bomber_0;洛克希德 '哈德森';;;;;;;;;;X
+CSA_naval_bomber_1;布里斯托尔 '波弗特';;;;;;;;;;X
+CSA_naval_bomber_2;布里斯托 '恶棍';;;;;;;;;;X
+CSA_naval_bomber_3;海上 '袭击者';;;;;;;;;;X
+CSA_naval_bomber_4;阿弗洛 '沙克尔顿';;;;;;;;;;X
+CSA_cas_0;费尔利 '战争';;;;;;;;;;X
+CSA_cas_1;霍克 '飓风' Mk.IV;;;;;;;;;;X
+CSA_cas_2;波弗特战斗机;;;;;;;;;;X
+CSA_cas_3;德.哈维兰 '蛇毒';;;;;;;;;;X
+CSA_cas_4;霍克 '猎手';;;;;;;;;;X
+CSA_cas_5;布莱克本 '掠夺者';;;;;;;;;;X
+CSA_transport_plane_0;阿姆斯特朗-威特伍斯 AW.41 '阿尔博马里';;;;;;;;;;X
+CSA_transport_plane_1;道古拉斯 '达科他';;;;;;;;;;X
+CSA_transport_plane_2;爱维罗 685 '约克';;;;;;;;;;X
+CSA_transport_plane_3;布莱克本 '比弗利';;;;;;;;;;X
+CSA_transport_plane_4;贝尔法斯特;;;;;;;;;;X
+CSA_flying_rocket_0;赛伯特;;;;;;;;;;X
+CSA_flying_rocket_1;列尊;;;;;;;;;;X
+CSA_flying_rocket_2;博莱德;;;;;;;;;;X
+CSA_battleship_0;南部联邦级;;;;;;;;;;X
+CSA_battleship_1;弗吉尼亚级;;;;;;;;;;X
+CSA_battleship_3;路易斯安娜级;;;;;;;;;;X
+CSA_battleship_4;密西西比河级;;;;;;;;;;X
+CSA_super_heavy_battleship_0;塞阔雅级;;;;;;;;;;X
+CSA_light_cruiser_1;休斯敦级;;;;;;;;;;X
+CSA_light_cruiser_2;墨比尔级;;;;;;;;;;X
+CSA_light_cruiser_3;威明顿级;;;;;;;;;;X
+CSA_light_cruiser_4;科珀斯克里斯蒂级;;;;;;;;;;X
+CSA_light_cruiser_5;坦帕级;;;;;;;;;;X
+CSA_light_cruiser_6;杰克逊维尔级;;;;;;;;;;X
+CSA_heavy_cruiser_1;纳什维尔级;;;;;;;;;;X
+CSA_heavy_cruiser_2;哥伦比亚级;;;;;;;;;;X
+CSA_heavy_cruiser_3;里士满级;;;;;;;;;;X
+CSA_heavy_cruiser_4;巴吞鲁日级;;;;;;;;;;X
+CSA_heavy_cruiser_5;蒙哥马利级;;;;;;;;;;X
+CSA_heavy_cruiser_6;橡树岭级;;;;;;;;;;X
+CSA_heavy_cruiser_7;奥斯汀级;;;;;;;;;;X
+CSA_battlecruiser_2;切罗基级;;;;;;;;;;X
+CSA_battlecruiser_3;奇克索级;;;;;;;;;;X
+CSA_battlecruiser_4;乔克托级;;;;;;;;;;X
+CSA_battlecruiser_5;克里克级;;;;;;;;;;X
+CSA_battlecruiser_7;西米诺级;;;;;;;;;;X
+CSA_destroyer_0;布坎南级;;;;;;;;;;X
+CSA_destroyer_1;琼斯级;;;;;;;;;;X
+CSA_destroyer_2;布朗级;;;;;;;;;;X
+CSA_destroyer_3;理德级;;;;;;;;;;X
+CSA_destroyer_4;塞姆斯级;;;;;;;;;;X
+CSA_destroyer_5;马斐特级;;;;;;;;;;X
+CSA_destroyer_6;塔特纳尔级;;;;;;;;;;X
+CSA_carrier_1;马纳萨斯级;;;;;;;;;;X
+CSA_carrier_2;桑特尔级;;;;;;;;;;X
+CSA_carrier_3;汉普顿路级;;;;;;;;;;X
+CSA_carrier_4;夏普斯堡级;;;;;;;;;;X
+CSA_carrier_5;杰斐逊-戴维斯级;;;;;;;;;;X
+CSA_carrier_6;史蒂芬-奥斯汀级;;;;;;;;;;X
+CSA_carrier_7;阿拉莫级;;;;;;;;;;X
+CSA_carrier_8;希洛级;;;;;;;;;;X
+CSA_carrier_9;乔治-华盛顿级;;;;;;;;;;X
+CSA_escort_carrier_0;盖恩斯-米尔级;;;;;;;;;;X
+CSA_escort_carrier_1;麻鹬级;;;;;;;;;;X
+CSA_escort_carrier_2;云雀级;;;;;;;;;;X
+CSA_submarine_0;先锋级;;;;;;;;;;X
+CSA_submarine_1;马洛里级;;;;;;;;;;X
+CSA_submarine_2;莫里级;;;;;;;;;;X
+CSA_submarine_3;大卫级;;;;;;;;;;X
+CSA_submarine_4;布洛克级;;;;;;;;;;X
+CSA_submarine_5;狄克逊级;;;;;;;;;;X
+CSA_nuclear_submarine_0;汉利级;;;;;;;;;;X
+CUB_light_armor_brigade_0;CV-33;;;;;;;;;;X
+CUB_light_armor_brigade_1;M2A4;;;;;;;;;;X
+CUB_light_armor_brigade_2;M5 '斯图亚特';;;;;;;;;;X
+CUB_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+CUB_armor_brigade_1;维克斯 Mk.E;;;;;;;;;;X
+CUB_armor_brigade_2;M3 '李';;;;;;;;;;X
+CUB_armor_brigade_3;M4A1 '谢尔曼';;;;;;;;;;X
+CUB_armor_brigade_4;M4/E8 '谢尔曼';;;;;;;;;;X
+CUB_armor_brigade_5;M26 '潘兴';;;;;;;;;;X
+CUB_interceptor_0;寇蒂斯 '鹰' III;;;;;;;;;;X
+CZE_light_armor_brigade_0;布拉格 T-33;;;;;;;;;;X
+CZE_light_armor_brigade_1;LT vz.35;;;;;;;;;;X
+CZE_light_armor_brigade_2;LT vz.38;;;;;;;;;;X
+CZE_armor_brigade_0;克罗豪森卡 KH-50;;;;;;;;;;X
+CZE_armor_brigade_1;斯柯达 SP-II-b;;;;;;;;;;X
+CZE_armor_brigade_2;斯柯达 SP-III;;;;;;;;;;X
+CZE_armor_brigade_3;太脱拉 T-III;;;;;;;;;;X
+CZE_armor_brigade_4;E-38;;;;;;;;;;X
+CZE_armor_brigade_5;E-50 标准豹;;;;;;;;;;X
+CZE_interceptor_0;阿维亚 B.534;;;;;;;;;;X
+CZE_interceptor_1;阿维亚 B.135;;;;;;;;;;X
+CZE_interceptor_2;阿维亚 S.199;;;;;;;;;;X
+CZE_interceptor_5;阿维亚 S.92;;;;;;;;;;X
+CZE_interceptor_6;阿维亚 CS.102;;;;;;;;;;X
+CZE_tactical_bomber_0;布洛克 MB.200;;;;;;;;;;X
+CZE_tactical_bomber_1;安诺 A.300;;;;;;;;;;X
+CZE_tactical_bomber_5;阿维亚 B.228;;;;;;;;;;X
+CZE_cas_0;阿维亚 A.304;;;;;;;;;;X
+DDR_armor_brigade_4;T-34 m.44;;;;;;;;;;X
+DDR_armor_brigade_5;T-44;;;;;;;;;;X
+DDR_armor_brigade_6;T-54;;;;;;;;;;X
+DDR_multi_role_2;拉-7;;;;;;;;;;X
+DDR_multi_role_3;米格-9;;;;;;;;;;X
+DDR_multi_role_4;米格-15改;;;;;;;;;;X
+DDR_multi_role_5;米格-19;;;;;;;;;;X
+DDR_interceptor_4;雅克-3;;;;;;;;;;X
+DDR_interceptor_5;雅克-15;;;;;;;;;;X
+DDR_interceptor_6;米格-17;;;;;;;;;;X
+DDR_interceptor_7;米格-19;;;;;;;;;;X
+DDR_tactical_bomber_4;图-2;;;;;;;;;;X
+DDR_tactical_bomber_5;图-14;;;;;;;;;;X
+DDR_tactical_bomber_6;伊尔-28;;;;;;;;;;X
+DDR_cas_2;伊尔-10;;;;;;;;;;X
+DDR_cas_3;米格-15改;;;;;;;;;;X
+DDR_cas_4;安诺 L-29;;;;;;;;;;X
+DDR_cas_5;安诺 L-39;;;;;;;;;;X
+DDR_transport_plane_2;伊尔-12;;;;;;;;;;X
+DDR_transport_plane_3;伊尔-18;;;;;;;;;;X
+DDR_destroyer_4;旅沪级;;;;;;;;;;X
+DDR_destroyer_5;旅海级;;;;;;;;;;X
+DDR_destroyer_6;克鲁普尼级;;;;;;;;;;X
+DDR_submarine_4;G级;;;;;;;;;;X
+DDR_submarine_5;明级;;;;;;;;;;X
+DEN_light_armor_brigade_0;FP-5;;;;;;;;;;X
+DEN_light_armor_brigade_1;AMR-33;;;;;;;;;;X
+DEN_light_armor_brigade_2;AMX-38;;;;;;;;;;X
+DEN_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+DEN_armor_brigade_1;雷诺 R35;;;;;;;;;;X
+DEN_armor_brigade_2;索玛 S35;;;;;;;;;;X
+DEN_armor_brigade_3;M4A1 '谢尔曼';;;;;;;;;;X
+DEN_armor_brigade_4;M4/E8 '谢尔曼';;;;;;;;;;X
+DEN_armor_brigade_5;M26 '潘兴';;;;;;;;;;X
+DEN_armor_brigade_7;'百夫长' Mk.5;;;;;;;;;;X
+DEN_interceptor_0;格洛斯特 '长手套';;;;;;;;;;X
+DEN_interceptor_1;福克 D.XXI;;;;;;;;;;X
+DEN_heavy_cruiser_0;尼尔斯 尤尔级;;;;;;;;;;X
+DEN_submarine_0;北欧海神级;;;;;;;;;;X
+DEN_submarine_1;达夫妮级;;;;;;;;;;X
+DFR_armor_brigade_3;PzKpfw.IV;;;;;;;;;;X
+DFR_armor_brigade_4;PzKpfw.V 豹;;;;;;;;;;X
+DFR_armor_brigade_5;M26 '潘兴';;;;;;;;;;X
+DFR_armor_brigade_6;M-47 '巴顿';;;;;;;;;;X
+DFR_armor_brigade_7;美洲豹 1;;;;;;;;;;X
+DFR_multi_role_1;梅塞施密特 Bf-109G '古斯塔夫';;;;;;;;;;X
+DFR_multi_role_2;武尔夫 Fw-190D;;;;;;;;;;X
+DFR_multi_role_3;梅塞施密特 Me-262 '燕子';;;;;;;;;;X
+DFR_multi_role_4;共和 F-84F '雷电';;;;;;;;;;X
+DFR_multi_role_5;洛克希德 F-104G '星式';;;;;;;;;;X
+DFR_interceptor_3;武尔夫 Fw-190A;;;;;;;;;;X
+DFR_interceptor_4;梅塞施密特 Bf-109K '选帝侯';;;;;;;;;;X
+DFR_interceptor_5;亨克尔 He-162 '火蜥蜴';;;;;;;;;;X
+DFR_interceptor_6;CL-13 '佩刀';;;;;;;;;;X
+DFR_interceptor_7;洛克希德 F-104G '星式';;;;;;;;;;X
+DFR_tactical_bomber_3;容克 Ju-88;;;;;;;;;;X
+DFR_tactical_bomber_4;容克 Ju-388;;;;;;;;;;X
+DFR_tactical_bomber_5;阿拉多 Ar-234B '闪电';;;;;;;;;;X
+DFR_tactical_bomber_6;容克 Ju-287;;;;;;;;;;X
+DFR_naval_bomber_1;武尔夫 Fw-200C;;;;;;;;;;X
+DFR_naval_bomber_2;容克 Ju-290;;;;;;;;;;X
+DFR_naval_bomber_3;'塘鹅';;;;;;;;;;X
+DFR_naval_bomber_4;'大西洋';;;;;;;;;;X
+DFR_cas_1;容克 Ju-87G '斯图卡';;;;;;;;;;X
+DFR_cas_2;亨舍尔 Hs-129;;;;;;;;;;X
+DFR_cas_3;霍克 '海鹰';;;;;;;;;;X
+DFR_cas_4;菲亚特 G-91R;;;;;;;;;;X
+DFR_cas_5;道尼尔 '阿尔法喷气';;;;;;;;;;X
+DFR_transport_plane_1;阿拉多 Ar-232;;;;;;;;;;X
+DFR_transport_plane_2;梅塞施密特 Me-323D '巨人';;;;;;;;;;X
+DFR_transport_plane_3;容克 Ju-352;;;;;;;;;;X
+DFR_transport_plane_4;'协同' C-160;;;;;;;;;;X
+DFR_battleship_3;俾斯麦级;;;;;;;;;;X
+DFR_battleship_4;H级;;;;;;;;;;X
+DFR_light_cruiser_3;纽伦堡级;;;;;;;;;;X
+DFR_light_cruiser_4;M级;;;;;;;;;;X
+DFR_heavy_cruiser_3;希佩尔海军上将级;;;;;;;;;;X
+DFR_battlecruiser_3;沙恩霍斯特级;;;;;;;;;;X
+DFR_battlecruiser_4;P级;;;;;;;;;;X
+DFR_destroyer_3;Z23级;;;;;;;;;;X
+DFR_destroyer_4;Z46级;;;;;;;;;;X
+DFR_destroyer_5;汉堡级;;;;;;;;;;X
+DFR_destroyer_6;鲁特金斯级;;;;;;;;;;X
+DFR_carrier_2;格拉夫.齐柏林级;;;;;;;;;;X
+DFR_submarine_3;IX级;;;;;;;;;;X
+DFR_submarine_4;XXI级;;;;;;;;;;X
+DFR_submarine_5;201级;;;;;;;;;;X
+DOM_light_armor_brigade_0;CV-33;;;;;;;;;;X
+DOM_light_armor_brigade_1;M2A4;;;;;;;;;;X
+DOM_light_armor_brigade_2;M5 '斯图亚特';;;;;;;;;;X
+DOM_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+DOM_armor_brigade_1;维克斯 Mk.E;;;;;;;;;;X
+DOM_armor_brigade_2;M3 '李';;;;;;;;;;X
+DOM_armor_brigade_3;M4A1 '谢尔曼';;;;;;;;;;X
+DOM_armor_brigade_4;M4/E8 '谢尔曼';;;;;;;;;;X
+DOM_armor_brigade_5;M26 '潘兴';;;;;;;;;;X
+DOM_interceptor_0;沃特 O2U '海盗船';;;;;;;;;;X
+ECU_light_armor_brigade_0;CV-33;;;;;;;;;;X
+ECU_light_armor_brigade_1;M2A4;;;;;;;;;;X
+ECU_light_armor_brigade_2;M5 '斯图亚特';;;;;;;;;;X
+ECU_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+ECU_armor_brigade_1;维克斯 Mk.E;;;;;;;;;;X
+ECU_armor_brigade_2;M3 '李';;;;;;;;;;X
+ECU_armor_brigade_3;M4A1 '谢尔曼';;;;;;;;;;X
+ECU_armor_brigade_4;M4/E8 '谢尔曼';;;;;;;;;;X
+ECU_armor_brigade_5;M26 '潘兴';;;;;;;;;;X
+ECU_interceptor_0;寇蒂斯 CW-19R'麻雀';;;;;;;;;;X
+ECU_interceptor_1;寇蒂斯 CW-22 '隼';;;;;;;;;;X
+EGY_light_armor_brigade_0;卡登.洛伊德 Mk.VI;;;;;;;;;;X
+EGY_light_armor_brigade_1;维克斯 Mk.VIc;;;;;;;;;;X
+EGY_light_armor_brigade_2;斯图亚特 Mk.V;;;;;;;;;;X
+EGY_armor_brigade_0;快速轻型坦克;;;;;;;;;;X
+EGY_armor_brigade_1;'巡洋坦克' Mk.I A9;;;;;;;;;;X
+EGY_armor_brigade_2;Mk.VI A15 '十字军战士';;;;;;;;;;X
+EGY_armor_brigade_3;Mk.VIII A23M '克伦威尔';;;;;;;;;;X
+EGY_armor_brigade_4;A34 '彗星';;;;;;;;;;X
+EGY_armor_brigade_5;'百夫长' Mk.I;;;;;;;;;;X
+EGY_multi_role_0;海上 '烈火' Mk.I;;;;;;;;;;X
+EGY_multi_role_1;'喷火式' Mk.IX;;;;;;;;;;X
+EGY_multi_role_2;海上 '烈火' Mk.XIV;;;;;;;;;;X
+EGY_multi_role_3;'流星式' Mk.III;;;;;;;;;;X
+EGY_multi_role_4;'流星式' F.8;;;;;;;;;;X
+EGY_interceptor_0;角斗士;;;;;;;;;;X
+EGY_interceptor_1;霍克 '飓风' Mk.I;;;;;;;;;;X
+EGY_interceptor_2;霍克 '飓风' Mk.II;;;;;;;;;;X
+EGY_interceptor_3;霍克 '台风';;;;;;;;;;X
+EGY_interceptor_4;霍克 '暴风';;;;;;;;;;X
+EGY_interceptor_5;'流星式' Mk.I;;;;;;;;;;X
+EGY_interceptor_6;德.哈维兰 '吸血鬼';;;;;;;;;;X
+EGY_rocket_interceptor_0;霍克 P.1052;;;;;;;;;;X
+EGY_strategic_bomber_0;阿姆斯特朗-威特伍斯 '惠特利';;;;;;;;;;X
+EGY_strategic_bomber_1;哈利法克斯;;;;;;;;;;X
+EGY_strategic_bomber_2;兰开斯特;;;;;;;;;;X
+EGY_strategic_bomber_3;维克斯 '勇士';;;;;;;;;;X
+EGY_tactical_bomber_0;布伦汉姆 Mk.I;;;;;;;;;;X
+EGY_tactical_bomber_1;布伦汉姆 Mk.IV;;;;;;;;;;X
+EGY_tactical_bomber_2;维克斯-阿布斯特朗 '惠灵顿' Mk.III;;;;;;;;;;X
+EGY_tactical_bomber_3;布里斯托 '白金汉';;;;;;;;;;X
+EGY_tactical_bomber_4;德.哈维兰 '蚁式' B.XVI;;;;;;;;;;X
+EGY_tactical_bomber_5;德.哈维兰 '蛇毒';;;;;;;;;;X
+EGY_naval_bomber_0;洛克希德 '哈德森';;;;;;;;;;X
+EGY_naval_bomber_1;布里斯托尔 '波弗特';;;;;;;;;;X
+EGY_naval_bomber_2;布里斯托 '恶棍';;;;;;;;;;X
+EGY_naval_bomber_3;海上 '袭击者';;;;;;;;;;X
+EGY_cas_0;费尔利 '战争';;;;;;;;;;X
+EGY_cas_1;伏尔提 '飓风' Mk.IV;;;;;;;;;;X
+EGY_cas_2;波弗特战斗机;;;;;;;;;;X
+EGY_transport_plane_0;阿姆斯特朗-威特伍斯 AW.41 '阿尔博马里';;;;;;;;;;X
+EGY_transport_plane_1;道古拉斯 '达科他';;;;;;;;;;X
+EGY_transport_plane_2;爱维罗 685 '约克';;;;;;;;;;X
+#;;;;;;;;;;;X
+ENG_light_armor_brigade_0;卡登.洛伊德 Mk.VI;;;;;;;;;;X
+ENG_light_armor_brigade_1;维克斯 Mk.VIc;;;;;;;;;;X
+ENG_light_armor_brigade_2;斯图亚特 Mk.V;;;;;;;;;;X
+ENG_armor_brigade_0;快速轻型坦克;;;;;;;;;;X
+ENG_armor_brigade_1;'巡洋坦克' Mk.I A9;;;;;;;;;;X
+ENG_armor_brigade_2;Mk.VI A15 '十字军战士';;;;;;;;;;X
+ENG_armor_brigade_3;萤火虫;;;;;;;;;;X
+ENG_armor_brigade_4;Mk.VIII A23M 克伦威尔;;;;;;;;;;X
+ENG_armor_brigade_5;A34 彗星;;;;;;;;;;X
+ENG_armor_brigade_6;'百夫长' Mk.I;;;;;;;;;;X
+ENG_armor_brigade_7;'百夫长' Mk.V;;;;;;;;;;X
+ENG_heavy_armor_brigade_0;'玛蒂尔达' Mk.II;;;;;;;;;;X
+ENG_heavy_armor_brigade_1;Mk.IV A22 '丘吉尔' Mk.I;;;;;;;;;;X
+ENG_heavy_armor_brigade_2;Mk.IV A22 '丘吉尔' Mk.VII;;;;;;;;;;X
+ENG_heavy_armor_brigade_3;黑亲王丘吉尔;;;;;;;;;;X
+ENG_super_heavy_armor_brigade_0;A39 '玄武';;;;;;;;;;X
+ENG_multi_role_0;海上 '烈火' Mk.I;;;;;;;;;;X
+ENG_multi_role_1;'喷火式' Mk.IX;;;;;;;;;;X
+ENG_multi_role_2;海上 '烈火' Mk.XIV;;;;;;;;;;X
+ENG_multi_role_3;'流星式' Mk.III;;;;;;;;;;X
+ENG_multi_role_4;'流星式' F.8;;;;;;;;;;X
+ENG_multi_role_5;标枪;;;;;;;;;;X
+ENG_interceptor_0;角斗士;;;;;;;;;;X
+ENG_interceptor_1;霍克 '飓风' Mk.I;;;;;;;;;;X
+ENG_interceptor_2;霍克 '飓风' Mk.II;;;;;;;;;;X
+ENG_interceptor_3;霍克 '台风';;;;;;;;;;X
+ENG_interceptor_4;霍克 '暴风';;;;;;;;;;X
+ENG_interceptor_5;'流星式' Mk.I;;;;;;;;;;X
+ENG_interceptor_6;德.哈维兰 '吸血鬼';;;;;;;;;;X
+ENG_interceptor_7;英国 '闪电';;;;;;;;;;X
+ENG_rocket_interceptor_0;霍克 P.1052;;;;;;;;;;X
+ENG_strategic_bomber_0;阿姆斯特朗-威特伍斯 '惠特利';;;;;;;;;;X
+ENG_strategic_bomber_1;哈利法克斯;;;;;;;;;;X
+ENG_strategic_bomber_2;兰开斯特;;;;;;;;;;X
+ENG_strategic_bomber_3;维克斯 '勇士';;;;;;;;;;X
+ENG_strategic_bomber_4;阿弗洛 '火神';;;;;;;;;;X
+ENG_strategic_bomber_5;汉德利-佩奇 '胜利者';;;;;;;;;;X
+ENG_tactical_bomber_0;布伦汉姆 Mk.I;;;;;;;;;;X
+ENG_tactical_bomber_1;汉德利-佩济 '汉普顿';;;;;;;;;;X
+ENG_tactical_bomber_2;维克斯-阿布斯特朗 '惠灵顿' Mk.III;;;;;;;;;;X
+ENG_tactical_bomber_3;布里斯托 '白金汉';;;;;;;;;;X
+ENG_tactical_bomber_4;德.哈维兰 '蚁式' B.XVI;;;;;;;;;;X
+ENG_tactical_bomber_5;德.哈维兰 '蛇毒';;;;;;;;;;X
+ENG_tactical_bomber_6;英国 '堪培拉';;;;;;;;;;X
+ENG_naval_bomber_0;洛克希德 '哈德森';;;;;;;;;;X
+ENG_naval_bomber_1;布里斯托尔 '波弗特';;;;;;;;;;X
+ENG_naval_bomber_2;布里斯托 '恶棍';;;;;;;;;;X
+ENG_naval_bomber_3;海上 '袭击者';;;;;;;;;;X
+ENG_naval_bomber_4;阿弗洛 '沙克尔顿';;;;;;;;;;X
+ENG_cas_0;费尔利 '战争';;;;;;;;;;X
+ENG_cas_1;霍克 '飓风' Mk.IV;;;;;;;;;;X
+ENG_cas_2;波弗特战斗机;;;;;;;;;;X
+ENG_cas_3;德.哈维兰 '蛇毒';;;;;;;;;;X
+ENG_cas_4;霍克 '猎手';;;;;;;;;;X
+ENG_cas_5;布莱克本 '掠夺者';;;;;;;;;;X
+ENG_transport_plane_0;阿姆斯特朗-威特伍斯 AW.41 '阿尔博马里';;;;;;;;;;X
+ENG_transport_plane_1;道古拉斯 '达科他';;;;;;;;;;X
+ENG_transport_plane_2;爱维罗 685 '约克';;;;;;;;;;X
+ENG_transport_plane_3;布莱克本 '比弗利';;;;;;;;;;X
+ENG_transport_plane_4;贝尔法斯特;;;;;;;;;;X
+ENG_flying_rocket_0;雷神;;;;;;;;;;X
+ENG_flying_rocket_1;蓝霹雳;;;;;;;;;;X
+ENG_battleship_1;伊丽莎白女王级;;;;;;;;;;X
+ENG_battleship_2;纳尔逊级;;;;;;;;;;X
+ENG_battleship_3;乔治五世级;;;;;;;;;;X
+ENG_battleship_4;狮级;;;;;;;;;;X
+ENG_battleship_5;前卫级;;;;;;;;;;X
+ENG_light_cruiser_0;加里东级;;;;;;;;;;X
+ENG_light_cruiser_1;'祖母绿'级;;;;;;;;;;X
+ENG_light_cruiser_2;利安得级;;;;;;;;;;X
+ENG_light_cruiser_3;南普顿级;;;;;;;;;;X
+ENG_light_cruiser_4;殖民地级;;;;;;;;;;X
+ENG_light_cruiser_5;牛头怪级;;;;;;;;;;X
+ENG_light_cruiser_6;虎级;;;;;;;;;;X
+ENG_heavy_cruiser_1;肯特级;;;;;;;;;;X
+ENG_heavy_cruiser_2;萨里级;;;;;;;;;;X
+ENG_battlecruiser_1;声望级;;;;;;;;;;X
+ENG_battlecruiser_2;胡德级;;;;;;;;;;X
+ENG_battlecruiser_3;G3级;;;;;;;;;;X
+ENG_destroyer_0;V级;;;;;;;;;;X
+ENG_destroyer_1;A级;;;;;;;;;;X
+ENG_destroyer_2;部族级;;;;;;;;;;X
+ENG_destroyer_3;战斗级;;;;;;;;;;X
+ENG_destroyer_4;勇猛级;;;;;;;;;;X
+ENG_destroyer_5;郡级;;;;;;;;;;X
+ENG_destroyer_6;布里斯托级;;;;;;;;;;X
+ENG_carrier_1;勇敢级;;;;;;;;;;X
+ENG_carrier_2;皇家方舟级;;;;;;;;;;X
+ENG_carrier_3;光辉级;;;;;;;;;;X
+ENG_carrier_4;怨仇级;;;;;;;;;;X
+ENG_carrier_5;鹰级;;;;;;;;;;X
+ENG_carrier_6;马耳他级;;;;;;;;;;X
+ENG_carrier_7;CVA-01级;;;;;;;;;;X
+ENG_escort_carrier_0;赫尔墨斯级;;;;;;;;;;X
+ENG_escort_carrier_1;鹰级;;;;;;;;;;X
+ENG_escort_carrier_2;独角兽级;;;;;;;;;;X
+ENG_escort_carrier_3;墨尔本级;;;;;;;;;;X
+ENG_escort_carrier_4;半人马级;;;;;;;;;;X
+ENG_escort_carrier_5;无畏级;;;;;;;;;;X
+ENG_submarine_0;H-艇级;;;;;;;;;;X
+ENG_submarine_1;剑鱼级;;;;;;;;;;X
+ENG_submarine_2;海神级;;;;;;;;;;X
+ENG_submarine_3;A-艇级;;;;;;;;;;X
+ENG_submarine_4;探险者级;;;;;;;;;;X
+ENG_submarine_5;海豚级;;;;;;;;;;X
+ENG_submarine_6;无畏级;;;;;;;;;;X
+ENG_nuclear_submarine_0;无畏级;;;;;;;;;;X
+ENG_sp_artillery_brigade_2;主教;;;;;;;;;;X
+ENG_sp_artillery_brigade_3;司事;;;;;;;;;;X
+ENG_rocket_artillery_brigade_0;陆地床垫;;;;;;;;;;X
+ENG_anti_tank_brigade_0;2磅OQF Mk.IX;;;;;;;;;;X
+ENG_anti_tank_brigade_1;6磅OQF Mk.II;;;;;;;;;;X
+ENG_anti_tank_brigade_2;17磅炮;;;;;;;;;;X
+ENG_anti_air_brigade_0;伯福斯40毫米炮;;;;;;;;;;X
+ENG_tank_destroyer_brigade_0;2磅炮;;;;;;;;;;X
+ENG_tank_destroyer_brigade_1;执事;;;;;;;;;;X
+ENG_tank_destroyer_brigade_2;箭手;;;;;;;;;;X
+ENG_armored_car_brigade_0;亨伯 Mk.I;;;;;;;;;;X
+ENG_armored_car_brigade_1;'猎鹿犬' Mk.I;;;;;;;;;;X
+ENG_armored_car_brigade_2;'雪貂' Mk 1/2;;;;;;;;;;X
+ENG_cag_0;'猎迷' / '剑鱼';;;;;;;;;;X
+ENG_cag_1;'猎迷' / '剑鱼';;;;;;;;;;X
+ENG_cag_2;'海斗士' / '剑鱼';;;;;;;;;;X
+ENG_cag_3;'海斗士' / '贼鸥' / '剑鱼';;;;;;;;;;X
+ENG_cag_4;'管鼻燕' / '贼鸥' / '青花鱼';;;;;;;;;;X
+ENG_cag_5;'萤火虫' / '梭鱼';;;;;;;;;;X
+ENG_cag_6;'海火' / '火炬';;;;;;;;;;X
+ENG_cag_7;'海怒' / '双足飞龙';;;;;;;;;;X
+ENG_cag_8;'海毒' / '袭击者';;;;;;;;;;X
+ENG_cag_9;'海鹰' (F-1) / '海鹰' (FB-3);;;;;;;;;;X
+#;;;;;;;;;;;X
+EST_light_armor_brigade_0;TK-S;;;;;;;;;;X
+EST_light_armor_brigade_1;7TPjw;;;;;;;;;;X
+EST_light_armor_brigade_2;10TPjw;;;;;;;;;;X
+EST_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+EST_armor_brigade_1;T-28;;;;;;;;;;X
+EST_armor_brigade_2;14TPjw;;;;;;;;;;X
+EST_armor_brigade_3;Mk.VIII A23M '克伦威尔';;;;;;;;;;X
+EST_armor_brigade_4;A34 '彗星';;;;;;;;;;X
+EST_armor_brigade_5;'百夫长' Mk.I;;;;;;;;;;X
+EST_interceptor_0;布里斯托 '斗牛犬' II;;;;;;;;;;X
+EST_destroyer_0;兰纽克级;;;;;;;;;;X
+EST_submarine_0;卡勒瓦级;;;;;;;;;;X
+ETH_light_armor_brigade_0;CV-33;;;;;;;;;;X
+ETH_light_armor_brigade_1;维克斯 6 ton.;;;;;;;;;;X
+ETH_light_armor_brigade_2;M5 '斯图亚特';;;;;;;;;;X
+ETH_armor_brigade_0;菲亚特 2000;;;;;;;;;;X
+ETH_armor_brigade_1;M.13/39;;;;;;;;;;X
+ETH_armor_brigade_2;M3 '李';;;;;;;;;;X
+ETH_armor_brigade_3;M4A1 '谢尔曼';;;;;;;;;;X
+ETH_armor_brigade_4;M4/E8 '谢尔曼';;;;;;;;;;X
+ETH_armor_brigade_5;M26 '潘兴';;;;;;;;;;X
+ETH_interceptor_0;福克 F.VII;;;;;;;;;;X
+FIN_light_armor_brigade_0;特拉克托 nr.53;;;;;;;;;;X
+FIN_light_armor_brigade_1;T-26;;;;;;;;;;X
+FIN_light_armor_brigade_2;兰德斯沃克 L-60;;;;;;;;;;X
+FIN_armor_brigade_0;T-18;;;;;;;;;;X
+FIN_armor_brigade_1;雷诺 R35;;;;;;;;;;X
+FIN_armor_brigade_2;BT43;;;;;;;;;;X
+FIN_armor_brigade_3;兰德斯沃克 L-63;;;;;;;;;;X
+FIN_armor_brigade_4;T-34 m.44;;;;;;;;;;X
+FIN_multi_role_0;VL Myrsky;;;;;;;;;;X
+FIN_multi_role_1;梅塞施密特 Bf-109G '古斯塔夫';;;;;;;;;;X
+FIN_multi_role_2;VL Pyremyrsky;;;;;;;;;;X
+FIN_interceptor_0;角斗士;;;;;;;;;;X
+FIN_interceptor_1;福克 D.XXI;;;;;;;;;;X
+FIN_interceptor_2;霍克 '飓风' Mk.II;;;;;;;;;;X
+FIN_interceptor_3;VL 比乌力;;;;;;;;;;X
+FIN_interceptor_4;VL 迈斯盖 II;;;;;;;;;;X
+FIN_tactical_bomber_0;布伦汉姆 Mk.I;;;;;;;;;;X
+FIN_tactical_bomber_1;布伦汉姆 Mk.IV;;;;;;;;;;X
+FIN_tactical_bomber_2;亨克尔 He-111;;;;;;;;;;X
+FIN_tactical_bomber_3;容克 Ju-88;;;;;;;;;;X
+FIN_transport_plane_0;容克 Ju52/3m;;;;;;;;;;X
+FIN_heavy_cruiser_0;伊尔玛利宁级;;;;;;;;;;X
+FIN_submarine_0;萨乌克级;;;;;;;;;;X
+FIN_submarine_1;怀特辛恩级;;;;;;;;;;X
+#;;;;;;;;;;;X
+FRA_light_armor_brigade_0;雷诺 AMR 1935;;;;;;;;;;X
+FRA_light_armor_brigade_1;哈其开斯 H-39;;;;;;;;;;X
+FRA_light_armor_brigade_2;AMX R-40;;;;;;;;;;X
+FRA_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+FRA_armor_brigade_1;FCM-36;;;;;;;;;;X
+FRA_armor_brigade_2;索玛 S-35;;;;;;;;;;X
+FRA_armor_brigade_3;索玛 S-40;;;;;;;;;;X
+FRA_armor_brigade_4;ARL-44;;;;;;;;;;X
+FRA_armor_brigade_5;AMX-50;;;;;;;;;;X
+FRA_armor_brigade_6;M47 '巴顿';;;;;;;;;;X
+FRA_armor_brigade_7;AMX-30;;;;;;;;;;X
+FRA_multi_role_0;德瓦蒂纳 D.520;;;;;;;;;;X
+FRA_multi_role_1;德瓦蒂纳 D.552;;;;;;;;;;X
+FRA_multi_role_2;沃特 F4U '海盗';;;;;;;;;;X
+FRA_multi_role_3;达索 '暴风雨';;;;;;;;;;X
+FRA_multi_role_4;达索 '神秘' IIC;;;;;;;;;;X
+FRA_multi_role_5;达索 '超神秘';;;;;;;;;;X
+FRA_interceptor_0;德瓦蒂纳 D.510;;;;;;;;;;X
+FRA_interceptor_1;莫拉纳-索尼埃 MS.406;;;;;;;;;;X
+FRA_interceptor_2;布洛克 MB.152;;;;;;;;;;X
+FRA_interceptor_3;阿森纳 VG.33;;;;;;;;;;X
+FRA_interceptor_4;布洛克 MB.157;;;;;;;;;;X
+FRA_interceptor_5;东南 SE.530 '西北风';;;;;;;;;;X
+FRA_interceptor_6;达索 '神秘' IVA;;;;;;;;;;X
+FRA_interceptor_7;达索 '幻影' IIIC;;;;;;;;;;X
+FRA_rocket_interceptor_0;阿森纳尔 VG.70;;;;;;;;;;X
+FRA_strategic_bomber_0;法尔芒 F.222;;;;;;;;;;X
+FRA_strategic_bomber_1;布洛克 MB.162;;;;;;;;;;X
+FRA_strategic_bomber_2;法尔芒 F.420;;;;;;;;;;X
+FRA_strategic_bomber_4;达索 '幻影' IV;;;;;;;;;;X
+FRA_tactical_bomber_0;阿莫依特 143;;;;;;;;;;X
+FRA_tactical_bomber_1;布洛克 MB.210;;;;;;;;;;X
+FRA_tactical_bomber_2;里奥雷-奥利弗 LeO 451;;;;;;;;;;X
+FRA_tactical_bomber_5;南方 SE.202 '海鹰';;;;;;;;;;X
+FRA_tactical_bomber_6;西南 '秃鹰' II-B;;;;;;;;;;X
+FRA_naval_bomber_0;卢瓦尔 LN.401;;;;;;;;;;X
+FRA_naval_bomber_1;波泰-C.A.M.S. 141;;;;;;;;;;X
+FRA_naval_bomber_2;布雷盖 '贸易风';;;;;;;;;;X
+FRA_naval_bomber_3;布雷盖 '大西洋';;;;;;;;;;X
+FRA_naval_bomber_4;达索 '军旗' IVM;;;;;;;;;;X
+FRA_cas_0;波泰 633;;;;;;;;;;X
+FRA_cas_1;布雷盖 Br.691;;;;;;;;;;X
+FRA_cas_3;东南 SE.535 '西北风';;;;;;;;;;X
+FRA_cas_4;达索 '军旗' IVM;;;;;;;;;;X
+FRA_cas_5;达索 '幻影' IIIE;;;;;;;;;;X
+FRA_transport_plane_0;布洛克 MB.221;;;;;;;;;;X
+FRA_transport_plane_2;布雷盖 Br.765 '撒哈拉';;;;;;;;;;X
+FRA_transport_plane_3;北方 诺拉特斯;;;;;;;;;;X
+FRA_transport_plane_4;'协同' C-160;;;;;;;;;;X
+FRA_battleship_0;库柏特级;;;;;;;;;;X
+FRA_battleship_1;布列塔尼级;;;;;;;;;;X
+FRA_battleship_3;黎塞留级;;;;;;;;;;X
+FRA_light_cruiser_0;普鲁东级;;;;;;;;;;X
+FRA_light_cruiser_1;迪盖.特鲁安级;;;;;;;;;;X
+FRA_light_cruiser_2;白劳易级;;;;;;;;;;X
+FRA_light_cruiser_3;拉加里森尼谢级;;;;;;;;;;X
+FRA_light_cruiser_4;葛拉斯级;;;;;;;;;;X
+FRA_light_cruiser_5;科尔伯特级;;;;;;;;;;X
+FRA_heavy_cruiser_1;杜肯级;;;;;;;;;;X
+FRA_heavy_cruiser_2;阿尔杰农级;;;;;;;;;;X
+FRA_heavy_cruiser_3;圣路易斯级;;;;;;;;;;X
+FRA_battlecruiser_3;敦克尔克级;;;;;;;;;;X
+FRA_destroyer_0;勃拉斯克级;;;;;;;;;;X
+FRA_destroyer_1;豺级;;;;;;;;;;X
+FRA_destroyer_2;猎豹级;;;;;;;;;;X
+FRA_destroyer_3;摩加多尔级;;;;;;;;;;X
+FRA_destroyer_4;絮库夫级;;;;;;;;;;X
+FRA_destroyer_5;休弗伦级;;;;;;;;;;X
+FRA_destroyer_6;阿克尼特级;;;;;;;;;;X
+FRA_carrier_1;贝亚恩级;;;;;;;;;;X
+FRA_carrier_2;霞飞级;;;;;;;;;;X
+FRA_carrier_3;PA-28级;;;;;;;;;;X
+FRA_carrier_4;克里门梭级;;;;;;;;;;X
+FRA_carrier_5;凡尔登级;;;;;;;;;;X
+FRA_carrier_9;戴高乐级;;;;;;;;;;X
+FRA_submarine_0;拉格朗日级;;;;;;;;;;X
+FRA_submarine_1;瑟希安级;;;;;;;;;;X
+FRA_submarine_2;鲨鱼级;;;;;;;;;;X
+FRA_submarine_3;莫利奥特级;;;;;;;;;;X
+FRA_submarine_4;鳗鱼级;;;;;;;;;;X
+FRA_submarine_5;水神级;;;;;;;;;;X
+FRA_submarine_6;红宝石级;;;;;;;;;;X
+FRA_nuclear_submarine_0;红宝石级;;;;;;;;;;X
+#;;;;;;;;;;;X
+GER_light_armor_brigade_0;PzKpfw.I;;;;;;;;;;X
+GER_light_armor_brigade_1;PzKpfw.IIc;;;;;;;;;;X
+GER_light_armor_brigade_2;PzKpfw.IIf;;;;;;;;;;X
+GER_armor_brigade_0;'突击装甲战车' A7V;;;;;;;;;;X
+GER_armor_brigade_1;PzKpfw.新.VI;;;;;;;;;;X
+GER_armor_brigade_2;PzKpfw.III;;;;;;;;;;X
+GER_armor_brigade_3;PzKpfw.IV;;;;;;;;;;X
+GER_armor_brigade_4;PzKpfw.V 豹;;;;;;;;;;X
+GER_armor_brigade_5;PzKpfw.VF 豹 II;;;;;;;;;;X
+GER_armor_brigade_6;E-50 标准豹;;;;;;;;;;X
+GER_armor_brigade_7;美洲豹 1;;;;;;;;;;X
+GER_multi_role_0;梅塞施密特 Bf-109F '弗朗兹';;;;;;;;;;X
+GER_multi_role_1;梅塞施密特 Bf-109G '古斯塔夫';;;;;;;;;;X
+GER_multi_role_2;武尔夫 Fw-190D;;;;;;;;;;X
+GER_multi_role_3;梅塞施密特 Me-262 '燕子';;;;;;;;;;X
+GER_multi_role_4;Go-229;;;;;;;;;;X
+GER_multi_role_5;霍顿 Ho.XIIIb;;;;;;;;;;X
+GER_interceptor_0;亨克尔 He-51;;;;;;;;;;X
+GER_interceptor_1;梅塞施密特 Bf-109D;;;;;;;;;;X
+GER_interceptor_2;梅塞施密特 Bf-109E '艾米尔';;;;;;;;;;X
+GER_interceptor_3;武尔夫 Fw-190A;;;;;;;;;;X
+GER_interceptor_4;梅塞施密特 Bf-109K '选帝侯';;;;;;;;;;X
+GER_interceptor_5;亨克尔 He-162 '火蜥蜴';;;;;;;;;;X
+GER_interceptor_6;武尔夫 Ta-183;;;;;;;;;;X
+GER_interceptor_7;里皮西 Li.P13a;;;;;;;;;;X
+GER_rocket_interceptor_0;梅塞施密特 Me-163 '彗星';;;;;;;;;;X
+GER_strategic_bomber_0;容克 Ju-89;;;;;;;;;;X
+GER_strategic_bomber_1;亨克尔 He-177 '鹰狮';;;;;;;;;;X
+GER_strategic_bomber_2;亨克尔 He-274;;;;;;;;;;X
+GER_strategic_bomber_3;容克 Ju.488;;;;;;;;;;X
+GER_strategic_bomber_4;容克 EF 132;;;;;;;;;;X
+GER_strategic_bomber_5;梅塞施密特 Me-264;;;;;;;;;;X
+GER_tactical_bomber_0;容克 Ju-52;;;;;;;;;;X
+GER_tactical_bomber_1;道尼尔 Do-17;;;;;;;;;;X
+GER_tactical_bomber_2;亨克尔 He-111;;;;;;;;;;X
+GER_tactical_bomber_3;容克 Ju-88;;;;;;;;;;X
+GER_tactical_bomber_4;容克 Ju-388;;;;;;;;;;X
+GER_tactical_bomber_5;阿拉多 Ar-234B '闪电';;;;;;;;;;X
+GER_tactical_bomber_6;容克 Ju-287;;;;;;;;;;X
+GER_naval_bomber_0;道尼尔 Do-217;;;;;;;;;;X
+GER_naval_bomber_1;武尔夫 Fw-200C;;;;;;;;;;X
+GER_naval_bomber_2;容克 Ju-290;;;;;;;;;;X
+GER_naval_bomber_3;容克 Ju-287 EF-140;;;;;;;;;;X
+GER_naval_bomber_4;'大西洋';;;;;;;;;;X
+GER_cas_0;容克 Ju-87B '斯图卡';;;;;;;;;;X
+GER_cas_1;容克 Ju-87G '斯图卡';;;;;;;;;;X
+GER_cas_2;亨舍尔 Hs-129;;;;;;;;;;X
+GER_cas_3;亨舍尔 Hs-132;;;;;;;;;;X
+GER_cas_4;容克 Ju-387 '斯图卡' II;;;;;;;;;;X
+GER_cas_5;道尼尔 '阿尔法喷气';;;;;;;;;;X
+GER_transport_plane_0;容克 Ju-52/3m '容克大婶';;;;;;;;;;X
+GER_transport_plane_1;阿拉多 Ar-232;;;;;;;;;;X
+GER_transport_plane_2;梅塞施密特 Me-323D '巨人';;;;;;;;;;X
+GER_transport_plane_3;容克 Ju-352;;;;;;;;;;X
+GER_transport_plane_4;'协同' C-160;;;;;;;;;;X
+GER_flying_bomb_0;V1;;;;;;;;;;X
+GER_flying_rocket_0;V2;;;;;;;;;;X
+GER_flying_rocket_1;V2A9;;;;;;;;;;X
+GER_flying_rocket_2;V2A10;;;;;;;;;;X
+GER_battleship_1;巴伐利亚级;;;;;;;;;;X
+GER_battleship_2;L20级;;;;;;;;;;X
+GER_battleship_3;俾斯麦级;;;;;;;;;;X
+GER_battleship_4;H级;;;;;;;;;;X
+GER_light_cruiser_0;瞪羚级;;;;;;;;;;X
+GER_light_cruiser_1;埃姆登级;;;;;;;;;;X
+GER_light_cruiser_2;K级;;;;;;;;;;X
+GER_light_cruiser_3;纽伦堡级;;;;;;;;;;X
+GER_light_cruiser_4;M级;;;;;;;;;;X
+GER_heavy_cruiser_3;希佩尔海军上将级;;;;;;;;;;X
+GER_battlecruiser_1;约克级;;;;;;;;;;X
+GER_battlecruiser_3;沙恩霍斯特级;;;;;;;;;;X
+GER_battlecruiser_4;P级;;;;;;;;;;X
+GER_destroyer_0;G7级;;;;;;;;;;X
+GER_destroyer_1;Z1级;;;;;;;;;;X
+GER_destroyer_2;Z17级;;;;;;;;;;X
+GER_destroyer_3;Z23级;;;;;;;;;;X
+GER_destroyer_4;Z46级;;;;;;;;;;X
+GER_destroyer_5;汉堡级;;;;;;;;;;X
+GER_destroyer_6;鲁特金斯级;;;;;;;;;;X
+GER_carrier_0;塞德利茨级;;;;;;;;;;X
+GER_carrier_2;格拉夫.齐柏林级;;;;;;;;;;X
+GER_submarine_0;IIA级;;;;;;;;;;X
+GER_submarine_1;IIB级;;;;;;;;;;X
+GER_submarine_2;VII级;;;;;;;;;;X
+GER_submarine_3;IX级;;;;;;;;;;X
+GER_submarine_4;XXI级;;;;;;;;;;X
+GER_submarine_5;201级;;;;;;;;;;X
+#;;;;;;;;;;;X
+GRE_light_armor_brigade_0;AMC-35;;;;;;;;;;X
+GRE_light_armor_brigade_1;哈其开斯 H35;;;;;;;;;;X
+GRE_light_armor_brigade_2;M5 '斯图亚特';;;;;;;;;;X
+GRE_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+GRE_armor_brigade_1;维克斯 Mk.E;;;;;;;;;;X
+GRE_armor_brigade_2;Mk.VI A15 '十字军战士';;;;;;;;;;X
+GRE_armor_brigade_3;Mk.VIII A23M '克伦威尔';;;;;;;;;;X
+GRE_armor_brigade_4;A34 '彗星';;;;;;;;;;X
+GRE_armor_brigade_5;'百夫长' Mk.I;;;;;;;;;;X
+GRE_armor_brigade_6;M-47 '巴顿';;;;;;;;;;X
+GRE_armor_brigade_7;M48A5 '巴顿' II;;;;;;;;;;X
+GRE_interceptor_0;角斗士;;;;;;;;;;X
+GRE_interceptor_1;PZL P.24;;;;;;;;;;X
+GRE_interceptor_2;霍克 '飓风' Mk.II;;;;;;;;;;X
+GRE_tactical_bomber_0;布伦汉姆 Mk.I;;;;;;;;;;X
+GRE_tactical_bomber_1;布伦汉姆 Mk.IV;;;;;;;;;;X
+GRE_tactical_bomber_2;维克斯-阿布斯特朗 '惠灵顿' Mk.III;;;;;;;;;;X
+GRE_naval_bomber_0;爱维罗 '安森';;;;;;;;;;X
+GRE_cas_0;费尔利 '战争';;;;;;;;;;X
+GRE_cas_1;马丁 187 巴尔的摩;;;;;;;;;;X
+GRE_light_cruiser_0;赫勒级;;;;;;;;;;X
+GRE_destroyer_0;伊德莱级;;;;;;;;;;X
+GRE_destroyer_1;瓦西列夫斯 乔尔吉奥斯级;;;;;;;;;;X
+GRE_submarine_0;凯松尼斯级;;;;;;;;;;X
+GUA_light_armor_brigade_0;CV-33;;;;;;;;;;X
+GUA_light_armor_brigade_1;M2A4;;;;;;;;;;X
+GUA_light_armor_brigade_2;M5 '斯图亚特';;;;;;;;;;X
+GUA_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+GUA_armor_brigade_1;维克斯 Mk.E;;;;;;;;;;X
+GUA_armor_brigade_2;M3 '李';;;;;;;;;;X
+GUA_armor_brigade_3;M4A1 '谢尔曼';;;;;;;;;;X
+GUA_armor_brigade_4;M4/E8 '谢尔曼';;;;;;;;;;X
+GUA_armor_brigade_5;M26 '潘兴';;;;;;;;;;X
+GUA_interceptor_0;波音 P-26;;;;;;;;;;X
+HAI_light_armor_brigade_0;CV-33;;;;;;;;;;X
+HAI_light_armor_brigade_1;M2A4;;;;;;;;;;X
+HAI_light_armor_brigade_2;M5 '斯图亚特';;;;;;;;;;X
+HAI_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+HAI_armor_brigade_1;维克斯 Mk.E;;;;;;;;;;X
+HAI_armor_brigade_2;M3 '李';;;;;;;;;;X
+HAI_armor_brigade_3;M4A1 '谢尔曼';;;;;;;;;;X
+HAI_armor_brigade_4;M4/E8 '谢尔曼';;;;;;;;;;X
+HAI_armor_brigade_5;M26 '潘兴';;;;;;;;;;X
+HOL_light_armor_brigade_0;卡登.洛伊德 M1933;;;;;;;;;;X
+HOL_light_armor_brigade_1;马蒙.哈灵顿;;;;;;;;;;X
+HOL_light_armor_brigade_2;M5 '斯图亚特';;;;;;;;;;X
+HOL_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+HOL_armor_brigade_1;维克斯 Mk.E;;;;;;;;;;X
+HOL_armor_brigade_2;Mk.VI A15 '十字军战士';;;;;;;;;;X
+HOL_armor_brigade_3;Mk.VIII A23M '克伦威尔';;;;;;;;;;X
+HOL_armor_brigade_4;A34 '彗星';;;;;;;;;;X
+HOL_armor_brigade_5;'百夫长' Mk.I;;;;;;;;;;X
+HOL_multi_role_0;库尔霍文 F.K.58;;;;;;;;;;X
+HOL_multi_role_1;福克 D.XXIII;;;;;;;;;;X
+HOL_interceptor_0;福克 D.XVII;;;;;;;;;;X
+HOL_interceptor_1;福克 D.XXI;;;;;;;;;;X
+HOL_interceptor_2;霍克 '飓风' Mk.II;;;;;;;;;;X
+HOL_interceptor_3;歇尔得 S.21;;;;;;;;;;X
+HOL_tactical_bomber_0;福克 F-7/3mM;;;;;;;;;;X
+HOL_tactical_bomber_1;福克 T.V;;;;;;;;;;X
+HOL_tactical_bomber_2;福克 T.IX;;;;;;;;;;X
+HOL_naval_bomber_0;马丁 139 W;;;;;;;;;;X
+HOL_naval_bomber_1;库尔霍文 FK.59;;;;;;;;;;X
+HOL_cas_1;8A-3N;;;;;;;;;;X
+HOL_transport_plane_0;福克 F.56;;;;;;;;;;X
+HOL_light_cruiser_1;苏门答腊级;;;;;;;;;;X
+HOL_light_cruiser_2;泽文·普罗温辛级;;;;;;;;;;X
+HOL_destroyer_1;范.根特级;;;;;;;;;;X
+HOL_destroyer_2;切克·希德斯级;;;;;;;;;;X
+HOL_submarine_0;KVIII级;;;;;;;;;;X
+HOL_submarine_1;KXI级;;;;;;;;;;X
+HOL_submarine_2;O19级;;;;;;;;;;X
+HUN_light_armor_brigade_0;CV-33;;;;;;;;;;X
+HUN_light_armor_brigade_1;38M '泰迪' II;;;;;;;;;;X
+HUN_light_armor_brigade_2;40M '猎迷';;;;;;;;;;X
+HUN_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+HUN_armor_brigade_1;40M 兹利尼;;;;;;;;;;X
+HUN_armor_brigade_2;杜兰 I;;;;;;;;;;X
+HUN_armor_brigade_3;杜兰 III;;;;;;;;;;X
+HUN_armor_brigade_4;PzKpfw.V 豹;;;;;;;;;;X
+HUN_armor_brigade_5;PzKpfw.VF 豹 II;;;;;;;;;;X
+HUN_armor_brigade_6;E-50 标准豹;;;;;;;;;;X
+HUN_multi_role_0;维斯 W.M.23'银箭';;;;;;;;;;X
+HUN_multi_role_1;梅塞施密特 Bf-109G '古斯塔夫';;;;;;;;;;X
+HUN_interceptor_0;菲亚特 CR.32 '箭';;;;;;;;;;X
+HUN_interceptor_1;亨克尔 He-112;;;;;;;;;;X
+HUN_interceptor_2;雷贾尼 RE.2000 '鹰' I;;;;;;;;;;X
+HUN_interceptor_3;武尔夫 Fw-190A;;;;;;;;;;X
+HUN_interceptor_5;瓦尔加 RMI-1;;;;;;;;;;X
+HUN_tactical_bomber_0;容克 Ju-86;;;;;;;;;;X
+HUN_tactical_bomber_1;卡波尼 Ca.310 '西南风';;;;;;;;;;X
+HUN_tactical_bomber_2;亨克尔 He-111;;;;;;;;;;X
+HUN_tactical_bomber_3;容克 Ju-88;;;;;;;;;;X
+HUN_cas_0;维斯 W.M.16 '布达佩斯';;;;;;;;;;X
+HUN_cas_1;容克 Ju-87D '斯图卡';;;;;;;;;;X
+HUN_transport_plane_0;容克 Ju-52/3m;;;;;;;;;;X
+IND_light_armor_brigade_0;卡登.洛伊德 Mk.VI;;;;;;;;;;X
+IND_light_armor_brigade_1;维克斯 Mk.VIc;;;;;;;;;;X
+IND_light_armor_brigade_2;斯图亚特 Mk.V;;;;;;;;;;X
+IND_armor_brigade_0;快速轻型坦克;;;;;;;;;;X
+IND_armor_brigade_1;'巡洋坦克' Mk.I A9;;;;;;;;;;X
+IND_armor_brigade_2;Mk.VI A15 '十字军战士';;;;;;;;;;X
+IND_armor_brigade_3;Mk.VIII A23M '克伦威尔';;;;;;;;;;X
+IND_armor_brigade_4;A34 '彗星';;;;;;;;;;X
+IND_armor_brigade_5;'百夫长' Mk.I;;;;;;;;;;X
+IND_armor_brigade_6;'百夫长' Mk.III;;;;;;;;;;X
+IND_armor_brigade_7;'百夫长' Mk.V;;;;;;;;;;X
+IND_multi_role_0;海上 '烈火' Mk.I;;;;;;;;;;X
+IND_multi_role_1;'喷火式' Mk.IX;;;;;;;;;;X
+IND_multi_role_2;海上 '烈火' Mk.XIV;;;;;;;;;;X
+IND_multi_role_3;'流星式' Mk.III;;;;;;;;;;X
+IND_multi_role_4;印度 '蚊蚋';;;;;;;;;;X
+IND_multi_role_5;印度 HF-24 '风神';;;;;;;;;;X
+IND_interceptor_0;'麇鹿式' IIA;;;;;;;;;;X
+IND_interceptor_1;霍克 '飓风' Mk.I;;;;;;;;;;X
+IND_interceptor_2;霍克 '飓风' Mk.II;;;;;;;;;;X
+IND_interceptor_3;霍克 '台风';;;;;;;;;;X
+IND_interceptor_4;霍克 '暴风';;;;;;;;;;X
+IND_interceptor_5;'流星式' Mk.I;;;;;;;;;;X
+IND_interceptor_6;德.哈维兰 '吸血鬼';;;;;;;;;;X
+IND_rocket_interceptor_0;霍克 P.1052;;;;;;;;;;X
+IND_strategic_bomber_0;阿姆斯特朗-威特伍斯 '惠特利';;;;;;;;;;X
+IND_strategic_bomber_1;改进型 B-24 '解放者';;;;;;;;;;X
+IND_strategic_bomber_3;维克斯 '勇士';;;;;;;;;;X
+IND_tactical_bomber_0;布伦汉姆 Mk.I;;;;;;;;;;X
+IND_tactical_bomber_1;汉德利-佩济 '汉普顿';;;;;;;;;;X
+IND_tactical_bomber_2;维克斯-阿布斯特朗 '惠灵顿' Mk.III;;;;;;;;;;X
+IND_tactical_bomber_3;布里斯托 '白金汉';;;;;;;;;;X
+IND_tactical_bomber_4;德.哈维兰 '蚁式' B.XVI;;;;;;;;;;X
+IND_tactical_bomber_5;德.哈维兰 '蛇毒';;;;;;;;;;X
+IND_tactical_bomber_6;英国 '堪培拉';;;;;;;;;;X
+IND_naval_bomber_0;洛克希德 '哈德森';;;;;;;;;;X
+IND_naval_bomber_1;布里斯托尔 '波弗特';;;;;;;;;;X
+IND_naval_bomber_2;布里斯托 '恶棍';;;;;;;;;;X
+IND_naval_bomber_3;海上 '袭击者';;;;;;;;;;X
+IND_cas_0;费尔利 '战争';;;;;;;;;;X
+IND_cas_1;伏尔提 '飓风' Mk.IV;;;;;;;;;;X
+IND_cas_2;波弗特战斗机;;;;;;;;;;X
+IND_cas_4;霍克 '猎手';;;;;;;;;;X
+IND_cas_5;苏-7 '装配匠';;;;;;;;;;X
+IND_transport_plane_0;阿姆斯特朗-威特伍斯 AW.41 '阿尔博马里';;;;;;;;;;X
+IND_transport_plane_1;道古拉斯 '达科他';;;;;;;;;;X
+IND_transport_plane_2;爱维罗 685 '约克';;;;;;;;;;X
+IND_transport_plane_3;费尔柴尔德 C-119G '包裹';;;;;;;;;;X
+IND_transport_plane_4;安-12;;;;;;;;;;X
+IND_light_cruiser_0;加里东级;;;;;;;;;;X
+IND_light_cruiser_1;'祖母绿'级;;;;;;;;;;X
+IND_light_cruiser_2;利安得级;;;;;;;;;;X
+IND_light_cruiser_3;南普顿级;;;;;;;;;;X
+IND_light_cruiser_4;快速级;;;;;;;;;;X
+IND_light_cruiser_5;牛头怪级;;;;;;;;;;X
+IND_heavy_cruiser_1;肯特级;;;;;;;;;;X
+IND_heavy_cruiser_2;萨里级;;;;;;;;;;X
+IND_destroyer_0;V级;;;;;;;;;;X
+IND_destroyer_1;A级;;;;;;;;;;X
+IND_destroyer_2;部族级;;;;;;;;;;X
+IND_destroyer_3;战斗级;;;;;;;;;;X
+IND_destroyer_4;勇猛级;;;;;;;;;;X
+IND_destroyer_5;郡级;;;;;;;;;;X
+IND_carrier_0;赫尔墨斯级;;;;;;;;;;X
+IND_carrier_1;勇敢级;;;;;;;;;;X
+IND_escort_carrier_3;维克兰特级;;;;;;;;;;X
+IND_escort_carrier_4;维拉特级;;;;;;;;;;X
+IND_submarine_0;H-艇级;;;;;;;;;;X
+IND_submarine_1;剑鱼级;;;;;;;;;;X
+IND_submarine_2;海神级;;;;;;;;;;X
+IND_submarine_3;A-艇级;;;;;;;;;;X
+IND_submarine_4;探险者级;;;;;;;;;;X
+IND_submarine_5;海豚级;;;;;;;;;;X
+IND_submarine_6;无畏级;;;;;;;;;;X
+IND_nuclear_submarine_0;无畏级;;;;;;;;;;X
+IRE_light_armor_brigade_0;卡登.洛伊德 Mk.VI;;;;;;;;;;X
+IRE_light_armor_brigade_1;兰德斯沃克 L-10.;;;;;;;;;;X
+IRE_light_armor_brigade_2;兰德斯沃克 L-60;;;;;;;;;;X
+IRE_armor_brigade_0;快速轻型坦克;;;;;;;;;;X
+IRE_armor_brigade_1;兰德斯沃克 L-61;;;;;;;;;;X
+IRE_armor_brigade_2;兰德斯沃克 L-62;;;;;;;;;;X
+IRE_armor_brigade_3;兰德斯沃克 L-63;;;;;;;;;;X
+IRE_armor_brigade_4;Mk.VIII A23M '克伦威尔';;;;;;;;;;X
+IRE_armor_brigade_5;'百夫长' Mk.I;;;;;;;;;;X
+IRE_multi_role_0;海上 '烈火' Mk.I;;;;;;;;;;X
+IRE_interceptor_0;角斗士;;;;;;;;;;X
+IRE_interceptor_1;霍克 '飓风' Mk.I;;;;;;;;;;X
+IRE_interceptor_2;霍克 '飓风' Mk.II;;;;;;;;;;X
+IRE_strategic_bomber_0;阿姆斯特朗-威特伍斯 '惠特利';;;;;;;;;;X
+IRE_strategic_bomber_1;哈利法克斯;;;;;;;;;;X
+IRE_tactical_bomber_0;布伦汉姆 Mk.I;;;;;;;;;;X
+IRE_tactical_bomber_1;汉德利-佩济 '汉普顿';;;;;;;;;;X
+IRE_naval_bomber_0;洛克希德 '哈德森';;;;;;;;;;X
+IRE_naval_bomber_1;布里斯托尔 '波弗特';;;;;;;;;;X
+IRE_cas_0;费尔利 '战争';;;;;;;;;;X
+IRE_transport_plane_0;阿姆斯特朗-威特伍斯 AW.41 '阿尔博马里';;;;;;;;;;X
+IRE_transport_plane_1;道古拉斯 '达科他';;;;;;;;;;X
+IRQ_light_armor_brigade_0;CV.33;;;;;;;;;;X
+IRQ_light_armor_brigade_1;维克斯 6 ton.;;;;;;;;;;X
+IRQ_light_armor_brigade_2;斯图亚特 Mk.V;;;;;;;;;;X
+IRQ_armor_brigade_0;快速轻型坦克;;;;;;;;;;X
+IRQ_armor_brigade_1;'巡洋坦克' Mk.I A9;;;;;;;;;;X
+IRQ_armor_brigade_2;Mk.VI A15 '十字军战士';;;;;;;;;;X
+IRQ_armor_brigade_3;Mk.VIII A23M '克伦威尔';;;;;;;;;;X
+IRQ_armor_brigade_4;A34 '彗星';;;;;;;;;;X
+IRQ_armor_brigade_5;'百夫长' Mk.I;;;;;;;;;;X
+IRQ_interceptor_0;角斗士;;;;;;;;;;X
+IRQ_naval_bomber_0;爱维罗 '安森';;;;;;;;;;X
+IRQ_cas_0;布雷达 Ba.65;;;;;;;;;;X
+#;;;;;;;;;;;X
+ITA_light_armor_brigade_0;CV.35;;;;;;;;;;X
+ITA_light_armor_brigade_1;L.3/38;;;;;;;;;;X
+ITA_light_armor_brigade_2;L.6/40;;;;;;;;;;X
+ITA_armor_brigade_0;菲亚特 2000;;;;;;;;;;X
+ITA_armor_brigade_1;M.11/39;;;;;;;;;;X
+ITA_armor_brigade_2;M.13/40;;;;;;;;;;X
+ITA_armor_brigade_3;M.15/42;;;;;;;;;;X
+ITA_armor_brigade_4;M.18/43 '撒哈拉';;;;;;;;;;X
+ITA_armor_brigade_7;OF-40;;;;;;;;;;X
+ITA_multi_role_0;马基 MC.202 '闪电';;;;;;;;;;X
+ITA_multi_role_1;马基 MC.205V '猎犬';;;;;;;;;;X
+ITA_multi_role_2;雷贾尼 Re.2005'人马座';;;;;;;;;;X
+ITA_multi_role_3;艾里弗 '公羊座';;;;;;;;;;X
+ITA_multi_role_4;艾里弗 '人马座';;;;;;;;;;X
+ITA_multi_role_5;艾里弗 '利昂';;;;;;;;;;X
+ITA_interceptor_0;菲亚特 CR.42 '隼';;;;;;;;;;X
+ITA_interceptor_1;马基 MC.200 '闪电';;;;;;;;;;X
+ITA_interceptor_2;雷贾尼 Re.2000 '隼';;;;;;;;;;X
+ITA_interceptor_3;雷贾尼 Re.2001 '隼' II;;;;;;;;;;X
+ITA_interceptor_4;菲亚特 G.55 '半人马座';;;;;;;;;;X
+ITA_interceptor_5;雷贾尼 Re.2007;;;;;;;;;;X
+ITA_interceptor_6;菲亚特 G-91R;;;;;;;;;;X
+ITA_interceptor_7;艾里弗 '利昂';;;;;;;;;;X
+ITA_rocket_interceptor_0;卡普隆尼 CC.2;;;;;;;;;;X
+ITA_strategic_bomber_0;比亚乔 P.108;;;;;;;;;;X
+ITA_strategic_bomber_1;比亚乔 P.112;;;;;;;;;;X
+ITA_strategic_bomber_2;比亚乔 P.114;;;;;;;;;;X
+ITA_tactical_bomber_0;卡普隆尼 Ca.111;;;;;;;;;;X
+ITA_tactical_bomber_1;菲亚特 BR.20 齐科尼亚;;;;;;;;;;X
+ITA_tactical_bomber_2;康特 Z.1007改 '翠鸟';;;;;;;;;;X
+ITA_tactical_bomber_3;康特 Z.1018 利昂;;;;;;;;;;X
+ITA_naval_bomber_0;马尔盖蒂 SM.79 '食雀鹰';;;;;;;;;;X
+ITA_naval_bomber_1;萨伏亚-马尔盖蒂 SM.84;;;;;;;;;;X
+ITA_cas_0;布雷达 Ba.65;;;;;;;;;;X
+ITA_cas_1;容克 Ju.87D 皮切亚雷罗;;;;;;;;;;X
+ITA_cas_2;IMAM Ro.57;;;;;;;;;;X
+ITA_cas_3;马基 MB.326;;;;;;;;;;X
+ITA_cas_4;菲亚特 G-91R;;;;;;;;;;X
+ITA_cas_5;艾里塔利亚 AMX;;;;;;;;;;X
+ITA_transport_plane_0;马尔盖蒂 SM.75 '袋鼠';;;;;;;;;;X
+ITA_transport_plane_1;马尔盖蒂 SM.82 '袋骨';;;;;;;;;;X
+ITA_transport_plane_2;马尔盖蒂 SM.95;;;;;;;;;;X
+ITA_transport_plane_3;菲亚特 G.12;;;;;;;;;;X
+ITA_transport_plane_4;艾里塔利亚 G.222;;;;;;;;;;X
+ITA_battleship_0;加富尔级;;;;;;;;;;X
+ITA_battleship_1;加斯奥鲁级;;;;;;;;;;X
+ITA_battleship_3;利多里奥级;;;;;;;;;;X
+ITA_light_cruiser_0;利比亚级;;;;;;;;;;X
+ITA_light_cruiser_1;古伊萨诺级;;;;;;;;;;X
+ITA_light_cruiser_2;蒙特库科利级;;;;;;;;;;X
+ITA_light_cruiser_3;阿布鲁齐级;;;;;;;;;;X
+ITA_light_cruiser_5;安德烈亚 多里亚级;;;;;;;;;;X
+ITA_light_cruiser_6;维托里奥 维内托级;;;;;;;;;;X
+ITA_heavy_cruiser_1;塔兰托级;;;;;;;;;;X
+ITA_heavy_cruiser_2;扎拉级;;;;;;;;;;X
+ITA_destroyer_0;克达通级;;;;;;;;;;X
+ITA_destroyer_1;利昂级;;;;;;;;;;X
+ITA_destroyer_2;纳维加托里级;;;;;;;;;;X
+ITA_destroyer_3;西北风级;;;;;;;;;;X
+ITA_destroyer_4;奔腾级;;;;;;;;;;X
+ITA_destroyer_5;无惧级;;;;;;;;;;X
+ITA_destroyer_6;大胆级;;;;;;;;;;X
+ITA_carrier_1;天鹰座级;;;;;;;;;;X
+ITA_submarine_0;马梅利级;;;;;;;;;;X
+ITA_submarine_1;法拉摩西卡级;;;;;;;;;;X
+ITA_submarine_2;巴拉加丁级;;;;;;;;;;X
+ITA_submarine_3;卡尔维级;;;;;;;;;;X
+ITA_submarine_4;托蒂级;;;;;;;;;;X
+ITA_submarine_5;索伦级;;;;;;;;;;X
+#;;;;;;;;;;;X
+JAP_light_armor_brigade_0;92式;;;;;;;;;;X
+JAP_light_armor_brigade_1;95式 Ha-Go;;;;;;;;;;X
+JAP_light_armor_brigade_2;98式 Ke-Ni;;;;;;;;;;X
+JAP_armor_brigade_0;雷诺 FT-17 Ko;;;;;;;;;;X
+JAP_armor_brigade_1;89式 乙;;;;;;;;;;X
+JAP_armor_brigade_2;97式 Chi-Ha;;;;;;;;;;X
+JAP_armor_brigade_3;一式 Chi-He;;;;;;;;;;X
+JAP_armor_brigade_4;三式 Chi-Nu;;;;;;;;;;X
+JAP_armor_brigade_5;四式 Chi-Re;;;;;;;;;;X
+JAP_armor_brigade_6;61式;;;;;;;;;;X
+JAP_armor_brigade_7;74式;;;;;;;;;;X
+JAP_multi_role_0;中岛 Ki-44 '钟馗';;;;;;;;;;X
+JAP_multi_role_1;三菱 J2M3 '雷电';;;;;;;;;;X
+JAP_multi_role_2;川西 N1K2-J '紫电';;;;;;;;;;X
+JAP_multi_role_3;九州 J7W2 '震电';;;;;;;;;;X
+JAP_multi_role_4;中岛 Ki-201 '火龙';;;;;;;;;;X
+JAP_multi_role_5;三菱 F-1;;;;;;;;;;X
+JAP_interceptor_0;川崎 Ki-10;;;;;;;;;;X
+JAP_interceptor_1;中岛 Ki-27 九七 战;;;;;;;;;;X
+JAP_interceptor_2;中岛 Ki-43 '隼';;;;;;;;;;X
+JAP_interceptor_3;川崎 Ki-61 '飞燕';;;;;;;;;;X
+JAP_interceptor_4;中岛 Ki-84 '疾风';;;;;;;;;;X
+JAP_interceptor_5;九州 J7W2 '震电';;;;;;;;;;X
+JAP_interceptor_6;中岛 Ki-201 '火龙';;;;;;;;;;X
+JAP_interceptor_7;三菱 F-1;;;;;;;;;;X
+JAP_rocket_interceptor_0;三菱 J8M '秋水';;;;;;;;;;X
+JAP_strategic_bomber_0;中岛 G5N '深山';;;;;;;;;;X
+JAP_strategic_bomber_1;中岛 G8N '连山';;;;;;;;;;X
+JAP_strategic_bomber_2;中岛 G10N1 '富士山';;;;;;;;;;X
+JAP_tactical_bomber_0;三菱 G3M;;;;;;;;;;X
+JAP_tactical_bomber_1;川崎 Ki-48;;;;;;;;;;X
+JAP_tactical_bomber_2;川崎 Ki-48-II;;;;;;;;;;X
+JAP_tactical_bomber_3;中岛 Ki-49 '怒龙';;;;;;;;;;X
+JAP_tactical_bomber_4;三菱 Ki-67 '飞龙';;;;;;;;;;X
+JAP_tactical_bomber_5;中岛 '橘花';;;;;;;;;;X
+JAP_tactical_bomber_6;三菱 F-1;;;;;;;;;;X
+JAP_naval_bomber_0;三菱 G3M Chukou;;;;;;;;;;X
+JAP_naval_bomber_1;三菱 G4M Ishikkiro;;;;;;;;;;X
+JAP_naval_bomber_2;川西 H8K3;;;;;;;;;;X
+JAP_naval_bomber_3;爱知 '电光';;;;;;;;;;X
+JAP_naval_bomber_4;新明和 PS-1;;;;;;;;;;X
+JAP_cas_0;三菱 Ki-51;;;;;;;;;;X
+JAP_cas_1;川崎 Ki-66;;;;;;;;;;X
+JAP_cas_2;横须贺 P1Y '银河';;;;;;;;;;X
+JAP_transport_plane_0;中岛 Ki-34;;;;;;;;;;X
+JAP_transport_plane_1;横须贺 L3Y;;;;;;;;;;X
+JAP_transport_plane_2;三菱 Ki-57;;;;;;;;;;X
+JAP_transport_plane_4;川崎 C-1;;;;;;;;;;X
+JAP_battleship_1;扶桑级;;;;;;;;;;X
+JAP_battleship_2;长门级;;;;;;;;;;X
+JAP_battleship_3;伊势级;;;;;;;;;;X
+JAP_super_heavy_battleship_0;大和级;;;;;;;;;;X
+JAP_light_cruiser_0;天龙级;;;;;;;;;;X
+JAP_light_cruiser_1;球磨级;;;;;;;;;;X
+JAP_light_cruiser_2;阿贺野级;;;;;;;;;;X
+JAP_light_cruiser_3;最上级;;;;;;;;;;X
+JAP_heavy_cruiser_1;古鹰级;;;;;;;;;;X
+JAP_heavy_cruiser_2;那智级;;;;;;;;;;X
+JAP_heavy_cruiser_3;高雄级;;;;;;;;;;X
+JAP_battlecruiser_1;金刚级;;;;;;;;;;X
+JAP_battlecruiser_2;天城级;;;;;;;;;;X
+JAP_battlecruiser_3;No13级;;;;;;;;;;X
+JAP_battlecruiser_4;B-64级;;;;;;;;;;X
+JAP_destroyer_0;峰风级;;;;;;;;;;X
+JAP_destroyer_1;吹雪级;;;;;;;;;;X
+JAP_destroyer_2;朝潮级;;;;;;;;;;X
+JAP_destroyer_3;秋月级;;;;;;;;;;X
+JAP_destroyer_4;岛风级;;;;;;;;;;X
+JAP_destroyer_5;凌波级;;;;;;;;;;X
+JAP_destroyer_6;天津风级;;;;;;;;;;X
+JAP_destroyer_7;高月级;;;;;;;;;;X
+JAP_carrier_0;凤翔级;;;;;;;;;;X
+JAP_carrier_1;赤城级;;;;;;;;;;X
+JAP_carrier_2;苍龙级;;;;;;;;;;X
+JAP_carrier_3;翔鹤级;;;;;;;;;;X
+JAP_carrier_4;大凤级;;;;;;;;;;X
+JAP_carrier_5;信浓级;;;;;;;;;;X
+JAP_seaplane_carrier_0;千岁级;;;;;;;;;;X
+JAP_escort_carrier_0;瑞凤级;;;;;;;;;;X
+JAP_submarine_0;L-艇级;;;;;;;;;;X
+JAP_submarine_1;K-艇级;;;;;;;;;;X
+JAP_submarine_2;KD-艇级;;;;;;;;;;X
+JAP_submarine_3;J-艇级;;;;;;;;;;X
+JAP_submarine_4;ST-艇级;;;;;;;;;;X
+JAP_submarine_5;Ro-100级;;;;;;;;;;X
+JAP_sp_artillery_brigade_1;一式中型坦克;;;;;;;;;;X
+JAP_sp_artillery_brigade_2;一式中型坦克 II;;;;;;;;;;X
+JAP_sp_artillery_brigade_3;四式自行榴弹炮;;;;;;;;;;X
+JAP_rocket_artillery_brigade_2;20cm 火箭炮;;;;;;;;;;X
+JAP_anti_tank_brigade_0;37mm 94式;;;;;;;;;;X
+JAP_anti_tank_brigade_1;47mm 一式;;;;;;;;;;X
+JAP_tank_destroyer_brigade_1;一式中型坦克;;;;;;;;;;X
+JAP_tank_destroyer_brigade_2;一式中型坦克 III;;;;;;;;;;X
+JAP_heavy_armor_brigade_0;四式 Chi-To;;;;;;;;;;X
+JAP_heavy_armor_brigade_1;五式 Chi-Ri;;;;;;;;;;X
+JAP_armored_car_brigade_0;92式;;;;;;;;;;X
+JAP_seaplane_1;E13A1 '零式';;;;;;;;;;X
+JAP_cag_1;A4N1;;;;;;;;;;X
+JAP_cag_2;A5M 克劳德;;;;;;;;;;X
+JAP_cag_3;A6M2 '零式';;;;;;;;;;X
+JAP_cag_4;A6M3 '零式';;;;;;;;;;X
+JAP_cag_5;A6M5 '零式';;;;;;;;;;X
+JAP_cag_6;A6M7 '零式';;;;;;;;;;X
+JAP_cag_7;A7M2 烈风;;;;;;;;;;X
+JAP_cag_8;Ki-201 '火龙';;;;;;;;;;X
+JAP_shipborne_bomber_1;D1A2 95式;;;;;;;;;;X
+JAP_shipborne_bomber_3;D3A1 99式;;;;;;;;;;X
+JAP_shipborne_bomber_5;D4Y1 '彗星';;;;;;;;;;X
+JAP_shipborne_attack_1;B2M1;;;;;;;;;;X
+JAP_shipborne_attack_3;B5N1 97式;;;;;;;;;;X
+JAP_shipborne_attack_4;B5N2 97式;;;;;;;;;;X
+JAP_shipborne_attack_5;B6N1 '天山';;;;;;;;;;X
+JAP_shipborne_attack_6;B6N2 '天山';;;;;;;;;;X
+JAP_shipborne_attack_7;B7A2;;;;;;;;;;X
+JAP_shipborne_attack_8;NE-12B '橘花';;;;;;;;;;X
+JAP_super_heavy_armor_brigade_0;O-I;;;;;;;;;;X
+JAP_mechanized_brigade_0;Ho-Ha;;;;;;;;;;X
+#;;;;;;;;;;;X
+JOR_light_armor_brigade_0;卡登.洛伊德 Mk.VI;;;;;;;;;;X
+JOR_light_armor_brigade_1;维克斯 6 ton.;;;;;;;;;;X
+JOR_light_armor_brigade_2;斯图亚特 Mk.V;;;;;;;;;;X
+JOR_armor_brigade_0;快速轻型坦克;;;;;;;;;;X
+JOR_armor_brigade_1;'巡洋坦克' Mk.I A9;;;;;;;;;;X
+JOR_armor_brigade_2;Mk.VI A15 '十字军战士';;;;;;;;;;X
+JOR_armor_brigade_3;Mk.VIII A23M '克伦威尔';;;;;;;;;;X
+JOR_armor_brigade_4;A34 '彗星';;;;;;;;;;X
+JOR_armor_brigade_5;'百夫长' Mk.I;;;;;;;;;;X
+KOR_armor_brigade_3;M4A1 '谢尔曼';;;;;;;;;;X
+KOR_armor_brigade_4;M4/E8 '谢尔曼';;;;;;;;;;X
+KOR_armor_brigade_5;M26 '潘兴';;;;;;;;;;X
+KOR_armor_brigade_6;M47 '巴顿';;;;;;;;;;X
+KOR_armor_brigade_7;M48A5 '巴顿' II;;;;;;;;;;X
+KOR_multi_role_2;P-51D '野马';;;;;;;;;;X
+KOR_multi_role_3;洛克希德 P-80 '流星';;;;;;;;;;X
+KOR_multi_role_4;北美 F-86D '佩刀';;;;;;;;;;X
+KOR_multi_role_5;北美 F-100 '超级佩刀';;;;;;;;;;X
+KOR_interceptor_4;P-51D '野马';;;;;;;;;;X
+KOR_interceptor_5;北美 F-86A '佩刀';;;;;;;;;;X
+KOR_interceptor_6;北美 F-86F '佩刀';;;;;;;;;;X
+KOR_interceptor_7;诺斯罗普 F-5A '自由战士';;;;;;;;;;X
+KOR_naval_bomber_4;格鲁曼 S-2 '跟踪者';;;;;;;;;;X
+KOR_cas_2;道格拉斯 A-26 '入侵者';;;;;;;;;;X
+KOR_cas_3;塞斯纳 A-37 '蜻蜒';;;;;;;;;;X
+KOR_transport_plane_1;C-47 '达科他';;;;;;;;;;X
+KOR_transport_plane_2;道格拉斯 C-54 '空中霸王';;;;;;;;;;X
+KOR_transport_plane_3;费尔柴尔德 C-123 '供应者';;;;;;;;;;X
+KOR_destroyer_3;弗莱彻级;;;;;;;;;;X
+KOR_destroyer_4;基林级;;;;;;;;;;X
+KOR_destroyer_5;基林级 FRAM II;;;;;;;;;;X
+KOR_destroyer_6;亚当级;;;;;;;;;;X
+KOR_submarine_3;河鲈级;;;;;;;;;;X
+KOR_submarine_4;刺尾鱼级;;;;;;;;;;X
+KOR_submarine_5;张保皋级;;;;;;;;;;X
+LAT_light_armor_brigade_0;T-27;;;;;;;;;;X
+LAT_light_armor_brigade_1;CKD LTL;;;;;;;;;;X
+LAT_light_armor_brigade_2;BT-7;;;;;;;;;;X
+LAT_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+LAT_armor_brigade_1;T-28;;;;;;;;;;X
+LAT_armor_brigade_2;BT-7M;;;;;;;;;;X
+LAT_armor_brigade_3;T-34 m.41;;;;;;;;;;X
+LAT_armor_brigade_4;T-34 m.44;;;;;;;;;;X
+LAT_interceptor_0;角斗士;;;;;;;;;;X
+LAT_submarine_0;罗尼斯级;;;;;;;;;;X
+LEB_light_armor_brigade_0;雷诺 AMR 1935;;;;;;;;;;X
+LEB_light_armor_brigade_1;哈其开斯 H-39;;;;;;;;;;X
+LEB_light_armor_brigade_2;AMX R-40;;;;;;;;;;X
+LEB_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+LEB_armor_brigade_1;FCM-36;;;;;;;;;;X
+LEB_armor_brigade_2;索玛 S-35;;;;;;;;;;X
+LEB_armor_brigade_3;索玛 S-40;;;;;;;;;;X
+LEB_armor_brigade_4;雷诺 G1R;;;;;;;;;;X
+LIB_light_armor_brigade_0;M1A2;;;;;;;;;;X
+LIB_light_armor_brigade_1;M3 '斯图亚特';;;;;;;;;;X
+LIB_light_armor_brigade_2;M5 '斯图亚特';;;;;;;;;;X
+LIB_armor_brigade_0;马克 VIII '自由';;;;;;;;;;X
+LIB_armor_brigade_1;T4E1;;;;;;;;;;X
+LIB_armor_brigade_2;M3 '李';;;;;;;;;;X
+LIB_armor_brigade_3;M4A1 '谢尔曼';;;;;;;;;;X
+LIB_armor_brigade_4;M4/E8 '谢尔曼';;;;;;;;;;X
+LIB_armor_brigade_5;M26 '潘兴';;;;;;;;;;X
+LIT_light_armor_brigade_0;T-27;;;;;;;;;;X
+LIT_light_armor_brigade_1;CKD LTL;;;;;;;;;;X
+LIT_light_armor_brigade_2;BT-7;;;;;;;;;;X
+LIT_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+LIT_armor_brigade_1;T-28;;;;;;;;;;X
+LIT_armor_brigade_2;BT-7M;;;;;;;;;;X
+LIT_armor_brigade_3;T-34 m.41;;;;;;;;;;X
+LIT_armor_brigade_4;T-34 m.44;;;;;;;;;;X
+LIT_interceptor_0;角斗士;;;;;;;;;;X
+LIT_cas_0;安波 VIII;;;;;;;;;;X
+MEX_light_armor_brigade_0;M1A2;;;;;;;;;;X
+MEX_light_armor_brigade_1;马蒙 赫灵顿;;;;;;;;;;X
+MEX_light_armor_brigade_2;M5 '斯图亚特';;;;;;;;;;X
+MEX_armor_brigade_0;马克 VIII '自由';;;;;;;;;;X
+MEX_armor_brigade_1;T4E1;;;;;;;;;;X
+MEX_armor_brigade_2;M3 '李';;;;;;;;;;X
+MEX_armor_brigade_3;M4A1 '谢尔曼';;;;;;;;;;X
+MEX_armor_brigade_4;M4/E8 '谢尔曼';;;;;;;;;;X
+MEX_armor_brigade_5;M26 '潘兴';;;;;;;;;;X
+MEX_interceptor_0;沃特 O2U-2M '海盗';;;;;;;;;;X
+MEX_cas_0;道格拉斯 A-24 '无畏';;;;;;;;;;X
+MEX_transport_plane_0;比奇 C-45 '计划员';;;;;;;;;;X
+MON_light_armor_brigade_0;T-27;;;;;;;;;;X
+MON_light_armor_brigade_1;BT-5;;;;;;;;;;X
+MON_light_armor_brigade_2;BT-7;;;;;;;;;;X
+MON_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+MON_armor_brigade_1;T-28;;;;;;;;;;X
+MON_armor_brigade_2;BT-7M;;;;;;;;;;X
+MON_armor_brigade_3;T-34 m.41;;;;;;;;;;X
+MON_armor_brigade_4;T-34 m.44;;;;;;;;;;X
+MON_armor_brigade_5;T-44;;;;;;;;;;X
+MON_multi_role_0;米格-3;;;;;;;;;;X
+MON_multi_role_1;拉-5;;;;;;;;;;X
+MON_interceptor_0;伊-15;;;;;;;;;;X
+MON_interceptor_1;伊-16;;;;;;;;;;X
+MON_interceptor_2;拉格-3;;;;;;;;;;X
+MON_interceptor_3;雅克-7;;;;;;;;;;X
+MON_strategic_bomber_0;TB-3;;;;;;;;;;X
+MON_strategic_bomber_1;Pe-8;;;;;;;;;;X
+MON_strategic_bomber_2;图-4;;;;;;;;;;X
+MON_tactical_bomber_0;图波列夫 SB-2;;;;;;;;;;X
+MON_tactical_bomber_1;DB-3;;;;;;;;;;X
+MON_tactical_bomber_2;雅克-4;;;;;;;;;;X
+MON_tactical_bomber_3;佩特利亚柯夫 Pe-2 '彼什卡';;;;;;;;;;X
+MON_naval_bomber_0;阿尔-2;;;;;;;;;;X
+MON_naval_bomber_1;伊尔-4;;;;;;;;;;X
+MON_cas_0;苏-2;;;;;;;;;;X
+MON_cas_1;伊尔-2M;;;;;;;;;;X
+MON_transport_plane_0;里-2;;;;;;;;;;X
+NIC_light_armor_brigade_0;CV-33;;;;;;;;;;X
+NIC_light_armor_brigade_1;M2A4;;;;;;;;;;X
+NIC_light_armor_brigade_2;M5 '斯图亚特';;;;;;;;;;X
+NIC_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+NIC_armor_brigade_1;维克斯 Mk.E;;;;;;;;;;X
+NIC_armor_brigade_2;M3 '李';;;;;;;;;;X
+NIC_armor_brigade_3;M4A1 '谢尔曼';;;;;;;;;;X
+NIC_armor_brigade_4;M4/E8 '谢尔曼';;;;;;;;;;X
+NIC_armor_brigade_5;M26 '潘兴';;;;;;;;;;X
+NIC_interceptor_0;格鲁曼 '精灵';;;;;;;;;;X
+NOR_light_armor_brigade_0;特拉克特 nr.52;;;;;;;;;;X
+NOR_light_armor_brigade_1;兰德斯沃克 L-10;;;;;;;;;;X
+NOR_light_armor_brigade_2;兰德斯沃克 L-60;;;;;;;;;;X
+NOR_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+NOR_armor_brigade_1;兰德斯沃克 L-61;;;;;;;;;;X
+NOR_armor_brigade_2;兰德斯沃克 L-62;;;;;;;;;;X
+NOR_armor_brigade_3;KW-IV;;;;;;;;;;X
+NOR_armor_brigade_4;KW-V;;;;;;;;;;X
+NOR_armor_brigade_5;M26 '潘兴';;;;;;;;;;X
+NOR_interceptor_0;福克 C.VE;;;;;;;;;;X
+NOR_interceptor_1;寇蒂斯 '鹰' 75-A;;;;;;;;;;X
+NOR_interceptor_2;'飓风式' II;;;;;;;;;;X
+NOR_cas_0;布雷达 Ba.28;;;;;;;;;;X
+NOR_heavy_cruiser_0;挪威级;;;;;;;;;;X
+NOR_destroyer_0;德劳级;;;;;;;;;;X
+NOR_destroyer_1;奥勒松级;;;;;;;;;;X
+NOR_submarine_0;A级;;;;;;;;;;X
+NOR_submarine_1;B级;;;;;;;;;;X
+NZL_light_armor_brigade_0;卡登.洛伊德 M1933;;;;;;;;;;X
+NZL_light_armor_brigade_1;维克斯 Mk.VIc;;;;;;;;;;X
+NZL_light_armor_brigade_2;斯图亚特 Mk.V;;;;;;;;;;X
+NZL_armor_brigade_0;斯科菲尔德;;;;;;;;;;X
+NZL_armor_brigade_1;'巡洋坦克' Mk.I A9;;;;;;;;;;X
+NZL_armor_brigade_2;AC1 '哨兵';;;;;;;;;;X
+NZL_armor_brigade_3;AC4 '哨兵';;;;;;;;;;X
+NZL_armor_brigade_4;Mk.VIII A23M '克伦威尔';;;;;;;;;;X
+NZL_armor_brigade_5;'百夫长' Mk.I;;;;;;;;;;X
+NZL_multi_role_0;寇蒂斯 '小鹰';;;;;;;;;;X
+NZL_multi_role_1;'喷火式' Mk.IX;;;;;;;;;;X
+NZL_multi_role_2;P-51D '野马';;;;;;;;;;X
+NZL_multi_role_3;'流星式' Mk.III;;;;;;;;;;X
+NZL_multi_role_4;'流星式' F.8;;;;;;;;;;X
+NZL_interceptor_0;霍克 '魔鬼';;;;;;;;;;X
+NZL_interceptor_1;霍克 '飓风' Mk.I;;;;;;;;;;X
+NZL_interceptor_2;霍克 '飓风' Mk.II;;;;;;;;;;X
+NZL_interceptor_3;格鲁曼 F6F '悍妇';;;;;;;;;;X
+NZL_interceptor_4;沃特 F4U '海盗';;;;;;;;;;X
+NZL_interceptor_5;'流星式' Mk.I;;;;;;;;;;X
+NZL_interceptor_6;德.哈维兰 '吸血鬼';;;;;;;;;;X
+NZL_rocket_interceptor_0;霍克 P.1052;;;;;;;;;;X
+NZL_strategic_bomber_0;阿姆斯特朗-威特伍斯 '惠特利';;;;;;;;;;X
+NZL_strategic_bomber_1;哈利法克斯;;;;;;;;;;X
+NZL_strategic_bomber_2;兰开斯特;;;;;;;;;;X
+NZL_strategic_bomber_3;维克斯 '勇士';;;;;;;;;;X
+NZL_tactical_bomber_0;布伦汉姆 Mk.I;;;;;;;;;;X
+NZL_tactical_bomber_1;汉德利-佩济 '汉普顿';;;;;;;;;;X
+NZL_tactical_bomber_2;维克斯-阿布斯特朗 '惠灵顿' Mk.III;;;;;;;;;;X
+NZL_tactical_bomber_3;米切尔 Mk.II;;;;;;;;;;X
+NZL_tactical_bomber_4;德.哈维兰 '蚁式' B.XVI;;;;;;;;;;X
+NZL_tactical_bomber_5;德.哈维兰 '蛇毒';;;;;;;;;;X
+NZL_tactical_bomber_6;英国 '堪培拉';;;;;;;;;;X
+NZL_naval_bomber_0;洛克希德 '哈德森';;;;;;;;;;X
+NZL_naval_bomber_1;洛克希德 '宣泄';;;;;;;;;;X
+NZL_naval_bomber_2;CAC CA-11 '伍默拉';;;;;;;;;;X
+NZL_cas_0;CAC CA-10 '挑战';;;;;;;;;;X
+NZL_cas_1;贝尔 P-39 '飞行眼镜蛇';;;;;;;;;;X
+NZL_cas_2;波弗特战斗机;;;;;;;;;;X
+NZL_transport_plane_0;阿姆斯特朗-威特伍斯 AW.41 '阿尔博马里';;;;;;;;;;X
+NZL_transport_plane_1;道古拉斯 '达科他';;;;;;;;;;X
+NZL_transport_plane_2;爱维罗 685 '约克';;;;;;;;;;X
+NZL_light_cruiser_0;加里东级;;;;;;;;;;X
+NZL_light_cruiser_1;'祖母绿'级;;;;;;;;;;X
+NZL_light_cruiser_2;利安得级;;;;;;;;;;X
+NZL_light_cruiser_3;南普顿级;;;;;;;;;;X
+NZL_light_cruiser_4;快速级;;;;;;;;;;X
+NZL_light_cruiser_5;牛头怪级;;;;;;;;;;X
+NZL_heavy_cruiser_1;肯特级;;;;;;;;;;X
+NZL_heavy_cruiser_2;萨里级;;;;;;;;;;X
+NZL_destroyer_0;V级;;;;;;;;;;X
+NZL_destroyer_1;A级;;;;;;;;;;X
+NZL_destroyer_2;部族级;;;;;;;;;;X
+NZL_destroyer_3;战斗级;;;;;;;;;;X
+NZL_destroyer_4;勇猛级;;;;;;;;;;X
+NZL_destroyer_5;郡级;;;;;;;;;;X
+NZL_carrier_0;赫尔墨斯级;;;;;;;;;;X
+NZL_carrier_1;勇敢级;;;;;;;;;;X
+NZL_escort_carrier_0;赫尔墨斯级;;;;;;;;;;X
+NZL_escort_carrier_1;鹰级;;;;;;;;;;X
+NZL_escort_carrier_2;独角兽级;;;;;;;;;;X
+NZL_escort_carrier_3;墨尔本级;;;;;;;;;;X
+NZL_escort_carrier_4;半人马级;;;;;;;;;;X
+NZL_escort_carrier_5;无畏级;;;;;;;;;;X
+NZL_submarine_0;H-艇级;;;;;;;;;;X
+NZL_submarine_1;剑鱼级;;;;;;;;;;X
+NZL_submarine_2;海神级;;;;;;;;;;X
+NZL_submarine_3;A-艇级;;;;;;;;;;X
+NZL_submarine_4;探险者级;;;;;;;;;;X
+NZL_submarine_5;海豚级;;;;;;;;;;X
+NZL_submarine_6;无畏级;;;;;;;;;;X
+NZL_nuclear_submarine_0;无畏级;;;;;;;;;;X
+PAN_light_armor_brigade_0;CV-33;;;;;;;;;;X
+PAN_light_armor_brigade_1;M2A4;;;;;;;;;;X
+PAN_light_armor_brigade_2;M5 '斯图亚特';;;;;;;;;;X
+PAN_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+PAN_armor_brigade_1;维克斯 Mk.E;;;;;;;;;;X
+PAN_armor_brigade_2;M3 '李';;;;;;;;;;X
+PAN_armor_brigade_3;M4A1 '谢尔曼';;;;;;;;;;X
+PAN_armor_brigade_4;M4/E8 '谢尔曼';;;;;;;;;;X
+PAN_armor_brigade_5;M26 '潘兴';;;;;;;;;;X
+PAR_light_armor_brigade_0;CV-33;;;;;;;;;;X
+PAR_light_armor_brigade_1;M2A4;;;;;;;;;;X
+PAR_light_armor_brigade_2;M5 '斯图亚特';;;;;;;;;;X
+PAR_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+PAR_armor_brigade_1;维克斯 Mk.E;;;;;;;;;;X
+PAR_armor_brigade_2;M3 '李';;;;;;;;;;X
+PAR_armor_brigade_3;M4A1 '谢尔曼';;;;;;;;;;X
+PAR_armor_brigade_4;M4/E8 '谢尔曼';;;;;;;;;;X
+PAR_armor_brigade_5;M26 '潘兴';;;;;;;;;;X
+PER_light_armor_brigade_0;卡登.洛伊德 Mk.VI;;;;;;;;;;X
+PER_light_armor_brigade_1;马蒙 赫灵顿;;;;;;;;;;X
+PER_light_armor_brigade_2;CKD AH-IV;;;;;;;;;;X
+PER_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+PER_armor_brigade_1;'巡洋坦克' Mk.I A9;;;;;;;;;;X
+PER_armor_brigade_2;LT vz.40;;;;;;;;;;X
+PER_armor_brigade_3;Mk.VIII A23M '克伦威尔';;;;;;;;;;X
+PER_armor_brigade_4;A34 '彗星';;;;;;;;;;X
+PER_armor_brigade_5;'百夫长' Mk.I;;;;;;;;;;X
+PER_interceptor_0;霍克 Fury II;;;;;;;;;;X
+PER_interceptor_1;寇蒂斯 '鹰' 75-A;;;;;;;;;;X
+PER_interceptor_2;霍克 '飓风' Mk.II;;;;;;;;;;X
+PER_naval_bomber_0;爱维罗 '安森';;;;;;;;;;X
+PHI_light_armor_brigade_0;M1A2;;;;;;;;;;X
+PHI_light_armor_brigade_1;M3 '斯图亚特';;;;;;;;;;X
+PHI_light_armor_brigade_2;M5 '斯图亚特';;;;;;;;;;X
+PHI_armor_brigade_0;马克 VIII '自由';;;;;;;;;;X
+PHI_armor_brigade_1;T4E1;;;;;;;;;;X
+PHI_armor_brigade_2;M3 '李';;;;;;;;;;X
+PHI_armor_brigade_3;M4A1 '谢尔曼';;;;;;;;;;X
+PHI_armor_brigade_4;M4/E8 '谢尔曼';;;;;;;;;;X
+PHI_armor_brigade_5;M26 '潘兴';;;;;;;;;;X
+PHI_multi_role_0;寇蒂斯 P-40B '战鹰';;;;;;;;;;X
+PHI_interceptor_0;格鲁曼 F3F 飞行炮管;;;;;;;;;;X
+PHI_interceptor_1;寇蒂斯 P-36;;;;;;;;;;X
+PHI_strategic_bomber_0;B-17 '空中堡垒';;;;;;;;;;X
+PHI_tactical_bomber_0;B-18 '大刀';;;;;;;;;;X
+PHI_tactical_bomber_1;B-23 '龙';;;;;;;;;;X
+PHI_tactical_bomber_2;A-20 '波士顿';;;;;;;;;;X
+PHI_naval_bomber_0;改进型 PBY '卡特琳娜';;;;;;;;;;X
+PHI_cas_0;A-24;;;;;;;;;;X
+PHI_transport_plane_0;道古拉斯 C-32;;;;;;;;;;X
+POL_light_armor_brigade_0;TK-S;;;;;;;;;;X
+POL_light_armor_brigade_1;7TPjw;;;;;;;;;;X
+POL_light_armor_brigade_2;10TP;;;;;;;;;;X
+POL_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+POL_armor_brigade_1;雷诺 R35;;;;;;;;;;X
+POL_armor_brigade_2;14TPjw;;;;;;;;;;X
+POL_armor_brigade_3;20TP;;;;;;;;;;X
+POL_armor_brigade_4;T-34 m.44;;;;;;;;;;X
+POL_armor_brigade_5;T-44;;;;;;;;;;X
+POL_multi_role_0;PZL P.45 '雄鹰';;;;;;;;;;X
+POL_multi_role_1;PZL P.62;;;;;;;;;;X
+POL_multi_role_4;WSK LIM-6P;;;;;;;;;;X
+POL_interceptor_0;PZL P.11c;;;;;;;;;;X
+POL_interceptor_1;PZL P.24;;;;;;;;;;X
+POL_interceptor_2;PZL P.50 '鹰';;;;;;;;;;X
+POL_interceptor_3;PZL P.63;;;;;;;;;;X
+POL_interceptor_4;PZL P.56 卡尼亚;;;;;;;;;;X
+POL_interceptor_5;WSK 米莱兹 LIM-1;;;;;;;;;;X
+POL_interceptor_6;WSK LIM-2;;;;;;;;;;X
+POL_strategic_bomber_0;布洛克 MB.162;;;;;;;;;;X
+POL_tactical_bomber_1;LWS-4 '野牛';;;;;;;;;;X
+POL_tactical_bomber_2;PZL P.37 Los;;;;;;;;;;X
+POL_tactical_bomber_3;PZL P.49 Mis;;;;;;;;;;X
+POL_naval_bomber_1;康特 Z.506B 爱侬;;;;;;;;;;X
+POL_naval_bomber_2;RWD 22;;;;;;;;;;X
+POL_cas_0;PZL P.46 Sum;;;;;;;;;;X
+POL_cas_1;PZL '鲑鱼';;;;;;;;;;X
+POL_transport_plane_0;PZL 27;;;;;;;;;;X
+POL_transport_plane_1;洛克希德 L-14H;;;;;;;;;;X
+POL_light_cruiser_0;康拉德级;;;;;;;;;;X
+POL_destroyer_1;旋风级;;;;;;;;;;X
+POL_destroyer_2;雷霆级;;;;;;;;;;X
+POL_submarine_0;狼级;;;;;;;;;;X
+POL_submarine_1;奥泽尔级;;;;;;;;;;X
+POR_light_armor_brigade_0;卡登.洛伊德 M1933;;;;;;;;;;X
+POR_light_armor_brigade_1;L.3/38;;;;;;;;;;X
+POR_light_armor_brigade_2;L.6/40;;;;;;;;;;X
+POR_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+POR_armor_brigade_1;维克斯 Mk.E;;;;;;;;;;X
+POR_armor_brigade_2;PzKpfw.III;;;;;;;;;;X
+POR_armor_brigade_3;PzKpfw.IV;;;;;;;;;;X
+POR_armor_brigade_4;M4/E8 '谢尔曼';;;;;;;;;;X
+POR_armor_brigade_5;M26 '潘兴';;;;;;;;;;X
+POR_multi_role_0;海上 '烈火' Mk.I;;;;;;;;;;X
+POR_interceptor_0;角斗士;;;;;;;;;;X
+POR_interceptor_1;寇蒂斯 '鹰' 75-A;;;;;;;;;;X
+POR_interceptor_2;'飓风' Mk.II;;;;;;;;;;X
+POR_strategic_bomber_1;改进型 B-24J '解放者';;;;;;;;;;X
+POR_tactical_bomber_0;容克 Ju-86;;;;;;;;;;X
+POR_tactical_bomber_1;布伦汉姆 Mk.IV;;;;;;;;;;X
+POR_naval_bomber_0;洛克希德 '哈德森';;;;;;;;;;X
+POR_cas_0;布雷达 Ba.65 (PW);;;;;;;;;;X
+POR_cas_1;容克 Ju-87D '斯图卡';;;;;;;;;;X
+POR_cas_2;波弗特战斗机 I;;;;;;;;;;X
+POR_transport_plane_0;容克 Ju-52/3m '容克大婶';;;;;;;;;;X
+POR_transport_plane_2;C-54 '空中霸王';;;;;;;;;;X
+POR_destroyer_0;瓜的亚纳级;;;;;;;;;;X
+POR_destroyer_1;杜罗级;;;;;;;;;;X
+POR_submarine_0;德尔芬级;;;;;;;;;;X
+PRK_armor_brigade_3;T-34 m.41;;;;;;;;;;X
+PRK_armor_brigade_4;T-34 m.44;;;;;;;;;;X
+PRK_armor_brigade_5;T-44;;;;;;;;;;X
+PRK_armor_brigade_6;T-54;;;;;;;;;;X
+PRK_armor_brigade_7;T-62;;;;;;;;;;X
+PRK_multi_role_1;拉-5;;;;;;;;;;X
+PRK_multi_role_2;拉-7;;;;;;;;;;X
+PRK_multi_role_3;拉-15;;;;;;;;;;X
+PRK_multi_role_4;米格-17;;;;;;;;;;X
+PRK_multi_role_5;歼-5;;;;;;;;;;X
+PRK_interceptor_3;雅克-7;;;;;;;;;;X
+PRK_interceptor_4;雅克-3;;;;;;;;;;X
+PRK_interceptor_5;雅克-15;;;;;;;;;;X
+PRK_interceptor_6;雅克-23;;;;;;;;;;X
+PRK_interceptor_7;米格-19;;;;;;;;;;X
+PRK_tactical_bomber_3;佩特利亚柯夫 Pe-2 '彼什卡';;;;;;;;;;X
+PRK_tactical_bomber_4;图-2;;;;;;;;;;X
+PRK_tactical_bomber_5;图-14;;;;;;;;;;X
+PRK_tactical_bomber_6;伊尔-28;;;;;;;;;;X
+PRK_naval_bomber_1;伊尔-4;;;;;;;;;;X
+PRK_naval_bomber_2;图-2T;;;;;;;;;;X
+PRK_cas_1;伊尔-2M;;;;;;;;;;X
+PRK_cas_2;伊尔-10;;;;;;;;;;X
+PRK_cas_3;米格-15改;;;;;;;;;;X
+PRK_cas_4;苏-7B '装配匠';;;;;;;;;;X
+PRK_cas_5;苏-7BM '装配匠';;;;;;;;;;X
+PRK_transport_plane_1;里-2V;;;;;;;;;;X
+PRK_transport_plane_2;伊尔-12;;;;;;;;;;X
+PRK_transport_plane_3;伊尔-18;;;;;;;;;;X
+PRK_transport_plane_4;安-12;;;;;;;;;;X
+PRK_destroyer_4;旅沪级;;;;;;;;;;X
+PRK_destroyer_5;旅海级;;;;;;;;;;X
+PRK_destroyer_6;克鲁普尼级;;;;;;;;;;X
+PRK_submarine_4;G级;;;;;;;;;;X
+PRK_submarine_5;明级;;;;;;;;;;X
+PRU_light_armor_brigade_0;T-33;;;;;;;;;;X
+PRU_light_armor_brigade_1;CKD LTP;;;;;;;;;;X
+PRU_light_armor_brigade_2;M5 '斯图亚特';;;;;;;;;;X
+PRU_armor_brigade_0;KH-70;;;;;;;;;;X
+PRU_armor_brigade_1;T4E1;;;;;;;;;;X
+PRU_armor_brigade_2;M3 '李';;;;;;;;;;X
+PRU_armor_brigade_3;M4A1 '谢尔曼';;;;;;;;;;X
+PRU_armor_brigade_4;M4/E8 '谢尔曼';;;;;;;;;;X
+PRU_armor_brigade_5;M26 '潘兴';;;;;;;;;;X
+PRU_interceptor_0;沃特 O2U '海盗船';;;;;;;;;;X
+PRU_interceptor_1;寇蒂斯 '鹰' 75-A;;;;;;;;;;X
+PRU_tactical_bomber_0;卡波尼 Ca.310 '西南风';;;;;;;;;;X
+PRU_light_cruiser_0;锡兰级;;;;;;;;;;X
+PRU_destroyer_0;古伊兹级;;;;;;;;;;X
+PRU_submarine_0;R级;;;;;;;;;;X
+ROM_light_armor_brigade_0;R-1;;;;;;;;;;X
+ROM_light_armor_brigade_1;R-2;;;;;;;;;;X
+ROM_light_armor_brigade_2;BT-7;;;;;;;;;;X
+ROM_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+ROM_armor_brigade_1;雷诺 R35;;;;;;;;;;X
+ROM_armor_brigade_2;PzKpfw.III;;;;;;;;;;X
+ROM_armor_brigade_3;PzKpfw.IV;;;;;;;;;;X
+ROM_armor_brigade_4;PzKpfw.V 豹;;;;;;;;;;X
+ROM_multi_role_0;IAR 80;;;;;;;;;;X
+ROM_multi_role_1;梅塞施密特 Bf-109G '古斯塔夫';;;;;;;;;;X
+ROM_interceptor_0;PZL P.11c;;;;;;;;;;X
+ROM_interceptor_1;霍克 '飓风' Mk.I;;;;;;;;;;X
+ROM_interceptor_2;梅塞施密特 Bf-109E '艾米尔';;;;;;;;;;X
+ROM_tactical_bomber_0;布伦汉姆 Mk.I;;;;;;;;;;X
+ROM_tactical_bomber_1;布洛克 MB.210;;;;;;;;;;X
+ROM_tactical_bomber_2;亨克尔 He-111;;;;;;;;;;X
+ROM_tactical_bomber_3;容克 Ju-88;;;;;;;;;;X
+ROM_naval_bomber_0;马尔盖蒂 SM.79 '食雀鹰';;;;;;;;;;X
+ROM_cas_0;容克 Ju-87B '斯图卡';;;;;;;;;;X
+ROM_cas_1;容克 Ju-87D '斯图卡';;;;;;;;;;X
+ROM_cas_2;亨舍尔 Hs-129;;;;;;;;;;X
+ROM_transport_plane_0;容克 Ju-52/3m '容克大婶';;;;;;;;;;X
+ROM_destroyer_0;雷吉尔 费迪南德级;;;;;;;;;;X
+ROM_submarine_0;德尔芬级;;;;;;;;;;X
+RUS_carrier_9;奥廖尔级;;;;;;;;;;X
+RUS_escort_carrier_5;莫斯科级;;;;;;;;;;X
+SAF_light_armor_brigade_0;卡登.洛伊德 Mk.VI;;;;;;;;;;X
+SAF_light_armor_brigade_1;维克斯 6 ton.;;;;;;;;;;X
+SAF_light_armor_brigade_2;斯图亚特 Mk.V;;;;;;;;;;X
+SAF_armor_brigade_0;快速轻型坦克;;;;;;;;;;X
+SAF_armor_brigade_1;'巡洋坦克' Mk.I A9;;;;;;;;;;X
+SAF_armor_brigade_2;Mk.VI A15 '十字军战士';;;;;;;;;;X
+SAF_armor_brigade_3;Mk.VIII A23M '克伦威尔';;;;;;;;;;X
+SAF_armor_brigade_4;A34 '彗星';;;;;;;;;;X
+SAF_armor_brigade_5;'百夫长' Mk.I;;;;;;;;;;X
+SAF_armor_brigade_6;'百夫长' Mk.III;;;;;;;;;;X
+SAF_armor_brigade_7;'百夫长' Mk.V;;;;;;;;;;X
+SAF_multi_role_0;海上 '烈火' Mk.I;;;;;;;;;;X
+SAF_multi_role_1;'喷火式' Mk.IX;;;;;;;;;;X
+SAF_multi_role_2;海上 '烈火' Mk.XIV;;;;;;;;;;X
+SAF_multi_role_3;'流星式' Mk.III;;;;;;;;;;X
+SAF_multi_role_4;'流星式' F.8;;;;;;;;;;X
+SAF_interceptor_0;角斗士;;;;;;;;;;X
+SAF_interceptor_1;霍克 '飓风' Mk.I;;;;;;;;;;X
+SAF_interceptor_2;霍克 '飓风' Mk.II;;;;;;;;;;X
+SAF_interceptor_3;霍克 '台风';;;;;;;;;;X
+SAF_interceptor_4;霍克 '暴风';;;;;;;;;;X
+SAF_interceptor_5;'流星式' Mk.I;;;;;;;;;;X
+SAF_interceptor_6;德.哈维兰 '吸血鬼';;;;;;;;;;X
+SAF_interceptor_7;达索 '幻影' IIIC;;;;;;;;;;X
+SAF_strategic_bomber_0;阿姆斯特朗-威特伍斯 '惠特利';;;;;;;;;;X
+SAF_strategic_bomber_1;改进型 B-24 '解放者';;;;;;;;;;X
+SAF_strategic_bomber_2;兰开斯特;;;;;;;;;;X
+SAF_strategic_bomber_3;维克斯 '勇士';;;;;;;;;;X
+SAF_tactical_bomber_0;布伦汉姆 Mk.I;;;;;;;;;;X
+SAF_tactical_bomber_1;汉德利-佩济 '汉普顿';;;;;;;;;;X
+SAF_tactical_bomber_2;维克斯-阿布斯特朗 '惠灵顿' Mk.III;;;;;;;;;;X
+SAF_tactical_bomber_3;布里斯托 '白金汉';;;;;;;;;;X
+SAF_tactical_bomber_4;德.哈维兰 '蚁式' B.XVI;;;;;;;;;;X
+SAF_tactical_bomber_5;德.哈维兰 '蛇毒';;;;;;;;;;X
+SAF_tactical_bomber_6;英国 '堪培拉';;;;;;;;;;X
+SAF_naval_bomber_0;洛克希德 '哈德森';;;;;;;;;;X
+SAF_naval_bomber_1;布里斯托尔 '波弗特';;;;;;;;;;X
+SAF_naval_bomber_2;布里斯托 '恶棍';;;;;;;;;;X
+SAF_naval_bomber_3;海上 '袭击者';;;;;;;;;;X
+SAF_naval_bomber_4;阿弗洛 '沙克尔顿';;;;;;;;;;X
+SAF_cas_0;费尔利 '战争';;;;;;;;;;X
+SAF_cas_1;伏尔提 '飓风' Mk.IV;;;;;;;;;;X
+SAF_cas_2;波弗特战斗机;;;;;;;;;;X
+SAF_cas_3;马基 '小羚羊' Mk.1;;;;;;;;;;X
+SAF_cas_4;霍克 '猎手';;;;;;;;;;X
+SAF_cas_5;布莱克本 '掠夺者';;;;;;;;;;X
+SAF_transport_plane_0;阿姆斯特朗-威特伍斯 AW.41 '阿尔博马里';;;;;;;;;;X
+SAF_transport_plane_1;道古拉斯 '达科他';;;;;;;;;;X
+SAF_transport_plane_2;爱维罗 685 '约克';;;;;;;;;;X
+SAF_light_cruiser_0;加里东级;;;;;;;;;;X
+SAF_light_cruiser_1;'祖母绿'级;;;;;;;;;;X
+SAF_light_cruiser_2;利安得级;;;;;;;;;;X
+SAF_light_cruiser_3;南普顿级;;;;;;;;;;X
+SAF_light_cruiser_4;快速级;;;;;;;;;;X
+SAF_light_cruiser_5;牛头怪级;;;;;;;;;;X
+SAF_heavy_cruiser_1;肯特级;;;;;;;;;;X
+SAF_heavy_cruiser_2;萨里级;;;;;;;;;;X
+SAF_destroyer_0;V级;;;;;;;;;;X
+SAF_destroyer_1;A级;;;;;;;;;;X
+SAF_destroyer_2;部族级;;;;;;;;;;X
+SAF_destroyer_3;战斗级;;;;;;;;;;X
+SAF_destroyer_4;勇猛级;;;;;;;;;;X
+SAF_destroyer_5;郡级;;;;;;;;;;X
+SAF_carrier_0;赫尔墨斯级;;;;;;;;;;X
+SAF_carrier_1;勇敢级;;;;;;;;;;X
+SAF_escort_carrier_0;赫尔墨斯级;;;;;;;;;;X
+SAF_escort_carrier_1;鹰级;;;;;;;;;;X
+SAF_escort_carrier_2;独角兽级;;;;;;;;;;X
+SAF_escort_carrier_3;墨尔本级;;;;;;;;;;X
+SAF_escort_carrier_4;半人马级;;;;;;;;;;X
+SAF_escort_carrier_5;无畏级;;;;;;;;;;X
+SAF_submarine_0;H-艇级;;;;;;;;;;X
+SAF_submarine_1;剑鱼级;;;;;;;;;;X
+SAF_submarine_2;海神级;;;;;;;;;;X
+SAF_submarine_3;A-艇级;;;;;;;;;;X
+SAF_submarine_4;探险者级;;;;;;;;;;X
+SAF_submarine_5;海豚级;;;;;;;;;;X
+SAF_submarine_6;无畏级;;;;;;;;;;X
+SAF_nuclear_submarine_0;无畏级;;;;;;;;;;X
+SAL_light_armor_brigade_0;CV-33;;;;;;;;;;X
+SAL_light_armor_brigade_1;M2A4;;;;;;;;;;X
+SAL_light_armor_brigade_2;M5 '斯图亚特';;;;;;;;;;X
+SAL_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+SAL_armor_brigade_1;维克斯 Mk.E;;;;;;;;;;X
+SAL_armor_brigade_2;M3 '李';;;;;;;;;;X
+SAL_armor_brigade_3;M4A1 '谢尔曼';;;;;;;;;;X
+SAL_armor_brigade_4;M4/E8 '谢尔曼';;;;;;;;;;X
+SAL_armor_brigade_5;M26 '潘兴';;;;;;;;;;X
+SAU_light_armor_brigade_0;卡登.洛伊德 Mk.VI;;;;;;;;;;X
+SAU_light_armor_brigade_1;维克斯 6 ton.;;;;;;;;;;X
+SAU_light_armor_brigade_2;斯图亚特 Mk.V;;;;;;;;;;X
+SAU_armor_brigade_0;快速轻型坦克;;;;;;;;;;X
+SAU_armor_brigade_1;'巡洋坦克' Mk.I A9;;;;;;;;;;X
+SAU_armor_brigade_2;Mk.VI A15 '十字军战士';;;;;;;;;;X
+SAU_armor_brigade_3;Mk.VIII A23M '克伦威尔';;;;;;;;;;X
+SAU_armor_brigade_4;A34 '彗星';;;;;;;;;;X
+SAU_armor_brigade_5;'百夫长' Mk.I;;;;;;;;;;X
+SCH_light_armor_brigade_0;T-27;;;;;;;;;;X
+SCH_light_armor_brigade_1;PzKpfw.I;;;;;;;;;;X
+SCH_light_armor_brigade_2;CKD AH-IV;;;;;;;;;;X
+SCH_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+SCH_armor_brigade_1;维克斯 Mk.E;;;;;;;;;;X
+SCH_armor_brigade_2;索玛 S-35;;;;;;;;;;X
+SCH_armor_brigade_3;PzKpfw.IV;;;;;;;;;;X
+SCH_armor_brigade_4;A34 '彗星';;;;;;;;;;X
+SCH_armor_brigade_5;M26 '潘兴';;;;;;;;;;X
+SCH_multi_role_0;梅塞施密特 Bf.109F '弗里茨';;;;;;;;;;X
+SCH_multi_role_1;梅塞施密特 Bf.109G '古斯塔夫';;;;;;;;;;X
+SCH_multi_role_2;P-51D '野马';;;;;;;;;;X
+SCH_interceptor_1;EKW D-3800;;;;;;;;;;X
+SCH_interceptor_2;梅塞施密特 Bf.109E '艾米尔';;;;;;;;;;X
+SCH_cas_0;EFW C-35;;;;;;;;;;X
+SCH_cas_1;EFW C-3602;;;;;;;;;;X
+SCH_cas_2;EKW C-3603;;;;;;;;;;X
+SIA_light_armor_brigade_0;卡登.洛伊德 Mk.VI;;;;;;;;;;X
+SIA_light_armor_brigade_1;95式 Ha-Go;;;;;;;;;;X
+SIA_light_armor_brigade_2;98式 Ke-Ni;;;;;;;;;;X
+SIA_armor_brigade_0;雷诺 FT-17 Ko;;;;;;;;;;X
+SIA_armor_brigade_1;维克斯 Mk.E;;;;;;;;;;X
+SIA_armor_brigade_2;97式 Chi-Ha;;;;;;;;;;X
+SIA_armor_brigade_3;一式 Chi-He;;;;;;;;;;X
+SIA_armor_brigade_5;四式 Chi-Re;;;;;;;;;;X
+SIA_interceptor_0;川崎 Ki-10;;;;;;;;;;X
+SIA_interceptor_1;中岛 Ki-27 九七 战;;;;;;;;;;X
+SIA_interceptor_2;中岛 Ki-43 '隼';;;;;;;;;;X
+SIA_naval_bomber_0;马丁 139 W;;;;;;;;;;X
+SIA_cas_0;三菱 Ki-30;;;;;;;;;;X
+SIA_light_cruiser_0;塔辛级;;;;;;;;;;X
+SIA_destroyer_0;帕峦级;;;;;;;;;;X
+SIA_submarine_0;辛桑穆达级;;;;;;;;;;X
+SLO_light_armor_brigade_0;布拉格 T-33;;;;;;;;;;X
+SLO_light_armor_brigade_1;LT vz.35;;;;;;;;;;X
+SLO_light_armor_brigade_2;LT vz.38;;;;;;;;;;X
+SLO_armor_brigade_0;克罗豪森卡 KH-50;;;;;;;;;;X
+SLO_armor_brigade_1;斯柯达 SP-II-b;;;;;;;;;;X
+SLO_armor_brigade_2;斯柯达 SP-III;;;;;;;;;;X
+SLO_armor_brigade_3;太脱拉 T-III;;;;;;;;;;X
+SLO_armor_brigade_4;E-38;;;;;;;;;;X
+SLO_armor_brigade_5;E-50 标准豹;;;;;;;;;;X
+SLO_interceptor_0;阿维亚 B.534;;;;;;;;;;X
+SLO_interceptor_1;阿维亚 B.135;;;;;;;;;;X
+SLO_interceptor_2;阿维亚 S.199;;;;;;;;;;X
+SLO_interceptor_4;梅塞施密特 Bf.109G '古斯塔夫';;;;;;;;;;X
+SLO_interceptor_5;阿维亚 S.92;;;;;;;;;;X
+SLO_interceptor_6;阿维亚 CS.102;;;;;;;;;;X
+SLO_tactical_bomber_0;布洛克 MB.200;;;;;;;;;;X
+SLO_tactical_bomber_1;安诺 A.300;;;;;;;;;;X
+SLO_tactical_bomber_5;阿维亚 B.228;;;;;;;;;;X
+SLO_cas_0;阿维亚 A.304;;;;;;;;;;X
+SLO_cas_1;容克 Ju.87D '斯图卡';;;;;;;;;;X
+#;;;;;;;;;;;X
+SOV_light_armor_brigade_0;T-27;;;;;;;;;;X
+SOV_light_armor_brigade_1;BT-5;;;;;;;;;;X
+SOV_light_armor_brigade_2;BT-7;;;;;;;;;;X
+SOV_armor_brigade_0;T-18;;;;;;;;;;X
+SOV_armor_brigade_1;T-28;;;;;;;;;;X
+SOV_armor_brigade_2;BT-7M;;;;;;;;;;X
+SOV_armor_brigade_3;T-34 m.41;;;;;;;;;;X
+SOV_armor_brigade_4;T-34 m.44;;;;;;;;;;X
+SOV_armor_brigade_5;T-44;;;;;;;;;;X
+SOV_armor_brigade_6;T-54;;;;;;;;;;X
+SOV_armor_brigade_7;T-62;;;;;;;;;;X
+SOV_multi_role_0;米格-3;;;;;;;;;;X
+SOV_multi_role_1;拉-5;;;;;;;;;;X
+SOV_multi_role_2;拉-7;;;;;;;;;;X
+SOV_multi_role_3;米格-9;;;;;;;;;;X
+SOV_multi_role_4;米格-15 '柴捆';;;;;;;;;;X
+SOV_multi_role_5;米格-19;;;;;;;;;;X
+SOV_interceptor_0;伊-15;;;;;;;;;;X
+SOV_interceptor_1;伊-16;;;;;;;;;;X
+SOV_interceptor_2;拉格-3;;;;;;;;;;X
+SOV_interceptor_3;雅克-7;;;;;;;;;;X
+SOV_interceptor_4;雅克-3;;;;;;;;;;X
+SOV_interceptor_5;雅克-15;;;;;;;;;;X
+SOV_interceptor_6;雅克-23;;;;;;;;;;X
+SOV_interceptor_7;苏-9 '捕鱼笼';;;;;;;;;;X
+SOV_rocket_interceptor_0;毕-1;;;;;;;;;;X
+SOV_strategic_bomber_0;TB-3;;;;;;;;;;X
+SOV_strategic_bomber_1;Pe-8;;;;;;;;;;X
+SOV_strategic_bomber_2;图-4;;;;;;;;;;X
+SOV_strategic_bomber_3;图-16 '獾';;;;;;;;;;X
+SOV_strategic_bomber_4;图-16E '獾';;;;;;;;;;X
+SOV_strategic_bomber_5;米亚-4 '野牛';;;;;;;;;;X
+SOV_tactical_bomber_0;图波列夫 SB-2;;;;;;;;;;X
+SOV_tactical_bomber_1;DB-3;;;;;;;;;;X
+SOV_tactical_bomber_2;雅克-4;;;;;;;;;;X
+SOV_tactical_bomber_3;佩特利亚柯夫 Pe-2 '彼什卡';;;;;;;;;;X
+SOV_tactical_bomber_4;图-2;;;;;;;;;;X
+SOV_tactical_bomber_5;图-14;;;;;;;;;;X
+SOV_tactical_bomber_6;伊尔-28;;;;;;;;;;X
+SOV_naval_bomber_0;阿尔-2;;;;;;;;;;X
+SOV_naval_bomber_1;伊尔-4;;;;;;;;;;X
+SOV_naval_bomber_2;图-2T;;;;;;;;;;X
+SOV_naval_bomber_3;别-6;;;;;;;;;;X
+SOV_naval_bomber_4;别-12 '盔甲';;;;;;;;;;X
+SOV_cas_0;苏-2;;;;;;;;;;X
+SOV_cas_1;伊尔-2M;;;;;;;;;;X
+SOV_cas_2;伊尔-10;;;;;;;;;;X
+SOV_cas_3;米格-15改;;;;;;;;;;X
+SOV_cas_4;苏-7B '装配匠';;;;;;;;;;X
+SOV_cas_5;苏-7BM '装配匠';;;;;;;;;;X
+SOV_transport_plane_0;里-2;;;;;;;;;;X
+SOV_transport_plane_1;里-2V;;;;;;;;;;X
+SOV_transport_plane_2;伊尔-12;;;;;;;;;;X
+SOV_transport_plane_3;安-8 '营地';;;;;;;;;;X
+SOV_transport_plane_4;安-12;;;;;;;;;;X
+SOV_flying_rocket_0;SS-1 '讨厌者';;;;;;;;;;X
+SOV_flying_rocket_1;SS-3 '讼棍';;;;;;;;;;X
+SOV_flying_rocket_2;SS-6 '警棍';;;;;;;;;;X
+SOV_battleship_0;甘古特级;;;;;;;;;;X
+SOV_battleship_4;苏维埃级;;;;;;;;;;X
+SOV_light_cruiser_0;工会国际级;;;;;;;;;;X
+SOV_light_cruiser_3;恰帕耶夫级;;;;;;;;;;X
+SOV_light_cruiser_4;计划 65级;;;;;;;;;;X
+SOV_light_cruiser_5;斯维尔德罗夫级;;;;;;;;;;X
+SOV_light_cruiser_6;肯达级;;;;;;;;;;X
+SOV_heavy_cruiser_0;红色高加素级;;;;;;;;;;X
+SOV_heavy_cruiser_1;基洛夫级;;;;;;;;;;X
+SOV_heavy_cruiser_4;计划 66级;;;;;;;;;;X
+SOV_heavy_cruiser_7;光荣级;;;;;;;;;;X
+SOV_battlecruiser_1;博罗第诺级;;;;;;;;;;X
+SOV_battlecruiser_3;喀琅施塔得级;;;;;;;;;;X
+SOV_battlecruiser_4;斯大林格勒级;;;;;;;;;;X
+SOV_battlecruiser_6;基洛夫 II级;;;;;;;;;;X
+SOV_destroyer_0;鞍山级;;;;;;;;;;X
+SOV_destroyer_1;旅大I级;;;;;;;;;;X
+SOV_destroyer_2;旅大II级;;;;;;;;;;X
+SOV_destroyer_3;旅大III级;;;;;;;;;;X
+SOV_destroyer_4;旅沪级;;;;;;;;;;X
+SOV_destroyer_5;旅海级;;;;;;;;;;X
+SOV_destroyer_6;克鲁普尼级;;;;;;;;;;X
+SOV_carrier_5;科斯特罗米提诺瓦级;;;;;;;;;;X
+SOV_carrier_7;旅大III级;;;;;;;;;;X
+SOV_carrier_8;乌里扬诺夫斯克级;;;;;;;;;;X
+SOV_carrier_9;奥廖尔级;;;;;;;;;;X
+SOV_escort_carrier_1;计划 71级;;;;;;;;;;X
+SOV_escort_carrier_2;计划 716级;;;;;;;;;;X
+SOV_escort_carrier_3;计划 72级;;;;;;;;;;X
+SOV_escort_carrier_4;计划 69AV级;;;;;;;;;;X
+SOV_escort_carrier_5;莫斯科级;;;;;;;;;;X
+SOV_submarine_0;M级;;;;;;;;;;X
+SOV_submarine_1;C级;;;;;;;;;;X
+SOV_submarine_2;W级;;;;;;;;;;X
+SOV_submarine_3;R级;;;;;;;;;;X
+SOV_submarine_4;G级;;;;;;;;;;X
+SOV_submarine_5;明级;;;;;;;;;;X
+SOV_submarine_6;十一月级;;;;;;;;;;X
+SOV_nuclear_submarine_0;十一月级;;;;;;;;;;X
+#;;;;;;;;;;;X
+SYR_light_armor_brigade_0;雷诺 AMR 1935;;;;;;;;;;X
+SYR_light_armor_brigade_1;哈其开斯 H-39;;;;;;;;;;X
+SYR_light_armor_brigade_2;AMX R-40;;;;;;;;;;X
+SYR_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+SYR_armor_brigade_1;FCM-36;;;;;;;;;;X
+SYR_armor_brigade_2;索玛 S-35;;;;;;;;;;X
+SYR_armor_brigade_3;索玛 S-40;;;;;;;;;;X
+SYR_armor_brigade_4;雷诺 G1R;;;;;;;;;;X
+SPA_light_armor_brigade_0;CV-33;;;;;;;;;;X
+SPA_light_armor_brigade_1;沃迪哈 I;;;;;;;;;;X
+SPA_light_armor_brigade_2;PzKpfw.IIf;;;;;;;;;;X
+SPA_armor_brigade_0;'突击装甲战车' A7V;;;;;;;;;;X
+SPA_armor_brigade_1;PzKpfw.IIc;;;;;;;;;;X
+SPA_armor_brigade_2;M.13/40;;;;;;;;;;X
+SPA_armor_brigade_3;PzKpfw.IV;;;;;;;;;;X
+SPA_armor_brigade_4;PzKpfw.V 豹;;;;;;;;;;X
+SPA_armor_brigade_5;PzKpfw.VF 豹 II;;;;;;;;;;X
+SPA_multi_role_0;梅塞施密特 Bf-109F '弗朗兹';;;;;;;;;;X
+SPA_multi_role_3;伊斯帕诺 HA-200D 超级萨耶达;;;;;;;;;;X
+SPA_multi_role_4;伊斯帕诺-絮扎 H/S-AV8S '斗牛士';;;;;;;;;;X
+SPA_interceptor_0;菲亚特 CR.32 '切利';;;;;;;;;;X
+SPA_interceptor_1;梅塞施密特 Bf-109D;;;;;;;;;;X
+SPA_interceptor_2;梅塞施密特 Bf-109E '艾米尔';;;;;;;;;;X
+SPA_interceptor_3;伊斯帕诺 HA-1109;;;;;;;;;;X
+SPA_interceptor_5;伊斯帕诺 HA-200C 萨耶达;;;;;;;;;;X
+SPA_tactical_bomber_0;容克 Ju-86;;;;;;;;;;X
+SPA_tactical_bomber_1;道尼尔 Do-17;;;;;;;;;;X
+SPA_tactical_bomber_2;亨克尔 He-111;;;;;;;;;;X
+SPA_tactical_bomber_4;伊斯帕诺 HA-300P;;;;;;;;;;X
+SPA_naval_bomber_0;萨伏亚-马切蒂 SM.79;;;;;;;;;;X
+SPA_cas_0;容克 Ju-87B '斯图卡';;;;;;;;;;X
+SPA_cas_1;容克 Ju-87D '斯图卡';;;;;;;;;;X
+SPA_transport_plane_0;卡萨 201 哈康;;;;;;;;;;X
+SPA_transport_plane_1;卡萨 207;;;;;;;;;;X
+SPA_battleship_0;西班牙级;;;;;;;;;;X
+SPA_light_cruiser_0;努涅斯级;;;;;;;;;;X
+SPA_light_cruiser_1;阿方索级;;;;;;;;;;X
+SPA_heavy_cruiser_1;坎纳利亚斯级;;;;;;;;;;X
+SPA_destroyer_0;阿尔塞多级;;;;;;;;;;X
+SPA_destroyer_1;彻卢卡级;;;;;;;;;;X
+SPA_destroyer_2;阿拉瓦级;;;;;;;;;;X
+SPA_submarine_0;B1级;;;;;;;;;;X
+SPA_submarine_1;C级;;;;;;;;;;X
+SPA_submarine_2;D级;;;;;;;;;;X
+SPR_light_armor_brigade_0;Tanque de Jugute;;;;;;;;;;X
+SPR_light_armor_brigade_1;沃迪哈 I;;;;;;;;;;X
+SPR_light_armor_brigade_2;BT-7;;;;;;;;;;X
+SPR_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+SPR_armor_brigade_1;T-28;;;;;;;;;;X
+SPR_armor_brigade_2;BT-7M;;;;;;;;;;X
+SPR_armor_brigade_3;T-34 m.41;;;;;;;;;;X
+SPR_armor_brigade_4;T-34 m.44;;;;;;;;;;X
+SPR_multi_role_3;伊斯帕诺 HA-200D 超级萨耶达;;;;;;;;;;X
+SPR_multi_role_4;伊斯帕诺-絮扎 H/S-AV8S '斗牛士';;;;;;;;;;X
+SPR_interceptor_0;伊-15 查托;;;;;;;;;;X
+SPR_interceptor_1;伊-16;;;;;;;;;;X
+SPR_interceptor_3;伊斯帕诺 HA-1109;;;;;;;;;;X
+SPR_interceptor_5;伊斯帕诺 HA-200C 萨耶达;;;;;;;;;;X
+SPR_tactical_bomber_0;SB-2 '娜塔莎';;;;;;;;;;X
+SPR_tactical_bomber_1;DB-3;;;;;;;;;;X
+SPR_tactical_bomber_2;亨克尔 He-111;;;;;;;;;;X
+SPR_tactical_bomber_4;伊斯帕诺 HA-300P;;;;;;;;;;X
+SPR_naval_bomber_0;萨伏亚-马切蒂 SM.79;;;;;;;;;;X
+SPR_cas_0;伊-15改 超级查托;;;;;;;;;;X
+SPR_transport_plane_0;卡萨 201 哈康;;;;;;;;;;X
+SPR_transport_plane_1;卡萨 207;;;;;;;;;;X
+SPR_battleship_0;西班牙级;;;;;;;;;;X
+SPR_light_cruiser_0;努涅斯级;;;;;;;;;;X
+SPR_light_cruiser_1;阿方索级;;;;;;;;;;X
+SPR_heavy_cruiser_1;坎纳利亚斯级;;;;;;;;;;X
+SPR_destroyer_0;阿尔塞多级;;;;;;;;;;X
+SPR_destroyer_1;彻卢卡级;;;;;;;;;;X
+SPR_destroyer_2;阿拉瓦级;;;;;;;;;;X
+SPR_submarine_0;B1级;;;;;;;;;;X
+SPR_submarine_1;C级;;;;;;;;;;X
+SPR_submarine_2;D级;;;;;;;;;;X
+SWE_light_armor_brigade_0;特拉克特 nr.53;;;;;;;;;;X
+SWE_light_armor_brigade_1;Strv m/31;;;;;;;;;;X
+SWE_light_armor_brigade_2;Strv m/38;;;;;;;;;;X
+SWE_armor_brigade_0;Strv m/21;;;;;;;;;;X
+SWE_armor_brigade_1;Strv m/39;;;;;;;;;;X
+SWE_armor_brigade_2;Strv m/40;;;;;;;;;;X
+SWE_armor_brigade_3;Strv m/42;;;;;;;;;;X
+SWE_armor_brigade_4;Pvkv m/43;;;;;;;;;;X
+SWE_armor_brigade_5;Strv m/81;;;;;;;;;;X
+SWE_armor_brigade_6;Strv 74;;;;;;;;;;X
+SWE_armor_brigade_7;'百夫长' Mk.5;;;;;;;;;;X
+SWE_multi_role_0;J-8 格劳斯特 '角斗士';;;;;;;;;;X
+SWE_multi_role_1;J-22 FFVS;;;;;;;;;;X
+SWE_multi_role_2;J-26 P-51D '野马';;;;;;;;;;X
+SWE_multi_role_3;J-21R 萨伯;;;;;;;;;;X
+SWE_multi_role_4;萨伯 J 29 '飞行酒桶';;;;;;;;;;X
+SWE_interceptor_0;J-11 菲亚特 CR.42 '隼';;;;;;;;;;X
+SWE_interceptor_1;J-9 塞维尔斯基 P-35;;;;;;;;;;X
+SWE_interceptor_2;J-20A Re.2000 '隼';;;;;;;;;;X
+SWE_interceptor_3;J-20B Re.2001 '隼' II;;;;;;;;;;X
+SWE_interceptor_6;J-28 德.哈维兰 '吸血鬼';;;;;;;;;;X
+SWE_interceptor_7;萨伯 J 35A '龙';;;;;;;;;;X
+SWE_tactical_bomber_0;B1 菲亚特 BR/BR-1;;;;;;;;;;X
+SWE_tactical_bomber_1;B3A 容克 Ju-86;;;;;;;;;;X
+SWE_tactical_bomber_2;B3C 容克 Ju-86;;;;;;;;;;X
+SWE_tactical_bomber_3;B-18B 萨伯;;;;;;;;;;X
+SWE_tactical_bomber_4;萨伯 S 32C '长矛';;;;;;;;;;X
+SWE_naval_bomber_0;T1 海因克尔 HD 16;;;;;;;;;;X
+SWE_naval_bomber_1;T2 海因克尔 He-115;;;;;;;;;;X
+SWE_naval_bomber_2;T-18B 萨伯;;;;;;;;;;X
+SWE_naval_bomber_4;萨伯 A 32A '长矛';;;;;;;;;;X
+SWE_cas_0;B5 诺斯罗普 8A-1;;;;;;;;;;X
+SWE_cas_1;B-17 萨伯;;;;;;;;;;X
+SWE_cas_2;A-21 萨伯;;;;;;;;;;X
+SWE_cas_3;萨伯 A21R 萨伯;;;;;;;;;;X
+SWE_battleship_0;司威级*;;;;;;;;;;X
+SWE_battleship_1;卡尔八世级*;;;;;;;;;;X
+SWE_battleship_2;古斯塔夫二世阿道夫级*;;;;;;;;;;X
+SWE_battleship_3;克伦纳级*;;;;;;;;;;X
+SWE_light_cruiser_0;费尔吉亚级;;;;;;;;;;X
+SWE_light_cruiser_1;戈特兰级;;;;;;;;;;X
+SWE_light_cruiser_2;波隆纳级;;;;;;;;;;X
+SWE_heavy_cruiser_0;曼赖赫滕级;;;;;;;;;;X
+SWE_heavy_cruiser_1;科拉斯 弗莱明级;;;;;;;;;;X
+SWE_heavy_cruiser_2;松奈尔级*;;;;;;;;;;X
+SWE_battlecruiser_0;瑞典级;;;;;;;;;;X
+SWE_battlecruiser_1;瓦尔根级*;;;;;;;;;;X
+SWE_battlecruiser_2;斯文斯克桑德级*;;;;;;;;;;X
+SWE_destroyer_0;弗兰格尔级;;;;;;;;;;X
+SWE_destroyer_1;厄兰斯库尔德级;;;;;;;;;;X
+SWE_destroyer_2;普科级;;;;;;;;;;X
+SWE_destroyer_3;哥登堡级;;;;;;;;;;X
+SWE_destroyer_4;厄兰德级;;;;;;;;;;X
+SWE_carrier_0;诺斯查兰德级*;;;;;;;;;;X
+SWE_carrier_1;军士长级*;;;;;;;;;;X
+SWE_carrier_2;af 查普曼级*;;;;;;;;;;X
+SWE_submarine_0;海涅级;;;;;;;;;;X
+SWE_submarine_1;龙级;;;;;;;;;;X
+SWE_submarine_2;苏雷加娜特级;;;;;;;;;;X
+SWE_submarine_3;王室财库级;;;;;;;;;;X
+SWE_submarine_4;海涅 II级;;;;;;;;;;X
+SWE_submarine_5;龙 II级;;;;;;;;;;X
+TUR_light_armor_brigade_0;CV-33;;;;;;;;;;X
+TUR_light_armor_brigade_1;L.3/38;;;;;;;;;;X
+TUR_light_armor_brigade_2;BT-7;;;;;;;;;;X
+TUR_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+TUR_armor_brigade_1;雷诺 R35;;;;;;;;;;X
+TUR_armor_brigade_2;PzKpfw.III;;;;;;;;;;X
+TUR_armor_brigade_3;PzKpfw.IV;;;;;;;;;;X
+TUR_armor_brigade_4;T-34 m.44;;;;;;;;;;X
+TUR_multi_role_0;寇蒂斯 '小鹰';;;;;;;;;;X
+TUR_multi_role_1;武尔夫 Fw-190A;;;;;;;;;;X
+TUR_multi_role_2;海上 '烈火' Mk.XIV;;;;;;;;;;X
+TUR_interceptor_0;寇蒂斯 '鹰' III;;;;;;;;;;X
+TUR_interceptor_1;'飓风式' I;;;;;;;;;;X
+TUR_interceptor_2;'飓风式' II;;;;;;;;;;X
+TUR_tactical_bomber_0;布伦汉姆 Mk.I;;;;;;;;;;X
+TUR_tactical_bomber_1;布伦汉姆 Mk.IV;;;;;;;;;;X
+TUR_tactical_bomber_2;亨克尔 He-111;;;;;;;;;;X
+TUR_naval_bomber_1;布里斯托尔 '波弗特';;;;;;;;;;X
+TUR_cas_0;费尔利 '战争';;;;;;;;;;X
+TUR_cas_1;马丁 187 巴尔的摩;;;;;;;;;;X
+TUR_cas_2;波弗特战斗机;;;;;;;;;;X
+TUR_transport_plane_0;道古拉斯 C-32;;;;;;;;;;X
+TUR_transport_plane_1;道格拉斯 C-47 '空中列车';;;;;;;;;;X
+TUR_transport_plane_2;道格拉斯 C-54 '空中霸王';;;;;;;;;;X
+TUR_battleship_0;雷萨代伊级;;;;;;;;;;X
+TUR_light_cruiser_0;马吉德耶级;;;;;;;;;;X
+TUR_battlecruiser_0;塞利姆苏丹级;;;;;;;;;;X
+TUR_destroyer_0;基林级;;;;;;;;;;X
+TUR_destroyer_1;加耶特级;;;;;;;;;;X
+TUR_submarine_0;布林茨 伊诺努;;;;;;;;;;X
+TUR_submarine_1;奥陆克雷斯级;;;;;;;;;;X
+TUR_submarine_2;Ay级;;;;;;;;;;X
+URU_light_armor_brigade_0;CV-33;;;;;;;;;;X
+URU_light_armor_brigade_1;M2A4;;;;;;;;;;X
+URU_light_armor_brigade_2;M5 '斯图亚特';;;;;;;;;;X
+URU_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+URU_armor_brigade_1;维克斯 Mk.E;;;;;;;;;;X
+URU_armor_brigade_2;M3 '李';;;;;;;;;;X
+URU_armor_brigade_3;M4A1 '谢尔曼';;;;;;;;;;X
+URU_armor_brigade_4;M4/E8 '谢尔曼';;;;;;;;;;X
+URU_armor_brigade_5;M26 '潘兴';;;;;;;;;;X
+URU_interceptor_0;寇蒂斯 '隼';;;;;;;;;;X
+#;;;;;;;;;;;X
+USA_light_armor_brigade_0;M1A2;;;;;;;;;;X
+USA_light_armor_brigade_1;M3 '斯图亚特';;;;;;;;;;X
+USA_light_armor_brigade_2;M5 '斯图亚特';;;;;;;;;;X
+USA_armor_brigade_0;马克 VIII '自由';;;;;;;;;;X
+USA_armor_brigade_1;T4E1;;;;;;;;;;X
+USA_armor_brigade_2;M3 '李';;;;;;;;;;X
+USA_armor_brigade_3;M4A1 '谢尔曼';;;;;;;;;;X
+USA_armor_brigade_4;M4/E8 '谢尔曼';;;;;;;;;;X
+USA_armor_brigade_5;M26 '潘兴';;;;;;;;;;X
+USA_armor_brigade_6;M47 '巴顿';;;;;;;;;;X
+USA_armor_brigade_7;M48A5 '巴顿' II;;;;;;;;;;X
+USA_multi_role_0;寇蒂斯 P-40B '战鹰';;;;;;;;;;X
+USA_multi_role_1;北美 P-51B '野马';;;;;;;;;;X
+USA_multi_role_2;P-51D '野马';;;;;;;;;;X
+USA_multi_role_3;洛克希德 P-80 '流星';;;;;;;;;;X
+USA_multi_role_4;共和 F-84E '雷电喷气';;;;;;;;;;X
+USA_multi_role_5;北美 F-100 '超级佩刀';;;;;;;;;;X
+USA_interceptor_0;塞维尔斯基 P-35;;;;;;;;;;X
+USA_interceptor_1;寇蒂斯 P-36;;;;;;;;;;X
+USA_interceptor_2;格鲁曼 F4F '野猫';;;;;;;;;;X
+USA_interceptor_3;格鲁曼 F6F '悍妇';;;;;;;;;;X
+USA_interceptor_4;沃特 F4U '海盗';;;;;;;;;;X
+USA_interceptor_5;北美 F-86A '佩刀';;;;;;;;;;X
+USA_interceptor_6;诺斯罗普 F-89D '蝎子';;;;;;;;;;X
+USA_interceptor_7;康维尔 F-102 '三角剑';;;;;;;;;;X
+USA_rocket_interceptor_0;诺思罗普 P-79A '飞行撞击';;;;;;;;;;X
+USA_strategic_bomber_0;B-17 '空中堡垒';;;;;;;;;;X
+USA_strategic_bomber_1;改进型 B-24 '解放者';;;;;;;;;;X
+USA_strategic_bomber_2;波音 B-29 '超级空中堡垒';;;;;;;;;;X
+USA_strategic_bomber_3;波音 B-47B '同温层喷气';;;;;;;;;;X
+USA_strategic_bomber_4;波音 B-47E '同温层喷气';;;;;;;;;;X
+USA_strategic_bomber_5;波音 B-52 '同温层堡垒';;;;;;;;;;X
+USA_tactical_bomber_0;B-18 '大刀';;;;;;;;;;X
+USA_tactical_bomber_1;B-23 '龙';;;;;;;;;;X
+USA_tactical_bomber_2;道格拉斯 A-20 '波士顿';;;;;;;;;;X
+USA_tactical_bomber_3;马丁 B-26 '掠夺者';;;;;;;;;;X
+USA_tactical_bomber_4;北美 B-25J '米切尔';;;;;;;;;;X
+USA_tactical_bomber_5;北美 B-45 '旋风';;;;;;;;;;X
+USA_tactical_bomber_6;北美 B-66 '空中战士';;;;;;;;;;X
+USA_naval_bomber_0;改进型 PBY '卡特琳娜';;;;;;;;;;X
+USA_naval_bomber_1;改进型 PB4Y '海盗船';;;;;;;;;;X
+USA_naval_bomber_2;马丁 PBM '水手';;;;;;;;;;X
+USA_naval_bomber_3;格鲁曼 F9F-2 '黑豹';;;;;;;;;;X
+USA_naval_bomber_4;洛克希德 P2V '海王星';;;;;;;;;;X
+USA_cas_0;A-24;;;;;;;;;;X
+USA_cas_1;寇蒂斯 A-25;;;;;;;;;;X
+USA_cas_2;道格拉斯 A-26 '入侵者';;;;;;;;;;X
+USA_cas_3;道格拉斯 AD '空中袭击者';;;;;;;;;;X
+USA_cas_4;道格拉斯 A-3 '空中战士';;;;;;;;;;X
+USA_cas_5;麦道 A-4 '天鹰';;;;;;;;;;X
+USA_transport_plane_0;道古拉斯 C-32;;;;;;;;;;X
+USA_transport_plane_1;C-47 '达科他';;;;;;;;;;X
+USA_transport_plane_2;道格拉斯 C-54 '空中霸王';;;;;;;;;;X
+USA_transport_plane_3;费尔柴尔德 C-119J '飞行车厢';;;;;;;;;;X
+USA_transport_plane_4;道格拉斯 C-124 '环球霸王' II;;;;;;;;;;X
+USA_flying_rocket_0;红石;;;;;;;;;;X
+USA_flying_rocket_1;雷神;;;;;;;;;;X
+USA_flying_rocket_2;阿特拉斯-D;;;;;;;;;;X
+USA_battleship_0;阿肯色级;;;;;;;;;;X
+USA_battleship_1;纽约级;;;;;;;;;;X
+USA_battleship_2;科罗拉多级;;;;;;;;;;X
+USA_battleship_3;北卡罗来纳级;;;;;;;;;;X
+USA_battleship_4;爱荷华级;;;;;;;;;;X
+USA_super_heavy_battleship_0;蒙大拿级;;;;;;;;;;X
+USA_light_cruiser_1;奥马哈级;;;;;;;;;;X
+USA_light_cruiser_3;布鲁克林级;;;;;;;;;;X
+USA_light_cruiser_4;克利夫兰级;;;;;;;;;;X
+USA_light_cruiser_5;伍斯特级;;;;;;;;;;X
+USA_light_cruiser_6;加尔维斯顿级;;;;;;;;;;X
+USA_heavy_cruiser_2;新奥尔良级;;;;;;;;;;X
+USA_heavy_cruiser_4;巴尔的摩级;;;;;;;;;;X
+USA_heavy_cruiser_5;得梅因级;;;;;;;;;;X
+USA_heavy_cruiser_6;长滩级;;;;;;;;;;X
+USA_heavy_cruiser_7;莱希级;;;;;;;;;;X
+USA_battlecruiser_2;列克星敦级;;;;;;;;;;X
+USA_battlecruiser_4;阿拉斯加级;;;;;;;;;;X
+USA_battlecruiser_6;CGN 42级;;;;;;;;;;X
+USA_destroyer_0;克莱门森级;;;;;;;;;;X
+USA_destroyer_1;法拉格特级;;;;;;;;;;X
+USA_destroyer_2;索莫斯级;;;;;;;;;;X
+USA_destroyer_3;弗莱彻级;;;;;;;;;;X
+USA_destroyer_4;基林级;;;;;;;;;;X
+USA_destroyer_5;福雷斯特 谢尔曼级;;;;;;;;;;X
+USA_destroyer_6;亚当级;;;;;;;;;;X
+USA_carrier_1;列克星敦级;;;;;;;;;;X
+USA_carrier_2;约克城级;;;;;;;;;;X
+USA_carrier_4;埃塞克斯级;;;;;;;;;;X
+USA_carrier_5;中途岛级;;;;;;;;;;X
+USA_carrier_6;美利坚级;;;;;;;;;;X
+USA_carrier_7;福莱斯特级;;;;;;;;;;X
+USA_carrier_8;小鹰级;;;;;;;;;;X
+USA_carrier_9;企业级;;;;;;;;;;X
+USA_escort_carrier_0;兰利级;;;;;;;;;;X
+USA_escort_carrier_1;独立级;;;;;;;;;;X
+USA_escort_carrier_2;塞班岛级;;;;;;;;;;X
+USA_submarine_0;S-艇级;;;;;;;;;;X
+USA_submarine_1;R-艇级;;;;;;;;;;X
+USA_submarine_2;梭鱼级;;;;;;;;;;X
+USA_submarine_3;河鲈级;;;;;;;;;;X
+USA_submarine_4;刺尾鱼级;;;;;;;;;;X
+USA_submarine_5;长须鱼级;;;;;;;;;;X
+USA_submarine_6;鹦鹉螺级;;;;;;;;;;X
+USA_nuclear_submarine_0;鹦鹉螺级;;;;;;;;;;X
+#;;;;;;;;;;;X
+VEN_light_armor_brigade_0;CV-33;;;;;;;;;;X
+VEN_light_armor_brigade_1;M2A4;;;;;;;;;;X
+VEN_light_armor_brigade_2;M5 '斯图亚特';;;;;;;;;;X
+VEN_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+VEN_armor_brigade_1;维克斯 Mk.E;;;;;;;;;;X
+VEN_armor_brigade_2;M3 '李';;;;;;;;;;X
+VEN_armor_brigade_3;M4A1 '谢尔曼';;;;;;;;;;X
+VEN_armor_brigade_4;M4/E8 '谢尔曼';;;;;;;;;;X
+VEN_armor_brigade_5;M26 '潘兴';;;;;;;;;;X
+VIC_light_armor_brigade_0;雷诺 AMR 1935;;;;;;;;;;X
+VIC_light_armor_brigade_1;哈其开斯 H-39;;;;;;;;;;X
+VIC_light_armor_brigade_2;AMX R-40;;;;;;;;;;X
+VIC_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+VIC_armor_brigade_1;FCM-36;;;;;;;;;;X
+VIC_armor_brigade_2;索玛 S-35;;;;;;;;;;X
+VIC_armor_brigade_3;索玛 S-40;;;;;;;;;;X
+VIC_armor_brigade_4;雷诺 G1R;;;;;;;;;;X
+VIC_multi_role_0;德瓦蒂纳 D.520;;;;;;;;;;X
+VIC_multi_role_1;德瓦蒂纳 D.552;;;;;;;;;;X
+VIC_multi_role_2;武尔夫 Fw-190D;;;;;;;;;;X
+VIC_multi_role_3;梅塞施密特 Me-262 '燕子';;;;;;;;;;X
+VIC_interceptor_0;德瓦蒂纳 D.510;;;;;;;;;;X
+VIC_interceptor_1;莫拉纳-索尼埃 MS.406;;;;;;;;;;X
+VIC_interceptor_2;布洛克 MB.152;;;;;;;;;;X
+VIC_interceptor_3;阿森纳 VG.33;;;;;;;;;;X
+VIC_interceptor_4;布洛克 MB.157;;;;;;;;;;X
+VIC_interceptor_5;阿森纳尔 VG.70;;;;;;;;;;X
+VIC_strategic_bomber_0;布洛克 MB.162;;;;;;;;;;X
+VIC_strategic_bomber_1;法尔芒 NC.223;;;;;;;;;;X
+VIC_strategic_bomber_2;法尔芒 F.420;;;;;;;;;;X
+VIC_tactical_bomber_0;阿莫依特 143;;;;;;;;;;X
+VIC_tactical_bomber_1;布洛克 MB.210;;;;;;;;;;X
+VIC_tactical_bomber_2;里奥雷-奥利弗 LeO 451;;;;;;;;;;X
+VIC_tactical_bomber_3;容克 Ju-88;;;;;;;;;;X
+VIC_tactical_bomber_4;南方 SE.202 '海鹰';;;;;;;;;;X
+VIC_naval_bomber_0;卢瓦尔 LN.401;;;;;;;;;;X
+VIC_naval_bomber_1;波泰-C.A.M.S. 141;;;;;;;;;;X
+VIC_naval_bomber_2;容克 Ju-290;;;;;;;;;;X
+VIC_naval_bomber_3;容克 Ju-287 EF-140;;;;;;;;;;X
+VIC_cas_0;波泰 633;;;;;;;;;;X
+VIC_cas_1;布雷盖 Br.691;;;;;;;;;;X
+VIC_cas_2;亨舍尔 Hs-129;;;;;;;;;;X
+VIC_transport_plane_0;布洛克 MB.221;;;;;;;;;;X
+VIC_transport_plane_1;阿拉多 Ar-232;;;;;;;;;;X
+VIC_transport_plane_2;布雷盖 Br.765 '撒哈拉';;;;;;;;;;X
+YUG_light_armor_brigade_0;T-32;;;;;;;;;;X
+YUG_light_armor_brigade_1;7TPjw;;;;;;;;;;X
+YUG_light_armor_brigade_2;M5 '斯图亚特';;;;;;;;;;X
+YUG_armor_brigade_0;雷诺 FT-17;;;;;;;;;;X
+YUG_armor_brigade_1;雷诺 R35;;;;;;;;;;X
+YUG_armor_brigade_2;BT-7M;;;;;;;;;;X
+YUG_armor_brigade_3;Mk.VIII A23M '克伦威尔';;;;;;;;;;X
+YUG_armor_brigade_4;A34 '彗星';;;;;;;;;;X
+YUG_armor_brigade_5;'百夫长' Mk.I;;;;;;;;;;X
+YUG_multi_role_2;依凯 S-49;;;;;;;;;;X
+YUG_interceptor_0;福克 F.VII;;;;;;;;;;X
+YUG_interceptor_1;莫拉纳-索尼埃 M.S.406;;;;;;;;;;X
+YUG_interceptor_2;'飓风式' II;;;;;;;;;;X
+YUG_tactical_bomber_0;布伦汉姆 Mk.I;;;;;;;;;;X
+YUG_tactical_bomber_1;布伦汉姆 Mk.IV;;;;;;;;;;X
+YUG_naval_bomber_0;道尼尔 Do-22;;;;;;;;;;X
+YUG_transport_plane_0;阿维亚 '福克' F.39;;;;;;;;;;X
+YUG_destroyer_1;杜布罗尼克级;;;;;;;;;;X
+YUG_destroyer_2;贝尔格莱德级;;;;;;;;;;X
+YUG_submarine_0;奥斯威尼克级;;;;;;;;;;X
+#;;;;;;;;;;;X
+AST_sp_artillery_brigade_2;主教;;;;;;;;;;X
+AST_sp_artillery_brigade_3;司事;;;;;;;;;;X
+AST_rocket_artillery_brigade_0;陆地床垫;;;;;;;;;;X
+AST_anti_tank_brigade_0;2Pdr.OQF Mk.IX;;;;;;;;;;X
+AST_anti_tank_brigade_1;6Pdr.OQF Mk.II;;;;;;;;;;X
+AST_anti_tank_brigade_2;17Pdr. Gun;;;;;;;;;;X
+AST_tank_destroyer_brigade_0;2Pdr.Portee;;;;;;;;;;X
+AST_tank_destroyer_brigade_1;执事;;;;;;;;;;X
+AST_tank_destroyer_brigade_2;箭手;;;;;;;;;;X
+AST_heavy_armor_brigade_0;'玛蒂尔达' Mk.II;;;;;;;;;;X
+AST_heavy_armor_brigade_1;Mk.IV A22 '丘吉尔' Mk.I;;;;;;;;;;X
+AST_heavy_armor_brigade_2;Mk.IV A22 '丘吉尔' Mk.VII;;;;;;;;;;X
+AST_super_heavy_armor_brigade_0;A39 '玄武';;;;;;;;;;X
+AST_armored_car_brigade_0;亨伯 Mk.I;;;;;;;;;;X
+AST_armored_car_brigade_1;'猎鹿犬' Mk.I;;;;;;;;;;X
+AST_armored_car_brigade_2;'雪貂' Mk 1/2;;;;;;;;;;X
+AST_cag_0;'猎迷' / '剑鱼';;;;;;;;;;X
+AST_cag_1;'猎迷' / '剑鱼';;;;;;;;;;X
+AST_cag_2;'海斗士' / '剑鱼';;;;;;;;;;X
+AST_cag_3;'海斗士' / '贼鸥' / '剑鱼';;;;;;;;;;X
+AST_cag_4;'管鼻燕' / '贼鸥' / '青花鱼';;;;;;;;;;X
+AST_cag_5;'萤火虫' / '梭鱼';;;;;;;;;;X
+AST_cag_6;'海火' / '火炬';;;;;;;;;;X
+AST_cag_7;'海怒' / '双足飞龙';;;;;;;;;;X
+AST_cag_8;'海毒' / '袭击者';;;;;;;;;;X
+AST_cag_9;'海鹰' (F-1) / '海鹰' (FB-3);;;;;;;;;;X
+#;;;;;;;;;;;X
+CAN_sp_artillery_brigade_2;主教;;;;;;;;;;X
+CAN_sp_artillery_brigade_3;司事;;;;;;;;;;X
+CAN_rocket_artillery_brigade_0;陆地床垫;;;;;;;;;;X
+CAN_anti_tank_brigade_0;2Pdr.OQF Mk.IX;;;;;;;;;;X
+CAN_anti_tank_brigade_1;6Pdr.OQF Mk.II;;;;;;;;;;X
+CAN_anti_tank_brigade_2;17Pdr. Gun;;;;;;;;;;X
+CAN_tank_destroyer_brigade_0;2Pdr.Portee;;;;;;;;;;X
+CAN_tank_destroyer_brigade_1;执事;;;;;;;;;;X
+CAN_tank_destroyer_brigade_2;箭手;;;;;;;;;;X
+CAN_heavy_armor_brigade_0;'玛蒂尔达' Mk.II;;;;;;;;;;X
+CAN_heavy_armor_brigade_1;Mk.IV A22 '丘吉尔' Mk.I;;;;;;;;;;X
+CAN_heavy_armor_brigade_2;Mk.IV A22 '丘吉尔' Mk.VII;;;;;;;;;;X
+CAN_super_heavy_armor_brigade_0;A39 '玄武';;;;;;;;;;X
+CAN_armored_car_brigade_0;亨伯 Mk.I;;;;;;;;;;X
+CAN_armored_car_brigade_1;'猎鹿犬' Mk.I;;;;;;;;;;X
+CAN_armored_car_brigade_2;'雪貂' Mk 1/2;;;;;;;;;;X
+CAN_cag_0;'猎迷' / '剑鱼';;;;;;;;;;X
+CAN_cag_1;'猎迷' / '剑鱼';;;;;;;;;;X
+CAN_cag_2;'海斗士' / '剑鱼';;;;;;;;;;X
+CAN_cag_3;'海斗士' / '贼鸥' / '剑鱼';;;;;;;;;;X
+CAN_cag_4;'管鼻燕' / '贼鸥' / '青花鱼';;;;;;;;;;X
+CAN_cag_5;'萤火虫' / '梭鱼';;;;;;;;;;X
+CAN_cag_6;'海火' / '火炬';;;;;;;;;;X
+CAN_cag_7;'海怒' / '双足飞龙';;;;;;;;;;X
+CAN_cag_8;'海毒' / '袭击者';;;;;;;;;;X
+CAN_cag_9;F2H-3 '女妖' / '攻击者';;;;;;;;;;X
+#;;;;;;;;;;;X
+#;;;;;;;;;;;X
+FIN_anti_tank_brigade_0;37mm K/36;;;;;;;;;;X
+FIN_anti_tank_brigade_1;45mm 20K m.1932;;;;;;;;;;X
+FIN_anti_tank_brigade_2;7.5cm PaK40;;;;;;;;;;X
+FIN_anti_tank_brigade_3;8.8cm PaK43;;;;;;;;;;X
+FIN_anti_tank_brigade_4;12.8cm PaK44;;;;;;;;;;X
+FIN_tank_destroyer_brigade_0;PzJg.I;;;;;;;;;;X
+FIN_tank_destroyer_brigade_1;'黄鼠狼' II;;;;;;;;;;X
+FIN_tank_destroyer_brigade_2;StuG.IIIG;;;;;;;;;;X
+FIN_armored_car_brigade_0;兰德斯沃克 182;;;;;;;;;;X
+FIN_armored_car_brigade_1;BA-10;;;;;;;;;;X
+#;;;;;;;;;;;X
+FRA_sp_artillery_brigade_0;自动加农;;;;;;;;;;X
+FRA_sp_artillery_brigade_1;AC de 75/97;;;;;;;;;;X
+FRA_sp_artillery_brigade_2;主教;;;;;;;;;;X
+FRA_sp_artillery_brigade_3;司事;;;;;;;;;;X
+FRA_anti_tank_brigade_0;25mm SA-L;;;;;;;;;;X
+FRA_anti_tank_brigade_1;47mm SA 37/39;;;;;;;;;;X
+FRA_anti_tank_brigade_2;17Pdr. Gun;;;;;;;;;;X
+FRA_tank_destroyer_brigade_0;'搬运工' AC(b);;;;;;;;;;X
+FRA_tank_destroyer_brigade_1;拉弗利 W15;;;;;;;;;;X
+FRA_tank_destroyer_brigade_2;M18 '悍妇';;;;;;;;;;X
+FRA_tank_destroyer_brigade_3;M36 '杰克逊';;;;;;;;;;X
+FRA_heavy_armor_brigade_0;Char B1改;;;;;;;;;;X
+FRA_heavy_armor_brigade_1;Mk.IV A22 '丘吉尔' Mk.I;;;;;;;;;;X
+FRA_heavy_armor_brigade_2;Mk.IV A22 '丘吉尔' Mk.VII;;;;;;;;;;X
+FRA_armored_car_brigade_0;AMD 潘哈德 178;;;;;;;;;;X
+FRA_armored_car_brigade_1;M8 '灰狗';;;;;;;;;;X
+FRA_armored_car_brigade_2;潘哈德 VBL;;;;;;;;;;X
+FRA_cag_0;D.501 / PL.101;;;;;;;;;;X
+FRA_cag_1;D.501 / PL.101;;;;;;;;;;X
+FRA_cag_2;D.373 / PL.101;;;;;;;;;;X
+FRA_cag_3;MB.152 / D.750;;;;;;;;;;X
+FRA_cag_4;MB.157 / D.750;;;;;;;;;;X
+FRA_cag_5;F6F '悍妇'/SB2C '地狱潜水鸟'/TBF '复仇者';;;;;;;;;;X
+FRA_cag_6;F6F '悍妇'/SB2C '地狱潜水鸟'/TBM '复仇者';;;;;;;;;;X
+FRA_cag_7;F4U '海盗' / AM '拳手';;;;;;;;;;X
+FRA_cag_8;S.E.202 阿奎隆 / Br.1050 艾莉婕;;;;;;;;;;X
+FRA_cag_9;达索 '幻影' IV / Br.1050 艾莉婕;;;;;;;;;;X
+#;;;;;;;;;;;X
+GER_sp_artillery_brigade_0;StuG.III;;;;;;;;;;X
+GER_sp_artillery_brigade_1;StuH.42;;;;;;;;;;X
+GER_sp_artillery_brigade_2;PzA.II '黄蜂';;;;;;;;;;X
+GER_sp_artillery_brigade_3;胡默尔;;;;;;;;;;X
+GER_rocket_artillery_brigade_0;六管火箭发射器 41;;;;;;;;;;X
+GER_rocket_artillery_brigade_1;六管火箭发射器 42;;;;;;;;;;X
+GER_rocket_artillery_brigade_2;六管火箭发射器 44;;;;;;;;;;X
+GER_sp_rocket_artillery_brigade_0;'骡子' PsW.42;;;;;;;;;;X
+GER_sp_rocket_artillery_brigade_2;Wurfrahmen 40;;;;;;;;;;X
+GER_anti_tank_brigade_0;3.7cm PaK35/36;;;;;;;;;;X
+GER_anti_tank_brigade_1;5cm PaK38;;;;;;;;;;X
+GER_anti_tank_brigade_2;7.5cm PaK40;;;;;;;;;;X
+GER_anti_tank_brigade_3;8.8cm PaK43;;;;;;;;;;X
+GER_anti_tank_brigade_4;12.8cm PaK44;;;;;;;;;;X
+GER_tank_destroyer_brigade_0;PzJg.I;;;;;;;;;;X
+GER_tank_destroyer_brigade_1;'黄鼠狼' II;;;;;;;;;;X
+GER_tank_destroyer_brigade_2;'追猎者';;;;;;;;;;X
+GER_tank_destroyer_brigade_3;'猎豹';;;;;;;;;;X
+GER_tank_destroyer_brigade_4;'猎虎';;;;;;;;;;X
+GER_heavy_armor_brigade_0;VK.3001(H);;;;;;;;;;X
+GER_heavy_armor_brigade_1;PzKpfw.VIE 虎;;;;;;;;;;X
+GER_heavy_armor_brigade_2;PzKpfw.VIB 虎王;;;;;;;;;;X
+GER_super_heavy_armor_brigade_0;PzKpfw.VII 鼠;;;;;;;;;;X
+GER_armored_car_brigade_0;SdKfz-231;;;;;;;;;;X
+GER_armored_car_brigade_1;SdKfz-234;;;;;;;;;;X
+GER_armored_car_brigade_2;山猫;;;;;;;;;;X
+GER_cag_0;He.51 / Hs.123;;;;;;;;;;X
+GER_cag_1;He.51 / Hs.123;;;;;;;;;;X
+GER_cag_2;He.51 / Hs.123 / Fi.167;;;;;;;;;;X
+GER_cag_3;Bf.109T / Ju.87C '斯图卡' / Fi.167;;;;;;;;;;X
+GER_cag_4;Me.155 / Ju.87C '斯图卡';;;;;;;;;;X
+GER_cag_5;Me.155 / Ju.87C '斯图卡';;;;;;;;;;X
+GER_cag_6;Me.155 / Ju.87C '斯图卡';;;;;;;;;;X
+GER_cag_7;Fw.190T / Ju.87C '斯图卡';;;;;;;;;;X
+GER_cag_8;He.162 / Hs.132;;;;;;;;;;X
+#;;;;;;;;;;;X
+ITA_sp_artillery_brigade_0;自动加农炮 75/27;;;;;;;;;;X
+ITA_sp_artillery_brigade_1;机动 M40 75/18;;;;;;;;;;X
+ITA_sp_artillery_brigade_2;机动 M43 105/25;;;;;;;;;;X
+ITA_anti_tank_brigade_0;37mm PaK35/36;;;;;;;;;;X
+ITA_anti_tank_brigade_1;47mm M35;;;;;;;;;;X
+ITA_tank_destroyer_brigade_0;自动加农炮 65;;;;;;;;;;X
+ITA_tank_destroyer_brigade_1;机动 L40 47/32;;;;;;;;;;X
+ITA_tank_destroyer_brigade_2;机动 M43 75/46;;;;;;;;;;X
+ITA_tank_destroyer_brigade_3;机动 M41 90/53;;;;;;;;;;X
+ITA_tank_destroyer_brigade_4;机动 M40 149/40;;;;;;;;;;X
+ITA_heavy_armor_brigade_0;P.26/40;;;;;;;;;;X
+ITA_heavy_armor_brigade_1;P.43改;;;;;;;;;;X
+ITA_armored_car_brigade_0;奥托布兰达 AB.40;;;;;;;;;;X
+ITA_armored_car_brigade_1;奥托布兰达 AB.43;;;;;;;;;;X
+ITA_cag_0;CR.32 '箭' / Ro.37;;;;;;;;;;X
+ITA_cag_1;CR.42 '隼' / Br.65;;;;;;;;;;X
+ITA_cag_2;G.50 '箭' / Br.65;;;;;;;;;;X
+ITA_cag_3;Re.2001 '隼' II/ Ju.87T 皮切亚雷罗;;;;;;;;;;X
+ITA_cag_4;Re.2005 '人马座' / Ju.87T 皮切亚雷罗;;;;;;;;;;X
+ITA_cag_5;Re.2005 '人马座' / Re.2002 阿尔伊特;;;;;;;;;;X
+NZL_sp_artillery_brigade_2;主教;;;;;;;;;;X
+NZL_sp_artillery_brigade_3;司事;;;;;;;;;;X
+NZL_rocket_artillery_brigade_0;陆地床垫;;;;;;;;;;X
+NZL_anti_tank_brigade_0;2Pdr.OQF Mk.IX;;;;;;;;;;X
+NZL_anti_tank_brigade_1;6Pdr.OQF Mk.II;;;;;;;;;;X
+NZL_anti_tank_brigade_2;17Pdr. Gun;;;;;;;;;;X
+NZL_tank_destroyer_brigade_0;2Pdr.Portee;;;;;;;;;;X
+NZL_tank_destroyer_brigade_1;执事;;;;;;;;;;X
+NZL_tank_destroyer_brigade_2;箭手;;;;;;;;;;X
+NZL_heavy_armor_brigade_0;'玛蒂尔达' Mk.II;;;;;;;;;;X
+NZL_heavy_armor_brigade_1;Mk.IV A22 '丘吉尔' Mk.I;;;;;;;;;;X
+NZL_heavy_armor_brigade_2;Mk.IV A22 '丘吉尔' Mk.VII;;;;;;;;;;X
+NZL_super_heavy_armor_brigade_0;A39 '玄武';;;;;;;;;;X
+NZL_armored_car_brigade_0;亨伯 Mk.I;;;;;;;;;;X
+NZL_armored_car_brigade_1;'猎鹿犬' Mk.I;;;;;;;;;;X
+NZL_armored_car_brigade_2;'雪貂' Mk 1/2;;;;;;;;;;X
+NZL_cag_0;'猎迷' / '剑鱼';;;;;;;;;;X
+NZL_cag_1;'猎迷' / '剑鱼';;;;;;;;;;X
+NZL_cag_2;'海斗士' / '剑鱼';;;;;;;;;;X
+NZL_cag_3;'海斗士' / '贼鸥' / '剑鱼';;;;;;;;;;X
+NZL_cag_4;'管鼻燕' / '贼鸥' / '青花鱼';;;;;;;;;;X
+NZL_cag_5;'萤火虫' / '梭鱼';;;;;;;;;;X
+NZL_cag_6;'海火' / '火炬';;;;;;;;;;X
+NZL_cag_7;'海怒' / '双足飞龙';;;;;;;;;;X
+NZL_cag_8;'海毒' / '袭击者';;;;;;;;;;X
+NZL_cag_9;'海鹰' (F-1) / '海鹰' (FB-3);;;;;;;;;;X
+#;;;;;;;;;;;X
+SAF_armored_car_brigade_2;'雪貂' Mk 1/2;;;;;;;;;;X
+SAF_cag_0;'猎迷' / '剑鱼';;;;;;;;;;X
+SAF_cag_1;'猎迷' / '剑鱼';;;;;;;;;;X
+SAF_cag_2;'海斗士' / '剑鱼';;;;;;;;;;X
+SAF_cag_3;'海斗士' / '贼鸥' / '剑鱼';;;;;;;;;;X
+SAF_cag_4;'管鼻燕' / '贼鸥' / '青花鱼';;;;;;;;;;X
+SAF_cag_5;'萤火虫' / '梭鱼';;;;;;;;;;X
+SAF_cag_6;'海火' / '火炬';;;;;;;;;;X
+SAF_cag_7;'海怒' / '双足飞龙';;;;;;;;;;X
+SAF_cag_8;'海毒' / '袭击者';;;;;;;;;;X
+SAF_cag_9;'海鹰' (F-1) / '海鹰' (FB-3);;;;;;;;;;X
+#;;;;;;;;;;;X
+SOV_sp_artillery_brigade_0;苏-37;;;;;;;;;;X
+SOV_sp_artillery_brigade_1;苏-76M;;;;;;;;;;X
+SOV_sp_artillery_brigade_2;苏-122;;;;;;;;;;X
+SOV_sp_artillery_brigade_3;苏-152 '动物杀手';;;;;;;;;;X
+SOV_rocket_artillery_brigade_0;M-8 火箭炮;;;;;;;;;;X
+SOV_rocket_artillery_brigade_1;M-13 火箭炮;;;;;;;;;;X
+SOV_rocket_artillery_brigade_2;M-31 火箭炮;;;;;;;;;;X
+SOV_sp_rocket_artillery_brigade_0;BM-8 '喀秋莎';;;;;;;;;;X
+SOV_sp_rocket_artillery_brigade_1;BM-13 '喀秋莎';;;;;;;;;;X
+SOV_sp_rocket_artillery_brigade_2;BM-31 '喀秋莎';;;;;;;;;;X
+SOV_sp_rocket_artillery_brigade_3;BM-14 '喀秋莎';;;;;;;;;;X
+SOV_sp_rocket_artillery_brigade_4;BM-21 '喀秋莎';;;;;;;;;;X
+SOV_anti_tank_brigade_0;37mm PTP obr.30;;;;;;;;;;X
+SOV_anti_tank_brigade_1;45mm PTP obr.42;;;;;;;;;;X
+SOV_anti_tank_brigade_2;76.2mm ZiS3E;;;;;;;;;;X
+SOV_anti_tank_brigade_3;85mm D-44;;;;;;;;;;X
+SOV_anti_tank_brigade_4;100mm D-10T;;;;;;;;;;X
+SOV_tank_destroyer_brigade_0;ZiS-30;;;;;;;;;;X
+SOV_tank_destroyer_brigade_1;苏-76 '荡妇';;;;;;;;;;X
+SOV_tank_destroyer_brigade_2;苏-85;;;;;;;;;;X
+SOV_tank_destroyer_brigade_3;苏-100;;;;;;;;;;X
+SOV_tank_destroyer_brigade_4;ISU-122;;;;;;;;;;X
+SOV_heavy_armor_brigade_0;KV-1;;;;;;;;;;X
+SOV_heavy_armor_brigade_1;IS-1;;;;;;;;;;X
+SOV_heavy_armor_brigade_2;IS-2;;;;;;;;;;X
+SOV_super_heavy_armor_brigade_0;IS-4;;;;;;;;;;X
+SOV_armored_car_brigade_0;BA-20;;;;;;;;;;X
+SOV_armored_car_brigade_1;BA-10;;;;;;;;;;X
+SOV_armored_car_brigade_2;BRDM-1;;;;;;;;;;X
+RUS_armored_car_brigade_2;BRDM-1;;;;;;;;;;X
+POL_armored_car_brigade_2;BRDM-1;;;;;;;;;;X
+ROM_armored_car_brigade_2;BRDM-1;;;;;;;;;;X
+BUL_armored_car_brigade_2;BRDM-1;;;;;;;;;;X
+CZE_armored_car_brigade_2;BRDM-1;;;;;;;;;;X
+DDR_armored_car_brigade_2;BRDM-1;;;;;;;;;;X
+HUN_armored_car_brigade_2;OT-65;;;;;;;;;;X
+SOV_cag_9;雅克-36;;;;;;;;;;X
+#;;;;;;;;;;;X
+USA_sp_artillery_brigade_0;T30 75mm HMC;;;;;;;;;;X
+USA_sp_artillery_brigade_1;M8 '斯科特';;;;;;;;;;X
+USA_sp_artillery_brigade_2;M7 '牧师';;;;;;;;;;X
+USA_sp_artillery_brigade_3;M12 155mm GMC;;;;;;;;;;X
+USA_rocket_artillery_brigade_0;4.5英寸 火箭炮;;;;;;;;;;X
+USA_rocket_artillery_brigade_1;5英寸 火箭炮;;;;;;;;;;X
+USA_rocket_artillery_brigade_2;7.2英寸 火箭炮;;;;;;;;;;X
+USA_sp_rocket_artillery_brigade_0;T34 火箭发射车;;;;;;;;;;X
+USA_sp_rocket_artillery_brigade_2;M17 '爆竹';;;;;;;;;;X
+USA_anti_tank_brigade_0;37mm M3;;;;;;;;;;X
+USA_anti_tank_brigade_1;57mm M1;;;;;;;;;;X
+USA_anti_tank_brigade_2;76mm M1;;;;;;;;;;X
+USA_tank_destroyer_brigade_0;M6 37mm GMC;;;;;;;;;;X
+USA_tank_destroyer_brigade_1;M3 75mm GMC;;;;;;;;;;X
+USA_tank_destroyer_brigade_2;M18 '悍妇';;;;;;;;;;X
+USA_tank_destroyer_brigade_3;M36 '杰克逊';;;;;;;;;;X
+USA_tank_destroyer_brigade_4;105mm GMC T95;;;;;;;;;;X
+USA_heavy_armor_brigade_2;M6A1;;;;;;;;;;X
+USA_armored_car_brigade_0;M20 '司各特';;;;;;;;;;X
+USA_armored_car_brigade_1;M8 '灰狗';;;;;;;;;;X
+USA_armored_car_brigade_2;突击 V-100;;;;;;;;;;X
+SIA_armored_car_brigade_2;突击 V-100;;;;;;;;;;X
+TUR_armored_car_brigade_2;突击 V-100;;;;;;;;;;X
+PHI_armored_car_brigade_2;突击 V-100;;;;;;;;;;X
+VEN_armored_car_brigade_2;突击 V-100;;;;;;;;;;X
+LEB_armored_car_brigade_2;突击 V-100;;;;;;;;;;X
+SAU_armored_car_brigade_2;突击 V-100;;;;;;;;;;X
+BOL_armored_car_brigade_2;突击 V-100;;;;;;;;;;X
+DFR_armored_car_brigade_2;突击 V-100;;;;;;;;;;X
+OMN_armored_car_brigade_2;突击 V-100;;;;;;;;;;X
+GUA_armored_car_brigade_2;突击 V-100;;;;;;;;;;X
+INO_armored_car_brigade_2;突击 V-100;;;;;;;;;;X
+MLY_armored_car_brigade_2;突击 V-100;;;;;;;;;;X
+USA_cag_0;F4B;;;;;;;;;;X
+USA_cag_1;格鲁曼 FF;;;;;;;;;;X
+USA_cag_2;F3F '飞行炮管';;;;;;;;;;X
+USA_cag_3;F2A '水牛';;;;;;;;;;X
+USA_cag_4;F4F '野猫';;;;;;;;;;X
+USA_cag_5;F6F '悍妇';;;;;;;;;;X
+USA_cag_6;F4U '海盗';;;;;;;;;;X
+USA_cag_7;F8F '熊猫';;;;;;;;;;X
+USA_cag_8;FH '幻影';;;;;;;;;;X
+USA_shipborne_bomber_1;SBC '地狱潜水鸟';;;;;;;;;;X
+USA_shipborne_bomber_4;SBD '无畏';;;;;;;;;;X
+USA_shipborne_bomber_5;SB2C '地狱潜水鸟';;;;;;;;;;X
+USA_shipborne_attack_1;BT-1;;;;;;;;;;X
+USA_shipborne_attack_4;TBD '破坏者';;;;;;;;;;X
+USA_shipborne_attack_5;TBF '复仇者';;;;;;;;;;X
+USA_shipborne_attack_7;AM '拳手';;;;;;;;;;X
+USA_shipborne_attack_8;AD '空中袭击者';;;;;;;;;;X
+#######################;;;;;;;;;;;X
+BRA_armored_car_brigade_2;EE-3 '蛙蛇';;;;;;;;;;X
+POR_armored_car_brigade_2;蔡米特轮式装甲车 VBTP V-200;;;;;;;;;;X
+ITA_armored_car_brigade_2;美洲豹轮式装甲车;;;;;;;;;;X
+mountain_gun_brigade;轻型山炮;;;;;;;;;x
+alpine_artillery_brigade;山炮兵;;;;;;;;;;x

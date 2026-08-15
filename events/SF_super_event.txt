@@ -1,0 +1,234 @@
+#China
+#长征
+province_event = {
+	id = 190019
+	title = "Long_Marchtitle"
+	desc = "Long_Marchdesc"
+	picture = "longMarch_superevent"
+	is_triggered_only = yes
+	option = {
+		name = "Long_Marchoption"
+        }
+}
+#长城抗战
+province_event = {
+	id = 190020
+	title = "Anti_jap_great_walltitle"
+	desc = "Anti_jap_great_walldesc"
+	picture = "Greatwall_antijap_superevent"
+	is_triggered_only = yes
+	option = {
+		name = "Anti_jap_great_walleoption"
+        }
+}
+#西安事变
+province_event = {
+	id = 190021
+	title = "Xian_incidencetitle"
+	desc = "Xian_incidencedesc"
+	picture = "XIan_superevent"
+	is_triggered_only = yes
+	option = {
+		name = "Xian_incidenceoption"
+        }
+}
+#卢沟桥事变
+province_event = {
+	id = 190022
+	title = "AntiJapan_lugoutitle"
+	desc = "AntiJapan_lugoudesc"
+	picture = "AntiJapan_lugou"
+	is_triggered_only = yes
+	option = {
+		name = "AntiJapan_lugouoption"
+        }
+}
+#抗日战争相持阶段
+province_event = {
+	id = 190023
+	title = "Wuhanbattletitle"
+	desc = "Wuhanbattledesc"
+	picture = "WuHan_battle_superevent"
+	is_triggered_only = yes
+	option = {
+		name = "Wuhanbattleoption"
+        }
+}
+#百团大战
+province_event = {
+	id = 190024
+	title = "baituanbattletitle"
+	desc = "baituanbattledesc"
+	picture = "NorthChina_war_1940_super_event"
+	is_triggered_only = yes
+	option = {
+		name = "baituanbattleoption"
+        }
+}
+#抗战胜利
+province_event = {
+	id = 190025
+	title = "Anti_Japan_win_title"
+	desc = "Anti_Japan_win_desc"
+	picture = "AntiJapan_win"
+	is_triggered_only = yes
+	option = {
+		name = "Anti_Japan_win_option"
+        }
+}
+#第二次国共内战CHC
+province_event = {
+	id = 190034
+	title = "civil_war_title"
+	desc = "civil_war_desc"
+	picture = "liberation_war_superevent"
+	is_triggered_only = yes
+	option = {
+		name = "civil_war_option"
+        }
+}
+#第二次国共内战CHI
+province_event = {
+	id = 190035
+	title = "civil_war_title1"
+	desc = "civil_war_desc1"
+	picture = "liberation_war_superevent"
+	is_triggered_only = yes
+	option = {
+		name = "civil_war_option1"
+        }
+}
+#开国大典
+province_event = {
+	id = 190036
+	title = "New_china_title"
+	desc = "New_china_desc"
+	picture = "NewChina_superevent"
+	is_triggered_only = yes
+	option = {
+		name = "New_china_option"
+        }
+}
+#朝鲜战争
+province_event = {
+	id = 190026
+	title = "Koreanwar_title"
+	desc = "Koreanwar_desc"
+	picture = "Koreanwar_superevent"
+	is_triggered_only = yes
+	option = {
+		name = "Koreanwar_option"
+        }
+}
+#台海战争
+province_event = {
+	id = 190037
+	title = "invasion_taiwai_war_title"
+	desc = "invasion_taiwai_war_desc"
+	picture = "invasion_taiwai_war_superevent"
+	is_triggered_only = yes
+	option = {
+		name = "invasion_taiwai_war_option"
+        }
+}
+#Japan
+#北支那事变
+province_event = {
+	id = 190027
+	title = "Japan_lugoutitle"
+	desc = "Japan_lugoudesc"
+	picture = "NorthChina_war_super_event"
+	is_triggered_only = yes
+	option = {
+		name = "Japan_lugouoption"
+        }
+}
+#大东亚战争
+province_event = {
+	id = 190028
+	title = "Eastern_Asian_wartitle"
+	desc = "Eastern_Asian_wardesc"
+	picture = "EasternAsian_war_superevent"
+	is_triggered_only = yes
+	option = {
+		name = "Eastern_Asian_waroption"
+        }
+}
+#关内作战
+province_event = {
+	id = 190029
+	title = "Great_wall_conquetitle"
+	desc = "Great_wall_conquedesc"
+	picture = "Greatwall_antijap_superevent"
+	is_triggered_only = yes
+	option = {
+		name = "Great_wall_conqueoption"
+        }
+}
+#战略僵持
+province_event = {
+	id = 190030
+	title = "Stoped_in_Chinatitle"
+	desc = "Stoped_in_Chinadesc"
+	picture = "stopped_in_China_superevent"
+	is_triggered_only = yes
+	option = {
+		name = "Stoped_in_Chinaoption"
+        }
+}
+#征服支那
+province_event = {
+	id = 190031
+	title = "conqueChinatitle"
+	desc = "conqueChinadesc"
+	picture = "conque_China_superevent"
+	is_triggered_only = yes
+	option = {
+		name = "conqueChinaoption"
+        }
+}
+#226兵变
+province_event = {
+	id = 190031
+	title = "Army_attack_potitle"
+	desc = "Army_attack_podesc"
+	picture = "226superevent"
+	is_triggered_only = yes
+	option = {
+		name = "Army_attack_pooption"
+        }
+}
+#Notherngovment
+#西北建政
+province_event = {
+	id = 190032
+	title = "Northern_gov_establishtitle"
+	desc = "Northern_gov_establishdesc"
+	picture = "WestNorther_gov_superevent"
+	is_triggered_only = yes
+	option = {
+		name = "Northern_gov_establishoption"
+        }
+}
+#东亚革命战争
+province_event = {
+	id = 190033
+	title = "Eeatern_Asian_revolutiontitle"
+	desc = "Eeatern_Asian_revolutiondesc"
+	picture = "Great_Asian_revolution_war"
+	is_triggered_only = yes
+	option = {
+		name = "Eeatern_Asian_revolutionoption"
+        }
+}
+#西北国防政府凯旋
+province_event = {
+	id = 190035
+	title = "Northern_gov_win_title"
+	desc = "Northern_gov_win_desc"
+	picture = "AntiJapan_win"
+	is_triggered_only = yes
+	option = {
+		name = "Northern_gov_win_option"
+        }
+}

@@ -1,0 +1,41 @@
+name = "中国军阀冲突"
+
+limited_war = yes
+#青藏战争
+1932.4.1 = {
+	add_attacker = TIB
+	add_defender = CXK
+	war_goal=
+	{
+		casus_belli = conquer
+		actor="TIB"
+		receiver="CXK"
+	}
+	war_goal=
+	{
+		casus_belli = conquer
+		actor="CXK"
+		receiver="TIB"
+	}
+}
+1933.1.1 = {
+	add_defender = CQM
+}
+1932.12.1 = {
+	rem_defender = CXK
+}
+1933.12.1 = {
+    rem_attacker = TIB
+	rem_defender = CQM
+}
+#盛马之争
+1937.1.12 = {
+	add_attacker = CXM
+	add_defender = SIK
+	war_goal=
+	{
+		casus_belli=conquer
+		actor="SIA"
+		receiver="CXM"
+	}
+}

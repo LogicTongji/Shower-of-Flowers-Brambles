@@ -1,0 +1,22 @@
+owner = CSH
+controller = CSH
+add_core = CHI
+add_core = CHC
+infra = 5
+1937.11.26 = { 	controller = JAP } 
+1940.3.1 = {
+
+	owner = WJW
+controller = WJW
+add_core = WJW
+
+}
+1945.9.28 = {
+	owner = CHI
+	controller = CHI
+	remove_core = WJW
+}
+1949.10.1 = {
+	owner = PRC
+	controller = PRC
+}

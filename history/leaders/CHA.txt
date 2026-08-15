@@ -1,0 +1,123 @@
+521004 = {
+	name = "¼ªºè²ı"
+	country = CHA
+	type = land
+	skill = 3
+	max_skill = 5
+	add_trait = sincere_seeker
+	add_trait = serious_general
+	loyalty = 0.00
+	picture = M202121122
+	history = {
+		1930.1.1 = { rank = 3 }
+	}
+}
+5210272 = {
+	name = "·ëÓñÏé"
+	country = CHA
+	type = land
+	skill = 3
+	max_skill = 6
+	loyalty = 0.00
+	picture = M202121121
+	add_trait = serious_general
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1931.1.1 = { rank = 2 }
+		1932.1.1 = { rank = 3 }
+		1933.1.1 = { rank = 4 }
+	}
+}
+421000142 = {
+	name = "·½ÕñÎä"
+	country = CHA
+	type = land
+	skill = 1
+	max_skill = 3
+	add_trait = offensive_doctrine
+	loyalty = 0.00
+	picture = M202121123
+	history = {
+		1930.1.1 = { rank = 3 }
+	}
+}
+5210301 = {
+	name = "Ù¡÷ë¸ó"
+	country = CHA
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50301
+	add_trait = defense_army
+	add_trait = sincere_seeker
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+	}
+}
+5210045 = {
+	name = "¼ªĞÇÎÄ"
+	country = CHA
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50045
+	add_trait = trickster
+	add_trait = defensive_doctrine
+	history = {
+		1932.1.1 = { rank = 1 }
+	}
+}
+5210147 = {
+	name = "¸ßÊ÷Ñ«"
+	country = CHA
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50147
+	add_trait = sincere_seeker
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+421000141 = {
+	name = "Áõ×ÔÕä"
+	country = CHA
+	type = land
+	skill = 1
+	max_skill = 4
+	add_trait = defensive_doctrine
+	loyalty = 0.00
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+421000143 = {
+	name = "ÈîĞşÎä"
+	country = CHA
+	type = land
+	skill = 1
+	max_skill = 3
+	add_trait = offensive_doctrine
+	loyalty = 0.00
+	picture = L4000143
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+421000144 = {
+	name = "Ö£´óÕÂ"
+	country = CHA
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000144
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}

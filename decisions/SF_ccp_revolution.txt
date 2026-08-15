@@ -1,0 +1,72 @@
+#政府革新
+#抗战前
+diplomatic_decisions = {
+    #瓦窑堡会议
+	Anti_jap_united_front_first = {            
+		potential = {
+			tag = CHC
+                        exists = CHI
+			not = { has_country_flag = Anti_jap_united_front_first } 
+			date = 1935.12.1
+			not = { year = 1936 }
+			        war_with = JAP
+		}
+		allow = {
+			has_country_flag = Postpone_war_ShanXi_Commist
+		}
+		effect = {
+			set_country_flag = Anti_jap_united_front_first
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#抗战中
+	#游击战争指示
+	   Guide_for_guerrilla = {
+		potential = {
+			tag = CHC
+            has_global_flag = SF_anti_japanese_war
+			NOT = { has_global_flag = Guide_for_guerrilla } 
+			NOT = { CHI = { has_country_flag = jap_seizes_coast_chi } }
+			CHI = { has_country_flag = defence_wuhan }
+		}
+		allow = {
+		    war_with = JAP
+			NOT = { exists = CJC }
+			NOT = { exists = CSD }
+		}
+		effect = {
+			set_global_flag = Guide_for_guerrilla
+			country_event = 13234
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	 #延安整风
+	Yanan_revolution = {            
+		potential = {
+			tag = CHC
+                        exists = CHI
+			not = { has_country_flag = Yanan_revolution } 
+			year = 1940
+			not = { year = 1944 } 
+		}
+		allow = {
+			CHI = { has_country_flag = jap_seizes_coast_chi }
+		}
+		effect = {
+			set_country_flag = Yanan_revolution
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#大生产运动
+	#陕甘宁边区土地条例
+	#陕甘宁边区施政纲领
+	#解放战争
+	#土地改革
+	#人民解放军
+}

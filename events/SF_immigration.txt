@@ -1,0 +1,175 @@
+country_event = {
+        is_triggered_only = yes
+	id = 1550
+	title = "The_Migration_Period1title"
+	desc = "Migration_Period1_desc"
+	picture = "immigration1"
+	option = {
+		name = "The_Migration_Period1op"
+                add_country_modifier = {
+			name = "The_Migration_Period_modifier"
+			duration = 365
+                }		
+                5542 = { industry = -2 }
+                5494 = { industry = -2 }
+                5383 = { industry = -1 }
+                5275 = { industry = -1 }
+                7508 = { industry = 3 }
+                7520 = { industry = 2 }
+                7435 = { industry = 1 }
+                CHI = { 5542 = { energy = -2 } } 
+                CHI = { 5542 = { metal  = -1 } }
+                CHI = { 5494 = { energy = -15 } } 
+                CHI = { 5494 = { metal  = -8 } }
+                CHI = { 5383 = { energy = -12 } } 
+                CHI = { 5383 = { metal  = -10 } }
+                CHI = { 7508 = { energy = 20 } } 
+                CHI = { 7508 = { metal  = 10 } }
+                CHI = { 7520 = { energy = 9 } } 
+                CHI = { 7520 = { metal  = 9 } }		
+	}
+}
+country_event = {
+        is_triggered_only = yes
+	id = 1551
+	title = "The_Migration_Period2title"
+	desc = "Migration_Period2_desc"
+	picture = "immigration2"
+	option = {
+		name = "The_Migration_Period1op"
+                country_event = 1552		
+                5728 = { industry = -1 }
+                5843 = { industry = -1 }
+                5515 = { industry = -1 }              
+                7508 = { industry = -2 }      
+                CHI = { 5728 = { energy = -1 } } 
+                CHI = { 5515 = { metal  = -1 } }
+                CHI = { 5515 = { energy = -2 } } 
+                CHI = { 5728 = { metal  = -1 } }
+                CHI = { 5383 = { energy = -12 } } 
+                CHI = { 5383 = { metal  = -10 } }
+                CHI = { 7508 = { energy = -20 } } 
+                CHI = { 7508 = { metal  = -10 } }           			           	
+	}
+}
+country_event = {
+        is_triggered_only = yes
+	id = 1552
+	title = "The_Migration_Period3title"
+	desc = "Migration_Period3_desc"
+	picture = "immigration3"
+	option = {
+		name = "The_Migration_Period2op"		
+                7519 = { industry = 1 }              
+                7530 = { industry = 1 }
+                9415 = { industry = 1 }
+                9416 = { industry = 1 }
+                9479 = { industry = 3 }
+                9170 = { industry = 2 }
+                7561 = { industry = 2 }
+                7520 = { industry = 2 }
+                7553 = { industry = 2 }
+                7563 = { industry = 2 }
+                CHI = { 9478 = { energy = 10 } } 
+                CHI = { 9478 = { metal  = 5 } }
+                CHI = { 9415 = { energy = 3 } } 
+                CHI = { 9415 = { metal  = 2 } }
+                CHI = { 7561 = { energy = 2 } } 
+                CHI = { 7561 = { metal  = 1 } }
+                CHI = { 9170 = { energy = 2 } } 
+                CHI = { 9170 = { metal  = 1 } }
+                CHI = { 7520 = { energy = 3 } } 
+                CHI = { 7520 = { metal  = 1 } }
+                CHI = { 7553 = { energy = 1 } } 
+                CHI = { 7553 = { metal  = 1 } }	
+                CHI = { 7563 = { energy = 1 } } 
+                CHI = { 7563 = { metal  = 1 } }					           	
+	}
+}
+country_event = {
+        is_triggered_only = yes
+	id = 1553
+	title = "The_Migration_Period4title"
+	desc = "Migration_Period4_desc"
+	picture = "immigration4"
+	option = {
+		name = "The_Migration_Period1op"
+                add_country_modifier = {
+			name = "The_Migration_Period_education_modifier"
+			duration = 120
+                }
+                country_event = 1554		
+                5542 = { leadership = -0.3 }              
+                5494 = { leadership = -0.3 }
+                4979 = { leadership = -1.2 }              
+                7520 = { leadership = 0.7 }
+                7435 = { leadership = 0.5 } 
+                9478 = { leadership = 1 }                     			           	
+	}
+}
+
+country_event = {
+	id = 3553
+    fire_only_once = yes
+	title = "The_Migration_Period11title"
+	desc = "Migration_Period11_desc"
+	picture = "immigration5"
+    trigger = {
+		tag = CHI
+        has_country_flag = The_Migration_Period_education4
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "The_Migration_Period2op"              
+                5757 = { leadership = -0.3 }              
+                5834 = { leadership = -0.3 }
+                5763 = { leadership = 0.5 }    
+                5717 = { leadership = 0.5 } 		           	
+                }
+}
+
+country_event = {
+        is_triggered_only = yes
+	id = 1557
+	title = "The_Migration_Period8title"
+	desc = "Migration_Period8_desc"
+	picture = "immigration6"
+	option = {
+		name = "The_Migration_Period3op"
+                7561 = { 
+			add_province_modifier = {
+			name = "The_Migration_education2_education_modifier"
+			duration = 2923
+                     }	 
+                }
+                7561 = { leadership = 1 }                     			           			           	
+	}
+}
+
+country_event = {
+        is_triggered_only = yes
+	id = 1558
+	title = "The_Migration_Period12title"
+	desc = "Migration_Period12_desc"
+	picture = "immigration7"
+	option = {
+		name = "The_Migration_Period4op"             
+                9296 = { leadership = 0.2 }                     			           			           	
+	}
+}
+
+country_event = {
+        is_triggered_only = yes
+	id = 1559
+	title = "The_Migration_Period13title"
+	desc = "Migration_Period13_desc"
+	picture = "immigration8"
+	option = {
+		name = "The_Migration_Period2op"           
+	           
+                9415 = { leadership = 0.5 }                     			           			           	
+	}
+}

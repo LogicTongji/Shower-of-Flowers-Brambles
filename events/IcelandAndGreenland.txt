@@ -1,0 +1,37 @@
+##########################################
+# UK occupation of Greenland and Iceland #
+##########################################
+# DEN/GER - Reaction Event
+country_event = {
+
+	id = 9004
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME9004"
+	desc = "EVTDESC9004"
+	#picture = "american_soldiers_winter"
+
+	option = {
+		name = "EVTOPTA9004"			
+		ai_chance = { factor = 100 }
+		
+		# Iceland		
+		8084 = { secede_province = ENG }
+		8086 = { secede_province = ENG }
+		8089 = { secede_province = ENG }
+		
+		# Greenland
+		6643 = { secede_province = ENG }
+		8418 = { secede_province = ENG }
+		8524 = { secede_province = ENG }
+		10675 = { secede_province = ENG }
+		10683 = { secede_province = ENG }
+		
+		# Faroe Islands
+		14153 = { secede_province = ENG }
+	}
+	option = {
+		name = "EVTOPTB1301" #Never!
+	}
+}

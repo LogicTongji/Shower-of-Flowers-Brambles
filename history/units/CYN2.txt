@@ -1,0 +1,33 @@
+corps = {    
+        name = "国民革命军第60军"
+        leader = 4000102   		
+        location = 7520	
+        expeditionary_owner = CYN
+        regiment = { type = hq_brigade name = "国民革命军第60军军部" historical_model = 3 }
+        regiment = { type = infantry_brigade name = "警卫团" experience = 35 historical_model = 2 }
+        regiment = { type = artillery_brigade name = "师直属炮兵旅" experience = 35 historical_model = 2 }		
+	division= {		
+		name = "国民革命军第182师"
+                                leader = 4000110   		
+		location = 7520	
+                expeditionary_owner = CYN	
+		regiment = { type = bergsjaeger_brigade name = "第539旅" experience = 35 historical_model = 2 }	
+		regiment = { type = bergsjaeger_brigade name = "第540旅" experience = 35 historical_model = 2 }	
+	}		
+	division= {		
+		name = "国民革命军第183师"
+                                leader = 4000111  	
+		location = 7520	
+	        expeditionary_owner = CYN
+		regiment = { type = bergsjaeger_brigade name = "第541旅" experience = 35 historical_model = 2 }	
+		regiment = { type = bergsjaeger_brigade name = "第542旅" experience = 35 historical_model = 2 }	
+        }
+	division= {		
+		name = "国民革命军第184师"
+                                leader = 4000108   	
+		location = 7520	
+	        expeditionary_owner = CYN
+		regiment = { type = bergsjaeger_brigade name = "第543旅" experience = 35 historical_model = 3 }	
+		regiment = { type = bergsjaeger_brigade name = "第544旅" experience = 35 historical_model = 3 }	
+	}
+}	

@@ -1,0 +1,24 @@
+corps = {
+	name = "第24军"
+	location = 9444
+	regiment = { type = hq_brigade name = "第24军司令部" historical_model = 0 }
+	regiment = { type = infantry_brigade name = "直属旅" strength = 20 historical_model = 0 }
+	division= {
+		name = "第136师"
+		location = 9444
+		regiment = { type = militia_brigade name = "第1旅" strength = 20 historical_model = 0 }
+		regiment = { type = militia_brigade name = "第2旅" strength = 20 historical_model = 0 }
+	}
+	division= {
+		name = "第137师"
+		location = 9444
+		regiment = { type = militia_brigade name = "第3旅" strength = 20 historical_model = 0 }
+		regiment = { type = militia_brigade name = "第4旅" strength = 20 historical_model = 0 }
+	}
+	division= {
+		name = "第138师"
+		location = 9444
+		regiment = { type = infantry_brigade name = "第5旅" strength = 20 historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第6旅" strength = 20 historical_model = 0 }
+	}
+}

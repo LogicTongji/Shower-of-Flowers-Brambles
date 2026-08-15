@@ -1,0 +1,124 @@
+##################################################;;;;;;;;;;;X
+# Orders;;;;;;;;;;;X
+##################################################;;;;;;;;;;;X
+NO_ORDERS;没有命令;;;;;;;;;;X
+SUPPORT_ATTACK;支援攻击;;;;;;;;;;X
+SUPPORT_ATTACK_D;向 $WHERE$ 进行支援攻击。;;;;;;;;;;X
+MOVE_ORDER;移动;;;;;;;;;;X
+MOVE_ORDER_D;向 $WHERE$ 移动.;;;;;;;;;;X
+ORDER_SYNC_ARRIVAL;同步到达;;;;;;;;;;X
+ORDER_STANCE;姿态;;;;;;;;;;X
+ORDER_PRIO;优先权;;;;;;;;;;X
+STAN_PASSIVE;被动姿态;;;;;;;;;;X
+STAN_DEFENSIVE;防御姿态;;;;;;;;;;X
+STAN_AGRESSIVE;进攻姿态;;;;;;;;;;X
+ORDER_JOIN_FLEET;加强舰队;;;;;;;;;;X
+ORDER_JOIN_FLEET_S;加强 $NAME$;;;;;;;;;;X
+ORDER_PATROL;巡逻;;;;;;;;;;X
+ORDER_PATROL_S;巡逻($ACTION$);;;;;;;;;;X
+PATROL_SHADOW;隐蔽;;;;;;;;;;X
+PATROL_SEARCH;搜索;;;;;;;;;;X
+ORDER_INTERCEPT;拦截;;;;;;;;;;X
+ORDER_INTERCEPT_S;拦截($STATE$);;;;;;;;;;X
+INTERCEPT_WAITING;等待;;;;;;;;;;X
+INTERCEPT_ATTACK;进攻;;;;;;;;;;X
+INTERCEPT_RETURN;返回;;;;;;;;;;X
+ORDER_SORTIE;突击;;;;;;;;;;X
+ORDER_CONVOY_ESCORT_NTYPE;护卫从 $START$ 到 $END$的航线;;;;;;;;;;X
+ORDER_CONVOY_ESCORT;护卫航线;;;;;;;;;;X
+ORDER_CONVOY_ESCORT_S;护卫从 $START$ 到 $END$ 的航线;;;;;;;;;;X
+ORDER_CONVOY_RAID;护航袭击;;;;;;;;;;X
+ORDER_TRANSPORT;运输;;;;;;;;;;X
+ORDER_INVADE;登陆;;;;;;;;;;X
+STRAT_BOMB;战略轰炸;;;;;;;;;;X
+STRAT_BOMB_SHORT_DESC;战略轰炸($TYPE$);;;;;;;;;;X
+STRAT_BOMB_WAITING;静止;;;;;;;;;;X
+STRAT_BOMB_RETURNING;返回;;;;;;;;;;X
+STRAT_BOMB_ATTACKING;轰炸 $PROV$;;;;;;;;;;X
+STRAT_BOMB_DESC;轰炸目标地区的任何工厂及资源产业。优先攻击防空力量薄\n弱的高价值目标。;;;;;;;;;;X
+ORDER_SECOND_TARGET;次要目标为 $PROV$;;;;;;;;;;X
+ORDER_NO_SECOND_TARGET;在地图上右击以选择一个地区作为次要目标。;;;;;;;;;;X
+AIRTARG_POINT;点;;;;;;;;;;X
+AIRTARG_LINE;线;;;;;;;;;;X
+AIRTARG_CIRCLE;面;;;;;;;;;;X
+REGION;地区;;;;;;;;;;X
+ORDER_RANGE_VAL;$VAL$ 千米;;;;;;;;;;X
+ORDER_ANGLE_VAL;$VAL$ 度;;;;;;;;;;X
+ORDER_ANGLE;角度:;;;;;;;;;;X
+ORDER_RADIUS;航程:;;;;;;;;;;X
+ORDER_WIDTH;锥面宽度:;;;;;;;;;;X
+ORDER_WIDTH_VAL;$VAL$ 度;;;;;;;;;;X
+LOG_BOMB;战术轰炸;;;;;;;;;;X
+LOG_BOMB_SHORT_DESC;战术轰炸($TYPE$);;;;;;;;;;X
+LOG_BOMB_DESC;轰炸基础设施及补给点。优先攻击防空力量薄弱的高价值目\n标。;;;;;;;;;;X
+AIRFIELD_BOMB;轰炸机场;;;;;;;;;;X
+AIRFIELD_BOMB_SHORT_DESC;轰炸机场($TYPE$);;;;;;;;;;X
+AIRFIELD_BOMB_DESC;轰炸机场的目的是在地面摧毁敌军飞机。优先攻击防空力量\n薄弱的高价值目标。;;;;;;;;;;X
+INSTALLATION_BOMB;设施突袭;;;;;;;;;;X
+INSTALLATION_BOMB_SHORT_DESC;设施突袭($TYPE$);;;;;;;;;;X
+INSTALLATION_BOMB_DESC;进攻雷达站、火箭测试场与核能工厂。优先攻击防空力量薄\n弱的高价值目标。;;;;;;;;;;X
+INTERDICT_BOMB;封锁空域;;;;;;;;;;X
+INTERDICT_BOMB_SHORT_DESC;封锁空域($TYPE$);;;;;;;;;;X
+INTERDICT_BOMB_DESC;在一个区域巡逻搜索移动地面单位。没有搜索到活动目标的\n情况下也会考虑攻击静态目标。;;;;;;;;;;X
+GROUNDATTACK_BOMB;地面进攻;;;;;;;;;;X
+GROUNDATTACK_BOMB_SHORT_DESC;地面进攻($TYPE$);;;;;;;;;;X
+GROUNDATTACK_BOMB_DESC;在一个区域巡逻搜索移动地面单位，优先攻击战斗中的单位。;;;;;;;;;;X
+AIRSUP;夺取空中优势;;;;;;;;;;X
+AIRSUP_SHORT_DESC;夺取空中优势($TYPE$);;;;;;;;;;X
+AIRSUP_DESC;巡逻并搜索敌军航空部队。;;;;;;;;;;X
+AIRSUP_ATTACKING;在 $PROV$ 发起进攻;;;;;;;;;;X
+ORDER_DAY;白昼;;;;;;;;;;X
+ORDER_NIGHT;夜晚;;;;;;;;;;X
+ORDER_BOTH;全天候;;;;;;;;;;X
+ORDER_CONTINOUS;持续;;;;;;;;;;X
+ORDER_STOP_IF_BELOW;在组织度降低到 $ORG$% 的情况下停止;;;;;;;;;;X
+AREA_SELECTION;选择区域;;;;;;;;;;X
+CAG_DUTY_DESC;在敌人的空袭中保护航空母舰，同时轰炸与航空母舰作战的\n敌军舰队。;;;;;;;;;;X
+CAG_DUTY_SHORT_DESC;航母护卫 ($TYPE$);;;;;;;;;;X
+CAG_DUTY;航母护卫;;;;;;;;;;X
+CAG_FIGHTING;战斗;;;;;;;;;;X
+PARADROP_MISSION;空降袭击;;;;;;;;;;X
+PARADROP_MISSION_SHORT_DESC;空降袭击 ($TYPE$};;;;;;;;;;X
+PARA_FLYING;飞行;;;;;;;;;;X
+PARA_MISSION_DESC;在一个地区实行空降袭击，向目标投放伞兵力量。;;;;;;;;;;X
+ORDER_REBASE;更换基地;;;;;;;;;;X
+ORDER_RESERVE;后备;;;;;;;;;;X
+FROM_LABEL;开始时间:;;;;;;;;;;X
+TO_LABEL;结束时间:;;;;;;;;;;X
+NAVALSTRIKE_BOMB;攻击舰船;;;;;;;;;;X
+NAVALSTRIKE_BOMB_SHORT_DESC;攻击舰船($TYPE$);;;;;;;;;;X
+NAVALSTRIKE_BOMB_DESC;搜索并摧毁舰船目标。;;;;;;;;;;X
+PORTSTRIKE_BOMB;攻击港口;;;;;;;;;;X
+PORTSTRIKE_BOMB_SHORT_DESC;攻击港口($TYPE$);;;;;;;;;;X
+PORTSTRIKE_BOMB_DESC;攻击敌军海军基地及停泊在那里的船只。;;;;;;;;;;X
+REBASE_TO_CAG_MISSION;配备到航母;;;;;;;;;;X
+REBASE_TO_CAG_MISSION_SHORT_DESC;配备到航母 ($TYPE$);;;;;;;;;;X
+REBASE_TO_CAG_MISSION_DESC;将一只舰载机编队配备到一艘航空母舰，此后它们将以此航母为基地行动。;;;;;;;;;;X
+NUKE_MISSION;核攻击;;;;;;;;;;X
+NUKE_MISSION_SHORT_DESC;核攻击 ($TYPE$);;;;;;;;;;X
+NUKE_MISSION_DESC;向目标投掷一颗核弹，降低敌人的作战意志。;;;;;;;;;;X
+TRANS_SUP_MISSION;空投补给;;;;;;;;;;X
+TRANS_SUP_MISSION_SHORT_DESC;空投补给 ($TYPE$);;;;;;;;;;X
+TS_RETURNING;返回;;;;;;;;;;X
+TS_WAITING;等待;;;;;;;;;;X
+TS_SUPPLYING;飞行;;;;;;;;;;X
+TRANS_SUP_MISSION_DESC;通过空中运输向一些部队投递补给。;;;;;;;;;;X
+ORDER_AIR_REBASE;更换基地;;;;;;;;;;X
+ORDER_AIR_REBASE_SHORT_DESC;更换基地($PROV$);;;;;;;;;;X
+ORDER_AIR_REBASE_DESC;将此单位转移到一个新的基地。;;;;;;;;;;X
+ORDER_AIR_RESERVE;后备;;;;;;;;;;X
+ORDER_AIR_RESERVE_SHORT_DESC;后备;;;;;;;;;;X
+ORDER_AIR_RESERVE_DESC;此单位将被用于替换该基地在持续性执行作战任务时损失\n过高的空军部队。;;;;;;;;;;X
+ORDER_JOIN_AIR;增援;;;;;;;;;;X
+ORDER_JOIN_AIR_SHORT_DESC;增援($UNIT$);;;;;;;;;;X
+ORDER_JOIN_AIR_DESC;将此单位补充给另一个单位。;;;;;;;;;;X
+INTERCEPT;空中拦截;;;;;;;;;;X
+INTERCEPT_SHORT_DESC;空中拦截($TYPE$);;;;;;;;;;X
+INTERCEPT_DESC;与入侵的敌军战机缠斗。;;;;;;;;;;X
+ORDER_AIR_CONVOY_RAID;护航袭击;;;;;;;;;;X
+AIR_CONVOY_SHORT_DESC;护航袭击($UNIT$);;;;;;;;;;X
+AIR_CONVOY_DESC;在海域猎取敌军护航舰队并击沉它们。;;;;;;;;;;X
+ORDER_STRATEGIC_REDEPLOYMENT;战略部署;;;;;;;;;;X
+ORDER_STRATEGIC_REDEPLOYMENT_DESC;对一个单位进行战略部署能更快地使它到达目的地，但这会消耗更多的补给同时此单位在长途行军中也会遭受组织度的损失。;;;;;;;;;;X
+STRAT_REDEP_D;战略部署($UNIT$);;;;;;;;;;X
+REB_CAG_MISSION_DESC;转场至航母，将其作为该舰载机的基地。;;;;;;;;;;X

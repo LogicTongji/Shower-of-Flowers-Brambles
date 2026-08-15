@@ -1,0 +1,66 @@
+############################
+#   中共抗日民族统一战线   #
+############################
+diplomatic_decisions = {
+	# 四月密谈，策划抗日民族统一战线
+	china_united_front_action = {
+		potential = {
+			tag = CHC
+			not = { has_global_flag = the_china_united_front_action }
+			not = { year = 1937 } 
+            has_country_flag = Anti_jap_united_front_first
+			exists = CHI		
+			war_with = CHI
+			not = {
+				and = {
+					year = 1936
+					month = 11 #十二月
+				}
+			}
+		}
+		allow = {
+			CHI = {
+				not = { vassal_of = JAP }
+			}
+			and = {
+				year = 1936
+				month = 3 #四月
+			}
+		}
+		effect = {
+			set_global_flag = the_china_united_front_action
+			country_event = 1000023
+			CDB = { country_event = 1000023
+				leave_alliance = CHI
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#统一战线正式形成
+	china_united_front = {
+		major = yes
+		potential = {
+			tag = CHI
+			not = { has_global_flag = the_china_united_front }
+			exists = CHC
+			not = { war_with = CHC }
+			has_country_flag = CHI_Kangzhan
+			has_global_flag = luochuan_meeting
+		}
+		allow = {
+			CHI = {
+				not = { vassal_of = JAP }
+			}
+		}
+		effect = {
+			set_global_flag = the_china_united_front
+			national_unity = 5
+			CHC = { country_event = 1000029 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

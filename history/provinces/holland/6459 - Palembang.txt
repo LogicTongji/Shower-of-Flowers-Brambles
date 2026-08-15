@@ -1,0 +1,19 @@
+owner = INO
+controller = INO
+add_core = INO
+points = 2
+crude_oil = 6.00
+rare_materials = 10.00
+strategic_resource = oil_refinery
+industry = 1
+infra = 6
+manpower = 0.2
+leadership = 0.2
+
+1942.6.4 = {
+	controller = JAP
+}
+
+1945.9.28 = {
+	controller = INO
+}

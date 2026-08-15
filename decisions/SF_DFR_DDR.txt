@@ -1,0 +1,131 @@
+########################
+#   地区问题解决决议   #
+########################
+diplomatic_decisions = {
+#民主德国
+	independent_DDR = {
+		major = yes
+		potential = {
+			tag = SOV
+			not = { has_country_flag = independent_DDR }
+			has_global_flag = independent_DFR
+			NOT = { year = 1950 }
+			has_global_flag = JAP_Lost
+               has_global_flag = GER_Lost
+		}
+		allow = {
+			date = 1949.10.3
+			NOT = { war_with = USA }
+			SOV = {
+				controls = 1861
+			}
+		}
+		effect = {
+			SOV = {	
+				SF_DDR_region = { any_owned = { limit = { controlled_by = SOV } }  secede_province = DDR remove_core = GER add_core = DDR change_controller = SOV }
+			}
+			create_vassal = DDR
+			DDR = { 
+				manpower = 100
+				load_oob = "DDR_Amry1.txt"
+			}
+			set_country_flag = independent_DDR
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#联邦德国
+	independent_DFR = {
+		major = yes
+		potential = {
+			tag = USA
+			NOT = { exists = DFR }
+			not = { has_global_flag = independent_DFR }
+			has_global_flag = JAP_Lost
+               has_global_flag = GER_Lost
+		}
+		allow = {
+			NOT = { war_with = SOV }
+			date = 1949.5.3
+			USA = {
+				controls = 1857
+				controls = 2257
+			}
+		}
+		effect = {
+			USA = {		
+				SF_BRD_region = { any_owned = { limit = { controlled_by = USA } }  secede_province = DFR remove_core = GER add_core = DFR change_controller = USA }
+			}
+			create_vassal = DFR
+			DFR = { 
+				manpower = 500
+				load_oob = "DFR_Amry.txt"
+			}
+			set_global_flag = independent_DFR
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		#奥地利
+	independent_AUS = {
+		major = yes
+		potential = {
+			tag = ENG
+			NOT = { exists = AUS }
+			not = { has_country_flag = independent_AUS }
+		}
+		allow = {
+			NOT = { war_with = SOV }
+			date = 1955.5.15
+			ENG = {
+				controls = 3026
+			}
+		}
+		effect = {
+			ENG = {		
+				austria_region = { any_owned = { limit = { controlled_by = ENG } }  secede_province = AUS remove_core = GER change_controller = ENG  }
+			}
+			AUS = { 
+				manpower = 500
+			}
+			set_country_flag = independent_AUS
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#联合国
+	independent_UN = {
+		major = yes
+		potential = {
+			tag = USA
+			not = { 
+			exists = UNN 
+			has_global_flag = independent_UNN 
+			        }
+			has_global_flag = EventMCD
+			has_global_flag = Yaert
+		}
+		allow = {
+			not = { 
+			war_with = SOV 
+			war_with = GER
+			war_with = ITA
+			war_with = JAP
+			}
+		has_global_flag = GER_Lost
+		}
+		effect = {
+		USA = {	any_owned = { limit = { province_id = 5946 } secede_province = UNN } secede_province = UNN remove_core = USA change_controller = USA add_core = UNN } 
+			UNN = { 
+				manpower = 500
+			}
+			set_global_flag = independent_UNN
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

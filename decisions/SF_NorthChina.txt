@@ -1,0 +1,86 @@
+#####################
+#  华北决议组         #
+#####################
+diplomatic_decisions = {
+	     JAP_north_China1 = {
+		potential = {
+			tag = JAP                                            
+                                                exists = CHI
+			not = { has_global_flag = JAP_invassion_northChina } 
+			has_global_flag = Anti_jap_front_great_wall_loss
+			not = { year = 1936 } 
+		}
+		allow = {
+			not = { alliance_with = CHI }
+		}
+		effect = {
+			set_global_flag = JAP_invassion_northChina
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	 CHI_north_China1 = {
+	    major = yes
+		potential = {
+			tag = CHI                                          
+			not = { has_country_flag = CHI_papring_northChina } 
+			JAP = { has_country_flag = independent_CJD }
+			has_country_flag = JAP_invassion_northChina_Heibei
+			has_global_flag = JAP_slef_northChina
+			has_global_flag = Anti_jap_front_great_wall_loss
+			not = { year = 1937 } 
+		}
+		allow = {
+			not = { alliance_with = CHI }
+			date = 1935.12.10
+		}
+		effect = {
+			set_country_flag = CHI_papring_northChina
+            CJC = { inherit = CRH
+			        inherit = CCH 
+					load_oob = "CJC_1936.txt"
+					}
+			JAP ={ country_event = 12225 }
+			SF_china_region = { remove_core = CRH }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	independent_CJD = {
+		major = yes
+		potential = {
+			tag = JAP
+			not = { has_country_flag = independent_CJD }
+			has_global_flag = Anti_jap_front_great_wall_loss
+			has_global_flag = JAP_slef_northChina
+			NOT = { year = 1936 }
+		}
+		allow = {
+			NOT = { exists = CJD }
+			date = 1935.11.24
+			has_global_flag = Anti_jap_front_great_wall_loss
+		}
+		effect = {
+			MAN = {
+ any_owned = { limit = { province_id = 4886 } secede_province = CJD } 
+any_owned = { limit = { province_id = 4934 } secede_province = CJD }
+any_owned = { limit = { province_id = 4935 } secede_province = CJD }
+any_owned = { limit = { province_id = 5019 } secede_province = CJD }
+any_owned = { limit = { province_id = 5055 } secede_province = CJD }
+any_owned = { limit = { province_id = 4981 } secede_province = CJD }
+}
+			CJD = { 
+				manpower = 100
+				load_oob = "CJD_1936.txt"
+				threat = { who = CJC value = -75 }
+			}
+			CHI ={ country_event = 12224 }
+			set_country_flag = independent_CJD
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

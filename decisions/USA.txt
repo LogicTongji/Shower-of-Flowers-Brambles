@@ -1,0 +1,43 @@
+diplomatic_decisions = {
+
+	new_deal = {
+		potential = {
+			tag = USA
+			not = { has_country_modifier = us_new_deal }
+			not = { has_country_flag = nd }
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = nd
+			add_country_modifier = {
+				name = "us_new_deal"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gear_up_for_war = {
+		potential = {
+			tag = USA
+			not = { has_country_flag = us_gear_up_for_war }
+			has_country_modifier = us_new_deal
+		}
+		allow = {
+			or = {
+				GER = {	war_with = ENG }
+				war = yes
+			}
+		}
+		effect = {
+			neutrality = -5
+			set_country_flag = us_gear_up_for_war
+			remove_country_modifier = us_new_deal
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

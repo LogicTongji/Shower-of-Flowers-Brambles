@@ -1,0 +1,58 @@
+capital = 5611
+government = absolute_monarchy
+ideology = paternal_autocrat
+alignment = { x = 60 y = 61.6 }
+neutrality = 85
+national_unity = 65
+schwerpunkt = 0
+blitzkrieg = 0
+mobile_warfare = 0
+elastic_defence = 0
+operational_level_command_structure = 0
+tactical_command_structure = 0
+mechanized_offensive = 0
+delay_doctrine = 0
+integrated_support_doctrine = 0
+infantry_warfare = 1
+special_forces = 0
+assault_concentration = 1
+central_planning = 0
+mass_assault = 1
+peoples_army = 1
+large_front = 0
+guerilla_warfare = 0
+operational_level_organisation = 0
+
+popularity = { 
+	national_socialist = 0
+	fascistic = 0
+	paternal_autocrat = 40
+	social_conservative = 60
+	market_liberal = 0
+	social_liberal = 0
+	social_democrat = 0
+	left_wing_radical = 0
+	leninist = 0
+	stalinist = 0
+}
+
+organization = { 
+	national_socialist = 0
+	fascistic = 0
+	paternal_autocrat = 50
+	social_conservative = 70
+	market_liberal = 0
+	social_liberal = 0
+	social_democrat = 0
+	left_wing_radical = 0
+	leninist = 0
+	stalinist = 0
+}
+
+training_laws = minimal_training
+press_laws = censored_press
+industrial_policy_laws = consumer_product_orientation
+education_investment_law = minimal_education_investment
+economic_law = full_civilian_economy
+conscription_law = volunteer_army
+civil_law = repression

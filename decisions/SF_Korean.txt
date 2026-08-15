@@ -1,0 +1,106 @@
+##################
+#   朝鲜决议组   #
+##################
+
+diplomatic_decisions = {
+#国民政府控制朝鲜
+	Korean_problem1 = {
+		potential = {
+			or = { tag = CHI tag = CXK tag = CSC tag = CYN tag = CGX tag = CGD tag = CQM tag = CNM tag = SIK tag = TIB tag = CJC tag = CSD tag = CSX tag = CSY tag = CDB }
+			not = { has_country_flag = Korean_problem1 } 
+			war_with = JAP
+			or = { CHI = { controls = 5056 } CHC = { controls = 5056 } CXB = { controls = 5056 } CXK = { controls = 5056 } CSC = { controls = 5056 } CYN = { controls = 5056 } CGX = { controls = 5056 } CGD = { controls = 5056 } CQM = { controls = 5056 } CNM = { controls = 5056 } SIK = { controls = 5056 } TIB = { controls = 5056 } CJC = { controls = 5056 } CSX = { controls = 5056 } CSD = { controls = 5056 } CSY = { controls = 5056 } CDB = { controls = 5056 } }
+			or = { CHI = { controls = 5341 } CHC = { controls = 5341 } CXB = { controls = 5341 } CXK = { controls = 5341 } CSC = { controls = 5341 } CYN = { controls = 5341 } CGX = { controls = 5341 } CGD = { controls = 5341 } CQM = { controls = 5341 } CNM = { controls = 5341 } SIK = { controls = 5341 } TIB = { controls = 5341 } CJC = { controls = 5341 } CSX = { controls = 5341 } CSD = { controls = 5341 } CSY = { controls = 5341 } CDB = { controls = 5341 } }
+			controls = 5116
+		}
+		effect = {
+			set_country_flag = Korean_problem1
+			JAP = { country_event = 1000149 }
+			country_event = 1000150
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#中共控制朝鲜
+	Korean_problem2 = {
+		potential = {
+			or = { tag = CHC tag = CXB }
+			not = { has_country_flag = Korean_problem2 } 
+			war_with = JAP
+			or = { CHI = { controls = 5056 } CHC = { controls = 5056 } CXB = { controls = 5056 } CXK = { controls = 5056 } CSC = { controls = 5056 } CYN = { controls = 5056 } CGX = { controls = 5056 } CGD = { controls = 5056 } CQM = { controls = 5056 } CNM = { controls = 5056 } SIK = { controls = 5056 } TIB = { controls = 5056 } CJC = { controls = 5056 } CSX = { controls = 5056 } CSD = { controls = 5056 } CSY = { controls = 5056 } CDB = { controls = 5056 } }
+			or = { CHI = { controls = 5341 } CHC = { controls = 5341 } CXB = { controls = 5341 } CXK = { controls = 5341 } CSC = { controls = 5341 } CYN = { controls = 5341 } CGX = { controls = 5341 } CGD = { controls = 5341 } CQM = { controls = 5341 } CNM = { controls = 5341 } SIK = { controls = 5341 } TIB = { controls = 5341 } CJC = { controls = 5341 } CSX = { controls = 5341 } CSD = { controls = 5341 } CSY = { controls = 5341 } CDB = { controls = 5341 } }
+			controls = 5116
+		}
+		effect = {
+			set_country_flag = Korean_problem2
+			JAP = { country_event = 1000149 }
+			country_event = 1000151
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#三八线以北为苏联控制
+	independent_PRK = {
+		major = yes
+		potential = {
+			tag = SOV
+			NOT = { exists = PRK }
+			not = { has_country_flag = independent_PRK }
+			date = 1948.9.9
+			SOV = {
+				controls = 5056
+			}
+			has_global_flag = JAP_Lost
+            has_global_flag = GER_Lost
+		}
+		allow = {
+			NOT = { war_with = USA }
+		}
+		effect = {
+			SOV = {		
+				SF_PRK_region = { any_owned = { limit = { controlled_by = SOV } }  secede_province = PRK remove_core = JAP change_controller = SOV }
+			}
+			PRK = { 
+				manpower = 500
+				load_oob = "PRK_Amry.txt"
+			}
+			set_country_flag = independent_PRK
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#三八线以南为美国控制
+	independent_KOR = {
+		major = yes
+		potential = {
+			tag = USA
+			NOT = { exists = KOR }
+			date = 1948.8.9
+			USA = {
+				controls = 5116
+			}
+			not = { has_country_flag = independent_KOR }
+			has_global_flag = JAP_Lost
+            has_global_flag = GER_Lost
+		}
+		allow = {
+			NOT = { war_with = SOV }
+		}
+		effect = {
+			USA = {		
+				SF_KOR_region = { any_owned = { limit = { controlled_by = USA } }  secede_province = KOR remove_core = JAP change_controller = USA }
+			}
+			KOR = { 
+				manpower = 500
+				load_oob = "KOR_Amry.txt"
+			}
+			set_country_flag = independent_KOR
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,376 @@
+color = { 31  124  255 }
+graphical_culture = Japanese
+
+default_templates = {
+	generic_infantry = {
+		infantry_brigade
+		infantry_brigade
+		infantry_brigade
+	}
+	generic_milita = {
+		militia_brigade
+		militia_brigade
+		militia_brigade
+	}
+	generic_armoured = {
+		armor_brigade
+		motorized_brigade
+		motorized_brigade
+	}
+	generic_cavalry = {
+		cavalry_brigade
+		cavalry_brigade
+	}
+}
+
+unit_names = {
+	infantry_brigade = {
+		"韩国第1步兵师" "韩国第2步兵师" "韩国第3步兵师" "韩国第4步兵师" "韩国第5步兵师" "韩国第6步兵师" "韩国第7步兵师" "韩国第8步兵师" "韩国第9步兵师" "韩国第10步兵师" "韩国第11步兵师" 
+		"韩国第12步兵师" "韩国第13步兵师" "韩国第14步兵师" "韩国第15步兵师" "韩国第16步兵师" "韩国第17步兵师" "韩国第18步兵师" "韩国第19步兵师" "韩国第20步兵师" 
+	}
+	cavalry_brigade = {
+		"韩国第1骑兵师" "韩国第2骑兵师" "韩国第3骑兵师" "韩国第4骑兵师" "韩国第5骑兵师" "韩国第6骑兵师" "韩国第7骑兵师" "韩国第8骑兵师" "韩国第9骑兵师" "韩国第10骑兵师" 
+	}
+	motorized_brigade = {
+		"韩国第1步兵师" "韩国第2步兵师" "韩国第3步兵师" "韩国第4步兵师" "韩国第5步兵师" "韩国第6步兵师" 
+	}
+	mechanized_brigade = {
+		"韩国第1步兵师" "韩国第2步兵师" "韩国第3步兵师" "韩国第4步兵师" "韩国第5步兵师" "韩国第6步兵师" "韩国第7步兵师" "韩国第8步兵师" "韩国第9步兵师" "韩国第10步兵师"  
+	}
+	light_armor_brigade = {
+		"韩国第1装甲师" "韩国第2装甲师" "韩国第3装甲师" "韩国第4装甲师" "韩国第5装甲师" "韩国第6装甲师" "韩国第7装甲师" "韩国第8装甲师" "韩国第9装甲师" "韩国第10装甲师" "韩国第11装甲师" 
+		"韩国第12装甲师" "韩国第13装甲师" "韩国第14装甲师" 
+	}
+	armor_brigade = {
+		"韩国第1装甲师" "韩国第2装甲师" "韩国第3装甲师" "韩国第4装甲师" "韩国第5装甲师" "韩国第6装甲师" "韩国第7装甲师" "韩国第8装甲师" "韩国第9装甲师" "韩国第10装甲师" "韩国第11装甲师" 
+		"韩国第12装甲师" "韩国第13装甲师" "韩国第14装甲师"  
+	}
+	paratrooper_brigade = {
+		"韩国第1空降师" "韩国第2空降师" "韩国第3空降师" "韩国第4空降师" "韩国第5空降师" "韩国第6空降师" "韩国第7空降师" "韩国第8空降师" "韩国第9空降师" "韩国第10空降师"  
+	}
+	marine_brigade = {
+		"韩国第1海军陆战师" "韩国第2海军陆战师" "韩国第3海军陆战师" "韩国第4海军陆战师" "韩国第5海军陆战师" "韩国第6海军陆战师" "韩国第7海军陆战师" "韩国第8海军陆战师" "韩国第9海军陆战师" "韩国第10海军陆战师" 
+	}
+	bergsjaeger_brigade = {
+		"韩国第1山地师" "韩国第2山地师" "韩国第3山地师" "韩国第4山地师" "韩国第7山地师" "韩国第8山地师" "韩国第10山地师" "韩国第11山地师" "韩国第12山地师" 
+	}
+	garrison_brigade = {
+		"韩国第1卫戍师" "韩国第2卫戍师" "韩国第3卫戍师" "韩国第4卫戍师" "韩国第5卫戍师" "韩国第6卫戍师" "韩国第7卫戍师" "韩国第8卫戍师" "韩国第9卫戍师" "韩国第10卫戍师" "韩国第11卫戍师" 
+		"韩国第12卫戍师" "韩国第13卫戍师" "韩国第14卫戍师" "韩国第15卫戍师" "韩国第16卫戍师" "韩国第17卫戍师" "韩国第18卫戍师" "韩国第19卫戍师" "韩国第20卫戍师" 
+	}
+	hq_brigade = {
+		"韩国第一集团军" "韩国第二集团军" "韩国第三集团军" "韩国第四集团军" "韩国第五集团军" 
+	}
+	militia_brigade = {
+		"韩国第1步兵师" "韩国第2步兵师" "韩国第3步兵师" "韩国第4步兵师" "韩国第5步兵师" "韩国第6步兵师" "韩国第7步兵师" "韩国第8步兵师" "韩国第9步兵师" "韩国第10步兵师" "韩国第11步兵师" 
+		"韩国第12步兵师" "韩国第13步兵师" "韩国第14步兵师" "韩国第15步兵师" "韩国第16步兵师" "韩国第17步兵师" "韩国第18步兵师" "韩国第19步兵师" "韩国第20步兵师"
+	}
+	multi_role = {
+		"韩国空军第1联队" "韩国空军第2联队" "韩国空军第3联队" "韩国空军第4联队" "韩国空军第5联队" "韩国空军第7联队" "韩国空军第8联队" "韩国空军第9联队" "韩国空军第10联队" "韩国空军第11联队" "韩国空军第12联队" 
+		"韩国空军第13联队" "韩国空军第14联队" "韩国空军第15联队" "韩国空军第16联队" "韩国空军第17联队" "韩国空军第18联队" "韩国空军第19联队" "韩国空军第20联队" 
+	}
+	interceptor = {
+		"韩国空军第1联队" "韩国空军第2联队" "韩国空军第3联队" "韩国空军第4联队" "韩国空军第5联队" "韩国空军第7联队" "韩国空军第8联队" "韩国空军第9联队" "韩国空军第10联队" "韩国空军第11联队" "韩国空军第12联队" 
+		"韩国空军第13联队" "韩国空军第14联队" "韩国空军第15联队" "韩国空军第16联队" "韩国空军第17联队" "韩国空军第18联队" "韩国空军第19联队" "韩国空军第20联队" 
+	}
+	strategic_bomber = {
+		"韩国空军第1联队" "韩国空军第2联队" "韩国空军第3联队" "韩国空军第4联队" "韩国空军第5联队" "韩国空军第7联队" "韩国空军第8联队" "韩国空军第9联队" "韩国空军第10联队" "韩国空军第11联队" "韩国空军第12联队" 
+		"韩国空军第13联队" "韩国空军第14联队" "韩国空军第15联队" "韩国空军第16联队" "韩国空军第17联队" "韩国空军第18联队" "韩国空军第19联队" "韩国空军第20联队"  
+	}
+	tactical_bomber = {
+		"韩国空军第1联队" "韩国空军第2联队" "韩国空军第3联队" "韩国空军第4联队" "韩国空军第5联队" "韩国空军第7联队" "韩国空军第8联队" "韩国空军第9联队" "韩国空军第10联队" "韩国空军第11联队" "韩国空军第12联队" 
+		"韩国空军第13联队" "韩国空军第14联队" "韩国空军第15联队" "韩国空军第16联队" "韩国空军第17联队" "韩国空军第18联队" "韩国空军第19联队" "韩国空军第20联队"  
+	}
+	naval_bomber = {
+		"韩国空军第1联队" "韩国空军第2联队" "韩国空军第3联队" "韩国空军第4联队" "韩国空军第5联队" "韩国空军第7联队" "韩国空军第8联队" "韩国空军第9联队" "韩国空军第10联队" 
+	}
+	cas = {
+		"韩国空军第1联队" "韩国空军第2联队" "韩国空军第3联队" "韩国空军第4联队" "韩国空军第5联队" "韩国空军第7联队" "韩国空军第8联队" "韩国空军第9联队" "韩国空军第10联队" "韩国空军第11联队" "韩国空军第12联队" 
+		"韩国空军第13联队" "韩国空军第14联队" "韩国空军第15联队" "韩国空军第16联队" "韩国空军第17联队" "韩国空军第18联队" "韩国空军第19联队" "韩国空军第20联队"  
+	}
+	transport_plane = {
+		"韩国空军第1联队" "韩国空军第2联队" "韩国空军第3联队" "韩国空军第4联队" "韩国空军第5联队" "韩国空军第7联队" "韩国空军第8联队" "韩国空军第9联队" "韩国空军第10联队" 
+	}
+	battleship = {
+		"独立" "自由" "解放" "胜利" 
+	}
+	light_cruiser = {
+		"独立" "自由" "解放" "胜利" 
+	}
+	heavy_cruiser = {
+		"独立" "自由" "解放" "胜利"
+	}
+	battlecruiser = {
+		"独立" "自由" "解放" "胜利" 
+	}
+	destroyer = {
+		"韩国第1驱逐舰分队" "韩国第2驱逐舰分队" "韩国第3驱逐舰分队" "韩国第4驱逐舰分队" "韩国第5驱逐舰分队" "韩国第6驱逐舰分队" "韩国第7驱逐舰分队" "韩国第8驱逐舰分队" "韩国第9驱逐舰分队" "韩国第10驱逐舰分队" 
+	}
+	carrier = {
+		"独立" "自由" "解放" "胜利" 
+	}
+	submarine = {
+		"韩国第1潜艇分队" "韩国第2潜艇分队" "韩国第3潜艇分队" "韩国第4潜艇分队" "韩国第5潜艇分队" "韩国第6潜艇分队" "韩国第7潜艇分队" "韩国第8潜艇分队" "韩国第9潜艇分队" "韩国第10潜艇分队"
+	}
+	transport_ship = {
+		"韩国第1运输舰分队" "韩国第2运输舰分队" "韩国第3运输舰分队" "韩国第4运输舰分队" "韩国第5运输舰分队" "韩国第6运输舰分队" "韩国第7运输舰分队" "韩国第8运输舰分队" "韩国第9运输舰分队" "韩国第10运输舰分队" 
+	}
+
+}
+
+ministers = {
+	578001 = {
+		name = "李承晚"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M578001
+		head_of_state = stern_imperialist
+		start_date = 1936.1.1
+	}
+	578002 = {
+		name = "金九"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M578002
+		head_of_government = flamboyant_tough_guy
+		start_date = 1936.1.1
+	}
+	578003 = {
+		name = "金奎植"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M578003
+		foreign_minister = great_compromiser
+		start_date = 1936.1.1
+	}
+	578004 = {
+		name = "金昌淑"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M578004
+		armament_minister = military_entrepreneur
+		start_date = 1936.1.1
+	}
+	578005 = {
+		name = "曹晚植"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M578005
+		minister_of_security = prince_of_terror
+		start_date = 1936.1.1
+	}
+	578006 = {
+		name = "赵素昂"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M578006
+		minister_of_intelligence = research_specialist
+		start_date = 1936.1.1
+	}
+	578007 = {
+		name = "蔡秉德"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M578007
+		chief_of_staff = school_of_defence
+		start_date = 1936.1.1
+	}
+	578008 = {
+		name = "李青天"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M578008
+		chief_of_army = elastic_defence_doctrine
+		start_date = 1936.1.1
+	}
+	578009 = {
+		name = "孙元一"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M578009
+		chief_of_navy = decisive_naval_battle_doctrine
+		start_date = 1936.1.1
+	}
+	578010 = {
+		name = "李范爽"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M578010
+		chief_of_air = army_aviation_doctrine
+		head_of_government = old_air_marshal
+		start_date = 1936.1.1
+	}
+	578011 = {
+		name = "吕运亨"
+		ideology = left_wing_radical
+		loyalty = 0.75
+		picture = M578011
+		head_of_state = weary_stiff_neck
+		start_date = 1936.1.1
+	}
+	578012 = {
+		name = "朴宪永"
+		ideology = left_wing_radical
+		loyalty = 0.75
+		picture = M578012
+		head_of_government = ambitious_union_boss
+		start_date = 1936.1.1
+	}
+	578013 = {
+		name = "金汉中"
+		ideology = left_wing_radical
+		loyalty = 0.75
+		picture = M578013
+		foreign_minister = apologetic_clerk
+		start_date = 1936.1.1
+	}
+	578014 = {
+		name = "李东辉"
+		ideology = left_wing_radical
+		loyalty = 0.75
+		picture = M578014
+		armament_minister = infantry_proponent
+		start_date = 1936.1.1
+	}
+	578015 = {
+		name = "李南石"
+		ideology = left_wing_radical
+		loyalty = 0.75
+		picture = M578015
+		minister_of_security = efficient_sociopath
+		start_date = 1936.1.1
+	}
+	578016 = {
+		name = "金昌金"
+		ideology = left_wing_radical
+		loyalty = 0.75
+		picture = M578016
+		minister_of_intelligence = technical_specialist
+		start_date = 1936.1.1
+	}
+	578017 = {
+		name = "池青天"
+		ideology = left_wing_radical
+		loyalty = 0.75
+		picture = M578017
+		chief_of_staff = school_of_psychology
+		start_date = 1936.1.1
+	}
+	578018 = {
+		name = "金元凤"
+		ideology = left_wing_radical
+		loyalty = 0.75
+		picture = M578018
+		chief_of_army = guns_and_butter_doctrine
+		start_date = 1936.1.1
+	}
+	578019 = {
+		name = "钟东柱"
+		ideology = left_wing_radical
+		loyalty = 0.75
+		picture = M578019
+		chief_of_navy = open_seas_doctrine
+		start_date = 1936.1.1
+	}
+	578020 = {
+		name = "孙里宰"
+		ideology = left_wing_radical
+		loyalty = 0.75
+		picture = M578020
+		chief_of_air = naval_aviation_doctrine
+		start_date = 1936.1.1
+	}
+	578021 = {
+		name = "李应俊"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M578021
+		armament_minister = military_entrepreneur
+		start_date = 1936.1.1
+	}
+	578022 = {
+		name = "白车范"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M578022
+		minister_of_security = silent_lawyer
+		start_date = 1936.1.1
+	}
+	578023 = {
+		name = "朴正熙"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M578023
+		minister_of_intelligence = political_specialist
+		start_date = 1936.1.1
+	}
+	578025 = {
+		name = "申成沫"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M578025
+		head_of_government = happy_amateur
+		minister_of_security = crime_fighter
+		start_date = 1950.1.1
+	}
+	578026 = {
+		name = "张勉"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M578026
+		head_of_government = silent_workhorse
+		foreign_minister = apologetic_clerk
+		start_date = 1950.1.1
+	}
+	578027 = {
+		name = "张泽相"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M578027
+		head_of_government = corporate_suit
+		foreign_minister = biased_intellectual
+		start_date = 1952.1.1
+	}
+	578028 = {
+		name = "白太钦"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M578028
+		head_of_government = backroom_backstabber
+		minister_of_intelligence = political_specialist
+		start_date = 1952.1.1
+	}
+	578030 = {
+		name = "张都映"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M578030
+		foreign_minister = iron_fisted_brute
+		start_date = 1950.1.1
+	}
+	578031 = {
+		name = "白汉成"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M578031
+		armament_minister = laissez_faires_capitalist
+		start_date = 1951.1.1
+	}
+	578032 = {
+		name = "单庆生"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M578032
+		armament_minister = theoretical_scientist
+		minister_of_intelligence = technical_specialist
+		start_date = 1951.1.1
+	}
+	578033 = {
+		name = "卞荣泰"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M578033
+		minister_of_security = efficient_sociopath
+		start_date = 1949.1.1
+	}
+}

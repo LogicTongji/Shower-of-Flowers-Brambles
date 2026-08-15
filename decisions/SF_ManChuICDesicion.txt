@@ -1,0 +1,88 @@
+######################
+#   满洲开发决议组   #
+######################
+#产业五年计划大纲
+diplomatic_decisions = {
+	     ManChu_develop_desicion1 = {
+		potential = {
+			tag = JAP
+      exists = MAN
+      date = 1936.11.2
+			not = { has_global_flag = Man_Chu_develop1 } 
+			not = { year = 1938 } 
+		}
+		allow = {			
+			MAN = { vassal_of = JAP }
+		}
+		effect = {
+			set_global_flag = Man_Chu_develop1
+			relation = { who = CHI value = -100 }
+			country_event = 19310
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+ #移民决议
+ManChu_develop_desicion2 = {
+		potential = {
+			tag = JAP
+			has_global_flag = Man_Chu_develop1
+			not = { has_global_flag = ManChu_develop_desicion2 } 
+			not = { year = 1938 } 
+		}
+		allow = {			
+			MAN = { vassal_of = JAP }
+		}
+		effect = {
+			set_global_flag = ManChu_develop_desicion2
+			country_event = 19311
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#建设满洲重工业
+ManChu_develop_desicion3 = {
+		potential = {
+			tag = JAP
+			has_global_flag = Man_Chu_develop1
+			not = { has_global_flag = ManChu_develop_desicion3 } 
+			not = { year = 1939 } 
+		}
+		allow = {			
+			MAN = { vassal_of = JAP }
+			date = 1937.12.3
+		}
+		effect = {
+			set_global_flag = ManChu_develop_desicion3
+			country_event = 19317
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+#第二期五年产业计划
+ManChu_develop_desicion4 = {
+		potential = {
+			tag = JAP
+			has_global_flag = Man_Chu_develop1
+		  has_global_flag = JAPsouthing
+			not = { has_global_flag = ManChu_develop_desicion4 } 
+		}
+		allow = {			
+			MAN = { vassal_of = JAP }
+			year = 1941
+			war_with = CHI
+			war_with = USA
+			war_with = ENG
+		}
+		effect = {
+			set_global_flag = ManChu_develop_desicion4
+			remove_global_flag = Man_Chu_develop1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}		
+}

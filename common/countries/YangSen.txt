@@ -1,0 +1,50 @@
+color = { 255  244  190 }
+graphical_culture = Japanese
+
+default_templates = {
+	binary_infantry = {
+		infantry_brigade
+		infantry_brigade
+	}
+	binary_milita = {
+		militia_brigade
+		militia_brigade
+	}
+	binary_armoured = {
+		armor_brigade
+		motorized_brigade
+	}
+	binary_cavalry = {
+		cavalry_brigade
+		cavalry_brigade
+	}
+}
+
+unit_names = {
+	infantry_brigade = {
+		"第104师" "第122师" "第123师" "第124师"
+		"第125师" "第126师" "第127师" "第128师" "第131师"
+		"第133师" "第134师" "第135师"
+		"第145师" "第146师" "第162师"
+		"第147师" "第148师"
+		"第149师" "第150师" "第163师"
+	}
+	garrison_brigade = {
+		"四川警备司令部"
+	}
+	militia_brigade = {
+		"独立第14旅" "独立第15旅""独立第17旅"
+	}
+}
+
+ministers = {
+	20201231 = {
+		name = "杨森"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M3000028
+		armament_minister = corrupt_kleptocrat
+		minister_of_intelligence = efficient_sociopath
+		start_date = 1930.1.1
+	}
+}

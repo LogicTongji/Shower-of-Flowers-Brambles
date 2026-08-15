@@ -1,0 +1,84 @@
+theatre = {
+	name = "西北革命军事委员会"
+	location = 5335
+	leader = 76331
+	regiment = { type = hq_brigade name = "中共中央" strength = 5 experience = 90 historical_model = 0 }
+	regiment = { type = chc_gundam name = "红军大学" experience = 90 historical_model = 0 }
+	armygroup = { 
+		name = "中国工农红军"
+		location = 5335
+		leader = 76312
+		regiment = { type = hq_brigade name = "红军前敌总指挥部" strength = 5 experience = 90 historical_model = 0 }	
+		army = {
+			name = "红1方面军"
+			location = 5335
+			leader = 76336
+			regiment = { type = hq_brigade name = "红1方面军指挥部" strength = 5 experience = 90 historical_model = 0 }	
+			corps = {
+				name = "陕甘支队"
+				location = 5335
+				regiment = { type = hq_brigade name = "陕甘支队指挥部" strength = 5 experience = 90 historical_model = 0 }
+				division= {
+					name = "第1纵队"
+					location = 5335
+					regiment = { type = bergsjaeger_brigade name = "第1纵队第1大队" experience = 80 strength = 7 historical_model = 0 }
+					regiment = { type = bergsjaeger_brigade name = "第1纵队第2大队" experience = 80 strength = 7 historical_model = 0 }
+					regiment = { type = bergsjaeger_brigade name = "第1纵队第3大队" experience = 80 strength = 7 historical_model = 0 }
+					regiment = { type = bergsjaeger_brigade name = "第1纵队第4大队" experience = 80 strength = 7 historical_model = 0 }
+				}
+				division= {
+					name = "第2纵队"
+					location = 5335
+					regiment = { type = bergsjaeger_brigade name = "第2纵队第1大队" experience = 80 strength = 7 historical_model = 0 }
+					regiment = { type = bergsjaeger_brigade name = "第2纵队第2大队" experience = 80 strength = 7 historical_model = 0 }
+					regiment = { type = bergsjaeger_brigade name = "第2纵队第3大队" experience = 80 strength = 7 historical_model = 0 }
+				}
+				division= {
+					name = "第3纵队"
+					location = 5335
+					regiment = { type = bergsjaeger_brigade name = "第3纵队第1大队" experience = 80 strength = 7 historical_model = 0 }
+					regiment = { type = bergsjaeger_brigade name = "第3纵队第2大队" experience = 80 strength = 7 historical_model = 0 }
+					regiment = { type = bergsjaeger_brigade name = "第3纵队第3大队" experience = 80 strength = 7 historical_model = 0 }
+				}
+			}
+			corps = {
+				name = "红15军团"
+				location = 7410
+				regiment = { type = hq_brigade name = "红15军团指挥部" strength = 5 experience = 70 historical_model = 0 }
+				division= {
+					name = "第75师"
+					location = 7410
+					regiment = { type = infantry_brigade name = "第223团" strength = 10.5 experience = 70 historical_model = 0 }
+					regiment = { type = infantry_brigade name = "第225团" strength = 10.5 experience = 70 historical_model = 0 }
+				}
+				division= {
+					name = "第78师"
+					location = 7410
+					regiment = { type = infantry_brigade name = "第232团" strength = 10.5 experience = 70 historical_model = 0 }
+					regiment = { type = infantry_brigade name = "第234团" strength = 10.5 experience = 70 historical_model = 0 }
+					regiment = { type = cavalry_brigade name = "骑兵团" strength = 11 experience = 70 historical_model = 0 }
+				}
+				division= {
+					name = "第81师"
+					location = 7410
+					regiment = { type = infantry_brigade name = "第241团" strength = 10.5 experience = 70 historical_model = 0 }
+					regiment = { type = infantry_brigade name = "第243团" strength = 10.5 experience = 70 historical_model = 0 }
+				}
+			}
+			division= {
+				name = "第28军"
+				location = 5241
+				regiment = { type = infantry_brigade name = "第250团" strength = 5 experience = 25 historical_model = 0 }
+				regiment = { type = infantry_brigade name = "第251团" strength = 5 experience = 25 historical_model = 0 }
+				regiment = { type = infantry_brigade name = "第252团" strength = 5 experience = 25 historical_model = 0 }
+			}
+			division= {
+				name = "第29军"
+				location = 5241
+				regiment = { type = infantry_brigade name = "第255团" strength = 5 experience = 25 historical_model = 0 }
+				regiment = { type = infantry_brigade name = "第256团" strength = 5 experience = 25 historical_model = 0 }
+				regiment = { type = infantry_brigade name = "第257团" strength = 5 experience = 25 historical_model = 0 }
+			}
+		}
+	}
+}

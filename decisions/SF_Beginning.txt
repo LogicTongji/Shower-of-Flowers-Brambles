@@ -1,0 +1,247 @@
+############
+# ¿ª¾Ö½éÉÜ #
+############
+
+diplomatic_decisions = {
+	introduction_chc = {
+		potential = {
+			tag = CHC
+			year = 1936	
+			not = { 
+			year = 1937
+			has_country_flag = introduction_chc_1936 
+			} 
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = introduction_chc_1936
+			country_event = 1000001
+			supplies = 15000
+			manpower = 250
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	introduction_chi = {
+		potential = {
+			tag = CHI
+			year = 1936
+			not = { 
+			year = 1937
+			has_country_flag = introduction_chi_1936 
+			}  
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = introduction_chi_1936
+			country_event = 1000002
+			manpower = 1500
+			supplies = 15000
+			CDB = { manpower = 300 }
+			CSX = { manpower = 300 }
+			CSY = { manpower = 300 }	
+			CQM = { manpower = 300 }
+			CNM = { manpower = 300 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	introduction_jap = {
+		potential = {
+			tag = JAP
+			or = {
+            year = 1933
+			year = 1936
+			}
+			not = { 
+			year = 1937
+			has_country_flag = introduction_jap_1936 } 
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = introduction_jap_1936
+			country_event = 1000003
+			manpower = 1500
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	introduction_prc = {
+		potential = {
+			tag = PRC
+			year = 1949	
+			not = { has_country_flag = introduction_prc_1949 } 
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = introduction_prc_1949
+			country_event = 1000004
+			supplies = 15000
+			manpower = 250
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	introduction_chcw = {
+		potential = {
+			tag = CHC
+			year = 1946
+			not = { has_country_flag = introduction_chc_1945 } 
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = introduction_chc_1945
+			country_event = 1000005
+			supplies = 15000
+			manpower = 250
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	introduction_chiw = {
+		potential = {
+			tag = CHI
+			or = {
+			year = 1946
+			}		
+			not = { 
+			year = 1949
+			has_country_flag = introduction_chi_1945 
+			} 
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = introduction_chi_1945
+			country_event = 1000006
+			manpower = 250
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	introduction_chcf = {
+		potential = {
+			tag = CHC
+                             year = 1933
+			not = { 
+			year = 1936
+			has_country_flag = introduction_chc_1933
+			} 
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = introduction_chc_1933
+			country_event = 1000007
+			supplies = 15000
+			manpower = 250
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	introduction_chif = {
+		potential = {
+			tag = CHI
+                             year = 1933
+			not = { 
+			year = 1936
+			has_country_flag = introduction_chi_1933
+			}  
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = introduction_chi_1933
+			country_event = 1001118
+			manpower = 1500
+			supplies = 15000
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	introduction_japa = {
+		potential = {
+			tag = JAP
+            or = {
+			 year = 1941
+			 year = 1944
+			}
+			not = { 
+			has_country_flag = introduction_jap_1940
+			} 
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = introduction_jap_1940
+			country_event = 1001121
+			supplies = 15000
+			manpower = 250
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	introduction_chca = {
+		potential = {
+			tag = CHC
+			or = {
+			 year = 1941
+			 year = 1944
+			}
+			not = { 
+			year = 1945
+			has_country_flag = introduction_chc_1940
+			} 
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = introduction_chc_1940
+			country_event = 1001120
+			supplies = 15000
+			manpower = 250
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	introduction_chia = {
+		potential = {
+			tag = CHI
+            or = {
+			 year = 1941
+			 year = 1944
+			}
+			not = { 
+			year = 1945
+			has_country_flag = introduction_chi_1940
+			}  
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = introduction_chi_1940
+			country_event = 1001119
+			manpower = 1500
+			supplies = 15000
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

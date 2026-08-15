@@ -1,0 +1,54 @@
+country_event = {
+	id = 12231
+          fire_only_once = yes
+		  major = yes
+	title = "Fujian1"
+	desc = "Fujian1desc"
+	picture = "Fujian1_picture"
+	trigger = {
+		tag = CHI
+		fujian_region = { controlled_by = CSJ }
+		date = 1933.11.22
+		not = {
+		war_with = JAP 
+                   }
+		has_global_flag = NanChang_war_JiangXi_Commist
+	}
+	mean_time_to_happen =  {
+		days = 1
+	}
+	option = {
+		name = "Fujian1_option"
+				   CSJ = {	
+				fujian_region = { any_owned = { limit = { controlled_by = CSJ } } secede_province = CFJ add_core = CFJ change_controller = CFJ }
+				}
+					war = {	
+				target = CFJ
+				attacker_goal = { casus_belli = conquer }
+			}
+				CHC = { country_event = 12233 }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+                is_triggered_only = yes
+				major = yes
+	id = 12232
+	title = "Fujian2"
+	desc = "Fujian2desc"
+	picture = "Fujian2_picture"
+        option = {
+		name = "Fujian2_option" 
+	}
+}
+country_event = {
+                is_triggered_only = yes
+				major = yes
+	id = 12233
+	title = "Fujian1"
+	desc = "Fujian1desc"
+	picture = "Fujian1_picture"
+        option = {
+		name = "Fujian1_option"
+	}
+}

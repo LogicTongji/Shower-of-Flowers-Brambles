@@ -1,0 +1,92 @@
+#第四波党卫军
+	division= {
+		name = "党卫军第9“霍亨斯陶芬”装甲师"
+		location = 906
+		regiment = { type = artillery_brigade name = "第9装甲炮兵团" experience = 55  historical_model = 2 }			
+		regiment = { type = light_armor_brigade experience = 55 name = "第9装甲兵团" historical_model = 2 }
+		regiment = { type = GER_ss experience = 45 name = "第19装甲掷弹兵团" historical_model = 2 }
+		regiment = { type = GER_ss experience = 45 name = "第20装甲掷弹兵团" historical_model = 2 }
+		regiment = { type = engineer_brigade name = "后勤部队" experience = 20 historical_model = 1 }
+	}
+		division= {
+		name = "党卫军第10“佛伦斯堡”装甲师"
+		location = 906
+		regiment = { type = artillery_brigade name = "第10装甲炮兵团" experience = 55  historical_model = 2 }			
+		regiment = { type = light_armor_brigade experience = 55 name = "第10装甲兵团" historical_model = 2 }
+		regiment = { type = GER_ss experience = 45 name = "第21装甲掷弹兵团" historical_model = 2 }
+		regiment = { type = GER_ss experience = 45 name = "第22装甲掷弹兵团" historical_model = 2 }
+		regiment = { type = engineer_brigade name = "后勤部队" experience = 20 historical_model = 1 }
+	}
+		division= {
+		name = "党卫军第11“北地”志愿装甲师"
+		location = 906
+	regiment = { type = artillery_brigade name = "第11装甲炮兵团" experience = 55  historical_model = 2 }			
+		regiment = { type = light_armor_brigade experience = 55 name = "第11装甲兵团" historical_model = 2 }
+		regiment = { type = GER_ss experience = 45 name = "第23装甲掷弹兵团" historical_model = 2 }
+		regiment = { type = GER_ss experience = 45 name = "第24装甲掷弹兵团" historical_model = 2 }
+		regiment = { type = engineer_brigade name = "后勤部队" experience = 20 historical_model = 1 }
+	}
+		division= {
+		name = "党卫军第12“希特勒青年团”装甲师"
+		location = 906
+	regiment = { type = artillery_brigade name = "第11装甲炮兵团" experience = 55  historical_model = 2 }			
+		regiment = { type = light_armor_brigade experience = 55 name = "第11装甲兵团" historical_model = 2 }
+		regiment = { type = GER_ss experience = 45 name = "第23装甲掷弹兵团" historical_model = 2 }
+		regiment = { type = GER_ss experience = 45 name = "第24装甲掷弹兵团" historical_model = 2 }
+		regiment = { type = engineer_brigade name = "后勤部队" experience = 20 historical_model = 1 }
+	}
+#外籍兵团
+#罗马尼亚第一师
+	division= {
+		name = "党卫军第13“圣刀”武装山地师"
+		location = 3164
+		 expeditionary_owner = ROM
+	  regiment = { type = artillery_brigade name = "SS-Waffen-Artillerie-Regiment 13" experience = 5  historical_model = 2 }			
+		regiment = { type = infantry_brigade experience = 5 name = "Waffen-Gebirgs-Jger-Regiment der SS 27" historical_model = 2 }
+		regiment = { type = infantry_brigade experience = 5 name = "Waffen-Gebirgs-Jger-Regiment der SS 28" historical_model = 2 }
+	}
+#保加利亚第一师
+	division= {
+		name = "党卫军第14武装掷弹兵师"
+		location = 1178
+		 expeditionary_owner = BUL
+	  regiment = { type = artillery_brigade name = "Waffen-Grenadier-Regiment der SS 29 (galizisches Nr. 1)" experience = 5  historical_model = 2 }			
+		regiment = { type = infantry_brigade experience = 5 name = "Waffen-Grenadier-Regiment der SS 30 (galizisches Nr. 2)" historical_model = 2 }
+		regiment = { type = infantry_brigade experience = 5 name = "Waffen-Grenadier-Regiment der SS 31 (galizisches Nr. 3)" historical_model = 2 }
+		regiment = { type = infantry_brigade experience = 5 name = "Waffen-Artillerie-Regiment der SS 14" historical_model = 2 }
+	}
+#拉脱维亚第一师
+	division= {
+		name = "党卫军第15武装掷弹兵师"
+		location = 1178
+	  regiment = { type = artillery_brigade name = "Waffen-Grenadier-Regiment der SS 32" experience = 5  historical_model = 2 }			
+		regiment = { type = infantry_brigade experience = 5 name = "Waffen-Grenadier-Regiment der SS 33" historical_model = 2 }
+		regiment = { type = infantry_brigade experience = 5 name = "Waffen-Grenadier-Regiment der SS 34" historical_model = 2 }
+		regiment = { type = infantry_brigade experience = 5 name = "Waffen-Artillerie-Regiment der SS 15" historical_model = 2 }
+	}
+	division= {
+		name = "党卫军第16“全国领袖”装甲掷弹兵师"
+		location = 1928
+		regiment = { type = infantry_brigade experience = 15 name = "第35装甲掷弹兵团" historical_model = 2 }
+		regiment = { type = GER_ss experience = 15 name = "第36装甲掷弹兵团" historical_model = 2 }
+		 regiment = { type = artillery_brigade name = "第16装甲炮兵团" experience = 5  historical_model = 2 }			
+		regiment = { type = engineer_brigade name = "后勤部队" experience = 20 historical_model = 1 }
+	}
+		division= {
+		name = "党卫军第17“古兹*冯*波里幸根”装甲掷弹兵师"
+		location = 3306
+	 regiment = { type = artillery_brigade name = "Waffen-Grenadier-Regiment der SS 32" experience = 35  historical_model = 2 }			
+		regiment = { type = GER_ss experience = 35 name = "Waffen-Grenadier-Regiment der SS 37" historical_model = 2 }
+		regiment = { type = GER_ss experience = 35 name = "Waffen-Grenadier-Regiment der SS 38" historical_model = 2 }
+		regiment = { type = GER_ss experience = 35 name = "Waffen-Artillerie-Regiment der SS 17" historical_model = 2 }
+	}
+		division= {
+		name = "党卫军第18“霍斯特*维塞尔”志愿装甲掷弹兵师"
+		location = 2197
+	 regiment = { type = GER_ss name = "Waffen-Grenadier-Regiment der SS 32" experience = 35  historical_model = 2 }			
+		regiment = { type = GER_ss experience = 35 name = "Waffen-Grenadier-Regiment der SS 39" historical_model = 2 }
+		regiment = { type = GER_ss experience = 35 name = "Waffen-Grenadier-Regiment der SS 40" historical_model = 2 }
+		regiment = { type = GER_ss experience = 35 name = "Waffen-Artillerie-Regiment der SS 17" historical_model = 2 }
+		regiment = { type = light_armor_brigade experience = 55 name = "SS-Panzer-Abteilung 18" historical_model = 2 }
+	}
+		

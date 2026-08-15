@@ -1,0 +1,78 @@
+theatre = {
+	name = "冀察绥靖公署"
+	location = 4979
+	leader = 50272
+	regiment = { type = hq_brigade name = "北平指挥部" historical_model = 0 }
+	corps = {
+		name = "第二十九路军"
+		location = 4979
+		leader = 50301
+		regiment = { type = hq_brigade name = "第二十九路军司令部" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "特务旅" experience = 50 historical_model = 0 }
+		division= {
+			name = "第37师"
+			location = 4979
+			leader = 50080
+			regiment = { type = infantry_brigade name = "第109旅" strength = 20 experience = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第110旅" strength = 20 experience = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第111旅" strength = 20 experience = 20 historical_model = 0 }
+		}
+		division= {
+			name = "第38师"
+			location = 4979
+			leader = 50004
+			regiment = { type = infantry_brigade name = "第112旅" strength = 20 experience = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第113旅" strength = 20 experience = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第114旅" strength = 20 experience = 20 historical_model = 0 }
+		}
+		division= {
+			name = "第132师"
+			location = 5144
+			leader = 50027
+			regiment = { type = infantry_brigade name = "第1旅" experience = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第2旅" strength = 20 experience = 20 historical_model = 0 }
+		}
+		division= {
+			name = "第143师"
+			location = 4978
+			leader = 50209
+			regiment = { type = infantry_brigade name = "第1旅" experience = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第2旅" strength = 20 experience = 20 historical_model = 0 }
+		}
+		division= {
+			name = "骑兵部队"
+			location = 4979
+			leader = 4000144
+			regiment = { type = cavalry_brigade name = "第9师第1旅" experience = 20 historical_model = 0 }
+			regiment = { type = cavalry_brigade name = "第9师第2旅" experience = 20 historical_model = 0 }
+			regiment = { type = cavalry_brigade name = "独立第13旅" experience = 20 historical_model = 0 }
+		}
+	}
+	division= {
+		name = "北平警备"
+		location = 4979
+		regiment = { type = infantry_brigade name = "独立第25旅" experience = 20 historical_model = 0 }
+		regiment = { type = infantry_brigade name = "独立第39旅" experience = 20 historical_model = 0 }
+	}
+	division= {
+		name = "察哈尔警备"
+		location = 4978
+		regiment = { type = infantry_brigade name = "独立第29旅" experience = 20 historical_model = 0 }
+		regiment = { type = infantry_brigade name = "独立第40旅" experience = 20 historical_model = 0 }
+	}
+	division= {
+		name = "河北警备"
+		location = 5085
+		regiment = { type = infantry_brigade name = "独立第26旅" experience = 20 historical_model = 0 }
+		regiment = { type = infantry_brigade name = "独立第27旅" experience = 20 historical_model = 0 }
+		regiment = { type = infantry_brigade name = "独立第28旅" experience = 20 historical_model = 0 }
+	}
+	division= {
+		name = "冀北保安司令部"
+		location = 5086
+		leader = 50260
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+	}
+}

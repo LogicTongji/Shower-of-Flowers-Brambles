@@ -1,0 +1,11836 @@
+101000 = {
+	name = "阿部信行"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101000
+	history = {
+		1930.1.1 = { rank = 3 }
+		1939.8.30 = { rank = 0 }
+	}
+}
+101001 = {
+	name = "安達二十三"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101001
+	add_trait = trickster
+	add_trait = logistics_wizard
+	history = {
+		1936.1.1 = { rank = 1 }
+		1942.11.9 = { rank = 3 }
+		1947.9.10 = { rank = 0 }
+	}
+}
+101002 = {
+	name = "相田俊二"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101002
+	add_trait = logistics_wizard
+	history = {
+		1943.1.1 = { rank = 1 }
+	}
+}
+101003 = {
+	name = "赤鹿理"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101003
+	add_trait = offensive_doctrine
+	add_trait = fortress_buster
+	history = {
+		1939.8.1 = { rank = 1 }
+	}
+}
+101004 = {
+	name = "赤下"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101004
+	history = {
+		1939.1.1 = { rank = 1 }
+	}
+}
+101005 = {
+	name = "天野正一"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101005
+	history = {
+		1944.1.1 = { rank = 1 }
+	}
+}
+101007 = {
+	name = "阿南惟幾"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 10
+	loyalty = 1.00
+	picture = L101007
+	add_trait = offensive_doctrine
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1941.4.10 = { rank = 3 }
+		1942.7.1 = { rank = 4 }
+		1945.8.15 = { rank = 0 }
+	}
+}
+101008 = {
+	name = "安藤利吉"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101008
+	add_trait = offensive_doctrine
+	history = {
+		1930.1.1 = { rank = 2 }
+		1938.9.1 = { rank = 3 }
+		1940.2.10 = { rank = 4 }
+		1946.4.19 = { rank = 0 }
+	}
+}
+101009 = {
+	name = "安藤三郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101009
+	add_trait = fortress_buster
+	add_trait = old_guard
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+101010 = {
+	name = "青木敬一"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101010
+	history = {
+		1938.3.1 = { rank = 1 }
+		1939.1.31 = { rank = 0 }
+	}
+}
+101011 = {
+	name = "青津喜久太郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101011
+	add_trait = defensive_doctrine
+	add_trait = commando
+	add_trait = logistics_wizard
+	history = {
+		1944.3.1 = { rank = 1 }
+		1947.4.16 = { rank = 0 }
+	}
+}
+101012 = {
+	name = "荒木貞夫"
+	country = JAP
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 0.00
+	picture = L101012
+	add_trait = old_guard
+	add_trait = commando
+	history = {
+		1930.1.1 = { rank = 3 }
+		1936.3.10 = { rank = 0 }
+	}
+}
+101013 = {
+	name = "有川圭一"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101013
+	add_trait = defensive_doctrine
+	history = {
+		1944.3.1 = { rank = 1 }
+		1945.6.23 = { rank = 0 }
+	}
+}
+101014 = {
+	name = "朝香宮鳩彦王"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101014
+	add_trait = offensive_doctrine
+	history = {
+		1930.1.1 = { rank = 2 }
+		1939.8.1 = { rank = 3 }
+		1945.12.1 = { rank = 0 }
+	}
+}
+101016 = {
+	name = "凌部橘树"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101016
+	history = {
+		1940.8.1 = { rank = 1 }
+	}
+}
+101017 = {
+	name = "馬場正郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101017
+	add_trait = offensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+		1946.8.7 = { rank = 0 }
+	}
+}
+101018 = {
+	name = "坂西一良"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101018
+	add_trait = offensive_doctrine
+	add_trait = commando
+	history = {
+		1930.1.1 = { rank = 1 }
+		1944.4.1 = { rank = 2 }
+		1946.9.1 = { rank = 0 }
+	}
+}
+101020 = {
+	name = "長勇"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101020
+	add_trait = offensive_doctrine
+	add_trait = commando
+	history = {
+		1937.7.1 = { rank = 1 }
+		1945.6.23 = { rank = 0 }
+	}
+}
+101021 = {
+	name = "土肥原賢二"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101021
+	add_trait = trickster
+	add_trait = commando
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.5.19 = { rank = 2 }
+		1943.2.1 = { rank = 4 }
+		1946.1.1 = { rank = 0 }
+	}
+}
+101022 = {
+	name = "遠藤太郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101022
+	history = {
+		1937.7.1 = { rank = 1 }
+	}
+}
+101023 = {
+	name = "藤江惠輔"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101023
+	add_trait = offensive_doctrine
+	add_trait = fortress_buster
+	history = {
+		1930.1.1 = { rank = 1 }
+		1941.4.10 = { rank = 2 }
+	}
+}
+101024 = {
+	name = "富士井末吉"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101024
+	history = {
+		1938.7.15 = { rank = 1 }
+		1940.8.1 = { rank = 0 }
+	}
+}
+101025 = {
+	name = "藤岡武雄"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101025
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+101026 = {
+	name = "福井浩太郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101026
+	add_trait = defensive_doctrine
+	add_trait = old_guard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1940.12.2 = { rank = 0 }
+		1945.4.1 = { rank = 1 }
+	}
+}
+101027 = {
+	name = "船引正之"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101027
+	add_trait = fortress_buster
+	add_trait = commando
+	history = {
+		1940.3.9 = { rank = 1 }
+	}
+}
+101029 = {
+	name = "波田重一"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101029
+	add_trait = offensive_doctrine
+	add_trait = old_guard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1940.9.28 = { rank = 2 }
+		1941.12.2 = { rank = 0 }
+	}
+}
+101030 = {
+	name = "花谷正"
+	country = JAP
+	type = land
+	skill = 0
+	max_skill = 10
+	loyalty = 1.00
+	picture = L101030
+	add_trait = logistics_wizard
+	add_trait = commando
+	history = {
+		1937.7.1 = { rank = 1 }
+	}
+}
+101031 = {
+	name = "原田貞三郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101031
+	history = {
+		1939.1.1 = { rank = 1 }
+		1946.1.1 = { rank = 0 }
+	}
+}
+101032 = {
+	name = "原田寛"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101032
+	history = {
+		1943.1.1 = { rank = 1 }
+	}
+}
+101033 = {
+	name = "橋本博光"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101033
+	add_trait = fortress_buster
+	history = {
+		1944.1.1 = { rank = 1 }
+	}
+}
+101034 = {
+	name = "烟俊六"
+	country = JAP
+	type = land
+	skill = 4
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101034
+	add_trait = offensive_doctrine
+	history = {
+		1930.1.1 = { rank = 4 }
+	}
+}
+101035 = {
+	name = "服部卓四郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 10
+	loyalty = 1.00
+	picture = L101035
+	add_trait = offensive_doctrine
+	add_trait = defensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+101036 = {
+	name = "林義秀"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101036
+	add_trait = defensive_doctrine
+	add_trait = logistics_wizard
+	history = {
+		1941.10.15 = { rank = 1 }
+	}
+}
+101037 = {
+	name = "林田金城"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101037
+	history = {
+		1945.6.10 = { rank = 1 }
+	}
+}
+101038 = {
+	name = "東久邇宮稔彦王"
+	country = JAP
+	type = land
+	skill = 4
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101038
+	add_trait = offensive_doctrine
+	history = {
+		1930.1.1 = { rank = 2 }
+		1938.1.1 = { rank = 3 }
+		1941.1.1 = { rank = 4 }
+		1946.1.1 = { rank = 0 }
+	}
+}
+101039 = {
+	name = "樋口季一郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101039
+	add_trait = winter_specialist
+	history = {
+		1937.8.2 = { rank = 1 }
+		1942.8.1 = { rank = 3 }
+	}
+}
+101040 = {
+	name = "平田正判"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101040
+	add_trait = fortress_buster
+	history = {
+		1939.3.9 = { rank = 1 }
+	}
+}
+101041 = {
+	name = "廣田弘毅"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101041
+	history = {
+		1937.7.1 = { rank = 1 }
+	}
+}
+101042 = {
+	name = "人見秀三"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101042
+	history = {
+		1939.8.1 = { rank = 1 }
+	}
+}
+101043 = {
+	name = "本多政材"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 8
+	loyalty = 1.00
+	picture = L101043
+	add_trait = logistics_wizard
+	add_trait = defensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+		1943.3.11 = { rank = 2 }
+		1944.4.18 = { rank = 3 }
+	}
+}
+101045 = {
+	name = "洪思翊"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101045
+	add_trait = offensive_doctrine
+	history = {
+		1941.3.1 = { rank = 1 }
+		1944.1.1 = { rank = 2 }
+		1946.9.26 = { rank = 0 }
+	}
+}
+101046 = {
+	name = "本間雅晴"
+	country = JAP
+	type = land
+	skill = 4
+	max_skill = 8
+	loyalty = 1.00
+	picture = L101046
+	add_trait = trickster
+	history = {
+		1930.1.1 = { rank = 1 }
+		1940.12.12 = { rank = 2 }
+		1942.8.31 = { rank = 0 }
+	}
+}
+101048 = {
+	name = "堀井富太郎"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 8
+	loyalty = 1.00
+	picture = L101048
+	add_trait = commando
+	add_trait = logistics_wizard
+	add_trait = engineer
+	history = {
+		1930.1.1 = { rank = 1 }
+		1942.11.23 = { rank = 0 }
+	}
+}
+101049 = {
+	name = "堀内豐秋"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101049
+	add_trait = commando
+	history = {
+		1941.1.1 = { rank = 1 }
+	}
+}
+101050 = {
+	name = "星野利元"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101050
+	add_trait = panzer_leader
+	history = {
+		1939.8.1 = { rank = 1 }
+		1945.1.1 = { rank = 2 }
+	}
+}
+101051 = {
+	name = "百武晴吉"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101051
+	add_trait = commando
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1942.5.5 = { rank = 3 }
+		1947.1.1 = { rank = 0 }
+	}
+}
+101052 = {
+	name = "一木清直"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101052
+	add_trait = commando
+	history = {
+		1941.3.1 = { rank = 1 }
+		1942.8.21 = { rank = 0 }
+	}
+}
+101053 = {
+	name = "井出宣時"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101053
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+101054 = {
+	name = "井出鐵藏"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101054
+	add_trait = logistics_wizard
+	history = {
+		1941.1.1 = { rank = 1 }
+	}
+}
+101055 = {
+	name = "飯田祥二郎"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 8
+	loyalty = 1.00
+	picture = L101055
+	add_trait = offensive_doctrine
+	add_trait = engineer
+	add_trait = logistics_wizard
+	history = {
+		1936.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+		1941.12.1 = { rank = 3 }
+	}
+}
+101056 = {
+	name = "飯村穰"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101056
+	history = {
+		1936.1.1 = { rank = 1 }
+		1941.10.15 = { rank = 2 }
+	}
+}
+101057 = {
+	name = "伊集院謙信"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101057
+	add_trait = winter_specialist
+	history = {
+		1943.3.23 = { rank = 1 }
+	}
+}
+101058 = {
+	name = "今井武夫"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101058
+	history = {
+		1937.7.1 = { rank = 1 }
+	}
+}
+101059 = {
+	name = "今村均"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101059
+	add_trait = offensive_doctrine
+	add_trait = logistics_wizard
+	add_trait = commando
+	history = {
+		1930.1.1 = { rank = 1 }
+		1940.1.1 = { rank = 2 }
+		1943.1.1 = { rank = 4 }
+	}
+}
+101061 = {
+	name = "稻葉四郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101061
+	add_trait = commando
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.12.1 = { rank = 2 }
+		1941.12.2 = { rank = 0 }
+	}
+}
+101062 = {
+	name = "石黒貞藏"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101062
+	history = {
+		1936.1.1 = { rank = 1 }
+		1943.3.1 = { rank = 2 }
+	}
+}
+101066 = {
+	name = "石原莞爾"
+	country = JAP
+	type = land
+	skill = 4
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101064
+	add_trait = offensive_doctrine
+	add_trait = trickster
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+101067 = {
+	name = "磯谷廉介"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101067
+	add_trait = offensive_doctrine
+	add_trait = trickster
+	history = {
+		1936.1.1 = { rank = 1 }
+		1942.1.19 = { rank = 2 }
+	}
+}
+101068 = {
+	name = "板花義一"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101068
+	history = {
+		1937.7.1 = { rank = 1 }
+	}
+}
+101070 = {
+	name = "板垣征四郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101070
+	add_trait = offensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1941.7.7 = { rank = 2 }
+		1948.12.23 = { rank = 0 }
+	}
+}
+101071 = {
+	name = "伊東武夫"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101071
+	add_trait = offensive_doctrine
+	add_trait = commando
+	history = {
+		1941.8.25 = { rank = 1 }
+	}
+}
+101072 = {
+	name = "岩畔豪雄"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101072
+	add_trait = trickster
+	history = {
+		1943.3.29 = { rank = 1 }
+	}
+}
+101073 = {
+	name = "井関刃"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101073
+	history = {
+		1937.11.1 = { rank = 1 }
+	}
+}
+101075 = {
+	name = "神田正種"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101075
+	add_trait = logistics_wizard
+	add_trait = winter_specialist
+	history = {
+		1936.1.1 = { rank = 1 }
+		1945.4.1 = { rank = 2 }
+	}
+}
+101076 = {
+	name = "金岡山喬"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101076
+	add_trait = fortress_buster
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+101077 = {
+	name = "閑院宮載仁親王"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101077
+	add_trait = old_guard
+	history = {
+		1930.1.1 = { rank = 4 }
+		1940.10.3 = { rank = 0 }
+	}
+}
+101078 = {
+	name = "嘉納治五郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101078
+	add_trait = logistics_wizard
+
+	history = {
+		1937.7.1 = { rank = 1 }
+	}
+}
+101079 = {
+	name = "笠原幸雄"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101079
+	add_trait = trickster
+	history = {
+		1937.8.2 = { rank = 1 }
+		1945.4.7 = { rank = 2 }
+	}
+}
+101080 = {
+	name = "片倉衷"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101080
+	add_trait = offensive_doctrine
+
+	add_trait = commando
+	history = {
+		1939.8.1 = { rank = 1 }
+		1944.1.1 = { rank = 2 }
+	}
+}
+101081 = {
+	name = "片岡董"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101081
+	add_trait = defensive_doctrine
+	add_trait = commando
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+101082 = {
+	name = "香月清司"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101082
+	add_trait = engineer
+	history = {
+		1930.1.1 = { rank = 1 }
+		1937.8.26 = { rank = 2 }
+		1938.7.29 = { rank = 0 }
+	}
+}
+101083 = {
+	name = "河边正三"
+	country = JAP
+	type = land
+	skill = 4
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101084
+	add_trait = offensive_doctrine
+	add_trait = engineer
+	history = {
+		1936.1.1 = { rank = 1 }
+		1941.3.1 = { rank = 2 }
+		1943.2.1 = { rank = 4 }
+	}
+}
+101084 = {
+	name = "川边忠三郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101083
+	history = {
+		1930.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+	}
+}
+101085 = {
+	name = "川岸文三郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101085
+	history = {
+		1930.1.1 = { rank = 2 }
+		1939.12.1 = { rank = 0 }
+	}
+}
+101086 = {
+	name = "川口清健"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101086
+	add_trait = offensive_doctrine
+	add_trait = commando
+	add_trait = trickster
+	history = {
+		1937.7.1 = { rank = 1 }
+	}
+}
+101087 = {
+	name = "河村薰"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101087
+	add_trait = defensive_doctrine
+	history = {
+		1937.7.1 = { rank = 1 }
+	}
+}
+101088 = {
+	name = "瓦田隆根"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101088
+	history = {
+		1944.8.1 = { rank = 1 }
+	}
+}
+101089 = {
+	name = "河島修"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101089
+	history = {
+		1944.3.1 = { rank = 1 }
+	}
+}
+101090 = {
+	name = "賀屋興宣"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101090
+	history = {
+		1937.7.1 = { rank = 1 }
+	}
+}
+101091 = {
+	name = "木户幸一"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101091
+	add_trait = fortress_buster
+	history = {
+		1937.7.1 = { rank = 1 }
+	}
+}
+101092 = {
+	name = "金錫"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101092
+	add_trait = offensive_doctrine
+	history = {
+		1944.1.1 = { rank = 1 }
+		1946.1.1 = { rank = 0 }
+	}
+}
+101093 = {
+	name = "木村兵太郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101093
+	add_trait = commando
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1944.8.30 = { rank = 4 }
+		1948.12.23 = { rank = 0 }
+	}
+}
+101094 = {
+	name = "木村正治"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101094
+	add_trait = defensive_doctrine
+	history = {
+		1944.7.8 = { rank = 1 }
+	}
+}
+101095 = {
+	name = "岸川健一"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101095
+	history = {
+		1940.3.9 = { rank = 1 }
+	}
+}
+101096 = {
+	name = "木下榮市"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101096
+	history = {
+		1941.1.1 = { rank = 1 }
+	}
+}
+101097 = {
+	name = "北島騏子雄"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101097
+	add_trait = defensive_doctrine
+	add_trait = fortress_buster
+	history = {
+		1937.7.1 = { rank = 1 }
+	}
+}
+101098 = {
+	name = "小林謙五"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101098
+	history = {
+		1937.7.1 = { rank = 1 }
+	}
+}
+101099 = {
+	name = "小林信男"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101099
+	history = {
+		1937.12.10 = { rank = 1 }
+	}
+}
+101100 = {
+	name = "小池安正"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101100
+	history = {
+		1942.8.15 = { rank = 1 }
+		1944.4.26 = { rank = 0 }
+	}
+}
+101101 = {
+	name = "小磯國昭"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101101
+	add_trait = trickster
+	history = {
+		1930.1.1 = { rank = 2 }
+		1938.7.15 = { rank = 0 }
+	}
+}
+101102 = {
+	name = "國分新七郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101102
+	history = {
+		1941.8.25 = { rank = 1 }
+	}
+}
+101103 = {
+	name = "小松原道太郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101103
+	add_trait = trickster
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.11.6 = { rank = 0 }
+	}
+}
+101104 = {
+	name = "小松崎力雄"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101104
+	history = {
+		1941.8.15 = { rank = 1 }
+	}
+}
+101105 = {
+	name = "菰田康一"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101105
+	history = {
+		1937.8.2 = { rank = 1 }
+		1942.9.2 = { rank = 0 }
+	}
+}
+101106 = {
+	name = "上月良夫"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101106
+	history = {
+		1936.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 3 }
+	}
+}
+101107 = {
+	name = "國方慶三"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101107
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+101108 = {
+	name = "栗林忠道"
+	country = JAP
+	type = land
+	skill = 4
+	max_skill = 9
+	loyalty = 1.00
+	picture = L101108
+	add_trait = logistics_wizard
+	add_trait = defensive_doctrine
+	add_trait = offensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+		1945.4.1 = { rank = 0 }
+	}
+}
+101109 = {
+	name = "黒田重徳"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101109
+	add_trait = defensive_doctrine
+	add_trait = logistics_wizard
+	history = {
+		1936.1.1 = { rank = 1 }
+		1943.5.19 = { rank = 4 }
+	}
+}
+101110 = {
+	name = "櫛淵金宣一"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101110
+	history = {
+		1941.8.25 = { rank = 1 }
+		1945.1.12 = { rank = 2 }
+	}
+}
+101111 = {
+	name = "李垠"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101111
+	history = {
+		1939.8.1 = { rank = 1 }
+		1945.12.1 = { rank = 0 }
+	}
+}
+101112 = {
+	name = "前田利爲"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101112
+	add_trait = commando
+	history = {
+		1936.1.1 = { rank = 1 }
+		1942.9.5 = { rank = 0 }
+	}
+}
+101113 = {
+	name = "牧野四郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 8
+	loyalty = 1.00
+	picture = L101113
+	add_trait = defensive_doctrine
+	add_trait = commando
+	history = {
+		1930.1.1 = { rank = 1 }
+		1945.7.1 = { rank = 0 }
+	}
+}
+101114 = {
+	name = "丸山政男"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101114
+	add_trait = commando
+	add_trait = logistics_wizard
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+101115 = {
+	name = "松田正雄"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101115
+	add_trait = logistics_wizard
+	history = {
+		1943.8.1 = { rank = 1 }
+	}
+}
+101116 = {
+	name = "松井石根"
+	country = JAP
+	type = land
+	skill = 5
+	max_skill = 9
+	loyalty = 1.00
+	picture = L101116
+	add_trait = offensive_doctrine
+	add_trait = old_guard
+	history = {
+		1930.1.1 = { rank = 4 }
+		1937.3.15 = { rank = 0 }
+	}
+}
+101117 = {
+	name = "南次郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101117
+	add_trait = old_guard
+	history = {
+		1930.1.1 = { rank = 3 }
+		1942.5.29 = { rank = 0 }
+	}
+}
+101118 = {
+	name = "宮下健一郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101118
+	history = {
+		1942.1.1 = { rank = 1 }
+	}
+}
+101119 = {
+	name = "宮内良夫"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101119
+	history = {
+		1945.6.10 = { rank = 1 }
+	}
+}
+101120 = {
+	name = "宮崎繁三郎"
+	country = JAP
+	type = land
+	skill = 5
+	max_skill = 9
+	loyalty = 1.00
+	picture = L101120
+	add_trait = logistics_wizard
+	add_trait = commando
+	add_trait = fortress_buster
+	history = {
+		1943.3.25 = { rank = 1 }
+	}
+}
+101121 = {
+	name = "森赳"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101121
+	add_trait = logistics_wizard
+	history = {
+		1941.8.25 = { rank = 1 }
+		1945.8.15 = { rank = 0 }
+	}
+}
+101122 = {
+	name = "牟田口廉也"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 10
+	loyalty = 1.00
+	picture = L101122
+	add_trait = offensive_doctrine
+	add_trait = commando
+	add_trait = engineer
+	history = {
+		1930.1.1 = { rank = 1 }
+		1943.2.1 = { rank = 3 }
+	}
+}
+101123 = {
+	name = "武藤章"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101123
+	add_trait = offensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+		1948.12.23 = { rank = 0 }
+	}
+}
+101124 = {
+	name = "長家"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101124
+	add_trait = offensive_doctrine
+	add_trait = old_guard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1938.1.1 = { rank = 0 }
+	}
+}
+101125 = {
+	name = "中澤三夫"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101125
+	add_trait = logistics_wizard
+	history = {
+		1941.10.15 = { rank = 1 }
+	}
+}
+101126 = {
+	name = "中川洲男"
+	country = JAP
+	type = land
+	skill = 4
+	max_skill = 8
+	loyalty = 1.00
+	picture = L101126
+	add_trait = defensive_doctrine
+	add_trait = logistics_wizard
+	add_trait = commando
+	history = {
+		1943.3.1 = { rank = 1 }
+		1944.11.24 = { rank = 0 }
+	}
+}
+101127 = {
+	name = "中井増太郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101127
+	add_trait = panzer_leader
+	history = {
+		1943.1.1 = { rank = 1 }
+	}
+}
+101128 = {
+	name = "中島今朝吾"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101128
+	add_trait = defensive_doctrine
+	add_trait = old_guard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1938.1.1 = { rank = 2 }
+		1939.1.1 = { rank = 0 }
+	}
+}
+101129 = {
+	name = "梨岡壽夫"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101129
+	history = {
+		1944.1.1 = { rank = 1 }
+	}
+}
+101131 = {
+	name = "西竹一"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101131
+	add_trait = panzer_leader
+	add_trait = defensive_doctrine
+	history = {
+		1943.8.1 = { rank = 1 }
+		1945.3.22 = { rank = 0 }
+	}
+}
+101133 = {
+	name = "西野完"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101133
+	history = {
+		1930.1.1 = { rank = 2 }
+		1940.1.1 = { rank = 3 }
+	}
+}
+101134 = {
+	name = "西尾壽造"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101134
+	add_trait = offensive_doctrine
+	add_trait = winter_specialist
+	history = {
+		1930.1.1 = { rank = 1 }
+		1938.9.1 = { rank = 4 }
+		1943.5.3 = { rank = 0 }
+	}
+}
+101135 = {
+	name = "沼田多稼藏"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101135
+	history = {
+		1937.7.1 = { rank = 1 }
+	}
+}
+101136 = {
+	name = "小烟英良"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101321
+	add_trait = offensive_doctrine
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1944.1.1 = { rank = 3 }
+		1944.8.1 = { rank = 0 }
+	}
+}
+101137 = {
+	name = "荻洲立兵"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101137
+	add_trait = offensive_doctrine
+	add_trait = trickster
+	history = {
+		1936.1.1 = { rank = 1 }
+		1939.8.10 = { rank = 2 }
+		1940.1.1 = { rank = 0 }
+	}
+}
+101138 = {
+	name = "岡部直三郎"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101138
+	add_trait = logistics_wizard
+	history = {
+		1936.1.1 = { rank = 1 }
+		1939.9.12 = { rank = 3 }
+		1943.2.1 = { rank = 4 }
+		1946.11.28 = { rank = 0 }
+	}
+}
+101140 = {
+	name = "岡田梅吉"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101140
+	add_trait = defensive_doctrine
+	history = {
+		1945.3.1 = { rank = 1 }
+	}
+}
+101141 = {
+	name = "岡村寧次"
+	country = JAP
+	type = land
+	skill = 4
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101141
+	add_trait = offensive_doctrine
+	add_trait = engineer
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 2 }
+		1938.6.23 = { rank = 3 }
+		1941.7.7 = { rank = 4 }
+	}
+}
+101142 = {
+	name = "大川内傳七"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101142
+	add_trait = fortress_buster
+	add_trait = defensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+101143 = {
+	name = "大谷修"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101143
+	add_trait = commando
+	history = {
+		1939.1.1 = { rank = 1 }
+		1944.12.25 = { rank = 0 }
+	}
+}
+101144 = {
+	name = "立古睦吉"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101144
+	history = {
+		1944.8.1 = { rank = 1 }
+	}
+}
+101145 = {
+	name = "相良巳都麿"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101145
+	add_trait = logistics_wizard
+	history = {
+		1937.7.1 = { rank = 1 }
+	}
+}
+101146 = {
+	name = "齋藤彌平太"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101146
+	add_trait = offensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+		1942.7.1 = { rank = 2 }
+		1946.1.1 = { rank = 0 }
+	}
+}
+101147 = {
+	name = "齋藤義次"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101147
+	add_trait = offensive_doctrine
+	add_trait = defensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+		1944.7.6 = { rank = 0 }
+	}
+}
+101148 = {
+	name = "酒井原繁松"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101148
+	add_trait = logistics_wizard
+	history = {
+		1942.11.1 = { rank = 1 }
+		1947.7.1 = { rank = 0 }
+	}
+}
+101149 = {
+	name = "坂口靜夫"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101149
+	add_trait = offensive_doctrine
+	add_trait = logistics_wizard
+	add_trait = commando
+	history = {
+		1939.9.11 = { rank = 1 }
+	}
+}
+101150 = {
+	name = "酒井隆"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101150
+	add_trait = offensive_doctrine
+	add_trait = fortress_buster
+	history = {
+		1930.1.1 = { rank = 1 }
+		1941.11.6 = { rank = 3 }
+	}
+}
+101151 = {
+	name = "眞田穰一郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101151
+	add_trait = logistics_wizard
+	history = {
+		1943.8.2 = { rank = 1 }
+	}
+}
+101152 = {
+	name = "佐藤賢了"
+	country = JAP
+	type = land
+	skill = 0
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101152
+	add_trait = logistics_wizard
+	history = {
+		1941.10.15 = { rank = 1 }
+	}
+}
+101153 = {
+	name = "佐藤幸徳"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 8
+	loyalty = 1.00
+	picture = L101153
+	add_trait = offensive_doctrine
+	add_trait = trickster
+	add_trait = defensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+		1944.6.1 = { rank = 2 }
+	}
+}
+101154 = {
+	name = "澤本理吉郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101154
+	add_trait = defensive_doctrine
+	history = {
+		1943.3.1 = { rank = 1 }
+	}
+}
+101155 = {
+	name = "椎橋侃二"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101155
+	add_trait = logistics_wizard
+	history = {
+		1942.8.1 = { rank = 1 }
+	}
+}
+101156 = {
+	name = "柴崎惠次"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101156
+	add_trait = commando
+	add_trait = defensive_doctrine
+	history = {
+		1941.12.1 = { rank = 1 }
+		1943.9.1 = { rank = 0 }
+	}
+}
+101157 = {
+	name = "重田德松"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101157
+	add_trait = fortress_buster
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+101158 = {
+	name = "志摩清英"
+	country = JAP
+	type = sea
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101158
+	add_trait = superior_tactician
+	history = {
+		1939.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 2 }
+	}
+}
+101159 = {
+	name = "清水光美"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101159
+	history = {
+		1944.1.1 = { rank = 1 }
+	}
+}
+101160 = {
+	name = "下村定"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101160
+	add_trait = defensive_doctrine
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1942.10.18 = { rank = 2 }
+	}
+}
+101161 = {
+	name = "東海林俊成"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101161
+	add_trait = defensive_doctrine
+ 	add_trait = trickster
+	history = {
+		1941.4.1 = { rank = 1 }
+	}
+}
+101163 = {
+	name = "杉山元"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101163
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 4 }
+		1945.9.12 = { rank = 0 }
+	}
+}
+101165 = {
+	name = "澄田贝来四郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101165
+	add_trait = defensive_doctrine
+	add_trait = logistics_wizard
+	history = {
+		1936.1.1 = { rank = 1 }
+		1944.6.1 = { rank = 2 }
+	}
+}
+101166 = {
+	name = "鈴木敬司"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101166
+	add_trait = fortress_buster
+	history = {
+		1943.8.2 = { rank = 1 }
+	}
+}
+101167 = {
+	name = "鈴木繁二"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101167
+	add_trait = defensive_doctrine
+	history = {
+		1941.8.25 = { rank = 1 }
+	}
+}
+101168 = {
+	name = "鈴木宗作"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 8
+	loyalty = 1.00
+	picture = L101168
+	add_trait = defensive_doctrine
+	add_trait = logistics_wizard
+	add_trait = engineer
+	history = {
+		1936.1.1 = { rank = 1 }
+		1944.6.1 = { rank = 3 }
+		1945.4.19 = { rank = 0 }
+	}
+}
+101169 = {
+	name = "鈴木貞一"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101169
+	history = {
+		1930.1.1 = { rank = 1 }
+		1941.4.4 = { rank = 0 }
+	}
+}
+101170 = {
+	name = "多田駿"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101170
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1937.1.1 = { rank = 2 }
+		1939.9.12 = { rank = 4 }
+		1941.9.2 = { rank = 0 }
+	}
+}
+101171 = {
+	name = "但木"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101171
+	add_trait = commando
+	history = {
+		1930.1.1 = { rank = 1 }
+		1945.8.15 = { rank = 0 }
+	}
+}
+101172 = {
+	name = "佗美浩"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101172
+	add_trait = logistics_wizard
+	add_trait = commando
+	add_trait = trickster
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+101173 = {
+	name = "田中久一"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101173
+	add_trait = fortress_buster
+	history = {
+		1930.1.1 = { rank = 1 }
+		1943.3.1 = { rank = 3 }
+		1947.3.27 = { rank = 0 }
+	}
+}
+101174 = {
+	name = "田中新一"
+	country = JAP
+	type = land
+	skill = 4
+	max_skill = 10
+	loyalty = 1.00
+	picture = L101174
+	add_trait = defensive_doctrine
+	add_trait = offensive_doctrine
+	add_trait = engineer
+	history = {
+		1930.1.1 = { rank = 1 }
+		1944.9.22 = { rank = 2 }
+	}
+}
+101175 = {
+	name = "田中静一"
+	country = JAP
+	type = land
+	skill = 4
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101175
+	add_trait = trickster
+	history = {
+		1930.1.1 = { rank = 1 }
+		1941.10.15 = { rank = 2 }
+		1942.8.15 = { rank = 4 }
+		1945.8.15 = { rank = 0 }
+	}
+}
+101176 = {
+	name = "谷壽夫"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101176
+	add_trait = offensive_doctrine
+	add_trait = commando
+	add_trait = trickster
+	history = {
+		1930.1.1 = { rank = 1 }
+		1937.12.28 = { rank = 2 }
+		1939.9.2 = { rank = 0 }
+		1945.8.2 = { rank = 2 }
+		1947.4.26 = { rank = 0 }
+	}
+}
+101177 = {
+	name = "田代皖一郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101177
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 2 }
+		1937.8.1 = { rank = 0 }
+	}
+}
+101178 = {
+	name = "寺倉正三"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101178
+	history = {
+		1930.1.1 = { rank = 1 }
+		1944.3.10 = { rank = 2 }
+	}
+}
+101179 = {
+	name = "寺内壽一"
+	country = JAP
+	type = land
+	skill = 4
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101179
+	add_trait = offensive_doctrine
+	add_trait = logistics_wizard
+	add_trait = commando
+	history = {
+		1930.1.1 = { rank = 4 }
+		1946.1.1 = { rank = 0 }
+	}
+}
+101180 = {
+	name = "寺内俊一"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101180
+	add_trait = logistics_wizard
+	add_trait = old_guard
+	history = {
+		1930.1.1 = { rank = 3 }
+		1937.1.1 = { rank = 0 }
+	}
+}
+101181 = {
+	name = "東條英機"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 10
+	loyalty = 1.00
+	picture = L101181
+	add_trait = offensive_doctrine
+	add_trait = trickster
+	history = {
+		1930.1.1 = { rank = 2 }
+		1941.10.18 = { rank = 3 }
+		1944.7.22 = { rank = 0 }
+	}
+}
+101182 = {
+	name = "徳永鹿之助"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101182
+	history = {
+		1944.8.1 = { rank = 1 }
+	}
+}
+101183 = {
+	name = "徳野外次郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101183
+	add_trait = fortress_buster
+	history = {
+		1942.5.16 = { rank = 1 }
+		1945.7.11 = { rank = 0 }
+	}
+}
+101184 = {
+	name = "冨永恭次"
+	country = JAP
+	type = land
+	skill = 0
+	max_skill = 10
+	loyalty = 0.00
+	picture = L101184
+	add_trait = panzer_leader
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+101185 = {
+	name = "年翳"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101185
+	add_trait = offensive_doctrine
+	history = {
+		1943.1.1 = { rank = 1 }
+	}
+}
+101186 = {
+	name = "豐嶋房太郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101186
+	add_trait = commando
+	history = {
+		1930.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 3 }
+	}
+}
+101187 = {
+	name = "土橋勇逸"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101187
+	add_trait = trickster
+	add_trait = logistics_wizard
+	add_trait = commando
+	history = {
+		1930.1.1 = { rank = 1 }
+		1944.11.22 = { rank = 2 }
+	}
+}
+101188 = {
+	name = "津田賜"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101188
+	add_trait = offensive_doctrine
+	history = {
+		1944.6.22 = { rank = 1 }
+	}
+}
+101189 = {
+	name = "辻政信"
+	country = JAP
+	type = land
+	skill = 4
+	max_skill = 10
+	loyalty = 1.00
+	picture = L101189
+	add_trait = fortress_buster
+	add_trait = commando
+
+	add_trait = trickster
+	history = {
+		1930.1.1 = { rank = 1 }
+		1944.1.1 = { rank = 2 }
+	}
+}
+101190 = {
+	name = "内山英太郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101190
+	add_trait = trickster
+	history = {
+		1930.1.1 = { rank = 1 }
+		1942.8.17 = { rank = 2 }
+	}
+}
+101191 = {
+	name = "植田謙吉"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101191
+	add_trait = offensive_doctrine
+	history = {
+		1930.1.1 = { rank = 4 }
+		1939.12.1 = { rank = 0 }
+	}
+}
+101192 = {
+	name = "梅津美治郎"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101192
+	add_trait = defensive_doctrine
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1938.5.30 = { rank = 2 }
+		1939.9.1 = { rank = 4 }
+	}
+}
+101195 = {
+	name = "牛島滿"
+	country = JAP
+	type = land
+	skill = 4
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101195
+	add_trait = defensive_doctrine
+	add_trait = offensive_doctrine
+	add_trait = commando
+	history = {
+		1936.1.1 = { rank = 1 }
+		1944.6.1 = { rank = 2 }
+		1945.6.23 = { rank = 0 }
+	}
+}
+101196 = {
+	name = "牛島貞雄"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101196
+	add_trait = logistics_wizard
+	add_trait = old_guard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.7.15 = { rank = 0 }
+	}
+}
+101197 = {
+	name = "和田操"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101197
+	add_trait = tank_buster
+	history = {
+		1943.1.1 = { rank = 1 }
+	}
+}
+101198 = {
+	name = "若松平治"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101198
+	add_trait = offensive_doctrine
+	history = {
+		1939.8.1 = { rank = 1 }
+		1942.2.3 = { rank = 0 }
+	}
+}
+101199 = {
+	name = "八原博通"
+	country = JAP
+	type = land
+	skill = 4
+	max_skill = 8
+	loyalty = 1.00
+	picture = L101199
+	add_trait = defensive_doctrine
+	history = {
+		1943.3.1 = { rank = 1 }
+	}
+}
+101200 = {
+	name = "山田乙三"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101200
+	add_trait = offensive_doctrine
+	history = {
+		1930.1.1 = { rank = 2 }
+		1939.1.1 = { rank = 4 }
+	}
+}
+101201 = {
+	name = "山口多聞"
+	country = JAP
+	type = air
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101295
+	add_trait = fleet_destroyer
+	add_trait = spotter
+	history = {
+		1940.1.1 = { rank = 1 }
+		1942.6.6 = { rank = 0 }
+	}
+}
+101202 = {
+	name = "山岡重厚"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101202
+	add_trait = offensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 0 }
+	}
+}
+101203 = {
+	name = "山村兵衞"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101203
+	add_trait = fortress_buster
+	history = {
+		1944.1.1 = { rank = 1 }
+	}
+}
+101204 = {
+	name = "山本三男"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101204
+	add_trait = fortress_buster
+	add_trait = commando
+	history = {
+		1943.3.25 = { rank = 1 }
+	}
+}
+101205 = {
+	name = "山下奉文"
+	country = JAP
+	type = land
+	skill = 5
+	max_skill = 9
+	loyalty = 1.00
+	picture = L101205
+	add_trait = defensive_doctrine
+	add_trait = offensive_doctrine
+	add_trait = trickster
+
+	history = {
+		1930.1.1 = { rank = 1 }
+		1941.6.1 = { rank = 2 }
+		1942.7.1 = { rank = 4 }
+		1946.2.23 = { rank = 0 }
+	}
+}
+101206 = {
+	name = "山崎保代"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 10
+	loyalty = 1.00
+	picture = L101206
+	add_trait = winter_specialist
+	add_trait = defensive_doctrine
+	add_trait = commando
+	history = {
+		1939.8.15 = { rank = 1 }
+		1943.5.29 = { rank = 0 }
+	}
+}
+101207 = {
+	name = "柳川平助"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101207
+	history = {
+		1930.1.1 = { rank = 2 }
+		1938.3.29 = { rank = 0 }
+	}
+}
+101208 = {
+	name = "柳川眞一"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101208
+	history = {
+		1941.1.1 = { rank = 1 }
+	}
+}
+101209 = {
+	name = "柳田元三"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 8
+	loyalty = 1.00
+	picture = L101209
+	add_trait = defensive_doctrine
+	add_trait = commando
+	history = {
+		1936.1.1 = { rank = 1 }
+		1944.6.1 = { rank = 2 }
+		1948.1.1 = { rank = 0 }
+	}
+}
+101210 = {
+	name = "矢野政雄"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101210
+	history = {
+		1941.1.1 = { rank = 1 }
+	}
+}
+101211 = {
+	name = "橫山一郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101211
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+101213 = {
+	name = "横山武彦"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101213
+	history = {
+		1936.1.1 = { rank = 2 }
+	}
+}
+101214 = {
+	name = "吉田喜八郎"
+	country = JAP
+	type = air
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101214
+	history = {
+		1941.10.1 = { rank = 1 }
+		1945.3.1 = { rank = 2 }
+	}
+}
+101215 = {
+	name = "吉原矩"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101215
+	add_trait = engineer
+	add_trait = defensive_doctrine
+
+
+	add_trait = commando
+	history = {
+		1940.12.2 = { rank = 1 }
+	}
+}
+101216 = {
+	name = "吉岡安直"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101216
+	history = {
+		1939.8.1 = { rank = 1 }
+		1947.11.30 = { rank = 0 }
+	}
+}
+101217 = {
+	name = "有馬正文"
+	country = JAP
+	type = sea
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101217
+	history = {
+		1942.1.1 = { rank = 1 }
+	}
+}
+101218 = {
+	name = "醍醐忠重"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101218
+	add_trait = seawolf
+	history = {
+		1938.1.1 = { rank = 1 }
+	}
+}
+101219 = {
+	name = "遠藤喜一"
+	country = JAP
+	type = sea
+	skill = 3
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101219
+	history = {
+		1930.1.1 = { rank = 1 }
+		1938.1.1 = { rank = 2 }
+		1942.1.1 = { rank = 3 }
+	}
+}
+101220 = {
+	name = "藤田進"
+	country = JAP
+	type = sea
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101220
+	history = {
+		1937.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 2 }
+	}
+}
+101221 = {
+	name = "藤原"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101221
+	history = {
+		1930.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 0 }
+	}
+}
+101222 = {
+	name = "福田良三"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101222
+	history = {
+		1939.1.1 = { rank = 1 }
+	}
+}
+101223 = {
+	name = "福留繁"
+	country = JAP
+	type = sea
+	skill = 4
+	max_skill = 8
+	loyalty = 1.00
+	picture = L101223
+	history = {
+		1930.1.1 = { rank = 2 }
+	}
+}
+101224 = {
+	name = "伍堂卓雄"
+	country = JAP
+	type = sea
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101224
+	add_trait = superior_tactician
+	history = {
+		1930.1.1 = { rank = 2 }
+	}
+}
+101225 = {
+	name = "五藤存知"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101225
+	history = {
+		1939.1.1 = { rank = 1 }
+	}
+}
+101226 = {
+	name = "原守"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101226
+	add_trait = logistics_wizard
+	history = {
+		1942.8.1 = { rank = 1 }
+	}
+}
+101227 = {
+	name = "長谷川清"
+	country = JAP
+	type = sea
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101227
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 2 }
+	}
+}
+101228 = {
+	name = "長谷川喜一"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101228
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+101229 = {
+	name = "本田忠雄"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101229
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+101230 = {
+	name = "堀内茂忠"
+	country = JAP
+	type = sea
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101230
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 2 }
+		1944.1.1 = { rank = 0 }
+	}
+}
+101231 = {
+	name = "細萱戊子郎"
+	country = JAP
+	type = sea
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101231
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 2 }
+	}
+}
+101232 = {
+	name = "細谷資芳"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101232
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+101233 = {
+	name = "百武源吾"
+	country = JAP
+	type = sea
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101233
+	history = {
+		1930.1.1 = { rank = 3 }
+	}
+}
+101234 = {
+	name = "井上成美"
+	country = JAP
+	type = sea
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101234
+	history = {
+		1937.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+	}
+}
+101235 = {
+	name = "伊藤整一"
+	country = JAP
+	type = sea
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101235
+	add_trait = seawolf
+	history = {
+		1937.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+	}
+}
+101236 = {
+	name = "岩村清一"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101236
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+101238 = {
+	name = "角田覺治"
+	country = JAP
+	type = sea
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101238
+	history = {
+		1930.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+		1944.8.1 = { rank = 0 }
+	}
+}
+101239 = {
+	name = "加藤寛治"
+	country = JAP
+	type = sea
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101239
+	add_trait = old_guard
+	add_trait = spotter
+	history = {
+		1930.1.1 = { rank = 3 }
+	}
+}
+101240 = {
+	name = "加藤隆義"
+	country = JAP
+	type = sea
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101240
+	add_trait = superior_tactician
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 2 }
+	}
+}
+101241 = {
+	name = "川井繁藏"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101241
+	history = {
+		1939.1.1 = { rank = 1 }
+	}
+}
+101242 = {
+	name = "小林宋之助"
+	country = JAP
+	type = sea
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101242
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+	}
+}
+101243 = {
+	name = "古賀峯一"
+	country = JAP
+	type = sea
+	skill = 4
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101243
+	add_trait = superior_tactician
+	add_trait = spotter
+	history = {
+		1930.1.1 = { rank = 2 }
+		1941.1.1 = { rank = 3 }
+		1944.1.1 = { rank = 0 }
+	}
+}
+101244 = {
+	name = "小川貫爾"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101244
+	history = {
+		1938.1.1 = { rank = 1 }
+	}
+}
+101245 = {
+	name = "小島秀雄"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101245
+	history = {
+		1930.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 0 }
+	}
+}
+101246 = {
+	name = "小松輝久"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101246
+	history = {
+		1940.1.1 = { rank = 1 }
+	}
+}
+101247 = {
+	name = "近藤信竹"
+	country = JAP
+	type = sea
+	skill = 3
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101247
+	history = {
+		1930.1.1 = { rank = 2 }
+		1938.1.1 = { rank = 3 }
+	}
+}
+101248 = {
+	name = "栗田健男"
+	country = JAP
+	type = sea
+	skill = 3
+	max_skill = 10
+	loyalty = 1.00
+	picture = L101248
+	add_trait = blockade_runner
+	history = {
+		1938.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+		1944.1.1 = { rank = 4 }
+	}
+}
+101249 = {
+	name = "黒島龜人"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101249
+	history = {
+		1938.1.1 = { rank = 1 }
+		1990.1.1 = { rank = 0 }
+	}
+}
+101250 = {
+	name = "草鹿任一"
+	country = JAP
+	type = sea
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101250
+	history = {
+		1930.1.1 = { rank = 1 }
+		1940.1.1 = { rank = 2 }
+	}
+}
+101251 = {
+	name = "前田精"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101251
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 0 }
+	}
+}
+101252 = {
+	name = "松村翠"
+	country = JAP
+	type = sea
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101252
+	history = {
+		1930.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 2 }
+	}
+}
+101253 = {
+	name = "松永壽雄"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101253
+	history = {
+		1930.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 0 }
+	}
+}
+101254 = {
+	name = "三川軍一"
+	country = JAP
+	type = sea
+	skill = 4
+	max_skill = 8
+	loyalty = 1.00
+	picture = L101254
+	add_trait = blockade_runner
+	add_trait = superior_tactician
+	history = {
+		1936.1.1 = { rank = 1 }
+		1940.1.1 = { rank = 2 }
+	}
+}
+101255 = {
+	name = "三户壽"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101255
+	history = {
+		1942.1.1 = { rank = 1 }
+	}
+}
+101256 = {
+	name = "宮崎俊男"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101256
+	history = {
+		1937.1.1 = { rank = 1 }
+		1944.1.1 = { rank = 0 }
+	}
+}
+101257 = {
+	name = "松木益吉"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101257
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+101258 = {
+	name = "永野修身"
+	country = JAP
+	type = sea
+	skill = 4
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101258
+	add_trait = superior_tactician
+	history = {
+		1930.1.1 = { rank = 3 }
+		1941.1.1 = { rank = 4 }
+	}
+}
+101259 = {
+	name = "南雲忠一"
+	country = JAP
+	type = sea
+	skill = 2
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101259
+	add_trait = superior_tactician
+	add_trait = spotter
+	history = {
+		1930.1.1 = { rank = 2 }
+		1944.7.6 = { rank = 0 }
+	}
+}
+101260 = {
+	name = "中村一夫"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101260
+	history = {
+		1930.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 0 }
+	}
+}
+101261 = {
+	name = "中村良三"
+	country = JAP
+	type = sea
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101261
+	history = {
+		1930.1.1 = { rank = 2 }
+		1943.1.1 = { rank = 3 }
+	}
+}
+101262 = {
+	name = "中村俊久"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101262
+	history = {
+		1941.1.1 = { rank = 1 }
+	}
+}
+101263 = {
+	name = "中澤佑"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101263
+	history = {
+		1937.1.1 = { rank = 1 }
+	}
+}
+101264 = {
+	name = "西村祥治"
+	country = JAP
+	type = sea
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101264
+	add_trait = spotter
+	history = {
+		1940.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 2 }
+	}
+}
+101265 = {
+	name = "野村吉三郎"
+	country = JAP
+	type = sea
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101265
+	add_trait = superior_tactician
+	history = {
+		1930.1.1 = { rank = 2 }
+		1940.1.1 = { rank = 3 }
+	}
+}
+101266 = {
+	name = "野村直那"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101266
+	add_trait = superior_tactician
+	history = {
+		1939.1.1 = { rank = 1 }
+	}
+}
+101267 = {
+	name = "大田實"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101267
+	history = {
+		1930.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 0 }
+	}
+}
+101268 = {
+	name = "及川古志郎"
+	country = JAP
+	type = sea
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101268
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 2 }
+	}
+}
+101269 = {
+	name = "岡敬純"
+	country = JAP
+	type = sea
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101269
+	history = {
+		1930.1.1 = { rank = 1 }
+		1940.1.1 = { rank = 2 }
+	}
+}
+101270 = {
+	name = "岡村政夫"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101270
+	history = {
+		1938.1.1 = { rank = 1 }
+	}
+}
+101271 = {
+	name = "大西瀧治郎"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101271
+	history = {
+		1941.1.1 = { rank = 1 }
+	}
+}
+101272 = {
+	name = "大角岑生"
+	country = JAP
+	type = sea
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101272
+	add_trait = old_guard
+	add_trait = blockade_runner
+	history = {
+		1930.1.1 = { rank = 3 }
+		1942.1.1 = { rank = 0 }
+	}
+}
+101273 = {
+	name = "小澤治三郎"
+	country = JAP
+	type = sea
+	skill = 5
+	max_skill = 8
+	loyalty = 1.00
+	picture = L101273
+	add_trait = blockade_runner
+	add_trait = superior_tactician
+	history = {
+		1930.1.1 = { rank = 1 }
+		1940.1.1 = { rank = 2 }
+		1942.1.1 = { rank = 3 }
+		1946.1.1 = { rank = 4 }
+	}
+}
+101274 = {
+	name = "左近司政三"
+	country = JAP
+	type = sea
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101274
+	add_trait = seawolf
+	history = {
+		1930.1.1 = { rank = 2 }
+	}
+}
+101275 = {
+	name = "澤本赖雄"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101275
+	history = {
+		1940.1.1 = { rank = 1 }
+	}
+}
+101276 = {
+	name = "佐藤市郎"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101276
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+101277 = {
+	name = "關根郡平"
+	country = JAP
+	type = sea
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101277
+	history = {
+		1930.1.1 = { rank = 1 }
+		1944.1.1 = { rank = 2 }
+	}
+}
+101278 = {
+	name = "嶋田繁太郎"
+	country = JAP
+	type = sea
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101278
+	add_trait = spotter
+	history = {
+		1930.1.1 = { rank = 2 }
+	}
+}
+101279 = {
+	name = "下村正助"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101279
+	add_trait = seawolf
+	history = {
+		1939.1.1 = { rank = 1 }
+	}
+}
+101280 = {
+	name = "鹽澤幸一"
+	country = JAP
+	type = sea
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101280
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 2 }
+	}
+}
+101281 = {
+	name = "末國正雄"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101281
+	add_trait = seawolf
+	history = {
+		1939.1.1 = { rank = 1 }
+		1944.1.1 = { rank = 0 }
+	}
+}
+101282 = {
+	name = "白石萬隆"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101282
+	history = {
+		1938.1.1 = { rank = 1 }
+	}
+}
+101283 = {
+	name = "高木武雄"
+	country = JAP
+	type = sea
+	skill = 2
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101283
+	history = {
+		1930.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+		1944.1.1 = { rank = 0 }
+	}
+}
+101284 = {
+	name = "高橋三吉"
+	country = JAP
+	type = sea
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101284
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 2 }
+		1947.1.1 = { rank = 0 }
+	}
+}
+101285 = {
+	name = "高橋伊望"
+	country = JAP
+	type = sea
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101285
+	history = {
+		1937.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+	}
+}
+101286 = {
+	name = "高須四郎"
+	country = JAP
+	type = sea
+	skill = 3
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101286
+	history = {
+		1930.1.1 = { rank = 2 }
+		1941.1.1 = { rank = 3 }
+	}
+}
+101287 = {
+	name = "田中赖三"
+	country = JAP
+	type = sea
+	skill = 4
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101287
+	add_trait = blockade_runner
+	add_trait = superior_tactician
+	history = {
+		1941.1.1 = { rank = 1 }
+		1944.1.1 = { rank = 2 }
+	}
+}
+101288 = {
+	name = "田代蘇平"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101288
+	history = {
+		1942.1.1 = { rank = 1 }
+	}
+}
+101289 = {
+	name = "豐田副武"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101289
+	add_trait = old_guard
+	history = {
+		1930.1.1 = { rank = 2 }
+		1941.1.1 = { rank = 3 }
+	}
+}
+101290 = {
+	name = "鳥江"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101290
+	add_trait = seawolf
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+101291 = {
+	name = "宇垣缠"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101291
+	history = {
+		1938.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 2 }
+		1945.8.15 = { rank = 0 }
+	}
+}
+101292 = {
+	name = "臼井國"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101292
+	history = {
+		1930.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 0 }
+	}
+}
+101293 = {
+	name = "和田鐵二郎"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101293
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+101294 = {
+	name = "山縣正乡"
+	country = JAP
+	type = sea
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101294
+	history = {
+		1937.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+	}
+}
+101295 = {
+	name = "山口多聞"
+	country = JAP
+	type = sea
+	skill = 3
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101295
+	history = {
+		1940.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 0 }
+	}
+}
+101296 = {
+	name = "山本五十六"
+	country = JAP
+	type = sea
+	skill = 5
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101296
+	add_trait = superior_tactician
+	add_trait = spotter
+	history = {
+		1930.1.1 = { rank = 2 }
+		1937.1.1 = { rank = 3 }
+		1939.1.1 = { rank = 4 }
+		1944.1.1 = { rank = 0 }
+	}
+}
+101297 = {
+	name = "山本弘毅"
+	country = JAP
+	type = sea
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101297
+	history = {
+		1930.1.1 = { rank = 2 }
+	}
+}
+101298 = {
+	name = "柳澤藏之助"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101298
+	history = {
+		1942.1.1 = { rank = 1 }
+	}
+}
+101299 = {
+	name = "米内光政"
+	country = JAP
+	type = sea
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101299
+	history = {
+		1930.1.1 = { rank = 2 }
+		1937.1.1 = { rank = 3 }
+	}
+}
+101300 = {
+	name = "吉田善吾"
+	country = JAP
+	type = sea
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101300
+	history = {
+		1930.1.1 = { rank = 2 }
+		1943.1.1 = { rank = 0 }
+	}
+}
+101301 = {
+	name = "雪下勝美"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101301
+	history = {
+		1930.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 0 }
+	}
+}
+101302 = {
+	name = "有馬正文"
+	country = JAP
+	type = air
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101302
+	add_trait = fleet_destroyer
+	history = {
+		1941.1.1 = { rank = 1 }
+	}
+}
+101303 = {
+	name = "遠藤三郎"
+	country = JAP
+	type = air
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101303
+	history = {
+		1938.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+	}
+}
+101304 = {
+	name = "淵田美津雄"
+	country = JAP
+	type = air
+	skill = 2
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101304
+	add_trait = fleet_destroyer
+	history = {
+		1943.1.1 = { rank = 1 }
+	}
+}
+101305 = {
+	name = "福留繁"
+	country = JAP
+	type = air
+	skill = 4
+	max_skill = 8
+	loyalty = 1.00
+	picture = L101305
+	add_trait = spotter
+	add_trait = tank_buster
+	add_trait = fleet_destroyer
+	history = {
+		1944.1.1 = { rank = 2 }
+	}
+}
+101306 = {
+	name = "福井義男"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101306
+	add_trait = superior_air_tactician
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+101307 = {
+	name = "源田實"
+	country = JAP
+	type = air
+	skill = 4
+	max_skill = 9
+	loyalty = 1.00
+	picture = L101307
+	add_trait = superior_air_tactician
+	add_trait = fleet_destroyer
+	history = {
+		1943.1.1 = { rank = 1 }
+	}
+}
+101308 = {
+	name = "市丸利之助"
+	country = JAP
+	type = air
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101308
+	add_trait = fleet_destroyer
+	history = {
+		1930.1.1 = { rank = 2 }
+		1939.1.1 = { rank = 3 }
+		1945.4.1 = { rank = 0 }
+	}
+}
+101309 = {
+	name = "板花義一"
+	country = JAP
+	type = air
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101309
+	add_trait = tank_buster
+	history = {
+		1939.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 2 }
+	}
+}
+101310 = {
+	name = "伊藤整一"
+	country = JAP
+	type = air
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101310
+	add_trait = fleet_destroyer
+	history = {
+		1938.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+		1944.1.1 = { rank = 0 }
+	}
+}
+101311 = {
+	name = "加藤建夫"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101311
+	add_trait = superior_air_tactician
+	history = {
+		1940.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 0 }
+	}
+}
+101312 = {
+	name = "河边正三"
+	country = JAP
+	type = air
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101312
+	add_trait = fleet_destroyer
+	history = {
+		1936.1.1 = { rank = 1 }
+		1940.1.1 = { rank = 2 }
+		1941.1.1 = { rank = 3 }
+		1945.1.1 = { rank = 4 }
+	}
+}
+101313 = {
+	name = "川边忠三郎"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101313
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+101314 = {
+	name = "河边虎四郎"
+	country = JAP
+	type = air
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101314
+	add_trait = carpet_bomber
+	history = {
+		1940.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 2 }
+	}
+}
+101315 = {
+	name = "川原利明"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101315
+	history = {
+		1938.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+	}
+}
+101316 = {
+	name = "木下勇"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101316
+	history = {
+		1945.1.1 = { rank = 1 }
+	}
+}
+101317 = {
+	name = "吉良俊一"
+	country = JAP
+	type = air
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101317
+	add_trait = fleet_destroyer
+	history = {
+		1930.1.1 = { rank = 2 }
+	}
+}
+101318 = {
+	name = "近藤信竹"
+	country = JAP
+	type = air
+	skill = 3
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101318
+	add_trait = fleet_destroyer
+	history = {
+		1930.1.1 = { rank = 2 }
+		1938.1.1 = { rank = 3 }
+	}
+}
+101319 = {
+	name = "草鹿龍之介"
+	country = JAP
+	type = air
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101319
+	add_trait = superior_air_tactician
+	add_trait = fleet_destroyer
+	history = {
+		1930.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 2 }
+	}
+}
+101320 = {
+	name = "李垠"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101320
+	add_trait = night_flyer
+	history = {
+		1942.1.1 = { rank = 1 }
+	}
+}
+101321 = {
+	name = "小烟英良"
+	country = JAP
+	type = air
+	skill = 2
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101321
+	add_trait = tank_buster
+	history = {
+		1930.1.1 = { rank = 2 }
+		1944.8.1 = { rank = 0 }
+	}
+}
+101322 = {
+	name = "大西瀧治郎"
+	country = JAP
+	type = air
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101322
+	add_trait = fleet_destroyer
+	history = {
+		1939.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+		1944.1.1 = { rank = 3 }
+	}
+}
+101323 = {
+	name = "及川古志郎"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101323
+	history = {
+		1944.1.1 = { rank = 1 }
+	}
+}
+101324 = {
+	name = "小澤治三郎"
+	country = JAP
+	type = air
+	skill = 4
+	max_skill = 9
+	loyalty = 1.00
+	picture = L101324
+	add_trait = superior_air_tactician
+	add_trait = spotter
+	add_trait = fleet_destroyer
+	history = {
+		1930.1.1 = { rank = 1 }
+		1940.1.1 = { rank = 2 }
+		1942.1.1 = { rank = 3 }
+	}
+}
+101325 = {
+	name = "朴承煥"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101325
+	history = {
+		1942.1.1 = { rank = 1 }
+	}
+}
+101326 = {
+	name = "坂井三郎"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101326
+	add_trait = superior_air_tactician
+	history = {
+		1943.1.1 = { rank = 1 }
+	}
+}
+101327 = {
+	name = "坂井武"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101327
+	add_trait = tank_buster
+	history = {
+		1944.1.1 = { rank = 1 }
+	}
+}
+101329 = {
+	name = "志摩清英"
+	country = JAP
+	type = air
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101329
+	add_trait = fleet_destroyer
+	history = {
+		1930.1.1 = { rank = 3 }
+	}
+}
+101330 = {
+	name = "下山琢磨"
+	country = JAP
+	type = air
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101330
+	add_trait = tank_buster
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 2 }
+	}
+}
+101331 = {
+	name = "菅原道大"
+	country = JAP
+	type = air
+	skill = 2
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101331
+	add_trait = tank_buster
+	history = {
+		1937.1.1 = { rank = 1 }
+		1940.1.1 = { rank = 2 }
+	}
+}
+101332 = {
+	name = "高橋千隼"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101332
+	add_trait = fleet_destroyer
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 2 }
+		1947.1.1 = { rank = 0 }
+	}
+}
+101333 = {
+	name = "田中赖三"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101333
+	add_trait = superior_air_tactician
+	history = {
+		1939.1.1 = { rank = 1 }
+	}
+}
+101334 = {
+	name = "谷川一男"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101334
+	history = {
+		1939.1.1 = { rank = 1 }
+	}
+}
+101335 = {
+	name = "東條英機"
+	country = JAP
+	type = air
+	skill = 3
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101335
+	add_trait = tank_buster
+	history = {
+		1930.1.1 = { rank = 2 }
+		1938.1.1 = { rank = 3 }
+		1944.7.22 = { rank = 0 }
+	}
+}
+101336 = {
+	name = "冨永恭次"
+	country = JAP
+	type = air
+	skill = 0
+	max_skill = 5
+	loyalty = 0.00
+	picture = L101184
+	add_trait = fleet_destroyer
+	history = {
+		1939.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 2 }
+		1945.1.1 = { rank = 0 }
+	}
+}
+101337 = {
+	name = "塚原二四三"
+	country = JAP
+	type = air
+	skill = 2
+	max_skill = 8
+	loyalty = 1.00
+	picture = L101337
+	add_trait = fleet_destroyer
+	add_trait = superior_air_tactician
+	history = {
+		1930.1.1 = { rank = 1 }
+		1938.1.1 = { rank = 2 }
+	}
+}
+101338 = {
+	name = "宇垣缠"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101338
+	add_trait = superior_air_tactician
+	add_trait = spotter
+	add_trait = fleet_destroyer
+	history = {
+		1938.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 2 }
+		1945.8.15 = { rank = 0 }
+	}
+}
+101339 = {
+	name = "梅津美治郎"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101339
+	history = {
+		1930.1.1 = { rank = 1 }
+		1948.1.1 = { rank = 0 }
+	}
+}
+101340 = {
+	name = "後宮淳"
+	country = JAP
+	type = air
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101340
+	add_trait = old_guard
+	add_trait = spotter
+	history = {
+		1930.1.1 = { rank = 3 }
+		1939.1.1 = { rank = 4 }
+	}
+}
+101341 = {
+	name = "山下奉文"
+	country = JAP
+	type = air
+	skill = 4
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101341
+	add_trait = tank_buster
+	history = {
+		1930.1.1 = { rank = 1 }
+		1938.1.1 = { rank = 2 }
+		1941.1.1 = { rank = 3 }
+		1946.1.1 = { rank = 0 }
+	}
+}
+101342 = {
+	name = "安田武雄"
+	country = JAP
+	type = air
+	skill = 3
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101342
+	add_trait = fleet_destroyer
+	history = {
+		1939.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 2 }
+		1946.1.1 = { rank = 3 }
+	}
+}
+101343 = {
+	name = "兩角業作"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101343
+	add_trait = offensive_doctrine
+	add_trait = commando
+	history = {
+		1939.8.1 = { rank = 1 }
+	}
+}
+101344 = {
+	name = "長谷部照吾"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101344
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1937.1.1 = { rank = 0 }
+	}
+}
+101345 = {
+	name = "稻垣考照"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101345
+	add_trait = offensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+101346 = {
+	name = "茂木"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101346
+	add_trait = engineer
+	history = {
+		1941.1.1 = { rank = 1 }
+	}
+}
+101347 = {
+	name = "由比貞雄"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101347
+	add_trait = logistics_wizard
+	history = {
+		1941.1.1 = { rank = 1 }
+	}
+}
+101348 = {
+	name = "湯口俊太郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101348
+	add_trait = fortress_buster
+	history = {
+		1939.8.1 = { rank = 1 }
+	}
+}
+101349 = {
+	name = "中島今朝吾"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101128
+	add_trait = tank_buster
+	history = {
+		1930.1.1 = { rank = 1 }
+		1938.1.1 = { rank = 0 }
+	}
+}
+101350 = {
+	name = "渡部友次郎"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101350
+	add_trait = superior_air_tactician
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+101352 = {
+	name = "原忠一"
+	country = JAP
+	type = sea
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101226
+	add_trait = superior_tactician
+	history = {
+		1941.1.1 = { rank = 1 }
+		1944.1.1 = { rank = 2 }
+	}
+}
+101354 = {
+	name = "伏見宮博恭王"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101354
+	add_trait = old_guard
+	history = {
+		1930.1.1 = { rank = 4 }
+	}
+}
+101355 = {
+	name = "高木惣吉"
+	country = JAP
+	type = sea
+	skill = 3
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101355
+	history = {
+		1943.1.1 = { rank = 1 }
+	}
+}
+101356 = {
+	name = "河边虎四郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101356
+	add_trait = offensive_doctrine
+	history = {
+		1937.7.1 = { rank = 1 }
+	}
+}
+101362 = {
+	name = "西村琢磨"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101362
+	add_trait = offensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+		1946.1.1 = { rank = 0 }
+	}
+}
+******追加********************************************************************************************************************************************
+101398 = {
+	name = "川島芳子"
+	country = JAP
+	type = land
+	skill = 0
+	max_skill = 10
+	loyalty = 1.00
+	picture = L250012
+	add_trait = trickster
+	add_trait = commando
+	history = {
+		1940.1.1 = { rank = 1 }
+	}
+}
+101399 = {
+	name = "小烟敏四郎"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101399
+	add_trait = offensive_doctrine
+	add_trait = trickster
+	add_trait = fortress_buster
+	history = {
+		1936.1.1 = { rank = 2 }
+		1937.1.1 = { rank = 0 }
+	}
+}
+101401 = {
+	name = "山内正文"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101401
+	add_trait = engineer
+	add_trait = logistics_wizard
+	add_trait = commando
+	history = {
+		1936.1.1 = { rank = 1 }
+		1944.1.1 = { rank = 2 }
+		1944.8.1 = { rank = 0 }
+	}
+}
+101402 = {
+	name = "小烟信良"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101402
+	add_trait = logistics_wizard
+	add_trait = commando
+	add_trait = engineer
+	history = {
+		1943.3.18 = { rank = 1 }
+	}
+}
+101403 = {
+	name = "水上源蔵"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101403
+	add_trait = defensive_doctrine
+	add_trait = logistics_wizard
+	add_trait = commando
+	history = {
+		1939.6.1 = { rank = 1 }
+	}
+}
+101404 = {
+	name = "桜井省三"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101404
+	add_trait = offensive_doctrine
+	add_trait = commando
+	add_trait = trickster
+	history = {
+		1936.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 2 }
+	}
+}
+101405 = {
+	name = "堀栄三"
+	country = JAP
+	type = land
+	skill = 4
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101405
+	add_trait = defensive_doctrine
+	history = {
+		1943.10.1 = { rank = 1 }
+	}
+}
+101406 = {
+	name = "赤柴八重蔵"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101406
+	history = {
+		1939.3.19 = { rank = 1 }
+	}
+}
+101407 = {
+	name = "井上貞衛"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101407
+	add_trait = defensive_doctrine
+	add_trait = logistics_wizard
+	add_trait = commando
+	history = {
+		1936.1.1 = { rank = 1 }
+		1943.10.1 = { rank = 2 }
+	}
+}
+101408 = {
+	name = "藤原岩市"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101408
+	add_trait = logistics_wizard
+	add_trait = commando
+	add_trait = trickster
+	history = {
+		1941.6.1 = { rank = 1 }
+		1945.1.1 = { rank = 2 }
+	}
+}
+101409 = {
+	name = "岡田資"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101409
+	add_trait = panzer_leader
+	history = {
+		1936.1.1 = { rank = 1 }
+		1945.1.1 = { rank = 2 }
+		1949.9.17 = { rank = 0 }
+	}
+}
+101410 = {
+	name = "酒井鎬次"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101410
+	add_trait = panzer_leader
+	history = {
+		1930.1.1 = { rank = 1 }
+		1940.1.31 = { rank = 0 }
+	}
+}
+101411 = {
+	name = "秋草俊"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101411
+	add_trait = commando
+	add_trait = trickster
+	history = {
+		1936.1.1 = { rank = 1 }
+		1949.2.1 = { rank = 0 }
+	}
+}
+101412 = {
+	name = "葛目直幸"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101412
+	add_trait = logistics_wizard
+	add_trait = commando
+	history = {
+		1941.7.7 = { rank = 1 }
+		1944.7.2 = { rank = 0 }
+	}
+}
+101413 = {
+	name = "辻政信"
+	country = JAP
+	type = air
+	skill = 2
+	max_skill = 8
+	loyalty = 1.00
+	picture = L101189
+	add_trait = spotter
+	add_trait = tank_buster
+	add_trait = carpet_bomber
+	history = {
+		1939.1.1 = { rank = 1 }
+		1944.1.1 = { rank = 2 }
+	}
+}
+101414 = {
+	name = "稲田正純"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 8
+	loyalty = 1.00
+	picture = L101414
+	add_trait = trickster
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+101415 = {
+	name = "玉田美郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101415
+	add_trait = panzer_leader
+	history = {
+		1941.10.15 = { rank = 1 }
+	}
+}
+101416 = {
+	name = "金光恵次郎"
+	country = JAP
+	type = land
+	skill = 4
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101416
+	add_trait = defensive_doctrine
+	add_trait = commando
+	add_trait = logistics_wizard
+	history = {
+		1943.8.1 = { rank = 1 }
+		1944.10.1 = { rank = 0 }
+	}
+}
+101417 = {
+	name = "後宮淳"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101340
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.8.1 = { rank = 2 }
+		1944.8.25 = { rank = 4 }
+	}
+}
+101418 = {
+	name = "丸山房安"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 8
+	loyalty = 1.00
+	picture = L101418
+	add_trait = defensive_doctrine
+	add_trait = commando
+	add_trait = logistics_wizard
+	history = {
+		1943.2.1 = { rank = 1 }
+	}
+}
+101419 = {
+	name = "根本博"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101419
+	add_trait = logistics_wizard
+	history = {
+		1936.1.1 = { rank = 1 }
+		1944.1.1 = { rank = 2 }
+	}
+}
+101420 = {
+	name = "賀谷興吉"
+	country = JAP
+	type = land
+	skill = 5
+	max_skill = 8
+	loyalty = 1.00
+	picture = L101420
+	add_trait = defensive_doctrine
+	history = {
+		1943.1.1 = { rank = 1 }
+		1945.6.23 = { rank = 0 }
+	}
+}
+101421 = {
+	name = "原直"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 8
+	loyalty = 1.00
+	picture = L101421
+	add_trait = defensive_doctrine
+	history = {
+		1944.1.1 = { rank = 1 }
+		1945.6.23 = { rank = 0 }
+	}
+}
+101422 = {
+	name = "吉田勝"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 8
+	loyalty = 1.00
+	picture = L101422
+	add_trait = defensive_doctrine
+	history = {
+		1944.1.1 = { rank = 1 }
+		1945.6.23 = { rank = 0 }
+	}
+}
+101423 = {
+	name = "金森均"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 8
+	loyalty = 1.00
+	picture = L101423
+	add_trait = defensive_doctrine
+	history = {
+		1944.1.1 = { rank = 1 }
+		1945.6.23 = { rank = 0 }
+	}
+}
+101424 = {
+	name = "美田千賀蔵"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 8
+	loyalty = 1.00
+	picture = L101424
+	add_trait = defensive_doctrine
+	history = {
+		1944.1.1 = { rank = 1 }
+		1945.6.23 = { rank = 0 }
+	}
+}
+101425 = {
+	name = "井川正"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 8
+	loyalty = 1.00
+	picture = L101425
+	add_trait = defensive_doctrine
+	history = {
+		1944.1.1 = { rank = 1 }
+		1945.6.1 = { rank = 0 }
+	}
+}
+101426 = {
+	name = "有末次"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101426
+	history = {
+		1939.8.1 = { rank = 1 }
+		1943.8.29 = { rank = 0 }
+	}
+}
+101427 = {
+	name = "徳川好敏"
+	country = JAP
+	type = air
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101427
+	add_trait = spotter
+	history = {
+		1930.1.1 = { rank = 2 }
+	}
+}
+101428 = {
+	name = "山田誠一"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101428
+	add_trait = logistics_wizard
+	history = {
+		1937.7.1 = { rank = 1 }
+		1945.8.15 = { rank = 0 }
+	}
+}
+101429 = {
+	name = "池田末男"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101429
+	add_trait = defensive_doctrine
+	add_trait = panzer_leader
+	history = {
+		1944.12.30 = { rank = 1 }
+		1945.8.15 = { rank = 0 }
+	}
+}
+101430 = {
+	name = "小野寺信"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 8
+	loyalty = 1.00
+	picture = L101430
+	add_trait = trickster
+	history = {
+		1939.8.1 = { rank = 1 }
+	}
+}
+101432 = {
+	name = "甘粕重太郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101432
+	add_trait = defensive_doctrine
+	history = {
+		1935.1.1 = { rank = 1 }
+		1941.1.20 = { rank = 3 }
+	}
+}
+101433 = {
+	name = "松山祐三"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 8
+	loyalty = 1.00
+	picture = L101433
+	add_trait = offensive_doctrine
+	add_trait = logistics_wizard
+	add_trait = defensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+101434 = {
+	name = "浅野庫一"
+	country = JAP
+	type = land
+	skill = 5
+	max_skill = 8
+	loyalty = 1.00
+	picture = L101434
+	add_trait = commando
+	add_trait = logistics_wizard
+	add_trait = defensive_doctrine
+	history = {
+		1940.10.15 = { rank = 1 }
+		1945.5.1 = { rank = 0 }
+	}
+}
+101435 = {
+	name = "立花芳夫"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101435
+	add_trait = logistics_wizard
+	add_trait = commando
+	history = {
+		1943.3.1 = { rank = 1 }
+		1945.3.23 = { rank = 2 }
+		1947.9.24 = { rank = 0 }
+	}
+}
+101436 = {
+	name = "久野村桃代"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101436
+	add_trait = commando
+	add_trait = logistics_wizard
+	history = {
+		1940.12.2 = { rank = 1 }
+		1945.1.1 = { rank = 2 }
+	}
+}
+101437 = {
+	name = "田村義冨"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101437
+	add_trait = defensive_doctrine
+	history = {
+		1937.7.1 = { rank = 1 }
+		1944.8.11 = { rank = 0 }
+	}
+}
+101438 = {
+	name = "浜田平"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101438
+	add_trait = logistics_wizard
+	history = {
+		1941.10.15 = { rank = 1 }
+		1945.9.17 = { rank = 0 }
+	}
+}
+101439 = {
+	name = "飯沼守"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101439
+	history = {
+		1936.1.1 = { rank = 1 }
+		1942.8.31 = { rank = 0 }
+		1945.2.20 = { rank = 1 }
+		1945.10.1 = { rank = 0 }
+	}
+}
+101440 = {
+	name = "上村利道"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101440
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1943.10.29 = { rank = 2 }
+		1947.9.19 = { rank = 0 }
+	}
+}
+101441 = {
+	name = "大島浩"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101441
+	add_trait = offensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+101442 = {
+	name = "岡崎清三郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101442
+	add_trait = offensive_doctrine
+	add_trait = commando
+	add_trait = logistics_wizard
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+101443 = {
+	name = "影佐禎昭"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101443
+	add_trait = commando
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1948.9.10 = { rank = 0 }
+	}
+}
+101444 = {
+	name = "镰田銓一"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101444
+	add_trait = engineer
+	history = {
+		1937.7.1 = { rank = 1 }
+	}
+}
+101445 = {
+	name = "河村参郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101445
+	history = {
+		1941.3.1 = { rank = 1 }
+		1947.6.26 = { rank = 0 }
+	}
+}
+101446 = {
+	name = "西原一策"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101446
+	add_trait = panzer_leader
+	history = {
+		1936.1.1 = { rank = 1 }
+		1941.10.1 = { rank = 2 }
+		1942.12.1 = { rank = 1 }
+		1945.1.23 = { rank = 0 }
+	}
+}
+101447 = {
+	name = "田边盛武"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101447
+	add_trait = logistics_wizard
+	history = {
+		1936.1.1 = { rank = 1 }
+		1943.4.8 = { rank = 2 }
+		1949.7.11 = { rank = 0 }
+	}
+}
+101448 = {
+	name = "高品彪"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101448
+	add_trait = commando
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1944.8.30 = { rank = 0 }
+	}
+}
+101449 = {
+	name = "菅原道大"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101331
+	add_trait = commando
+	history = {
+		1941.1.1 = { rank = 1 }
+	}
+}
+101450 = {
+	name = "北野憲造"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101450
+	add_trait = fortress_buster
+	history = {
+		1936.1.1 = { rank = 1 }
+		1943.10.15 = { rank = 2 }
+	}
+}
+101451 = {
+	name = "吉田悳"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101451
+	add_trait = panzer_leader
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.1.7 = { rank = 2 }
+	}
+}
+101452 = {
+	name = "山脇正隆"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101452
+	add_trait = logistics_wizard
+	history = {
+		1936.1.1 = { rank = 1 }
+		1941.9.29 = { rank = 3 }
+		1943.1.1 = { rank = 4 }
+	}
+}
+101453 = {
+	name = "村上啓作"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101453
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1944.11.22 = { rank = 2 }
+		1948.9.17 = { rank = 0 }
+	}
+}
+101454 = {
+	name = "杉田一次"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 8
+	loyalty = 1.00
+	picture = L101454
+	add_trait = trickster
+	add_trait = commando
+	add_trait = logistics_wizard
+	history = {
+		1941.11.25 = { rank = 1 }
+	}
+}
+101455 = {
+	name = "原田熊吉"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101455
+	add_trait = logistics_wizard
+	history = {
+		1936.1.1 = { rank = 1 }
+		1942.11.19 = { rank = 2 }
+		1947.5.28 = { rank = 0 }
+	}
+}
+101456 = {
+	name = "桜井徳太郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101456
+	add_trait = commando
+	add_trait = logistics_wizard
+	history = {
+		1942.8.1 = { rank = 1 }
+	}
+}
+101458 = {
+	name = "市丸利之助"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101308
+	add_trait = defensive_doctrine
+	add_trait = commando
+	add_trait = logistics_wizard
+	history = {
+		1943.2.1 = { rank = 1 }
+		1945.3.23 = { rank = 0 }
+	}
+}
+101459 = {
+	name = "額田坦"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101459
+	add_trait = logistics_wizard
+	history = {
+		1941.10.15 = { rank = 1 }
+	}
+}
+101460 = {
+	name = "原乙未生"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101460
+	add_trait = panzer_leader
+	history = {
+		1939.3.9 = { rank = 1 }
+	}
+}
+101461 = {
+	name = "稲田正純"
+	country = JAP
+	type = air
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101414
+	history = {
+		1944.1.1 = { rank = 1 }
+	}
+}
+101462 = {
+	name = "辻四五郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 8
+	loyalty = 1.00
+	picture = L101462
+	add_trait = trickster
+	add_trait = logistics_wizard
+	add_trait = defensive_doctrine
+	history = {
+		1944.6.20 = { rank = 1 }
+	}
+}
+101463 = {
+	name = "羽賀芳男"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101463
+	add_trait = defensive_doctrine
+	history = {
+		1944.6.20 = { rank = 1 }
+	}
+}
+101464 = {
+	name = "赤松貞雄"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101464
+	history = {
+		1941.10.25 = { rank = 1 }
+	}
+}
+101465 = {
+	name = "南雲忠一"
+	country = JAP
+	type = air
+	skill = 2
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101259
+	add_trait = fleet_destroyer
+	history = {
+		1930.1.1 = { rank = 1 }
+		1944.7.6 = { rank = 0 }
+	}
+}
+101466 = {
+	name = "甘粕正彦"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101466
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+101467 = {
+	name = "飯田貞固"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101467
+	history = {
+		1936.1.1 = { rank = 1 }
+		1939.9.1 = { rank = 2 }
+		1941.4.28 = { rank = 0 }
+	}
+}
+101468 = {
+	name = "佐伯靜夫"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101468
+	add_trait = panzer_leader
+	add_trait = trickster
+	history = {
+		1941.10.5 = { rank = 1 }
+	}
+}
+101469 = {
+	name = "木庭知時"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101469
+	add_trait = commando
+	add_trait = logistics_wizard
+	add_trait = defensive_doctrine
+	history = {
+		1944.8.1 = { rank = 1 }
+	}
+}
+101471 = {
+	name = "木下敏"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101471
+	add_trait = tank_buster
+	history = {
+		1936.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 2 }
+	}
+}
+101472 = {
+	name = "高山信武"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101472
+	add_trait = logistics_wizard
+	history = {
+		1945.6.10 = { rank = 1 }
+	}
+}
+101473 = {
+	name = "富田直亮"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101473
+	history = {
+		1944.8.1 = { rank = 1 }
+	}
+}
+101474 = {
+	name = "冨永信政"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101474
+	add_trait = old_guard
+	add_trait = logistics_wizard
+	history = {
+		1936.1.1 = { rank = 1 }
+		1942.12.22 = { rank = 2 }
+		1943.11.19 = { rank = 0 }
+	}
+}
+101475 = {
+	name = "細川忠康"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101475
+	add_trait = logistics_wizard
+	history = {
+		1936.1.1 = { rank = 1 }
+		1945.3.30 = { rank = 2 }
+	}
+}
+101476 = {
+	name = "本乡義夫"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101476
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1945.3.1 = { rank = 2 }
+	}
+}
+101477 = {
+	name = "角田覺治"
+	country = JAP
+	type = air
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101238
+	add_trait = fleet_destroyer
+	history = {
+		1930.1.1 = { rank = 1 }
+		1944.8.1 = { rank = 0 }
+	}
+}
+101479 = {
+	name = "藤田実彦"
+	country = JAP
+	type = land
+	skill = 0
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101479
+	add_trait = panzer_leader
+	history = {
+		1942.8.1 = { rank = 1 }
+		1946.3.15 = { rank = 0 }
+	}
+}
+101480 = {
+	name = "山本五十六"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101296
+	add_trait = fleet_destroyer
+	history = {
+		1930.1.1 = { rank = 1 }
+		1943.7.1 = { rank = 0 }
+	}
+}
+101481 = {
+	name = "大井篤"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101481
+	add_trait = fleet_destroyer
+	add_trait = spotter
+	history = {
+		1943.1.1 = { rank = 1 }
+	}
+}
+101482 = {
+	name = "大井篤"
+	country = JAP
+	type = sea
+	skill = 3
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101481
+	add_trait = blockade_runner
+	history = {
+		1943.1.1 = { rank = 1 }
+	}
+}
+101483 = {
+	name = "野村直那"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101266
+	add_trait = fleet_destroyer
+	history = {
+		1939.1.1 = { rank = 1 }
+	}
+}
+101484 = {
+	name = "長谷川喜一"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101228
+	add_trait = fleet_destroyer
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+101485 = {
+	name = "土居明夫"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101485
+	add_trait = offensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+101486 = {
+	name = "佐々木春隆"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 8
+	loyalty = 1.00
+	picture = L101486
+	add_trait = fortress_buster
+	add_trait = defensive_doctrine
+	add_trait = engineer
+	add_trait = logistics_wizard
+	history = {
+		1941.6.20 = { rank = 1 }
+	}
+}
+101487 = {
+	name = "松井太久郎"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101487
+	add_trait = fortress_buster
+	add_trait = engineer
+	history = {
+		1936.1.1 = { rank = 1 }
+		1942.5.11 = { rank = 2 }
+	}
+}
+101488 = {
+	name = "安岡正臣"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101488
+	add_trait = panzer_leader
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+101489 = {
+	name = "横山静雄"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101489
+	add_trait = defensive_doctrine
+	add_trait = winter_specialist
+	add_trait = logistics_wizard
+	history = {
+		1939.3.9 = { rank = 1 }
+	}
+}
+101490 = {
+	name = "篠塚義男"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101490
+	add_trait = panzer_leader
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.9.1 = { rank = 2 }
+		1942.6.2 = { rank = 0 }
+	}
+}
+101491 = {
+	name = "佐野忠義"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101491
+	add_trait = offensive_doctrine
+	add_trait = commando
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1944.6.20 = { rank = 2 }
+		1945.7.3 = { rank = 0 }
+	}
+}
+101492 = {
+	name = "竹原三郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101492
+	add_trait = defensive_doctrine
+	add_trait = commando
+	add_trait = logistics_wizard
+	history = {
+		1939.10.2 = { rank = 1 }
+	}
+}
+101493 = {
+	name = "真野五郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101493
+	add_trait = defensive_doctrine
+	add_trait = commando
+	add_trait = logistics_wizard
+	history = {
+		1939.3.9 = { rank = 1 }
+	}
+}
+101494 = {
+	name = "島田丰作"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101494
+	add_trait = offensive_doctrine
+	add_trait = panzer_leader
+	history = {
+		1941.12.1 = { rank = 1 }
+	}
+}
+101495 = {
+	name = "塚田攻"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101495
+	add_trait = offensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+		1942.12.18 = { rank = 0 }
+	}
+}
+101496 = {
+	name = "園部和一郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101496
+	add_trait = commando
+	history = {
+		1936.1.1 = { rank = 1 }
+		1939.8.1 = { rank = 2 }
+		1941.6.21 = { rank = 0 }
+	}
+}
+101497 = {
+	name = "四手井綱正"
+	country = JAP
+	type = land
+	skill = 0
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101497
+	add_trait = logistics_wizard
+	history = {
+		1940.8.1 = { rank = 1 }
+		1945.8.18 = { rank = 0 }
+	}
+}
+101498 = {
+	name = "秦彦三郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101498
+	add_trait = defensive_doctrine
+	history = {
+		1941.10.15 = { rank = 1 }
+	}
+}
+101499 = {
+	name = "中島鉄蔵"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101499
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+101500 = {
+	name = "辰巳栄一"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101500
+	add_trait = defensive_doctrine
+	history = {
+		1943.10.29 = { rank = 1 }
+	}
+}
+101501 = {
+	name = "鷹森孝"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101501
+	add_trait = logistics_wizard
+	history = {
+		1940.3.9 = { rank = 1 }
+	}
+}
+101502 = {
+	name = "清水盛明"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101502
+	history = {
+		1942.8.1 = { rank = 1 }
+	}
+}
+101503 = {
+	name = "馬奈木敬信"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101503
+	history = {
+		1941.10.15 = { rank = 1 }
+	}
+}
+101504 = {
+	name = "千田貞季"
+	country = JAP
+	type = land
+	skill = 5
+	max_skill = 8
+	loyalty = 1.00
+	picture = L101504
+	add_trait = defensive_doctrine
+	add_trait = trickster
+	add_trait = commando
+	history = {
+		1944.3.1 = { rank = 1 }
+ 		1945.3.23 = { rank = 0 }
+	}
+}
+101505 = {
+	name = "佐々木登"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101505
+	add_trait = defensive_doctrine
+	add_trait = logistics_wizard
+	history = {
+		1937.7.1 = { rank = 1 }
+	}
+}
+101506 = {
+	name = "鳥飼恒男"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101506
+	add_trait = commando
+	add_trait = logistics_wizard
+	history = {
+		1943.1.14 = { rank = 1 }
+	}
+}
+101507 = {
+	name = "町尻量基"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101507
+	history = {
+		1930.1.1 = { rank = 1 }
+		1942.11.10 = { rank = 2 }
+		1945.12.12 = { rank = 0 }
+	}
+}
+101508 = {
+	name = "元泉馨"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101508
+	add_trait = defensive_doctrine
+	add_trait = logistics_wizard
+	history = {
+		1943.8.2 = { rank = 1 }
+		1948.7.15 = { rank = 0 }
+	}
+}
+101509 = {
+	name = "瀬島龍三"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101509
+	add_trait = trickster
+	history = {
+		1944.6.20 = { rank = 1 }
+	}
+}
+101510 = {
+	name = "田中隆吉"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101510
+	add_trait = trickster
+	history = {
+		1930.1.1 = { rank = 1 }
+		1946.9.1 = { rank = 0 }
+	}
+}
+101511 = {
+	name = "上村幹男"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101511
+	history = {
+		1930.1.1 = { rank = 1 }
+		1945.3.23 = { rank = 2 }
+		1946.3.23 = { rank = 0 }
+	}
+}
+101512 = {
+	name = "大田実"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101512
+	add_trait = defensive_doctrine
+	history = {
+		1942.12.1 = { rank = 1 }
+		1945.6.13 = { rank = 0 }
+	}
+}
+101513 = {
+	name = "野口省己"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101513
+	add_trait = commando
+	history = {
+		1944.6.20 = { rank = 1 }
+	}
+}
+101514 = {
+	name = "山本清衛"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101514
+	add_trait = commando
+	history = {
+		1944.6.20 = { rank = 1 }
+	}
+}
+101515 = {
+	name = "佐々木到一"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101515
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+101516 = {
+	name = "若松只一"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101516
+	add_trait = logistics_wizard
+	history = {
+		1939.10.2 = { rank = 1 }
+		1945.12.1 = { rank = 0 }
+	}
+}
+101517 = {
+	name = "松井命"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101517
+	add_trait = engineer
+	history = {
+		1936.1.1 = { rank = 1 }
+		1938.7.15 = { rank = 2 }
+		1940.3.30 = { rank = 0 }
+	}
+}
+101518 = {
+	name = "平林盛人"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101518
+	add_trait = defensive_doctrine
+	history = {
+		1940.8.1 = { rank = 1 }
+	}
+}
+101519 = {
+	name = "寺田雅雄"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101519
+	add_trait = panzer_leader
+	history = {
+		1941.10.15 = { rank = 1 }
+	}
+}
+101520 = {
+	name = "中村明人"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101520
+	history = {
+		1936.1.1 = { rank = 1 }
+		1943.1.4 = { rank = 2 }
+		1945.7.14 = { rank = 3 }
+	}
+}
+101521 = {
+	name = "中村孝太郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101521
+	add_trait = logistics_wizard
+	history = {
+		1936.1.1 = { rank = 2 }
+		1943.5.2 = { rank = 0 }
+	}
+}
+101522 = {
+	name = "喜多誠一"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101522
+	add_trait = logistics_wizard
+	history = {
+		1936.1.1 = { rank = 1 }
+		1941.10.15 = { rank = 2 }
+		1944.9.26 = { rank = 4 }
+		1947.6.7 = { rank = 0 }
+	}
+}
+101523 = {
+	name = "草場辰巳"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101523
+	history = {
+		1936.1.1 = { rank = 1 }
+		1941.11.6 = { rank = 2 }
+	}
+}
+101524 = {
+	name = "岡本清福"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101524
+	history = {
+		1943.10.29 = { rank = 1 }
+	}
+}
+101525 = {
+	name = "牛島実常"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101525
+	history = {
+		1936.1.1 = { rank = 1 }
+		1939.12.1 = { rank = 2 }
+		1941.1.20 = { rank = 0 }
+	}
+}
+101526 = {
+	name = "橋本群"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101526
+	history = {
+		1936.1.1 = { rank = 2 }
+		1939.12.1 = { rank = 0 }
+	}
+}
+101527 = {
+	name = "木下敏"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101471
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+101528 = {
+	name = "堀丈夫"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101528
+	add_trait = trickster
+	history = {
+		1930.1.1 = { rank = 1 }
+		1938.6.30 = { rank = 0 }
+	}
+}
+101529 = {
+	name = "堀丈夫"
+	country = JAP
+	type = air
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101528
+	add_trait = tank_buster
+	history = {
+		1930.1.1 = { rank = 2 }
+		1938.6.30 = { rank = 0 }
+	}
+}
+101530 = {
+	name = "安井藤治"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101530
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.11.26 = { rank = 2 }
+	}
+}
+101531 = {
+	name = "篠原誠一郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101531
+	add_trait = offensive_doctrine
+	add_trait = commando
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+101532 = {
+	name = "片山省太郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101532
+	add_trait = defensive_doctrine
+	add_trait = commando
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+101533 = {
+	name = "柏徳"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101533
+	add_trait = defensive_doctrine
+	add_trait = logistics_wizard
+	history = {
+		1937.7.1 = { rank = 1 }
+	}
+}
+101534 = {
+	name = "納見敏郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101534
+	add_trait = logistics_wizard
+	history = {
+		1940.12.2 = { rank = 1 }
+		1945.12.13 = { rank = 0 }
+	}
+}
+101535 = {
+	name = "尾高亀蔵"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101535
+	history = {
+		1936.1.1 = { rank = 1 }
+		1938.11.9 = { rank = 2 }
+		1941.6.21 = { rank = 0 }
+	}
+}
+101536 = {
+	name = "栗栖猛夫"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101536
+        add_trait = commando
+	history = {
+		1944.3.1 = { rank = 1 }
+		1945.7.17 = { rank = 0 }
+	}
+}
+101537 = {
+	name = "井桁敬治"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101537
+	add_trait = defensive_doctrine
+	history = {
+		1941.3.1 = { rank = 1 }
+		1944.7.18 = { rank = 0 }
+	}
+}
+101538 = {
+	name = "山路秀男"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101538
+        add_trait = panzer_leader
+	history = {
+		1940.8.1 = { rank = 1 }
+	}
+}
+101539 = {
+	name = "西田祥美"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101539
+	add_trait = logistics_wizard
+        add_trait = defensive_doctrine
+	history = {
+		1942.12.1 = { rank = 1 }
+                1944.2.24 = { rank = 0 }
+	}
+}
+101540 = {
+	name = "小田健作"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101540
+	add_trait = logistics_wizard
+        add_trait = commando
+	history = {
+		1940.8.1 = { rank = 1 }
+                1943.1.21 = { rank = 0 }
+	}
+}
+101541 = {
+	name = "堤不夾貴"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101541
+        add_trait = defensive_doctrine
+	history = {
+		1939.10.2 = { rank = 1 }
+	}
+}
+101542 = {
+	name = "渡边正夫"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101542
+	add_trait = offensive_doctrine
+	add_trait = logistics_wizard
+	add_trait = commando
+	history = {
+		1939.10.2 = { rank = 1 }
+                1944.3.22 = { rank = 2 }
+		1950.10.11 = { rank = 0 }
+	}
+}
+101543 = {
+	name = "奈良晃"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101543
+	add_trait = logistics_wizard
+        add_trait = commando
+	history = {
+		1941.3.1 = { rank = 1 }
+		1959.1.5 = { rank = 0 }
+	}
+}
+101544 = {
+	name = "重見伊三雄"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101544
+        add_trait = panzer_leader
+	add_trait = defensive_doctrine
+	history = {
+		1944.3.1 = { rank = 1 }
+                1945.1.27 = { rank = 0 }
+	}
+}
+101545 = {
+	name = "蔵重康美"
+	country = JAP
+	type = land
+	skill = 4
+	max_skill = 8
+	loyalty = 1.00
+	picture = L101545
+	add_trait = defensive_doctrine
+	add_trait = logistics_wizard
+	add_trait = commando
+	history = {
+		1943.2.1 = { rank = 1 }
+		1944.8.13 = { rank = 0 }
+	}
+}
+101546 = {
+	name = "酒井直次"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101546
+        add_trait = defensive_doctrine
+	add_trait = logistics_wizard
+	history = {
+		1941.3.1 = { rank = 1 }
+		1942.5.28 = { rank = 0 }
+	}
+}
+101547 = {
+	name = "山県栗花生"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101547
+	add_trait = logistics_wizard
+        add_trait = commando
+	history = {
+		1941.6.20 = { rank = 1 }
+		1945.2.15 = { rank = 0 }
+	}
+}
+101548 = {
+	name = "峯木十一郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101548
+	history = {
+		1941.10.24 = { rank = 1 }
+	}
+}
+101549 = {
+	name = "石井嘉穂"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101549
+	add_trait = logistics_wizard
+        add_trait = commando
+	history = {
+		1941.10.16 = { rank = 1 }
+	}
+}
+101550 = {
+	name = "古閑健"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101550
+        add_trait = defensive_doctrine
+	add_trait = logistics_wizard
+	history = {
+                1942.12.1 = { rank = 1 }
+	}
+}
+101551 = {
+	name = "三国直福"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101551
+        add_trait = offensive_doctrine
+	add_trait = trickster
+	history = {
+		1943.3.1 = { rank = 1 }
+	}
+}
+101552 = {
+	name = "有末精三"
+	country = JAP
+	type = land
+	skill = 0
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101552
+	history = {
+		1941.10.1 = { rank = 1 }
+                1945.3.1 = { rank = 2 }
+	}
+}
+101553 = {
+	name = "十川次郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101553
+	add_trait = logistics_wizard
+	history = {
+                1941.3.10 = { rank = 1 }
+                1944.1.7 = { rank = 2 }
+		1963.6.7 = { rank = 0 }
+	}
+}
+101554 = {
+	name = "吉田峯太郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101554
+	add_trait = defensive_doctrine
+	history = {
+		1941.3.1 = { rank = 1 }
+	}
+}
+101555 = {
+	name = "賀陽宮恒憲王"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101555
+	history = {
+		1940.12.2 = { rank = 1 }
+	}
+}
+101556 = {
+	name = "麦倉俊三郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101556
+        add_trait = defensive_doctrine
+	add_trait = logistics_wizard
+        add_trait = commando
+	history = {
+		1939.3.9 = { rank = 1 }
+                1944.8.22 = { rank = 2 }
+		1969.7.7 = { rank = 0 }
+	}
+}
+101557 = {
+	name = "七田一郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101557
+	add_trait = logistics_wizard
+	history = {
+		1939.9.7 = { rank = 1 }
+                1942.3.2 = { rank = 3 }
+	}
+}
+101558 = {
+	name = "永津佐比重"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101558
+        add_trait = defensive_doctrine
+	add_trait = logistics_wizard
+	history = {
+		1941.4.10 = { rank = 1 }
+                1944.3.22 = { rank = 2 }
+	}
+}
+101559 = {
+	name = "磐井虎二郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101559
+        add_trait = defensive_doctrine
+	history = {
+		1941.10.1 = { rank = 1 }
+	}
+}
+101560 = {
+	name = "玉置温和"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101560
+        add_trait = logistics_wizard
+        add_trait = commando
+	history = {
+		1943.8.22 = { rank = 1 }
+	}
+}
+101561 = {
+	name = "坪島文雄"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101561
+	history = {
+                1944.3.1 = { rank = 1 }
+		1959.7.6 = { rank = 0 }
+	}
+}
+101562 = {
+	name = "重松潔"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101562
+        add_trait = defensive_doctrine
+	history = {
+		1943.3.1 = { rank = 1 }
+                1944.7.25 = { rank = 0 }
+	}
+}
+101563 = {
+	name = "大須賀応"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101563
+        add_trait = defensive_doctrine
+        add_trait = commando
+	history = {
+		1941.10.15 = { rank = 1 }
+		1945.3.6 = { rank = 0 }
+	}
+}
+101564 = {
+	name = "和田孝助"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101564
+        add_trait = defensive_doctrine
+	history = {
+		1942.4.1 = { rank = 1 }
+		1945.6.22 = { rank = 0 }
+	}
+}
+101565 = {
+	name = "北條藤吉"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101565
+        add_trait = logistics_wizard
+        add_trait = commando
+	history = {
+		1942.12.1 = { rank = 1 }
+                1945.5.26 = { rank = 0 }
+	}
+}
+101566 = {
+	name = "中島徳太郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101566
+        add_trait = defensive_doctrine
+	history = {
+		1942.11.1 = { rank = 1 }
+                1945.6.22 = { rank = 2 }
+	}
+}
+101567 = {
+	name = "鈴木鉄三"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101567
+        add_trait = logistics_wizard
+        add_trait = commando
+	history = {
+		1943.3.1 = { rank = 1 }
+		1945.8.1 = { rank = 0 }
+	}
+}
+101568 = {
+	name = "寺本熊市"
+	country = JAP
+	type = air
+	skill = 3
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101568
+	add_trait = superior_air_tactician
+	history = {
+		1936.1.1 = { rank = 1 }
+                1943.5.1 = { rank = 2 }
+		1945.8.15 = { rank = 0 }
+	}
+}
+101569 = {
+	name = "和知鷹二"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101569
+	history = {
+		1940.3.9 = { rank = 1 }
+	}
+}
+101570 = {
+	name = "柴山兼四郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101570
+	add_trait = logistics_wizard
+	history = {
+		1939.3.9 = { rank = 1 }
+	}
+}
+101571 = {
+	name = "池田純久"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101571
+	history = {
+		1941.8.1 = { rank = 1 }
+	}
+}
+101572 = {
+	name = "高田利貞"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101572
+	history = {
+		1943.3.1 = { rank = 1 }
+	}
+}
+101573 = {
+	name = "諫山春樹"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101573
+	history = {
+		1941.8.1 = { rank = 1 }
+	}
+}
+101574 = {
+	name = "村井权治郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101574
+	add_trait = logistics_wizard
+	history = {
+		1941.3.1 = { rank = 1 }
+                1944.12.31 = { rank = 0 }
+	}
+}
+101575 = {
+	name = "末長常太郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101575
+	history = {
+		1939.8.1 = { rank = 1 }
+                1944.7.21 = { rank = 0 }
+	}
+}
+101576 = {
+	name = "植山英武"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101576
+	history = {
+		1944.3.1 = { rank = 1 }
+                1945.8.4 = { rank = 0 }
+	}
+}
+101577 = {
+	name = "小林隆"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101577
+        add_trait = logistics_wizard
+        add_trait = commando
+	history = {
+		1940.8.1 = { rank = 1 }
+                1944.10.16 = { rank = 2 }
+		1945.8.15 = { rank = 0 }
+	}
+}
+101578 = {
+	name = "那須弓雄"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101578
+        add_trait = commando
+	add_trait = trickster
+	history = {
+		1940.3.9 = { rank = 1 }
+                1942.10.26 = { rank = 0 }
+	}
+}
+101579 = {
+	name = "中野英光"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101579
+        add_trait = defensive_doctrine
+        add_trait = logistics_wizard
+        add_trait = commando
+	history = {
+		1939.3.9 = { rank = 1 }
+	}
+}
+101580 = {
+	name = "長野祐一郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101580
+	add_trait = offensive_doctrine
+	add_trait = fortress_buster
+	history = {
+                1941.10.15 = { rank = 1 }
+	}
+}
+101581 = {
+	name = "瀬户口栄蔵"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101581
+	history = {
+		1943.1.18 = { rank = 1 }
+	}
+}
+101582 = {
+	name = "石黒岩太"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101497
+	history = {
+		1943.1.18 = { rank = 1 }
+	}
+}
+101583 = {
+	name = "安尾正綱"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101583
+	add_trait = commando
+	history = {
+		1943.9.22 = { rank = 1 }
+		1944.8.19 = { rank = 0 }
+	}
+}
+101584 = {
+	name = "齋藤二郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101584
+	add_trait = commando
+	history = {
+		1944.9.12 = { rank = 1 }
+		1945.1.17 = { rank = 0 }
+	}
+}
+101585 = {
+	name = "小泉恭次"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101585
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.3.9 = { rank = 0 }
+		1945.5.5 = { rank = 1 }
+		1946.12.10 = { rank = 0 }
+	}
+}
+101586 = {
+	name = "今村方策"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101586
+	add_trait = commando
+	history = {
+		1945.6.1 = { rank = 1 }
+		1949.4.1 = { rank = 0 }
+	}
+}
+101587 = {
+	name = "野副昌徳"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101587
+        add_trait = defensive_doctrine
+	history = {
+		1939.8.1 = { rank = 1 }
+	}
+}
+101588 = {
+	name = "佐野虎太"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101588
+	add_trait = commando
+	history = {
+		1940.12.12 = { rank = 1 }
+	}
+}
+101589 = {
+	name = "鈴木啓久"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101589
+        add_trait = logistics_wizard
+	history = {
+		1944.6.20 = { rank = 1 }
+	}
+}
+101590 = {
+	name = "青木重誠"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101590
+	add_trait = commando
+	add_trait = logistics_wizard
+	history = {
+		1936.1.1 = { rank = 1 }
+		1943.6.29 = { rank = 0 }
+	}
+}
+101591 = {
+	name = "石井四郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101591
+	add_trait = fortress_buster
+	history = {
+		1941.3.1 = { rank = 1 }
+	}
+}
+101592 = {
+	name = "酒井康"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101592
+        add_trait = defensive_doctrine
+	history = {
+		1938.7.15 = { rank = 1 }
+	}
+}
+101593 = {
+	name = "閑院宮春仁王"
+	country = JAP
+	type = land
+	skill = 0
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101593
+	add_trait = panzer_leader
+	history = {
+		1945.8.12 = { rank = 1 }
+	}
+}
+101594 = {
+	name = "渡左近"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101594
+	add_trait = logistics_wizard
+	history = {
+		1941.10.21 = { rank = 1 }
+	}
+}
+101595 = {
+	name = "小田正人"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101595
+	add_trait = defensive_doctrine
+	history = {
+		1943.8.2 = { rank = 1 }
+	}
+}
+101596 = {
+	name = "大野広一"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101596
+	add_trait = logistics_wizard
+	history = {
+		1940.12.12 = { rank = 1 }
+	}
+}
+101597 = {
+	name = "北野政次"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101597
+	add_trait = fortress_buster
+	history = {
+		1941.10.1 = { rank = 1 }
+	}
+}
+
+#極東差分
+#101598 = {
+#	name = "永田鐵山"
+#	country = JAP
+#	type = land
+#	skill = 3
+#	max_skill = 8
+#	loyalty = 1.00
+#	picture = L101598
+#add_trait = logistics_wizard
+#add_trait = defensive_doctrine
+#add_trait = offensive_doctrine
+#	history = {
+#		1930.1.1 = { rank = 1 }
+#		1936.1.1 = { rank = 2 }
+#		1939.1.1 = { rank = 3 }
+#		1941.1.1 = { rank = 4 }
+#	}
+#}
+101599 = {
+	name = "遠藤三郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101599
+	history = {
+		1938.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+	}
+}
+101600 = {
+	name = "吉田喜八郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101600
+	history = {
+		1941.1.1 = { rank = 1 }
+		1945.1.1 = { rank = 2 }
+	}
+}
+101601 = {
+	name = "山崎正男"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101601
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+	}
+}
+101602 = {
+	name = "志摩源吉"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101602
+add_trait = offensive_doctrine
+	history = {
+		1943.1.1 = { rank = 1 }
+	}
+}
+101604 = {
+	name = "渡边錠太郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101604
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+	}
+}
+101605 = {
+	name = "藤田進"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101605
+	history = {
+		1937.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 2 }
+	}
+}
+101606 = {
+	name = "鈴木率道"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101606
+add_trait = offensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 2 }
+	}
+}
+101607 = {
+	name = "和田操"
+	country = JAP
+	type = sea
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101607
+	history = {
+		1943.1.1 = { rank = 1 }
+	}
+}
+#####################################
+#追加
+#####################################
+101612 = {
+	name = "河根良賢"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101612
+	add_trait = logistics_wizard
+	history = {
+		1941.3.1 = { rank = 1 }
+	}
+}
+101613 = {
+	name = "永井八津次"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101613
+	history = {
+		1945.3.1 = { rank = 1 }
+	}
+}
+101614 = {
+	name = "宇都宮直賢"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101614
+	add_trait = logistics_wizard
+	history = {
+		1945.3.1 = { rank = 1 }
+	}
+}
+101615 = {
+	name = "高嶋辰彦"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101615
+	add_trait = offensive_doctrine
+	history = {
+		1943.3.1 = { rank = 1 }
+	}
+}
+101616 = {
+	name = "菅波一郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101616
+	history = {
+		1942.8.1 = { rank = 1 }
+	}
+}
+101617 = {
+	name = "的野憲三郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101617
+	history = {
+		1944.8.1 = { rank = 1 }
+	}
+}
+101618 = {
+	name = "小藤恵"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101618
+	history = {
+		1939.7.6 = { rank = 1 }
+		1943.10.25 = { rank = 0 }
+	}
+}
+101619 = {
+	name = "平野儀一"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101619
+	history = {
+		1945.6.10 = { rank = 1 }
+	}
+}
+101620 = {
+	name = "一田次郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101620
+	history = {
+		1943.8.2 = { rank = 1 }
+	}
+}
+101621 = {
+	name = "長野義雄"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101621
+	history = {
+		1938.3.1 = { rank = 1 }
+		1940.8.31 = { rank = 0 }
+	}
+}
+101622 = {
+	name = "長崎守一"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101622
+	add_trait = offensive_doctrine
+	history = {
+		1940.3.9 = { rank = 1 }
+	}
+}
+101623 = {
+	name = "落合甚九郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101623
+	history = {
+		1941.3.1 = { rank = 1 }
+		1944.6.27 = { rank = 2 }
+	}
+}
+101624 = {
+	name = "岡宮夙夜"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101624
+	history = {
+		1938.3.1 = { rank = 1 }
+	}
+}
+101625 = {
+	name = "小沼治夫"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101625
+	add_trait = offensive_doctrine
+	history = {
+		1944.8.1 = { rank = 1 }
+	}
+}
+101626 = {
+	name = "中村次喜蔵"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101626
+	add_trait = fortress_buster
+	add_trait = defensive_doctrine
+	history = {
+		1941.3.1 = { rank = 1 }
+		1944.6.27 = { rank = 2 }
+	}
+}
+101627 = {
+	name = "重藤憲文"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101627
+	history = {
+		1945.6.10 = { rank = 1 }
+	}
+}
+101628 = {
+	name = "真方勲"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101628
+	history = {
+		1945.3.1 = { rank = 1 }
+	}
+}
+101630 = {
+	name = "横山臣平"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101630
+	history = {
+		1937.11.1 = { rank = 1 }
+	}
+}
+101631 = {
+	name = "那須義雄"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101631
+	add_trait = logistics_wizard
+	history = {
+		1943.3.1 = { rank = 1 }
+	}
+}
+101632 = {
+	name = "泽本理吉郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101632
+	history = {
+		1943.3.1 = { rank = 1 }
+	}
+}
+101633 = {
+	name = "毛利喬"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101633
+	history = {
+		1939.10.2 = { rank = 1 }
+	}
+}
+101633 = {
+	name = "猪鹿倉徹郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101633
+	history = {
+		1938.7.15 = { rank = 1 }
+	}
+}
+101634 = {
+	name = "中山寧人"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101634
+	history = {
+		1945.3.1 = { rank = 1 }
+	}
+}
+101635 = {
+	name = "長島勤"
+	country = JAP
+	type = land
+	skill = 0
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101635
+	add_trait = old_guard
+	history = {
+		1942.4.15 = { rank = 1 }
+	}
+}
+101636 = {
+	name = "見城五八郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101636
+	history = {
+		1941.3.1 = { rank = 1 }
+	}
+}
+101637 = {
+	name = "岩佐俊"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101637
+	history = {
+		1940.8.1 = { rank = 1 }
+	}
+}
+101639 = {
+	name = "専田盛寿"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101639
+	history = {
+		1945.3.1 = { rank = 1 }
+	}
+}
+101640 = {
+	name = "国方慶三"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101640
+	history = {
+		1940.8.1 = { rank = 1 }
+	}
+}
+101641 = {
+	name = "田中透"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101641
+	history = {
+		1945.6.10 = { rank = 1 }
+	}
+}
+101642 = {
+	name = "久世弥三吉"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101642
+	history = {
+		1945.6.10 = { rank = 1 }
+	}
+}
+101643 = {
+	name = "下河边憲二"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101643
+	history = {
+		1943.8.2 = { rank = 1 }
+	}
+}
+101644 = {
+	name = "磯村武亮"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101644
+	history = {
+		1943.3.1 = { rank = 1 }
+	}
+}
+101645 = {
+	name = "後藤俊蔵"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101645
+	history = {
+		1945.6.10 = { rank = 1 }
+	}
+}
+101646 = {
+	name = "柳勇"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101646
+	history = {
+		1943.6.10 = { rank = 1 }
+	}
+}
+101648 = {
+	name = "亀川良夫"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101648
+	add_trait = offensive_doctrine
+	add_trait = defensive_doctrine
+	history = {
+		1945.6.10 = { rank = 1 }
+	}
+}
+101649 = {
+	name = "古思了"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101649
+	history = {
+		1938.12.10 = { rank = 1 }
+	}
+}
+101650 = {
+	name = "藤重正従"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101650
+	history = {
+		1945.6.10 = { rank = 1 }
+	}
+}
+101651 = {
+	name = "安藤忠一郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101651
+	history = {
+		1941.3.1 = { rank = 1 }
+	}
+}
+101652 = {
+	name = "北村勝三"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101652
+	history = {
+		1944.8.1 = { rank = 1 }
+	}
+}
+101653 = {
+	name = "山口武夫"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101653
+	history = {
+		1944.3.1 = { rank = 1 }
+	}
+}
+101655 = {
+	name = "松井秀治"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101655
+	add_trait = defensive_doctrine
+	history = {
+		1944.8.1 = { rank = 1 }
+	}
+}
+101657 = {
+	name = "中村龍一"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101657
+	history = {
+		1945.6.10 = { rank = 1 }
+	}
+}
+101658 = {
+	name = "仁保進"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101658
+	add_trait = defensive_doctrine
+	history = {
+		1945.6.10 = { rank = 1 }
+	}
+}
+101659 = {
+	name = "天羽馬八"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101659
+	add_trait = defensive_doctrine
+	history = {
+		1944.8.1 = { rank = 1 }
+	}
+}
+101660 = {
+	name = "助川静二"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101660
+	history = {
+		1938.7.15 = { rank = 1 }
+	}
+}
+101663 = {
+	name = "山岡道武"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101663
+	add_trait = trickster
+	history = {
+		1943.3.1 = { rank = 1 }
+	}
+}
+101664 = {
+	name = "菊池武雄"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101664
+	history = {
+		1939.3.9 = { rank = 1 }
+	}
+}
+101666 = {
+	name = "坂本吉太郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101666
+	history = {
+		1943.8.2 = { rank = 1 }
+	}
+}
+101667 = {
+	name = "板津直俊"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101667
+	history = {
+		1942.8.1 = { rank = 1 }
+	}
+}
+101668 = {
+	name = "石川琢磨"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101668
+	add_trait = logistics_wizard
+	history = {
+		1942.2.22 = { rank = 1 }
+	}
+}
+101669 = {
+	name = "福島久作"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101669
+	history = {
+		1945.3.1 = { rank = 1 }
+	}
+}
+101670 = {
+	name = "吉武安正"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101670
+	add_trait = defensive_doctrine
+	history = {
+		1945.6.10 = { rank = 1 }
+	}
+}
+101671 = {
+	name = "高橋良"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101671
+	history = {
+		1938.7.15 = { rank = 1 }
+	}
+}
+101672 = {
+	name = "杉野巌"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101672
+	history = {
+		1944.3.1 = { rank = 1 }
+	}
+}
+101673 = {
+	name = "小野打寛"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101673
+	history = {
+		1945.6.10 = { rank = 1 }
+	}
+}
+101674 = {
+	name = "渡久雄"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101674
+	history = {
+		1933.8.1 = { rank = 1 }
+		1937.3.1 = { rank = 2 }
+		1939.1.2 = { rank = 0 }
+	}
+}
+101675 = {
+	name = "中村淳次"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101675
+	history = {
+		1944.8.1 = { rank = 1 }
+	}
+}
+101676 = {
+	name = "渡边渡"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101676
+	history = {
+		1943.3.1 = { rank = 1 }
+	}
+}
+101677 = {
+	name = "河合長明"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101677
+	add_trait = defensive_doctrine
+	history = {
+		1945.6.10 = { rank = 1 }
+	}
+}
+101678 = {
+	name = "新美二郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101678
+	history = {
+		1943.3.1 = { rank = 1 }
+	}
+}
+101679 = {
+	name = "岡島重敏"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101679
+	history = {
+		1945.3.1 = { rank = 1 }
+	}
+}
+101680 = {
+	name = "吉野弘之"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101680
+	history = {
+		1944.3.1 = { rank = 1 }
+	}
+}
+101681 = {
+	name = "岡田重一"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101681
+	add_trait = offensive_doctrine
+	history = {
+		1943.8.2 = { rank = 1 }
+	}
+}
+101682 = {
+	name = "河越重定"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101682
+	history = {
+		1944.3.1 = { rank = 1 }
+	}
+}
+101683 = {
+	name = "石田保忠"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101683 #つきさっぷ乡土資料館に写真があるそうです。見に行きたい…。
+	history = {
+		1941.3.1 = { rank = 1 }
+		1944.10.26 = { rank = 2 }
+	}
+}
+101684 = {
+	name = "南雲親一郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101684
+	history = {
+		1937.8.2 = { rank = 1 }
+	}
+}
+101687 = {
+	name = "河野悦次郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101687
+	add_trait = trickster
+	history = {
+		1940.3.9 = { rank = 1 }
+		1943.6.10 = { rank = 2 }
+	}
+}
+101688 = {
+	name = "浅海喜久雄"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101688
+	history = {
+		1943.8.2 = { rank = 1 }
+	}
+}
+101689 = {
+	name = "川本芳太郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101689
+	history = {
+		1944.3.1 = { rank = 1 }
+	}
+}
+101690 = {
+	name = "久納誠一"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101690
+	history = {
+		1935.3.15 = { rank = 1 }
+		1938.3.1 = { rank = 2 }
+	}
+}
+101692 = {
+	name = "谷萩那華雄"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101692
+	history = {
+		1943.3.1 = { rank = 1 }
+	}
+}
+101693 = {
+	name = "秋山久三"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101693
+	history = {
+		1945.6.10 = { rank = 1 }
+	}
+}
+101694 = {
+	name = "住吉正"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101694
+	history = {
+		1941.3.1 = { rank = 1 }
+	}
+}
+101695 = {
+	name = "飯島重助"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101695
+	add_trait = logistics_wizard
+	history = {
+		1940.8.1 = { rank = 1 }
+	}
+}
+101696 = {
+	name = "大平秀雄"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101696
+	history = {
+		1945.6.10 = { rank = 1 }
+	}
+}
+101699 = {
+	name = "寺倉小四郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101699
+	history = {
+		1945.3.1 = { rank = 1 }
+	}
+}
+101700 = {
+	name = "坂間訓一"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101700
+	history = {
+		1944.12.11 = { rank = 1 }
+	}
+}
+101701 = {
+	name = "秋山義隆"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101701
+	history = {
+		1939.8.1 = { rank = 1 }
+		1943.10.29 = { rank = 2 }
+		1949.6.8 = { rank = 0 }
+	}
+}
+101702 = {
+	name = "大迫通貞"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101702
+	history = {
+		1938.7.15 = { rank = 1 }
+		1941.8.25 = { rank = 2 }
+		1944.10.31 = { rank = 0 }
+	}
+}
+101703 = {
+	name = "西原貫治"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101703
+	history = {
+		1938.7.1 = { rank = 1 }
+		1941.3.1 = { rank = 2 }
+	}
+}
+101704 = {
+	name = "作間喬宜"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101704
+	history = {
+		1945.6.10 = { rank = 1 }
+	}
+}
+101705 = {
+	name = "草場季喜"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101705
+	add_trait = engineer
+	history = {
+		1944.8.1 = { rank = 1 }
+	}
+}
+101706 = {
+	name = "水原義重"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101706
+	add_trait = defensive_doctrine
+	history = {
+		1938.12.10 = { rank = 1 }
+		1941.8.1 = { rank = 2 }
+	}
+}
+101707 = {
+	name = "遠藤新一"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101707
+	history = {
+		1943.3.1 = { rank = 1 }
+	}
+}
+101708 = {
+	name = "徳野外次郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101708
+	history = {
+		1933.3.18 = { rank = 1 }
+	}
+}
+101709 = {
+	name = "藤田茂"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101709
+	history = {
+		1941.10.15 = { rank = 1 }
+		1945.3.30 = { rank = 2 }
+	}
+}
+101710 = {
+	name = "原田棟"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101710
+	history = {
+		1943.3.1 = { rank = 1 }
+	}
+}
+101711 = {
+	name = "黒瀬平一"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101711
+	history = {
+		1944.8.1 = { rank = 1 }
+	}
+}
+101712 = {
+	name = "石井正美"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101712
+	add_trait = engineer
+	history = {
+		1943.3.1 = { rank = 1 }
+	}
+}
+101713 = {
+	name = "小林浅三郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101713
+	history = {
+		1938.11.9 = { rank = 1 }
+		1941.8.1 = { rank = 2 }
+	}
+}
+101714 = {
+	name = "白泷理四郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101714
+	history = {
+		1941.10.15 = { rank = 1 }
+	}
+}
+101715 = {
+	name = "中山源夫"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101714
+	add_trait = offensive_doctrine
+	history = {
+		1944.8.1 = { rank = 1 }
+	}
+}
+101716 = {
+	name = "都甲徠"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101716
+	history = {
+		1945.6.10 = { rank = 1 }
+	}
+}
+101717 = {
+	name = "泽田茂"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101717
+	history = {
+		1935.3.15 = { rank = 1 }
+		1938.3.1 = { rank = 2 }
+	}
+}
+101718 = {
+	name = "深堀游亀"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101718
+	history = {
+		1943.6.10 = { rank = 1 }
+		1945.4.30 = { rank = 2 }
+	}
+}
+101719 = {
+	name = "大野武城"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101719
+	history = {
+		1944.8.1 = { rank = 1 }
+	}
+}
+101721 = {
+	name = "岩仲義治"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101721
+	add_trait = panzer_leader
+	history = {
+		1930.8.1 = { rank = 1 }
+	}
+}
+101722 = {
+	name = "鵜泽尚信"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101722
+	history = {
+		1941.10.15 = { rank = 1 }
+		1945.3.1 = { rank = 2 }
+	}
+}
+101723 = {
+	name = "角健之"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101723
+	add_trait = panzer_leader
+	history = {
+		1945.3.1 = { rank = 1 }
+	}
+}
+101723 = {
+	name = "明石泰二郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101723
+	history = {
+		1945.3.1 = { rank = 1 }
+	}
+}
+101724 = {
+	name = "今田新太郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101724
+	add_trait = offensive_doctrine
+	history = {
+		1943.8.2 = { rank = 1 }
+	}
+}
+101725 = {
+	name = "舞伝男"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101725
+	history = {
+		1936.3.7 = { rank = 1 }
+		1939.3.9 = { rank = 2 }
+	}
+}
+101726 = {
+	name = "岡田菊三郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101726
+	add_trait = logistics_wizard
+	history = {
+		1943.8.2 = { rank = 1 }
+	}
+}
+101727 = {
+	name = "福地春男"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101727
+	history = {
+		1944.8.1 = { rank = 1 }
+	}
+}
+101729 = {
+	name = "松本健児"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101729
+	history = {
+		1936.3.7 = { rank = 1 }
+		1939.3.9 = { rank = 2 }
+		1939.4.30 = { rank = 0 }
+	}
+}
+101731 = {
+	name = "矢崎勘十"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101731
+	add_trait = panzer_leader
+	history = {
+		1940.12.2 = { rank = 1 }
+		1943.6.27 = { rank = 2 }
+	}
+}
+101732 = {
+	name = "常岡寛治"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101732
+	history = {
+		1935.3.25 = { rank = 1 }
+		1938.3.1 = { rank = 2 }
+	}
+}
+101733 = {
+	name = "青木成一"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101733
+	history = {
+		1938.7.15 = { rank = 1 }
+		1941.8.25 = { rank = 2 }
+	}
+}
+101734 = {
+	name = "井関隆昌"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101734
+	history = {
+		1934.8.1 = { rank = 1 }
+		1937.11.1 = { rank = 2 }
+		1940.3.30 = { rank = 0 }
+	}
+}
+101735 = {
+	name = "田上八郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101735
+	history = {
+		1940.3.9 = { rank = 1 }
+		1943.6.10 = { rank = 2 }
+	}
+}
+101736 = {
+	name = "吉本貞一"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101736
+	add_trait = offensive_doctrine
+	add_trait = defensive_doctrine
+	history = {
+		1936.3.7 = { rank = 1 }
+		1939.3.9 = { rank = 2 }
+		1945.5.7 = { rank = 3 }
+	}
+}
+101737 = {
+	name = "多賀哲四郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101737
+	history = {
+		1943.8.1 = { rank = 1 }
+	}
+}
+101738 = {
+	name = "堀毛一麿"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101738
+	add_trait = defensive_doctrine
+	history = {
+		1941.10.15 = { rank = 1 }
+	}
+}
+101739 = {
+	name = "鏑木正隆"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101739
+	history = {
+		1945.3.1 = { rank = 1 }
+	}
+}
+101740 = {
+	name = "菅井斌麿"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101740
+	history = {
+		1945.6.10 = { rank = 1 }
+	}
+}
+101741 = {
+	name = "増岡賢七"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101741
+	history = {
+		1941.3.1 = { rank = 1 }
+	}
+}
+101743 = {
+	name = "大城户三治"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101743
+	history = {
+		1939.3.9 = { rank = 1 }
+		1941.11.6 = { rank = 2 }
+	}
+}
+101744 = {
+	name = "西藤金作"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101744
+	add_trait = logistics_wizard
+	history = {
+		1942.8.1 = { rank = 1 }
+	}
+}
+101745 = {
+	name = "北島卓美"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101745
+	history = {
+		1939.8.1 = { rank = 1 }
+		1942.9.29 = { rank = 0 }
+	}
+}
+101746 = {
+	name = "有村恒道"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101746
+	history = {
+		1938.7.15 = { rank = 1 }
+	}
+}
+101747 = {
+	name = "友近美晴"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101747
+	history = {
+		1944.8.1 = { rank = 1 }
+	}
+}
+101748 = {
+	name = "秋永力"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101748
+	history = {
+		1941.10.15 = { rank = 1 }
+		1945.3.1 = { rank = 2 }
+	}
+}
+101749 = {
+	name = "竹下義晴"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101749
+	add_trait = logistics_wizard
+	history = {
+		1938.7.15 = { rank = 1 }
+		1941.3.1 = { rank = 2 }
+	}
+}
+101750 = {
+	name = "鈴木春松"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101750
+	history = {
+		1937.3.1 = { rank = 1 }
+		1939.8.1 = { rank = 2 }
+	}
+}
+101751 = {
+	name = "柳川悌"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101751
+	history = {
+		1938.7.15 = { rank = 1 }
+		1941.8.25 = { rank = 2 }
+	}
+}
+101752 = {
+	name = "片桐護郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101752
+	history = {
+		1938.7.15 = { rank = 1 }
+	}
+}
+101753 = {
+	name = "高木義人"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101753
+	history = {
+		1936.3.7 = { rank = 1 }
+		1939.3.9 = { rank = 2 }
+	}
+}
+101754 = {
+	name = "岩切義一"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101754
+	add_trait = logistics_wizard
+	history = {
+		1945.6.10 = { rank = 1 }
+	}
+}
+101755 = {
+	name = "服部暁太郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101755
+	add_trait = engineer
+	history = {
+		1939.3.9 = { rank = 1 }
+		1941.10.15 = { rank = 2 }
+		1944.8.12 = { rank = 0 }
+	}
+}
+101756 = {
+	name = "盐泽清宣"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101756
+	history = {
+		1940.3.9 = { rank = 1 }
+		1943.6.10 = { rank = 2 }
+	}
+}
+101757 = {
+	name = "倉茂周蔵"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101757
+	history = {
+		1948.3.1 = { rank = 1 }
+	}
+}
+101758 = {
+	name = "石田栄熊"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101758
+	history = {
+		1941.10.15 = { rank = 1 }
+		1945.3.1 = { rank = 2 }
+	}
+}
+101759 = {
+	name = "田中信男"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101759
+	history = {
+		1941.3.1 = { rank = 1 }
+		1944.6.27 = { rank = 2 }
+	}
+}
+101760 = {
+	name = "岩切秀"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101760
+	history = {
+		1942.8.1 = { rank = 1 }
+		1945.4.30 = { rank = 2 }
+	}
+}
+101761 = {
+	name = "中村肇"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101761
+	add_trait = logistics_wizard
+	history = {
+		1943.8.2 = { rank = 1 }
+	}
+}
+101762 = {
+	name = "谷口元治郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101762
+	history = {
+		1933.8.1 = { rank = 1 }
+		1937.3.1 = { rank = 2 }
+	}
+}
+101763 = {
+	name = "森田範正"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101763
+	history = {
+		1938.3.9 = { rank = 1 }
+	}
+}
+101764 = {
+	name = "志位正人"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101764
+	history = {
+		1943.8.2 = { rank = 1 }
+	}
+}
+101765 = {
+	name = "桑原四郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101765
+	add_trait = engineer
+	history = {
+		1936.4.28 = { rank = 1 }
+		1939.3.9 = { rank = 2 }
+		1941.10.30 = { rank = 2 }
+	}
+}
+101766 = {
+	name = "伊藤知剛"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101766
+	history = {
+		1936.3.7 = { rank = 1 }
+		1939.3.9 = { rank = 2 }
+	}
+}
+101767 = {
+	name = "村岡丰"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101767
+	history = {
+		1939.8.1 = { rank = 1 }
+		1944.6.10 = { rank = 2 }
+	}
+}
+101768 = {
+	name = "高橋政雄"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101768
+	history = {
+		1940.3.9 = { rank = 1 }
+	}
+}
+101769 = {
+	name = "坂井徳太郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101769
+	history = {
+		1936.3.7 = { rank = 1 }
+		1939.3.9 = { rank = 2 }
+	}
+}
+101770 = {
+	name = "高橋担"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101770
+	history = {
+		1941.3.1 = { rank = 1 }
+		1944.10.26 = { rank = 2 }
+	}
+}
+101771 = {
+	name = "及川源七"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101771
+	history = {
+		1938.7.15 = { rank = 1 }
+		1941.3.1 = { rank = 2 }
+	}
+}
+101772 = {
+	name = "齋藤正锐"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101772
+	history = {
+		1939.3.9 = { rank = 1 }
+	}
+}
+101773 = {
+	name = "天谷直次郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101773
+	history = {
+		1937.8.2 = { rank = 1 }
+		1939.10.2 = { rank = 2 }
+		1941.12.2 = { rank = 0 }
+	}
+}
+101774 = {
+	name = "大本四郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101774
+	history = {
+		1943.8.2 = { rank = 1 }
+	}
+}
+101775 = {
+	name = "遠山登"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101775
+	history = {
+		1939.5.19 = { rank = 1 }
+		1942.4.1 = { rank = 2 }
+	}
+}
+101776 = {
+	name = "大場四平"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101776
+	add_trait = defensive_doctrine
+	history = {
+		1939.8.1 = { rank = 1 }
+		1942.8.1 = { rank = 2 }
+	}
+}
+101777 = {
+	name = "中島吉三郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101777
+	history = {
+		1941.3.1 = { rank = 1 }
+		1944.10.26 = { rank = 2 }
+	}
+}
+101778 = {
+	name = "渡边三郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101778
+	add_trait = logistics_wizard
+	history = {
+		1945.3.1 = { rank = 1 }
+	}
+}
+101779 = {
+	name = "木村经広"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101779
+	add_trait = engineer
+	history = {
+		1938.7.15 = { rank = 1 }
+		1942.4.1 = { rank = 2 }
+	}
+}
+101781 = {
+	name = "高野直满"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101781
+	add_trait = defensive_doctrine
+	history = {
+		1940.12.2 = { rank = 1 }
+		1944.6.10 = { rank = 2 }
+	}
+}
+101782 = {
+	name = "西山福太郎"
+	country = JAP
+	type = land
+	skill = 0
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101782
+	add_trait = old_guard
+	history = {
+		1939.3.9 = { rank = 1 }
+		1943.6.10 = { rank = 2 }
+	}
+}
+101783 = {
+	name = "岩永汪"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101783
+	add_trait = defensive_doctrine
+	history = {
+		1939.8.1 = { rank = 1 }
+		1943.6.10 = { rank = 2 }
+	}
+}
+101784 = {
+	name = "森田春次"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101784
+	history = {
+		1945.6.10 = { rank = 1 }
+	}
+}
+101785 = {
+	name = "森本伊市郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101785
+	history = {
+		1939.3.9 = { rank = 1 }
+	}
+}
+101786 = {
+	name = "磯矢伍郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101786
+	add_trait = logistics_wizard
+	history = {
+		1942.8.1 = { rank = 1 }
+		1945.4.30 = { rank = 2 }
+	}
+}
+101787 = {
+	name = "田尻利雄"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101787
+	history = {
+		1938.7.15 = { rank = 1 }
+		1941.10.2 = { rank = 2 }
+	}
+}
+101788 = {
+	name = "高津利光"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101788
+	history = {
+		1945.3.1 = { rank = 1 }
+	}
+}
+101789 = {
+	name = "西原八三郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101789
+	add_trait = engineer
+	history = {
+		1938.7.15 = { rank = 1 }
+	}
+}
+101790 = {
+	name = "湯原均一"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101790
+	add_trait = logistics_wizard
+	history = {
+		1938.7.15 = { rank = 1 }
+	}
+}
+101791 = {
+	name = "西村乙嗣"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101791
+	history = {
+		1945.3.1 = { rank = 1 }
+	}
+}
+101792 = {
+	name = "安達久"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101792
+	history = {
+		1945.3.1 = { rank = 1 }
+	}
+}
+101793 = {
+	name = "加藤義秀"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101793
+	history = {
+		1945.6.10 = { rank = 1 }
+	}
+}
+101794 = {
+	name = "岡部英一"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101794
+	history = {
+		1944.8.1 = { rank = 1 }
+	}
+}
+101795 = {
+	name = "古賀龍一"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101795
+	history = {
+		1945.3.1 = { rank = 1 }
+	}
+}
+101796 = {
+	name = "前泽長重"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101796
+	history = {
+		1945.3.1 = { rank = 1 }
+	}
+}
+101797 = {
+	name = "伊藤義雄"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101797
+	history = {
+		1935.8.1 = { rank = 1 }
+		1938.7.15 = { rank = 2 }
+	}
+}
+101798 = {
+	name = "杏賢一"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101798
+	history = {
+		1940.7.1 = { rank = 1 }
+	}
+}
+101799 = {
+	name = "山之内二郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101799
+	add_trait = logistics_wizard
+	history = {
+		1945.3.1 = { rank = 1 }
+	}
+}
+101800 = {
+	name = "大井川八郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101800
+	history = {
+		1944.8.1 = { rank = 1 }
+	}
+}
+101801 = {
+	name = "布施安昌"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101801
+	history = {
+		1941.3.1 = { rank = 1 }
+	}
+}
+101802 = {
+	name = "松村知勝"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101802
+	add_trait = offensive_doctrine
+	history = {
+		1945.3.1 = { rank = 1 }
+	}
+}
+101803 = {
+	name = "中野良次"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101803
+	add_trait = offensive_doctrine
+	history = {
+		1942.8.1 = { rank = 1 }
+		1945.4.7 = { rank = 2 }
+	}
+}
+101804 = {
+	name = "久保宗治"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101804
+	add_trait = offensive_doctrine
+	history = {
+		1944.8.1 = { rank = 1 }
+	}
+}
+101805 = {
+	name = "野地嘉平"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101805
+	add_trait = trickster
+	history = {
+		1941.8.25 = { rank = 1 }
+		1945.3.1 = { rank = 2 }
+	}
+}
+101806 = {
+	name = "川俣雄人"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101806
+	history = {
+		1941.8.25 = { rank = 1 }
+		1945.3.1 = { rank = 2 }
+	}
+}
+101807 = {
+	name = "片桐茂"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101807
+	add_trait = offensive_doctrine
+	history = {
+		1939.8.1 = { rank = 1 }
+		1942.12.1 = { rank = 2 }
+	}
+}
+101808 = {
+	name = "三島義一郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101808
+	add_trait = defensive_doctrine
+	history = {
+		1941.10.15 = { rank = 1 }
+		1945.3.1 = { rank = 2 }
+	}
+}
+101809 = {
+	name = "長谷川正憲"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101809
+	history = {
+		1939.3.9 = { rank = 1 }
+	}
+}
+101810 = {
+	name = "河田槌太郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101810
+	add_trait = offensive_doctrine
+	history = {
+		1940.3.9 = { rank = 1 }
+		1944.6.27 = { rank = 2 }
+	}
+}
+101811 = {
+	name = "太田米雄"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101811
+	history = {
+		1939.8.1 = { rank = 1 }
+		1943.6.10 = { rank = 2 }
+	}
+}
+101812 = {
+	name = "桂朝彦"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101812
+	history = {
+		1941.3.1 = { rank = 1 }
+	}
+}
+101813 = {
+	name = "黒田茂"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101813
+	history = {
+		1944.3.1 = { rank = 1 }
+	}
+}
+101814 = {
+	name = "太田勝海"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101814
+	history = {
+		1936.8.1 = { rank = 1 }
+		1939.3.9 = { rank = 2 }
+	}
+}
+101815 = {
+	name = "大木良枝"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101815
+	add_trait = trickster
+	history = {
+		1944.3.1 = { rank = 1 }
+	}
+}
+101816 = {
+	name = "篠田鐐"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101816
+	add_trait = engineer
+	history = {
+		1941.8.25 = { rank = 1 }
+		1945.3.11 = { rank = 2 }
+	}
+}
+101817 = {
+	name = "藤村益蔵"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101817
+	history = {
+		1943.3.1 = { rank = 1 }
+	}
+}
+101818 = {
+	name = "加藤定"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101818
+	add_trait = logistics_wizard
+	history = {
+		1943.8.2 = { rank = 1 }
+	}
+}
+101819 = {
+	name = "芦塚長蔵"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101819
+	history = {
+		1943.3.1 = { rank = 1 }
+	}
+}
+101820 = {
+	name = "清水正雄"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101820
+	history = {
+		1942.8.1 = { rank = 1 }
+	}
+}
+101821 = {
+	name = "石原章三"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101821
+	add_trait = logistics_wizard
+	history = {
+		1941.8.25 = { rank = 1 }
+	}
+}
+101822 = {
+	name = "川原直一"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101822
+	history = {
+		1943.3.1 = { rank = 1 }
+	}
+}
+101823 = {
+	name = "加治武雄"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101823
+	history = {
+		1945.3.1 = { rank = 1 }
+	}
+}
+101824 = {
+	name = "飯田泰次郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101824
+	history = {
+		1939.3.9 = { rank = 1 }
+	}
+}
+101825 = {
+	name = "赤藤庄次"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101825
+	history = {
+		1944.8.1 = { rank = 1 }
+	}
+}
+101826 = {
+	name = "小川权之助"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101826
+	history = {
+		1941.10.15 = { rank = 1 }
+		1945.3.19 = { rank = 2 }
+	}
+}
+101827 = {
+	name = "入江莞爾"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101827
+	add_trait = defensive_doctrine
+	history = {
+		1940.8.1 = { rank = 1 }
+	}
+}
+101828 = {
+	name = "横尾闊"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101828
+	history = {
+		1943.3.1 = { rank = 1 }
+	}
+}
+101829 = {
+	name = "大橋熊雄"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101829
+	add_trait = offensive_doctrine
+	history = {
+		1942.8.1 = { rank = 1 }
+	}
+}
+101830 = {
+	name = "高橋重三"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101830
+	history = {
+		1938.7.15 = { rank = 1 }
+	}
+}
+101831 = {
+	name = "米山米鹿"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101831
+	history = {
+		1941.8.25 = { rank = 1 }
+	}
+}
+101832 = {
+	name = "志甫勤一郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101832
+	add_trait = engineer
+	history = {
+		1943.3.1 = { rank = 1 }
+	}
+}
+101833 = {
+	name = "井原潤次郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101833
+	history = {
+		1941.10.15 = { rank = 1 }
+		1945.3.1 = { rank = 2 }
+	}
+}
+101835 = {
+	name = "櫻井鐐三"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101835
+	history = {
+		1943.3.1 = { rank = 1 }
+	}
+}
+101836 = {
+	name = "中永太郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101836
+	history = {
+		1940.3.9 = { rank = 1 }
+		1943.6.10 = { rank = 2 }
+	}
+}
+101837 = {
+	name = "石野芳男"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101837
+	history = {
+		1941.10.15 = { rank = 1 }
+		1945.5.1 = { rank = 2 }
+	}
+}
+101838 = {
+	name = "沖静夫"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101838
+	add_trait = commando
+	history = {
+		1945.3.1 = { rank = 1 }
+	}
+}
+101839 = {
+	name = "田島彦太郎"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101839
+	history = {
+		1941.8.25 = { rank = 1 }
+		1945.4.30 = { rank = 2 }
+	}
+}
+101840 = {
+	name = "田村宣武"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101840
+	history = {
+		1941.8.25 = { rank = 1 }
+		1945.4.30 = { rank = 2 }
+	}
+}
+101841 = {
+	name = "渡边勝"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101841
+	add_trait = logistics_wizard
+	history = {
+		1941.10.15 = { rank = 1 }
+	}
+}
+101842 = {
+	name = "河野毅"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101842
+	history = {
+		1941.8.25 = { rank = 1 }
+		1945.3.1 = { rank = 2 }
+	}
+}
+101843 = {
+	name = "北条藤吉"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101843
+	history = {
+		1941.8.25 = { rank = 1 }
+		1945.3.1 = { rank = 2 }
+	}
+}
+101844 = {
+	name = "田坂八十八"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101844
+	history = {
+		1943.3.1 = { rank = 1 }
+		1945.4.7 = { rank = 2 }
+	}
+}
+101845 = {
+	name = "加藤怜三"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101845
+	add_trait = engineer
+	history = {
+		1938.7.15 = { rank = 1 }
+		1942.4.1 = { rank = 2 }
+	}
+}
+101846 = {
+	name = "松村省吾"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101846
+	history = {
+		1945.6.10 = { rank = 1 }
+	}
+}
+101847 = {
+	name = "齋俊男"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101847
+	history = {
+		1943.3.1 = { rank = 1 }
+	}
+}
+101848 = {
+	name = "小松巳三雄"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101848
+	history = {
+		1944.3.1 = { rank = 1 }
+	}
+}
+101849 = {
+	name = "原田久男"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101849
+	history = {
+		1940.12.2 = { rank = 1 }
+	}
+}
+101850 = {
+	name = "楠山秀吉"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101850
+	history = {
+		1940.12.2 = { rank = 1 }
+	}
+}
+101851 = {
+	name = "西大条胖"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101851
+	add_trait = logistics_wizard
+	history = {
+		1941.8.25 = { rank = 1 }
+		1944.10.26 = { rank = 2 }
+	}
+}
+101852 = {
+	name = "宮泽齐四郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101852
+	history = {
+		1939.8.1 = { rank = 1 }
+	}
+}
+101853 = {
+	name = "羽鳥長四郎"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101853
+	history = {
+		1945.3.1 = { rank = 1 }
+	}
+}
+101854 = {
+	name = "池田廉二"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101854
+	history = {
+		1940.8.1 = { rank = 1 }
+		1944.7.14 = { rank = 2 }
+	}
+}
+101855 = {
+	name = "浅川喜保"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101855
+	history = {
+		1941.3.1 = { rank = 1 }
+	}
+}
+101856 = {
+	name = "田村理七"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101856
+	add_trait = logistics_wizard
+	history = {
+		1943.3.1 = { rank = 1 }
+	}
+}
+101857 = {
+	name = "松浦丰一"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101857
+	history = {
+		1941.8.25 = { rank = 1 }
+	}
+}
+101858 = {
+	name = "二見秋三郎"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101858
+	history = {
+		1941.10.1 = { rank = 1 }
+	}
+}
+101859 = {
+	name = "山本敏"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101859
+	history = {
+		1944.8.1 = { rank = 1 }
+	}
+}
+101860 = {
+	name = "東栄治"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101860
+	history = {
+		1938.7.15 = { rank = 1 }
+	}
+}
+101861 = {
+	name = "小川小二郎"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101861
+	history = {
+		1945.6.10 = { rank = 1 }
+	}
+}
+101862 = {
+	name = "川嶋虎之輔"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101862
+	history = {
+		1943.8.2 = { rank = 1 }
+	}
+}
+101863 = {
+	name = "北川潔水"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101863
+	history = {
+		1943.3.1 = { rank = 1 }
+	}
+}
+101864 = {
+	name = "吉積正雄"
+	country = JAP
+	type = air
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101864
+	history = {
+		1940.3.9 = { rank = 1 }
+		1943.6.10 = { rank = 2 }
+	}
+}
+101865 = {
+	name = "尾関一郎"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101865
+	history = {
+		1940.3.9 = { rank = 1 }
+	}
+}
+101866 = {
+	name = "三好康之"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101866
+	history = {
+		1943.8.2 = { rank = 1 }
+	}
+}
+101867 = {
+	name = "秋永月三"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101867
+	history = {
+		1941.3.1 = { rank = 1 }
+		1944.10.26 = { rank = 2 }
+	}
+}
+101868 = {
+	name = "佐々誠"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101868
+	history = {
+		1938.7.15 = { rank = 1 }
+	}
+}
+101869 = {
+	name = "三輪潔"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101869
+	history = {
+		1945.3.1 = { rank = 1 }
+	}
+}
+101870 = {
+	name = "土生秀治"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101870
+	history = {
+		1943.8.1 = { rank = 1 }
+	}
+}
+101871 = {
+	name = "加藤敏雄"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101871
+	history = {
+		1945.3.1 = { rank = 1 }
+	}
+}
+101872 = {
+	name = "宝蔵寺久雄"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101872
+	history = {
+		1938.7.15 = { rank = 1 }
+	}
+}
+101873 = {
+	name = "本田農"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101873
+	history = {
+		1941.10.15 = { rank = 1 }
+	}
+}
+101874 = {
+	name = "高品朋"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101874
+	history = {
+		1945.3.1 = { rank = 1 }
+	}
+}
+101875 = {
+	name = "今川一策"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101875
+	history = {
+		1945.3.1 = { rank = 1 }
+	}
+}
+101876 = {
+	name = "青木武三"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 6
+	loyalty = 1.00
+	picture = L101876
+	add_trait = superior_air_tactician 
+	history = {
+		1943.3.1 = { rank = 1 }
+		1945.7.10 = { rank = 2 }
+	}
+}
+101877 = {
+	name = "吉田定男"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101877 #http://shinkokunippon.blog122.fc2.com/blog-entry-581.html　のどなたかなのですが…。
+	history = {
+		1939.3.9 = { rank = 1 }
+	}
+}
+101878 = {
+	name = "隈部正美"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101878
+	history = {
+		1943.3.1 = { rank = 1 }
+	}
+}
+101879 = {
+	name = "藤塚止戈夫"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101879
+	history = {
+		1940.12.2 = { rank = 1 }
+		1944.6.27 = { rank = 2 }
+	}
+}
+101880 = {
+	name = "土田兵吾"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101880
+	history = {
+		1945.6.10 = { rank = 1 }
+	}
+}
+101881 = {
+	name = "西村敏雄"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101881
+	add_trait = superior_air_tactician 
+	add_trait = tank_buster 
+	history = {
+		1944.8.1 = { rank = 1 }
+	}
+}
+101882 = {
+	name = "塚田理喜智"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101882
+	history = {
+		1941.8.25 = { rank = 1 }
+		1945.3.1 = { rank = 2 }
+	}
+}
+101883 = {
+	name = "鳥田隆一"
+	country = JAP
+	type = air
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101883
+	history = {
+		1939.3.9 = { rank = 1 }
+		1941.10.15 = { rank = 2 }
+	}
+}
+101884 = {
+	name = "川上清志"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101884
+	add_trait = superior_air_tactician 
+	history = {
+		1943.3.1 = { rank = 1 }
+	}
+}
+101885 = {
+	name = "石川愛"
+	country = JAP
+	type = air
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101885
+	history = {
+		1941.10.15 = { rank = 1 }
+		1945.3.1 = { rank = 2 }
+	}
+}
+101886 = {
+	name = "光成省三"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101886
+	history = {
+		1944.8.1 = { rank = 1 }
+	}
+}
+101887 = {
+	name = "近藤兼利"
+	country = JAP
+	type = air
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101887
+	history = {
+		1942.8.1 = { rank = 1 }
+		1945.3.1 = { rank = 2 }
+	}
+}
+101888 = {
+	name = "中西良介"
+	country = JAP
+	type = air
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101888
+	history = {
+		1941.8.25 = { rank = 1 }
+		1945.3.1 = { rank = 2 }
+	}
+}
+101889 = {
+	name = "山口槌夫"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101889
+	history = {
+		1943.3.1 = { rank = 1 }
+	}
+}
+101890 = {
+	name = "原田宇一郎"
+	country = JAP
+	type = air
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101890
+	history = {
+		1939.8.1 = { rank = 1 }
+		1942.3.6 = { rank = 2 }
+	}
+}
+101891 = {
+	name = "大坪潔"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101891
+	history = {
+		1945.3.1 = { rank = 1 }
+	}
+}
+101892 = {
+	name = "田中誠三"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101892
+	history = {
+		1943.8.2 = { rank = 1 }
+	}
+}
+101893 = {
+	name = "安達三朗"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101893
+	history = {
+		1944.5.10 = { rank = 1 }
+	}
+}
+101894 = {
+	name = "中村美明"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101894
+	history = {
+		1940.3.9 = { rank = 1 }
+	}
+}
+101895 = {
+	name = "河村孝三郎"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101895
+	history = {
+		1945.6.10 = { rank = 1 }
+	}
+}
+101896 = {
+	name = "田副登"
+	country = JAP
+	type = air
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101896
+	add_trait = tank_buster 
+	history = {
+		1939.8.1 = { rank = 1 }
+		1942.12.1 = { rank = 2 }
+	}
+}
+101897 = {
+	name = "堀内旭"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101897
+	history = {
+		1945.6.10 = { rank = 1 }
+	}
+}
+101898 = {
+	name = "飯島正義"
+	country = JAP
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101898
+	history = {
+		1945.6.10 = { rank = 1 }
+	}
+}
+101900 = {
+	name = "伊藤武夫"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101900
+	add_trait = trickster
+	history = {
+		1942.11.1 = { rank = 1 }
+	}
+}
+101901 = {
+	name = "森本軍蔵"
+	country = JAP
+	type = air
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101901
+	add_trait = tank_buster 
+	history = {
+		1943.3.1 = { rank = 1 }
+	}
+}
+101902 = {
+	name = "山瀬昌雄"
+	country = JAP
+	type = air
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101902
+	add_trait = tank_buster 
+	history = {
+		1940.3.9 = { rank = 1 }
+		1943.6.10 = { rank = 2 }
+	}
+}
+101903 = {
+	name = "落合忠吉"
+	country = JAP
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L101903
+	add_trait = logistics_wizard
+	history = {
+		1939.3.9 = { rank = 1 }
+		1941.10.15 = { rank = 2 }
+	}
+}
+101904 = {
+	name = "横山勇"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 8
+	loyalty = 1.00
+	picture = L101212
+	add_trait = offensive_doctrine
+	add_trait = defensive_doctrine
+	add_trait = commando
+	history = {
+		1936.1.1 = { rank = 1 }
+		1941.10.15 = { rank = 2 }
+		1942.12.22 = { rank = 3 }
+		1952.4.21 = { rank = 0 }
+	}
+}
+101905 = {
+	name = "雨宮巽"
+	country = JAP
+	type = land
+	skill = 3
+	max_skill = 7
+	loyalty = 1.00
+	picture = L101006
+	add_trait = defensive_doctrine
+	add_trait = commando
+	history = {
+		1930.1.1 = { rank = 1 }
+		1945.6.23 = { rank = 0 }
+	}
+}
+101906 = {
+	name = "田島正男"
+	country = JAP
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L101906
+	history = {
+		1945.3.1 = { rank = 1 }
+	}
+}
+101920 = {
+	name = "山本祐二"
+	country = JAP
+	type = sea
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101920
+	history = {
+		1945.1.1 = { rank = 1 }
+	}
+}
+101907 = {
+	name = "千田貞雄"
+	country = JAP
+	type = land
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101907
+	add_trait = defensive_doctrine
+	history = {
+		1940.1.1 = { rank = 1 }
+		1944.1.1 = { rank = 2 }
+	}
+}
+101908 = {
+	name = "山澄貞次郎"
+	country = JAP
+	type = sea
+	skill = 1
+	maxskill = 4
+	loyalty = 1.00
+	picture = L101908
+	history = {
+		1943.1.1 = { rank = 1 }
+	}
+}
+101909 = {
+	name = "保科善四郎"
+	country = JAP
+	type = sea
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101909
+	history = {
+		1940.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 2 }
+	}
+}
+101910 = {
+	name = "吉泽忠男"
+	country = JAP
+	type = land
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101910
+	history = {
+		1937.1.1 = { rank = 1 }
+		1940.1.1 = { rank = 2 }
+	}
+}
+101911 = {
+	name = "米山久馬"
+	country = JAP
+	type = land
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101911
+	history = {
+		1941.1.1 = { rank = 1 }
+		1944.1.1 = { rank = 2 }
+	}
+}
+101912 = {
+	name = "兄部勇次"
+	country = JAP
+	type = sea
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101912
+	history = {
+		1943.1.1 = { rank = 1 }
+	}
+}
+101913 = {
+	name = "中島親孝"
+	country = JAP
+	type = sea
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101913
+	history = {
+		1944.1.1 = { rank = 1 }
+	}
+}
+101914 = {
+	name = "三好輝彦"
+	country = JAP
+	type = sea
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101914
+	history = {
+		1943.1.1 = { rank = 1 }
+	}
+}
+101916 = {
+	name = "亀井凱夫"
+	country = JAP
+	type = air
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101916
+	history = {
+		1944.1.1 = { rank = 1 }
+	}
+}
+101917 = {
+	name = "藤田類太郎"
+	country = JAP
+	type = sea
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101917
+	history = {
+		1937.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 2 }
+	}
+}
+101918 = {
+	name = "松永貞市"
+	country = JAP
+	type = air
+	skill = 2
+	maxskill = 6
+	loyalty = 1.00
+	picture = L101918
+	history = {
+		1940.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 2 }
+	}
+}
+101919 = {
+	name = "新見政一"
+	country = JAP
+	type = sea
+	skill = 2
+	maxskill = 4
+	loyalty = 1.00
+	picture = L101919
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 2 }
+	}
+}
+101922 = {
+	name = "中村亀三郎"
+	country = JAP
+	type = sea
+	skill = 1
+	maxskill = 4
+	loyalty = 1.00
+	picture = L101922
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+	}
+}
+101923 = {
+	name = "中泽佑"
+	country = JAP
+	type = sea
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101923
+	history = {
+		1942.1.1 = { rank = 1 }
+		1945.1.1 = { rank = 2 }
+	}
+}
+101924 = {
+	name = "泽本赖雄"
+	country = JAP
+	type = sea
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101924
+	history = {
+		1930.1.1 = { rank = 1 }
+		1938.1.1 = { rank = 2 }
+		1944.1.1 = { rank = 3 }
+	}
+}
+101925 = {
+	name = "盐泽幸一"
+	country = JAP
+	type = sea
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101925
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1939.1.1 = { rank = 3 }
+	}
+}
+101926 = {
+	name = "吉見信一"
+	country = JAP
+	type = sea
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101926
+	history = {
+		1944.1.1 = { rank = 1 }
+	}
+}
+101927 = {
+	name = "鮫島具重"
+	country = JAP
+	type = sea
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101927
+	history = {
+		1937.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+	}
+}
+101928 = {
+	name = "丰田貞次郎"
+	country = JAP
+	type = sea
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101928
+	add_trait = old_guard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1941.1.1 = { rank = 3 }
+	}
+}
+101929 = {
+	name = "山本英輔"
+	country = JAP
+	type = sea
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101929
+	add_trait = old_guard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+	}
+}
+101932 = {
+	name = "城島高次"
+	country = JAP
+	type = sea
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101932
+	history = {
+		1942.1.1 = { rank = 1 }
+	}
+}
+101933 = {
+	name = "泽田貢"
+	country = JAP
+	type = air
+	skill = 1
+	maxskill = 4
+	loyalty = 1.00
+	picture = L101933
+	history = {
+		1942.1.1 = { rank = 1 }
+	}
+}
+101934 = {
+	name = "福山米助"
+	country = JAP
+	type = air
+	skill = 0
+	maxskill = 4
+	loyalty = 1.00
+	picture = L101934
+	history = {
+		1944.1.1 = { rank = 1 }
+	}
+}
+101935 = {
+	name = "柳本柳作"
+	country = JAP
+	type = sea
+	skill = 3
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101935
+	history = {
+		1941.1.1 = { rank = 1 }
+	}
+}
+101936 = {
+	name = "藤田尚德"
+	country = JAP
+	type = sea
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101936
+	add_trait = old_guard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+	}
+}
+101937 = {
+	name = "武田勇"
+	country = JAP
+	type = land
+	skill = 1
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101937
+	add_trait = old_guard
+	history = {
+		1939.1.1 = { rank = 1 }
+	}
+}
+101938 = {
+	name = "坂本末雄"
+	country = JAP
+	type = land
+	skill = 1
+	maxskill = 4
+	loyalty = 1.00
+	picture = L101938
+	history = {
+		1943.1.1 = { rank = 1 }
+		1945.1.1 = { rank = 2 }
+	}
+}
+101939 = {
+	name = "澄川道男"
+	country = JAP
+	type = sea
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101939
+	history = {
+		1943.1.1 = { rank = 1 }
+	}
+}
+101940 = {
+	name = "藍原有孝"
+	country = JAP
+	type = sea
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101940
+	history = {
+		1940.1.1 = { rank = 1 }
+	}
+}
+101941 = {
+	name = "田島"
+	country = JAP
+	type = land
+	skill = 1
+	maxskill = 4
+	loyalty = 1.00
+	picture = L101941
+	history = {
+		1948.1.1 = { rank = 1 }
+	}
+}
+101942 = {
+	name = "阿部弘毅"
+	country = JAP
+	type = sea
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101942
+	history = {
+		1938.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 2 }
+	}
+}
+101943 = {
+	name = "建川美次"
+	country = JAP
+	type = land
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101943
+	add_trait = logistics_wizard
+	add_trait = old_guard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+	}
+}
+101944 = {
+	name = "重藤千秋"
+	country = JAP
+	type = land
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101944
+	add_trait = offensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1938.1.1 = { rank = 2 }
+	}
+}
+101945 = {
+	name = "古荘幹郎"
+	country = JAP
+	type = land
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101945
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1939.1.1 = { rank = 3 }
+	}
+}
+101946 = {
+	name = "山室宗武"
+	country = JAP
+	type = land
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101946
+	add_trait = fortress_buster
+	add_trait = old_guard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+	}
+}
+101947 = {
+	name = "末松茂治"
+	country = JAP
+	type = land
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101947
+	history = {
+		1930.1.1 = { rank = 1 }
+		1937.1.1 = { rank = 2 }
+	}
+}
+101948 = {
+	name = "宇佐美興屋"
+	country = JAP
+	type = land
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101948
+	add_trait = old_guard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+	}
+}
+101949 = {
+	name = "藤室良輔"
+	country = JAP
+	type = land
+	skill = 1
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101949
+	history = {
+		1940.1.1 = { rank = 1 }
+	}
+}
+101950 = {
+	name = "鈴木重康"
+	country = JAP
+	type = land
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101950
+	history = {
+		1930.1.1 = { rank = 1 }
+		1937.1.1 = { rank = 2 }
+	}
+}
+101951 = {
+	name = "蓮沼蕃"
+	country = JAP
+	type = land
+	skill = 3
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101951
+	add_trait = old_guard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1945.1.1 = { rank = 3 }
+	}
+}
+101952 = {
+	name = "岩松義雄"
+	country = JAP
+	type = land
+	skill = 3
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101952
+	add_trait = offensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1937.1.1 = { rank = 2 }
+	}
+}
+101953 = {
+	name = "今井清"
+	country = JAP
+	type = land
+	skill = 3
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101953
+	add_trait = offensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+	}
+}
+101954 = {
+	name = "島本正一"
+	country = JAP
+	type = land
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101954
+	history = {
+		1937.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 2 }
+	}
+}
+101955 = {
+	name = "齋藤弥平太"
+	country = JAP
+	type = land
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101955
+	history = {
+		1930.1.1 = { rank = 1 }
+		1938.1.1 = { rank = 2 }
+	}
+}
+101956 = {
+	name = "富岡定俊"
+	country = JAP
+	type = sea
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101956
+	history = {
+		1943.1.1 = { rank = 1 }
+	}
+}
+101957 = {
+	name = "大森仙太郎"
+	country = JAP
+	type = sea
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101957
+	add_trait = superior_tactician
+	history = {
+		1940.1.1 = { rank = 1 }
+		1944.1.1 = { rank = 2 }
+	}
+}
+101958 = {
+	name = "三輪茂義"
+	country = JAP
+	type = sea
+	skill = 2
+	maxskill = 6
+	loyalty = 1.00
+	picture = L101958
+	add_trait = seawolf
+	history = {
+		1938.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 2 }
+	}
+}
+101961 = {
+	name = "丰田貞次郎"
+	country = JAP
+	type = air
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101961
+	history = {
+		1938.1.1 = { rank = 1 }
+		1938.1.1 = { rank = 2 }
+		1941.1.1 = { rank = 3 }
+	}
+}
+101962 = {
+	name = "户塚道太郎"
+	country = JAP
+	type = air
+	skill = 2
+	maxskill = 7
+	loyalty = 1.00
+	picture = L101962
+	add_trait = superior_air_tactician
+	add_trait = spotter
+	add_trait = fleet_destroyer
+	history = {
+		1937.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+	}
+}
+101963 = {
+	name = "石本新六"
+	country = JAP
+	type = land
+	skill = 2
+	maxskill = 4
+	loyalty = 1.00
+	picture = L101963
+	history = {
+		1938.1.1 = { rank = 1 }
+		1940.1.1 = { rank = 2 }
+	}
+}
+101964 = {
+	name = "橋本以行"
+	country = JAP
+	type = sea
+	skill = 1
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101964
+	add_trait = seawolf
+	history = {
+		1948.1.1 = { rank = 1 }
+	}
+}
+101965 = {
+	name = "内藤正一"
+	country = JAP
+	type = land
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101965
+	add_trait = offensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1937.1.1 = { rank = 2 }
+	}
+}
+101966 = {
+	name = "梶岡定道"
+	country = JAP
+	type = sea
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101966
+	history = {
+		1940.1.1 = { rank = 1 }
+	}
+}
+101967 = {
+	name = "木村進"
+	country = JAP
+	type = sea
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101967
+	add_trait = spotter
+	history = {
+		1942.1.1 = { rank = 1 }
+		1945.1.1 = { rank = 2 }
+	}
+}
+101968 = {
+	name = "木梨鷹一"
+	country = JAP
+	type = sea
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101968
+	add_trait = seawolf
+	history = {
+		1943.1.1 = { rank = 1 }
+	}
+}
+101969 = {
+	name = "左近允尚正"
+	country = JAP
+	type = sea
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101969
+	history = {
+		1941.1.1 = { rank = 1 }
+		1944.1.1 = { rank = 2 }
+	}
+}
+101970 = {
+	name = "嶋崎重和"
+	country = JAP
+	type = air
+	skill = 2
+	maxskill = 4
+	loyalty = 1.00
+	picture = L101970
+	history = {
+		1944.1.1 = { rank = 1 }
+	}
+}
+101971 = {
+	name = "等松農夫蔵"
+	country = JAP
+	type = sea
+	skill = 1
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101971
+	add_trait = old_guard
+	history = {
+		1945.1.1 = { rank = 1 }
+	}
+}
+101972 = {
+	name = "石井常次郎"
+	country = JAP
+	type = sea
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101972
+	add_trait = old_guard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1940.1.1 = { rank = 2 }
+	}
+}
+101973 = {
+	name = "阿部孝壮"
+	country = JAP
+	type = sea
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101973
+	history = {
+		1940.1.1 = { rank = 1 }
+		1944.1.1 = { rank = 2 }
+	}
+}
+101974 = {
+	name = "有泉龍之介"
+	country = JAP
+	type = sea
+	skill = 2
+	maxskill = 6
+	loyalty = 1.00
+	picture = L101974
+	add_trait = seawolf
+	history = {
+		1944.1.1 = { rank = 1 }
+	}
+}
+101975 = {
+	name = "桑原虎雄"
+	country = JAP
+	type = sea
+	skill = 2
+	maxskill = 6
+	loyalty = 1.00
+	picture = L101975
+	add_trait = spotter
+	history = {
+		1938.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 2 }
+	}
+}
+101976 = {
+	name = "西田正雄"
+	country = JAP
+	type = sea
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101976
+	history = {
+		1941.1.1 = { rank = 1 }
+	}
+}
+101977 = {
+	name = "入佐俊家"
+	country = JAP
+	type = air
+	skill = 2
+	maxskill = 5
+	loyalty = 1.00
+	picture = L101977
+	add_trait = fleet_destroyer
+	history = {
+		1942.1.1 = { rank = 1 }
+	}
+}

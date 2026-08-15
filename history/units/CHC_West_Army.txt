@@ -1,0 +1,28 @@
+army = {
+	name = "西路军"
+	location = 9115
+	regiment = { type = partisan_brigade name = "西路军总指挥部" strength = 5 experience = 80 historical_model = 0 }
+	corps = {
+		name = "红4方面军"
+		location = 9115
+		regiment = { type = partisan_brigade name = "红4方面军指挥部" strength = 5 experience = 80 historical_model = 0 }
+		division= {
+			name = "第9军"
+			location = 9115
+			regiment = { type = partisan_brigade name = "第25师" experience = 70 historical_model = 0 }
+			regiment = { type = partisan_brigade name = "第27师" experience = 70 historical_model = 0 }
+		}
+		division= {
+			name = "第30军"
+			location = 9115
+			regiment = { type = partisan_brigade name = "第88师" experience = 70 historical_model = 0 }
+			regiment = { type = partisan_brigade name = "第89师" experience = 70 historical_model = 0 }
+		}
+	}
+	division= {
+		name = "第5军"
+		location = 9141
+		regiment = { type = partisan_brigade name = "第13师" experience = 80 strength = 15 historical_model = 0 }
+		regiment = { type = partisan_brigade name = "第15师" experience = 80 strength = 15 historical_model = 0 }
+	}
+}

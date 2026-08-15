@@ -1,0 +1,201 @@
+country_event = {
+          id = 190050
+	        fire_only_once = yes
+          title = "SF_independencetitle1"
+          desc = "SF_independencedecs1"
+          picture = "SF_independencepicture1"
+          trigger = {
+		tag = HOL
+               not = { war_with = GER
+                       war_with = JAP }
+               not = { exists = INO }
+               has_global_flag = JAP_Lost
+               has_global_flag = GER_Lost 
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+          option = {
+          name = "SF_independenceoption1" 
+          HOL = { Dutch_east_indies = { secede_province = INO } }
+          HOL = { war = { target = INO } }
+          INO = { 
+                  load_oob = "INO_SA.txt"
+          }
+          set_global_flag = SF_independence1
+            ai_chance = { factor = 100 }
+         }
+} 
+country_event = {
+          id = 190051
+          title = "SF_independencetitle1"
+          desc = "SF_independencedecs1"
+          picture = "SF_independencepicture1"
+           trigger = {
+               has_global_flag = SF_independence1
+               not = { has_country_flag = SF_independence11 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+          option = {
+          name = "SF_independenceoption1" 
+          set_country_flag = SF_independence11
+            ai_chance = { factor = 100 }
+         }
+} 
+country_event = {
+          id = 190052
+	        fire_only_once = yes
+          title = "SF_independencetitle2"
+          desc = "SF_independencedecs2"
+          picture = "SF_independencepicture2"
+          trigger = {
+		tag = USA
+               not = { war_with = GER
+                       war_with = JAP }
+                       has_global_flag = JAP_Lost
+                       has_global_flag = GER_Lost 
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+          option = {
+          name = "SF_independenceoption2" 
+          PHI = { inherit = PHI }
+          set_global_flag = SF_independence2
+            ai_chance = { factor = 100 }
+         }
+} 
+country_event = {
+          id = 190053
+          title = "SF_independencetitle2"
+          desc = "SF_independencedecs2"
+          picture = "SF_independencepicture2"
+           trigger = {
+               has_global_flag = SF_independence2
+               not = { has_country_flag = SF_independence22 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+          option = {
+          name = "SF_independenceoption2" 
+          set_country_flag = SF_independence22
+            ai_chance = { factor = 100 }
+         }
+} 
+country_event = {
+          id = 190054
+	      fire_only_once = yes
+          title = "SF_independencetitle3"
+          desc = "SF_independencedecs3"
+          picture = "SF_independencepicture3"
+          trigger = {
+		tag = CHI
+               not = { war_with = GER
+                       war_with = JAP }
+                       has_global_flag = JAP_Lost
+                       has_global_flag = GER_Lost 
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+          option = {
+          name = "SF_independenceoption3" 
+          any_owned = { limit = { province_id = 5919 } secede_province = CHI remove_core = FRA change_controller = CHI }
+           CHC = {
+  			country_event = 190055
+		}
+            ai_chance = { factor = 100 }
+         }
+} 
+country_event = {
+          id = 190055
+	      is_triggered_only = yes
+          title = "SF_independencetitle3"
+          desc = "SF_independencedecs3"
+          picture = "SF_independencepicture3"
+          option = {
+          name = "SF_independenceoption3" 
+            ai_chance = { factor = 100 }
+         }
+}
+#印度支那战争
+country_event = {
+	id = 190056
+    major = yes	
+	title = "SF_independencetitle4"
+	desc = "SF_independencedecs4"
+	fire_only_once = yes
+	picture = "SF_independencepicture4"	
+	trigger = {
+              tag = FRA       
+            not = { exists = IDC }
+			has_global_flag = GER_Lost
+			has_global_flag = JAP_Lost
+			has_global_flag = Yaert
+            controls = 5916 #河内 
+            controls = 5945 #海防  
+            controls = 5898 #谅山 
+            controls = 6236 #西贡  
+            controls = 6245 #美寿  
+            controls = 6195 #金兰湾  
+            controls = 6108 #广艺  
+            controls = 6188 #芽庄  
+            controls = 6075 #岘港  
+            controls = 6222 #金边  
+            controls = 6266 #迪石  
+            controls = 6033 #迪哈克科  
+            controls = 6001 #川圹 
+            controls = 6201 #菩萨  
+            controls = 7724 #磅同                
+        }
+	mean_time_to_happen =  { 
+	days = 1 
+	}
+	option = {
+		name = "SF_independenceoption4"
+		set_global_flag = first_war_of_indochine 
+   FRA = { 
+   laos_region = { any_owned = { limit = { controlled_by = FRA } } secede_province = LAO add_core = LAO remove_core = FRA remove_core = IDC change_controller = LAO } 
+   cambodia_region = { any_owned = { limit = { controlled_by = FRA } } secede_province = JAN add_core = JAN remove_core = FRA remove_core = IDC change_controller = FRA } 
+   tonkin_region = { any_owned = { limit = { controlled_by = FRA } } secede_province = YUE add_core = YUE remove_core = FRA remove_core = IDC change_controller = YUE } 
+   annam_region = { any_owned = { limit = { controlled_by = FRA } } add_core = YUE remove_core = FRA remove_core = IDC change_controller = FRA } 
+   cochinchina_region = { any_owned = { limit = { controlled_by = FRA } } add_core = YUE remove_core = FRA remove_core = IDC change_controller = FRA } 
+   war = { target = YUE } 
+   war = { target = LAO }
+   war = { target = JAN }
+   }
+		    YUE = {
+			load_oob = "indochina.txt"
+            create_alliance = JAN
+			create_alliance = LAO
+			}     
+			JAN = {
+			load_oob = "indochina1.txt"
+			}  
+			LAO = {
+			load_oob = "indochina1.txt"
+			}  
+            ai_chance = { factor = 100 }
+           }     
+      }
+      country_event = {
+          id = 190057
+          title = "SF_independencetitle4"
+          desc = "SF_independencedecs4"
+          picture = "SF_independencepicture4"
+             trigger = {
+               has_global_flag = first_war_of_indochine 
+               not = { has_country_flag = first_war_of_indochine1 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+          option = {
+          name = "SF_independenceoption4" 
+          set_country_flag = first_war_of_indochine1
+            ai_chance = { factor = 100 }
+         }
+}

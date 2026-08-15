@@ -1,0 +1,163 @@
+corps = {
+			name = "第15军"
+			location = 7520
+			regiment = { type = hq_brigade name = "第15军司令部" historical_model = 0 }
+			division= {
+				name = "第64师"
+				location = 7520
+				regiment = { type = militia_brigade name = "第191旅" strength = 20 historical_model = 0 }
+				regiment = { type = militia_brigade name = "第192旅" strength = 20 historical_model = 0 }
+				regiment = { type = militia_brigade name = "补充团" strength = 10 historical_model = 0 }
+			}
+			division= {
+				name = "第65师"
+				location = 7520
+				regiment = { type = militia_brigade name = "第194旅" strength = 20 historical_model = 0 }
+				regiment = { type = militia_brigade name = "第195旅" strength = 20 historical_model = 0 }
+				regiment = { type = militia_brigade name = "补充团" strength = 10 historical_model = 0 }
+			}
+		}
+		corps = {
+			name = "第62军"
+			location = 7520
+			regiment = { type = hq_brigade name = "第62军司令部" historical_model = 0 }
+			regiment = { type = militia_brigade name = "独立第44旅" strength = 20 historical_model = 0 }
+			division= {
+				name = "第27师"
+				location = 7520
+				regiment = { type = infantry_brigade name = "第79旅" strength = 20 historical_model = 0 }
+				regiment = { type = militia_brigade name = "第80旅" strength = 20 historical_model = 0 }
+			}
+		}
+		division= {
+			name = "第33师"
+			location = 7520
+			regiment = { type = militia_brigade name = "第33师" historical_model = 0 }
+		}
+	}
+	division= {
+			name = "湖南保安团"
+			location = 7520
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade strength = 20 historical_model = 0 }
+		}
+division= {
+			name = "湖南保安团"
+			location = 7520
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade strength = 20 historical_model = 0 }
+		}
+division= {
+			name = "湖南保安团"
+			location = 7520
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade strength = 20 historical_model = 0 }
+		}
+division= {
+			name = "湖南保安团"
+			location = 7520
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade strength = 20 historical_model = 0 }
+		}
+division= {
+			name = "湖南保安团"
+			location = 7520
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade strength = 20 historical_model = 0 }
+		}
+division= {
+			name = "湖南保安团"
+			location = 7520
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade strength = 20 historical_model = 0 }
+		}
+division= {
+			name = "湖南保安团"
+			location = 7520
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade strength = 20 historical_model = 0 }
+		}
+division= {
+			name = "湖南保安团"
+			location = 7520
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade strength = 20 historical_model = 0 }
+		}
+division= {
+			name = "湖南保安团"
+			location = 7520
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade strength = 20 historical_model = 0 }
+		}
+division= {
+			name = "湖南保安团"
+			location = 7520
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade strength = 20 historical_model = 0 }
+		}
+division= {
+			name = "湖南保安团"
+			location = 7520
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade strength = 20 historical_model = 0 }
+		}
+division= {
+			name = "湖南保安团"
+			location = 7520
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+		}
+division= {
+			name = "湖南保安团"
+			location = 7520
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+		}
+division= {
+			name = "湖南保安团"
+			location = 7520
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+		}
+division= {
+			name = "湖南保安团"
+			location = 7520
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+		}
+division= {
+			name = "湖南保安团"
+			location = 7520
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+		}
+division= {
+			name = "湖南保安团"
+			location = 7520
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+		}
+division= {
+			name = "湖南保安团"
+			location = 7520
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade strength = 20 historical_model = 0 }
+		}

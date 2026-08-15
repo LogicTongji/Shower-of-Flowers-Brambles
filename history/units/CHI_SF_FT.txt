@@ -1,0 +1,230 @@
+armygroup = {
+	name = "第一战区"
+	location = 5143
+	expeditionary_owner = CHI
+	regiment = { type = hq_brigade name = "第一战区长官部" historical_model = 0 }
+	army = {
+		name = "第2集团军"
+		location = 5143
+		expeditionary_owner = CHI
+		regiment = { type = hq_brigade name = "第2集团军指挥部" historical_model = 1 }	
+		corps = {
+			name = "第1军团"
+			location = 5143
+			expeditionary_owner = CHI
+			regiment = { type = hq_brigade name = "第1军团指挥部" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "独立44旅" historical_model = 1 }
+			division= {
+				name = "第27师"
+				location = 5143
+				expeditionary_owner = CHI
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+			}
+			division= {
+				name = "第30师"
+				location = 5143
+				expeditionary_owner = CHI
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+			}
+			division= {
+				name = "第31师"
+				location = 5143
+				expeditionary_owner = CHI
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+			}
+		}
+		corps = {
+			name = "第14军团"
+			location = 5208
+			expeditionary_owner = CHI
+			regiment = { type = hq_brigade name = "第14军团指挥部" historical_model = 0 }
+			division= {
+				name = "第42师"
+				location = 5208
+				expeditionary_owner = CHI
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+			}
+			division= {
+				name = "第169师"
+				location = 5208
+				expeditionary_owner = CHI
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+			}
+		}
+		corps = {
+			name = "第2军"
+			location = 5208
+			expeditionary_owner = CHI
+			regiment = { type = hq_brigade name = "第2军指挥部" historical_model = 0 }
+			division= {
+				name = "第7师"
+				location = 5208
+				expeditionary_owner = CHI
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+			}
+			division= {
+				name = "第12师"
+				location = 5208
+				expeditionary_owner = CHI
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+			}
+		}
+		corps = {
+			name = "第52军"
+			location = 5176
+			expeditionary_owner = CHI
+			regiment = { type = hq_brigade name = "第52军指挥部" historical_model = 0 }
+			division= {
+				name = "第2师"
+				location = 5176
+				expeditionary_owner = CHI
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+			}
+			division= {
+				name = "第25师"
+				location = 5176
+				expeditionary_owner = CHI
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+			}
+		}
+		corps = {
+			name = "骑兵第4军"
+			location = 5273
+			expeditionary_owner = CHI
+			regiment = { type = hq_brigade name = "骑兵第4军指挥部" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "独立5旅" historical_model = 1 }
+			regiment = { type = infantry_brigade name = "独立46旅" historical_model = 1 }
+			regiment = { type = cavalry_brigade name = "骑兵5旅" historical_model = 1 }
+			division= {
+				name = "骑10师"
+				location = 5273
+				expeditionary_owner = CHI
+				regiment = { type = cavalry_brigade experience = 10 historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 10 historical_model = 1 }
+			}
+			division= {
+				name = "第47师"
+				location = 5143
+				expeditionary_owner = CHI
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+			}
+			division= {
+				name = "第17师"
+				location = 5143
+				expeditionary_owner = CHI
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+			}
+			division= {
+				name = "第177师"
+				location = 5143
+				expeditionary_owner = CHI
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+			}
+		}	
+	}
+	army = {
+		name = "第14集团军"
+		location = 5273
+		expeditionary_owner = CHI
+		regiment = { type = hq_brigade name = "第14集团军指挥部" historical_model = 1 }	
+		corps = {
+			name = "第14军"
+			location = 5273
+			expeditionary_owner = CHI
+			regiment = { type = hq_brigade name = "第14军指挥部" historical_model = 0 }
+			division= {
+				name = "第10师"
+				location = 5240
+				expeditionary_owner = CHI
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+			}
+			division= {
+				name = "第83师"
+				location = 5240
+				expeditionary_owner = CHI
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+			}
+			division= {
+				name = "第85师"
+				location = 5143
+				expeditionary_owner = CHI
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }		
+			}
+		}
+	}
+	army = {
+		name = "第20集团军"
+		location = 5143
+		expeditionary_owner = CHI
+		regiment = { type = hq_brigade name = "第14集团军指挥部" historical_model = 1 }	
+		corps = {
+			name = "第32军"
+			location = 5143
+			expeditionary_owner = CHI
+			regiment = { type = hq_brigade name = "第14军指挥部" historical_model = 0 }
+			division= {
+				name = "第139师"
+				location = 5143
+				expeditionary_owner = CHI
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+			}
+			division= {
+				name = "第141师"
+				location = 5143
+				expeditionary_owner = CHI
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+			}
+			division= {
+				name = "第142师"
+				location = 5143
+				expeditionary_owner = CHI
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }		
+			}
+		}
+		corps = {
+			name = "第53军"
+			location = 5143
+			expeditionary_owner = CHI
+			regiment = { type = hq_brigade name = "第53军指挥部" historical_model = 0 }
+			division= {
+				name = "第116师"
+				location = 5143
+				expeditionary_owner = CHI
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }		
+               	 	}
+			division= {
+				name = "第130师"
+				location = 5143
+				expeditionary_owner = CHI
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+			}
+			division= {
+				name = "第91师"
+				location = 5143
+				expeditionary_owner = CHI
+				regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+			regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+			}
+		}
+	}
+}

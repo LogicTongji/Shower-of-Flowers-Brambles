@@ -1,0 +1,294 @@
+#地中华霸权#
+#宣战希腊
+country_event = {
+	id = 203116
+	major = yes
+	fire_only_once = yes
+	title = "GRtitle1"
+	desc = "GRdesc1"
+	picture = "SLHJ"
+	trigger = {
+		tag = ITA
+    war_with = GER
+    OR = {
+    ITA = { 	
+			controls = 4716
+		} 
+		 GER = { 	
+			controls = 4716
+		   } 
+		}
+		GER = { war_with = ENG
+		        war_with = FRA }
+   year = 1939
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "事已至此"
+   GRE = { country_event = 6602 }
+ 		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 6602
+	major = yes
+	is_triggered_only = yes
+	title = "奋起抵抗"
+	desc = "GRdesc2"
+	picture = "EFU"
+	option = {
+		name = "奋起抵抗！"
+     load_oob = "GER_ITA_army.txt"    
+	}
+	option = {
+		name = "算了"    
+	}
+}
+#北欧
+#吉斯林政变
+country_event = {
+	id = 203117
+	major = yes
+	fire_only_once = yes
+	title = "JSLtitle1"
+	desc = "JSLdesc1"
+	picture = "SLHJ"
+	trigger = {
+		tag = NOR
+    war_with = GER
+		 GER = { 	
+			controls = 1482
+		   } 
+		}
+		GER = { war_with = ENG
+		        war_with = FRA }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "呵，随他去吧"
+    NOR = { any_owned = { limit = { province_id = 816 } secede_province = GER } 
+    GER = { load_oob = "Ouslok_army.txt" }
+ 		ai_chance = { factor = 100 }
+	}
+}
+#三国会谈
+country_event = {
+	id = 203118
+	major = yes
+	fire_only_once = yes
+	title = "SEFtitle1"
+	desc = "SEFdesc1"
+	picture = "EFU"
+	trigger = {
+	OR = {
+		tag = ENG
+		tag = SOV
+		tag = FRA
+		}
+   not = { war_with = GER }
+		}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "求同存异，扩大结果"
+   SOV = { country_event = 6603 }
+ 		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 6603
+	major = yes
+	is_triggered_only = yes
+	title = "SEFT"
+	desc = "SEFTD"
+	picture = "EF"
+	option = {
+		name = "我相信德国"  
+		ai_chance = { factor = 0 }
+	}
+	option = {
+		name = "结盟吧"
+		leave_alliance = FRA
+		leave_alliance = ENG
+		ai_chance = { factor = 0 }
+	}
+}
+#出兵波兰
+country_event = {
+	id = 203119
+	major = yes
+	fire_only_once = yes
+	title = "SPLtitle1"
+	desc = "SPLdesc1"
+	picture = "SLHJ"
+	trigger = {
+	tag = SOV
+   POL = { war_with = GER }
+   has_global_flag = Xaction_East_eroup_gizui3
+		}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "出兵"
+    war = { target = POL } 
+ 		ai_chance = { factor = 100 }
+	}
+}
+#进攻波罗的海三国
+country_event = {
+	id = 203120
+	major = yes
+	fire_only_once = yes
+	title = "TGPtitle1"
+	desc = "TGPdesc1"
+	picture = "SLHJ"
+	trigger = {
+	tag = SOV
+   exists = LIT
+	 exists = LAT
+	 exists = EST
+   has_global_flag = Xaction_East_eroup_gizui3
+   has_global_flag = France_lose
+   has_global_flag = FIN_lost1
+		}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "他们应该属于我们"
+    war = { target = LIT } 
+    war = { target = LAT } 
+    war = { target = EST } 
+ 		ai_chance = { factor = 100 }
+	}
+}
+#照会芬兰
+country_event = {
+	id = 203121
+	major = yes
+	fire_only_once = yes
+	title = "FINtitle1"
+	desc = "FINdesc1"
+	picture = "DFZX"
+	trigger = {
+	tag = SOV
+   exists = FIN
+   has_global_flag = Xaction_East_eroup_gizui3
+   POL = { government_in_exile = yes }
+		}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = ""
+    FIN = { country_event = 6501 }
+ 		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 6501
+	is_triggered_only = yes
+	title = "SOVTTQ"
+	desc = "SOVDDQ"
+	picture = "DFZX"
+	option = {
+		name = "一群强盗！"  
+		 war = { target = SOV } 
+		ai_chance = { factor = 100 }
+	}
+	option = {
+		name = "妥协"
+		finland_kymenlaakso = { limit = { controlled_by = FIN } remove_core = FIN secede_province = SOV } 
+		finland_koillismaa = { limit = { controlled_by = FIN } remove_core = FIN secede_province = SOV } 
+		finland_ita_kainuu = { limit = { controlled_by = FIN } remove_core = FIN secede_province = SOV } 
+		 set_global_flag = FIN_lost1
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = 203121
+	major = yes
+	fire_only_once = yes
+	title = "MOSitle1"
+	desc = "MOSdesc1"
+	picture = "DFZX"
+	trigger = {
+	tag = SOV
+   exists = FIN
+   FIN = { war_with = SOV }
+   has_global_flag = Xaction_East_eroup_gizui3
+   SOV = { 	
+		  controls = 697
+		  controls = 657
+		  controls = 580	 
+		  controls = 541	
+		  controls = 570	
+		      }
+		}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "那本该属于我们"
+    finland_kymenlaakso = { limit = { controlled_by = FIN } remove_core = FIN secede_province = SOV } 
+    set_global_flag = FIN_lost1
+ 		ai_chance = { factor = 100 }
+	}
+}
+#照会罗马尼亚
+country_event = {
+	id = 203121
+	major = yes
+	fire_only_once = yes
+	title = "ROMtitle1"
+	desc = "ROMdesc1"
+	picture = "DFZX"
+	trigger = {
+	tag = SOV
+   exists = ROM
+   has_global_flag = Xaction_East_eroup_gizui3
+   SOV = { 	
+		  controls = 1178
+		  controls = 906
+		  controls = 1442		  
+		      }
+		}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = ""
+    ROM = { country_event = 6502 }
+ 		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 6502
+	is_triggered_only = yes
+	title = "SOVRMQ"
+	desc = "SOVRMD"
+	picture = "SLHJ"
+	option = {
+		name = "荒唐！"  
+		 war = { target = SOV } 
+		ai_chance = { factor = 0 }
+	}
+	option = {
+		name = "唉"
+		ROM_3515 = { limit = { controlled_by = FIN } remove_core = FIN secede_province = SOV } 
+		ROM_3306 = { limit = { controlled_by = FIN } remove_core = FIN secede_province = SOV } 
+		ROM_3307 = { limit = { controlled_by = FIN } remove_core = FIN secede_province = SOV } 
+		ROM_3513 = { limit = { controlled_by = FIN } remove_core = FIN secede_province = SOV } 
+		ai_chance = { factor = 100 }
+	}
+}
+
+
+
+

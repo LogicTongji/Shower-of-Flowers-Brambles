@@ -1,0 +1,15 @@
+owner = POL
+controller = POL
+add_core = POL
+
+infra = 8
+air_base = 2
+1940.5.10 = {
+	controller = GER
+}
+1945.6.7 = {
+	controller = POL
+	owner = POL
+	add_core = POL
+	remove_core = GER
+}

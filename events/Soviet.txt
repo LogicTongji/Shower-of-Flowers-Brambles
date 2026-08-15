@@ -1,0 +1,226 @@
+#########################
+# The End of Tannu Tuva #
+#########################
+country_event = {
+	
+	id = 2101
+
+	trigger = {
+		tag = TAN
+		exists = SOV
+		faction = comintern
+		year = 1944
+		controls = 8793
+		controls = 8767 
+		controls = 8794 
+		controls = 8741 
+		controls = 8768 
+		controls = 8820 
+	}
+
+	mean_time_to_happen =  {
+		months = 2
+	}
+
+	title = "EVTNAME2101"
+	desc = "EVTDESC2101"
+	#picture = "tannu_tuva"
+
+	option = {
+		name = "EVTOPTA2101"			# Sign the agreement
+		ai_chance = { factor = 100 }
+		dissent = -5
+		leave_faction = comintern
+		SOV = { country_event = 2102 }
+	}
+	option = {
+		name = "EVTOPTB2101"			# Reject the agreement
+		dissent = 1
+		money = -25
+	}
+}
+
+# Tannu Tuva Signs the Agreement
+country_event = {
+	
+	id = 2102
+
+	is_triggered_only = yes
+
+	title = "EVTNAME2102"
+	desc = "EVTDESC2102"
+	#picture = "tannu_tuva"
+
+	option = {
+		name = "EVTOPTA2102"			# A great moment for our nation
+		ai_chance = { factor = 100 }
+		relation = { who = CHI value = -100 }
+		inherit = TAN
+		add_core = 8793 
+		add_core = 8767 
+		add_core = 8794 
+		add_core = 8741 
+		add_core = 8768 
+		add_core = 8820
+		dissent = -1
+		money = 100
+	}
+	option = {
+		name = "EVTOPTB2102"			# This is not necessary
+		dissent = -1
+		money = -200
+	}
+}
+
+#########################
+# The Great Patriotic War #
+#########################
+country_event = {
+	
+	id = 2103
+
+	title = "EVTNAME2103"
+	desc = "EVTDESC2103"
+
+	
+	trigger = {
+			TAG = SOV
+			war_with = GER
+			NOT = { has_country_flag = Soviet_MP }
+			GER = {
+			OR = {
+				controls = 1534
+				controls = 2223
+				controls = 1991
+				controls = 3175
+				controls = 1535
+				controls = 1182
+				controls = 1102
+				controls = 909
+				controls = 782
+			
+			}
+		}
+	}
+
+
+	mean_time_to_happen =  {
+		months = 2
+	}
+	
+	option = {
+		name = "EVTOPTA2103"	#Crush the invader!
+		ai_chance = { factor = 100 }
+		manpower = 500
+		set_country_flag = Soviet_MP
+		add_country_modifier = {
+			name = "great_patriotic_war"
+			duration = -1
+		}
+	}
+}
+	
+###################################
+# Transfer of Industry to Siberia #
+###################################
+country_event = {
+	
+	id = 2104
+
+	title = "EVTNAME2104"
+	desc = "EVTDESC2104"
+
+	trigger = {	
+		TAG = SOV
+		war_with = GER
+		NOT = { has_country_flag = Soviet_industry }
+	}
+
+	option = {
+		name = "EVTOPTA2104"	# Leave it where it is!
+		manpower = 200
+		set_country_flag = Soviet_industry
+		ai_chance = { factor = 0 }		
+	}
+
+	option = {
+		name = "EVTOPTB2104"	# Our industrial base is threatened!
+		ai_chance = { factor = 33 }
+		
+		8211 = { industry = 5 } # Sverdlovsk
+		8366 = { industry = 5 } # Kopeysk
+		782 = { industry = -2 } # Leningrad
+		1231 = { industry = -1 } # Kalinin
+		1235 = { industry = -1 } # Ivanovo
+		1278 = { industry = -1 } # Vladimir
+		1991 = { industry = -1 } # Homyel'
+		2049 = { industry = -1 } # Chernihiv
+		2222 = { industry = -1 } # Makhrovka
+		2575 = { industry = -1 } # Vinnytsya
+		3581 = { industry = -1 } # Sevastopol
+		set_country_flag = Soviet_industry
+	}
+
+	option = {
+		name = "EVTOPTC2104"	# A major transfer is needed
+		ai_chance = { factor = 34 }
+		
+		6730 = { industry = 3 } # Kustenay
+		8211 = { industry = 9 } # Sverdlovsk
+		8314 = { industry = 2 } # Teca
+		8366 = { industry = 8 } # Kopeysk
+		782 = { industry = -3 } # Leningrad
+		1231 = { industry = -1 } # Kalinin
+		1235 = { industry = -1 } # Ivanovo
+		1278 = { industry = -1 } # Vladimir
+		1409 = { industry = -3 } # Moscow
+		1498 = { industry = -1 } # Kaluga
+		1536 = { industry = -2 } # Dorogobuz
+		1586 = { industry = -1 } # Kirov
+		1991 = { industry = -1 } # Homyel'
+		2049 = { industry = -1 } # Chernihiv
+		2222 = { industry = -1 } # Makhrovka
+		2517 = { industry = -1 } # Cherkasy
+		2519 = { industry = -1 } # Poltava
+		2575 = { industry = -1 } # Vinnytsya
+		3313 = { industry = -2 } # Krasnodor
+		3581 = { industry = -1 } # Sevastopol
+		set_country_flag = Soviet_industry
+	}
+
+	option = {
+		name = "EVTOPTD2104"	# Leave them nothing!
+		ai_chance = { factor = 33 }
+		
+		6730 = { industry = 3 } # Kustenay
+		8211 = { industry = 9 } # Sverdlovsk
+		8314 = { industry = 6 } # Teca
+		8366 = { industry = 8 } # Kopeysk
+		8594 = { industry = 4 } # Novosibirsk
+		8528 = { industry = 4 } # Omsk
+		782 = { industry = -4 } # Leningrad
+		784 = { industry = -1 } # Tihvin
+		790 = { industry = -1 } # Vologda
+		1231 = { industry = -1 } # Kalinin
+		1235 = { industry = -1 } # Ivanovo
+		1278 = { industry = -1 } # Vladimir
+		1409 = { industry = -6 } # Moscow
+		1498 = { industry = -1 } # Kaluga
+		1501 = { industry = -1 } # Rjazan
+		1536 = { industry = -2 } # Dorogobuz
+		1586 = { industry = -1 } # Kirov
+		1941 = { industry = -1 } # Orel
+		1991 = { industry = -1 } # Homyel'
+		2049 = { industry = -1 } # Chernihiv
+		2222 = { industry = -1 } # Makhrovka
+		2227 = { industry = -1 } # Sumy
+		2517 = { industry = -1 } # Cherkasy
+		2519 = { industry = -1 } # Poltava
+		2575 = { industry = -1 } # Vinnytsya
+		2913 = { industry = -2 } # Rostov-na-Don
+		3313 = { industry = -2 } # Krasnodor
+		3380 = { industry = -1 } # Novorossijsk
+		3581 = { industry = -1 } # Sevastopol
+		set_country_flag = Soviet_industry
+	}
+}

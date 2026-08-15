@@ -1,0 +1,68 @@
+corps = {					
+	name = "第1集团军"				
+	location = 5834				
+	leader = 4000133
+	regiment = { type = hq_brigade name = "粤军" historical_model = 0 }
+	division= {				
+		name = "第1军"			
+		location = 5834				
+		leader = 4000118
+		regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+		regiment = { type = bergsjaeger_brigade historical_model = 0 }	
+		regiment = { type = infantry_brigade historical_model = 0 }	
+		regiment = { type = infantry_brigade historical_model = 0 }	
+	}
+	division= {				
+		name = "第2军"			
+		location = 5834				
+		leader = 4000119
+		regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+		regiment = { type = infantry_brigade historical_model = 0 }	
+		regiment = { type = infantry_brigade historical_model = 0 }	
+		regiment = { type = infantry_brigade historical_model = 0 }	
+	}				
+	division= {				
+		name = "第3军"			
+		location = 5834				
+		leader = 4000120
+		regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+		regiment = { type = infantry_brigade historical_model = 0 }	
+		regiment = { type = infantry_brigade historical_model = 0 }	
+		regiment = { type = infantry_brigade historical_model = 0 }	
+	}				
+	division= {				
+		name = "第4军"			
+		location = 5834				
+		leader = 4000121
+		regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+		regiment = { type = infantry_brigade historical_model = 0 }	
+		regiment = { type = infantry_brigade historical_model = 0 }	
+		regiment = { type = infantry_brigade historical_model = 0 }	
+	}				
+	division= {				
+		name = "第5军"			
+		location = 5834				
+		leader = 4000122
+		regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+		regiment = { type = infantry_brigade historical_model = 0 }	
+		regiment = { type = infantry_brigade historical_model = 0 }	
+		regiment = { type = infantry_brigade historical_model = 0 }	
+	}	
+	division= {				
+		name = "警卫军"			
+		location = 5834		
+		leader = 4000123
+		is_reserve = yes		
+		regiment = { type = militia_brigade historical_model = 0 }		
+		regiment = { type = militia_brigade historical_model = 0 }	
+		regiment = { type = militia_brigade historical_model = 0 }	
+		regiment = { type = militia_brigade historical_model = 0 }	
+	}									
+}
+air = {
+	name = "广东空军"
+	base = 5834
+	location = 5834
+	leader = 4000117
+	wing = { type = interceptor name = "广东空军" historical_model = 1 }
+}

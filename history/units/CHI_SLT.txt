@@ -1,0 +1,91 @@
+	armygroup = {
+		name = "苏鲁战区"
+		location = 5386
+		leader = 50278
+		regiment = { type = hq_brigade name = "苏鲁战区长官部" historical_model = 1 }
+		army = { 
+			name = "第24集团军"
+		location = 5386
+		leader = 50278
+		regiment = { type = hq_brigade name = "第24集团军长官部" historical_model = 1 }
+			corps = {
+				name = "第51军"
+				location = 5386
+				leader = 50197
+				regiment = { type = hq_brigade name = "第51军司令部" historical_model = 1 }
+				division = {
+					name = "第113师"
+					location = 5386
+					regiment = { type = infantry_brigade historical_model = 1 }
+					regiment = { type = infantry_brigade historical_model = 1 }
+				}
+				division = {
+					name = "第114师"
+					location = 5386
+					regiment = { type = infantry_brigade historical_model = 1 }
+					regiment = { type = infantry_brigade historical_model = 1 }
+				}
+			}
+				corps = {
+				name = "第57军"
+				location = 5386
+				leader = 50197
+				regiment = { type = hq_brigade name = "第57军司令部" historical_model = 1 }
+				division = {
+					name = "第8师"
+					location = 5386
+					regiment = { type = infantry_brigade historical_model = 1 }
+					regiment = { type = infantry_brigade historical_model = 1 }
+				}
+				division = {
+					name = "第97师"
+					location = 5386
+					regiment = { type = infantry_brigade historical_model = 1 }
+					regiment = { type = infantry_brigade historical_model = 1 }
+				}
+				division = {
+					name = "新编第34师"
+					location = 5386
+					regiment = { type = For_the_occasion_brigade historical_model = 1 }
+					regiment = { type = For_the_occasion_brigade historical_model = 1 }
+				}
+		}
+					corps = {
+				name = "第89军"
+				location = 5386
+				leader = 50197
+				regiment = { type = hq_brigade name = "第89军司令部" historical_model = 1 }
+				division = {
+					name = "独立第6旅"
+					location = 5386
+					regiment = { type = For_the_occasion_brigade historical_model = 1 }
+				}
+					division = {
+					name = "第33师"
+					location = 5386
+					regiment = { type = infantry_brigade historical_model = 1 }
+					regiment = { type = infantry_brigade historical_model = 1 }
+				}
+				division = {
+					name = "第117师"
+					location = 5386
+					regiment = { type = For_the_occasion_brigade historical_model = 1 }
+					regiment = { type = For_the_occasion_brigade historical_model = 1 }
+				}
+			}
+		division = {
+					name = "暂编第8军"
+					location = 5386
+					regiment = { type = militia_brigade historical_model = 1 }
+					regiment = { type = militia_brigade historical_model = 1 }
+					regiment = { type = militia_brigade historical_model = 1 }
+				}		
+		division = {
+					name = "游击纵队"
+					location = 5386
+					regiment = { type = militia_brigade historical_model = 1 }
+					regiment = { type = militia_brigade historical_model = 1 }
+					regiment = { type = militia_brigade historical_model = 1 }
+				}	
+		}	
+	

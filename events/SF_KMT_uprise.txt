@@ -1,0 +1,219 @@
+#国军投诚事件组
+#卢汉云南起义
+country_event = {
+	id = 801761
+	major = yes
+	fire_only_once = yes
+	title = "LUtitle"
+	subtitle = "LUsubtitle"
+	desc = "LUecs"
+	picture = "CHI_flag"
+	trigger = {
+		tag = CHC
+		exists = CHC
+			CHC = { 	
+			controls = 9478
+			controls = 7508
+			controls = 7520
+		}
+		has_global_flag = China_CivilWar4 
+		has_country_flag = Uaction_PRC
+		has_global_flag = China_CivilWar_hunan
+	}
+        mean_time_to_happen =  {
+	        days = 1
+    }
+	option = {
+		name = "LUCOP" 
+     CHC = { inherit = CYN }
+     CHC = {  load_oob = "CHC_Yunnan.txt" }
+	 SF_china_region = { remove_core = CYN }
+     set_global_flag = China_CivilWar_Yunnan 
+       	}
+}
+country_event = {
+	id = 80176
+	major = yes
+	fire_only_once = yes
+	title = "LUtitle"
+	subtitle = "LUsubtitle"
+	desc = "LUecs"
+	picture = "CHI_flag"
+	trigger = {
+		tag = PRC
+			PRC = { 	
+			controls = 9478
+			controls = 7508
+			controls = 7520
+		}
+		has_global_flag = China_CivilWar4 
+		has_country_flag = Uaction_PRC
+		has_global_flag = China_CivilWar_hunan
+	}
+        mean_time_to_happen =  {
+	        days = 1
+    }
+	option = {
+		name = "LUCOP" 
+     PRC = { inherit = CYN }
+     PRC = {  load_oob = "CHC_Yunnan.txt" }
+	 SF_china_region = { remove_core = CYN }
+     set_global_flag = China_CivilWar_Yunnan 
+       	}
+}
+#贵州起义
+country_event = {
+	id = 80192
+	major = yes
+	fire_only_once = yes
+	title = "Event80192title"
+	desc = "Event80192desc"
+	picture = "CHI_flag"
+	trigger = {
+		tag = CHI
+		has_global_flag = China_CivilWar
+		has_country_flag = Uaction_PRC
+		has_global_flag = China_CivilWar4
+		has_global_flag = China_CivilWar_hunan
+		has_global_flag = China_CivilWar_Yunnan
+	}
+        mean_time_to_happen =  {
+	        days = 1
+    }
+	option = {
+		name = "LUCOP"
+		CHI = { guizhou_region = { limit = { controlled_by = CHI } secede_province = PRC change_controller = PRC } } 	
+		 PRC = { load_oob = "CHC_Guizhou.txt" }
+        }
+}
+#湖南起义
+country_event = {
+	id = 80193
+	major = yes
+	fire_only_once = yes
+	title = "Event80193title"
+	desc = "Event80193desc"
+	picture = "CHC_flag"
+	trigger = {
+		tag = CHI
+		has_global_flag = China_CivilWar
+		has_global_flag = China_CivilWar4
+		CHC = { 	
+		  controls = 7508
+		  }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+    }
+	option = {
+		name = "LUCOP"
+		kill_leader = 50041
+		kill_leader = 50034
+		CHI = { hunan_region = { limit = { controlled_by = CHI } secede_province = CHC change_controller = CHI } } 		 
+		set_global_flag = China_CivilWar_hunan
+			CHC = {
+		  load_oob = "Lakesouth.txt"
+		  }
+        }
+}
+#国民党海军起义
+country_event = {
+	id = 80194
+	fire_only_once = yes
+	title = "Event80194title"
+	desc = "Event80194desc"
+	picture = "CHI_flag"
+	trigger = {
+		tag = CHI
+		war_with = CHC
+			CHC = { 	
+		  controls = 4979
+			controls = 5018
+			controls = 5515
+		}
+		has_global_flag = China_CivilWar
+	}
+        mean_time_to_happen =  {
+	        days = 1
+    }
+	option = {
+		name = "NACOP"
+		CHC = { country_event = 20205 }
+        }
+}
+country_event = {
+	id = 20205
+	major = yes
+	is_triggered_only = yes
+	title = "Event20205title"
+	desc = "Event20205desc"
+	picture = "CHC_flag"
+	option = {
+		name = "MPOCOP"
+    load_oob = "CHC_nave.txt"
+        }
+}
+#傅作义起义
+country_event = {
+	id = 8019
+	is_triggered_only = yes
+	major = yes
+	title = "Event8019title"
+	desc = "Event8019desc"
+	picture = "CHC_flag"
+	option = {
+		name = "Event8019option1"
+		  load_oob = "CSY_1949.txt"
+       }
+}
+#绥远起义
+country_event = {
+	id = 80191
+	major = yes
+	fire_only_once = yes
+	title = "Event80191title"
+	desc = "Event80191desc"
+	picture = "CHC_flag"
+	trigger = {
+		tag = CHC
+		not = { exists = PRC }
+		has_global_flag = China_CivilWar
+		has_global_flag = China_CivilWar4
+	}
+        mean_time_to_happen =  {
+	        days = 1
+    }
+	option = {
+		name = "Event8019option1"
+		CHC = { inherit = CSY } 
+		set_country_flag = CivilWar_suiyuan_uprise
+		 SF_china_region = { remove_core = CSY }
+		  load_oob = "CSY_1949(2).txt"
+        }
+}
+#宁夏起义
+country_event = {
+	id = 801915
+	major = yes
+	fire_only_once = yes
+	title = "Event80196title"
+	desc = "Event80196desc"
+	picture = "CHC_flag"
+	trigger = {
+		tag = CHC
+		has_global_flag = China_CivilWar
+		has_country_flag = CivilWar_suiyuan_uprise
+		has_global_flag = China_CivilWar4
+		CHC = { 	
+			controls = 9170
+		}
+	}
+        mean_time_to_happen =  {
+	        days = 1
+    }
+	option = {
+		name = "Event8019option1"
+		CHC = { inherit = CNM } 
+		 SF_china_region = { remove_core = CNM }
+        }
+}

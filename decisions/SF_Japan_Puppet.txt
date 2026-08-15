@@ -1,0 +1,274 @@
+########################
+#   各伪政权建立决议   #
+########################
+diplomatic_decisions = {
+#蒙古军政府
+	independent_MEA = {
+		major = yes
+		potential = {
+			tag = JAP
+			not = { has_country_flag = independent_MEA }
+			has_global_flag = Japan_set_Mokokou
+			NOT = { year = 1937 }
+            date = 1936.5.12
+		}
+		allow = {
+			NOT = { exists = MEA }
+			OR = {
+			JAP = {
+				controls = 4932
+			}
+			MEC = {
+				controls = 4932
+			}
+		  }
+		}
+		effect = {
+			mengkukuo_region = { add_core = MEA remove_core = JAP }
+			MEA = { inherit = MEC
+					}
+			MEA = { 
+				manpower = 100
+				load_oob = "MEA_military.txt"
+				threat = { who = CSY value = -75 }
+			}
+			CHI = { country_event = 12230 }
+			CHC = { country_event = 12230 }
+			CSY = { country_event = 12230 }
+			set_country_flag = independent_MEA
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#蒙疆联合自治政府
+	independent_MEB = {
+		major = yes
+		potential = {
+			tag = JAP
+			NOT = { exists = MEA }
+			JAP = {
+				controls = 4932
+				controls = 5017
+			}
+			war_with = CHI
+			not = { has_country_flag = independent_mengkukuo }
+		}
+		allow = {
+			NOT = { exists = MEB }
+		}
+		effect = {
+		CJB = { country_event = 1000039 }
+			mengkukuo_region = { add_core = MEB remove_core = JAP }
+			4932 = { points = -1 }
+			4978 = { points = 1 }
+			CSY = {		
+				mengkukuo_region = { limit = { controlled_by = JAP } secede_province = MEB }
+			}
+			CJC = {		
+				mengkukuo_region = { limit = { controlled_by = JAP } secede_province = MEB }
+			}
+			CHI = {		
+				mengkukuo_region = { limit = { controlled_by = JAP } secede_province = MEB }
+			}
+			CHC = {		
+				mengkukuo_region = { limit = { controlled_by = JAP } secede_province = MEB }
+			}
+			CSX = {		
+				mengkukuo_region = { limit = { controlled_by = JAP } secede_province = MEB }
+			}
+			JAP = {	
+				mengkukuo_region = { limit = { NOT = { OR = { controlled_by = CHC controlled_by = CHI controlled_by = CSY controlled_by = CJC } } } secede_province = MEB }
+				mengkukuo_region = { limit = { controlled_by = CHC } secede_province = MEB change_controller = CHC }
+				mengkukuo_region = { limit = { controlled_by = CHI } secede_province = MEB change_controller = CHI }
+				mengkukuo_region = { limit = { controlled_by = CSY } secede_province = MEB change_controller = CSY }
+				mengkukuo_region = { limit = { controlled_by = CJC } secede_province = MEB change_controller = CJC }
+			}
+			create_vassal = MEB
+					  mengkukuo_region = { remove_core = MEA }
+			MEB = { 
+				manpower = 500
+				load_oob = "MEB_military.txt"
+			}
+			set_country_flag = independent_mengkukuo
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#中华民国临时政府
+	independent_CHB = {
+		major = yes
+		potential = {
+			tag = JAP
+			war_with = CHI
+			JAP = {
+				controls = 4979
+				controls = 5275
+				controls = 5246
+				controls = 5174
+				controls = 5018
+			}
+			not = { has_country_flag = independent_CHB }
+			NOT = { exists = CSD }
+		}
+		allow = {
+			NOT = { exists = CHB }
+			NOT = { year = 1940 }
+		}
+		effect = {
+			hebei_region = { add_core = CHB remove_core = CJD }
+			henan_region = { add_core = CHB }
+			shandong_region = { add_core = CHB }
+			shanxi_region = { add_core = CHB }
+                        CHI = {		
+				national_unity = -5
+				hebei_region = { limit = { controlled_by = JAP } secede_province = CHB	}	
+			        shandong_region = { limit = { controlled_by = JAP } secede_province = CHB	}				
+			}
+			JAP = {	
+				hebei_region = { limit = { controlled_by = CHI } secede_province = CHB change_controller = CHI }
+				shandong_region = { limit = { controlled_by = CHI } secede_province = CHB change_controller = CHI }
+				hebei_region = { secede_province = CHB	}
+				shandong_region = { secede_province = CHB }
+			}
+			CJD = { country_event = 1000034 }
+			create_vassal = CHB
+			CHB = { 
+				manpower = 500
+				load_oob = "CHB_military.txt"
+			}
+			set_country_flag = independent_CHB
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#中华民国维新政府
+	independent_CJS = {
+		major = yes
+		potential = {
+			tag = JAP
+			NOT = { exists = CJS }
+			JAP = {
+				controls = 5515
+				controls = 5494
+				controls = 5542 
+			}
+			war_with = CHI
+			not = { has_country_flag = independent_CJS }
+		}
+		allow = {
+		NOT = { exists = CSD }
+		NOT = { year = 1940 }
+		}
+		effect = {
+			chekiang_region = { add_core = CJS }
+			anhui_region = { add_core = CJS	}
+			jiangsu_region = { add_core = CJS }
+			SF_CJB_region = { remove_core = CJB }
+			CHI = {		
+				national_unity = -10
+				anhui_region = { limit = { controlled_by = JAP } secede_province = CJS	}
+				jiangsu_region = { limit = { controlled_by = JAP } secede_province = CJS }
+				anhui_region = { limit = { NOT = { controlled_by = JAP } } secede_province = CJS change_controller = CHI }
+				jiangsu_region = { limit = { NOT = { controlled_by = JAP } } secede_province = CJS change_controller = CHI }
+			}
+			JAP = {	
+				anhui_region = { limit = { controlled_by = CHI } secede_province = CJS change_controller = CHI }
+				jiangsu_region = { limit = { controlled_by = CHI } secede_province = CJS change_controller = CHI }
+				anhui_region = { secede_province = CJS	}
+				jiangsu_region = { secede_province = CJS }
+			}
+			create_vassal = CJS
+			CJS = { 
+				manpower = 500
+				inherit = CJB
+				load_oob = "CJS_military.txt"
+			}
+			set_country_flag = independent_CJS
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#中华民国国民政府
+	independent_WJW = {
+		major = yes
+		potential = {
+			tag = JAP
+			NOT = { exists = WJW }
+			has_global_flag = wangjingwei_message
+			war_with = CHI
+			not = { has_country_flag = independent_WJW }
+			has_country_flag = jap_seizes_coast
+		}
+		allow = {
+			not = { CHI = { controls = 5681 } }
+			not = { CHI = { controls = 5494 } }
+			not = { CHI = { controls = 7508 } }
+		}
+		effect = {
+			wjw_region = { add_core = WJW remove_core = CJS remove_core = CHB }
+			CHI = {		
+			national_unity = -5
+				wjw_region = { limit = { controlled_by = JAP } secede_province = WJW }
+			}
+			JAP = {	
+				wjw_region = { limit = { NOT = { OR = { controlled_by = CHC controlled_by = CHI } } } secede_province = WJW }
+				wjw_region = { limit = { controlled_by = CHC } secede_province = CHC }
+				wjw_region = { limit = { controlled_by = CHI } secede_province = WJW change_controller = CHI }
+			}
+			CJS = { country_event = 1000036 }
+			WJW = { 
+				manpower = 750			
+			}
+			create_vassal = WJW
+			set_country_flag = independent_WJW
+			set_global_flag = wangweizf
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#晋北自治政府
+	independent_CJB = {
+		potential = {
+			tag = JAP
+			NOT = { exists = CJB }
+			war_with = CHI
+			not = { has_country_flag = independent_JBSX }
+			JAP = {
+				controls = 4977
+				controls = 5083
+			}
+		}
+		allow = {
+			NOT = { exists = CJB }
+			NOT = { exists = CJS }
+		}
+		effect = {
+			mengkukuo_region = { add_core = MEB remove_core = JAP }
+			CSX = {		
+				SF_CJB_region = { limit = { controlled_by = JAP } secede_province = CJB }
+			}
+			JAP = {	
+				SF_CJB_region = { limit = { NOT = { OR = { controlled_by = CHC controlled_by = CHI controlled_by = CSY controlled_by = CJC } } } secede_province = CJB }
+				SF_CJB_region = { limit = { controlled_by = CHC } secede_province = CJB change_controller = CHC }
+				SF_CJB_region = { limit = { controlled_by = CHI } secede_province = CJB change_controller = CHI }
+				SF_CJB_region = { limit = { controlled_by = CSY } secede_province = CJB change_controller = CSY }
+				SF_CJB_region = { limit = { controlled_by = CJC } secede_province = CJB change_controller = CJC }
+			}
+			create_vassal = CJB
+			MEB = { 
+				manpower = 500
+				load_oob = "CJB_military.txt"
+			}
+			set_country_flag = independent_JBSX
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+

@@ -1,0 +1,89 @@
+###################
+#  飞虎队事件组   #
+###################
+country_event = {
+	id = 390040
+ fire_only_once = yes
+	title = "FHDCND"
+	desc = "FHDCND1"
+	picture = "CHI_Flag"
+	trigger = {
+		tag = CHI		
+		date = 1936.6.1
+		not = { year = 1937 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "SDUOP1"
+		set_country_flag = Event9111100
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 390041
+	 fire_only_once = yes
+	title = "FHDCND2"
+	desc = "FHDCND2_decs"
+	picture = "CHI_Flag"
+	trigger = {
+		tag = CHI		
+		date = 1941.8.1
+		not = { year = 1945 }
+                has_country_flag = Event9111100
+                has_country_flag = Event9111103
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "SDUOP2"
+                   add_country_modifier = {
+			name = "Event2244_modifier"
+			duration = 120
+		}
+		load_oob = FTT.txt
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 390042
+	   fire_only_once = yes
+	title = "FHDCND3"
+	desc = "FHDCND3_decs"
+	picture = "CHI_Flag"
+	trigger = {
+		tag = CHI		
+		date = 1937.8.1
+		not = { year = 1937 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "SDUOP3"
+                7561 = { leadership = 0.3 }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 390043
+	          fire_only_once = yes
+	title = "FHDCND4"
+	desc = "FHDCND4_decs"
+	picture = "CHI_Flag"
+	trigger = {
+		tag = CHI		
+		date = 1941.1.1
+		not = { year = 1945 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "SDUOP4"
+		set_country_flag = Event9111103
+		ai_chance = { factor = 100 }
+	}
+}

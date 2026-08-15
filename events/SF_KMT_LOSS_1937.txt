@@ -1,0 +1,59 @@
+#Æ½ººÂ·´óÀ£°Ü
+country_event = {
+	id = 20005
+	title = "pinghan"
+	desc = "pinghandesc"
+	picture = "pinghan"
+	fire_only_once = yes
+	trigger = {
+		tag = CHI
+		war_with = JAP
+		not = { CHI = { controls = 5143 } }
+		not = { CHI = { controls = 5176 } }
+		not = { has_country_flag = jap_seizes_coast_chi }
+	}
+	mean_time_to_happen =  {
+		days = 1
+	}
+	option = {
+		name = "pinghanname"
+                add_country_modifier = {
+				name = "kuibai_modifier"
+				duration = 50
+				}
+		ai_chance = { factor = 100 }
+		national_unity = -5
+	}
+}
+
+#äÁ»¦À£°Ü
+country_event = {
+	id = 20006
+	title = "songhukuibai"
+	desc = "songhukuibaidesc"
+	picture = "songhukuibai"
+	fire_only_once = yes
+	trigger = {
+		tag = CHI
+		war_with = JAP
+		JAP = { controls = 5542
+		        controls = 14181
+				controls = 5599
+				controls = 14185
+			}
+		not = { has_country_flag = jap_seizes_coast_chi }
+	}
+	mean_time_to_happen =  {
+		days = 2
+	}
+	option = {
+		name = "songhuname"
+                add_country_modifier = {
+				name = "kuibai_modifier"
+				duration = 50
+				}
+				national_unity = -5
+		ai_chance = { factor = 100 }
+	}
+}
+

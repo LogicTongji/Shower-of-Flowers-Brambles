@@ -1,0 +1,513 @@
+##################################
+#   重庆谈判事件组 By Kumamama   #
+##################################
+country_event = {
+	
+	id = 1000310
+	
+	is_triggered_only = yes
+
+	title = "chongqing_n"
+	desc = "chongqing_n_desc"
+	picture = "chongqing_n"
+
+	option = {
+		name = "EVTOPTA1000310"			# 签署协议
+		ai_chance = { factor = 100 }
+                CHI = { non_aggression_pact = CHC }
+                CHC = { country_event = 1000311 }
+				add_country_modifier = {
+					name = "china_stop_war"
+					duration = 130
+				}
+		set_country_flag = chongqing_tanpan
+	}
+	option = {
+		name = "EVTOPTB1000310"			# 这不必要
+		ai_chance = { factor = 0 }
+		relation = { who = CHC value = -100 }
+		CHC = { set_country_flag = began_to_civil_war
+ }
+		CHI = { set_country_flag = began_to_civil_war
+ }
+		CHI = {  
+			leave_faction = axis
+			leave_faction = allies
+			leave_faction = comintern
+		}
+		any_country = {
+  			limit = { vassal_of =  CHI }
+			leave_faction = axis
+			leave_faction = allies
+			leave_faction = comintern
+		}
+		any_country = {
+			limit = {
+				or = {
+					guarantee = CHI
+					alliance_with = CHI
+				}
+			}
+			end_guarantee = CHI
+			leave_alliance = CHI
+		}
+		CHC = {  
+			leave_faction = axis
+			leave_faction = allies
+			leave_faction = comintern
+		}
+		any_country = {
+  			limit = { vassal_of =  CHC }
+			leave_faction = axis
+			leave_faction = allies
+			leave_faction = comintern
+		}
+		any_country = {
+			limit = {
+				or = {
+					guarantee = CHC
+					alliance_with = CHC
+				}
+			}
+			end_guarantee = CHC
+			leave_alliance = CHC
+		}
+		any_country = { 
+			limit = { 
+				exists = CSX
+				TAG = CSX
+			} 
+			country_event = 1000314
+			leave_alliance = CHC
+		}
+		any_country = { 
+			limit = { 
+				exists = CGX
+				TAG = CGX
+			} 
+			country_event = 1000314
+			leave_alliance = CHC
+		}
+		any_country = { 
+			limit = { 
+				exists = CYN
+				TAG = CYN
+			} 
+			country_event = 1000314
+			leave_alliance = CHC
+		}	
+		any_country = { 
+			limit = { 
+				exists = CQM
+				TAG = CQM
+			} 
+			country_event = 1000314
+			leave_alliance = CHC
+		}
+		any_country = { 
+			limit = { 
+				exists = CNM
+				TAG = CNM
+			} 
+			country_event = 1000314
+			leave_alliance = CHC
+		}
+		any_country = { 
+			limit = { 
+				exists = CSY
+				TAG = CSY
+			} 
+			country_event = 1000314
+			leave_alliance = CHC
+		}
+		any_country = { 
+			limit = { 
+				exists = CSD
+				TAG = CSD
+			} 
+			country_event = 1000314
+			leave_alliance = CHC
+		}
+		any_country = { 
+			limit = { 
+				exists = CJC
+				TAG = CJC
+			} 
+			country_event = 1000314
+			leave_alliance = CHC
+		}
+		any_country = { 
+			limit = { 
+				exists = CSC
+				TAG = CSC
+			} 
+			country_event = 1000314
+			leave_alliance = CHC
+		}
+		any_country = { 
+			limit = { 
+				exists = CDB
+				TAG = CDB
+			} 
+			country_event = 1000314
+			leave_alliance = CHC
+		}
+		war = { target = CHC }
+	}
+}
+
+
+country_event = {
+	
+	id = 1000311
+	
+	is_triggered_only = yes
+
+	title = "chongqing_n"
+	desc = "chongqing_n_desc"
+	picture = "chongqing_n"
+
+	option = {
+		name = "EVTOPTA1000310"			# 签署协议
+		ai_chance = { factor = 100 }
+		CHC = { non_aggression_pact = CHI }
+	}
+}
+
+country_event = {
+	is_triggered_only = yes
+	id = 1000312
+	major = yes
+
+	title = "EVTNAME1000312"
+	desc = "EVTDESC1000312"
+	picture = "civil_china_war"
+
+	option = {
+		name = "EVTOPTA1000312"
+		CHC = { set_country_flag = began_to_civil_war
+ }
+		CHI = { set_country_flag = began_to_civil_war
+ }
+		CHI = { relation = { who = CHC value = -100 } }
+		CHI = {  
+			leave_faction = axis
+			leave_faction = allies
+			leave_faction = comintern
+		}
+		any_country = {
+  			limit = { vassal_of =  CHI }
+			leave_faction = axis
+			leave_faction = allies
+			leave_faction = comintern
+		}
+		CHC = {  
+			leave_faction = axis
+			leave_faction = allies
+			leave_faction = comintern
+		}
+		any_country = {
+  			limit = { vassal_of =  CHC }
+			leave_faction = axis
+			leave_faction = allies
+			leave_faction = comintern
+		}
+		any_country = {
+			limit = {
+				or = {
+					guarantee = CHC
+					alliance_with = CHC
+				}
+			}
+			end_guarantee = CHC
+			leave_alliance = CHC
+		}
+		any_country = { 
+			limit = { 
+				exists = CSX
+				TAG = CSX
+			} 
+			country_event = 1000314
+			leave_alliance = CHC
+		}
+		any_country = { 
+			limit = { 
+				exists = CGX
+				TAG = CGX
+			} 
+			country_event = 1000314
+			leave_alliance = CHC
+		}
+		any_country = { 
+			limit = { 
+				exists = CYN
+				TAG = CYN
+			} 
+			country_event = 1000314
+			leave_alliance = CHC
+		}
+		any_country = { 
+			limit = { 
+				exists = CQM
+				TAG = CQM
+			} 
+			country_event = 1000314
+			leave_alliance = CHC
+		}
+		any_country = { 
+			limit = { 
+				exists = CNM
+				TAG = CNM
+			} 
+			country_event = 1000314
+			leave_alliance = CHC
+		}
+		any_country = { 
+			limit = { 
+				exists = CSY
+				TAG = CSY
+			} 
+			country_event = 1000314
+			leave_alliance = CHC
+		}
+		any_country = { 
+			limit = { 
+				exists = CSD
+				TAG = CSD
+			} 
+			country_event = 1000314
+			leave_alliance = CHC
+		}
+		any_country = { 
+			limit = { 
+				exists = CJC
+				TAG = CJC
+			} 
+			country_event = 1000314
+			leave_alliance = CHC
+		}
+		any_country = { 
+			limit = { 
+				exists = CSC
+				TAG = CSC
+			} 
+			country_event = 1000314
+			leave_alliance = CHC
+		}
+		any_country = { 
+			limit = { 
+				exists = CDB
+				TAG = CDB
+			} 
+			country_event = 1000314
+			leave_alliance = CHC
+		}
+		CHI = {	war = { target = CHC }
+		dissent = 30
+		add_country_modifier = {
+					name = "china_bcivil_war1"
+					duration = 240
+				}
+		set_global_flag = CHINA_CIVIL_WAR
+		 }
+		CHC = { 
+		add_country_modifier = {
+					name = "china_civil_war1"
+					duration = 300
+				}	
+		relation = { who = CHI value = -100 } }
+	}
+}
+
+country_event = {
+
+	id = 1000314
+
+	is_triggered_only = yes
+
+	major = yes
+
+	title = "EVTNAME1000314"
+	desc = "EVTDESC1000314"
+	picture = "civil_china_war"
+
+	option = {
+		name = "EVTOPTA1000314"
+		ai_chance = { factor = 100 }
+		create_alliance = CHI
+		war = { target = CHC }
+	}	
+	option = {
+		name = "EVTOPTB1000314"
+		ai_chance = { factor = 0 }
+		relation = { who = CHI value = -300 } 
+	}
+	option = {
+		name = "EVTOPTC1000314"
+		ai_chance = { factor = 0 }
+		relation = { who = CHI value = -300 } 
+	}
+}
+
+#junfa
+country_event = {
+	
+	id = 1000315
+	major = yes
+	trigger = {
+		OR = {
+			tag = CXK
+			tag = SIK
+			tag = TIB
+		}
+		exists = CHC
+		NOT = { exists = CHI }
+		CHC = { has_country_flag = began_to_civil_war }
+		NOT = { war_with = CHC }
+		any_owned_province = { any_neighbor_province = { controlled_by = CHC } }
+		not = { has_country_flag = 1000315civil_war
+ }	
+	}
+		
+	title = "EVTNAME1000324"
+	desc = "EVTDESC1000324"
+	picture = "CHC_Flag"
+
+	option = {
+		name = "EVTOPTA1000324"
+		ai_chance = { factor = 100 }
+		CHC = { inherit = THIS }
+		set_country_flag = 1000315civil_war
+	}
+	option = {
+		name = "EVTOPTB1000324"
+		ai_chance = { factor = 0 }
+		war = { target = CHC }
+		set_country_flag = 1000315civil_war
+	}
+}
+country_event = {
+	
+	id = 1000324
+	major = yes
+	trigger = {
+		OR = {
+			tag = CSX
+			tag = CGX
+			tag = CYN
+			tag = CDB
+			tag = CQM
+			tag = CNM
+			tag = CSY
+			tag = CSD
+			tag = CJC
+			tag = CSC
+		}
+		exists = CHC
+		NOT = { exists = CHI }
+		CHC = { has_country_flag = began_to_civil_war }
+		not = { has_country_flag = 1000315civil_war
+ }	
+		war_with = CHC
+	}
+		
+	title = "EVTNAME1000324"
+	desc = "EVTDESC1000324"
+	picture = "CHC_Flag"
+
+	option = {
+		name = "EVTOPTA1000324"
+		ai_chance = { factor = 70 }
+		CHC = { inherit = THIS }
+		set_country_flag = 1000315civil_war
+	}
+	option = {
+		name = "EVTOPTB1000324"
+		ai_chance = { factor = 30 }
+		set_country_flag = 1000315civil_war
+	}
+}
+
+
+country_event = {
+	
+	id = 1000325
+	major = yes
+	trigger = {
+		OR = {
+			tag = CSX
+			tag = CGX
+			tag = CYN
+			tag = CDB
+			tag = CQM
+			tag = CNM
+			tag = CSY
+			tag = CSD
+			tag = CJC
+			tag = CSC
+			tag = CXK
+			tag = SIK
+			tag = TIB
+		}
+		exists = CHI
+		NOT = { exists = CHC }
+		NOT = { war_with = CHI }
+		NOT = { war_with = JAP }
+		not = { has_country_flag = 1000315civil_war
+ }	
+		CHI = { has_country_flag = began_to_civil_war }
+	}
+	
+	
+	title = "EVTNAME1000325"
+	desc = "EVTDESC1000325"
+	picture = "CHI_Flag"
+
+	option = {
+		name = "EVTOPTA1000325"
+		ai_chance = { factor = 70 }
+		CHI = { inherit = THIS }
+		set_country_flag = 1000315civil_war
+	}
+	option = {
+		name = "EVTOPTB1000325"
+		ai_chance = { factor = 30 }
+		war = { target = CHI }
+		set_country_flag = 1000315civil_war
+	}
+}
+#Nanking_
+country_event = {
+	id = 80171
+	is_triggered_only = yes
+	title = "Event80171title"
+	desc = "Event80171desc"
+	picture = "CHI_flag"
+	option = {
+		name = "Event80171option1"
+		national_unity = -75
+				dissent = 200
+		4979 = { change_province_name = "北京" }
+		5017 = { change_province_name = "呼和浩特" }
+		8955 = { change_province_name = "乌鲁木齐" }
+		4685 = { change_province_name = "沈阳" }
+		4452 = { change_province_name = "长春" }
+		end_war = CHI
+		CHI = {					
+				anhui_region = { secede_province = CHC	}
+				jiangsu_region = { secede_province = CHC }
+				henan_region = { secede_province = CHC }
+				hebei_region = { secede_province = CHC	}
+				shaanxi_region = { secede_province = CHC }
+				shandong_region = { secede_province = CHC }
+				sichuan_region = { secede_province = CHC	}			
+	}
+			ai_chance = { factor = 0 }
+	}
+		option = {
+		name = "Event80171option2"
+	  dissent = -35
+    set_global_flag = Nanking_lizongren
+    		ai_chance = { factor = 100 }
+	}
+}

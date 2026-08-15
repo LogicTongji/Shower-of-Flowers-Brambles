@@ -1,0 +1,572 @@
+xxxx;;;;;;;;;;;;;;x
+YES;拥有;Oui;Ja;;S?;;;;;;;;x,
+NO;无;Non;Nein;;No;;;;;;;;;x,
+MODIFIER_NAVAL_CAPACITY;海军基地容量;Capacit?de la base navale;Flottenst悫zpunkt-Kapazit酹;;Capacidad de base naval;;;;;;;;;x,
+MODIFIER_AIR_CAPACITY;空军基地容量;Capacit?de la base a廨ienne;Luftwaffenst悫zpunkt-Kapazit酹;;Capacidad de base a廨ea;;;;;;;;;x,
+MODIFIER_ALIGN_TOWARDS;外交影响;Aligner vers;Ausrichten nach;;Alinear hacia;;;;;;;;;x,
+MODIFIER_RADAR_LEVEL;雷达站等级;Niveau radar;Radarstufe;;Nivel de radar;;;;;;;;;x,
+INTEL_NONE;没有情报(0);Aucun rens;Keine Aufkl酺ung;;Sin inteligencia;;;;;;;;;x,
+INTEL_STRUCTURES;基本情报(1);Rens 幨?;Einfache Aufkl酺ung;;Inteligencia b嫳ica;;;;;;;;;x,
+INTEL_UNITS;基本情报，未知兵力的师(2);Rens 幨?, divisions dont la puissance est inconnue;Einfache Aufkl酺ung, Divisionen unbekannter St酺ke;;Int. b嫳ica, divisiones de fuerza desconocida;;;;;;;;;x
+INTEL_2;情报等级2;Rens niv. 2;Aufkl酺ungsstufe 2;;Nivel Int. 2;;;;;;;;;x,
+INTEL_3;情报等级3;Rens niv. 3;Aufkl酺ungsstufe 3;;Nivel Int. 3;;;;;;;;;x,
+INTEL_4;情报等级4;Rens niv. 4;Aufkl酺ungsstufe 4;;Nivel Int. 4;;;;;;;;;x,
+INTEL_5;情报等级5;Rens niv. 5;Aufkl酺ungsstufe 5;;Nivel Int. 5;;;;;;;;;x,
+INTEL_6;情报等级6;Rens niv. 6;Aufkl酺ungsstufe 6;;Nivel Int. 6;;;;;;;;;x,
+INTEL_7;情报等级7;Rens niv. 7;Aufkl酺ungsstufe 7;;Nivel Int. 7;;;;;;;;;x,
+MAX_INTEL_LEVEL;全部情报(9);Rens complets;Volle Aufkl酺ung;;Int. completa;;;;;;;;;x,
+April;四月 ;Avril;April;Kwiecie?Abril;Aprile;联rilis;Duben;;;;;;x
+August;八月 ;Ao婿;August;Sierpie?Agosto;Agosto;Augusztus;Srpen;;;;;;x
+December;十二月 ;D嶰embre;Dezember;Grudzie?Diciembre;Dicembre;December;Prosinec;;;;;;x
+February;二月 ;F憝rier;Februar;Luty;Febrero;Febbraio;Febru嫫;猋or;;;;;;x
+Friday;星期五 ;Vendredi;Freitag;Pt;Viernes;Venerd?P幯tek;P嫢ek;;;;;;x
+January;一月 ;Janvier;Januar;Stycze?Enero;Gennaio;Janu嫫;Leden;;;;;;x
+July;七月 ;Juillet;Juli;Lipiec;Julio;Luglio;J莞ius;пrvenec;;;;;;x
+June;六月 ;Juin;Juni;Czerwiec;Junio;Giugno;Jius;пrven;;;;;;x
+March;三月 ;Mars;M酺z;Marzec;Marzo;Marzo;M嫫cius;B鹔zen;;;;;;x
+May;五月 ;Mai;Mai;Maj;Mayo;Maggio;M奫us;Kv鮅en;;;;;;x
+Monday;星期一 ;Lundi;Montag;Pn;Lunes;Luned?H彋f?Pond骴?;;;;;x
+November;十一月 ;Novembre;November;Listopad;Noviembre;Novembre;November;Listopad;;;;;;x
+October;十月 ;Octobre;Oktober;Pa兜ziernik;Octubre;Ottobre;Okt鏏er;崼jen;;;;;;x
+Saturday;星期六 ;Samedi;Samstag;So;S墎ado;Sabato;Szombat;Sobota;;;;;;x
+September;九月 ;Septembre;September;Wrzesie?Septiembre;Settembre;September;Z暟?;;;;;x
+Sunday;星期日 ;Dimanche;Sonntag;Nd;Domingo;Domenica;Vas嫫nap;Ned骴e;;;;;;x
+Thursday;星期四 ;Jeudi;Donnerstag;Cz;Jueves;Gioved?Cs悫顤t闼;юvrtek;;;;;;x,,,,,,,,
+Tuesday;星期二 ;Mardi;Dienstag;Wt;Martes;Marted?Kedd;猲er?;;;;;x,,,,,,,,
+Wednesday;星期三 ;Mercredi;Mittwoch;丯;Mi廨coles;Mercoled?Szerda;St鹔da;;;;;;x,,,,,,,,
+GAIN;获得 ;Gain;Erhalten;Zyskujesz;Ganancia;+;Nyeres嶲;Zisk;;;;;;x,,,,,,,,
+LOSE;失去 ;Perte;Verlieren;Tracisz;P廨dida;-;Vesztes嶲;Ztr嫢a;;;;;;x,,,,,,,,
+SM_COUNTERS;使用兵牌图标 ;Utiliser les pions;;;Usar fichas;;;;;;;;;x,,,,,,,,
+NO_COMMANDER;(没有指挥官) ;(Aucun commandant);(Kein Befehlshaber);(Brak dow鏚cy);(Sin comandante);(senza comandante);(Nincs parancsnok);(Bez velitele);;;;;;x,,,,,,,,
+MORALE;士气;Moral;Moral;Morale;Moral;Morale;Mor嫮;Mor嫮ka;;;;;;x,,,,,,,,
+Owned by $owner$, but currently occupied by $control$;拥有者是$owner$，但目前被$control$占领;Propi彋?de $owner$, mais actuellement sous occupation de $control$;Eigentum von $owner$, aber momentan von $control$ besetzt;Nale篡 do $owner$, ale aktualnie jest okupowana przez $control$.;Owned by $owner$, but currently occupied by $control$;Posseduto da: $owner$, ma attualmente occupato da: $control$;$owner$ tulajdona, de jelenleg $control$ birtokolja;N嫮e麅 $owner$, v sou醀snosti okupov嫕o $control$;;;;;;x
+Owned by $owner$.;拥有者是$owner$。;Propi彋?de  $owner$.;Eigentum von $owner$;Nale篡 do $owner$.;Owned by $owner$.;Posseduto da: $owner$.;$owner$ a tulajdonosa.;N嫮e麅 $owner$.;;;;;;x,,,,,,,,
+CATEGORY;($TYPE$)\n;($TYPE$)\n;($TYPE$)\n;($TYPE$)\n;($TYPE$)\n;($TYPE$)\n;($TYPE$)\n;($TYPE$)\n;;;;;;x,,,,,,,,
+ATTRITION_WEIGHT;单位重量为$VALUE$。;Le poids de l'unit?est de 即$VALUE$劬;Das Einheitengewicht betr輍t 即$VALUE$劬;Ci篹ar jednostki wynosi: 即$VALUE$劬;El peso de la unidad es 即$VALUE$劬;Il peso delle unit??即$VALUE$劬;Az egys嶲 s莞ya: 即$VALUE$劬;Hmotnost jednotky je 即$VALUE$劬;;;;;;x,,,,,,,,
+ATTRITION_MAX;此地区最高损耗为$VALUE$。;Un maximum de 即$VALUE$劬 pour cent ?cet endroit.;Maximal 即$VALUE$劬 Prozent an diesem Ort.;Maksymalnie 即$VALUE$劬 procent w tym miejscu.;M嫞imo de 即$VALUE$劬 por ciento en esta ubicaci鏮.;Un massimo del 即$VALUE$劬 percento in questa posizione.;Maximum 即$VALUE$劬 sz嫙al幧 lehet ezen a helyen.;Maximum z 即$VALUE$劬 procent na t彋o lokaci.;;;;;;x,,,,,,,,
+NO_LEADER;(没有将领);(aucun leader);(kein Anfrer);(brak dow鏚cy);(sin l狝er);(nessun condottiero);(nincs vezet?;(bez velitele);;;;;;x,,,,,,,,
+CV_RULEDBY;由$NAME$统治;gouvern?par $NAME$;Regiert von $NAME$;rz钜zona przez $NAME$;gobernado por $NAME$;governato da $NAME$;Az uralkod铩a: $NAME$;pod vl墂ou $NAME$;;;;;;x,,,,,,,,
+AND;和 ;et ;und ;i ;y ;e ; 廥 ;a;;;;;;x,,,,,,,,
+OR;或 ;ou;oder;lub;o;o; vagy ;nebo;;;;;;x,,,,
+BUILD_COST;建造消耗;Co婿 de construction;Baukosten;Koszt budowy;Coste de construcci鏮;Costi di costruzione;夗癃廥i k阛ts嶲;N嫜lady na vtavbu;;;;;;x,,,,
+LOCAL_REVOLT_RISK;地区叛乱风险 ;Risque de r憝olte locale;Risiko lokaler Revolten;Ryzyko lokalnego buntu;Riesgo de revuelta local;Rischio di rivolta locale;Helyi zend廥 kock嫙ata;Riziko lok嫮n?revolty;;;;;;x,,,,
+GLOBAL_REVOLT_RISK;全国叛乱风险 ;Risque de r憝olte nationale;Risiko nationaler Revolten;Ryzyko buntu narodowego;Riesgo de revuelta nacional;Rischio di rivolta nazionale;Nemzeti zend廥 kock嫙ata;Riziko n嫫odn?revolty;;;;;;x,,,,
+MANPOWER;人力增长 ;Augmentation de la main-d'崠vre;Mannst酺ke-Anstieg;Wzrost si造 ludzkiej;Aumento de rec. hum.;Incremento del potenziale di reclutamento;Munkaer?Vzr鑸t lidskh zdroj?;;;;;x,,,,
+LOCAL_MANPOWER;当地人力修正 ;Modificateur de la main-d'崠vre locale;Lokaler Mannst酺ke-Modifikator;Modyfikator lokalnej si造 ludzkiej;Modificador local a los rec. hum.;Modificatore del potenziale di reclutamento locale;Helyi munkaer?m鏚os癃?Modifik嫢or m疄tn獳h lidskh zdroj?;;;;;x,,,,
+GLOBAL_MANPOWER;全国人力修正 ;Modificateur de la main-d'崠vre nationale;Nationaler Mannst酺ke-Modifikator;Modyfikator og鏊nej si造 ludzkiej;Modificador nacional a los rec. hum.;Modificatore del potenziale di reclutamento nazionale;Nemzeti munkaer?m鏚os癃?Modifik嫢or n嫫odn獳h lidskh zdroj?;;;;;x,,,,
+ATTRITION;损耗 ;Attrition;Verlustquote;Zu篡cie;El desgaste;Logoramento;Elhaszn嫮鏚嫳;Vyhlazov嫕?;;;;;x,,,,
+MAX_ATTRITION;最大损耗 ;Attrition maximale;Maximale Verlustquote;Maksymalne zu篡cie;Desgaste m嫞imo;Logoramento massimo;Maxim嫮is elhaszn嫮鏚嫳;Maxim嫮n?vyhlazov嫕?;;;;;x,,,,
+SUPPLY_LIMIT;补给范围 ;Limite en ravitaillement;Nachschublimit;Limit zapas窥;L璥ite suministros;Limite di fornitura;K廥zlethat嫫;Limit dod嫛ek;;;;;;x,,,,
+WAR_EXHAUSTION;每月厌战度 ;夗uisement de guerre mensuel;Monatliche Kriegsm?igkeit;Miesi璚zne wyczerpanie wojn?Agotamiento b幨ico mensual;Esaurimento di guerra mensile;H墎or kimerts嶲;M鮀膻n?vy鋀rp嫕?v嫮kou;;;;;;x,,,,
+MAX_WAR_EXHAUSTION;最大厌战度 ;夗uisement de guerre maximum;Max. Kriegsm?igkeit;Maksymalne wyczerpanie wojn?Agotamiento b幨ico m嫞imo;Esaurimento di guerra massimo;Maxim嫮is h墎or kimerts嶲;Maxim嫮n?vy鋀rp嫕?v嫮kou;;;;;;x,,,,
+FORT_LEVEL;要塞等级 ;Niveau du fort;Fort-Stufe;Poziom fortyfikacji;Nivel de fortificaci鏮;Livello fortezza;Er髇 szint;猳ove?opevn髶?;;;;;x,,,,
+BACK_TO_MAIN;返回到主界面。 ;Revenir ?l'interface principale;Zum Hauptbildschirm zurkkehren..;Powr鏒 do g尧wnego interfejsu.;Volver a la interfaz principal.;Tornare all'interfaccia principale.;Vissza a f?felethez.;N嫛rat do hlavn?nab狝ky.;;;;;;x,,,,
+ALLREADYTHERE;这座建筑已经完成。 ;Ce b漮iment a d嶴?彋?construit.;Dieses Geb酳de ist schon im Bau.;Ten budynek ju?zosta?zbudowany.;Este edificio ya est?construido.;Questo edificio gi??stato costruito.;Ez az 廧et m嫫 k廥zen van.;Tato budova u?je ve vtab?;;;;;;x,,,,
+NOTECH;我们的$TABLE$必须达到$LVL$级才能继续建造。 ;Nous devons atteindre le niveau 即$LVL$劬 de 即$TABLE$劬 avant de pouvoir construire ce b漮iment.;Wir m惰sen Stufe 即$LVL$劬 in 即$TABLE$劬 erreichen, bevor wir dies bauen k霵nen.;Zanim zbudujesz ten obiekt, musisz osi铆n寞 poziom technologiczny 即$LVL$劬 w 即$TABLE$劬.;Tenemos que alcanzar el nivel 即$LVL$劬 en 即$TABLE$劬 antes de construir esto.;Dobbiamo raggiungere il livello 即$LVL$劬 in 即$TABLE$劬 prima di costruire questo edificio.;Csak akkor tudod ezt meg廧癃eni, ha m嫫 el廨ted a 即$LVL$劬 szintet a k饘etkez鳆幨: 即$TABLE$劬 .;Ne?budeme moci zah奫it tuto stavbu, mus璥e dos墏nout ovn?即$LVL$劬 v 即$TABLE$劬;;;;;;x
+REQ;您不能建造这个设施除非已经建造了 ;Vous ne pouvez pas construire ceci sans avoir construit le premier b漮iment;Sie k霵nen dies nicht bauen ohne;Najpierw trzeba zbudowa?inny budynek;No puedes construir esto sin construir primero;Non puoi costruire questo senza prima costruire:;Az els?廧et n幨k ezt nem tudod meg廧癃eni.;Tuto stavbu nelze postavit, ani?byste nap鹔d nevybudovali;;;;;;x,,,
+NOTBUILD;这座建设筑物不能建在这里。 ;Ce b漮iment ne peut 齇re construit ici.;Dieses Geb酳de kann hier nicht gebaut werden.;Tego budynku nie mo积a tu zbudowa?;No puedes construir este edificio aqu?;Non ?possibile costruire questo edificio qui.;Ezt az 廧etet ide nem 廧癃heted meg.;Tuto stavbu zde nelze postavit.;;;;;;x,,,,
+ISBLOCKED;不能重复建筑 ;Vous ne pouvez pas construire ce b漮iment si vous l'avez d嶴?construit;Sie k霵nen dies nicht bauen, denn Sie bauten schon;Nie mo瞠sz zbudowa?tego budynku, je?i zbudowa贯?ju?No puedes construir esto si ya has construido;Non puoi costruire questo edificio se hai gi?costruito;Nem tudod ezt meg廧癃eni, ha m嫫 rendelkezel ilyennel.;Tuto stavbu nelze postavit, pokud u?jste postavili;;;;;;x
+CONFIRMBUILDTITLE;确认建造。 ;Confirmer la construction.;Bau best酹igen;Potwierd?budow?;Confirmar construcci鏮.;Confermare la costruzione.;夗癃廥 elfogad嫳a.;Potvrdit stavbu.;;;;;;x,,,,
+CONFIRMBUILDTEXT;您确定要建造？ ;厎es-vous certain de vouloir construire ?;Sind Sie sicher mit dem Bau von;Na pewno chcesz zbudowa?烫eguro que quieres construir?;Sei certo di voler costruire:;Biztos vagy benne, hogy 廧癃eni szeretn幨?;Skute锊?chcete postavit;;;;;;x,,,
+ONGOINGBUILD;一个建筑目前正在进行中。 ;Une construction est actuellement en cours.;Ein Bau ist derzeit im Gange.;Budowa w toku.;Una construcci鏮 se encuentra actualmente en progreso.;Una costruzione ?attualmente in corso.;Az 廧癃m幯y jelenleg 廧癃廥 alatt 嫮l.;Vtavba prob珰?;;;;;;x,,,,
+NOT_IN_CAPITAL;$BUILDING$只能在首都建造。 ;$BUILDING$ peut uniquement 齇re construit dans une capitale.;Dies kann nur in einer Hauptstadt gebaut werden.;Ten obiekt mo积a zbudowa?wy章cznie w stolicy.;$BUILDING$ solo puede construirse en una capital.;Pu?essere costruito solo in una capitale.;Ezt csak egy f鳇嫫osban tudod meg廧癃eni.;$BUILDING$ lze postavit pouze v hlavn璥 m鮀t?;;;;;;x,,,,
+NOT_IN_PORT;$BUILDING$只能在港口建造。 ;$BUILDING$ peut uniquement 齇re construit dans un port.;Dies kann nur in einem Hafen gebaut werden;Ten obiekt mo积a zbudowa?wy章cznie w porcie.;$BUILDING$ solo puede construirse en un puerto.;Pu?essere costruito solo in un porto.;Ezt csak egy kik飙骟en tudod meg廧癃eni.;$BUILDING$ lze postavit pouze v p腭stavu.;;;;;;x,,,,
+COST;消耗：$AMOUNT$金钱\n建造时间：$TIME$天;Co婿 : 即$AMOUNT$劬 Ducats \nDur嶪 de construction : 即$TIME$劬 jours;Kosten: 即$AMOUNT$劬 Dukaten \nBauzeit: 即$TIME$劬 Tage;Koszt: 即$AMOUNT$劬 dukat窥 \nCzas budowy: 即$TIME$劬 dni;Coste: 即$AMOUNT$劬 Ducados \nTiempo de construcci鏮: 即$TIME$劬 d燰s;Costo: 即$AMOUNT$劬 ducati \nTempo di costruzione: 即$TIME$劬 giorni;K阛ts嶲: 即$AMOUNT$劬 duk嫢 \n 夗癃廥i id? 即$TIME$劬 nap;Cena: 即$AMOUNT$劬 duk嫢?\nD幨ka vtavby: 即$TIME$劬 dn?;;;;;x,,,,
+PROVINCE_OCCUPIED;这个省份正被占领。 ;Cette province est occup嶪.;Diese Provinz ist besetzt.;Ta prowincja jest okupowana.;Esta provincia est?ocupada.;Questa provincia ?occupata.;Ez a tartom嫕y el van foglalva.;Tato provincie je okupov嫕a.;;;;;;x,,,,
+ATWARWITHUS;他们和我们正处于战争。 ;Ils sont en guerre avec nous.;Sie befinden sich im Krieg mit uns.;S?z nami w stanie wojny.;Est嫕 en guerra con nosotros.;Sono in guerra con noi.;碰 h墎oran 嫮lnak velk.;Jsou s n嫥i ve v嫮e锊幦 stavu.;;;;;;x,,,,
+ALLIEDWITHTHEM;我们与他们是同盟。 ;Nous sommes alli廥 ?eux.;Wir sind mit ihnen verbdet.;Mamy z nimi sojusz.;Estamos aliados con ellos.;Siamo loro alleati.;碰 a sz饘ets嶲eseink.;Jsme jejich spojenci.;;;;;;x,,,,
+WEGUARANTEED;我们保证他们的独立。 ;Nous garantissons leur ind廧endance.;Wir garantieren ihre Unabh鄚gigkeit.;Gwarantujemy ich niepodleg这?.;Garantizamos su independencia.;Stiamo garantendo la loro indipendenza.;Garant嫮juk a f垐getlens嶲误et.;Garantujeme jejich nez嫛islost.;;;;;;x,,,,
+THEYGUARANTING;他们保证我们的独立。 ;Ils garantissent notre ind廧endance.;Sie garantieren unsere Unabh鄚gigkeit.;Gwarantuj?nasz?niepodleg这?.;Garantizan nuestra independencia.;Stanno garantendo la nostra indipendenza.;Garant嫮j嫜 a a f垐getlens嶲ket.;Garantuj?na粿 nez嫛islost.;;;;;;x,,,,
+NEUTRAL;我们对他们保证中立。;Nous sommes neutres vis-?vis d'eux.;Wir sind ihnen gegen晒er neutral.;Jeste騦y w stosunku do nich neutralni.;Somos neutrales con ellos.;Siamo neutrali nei loro confronti.;Semlegesek vagyunk az ir嫕yukban.;Jsme v╕i nim neutr嫮n?;;;;;;x,,,,
+RELATION;目前的关系： $RELATION$ ;Relation actuelle : $RELATION$;Momentane Beziehung: $RELATION$;Aktualne stosunki: $RELATION$;Relaci鏮 actual: $RELATION$;Relazione attuale: $RELATION$;Jelenlegi viszony: $RELATION$;Aktu嫮n?vztah: $RELATION$;;;;;;x,,,,
+SUBJECT;我们是受支配的国家，这不取决于我们。 ;Nous sommes une nation inf廪d嶪. Cela n'est pas de notre ressort.;Wir sind ein Vasallenstaat. Das liegt nicht in unserer Hand.;Jeste騦y krajem podleg造m.;Somos un pa疄 vasallo. No nos corresponde.;Siamo un paese suddito. Non dipende da noi.;Mi egy al嫫endelt orsz墔 vagyunk. Ez nem t鳀k f垐g.;My jsme c璱ovou zem? Na n嫳 to nen?;;;;;;x,,
+NODIPLOMATS;您没有外交官可供派遣。 ;Vous ne disposez pas de diplomates ?envoyer.;Sie haben keine Diplomaten, die Sie entsenden k霵nen.;Nie dysponujesz 瘸dnym dyplomat?;No tienes diplom嫢icos que enviar.;Non hai diplomatici da inviare.;Nincs kikdve diplomat墂.;Nem嫢e 黄dn?diplomaty, kter?byste vyslali.;;;;;;x
+NO_REBELS;你经常和叛军作战。 ;Vous 齇es toujours en guerre avec les rebelles.;Mit Rebellen befinden Sie sich immer im Krieg.;Zawsze jeste?w stanie wojny z buntownikami.;Siempre est嫳 en guerra con los rebeldes.;Sei sempre in guerra contro ribelli.;Mindig h墎oran 嫮lsz a l嫙ad鏦kal.;S rebely v?y v嫮雁te automaticky.;;;;;;x,,
+CV_NORELATION;我们目前同该国没有外交关系。 ;Nous n'avons pas de relations diplomatiques avec ce pays pour le moment.;Wir haben momentan keine diplomatischen Beziehungen mit diesem Land.;Aktualnie nie mamy kontakt窥 dyplomatycznych z tym pa雟twem.;Actualmente no tenemos relaciones diplom嫢icas con este pa疄.;Attualmente non abbiamo rapporti diplomatici con questo paese.;Jelenleg nincsen diplom塶iai kapcsolatunk ezzel az orsz墔gal.;S touto zem?nem嫢e 黄dn?diplomatick?vztahy.;;;;;;x,
+CV_GOVTTYPE;$COUNTRY$是一个$GOVT$政府;Le gouvernement de $COUNTRY$ est : $GOVT$;$COUNTRY$ ist $GOVT$;$COUNTRY$ to $GOVT$;$COUNTRY$ es un(a) $GOVT$;$COUNTRY$: $GOVT$;$COUNTRY$ nemzete $GOVT$;$COUNTRY$ je $GOVT$;;;;;;x,,
+BASE;基本 :;Base :;Basis:;Baza;Base:;Base:;Alap:;Z嫜ladna:;;;;;;x,,
+NORMAL_WAR_NAME;$ORDER$$FIRST$对$SECOND$战争;Guerre $ORDER$$FIRST$-$SECOND$;$ORDER$$FIRST$-$SECOND$ Krieg;Wojna $ORDER$$FIRST$-$SECOND$;Guerra $ORDER$$FIRST$-$SECOND$;$ORDER$ Guerra $FIRST$-$SECOND$;$ORDER$$FIRST$-$SECOND$ h墎or?$ORDER$$FIRST$-$SECOND$ v嫮ka;;;;;;x,,
+AGRESSION_WAR_NAME;$FIRST$发动的$ORDER$战争 ;$ORDER$ Offensive Militaire $FIRST$;$ORDER$ $FIRST$ Angriffskrieg;Wojna $ORDER$ $FIRST$ ;$ORDER$Guerra de $FIRST$ agresi鏮;$ORDER$ Guerra di aggressione $FIRST$;$ORDER$War of $FIRST$ agresszi?$ORDER$ v嫮ka - $FIRST$ agrese;;;;;;x,,
+COUNTRY_MORALE_TECH;科技带来：;?partir de la technologie :;Von Technologie:;Z technologii:;De ltecnolog燰:;Da tecnologia:;Technol罅i墎鏊:;Z technologie:;;;;;;x,,
+DAYS;日 ;Jours;Tage;Dni;D燰s;Giorni;Nap;Dny;;;;;;x,,
+NOMONEY;您没有足够的金钱。 ;Vous ne disposez pas de suffisamment d'argent.;Sie haben nicht genug Geld.;Nie masz wystarczaj铋ej ilo?i pieni璠zy.;No tienes dinero suficiente;Non hai denaro a sufficienza.;Nincs el嶲 p幯zed.;Nem嫢e dost pen鲊.;;;;;;x,,
+VASSALPROV;他们将收到以下省份：;Les provinces suivantes leur seront octroy嶪s :;Sie erhalten die folgenden Provinzen:;Otrzymaj?nast瘼uj铋e prowincje:;Recibir嫕 las siguientes provincias:;Riceveranno le seguenti province:;Meg fogj嫜 szerezni a k饘etkez?tartom嫕yokat:;Obdr麅 n嫳leduj獳?provincie:;;;;;;x,,
+COREINFO;$COUNTRY$认为这是她的一个核心省份。;$COUNTRY$ consid锇e cette province comme 彋ant l'une de ses provinces principales. ;$COUNTRY$ betrachtet diese Provinz als Kernprovinzen ihrer Nation.;Pa雟two $COUNTRY$ uwa瘸, 瞠 jest to jedna z jego prowincji narodowych.;$COUNTRY$ considera que esta es una de sus principales provincias. ;$COUNTRY$ considera la presente una sua provincia nazionale.;$COUNTRY$ ezt az egyik k跸ponti tartom嫕y嫕ak tartja.;$COUNTRY$ tuto provincii pokl墂?za jednu ze svh hlavn獳h.;;;;;;x,
+overseas;和首都没有陆路连接 ;Aucune liaison terrestre vers la capitale;钫ersee;Zamorska;Sin conexi鏮 terrestre con la capital;Oltremare;Tengerent莞;Bez pozemn珰o spojen?s hlavn璥 m鮀tem;;;;;;x,,
+coastal;沿海 ;C矌i锇e;K惰te;Z dost瘼em do morza;Costero;Costiero;Tengerparti;Pob鹔麅;;;;;;x,,
+non_coastal;远洋 ;Non c矌i锇e;Binnenland;Brak dost瘼u do morza;No costero;Non costiero;Nem tengerparti;Vnitrozem?;;;;;x,,
+coastal_sea;近海 ;Mer littorale;K惰tensee;Morze przybrze积e;Zona costera;Mare costiero;Tengerparti;Mo鹔 u pob鹔麅;;;;;;x
+tropical;热带 ;Tropical;Tropisch;Tropikalna;Tropical;Tropicale;Tr鏕usi;Tropy;;;;;;x
+sea_zone;海丘 ;Zone maritime;Seezone;Obszar morski;Zona mar癃ima;Zona marittima;Tengeri;P腭mo鷭k?z鏮a;;;;;;x
+land_province;陆地省份 ;Province terrestre;Landprovinz;Prowincja l钜owa;Provincia;Provincia terrestre;Sz嫫azf阛di;Suchozemsk?provincie;;;;;;x
+out_of_supply;缺乏补给 ;P幯urie de ravitaillement;Kein Nachschub mehr;Brak zapas窥;Sin sums.;Scorte esaurite;Elfogyott a felszerel廥;Z嫳oby do馍y;;;;;;x
+blockaded;被封锁 ;Sous blocus;Blockade;Poddana blokadzie;Bloqueado;Bloccato;Blok墂 alatt;Pod blok墂ou;;;;;;x
+no_adjacent_controlled;没有控制的邻近省份 ;Aucune zone adjacente contr犨嶪;Keine Kontrolle 晒er Nachbarprovinzen;Brak kontroli nad s零iednimi prowincjami;Sin control adyacente;Nessuna zona adiacente controllata;Nincs birtokolt szomsz险;Sousedn?oblast nen?kontrolov嫕a;;;;;;x
+provincial_tax_income;省份税收 ;Revenu d'imp矌 provincial;Steuereinnahmen der Provinz;Przych鏚 z podatk窥 w prowincji;Ingresos por impuestos provinciales;Entrate per tasse provinciali;Tartom嫕yi ad鏏ev彋el;Provin锊?vos z dan?;;;;;x
+city_population;城市人口 ;Population de la ville;Stadtbev阛kerung;Ludno? miasta;Poblaci鏮 de la ciudad;Popolazione cittadina;V嫫os lakoss墔a;M鮀tsk?populace;;;;;;x
+core;核心;Province centrale;Heimatprovinz;Prowincja narodowa;Nleo;Provincia nazionale;Mag;St鹔d;;;;;;x
+occupied;被占领 ;Occup嶪;Besetzt;Okupowana;Ocupado;Occupato;Elfoglalt;Okupov嫕o;;;;;;x
+revolt_risk;叛乱风险 ;Risque de r憝olte;Revoltenrisiko;Ryzyko buntu;Riesgo levant.;Rischio di rivolta;L嫙ad嫳 es幨ye;Riziko revolty;;;;;;x
+nationalism;民族主义 ;Nationalisme;Nationalismus;Nacjonalizm;Nacionalismo;Nazionalismo;Nacionalizmus;Nacionalismus;;;;;;x
+manpower;人力 ;Main-d'崠vre;Soldatenzahl;Si豉 ludzka;Rec. hum.;Manodopera;Munkaer?Po鋀tn?stav obyvatelstva;;;;;;x
+war;战争 ;Guerre;Krieg;Wojna;Guerra;Guerra;H墎or?V嫮ka;;;;;;x
+peace;和平 ;Paix;Friede;Pok铩;Paz;Pace;B幧e;M甏;;;;;;x
+war_exhaustion;厌战 ;夗uisement de guerre;Kriegsm?igkeit;Wyczerpanie wojn?War Exhaustion;Sfinimento da guerra;H墎or kimerts嶲;V嫮e锊?vy鋀rp嫕?;;;;;x,,,,,,,,,,,,,,,,,,
+ENABLES;启用$WHICH$。\n;Permet $WHICH$.\n ;Erm鐷licht $WHICH$.\n;Umo碛iwia: $WHICH$.\n;Permite $WHICH$.\n;Abilita $WHICH$.\n;$WHICH$ enged幨yezve.\n;Umo?uje $WHICH$.\n;;;;;;x,,,,,,,,,,,,,,,,,,
+NOT_FROM_THIS_GOV;不可能从我们目前的政府形式转化这种政府类型。;Notre forme actuelle de gouvernement ne nous permet pas de passer ?ce type de gouvernement.;Von unserer aktuellen Regierungsform k霵nen wir nicht zu dieser Regierungsform wechseln.;Ta forma ustroju jest niemo碛iwa do wprowadzenia przy naszym aktualnym systemie rz钜窥.;Es imposible la conversi鏮 a este tipo de Gobierno desde nuestro actual tipo de Gobierno.;Non ?possibile passare a questa forma di governo dalla nostra forma di governo attuale;A jelenlegi korm嫕yz嫳i m鏚unkat nem tudjuk erre a t甑usa lecser幨ni.;Na tento typ vl墂y ze sou醀sn嶭o typu vl墂y p鹔j癃 nem?eme.;;;;;;x,,,,,,,,,,,,,,,,,
+NO_SHIPS;没有船只 ;Aucun navire;Keine Schiffe;亩dne okr齇y nie;Ning barco;Nessuna nave;Nincsenek haj鏦;坛dn?lodi;;;;;;x,,,,,,,,,,,,,,,,,,
+NOT_EXIST;$TAG$在这个时候不存在。 ;$TAG$ n'existe pas actuellement.;$TAG$ existiert zu dieser Zeit nicht;$TAG$ nie istnieje w tym momencie.;$TAG$ no existe en este momento.;$TAG$ non esiste in questo periodo.;$TAG$ ebben az id骟en nem l彋ezett.;$TAG$ v tuto chv璱i neexistuje.;;;;;;x,,,,,,,,,,,,,,,,,,
+NOT_SELECT;所有玩家必须选择一个国家。 ;Tous les joueurs doivent s幨ectionner un pays.;Alle Spieler m惰sen ein Land w鄣len;Wszyscy gracze musz?wybra?pa雟two.;Todos los jugadores tienen que elegir un pa疄.;Tutti i giocatori devono scegliere un paese.;Minden j嫢幧osnak v嫮asztania kell egy 嫮lamot.;V粿chni hr掼i si mus?vybrat n嫫od.;;;;;;x,,,,,,,,,,,,,,,,,,
+NOALLIES;没有同盟 ;Aucun alli?Keine Verbdeten;Brak sojuszy;Ning aliado;Nessun alleato;Nincsennek sz饘ets嶲ek;Bez spojenc?;;;;;x,,,,,,,,,,,,,,,,,,
+ALLIES;同盟 :;Alli廥 :;Verbdete:;Sojusze;Aliados:;Alleati:;Sz饘etts嶲esek:;Spojenci:;;;;;;x,,,,,,,,,,,,,,,,,,
+SHORTCUT_SHIELD;$TAG$在此时期是一个非常有趣的选择。单击以选择此国。 ;$TAG$ est un choix int廨essant pour cette p廨iode. Cliquez ici pour le s幨ectionner.;$TAG$ ist w鄣rend dieser Periode eine interessante Option. Zum Ausw鄣len anklicken.;$TAG$ to interesuj铋y wyb鏎 w tym okresie. Kliknij, aby wybra?;$TAG$ es una interesante opci鏮 en este per甐do. Haz clic para seleccionarla.;$TAG$ ?una scelta interessante in questo periodo. Fai clic per selezionare.;$TAG$ egy 廨dekes v嫮aszt嫳 lehet ebben az id鰆zakban. Kattints r?a kijel阛廥hez.;$TAG$ je v tomto obdob?zaj璥avou volbou. Volbu potvrd癃e klepnut璥.;;;;;;x,,,,,,,,,,,,,,,,,
+I Do.;让我们开始吧 ;Allons-y;Lasst uns in den Krieg ziehen;Zr鏏my to!;Hag嫥oslo;Facciamolo;Gyerk, csin嫮juk meg!;Ud骴嫥e to;;;;;;x,,,,,,,,,,,,,,,,
+Run away!;我不确定，以后再说 ;Je ne suis pas s坛. Plus tard, peut-齇re.;Wir sind uns nicht sicher;Nie mam pewno?i, mo瞠 p?niej;No estoy seguro, puede que m嫳 tarde;Non ne sono certo, magari pi?tardi;Nem vagyok benne biztos, tal嫕 k廥骟b?Nejsem si jist, mo??pozd骹i;;;;;;x,,,,,,,,,,,,,
+DECWARREQDESC;宣战是是在最后的外交努力失败后万不得已发动的。宣战将影响其他国家对贵国的看法，尤其在贵国并没有正当理由时。这也可能降低您的稳定度。您确定要这样做？ ;D嶰larer la guerre est parfois le dernier recours de la diplomatie. D嶰larer la guerre nuira ?l'opinion que les autres pays ont de vous, surtout si vous n'avez pas de raison l嶲itime de le faire. Cela peut 嶲alement r险uire votre stabilit? 厎es-vous s坛;Eine Kriegserkl酺ung ist manchmal das letzte Mittel der Demokratie. Durch eine Kriegserkl酺ung fallen Sie im Ansehen anderer L鄚der, besonders wenn Sie keinen legitimen Grund daf惠 haben. Au絽rdem k霵nte dies zur Reduzierung Ihrer Stabilit酹 fren. M鐼hten Sie wirklich in den Krieg ziehen?;Wypowiedzenie wojny to czasami ostateczno?, kiedy zawiod?pozosta贯 dzia豉nia dyplomatyczne. Akt wypowiedzenia wojny pogorszy nasz?reputacj?w oczach innych pa雟tw, szczeg鏊nie, je?i nie ma on odpowiedniego uzasadnienia. Mo瞠 ono r窥nie?wp造n寞 na stabilno?. Czy na pewno chcesz to zrobi?;En ocasiones, la declaraci鏮 de guerra es el 莞timo recurso de la diplomacia. El acto de declarar la guerra perjudicar?la opini鏮 que tienen los dem嫳 pa疄es del tuyo, especialmente si no tienes ninguna raz鏮 leg癃ima para hacerlo. Tambi幯 puede reducir tu estabilidad. 烫eguro que quieres hacerlo?;Talvolta, una dichiarazione di guerra ?l'ultima carta da giocare in diplomazia. Una dichiarazione di guerra peggiora la tua immagine agli occhi degli altri paesi, soprattutto se non hai un motivo legittimo per farlo. Potrebbe anche ridurre la tua stabilit? Vuoi farlo davvero?;A h墎or?n嶭a az egyetlen lehet鰆嶲. A had凭enetnek k飉z霵het髊n romlik a t钽bi 嫮lam v幨em幯ye r鏊ad, f鲽幯t akkor, ha nem is volt igazi indokod a h墎ora, ezenk瘅 visszavetheti a stabilit嫳odat is. Biztos, hogy ezt akarod?;Vyhl?en?v嫮ky je n骿dy posledn?diplomatickou mo?ost? Vyhl?en?v嫮ky zhor? postoj ostatn獳h zem?k va? zemi, zejm幯a v p腭pad? 麂 k v嫮ce nem嫢e legitimn?z嫥inku. M?e klesnout i stabilita. Skute锊?to chcete u铽nit?;;;;;;x
+IN;在;en;in;w;en;in;,;v;;;;;;x,,,,,,,,,,,,,,,,,
+MORE_THAN_THREE_PROV;超过3个省份。;plus de 3 provinces.;mehr als 3 Provinzen.;wi璚ej ni?trzy prowincje;m嫳 de 3 provincias.;pi?di 3 province.;t钽b, mint h嫫om tartom嫕yban.;v獳e ne?3 provinci獳h.;;;;;;x,,,,,,,,,,,,,,,,,
+DECWARDESC;选择此选项将允许您向你的敌人提供一项和平协议 ;S幨ectionner cette option vous permettra de faire une proposition de paix ?votre ennemi;Durch die Auswahl dieser Option bieten Sie dem Feind einen Friedensvertrag an;Wybranie tej opcji umo碛iwi zaproponowanie traktatu pokojowego nieprzyjacielowi.;Si seleccionas esta opci鏮, podr嫳 ofrecer un acuerdo de paz al enemigo;Seleziona questa opzione se vuoi proporre un trattato di pace al nemico.;Ezt a lehet鰆嶲et v嫮asztva b幧eaj嫕latot teszel az ellens嶲nek;Vyberete-li tuto mo?ost, budete moci nep腭teli nab狝nout m甏;;;;;;x,,,,,,,,,,,,,,,,,
+BUILDING_YEAR;建造于$DATE$。;Construit en 即$DATE$劬.;Gebaut bis  即$DATE$劬.;Zbudowane w 即$DATE$劬.;Construido en 即$DATE$劬.;Costruisci in data: 即$DATE$劬.;夗t 即$DATE$劬.;Stav鮅 v 即$DATE$劬.;;;;;;x,,,,,,,,,,,,,,,,,,
+BEFORE_START;在游戏开始以前。 ;Avant la p廨iode trait嶪 par le jeu.;Vor Spielbeginn;Przed rozpocz璚iem gry;Anterior al per甐do hist鏎ico del juego.;Quadro temporale precedente;M嶲 a j嫢幧 kezdete el鰗t.;P鹔d 醀sov吡 r嫥cem hry.;;;;;;x,,,,,,
+MIL_CONST_TIP;一个$TYPE$将于$DATE$完成。 ;L'unit?即$TYPE$劬 sera construite ici le 即$DATE$劬.;Hier wird am 即$DATE$劬 eine 即$TYPE$劬 aufgestellt.;即$TYPE$劬 zostanie sformowana 即$DATE$劬.;Aqu?se construir?un(a) 即$TYPE$劬 en 即$DATE$劬.;Qui verr?schierato: 即$TYPE$劬 in data 即$DATE$劬.;即$TYPE$劬 elk廥z廥幯ek v嫫hat?id鱀ontja: 即$DATE$劬.;即$TYPE$劬 zde bude od 即$DATE$劬.;;;;;;x,,,,,,
+BUILD_CONST_TIP;一个$BUILDING$将于$DATE$完成。;La construction du b漮iment 即$BUILDING$劬 sera achev嶪 ici le 即$DATE$劬.;Hier wird am 即$DATE$劬 ein 即$BUILDING$劬 fertiggestellt.;即$BUILDING$劬 zostanie uko鎍zony 即$DATE$劬.;Aqu?se completar?un(a) 即$BUILDING$劬 en 即$DATE$劬.;Qui verr?completato: 即$BUILDING$劬 in data 即$DATE$劬.;即$BUILDING$劬 elk廥z廥幯ek v嫫hat?id鱀ontja: 即$DATE$劬.;即$BUILDING$劬 bude dokon鋀na k datu 即$DATE$劬.;;;;;;x,,,,,,
+PORT;这是一个允许我们的舰队执行任务的海军基地。 ;Ceci est une base navale ?partir de laquelle nos flottes peuvent op廨er.;Dies ist ein Marinest悫zpunkt, von dem aus unsere Flotten operieren k霵nen.;;Esta es una base naval desde la que nuestras flotas podr嫕 actuar.;;;;;;;;;x,,,,,,
+WARTAX_TIP;提高战争税 ;Augmenter les imp矌s de guerre;Kriegssteuern;Na尧?podatki wojenne;Aum. imp. guerra;Aumenta le tasse di guerra;Hadiad鏦 kivet廥e;Zvednout v嫮e锊?dan?;;;;;x,,,,,,
+INCREASED;增加 ;augment廥;verbesserten;zwi瘯szone;Aumentado;migliorate;n鰗t;vzrostly;;;;;;x,,,,,,
+DECREASED;减少 ;baiss廥;verschlechterten;zmniejszone;Reducido;peggiorate;cs闼kent;klesly;;;;;;x,,,,,,
+NO_ADVISORS;没有可供服务的顾问。 ;Aucun conseiller disponible.;Kein Berater verf垐bar.;Brak dost瘼nych doradc窥;No hay consejeros disponibles.;Nessun consigliere disponibile.;Nincs el廨het?tan塶sad?;坛dn?r墂ce nen?k dispozici.;;;;;;x,,,,,,
+NO_WAR_MIL_ACC;我们拥有这个国家的军事通行权。 ;Nous disposons d'un acc鋊 militaire ?leur nation.;Wir haben Milit酺zugang f惠 ihr Land.;Zgadzaj?si?na przemarsz naszych wojsk;Tenemos acceso militar a su naci鏮.;Abbiamo accesso militare alla loro nazione.;Katonai hozz塻廨廥k van a nemzet误h跸;Disponujeme vojensk吡 p腭stupem na jejich 蝽em?;;;;;;x,,,,,,
+NAVY_COMBAT_TOOLTIP;类型：$TYPE$\n兵力：$STR$;Type: $TYPE$ \n Puissance : $STR$;Typ: $TYPE$ \n St酺ke: $STR$;Rodzaj: $TYPE$ \n Si豉: $STR$;Tipo: $TYPE$ \n Fuerza: $STR$;Tipo: $TYPE$ \n Forza: $STR$;T甑us: $TYPE$\n Er? $STR$;Typ: $TYPE$ \n S璱a: $STR$;;;;;;x,,,,,,
+ISATWAR;处于战争状态时你不能要求军事通行权. ;Vous ne pouvez pas demander un acc鋊 militaire quand vous 齇es en guerre.;Sie k霵nen nicht um Milit酺zugang bitten, wenn Sie sich im Krieg befinden.;Nie mo瞠sz prosi?o przemarsz wojsk b璠铋 w trakcie wojny.;No se puede solicitar acceso militar mientras se est?en guerra.;Non puoi chiedere accesso militare quando sei in guerra.;Nem k廨hetsz katonai 嫢halad嫳t, ha h墎oran vagytok.;Nelze 黄dat o vojensk?p腭stup v pr鸑駩u v嫮ky.;;;;;;x,,,,
+DIPLOICON_TIP;$NATION$发出的$TYPE$。\n 如果我们在$DATE$之前不予回应则将自动拒绝。;$TYPE$ de 即$NATION$劬. \n Si nous ne r廧ondons pas avant le 即$DATE$劬 nous refuserons automatiquement.;$TYPE$ von 即$NATION$劬. \n Wenn wir nicht vor 即$DATE$劬 reagieren, werden wir automatisch ablehnen.;$TYPE$ od 即$NATION$劬. \nJe?i nie odpowiemy przed 即$DATE$劬, b璠zie to oznacza?automatyczn?odmow?;$TYPE$ desde 即$NATION$劬. \n Si no respondemos antes de 即$DATE$劬, se producir?un rechazo autom嫢ico.;$TYPE$ da 即$NATION$劬. \n Se non rispondiamo prima di: 即$DATE$劬 rinunceremo automaticamente.;$TYPE$, kdte: 即$NATION$劬. \n Ha nem v嫮aszolunk 即$DATE$劬 el鰗t, az aj嫕lat automatikusan elutas癃嫳ra ker.;$TYPE$ z 即$NATION$劬. \n Pokud neodpov璥e do 即$DATE$劬, automaticky odm癃neme.;;;;;;x
+DIPLOICON_TIP_NONATION;$TYPE$。\n 如果我们在$DATE$之前不予回应则将自动拒绝。;$TYPE$.\n Si nous ne r廧ondons pas avant le 即$DATE$劬 nous refuserons automatiquement.;$TYPE$. \n Wenn wir nicht vor 即$DATE$劬 reagieren, werden wir automatisch ablehnen.;$TYPE$. \nJe?i nie odpowiemy przed 即$DATE$劬, b璠zie to oznacza?automatyczn?odmow?;$TYPE$. \n Si no respondemos antes de 即$DATE$劬, se producir?un rechazo autom嫢ico.;$TYPE$. \n Se non rispondiamo prima di: 即$DATE$劬 rinunceremo automaticamente.;$TYPE$. \n Ha nem v嫮aszolunk 即$DATE$劬 el鰗t, az ah嫕lat automatikusan elutas癃嫳ra ker.;$TYPE$. \n Pokud neodpov璥e do 即$DATE$劬, automaticky odm癃neme.;;;;;;x,
+VERY_EASY;非常简单 ;Tr鋊 facile;Sehr einfach;Bardzo 豉twa;Muy f塶il;Molto facile;Nagyon k霵ny?Velmi snadn?;;;;;x,,,,,,
+EASY;简单;Facile;Einfach;^atwa;F塶il;Facile;K霵ny?Snadn?;;;;;x,,,,,,
+NORMAL;正常 ;Normal;Normal;Normalna;Normal;Normale;Norm嫮;Norm嫮n?;;;;;x,,,,,,
+HARD;困难 ;Difficile;Schwierig;Trudna ;Dif獳il;Difficile;Neh憴;T?k?;;;;;x
+VERY_HARD;非常困难 ;Tr鋊 difficile;Sehr schwierig;Bardzo trudna;Muy dif獳il;Molto difficile;Nagyon neh憴;Velmi t?k?;;;;;x
+NEVER;从不 ;Jamais;Nie;Nigdy;Nunca;Mai;Soha;Nikdy;;;;;;x
+MONTHLY;每月 ;Mensuel;Monatlich;Co miesi铋;Cada mes;Ogni mese;Havonta;M鮀膻n?;;;;;x
+HALFYEAR;每半年 ;Semestriel;Halbes Jahr;Co p馧 roku;Semestre;Semestre;F幨憝;P灦 roku;;;;;;x
+YEARLY;每年 ;Annuel;J鄣rlich;Co rok;Anual;Ogni anno;屴es;Ro锊?;;;;;x
+FIVE_YEAR;每五年 ;Cinq ans;Ff Jahre;Co pi耩 lat;Cinco a隳s;Cinque anni;珼 憝es;P鮅 let;;;;;;x
+YEARS;年份 ;Ann嶪s;Jahre;Lat;A隳s;Anni;屴;Roky;;;;;;x
+MONTHS;月份 ;Mois;Monate;Miesi璚y;Meses;Mesi;H鏮ap;M鮀獳e;;;;;;x
+NAVAL_COMBAT;海战 ;Combat naval;Seekampf;Bitwa morska;El combate naval;Comb. navali;Tengeri 悫k跸et;Boj na mo鷡;;;;;;x
+ATTACKER;攻击方 ;Attaquant;Angreifer;Atakuj铋y;Atacante;Attaccante;T嫥ad?猲o锊璭;;;;;;x
+DEFENDER;防御方 ;D峃enseur;Verteidiger;Broni铋y si?Defensor;Difensore;V险?Obr嫕ce;;;;;;x
+UNIT_PANEL;重整部队 ;R廪rganiser l'unit?Einheit reorganisieren;Reorganizuj jednostk?Reorganizar unidad;Riorganizzare le unit?Egys嶲 嫢szervez廥e;Reorganizovat jednotku;;;;;;x
+WEANNEX;我们要完全吞并他们。 ;Nous exigeons leur annexion totale.;Wir fordern ihre volle Annexion.;笆damy pe软ej aneksji.;Exigimos su completa anexi鏮.;Esigiamo la loro completa annessione.;A teljes  egyes廥t k瘅嫕juk.;Po肝dujeme lnou anexi.;;;;;;x
+OTHERANNEX;他们要完全吞并我们。 ;L'annexion totale a 彋?exig嶪.;Volle Annexion wurde gefordert.;Za蕨dano pe软ej aneksji.;Se ha exigido la completa anexi鏮.;?stata richiesta l'annessione.;A teljes egyes廥re val?ig幯y elkdve.;Je po肝dov嫕a ln?anexe.;;;;;;x
+AGREE;同意 ;Accepter;Zustimmen;Zgoda;Acceder;Accetta;Elfogad嫳;Souhlas璥;;;;;;x
+DECLINE;拒绝 ;Refuser;Ablehnen;Odm窥;Rehusar;Rifiuta;Visszautas癃嫳;Odm癃nout;;;;;;x,,,,
+NOMANPOWER;我们至少需要1000强壮男性(人力)来建造本单位。 ;Nous avons besoin d'au moins 1000 hommes valides (main-d'崠vre) pour construire cette unit?;Wir brauchen mindestens 1000 f鄣ige M鄚ner (Mannst酺ke) zu Aushebung dieser Einheit.;Aby stworzy?t?jednostk? potrzebujemy przynajmniej 1000 m篹czyzn (si豉 ludzka).;Necesitamos al menos 1.000 hombres capaces (recursos humanos) para construir esta unidad.;Ci servono almeno 1000 uomini abili (manodopera) per costruire questa unit?;Legal墎b 1000 er鰆 emberre van sz误s嶲k ennek az egys嶲nek az 廧癃廥嶭ez.;Abychom sestavili tuto jednotku, pot鹔bujeme alespo?1000 mu?.;;;;;;x
+ESTIMATE_ARIVAL;将在$DATE$到达$PROV$ ;Arrivera dans la province $PROV$ le $DATE$;Kommt in $PROV$ am $DATE$ an;Przyb璠zie do prowincji $PROV$ $DATE$;Llegar?a $PROV$ el $DATE$;Arriveremo in $PROV$ in data $DATE$.;$DATE$ id鱀ontban 廨kezk $PROV$ provinci嫫a.;Doraz?do $PROV$ k datu $DATE$;;;;;;x,,,,
+UNDER_SIEGE;省份被围困! ;Province assi嶲嶪 !;Provinz wird belagert!;Prowincja jest oblegana!;.rovincia bajo asedio!;La provincia ?sotto assedio!;Egy provinci嫢 megt嫥adtak.;Provincie je v oble麂n?;;;;;;x,,,,
+OCCUPIEDBY;省份被$NATION$占领! ;La province est occup嶪 par la nation : $NATION$ !;Provinz wurde besetzt von $NATION$!;Prowincja jest okupowana przez $NATION$!;¨a provincia ha sido ocupada por $NATION$!;La provincia ?occupata da $NATION$!;A provinci嫢 $NATION$ elfoglalta!;Provincie je okupov嫕a $NATION$!;;;;;;x,,,,
+OL_UNIT_MOVING;向$TARGET$移动。 ;Se d廧lace en direction de : 即$TARGET$劬.;Marschiert auf 即$TARGET$劬 zu.;Zmierza ku 即$TARGET$劬.;Desplaz嫕dose hacia 即$TARGET$劬.;In movimento verso 即$TARGET$劬.;$TARGET$ t嫥ad嫳a.;Cestuje sm鬳em 即$TARGET$劬.;;;;;;x,,,,
+pti;永久未知区域 ;terra incognita permanente;Permanente Terra Incognita;sta豉 ziemia nieznana;Terra Incognita permanente;terra incognita permanente;嫮land?terra incognita;trval?terra incognita;;;;;;x,,,,
+nobuilding;没有建筑物 ;nobuilding;nobuilding;brak budynk窥;nobuilding;nobuilding;nobuilding;bez staveb;;;;;;x,,,,
+nogovernment;没有政府 ;nogovernment;nogovernment;brak rz钜u;nogovernment;nogovernment;nogovernment;bez vl墂y;;;;;;x,,,,
+nogovernment_ruler;没有政府统治者 ;nogovernment_ruler;nogovernment_ruler;nogovernment_ruler;nogovernment_ruler;nogovernment_ruler;nogovernment_ruler;bez vl墂y_vl墂ce;;;;;;x,,,,
+COMBAT_MORALE;士气 :;Moral :;Moral:;Morale:;Moral:;Morale:;Mor嫮:;Mor嫮ka:;;;;;;x,,,,
+COMBAT_BREAKING;阻断 ;Rupture;Abbruch;Ucieczka;En ruptura;Spezzare;T顤廥;Rozdrcen?;;;;;x,,,,
+MAPMODE;地图模式 ;Mode carte;Kartenmodus;Tryb mapy;Modo de mapa;Modalit?mappa;P嫮ya m鏚;Re?m mapy;;;;;;x,,,,
+LEDGER_CORE;核心 ;Centrale;Kernprovinz;Prowincje narodowe;Nleo;Provincia nazionale;Mag;St鹔d;;;;;;x,,,,
+LEDGER_NOT_CORE;非核心 ;Secondaire;Keine Kernprovinz;Prowincje nienarodowe;No nleo;Non nazionale;Nem mag;Okraj;;;;;;x,,,,
+ACCEPT;接受 ;Accepter;Akzeptieren;Akceptuj;Aceptar;Accetta;Elfogad嫳;P鷡jmout;;;;;;x,,,,
+COMBAT_ASSAULT;突击 ;Assaut;Angriff;Szturm;Asaltar;Assalto;Ostrom;P鹔paden?;;;;;x
+notechgroup;没有科技组;notechgroup;notechgroup;brak grupy technologicznej;notechgroup;notechgroup;notechgroup;netechnologick?skupina;;;;;;x
+culture_ideas;文化理念 ;culture_ideas;culture_ideas;doktryny_kulturowe;culture_ideas;culture_ideas;culture_ideas;kulturn?ideje;;;;;;x
+neighbor_bonus;邻近加成 ;Bonus voisin;Nachbarbonus;Premia s零iedzka;Bonificaci鏮 por proximidad;Bonus nazione confinante;Szomsz险s嶲i b鏮usz;Sousedsk?bonus;;;;;;x
+PLAY;开始游戏 ;JOUER;START;GRAJ;PLAY;GIOCARE;J粪屮;HRA;;;;;;x
+DOMESTIC_NATION;国家 ;nation;Nation;nar鏚;naci鏮;nazione;nemzet;n嫫od;;;;;;x
+DOMESTIC_RELATION;关系 ;relation;Beziehung;stosunki;relaci鏮;relazione;viszony;vztah;;;;;;x
+LOST_PLR;失败的玩家 ;Joueur perdu;Spieler abgetrennt;Gracz niedost瘼ny;Jugador perdido;Giocatore perduto;Kiesett j嫢幧os;Vylou铽t hr掼e;;;;;;x 
+SAVE_LOADED;游戏存档读取完毕…… ;Sauvegarde de la partie charg嶪?Spielstand geladen ...;Wczytano zapisan?gr?..;Partida cargada...;Salvataggio caricato...;Ment廥 bet阛tve;Ulo麂n?hra byla nahr嫕a...;;;;;;x 
+COMPRESS_ERROR;压缩错误…… ;Erreur de compression?Kompressionsfehler ...;B章d kompresji...;Error de compresi鏮...;Errore di compressione...;T闣顤癃廥i hiba?Chyba komprimace...;;;;;;x 
+MS_LOGOUT;注销 ;D嶰onnexion;Logout;Wyloguj;Salir;Logout;Kijelentkez廥;Odhl嫳it;;;;;;x 
+PW_POPULATION;人口 ;Population;Bev阛kerung ;Ludno? ;Poblaci鏮 ;Popolazione ;N廧ess嶲;Populace;;;;;;x
+PW_UNITS;单位 ;Unit廥;Einheiten;Jednostki;Unidades;Unit?Egys嶲ek;Jednotky;;;;;;x
+GOTO_HEADER;省份查找器 ;Rechercher une province;Provinzsuche;Wyszukiwarka prowincji;Buscador de provincias;Ricerca provincia;Provincia keres?Objevitel provincie;;;;;;x
+GOTO_BOX;输入省份名 ;Saisissez le nom de la province;Provinznamen eingeben;Wpisz nazw?prowincji;Introduce el nombre de la provincia;Immetti il nome della provincia;Add meg a provincia nev彋;Zadat jm幯o provincie;;;;;;x
+GOTO_LIST_BOX;可能的省份 ;Provinces possibles;M鐷liche Provinzen;Mo碛iwe prowincje;Posibles provincias;Province possibili;El廨het?provinci嫜;Mo??provincie;;;;;;x
+GOTO_CANCEL;取消 ;Annuler;Abbrechen;Anuluj;Cancelar;Annullare;M嶲se;Zru粿t;;;;;;x,,,,,
+GOTO_GOTO;查看 ;Aller ?Goto;Id?do;Ir all?Andare;Ugr嫳;P鹔j癃 na;;;;;;x,,,,,
+TIME_AHEAD;这项科技比现在超前$NUMBER$年，所以比较难以研发。 ;Cette technologie est de $NUMBER$ ans en avance sur son temps, elle est donc plus difficile ?atteindre.;Diese Technologie ist ihrer Zeit $NUMBER$ Jahre voraus, daher ist sie schwieriger zu erreichen.;;Esta tecnolog燰 est?a $NUMBER$ a隳s por delante de nuestro tiempo, por lo que es m嫳 dif獳il de alcanzar.;;;;;;;;;x,,,
+CHAT_NONE;没有 ;Aucun;Keine;;Nada;;;;;;;;;x,,,,,
+ABANDON_GAME;放弃游戏 ;Abandonner la partie;Spiel aufgeben;;Abandonar juego;;;;;;;;;x,,,,,
+LOCAL_TRADE_INCOME_MODIFIER;地区贸易收入修正 ;Modificateur des revenus du commerce local;Modifikator - Lokales Handelseinkommen ;;Modificador por ingresos de comercio local;;;;;;;;;x,,,,,
+GLOBAL_TRADE_INCOME_MODIFIER;全国贸易收入修正 ;Modificateur des revenus du commerce national;Modifikator - Nationales Handelseinkommen ;;Modificador por ingresos de comercio nacional;;;;;;;;;x,,,,,
+UV_MANPOWER;人 :;Hommes :;Soldaten:;;Hombres:;;;;;;;;;x,,,,,
+UV_REGIMENTS;团 :;R嶲iments :;Regimenter:;;Regimientos:;;;;;;;;;x,,,,,
+NOT_BROKEN;他们的军队还没被打败。 ;M瘱e si leurs arm嶪s ne sont pas encore totalement vaincues.;Aber ihre Armeen wurden noch nie geschlagen.;;Sus ej廨citos a no est嫕 derrotados.;;;;;;;;;x,,,,,
+LOG_SETTING_PAUSE;弹出窗口并暂停 ;Popup et pause;Popup und Pause;Pauza przy wyskakuj铋ym oknie;Ventana emergente y pausa;Pausa;El鰔gr鏦 廥 szet;Rozev甏ac?okno a pauza;;;;;;x,,,,,
+SM_WATER;水域 ;Effets am幨ior廥 pour l'eau;Komplexes Meer;Ulepszona woda;Aguas avanzadas;Acqua;R廥zletes v瞵 ;Voda (pro pokro铽l?;;;;;;x,,,,,
+ARMY;陆军;Arm嶪;Armee;Armia;Ej廨cito;Esercito;Hadsereg;Arm墂a;;;;;;x,,,,,
+NAVY;海军;Marine;Flotte;Marynarka;Armada;Marina;Flotta;Flotila;;;;;;x,,,,,
+CORE_IS_REVOLTER;如果反抗力量足够强大，这些省份将复辟原来的国家或重组一个新的国家。 ;Ce pays peut 齇re cr澭 ?partir de cette province ou devenir un nouveau pays si une r憝olte y prend suffisamment d'ampleur.;Dieses Land kann aus dieser Provinz geschaffen werden oder sich durch eine Revolte befreien.;To pa雟two mo瞠 zosta?stworzone z tej prowincji lub pojawi?si?na mapie, kiedy rebelia oka瞠 si?bardzo silna.;Puede crearse este pa疄 a partir de esta provincia, o surgir como pa疄 nuevo si se produce una revuelta lo bastante fuerte.;This country may be created from this province, or appear as a new country if a revolt grows strong enough.;;Z伤彋o provincie m?e vzniknout tato zem??nebo nov?zem? jestli麂 revolta dostate锊?zes璱?;;;;;;x
+MINIMUM_REVOLT_RISK;最低反叛风险 ;Risque minimum de r憝olte;Minimales Revoltenrisiko;Minimalne ryzyko buntu;Riesgo de revuelta m璯imo;Riesgo m璯imo de rebeli鏮;Minim嫮is kock嫙at a l嫙ad嫳ra ;Minim嫮n?riziko revolty;;;;;;x,,,,,
+AMBIENT;周边环境 ;Ambiant;Ambiente;Otoczenie;Ambiente;Ambiente;K顤nyezet;Okoln?prost鹔d?;;;;;x,,,
+WCRD_ATT;这是一场他们发动的战争。 ;C'est une guerre qu'ils ont d嶰lench嶪.;Dies ist ein Angriffskrieg.;To wojna, kt鏎?oni zacz瘭i. ;Es una guerra que ellos han empezado.;Esta es una guerra que han empezado ellos.;Ezt a h墎or 鲽 kezdt幧. ;Tuto v嫮ku za醀li oni.;;;;;;x,,
+WCRD_DEF;这是一场防御战争，我们必须帮助我们的盟友。 ;C'est une guerre d峃ensive o?nous devons aider notre alli?;Dies ist ein Verteidigungskrieg.;To wojna obronna, w kt鏎ej musimy wspom鏂 naszego sojusznika. ;Es una guerra defensiva, donde tenemos que ayudar a nuestro aliado.;Esta es una guerra defensiva en la que debemos ayudar a nuestro aliado.;Ez egy v险ekez?h墎or? amiben seg癃enk kell a sz饘ets嶲eseinket. ;Toto je obrann?v嫮ka a my pot鹔bujeme pomoc na塄ho spojence.;;;;;;x
+on; 打开;Activ?Ein;;S?;;;;;;;;x,,,
+off;关闭;D閟activ?Aus;;No;;;;;;;;;x,,,
+very easy;非常简单;Tr鑣 Facile;Sehr einfach;;Muy f醕il;;;;;;;;;x,,,
+easy;简单;Facile;Einfach;;F醕il;;;;;;;;;x,,,
+normal;正常;Normal;Normal;;Normal;;;;;;;;;x,,,
+hard;困难;Difficile;Schwer;;Dif韈il;;;;;;;;;x,,,
+very hard;非常困难;Tr鑣 Difficile;Sehr schwer;;Muy dif韈il;;;;;;;;;x,,,
+TRIGGER_OVERLORD;君主;Seigneur;Lehensherr;;Se駉r feudal;;;;;;;;;x,,,
+MILALLWEBAN_BTN3;查看;Aller ?Zeigen;Id?do;Ir all?Vai a;Ugr醩;P鴈j韙 na;;;;;;x,,,
+SM_MULTISAMPLE;多样性;Niveau de d閠ail graphique;Multisample Level;Poziom pr骲kowania;Nivel de muestra m鷏tiple;Livello multisample;T鯾bsz鰎鰏 mintav閠elez閟 szintje;趓ove?vzorkov醤?;;;;;x,,,
+RESTART_REQ;需要重新启动游戏;Red閙arrage n閏essaire;Neustart erforderlich ;Wymaga ponownego uruchomienia gry;Se requiere reinicio;Riavvio richiesto;趈raind韙醩t ig閚yel;Po瀉dov醤 restart;;;;;;x,,,
+RESTART_REQ_DESC;为使设置生效，请重新启动游戏.;Vous devez red閙arrer le jeu pour que les modifications prennent effet.;Sie m黶sen das Spiel neu starten, damit die 膎derungen aktiv werden..;Aby zmiany zosta硑 wprowadzone, musisz ponownie uruchomi?gr?;Tienes que reiniciar el juego para que los cambios surtan efecto.;Devi riavviare il gioco per applicare queste modifiche.;A v醠toztat醩ok 閞v閚ybel閜閟閔ez 鷍ra kell ind韙ani a j醫閗ot.;Zm靚y se uplatn?a?po restartu hry (mus韙e restartovat hru).;;;;;;x
+very_easy_player;难度：非常简单;Niveau de difficult?: Tr鑣 facile;Schwierigkeitsstufe Sehr leicht;Bardzo 砤twy;Dificultad muy f醕il;Molto facile;Nagyon k鰊ny?Obt頌nost: velmi snadn?;;;;;x,,,
+easy_player;难度：简单;Niveau de difficult?: Facile;Schwierigkeitsstufe Leicht;^atwy;Dificultad f醕il;Facile;K鰊ny?Obt頌nost: snadn?;;;;;x,,,,,,
+hard_player;难度：困难;Niveau de difficult?: Difficile;Schwierigkeitsstufe Schwer;Trudny;Dificultad dif韈il;Difficile;Neh閦;Obt頌nost: t鞛k?;;;;;x,,,,,,
+very_hard_player;难度：非常困难;Niveau de difficult?: Tr鑣 difficile;Schwierigkeitsstufe Sehr schwer;Bardzo trudny;Dificultad muy dif韈il;Molto difficile;Nagyon neh閦;Obt頌nost: velmi t鞛k?;;;;;x,,,,,,
+very_easy_ai;难度：非常简单;Niveau de difficult?: Tr鑣 facile;Schwierigkeitsstufe sehr leicht;Bardzo 砤twy;Dificultad muy f醕il;Molto facile;Nagyon k鰊ny?Obt頌nost: velmi snadn?;;;;;x,,,,,,
+easy_ai;难度：简单;Niveau de difficult?: Facile;Schwierigkeitsstufe Leicht;^atwy;Dificultad f醕il;Facile;K鰊ny?Obt頌nost: snadn?;;;;;x,,,,,,
+hard_ai;难度：困难;Niveau de difficult?: Difficile;Schwierigkeitsstufe Schwer;Trudny;Dificultad dif韈il;Difficile;Neh閦;Obt頌nost: t鞛k?;;;;;x,,,,,,
+very_hard_ai;难度：非常困难;Niveau de difficult?: Tr鑣 difficile;Schwierigkeitsstufe Sehr schwer;Bardzo trudny;Dificultad muy dif韈il;Molto difficile;Nagyon neh閦;Obt頌nost: velmi t鞛k?;;;;;x,,,,,,
+CORE_MP_PAUSED_NAME;$PLAYER$暂停了游戏。;Mis en pause par $PLAYER$.;Pause durch $PLAYER$.;Gra zatrzymana przez gracza $PLAYER$.;En pausa por $PLAYER$.;Messo in pausa da $PLAYER$.;A j醫閗ot meg醠l韙otta: $PLAYER$.;Pozastaveno hr徼em $PLAYER$.;;;;;;x,,,,,,
+CORE_MP_PAUSED;如果无人取消暂停，暂停时间还剩$TIME$……;$TIME$ restant avant que quiconque puisse continuer?$TIME$ bis jeder die Pause beenden kann....;Pozosta硂 $TIME$ do wznowienia gry...;$TIME$ hasta que alguien pueda reanudar...;Impossibile riprendere a giocare per: $TIME$.;$TIME$ m鷏va b醨ki elind韙hatja a j醫閗ot.;$TIME$ zb齰? ne?bude moci n靕do zru歩t pauzu...;;;;;;x,,,,,
+OOS_TITLE;错误!;Erreur !;Fehler!;B彻d!;rror!;Errore!;Hiba!;Chyba!;;;;;;x,,,,,,
+OOS_DESC;游戏无法同步!;Le jeu n'est plus synchronis?!;Spiel ist nicht l鋘ger synchron!;Brak synchronizacji w grze!;l juego ya no est?sincronizado!;Il gioco non ?pi?sincronizzato!;A j醫閗osok nincsennek szinkronban!;Hra nen?nad醠e synchronizov醤a!;;;;;;x,,,,,,
+NO_CANNON;我们还不知道如何建造加农炮。;Vous n'avez pas encore appris ?construire des canons.;Wir haben noch nicht gelernt, wie man Kanonen herstellt.;Jeszcze nie wiemy, jak wytwarza?armaty.;A鷑 no sabemos c髆o construir un ca耋n.;Non sappiamo ancora come produrre i cannoni.;M間 nem tudunk 醙y鷎at k閟z韙eni.;Je歵?neum韒e vyr醔靦 kan髇y.;;;;;;x,,,,
+FE_TUTORIAL;教程;Didacticiel;Einf黨rung;Samouczek;Tutorial;Tutorial;Oktat醩;趘odn?栳st;;;;;;x,,,,,,
+base_values;基本加成;Valeur de base;Basiswert;Stawka podstawowa;Valor base;Valore di base;Alap閞t閗;Z醟ladn?hodnota;;;;;;x,,,,,,
+city;城市;Ville;Stadt;Miasto;Ciudad;Citt?V醨os;M靤to;;;;;;x,,,,,,
+PROV_BASETAX_DESCR;这是该省份发展为一个完整城市时能提供的基础税收值。;Ceci est la valeur de base de l'imp魌 que cette province fournira lorsqu'elle se sera d関elopp閑 et qu'elle prendra la forme d'une ville ?part enti鑢e.;Dies ist der Basiswert der Steuern, die diese Provinz zahlen wird, wenn sie zu einer Stadt ausgebaut wurde. ;Jest to stawka podstawowa podatku z tej prowincji, kiedy na jej terenie powstanie w pe硁i rozwini阾e miasto.;蓅te es el valor base del impuesto qye proporcionar?esta provincia cuando haya desarrollado una ciudad plenamente desarrollada.;Questo ?il valore di base delle tasse che questa provincia fornir?quando si sar?sviluppata in una citt?completa.;Ennyi ad骲ev閠elt hozna ez a provincia, ha egy teljesen kifejlett v醨os lenne rajta.;Toto je z醟ladn?hodnota da騩v閔o v齨osu, kter?bude tato provincie poskytovat, a?vznikne plnohodnotn?m靤to.;;;;;;x
+NO_EFFECT;没有效果;Aucun effet;Kein Effekt;Brak efekt體;Ning鷑 efecto;Nessun effetto;Nincs hat醩a;Bez efektu;;;;;;x,,,
+NONE_AVAILABLE;不可用。;Aucun n'est disponible.;Keine verf黦bar.;Brak dost阷nych.;Ninguno disponible.;Non disponibili;Nem 閞het?el.;Nen?k燿ispozici.;;;;;;x,,
+EXPIRES_ON;于$DATE$到期;Expire le $DATE$;L鋟ft aus am $DATE$;Wygasa: $DATE$;Expira el $DATE$;Scade il $DATE$;Ekkor j醨 le: $DATE$;Vypr氻 dne $DATE$;;;;;;x,,,
+FINISHED_ON;于$DATE$完成;Termin?le $DATE$.;Fertigstellung am $DATE$.;Zako馽zenie: $DATE$.;Terminado el $DATE$.;Finito il $DATE$.;Ekkor k閟z黮 el: $DATE$.;Dokon鑕no dne $DATE$.;;;;;;x,,,
+FE_TRIALS;尝试;Essais;Verhandlungen;Negocjacje;Pruebas;Sfide;Pr骲醟;Soudy;;;;;;x,,,
+CD_AGREEMENTS;与$LIST$达成交易。;Accord commercial avec : $LIST$.;Handelsabkommen mit $LIST$.;Umowa handlowa z $LIST$.;Acuerdo comercial con $LIST$.;Accordo commerciale con $LIST$.;Kereskedelmi egyezm閚y vele: $LIST$.;Obchodn?dohoda s $LIST$.;;;;;;x,,,
+CD_ISEMBARGOED;被$LIST$贸易禁运。;Victime d'un embargo de : $LIST$.;Unter Handelsblockade durch $LIST$.;Embargo na硂縪ne przez: $LIST$.;Bajo el embardo de $LIST$.;Embargo da: $LIST$.;Embarg髏 vezetett be $LIST$.;Pod embargem $LIST$.;;;;;;x,,,
+CD_ISEMBARGOING;对$LIST$实行贸易禁运。;Fait subir un embargo ?: $LIST$.;Handelsblockade von $LIST$.;Nak砤da embargo na: $LIST$.;Ejerciendo embargo sobre $LIST$.;Embargo su: $LIST$.;Embarg?ellene: $LIST$.;Embargo na $LIST$.;;;;;;x,,,
+CD_GIVESACCESS;给予$LIST$军事通行权。;Accorde l'acc鑣 militaire ?: $LIST$.;Gew鋒rt milit鋜isches Durchmarschrecht an $LIST$.;Zgadza si?na przemarsz wojsk: $LIST$.;Ha concedido acceso militar a $LIST$.;Garantisce l'accesso militare a: $LIST$.;Katonai hozz醘閞閟t biztos韙 nekik: $LIST$.;Poskytuje vojensk?pstup $LIST$.;;;;;;x,,,
+CD_HASACCESS;拥有$LIST$的军事通行权。;A un acc鑣 militaire par : $LIST$.;Hat milit鋜isches Durchmarschrecht von $LIST$.;Otrzyma?zgod?na przemarsz wojsk przez $LIST$.;Tiene acceso militar por $LIST$.;Ha l'accesso militare a: $LIST$.;Katonai hozz醘閞閟sel rendelkeznek a ter黮et閔ez: $LIST$.;M?vojensk?pstup skrze $LIST$.;;;;;;x,,,
+PW_RESET;重设;R閕nitialiser;Zur點ksetzen;Resetuj;Reiniciar;Ripristina;趈raind韙醩t ig閚yel;Resetovat;;;;;;x,,,
+OURWARALLY;战时同盟;Alli?dans une guerre;Verb黱det in einem Krieg;Sprzymierze馽y w wojnie;Aliado(s) en una guerra;Alleati in guerra;Sz鰒ets間es h醔or鷅an;Spojenci ve v醠ce;;;;;;x,,,
+CONFIRMMISSIONTEXT;你确定往要向$PROV$派遣一个传教士？;蕋es-vous s鹯 de vouloir envoyer un missionnaire dans la province $PROV$ ?;Sind Sie sicher, dass Sie einen Missionar nach $PROV$ schicken wollen?;Jeste?pewien, 縠 chcesz wys砤?misjonarza do prowincji $PROV$?;縎eguro que quieres enviar un misionero a $PROV$?;Sicuro di voler inviare un missionario nella provincia di $PROV$?;Biztos vagy benne, hogy hitt閞韙鮧et k黮desz $PROV$ tartom醤yra?;Skute鑞?chcete vyslat mision狲e do provincie $PROV$?;;;;;;x
+COST_TIME;消耗: $AMOUNT$金钱\n 需时：$TIME$天。;Co鹴 : $AMOUNT$ ducats \nDur閑 : $TIME$ jours.;Kosten: $AMOUNT$ Dukaten \nZeit: $TIME$ Tage.;Koszt: $AMOUNT$ dukat體 \nCzas: $TIME$ dni.;Coste: $AMOUNT$ Ducados \nTiempo: $TIME$ d韆s;Costo: $AMOUNT$ ducati \nTempo: $TIME$ Giorni.;K鰈ts間: $AMOUNT$ duk醫 \nId? $TIME$ nap.;Cena: $AMOUNT$ duk醫?\nDoba: $TIME$ dn?;;;;;;x,,,
+ADD_SUB_UNIT_EFFECT;在$WHERE$得到$UNIT$。;Envoyer $UNIT$ vers $WHERE$.;Erh鋖t $UNIT$ in $WHERE$.;Get $UNIT$ in $WHERE$.;Llevar $UNIT$ a $WHERE$.;Porta $UNIT$ a $WHERE$.;Get $UNIT$ in $WHERE$.;Z韘kat $UNIT$ v $WHERE$.;;;;;;x,,,
+CHANGE_CONTROLLER_EFFECT;$WHO$控制了$WHERE$。\n;$WHO$ prend le contr鬺e de $WHERE$.\n;$WHO$ 黚ernimmt die Kontrolle 黚er $WHERE$.;$WHO$ przejmuje kontrol?nad $WHERE$.;$WHO$ toma el control de $WHERE$.\n;$WHO$ assume il comando di $WHERE$.;$WHO$ 醫veszi az ir醤y韙醩t $WHERE$ felett.;$WHO$ p鴈b韗?kontrolu nad $WHERE$.;;;;;;x,,,
+WAR_EFFECT;向$WHO$宣战。\n;D閏larer la guerre ?$WHO$.\n;Erkl鋜t $WHO$ den Krieg.;Wypowiedz wojn?$WHO$;Declara la guerra a $WHO$.\n;Dichiarare guerra a $WHO$;Had鼁enet neki: $WHO$;Vyhl醩it v醠ku $WHO$;;;;;;x,
+CONFIRMSAVETITLE;储存游戏;Sauvegarder;Speicherstand;Zapisz gr?Guardar partida;Salvare partita;Ment閟;Ulo瀒t hru;;;;;;x,
+CONFIRMSAVETEXT;你确定要覆盖$NAME$吗？;蕋es-vous s鹯 de vouloir 閏raser le fichier $NAME$ ?;Sind Sie sicher, dass Sie die Datei $NAME$ 黚erschreiben m鯿hten?;Czy na pewno chcesz nadpisa?plik $NAME$?;縎eguro que quieres sobrescribir el archivo $NAME$?;Sovrascrivere il file $NAME$?;Biztos vagy benne, hogy fel黮 szeretn閐 韗ni a k鰒etkez鮰: $NAME$?;Skute鑞?chcete p鴈psat soubor $NAME$?;;;;;;x
+PW_TRADE_VALUE;贸易价值:;Valeur commerciale :;Handelswert:;Warto滄 handl.:;Valor comercial:;Valore di scambio:;Ker. 閞t閗:;Hodnota obchodu:;;;;;;x,
+PROV_TRADE_VALUE;贸易中心贡献的价值。;Montant g閚閞?pour le Centre de Commerce;Zum Handelszentrum beigesteuerter Wert.;Warto滄 posiadanych udzia丑w w o渞odku handlu.;Valor que contribuye al centro de comercio.;Valore donato al centro del commercio.;Az p閚z a Kereskedelmi K鰖pontba ker黮t.;Hodnota p鴌sp韛aj韈?obchodn韒u centru.;;;;;;x,
+NO_SEPARATE_PEACE;战时非联盟领导者的国家之间无法和谈.;Vous ne pouvez pas n間ocier de paix s閜arant deux partenaires mineurs de la guerre.;Sie k鰊nen keinen Seperatfrieden zwischen zwei Junior-Partnern in einem Krieg schlie遝n.;Nie mo縠sz negocjowa?oddzielnego pokoju pomi阣zy dwoma podrz阣nymi partnerami.;No puedes negociar una paz separada entre dos socios menores en una guerra.;Non puoi negoziare una pace separata fra due membri sottoposti in una guerra.;Nem kezdem閚yezhetsz egyedi b閗et醨gyal醩okat.;Dva podzen?partne鴌 (v alianci) spolu nemohou uzavt separ醫n?m韗.;;;;;;x,
+DIPCHANCE_VLIKELY;很有可能;Tr鑣 probablement;Sehr wahrscheinlich;Bardzo prawdopodobne;Muy probable;Molto probabile;Nagyon sz韛esen;Velmi pravd靝odobn?;;;;;x,
+DIPCHANCE_IMPOSSIBLE;绝不可能;Impossible;Unm鰃lich;Niemo縧iwe;Imposible;Impossibile;Lehetetlen;Nemo瀗?;;;;;x,
+DIPCHANCE_VUNLIKELY;不太可能;Tr鑣 improbable;Sehr unwahrscheinlich;Bardzo nieprawdopodobne;Muy poco probable;Molto improbabile;Egyeltal醤 nem sz韛esen;Velmi nepravd靝odobn?;;;;;x,
+DIPCHANCE_UNLIKELY;很不可能;Improbable;Unwahrscheinlich;Nieprawdopodobne;Poco probable;Improbabile;Nem sz韛esen;Nepravd靝odobn?;;;;;x,
+DIPCHANCE_MAYBE;也许可能;Peut-阾re;Vielleicht;Mo縧iwe;Quiz?Forse;Tal醤;Mo瀗?;;;;;x,
+DIPCHANCE_LIKELY;有可能;Probable;Wahrscheinlich;Prawdopodobne;Probable;Probabile;Sz韛esen;Pravd靝odobn?;;;;;x,
+M_GOTO_BUTTON;寻找省份;Trouver la province;Provinz finden;Znajd?prowincj?Encontrar provincia;Trovare provincia;Provinciakeres閟;Naj韙 provincii;;;;;;x,
+M_LEDGER_BUTTON;帐目;Statistiques;Statistik;Statystyki;Memoriales;Statistiche;F鮧鰊yv;阼etn?kniha;;;;;;x,
+M_MENU_BUTTON;菜单;Menu;Menu;Menu;Men?Menu;Men?Nab韉ka;;;;;;x,
+M_HOME_BUTTON;前往首都;Se rendre ?la capitale de la province;Zur Hauptstadt;Id?do prowincji sto砮cznej;Ir a provincia capital;Andare alla capitale della provincia;Ugr醩 a f鮬rovinci醨a;P鴈j韙 do provincie hlavn韍o m靤ta;;;;;;x,
+ONLY_HOST_SPEED;只有主机可以改变游戏速度。;Seul l'h魌e peut modifier la vitesse du jeu.;Nur der Host kann die Spielgeschwindigkeit 鋘dern.;Tylko host mo縠 zmieni?pr阣ko滄 gry.;Solo el anfitri髇 puede cambiar la velocidad del juego.;Solo l'host pu?modificare la velocit?di gioco.;Csak a hoszt 醠l韙hatja be a j醫閗 sebess間閠.;Pouze hostitel m鶠e zm靚it nastaven?rychlosti hry.;;;;;;x,,,
+PW_GROWTH;增长;Croissance;Wachstum;Wzrost;Crecimiento;Crescita;N鰒eked閟;R鵶t;;;;;;x,,,,
+NOPORTOTHERCONTINENT;这个省不能通过任何方式连接到我们的首都.;Cette province ne peut 阾re atteinte via aucun port reli??notre capitale.;Diese Provinz kann von keinem Hafen mit Landverbindung zur Hauptstadt erreicht werden.;Ta prowincja nie jest dost阷na poprzez 縜den port po彻czony z nasz?stolic?;No se puede llegar a esta provincia a trav閟 de ninguno de los puertos conectados con nuestra capital.;Questa provincia ?irraggiungibile tramite porti connessi alla nostra capitale.;Ez a provincia nem k鰖el韙het?meg egy olyan kik鰐鮪 kereszt黮 sem, mely 鰏sze van k鰐ve a f鮬rovinci醤kkal.;Do t閠o provincie se nelze dostat prost鴈dnictv韒 炨dn閔o pstavu pstupn閔o z爊a歟ho hlavn韍o m靤ta.;;;;;;x,,,
+RELATION_CHANGE_VALUE;估计每年的变化:;Changement annuel estim?:;Gesch鋞zte j鋒rliche Ver鋘derung;Przewidywana zmiana (rocznie):;Cambio anual estimado:;Cambiamento annuale stimato:;Becs黮t 関es bev閠el;Odhadovan?ro鑞?zm靚a:;;;;;;x,,,,
+TAG_CHANGE;国家改变为$NEW$。\n;Le pays devient $NEW$.\n;Nation wechselt zu $NEW$.\n;Pa駍two zmienia na $NEW$.\n;El pa韘 cambia a $NEW$.\n;Il paese cambia in $NEW$.;Az 醠lamforma megv醠tozott erre: $NEW$.\n;Zem?se m靚?na $NEW$.\n;;;;;;x,,,,
+PV_OCCUPIED_BY;被$NAME$占领;occup閑 par $NAME$;Besetzt von $NAME$;Zaj阾a przez $NAME$;ocupado por $NAME$;Occupato da $NAME$;Elfoglalta: $NAME$;Okupov醤o $NAME$;;;;;;x,,,,
+BG_COUNTRY;国家：;PAYS :;NATION:;PA裇TWO:;PA蚐:;PAESE:;ORSZ罣:;ZEM?;;;;;;x,,,,
+LOAD_GAME_FAILED;读取游戏失败。;Le chargement du jeu a 閏hou?;Konnte Spiel nicht laden.;Nie uda硂 si?wczyta?gry.;Error al cargar la partida.;Impossibile caricare la partita.;A j醫閗 bet鰈t閟e nem siker黮t;Hru nelze nahr醫.;;;;;;x,,,,
+MP_FEW_PLAYERS;你需要一个以上的玩家才能开始游戏。;Il vous faut plus d'un joueur pour commencer une partie.;Man braucht mehr als einen Spieler, um ein Spiel zu starten.;Do gry potrzeba wi阠ej ni?jednego gracza.;Hace falta m醩 de un jugador para iniciar una partida.;Ti serve pi?di un giocatore per iniziare una partita.;Egyn閘 t鯾b j醫閗osra van sz黭s間ed ahhoz, hogy elkezdd a j醫閗ot.;Spu歵靚?hry vy瀉duje v韈 ne?jednoho hr徼e.;;;;;;x,,
+NATIONALISM_LASTS;民族主义会持续到;Le nationalisme dure jusqu'?Nationalismus dauert bis;Nacjonalizm trwa do;El nacionalismo dura hasta;Il nazionalismo dura fino a;A nacionalizmus fenn醠l, am韌;Nacionalismus z鵶tane do;;;;;;x,,,
+LEDGER_NO_GRAPH_DATA;资料不足，无法生成图表。;Il n'y a pas encore suffisamment de donn閑s pour g閚閞er ce graphique.;Es sind noch zuwenig Daten verf黦bar, um dieses Diagramm zu erschaffen;Nie ma wystarczaj筩ych danych, aby wygenerowa?wykres.;A鷑 no hay datos suficientes para generar este gr醘ico.;Non ci sono ancora abbastanza dati per generare questo grafico.;M間 nem 醠l elegend?adat a rendelkez閟edre a grafikonok k閟z韙閟閔ez.;Graf nelze vygenerovat (nedostatek dat).;;;;;;x,,
+MENU_MESSAGES_RESET;重设为默认;R閕nitialiser les param鑤res par d閒aut;Grundeinst.;Ustawienia domy渓ne;Restrablecer valores predeterminados;Ripristina i predefiniti;Alap閞t閗ek vissza醠l韙醩a;Resetovat nastaven?(obnovit v齝hoz?nastaven?;;;;;;x,,,,
+COL_CONST_TIP_FROM_SHIP;殖民队将在$DATE$到达$LOCATION$。;Ce colon atteindra $LOCATION$ le $DATE$.;Dieser Kolonist erreicht $LOCATION$ am $DATE$.;Kolonista przyb阣zie do $LOCATION$ w dniu $DATE$.;Este colono llegar?a $LOCATION$ el $DATE$.;Questo colono raggiunger?$LOCATION$ il $DATE$.;A gyarmatosok v醨hat骯n ekkor 閞keznek $LOCATION$ tartom醤yra: $DATE$.;Kolonista doraz?do $LOCATION$ k datu $DATE$.;;;;;;x,,,
+STRAITS;狭窄的$SEA$海峡将该省份连接到$PROV$;L'閠roit d閠roit de $SEA$ relie cette province ?la province $PROV$;Die schmale Stra遝 黚er $SEA$ verbindet diese Provinz mit $PROV$;W箂ka cie渘ina na: $SEA$ 彻czy j?z prowincj?$PROV$;El estrecho en $SEA$ conecta esta provincia con $PROV$;Il piccolo stretto che attraversa $SEA$ collega questa provincia a $PROV$;A tengeri szoros $SEA$ tengeren 鰏szek鰐i ezt a provinci醫 a k鰒etkez鮲el:  $PROV$;婍je vedouc?skrz $SEA$ spojuje tuto provincii s $PROV$;;;;;;x,,,,
+STRAITSDESC;狭窄的海峡允许陆军不使用运输船直接通过。此区域出现敌军舰队的话则会阻止陆军穿行。;Les arm閑s peuvent franchir les d閠roits 閠roits sans utiliser de navires de transport. Cependant, une flotte ennemie peut en emp阠her la travers閑.;Schmale Meeresarme k鰊nen von Armeen ohne die Hilfe von Transportern 黚erquert werden. Allerdings k鰊nen feindliche Flotten die 躡erquerung blockieren.;W箂kie cie渘iny mog?by?przekraczane przez armie bez konieczno渃i u縴cia statk體 transportowych. Flota nieprzyjaciela mo縠 jednak blokowa?przepraw?;Los ej閞citos pueden cruzar estrechos sin la necesidad de transportes. Sin embargo, una flota enemiga puede bloquear el paso.;I piccoli stretti possono essere attraversati dagli eserciti senza l'utilizzo di mezzi. Tuttavia, una flotta nemica potrebbe bloccarne il passaggio.;A szorosokon sz醠l韙骽aj?n閘k黮 醫kelhetnek a csapataid, viszont az ellens間es flotta nem tud 醫haladni rajtuk.;婍ji lze p鴈kro鑙t s爌ozemn韒 vojskem i bez lo飐tva. Ale neptelsk?flotila m鶠e p鴈chod blokovat.;;;;;;x
+SAVE_DONE;储存完成;Done;Fertig;Zrobione;Hecho;Fatto;K閟z;Hotovo;;;;;;x,,,,
+FOR_PLAYER;玩家:;Pour le joueur :;F黵 Spieler:;Dla gracza:;Por el jugador:;Per giocatore:;J醫閗osnak:;V歟m hr徼鵰:;;;;;;x
+FOR_AI;电脑:;Pour l'IA :;F黵 KI:;Dla komputera:;Por la IA:;Per CPU:;Az AI-nak:;UI:;;;;;;x
+MODIFIER_TECHNOLOGY_COST;科研花费;Co鹴 de la technologie;Technologiekosten;;Coste tecnol骻ico;;;;;;;;;x
+MODIFIER_REINFORCE_SPEED;增援速度;Accro顃re la vitesse;Verst鋜kungsgeschwindigkeit;;Reforzar velocidad;;;;;;;;;x
+UV_SHIPS;舰船：;Navires :;Schiffe:;;Barcos:;;;;;;;;;x
+BATTLES_SCORE;战斗：;Batailles :;Schlachten: ;;Batallas: ;;;;;;;;;x
+ALLIANCE_EFFECT;与$WHO$同盟。\n;Alliance avec $WHO$.\n;B黱dnis mit $WHO$.;;Alianza con $WHO$.\n;;;;;;;;;x
+KILL_RULER_EFFECT;国家领导人$NAME$去世了。\n;Le dirigeant actuel, ($NAME$), va mourir.\n;Der aktuelle Herrscher ($NAME$) wird bald sterben.;;El actual gobernante ($NAME$) morir?\n;;;;;;;;;x
+KILL_LEADER_EFFECT;将领$NAME$去世了。\n;Le chef $NAME$ va mourir.\n;Anf黨rer $NAME$ wird bald sterben.;;El l韉er $NAME$ morir?\n;;;;;;;;;x
+SPAWN_EVENT;将发生“$WHICH$”事件。\n;obtiendra l'関鑞ement '$WHICH$'.\n;f黨rt zum Ereignis '$WHICH$'.;;obtendr?el suceso '$WHICH$'.\n;;;;;;;;;x
+MODIFIER_REMOVED;$WHERE$的$WHAT$将被移除。\n;$WHAT$ sera supprim?de $WHERE$.\n;$WHAT$ wird entfernt aus $WHERE$.;;$WHAT$ se eliminar?de $WHERE$.\n;;;;;;;;;x
+LAND_ATTRITION;陆军损耗;Attrition des unit閟 terrestres;Land-Verlustquote;;Desgaste terrestre;;;;;;;;;x
+NAVAL_ATTRITION;海军损耗;Attrition des unit閟 navales;See-Verlustquote;;Desgaste naval;;;;;;;;;x
+STARTED;已经开始;Commenc?Begonnen;; Iniciado ;;;;;;;;;x
+WON;胜利;Gagn?Gewonnen;;Ganado;;;;;;;;;x
+LOST;失败;Perdu;Verloren;;Perdido;;;;;;;;;x
+YOU_LOST;你失败了;Vous avez perdu;Verloren;;Has perdido;;;;;;;;;X
+YOU_WON;你胜利了;Vous avez gagn?Gewonnen;;Has ganado;;;;;;;;;X
+OPTION_CHANGED;$FROM$改变为：$TO$;$FROM$ a chang?pour : $TO$;$FROM$ wurde ge鋘dert zu: $TO$;;$FROM$ ha cambiado a: $TO$;;;;;;;;;x
+THE_YEAR_IS_BEFORE;在下列年份之前：;L'ann閑 est ant閞ieure ?Das Jahr ist vor;;El a駉 es anterior ;;;;;;;;;x
+THE_YEAR_IS_AFTER;在下列年份之后：;L'ann閑 est post閞ieure ?Das Jahr ist nach;;El a駉 es posterior ;;;;;;;;;x
+HAVE_LESS_THAN;少于;Ont moins de ;Weniger haben als;;Tiene menos de ;;;;;;;;;x
+HAVE_MORE_THAN;至少为 ;Ont au moins;Mehr haben als;;Tiene al menos ;;;;;;;;;x
+WAR_EXHAUSTION_MORE_THAN;厌战度至少为;L'閜uisement li??la guerre est au moins de;Kriegsm黡igkeit mehr als;;Agotamiento b閘ico de al menos ;;;;;;;;;x
+WAR_EXHAUSTION_LESS_THAN;厌战度少于;L'閜uisement li??la guerre est inf閞ieur ?Kriegsm黡igkeit weniger als;;Agotamiento b閘ico inferior a ;;;;;;;;;x
+HAVE_LESS_MANPOWER_THAN;人力少于 ;Ont moins de main-d挏uvre que;Mehr Mannst鋜ke haben als;;Tiene menos recursos humanos que ;;;;;;;;;x
+HAVE_MORE_MANPOWER_THAN;人力至少为 ;Ont une main-d'渦vre d'au moins;Weniger Mannst鋜ke haben als;;Recursos humanos al menos ;;;;;;;;;x
+HAVE_CONTROL_OVER;控制 ;Contr鬺ent;Kontrolle haben 黚er;;Control ;;;;;;;;;x
+HAVENT_CONTROL_OVER;未控制 ;Ne contr鬺ent pas;Keine Kontrolle haben 黚er;;NO?controla ;;;;;;;;;x
+HAVENT_CORE;在下列省份没有核心：;N'ont pas de province principale dans;Keine Kernprovinz haben in;;NO?tiene un n鷆leo en ;;;;;;;;;x
+HAVE_CORE_IN;在下列省份有核心：;Ont une province principale dans;Kernprovinz haben in;;Tiene un n鷆leo en ;;;;;;;;;x
+HAVE_LESS_CITIES_THAN;拥有的城市少于 ;Ont moins de villes que;Weniger St鋎te haben als;;Tiene menos ciudades que ;;;;;;;;;x
+HAVE_MORE_CITIES_THAN;拥有城市至少为 ;Leur nombre de villes est au moins de;Mehr St鋎te haben als;;N鷐ero de ciudades al menos ;;;;;;;;;x
+HAVE_LESS_PORTS_THAN;拥有的海港少于 ;Leur nombre de ports d'attache est inf閞ieur ?Weniger H鋐en haben als ;;Tiene menos puertos de origen que ;;;;;;;;;x
+HAVE_MORE_PORTS_THAN;拥有的海港至少为 ;Leur nombre de ports d'attache est au moins de;Mehr H鋐en haben als ;;N鷐ero de puertos de origen al menos ;;;;;;;;;x
+HAVE_LESS_ALLIES_THAN;盟友数少于 ;Ont moins d抋lli閟 que;Weniger Verb黱dete haben als;;Tiene menos aliados que ;;;;;;;;;x
+HAVE_MORE_ALLIES_THAN;盟友数至少为 ;Leur nombre d'alli閟 est au moins de;Mehr Verb黱dete haben als;;N鷐ero de aliados al menos ;;;;;;;;;x
+IS_ENABLED; 可用; est activ?e); ist aktiviert;; est?activado;;;;;;;;;x
+IS_DISABLED; 不可用; est d閟activ?e); ist deaktiviert;; est?desactivado;;;;;;;;;x
+HAVE;拥有 ;Ont ;Haben ;;Tiene ;;;;;;;;;x
+HAVE_NOT;没有 ;N'ont PAS;Nicht haben ;;NO?tiene ;;;;;;;;;x
+HAS;拥有 ;A;Hat ;;Tiene ;;;;;;;;;x
+HAS_NOT;没有 ;N'a PAS;Hat nicht ;;NO?tiene ;;;;;;;;;x
+EXISTS; 存在; existe; existiert;; existe;;;;;;;;;x
+DOSNT_EXISTS; 不存在; n'existe PAS; existiert nicht;; NO?existe;;;;;;;;;x
+DO_NOT_HAVE_A;没有一个 ;N'a pas de;Nichtverf黦ung 黚er;;NO tiene ;;;;;;;;;x
+HAVE_A;有一个 ;A un(e) ;Verf黦ung;;Tiene ;;;;;;;;;x
+HAVE_LESS_PROVINCE_THAT_PRODUCES_THEN;生产$GOODS$的省份少于 ;Ont moins de provinces produisant $GOODS$ que;Weniger Provinzen mit Produktion von $GOODS$ haben als;;Menos provincias productoras de $GOODS$ que ;;;;;;;;;x
+HAVE_MORE_PROVINCE_THAT_PRODUCES_THEN;生产$GOODS$的省份至少为 ;Le nombre de provinces produisant $GOODS$ est au moins de;Mehr Provinzen mit Produktion von $GOODS$ haben als;;Provincias productoras de $GOODS$ al menos ;;;;;;;;;x
+HAVE_AT_LEST_ONE_OWNED_NEIGHBORING_PROVINCE;至少拥有如下一个临近省份：;D閠iennent au moins une province voisine telle que :;Mindestens eine besetzte Nachbarprovinz;;Tiene al menos una provincia adyacente como:;;;;;;;;;x
+HAVE_NO_OWNED_NEIGHBORING_PROVINCE;没有拥有如下一个临近省份：;Ne d閠iennent pas de province voisine telle que :;Keine besetzte Nachbarprovinz;;No tiene provincias adyacentes como:;;;;;;;;;x
+DO_NOT_OWN;没有 ;Ne poss鑔e PAS;Kein Besitz von;;NO?tiene ;;;;;;;;;x
+OWNS;拥有 ;Poss鑔e;Besitz von;;Tiene ;;;;;;;;;
+DO_NOT_CONTROL;未控制 ;Ne contr鬺e PAS;Keine Kontrolle 黚er;;NO?controla ;;;;;;;;;
+CONTROLS;控制 ;Contr鬺e;Kontrolliert;;Controla ;;;;;;;;;x
+IS_NOT;不 ;N'est PAS;ist NICHT;;NO?es ;;;;;;;;;x
+IS;是;Est;ist;;ES ;;;;;;;;;x
+HAVE_THE_MODIFIER;有修正效果：;Ont le modificateur;Verf黦ung 黚er den Modifikator;;Tiene el modificador ;;;;;;;;;x
+DONT_HAVE_THE_MODIFIER;没有修正效果：;N'ont PAS le modificateur;Nichtverf黦ung 黚er den Modifikator;;NO tiene el modificador ;;;;;;;;;x
+DONT_HAVE_THE_PROVICEN_MODIFIER;有省份修正效果：;N'ont PAS le modificateur de province;Nichtverf黦ung 黚er den Provinzmodifikator;;NO tiene el modificador de provincia ;;;;;;;;;x
+HAVE_THE_PROVINCE_MODIFIER;没有省份修正效果：;Ont le modificateur de province ;Verf黦ung 黚er den Provinzmodifikator;;Tiene el modificador de provincia ;;;;;;;;;x
+HAVE_A_PORT_IN;在下列地区有港口：;disposent d'un port ?Hat einen Hafen in;;Tiene un puerto en ;;;;;;;;;x
+HAVE_NOT_A_PORT_IN;在下列地区没有港口：;ne disposent PAS d'un port ?Hat keinen Hafen in;;NO?tiene un puerto en ;;;;;;;;;x
+HAVE_COUNTRY_FLAG;拥有国家变量：;Ont un drapeau national;Nationalflagge haben;;Tiene la bandera nacional ;;;;;;;;;x
+HAVE_NOT_COUNTRY_FLAG;没有国家变量：;N'ont PAS le drapeau national;Keine Nationalflagge haben;;NO tiene la bandera nacional ;;;;;;;;;x
+HAVE_PROVINCE_FLAG;有省份变量：;Ont un drapeau provincial;Provinzflagge haben;;Tiene la bandera de la provincia ;;;;;;;;;x
+HAVE_NOT_PROVINCE_FLAG;没有省份变量：;N'ont pas le drapeau provincial;Keine Provinzflagge haben;;NO tiene la bandera de la provincia ;;;;;;;;;x
+IS_NOT_ON_THE_CONTINET;不在大陆上 ;N'est PAS sur le continent;Befindet sich nicht auf dem Kontinent;; NO est?en el continente ;;;;;;;;;x
+IS_ON_THE_CONTINET;在大陆上 ;Est sur le continent;Befindet sich auf dem Kontinent;; est?en el continente ;;;;;;;;;x
+DONT_HAVE_A_X_INY;在$Y$没有$X$;N'ont PAS de $X$ dans $Y$;Kein $X$ in $Y$ haben;;No tiene un(a) $X$ en $Y$;;;;;;;;;x
+HAVE_A_X_INY;在$Y$有$X$;Ont un(e) $X$ dans $Y$;Ein $X$ in $Y$ haben;;Tiene un(a) $X$ en $Y$;;;;;;;;;x
+PURE_REVOLT_RISK_LOWER_THAN;基础反叛风险低于 ;Risque de r関olte de base inf閞ieure ?Grund-Revoltenrisiko geringer als;;Riesgo de levantamiento b醩ico inferior a ;;;;;;;;;x
+PURE_REVOLT_RISK_HIGHER_THAN;基础反叛风险至少 ;Le risque de r関olte de base est au moins de;Grund-Revoltenrisiko gr鲞er als;;Riesgo de levantamiento b醩ico de al menos ;;;;;;;;;x
+REVOLT_RISK_LOWER_THAN;反叛风险低于 ;Risque de r関olte inf閞ieur ?Revoltenrisiko geringer als;;Riesgo de levantamiento inferior a ;;;;;;;;;x
+REVOLT_RISK_HIGHER_THAN;反叛风险至少 ;Risque de r関olte d'au moins;Revoltenrisiko gr鲞er als;;Riesgo de levantamiento de al menos ;;;;;;;;;x
+IS_NOT_NEIGHBOUR_WITH;没有邻接 ;N'est pas limitrophe de;Ist kein Nachbar von;;NO es adyacente ;;;;;;;;;x
+IS_NEIGHBOUR_WITH;有邻接 ;Est limitrophe de;Ist Nachbar von;;Vecinos ;;;;;;;;;x
+HAVE_LESS_UNITS_IN_THAN;在$PROVINCE$的部队少于 ;Ont, dans la province $PROVINCE$, un nombre d'unit閟 inf閞ieur ?Weniger Einheiten in $PROVINCE$ haben als;;Tiene menos unidades en $PROVINCE$ que ;;;;;;;;;x
+HAVE_MORE_UNITS_IN_THAN;在$PROVINCE$的部队至少为;Ont, dans la province $PROVINCE$, un nombre d'unit閟 d'au moins;Mehr Einheiten in $PROVINCE$ haben als;;Unidades en $PROVINCE$ al menos ;;;;;;;;;x
+HAVE_MORE_THAN_INFANTRY_IN;在$PROVINCE$的步兵数至少为;Ont au moins $UNITS$ unit閟 d'infanterie dans la province $Province$;Verf黦ung 黚er mehr als $UNITS$ Infanterie in $Province$;;Tiene al menos $UNITS$ de infanter韆 en $Province$;;;;;;;;;x
+HAVE_LESS_THAN_INFANTRY_IN;在$PROVINCE$的步兵数少于;Ont moins de $UNITS$ unit閟 d'infanterie dans la province $Province$;Verf黦ung 黚er weniger als $UNITS$ Infanterie in $Province$;;Tiene menos $UNITS$ de infanter韆 en $Province$;;;;;;;;;x
+IS_AT_PEACE_WITH;与如下国家保持和平;Est en paix avec ;Ist im Frieden mit;;Est?en paz con ;;;;;;;;;x
+IS_AT_WAR_WITH;与如下国家开战;Est en guerre contre;Ist im Krieg mit;;Est?en guerra con ;;;;;;;;;x
+HAS_NO_TRUCE_WITH;与如下国家未休战 ;N'observe PAS de tr陃e avec ;Hat keine Waffenruhe mit ;;No tiene tregua con ;;;;;;;;;x
+HAS_TRUCE_WITH;与如下国家休战 ;Ont une tr陃e avec;Hat Waffenruhe mit ;;Tiene tregua con ;;;;;;;;;x
+HAVE_NO_UNITS_IN_BATTLE;没有战斗中的部队;N'ont pas d'unit閟 au combat;Keine Einheiten in der Schlacht haben;;No tiene unidades en combate;;;;;;;;;x
+HAVE_UNITS_IN_BATTLE;有战斗中的部队;Ont des unit閟 au combat;Einheiten in der Schlacht haben;;Tiene unidades en combate;;;;;;;;;x
+HAVE_A_UNITS_WITH_A_LEADER;有指挥官率领的军队;Ont une unit?avec un leader;Einheit mit einem Anf黨rer haben;;Tiene una unidad con un l韉er;;;;;;;;;x
+HAVE_NO_UNITS_WITH_A_LEADER;没有指挥官率领的军队;N'ont pas d'unit?avec un leader;Keine Einheit mit einem Anf黨rer haben;;No tiene unidades con l韉er;;;;;;;;;x
+HAVE_A_NAVY_SMALLER_THAN;海军舰船少于 ;Ont une flotte plus petite que ;Kleinere Marine haben als;;Tiene una armada menor que ;;;;;;;;;x
+HAVE_A_NAVY_LARGER_THAN;所有海军舰船至少为 ;La taille totale de la flotte est d'au moins;Gr鲞ere Marine haben als;;Tama駉 total de la armada al menos ;;;;;;;;;x
+HAVE_A_ARMY_SMALLER_THAN;陆军少于 ;Ont une arm閑 plus petite que;Kleinere Armee haben als;;Tiene un ej閞cito menor que ;;;;;;;;;x
+HAVE_A_ARMY_LARGER_THAN;所有陆军至少为 ;La taille totale de l'arm閑 est d'au moins;Gr鲞ere Armee haben als;;Tama駉 total del ej閞cito al menos ;;;;;;;;;x
+HAVE_A_PERCENTAGE_OF_OVERSEAS_PROVINCE_LARGER_THAN;海外省份百分比至少为 ;Le pourcentage de provinces outremer est d'au moins;Gr鲞eren Prozentsatz an 躡erseeprovinzen haben als;;Porcentaje de provincias de ultramar al menos ;;;;;;;;;x
+HAVE_A_PERCENTAGE_OF_OVERSEAS_PROVINCE_SMALLER_THAN;海外省份百分比少于 ;Le pourcentage de provinces outremer est inf閞ieur ?Geringeren Prozentsatz an 躡erseeprovinzen haben als;;Porcentaje de provincias de ultramar menor que ;;;;;;;;;x
+HAVE_NOT_THE_LEADER;没有将领 ;N'ont PAS de leader;Nichtverf黦ung 黚er den Anf黨rer;;NO tiene al l韉er ;;;;;;;;;x
+HAVE_THE_LEADER;有将领 ;Ont un leader;Verf黦ung 黚er den Anf黨rer;;Tiene al l韉er ;;;;;;;;;x
+HAVE_N0T_ALLIANCE_WITH;没有与下列国家结盟 ;Ne sont pas alli閟 ?Kein B黱dnis haben mit;;No est?aliado con ;;;;;;;;;x
+HAVE_ALLIANCE_WITH;与下列国家结盟 ;Sont alli閟 avec;B黱dnis haben mit;;Aliado con ;;;;;;;;;x
+PROVINCE_IS_NOT;省份ID不是 ;L'identification de la province n'est PAS;Provinz ist nicht;;La ID de la provinvia NO?es ;;;;;;;;;x
+PROVINCE_IS;省份ID是 ;L'identification de la province est;Provinz ist;;La ID de la provincia es ;;;;;;;;;x
+LESS_THAN;少于;moins de; geringer als;; menor que;;;;;;;;;x
+GREATER_THAN;至少;au moins; gr鲞er als;; al menos;;;;;;;;;x
+HAVE_MORE_MANPOWER_THEN_MAXIMUM;最大人力至少为;Disposent plus de main-d'渦vre que le maximum;Gr鲞ere Mannst鋜ke haben als maximal;;Tiene al menos unos recursos humanos m醲imos;;;;;;;;;x
+HAVE_LESS_MANPOWER_THEN_MAXIMUM;最大人力少于;Ont moins de main-d'渦vre que le maximum;Geringere Mannst鋜ke haben als maximal;;Tiene menos que el m醲imo de recursos humanos;;;;;;;;;x
+HAVE_LESS_BADBOY_THAN;“好战度”少于 ;"Ont un nombre de ""voyous"" inf閞ieur ?;Geringeren Aggressionswert haben als ;;"Tiene menos ""tipo malo"" que ";;;;;;;;;x
+HAVE_MORE_BADBOY_THAN;“好战度”至少为 ;"Ont un nombre de ""voyous"" au moins 間al ?;Gr鲞eren Aggressionswert haben als ;;"Tiene ""tipo malo"" de al menos ";;;;;;;;;x
+THE_NUMBER_OF_REVOLT_FRACTION_IS_MORE_THAN;反叛中省份数量至少为 ;Le nombre de provinces se r関oltant est d'au moins;Die Revoltenanteil ist gr鲞er als;;N鷐ero de provincias rebeldes de al menos ;;;;;;;;;x
+THE_NUMBER_OF_REVOLT_FRACTION_IS_LESS_THAN;反叛中省份数量少于 ;Nombre de provinces se r関oltant inf閞ieur ?Die Revoltenanteil ist geringer als;;Menos provincias rebeldes que ;;;;;;;;;x
+TECHNOLOGY_LOWER_THAN;低于 ; inf閞ieur(e) ? geringer als ;; menor que ;;;;;;;;;x
+TECHNOLOGY_HIGHER_THAN;至少为 ;au moins; h鰄er als ;; al menos ;;;;;;;;;x
+HAVE_NOT_ANY_NEIGHBOR;没有邻近省份;N'ont pas de voisins;Keine Nachbarn haben;;No tiene vecinos;;;;;;;;;x
+HAVE_ANY_NEIGHBOR;有至少一个邻近省份;Ont au moins un voisin;Nachbarn haben;;Tiene al menos un vecino;;;;;;;;;x
+HAVE_NOT_CASUS_BELLI_AGAINST;对下列国家没有领土要求 ;Ne revendiquent PAS;Keinen Kriegsgrund haben gegen;;No tiene reivindicaciones contra ;;;;;;;;;x
+HAVE_CASUS_BELLI_AGAINST;对下列国家有领土要求 ;Revendiquent;Kriegsgrund haben gegen;;Tiene reivindicaciones contra ;;;;;;;;;x
+IS_NOT_AI;不为AI;N'est pas contr鬺?par l'IA;Ist nicht KI;;NO?es de la IA;;;;;;;;;x
+IS_AI;为AI;Est contr鬺?par l'IA;Ist KI;;Es de la IA;;;;;;;;;x
+THEN_NUMBER_OF_REVOLTS_ARE_LESS_THAN;不满省份数量少于;Le nombre de provinces rebelles est inf閞ieur ?Revoltenanzahl geringer als;;Menos provincias rebeldes que ;;;;;;;;;x
+THEN_NUMBER_OF_REVOLTS_ARE_MORE_THAN;不满省份数量至少为;Le nombre de provinces rebelles est d'au moins;Revoltenanzahl gr鲞er als;;N鷐ero de provincias rebeldes de al menos ;;;;;;;;;x
+OR_TRIGGER_STARTS;符合下列条件之一;L'un des 閘閙ents suivants doit 阾re vrai;Einer folgenden Punkte muss zutreffen;;Uno de los siguientes debe de ser la verdad;;;;;;;;;x
+NEIGHBOR_COUNTRY_STARTS;邻国;Pays voisin;Nachbarland startet;;Pa韘 vecino;;;;;;;;;x
+TRIGGER_NUM;范围序号;Num d閏lencheur;Ausl鰏erzahl;;N鷐. de alcance;;;;;;;;;x
+TRIGGER_ALLY;任何盟友;Tout alli?Beliebiger B黱dnispartner;;Cualquier aliado;;;;;;;;;x
+TRIGGER_OWNER;省份所有者;Propri閠aire de la province;Provinzeigent黰er;;Propietario de la provincia;;;;;;;;;x
+TRIGGER_CONTROLLER;省份控制者;Contr鬺eur de la province;Provinzkontrolleur;;Controlador de la provincia;;;;;;;;;x
+TRIGGER_CAPITAL;首都;Capitale;Hauptstadt;;Capital;;;;;;;;;x
+TRIGGER_SEA_ZONE;外海;Zone maritime ext閞ieure;Seezone au遝rhalb;;Zona mar韙ima exterior;;;;;;;;;x
+TRIGGER_THIS;这;Cet(te);Dies;;Esto;;;;;;;;;x
+TRIGGER_FROM;从;De;Von;;De;;;;;;;;;x,,,
+TRIGGER_LOCAL_ENEMY;本地敌军;Ennemi local;Lokaler Feind;;Enemigo local;;;;;;;;;x,,,
+CONFIRMBUILDTEXTLEDGER;您确定在要在$PROVINCE$修建$BUILDING$吗？;Voulez-vous vraiment construire $BUILDING$ dans la province $PROVINCE$ ?;M鯿hten Sie wirklich $BUILDING$ in $PROVINCE$ bauen?;;縎eguro que quieres construir un(a) $BUILDING$ en $PROVINCE$?;;;;;;;;;x,,,
+CORE_IS_REVOLTER_CAPITAL;这是这个国家的潜在首都。;C'est la capitale potentielle de cette nation.;Dies ist die potentielle Hauptstadt dieser Nation.;;蓅ta es la capital potencial de esta naci髇.;;;;;;;;;x,,,
+REVOLTRISK_EFFECT;在$WHERE$的游击度为$DIRECTION$ $VALUE$.\n;$DIRECTION$ $VALUE$ risque de r関olte ?$WHERE$.\n;$DIRECTION$ $VALUE$ Revoltenrisiko in $WHERE$.\n;;$DIRECTION$ $VALUE$ riesgo de levantamiento en $WHERE$.\n;;;;;;;;;x,,,
+LEDGER_CANT_BUILD_THIS_TECH;你现在的科技等级不足以允许你建造这个建筑;Votre niveau actuel en technologie ne vous permet pas de construire ce b鈚iment;Ihre momentane Technologiestufe erlaubt Ihnen noch nicht den Bau dieses Geb鋟des;;Tu actual nivel tecnol骻ico no te permite la construcci髇 de este edificio;;;;;;;;;x ,,,
+LEDGER_CANT_BUILD_THIS_FULL;已在所有省份建成;D閖?construit par toutes les provinces;Schon in allen Provinzen gebaut;;Ya se ha construido en todas las provincias;;;;;;;;;x ,,,
+LEDGER_OVERALL;全部;Tout;Alles;;General;;;;;;;;;x,,,
+FROM_TECHNOLOGY;科技加成;?partir de la technologie;Von Technologie;;De tecnolog韆;;;;;;;;;x,,,
+THEYGUARANT;他们保证了我们的独立，因此我们不能保证他们的独立。;Ils sont garants de notre ind閜endance, nous ne pouvons donc pas garantir la leur.;Sie garantieren unsere Unabh鋘gigkeit. Wir k鰊nen deshalb nicht ihre Unabh鋘gigkeit garantieren.;;Garantizan nuestra independencia, por lo que no podemos garantizar la suya.;;;;;;;;;x,
+THEYWARN;他们警告了我们，因此我们不能警告他们。;Ils nous ont d閖?averti, nous ne pouvons donc pas faire de m阭e.;Sie haben uns gewarnt, und wir k鰊nen sie deshalb nicht warnen.;;No est醤 advirtiendo, por lo que no podemos advertirles a ellos.;;;;;;;;;x
+WCRD_GUA;我们保证他们的独立。;Nous avons garanti leur ind閜endance.;Wir haben ihre Unabh鋘gigkeit garantiert.;;Hemos garantizado su independencia.;;;;;;;;;x,,,
+WCRD_WARNING;我们已经警告$WHO$这应该是他们最后的领土要求。;Nous avons averti $WHO$ que ce serait leur derni鑢e revendication territoriale.;Wir haben $WHO$ gewarnt, keinen Krieg zu beginnen.;;Hemos advertido a $WHO$ que 閟ta deber韆 ser su 鷏tima exigencia territorial.;;;;;;;;;x,,,
+VARIABLE;变量 ;Variable;Variable ;;Variable ;;;;;;;;;x,,,
+IS_GREATER_THAN;大于 ;est sup閞ieur ? ist gr鲞er als ;; es mayor que ;;;;;;;;;x,,,
+IS_EQUAL_OR_LESS_THAN;等于或少于 ;est inf閞ieur ou 間al ? ist gleich gro?oder geringer als ;; es igual o inferior que ;;;;;;;;;x,,,
+IS_NOT_OVERSEAS;不属于海外;n'est pas outremer; ist nicht in 躡ersee;; no es de ultramar;;;;;;;;;x
+IS_OVERSEAS;属于海外;est outremer; ist in 躡ersee;; es de ultramar;;;;;;;;;x
+RANDOM_EFFECT;有$CHANCE$%的几率;$CHANCE$% de chances de;$CHANCE$% Chance auf \n;;$CHANCE$% probabilidades de ;;;;;;;;;x
+RANDOM_LIST_EFFECT;会发生$SIZE$选项中的一种。\n;L'une des options $SIZE$ prendra effet.\n;eine von $SIZE$ Optionen wird eintreten.\n;;Se producir?una de las opciones de $SIZE$.\n;;;;;;;;;x
+ANY_PROVINCE_STARTS;任何拥有的省份;Toute province d閠enue;Jede Provinz in Besitz;;Cualquier provincia en propiedad;;;;;;;;;x
+EFFECT_AND;和;卐t;卽nd;;... y;;;;;;;;;x
+EFFECT_MORE;更多。;davantage.;mehr.;;M醩;;;;;;;;;x
+OUR_RULER;我们的统治者;Notre dirigeant;Unser Herrscher;;Nuestro gobernante;;;;;;;;;x
+THEIR_RULER;他们的统治者;Leur dirigeant;Ihr Herrscher;;Su gobernante;;;;;;;;;x
+OCCUPIED_PROVINCES;占领的省份;Provinces occup閑s;Besetzte Provinzen;;Provincias ocupadas;;;;;;;;;x
+CREATE_REBELS;$SIZE$ $TYPE$团在$WHERE$发动了叛乱。\n;$SIZE$ r間iment(s) $TYPE$  se r関oltent ?$WHERE$.\n;$SIZE$ $TYPE$ Regiment(er) erheben sich in $WHERE$.\n;;$SIZE$ regimiento(s) de $TYPE$ se rebelan en $WHERE$.\n;;;;;;;;;x
+NATIONALISM_LOWER_THAN;民族主义低于 ;Nationalisme inf閞ieur ?Nationalismus geringer als;;Nacionalismo inferior a ;;;;;;;;;x
+NATIONALISM_HIGHER_THAN;民族主义高于 ;Nationalisme sup閞ieur ?Nationalismus h鰄er als;;Nacionalismo superior a ;;;;;;;;;x
+KNOWN_COUNTRY_STARTS;已知的国家;Pays connu;Bekanntes Land;;Pa韘 conocido;;;;;;;;;x
+EXTRA_NATIONALISM_DESC;在$WHERE$，$DIRECTION$$VALUE$年的民族主义。\n;$DIRECTION$ $VALUE$ ann閑s de nationalisme ?$WHERE$.\n;$DIRECTION$ $VALUE$ Jahre des Nationalismus in $WHERE$.\n;;$DIRECTION$ $VALUE$ a駉s de nacionalismo en $WHERE$.\n;;;;;;;;;x
+HAVE_DIPLOMATIC_RELATION;与下列国家有外交关系;entretient une relation de;Hat eine Beziehung von weniger als;;tiene una relaci髇 de;;;;;;;;;x
+WITHL;和;avec;mit;;con;;;;;;;;;x
+WITHG;或更大的;ou sup閞ieur ?oder mehr mit;;o mayor con;;;;;;;;;x
+IS_NOT_IN_THE_REGION;不在该区域;N'est PAS dans la r間ion;Ist NICHT in der Region;;NO?est?en la regi髇 ;;;;;;;;;x
+IS_IN_REGION;在该区域;Est dans la r間ion;Ist in der Region;;Est?en la regi髇;;;;;;;;;x
+NOT_OWNED_BY;不属于 ;n'est PAS d閠enue par;Ist NICHT im Besitz von;;NO?es propiedad de ;;;;;;;;;x
+OWNED_BY;属于 ;est d閠enue par;Ist kein Eigentum von;;Es propiedad de ;;;;;;;;;x
+NOT_CONTROLLED_BY;不被下列国家控制 ;n'est PAS contr鬺閑 par;Wird NICHT kontrolliert von;;NO est?controlada por ;;;;;;;;;x
+CONTROLLED_BY;被下列国家控制 ;Est contr鬺閑 par;Wird kontrolliert von;;Est?controlada por ;;;;;;;;;x
+RIVALSWITH;视$LIST$为天然竞争对手。;Affiche $LIST$ comme 閠ant des rivaux naturels.;Sieht $LIST$ als nat黵liche Rivalen an.;;Ve a $LIST$ como rivales naturales.;;;;;;;;;x
+THREATENEDBY;感到了$LIST$的威胁。;Se sent menac?par $LIST$.;F黨lt sich bedroht von $LIST$.;;Se siente amenazada por $LIST$.;;;;;;;;;x
+HAVE_NO_UNITS_IN;$COUNTRY$在$PROVINCE$没有部队。;$COUNTRY$ n'a AUCUNE unit?dans la province $PROVINCE$.;$COUNTRY$ haben KEINE Einheiten in $PROVINCE$.;;$COUNTRY$ NO tiene unidades en $PROVINCE$.;;;;;;;;;x
+HAVE_UNITS_IN;$COUNTRY$在$PROVINCE$有部队。;$COUNTRY$ a des unit閟 dans la province $PROVINCE$.;$COUNTRY$ haben Einheiten in $PROVINCE$.;;$COUNTRY$ tiene unidades en $PROVINCE$.;;;;;;;;;x
+NEIGHBOR_PROVINCE_STARTS;任何邻近省份;Toute province voisine;Jede benachbarte Provinz;;Cualquier provincia adyacente;;;;;;;;;x
+AT_LEAST;至少;Au moins;Zumindest;;Al menos;;;;;;;;;x
+IMMEDIATEEFFECT;立即产生如下效果：\n;Effet imm閐iat : \n;Sofortiger Effekt: \n;;Efecto inmediato: \n;;;;;;;;;x
+IS_SUBJECT;是一个附庸国;Est une nation inf閛d閑;Ist eine untergebene Nation;;Es una naci髇 vasalla;;;;;;;;;x
+IS_NOT_SUBJECT;不是一个附庸国;N'est pas une nation inf閛d閑;Ist keine untergebene Nation;;No es una naci髇 vasalla;;;;;;;;;x,,
+DEFINE_RULER_EFFECT;$NAME$成为统治者。\n;$NAME$ devient dirigeant.\n;$NAME$ wird Herrscher.\n;;$NAME$ sube al poder.\n;;;;;;;;;x,,
+friendly_regiments;友方部队;Troupes amies;Freundliche Truppen;;Tropas amigas;;;;;;;;;x,,
+ANY_ALL;任何/所有;Un(e)/tou(te)s;Alle;;Cualquiera/Todos;;;;;;;;;x,,
+CANT_SEE_UNDER_FOW;没有更加深入本地区前不可能确定。;Ceci est impossible ?d閠erminer sans un acc鑣 plus approfondi ?la zone.;Das ist unm鰃lich festzustellen, ohne weiteren Zugang zu dieser Region zu haben.;;No se puede determinar sin un mayor acceso a la zona.;;;;;;;;;x,
+VASSAL_TIMER;这在在$DATE$前不可能提供。;Il est toutefois impossible de proposer ceci avant $DATE$.;Es ist allerdings nicht m鰃lich, dies vor $DATE$ anzubieten.;;Aunque no se puede ofrecer antes de $DATE$.;;;;;;;;;x,
+INDEF;结束;Fin de;Ende von;;Fin de;;;;;;;;;x,,
+MISS_DIST_CAPITAL;与首都的距离;Distance de la capitale;Distanz zur Hauptstadt;;Distancia desde la capital;;;;;;;;;x,,
+FE_NUM_PLAYERS;玩家数量: $NUM$;Nombre de joueurs : $NUM$;Spieleranzahl: $NUM$;;N鷐ero de jugadores: $NUM$;;;;;;;;;x,,
+IS_NOT_COUNTRY_CORE;不是$COUNTRYADJ$核心;N'est pas un $COUNTRYADJ$ principal;Ist KEINE $COUNTRYADJ$ Kernprovinz;;NO es un n鷆leo de $COUNTRYADJ$;;;;;;;;;x,,
+IS_COUNTRY_CORE;是$COUNTRYADJ$核心;est un $COUNTRYADJ$ principal;Ist eine $COUNTRYADJ$ Kernprovinz;;Es un n鷆leo de $COUNTRYADJ$;;;;;;;;;x,,
+ITS_OWNER;它的所有者;son propri閠aire;sein Besitzer;;su propietario;;;;;;;;;x,,
+NOT_POSSIBLE_CAUSE;此处由于以下条件不足导致不可行。;Impossible parce que les 閘閙ents suivants sont faux.;Nicht m鰃lich, da Folgendes nicht zutrifft.;;No es poible porque lo siguiente no es verdad.;;;;;;;;;x,
+ALLOWED_CAUSE;此处由于以下条件导致可行。;Possible pour les raisons suivantes?Hier m鰃lich, aufgrund von:;;Aqu?es posible debido a lo siguiente...;;;;;;;;;x
+HAVE_MORE_MONEY_THAN;月收入至少 ;Revenu mensuel d'au moins;Monatliches Einkommen mindestens;;Ingresos mensuales de al menos ;;;;;;;;;x,,
+HAVE_LESS_MONEY_THAN;月收入少于 ;Revenu mensuel inf閞ieur ?Monatliches Einkommen weniger als;;Ingresos mensuales inferiores a ;;;;;;;;;x,,
+TRIG_IS;是;est;ist;;es;;;;;;;;;x,
+TRIG_ISNOT;不是;n'est pas;ist nicht;;no?es;;;;;;;;;x,
+OPTIONS;选项;OPTIONS;OPTIONEN;;OPTIONS;;;;;;;;;x,
+Options;选项;Options;Optionen;;Options;;;;;;;;;x,
+Rulers;统治者;Dirigeants;Herrscher;;Rulers;;;;;;;;;x,
+War Exhaustion;厌战度;蓀uisement de guerre;Kriegsm黡igkeit;;War Exhaustion;;;;;;;;;x,
+War Capacity;战争能力;Capacit?militaire;Kriegskapazit鋞;;War Capacity;;;;;;;;;x,
+Battles;战斗;Batailles;Schlachten;;Battles;;;;;;;;;x,
+CANT_NEGOTIATE_UNTIL;我们不能与反叛武装进行谈判，直到;Nous ne pouvons pas entreprendre de nouvelles n間ociations avec les rebelles avant;Wir k鰊nen mit den Rebellen nicht mehr verhandeln bis;;No podremos volver a negociar con lor rebeldes hasta;;;;;;;;;x,
+WONT_NEGOTIATE;除非满足下列各项否则不能与他们进行谈判：;Ils ne n間ocieront pas ?moins que les 閘閙ents suivants soient vrais :;Sie werden nicht mit uns verhandeln, bis folgendes zutrifft:;;No negociar醤 a menos que lo siguiente sea verdad:;;;;;;;;;x
+ALWAYS_FALSE;绝不;Jamais;Niemals;;Nunca;;;;;;;;;x,
+ALWAYS_TRUE;总是;Toujours;Immer;;Siempre;;;;;;;;;x,
+REMOVE_FOW;$COUNTRY$的战争迷雾将会消散$MONTHS$个月。;蒷iminer le brouillard de guerre du pays $COUNTRY$ pendant $MONTHS$ mois.;Kriegsnebel von $COUNTRY$ f黵 $MONTHS$ Monate aufheben.;;Levantar niebla de guerra de $COUNTRY$ durante $MONTHS$ meses.;;;;;;;;;x,
+IS_NOT_CAPITAL;不是首都省份;n'est pas une province capitale; ist keine Hauptstadtprovinz;; No es una provincia capital;;;;;;;;;x,
+IS_CAPITAL;是首都省份;est une province capitale; ist eine Hauptstadtprovinz;; Es una provincia capital;;;;;;;;;x,
+WAR_EXHUASTION_LABEL;厌战度;蓀uisement de guerre;Kriegsm黡igkeit;;War Exhaustion;;;;;;;;;x,
+WE_MODIFIED_BY;每个月修正为;Ceci est modifi?chaque mois.;Wird jeden Monat modifiziert um.;;Se modifica cada mes por;;;;;;;;;x,,,
+WARE_EFFECTS;厌战度产生了以下影响：;Actuellement, l'閜uisement de guerre a ces effets.;Kriegsm黡igkeit hat derzeit folgende Effekte:;;El agotamiento b閘ico tiene los siguientes efectos.;;;;;;;;;x,,,
+FOW_IS_NOT_LIFTED;战争迷雾重新出现;Le brouillard de guerre n'est pas 閘imin?Der Kriegsnebel ist nicht aufgehoben;;La niebla de guerra no se levanta;;;;;;;;;x,,,
+FOW_IS_LIFTED;战争迷雾消散了;Le brouillard de guerre est 閘imin?Der Kriegsnebel ist aufgehoben;;La niebla de guerra se levanta;;;;;;;;;x,,,
+HAVE_GLOBAL_FLAG;有全球旗帜 ;Disposent du drapeau mondial;Hat die globale Flagge;;Tiene la bandera global ;;;;;;;;;x,,,
+HAVE_NOT_GLOBAL_FLAG;没有全球旗帜 ;Ne disposent PAS du drapeau mondial;Hat NICHT die globale Flagge;;NO tiene la bandera global ;;;;;;;;;x,,,
+ANY_CORE_STARTS;任何核心国家;Tout pays principal;Jede Kern-Nation;;Cualquier pa韘 n鷆leo;;;;;;;;;x,,,
+LIKELY_REBELS;可能反叛;Probablement rebelles;Wahrscheinliche Rebellen;;Probablemente rebeldes;;;;;;;;;x,,,
+PROFIT_GAIN;获得;gain;Gewinn;;ganancia RDO;;;;;;;;;x,,,
+PROFIT_LOSS;失去;perte;Verlust;;"p閞dida; damnificaci髇; baja; da駉";;;;;;;;;x,,,
+REINFORCE_INFO_TEXT;当国家人力充足时，军队每月可以在本地补充$VALUE$人。这个省份的本地增援率为$LOCAL$%，外在我们还可以从国家层面获得+$COUNTRY$%的加成。;S'il y a suffisamment de main-d'渦vre dans le pays, cette arm閑 b閚閒iciera de $VALUE$ hommes en renfort chaque mois ?cet endroit. Le taux de renforts local de cette province est de  $LOCAL$% et nous b閚閒icions d'un bonus de +$COUNTRY$% gr鈉;Mit genug Rekruten im Land wird diese Armee mit $VALUE$ M鋘nern pro Monat in diesem Gebiet verst鋜kt werden. Die lokale Verst鋜kungsrate in dieser Provinz ist $LOCAL$%, und wir bekommen einen Bonus von  +$COUNTRY$% von den Werten unserer Nation.;;Si hay suficiente mano de obra en el pa韘, este ej閞cito se reforzar?con $VALUE$ hombres cada mes en esta ubicaci髇. La tasa de refuerzos locales es de $LOCAL$% en esta provincia, y obtenemos una bonificaci髇 de +$COUNTRY$% por los valores de nuestra naci髇.;;;;;;;;;x
+THE_MONTH_IS_BEFORE;在下列时间之前 ;Ceci est ant閞ieur;Es ist vor;;Es antes ;;;;;;;;;x,,,
+THE_MONTH_IS_AFTER;在下列时间之后 ;C'est au moins;Es ist zumindest;;Es de al menos ;;;;;;;;;x,,,
+DM_MAX;最多;Avec un maximum de;Mit Maximum;;Con un m醲imo;;;;;;;;;x,,,
+any_owned_province;任何拥有的省份;Toute province d閠enue;Jede Provinz im Besitz;;Cualquier provincia en propiedad;;;;;;;;;x,,,
+WEWAR;我们处于战争;Nous sommes en guerre;Wir sind im Krieg;Jeste渕y w stanie wojny;Estamos en guerra.;Siamo in guerra;H醔or鷅an 醠lunk;Jsme ve v醠ce;;;;;;x,,,
+STABHIT_FROM_MIL_ACCESS;拥有军事通行权;Dispose d'un acc鑣 militaire;Hat Milit鋜zugang;Maj?prawo przemarszu wojsk;Tiene acceso militar;ha l'accesso militare;Katonai hozz醘閞閟sel rendelkezik;M?vojensk?pstup;;;;;;x,,,,,
+THEYATWAR;他们处于战争状态时，我们不能这样做。;Nous ne pouvons pas faire ceci lorsqu'ils sont en guerre.;Wir k鰊nen dies nicht tun, w鋒rend sie im Krieg sind.;Nie mo縠my tego zrobi? kiedy prowadz?oni wojn?;No podemos hacer esto mientras est閚 en guerra.;Non possiamo farlo mentre sono in guerra.;Am韌 h醔or鷅an 醠lnak, erre nincs lehet鮯間黱k;To nem鶠eme u鑙nit, dokud jsou ve v醠ce.;;;;;;x
+MS_BAD_VERSION;错误的版本。请下载最新的补丁。;Mauvaise version. Veuillez t閘閏harger le dernier patch.;Falsche Version. Bitte installieren Sie das letzte Update von Paradox.;Z砤 wersja. Prosimy o pobranie najnowszego patcha.;Versi髇 err髇ea. Por favor, descarga el 鷏timo parche.;versione errata. Scarica l'ultima patch.;Rossz verzi? K閞em, t鰈tse le a leg鷍abb patchet.;妏atn?verze. St醜n靦e aktu醠n?opravn?soubor.;;;;;;x,,
+dice;骰子;D?W黵fel;Rzut ko渃i?Dados;Dadi;Kocka;Kostka;;;;;;x,,,,,
+OFFENSEDESCR;*;*;*;*;*;*;*;*;;;;;;x,,,,,
+headline_tech;科研;TECHNOLOGIE;TECHNOLOGIE;;TECNOLOG虯;;;;;;;;;x,,,,,
+headline_prod;生产;PRODUCTION;PRODUKTION;;PRODUCCI覰;;;;;;;;;x,,,,,
+headline_diplo;外交;DIPLOMATIE;DIPLOMATIE;;DIPLOMACIA;;;;;;;;;x,,,,,
+headline_politics;政治;POLITIQUE;POLITIK;;POL蚑ICA;;;;;;;;;x,,,,,
+headline_espionage;情报;RENSEIGNEMENTS;AUFKL腞UNG;;INTELIGENCIA;;;;;;;;;x,,,,,
+CREATE_WAVES;创建;Cr閍tion de vagues;Wellen schlagen;;Creaci髇 de ondas;;;;;;;;;x,,,,,
+annexation_of_austria;德奥合并;;;;;;;;;;;;;x,,,,,
+bessarabia_to_the_soviet;割让比萨拉比亚给苏联;;;;;;;;;;;;;x,,,,,
+bulgarian_claims_for_constanta;保加利亚要求康斯坦萨;;;;;;;;;;;;;x,,,,,
+british_intervention_spanish_civil_war;西班牙内战-英国干涉;;;;;;;;;;;;;x,,,,,
+claims_on_memel;要求梅梅尔;;;;;;;;;;;;;x,,,,,
+croatia_independent;克罗地亚独立;;;;;;;;;;;;;x,,,,,
+claims_on_bessarabia;要求比萨拉比亚;;;;;;;;;;;;;x,,,,,
+chinese_alliance_against_the_soviet;抗苏统一战线;;;;;;;;;;;;;x,,,,,
+czechoslovakia_annexed;吞并捷克斯洛伐克;;;;;;;;;;;;;x,,,,,
+defend_peruvian_territory;保卫秘鲁的领土;;;;;;;;;;;;;x,,,,,
+destruction_of_the_french_fleet;摧毁法国舰队;;;;;;;;;;;;;x,,,,,
+first_vienna_award;第一次维也纳仲裁;;;;;;;;;;;;;x,,,,,
+first_vienna_award_hungary;第一次维也纳仲裁-匈牙利;;;;;;;;;;;;;x,,,,,
+finnish_winter_war_has_begun;芬兰冬季战争开始;;;;;;;;;;;;;x,,,,,
+french_intervention_spanish_civil_war;西班牙内战-法国干涉;;;;;;;;;;;;;x,,,,,
+german_intervention_spanish_civil_war;西班牙内战-德国干涉;;;;;;;;;;;;;x,,,,,
+guarantee_the_independence_of_poland;保障波兰独立;;;;;;;;;;;;;x,,,,,
+indochine_to_japan;日本占领印度支那;;;;;;;;;;;;;x,,,,,
+industry_transfered_to_siberia_v1;转移部分工业至西伯利亚1;;;;;;;;;;;;;x,,,,,
+industry_transfered_to_siberia_v2;转移部分工业至西伯利亚2;;;;;;;;;;;;;x,,,,,
+industry_transfered_to_siberia_v3;转移部分工业至西伯利亚3;;;;;;;;;;;;;x,,,,,
+italian_intervention_spanish_civil_war;西班牙内战-意大利干涉;;;;;;;;;;;;;x,,,,,
+japan_demands_bases_in_indochina;日本要求印度支那;;;;;;;;;;;;;x,,,,,
+japanese_pressure_on_siam;日本向暹罗施压;;;;;;;;;;;;;x,,,,,
+lend_lease_act;租借法案;;;;;;;;;;;;;x,,,,,
+mol_rib_pact;莫洛托夫-里宾特洛甫协定;;;;;;;;;;;;;x,,,,,
+nd;罗斯福新政;;;;;;;;;;;;;x,,,,,
+russian_intervention_spanish_civil_war;西班牙内战-苏联干涉;;;;;;;;;;;;;x,,,,,
+return_of_danzig_or_war;但泽或战争;;;;;;;;;;;;;x,,,,,
+swedish_materiel_and_volunteers;瑞典的志愿军与军备物资;;;;;;;;;;;;;x,,,,,
+soviet_accepts_mol_rib_pact;苏联接受莫洛托夫-里宾特洛甫协定;;;;;;;;;;;;;x,,,,,
+second_vienna_award;第二次维也纳仲裁;;;;;;;;;;;;;x,,,,,
+the_treaty_of_munich_sudetenland;慕尼黑协定-苏台德;;;;;;;;;;;;;x,,,,,
+treaty_of_munich;慕尼黑协定;;;;;;;;;;;;;x,,,,,
+the_finnish_winter_war;芬兰冬季战争;;;;;;;;;;;;;x,,,,,
+the_finnish_winter_war_intervention;芬兰冬季战争-干涉;;;;;;;;;;;;;x,,,,,
+the_finnish_winter_war_direct_intervention;芬兰冬季战争-直接干涉;;;;;;;;;;;;;x,,,,,
+the_molotov_ribbentrop_pact;莫洛托夫-里宾特洛甫协定;;;;;;;;;;;;;x,,,,,
+the_reoccupation_of_the_rhineland;进军莱茵兰;;;;;;;;;;;;;x,,,,,
+the_great_officer_purge;大清洗;;;;;;;;;;;;;x,,,,,
+the_destroyers_for_bases_agreement;驱逐舰换基地;;;;;;;;;;;;;x,,,,,
+the_annexation_of_albania;吞并阿尔巴尼亚;;;;;;;;;;;;;x,,,,,
+ultimatum_to_baltic_states;向波罗的海三国发出最后通牒;;;;;;;;;;;;;x,,,,,
+ultimatum_to_greece;向希腊发出最后通牒;;;;;;;;;;;;;x,,,,,
+us_occuption_of_iceland_and_greenland;控制格陵兰与冰岛;;;;;;;;;;;;;x,,,,,
+us_gear_up_for_war;美国战争动员;;;;;;;;;;;;;x,,,,,
+Imperial;帝国;;;;;;;;;;;;;x,,,,,
+ACEEPTED;同意;;;;;;;;;;;;;x,,,,,

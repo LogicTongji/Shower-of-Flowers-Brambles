@@ -1,0 +1,295 @@
+##################
+# 战区成立议决组 #
+##################
+diplomatic_decisions = {
+               The_first_armygroup = {
+		potential = {
+			tag = CHI
+		        not = { 
+		        year = 1938    
+		        war_with = CHC }
+		JAP = { has_country_flag = the_marco_polo_bridge_incident }
+		not = { has_country_flag = The_first_armygroup }
+		}
+		allow = {
+		    CJC = { war_with = JAP }
+		        not = { 
+		        year = 1938  
+				}
+		}
+		effect = {
+			set_country_flag = The_first_armygroup
+			country_event = 390062 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}                    
+              The_second_armygroup = {
+		potential = {
+			tag = CHI
+		        not = { 
+		         year = 1938
+		        war_with = CHC 
+		        }
+				JAP = { has_country_flag = the_marco_polo_bridge_incident }
+				not = { has_country_flag = The_second_armygroup }
+		}
+		allow = {
+		OR = {
+		CSD = { war_with = JAP }
+		CJC = { war_with = JAP }
+		}
+		 not = { 
+		        year = 1938  
+				}
+		}
+		effect = {
+			set_country_flag = The_second_armygroup
+			CSX = { country_event = 390063 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	                          
+               The_third_armygroup = {
+		potential = {
+			tag = CHI
+			date = 1937.8.13
+                        war_with = JAP
+		        not = { 
+		         year = 1938
+		        war_with = CHC 
+		        }
+				has_country_flag = CHI_Kangzhan
+				not = { has_country_flag = The_third_armygroup }
+				JAP = { has_country_flag = shanghai_incident }
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = The_third_armygroup
+			country_event = 390064 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+               The_fifth_armygroup = {
+		potential = {
+			tag = CHI
+		        not = {  
+		        year = 1938
+		        war_with = CHC 
+		        }
+                        war_with = JAP
+						has_country_flag = CHI_Kangzhan
+						JAP = { 
+						controller = 5542
+						controller = 5494
+						controller = 5275
+						controller = 4979
+						has_country_flag = shanghai_incident 
+						}
+						not = { has_country_flag = The_fifth_armygroup }
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = The_fifth_armygroup
+                        country_event = 390065 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+               The_forth_armygroup = {
+		potential = {
+			tag = CHI
+		        not = { 
+		         year = 1938
+		        war_with = CHC 
+		        }
+                        war_with = JAP
+                        JAP = { controller = 5275 }
+						has_country_flag = CHI_Kangzhan
+						not = { has_country_flag = The_forth_armygroup }
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = The_forth_armygroup
+		        country_event = 390066 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+      }
+       The_seventh_armygroup = {
+		potential = {
+			tag = CHI
+		        not = {
+		          year = 1938
+		        war_with = CHC 
+		        }
+                        war_with = JAP
+					   has_country_flag = CHI_Kangzhan
+					   has_country_flag = Unit_front_to_antiJap
+					   not = { has_country_flag = The_seventh_armygroup }
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = The_seventh_armygroup
+		       CSC = { country_event = 33332 } 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+      }
+       The_eighth_armygroup = {
+		potential = {
+			tag = CHI
+			 not = {
+		        war_with = CHC 
+				year = 1944
+		        }
+				has_country_flag = CHI_Kangzhan
+                        date = 1938.1.13
+						not = { has_country_flag = jap_seizes_coast_chi }
+						not = { has_country_flag = The_eighth_armygroup }
+						JAP = { controller = 5435 }
+                        war_with = JAP
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = The_eighth_armygroup
+		        country_event = 390067 
+		}
+		ai_will_do = {
+			factor = 1
+           }
+}
+             The_ninth_armygroup = {
+		potential = {
+			tag = CHI
+		       not = { 
+		       war_with = CHC 
+		       }
+		       CHI = { controls = 7508 }
+                        war_with = JAP
+                        or = {
+			 JAP = { controls = 5515 }
+			CJS = { controls = 5515 }  
+			CHB = { controls = 5515 }  
+			WJW = { controls = 5515 }  
+		     }
+			 has_country_flag = CHI_Kangzhan
+			 not = { has_country_flag = The_ninth_armygroup }
+		}
+		allow = {
+             has_country_flag = defence_wuhan
+		}
+		effect = {
+			set_country_flag = The_ninth_armygroup
+		               country_event = 390068
+		}
+		ai_will_do = {
+			factor = 1
+		}
+}
+       The_armygroup_in_henan = {
+		potential = {
+			tag = CHI
+		       not = { 
+		       war_with = CHC 
+		       }
+                       war_with = JAP
+                       not = { year = 1941 }
+                       JAP = { controls = 7508 } 
+					   has_country_flag = CHI_Kangzhan
+					   not = { has_country_flag = The_armygroup_in_henan }
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = The_armygroup_in_henan
+		               country_event = 390069 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+      }
+ The_sixth_armygroup = {
+		potential = {
+			tag = CHI
+		       not = { 
+		       war_with = CHC 
+		       }
+                        war_with = JAP
+                         JAP = { controls = 7508 }
+                         not = { year = 1941 }
+                        has_country_flag = CHI_Kangzhan 
+						has_country_flag = jap_seizes_coast_chi
+						not = { has_country_flag = The_sixth_armygroup }
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = The_sixth_armygroup
+		               country_event = 390070 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+      }
+      The_sulu_armygroup = {
+		potential = {
+			tag = CHI
+		       not = { 
+		       war_with = CHC 
+		       }
+                        war_with = JAP
+                         year = 1939
+                         not = { year = 1941 }
+                          JAP = { controls = 7508 }
+                     has_country_flag = CHI_Kangzhan   
+					 has_country_flag = jap_seizes_coast_chi
+					 not = { has_country_flag = sulu }
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = sulu
+         country_event = 390071
+		}
+		ai_will_do = {
+			factor = 1
+		}
+      }
+      The_jicha_armygroup = {
+		potential = {
+			tag = CHI
+		       not = { 
+		       war_with = CHC 
+		       }
+		                                year = 1939
+                        war_with = JAP
+                         JAP = { controls = 7508 }
+                         not = { year = 1941 }
+                        has_country_flag = CHI_Kangzhan
+						has_country_flag = jap_seizes_coast_chi
+						not = { has_country_flag = The_jicha_armygroup }
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = The_jicha_armygroup
+country_event = 390072
+		}
+		ai_will_do = {
+			factor = 1
+		}
+      }
+}

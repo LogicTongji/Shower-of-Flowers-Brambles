@@ -1,0 +1,40 @@
+Africa_first = {
+                             major = yes
+		potential = {
+			tag = ITA
+			has_country_flag = Itali_in_sea_in_land	
+			GER = { 
+         OR = {
+         war_with = FRA
+         war_with = ENG
+         }
+       }
+		}
+		allow = {
+		  5484 = {
+				controller = {
+					faction = axis
+			}
+		}
+		ITA = {
+                                not = { has_country_flag = Itali_in_africa } 
+		OR = {
+		      war_with = FRA
+		      war_with = ENG
+		     fascistic_ITA = { organisation = 75 }  
+		 }
+		}
+	 }
+		effect = {
+			set_country_flag = Itali_in_africa	
+		  national_unity = 40 
+                                      ITA = {
+                                                                   load_oob = "ITA_8A.txt"
+		  		  war = { target = FRA }
+		  		   war = { target = ENG }
+		  		  }
+			     }			
+		ai_will_do = {
+			factor = 1
+		}
+	}

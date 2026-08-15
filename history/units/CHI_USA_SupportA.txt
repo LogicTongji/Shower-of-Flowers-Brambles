@@ -1,0 +1,24 @@
+army = {
+		name = "中国驻印军"
+		location = 7559
+		regiment = { type = hq_brigade name = "驻印军司令部" historical_model = 0 }
+		regiment = { type = cavalry_brigade name = "司令部守备部队" strength = 20 historical_model = 0 }
+                regiment = { type = artillery_brigade name = "炮兵团" experience = 25 strength = 20 historical_model = 3 }
+                regiment = { type = armor_brigade name = "新编第22、38师装甲营" builder = USA historical_model = 4 }
+			division= {
+				name = "中国驻印军新编22师"
+				location = 7559
+				regiment = { type = chi_star_destroyer experience = 75 builder = USA historical_model = 4 }
+				regiment = { type = chi_star_destroyer experience = 75 builder = USA historical_model = 4 }
+                                regiment = { type = chi_star_destroyer experience = 75 builder = USA historical_model = 4 }
+                                regiment = { type = artillery_brigade experience = 75 builder = USA historical_model = 4 }        
+			}
+			division= {
+				name = "中国驻印军新编38师"
+				location = 7559
+				regiment = { type = chi_star_destroyer experience = 75 builder = USA historical_model = 4 }
+				regiment = { type = chi_star_destroyer experience = 75 builder = USA historical_model = 4 }
+                                regiment = { type = chi_star_destroyer experience = 75 builder = USA historical_model = 4 }
+                                regiment = { type = artillery_brigade experience = 75 builder = USA historical_model = 4 }
+		}
+	}     

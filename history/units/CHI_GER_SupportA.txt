@@ -1,0 +1,30 @@
+division = {
+       name = "第88师"
+       location = 5541
+       regiment = { type = chi_star_destroyer name = "第262旅" experience = 35 strength = 20  historical_model = 1 }
+       regiment = { type = chi_star_destroyer name = "第264旅" experience = 35 strength = 20  historical_model = 1 }
+       regiment = { type = infantry_brigade name = "补充团" experience = 25 strength = 20  historical_model = 1 }
+       regiment = { type = artillery_brigade name = "炮兵团" experience = 35 strength = 20  historical_model = 1 }
+       regiment = { type = communications_company name = "通讯兵连" experience = 25 strength = 20  historical_model = 1 }
+       regiment = { type = field_battalion name = "野战部队" experience = 25 strength = 20  historical_model = 1 }
+}
+division = {
+       name = "第87师"
+       location = 5518
+       regiment = { type = chi_star_destroyer name = "第259旅" experience = 35 strength = 20  historical_model = 1 }
+       regiment = { type = chi_star_destroyer name = "第261旅" experience = 35 strength = 20  historical_model = 1 }
+       regiment = { type = infantry_brigade name = "补充团" experience = 25 strength = 20  historical_model = 1 }
+       regiment = { type = artillery_brigade name = "炮兵团" experience = 35 strength = 20  historical_model = 1 }
+       regiment = { type = communications_company name = "通讯兵连" experience = 25 strength = 20  historical_model = 1 }
+       regiment = { type = field_battalion name = "野战部队" experience = 25 strength = 20  historical_model = 1 }
+}
+division = {
+       name = "第36师"
+       location = 5518
+       regiment = { type = chi_star_destroyer name = "第106旅" experience = 35 strength = 20  historical_model = 1 }
+       regiment = { type = chi_star_destroyer name = "第108旅" experience = 35 strength = 20  historical_model = 1 }
+       regiment = { type = infantry_brigade name = "补充团" experience = 25 strength = 20  historical_model = 1 }
+       regiment = { type = artillery_brigade name = "炮兵团" experience = 35 strength = 20  historical_model = 1 }
+       regiment = { type = communications_company name = "通讯兵连" experience = 25 strength = 20  historical_model = 1 }
+       regiment = { type = field_battalion name = "野战部队" experience = 25 strength = 20  historical_model = 1 }
+}

@@ -1,0 +1,52 @@
+owner = CRH
+
+controller = CRH
+
+add_core = CHC
+add_core = CRH
+add_core = CHI
+points = 2
+metal = 4.00
+energy = 10.00
+rare_materials = 1.00
+industry = 2
+infra = 7
+air_base = 5
+land_fort = 1
+manpower = 12.00
+leadership = 1.20
+1933.12.29 = {
+	owner = CJC
+
+controller = CJC
+add_core = CJC 
+}
+1937.7.29 = {
+	owner = JAP
+land_fort = 8
+}
+1940.3.1 = {
+owner = WJW
+controller = WJW
+add_core = WJW
+
+}
+1945.9.28 = {
+	owner = CHI
+	controller = CHI
+	remove_core = WJW
+}
+1946.1.1 = {
+owner = CHI
+controller = CHI
+
+}
+1947.1.1 = {
+owner = CSY
+controller = CSY
+
+}
+1949.10.1 = { 
+owner = PRC
+controller = PRC
+}

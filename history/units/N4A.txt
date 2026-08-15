@@ -1,0 +1,57 @@
+army = {				
+		 name = "陆军新编第四军"			
+		 location = 5422			
+		 leader = 76310 			
+		 regiment = { type = hq_brigade name = "新编第四军总司令部" experience = 40 historical_model = 2}			
+		 regiment = { type = bergsjaeger_brigade name = "新四军特务团" experience = 30 historical_model = 1 }
+			 division= {		
+				 name = "新四军第1师"	
+				 location = 5422	
+				 regiment = { type = bergsjaeger_brigade name = "新四军第1旅"  experience = 40 historical_model = 1 }	
+				 regiment = { type = bergsjaeger_brigade name = "新四军第2旅"  experience = 40 historical_model = 1 }
+                                 regiment = { type = bergsjaeger_brigade name = "新四军第3旅"  experience = 40 historical_model = 1 }	
+			}		
+			 division= {		
+				 name = "新四军第2师"	
+				 location = 5422	
+				 regiment = { type = militia_brigade name = "新四军第4旅" experience = 40 historical_model = 2}	
+				 regiment = { type = militia_brigade name = "新四军第5旅" experience = 40 historical_model = 2}	
+				 regiment = { type = militia_brigade name = "新四军第6旅" experience = 40 historical_model = 2}	
+	                 }
+			 division= {		
+				 name = "新四军第3师"	
+				 location = 5422	
+				 regiment = { type = bergsjaeger_brigade name = "新四军第7旅" experience = 40 historical_model = 1 }	
+				 regiment = { type = bergsjaeger_brigade name = "新四军第8旅" experience = 40 historical_model = 1 }
+                                 regiment = { type = bergsjaeger_brigade name = "新四军第9旅"  experience = 40 historical_model = 1 }	
+			}		
+			 division= {		
+				 name = "新四军第4师"	
+				 location = 5422	
+				 regiment = { type = militia_brigade name = "新四军第10旅"  experience = 40 historical_model = 2}	
+				 regiment = { type = militia_brigade name = "新四军第11旅"  experience = 40 historical_model = 2}
+                                 regiment = { type = bergsjaeger_brigade name = "新四军第12旅"  experience = 40 historical_model = 1 }	
+			}		
+			 division= {		
+				 name = "新四军第5师"	
+				 location = 5422	
+				 regiment = { type = bergsjaeger_brigade name = "新四军第13旅" experience = 40 historical_model = 1 }	
+				 regiment = { type = bergsjaeger_brigade name = "新四军第14旅" experience = 40 historical_model = 1 }	                               
+				 regiment = { type = bergsjaeger_brigade name = "新四军第15旅" experience = 40 historical_model = 1 }
+                         }
+                          division= {		
+				 name = "新四军第6师"	
+				 location = 5422	
+				 regiment = { type = bergsjaeger_brigade name = "新四军第16旅" experience = 40 historical_model = 1 }	
+				 regiment = { type = bergsjaeger_brigade name = "新四军第17旅" experience = 40 historical_model = 1 }	                                
+				 regiment = { type = bergsjaeger_brigade name = "新四军第18旅" experience = 40 historical_model = 1 }
+                             }
+                          division= {		
+				 name = "新四军第7师"	
+				 location = 5422	
+				 regiment = { type = bergsjaeger_brigade name = "新四军第19旅" experience = 40 historical_model = 1 }	
+				 regiment = { type = bergsjaeger_brigade name = "新四军第20旅" experience = 40 historical_model = 1 }	                               
+				 regiment = { type = bergsjaeger_brigade name = "新四军第21旅" experience = 40 historical_model = 1 }	
+			}			
+		}			
+	}		

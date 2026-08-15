@@ -1,0 +1,20 @@
+owner = ITA
+controller = ITA
+add_core = ITA
+
+energy = 1.00
+industry = 1
+infra = 8
+manpower = 1.00
+leadership = 0.15
+1943.9.23 = {
+	owner = RSI
+	controller = RSI
+	add_core = RSI
+}
+
+1945.6.7 = {
+	owner = ITA
+	controller = ITA
+	remove_core = RSI
+}

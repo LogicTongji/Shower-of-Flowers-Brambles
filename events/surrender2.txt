@@ -1,0 +1,314 @@
+# Formation of Vichy Regime
+country_event = {
+	
+	id = 504
+
+	is_triggered_only = yes
+
+	major = yes
+	
+	trigger = {
+		tag = FRA
+		war_with = GER
+		NOT = { exists = VIC }
+		NOT = { has_country_flag = fr_signs_peace }
+	}
+
+	title = "EVTNAME504"
+	desc = "EVTDESC504"
+	picture = "VIC"
+
+	option = {
+		name = "EVTOPTA504"					# Continue the fight as Free France
+		ai_chance = { factor = 100 }
+		set_country_flag = fr_signs_peace
+		northern_france_region = { change_controller = GER }
+		western_france_region = { change_controller = GER }
+
+		france_mondane = { 
+			limit = {
+				not = { controlled_by = ITA }
+			} 
+			secede_province = VIC add_core = VIC
+		}
+		
+		france_briancon = { limit = {
+                                                             not = { controlled_by = ITA 
+                                               }
+			} 
+			secede_province = VIC add_core = VIC
+		}
+		
+		france_nice = { limit = {
+                                                     not = { controlled_by = ITA
+                                              }
+			} 
+			secede_province = VIC add_core = VIC
+		}
+		
+		FRA_4359 = { limit = {
+                                                   not = { controlled_by = ITA
+                                            }
+			} 
+			secede_province = VIC add_core = VIC
+		}
+		
+		FRA_4027 = { limit = {
+                                                   not = { controlled_by = SPA 
+                                                }
+			} 
+			change_controller = GER
+		}
+		
+		FRA_3959 = { limit = {
+                                                   not = { controlled_by = SPA
+                                                  }
+			} 
+			secede_province = VIC add_core = VIC
+		}
+		
+		FRA_4099 = { limit = {
+                                                   not = { controlled_by = SPA
+                                                 }
+			} 
+			secede_province = VIC add_core = VIC
+		}
+		syrian_region = { limit = {
+                                                        not = { owned_by = TUR
+                                              }
+			} 
+			secede_province = VIC add_core = VIC
+		}
+		
+		release = VIC
+		VIC = {
+			head_of_state = 57001
+			head_of_government = 57002
+			foreign_minister = 57002
+			armament_minister = 57019
+			minister_of_security = 57026
+			minister_of_intelligence = 57006
+			chief_of_staff = 57002
+			chief_of_army = 57034
+			chief_of_navy = 57002
+			chief_of_air = 57010
+			any_country = {
+				limit = { faction = axis }
+				non_aggression_pact = VIC
+			}
+			GER = { threat = { who = VIC value = -150 }
+                             }
+			GER = { guarantee = VIC }
+			neutrality = 100
+			
+			capital = 3484 # Vichy
+			infantry_brigade = 3484
+			infantry_brigade = 3484
+			infantry_brigade = 3484
+			infantry_brigade = 3484
+			infantry_brigade = 3484
+			infantry_brigade = 5299
+			infantry_brigade = 5299
+			infantry_brigade = 6236
+			infantry_brigade = 6236
+			# FRA_10037 = { secede_province = FRA } # Gabon
+			# FRA_10028 = { secede_province = FRA } # Kongo
+			# FRA_9921 = { secede_province = FRA } # Cameroon
+			# FRA_9804 = { secede_province = FRA } # Central Africa
+			# FRA_9860 = { secede_province = FRA } # South Tshad
+			# FRA_9801 = { secede_province = FRA } # North Tshad
+		}
+		southern_france_region = { add_core = VIC secede_province = VIC }
+		french_indochine_region = { add_core = VIC secede_province = VIC }
+		north_africa_region = {add_core = VIC secede_province = VIC }
+		#FRA_485 = { add_core = VIC secede_province = VIC } # Martinique and Guadeloupe
+		#FRA_6620 = { add_core = VIC secede_province = VIC } # Tahiti
+		FRA_9933 = { add_core = VIC secede_province = VIC } # Guyana
+		FRA_9867 = { add_core = VIC secede_province = VIC } # Djibouti
+		FRA_10273 = { add_core = VIC secede_province = VIC } # North Madagascar
+		FRA_10345 = { add_core = VIC secede_province = VIC } # South Madagascar
+		FRA_10634 = { add_core = VIC secede_province = VIC } # Reunion
+		FRA_11386 = { add_core = VIC secede_province = VIC } # The Comoros
+		FRA_10320 = { add_core = VIC secede_province = VIC } # Kerguelen Islands
+		#FRA_10320 = { add_core = VIC secede_province = VIC } # St. Pierre et Miquelon
+		
+
+		# Make sure Vichy is set up properly
+		FRA = {
+			national_unity = 90
+			##De Gaulle Cabinet##
+			head_of_state = 2031
+			head_of_government = 2031
+			minister_of_security = 2036
+			chief_of_staff = 2031
+			foreign_minister = 2061
+			armament_minister = 2088
+			minister_of_intelligence = 2134
+			chief_of_army = 2164
+			chief_of_navy = 2178
+			chief_of_air = 2193
+			join_faction = allies
+			10028 = { air_base = 4 }
+			infantry_brigade = 10028
+			infantry_brigade = 10028
+			infantry_brigade = 10028
+			infantry_brigade = 10028
+			infantry_brigade = 10028			
+		}
+		ITA = { country_event = 517 }
+		SPA = { country_event = 530 }
+		form_government_in_exile = yes
+	}
+}
+
+# Bitter Peace
+country_event = {
+	id = 507
+	title = "EVTNAME507"
+	desc = "EVTDESC507"
+	picture = "Bitter_Peace"
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	trigger = {
+		TAG = SOV
+		NOT = {
+			has_country_flag = su_signs_peace
+		}
+	}
+
+	option = {
+		name = "EVTOPTA507"					# We surrender! Just let us keep what we still have.
+		ai_chance = { factor = 100 }
+		set_country_flag = su_signs_peace
+		remove_minister = 4002 # Iosif V. Stalin
+		remove_minister = 4076 # Vyacheslav Molotov
+		head_of_government = 4075 # Lavrenti P. Beria
+		minister_of_security = 4075 # Lavrenti P. Beria
+		western_russia_region = { secede_province = GER }
+		central_western_russia_region = { secede_province = GER }
+		baltic_states_region = { secede_province = GER }
+		eastern_poland = { secede_province = GER }
+		
+		khabarovskiy_kray_region = { 
+			limit = { war_with = JAP }
+			secede_province = JAP 	
+		}
+		kamchatka_region = {
+			limit = { war_with = JAP }
+			secede_province = JAP
+		}
+		release = ROM
+		release = FIN
+		bessarabia = { 
+			secede_province = ROM 
+		}
+		Soviet_claims_FIN = { secede_province = FIN }
+		finland_region = { 
+			limit = { 
+					controlled_by = SOV
+				} 
+			secede_province = FIN
+		}
+		capital = 8594  #Novosibirsk
+		
+		relation = { who = ENG value = -15 }
+		relation = { who = FRA value = -15 }
+		relation = { who = USA value = -15 }
+		relation = { who = GER value = 50 }
+		relation = { who = JAP value = 50 }
+		relation = { who = ROM value = 20 }
+		relation = { who = HUN value = 20 }
+		relation = { who = FIN value = 20 }
+		relation = { who = MAN value = 20 }
+		
+		GER = { end_war = SOV }
+		non_aggression_pact = GER   #No more immediate re-decs
+		GER = { threat = { who = SOV  value = -50 } }   #Drop in the bucket most likely
+		ITA = { end_war = SOV }
+		non_aggression_pact = ITA
+		RSI = { end_war = SOV }
+		non_aggression_pact = RSI
+		MAN = { end_war = SOV }
+		non_aggression_pact = MAN
+		FIN = { end_war = SOV }
+		non_aggression_pact = FIN
+		ROM = { end_war = SOV }
+		non_aggression_pact = ROM
+		SLO = { end_war = SOV }
+		non_aggression_pact = SLO
+		CRO = { end_war = SOV }
+		non_aggression_pact = CRO
+		VIC = { end_war = SOV }
+		non_aggression_pact = VIC
+		BUL = { end_war = SOV }
+		non_aggression_pact = BUL
+		PER = { end_war = SOV }
+		non_aggression_pact = PER
+		HUN = { end_war = SOV }
+		non_aggression_pact = HUN
+		dissent = 10
+		neutrality = 100
+		threat = {who = all value = -200 }  #Soviets just got their butts kicked, hardly a threat to world peace
+		#GER = { country_event = 31001 }
+	}
+	option = {
+		name = "EVTOPTB507"					 # Fight to the bitter end!
+		set_country_flag = su_signs_peace
+		GER = { set_country_flag = su_signs_peace }
+		relation = { who = ENG value = 15 }
+		relation = { who = FRA value = 15 }
+		relation = { who = USA value = 15 }
+		dissent = 30
+	}
+}
+
+# Surrender by Vichy to the Allies
+country_event = {
+	
+	id = 518
+
+	is_triggered_only = yes
+	
+	major = yes
+
+	trigger = {
+		tag = VIC
+		FROM = { faction = allies }
+		FRA = { faction = allies }
+	}
+
+	title = "EVTNAME518"  #There's no point in fighting anymore
+	desc = "EVTDESC518"  #It seems we have underestimated the Allies. Now we are defeated and will rejoin Free France again.
+	picture = "Bitter_Peace"
+
+	option = {
+		name = "EVTOPTA518"  #Reunited at last!
+		FRA = { inherit = VIC }
+		FRA = { war_exhaustion = -5 }
+		FRA = {
+			any_owned = {
+				limit = {
+					exists = GER			
+					GER = { faction = axis }
+					controlled_by = FRA
+					is_core = VIC
+					
+					OR = {	
+						region = southern_france_region
+						region = western_france_region
+						region = france_nice
+						region = france_briancon
+						region = france_mondane
+						region = FRA_4099
+						region = FRA_3959
+						}
+				}
+				change_controller = GER
+				remove_core = VIC
+			}
+		}
+	}
+}

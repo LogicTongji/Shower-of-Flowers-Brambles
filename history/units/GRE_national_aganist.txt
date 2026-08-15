@@ -1,0 +1,36 @@
+division = {
+				name = "民族军第1师"
+				location = 4667
+				regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+			}
+			division = {
+				name = "民族军第2师"
+				location = 4667
+				regiment = { type = militia_brigade experience = 20 historical_model = 0 }
+				regiment = { type = militia_brigade experience = 20 historical_model = 0 }
+				}
+division = {
+				name = "民族军第3师"
+				location = 4667
+				regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+			}
+			division = {
+				name = "民族军第4师"
+				location = 4667
+				regiment = { type = militia_brigade experience = 20 historical_model = 0 }
+				regiment = { type = militia_brigade experience = 20 historical_model = 0 }
+				}
+				division = {
+				name = "民族军第5师"
+				location = 4667
+				regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+			}
+			division = {
+				name = "民族军第6师"
+				location = 4667
+				regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 30 historical_model = 1 }
+				}

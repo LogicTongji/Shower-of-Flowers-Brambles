@@ -1,0 +1,257 @@
+xxxx;;;;;;;;;;;;;;x
+##################################################;;;;;;;;;;;;;;x
+# Interface;;;;;;;;;;;;;;x
+##################################################;;;;;;;;;;;;;;x
+LIBERATE_COUNTRY;解放国家;Libirer le pays;Land befreien;;Liberar pams;;;;;;;;;x
+CREATE_PUPPET;建立傀儡国;Crier un Itat fantoche;Marionettenstaat errichten;;Crear tmtere;;;;;;;;;x
+POLITICAL_ORGANIZATION;组织度;Organisation;Organisation;;Organizacisn;;;;;;;;;x
+POLITICAL_POPULARITY;支持率;Populariti;Beliebtheit;;Popularidad;;;;;;;;;x
+RULING_IDEOLOGY;执政理念;Idiologie dominante;Vorherrschende Ideologie;;Ideologma de Gobierno;;;;;;;;;x
+##################################################;;;;;;;;;;;;;;x
+# Minister Positions;;;;;;;;;;;;;;x
+##################################################;;;;;;;;;;;;;;x
+head_of_state;国家元首;Chef de l'Itat;Staatschef;;Jefe de Estado;;;;;;;;;x
+head_of_government;政府首脑;Chef du gouvernement;Regierungschef;;Jefe de Gobierno;;;;;;;;;x
+foreign_minister;外交部长;Ministre des affaires itranghres;Au_enminister;;Ministro Exteriores;;;;;;;;;x
+armament_minister;军械部长;Ministre de la difense;Verteidigungsminister;;Ministro Defensa;;;;;;;;;x
+minister_of_security;安全部长;Ministre de l'intirieur;Minister f|r innere Sicherheit;;Ministro Seguridad;;;;;;;;;x
+minister_of_intelligence;情报部长;Chef des services secrets;Nachrichtendienstchef;;Jefe de Inteligencia;;;;;;;;;x
+chief_of_staff;总参谋长;Chef d'itat-major;Generalstabschef;;Jefe Estado Mayor;;;;;;;;;x
+chief_of_army;陆军总长;Chef de l'armie de terre;Armee-Oberfehlshaber;;Jefe del Ejircito de Tierra;;;;;;;;;x
+chief_of_navy;海军总长;Chef de la marine;Marine-Oberfehlshaber;;Jefe de la Marina de Guerra;;;;;;;;;x
+chief_of_air;空军总长;Chef de l'armie de l'air;Luftwaffenoberbefehlshaber;;Jefe de las Fuerzas Aireas;;;;;;;;;x
+##################################################;;;;;;;;;;;;;;x
+# Ideologies;;;;;;;;;;;;;;x
+##################################################;;;;;;;;;;;;;;x
+national_socialist;国家社会主义;National-socialiste;Nationalsozialist;;Nacionalsocialista;;;;;;;;;x
+fascistic;法西斯主义;Fasciste;Faschist;;Fascista;;;;;;;;;x
+paternal_autocrat;独裁主义;Autocrate paternaliste;Vdterlicher Alleinherrscher;;Autscrata paternalista;;;;;;;;;x
+social_conservative;社会保守主义;Conservatrice;Sozialkonservativer;;Social conservador;;;;;;;;;x
+market_liberal;贸易自由主义;Libirale;Marktliberaler;;Ultraliberal;;;;;;;;;x
+social_liberal;社会自由主义;Sociale-libirale;Sozialliberaler;;Social liberal;;;;;;;;;x
+social_democrat;社会民主主义;Sociale-dimocrate;Sozialdemokrat;;Socialdemscrata;;;;;;;;;x
+left_wing_radical;左翼激进主义;Marxiste;Linksradikaler;;Izquierda radical;;;;;;;;;x
+leninist;列宁主义;Lininiste;Leninist;;Leninista;;;;;;;;;x
+stalinist;斯大林主义;Stalinienne;Stalinist;;Estalinista;;;;;;;;;x
+##################################################;;;;;;;;;;;;;;x
+# Ministertypes;;;;;;;;;;;;;;x
+##################################################;;;;;;;;;;;;;;x
+biased_intellectual;偏执知识份子;Intellectuel tendancieux;Beeinflusster Intellektueller;;Intelectual partidista;;;;;;;;;x
+ideological_crusader;意识型态的十字军;Croisi idiologique;Ideologischer Kreuzritter;;Cruzado ideolsgico;;;;;;;;;x
+apologetic_clerk;谦卑的公务员;Fonctionnaire navri;Zaghafter Angestellter ;;Funcionario indeciso;;;;;;;;;x
+iron_fisted_brute;残忍的野兽;Brute ` poigne de fer;Eisenharter Rohling;;Bestia con puqo de hierro;;;;;;;;;x
+great_compromiser;崇高的妥协者;As du compromis;Gro_er Kompromissler;;Gran conciliador;;;;;;;;;x
+general_staffer;总参谋部幕僚;Priposi giniral;Generalstabsoffizier;;General de carrera;;;;;;;;;x
+the_cloak_n_dagger_schemer;阴谋家;Conspirateur;Mantel-und-Degen-Intrigant;;Maquiavilico en la sombra;;;;;;;;;x
+administrative_genius;行政天才;Bureaucrate de ginie;Verwaltungsgenie;;Genio de la gestisn;;;;;;;;;x
+resource_industrialist;资源工业家;Industriel compulsif;Ressourcen-Industrialist;;Industrial de recursos;;;;;;;;;x
+laissez_faires_capitalist;自由主义资本家;Capitaliste laxiste;Laissez-Faire-Kapitalist;;Capitalista libre mercado;;;;;;;;;x
+theoretical_scientist;理论科学家;Scientifique abstrait;Theoretischer Wissenschaftler;;Cientmfico tesrico;;;;;;;;;x
+military_entrepreneur;军工企业家;Entrepreneur militariste;Kriegsunternehmer;;Contratista militar;;;;;;;;;x
+battle_fleet_proponent;舰队支持者;Adepte des navires;Schlachtflotten-Bef|rworter;;Partidario flota combate;;;;;;;;;x
+submarine_proponent;潜艇支持者;Adepte des sous-marins;U-Boot-Bef|rworter;;Partidario submarinos;;;;;;;;;x
+tank_proponent;坦克支持者;Adepte des blindis;Panzer-Bef|rworter;;Partidario tanques;;;;;;;;;x
+infantry_proponent;步兵支持者;Adepte de l'infanterie;Infanterie-Bef|rworter;;Partidario infanterma;;;;;;;;;x
+air_to_ground_proponent;空对地支持者;Adepte air-sol;Luft-Boden-Raketen-Bef|rworter;;Partidario aire-tierra;;;;;;;;;x
+air_to_sea_proponent;空对海支持者;Adepte air-mer;Luft-See-Raketen-Bef|rworter;;Partidario aire-mar;;;;;;;;;x
+strategic_air_proponent;战略空军支持者;Adepte des bombardiers;Strategische Kriegsf|hrung-Bef|rworter;;Partidario bombardeo estrat.;;;;;;;;;x
+silent_lawyer;沉默的律师;Avocat discret;Schweigsamer Anwalt;;Ordenancista silencioso;;;;;;;;;x
+compassionate_gentleman;慈悲的绅士;Philanthrope;Leidenschaftlicher Gentleman;;Caballero compasivo;;;;;;;;;x
+crime_fighter;罪恶斗士;Adversaire du crime;Verbrechensbekdmpfer;;Luchador contra crimen;;;;;;;;;x
+prince_of_terror;恐怖的巨头;Prince de la terreur;Terrorf|rst;;Prmncipe del terror;;;;;;;;;x
+back_stabber;幕后刺客;Fourbe;Verrdter;;Apuqalador;;;;;;;;;x
+man_of_the_people;人民代表;Homme du peuple;Mann des Volkes;;Hombre del pueblo;;;;;;;;;x
+efficient_sociopath;高效的反社会者;Sociopathe efficace;Effizienter Soziopath;;Socispata eficiente;;;;;;;;;x
+technical_specialist;技术专家;Technicien;Technikspezialist;;Especialista ticnica;;;;;;;;;x
+logistics_specialist;后勤专家;Logisticien;Logistikspezialist;;Especialista logmstica;;;;;;;;;x
+political_specialist;政治专家;Politicien;Politikspezialist;;Especialista polmtica;;;;;;;;;x
+dismal_enigma;阴沉的神秘客;Homme de l'ombre;D|steres Rdtsel;;Enigma tinieblas;;;;;;;;;x
+industrial_specialist;工业专家;Industriel;Industriespezialist;;Especialista industria;;;;;;;;;x 
+naval_intelligence_specialist;海军情报专家;Officier de renseignement naval;Marinenachrichtendienst-Spezialist;;Especialista intelig. naval;;;;;;;;;x
+school_of_manoeuvre;机动作战学派;Thiorie de la man uvre;Manvverschule;;Escuela de maniobra;;;;;;;;;x
+school_of_fire_support;火力支援学派;Thiorie du soutien d'artillerie;Schule der Feuerunterst|tzung;;Escuela de apoyo de fuego;;;;;;;;;x
+school_of_mass_combat;人海战术学派;Thiorie du combat de masse;Schule der Massenkampfes;;Escuela combate masas;;;;;;;;;x
+school_of_psychology;心理战学派;Thiorie de la psychologie;Schule der Psychologie;;Escuela psicologma;;;;;;;;;x
+school_of_defence;防御战学派;Thiorie de la difense;Schule der Verteidigung;;Escuela defensa;;;;;;;;;x
+elastic_defence_doctrine;弹性防御学说;Doctrine de la difense flexible;Doktrin der elastischen Verteidigung;;Doctrina defensa elastica;;;;;;;;;x
+static_defence_doctrine;静态防御学说;Doctrine de la difense statique;Doktrin der statischen Verteidigung;;Doctrina defensa estatica;;;;;;;;;x
+decisive_battle_doctrine;战略决战学说;Doctrine de la bataille dicisive;Entscheidungsschlacht-Doktrin;;Doctrina de la batalla decisiva;;;;;;;;;x
+armoured_spearhead_doctrine;装甲先锋学说;Doctrine du fer de lance blindi;Blitzkrieg-Doktrin;;Doctrina punta ataque acoraz.;;;;;;;;;x
+guns_and_butter_doctrine;军事经济并重学说;Doctrine du soutien logistique;Kanonen-und-Butter-Doktrin;;Doctrina caqones y mant.;;;;;;;;;x
+open_seas_doctrine;军事经济并重学说;Doctrine de la haute mer;Offenes Meer-Doktrin;;Doctrina mares abiertos;;;;;;;;;x
+decisive_naval_battle_doctrine;海军战略决战学说;Doctrine de la bataille navale dicisive;See-Entscheidungsschlacht-Doktrin;;Doctrina de batalla naval decisiva;;;;;;;;;x
+power_projection_doctrine;战力投放作战学说;Doctrine de la suprimatie;Machtprojektionsdoktrin;;Doctrina proyec. poder;;;;;;;;;x
+indirect_approach_doctrine;迂回接近学说;Doctrine de l'approche indirecte;Doktrin der indirekten Anndherung;;Doctrina de la aproximacisn indirecta;;;;;;;;;x
+base_control_doctrine;基地控制学说;Doctrine du contrtle de base;Basiskontrolldoktrin;;Doctrina control bases;;;;;;;;;x
+air_superiority_doctrine;空中优势学说;Doctrine de la domination airienne;Luft|berlegenheitsdoktrin;;Doctrina de la superioridad airea;;;;;;;;;x
+naval_aviation_doctrine;海军航空兵学说;Doctrine de l'aironavale;Marineflieger-Doktrin;;Doctrina aviacisn naval;;;;;;;;;x
+army_aviation_doctrine;陆军航空兵学说;Doctrine de l'aviation terrestre;Heeresflieger-Doktrin;;Doctrina aviacisn ejircito;;;;;;;;;x
+carpet_bombing_doctrine;地毯式轰炸学说;Doctrine du tapis de bombes;Fldchenbombardement-Doktrin;;Doctrina del bombardeo en alfombra;;;;;;;;;x
+vertical_envelopment_doctrine;垂直包围学说;Doctrine de l'encerclement vertical;Doktrin der vertikalen Umfassung;;Doctrina desembarco vertical;;;;;;;;;x
+undistinguished_suit;无特征的人;Fonctionnaire anonyme;Durchschnittlicher B|rokrat;;Hombre del traje gris;;;;;;;;;x
+air_superiority_proponent;空中优势支持者;Adepte de la suprimatie airienne;Luft|berlegenheitsbef|rworter;;Partidario superior. airea;;;;;;;;;x
+corrupt_kleptocrat;腐败政客;Kleptocrate corrompu;Korrupter Pl|nderer;;Cleptscrata corrupto;;;;;;;;;x
+crooked_kleptocrat;坑蒙拐骗的政客;Kleptocrate fourbe;Betr|gerischer Pl|nderer;;Cleptscrata retorcido;;;;;;;;;x
+power_hungry_demagogue;渴望力量的煽动者;Dimagogue avide de pouvoir;Machthungriger Demagoge;;Demagogo sediento de poder;;;;;;;;;x
+barking_buffoon;咆哮的小丑;Bouffon autoritaire;Keifender Hanswurst;;Payaso bocazas;;;;;;;;;x
+stern_imperialist;严厉的帝国主义者;Impirialiste implacable;Ernster Imperialist;;Imperialista a ultranza;;;;;;;;;x
+ruthless_powermonger;残忍的权利投机者;Assoiffi de pouvoir impitoyable;Skrupelloser Machtmensch;;Dispota implacable;;;;;;;;;x
+autocratic_charmer;独裁魔术师;Charmeur autocratique;Autokratischer Charmeur;;Autscrata encantador;;;;;;;;;x
+resigned_generalissimo;听天命的大元帅;Giniralissime risigni;Resignierter Generalissimus;;Generalmsimo en excedencia;;;;;;;;;x
+benevolent_gentleman;仁爱的绅士;Gentleman bienveillant;Wohltdtiger Gentleman;;Caballero benevolente;;;;;;;;;x
+weary_stiff_neck;疲倦的造作者;Entjti fatigui;Erschvpfter Hardliner;;Pisaverde cansino;;;;;;;;;x
+insignificant_layman;无关紧要的外行;Amateur insignifiant;Unbedeutender Laie;;Ciudadanito de a pie;;;;;;;;;x
+die_hard_reformer;顽固的改革家;Riformateur intransigeant;Eingefleischter Reformer;;Reformador acirrimo;;;;;;;;;x
+pig_headed_isolationist;愚蠢的孤立主义者;Isolationniste tjtu;Starrkvpfiger Isolationist;;Aislacionista empecinado;;;;;;;;;x
+popular_figurehead;受欢迎但有名无实的领袖;Chef de file populaire;Populdre Galionsfigur;;Adorno popular;;;;;;;;;x
+silent_workhorse;沉默的实干家;Bjte de travail silencieuse;Schweigsames Arbeitspferd;;Mulo discreto;;;;;;;;;x
+naive_optimist;天真的乐观主义者;Optimiste naof;Naiver Optimist;;Optimista ingenuo;;;;;;;;;x
+flamboyant_tough_guy;精力过人的硬汉;Dur ` cuire extravagant;Extravaganter Grobian;;Tipo duro extravagante;;;;;;;;;x
+happy_amateur;快乐的业余政治家;Amateur heureux;Frvhlicher Amateur;;Aficionado feliz;;;;;;;;;x
+backroom_backstabber;密谋的暗害者;Trantre sournois;Hinterzimmerverrdter;;Apuqalador en la sombra;;;;;;;;;x
+smiling_oilman;微笑的石油商;Roi du pitrole souriant;Grinsender Vlbaron;;Magnate sonriente;;;;;;;;;x
+old_general;老陆军将军;Vieux giniral;Alter General;;Antiguo general;;;;;;;;;x
+old_admiral;老海军上将;Vieil amiral;Alter Admiral;;Viejo almirante;;;;;;;;;x
+old_air_marshal;老空军元帅;Vieux Giniral de l'armie de l'air;Alter Fliegermarschall;;Antiguo mariscal del aire;;;;;;;;;x
+political_protege;政治上的受保护人;Protigi politique;Politischer Protigi;;Protegido polmtico;;;;;;;;;x
+ambitious_union_boss;雄心壮志的联盟领导人;Chef syndicaliste ambitieux;Ambitionierter Gewerkschaftsboss;;Jefe sindical ambicioso;;;;;;;;;x
+corporate_suit;法人代表;Costume trois pihces;Konzernler;;Encorbatado;;;;;;;;;x
+research_specialist;调查专家;Chercheur;Forschungsspezialist;;Especialista en investigacisn;;;;;;;;;x
+##################################################;;;;;;;;;;;;;;x
+# Government Types;;;;;;;;;;;;;;x
+##################################################;;;;;;;;;;;;;;x
+national_socialism;国家社会主义制度;National-socialisme;Nationalsozialismus;;Nacionalsocialismo;;;;;;;;;x
+fascist_republic;法西斯共和制度;Ripublique fasciste;Faschistische Republik;;Repzblica fascista;;;;;;;;;x
+germanic_fascist_republic;法西斯共和制度;Ripublique fasciste;Faschistische Republik;;Repzblica fascista;;;;;;;;;x
+right_wing_autocrat;右翼独裁制度;Autocratie de droite;Rechtsgerichtete Alleinherrschaft;;Autocracia de derechas;;;;;;;;;x
+right_wing_republic;右翼共和制度;Ripublique de droite;Rechtsgerichtete Republik;;Repzblica de derechas;;;;;;;;;x
+hungarian_right_wing_republic;右翼共和制度;Ripublique de droite;Rechtsgerichtete Republik;;Repzblica de derechas;;;;;;;;;x
+absolute_monarchy;君主专制制度;Monarchie absolue;Absolute Monarchie;;Monarquma absolutista;;;;;;;;;x
+imperial;帝国制;Imperial;Kaiserlich;;Imperial;;;;;;;;;x
+social_conservatism;社会保守主义制度;Conservatisme social;Sozialkonservatismus;;Conservadurismo social;;;;;;;;;x
+spanish_social_conservatism;社会保守主义制度;Conservatisme social;Sozialkonservatismus;;Conservadurismo social;;;;;;;;;x
+market_liberalism;贸易自由主义制度;Libiralisme;Marktliberalismus;;Liberalismo de mercado;;;;;;;;;x
+social_democracy;社会民主主义制度;Dimocratie sociale ;Sozialdemokratie;;Socialdemocracia;;;;;;;;;x
+social_liberalism;社会自由主义制度;Libiralisme social;Sozialliberalismus;;Liberalismo social;;;;;;;;;x
+left_wing_radicals;左翼激进制度;Radicalisme de gauche;Linkgerichteter Radikalismus;;Radicalismo de izquierdas;;;;;;;;;x
+socialist_republic;社会主义共和制度;Ripublique socialiste;Sozialistische Republik;;Repzblica socialista;;;;;;;;;x
+federal_socialist_republic;社会主义共和国联邦制度;Ripublique socialiste fidirale;Sozialistische Bundesrepublik;;Repzblica federal socialista;;;;;;;;;x 
+absolute_monarchy_ruler;国王;Roi;Kvnig;;Rey;;;;;;;;;x
+right_wing_republic_ruler;总统;Prisident;Prdsident;;Presidente;;;;;;;;;x
+social_conservatism_ruler;首相;Premier Ministre;Premierminister;;Primer Ministro;;;;;;;;;x
+germanic_fascist_republic_ruler;宰相;Chancelier;Kanzler;;Canciller;;;;;;;;;x
+market_liberalism_ruler;总统;Prisident;Prdsident;;Presidente;;;;;;;;;x
+socialist_republic_ruler;主席;Prisident;Vorsitzender;;Presidente;;;;;;;;;x
+right_wing_autocrat_ruler;将军;Prisident;Prdsident;;Presidente;;;;;;;;;x
+social_liberalism_ruler;总统;Prisident;Prdsident;;Presidente;;;;;;;;;x
+social_democracy_ruler;首相;Premier Ministre;Premierminister;;Primer Ministro;;;;;;;;;x
+imperial_ruler;皇帝;Empereur;Kaiser;;Emperador;;;;;;;;;x
+national_socialism_ruler;元首;F|hrer;F|hrer;;F|hrer;;;;;;;;;x
+fascist_republic_ruler;领袖;Duce;Duce;;Duce;;;;;;;;;x
+hungarian_right_wing_republic_ruler;摄政王;Rigent;Regent;;Regente;;;;;;;;;x
+left_wing_radicals_ruler;总统;Prisident;Prdsident;;Presidente;;;;;;;;;x
+federal_socialist_republic_ruler;同志;Camarade;Genosse;;Camarada;;;;;;;;;x
+spanish_social_conservatism_ruler;独裁者;Caudillo;Caudillo;;Caudillo;;;;;;;;;x
+##################################################;;;;;;;;;;;;;;x
+# Laws ;;;;;;;;;;;;;;x
+##################################################;;;;;;;;;;;;;;x
+civil_law;公民权利;Droit civil;B|rgerrecht;;Leyes civiles;;;;;;;;;x
+conscription_law;兵役制度;Droit de la conscription;Wehrpflichtrecht;;Leyes de reclutamiento;;;;;;;;;x
+economic_law;经济政策;Droit iconomique;Wirtschaftsrecht;;Leyes econsmicas;;;;;;;;;x
+education_investment_law;教育体制;Droit du diveloppement de l'iducation;Bildungsinvestitionsrecht;;Leyes de inversisn en educacisn;;;;;;;;;x
+industrial_policy_laws;工业政策;Droit de la politique industrielle;Industrierecht;;Leyes de polmtica industrial;;;;;;;;;x,
+press_laws;新闻法案;Droit de la presse;Presserecht;;Leyes de prensa;;;;;;;;;x,
+training_laws;军事训练;Droit d'entrannement;Ausbildungsrecht;;Leyes de instruccisn;;;;;;;;;x,
+open_society;开放社会;Sociiti ouverte;Offene Gesellschaft;;Sociedad abierta;;;;;;;;;x,
+open_society_desc;基于政治自由和人权的理念，\n以建设一个开放的，\n非威权统治社会为目标。;Aspire ` la criation d'une sociiti ouverte et non autoritaire, fondie sur la liberti politique et les droits de l'homme.;Das Ziel ist die Schaffung einer offenen, nicht-autoritdren Gesellschaft, die auf politischer Freiheit und Menschenrechten basiert.;;Apunta a la creacisn de una sociedad abierta, no autoritaria, basada en la libertad polmtica y los derechos humanos.;;;;;;;;;x
+limited_restrictions;有限约束;Restrictions limities;Beschrdnkte Auflagen;;Restricciones limitadas;;;;;;;;;x,
+limited_restrictions_desc;维持一个相对开放社会的理念，\n但是加以适当的约束。;Conserve l'idie d'une sociiti pluttt ouverte mais impose certaines restrictions.;Behalten Sie die Idee einer eher offenen Gesellschaft bei, machen Sie jedoch bestimmte Auflagen.;;Mantiene la idea de una sociedad mas bien abierta, pero impone ciertas restricciones.;;;;;;;;;x
+legalistic_restrictions;法制约束;Restrictions ligalistes;Legalistische Beschrdnkungen;;Restricciones legales;;;;;;;;;x,
+legalistic_restrictions_desc;努力建立一个以法律体系约束\n并严格控制政治行为的社会。;Cherche ` itablir une sociiti fondie sur des contraintes ligalistes et sur un contrtle strict des personnes itant autorisies ` participer ` la vie politique.;Streben Sie nach der Schaffung einer auf legalistischen Beschrdnkungen basierenden Gesellschaft, in der das Mitwirken im politischen Leben streng reglementiert ist.;;Se decanta hacia el establecimiento de una sociedad basada en restricciones legales y un rmgido control sobre quiin puede participar en la vida legal.;;;;;;;;;x,
+repression;政治迫害;Ripression;Unterdr|ckung;;Represisn;;;;;;;;;x,
+repression_desc;迫害任何政治或文化上反对现政权的势力，\n并且限制国民的自由。;Riprime toute opposition politique ou culturelle au rigime actuel et restreint les libertis des citoyens.;"Unterdr|cken Sie jegliche politische oder kulturelle Opposition gegen das aktuelle Regime; schrdnken Sie die Freiheiten der B|rger ein.";;Reprime cualquier oposicisn polmtica o cultural contra el Rigimen, y restringe las libertades de los ciudadanos del Estado. ;;;;;;;;;x
+totalitarian_system;极权体系;Systhme totalitaire;Totalitdres System;;Sistema totalitarista;;;;;;;;;x,
+totalitarian_system_desc;限制国民生活的各个方面，\n并且允许执政者完全掌控国家。;Restreint tous les aspects de la vie des citoyens et permet ` l'autoriti politique en place d'exercer un contrtle absolu sur l'Itat.;"Schrdnken Sie alle Aspekte des b|rgerlichen Lebens ein; ermvglichen Sie den aktuellen Machthabern, absolute Kontrolle |ber den Staat auszu|ben.";;Restringe todos los aspectos de las vidas de los ciudadanos, y permite a la autoridad polmtica ejercer un control absoluto sobre el Estado.;;;;;;;;;x
+volunteer_army;志愿军制;Armie volontaire;Freiwilligenarmee;;Ejircito voluntario;;;;;;;;;x,
+volunteer_army_desc;通过引入志愿服役概念建立军队。;Crie une armie en introduisant le concept de service militaire volontaire.;Bauen Sie die Armee durch die Einf|hrung des Konzepts des freiwilligen Militdrdiensts auf.;;Nutre el ejircito introduciendo el concepto de servicio militar voluntario.;;;;;;;;;x,
+one_year_draft;一年兵役制;Incorporation d'un an;Einjdhrige Wehrpflicht;;Servicio militar anual;;;;;;;;;x,
+one_year_draft_desc;通过强制义务役人员服至少一年兵役\n建立战时武装力量。;Lhve des troupes en temps de guerre en rendant le service militaire obligatoire pour au moins un an.;Erhvhen Sie die Mannstdrke der Streitkrdfte zu Kriegszeiten, indem Sie den Wehrdienst auf ein Jahr festlegen.;;En tiempos de guerra, constituye fuerzas obligando a los reclutas servir durante al menos un aqo.;;;;;;;;;x,,
+two_year_draft;两年兵役制;Incorporation de deux ans;Zweijdhrige Wehrpflicht;;Servicio militar bienal;;;;;;;;;x,,
+two_year_draft_desc;通过增加义务兵役时限至两年\n改进军队的规模和质量。;Amiliore la capaciti et l'itat de l'armie en augmentant la durie du service militaire ` deux ans.;Vergrv_ern und verbessern Sie die Armee durch die Anhebung des Wehrdienstes von einem auf zwei Jahre.;;Mejora el tamaqo y las condiciones del ejircito aumentando el permodo en el que los reclutas estan obligados a servir dos aqos.;;;;;;;;;x,,
+three_year_draft;三年兵役制;Incorporation de trois ans;Dreijdhrige Wehrpflicht;;Servicio militar trienal;;;;;;;;;x,,
+three_year_draft_desc;将义务役人员强制服役时间增加到至少三年。;Augmente la durie du service obligatoire pour les recrues ` un minimum de trois ans.;Erhvhen Sie den obligatorischen Wehrdienst auf ein Minimum von drei Jahren.;;Aumenta el permodo en el que los reclutas estan obligados a servir en el ejircito durante un mmnimo de tres aqos.;;;;;;;;;x,,
+service_by_requirement;强制兵役;Service militaire sur demande;Wehrpflicht bei Bedarf;;Servicio por requerimiento;;;;;;;;;x,,
+service_by_requirement_desc;军队募兵原则将完全由当前需要决定。;Les rhgles du service militaire dipendent entihrement des besoins courants.;Machen Sie die Einberufungsregeln f|r den Wehrdienst vvllig von der aktuellen Nachfrage abhdngig.;;Hace que las normas de reclutamiento para el servicio militar dependan por completo de la demanda de cada momento.;;;;;;;;;x,,
+full_civilian_economy;纯民用经济;Iconomie entihrement civile;Vollstdndig zivile Wirtschaft;;Economma civil completa;;;;;;;;;x,,
+full_civilian_economy_desc;以牺牲军事生产为代价，\n在经济上将集中注意力到民用产品的生产，\n我们可以获得更多的现金收入以用于进口贸易。;En concentrant notre iconomie sur la production civile, nous pouvons ginirer plus de revenu monitaire pour les importations, aux dipends de la production militaire.;Durch die Fokussierung unserer Wirtschaft auf zivile Produkte kvnnen wir auf Kosten unserer militdrischen Produktion mehr Geld f|r Importkdufe generieren.;;Al centrarse nuestra economma en la produccisn civil, podemos generar mas ingresos por importaciones al coste de la produccisn militar.;;;;;;;;;x,
+basic_mobilisation;初步动员;Mobilisation de base;Grundmobilmachung;;Movilizacisn basica;;;;;;;;;x,,
+basic_mobilisation_desc;通过转化部分生产力用于军事生产，\n我们限制消费品生产，\n这将削弱我们的民用经济。;En diviant une partie de notre production vers le domaine militaire, nous limitons la production de biens de consommation ce qui ralentit notre iconomie civile.;Durch teilweise Umleitung unserer Produktion auf Militdrg|ter schrdnken wir die Produktion von Konsumg|tern ein und schwdchen damit unsere Zivilwirtschaft.;;Al derivar parte de nuestra produccisn hacia el aspecto militar, restringimos la produccisn de bienes de consumo, lo que reduce la economma civil.;;;;;;;;;x
+full_mobilisation;完全动员;Mobilisation totale;Volle Mobilmachung;;Movilizacisn completa;;;;;;;;;x,,
+full_mobilisation_desc;通过调整经济模式为全面战时经济，\n我们提高了用于军事生产的资源，\n但在民用经济上付出显著代价。;En adaptant notre iconomie entihrement ` une iconomie de guerre, on augmente la quantiti de ressources disponibles pour la production militaire mais cela a des consiquences importantes sur l'iconomie civile.;Durch die volle Umwandlung unserer Wirtschaft in eine Kriegswirtschaft erhvhen wir die Anzahl der f|r die Militdrproduktion zur Verf|gung stehenden Ressourcen, jedoch deutlich zu Lasten unserer Zivilwirtschaft.;;Al ajustar nuestra economma a un completo esfuerzo para la guerra, aumentamos la cantidad de recursos disponibles para la produccisn militar, pero a un coste significativo para la economma civil.;;;;;;;;;x
+war_economy;战时经济;Iconomie de guerre;Kriegswirtschaft;;Economma de guerra;;;;;;;;;x,,
+war_economy_desc;通过调整经济模式为全面战时经济，\n我们大大提高了用于军事生产的资源，\n但在民用经济上付出严重代价。;En adaptant notre iconomie entihrement ` une iconomie de guerre, on augmente la quantiti de ressources disponibles pour la production militaire mais cela a des consiquences importantes sur l'iconomie civile.;Durch die volle Umwandlung unserer Wirtschaft in eine Kriegswirtschaft erhvhen wir die Anzahl der f|r die Militdrproduktion zur Verf|gung stehenden Ressourcen stark, schaden unserer Zivilwirtschaft dadurch jedoch erheblich.;;Al ajustar nuestra economma a un completo esfuerzo para la guerra, aumentamos notablemente la cantidad de recursos disponibles para la produccisn militar, pero a un serio coste para la economma civil.;;;;;;;;;x
+total_economic_mobilisation;经济总动员;Mobilisation iconomique totale;Totale wirtschaftliche Mobilmachung;;Movilizacisn econsmica total;;;;;;;;;x,,
+total_economic_mobilisation_desc;通过经济总动员我们彻底消除了消费品生产\n以实现可用于军事生产的工业规模巨大提升。;Avec une mobilisation totale des moyens iconomiques, nous divastons le secteur de la consommation afin d'augmenter la quantiti de CI disponible.;Die totale wirtschaftliche Mobilmachung hat verheerende Auswirkungen auf unseren Konsumsektor, steigert jedoch die Anzahl der verf|gbaren IS betrdchtlich.;;Con la movilizacisn econsmica total, devastamos el sector del consumo para aumentar drasticamente la cantidad de CI disponibles.;;;;;;;;;x
+minimal_education_investment;最低教育投资;Investissement minimum dans l'iducation;Minimale Bildungsinvestitionen;;Inversisn mmnima en educacisn;;;;;;;;;x
+minimal_education_investment_desc;在教育上仅仅保持最低投资。;Garde les investissements dans l'iducation ` un minimum.;Halten Sie die Investitionen in die Bildung auf dem Minimalwert.;;Mantiene las inversiones en educacisn en un mmnimo.;;;;;;;;;x
+average_education_investment;平均教育投资;Investissement moyen dans l'iducation;Moderate Bildungsinvestitionen;;Inversisn media en educacisn;;;;;;;;;x
+average_education_investment_desc;增加投入以改善教育。;Fait un peu plus d'efforts pour amiliorer l'iducation.;Unternehmen Sie mehr Anstrengungen zur Verbesserung der Bildungssituation.;;Destina mas esfuerzos a la mejora de la educacisn.;;;;;;;;;x
+medium_large_education_investment;大量教育投资;Investissement dans l'iducation au-dessus de la moyenne;Moderate bis gro_e Bildungsinvestitionen;;Inversisn media-grande en educacisn;;;;;;;;;x
+medium_large_education_investment_desc;增加当前投入以实现教育水平质的变化。;Augmente considirablement les efforts actuellement diployis pour amiliorer l'iducation.;Erhvhen Sie die momentan f|r die Bildung aufgewendeten Anstrengungen erheblich.;;Aumenta los esfuerzos actualmente destinados a las mejoras de la educacisn de forma sustancial.;;;;;;;;;x
+big_education_investment;最高教育投资;Grand investissement dans l'iducation;Gro_e Bildungsinvestitionen;;Gran inversisn en educacisn;;;;;;;;;x
+big_education_investment_desc;将教育投资提高到极限。;Augmente au maximum le budget consacri ` l'iducation.;Erhvhen Sie die Bildungsinvestitionen auf den Maximalwert.;;Aumenta la financiacisn de la educacisn al maximo.;;;;;;;;;x
+consumer_product_orientation;面向消费品生产;Orientation vers les produits de consommation;Orientierung auf Konsumg|ter;;Orientacisn hacia la produccisn de consumo;;;;;;;;;x
+consumer_product_orientation_desc;将工业生产最主要份额分配到消费品生产。;La plus grande partie de la production industrielle est centrie sur la production de biens de consommation.;Richten Sie den Gro_teil der Industrieproduktion auf die Herstellung von Konsumg|tern aus.;;Destina una mayor parcela de la produccisn industrial a la fabricacisn de bienes de consumo.;;;;;;;;;x
+mixed_industry;混合工业;Industrie mixte;Mischindustrie;;Industria mixta;;;;;;;;;x
+mixed_industry_desc;努力建立一个轻重型协调发展的工业模式。;Nous dirigeons nos efforts vers la mise en place d'une industrie mixte.;Sorgen Sie f|r die Etablierung einer Mischindustrie.;;Destina esfuerzos al establecimiento de una industria mixta.;;;;;;;;;x
+heavy_industry_emphasis;强调重工业;Accent sur l'industrie lourde;Schwerpunkt auf Schwerindustrie;;Infasis en la industria pesada;;;;;;;;;x
+heavy_industry_emphasis_desc;通过对重工业发展的倾斜来改善工业效率。;Augmente l'efficaciti industrielle en mettant l'accent sur le diveloppement de l'industrie lourde.;Verbessern Sie die Industrieeffizienz durch beschleunigte Entwicklung der Schwerindustrie.;;Mejora la eficacia de la industria al destinar mas esfuerzos al desarrollo de una industria pesada.;;;;;;;;;x
+free_press;新闻自由;Presse libre;Pressefreiheit;;Prensa libre;;;;;;;;;x
+free_press_desc;给予媒体自主出版的自由，\n不加以任何政府干涉和控制。;Donne ` la presse la liberti de publier ce qu'elle veut, sans aucune intervention ou restriction de l'Itat.;Gestatten Sie der Presse, ohne Einmischung der Regierung und ohne Einschrdnkungen nach eigenem Ermessen zu arbeiten.;;Permite la libertad de prensa en cualquier terreno que considere adecuado, sin restriccisn o interferencia gubernamental alguna.;;;;;;;;;x
+censored_press;新闻审查;Presse censurie;Pressezensur;;Prensa censurada;;;;;;;;;x,
+censored_press_desc;通过禁止任何未经当局审核内容发表\n对新闻出版进行限制。;Impose des restrictions ` la presse en interdisant la publication de tout matiriel qui n'a pas tout d'abord iti contrtli par l'Itat.;Machen Sie der Presse Auflagen: Material, das nicht zuvor von der Regierung gepr|ft wurde, darf nicht vervffentlicht werden.;;Impone restricciones a la prensa, prohibiendo la publicacisn de cualquier material sin la exhaustiva revisisn previa del Estado.;;;;;;;;;x,
+state_press;官方媒体;Presse d'Itat;Staatliche Presse;;Prensa estatal;;;;;;;;;x,
+state_press_desc;所有媒体都有国家所用并控制。\n他们自然而然的会忠实对党的路线鹦鹉学舌。\n尽管讽刺的是，\n更多的人会怀疑他们并非总是100%的正确。;Tous les midias appartiennent ` et sont contrtlis par le gouvernement. Ils rabbchent donc sagement la ligne du parti, mjme si les citoyens les plus cyniques se doutent bien que les midias ne sont pas fiables ` 100%.;Die Medien sind verstaatlicht und werden von der Regierung kontrolliert. Sie folgen pflichtschuldigst den Parteivorgaben, doch zynischere B|rger werden vermuten, dass sie nicht immer 100%ig genau berichten.;;Todos los medios de comunicacisn son propiedad del Gobierno. Secundaran fielmente las polmticas del Gobierno, si bien la poblacisn mas cmnica sospechara que no siempre son 100% imparciales.;;;;;;;;;x
+propaganda_press;蛊惑宣传;Presse de propagande;Propaganda-Presse;;Prensa de propaganda;;;;;;;;;x,
+propaganda_press_desc;蛊惑宣传我们的主张并鼓舞人民的自豪感.;Encourage la diffusion de la propagande servant ` promouvoir nos idies et ` gonfler le moral du peuple.;Unterst|tzen Sie zur Fvrderung unserer Ideen und zur Steigerung der Volksmoral die Verbreitung von Propaganda.;;Incentiva la propagacisn propagandmstica para promover nuestras ideas y disparar la moral del pueblo.;;;;;;;;;x,
+minimal_training;最低训练;Entrannement minimum;Minimale Ausbildung;;Instruccisn mmnima;;;;;;;;;x,
+minimal_training_desc;通过限制军事训练的必要时间来维持\n征兵费用和组织消耗在最低程度。;Maintient les co{ts et l'organisation de la conscription au plus bas en limitant la durie de l'entrannement militaire obligatoire.;Halten Sie die Wehrpflichtkosten und Organisationsbem|hungen durch die Einschrdnkung der militdrischen Ausbildung auf dem Minimalwert.;;Mantiene los costes de reclutamiento y los esfuerzos de organizacisn al mmnimo al limitar la instruccisn militar obligatoria.;;;;;;;;;x,
+basic_training;基本训练;Entrannement de base;Grundausbildung;;Instruccisn elemental;;;;;;;;;x,
+basic_training_desc;对军事人员的训练提高要求以改善军队状况。;Amiliore l'itat de l'armie en se concentrant plus fortement sur l'entrannement du personnel militaire.;Verbessern Sie den Zustand der Armee durch verbesserte Ausbildung des militdrischen Personals.;;Mejora la condicisn del ejircito al centrarse en el entrenamiento de personal militar.;;;;;;;;;x,
+advanced_training;高级训练;Entrannement avanci;Erweiterte Ausbildung;;Entrenamiento avanzado;;;;;;;;;x,
+advanced_training_desc;通过对部队进行高级训练更进一步改善军队状况。;Amiliore encore plus l'itat de l'armie en promouvant l'entrannement avanci des troupes.;Verbessern Sie den Zustand der Armee noch mehr, indem Sie erweiterte Truppenausbildung fvrdern.;;Mejora la condicisn del ejircito mas si cabe al promocionar el entrenamiento avanzado para las tropas.;;;;;;;;;x,
+specialist_training;专业训练;Entrannement de spicialistes;Spezialausbildung;;Preparacisn por especialidades;;;;;;;;;x,
+specialist_training_desc;投入更多的时间和精力到军事训练以建立一支专业化的部队。;Consacre plus de temps et d'efforts ` l'armie pour assurer la mise en place d'unitis de spicialistes.;Stecken Sie zur Ausbildung von Spezialtruppen noch mehr Zeit und M|hen in das Militdr.;;Dedica mas tiempo y esfuerzos al ejircito para respaldar la creacisn de fuerzas especializadas.;;;;;;;;;x,
+##################################################;;;;;;;;;;;;;;x,
+# Occupation Policies;;;;;;;;;;;;;;x,,,,
+##################################################;;;;;;;;;;;;;;x,,,,
+OCCUPIED_COUNTRIES;占领国家;Pays occupis;Besetzte Ldnder;;Pamses ocupados;;;;;;;;;x,,,,
+collaboration_government;协作政府;Gouvernement de collaboration;Kollaborationsregierung;;Gobierno colaboracionista;;;;;;;;;x,,,,
+collaboration_government_desc;我们并不直接管理这些征服的土地，而是支持当地同情者以\n我们的名义统治。通过建立我们和当地人民之间的缓冲，我\n们将减少人民组织抵抗运动的可能，并且协作政府将鼓励思\n想上接近的国民加入我们的行列。然而他们也对自己合法性\n的确实非常敏感，不会轻易损害他们支持者的利益，因此我\n们在经济上对该地区的剥削会更加困难。;Au lieu de gouverner directement ces territoires conquis, on peut soutenir les sympathisants locaux pour qu'ils gouvernent ` notre place. En criant un tampon entre le peuple et nous, les gens sont moins tentis de former des mouvements de risistance et le ;Anstatt diese eroberten Gebiete direkt zu regieren, kvnnen wir lokale Sympathisanten in unserem Namen mit dieser Aufgabe betrauen. Durch Schaffung eines Puffers zwischen uns und der Bevvlkerung verringern wir das Risiko, dass sich Widerstandsbewegungen gr|nden. Dar|ber hinaus wird die Kollaborationsregierung gleichgesinnten B|rgern nachlegen, unserer Sache beizutreten. Andererseits ist sie sich aber auch der fehlenden Legitimitdt ihrer Herrschaft bewusst und wird daher nichts unternehmen, was ihren R|ckhalt in der Bevvlkerung gefdhrden kvnnte. Dies macht es uns schwerer, das Gebiet wirtschaftlich auszubeuten.;;En vez de gobernar directamente los territorios conquistados, podemos apoyar a simpatizantes locales para que lo hagan en nuestro nombre. Si creamos un amortiguador entre nosotros y la poblacisn, reduciremos su tentacisn de resistirse y el Gobierno colaboracionista animara a los ciudadanos de su srbita a unirse a nuestra causa. Aun asm, tambiin son muy sensibles a su falta de legitimidad y no haran nada que ponga el peligro sus apoyos, dificultando nuestra explotacisn econsmica de la zona.;;;;;;;;;x
+military_government;军管政府;Gouvernement militaire;Militdrregierung;;Gobierno militar;;;;;;;;;x,,,,
+military_government_desc;通过转交政府给我们的军事当局，该地区将通过一系列严厉\n的法律和管理。相比协作政府这将是更有效进行经济剥削的\n方式，但是略宽松的法率也许反而能创造更多的资源。由于\n政府对当地情况非常不敏感，民众不会感到快乐，而与此同\n时严厉的法律体系意味着他们会更加不快。;En plagant le gouvernement entre les mains de nos autoritis militaires, elles gouverneront en prenant les lois au pied de la lettre. C'est une manihre plus efficace d'exploiter une rigion iconomiquement que le gouvernement de collaboration mais une interp;Die \bergabe der Regierungsgewalt an unsere Militdrb|rokratie wird in einer sehr strengen Aus|bung der Gesetze resultieren. Auf diese Weise kann ein Gebiet wirtschaftlich effizienter ausgebeutet werden, als es unter einer Kollaborationsregierung mvglich wdre, doch durch eine weniger strenge Gesetzesauslegung kvnnten sogar noch mehr Ressourcen gesammelt werden. Da es der Militdrregierung an Feingef|hl f|r die vrtliche Situation fehlt, wird die lokale Bevvlkerung nicht zufrieden sein, doch die strenge Gesetzeslage hdlt den Deckel auf dem kochenden Topf des Volkszorns.;;Si entregamos el gobierno a las autoridades militares, estas gobernaran con una interpretacisn muy literal de las reglas. Esto es un modo mas eficaz de explotar una zona econsmicamente que con el Gobierno colaboracionista, pero una interpretacisn menos literal permitirma la adquisicisn de incluso mas recursos. Dado que el Gobierno tiene una escasa sensibilidad hacia las condiciones locales, el pueblo no estara contento, pero, asimismo, el importante marco legal implica que podrma estar mas descontento si cabe. ;;;;;;;;;x
+full_occupation;完全占领;Occupation totale;Vollstdndige Besetzung;;Ocupacisn completa;;;;;;;;;x,,,,
+full_occupation_desc;利用民政管理者并集中精力从占领土地上榨取经济利益，我\n们可以提高从这些地区采集资源的数量。然而，这些民众没\n有任何原因期待被强迫为我们战争机器工作，因此当地抵抗\n组织将发现更容易获得支持。;En utilisant des administrateurs civils qui concentrent leurs efforts sur l'obtention d'avantages iconomiques dans nos territoires occupis, nous pouvons augmenter la quantiti de ressources en provenance de cette rigion. Mais bizarrement, les citoyens ne s;Mit Hilfe von Zivilverwaltern, die sich darauf konzentrieren, aus den von uns besetzten Gebieten wirtschaftlich Kapital zu schlagen, kvnnen wir die Anzahl der aus diesen Gebieten gewonnenen Ressourcen noch steigern. Aus irgendeinem Grund kann sich die lokale Bevvlkerung jedoch etwas Besseres vorstellen, als zur Arbeit in unserer Kriegsmaschinerie gezwungen zu werden - was auch erkldrt, warum sich die lokalen Widerstandsbewegungen enormen Zulaufs erfreuen.;;Si los administradores civiles se centran en obtener ventajas econsmicas de nuestros territorios ocupados, podemos aumentar los recursos obtenidos de dichas zonas. No obstante, verse obligados a trabajar para el beneficio de nuestra maquinaria bilica no es lo mas deseable para el pueblo, y es una forma de que los movimientos de resistencia locales ganen apoyos. ;;;;;;;;;x,
+total_exploitation;完全剥削;Exploitation totale;Totale Ausbeutung;;Explotacisn total;;;;;;;;;x,,,,
+total_exploitation_desc;摘下伪善的面具，给所有人戴上枷锁，除了那些知道如何剥\n削这个国家的人，别管他们是不是贪婪的政客。这将最大化\n我们得到的利益，当然作为适宜的赏赐其中部分会落入执行\n者的腰包。现在自然而然这些人民会感到不快，不过嘿——\n我们只需要保持强大的占领军。;On ne prend plus de gants, ga nous est igal que vous soyez un opportuniste corrompu jusqu'` la moelle, tant que vous savez comment exploiter un pays. C'est le genre de personne qu'on va lbcher sur la population. Cela va maximiser nos binifices mais on dev;So, jetzt ist Schluss mit lustig!  Sie sind vvllig korrupt und l|gen, dass sich die Balken biegen? Ist uns alles egal, wenn Sie nur wissen, wie man ein Land ausbeutet!  Diese Art von Leuten werden wir nun auf die Bevvlkerung loslassen. Dadurch werden wir unsere Gewinne maximieren, auch wenn unsere sauberen  Verwalter  einen Teil f|r sich selbst abzweigen. Nat|rlich wird sich die Bevvlkerung gegen sie auflehnen, aber was soll's? Schusstraining unter Realbedingungen f|r unsere Besatzungstruppen ist nie verkehrt ...;;"Guantes fuera. No nos importa si eres un aventurero corrupto, siempre que sepas como explotar el pams. Este es el tipo de personas que esquilman a la poblacisn. Asm, maximizaremos nuestros beneficios, perdiendo parte de ellos para asegurar que nuestros ""administradores"" reciban su recompensa. Pero la gente acabara muy descontenta, y nuestras tropas de ocupacisn tendran que estar alerta. ";;;;;;;;;x
+no_occupation;不占领;Pas d'occupation;Keine Besetzung;;No ocupado;;;;;;;;;x,,,,
+no_occupation_desc;从未发生。;Cela n'est jamais affichi.;Dies wird nie angezeigt.;;Esto no aparece nunca.;;;;;;;;;x,,,,
+##################################################;;;;;;;;;;;;;;x,,,,
+# Rebels;;;;;;;;;;;;;;x,,,,
+##################################################;;;;;;;;;;;;;;x,,,,
+nationalist_rebels_title;民族主义者;Nationaliste;Nationalist;;Nacionalistas;;;;;;;;;x,
+nationalist_rebels_name;$INDEP$ 民族主义者;$INDEP$ Nationalistes;$INDEP$ Nationalisten;;Nacionalistas de $INDEP$;;;;;;;;;x,
+nationalist_rebels_desc;民族主义者追求本民族的自由。\n他们有良好的领导和武装，\n而且他们会集中注意实现他们民族的独立。;Les rebels nationalistes veulent la liberti pour leur peuple. Ils sont bien menis et bien iquipis et ils vont se concentrer sur l'obtention de l'indipendance pour leur nation.;Nationalistische Rebellen kdmpfen f|r die Freiheit ihres Volkes.  Gut diszipliniert und ausger|stet konzentrieren sich auf die Erlangung der Unabhdngigkeit f|r ihr Land.;;Los rebeldes nacionalistas buscan la libertad de su pueblo. Estan bien dirigidos y equipados, y se afanaran en lograr la independencia de su nacisn.;;;;;;;;;x
+nationalist_rebels_army;$COUNTRY$ 民族主义者;$COUNTRY$ Nationalistes;$COUNTRY$ Nationalisten;;Nacionalistas de $COUNTRY$;;;;;;;;;x,
+patriot_rebels_title;爱国者;Patriote;Patriot;;Patriotas;;;;;;;;;x,
+patriot_rebels_name;$INDEP$ 爱国者;$INDEP$ Patriotes;$INDEP$ Patrioten;;Patriotas de $INDEP$;;;;;;;;;x,
+patriot_rebels_desc;爱国反叛者梦想他们文化上的同类\n重新团结在一面自由的旗帜下。\n注意，他们夺取的省份可能会叛变。;Les rebels patriotes rjvent d'jtre unifiis ` leur tribu culturelle sous une bannihre libre. Prenez garde, les provinces sous leur contrtle peuvent diserter.;Patriotische Rebellen trdumen davon, mit ihren Gleichgesinnten einen eigenen Staat zu gr|nden. Seien Sie auf der Hut, denn von diesen Rebellen |bernommene Provinzen kvnnten sich abspalten.;;Los rebeldes patriotas sueqan con la unificacisn de su ambito cultural bajo una bandera soberana. Cuidado, pues las provincias que caigan en sus manos pueden desertar.;;;;;;;;;x
+patriot_rebels_army;$COUNTRY$ 爱国者;$COUNTRY$ Patriotes;$COUNTRY$ Patrioten;;Patriotas de $COUNTRY$;;;;;;;;;x,
+partisans_title;游击队;Partisans;Partisanen;;Partisanos;;;;;;;;;x,
+partisans_name;游击队;Partisans;Partisanen;;Partisanos;;;;;;;;;x,
+partisans_desc;游击队同敌对占领军作战，\n并且他们梦想将敌人从自己的国土上驱逐出去。;Les partisans se battent contre l'occupant ennemi tout en rjvant de chasser leur ennemi du pays.;Partisanen kdmpfen gegen feindliche Besatzungstruppen und trdumen davon, den Feind aus ihrem Land zu vertreiben.;;Los partisanos luchan contra el enemigo ocupante y albergan el sueqo de expulsarlo de su pams.;;;;;;;;;x
+partisans_army;$COUNTRY$ 游击队;$COUNTRY$ Partisans;$COUNTRY$ Partisanen;;Partisanos de $COUNTRY$;;;;;;;;;x,
+disgruntled_rabble_title;不满的暴徒;Populace en colhre;Verdrgerter Pvbel;;Chusma descontenta;;;;;;;;;x,
+disgruntled_rabble_name;不满的暴徒;Populace en colhre;Verdrgerter Pvbel;;Chusma descontenta;;;;;;;;;x,
+disgruntled_rabble_desc;这是不满的国民汇集的乌合之众，\n仅仅是为了烧杀抢掠而来。;Ce sont des citoyens micontents qui ont formi une foule dont le but est principalement le pillage.;Dies sind unzufriedene B|rger, die sich zu einem gro_en pl|ndernden Mob zusammengeschlossen haben.;;Se trata de ciudadanos insatisfechos que han formado una gran chusma cuyo znico objetivo es el saqueo y el pillaje.;;;;;;;;;x,
+disgruntled_rabble_army;$COUNTRY$ 暴动者;$COUNTRY$ Rivoltis;$COUNTRY$ Revoluzzer;;Rebeldes de $COUNTRY$;;;;;;;;;x,

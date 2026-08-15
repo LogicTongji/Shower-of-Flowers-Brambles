@@ -1,0 +1,95 @@
+######################
+#   东征战役决议组   #
+######################
+
+diplomatic_decisions = {
+	Eattack_chc = {
+		major = yes
+		potential = {
+			tag = CHC
+			not = { has_country_flag = Eattack_chc } 
+			not = { has_country_flag = xi_an_incident } 
+			not = { year = 1938 } 
+			date = 1936.2.20
+			ai = no
+		}
+		allow = {
+			not = { year = 1937 } 
+			has_country_flag = Eattack_papre
+			has_country_flag = Anti_jap_united_front_first
+		}
+		effect = {
+			set_country_flag = Eattack_chc
+			country_event = 1000077
+		}
+	}
+	Eattack_chc_ai = {
+		major = yes
+		potential = {
+			tag = CHC
+			not = { has_country_flag = Eattack_chc } 
+			not = { has_country_flag = xi_an_incident } 
+			not = { year = 1937 } 
+            date = 1936.2.20
+			ai = yes
+		}
+		allow = {
+			not = { year = 1937 } 
+			has_country_flag = Eattack_papre
+		}
+		effect = {
+			set_country_flag = Eattack_chc
+			CSX = { any_owned = { limit = { province_id = 7391 } secede_province = CHC }}
+			manpower = 60
+			kill_leader = 76325
+			remove_minister = 51023
+			head_of_government = 51037
+		}
+	}
+	Eask_csx = {
+		potential = {
+			tag = CSX
+			year = 1936
+			war_with = CHC
+			not = { year = 1937 } 
+			CHC = { has_country_flag = Eattack_chc } 
+			not = { has_global_flag = Eask_csx } 
+		}
+		allow = {
+		OR = {
+			CHC = {
+				controls = 7399
+				controls = 7405
+			}
+			province_id = 7399
+		OR = {
+			last_battle_winner_losses = 300
+			last_battle_loser_losses = 300
+		    }
+		}
+	}
+		effect = {
+			set_global_flag = Eask_csx
+			create_alliance = CHI
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Eretreat_chc = {
+		potential = {
+			tag = CHC
+			war_with = CSX
+			has_global_flag = Eask_csx
+			not = { has_country_flag = Eretreat_chc } 
+			not = { year = 1937 } 
+		}
+		effect = {
+			set_country_flag = Eretreat_chc
+			country_event = 1000079
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

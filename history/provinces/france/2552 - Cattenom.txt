@@ -1,0 +1,21 @@
+owner = FRA
+controller = FRA
+add_core = FRA
+land_fort = 10
+
+infra = 7
+
+anti_air = 2
+points = 2
+
+1940.6.10 = {
+	controller = GER
+        land_fort = 2
+        anti_air = 0
+}
+1944.12.01 = {
+	controller = USA
+}
+1945.6.7 = {
+	controller = FRA
+}

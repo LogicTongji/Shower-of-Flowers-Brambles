@@ -1,0 +1,12 @@
+color = { 231  220  21 }
+graphical_culture = Japanese
+ministers = {
+	3000001 = {
+		name = "ÒóÈê¸û"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = CJDM0001
+		head_of_state = stern_imperialist
+		start_date = 1934.1.1
+	}
+}

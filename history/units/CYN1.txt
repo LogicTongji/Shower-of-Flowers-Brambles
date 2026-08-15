@@ -1,0 +1,25 @@
+corps = {    
+        name = "国民革命军第60军"		
+        location = 7561	
+        regiment = { type = hq_brigade name = "国民革命军第60军军部" historical_model = 3 }
+        regiment = { type = infantry_brigade name = "警卫团" experience = 35 historical_model = 2 }
+        regiment = { type = artillery_brigade name = "师直属炮兵旅" experience = 35 historical_model = 2 }		
+	division= {		
+		name = "国民革命军第182师"	
+		location = 7561		
+		regiment = { type = bergsjaeger_brigade name = "第一旅" experience = 35 historical_model = 2 }	
+		regiment = { type = bergsjaeger_brigade name = "第二旅" experience = 35 historical_model = 2 }	
+	}		
+	division= {		
+		name = "国民革命军第183师"	
+		location = 7561		
+		regiment = { type = bergsjaeger_brigade name = "第三旅" experience = 35 historical_model = 2 }	
+		regiment = { type = bergsjaeger_brigade name = "第五旅" experience = 35 historical_model = 2 }	
+        }
+	division= {		
+		name = "国民革命军第184师"	
+		location = 7561		
+		regiment = { type = bergsjaeger_brigade name = "第七旅" experience = 35 historical_model = 3 }	
+		regiment = { type = bergsjaeger_brigade name = "第九旅" experience = 35 historical_model = 3 }	
+	}
+}	

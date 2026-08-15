@@ -1,0 +1,1133 @@
+#Siege of Warszawa
+province_event = {
+	id = 6501
+	title = "EVTNAME6501"
+	desc = "EVTDESC6501"
+	picture = "Warsaw"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1928
+		POL = {
+			controls = 1928
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6501"
+		add_country_modifier = {
+			name = warszawa_siege
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6501"
+		add_country_modifier = {
+			name = encirclement_siege
+			duration = 25
+		}
+	}
+}
+
+#Siege of Calais
+province_event = {
+	id = 6502
+	title = "EVTNAME6502"
+	desc = "EVTDESC6502"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2194
+		FRA = {
+			controls = 2194
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6501"
+		add_country_modifier = {
+			name = calais_siege
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6501"
+		add_country_modifier = {
+			name = encirclement_siege
+			duration = 25
+		}
+	}
+}
+
+#Siege of Lille
+province_event = {
+	id = 6503
+	title = "EVTNAME6503"
+	desc = "EVTDESC6503"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2309
+		FRA = {
+			controls = 2309
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6501"
+		add_country_modifier = {
+			name = lille_siege
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6501"
+		add_country_modifier = {
+			name = encirclement_siege
+			duration = 25
+		}
+	}
+}
+
+#Siege of Bastogne
+province_event = {
+	id = 6504
+	title = "EVTNAME6504"
+	desc = "EVTDESC6504"
+	picture = "Bastogne2"
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2370
+		BEL = {
+			controls = 2370
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6501"
+		add_country_modifier = {
+			name = bastogne_siege
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6501"
+		add_country_modifier = {
+			name = encirclement_siege
+			duration = 25
+		}
+	}
+}
+
+#Siege of Odessa
+province_event = {
+	id = 6505
+	title = "EVTNAME6505"
+	desc = "EVTDESC6505"
+	picture = "odessa"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 3309
+		SOV = {
+			controls = 3309
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6501"
+		add_country_modifier = {
+			name = odessa_siege
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6501"
+		add_country_modifier = {
+			name = encirclement_siege
+			duration = 25
+		}
+	}
+}
+
+#Siege of Breslau
+province_event = {
+	id = 6506
+	title = "EVTNAME6506"
+	desc = "EVTDESC6506"
+	picture = "Breslau"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2153
+		GER = {
+			controls = 2153
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6501"
+		add_country_modifier = {
+			name = breslau_siege
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6501"
+		add_country_modifier = {
+			name = encirclement_siege
+			duration = 25
+		}
+	}
+}
+
+#Siege of Budapest
+province_event = {
+	id = 6507
+	title = "EVTNAME6507"
+	desc = "EVTDESC6507"
+	picture = "Budapest"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 3164
+		HUN = {
+			controls = 3164
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6501"
+		add_country_modifier = {
+			name = budapest_siege
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6501"
+		add_country_modifier = {
+			name = encirclement_siege
+			duration = 25
+		}
+	}
+}
+
+#Siege of Sevastopol
+province_event = {
+	id = 6508
+	title = "EVTNAME6508"
+	desc = "EVTDESC6508"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 3581
+		SOV = {
+			controls = 3581
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6501"
+		add_country_modifier = {
+			name = sevastopol_siege
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6501"
+		add_country_modifier = {
+			name = encirclement_siege
+			duration = 25
+		}
+	}
+}
+
+#Siege of Malta
+province_event = {
+	id = 6509
+	title = "EVTNAME6509"
+	desc = "EVTDESC6509"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 5359
+		ENG = {
+			controls = 5359
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6501"
+		add_country_modifier = {
+			name = malta_siege
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6501"
+		add_country_modifier = {
+			name = encirclement_siege
+			duration = 25
+		}
+	}
+}
+
+#Siege of Leningrad
+province_event = {
+	id = 6510
+	title = "EVTNAME6510"
+	desc = "EVTDESC6510"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 782
+		SOV = {
+			controls = 782
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6501"
+		add_country_modifier = {
+			name = leningrad_siege
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6501"
+		add_country_modifier = {
+			name = encirclement_siege
+			duration = 25
+		}
+	}
+}
+
+#Siege of Lwow
+province_event = {
+	id = 6511
+	title = "EVTNAME6511"
+	desc = "EVTDESC6511"
+	picture = "lviv"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2509
+		POL = {
+			controls = 2509
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6501"
+		add_country_modifier = {
+			name = lwow_siege
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6501"
+		add_country_modifier = {
+			name = encirclement_siege
+			duration = 25
+		}
+	}
+}
+
+#Siege of Meiktila
+province_event = {
+	id = 6512
+	title = "EVTNAME6512"
+	desc = "EVTDESC6512"
+	picture = "Meiktila2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 7641
+		ENG = {
+			controls = 7641
+		}
+		war_with = JAP
+	}
+	
+	option = {
+		name = "EVTOPTA6501"
+		add_country_modifier = {
+			name = meiktila_siege
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6501"
+		add_country_modifier = {
+			name = encirclement_siege
+			duration = 25
+		}
+	}
+}
+
+#Siege of Stalingrad
+province_event = {
+	id = 6513
+	title = "EVTNAME6513"
+	desc = "EVTDESC6513"
+	picture = "stalingrad2"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2857
+		SOV = {
+			controls = 2857
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6501"
+		add_country_modifier = {
+			name = stalingrad_siege
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6501"
+		add_country_modifier = {
+			name = encirclement_siege
+			duration = 25
+		}
+	}
+}
+
+#Siege of Myitkyina
+province_event = {
+	id = 6514
+	title = "EVTNAME6514"
+	desc = "EVTDESC6514"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 9442
+		ENG = {
+			controls = 9442
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6501"
+		add_country_modifier = {
+			name = myitkyina_siege
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6501"
+		add_country_modifier = {
+			name = encirclement_siege
+			duration = 25
+		}
+	}
+}
+
+#Siege of Brest-Litovsk
+province_event = {
+	id = 6515
+	title = "EVTNAME6515"
+	desc = "EVTDESC6515"
+	picture = "BrestFortress"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1986
+		POL = {
+			controls = 1986
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6501"
+		add_country_modifier = {
+			name = brestlitovsk_siege
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6501"
+		add_country_modifier = {
+			name = encirclement_siege
+			duration = 25
+		}
+	}
+}
+
+#Siege of Le Havre
+province_event = {
+	id = 6516
+	title = "EVTNAME6516"
+	desc = "EVTDESC6516"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2483
+		FRA = {
+			controls = 2483
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6501"
+		add_country_modifier = {
+			name = lehavre_siege
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6501"
+		add_country_modifier = {
+			name = encirclement_siege
+			duration = 25
+		}
+	}
+}
+
+#Siege of Poznan
+province_event = {
+	id = 6517
+	title = "EVTNAME6517"
+	desc = "EVTDESC6517"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1924
+		POL = {
+			controls = 1924
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6501"
+		add_country_modifier = {
+			name = poznan_siege
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6501"
+		add_country_modifier = {
+			name = encirclement_siege
+			duration = 25
+		}
+	}
+}
+
+#Siege of Wien
+province_event = {
+	id = 6518
+	title = "EVTNAME6518"
+	desc = "EVTDESC6518"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 3026
+		AUS = {
+			controls = 3026
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6501"
+		add_country_modifier = {
+			name = wien_siege
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6501"
+		add_country_modifier = {
+			name = encirclement_siege
+			duration = 25
+		}
+	}
+}
+
+#Siege of Kohima
+province_event = {
+	id = 6519
+	title = "EVTNAME6519"
+	desc = "EVTDESC6519"
+	picture = "Kohima"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 9441
+		ENG = {
+			controls = 9441
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6501"
+		add_country_modifier = {
+			name = kohima_siege
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6501"
+		add_country_modifier = {
+			name = encirclement_siege
+			duration = 25
+		}
+	}
+}
+
+#Siege of La Rochelle
+province_event = {
+	id = 6520
+	title = "EVTNAME6520"
+	desc = "EVTDESC6520"
+	picture = "flyingfortress"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 3273
+		FRA = {
+			controls = 3273
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6501"
+		add_country_modifier = {
+			name = larochelle_siege
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6501"
+		add_country_modifier = {
+			name = encirclement_siege
+			duration = 25
+		}
+	}
+}
+
+#Falaise Pocket
+province_event = {
+	id = 6521
+	title = "EVTNAME6521"
+	desc = "EVTDESC6521"
+	picture = "Falaise"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2545
+		FRA = {
+			controls = 2545
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6501"
+		add_country_modifier = {
+			name = falaise_pocket
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6501"
+		add_country_modifier = {
+			name = troops_pocket
+			duration = 25
+		}
+	}
+}
+
+#Ruhr Pocket
+province_event = {
+	id = 6522
+	title = "EVTNAME6522"
+	desc = "EVTDESC6522"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			region = germany_west_ruhr
+			region = germany_south_west_ruhr
+		}
+		war_with = GER
+	}
+	
+	option = {
+		name = "EVTOPTA6501"
+		add_country_modifier = {
+			name = ruhr_pocket
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6501"
+		add_country_modifier = {
+			name = troops_pocket
+			duration = 25
+		}
+	}
+}
+
+#Colmar Pocket
+province_event = {
+	id = 6523
+	title = "EVTNAME6523"
+	desc = "EVTDESC6523"
+	picture = "Colmar"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2947
+		FRA = {
+			controls = 2947
+		}
+		NOT = {
+			controller = {
+				faction = axis
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6501"
+		add_country_modifier = {
+			name = colmar_pocket
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6501"
+		add_country_modifier = {
+			name = troops_pocket
+			duration = 25
+		}
+	}
+}
+
+#Kholm Pocket
+province_event = {
+	id = 6524
+	title = "EVTNAME6524"
+	desc = "EVTDESC6524"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1182
+		SOV = {
+			controls = 1182
+		}
+		NOT = {
+			controller = {
+				faction = axis
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6501"
+		add_country_modifier = {
+			name = kholm_pocket
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6501"
+		add_country_modifier = {
+			name = troops_pocket
+			duration = 25
+		}
+	}
+}
+
+#Demjansk Pocket
+province_event = {
+	id = 6525
+	title = "EVTNAME6525"
+	desc = "EVTDESC6525"
+	picture = "Demyansk"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1102
+		SOV = {
+			controls = 1102
+		}
+		NOT = {
+			controller = {
+				faction = axis
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6501"
+		add_country_modifier = {
+			name = demjansk_pocket
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6501"
+		add_country_modifier = {
+			name = troops_pocket
+			duration = 25
+		}
+	}
+}
+
+#Korsun-Shevchenkivskyy Pocket
+province_event = {
+	id = 6526
+	title = "EVTNAME6526"
+	desc = "EVTDESC6526"
+	picture = "eastern4"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2578
+		SOV = {
+			controls = 2578
+		}
+		NOT = {
+			controller = {
+				faction = axis
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6501"
+		add_country_modifier = {
+			name = korsun_shevchenkivskyy_pocket
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6501"
+		add_country_modifier = {
+			name = troops_pocket
+			duration = 25
+		}
+	}
+}
+
+#Praha Pocket
+province_event = {
+	id = 6527
+	title = "EVTNAME6527"
+	desc = "EVTDESC6527"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2562
+		CZE = {
+			controls = 2562
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6501"
+		add_country_modifier = {
+			name = praha_pocket
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6501"
+		add_country_modifier = {
+			name = troops_pocket
+			duration = 25
+		}
+	}
+}
+
+#Siege of Memel
+province_event = {
+	id = 6528
+	title = "EVTNAME6528"
+	desc = "EVTDESC6528"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1306
+		LIT = {
+			controls = 1306
+		}
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6501"
+		add_country_modifier = {
+			name = memel_siege
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6501"
+		add_country_modifier = {
+			name = encirclement_siege
+			duration = 25
+		}
+	}
+}
+
+#Siege of Königsberg
+province_event = {
+	id = 6529
+	title = "EVTNAME6529"
+	desc = "EVTDESC6529"
+	picture = "konigsberg_snipers"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1527
+		GER = {
+			controls = 1527
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6501"
+		add_country_modifier = {
+			name = konigsberg_siege
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6501"
+		add_country_modifier = {
+			name = encirclement_siege
+			duration = 25
+		}
+	}
+}
+
+#Siege of Berlin
+province_event = {
+	id = 6530
+	title = "EVTNAME6530"
+	desc = "EVTDESC6530"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1861
+		GER = {
+			controls = 1861
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6501"
+		add_country_modifier = {
+			name = berlin_siege
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6501"
+		add_country_modifier = {
+			name = encirclement_siege
+			duration = 25
+		}
+	}
+}
+
+#Siege of Imphal
+province_event = {
+	id = 6531
+	title = "EVTNAME6531"
+	desc = "EVTDESC6531"
+	picture = "imphal"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 9545
+		ENG = {
+			controls = 9545
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6501"
+		add_country_modifier = {
+			name = imphal_siege
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6501"
+		add_country_modifier = {
+			name = encirclement_siege
+			duration = 25
+		}
+	}
+}
+
+#Siege of Dunkerque
+province_event = {
+	id = 6532
+	title = "EVTNAME6532"
+	desc = "EVTDESC6532"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2195
+		FRA = {
+			controls = 2195
+		}
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6501"
+		add_country_modifier = {
+			name = dunkerque_siege
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6501"
+		add_country_modifier = {
+			name = encirclement_siege
+			duration = 25
+		}
+	}
+}
+
+#Siege of Kyiv
+province_event = {
+	id = 6533
+	title = "EVTNAME6533"
+	desc = "EVTDESC6533"
+	picture = "kiev_bombed"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2223
+		SOV = {
+			controls = 2223
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6501"
+		add_country_modifier = {
+			name = kyiv_siege
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6501"
+		add_country_modifier = {
+			name = encirclement_siege
+			duration = 25
+		}
+	}
+}

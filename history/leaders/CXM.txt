@@ -1,0 +1,29 @@
+4000160 = {
+	name = "Âí»¢É½"
+	country = CXM
+	type = land
+	skill = 3
+	max_skill = 5
+	add_trait = sincere_seeker
+	add_trait = serious_general
+	loyalty = 0.00
+	picture = LMHS1002
+	history = {
+		1930.1.1 = { rank = 5 }
+		1938.1.1 = { rank = 0 }
+	}
+}
+4000161 = {
+	name = "ÂíÖÙ½Ü"
+	country = CXM
+	type = land
+	skill = 3
+	max_skill = 5
+	add_trait = sincere_seeker
+	loyalty = 0.00
+	picture = L50004N
+	history = {
+		1930.1.1 = { rank = 1 }
+		1938.1.1 = { rank = 0 }
+	}
+}

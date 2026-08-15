@@ -1,0 +1,90 @@
+army = {
+		name = "忠义救国军第一军群"
+		location = 5174
+		regiment = { type = hq_brigade name = "忠义救国军第一军群司令部" historical_model = 2 }
+		regiment = { type = cavalry_brigade name = "司令部守备部队" strength = 20 historical_model = 2 }
+             regiment = { type = artillery_brigade name "忠义救国军第一军群炮旅" experience = 25 strength = 20 historical_model = 3 }
+corps = {
+	name = "忠义救国军第一集团军"
+	location = 5175
+	regiment = { type = hq_brigade name = "忠义救国军第一集团军司令部" historical_model = 3 }
+        regiment = { type = artillery_brigade name = "重炮旅" historical_model = 1 }
+	division = {
+		name = "忠义救国军第1军"
+		location = 4977
+		regiment = { type = infantry_brigade historical_model = 3 }
+		regiment = { type = infantry_brigade historical_model = 3 }
+		regiment = { type = infantry_brigade historical_model = 3 }
+		regiment = { type = infantry_brigade historical_model = 3 }
+	}
+	division = {
+		name = "忠义救国军第2军"
+		location = 5174
+		regiment = { type = infantry_brigade historical_model = 3 }
+		regiment = { type = infantry_brigade historical_model = 3 }
+		regiment = { type = infantry_brigade historical_model = 3 }
+	}
+	division = {
+		name = "忠义救国军第3军"
+		location = 5175
+		regiment = { type = infantry_brigade historical_model = 3 }
+		regiment = { type = infantry_brigade historical_model = 3 }
+		regiment = { type = infantry_brigade historical_model = 3 }
+	}
+	division = {
+		name = "忠义救国军第4军"
+		location = 4977
+		regiment = { type = infantry_brigade historical_model = 3 }
+		regiment = { type = infantry_brigade historical_model = 3 }
+		regiment = { type = infantry_brigade historical_model = 3 }
+	}
+	division = {
+		name = "忠义救国军第5军"
+		location = 5174
+		regiment = { type = infantry_brigade historical_model = 3 }
+		regiment = { type = infantry_brigade historical_model = 3 }
+		regiment = { type = infantry_brigade historical_model = 3 }
+	}
+}
+corps = {
+	name = "忠义救国军第二集团军"
+	location = 5207
+	regiment = { type = hq_brigade name = "忠义救国军第二集团军司令部" historical_model = 3 }
+        regiment = { type = artillery_brigade name = "重炮旅" historical_model = 1 }
+	division = {
+		name = "忠义救国军第6军"
+		location = 5207
+		regiment = { type = infantry_brigade historical_model = 3 }
+		regiment = { type = infantry_brigade historical_model = 3 }
+		regiment = { type = infantry_brigade historical_model = 3 }
+		regiment = { type = infantry_brigade historical_model = 3 }
+	}
+	division = {
+		name = "忠义救国军第7军"
+		location = 5175
+		regiment = { type = infantry_brigade historical_model = 3 }
+		regiment = { type = infantry_brigade historical_model = 3 }
+		regiment = { type = infantry_brigade historical_model = 3 }
+	}
+	division = {
+		name = "忠义救国军第8军"
+		location = 5083
+		regiment = { type = infantry_brigade historical_model = 3 }
+		regiment = { type = infantry_brigade historical_model = 3 }
+		regiment = { type = infantry_brigade historical_model = 3 }
+	}
+	division = {
+		name = "忠义救国军第9军"
+		location = 5175
+		regiment = { type = infantry_brigade historical_model = 3 }
+		regiment = { type = infantry_brigade historical_model = 3 }
+		regiment = { type = infantry_brigade historical_model = 3 }
+	}
+	division = {
+		name = "忠义救国军第10军"
+		location = 5174
+		regiment = { type = infantry_brigade historical_model = 3 }
+		regiment = { type = infantry_brigade historical_model = 3 }
+		regiment = { type = infantry_brigade historical_model = 3 }
+	}
+}

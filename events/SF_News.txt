@@ -1,0 +1,640 @@
+######################
+#   军政新闻事件组   #
+######################
+#金树仁下野
+country_event = {
+	id = 390297
+	fire_only_once = yes
+	title = "event1109"
+	desc = "eventdesc1109"
+	picture = "news_picture0"
+	trigger = {
+		tag = CHI
+		 not = { year = 1936 }
+		date = 1933.4.9
+	}
+	option = {
+		name = "eventname1109"
+		SIK ={ 
+			remove_minister = 72111
+			head_of_state = 72001
+			}
+		ai_chance = { factor = 100 }
+	}
+}
+#中山水兵案
+country_event = {
+	id = 390298
+	major = yes
+	fire_only_once = yes
+	title = "event1110"
+	subtitle = "event1110subtitle"
+	desc = "eventdesc1110"
+	picture = "news_picture1"
+	trigger = {
+		tag = CHI
+		 not = { year = 1936 }
+		date = 1935.11.9
+		has_global_flag = JAP_invassion_northChina
+	}
+	option = {
+		name = "eventname1110"
+		JAP ={ country_event = 12229 }
+		ai_chance = { factor = 100 }
+	}
+}
+#四马拒孙
+country_event = {
+	id = 390308
+	fire_only_once = yes
+	title = "event11110"
+	desc = "eventdesc11110"
+	picture = "news_picture11"
+	trigger = {
+		tag = CHI
+		 not = { year = 1936 }
+		date = 1934.2.9
+	}
+	option = {
+		name = "eventname11110"
+		CQM = { threat = { who = CHI value = -5 } }
+		CNM = { threat = { who = CHI value = -5 } }
+		ai_chance = { factor = 100 }
+	}
+}
+#孙凤鸣刺汪
+country_event = {
+	id = 390299
+	major = yes
+	fire_only_once = yes
+	title = "event1111"
+	subtitle = "event1111subtitle"
+	desc = "eventdesc1111"
+	picture = "news_picture2"
+	trigger = {
+		tag = CHI
+		 not = { year = 1936 }
+		date = 1935.11.1
+	}
+	option = {
+		name = "eventname1111"
+			head_of_government = 52030
+		ai_chance = { factor = 100 }
+	}
+}
+#鲁迅逝世
+country_event = {
+	id = 390300
+	major = yes
+	fire_only_once = yes
+	title = "event0009"
+	desc = "eventdesc0009"
+	picture = "news_picture3"
+	trigger = {
+		tag = CHI
+		 not = { year = 1937 }
+		date = 1936.10.19
+	}
+	option = {
+		name = "eventname0009"
+		ai_chance = { factor = 100 }
+	}
+}
+#中共通电停止内战一致抗日
+country_event = {
+	id = 390301
+	fire_only_once = yes
+	title = "event0010"
+	desc = "eventdesc0010"
+	picture = "news_picture4"
+	trigger = {
+		tag = CHC
+		 not = { year = 1937 }
+		date = 1936.5.5
+	}
+	option = {
+		name = "eventname0010"
+                relation = { who = CHI value = 10 }
+                threat = { who = CHI value = -5 }
+	}
+}
+#蒋介石巡视
+country_event = {
+	id = 390302
+	fire_only_once = yes
+	title = "event0011"
+	desc = "eventdesc0011"
+	picture = "news_picture5"
+	trigger = {
+		tag = CHI
+		not = { war_with = CDB }
+		 not = { year = 1937 }
+		date = 1936.10.22
+	}
+	option = {
+		name = "eventname0011"
+        relation = { who = CDB value = -20 }
+		ai_chance = { factor = 0 }
+	}
+}
+#白求恩来华
+country_event = {
+	id = 390303
+	fire_only_once = yes
+	major = yes
+	title = "event0012"
+	desc = "eventdesc0012"
+	picture = "news_picture6"
+	trigger = {
+		tag = CHI
+		date = 1938.1.8
+		not = { year = 1939 }
+	}
+	option = {
+		name = "eventname0012"
+		ai_chance = { factor = 100 }
+	}
+}
+#张国焘叛逃
+country_event = {
+	id = 390304
+	fire_only_once = yes
+	major = yes
+	title = "event0013"
+	desc = "eventdesc0013"
+	picture = "news_picture7"
+	trigger = {
+		tag = CHC
+		has_country_flag = YananConversation
+		date = 1938.4.5
+		not = { year = 1939 }
+	}
+	option = {
+		name = "eventname0013"
+		remove_minister = 51012
+		ai_chance = { factor = 100 }
+	}
+}
+#中日武汉空战
+country_event = {
+	id = 390305
+	fire_only_once = yes
+	major = yes
+	title = "event0014"
+	desc = "eventdesc0014"
+	picture = "news_picture8"
+	trigger = {
+		tag = CHI
+		has_country_flag = defence_wuhan
+		not = { year = 1940 }
+	}
+	option = {
+		name = "eventname0014"
+		ai_chance = { factor = 100 }
+	}
+}
+#日军毒气战
+country_event = {
+	id = 390309
+	fire_only_once = yes
+	major = yes
+	title = "event0016"
+	desc = "eventdesc0016"
+	picture = "news_picture10"
+	trigger = {
+		tag = CHI
+		date = 1938.10.5
+		not = { year = 1945 }
+	}
+	option = {
+		name = "eventname0016"
+		ai_chance = { factor = 100 }
+	}
+}
+#七君子事件
+country_event = {
+	id = 1100081
+	major = yes
+	title = "Event1100081title"
+	subtitle = "Event1100081subtitle"
+	desc = "Event1100081desc"
+	picture = "Event1100081"
+	trigger = {
+		tag = CHI
+		not = { war_with = JAP }
+		not = { has_country_flag = Event1100081 }
+		CHI = { controls = 5599 } 
+		date = 1937.4.1
+		not = { year = 1938 }
+	}
+	option = {
+		name = "Event1100081option"
+		set_country_flag = Event1100081
+		ai_chance = { factor = 100 }
+		dissent = 5
+		national_unity = -5
+	}
+}
+#五五宪草
+country_event = {
+	id = 1100083
+	title = "Event1000083title"
+	desc = "Event1000083desc"
+	picture = "CHI_Flag"
+	trigger = {
+		tag = CHI
+		not = { has_country_flag = Event1100083 }
+                not = { year = 1938 }
+		date = 1936.5.5	
+	}
+	option = {
+		name = "Event1000083option"
+		set_country_flag = Event1100083
+		ai_chance = { factor = 100 }
+		dissent = 5
+		government = right_wing_autocrat
+	}
+}
+#刘湘之死
+country_event = {
+	id = 1000101
+        major = yes
+	title = "Event1000101title"
+	desc = "Event1000101desc"
+	picture = "Event1100101"
+	trigger = {
+		tag = CSC
+		not = { has_global_flag = Event1000101 }
+		war_with = JAP
+		alliance_with = CHI
+		date = 1938.1.20
+	}
+	option = {
+		name = "Event1000101option1"
+		set_global_flag = Event1000101
+		sichuan_region = { remove_core = CSC }
+		CHI = { country_event = 3100102 }
+		ai_chance = { factor = 100 }
+	}
+	option = {
+		name = "Event1000101option2"
+		set_global_flag = Event1000101
+		head_of_state = 502010
+		ai_chance = { factor = 0 }
+           }
+}
+country_event = {
+	id = 2100101
+       	is_triggered_only = yes
+	major = yes
+	title = "Event2100101title"
+	desc = "Event2100101desc"
+	picture = "Event1100101"
+	option = {
+		name = "Event2100101op"
+                national_unity = 5
+        }
+}
+#签署《中美抵抗侵略互助协定》
+country_event = {
+	id = 1200001
+	major = yes
+	fire_only_once = yes
+	title = "Event1200001title"
+	desc = "Event1200001desc"
+	picture = "news_picture11"
+	trigger = {
+		or = {
+			tag = USA
+                	tag = CHI
+		}
+                has_global_flag = JAPsouthing 
+		CHI = { war_with = JAP }
+                USA = { war_with = JAP }
+                exists = CHI
+		date = 1942.6.2
+	}
+	option = {
+		name = "Event2100101op"
+		set_country_flag = USA_allice_CHI
+                national_unity = 5
+                supplies = 1000
+		ai_chance = { factor = 100 }
+	}
+}
+#12.9运动
+country_event = {
+	id = 193512
+	major = yes
+	fire_only_once = yes
+	title = "Event129title"
+	subtitle = "Event129subtitle"
+	desc = "Event129desc"
+	picture = "Event129"
+	trigger = {
+		tag = CHI
+		not = { war_with = JAP }
+		has_global_flag = the_war_attack_great_wall
+		date = 1935.12.9
+		not = { year = 1936 }
+	}
+	option = {
+		name = "Event129op"
+                add_country_modifier = {
+			name = "Event19361_modifier"
+			duration = 120
+		}
+		set_country_flag = 129yundong
+                ai_chance = { factor = 100 }
+	}
+}
+#平津学生组成南下抗日宣传团
+country_event = {
+	id = 19361
+	major = yes
+		fire_only_once = yes
+	title = "Event19361title"
+	subtitle = "Event19361subtitle"
+	desc = "Event19361desc"
+	picture = "Event19361"
+	trigger = {
+		tag = CHI
+		not = { war_with = JAP }
+		has_country_flag = 129yundong
+		not = { year = 1937 }
+		date = 1936.1.2
+	}
+	option = {
+		name = "Event19361option"
+                add_country_modifier = {
+			name = "Event19361_modifier"
+			duration = 506
+		}
+		set_country_flag = Event19361
+                ai_chance = { factor = 100 }
+	}
+}
+#毛泽东填词《沁园春·雪》
+country_event = {
+	id = 19363
+          fire_only_once = yes
+	major = yes
+	title = "Event19363title"
+	subtitle = "Event19363subtitle"
+	desc = "Event19363desc"
+	picture = "Event19363"
+	trigger = {
+		tag = CHC
+	        war_with = JAP
+	  not = { year = 1937 }       
+		date = 1936.2.1
+		has_country_flag = Postpone_war_ShanXi_Commist
+	}
+	option = {
+		name = "Event19363option"
+                national_unity = 1
+                dissent = -5
+	}
+}
+#加米施-帕滕基兴冬季奥运会在德国加米施-帕腾基兴举行
+country_event = {
+	id = 19364
+	major = yes
+          fire_only_once = yes
+	title = "Event19364title"
+	desc = "Event19364desc"
+	picture = "Event19364"
+	trigger = {
+		tag = GER	   
+		not = { year = 1937 }      
+		date = 1936.2.6
+	}
+	option = {
+		name = "newsop2"
+                national_unity = 10
+                dissent = -5
+	}
+}
+#宪兵学校建校
+country_event = {
+	id = 19365
+          fire_only_once = yes
+	title = "Event19365title"	
+	desc = "Event19365desc"
+	picture = "Event19365"
+	trigger = {
+		tag = CHI
+		not = { year = 1937 }
+		date = 1936.2.1
+	}
+	option = {
+		name = "newsop2"
+                add_country_modifier = {
+			name = "Event19365_modifier"
+			duration = 365
+		}
+                national_unity = 1
+                dissent = -5
+	}
+}
+#阿部定事件
+country_event = {
+	id = 19367	
+          fire_only_once = yes
+	title = "Event19367title"	
+	desc = "Event19367desc"
+	picture = "Event19367"
+	trigger = {
+		tag = JAP	   
+		not = { year = 1937 }   
+		date = 1936.5.18
+	}
+	option = {
+		name = "newsop3"                       
+	}
+}
+#提出图灵机模型
+country_event = {
+	id = 19368
+        major = yes	
+          fire_only_once = yes
+	title = "Event19368title"	
+	desc = "Event19368desc"
+	picture = "Event19368"
+	trigger = {
+		tag = ENG	
+		not = { year = 1937 }      
+		date = 1936.5.28
+	}
+	option = {
+		name = "Event19368option"                       
+	}
+}
+#成立全国各界救国联合会
+country_event = {
+	id = 19369
+          fire_only_once = yes
+	title = "Event19369title"	
+	desc = "Event19369desc"
+	picture = "Event19369"
+	trigger = {
+	or = {
+	tag = CHI
+	tag = CHC
+	}
+    not = { year = 1937 }            	      
+		date = 1936.5.31
+	}
+	option = {
+		name = "newsop"                   
+        }
+}
+#斯诺到来
+country_event = {
+	id = 193610
+        major = yes	
+         fire_only_once = yes
+	title = "Event193610title"	
+	desc = "Event193610desc"
+	picture = "Event193610"
+	trigger = {
+		tag = CHC	 
+		not = { year = 1937 }     
+		date = 1936.6.1
+	}
+	option = {
+		name = "Event193610option"                       
+	}
+}
+#王亚樵事件
+country_event = {
+	id = 193611	
+         fire_only_once = yes
+	title = "Event193611title"	
+	desc = "Event193611desc"
+	picture = "Event193611"
+	trigger = {
+		tag = CHI
+		not = { year = 1937 }	      
+		date = 1936.10.20
+	}
+	option = {
+		name = "newsop1"        
+	}
+}
+#中央作出《关于青年工作的决定》
+country_event = {
+	id = 193612	
+	title = "Event193612title"	
+	desc = "Event193612desc"
+	picture = "CHC_flag"
+	trigger = {
+		tag = CHC	 
+		not = { year = 1937 }     
+		not = { has_country_flag = Event193612 }
+		date = 1936.11.1
+	}
+	option = {
+		name = "Event193612op" 
+                stalinist_PRC = { popularity = 5 }                      
+		set_country_flag = Event193612
+	}
+}
+#汪精卫病亡
+country_event = {
+	id = 194401
+	title = "Event194401title"	
+	desc = "Event194401desc"
+	picture = "news_picture11"
+	trigger = {
+		tag = WJW 
+		not = { year = 1945 }     
+		date = 1944.11.1
+	}
+	option = {
+		name = "Event194401op" 
+		head_of_government = 52030
+		kill_leader = 76325
+		remove_minister = 51023
+        CHI = { country_event = 1944011 }
+		CHC = { country_event = 1944011 }
+		JAP = { country_event = 1944012 }
+	}
+}
+country_event = {
+	id = 1944011
+	is_triggered_only = yes
+	title = "Event1944011title"	
+	desc = "Event1944011desc"
+	picture = "news_picture11"
+	option = {
+		name = "Event1944011op" 
+		country_event = 1944013
+       }
+}
+country_event = {
+	id = 1944012
+	is_triggered_only = yes
+	title = "Event1944012title"	
+	desc = "Event1944012desc"
+	picture = "news_picture11"
+	option = {
+		name = "Event1944012op" 
+        }
+}
+country_event = {
+	id = 1944013
+	is_triggered_only = yes
+	title = "Event1944013title"	
+	subtitle = "Event1944013_defectsubtitle"
+	desc = "Event1944013desc"
+	picture = "news_picture12"
+	option = {
+		name = "Event1944013op" 
+        }
+}
+country_event = {
+	id = 193901
+	is_triggered_only = yes
+	title = "wangjingwei_defect"
+	subtitle = "wangjingwei_defectsubtitle"
+	desc = "wangjingwei_defect_descf"
+	picture = "SF_ChinesePuppet1"
+	option = {
+		name = "wangjingwei_defect_option" 
+		country_event = 193902
+        }
+}
+country_event = {
+	id = 193902
+	is_triggered_only = yes
+	title = "wangjingwei_defect1"
+	subtitle = "wangjingwei_defectsubtitle1"
+	desc = "wangjingwei_defect_desc"
+	picture = "SF_ChinesePuppet1"
+	option = {
+		name = "wangjingwei_defect_option1" 
+        }
+}
+country_event = {
+	id = 193903
+	is_triggered_only = yes
+	title = "CHI_event_1000007_title"
+	subtitle = "CHI_event_1000007_subtitle"
+	desc = "CHI_event_1000007_descf"
+	picture = "SF_ChinesePuppet3"
+	option = {
+		name = "wangjingwei_defect_option" 
+		country_event = 193904
+        }
+}
+country_event = {
+	id = 193904
+	is_triggered_only = yes
+	title = "CHI_event_1000007_title1"
+	desc = "CHI_event_1000007_desc"
+	picture = "SF_ChinesePuppet3"
+	option = {
+		name = "wangjingwei_defect_option1" 
+        }
+}

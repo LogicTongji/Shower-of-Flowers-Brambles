@@ -1,0 +1,174 @@
+######################
+#   两广事变事件组   #
+######################
+country_event = {
+	id = 1000096
+	major = yes
+	trigger = {
+		tag = CHI
+		date = 1936.5.12
+		not = { war_with = JAP }
+		not = { date = 1937.7.7 }
+		exists = CGD
+		exists = CGX
+		not = { has_global_flag = Event1000096 }
+	}
+	title = "Event1000096title"
+	desc = "Event1000096desc"
+	picture = "Guangdong_event1"
+	option = {
+		name = "Event1000096option"
+		set_global_flag = Event1000096
+		threat = { who = CGD value = 100 }
+		threat = { who = CGX value = 100 }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000097
+	major = yes
+	trigger = {
+		tag = CGD
+		date = 1936.6.1
+		CHI = { not = { war_with = JAP } }
+		not = { date = 1937.7.7 }
+		has_global_flag = Event1000096
+		not = { has_global_flag = Event10000971 }
+		not = { has_global_flag = Event10000972 }
+	}
+	title = "Event1000097title"
+	desc = "Event1000097desc"
+	picture = "Guangdong_event2"
+	option = {
+		name = "Event1000097option1"
+		set_global_flag = Event10000971
+		set_global_flag = Event10000973#CGX
+		set_global_flag = Event10000974#CGD
+		CGX = { country_event = 1000098 }
+		ai_chance = { factor = 100 }
+	}
+	option = {
+		name = "Event1000097option2"
+		set_global_flag = Event10000972
+		set_global_flag = Event10000973
+		set_global_flag = Event10000974
+		CGX = { country_event = 1000098 }
+		CGD = {	war = {	target = CHI } attacker_goal = { casus_belli = conquer } defender_goal = { casus_belli = conquer } }
+		CGX = {	war = {	target = CHI } attacker_goal = { casus_belli = conquer } defender_goal = { casus_belli = conquer } }
+	    ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = 1000098
+	major = yes
+	is_triggered_only = yes
+	title = "Event1000097title"
+	desc = "Event1000097desc"
+	picture = "Guangdong_event2"
+	option = {
+		name = "Event1000097option1"
+		CGD = {	war = {	target = CHN } attacker_goal = { casus_belli = conquer } defender_goal = { casus_belli = conquer } }
+		CGX = {	war = {	target = CHN } attacker_goal = { casus_belli = conquer } defender_goal = { casus_belli = conquer } }
+		CHI = { country_event = 390295
+		leave_alliance = CHN
+		}
+		ai_chance = { factor = 100 }
+	}
+	option = {
+		name = "Event1000097option2"
+		CGD = {	war = {	target = CHI } attacker_goal = { casus_belli = conquer } defender_goal = { casus_belli = conquer } }
+		CGX = {	war = {	target = CHI } attacker_goal = { casus_belli = conquer } defender_goal = { casus_belli = conquer } }
+	    CGD = {	war = {	target = CHN } attacker_goal = { casus_belli = conquer } defender_goal = { casus_belli = conquer } }
+		CGX = {	war = {	target = CHN } attacker_goal = { casus_belli = conquer } defender_goal = { casus_belli = conquer } }
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = 390295
+	major = yes
+	is_triggered_only = yes
+	title = "Event390295title"
+	desc = "Event390295desc"
+	picture = "Guangdong_event2"
+	option = {
+		name = "Event390295option1"
+			CHN = {
+			 add_country_modifier = {
+			name = "Anti_guangxi_modifier"
+			duration = 60
+		}
+	}
+		CHN = { load_oob = "Center_surport.txt" }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000099
+	major = yes
+	trigger = {
+		tag = CHI
+		date = 1936.7.14
+		has_global_flag = Event10000971
+		not = { has_global_flag = Event1000099 }
+	}
+	title = "Event1000099title"
+	desc = "Event1000099desc"
+	picture = "Guangdong_event4"
+	option = {
+		name = "Event1000099option"
+		set_global_flag = Event1000099
+		cir_global_flag = Event10000974
+		SF_china_region = { remove_core = CGD }
+		CHI = { inherit = CGD }
+		load_oob = "CGD_715.txt"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000100
+	major = yes
+	trigger = {
+		tag = CGX
+		OR = { war_with = CHI
+		       war_with = CHN
+			   }
+		has_global_flag = Event1000099
+		not = { has_country_flag = Event1000100 }
+	}
+	title = "Event1000100title"
+	desc = "Event1000100desc"
+	picture = "Guangdong_event5"
+	option = {
+		name = "Event1000100option"
+		set_country_flag = Event1000100
+		cir_global_flag = Event10000973
+		CHI = { threat = { who = CGX value = -100 } }
+		 CGX = { end_war = CHN 
+		         end_war = CHI }
+		 create_alliance = CHN
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000104
+	is_triggered_only = yes
+	title = "Event1000104title"
+	desc = "Event1000104desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000104option"
+		  national_unity = 2
+		  ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000106
+	is_triggered_only = yes
+	title = "Event1000106title"
+	desc = "Event1000106desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000106option"
+		  ai_chance = { factor = 100 }
+	}
+}

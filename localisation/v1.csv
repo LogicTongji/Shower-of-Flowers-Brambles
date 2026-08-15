@@ -1,0 +1,79 @@
+As Reseves;预备役;En r閟erve;Als Reserven;;;;;;;;;;;x
+Add Cags;添加舰载机;Ajouter des groupes de porte-avions;Tr鋑ergeschwader hinzuf黦en;;;;;;;;;;;x
+DIPRELCH_DEPENDENCY;傀儡-宗主关系;Relations Fantoche-Ma顃re;Beziehung Marionette-Herr;;;;;;;;;;;x
+RELATION_CAPPED;不能进一步改善此关系.;Impossibilit?de d閜asser cette relation avec des am閘iorations graduelles.;Diese Beziehung kann auch mit allm鋒lichen Verbesserungen nicht weiter gebracht werden.;;;;;;;;;;;x
+STOPALIGNTITLE;停止靠向某阵营;Arr阾er de s抋ligner sur la faction;Ausrichtung an Fraktion stoppen;;;;;;;;;;;x
+STOPALIGNNEWDESC;你是否希望停止靠向 $RECIPIENT$ ?;Voulez-vous arr阾er de vous aligner sur $RECIPIENT$ ?;M鯿hten Sie die Ausrichtung an $RECIPIENT$ stoppen?;;;;;;;;;;;x
+STOPALIGNDESC;停止靠向某阵营。;Arr阾er de s抋ligner sur la faction.;Ausrichtung an Fraktion stoppen.;;;;;;;;;;;x
+WEALIGNSTOP_SETUP;当我们停止靠向一个阵营的领导;Quand nous arr阾ons de nous aligner sur le leader d抲ne faction;Wenn wir die Ausrichtung an einen Fraktionsf黨rer stoppen;;;;;;;;;;;x
+WEALIGNSTOP_HEADER;$foreign_minister$ 报告;$foreign_minister$ rapporte que;$foreign_minister$ berichtet;;;;;;;;;;;x
+WEALIGNSTOP_1;外交影响;Influence diplomatique;Diplomatischer Einfluss;;;;;;;;;;;x
+WEALIGNSTOP_2;$MONARCHTITLE$ ，我们;$MONARCHTITLE$, nous avons arr阾?$MONARCHTITLE$, wir haben unsere;;;;;;;;;;;x
+WEALIGNSTOP_3;停止了;de nous aligner;Ausrichtung;;;;;;;;;;;x
+WEALIGNSTOP_4;靠向;sur;an;;;;;;;;;;;x
+WEALIGNSTOP_5;$RECIPIENT$;$RECIPIENT$;$RECIPIENT$ gestoppt;;;;;;;;;;;x
+WEALIGNSTOP_6;*;*;*;;*;;;;;;;;;x,
+WEALIGNSTOP_LOG;我们停止了靠向 $RECIPIENT$ ;Nous avons arr阾?de nous aligner sur $RECIPIENT$;Wir haben unsere Ausrichtung an $RECIPIENT$ gestoppt;;;;;;;;;;;x
+WEALIGNSTOP_BTN1;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x,
+WEALIGNSTOP_BTN2;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x,
+WEALIGNSTOP_BTN3;查看;Aller ?GOTO;Id?do;Ir all?Andare;Ugr醩;P鴈j韙 na;;;;;;x,
+WEALIGNSTOP_MAP;*;*;*;*;*;*;*;;;;;;;x,
+OTHERALIGNSTOP_SETUP;当一个国家停止靠向另一个阵营;Quand une nation arr阾e de s抋ligner sur une autre faction.;Wenn eine Nation ihre Ausrichtung an einer anderen Fraktion stoppt.;;;;;;;;;;;x
+OTHERALIGNSTOP_HEADER;$minister_of_intelligence$ 报告;$minister_of_intelligence$ rapporte que;$minister_of_intelligence$ berichtet:;;$minister_of_intelligence$ informa de;;;;;;;;;x,
+OTHERALIGNSTOP_1;外交阵营;Alignement diplomatique;Diplomatische Ausrichtung;;;;;;;;;;;x
+OTHERALIGNSTOP_2;$MONARCHTITLE$, $ACTOR$ ;$MONARCHTITLE$, $ACTOR$ a arr阾?$MONARCHTITLE$, $ACTOR$ stoppte;;;;;;;;;;;x
+OTHERALIGNSTOP_3;停止了;de s抋ligner;die Ausrichtung;;;;;;;;;;;x
+OTHERALIGNSTOP_4;靠向;sur;an;;;;;;;;;;;x
+OTHERALIGNSTOP_5;$RECIPIENT$;$RECIPIENT$;$RECIPIENT$;;;;;;;;;;;x
+OTHERALIGNSTOP_6;*;*;*;;*;;;;;;;;;x,
+OTHERALIGNSTOP_LOG;$ACTOR$ 停止了靠向 $RECIPIENT$ 。;$ACTOR$ a arr阾?de s抋ligner sur $RECIPIENT$.;$ACTOR$ stoppte die Ausrichtung an $RECIPIENT$.;;;;;;;;;;;x
+OTHERALIGNSTOP_BTN1;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x,
+OTHERALIGNSTOP_BTN2;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x,
+OTHERALIGNSTOP_BTN3;查看;Aller ?Goto;Id?do;Ir all?Andare;Ugr醩;P鴈j韙 na;;;;;;x,
+OTHERALIGNSTOP_MAP;*;*;*;*;*;*;*;;;;;;;x,
+THEYALIGNSTOP_SETUP;当他国停止靠向我们的阵营;Quand une nation arr阾e de s抋ligner sur notre faction.;Wenn eine andere Nation ihre Ausrichtung an unserer Fraktion stoppt.;;;;;;;;;;;x
+THEYALIGNSTOP_HEADER;$foreign_minister$ 报告;$foreign_minister$ rapporte que;$foreign_minister$ berichtet;;;;;;;;;;;x
+THEYALIGNSTOP_1;外交阵营;Alignement diplomatique;Diplomatische Ausrichtung;;;;;;;;;;;x
+THEYALIGNSTOP_2;$MONARCHTITLE$,;$MONARCHTITLE$,;$MONARCHTITLE$,;;$MONARCHTITLE$,;;;;;;;;;x
+THEYALIGNSTOP_3;$ACTOR$;$ACTOR$;$ACTOR$;;$ACTOR$;;;;;;;;;x,
+THEYALIGNSTOP_4;不再尝试靠向我们的阵营。;n抏ssaie plus de s抋ligner sur notre faction.;versuchen nicht mehr, sich an unserer Fraktion auszurichten.;;;;;;;;;;;x
+THEYALIGNSTOP_5;*;*;*;;*;;;;;;;;;x,
+THEYALIGNSTOP_6;*;*;*;;*;;;;;;;;;x,
+THEYALIGNSTOP_LOG;$ACTOR$ 停止靠向我们的阵营。;$ACTOR$ a arr阾?de s抋ligner sur notre faction.;$ACTOR$ stoppte die Ausrichtung an unserer Fraktion.;;;;;;;;;;;x
+THEYALIGNSTOP_BTN1;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+THEYALIGNSTOP_BTN2;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+THEYALIGNSTOP_BTN3;查看;Aller ?Goto;Id?do;Ir all?Andare;Ugr醩;P鴈j韙 na;;;;;;x
+THEYALIGNSTOP_MAP;*;*;*;*;*;*;*;;;;;;;x
+GGCOINS_BAD_LOGIN;错误的用户名或密码;Nom d抲tilisateur ou mot de passe incorrect;Benutzername oder Passwort ung黮tig;;;;;;;x;;;;x
+OV_CONT;选择持续将开始任务直到玩家取消。;Cochez la case pour d閙arrer imm閐iatement la mission et la poursuivre jusqu掄 ce qu抏lle soit annul閑 par le joueur.;"Aktivieren Sie das K鋝tchen ""Kontinuierlich"", um die Mission sofort zu starten. Sie wird dann weiter laufen, bis sie vom Spieler abgebrochen wird.";;;;;;;x;;;;x
+ALLOWDEBTDESC;向贸易方请求被允许在战时积累债务。;Demandez l抋utorisation d抋ccumuler des dettes pendant la guerre, lorsqu'il commerce avec eux.;Bitte um Erlaubnis, w鋒rend Kriegszeiten beim Handel mit ihnen Verschuldungen einzugehen.;;;;;;;;;;;x
+NEEDED_OFFICERS;需要的军官;Officiers requis;Ben鰐igte Offiziere;;;;;;;;;;;x
+BUILD_OFF_DD_IRO;军官;Officiers;Offiziere;;;;;;;;;;;x
+BUILD_OFF_DD_DRO;这表示该单位需要多少军官来保证在正常效率下作战。;Nombre d抩fficiers requis par chaque unit?pour se battre efficacement.;Dies ist die Anzahl der Offiziere, die jede Einheit zum effizienten Kampf ben鰐igt.;;;;;;;;;;;x
+MODIFIER_GLOBAL_RESOURCES;资源;Ressources;Ressourcen;;;;;;;;;;;x
+OFFICER_NUMBER2_IRO;我们拥有$OFFICERS$军官负责$DIVISIONS$个陆军旅，舰船和飞机编队。\n不同单位需要不同数量的军官，\n我们需要至少$NEED$军官才能保持一个合适的比例。\n每天我们能培训$DAILY$新军官。;Nous disposons de $OFFICERS$ officiers pour $DIVISIONS$ brigades, navires et escadrilles. Diff閞ents types d'unit閟 requi鑢ent diff閞entes quantit閟 d'officiers, mais pour un ratio correct nous avons besoin d'au moins $NEED$ officiers. Nous formons chaque jour $DAILY$ nouveaux officiers.;Wir haben $OFFICERS$ Offiziere in unseren $DIVISIONS$ Brigaden, Flugzeugen und auf unseren Schiffen. Verschiedene Einheitentypen ben鰐igen unterschiedliche Anzahlen von Offizieren, aber f黵 ein sinnvolles Verh鋖tnis von Mannschaften zu Offizieren ben鰐igen wir mindestens $NEED$ Offiziere. Wir bilden t鋑lich $DAILY$ neue Offiziere aus.;;;;;;;;;;;x
+KPH;千米每小时;km/h;;km/h;;;;;;;;;;x
+ITEM_RESEARCH_START;开始研究;D閎ut des recherches;Forschung beginnen;;;;;;;;;;;x
+CONVOYS;运输舰;Convois;Konvoi;Konw骿;;;;;;;;;;x
+ESCORTS;护航舰;Escortes;Eskorte;Eskorta;;;;;;;;;;x
+NONE;没有;Rien;Keine;Brak;;;;;;;;;;x
+AI;AI;IA;KI;Przekaz SI;;;;;;;;;;x
+accept;接受;Confirmer;Akzeptierung;;Aceptar;;;;;;;;;x
+cancel;取消;Annuler;Abbrechen;;Cancelar;;;;;;;;;x
+new_deal_title;战争动员;Pr閜aratifs de guerre;Kriegsvorbereitungen;;;;;;;;;;;x
+gear_up_for_war_title;战争动员;Pr閜aratifs de guerre;Kriegsvorbereitungen;;;;;;;;;;;x
+gear_up_for_war_desc;当战争席卷世界，美国也开始为战争武装了起来。由于美国\n军队的扩大和租借法案带来的巨大需求迫使美国大规模扩张\n了自己的工业基地。;Alors que la guerre devient mondiale, les pr閜aratifs des Etats-Unis s抜ntensifient. L抏xpansion des forces arm閑s am閞icaines ainsi que la loi sur le pr阾-bail n閏essitent un d関eloppement massif de l抜ndustrie am閞icaine.;W鋒rend der Krieg sich 黚er die ganze Welt ausbreitet, bereiten sich die Vereinigten Staaten immer mehr auf ihren Eintritt vor. Die Erweiterung der US-Streitkr鋐te sowie die enormen Erfordernisse des Leih- und Pachtgesetzes bed黵fen alle einer massiven Expansion der US-Industriebasis.;;;;;;;;;;;x
+us_new_deal;罗斯福新政;New Deal;New Deal;;;;;;;;;;;x
+ANNEX_SETUP;当一个国家吞并了另一个国家;Quand une nation en annexe une autre;Wenn eine Nation eine andere Nation annektiert;;;;;;;;;;;x
+ANNEX_HEADER;$foreign_minister$ 报告;$foreign_minister$ rapporte que;$foreign_minister$ berichtet;;;;;;;;;;;x
+ANNEX_1;$ACTOR$;$ACTOR$;$ACTOR$;;;;;;;;;;;x
+ANNEX_2;$MONARCHTITLE$,;$MONARCHTITLE$,;$MONARCHTITLE$,;;;;;;;;;;;x
+ANNEX_3;$ACTOR$ 吞并了 $RECIPIENT$;$ACTOR$ a annex?$RECIPIENT$;$ACTOR$ annektierte $RECIPIENT$,;;;;;;;;;;;x
+ANNEX_4;后者已经成为他们国家的一部分。;qui fait d閟ormais partie de son pays.;das nun Teil ihrer Nation ist;;;;;;;;;;;x
+ANNEX_5;*;*;*;;;;;;;;;;;x
+ANNEX_6;*;*;*;;;;;;;;;;;x
+ANNEX_LOG;$ACTOR$ 吞并了 $RECIPIENT$.;$ACTOR$ a annex?$RECIPIENT$.;$ACTOR$ annektierte $RECIPIENT$.;;;;;;;;;;;x
+ANNEX_BTN1;好的;OK;OK;;;;;;;;;;;x
+ANNEX_BTN2;好的;OK;OK;;;;;;;;;;;x
+ANNEX_BTN3;查看;Aller ?Goto;;;;;;;;;;;x
+ANNEX_MAP;*;*;*;;;;;;;;;;;x

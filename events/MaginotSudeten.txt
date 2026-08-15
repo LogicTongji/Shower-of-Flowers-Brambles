@@ -1,0 +1,172 @@
+# Maginot line
+country_event = {
+	id = 7000
+	title = "EVTNAME7000"
+	desc = "EVTDESC7000"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		TAG = GER
+		GER = {
+			controls = 3150
+			controls = 3083
+			controls = 2947
+			controls = 2881
+			controls = 2815
+			controls = 2750
+			controls = 2684
+			controls = 2618
+			controls = 2552
+		}
+		3150 = {
+			land_fort = 10
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA7000"
+		3150 = {
+			land_fort = -9
+		}
+		3083 = {
+			land_fort = -9
+		}
+		2947 = {
+			land_fort = -9
+		}
+		2881 = {
+			land_fort = -9
+		}
+		2815 = {
+			land_fort = -9
+		}
+		2750 = {
+			land_fort = -9
+		}
+		2684 = {
+			land_fort = -9
+		}
+		2618 = {
+			land_fort = -9
+		}
+		2552 = {
+			land_fort = -9
+		}
+	}
+}
+
+# Sudeten line
+country_event = {
+	id = 7001
+	title = "EVTNAME7001"
+	desc = "EVTDESC7001"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		TAG = GER
+		GER = {
+			controls = 2822
+			controls = 2823
+			controls = 2889
+			controls = 2757
+			controls = 2625
+			controls = 2631
+			controls = 2691
+			controls = 2501
+			controls = 2502
+			controls = 2564
+			controls = 2565
+			controls = 2438
+			controls = 2439
+			controls = 2440
+			controls = 2498
+			controls = 2497
+			controls = 2380
+			controls = 2381
+		}
+		2822 = {
+			land_fort = 5
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+	
+		name = "EVTOPTA7000"
+		2822 = {
+			land_fort = -4
+		}
+		2823 = {
+			land_fort = -4
+		}
+		2824 = {
+			land_fort = -4
+		}
+		2825 = {
+			land_fort = -4
+		}
+		2889 = {
+			land_fort = -4
+		}
+		2757 = {
+			land_fort = -4
+		}
+		2625 = {
+			land_fort = -4
+		}
+		2631 = {
+			land_fort = -4
+		}
+		2632 = {
+			land_fort = -4
+		}
+		2691 = {
+			land_fort = -4
+		}
+		2501 = {
+			land_fort = -4
+		}
+		2502 = {
+			land_fort = -4
+		}
+		2560 = {
+			land_fort = -4
+		}
+		2564 = {
+			land_fort = -4
+		}			
+		2565 = {
+			land_fort = -4
+		}			
+		2438 = {
+			land_fort = -4
+		}			
+		2439 = {
+			land_fort = -4
+		}			
+		2440 = {
+			land_fort = -4
+		}			
+		2498 = {
+			land_fort = -4
+		}			
+		2497 = {
+			land_fort = -4
+		}			
+		2380 = {
+			land_fort = -4
+		}
+		2381 = {
+			land_fort = -4
+		}
+	}
+}

@@ -1,0 +1,2752 @@
+#Attack on Sydney Harbor
+province_event = {
+	id = 6001
+	title = "EVTNAME6001"
+	desc = "EVTDESC6001"
+	picture = "SydneyHarbor"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 7989
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_sydney_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Narvik
+province_event = {
+	id = 6002
+	title = "EVTNAME6002"
+	desc = "EVTDESC6002"
+	picture = "Narvik"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 65
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_narvik_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Danzig
+province_event = {
+	id = 6003
+	title = "EVTNAME6003"
+	desc = "EVTDESC6003"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1626
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_danzig_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Taranto
+province_event = {
+	id = 6004
+	title = "EVTNAME6004"
+	desc = "EVTDESC6004"
+	picture = "Taranto"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 4869
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_taranto_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Naval Battle of Casablanca
+province_event = {
+	id = 6005
+	title = "EVTNAME6005"
+	desc = "EVTDESC6005"
+	picture = "Casablanca"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 5412
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_casablanca_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Action of 27 February 1941
+province_event = {
+	id = 6006
+	title = "EVTNAME6006"
+	desc = "EVTDESC6006"
+	picture = "Action27"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = maldives_ocean
+		TAG = NZL
+		war_with = ITA
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_leander_ramb_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Battle between HMAS Sydney and Kormoran
+province_event = {
+	id = 6007
+	title = "EVTNAME6007"
+	desc = "EVTDESC6007"
+	picture = "Kormoran"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = western_australia_sea
+		tag = AST
+		war_with = GER
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_sydney_kormoran_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Bombardment of Fort Stevens
+province_event = {
+	id = 6008
+	title = "EVTNAME6008"
+	desc = "EVTDESC6008"
+	picture = "fort_stevens"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 4694
+			province_id = 7327
+			province_id = 3597
+			province_id = 6697
+			province_id = 5825
+			province_id = 10668
+			province_id = 10670
+			province_id = 10667
+			province_id = 10666
+			province_id = 10665
+		}
+		OR = {
+			USA = {
+				controls = 4694
+			}
+			USA = {
+				controls = 7327
+			}
+			USA = {
+				controls = 3597
+			}
+			USA = {
+				controls = 6697
+			}
+			USA = {
+				controls = 5825
+			}
+			USA = {
+				controls = 10668
+			}
+			USA = {
+				controls = 10670
+			}
+			USA = {
+				controls = 10667
+			}
+			USA = {
+				controls = 10666
+			}
+			USA = {
+				controls = 10665
+			}
+		}
+		war_with = JAP
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_fortstevens_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Action off Bougainville
+province_event = {
+	id = 6009
+	title = "EVTNAME6009"
+	desc = "EVTDESC6009"
+	picture = "bougainville"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_province_flag = empress_augusta
+		region = papua_new_guinea_sea
+		TAG = USA
+		war_with = JAP
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_bougainville_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of the Caribbean
+province_event = {
+	id = 6010
+	title = "EVTNAME6010"
+	desc = "EVTDESC6010"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = caribbean_ocean
+		TAG = GER 
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_caribbean_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Empress Augusta Bay
+province_event = {
+	id = 6011
+	title = "EVTNAME6011"
+	desc = "EVTDESC6011"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = papua_new_guinea_sea
+		TAG = USA
+		war_with = JAP
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_empressaugusta_won
+			duration = 25
+		}
+		set_province_flag = empress_augusta
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+		set_province_flag = empress_augusta
+	}
+}
+
+#German attacks on Nauru
+province_event = {
+	id = 6012
+	title = "EVTNAME6012"
+	desc = "EVTDESC6012"
+	picture = "Nauru"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 10655
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_nauru_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Naval Battle of Suursaari
+province_event = {
+	id = 6013
+	title = "EVTNAME6013"
+	desc = "EVTDESC6013"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 10505	# Sea
+			province_id = 10506	# Sea
+			province_id = 10507	# Sea
+			province_id = 10508	# Sea
+			province_id = 10509	# Sea
+			province_id = 10510	# Sea
+			province_id = 10511	# Sea
+			province_id = 10512	# Sea
+			province_id = 10513	# Sea
+			province_id = 10514 # Sea
+			province_id = 739 # Land
+			province_id = 698 # Land
+			province_id = 782 # Land
+			province_id = 906 # Land
+		}
+		FIN = {
+			controls = 739
+			controls = 698
+		}
+		war_with = GER
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalbattle_suursaari_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Calabria
+province_event = {
+	id = 6014
+	title = "EVTNAME6014"
+	desc = "EVTDESC6014"
+	picture = "Calabria"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = mediterranean_region
+		TAG = ITA
+		war_with = ENG
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_calabria_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Cape Spada
+province_event = {
+	id = 6015
+	title = "EVTNAME6015"
+	desc = "EVTDESC6015"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = mediterranean_region
+		TAG = ITA
+		war_with = AST
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {				
+			name = navalattack_capespada_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Naval Battle of Guadalcanal
+province_event = {
+	id = 6016
+	title = "EVTNAME6016"
+	desc = "EVTDESC6016"
+	picture = "Guadalcanal_Naval"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6545
+		ENG = {
+			controls = 6545
+		}
+		war_with = JAP
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_guadalcanal_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of the Komandorski Islands
+province_event = {
+	id = 6017
+	title = "EVTNAME6017"
+	desc = "EVTDESC6017"
+	picture = "Komandorski"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6854
+		controller = {
+			faction = comintern
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_komandorski_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Landing at Aitape
+province_event = {
+	id = 6018
+	title = "EVTNAME6018"
+	desc = "EVTDESC6018"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 7774
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_aitape_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Landing at Hollandia 
+province_event = {
+	id = 6019
+	title = "EVTNAME6019"
+	desc = "EVTDESC6019"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 7764
+		NOT = {
+			controller = {
+				faction = allies
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_hollandia_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Madagascar
+province_event = {
+	id = 6020
+	title = "EVTNAME6020"
+	desc = "EVTDESC6020"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 10287
+			province_id = 10261
+			province_id = 10345
+			province_id = 10334
+			province_id = 10312
+			province_id = 10273
+			province_id = 10288
+			province_id = 10231
+			province_id = 10247
+			province_id = 10216
+		}
+		NOT = {
+			controller = {
+				faction = allies
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_madagascar_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Attu and Kiska
+province_event = {
+	id = 6021
+	title = "EVTNAME6021"
+	desc = "EVTDESC6021"
+	picture = "Attu"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 13711 # Sea
+			province_id = 10684 # Land
+		}
+		OR = {
+			war_with = JAP
+			war_with = USA
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_attukiska_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Palau
+province_event = {
+	id = 6022
+	title = "EVTNAME6022"
+	desc = "EVTDESC6022"
+	picture = "Palau"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 6291
+			province_id = 6319
+		}
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_palau_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of Okinawa
+province_event = {
+	id = 6023
+	title = "EVTNAME6023"
+	desc = "EVTDESC6023"
+	picture = "Okinawa_naval"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 5748 # Land
+			province_id = 5759 # Land
+		}
+		NOT = {
+			controller = {
+				faction = allies
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_okinawa_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Battle of the Philippines
+province_event = {
+	id = 6024
+	title = "EVTNAME6024"
+	desc = "EVTDESC6024"
+	picture = "Philippines"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			region = philippines_sea
+			region = northern_philippines_sea
+		}
+		war_with = JAP
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_philippines_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+# Naval Battle of Dutch Harbor
+province_event = {
+	id = 6025
+	title = "EVTNAME6025"
+	desc = "EVTDESC6025"
+	picture = "DutchHarbor"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 10732
+			province_id = 10733
+			province_id = 10734
+		}
+		controller = {
+			faction = allies
+		}
+		war_with = JAP
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_dutchharbor_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+# First Naval Battle of Narvik
+province_event = {
+	id = 6026
+	title = "EVTNAME6026"
+	desc = "EVTDESC6026"
+	picture = "Narvik"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 65
+		controller = {
+			faction = axis
+		}
+		war_with = ENG
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_first_narvik_won
+			duration = 25
+		}
+		set_province_flag = first_naval_narvik
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+		set_province_flag = first_naval_narvik
+	}
+}
+
+#Second Naval Battle of Narvik
+province_event = {
+	id = 6027
+	title = "EVTNAME6027"
+	desc = "EVTDESC6027"
+	picture = "Narvik"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 65
+		has_province_flag = first_naval_narvik
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_second_narvik_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Naval Battle of Manado
+province_event = {
+	id = 6028
+	title = "EVTNAME6028"
+	desc = "EVTDESC6028"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6398
+		HOL = {
+			controls = 6398
+		}
+		war_with = JAP
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_manado_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+# Naval Battle of Tarakan
+province_event = {
+	id = 6029
+	title = "EVTNAME6029"
+	desc = "EVTDESC6029"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6380
+		HOL = {
+			controls = 6380
+		}
+		war_with = JAP
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_tarakan_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+# Naval Battle of Portugese Timor
+province_event = {
+	id = 6030
+	title = "EVTNAME6030"
+	desc = "EVTDESC6030"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 6569
+			province_id = 6564
+			province_id = 6565
+			province_id = 6558
+			province_id = 6559
+		}
+		OR = {
+			POR = {
+				controls = 6569
+			}
+			POR = {
+				controls = 6564
+			}
+			POR = {
+				controls = 6565
+			}
+			POR = {
+				controls = 6558
+			}
+			POR = {
+				controls = 6559
+			}
+		}
+		controller = {
+			faction = allies
+		}
+		war_with = JAP
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_portugese_timor_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+# Naval Battle of Dutch Timor
+province_event = {
+	id = 6031
+	title = "EVTNAME6031"
+	desc = "EVTDESC6031"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 6576
+			province_id = 6570
+			province_id = 6563
+			province_id = 6575
+		}
+		OR = {
+			HOL = {
+				controls = 6576
+			}
+			HOL = {
+				controls = 6570
+			}
+			HOL = {
+				controls = 6563
+			}
+			HOL = {
+				controls = 6575
+			}
+		}
+		controller = {
+			faction = allies
+		}
+		war_with = JAP
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_dutch_timor_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+# Naval Battle for Henderson Field
+province_event = {
+	id = 6032
+	title = "EVTNAME6032"
+	desc = "EVTDESC6032"
+	picture = "HendersonField"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 6541
+			province_id = 5920
+			province_id = 5905
+		}
+		OR = {
+			AST = {
+				controls = 6541
+			}
+			AST = {
+				controls = 5920
+			}
+			AST = {
+				controls = 5905
+			}
+		}
+		controller = {
+			faction = allies 
+		}
+		war_with = JAP
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_hendersonfield_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+# Naval Battle of Balikpapan
+province_event = {
+	id = 6033
+	title = "EVTNAME6033"
+	desc = "EVTDESC6033"
+	picture = "Balikpapan"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6434
+		HOL = {
+			controls = 6434
+		}
+		controller = {
+			faction = allies
+		}
+		war_with = JAP
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_balikpapan_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+# Naval Battle of Anzio
+province_event = {
+	id = 6034
+	title = "EVTNAME6034"
+	desc = "EVTDESC6034"
+	picture = "OperationShingle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 4603
+		ITA = {
+			controls = 4603
+		}
+		controller = {
+			faction = axis
+		}
+		war_with = ENG
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_anzio_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+# Naval Battle of Leyte Gulf
+province_event = {
+	id = 6035
+	title = "EVTNAME6035"
+	desc = "EVTDESC6035"
+	picture = "LeyteGulf"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = philippines_sea
+		OR = {
+			TAG = PHI
+			TAG = USA
+			TAG = JAP
+		}
+		OR = {
+			war_with = JAP
+			war_with = USA
+			war_with = PHI
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		set_global_flag = leyte_gulf
+		add_country_modifier = {
+			name = navalattack_leyte_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+# Naval Battle of the Coral Sea
+province_event = {
+	id = 6036
+	title = "EVTNAME6036"
+	desc = "EVTDESC6036"
+	picture = "Coralsea"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = coral_sea
+		OR = {
+			TAG = PHI
+			TAG = USA
+			TAG = AST
+		}
+		OR = {
+			war_with = AST
+			war_with = USA
+			war_with = PHI
+			war_with = JAP
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_coralsea_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+# Naval Battle of Mindoro
+province_event = {
+	id = 6037
+	title = "EVTNAME6037"
+	desc = "EVTDESC6037"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = northern_philippines_sea
+		OR = {
+			TAG = USA
+			TAG = JAP
+		}
+		OR = {
+			war_with = JAP
+			war_with = USA
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_mindoro_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+# Naval Battle off Samar
+province_event = {
+	id = 6038
+	title = "EVTNAME6038"
+	desc = "EVTDESC6038"
+	picture = "Samar"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			region = philippines_sea
+			region = northern_philippines_sea
+		}
+		OR = {
+			TAG = USA
+			TAG = JAP
+		}
+		OR = {
+			war_with = JAP
+			war_with = USA
+		}
+		has_global_flag = leyte_gulf
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalattack_samar_won
+			duration = 25
+		}
+		clr_global_flag = leyte_gulf
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+		clr_global_flag = leyte_gulf
+	}
+}
+
+#Naval Battle of Midway
+province_event = {
+	id = 6039
+	title = "EVTNAME6039"
+	desc = "EVTDESC6039"
+	picture = "Midway"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 10669
+		controller = {
+			faction = allies
+		}
+		war_with = JAP
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalbattle_midway_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Naval Battle of Hel
+province_event = {
+	id = 6040
+	title = "EVTNAME6040"
+	desc = "EVTDESC6040"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			TAG = POL
+			TAG = GER
+		}
+		province_id = 10514
+		OR = {
+			war_with = GER
+			war_with = POL
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalbattle_hel_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Naval Battle of Cape Matapan
+province_event = {
+	id = 6041
+	title = "EVTNAME6041"
+	desc = "EVTDESC6041"
+	picture = "Matapan"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 11450
+		OR = {
+			TAG = ENG
+			TAG = AST
+		}
+		war_with = ITA
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalbattle_matapan_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Naval Battle of Cape Spartivento
+province_event = {
+	id = 6042
+	title = "EVTNAME6042"
+	desc = "EVTDESC6042"
+	picture = "Spartivento"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 11442
+		TAG = ENG
+		war_with = ITA
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalbattle_spartivento_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Naval Battle of the River Plate
+province_event = {
+	id = 6043
+	title = "EVTNAME6043"
+	desc = "EVTDESC6043"
+	picture = "RiverPlate"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = river_plate
+		OR = {
+			TAG = ENG
+			TAG = GER
+			war_with = GER
+			war_with = ENG
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalbattle_riverplate_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Naval Battle of the Denmark Strait
+province_event = {
+	id = 6044
+	title = "EVTNAME6044"
+	desc = "EVTDESC6044"
+	picture = "Denmarkstrait"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = denmark_strait
+		OR = {
+			TAG = ENG
+			TAG = GER
+			war_with = GER
+			war_with = ENG
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalbattle_denmarkstrait_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Naval Battle of the Barents Sea
+province_event = {
+	id = 6045
+	title = "EVTNAME6045"
+	desc = "EVTDESC6045"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = barents_sea
+		OR = {
+			TAG = ENG
+			TAG = GER
+			war_with = GER
+			war_with = ENG
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalbattle_barentssea_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Naval Battle of the Espero Convoy
+province_event = {
+	id = 6046
+	title = "EVTNAME6046"
+	desc = "EVTDESC6046"
+	picture = "EsperoConvoy"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 11451
+			province_id = 10583
+			province_id = 10584
+			province_id = 11454
+			province_id = 11453
+		}
+		OR = {
+			TAG = ENG
+			TAG = ITA
+			war_with = ITA
+			war_with = ENG
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalbattle_espero_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#First Naval Battle of the Java Sea
+province_event = {
+	id = 6047
+	title = "EVTNAME6047"
+	desc = "EVTDESC6047"
+	picture = "Java_sea"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 11989
+		OR = {
+			TAG = JAP
+			TAG = ENG
+			war_with = JAP
+			war_with = ENG
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		set_global_flag = java_sea
+		add_country_modifier = {
+			name = navalbattle_first_javasea_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		set_global_flag = java_sea
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Naval Battle of the Strait of Otranto 
+province_event = {
+	id = 6048
+	title = "EVTNAME6048"
+	desc = "EVTDESC6048"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 10578
+			province_id = 10579
+			province_id = 10580
+			province_id = 10581
+		}
+		OR = {
+			TAG = ALB
+			TAG = ITA
+			war_with = ITA
+			war_with = ALB
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalbattle_oranto_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Naval Battle of Sunda Strait
+province_event = {
+	id = 6049
+	title = "EVTNAME6049"
+	desc = "EVTDESC6049"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 11988
+			province_id = 11243
+			province_id = 11987
+		}
+		OR = {
+			TAG = USA
+			TAG = AST
+			TAG = JAP
+			war_with = USA
+			war_with = AST
+			war_with = JAP
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalbattle_sunda_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#First Naval Battle of Sidra 
+province_event = {
+	id = 6050
+	title = "EVTNAME6050"
+	desc = "EVTDESC6050"
+	picture = "FirstSirte"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 11448
+			province_id = 10573
+			province_id = 10574
+		}
+		OR = {
+			TAG = ENG
+			TAG = ITA
+			war_with = ENG
+			war_with = ITA
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		set_global_flag = first_sidra
+		add_country_modifier = {
+			name = navalbattle_first_sidra_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		set_global_flag = first_sidra
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Second Naval Battle of Sidra 
+province_event = {
+	id = 6051
+	title = "EVTNAME6051"
+	desc = "EVTDESC6051"
+	picture = "cleopatra"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_global_flag = first_sidra
+		OR = {
+			province_id = 11448
+			province_id = 10573
+			province_id = 10574
+		}
+		OR = {
+			TAG = ENG
+			TAG = ITA
+			war_with = ENG
+			war_with = ITA
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalbattle_second_sidra_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Second Naval Battle of the Java Sea
+province_event = {
+	id = 6052
+	title = "EVTNAME6052"
+	desc = "EVTDESC6052"
+	picture = "Java_sea"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_global_flag = java_sea
+		province_id = 11989
+		OR = {
+			TAG = JAP
+			TAG = ENG
+			war_with = JAP
+			war_with = ENG
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		clr_global_flag = java_sea
+		add_country_modifier = {
+			name = navalbattle_second_javasea_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		clr_global_flag = java_sea
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Naval Battle of Ushant
+province_event = {
+	id = 6053
+	title = "EVTNAME6053"
+	desc = "EVTDESC6053"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = english_channel
+		OR = {
+			TAG = GER
+			TAG = ENG
+			war_with = GER
+			war_with = ENG
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalbattle_ushant_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+
+#Naval Battle of the Crimean Peninsula
+province_event = {
+	id = 6054
+	title = "EVTNAME6054"
+	desc = "EVTDESC6054"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = crimean_peninsula
+		OR = {
+			TAG = GER
+			TAG = SOV
+			war_with = GER
+			war_with = SOV
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalbattle_crimean_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Naval Battle of Milne Bay
+province_event = {
+	id = 6055
+	title = "EVTNAME6055"
+	desc = "EVTDESC6055"
+	picture = "Milne_bay"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 11536
+		OR = {
+			TAG = JAP
+			TAG = AST
+			war_with = JAP
+			war_with = AST
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalbattle_milnebay_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#First Indian Ocean Raid
+province_event = {
+	id = 6056
+	title = "EVTNAME6056"
+	desc = "EVTDESC6056"
+	picture = "Indian_Ocean_raid"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = ceylon_sea
+		OR = {
+			TAG = JAP
+			TAG = ENG
+			war_with = JAP
+			war_with = ENG
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		set_province_flag = first_indian_ocean
+		add_country_modifier = {
+			name = navalbattle_first_indianocean_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Second Indian Ocean Raid
+province_event = {
+	id = 6057
+	title = "EVTNAME6057"
+	desc = "EVTDESC6057"
+	picture = "Indian_Ocean_raid"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_province_flag = first_indian_ocean
+		region = ceylon_sea
+		OR = {
+			TAG = JAP
+			TAG = ENG
+			war_with = JAP
+			war_with = ENG
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		clr_province_flag = first_indian_ocean
+		add_country_modifier = {
+			name = navalbattle_second_indianocean_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		clr_province_flag = first_indian_ocean
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Naval Battle of New Georgia
+province_event = {
+	id = 6058
+	title = "EVTNAME6058"
+	desc = "EVTDESC6058"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 11146
+			province_id = 6528
+		}
+		OR = {
+			TAG = JAP
+			TAG = ENG
+			TAG = AST
+			war_with = JAP
+			war_with = ENG
+			war_with = AST
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalbattle_newgeorgia_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Naval Battle of Kwajalein
+province_event = {
+	id = 6059
+	title = "EVTNAME6059"
+	desc = "EVTDESC6059"
+	picture = "Kwajalein"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 10658
+		OR = {
+			TAG = JAP
+			TAG = USA
+			war_with = JAP
+			war_with = USA
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalbattle_kwajalein_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Naval Battle of Truk
+province_event = {
+	id = 6060
+	title = "EVTNAME6060"
+	desc = "EVTDESC6060"
+	picture = "Hailstone"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 10651
+		OR = {
+			TAG = JAP
+			TAG = USA
+			war_with = JAP
+			war_with = USA
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalbattle_truk_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Naval Battle of Eniwetok
+province_event = {
+	id = 6061
+	title = "EVTNAME6061"
+	desc = "EVTDESC6061"
+	picture = "Eniwetok"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 10663
+		OR = {
+			TAG = JAP
+			TAG = USA
+			war_with = JAP
+			war_with = USA
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalbattle_eniwetok_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Naval Battle of Tinian
+province_event = {
+	id = 6062
+	title = "EVTNAME6062"
+	desc = "EVTDESC6062"
+	picture = "Tinian"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 10641
+		OR = {
+			TAG = JAP
+			TAG = USA
+			war_with = JAP
+			war_with = USA
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalbattle_tinian_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Naval Battle of Cabanatuan
+province_event = {
+	id = 6063
+	title = "EVTNAME6063"
+	desc = "EVTDESC6063"
+	picture = "Cabanatuan"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6118
+		OR = {
+			TAG = JAP
+			TAG = USA
+			TAG = PHI
+			war_with = JAP
+			war_with = USA
+			war_with = PHI
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalbattle_cabanatuan_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#First Naval Battle of Savo Island
+province_event = {
+	id = 6064
+	title = "EVTNAME6064"
+	desc = "EVTDESC6064"
+	picture = "Savo_island"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = solomon_sea
+		OR = {
+			TAG = JAP
+			TAG = ENG
+			war_with = JAP
+			war_with = ENG
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		set_global_flag = first_savo
+		add_country_modifier = {
+			name = navalbattle_first_savo_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Second Naval Battle of Savo
+province_event = {
+	id = 6065
+	title = "EVTNAME6065"
+	desc = "EVTDESC6065"
+	picture = "Cape_esperance"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_global_flag = first_savo
+		region = solomon_sea
+		OR = {
+			war_with = JAP
+			war_with = USA
+			war_with = PHI
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		clr_global_flag = first_savo
+		add_country_modifier = {
+			name = navalbattle_second_savo_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Naval Battle of Makassar Strait
+province_event = {
+	id = 6066
+	title = "EVTNAME6066"
+	desc = "EVTDESC6066"
+	picture = "Makassar_strait"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = makassar_strait
+		OR = {
+			TAG = JAP
+			TAG = USA
+			TAG = PHI
+			war_with = JAP
+			war_with = USA
+			war_with = PHI
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalbattle_makassar_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Naval Battle of Lofoten Islands
+province_event = {
+	id = 6067
+	title = "EVTNAME6067"
+	desc = "EVTDESC6067"
+	picture = "Claymore"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 10525
+		OR = {
+			TAG = GER
+			TAG = NOR
+			TAG = ENG
+			war_with = GER
+			war_with = NOR
+			war_with = ENG
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalbattle_lofoten_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Naval Battle of the Seychelles
+province_event = {
+	id = 6068
+	title = "EVTNAME6068"
+	desc = "EVTDESC6068"
+	picture = "Action8"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 12417
+			province_id = 12387
+			province_id = 10195
+		}
+		OR = {
+			TAG = GER
+			TAG = NOR
+			TAG = ENG
+			war_with = GER
+			war_with = NOR
+			war_with = ENG
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalbattle_seychelles_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Naval Battle of the Bismarck Sea
+province_event = {
+	id = 6069
+	title = "EVTNAME6069"
+	desc = "EVTDESC6069"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 12417
+			province_id = 12387
+			province_id = 10195
+		}
+		OR = {
+			TAG = AST
+			TAG = JAP
+			TAG = ENG
+			war_with = AST
+			war_with = JAP
+			war_with = ENG
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalbattle_bismarcksea_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Makin Island Raid
+province_event = {
+	id = 6070
+	title = "EVTNAME6070"
+	desc = "EVTDESC6070"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6512
+		OR = {
+			JAP = {
+				controls = 6512
+			}
+			USA = {
+				controls = 6512
+			}
+		}
+		OR = {
+			war_with = JAP
+			war_with = USA
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalbattle_makin_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}
+
+#Operation Jaywick
+province_event = {
+	id = 6071
+	title = "EVTNAME6071"
+	desc = "EVTDESC6071"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6394
+		OR = {
+			JAP = {
+				controls = 6394
+			}
+			AST = {
+				controls = 6394
+			}
+		}
+		OR = {
+			war_with = JAP
+			war_with = AST
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6001"
+		add_country_modifier = {
+			name = navalbattle_singapore_won
+			duration = 25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB6001"
+		add_country_modifier = {
+			name = navalattack_won
+			duration = 25
+		}
+	}
+}

@@ -1,0 +1,19 @@
+owner = JAP
+
+controller = JAP
+
+add_core = JAP
+
+points = 3
+infra = 3
+naval_base = 5
+coastal_fort = 5
+land_fort = 4
+anti_air = 3
+
+1945.9.3 = {
+	owner = JPN
+	controller = JPN
+	add_core = JPN
+	remove_core = JAP
+}

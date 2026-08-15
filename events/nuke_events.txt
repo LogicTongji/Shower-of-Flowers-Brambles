@@ -1,0 +1,118 @@
+province_event = {
+	id = 18050
+	title = "EVTNAME18050"
+	desc = "EVTDESC18050"
+	picture = "nuke"
+	
+	trigger = {
+		NOT = {
+			has_global_flag = first_nuke
+		}
+	}
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA18050"
+		set_global_flag = first_nuke
+	}
+}
+
+province_event = { #USA
+	id = 18051
+	title = "EVTNAME18051"
+	desc = "EVTDESC18051"
+	picture = "nuke"
+	
+	trigger = {
+			tag = USA
+	}
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA18051"
+		national_unity = 5
+	}
+}
+
+province_event = { #ENG
+	id = 18052
+	title = "EVTNAME18052"
+	desc = "EVTDESC18052"
+	picture = "nuke"
+	
+	trigger = {
+			tag = ENG
+	}
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA18052"
+		national_unity = 5
+	}
+}
+
+province_event = { #GER
+	id = 18053
+	title = "EVTNAME18053"
+	desc = "EVTDESC18053"
+	picture = "nuke"
+	
+	trigger = {
+			tag = GER
+	}
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA18053"
+		national_unity = 5
+	}
+}
+
+province_event = { #SOV
+	id = 18054
+	title = "EVTNAME18054"
+	desc = "EVTDESC18054"
+	picture = "nuke"
+	
+	trigger = {
+			tag = SOV
+	}
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA18054"
+		national_unity = 5
+	}
+}
+
+province_event = { #Other
+	id = 18055
+	title = "EVTNAME18055"
+	desc = "EVTDESC18055"
+	picture = "nuke"
+	
+	trigger = {
+		NOT = {
+			OR = {
+				tag = USA
+				tag = ENG
+				tag = GER
+				tag = SOV
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA18055"
+		national_unity = 5
+	}
+}

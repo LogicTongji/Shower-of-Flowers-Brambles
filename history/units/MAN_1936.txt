@@ -1,0 +1,543 @@
+theatre = {
+	name = "满洲国军"
+	location = 4452
+	regiment = { type = hq_brigade name = "满洲国军司令部" historical_model = 1 }
+	army = {
+		name = "锦州绥靖区"
+		location = 4685
+		regiment = { type = hq_brigade name = "锦州绥靖指挥部" historical_model = 1 }
+		corps = {
+			name = "第1军管区"
+			location = 4685	
+			regiment = { type = hq_brigade name = "第1军管区指挥部" historical_model = 0 }
+			regiment = { type = police_brigade experience = 25 name = "第一军区教导队" historical_model = 1 }
+			division= {
+				name = "第1混成旅"
+				location = 4685
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第2混成旅"
+				location = 4685	
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第3混成旅"
+				location = 4685
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第4混成旅"
+				location = 4685
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第5混成旅"
+				location = 4685
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第6混成旅"
+				location = 4685
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+		}
+		corps = {
+			name = "第5军管区"
+			location = 7098	
+			regiment = { type = hq_brigade name = "第5军管区指挥部" historical_model = 0 }
+			regiment = { type = police_brigade experience = 25 name = "第一军区教导队" historical_model = 1 }
+			division= {
+				name = "第7混成旅"
+				location = 7098
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第8混成旅"
+				location = 7098	
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第9混成旅"
+				location = 7098
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第1骑兵旅"
+				location = 7098
+				is_reserve = yes
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+		}
+	 }
+	army = {
+		name = "新京绥靖区"
+		location = 4452
+		regiment = { type = hq_brigade name = "新京绥靖指挥部" historical_model = 1 }
+		corps = {
+			name = "第2军管区"
+			location = 4386	
+			regiment = { type = hq_brigade name = "第2军管区指挥部" historical_model = 0 }
+			regiment = { type = police_brigade experience = 25 name = "第3军区教导队" historical_model = 1 }
+			division= {
+				name = "第10混成旅"
+				location = 4386
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第11混成旅"
+				location = 4386	
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第12混成旅"
+				location = 4386
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第13混成旅"
+				location = 4386
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第2骑兵旅"
+				location = 4386
+				is_reserve = yes
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第3骑兵旅"
+				location = 4386
+				is_reserve = yes
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第4骑兵旅"
+				location = 4386
+				is_reserve = yes
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+		}
+		corps = {
+			name = "第6军管区"
+			location = 4260	
+			regiment = { type = hq_brigade name = "第6军管区指挥部" historical_model = 0 }
+			regiment = { type = police_brigade experience = 25 name = "第6军区教导队" historical_model = 1 }
+			division= {
+				name = "第14混成旅"
+				location = 4260
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第15混成旅"
+				location = 4260	
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第16混成旅"
+				location = 4260
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第5骑兵旅"
+				location = 4260
+				is_reserve = yes
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+		}
+	}
+	army = {
+		name = "哈尔滨绥靖区"
+		location = 7139
+		regiment = { type = hq_brigade name = "哈尔滨绥靖指挥部" historical_model = 1 }
+		corps = {
+			name = "第3军管区"
+			location = 7095	
+			regiment = { type = hq_brigade name = "第3军管区指挥部" historical_model = 0 }
+			regiment = { type = police_brigade experience = 25 name = "第3军区教导队" historical_model = 1 }
+			division= {
+				name = "第17混成旅"
+				location = 7095
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第18混成旅"
+				location = 7095	
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第19混成旅"
+				location = 7095
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第20混成旅"
+				location = 7095
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第21混成旅"
+				location = 7095
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第6骑兵旅"
+				location = 7095
+				is_reserve = yes
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+		}
+		corps = {
+			name = "第4军管区"
+			location = 7139	
+			regiment = { type = hq_brigade name = "第4军管区指挥部" historical_model = 0 }
+			regiment = { type = police_brigade experience = 25 name = "第6军区教导队" historical_model = 1 }
+			division= {
+				name = "第22混成旅"
+				location = 7139
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第23混成旅"
+				location = 7139	
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第24混成旅"
+				location = 7139
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第25混成旅"
+				location = 7139
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第26混成旅"
+				location = 7139
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第27混成旅"
+				location = 7139
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第28混成旅"
+				location = 7139
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第29混成旅"
+				location = 7139
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第7骑兵旅"
+				location = 7139
+				is_reserve = yes
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+		}
+		corps = {
+			name = "第7军管区"
+			location = 7098	
+			regiment = { type = hq_brigade name = "第7军管区指挥部" historical_model = 0 }
+			regiment = { type = police_brigade experience = 25 name = "第6军区教导队" historical_model = 1 }
+			division= {
+				name = "第30混成旅"
+				location = 7098
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第31混成旅"
+				location = 7098	
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第32混成旅"
+				location = 7098
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第33混成旅"
+				location = 7098
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第34混成旅"
+				location = 7098
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第35混成旅"
+				location = 7098
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第36混成旅"
+				location = 7098
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第8骑兵旅"
+				location = 7098
+				is_reserve = yes
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+		}
+		corps = {
+			name = "第8军管区"
+			location = 7119	
+			regiment = { type = hq_brigade name = "第8军管区指挥部" historical_model = 0 }
+			regiment = { type = police_brigade experience = 25 name = "第6军区教导队" historical_model = 1 }
+			division= {
+				name = "第37混成旅"
+				location = 7119
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第38混成旅"
+				location = 7119	
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第39混成旅"
+				location = 7119
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第40混成旅"
+				location = 7119
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第41混成旅"
+				location = 7119
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第9骑兵旅"
+				location = 7119
+				is_reserve = yes
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+		}
+	}
+	army = {
+		name = "兴安国防线"
+		location = 7136
+		regiment = { type = hq_brigade name = "兴安国防指挥部" historical_model = 1 }
+		corps = {
+			name = "第9军管区"
+			location = 4514	
+			regiment = { type = hq_brigade name = "第9军管区指挥部" historical_model = 0 }
+			regiment = { type = police_brigade experience = 25 name = "第3军区教导队" historical_model = 1 }
+			division= {
+				name = "第1混成旅"
+				location = 4514
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第2混成旅"
+				location = 4514	
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第3混成旅"
+				location = 4514
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第4混成旅"
+				location = 4514
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第5混成旅"
+				location = 4514
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第1骑兵旅"
+				location = 4514
+				is_reserve = yes
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+		}
+		corps = {
+			name = "第10军管区"
+			location = 8872	
+			regiment = { type = hq_brigade name = "第10军管区指挥部" historical_model = 0 }
+			regiment = { type = police_brigade experience = 25 name = "第6军区教导队" historical_model = 1 }
+			division= {
+				name = "第1混成旅"
+				location = 8872
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第2混成旅"
+				location = 8872	
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第3混成旅"
+				location = 8872
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第4混成旅"
+				location = 8872
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第5混成旅"
+				location = 8872
+				is_reserve = yes
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+			division= {
+				name = "第1骑兵旅"
+				location = 8872
+				is_reserve = yes
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 25 builder = JAP historical_model = 1 }
+			}
+		}
+	}	
+}	

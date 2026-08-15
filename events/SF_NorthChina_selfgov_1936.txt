@@ -1,0 +1,338 @@
+#####################
+#  华北事件组   #
+#####################
+country_event = {
+	id = 12216
+          fire_only_once = yes
+	title = "japnorth_China1_title"
+	subtitle = "japnorth_China1_subtitle"
+	desc = "japnorth_China1desc"
+	picture = "japnorth_China1"
+	trigger = {
+		tag = CHI
+		OR = {
+		rehe_region = { controlled_by = MAN }
+		rehe_region = { controlled_by = JAP }
+		}
+		OR = {
+		rehe_region = {
+			any_neighbor_province = {
+				units_in_province = JAP
+			}
+		  }
+		  rehe_region = {
+			any_neighbor_province = {
+				units_in_province = MAN
+			}
+		  }
+		}
+		not = {
+		war_with = JAP 
+		year = 1936
+                   }
+				   date = 1934.4.28
+		has_global_flag = Anti_jap_front_great_wall_loss
+	}
+	mean_time_to_happen =  {
+		days = 1
+	}
+	option = {
+		name = "japnorth_China1_option"
+				   CCH = {
+				       any_owned = { limit = { province_id = 7135 } secede_province = MEC } 
+                   any_owned = { limit = { province_id = 7159 } secede_province = MEC } 
+ any_owned = { limit = { province_id = 7183 } secede_province = MEC } 
+ any_owned = { limit = { province_id = 7208 } secede_province = MEC }
+  any_owned = { limit = { province_id = 4681 } secede_province = MEC }
+                    any_owned = { limit = { province_id = 7233 } secede_province = MEC } 
+                   any_owned = { limit = { province_id = 7259 } secede_province = MEC } 
+ any_owned = { limit = { province_id = 4682 } secede_province = MEC } 
+ any_owned = { limit = { province_id = 7296 } secede_province = MEC } 
+ any_owned = { limit = { province_id = 7276 } secede_province = MEC } 
+ any_owned = { limit = { province_id = 7313 } secede_province = MEC }
+ any_owned = { limit = { province_id = 4834 } secede_province = MEC } 
+ any_owned = { limit = { province_id = 7312 } secede_province = MEC } 
+ any_owned = { limit = { province_id = 7326 } secede_province = MEC } 
+  any_owned = { limit = { province_id = 7325 } secede_province = MEC } 
+ any_owned = { limit = { province_id = 7338 } secede_province = MEC }      
+				  }
+				   CSY = {
+				       any_owned = { limit = { province_id = 4980 } secede_province = MEC } 
+                   any_owned = { limit = { province_id = 7337 } secede_province = MEC }
+				   any_owned = { limit = { province_id = 7349 } secede_province = MEC }
+				   }
+				  MEC = { load_oob = "MEA_military.txt" }
+				  set_global_flag = Japan_set_Mokokou
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 12217
+          fire_only_once = yes
+	title = "japnorth_China2_title"
+	subtitle = "japnorth_China2_subtitle"
+	desc = "japnorth_China2desc"
+	picture = "japnorth_China2"
+	trigger = {
+		tag = CHI
+		OR = {
+		rehe_region = { controlled_by = MAN }
+		rehe_region = { controlled_by = JAP }
+		}
+		OR = {
+		hebei_region = {
+			any_neighbor_province = {
+				units_in_province = JAP
+			}
+		  }
+		  hebei_region = {
+			any_neighbor_province = {
+				units_in_province = MAN
+			}
+		  }
+		}
+		not = {
+		war_with = JAP 
+		year = 1936
+                   }
+				   date = 1935.5.15
+		has_global_flag = JAP_invassion_northChina
+	}
+	mean_time_to_happen =  {
+		days = 1
+	}
+	option = {
+		name = "japnorth_China2_option"
+		CCH = {
+		 any_owned = { limit = { province_id = 4932 } secede_province = MEC }  
+		}
+		JAP ={ country_event = 12218 }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+                is_triggered_only = yes
+	id = 12218
+	title = "japnorth_China3_title"
+	subtitle = "japnorth_China3_subtitle"
+	desc = "japnorth_China3desc"
+	picture = "japnorth_China3"
+        option = {
+		name = "japnorth_China3_option"
+		JAP = { threat = { who = CHI value = 20 
+     who = CHC value = 20 
+     who = CJC value = 20 
+     who = CSX value = 20 
+     who = CSD value = 20 
+     who = CSY value = 20 }
+   }  
+	}
+}
+country_event = {
+	id = 12219
+          fire_only_once = yes
+	title = "japnorth_China4_title"
+	subtitle = "japnorth_China4_subtitle"
+	desc = "japnorth_China4desc"
+	picture = "japnorth_China4"
+	trigger = {
+		tag = CHI
+		OR = {
+		hebei_region = {
+			any_neighbor_province = {
+				units_in_province = JAP
+			}
+		  }
+		  hebei_region = {
+			any_neighbor_province = {
+				units_in_province = MAN
+			}
+		  }
+		}
+		not = {
+		war_with = JAP 
+		year = 1936
+                   }
+				   date = 1935.7.6
+		has_global_flag = JAP_invassion_northChina
+	}
+	mean_time_to_happen =  {
+		days = 1
+	}
+	option = {
+		name = "japnorth_China4_option"
+        set_country_flag = JAP_invassion_northChina_Heibei
+		JAP ={ country_event = 12220 }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+                is_triggered_only = yes
+	id = 12220
+	title = "japnorth_China5_title"
+	subtitle = "japnorth_China5_subtitle"
+	desc = "japnorth_China5desc"
+	picture = "japnorth_China5"
+        option = {
+		name = "japnorth_China5_option" 
+	}
+}
+country_event = {
+	id = 12221
+          fire_only_once = yes
+	title = "japnorth_China6_title"
+	desc = "japnorth_China6desc"
+	picture = "japnorth_China6"
+	trigger = {
+		tag = CHI
+		not = {
+		war_with = JAP 
+		year = 1936
+                   }
+				   date = 1935.10.28
+		has_global_flag = JAP_invassion_northChina
+	}
+	mean_time_to_happen =  {
+		days = 1
+	}
+	option = {
+		name = "japnorth_China6_option"
+		JAP ={ country_event = 12222 }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+                is_triggered_only = yes
+	id = 12222
+	title = "japnorth_China7_title"
+	desc = "japnorth_China7desc"
+	picture = "japnorth_China6"
+        option = {
+		name = "japnorth_China7_option" 
+	}
+}
+country_event = {
+	id = 12223
+          fire_only_once = yes
+		  major = yes
+	title = "japnorth_China8_title"
+	subtitle = "japnorth_China8_subtitle"
+	desc = "japnorth_China8desc"
+	picture = "japnorth_China8"
+	trigger = {
+		tag = JAP
+		not = {
+		war_with = CHI 
+		year = 1936
+                   }
+				   date = 1935.10.1
+		has_global_flag = JAP_invassion_northChina
+	}
+	mean_time_to_happen =  {
+		days = 1
+	}
+	option = {
+		name = "japnorth_China8_option"
+		set_global_flag = JAP_slef_northChina
+		JAP ={ country_event = 12226 }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+                is_triggered_only = yes
+				major = yes
+	id = 12224
+	title = "japnorth_China9_title"
+	desc = "japnorth_China9desc"
+	picture = "japnorth_China9"
+        option = {
+		name = "japnorth_China9_option" 
+	}
+}
+country_event = {
+                is_triggered_only = yes
+				major = yes
+	id = 12225
+	title = "japnorth_China10_title"
+	desc = "japnorth_China10desc"
+	picture = "japnorth_China10"
+        option = {
+		name = "japnorth_China10_option" 
+	}
+}
+country_event = {
+                is_triggered_only = yes
+				major = yes
+	id = 12226
+	title = "japnorth_China11_title"
+	desc = "japnorth_China11desc"
+	picture = "japnorth_China11"
+        option = {
+		name = "japnorth_China11_option" 
+	}
+}
+country_event = {
+	id = 12227
+          fire_only_once = yes
+	title = "japnorth_China12_title"
+	subtitle = "japnorth_China12_subtitle"
+	desc = "japnorth_China12desc"
+	picture = "japnorth_China12"
+	trigger = {
+		tag = CHI
+		OR = {
+		rehe_region = { controlled_by = MAN }
+		rehe_region = { controlled_by = JAP }
+		}
+		OR = {
+		hebei_region = {
+			any_neighbor_province = {
+				units_in_province = JAP
+			}
+		  }
+		  hebei_region = {
+			any_neighbor_province = {
+				units_in_province = MAN
+			}
+		  }
+		}
+		not = {
+		war_with = JAP 
+		year = 1936
+                   }
+				   date = 1935.12.29
+		has_global_flag = JAP_invassion_northChina
+	}
+	mean_time_to_happen =  {
+		days = 1
+	}
+	option = {
+		name = "japnorth_China12_option"
+		CJC = {
+		 any_owned = { limit = { province_id = 4885 } secede_province = MEC }
+		}
+		JAP ={ country_event = 12228 }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+                is_triggered_only = yes
+				major = yes
+	id = 12228
+	title = "japnorth_China13_title"
+	desc = "japnorth_China13desc"
+	picture = "japnorth_China13"
+        option = {
+		name = "japnorth_China13_option" 
+	}
+}
+country_event = {
+                is_triggered_only = yes
+	id = 12229
+	title = "japnorth_China14_title"
+	desc = "japnorth_China14desc"
+	picture = "japnorth_China14"
+        option = {
+		name = "japnorth_China14_option" 
+	}
+}

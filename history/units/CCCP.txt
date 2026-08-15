@@ -1,0 +1,10 @@
+#国际纵队
+division= {
+		name = "国际纵队"
+		location = 4540
+		is_reserve = yes
+		regiment = { type = infantry_brigade experience = 45 name = "第11纵队、第12纵队" historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 45 name = "第13纵队、第14纵队" historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 75 name = "第15纵队" historical_model = 1 }
+		regiment = { type = light_armor_brigade experience = 25 name = "战略支援团" historical_model = 2 }
+	}

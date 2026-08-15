@@ -1,0 +1,23 @@
+	division= {
+		name = "党卫军第2“帝国”师"
+		location = 1928
+		regiment = { type = GER_ss name = "希特勒卫队‘LSSAH’" experience = 5  historical_model = 2 }			
+		regiment = { type = GER_ss name = "“德意志”党卫队步兵团'Totenkopf'" experience = 5  historical_model = 0 }	
+		regiment = { type = GER_ss name = "“日耳曼尼亚”党卫队步兵团" experience = 5  historical_model = 2 }
+		regiment = { type = GER_ss experience = 5 name = "“元首”党卫队步兵团" historical_model = 2 }	
+		regiment = { type = light_armor_brigade experience = 5 name = "战略支援团" historical_model = 2 }
+	}
+		division= {
+		name = "党卫军第3“骷髅”师"
+		location = 1928	
+		regiment = { type = GER_ss name = "骷髅总队" experience = 5  historical_model = 2 }
+		regiment = { type = light_armor_brigade experience = 55 name = "装甲团" historical_model = 2 }	
+	}
+		division= {
+		name = "党卫军第4“警察”师"
+		location = 1928	
+		regiment = { type = GER_ss name = "第1警察步兵团" experience = 5  historical_model = 2 }
+		regiment = { type = GER_ss name = "第2警察步兵团" experience = 5  historical_model = 2 }
+		regiment = { type = GER_ss name = "第3警察步兵团" experience = 5  historical_model = 2 }
+		regiment = { type = artillery_brigade experience = 55 name = "炮兵支援团" historical_model = 2 }	
+	}

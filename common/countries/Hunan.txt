@@ -1,0 +1,50 @@
+color = { 255  128  0 }
+graphical_culture = Japanese
+
+default_templates = {
+	binary_infantry = {
+		infantry_brigade
+		infantry_brigade
+	}
+	binary_milita = {
+		militia_brigade
+		militia_brigade
+	}
+	binary_armoured = {
+		armor_brigade
+		motorized_brigade
+	}
+	binary_cavalry = {
+		cavalry_brigade
+		cavalry_brigade
+	}
+}
+
+
+ministers = {
+	6111129 = {
+		name = "ºÎ¼ü"
+		ideology = leninist
+		loyalty = 1.00
+		picture = M6111129
+		head_of_state = iron_fisted_brute
+		foreign_minister = apologetic_clerk
+		start_date = 1930.1.1
+	}
+	6111130 = {
+		name = "³ÌÇ±"
+		ideology = leninist
+		loyalty = 1.00
+		picture = L50041
+		chief_of_army = school_of_mass_combat
+		start_date = 1930.1.1
+	}
+	6111131 = {
+		name = "ÌÆÉúÖÇ"
+		ideology = leninist
+		loyalty = 1.00
+		picture = L50280
+		chief_of_staff = school_of_mass_combat
+		start_date = 1930.1.1
+	}
+}

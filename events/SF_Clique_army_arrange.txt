@@ -1,0 +1,257 @@
+######################
+#  军阀整编事件组   #
+#####################
+country_event = {
+        is_triggered_only = yes
+	id = 33331
+	title = "dianjun"
+	desc = "dianjun1desc"
+	picture = "dianjun"
+	option = {
+		name = "dianjunoption1"
+		load_oob = "CYN1.txt"
+		CYN = {
+			remove_brigade = "第十路军司令部"
+			remove_brigade = "第一旅"
+			remove_brigade = "第二旅"
+			remove_brigade = "第三旅"
+			remove_brigade = "第四旅"
+			remove_brigade = "第五旅"
+			remove_brigade = "第六旅"
+                        remove_brigade = "第七旅"
+			remove_brigade = "第八旅"
+			remove_brigade = "第九旅"
+			remove_brigade = "第十旅"
+			remove_brigade = "第十一旅"
+			remove_brigade = "第十二旅"
+			remove_brigade = "独立第21旅"
+			remove_brigade = "独立第22旅"
+			remove_brigade = "独立第23旅"
+		}
+		ai_chance = { factor = 0 }
+	}
+        option = {
+		name = "dianjunoption2"
+		CHI = { country_event = 33333 }
+		CYN = {
+			remove_brigade = "第十路军司令部"
+			remove_brigade = "第一旅"
+			remove_brigade = "第二旅"
+			remove_brigade = "第三旅"
+			remove_brigade = "第四旅"
+			remove_brigade = "第五旅"
+			remove_brigade = "第六旅"
+                        remove_brigade = "第七旅"
+			remove_brigade = "第八旅"
+			remove_brigade = "第九旅"
+			remove_brigade = "第十旅"
+			remove_brigade = "第十一旅"
+			remove_brigade = "第十二旅"
+			remove_brigade = "独立第21旅"
+			remove_brigade = "独立第22旅"
+			remove_brigade = "独立第23旅"
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+        is_triggered_only = yes
+	id = 33332
+	title = "chuanjunoption1"
+	subtitle = "chuanjunoption_subtitle"
+	desc = "chuanjundesc"
+	picture = "chuanjun"
+	option = {
+		name = "chuanjunoption"
+		load_oob = "CSC1.txt"
+		CSC = {                  
+			remove_brigade = "第20军司令部"
+			remove_brigade = "第1旅"
+			remove_brigade = "第2旅"
+			remove_brigade = "第3旅"
+			remove_brigade = "第4旅 "
+			remove_brigade = "第5旅"
+			remove_brigade = "第6旅"
+			remove_brigade = "第七路军司令部"
+			remove_brigade = "第21军司令部"
+			remove_brigade = "第7旅"			
+                        remove_brigade = "第8旅"
+			remove_brigade = "第9旅"
+			remove_brigade = "第10旅"
+			remove_brigade = "第11旅"
+			remove_brigade = "第12旅"
+			remove_brigade = "第13旅"
+			remove_brigade = "第14旅"
+			remove_brigade = "第23军司令部"
+			remove_brigade = "第15旅"
+			remove_brigade = "第16旅"
+			remove_brigade = "第17旅"
+			remove_brigade = "第18旅"
+			remove_brigade = "第19旅"
+			remove_brigade = "第44军司令部"
+			remove_brigade = "独立第11旅"
+			remove_brigade = "独立第12旅"
+			remove_brigade = "独立第13旅"
+			remove_brigade = "独立第14旅"
+			remove_brigade = "独立第15旅"
+			remove_brigade = "独立第16旅"
+			remove_brigade = "独立第17旅"
+			remove_brigade = "第十四路军司令部"
+			remove_brigade = "第45军司令部"
+			remove_brigade = "第41军司令部"
+			remove_brigade = "第20旅"			
+                        remove_brigade = "第21旅"
+			remove_brigade = "第22旅"
+			remove_brigade = "第23旅"
+			remove_brigade = "第24旅"
+			remove_brigade = "第25旅"
+			remove_brigade = "第27旅"
+			remove_brigade = "第28旅"
+                        remove_brigade = "第29旅"			
+                        remove_brigade = "第30旅"
+			remove_brigade = "第31旅"
+			remove_brigade = "第32旅"
+			remove_brigade = "第33旅"
+			remove_brigade = "第34旅"
+			remove_brigade = "第35旅"
+			remove_brigade = "第36旅"
+                        remove_brigade = "第37旅"			
+                        remove_brigade = "第38旅"
+			remove_brigade = "第39旅"
+			remove_brigade = "第40旅"
+			remove_brigade = "第41旅"
+			remove_brigade = "第42旅"
+			remove_brigade = "第43旅"
+			remove_brigade = "第44旅"
+                        remove_brigade = "第45旅"			
+                        remove_brigade = "第46旅"
+			remove_brigade = "第47旅"
+			remove_brigade = "第48旅"
+			remove_brigade = "第49旅"
+			remove_brigade = "第50旅"
+			remove_brigade = "第51旅"
+			remove_brigade = "第52旅"
+                        remove_brigade = "第53旅"
+			remove_brigade = "第54旅"
+			remove_brigade = "第55旅"
+			remove_brigade = "第56旅"
+		}
+		ai_chance = { factor = 0 }
+	}
+        option = {
+		name = "chuanjunoption"
+		CHI = { country_event = 33334 }
+		CSC = {                  
+			remove_brigade = "第20军司令部"
+			remove_brigade = "第1旅"
+			remove_brigade = "第2旅"
+			remove_brigade = "第3旅"
+			remove_brigade = "第4旅 "
+			remove_brigade = "第5旅"
+			remove_brigade = "第6旅"
+			remove_brigade = "第七路军司令部"
+			remove_brigade = "第21军司令部"
+			remove_brigade = "第7旅"			
+                        remove_brigade = "第8旅"
+			remove_brigade = "第9旅"
+			remove_brigade = "第10旅"
+			remove_brigade = "第11旅"
+			remove_brigade = "第12旅"
+			remove_brigade = "第13旅"
+			remove_brigade = "第14旅"
+			remove_brigade = "第23军司令部"
+			remove_brigade = "第15旅"
+			remove_brigade = "第16旅"
+			remove_brigade = "第17旅"
+			remove_brigade = "第18旅"
+			remove_brigade = "第19旅"
+			remove_brigade = "第44军司令部"
+			remove_brigade = "独立第11旅"
+			remove_brigade = "独立第12旅"
+			remove_brigade = "独立第13旅"
+			remove_brigade = "独立第14旅"
+			remove_brigade = "独立第15旅"
+			remove_brigade = "独立第16旅"
+			remove_brigade = "独立第17旅"
+			remove_brigade = "第十四路军司令部"
+			remove_brigade = "第45军司令部"
+			remove_brigade = "第41军司令部"
+			remove_brigade = "第20旅"			
+                        remove_brigade = "第21旅"
+			remove_brigade = "第22旅"
+			remove_brigade = "第23旅"
+			remove_brigade = "第24旅"
+			remove_brigade = "第25旅"
+			remove_brigade = "第27旅"
+			remove_brigade = "第28旅"
+                        remove_brigade = "第29旅"			
+                        remove_brigade = "第30旅"
+			remove_brigade = "第31旅"
+			remove_brigade = "第32旅"
+			remove_brigade = "第33旅"
+			remove_brigade = "第34旅"
+			remove_brigade = "第35旅"
+			remove_brigade = "第36旅"
+                        remove_brigade = "第37旅"			
+                        remove_brigade = "第38旅"
+			remove_brigade = "第39旅"
+			remove_brigade = "第40旅"
+			remove_brigade = "第41旅"
+			remove_brigade = "第42旅"
+			remove_brigade = "第43旅"
+			remove_brigade = "第44旅"
+                        remove_brigade = "第45旅"			
+                        remove_brigade = "第46旅"
+			remove_brigade = "第47旅"
+			remove_brigade = "第48旅"
+			remove_brigade = "第49旅"
+			remove_brigade = "第50旅"
+			remove_brigade = "第51旅"
+			remove_brigade = "第52旅"
+                        remove_brigade = "第53旅"
+			remove_brigade = "第54旅"
+			remove_brigade = "第55旅"
+			remove_brigade = "第56旅"
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+        is_triggered_only = yes
+	id = 33333
+	title = "dianjun"
+	desc = "dianjun1desc"
+	picture = "Clique_arrange1"
+	option = {
+		name = "chuanjunoption2"
+		load_oob = "CYN2.txt"
+                remove_country_flag = junfanzhengbian
+         }
+}
+country_event = {
+        is_triggered_only = yes
+	id = 33334
+	title = "chuanjunoption1"
+	subtitle = "chuanjunoption_subtitle"
+	desc = "chuanjun1desc"
+	picture = "Clique_arrange2"
+	option = {
+		name = "chuanjunoption"
+		load_oob = "CSC2.txt"
+                remove_country_flag = junfanzhengbian
+        } 
+}
+country_event = {
+          id = 300000
+          is_triggered_only = yes
+          title = "zhengbian2"
+          desc = "zhengbian2decs"
+          picture = "Clique_arrange3"
+          option = {
+           name = "chuanjunoptionop"
+              national_unity = 5
+              load_oob = "CGX_guixi_zhengb1.txt"
+			  load_oob = "CGX_guixi_zhengb2.txt"
+         }
+}

@@ -1,0 +1,170 @@
+##########################
+# The Finnish Winter War #
+##########################
+diplomatic_decisions = {
+
+	# Ultimatum to Finland
+	finnish_winter_war = {
+		potential = {
+			tag = SOV
+			exists = FIN
+			exists = GER
+			not = { war_with = FIN }
+			not = { war_with = GER }
+			or = {
+				and = {
+					year = 1939
+					month = 6
+				}
+				year = 1940
+			}
+			not = { year = 1942 }
+			FIN = {
+				not = { alliance_with = GER }
+				not = { alliance_with = SOV }
+				is_in_any_faction = no
+			}
+			not = { has_country_flag = the_finnish_winter_war }
+		}
+		allow = {
+			is_subject = no
+			FIN = { is_subject = no }
+			date = 1939.11.30
+			# German invasion of Poland
+			or = {
+				GER = { war_with = POL }
+				GER = { controls = 1928 }
+			}
+		}
+		
+		effect = {
+			relation = { who = FIN value = -10 }
+			relation = { who = SWE value = -5 }
+			relation = { who = NOR value = -5 }
+			neutrality = -3
+			FIN = { country_event = 2501 }
+			set_country_flag = the_finnish_winter_war 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Sweden decides to send materiel and volunteers
+	finnish_winter_war_swedish_intervention = {
+		potential = {
+			tag = SWE
+			FIN = {
+				war_with = SOV
+				has_country_flag = finnish_winter_war_has_begun
+			}
+			not = { has_country_flag = the_finnish_winter_war_intervention }
+		}
+		allow = {
+			is_in_any_faction = no
+			not = { alliance_with = SOV }
+			or = {
+				ideology = national_socialist
+				ideology = fascistic
+				ideology = paternal_autocrat
+				ideology = social_conservative
+			}
+		}
+		effect = {
+			supplies = -1000
+			manpower = -0.2
+			relation = { who = SOV value = -20 }
+			relation = { who = FIN value = 10 }
+			relation = { who = NOR value = 5 }
+			set_country_flag = swedish_materiel_and_volunteers
+			FIN = { country_event = 2504 }
+			set_country_flag = the_finnish_winter_war_intervention
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Sweden decides to intervene
+	finnish_winter_war_swedish_direct_intervention = {
+		potential = {
+			tag = SWE
+			FIN = {
+				war_with = SOV
+				has_country_flag = finnish_winter_war_has_begun
+				has_country_flag = swedish_materiel_and_volunteers
+			}
+			not = { has_country_flag = the_finnish_winter_war_direct_intervention }
+		}
+		allow = {
+			is_in_any_faction = no
+			not = { alliance_with = SOV }
+			or = {
+				ideology = national_socialist
+				ideology = fascistic
+				ideology = paternal_autocrat
+				ideology = social_conservative
+			}
+		}
+		effect = {
+			SWE = {	war = {	target = SOV } }
+			neutrality = -3
+			create_alliance = FIN
+			relation = { who = FIN value = 25 }
+			relation = { who = NOR value = 10 }
+			set_country_flag = sweden_joins_finland
+			FIN = { country_event = 2505 }
+			set_country_flag = the_finnish_winter_war_direct_intervention
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	continuation_war = {
+		potential = {
+			tag = FIN
+			exists = SOV
+			exists = GER
+			not = { war_with = SOV }
+			not = { war_with = GER }
+			is_in_any_faction = no
+			SOV = { owns = 698 }
+			NOT = { has_country_flag = the_continuation_war }
+		}
+		allow = {
+			is_subject = no
+			GER = { war_with = SOV }
+		}
+		effect = {
+			join_faction = axis
+			neutrality = -20
+			set_country_flag = the_continuation_war
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	continuation_war2 = {
+		potential = {
+			tag = FIN
+			ai = yes
+			war_with = SOV
+			SOV = { owns = 698 }
+		}
+		allow = {
+		NOT = { has_country_flag = the_continuation_war_ai }
+		}
+		effect = {
+			FIN = {	add_wargoal = {	
+					target = SOV
+					war_goal = { casus_belli=aquire_territory  region=Soviet_claims_FIN }
+					} 
+				}  
+			set_country_flag = the_continuation_war_ai
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

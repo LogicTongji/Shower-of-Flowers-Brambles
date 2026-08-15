@@ -1,0 +1,483 @@
+##########################
+#                        #
+# Historical News Events #
+#                        #
+##########################
+
+######################
+# Various News Items #
+######################
+
+### Hindenburg Crash
+
+country_event = {
+
+	id = 10000
+
+	title = "EVTNAME10000"
+	desc = "EVTDESC10000"
+	#picture = "hindenburg"
+
+	trigger = {
+		date = 1937.5.6
+		not = { month = 6 }
+		not = { year = 1938 }
+		ai = no
+		not = { has_country_flag = hindenburg }
+		GER = { war = no }
+		USA = { war = no }
+	}
+
+	option = {
+		name = "EVTOPTA10000"
+		set_country_flag = hindenburg
+	}
+}
+
+### The Pentagon
+
+country_event = {
+
+	id = 10001
+
+	title = "EVTNAME10001"
+	desc = "EVTDESC10001"
+	#picture = "pentagon"
+
+	trigger = {
+		date = 1943.1.15
+		not = { month = 2 }
+		not = { year = 1944 }
+		ai = no
+		not = { has_country_flag = pentagon }
+		4530 = { controlled_by = USA }
+	}
+
+	option = {
+		name = "EVTOPTA10001"
+		set_country_flag = pentagon
+	}
+}
+
+### Leon Trotsky
+
+country_event = {
+
+	id = 10002
+
+	title = "EVTNAME10002"
+	desc = "EVTDESC10002"
+	#picture = "trotsky"
+
+	trigger = {
+		date = 1940.8.21
+		not = { month = 9 }
+		not = { year = 1941 }
+		ai = no
+		not = { has_country_flag = trotsky }
+		exists = SOV
+	}
+
+	option = {
+		name = "EVTOPTA10002"
+		set_country_flag = trotsky
+	}
+}
+
+### Wilhelm II
+
+country_event = {
+
+	id = 10003
+
+	title = "EVTNAME10003"
+	desc = "EVTDESC10003"
+	#picture = "wilhelm"
+
+	trigger = {
+		date = 1941.6.4
+		not = { month = 7 }
+		not = { year = 1942 }
+		ai = no
+		not = { has_country_flag = wilhelm }
+	}
+
+	option = {
+		name = "EVTOPTA10003"
+		set_country_flag = wilhelm
+	}
+}
+
+### Amelia Earhart
+
+country_event = {
+
+	id = 10004
+
+	title = "EVTNAME10004"
+	desc = "EVTDESC10004"
+	#picture = "earhart"
+
+	trigger = {
+		date = 1937.7.2
+		not = { month = 8 }
+		not = { year = 1938 }
+		ai = no
+		not = { has_country_flag = earhart }
+		USA = { war = no }
+	}
+
+	option = {
+		name = "EVTOPTA10004"
+		set_country_flag = earhart
+	}
+}
+
+### 1936 Olympics
+
+country_event = {
+
+	id = 10005
+
+	title = "EVTNAME10005"
+	desc = "EVTDESC10005"
+#picture = "olympics"
+
+	trigger = {
+		date = 1936.8.16
+		not = { month = 9 }
+		not = { year = 1937 }
+		ai = no
+		not = { has_country_flag = olympics }
+		GER = { war = no }
+		USA = { war = no }
+		ENG = { war = no }
+		POL = { war = no }
+		FRA = { war = no }
+	}
+
+	option = {
+		name = "EVTOPTA10005"
+		set_country_flag = olympics
+	}
+}
+
+### War of the Worlds
+
+country_event = {
+
+	id = 10006
+
+	title = "EVTNAME10006"
+	desc = "EVTDESC10006"
+#picture = "welles"
+
+	trigger = {
+		date = 1938.10.30
+		not = { month = 11 }
+		not = { year = 1939 }
+		ai = no
+		not = { has_country_flag = welles }
+		USA = { war = no }
+	}
+
+	option = {
+		name = "EVTOPTA10006"
+		set_country_flag = welles
+	}
+}
+
+### Vesuvius
+
+country_event = {
+
+	id = 10007
+
+	title = "EVTNAME10007"
+	desc = "EVTDESC10007"
+#picture = "vesuvius"
+
+	trigger = {
+		date = 1944.3.18
+		not = { month = 4 }
+		not = { year = 1945 }
+		ai = no
+		not = { has_country_flag = vesuvius }
+	}
+
+	option = {
+		name = "EVTOPTA10007"
+		set_country_flag = vesuvius
+	}
+}
+
+###############################
+# Important cities are seized #
+###############################
+
+### Germany takes London
+
+country_event = {
+
+	id = 10020
+
+	title = "EVTNAME10020"
+	desc = "EVTDESC10020"
+	#picture = "germany_london"
+	
+	trigger = {
+		1964 = { controlled_by = GER }
+		not = { has_country_flag = fall_of_london }
+		ai = no
+	}
+
+	option = {
+		name = "EVTOPTA10020"
+		set_country_flag = fall_of_london
+	}
+}
+
+### Germany takes Cairo
+
+country_event = {
+
+	id = 10021
+
+	title = "EVTNAME10021"
+	desc = "EVTDESC10021"
+	#picture = "germany_cairo"
+
+	trigger = {
+		5611 = { controlled_by = GER }
+		not = { has_country_flag = fall_of_cairo }
+		ai = no
+	}
+
+	option = {
+		name = "EVTOPTA10021"
+		set_country_flag = fall_of_cairo
+	}
+}
+
+### Germany takes Washington
+
+country_event = {
+
+	id = 10022
+
+	title = "EVTNAME10022"
+	desc = "EVTDESC10022"
+	#picture = "germany_washington"
+
+	trigger = {
+		4530 = { controlled_by = GER }
+		not = { has_country_flag = fall_of_washington }
+		ai = no
+	}
+
+	option = {
+		name = "EVTOPTA10022"
+		set_country_flag = fall_of_washington
+	}
+}
+
+### Germany takes New York
+
+country_event = {
+
+	id = 10023
+
+	title = "EVTNAME10023"
+	desc = "EVTDESC10023"
+	#picture = "germany_newyork"
+
+	trigger = {
+		4279 = { controlled_by = GER }
+		not = { has_country_flag = fall_of_newyork }
+		ai = no
+	}
+
+	option = {
+		name = "EVTOPTA10023"
+		set_country_flag = fall_of_newyork
+	}
+}
+
+### Germany takes Moscow
+
+country_event = {
+
+	id = 10024
+
+	title = "EVTNAME10024"
+	desc = "EVTDESC10024"
+	#picture = "germany_moscow"
+
+	trigger = {
+		1409 = { controlled_by = GER }
+		not = { has_country_flag = fall_of_moscow }
+		ai = no
+	}
+
+	option = {
+		name = "EVTOPTA10024"
+		set_country_flag = fall_of_moscow
+	}
+}
+
+### Germany takes Leningrad
+
+country_event = {
+
+	id = 10025
+
+	title = "EVTNAME10025"
+	desc = "EVTDESC10025"
+	#picture = "germany_leningrad"
+
+	trigger = {
+		782 = { controlled_by = GER }
+		not = { has_country_flag = fall_of_leningrad }
+		ai = no
+	}
+
+	option = {
+		name = "EVTOPTA10025"
+		set_country_flag = fall_of_leningrad
+	}
+}
+
+### Germany takes Stalingrad
+
+country_event = {
+
+	id = 10026
+
+	title = "EVTNAME10026"
+	desc = "EVTDESC10026"
+	#picture = "germany_stalingrad"
+	
+	trigger = {
+		2857 = { controlled_by = GER }
+		not = { has_country_flag = fall_of_stalingrad }
+		ai = no
+	}
+
+	option = {
+		name = "EVTOPTA10026"
+		set_country_flag = fall_of_stalingrad
+	}
+}
+
+### Soviets take Berlin
+
+country_event = {
+
+	id = 10027
+
+	title = "EVTNAME10027"
+	desc = "EVTDESC10027"
+	#picture = "soviet_berlin"
+
+	trigger = {
+		1861 = { controlled_by = SOV }
+		not = { has_country_flag = fall_of_berlin }
+		ai = no
+	}
+
+	option = {
+		name = "EVTOPTA10027"
+		set_country_flag = fall_of_berlin
+	}
+}
+
+### Japan takes Singapore
+
+country_event = {
+
+	id = 10028
+
+	title = "EVTNAME10028"
+	desc = "EVTDESC10028"
+	#picture = "japan_singapore"
+	
+	trigger = {
+		6394 = { controlled_by = JAP }
+		not = { has_country_flag = fall_of_singapore }
+		ai = no
+	}
+
+	option = {
+		name = "EVTOPTA10028"
+		set_country_flag = fall_of_singapore
+	}
+}
+
+### Japan takes Sydney
+
+country_event = {
+
+	id = 10029
+
+	title = "EVTNAME10029"
+	desc = "EVTDESC10029"
+	#picture = "japan_sydney"
+
+	trigger = {
+		7989 = { controlled_by = JAP }
+		not = { has_country_flag = fall_of_sydney }
+		ai = no
+	}
+
+	option = {
+		name = "EVTOPTA10029"
+		set_country_flag = fall_of_sydney
+	}
+}
+
+### Japan takes Pearl Harbor
+
+country_event = {
+
+	id = 10030
+
+	title = "EVTNAME10030"
+	desc = "EVTDESC10030"
+	#picture = "japan_pearlharbor"
+
+	trigger = {
+		5825 = { controlled_by = JAP }
+		not = { has_country_flag = fall_of_pearlharbor }
+		ai = no
+	}
+
+	option = {
+		name = "EVTOPTA10030"
+		set_country_flag = fall_of_pearlharbor
+	}
+}
+
+### Japan takes Los Angeles
+
+country_event = {
+
+	id = 10031
+
+	title = "EVTNAME10031"
+	desc = "EVTDESC10031"
+	#picture = "japan_hollywood"
+
+	trigger = {
+		4694 = { controlled_by = JAP }
+		not = { has_country_flag = fall_of_losangeles }
+		ai = no
+	}
+
+	option = {
+		name = "EVTOPTA10031"
+		set_country_flag = fall_of_losangeles
+	}
+}
+
+
+

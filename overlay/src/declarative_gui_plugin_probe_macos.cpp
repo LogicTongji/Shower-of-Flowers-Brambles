@@ -4,9 +4,9 @@
 #include <iostream>
 #include <string>
 
-#include "declarative_gui_plugin_macos.h"
+#include "declarative_gui_plugin.h"
 #include "gui_file_data_provider.h"
-#include "gui_plugin_registry_macos.h"
+#include "gui_plugin_registry.h"
 
 int main(int argc, char** argv)
 {
@@ -49,7 +49,7 @@ int main(int argc, char** argv)
         fs::remove(temporary, fileError);
         return 1;
     }
-    GuiMacPluginCreateContext createContext;
+    GuiPluginCreateContext createContext;
     createContext.root = root;
     createContext.dataProviders = &dataProviders;
     createContext.options["window"] = "probe_window";
@@ -57,16 +57,16 @@ int main(int argc, char** argv)
     createContext.options["data_provider"] = "file";
     createContext.options["data"] = temporary.string();
     createContext.options["tick_interval"] = "25";
-    std::unique_ptr<IGuiMacPlugin> plugin =
-        CreateDeclarativeGuiMacPlugin(createContext);
+    std::unique_ptr<IGuiPlugin> plugin =
+        CreateDeclarativeGuiPlugin(createContext);
     if (!plugin)
     {
         std::cerr << "Failed to create declarative GUI plugin\n";
         fs::remove(temporary, fileError);
         return 1;
     }
-    if (CreateDeclarativeGuiMacPlugin(
-            GuiMacPluginCreateContext{}
+    if (CreateDeclarativeGuiPlugin(
+            GuiPluginCreateContext{}
         ))
     {
         std::cerr << "Declarative GUI factory accepted no provider\n";
@@ -78,7 +78,7 @@ int main(int argc, char** argv)
     GuiWindowRuntime windowRuntime;
     std::string error;
     if (!plugin->Initialize(
-            GuiMacPluginInitContext{
+            GuiPluginInitContext{
                 root,
                 nullptr,
                 interpreter,

@@ -1,0 +1,97 @@
+name = "国共内战"
+
+limited_war = yes
+
+#四一二反革命政变
+1927.4.12 = {
+	add_attacker = CHI
+	add_attacker = CHN
+	add_defender = CHC
+	war_goal=
+	{
+		casus_belli = conquer
+		actor="CHI"
+		receiver="CHC"
+	}
+	war_goal=
+	{
+		casus_belli = conquer
+		actor="CHC"
+		receiver="CHI"
+	}
+}
+1935.1.1 = {
+	add_attacker = CDB
+	rem_attacker = CHN
+}
+#西安事变
+1936.12.12 = {
+	rem_attacker = CHI
+	rem_attacker = CDB
+	rem_defender = CHC
+}
+#·解放战争
+#蒋介石撕毁双十协定，发动全面进攻
+1946.6.6 = {
+	add_attacker = CHI
+	add_attacker = CSX
+	add_attacker = CSY
+	add_attacker = CYN
+	add_defender = CHC
+	add_attacker = CGX
+	war_goal=
+	{
+		casus_belli=conquer
+		actor="CHI"
+		receiver="CHC"
+	}
+	war_goal=
+	{
+		casus_belli=conquer
+		actor="CHC"
+		receiver="CHI"
+	}
+}
+#国府电令
+1946.8.1 = {
+	add_attacker = CQM
+  add_attacker = CNM
+}
+#华北剿总
+1947.1.2 = {
+	add_attacker = CSY
+}
+#太原战役
+
+1948.10.5 = {
+	rem_attacker = CSX
+}
+#宁夏战役
+1949.9 = {
+	rem_attacker = CNM
+}
+#解放大西南
+1949.10.1 = {
+	add_defender = PRC
+	rem_defender = CHC
+	war_goal=
+	{
+		casus_belli=conquer
+		actor="CHI"
+		receiver="PRC"
+	}
+	war_goal=
+	{
+		casus_belli=conquer
+		actor="PRC"
+		receiver="CHI"
+	}
+}
+#云南卢汉起义
+1949.12.9 = {
+	rem_attacker = CYN
+}
+#海南岛战役结束，蒋介石翻车
+1950.5 = {
+	rem_attacker = CHI
+}

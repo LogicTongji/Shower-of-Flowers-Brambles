@@ -1,0 +1,126 @@
+#冬季攻势
+diplomatic_decisions = {
+	     Winter_War = {
+	     major = yes
+		potential = {
+			tag = CHI                                         
+      war_with = JAP    
+			 has_country_flag = KMT_Amry_excise
+			 has_country_flag = jap_seizes_coast_chi
+      not = { has_global_flag = Winter_WAR 
+	          has_global_flag = CHI_defence_war 
+	        }		 
+		}
+		allow = {
+		  	or = {
+			 JAP = { controls = 4979 
+			         controls = 7508
+			         controls = 5681
+			         controls = 5494
+			         controls = 5542 }
+			  CJS = { controls = 7508
+			         controls = 5681
+			         controls = 5494
+			         controls = 5542 }  
+			   WJW = { controls = 7508
+			         controls = 5681
+			         controls = 5494
+			         controls = 5542 }             
+			 CHB = { controls = 4979 } 
+			 }
+		}
+		effect = {
+			set_global_flag = Winter_WAR
+			country_event = 8331
+			JAP = { country_event = 8332 } 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#守势作战
+	    CHI_defence_war = {
+	    major = yes
+		potential = {
+			tag = CHI                                        
+      exists = CHC
+      not = { has_global_flag = CHI_defence_war }	
+	  has_country_flag = jap_seizes_coast_chi
+      year = 1940	
+			not = { year = 1942 } 
+		}
+		allow = {
+			not = { alliance_with = JAP }
+		}
+		effect = {
+			set_global_flag = CHI_defence_war
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#军队整训
+	    KMT_Amry_excising = {
+		potential = {
+			tag = CHI                                          
+      exists = CHC
+      war_with = JAP
+      not = { war_with= CHC }
+      not = { year = 1941 }	
+      not = { has_country_flag = KMT_Amry_excise }	
+		  year = 1939
+		  not = { year = 1940 }
+		  
+		}
+		allow = {
+			not = { alliance_with = JAP }
+			has_country_flag = CHI_Kangzhan
+		 has_country_flag = jap_seizes_coast_chi 
+		}
+		effect = {
+			set_country_flag = KMT_Amry_excise
+			CHC = { country_event = 8336 } 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#国府西迁(IF)
+	    Chongqing_govrnment_move_to_xining = {
+		potential = {
+			tag = CHI                                          
+      exists = CHC
+      exists = CHI
+      war_with = JAP
+      not = { war_with= CHC }
+      not = { has_global_flag = Chongqing_govrnment_move_to_xining }
+	  has_country_flag = jap_seizes_coast_chi 
+		}
+		allow = {
+			 OR = {
+		JAP = { 
+			controls = 9478
+			}
+			WJW = { 
+			controls = 9478
+			}
+			CJS = { 
+			controls = 9478
+			  }
+			}
+		}
+		effect = {
+			set_global_flag = Chongqing_govrnment_move_to_xining
+					capital = 9200
+					CHI = { 
+	  	inherit = CNM
+		  inherit = CQM
+				CQM = { CHI = { split_troops = 1.0 } }
+				CNM = { CHI = { split_troops = 1.0 } }
+		}
+	}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

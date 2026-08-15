@@ -1,0 +1,48 @@
+army = {
+			name = "第五军团"
+			location = 4787
+			regiment = { type = hq_brigade name = "第五军团长官部" historical_model = 0 }	
+		division= {
+			name = "第55军"
+			location = 4787
+			regiment = { type = infantry_brigade historical_model = 0 }
+			regiment = { type = infantry_brigade historical_model = 0 }
+			regiment = { type = infantry_brigade historical_model = 0 }
+			regiment = { type = infantry_brigade historical_model = 0 }
+		}
+		corps = {
+				name = "骑兵第2军"
+				location = 4835
+				regiment = { type = hq_brigade name = "骑兵第2军司令部" historical_model = 0 }
+		 division= {
+					name = "骑兵第1师"
+					location = 4835
+					regiment = { type = cavalry_brigade strength = 100 experience = 25 historical_model = 1 }
+					regiment = { type = cavalry_brigade strength = 100 experience = 25 historical_model = 1 }
+				}
+                              division= {
+					name = "骑兵第3师"
+					location = 4835
+					regiment = { type = cavalry_brigade strength = 100 experience = 25 historical_model = 1 }
+					regiment = { type = cavalry_brigade strength = 100 experience = 25 historical_model = 1 }
+				}
+                               division= {
+					name = "骑兵第4师"
+					location = 4626
+					regiment = { type = cavalry_brigade strength = 100 experience = 25 historical_model = 1 }
+					regiment = { type = cavalry_brigade strength = 100 experience = 25 historical_model = 1 }
+				}
+                               division= {
+					name = "骑兵第5师"
+					location = 4979
+					regiment = { type = cavalry_brigade strength = 100 experience = 25 historical_model = 1 }
+					regiment = { type = cavalry_brigade strength = 100 experience = 25 historical_model = 1 }
+				}
+                             division= {
+					name = "骑兵第6师"
+					location = 4979
+					regiment = { type = cavalry_brigade strength = 100 experience = 25 historical_model = 1 }
+					regiment = { type = cavalry_brigade strength = 100 experience = 25 historical_model = 1 }
+				}
+	     }
+}

@@ -1,0 +1,27 @@
+owner = DEN
+controller = DEN
+add_core = DEN
+add_core = ICL
+anti_air = 1
+infra = 6
+air_base = 4
+naval_base = 4
+
+1940.4.10 = {
+	owner = ENG
+	controller = ENG
+	add_core = ENG
+
+}
+1941.7.7 = {
+	owner = USA
+	controller = USA
+	add_core = USA
+	remove_core = ENG
+}
+1944.7.7 = {
+	owner = ICL
+	controller = ICL
+	remove_core = USA
+	remove_core = ENG
+}

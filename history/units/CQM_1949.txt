@@ -1,0 +1,59 @@
+armygroup ={
+		name = "西北军政长官公署"
+		location = 9167
+		regiment = { type = hq_brigade name = "西北军政长官公署" experience = 20 historical_model = 3 }
+		regiment = { type = infantry_brigade name = "警卫旅" experience = 20 historical_model = 3 }
+		army = {	
+			name = "青海兵团"
+			location = 9167
+			regiment = { type = hq_brigade name = "青海兵团司令部" experience = 25 historical_model = 4 }
+			regiment = { type = infantry_brigade name = "警卫旅" experience = 25 historical_model = 4 }
+			regiment = { type = cavalry_brigade name = "骑兵旅" experience = 25 historical_model = 4 }
+			corps = {		
+				name = "第82军" #青马		
+				location = 9167
+				regiment = { type = hq_brigade name = "第82军指挥部" experience = 10 historical_model = 3 }
+				division = {
+					name = "第100师"	
+					location = 9321
+					regiment = { type = infantry_brigade name = "第299旅" experience = 15 historical_model = 3 }
+					regiment = { type = infantry_brigade name = "第300旅" experience = 15 historical_model = 3 }
+				}
+				division = {
+					name = "第190师"	
+					location = 9321
+					regiment = { type = militia_brigade name = "第569旅" experience = 15 historical_model = 3 }
+					regiment = { type = militia_brigade name = "第570旅" experience = 15 historical_model = 3 }
+				}
+				division = {
+					name = "骑兵第7师"	
+					location = 9321
+					regiment = { type = cavalry_brigade name = "骑兵第13旅" experience = 25 historical_model = 4 }
+					regiment = { type = cavalry_brigade name = "骑兵第14旅" experience = 25 historical_model = 4 }
+				}
+			}
+			corps = {		
+				name = "第129军" #青马				
+				location = 9292
+				regiment = { type = hq_brigade name = "第129军指挥部" experience = 10 historical_model = 3 }
+				division = {
+					name = "第248师"	
+					location = 9292
+					regiment = { type = militia_brigade name = "第743旅" experience = 15 historical_model = 3 }
+					regiment = { type = militia_brigade name = "第744旅" experience = 15 historical_model = 3 }
+				}
+				division = {
+					name = "第357师"	
+					location = 9167
+					regiment = { type = militia_brigade name = "第1070旅" experience = 15 historical_model = 3 }
+					regiment = { type = militia_brigade name = "第1071旅" experience = 15 historical_model = 3 }
+				}
+				division = {
+					name = "骑兵第8师"	
+					location = 9167
+					regiment = { type = cavalry_brigade name = "骑兵第15旅" experience = 25 historical_model = 4 }
+					regiment = { type = cavalry_brigade name = "骑兵第16旅" experience = 25 historical_model = 4 }
+				}
+			}
+		}
+		

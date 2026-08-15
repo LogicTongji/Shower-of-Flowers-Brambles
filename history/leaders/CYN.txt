@@ -1,0 +1,386 @@
+4000754 = {
+	name = "杨宏光"
+	country = CYN
+	type = land
+	skill = 2
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000754
+	history = {
+		1936.1.1 = { rank = 1 }
+		1937.1.1 = { rank = 2 }
+	}
+}
+4000755 = {
+	name = "李文彬"
+	country = CYN
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 0.00
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+4000756 = {
+	name = "张与仁"
+	country = CYN
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 0.00
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+4000757 = {
+	name = "杨孟雄"
+	country = CYN
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 0.00
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+4000762 = {
+	name = "梁得奎"
+	country = CYN
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 0.00
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+4000101 = {
+
+	name = "龙云"
+
+	country = CYN
+	type = land
+
+	skill = 1
+	max_skill = 3
+	loyalty = 1.00
+
+	picture = L4000101
+	add_trait = logistics_wizard
+	add_trait = serious_general
+	history = {
+
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+
+		1936.1.1 = { rank = 3 }
+
+		1936.1.1 = { rank = 4 }
+
+	}
+
+}
+4000102 = {
+
+	name = "卢汉"
+
+	country = CYN
+	type = land
+
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+
+	picture = L4000102
+	add_trait = tactical_genius
+	add_trait = defensive_doctrine
+	history = {
+
+		1936.1.1 = { rank = 1 }
+
+	}
+
+}
+4000103 = {
+
+	name = "曾泽生"
+
+	country = CYN
+	type = land
+
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+
+	picture = L4000103
+	history = {
+
+		1936.1.1 = { rank = 1 }
+
+	}
+
+}
+4000104 = {
+
+	name = "孙渡"
+
+	country = CYN
+	type = land
+
+	skill = 1
+	max_skill = 2
+	loyalty = 1.00
+
+	picture = L4000104
+	history = {
+
+		1936.1.1 = { rank = 1 }
+
+	}
+
+}
+50320 = {
+
+	name = "唐淮源"
+
+	country = CYN
+	type = land
+
+	skill = 1
+	max_skill = 3
+	loyalty = 1.00
+
+	picture = L4000105
+	add_trait = defensive_doctrine
+	history = {
+
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+		1936.1.1 = { rank = 3 }
+
+	}
+
+}
+4000106 = {
+
+	name = "王甲本"
+
+	country = CYN
+	type = land
+
+	skill = 0
+	max_skill = 4
+	loyalty = 1.00
+
+	picture = L4000106
+	add_trait = defensive_doctrine
+	add_trait = offensive_doctrine
+	history = {
+
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+
+	}
+
+}
+50297 = {
+
+	name = "寸性奇"
+
+	country = CYN
+	type = land
+
+	skill = 0
+	max_skill = 4
+	loyalty = 1.00
+
+	picture = L4000107
+	add_trait = defensive_doctrine
+	history = {
+
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+
+	}
+
+}
+4000108 = {
+
+	name = "张冲"
+
+	country = CYN
+	type = land
+
+	skill = 1
+	max_skill = 3
+	loyalty = 1.00
+
+	picture = L4000108
+	add_trait = logistics_wizard
+	add_trait = sincere_seeker
+	history = {
+
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+
+	}
+
+}
+4000109 = {
+
+	name = "鲁道源"
+
+	country = CYN
+	type = land
+
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+
+	picture = L4000109
+	add_trait = offensive_doctrine
+	history = {
+
+		1936.1.1 = { rank = 1 }
+
+	}
+
+}
+4000110 = {
+
+	name = "安恩溥"
+
+	country = CYN
+	type = land
+
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+
+	picture = L4000110
+	history = {
+
+		1936.1.1 = { rank = 1 }
+
+	}
+
+}
+4000111 = {
+
+	name = "高荫槐"
+
+	country = CYN
+	type = land
+
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+
+	picture = L4000111
+	add_trait = defensive_doctrine
+	history = {
+
+		1936.1.1 = { rank = 1 }
+
+	}
+
+}
+4000112 = {
+
+	name = "周元"
+
+	country = CYN
+	type = land
+
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+
+	picture = L4000112
+	add_trait = defensive_doctrine
+	history = {
+
+		1936.1.1 = { rank = 1 }
+
+	}
+
+}
+4000113 = {
+
+	name = "余建勋"
+
+	country = CYN
+	type = land
+
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+
+	picture = L4000113
+	add_trait = offensive_doctrine
+	add_trait = defensive_doctrine
+	history = {
+
+		1936.1.1 = { rank = 1 }
+
+	}
+
+}
+4000114 = {
+
+	name = "萧本元"
+
+	country = CYN
+	type = land
+
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+
+	picture = L4000114
+	history = {
+
+		1936.1.1 = { rank = 1 }
+
+	}
+
+}
+4000115 = {
+
+	name = "李世龙"
+
+	country = CYN
+	type = land
+
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+
+	picture = L4000115
+	history = {
+
+		1936.1.1 = { rank = 1 }
+
+	}
+
+}
+4000116 = {
+
+	name = "曾万锺"
+
+	country = CYN
+	type = land
+
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+
+	picture = L4000116
+	history = {
+
+		1936.1.1 = { rank = 1 }
+
+	}
+
+}

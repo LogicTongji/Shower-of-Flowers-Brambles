@@ -1,0 +1,44 @@
+army = {
+		name = "贵州省保安司令部"
+		location = 7541
+		regiment = { type = hq_brigade name = "贵州警备司令部" experience = 50 historical_model = 3 }
+		regiment = { type = artillery_brigade name = "直属炮兵部队" experience = 30 builder = USA historical_model = 3 }
+		division= {
+	name = "陆军第271师"
+	location = 7541
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+}
+		division= {
+	name = "陆军第272师"
+	location = 7541
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+}
+		division= {
+	name = "独立第1师"
+	location = 7541
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+}
+	division= {
+	name = "独立第2师"
+	location = 7541
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+}
+	division= {
+	name = "独立第3师"
+	location = 7541
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+}
+	division= {
+	name = "独立第4师"
+	location = 7541
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+regiment = { type = infantry_brigade experience = 25 historical_model = 2 }
+}
+                                   }  
+                    }                     
+        }          

@@ -1,0 +1,154 @@
+theatre = {
+	name = "广西绥靖公署"	
+	location = 7553
+	regiment = { type = hq_brigade name = "桂林指挥部" historical_model = 0 }	
+	army = {
+		name = "第五路军"	
+		location = 7553
+		regiment = { type = hq_brigade name = "第五路军司令部" historical_model = 0 }	
+		corps = {
+			name = "第7军"	
+			location = 7575
+			regiment = { type = hq_brigade name = "第7军司令部" historical_model = 0 }	
+			division= {
+				name = "第170师"
+				location = 7575
+				is_reserve = yes
+				regiment = { type = bergsjaeger_brigade name = "第508旅第1015团" historical_model = 0 }
+				regiment = { type = bergsjaeger_brigade name = "第508旅第1016团" historical_model = 0 }
+				regiment = { type = bergsjaeger_brigade name = "第510旅第1019团" historical_model = 0 }
+				regiment = { type = bergsjaeger_brigade name = "第510旅第1020团" historical_model = 0 }
+			}
+			division= {
+				name = "第171师"
+				location = 7575
+				is_reserve = yes
+				regiment = { type = bergsjaeger_brigade name = "第511旅第1021团" historical_model = 0 }
+				regiment = { type = infantry_brigade name = "第511旅第1022团" historical_model = 0 }
+				regiment = { type = infantry_brigade name = "第513旅第1025团" historical_model = 0 }
+				regiment = { type = infantry_brigade name = "第513旅第1026团" historical_model = 0 }
+			}
+			division= {
+				name = "第172师"
+				location = 5864
+				is_reserve = yes
+				regiment = { type = bergsjaeger_brigade name = "第514旅第1037团" historical_model = 0 }
+				regiment = { type = infantry_brigade name = "第514旅第1038团" historical_model = 0 }
+				regiment = { type = infantry_brigade name = "第516旅第1031团" historical_model = 0 }
+				regiment = { type = infantry_brigade name = "第516旅第1032团" historical_model = 0 }
+			}
+		}
+		corps = {
+			name = "第48军"	
+			location = 5862
+			regiment = { type = hq_brigade name = "第48军司令部" historical_model = 0 }	
+			division= {
+				name = "第173师"
+				location = 7564
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "第510旅第1027团" historical_model = 0 }
+				regiment = { type = infantry_brigade name = "第510旅第1028团" historical_model = 0 }
+				regiment = { type = infantry_brigade name = "第517旅第1033团" historical_model = 0 }
+				regiment = { type = infantry_brigade name = "第517旅第1034团" historical_model = 0 }
+			}
+			division= {
+				name = "第174师"
+				location = 5787
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "第520旅第1039团" historical_model = 0 }
+				regiment = { type = infantry_brigade name = "第520旅第1040团" historical_model = 0 }
+				regiment = { type = infantry_brigade name = "第522旅第1043团" historical_model = 0 }
+				regiment = { type = infantry_brigade name = "第522旅第1044团" historical_model = 0 }
+			}
+			division= {
+				name = "第175师"
+				location = 7553
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "第526旅第1051团" historical_model = 0 }
+				regiment = { type = infantry_brigade name = "第526旅第1052团" historical_model = 0 }
+				regiment = { type = infantry_brigade name = "第528旅第1055团" historical_model = 0 }
+				regiment = { type = infantry_brigade name = "第528旅第1056团" historical_model = 0 }
+			}
+		}
+		division= {
+			name = "第176师"
+			location = 5862
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "第1050团" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第1051团" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第1052团" historical_model = 0 }
+		}
+	}
+	division= {
+		name = "桂林民团"
+		location = 7553
+		is_reserve = yes
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+	}
+	division= {
+		name = "桂林民团"
+		location = 7553
+		is_reserve = yes
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+	}
+	division= {
+		name = "桂林民团"
+		location = 7553
+		is_reserve = yes
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+	}
+	division= {
+		name = "桂林民团"
+		location = 7553
+		is_reserve = yes
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+	}
+	division= {
+		name = "南宁民团"
+		location = 5862
+		is_reserve = yes
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+	}
+	division= {
+		name = "南宁民团"
+		location = 5862
+		is_reserve = yes
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+	}
+	division= {
+		name = "南宁民团"
+		location = 5862
+		is_reserve = yes
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+	}
+	division= {
+		name = "南宁民团"
+		location = 5862
+		is_reserve = yes
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+	}
+}

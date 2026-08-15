@@ -1,0 +1,83 @@
+######################
+#   绥远抗战事件组   #
+######################
+country_event = {
+	id = 1000090
+	major = yes
+	is_triggered_only = yes
+	title = "Event1000090title"
+	subtitle = "Event1000090subtitle"
+	desc = "Event1000090desc"
+	picture = "suiyuan_battle1"
+	option = {
+		name = "Event1000090option"
+		set_global_flag = suiyuan
+		add_country_modifier = { name = "suiyuan_battle" duration = 90 }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000091
+	trigger = {
+		tag = CSY
+		war_with = MEA
+		not = { has_country_flag = Event1000091 }
+	}
+	title = "Event1000091title"
+	desc = "Event1000091desc"
+	picture = "suiyuan_battle1"
+	option = {
+		name = "Event1000091option"
+		set_country_flag = Event1000091
+		MEA = { remove_brigade = "第1旅" remove_brigade = "第2旅" }
+		load_oob = "CSY_New2D.txt"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000093
+	is_triggered_only = yes
+	title = "Event1000093title"
+	desc = "Event1000093desc"
+	picture = "suiyuan_battle3"
+	option = {
+		name = "Event1000093option"
+		JAP = { create_vassal = MEA }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000095
+	is_triggered_only = yes
+	title = "Event1000095title"
+	subtitle = "Event1000095subtitle"
+	desc = "Event1000095desc"
+	picture = "suiyuan_battle2"
+	option = {
+		name = "Event1000095option"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 390310
+	is_triggered_only = yes
+	title = "Event390310title"
+	subtitle = "Event390310subtitle"
+	desc = "Event3903105desc"
+	picture = "suiyuan_battle1"
+	option = {
+		name = "Event390310option"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 12230
+    is_triggered_only = yes
+	title = "suiyuan_battle1_title"
+	desc = "suiyuan_battle1desc"
+	picture = "suiyuan_battle3"
+	option = {
+		name = "suiyuan_battle1_option"
+		ai_chance = { factor = 100 }
+	}
+}

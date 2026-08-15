@@ -1,0 +1,127 @@
+######################
+#   统一战线事件组   #
+######################
+#策划抗日民族统一战线
+country_event = {
+	id = 1000023
+	is_triggered_only = yes
+	title = "china_united_front_action_title"
+	desc = "CHC_Event_1000023_desc"
+	picture = "china_united_front_action1"
+	option = {
+		name = "CHC_Event_1000023_option"
+	}
+}
+#洛川会议
+country_event = {
+	id = 1000028
+	title = "luochuan_meeting"
+	desc = "luochuan_meeting_desc"
+	picture = "china_united_front_action2"
+	trigger = {
+		tag = CHC
+		war_with = JAP
+		not = { has_global_flag = luochuan_meeting }
+		not = { year = 1938 } 
+		has_global_flag = Event10000271
+		has_global_flag = SF_anti_japanese_war
+		CHI = { war_with = JAP }
+	}
+	mean_time_to_happen =  {
+		days = 3
+	}
+	option = {
+		name = "luochuan_meeting_2"
+		set_global_flag = luochuan_meeting
+		set_country_flag = luochuan_meeting_1
+		set_global_flag = luochuan_meeting_2
+		manpower = 150
+		country_event = 1000033
+		ai_chance = { factor = 100 }
+	}
+}
+#国共合作宣言
+country_event = {
+	id = 1000029
+	major = yes
+	is_triggered_only = yes
+	title = "CHC_Event_1000029"
+	subtitle = "CHC_Event_1000029_subtitle"
+	desc = "CHC_Event_1000029_desc"
+	picture = "china_united_front_action3"
+	option = {
+		name = "CHC_Event_1000029_option"
+		CHI = { country_event = 1000030 }
+		create_alliance = CHI
+		government = chc_socialist_republic
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000030
+	is_triggered_only = yes
+	title = "CHI_Event_1000030"
+	subtitle = "Event1000030subtitle"
+	desc = "CHI_Event_1000030_desc"
+	picture = "china_united_front_action4"
+	option = {
+		name = "CHI_Event_1000030_option"
+		ai_chance = { factor = 100 }
+		CHC = {
+			create_alliance = CGX
+			create_alliance = CYN
+			create_alliance = CSX
+			create_alliance = CSY
+			create_alliance = CJC
+			create_alliance = CSD
+			create_alliance = CXK
+			create_alliance = CSC
+			create_alliance = CDB
+			neutrality = 100
+		}
+		create_alliance = CGX
+		create_alliance = CYN
+		create_alliance = CSX
+		create_alliance = CSY
+		create_alliance = CJC
+		create_alliance = CSD
+		create_alliance = CXK
+		create_alliance = CSC
+		create_alliance = CDB
+		CSC = { any_owned = { limit = { province_id = 9478 } secede_province = CHI }}
+		CSC = { any_owned = { limit = { province_id = 9446 } secede_province = CHI }}
+		CSC = { any_owned = { limit = { province_id = 9383 } secede_province = CHI }}
+		CSC = { any_owned = { limit = { province_id = 7502 } secede_province = CHI }}
+		CSC = { any_owned = { limit = { province_id = 7497 } secede_province = CHI }}
+		CYN = { war = { target = JAP } }
+		CSC = { war = { target = JAP } }
+		CSY = { war = { target = JAP } }
+		CSX = { war = { target = JAP } }
+		CGX = { war = { target = JAP } }
+		CXK = { war = { target = JAP } }
+	}
+}
+#陕甘宁边区
+country_event = {
+	id = 1000031
+	title = "sgn_bianqu"
+	desc = "sgn_bianqu_desc"
+	picture = "china_united_front_action5"
+	trigger = {
+		tag = CHC
+		war_with = JAP
+		exists = CHC
+		not = { has_country_flag = sgn_bianqu }
+		has_global_flag = the_china_united_front
+	}
+	mean_time_to_happen =  {
+		days = 3
+	}
+	option = {
+		name = "sgn_bianqu_option"
+		set_country_flag = sgn_bianqu
+		head_of_government = 51004
+		neutrality = 100
+		ai_chance = { factor = 100 }
+	}
+}

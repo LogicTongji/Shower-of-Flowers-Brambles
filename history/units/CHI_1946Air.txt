@@ -1,0 +1,56 @@
+air = {
+			name = "第1航空大队队"
+			base = 5542
+			location = 5542
+			wing = { type = tactical_bomber name = "轰炸机航空队" builder = USA experience = 10 historical_model = 1 }
+			wing = { type = tactical_bomber name = "轰炸机航空队" builder = USA experience = 10 historical_model = 1 }
+			}
+		air = {
+			name = "第2航空大队，"
+			base = 5542
+			location = 5542
+			wing = { type = tactical_bomber name = "轰炸机航空队" builder = USA experience = 10 historical_model = 3 }
+			wing = { type = tactical_bomber name = "轰炸机航空队" builder = USA experience = 10 historical_model = 3 }
+			}
+		air = {
+			name = "第3航空大队"
+			base = 5542
+			location = 5542
+			wing = { type = interceptor name = "截击机航空队" builder = USA experience = 10 historical_model = 3 }
+			wing = { type = interceptor name = "截击机航空队" builder = USA experience = 10 historical_model = 3 }
+			}
+		air = {
+			name = "第4航空大队"
+			base = 5542
+			location = 5542
+			wing = { type = interceptor name = "截击机航空队" builder = USA experience = 10 historical_model = 1 }
+			wing = { type = interceptor name = "截击机航空队" builder = USA experience = 10 historical_model = 1 }
+			}
+			air = {
+			name = "第5航空大队"
+			base = 5542
+			location = 5542
+			wing = { type = interceptor name = "截击机航空队" builder = USA experience = 10 historical_model = 1 }
+			wing = { type = interceptor name = "截击机航空队" builder = USA experience = 10 historical_model = 1 }
+			}
+		air = {
+			name = "第6航空大队"
+			base = 5542
+			location = 5542
+			wing = { type = interceptor name = "截击机航空队" builder = USA experience = 10 historical_model = 1 }
+			wing = { type = interceptor name = "截击机航空队" builder = USA experience = 10 historical_model = 1 }
+			}
+			air = {
+			name = "第7航空大队"
+			base = 5542
+			location = 5542
+			wing = { type = interceptor name = "截击机航空队" builder = USA experience = 10 historical_model = 1 }
+			wing = { type = interceptor name = "截击机航空队" builder = USA experience = 10 historical_model = 1 }
+			}
+		air = {
+			name = "第8航空大队"
+			base = 5542
+			location = 5542
+			wing = { type = interceptor name = "截击机航空队" builder = USA experience = 10 historical_model = 1 }
+			wing = { type = interceptor name = "截击机航空队" builder = USA experience = 10 historical_model = 1 }
+			}

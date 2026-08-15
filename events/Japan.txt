@@ -1,0 +1,134 @@
+###############################
+# Japan puts pressure on Siam #
+###############################
+# Siam - Reaction Event
+country_event = {
+	
+	id = 2701
+
+	is_triggered_only = yes
+
+	title = "EVTNAME2701"
+	desc = "EVTDESC2701"
+	#picture = "siam"
+
+	option = {
+		name = "EVTOPTA2701"			# Accept
+		ai_chance = { factor = 100 }
+		neutrality = -3
+		join_faction = axis
+		relation = { who = JAP value = 20 }
+		relation = { who = GER value = 10 }
+		relation = { who = ENG value = -25 }
+		relation = { who = FRA value = -20 }
+		head_of_state = 62001
+		head_of_government = 62035
+		foreign_minister = 62043
+		armament_minister = 62059
+		minister_of_security = 62073
+		minister_of_intelligence = 62085
+		chief_of_staff = 62091
+		chief_of_army = 62097
+		chief_of_navy = 62102
+		chief_of_air = 62107
+		JAP = { country_event = 2702 }
+	}
+	option = {
+		name = "EVTOPTB2701"			# Decline
+		relation = { who = JAP value = -15 }
+		relation = { who = GER value = -10 }
+		relation = { who = ENG value = 15 }
+		relation = { who = FRA value = 15 }
+		JAP = { country_event = 2703 }
+	}
+}
+
+# Response to Japan - Siam Accepts
+country_event = {
+	
+	id = 2702
+
+	is_triggered_only = yes
+
+	title = "EVTNAME2702"
+	desc = "EVTDESC2702"
+	#picture = "siam"
+
+	option = {
+		name = "EVTOPTA2702"			# Excellent!
+		ai_chance = { factor = 100 }
+		create_vassal = SIA
+	}
+}
+
+# Response to Japan - Siam Refuses
+country_event = {
+	
+	id = 2703
+
+	is_triggered_only = yes
+
+	title = "EVTNAME2703"
+	desc = "EVTDESC2703"
+	#picture = "siam"
+
+	option = {
+		name = "EVTOPTA2703"			# Declare War
+		ai_chance = { factor = 100 }
+		JAP = {	war = {	target = SIA } }
+	}
+	option = {
+		name = "EVTOPTB2703"			# Their Loss!
+		relation = { who = SIA value = 10 }
+	}
+}
+
+
+#mengkukuo stuff.
+
+country_event = {
+	
+	id = 2704
+
+	is_triggered_only = yes
+
+	title = "EVTNAME2704"
+	desc = "EVTDESC2704"
+	#picture = "siam"
+
+	option = {
+		name = "OK"		
+		9089 = {
+			secede_province = MEN
+			add_core = MEN
+		}
+		7377 = {
+			secede_province = MEN
+			add_core = MEN
+		}
+		7390 = {
+			secede_province = MEN
+			add_core = MEN
+		}
+		7384 = {
+			secede_province = MEN
+			add_core = MEN
+		}
+		5052 = {
+			secede_province = MEN
+			add_core = MEN
+		}
+		7348 = {
+			secede_province = MEN
+			add_core = MEN
+		}
+		7367 = {
+			secede_province = MEN
+			add_core = MEN
+		}
+		7358 = {
+			secede_province = MEN
+			add_core = MEN
+		}		
+	}
+}

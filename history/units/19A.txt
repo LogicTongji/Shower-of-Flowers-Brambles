@@ -1,0 +1,23 @@
+corps = {
+		name = "第19路军"
+		location = 5745
+		regiment = { type = hq_brigade name = "第7军军部" historical_model = 1 }
+		division= {
+			name = "第60师"
+			location = 5745
+			regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+			regiment = { type = infantry_brigade experience = 10 historical_model = 0 }
+		}
+		division= {
+			name = "第61师"
+			location = 5745
+			regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+			regiment = { type = infantry_brigade experience = 10 historical_model = 0 }
+		}
+		division= {
+			name = "第78师"
+			location = 5745
+			regiment = { type = infantry_brigade name = "第232旅" experience = 10 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "第234旅" experience = 10 historical_model = 0 }
+		}
+	}

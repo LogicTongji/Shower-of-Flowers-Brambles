@@ -1,0 +1,174 @@
+name = "中国人民抗日战争"
+
+limited_war = yes
+
+#中国共产党发布《对日战争宣言》
+1932.2.15 = {
+	add_attacker = JAP
+	add_attacker = MAN
+	add_attacker = CJD
+	add_defender = CHC 
+          add_defender = CHA
+	war_goal=
+	{
+		casus_belli=conquer
+		actor="CHC"
+		receiver="JAP"
+	}
+	war_goal=
+	{
+		casus_belli=conquer
+		actor="CHC"
+		receiver="MAN"
+	}
+}
+1936.5.12 = {
+	war_goal=
+	{
+		casus_belli=conquer
+		actor="CHC"
+		receiver="MEA"
+	}
+}
+#卢沟桥事变
+1937.7.7 = {
+	add_attacker = MEB
+	add_defender = CHI
+	add_defender = CGX
+	add_defender = CSX
+	add_defender = CSC
+	add_defender = CQM
+	add_defender = CNM
+	add_defender = CYN
+	add_defender = CSY
+	add_defender = CSD
+		add_defender = CJC
+	war_goal=
+	{
+		casus_belli=conquer
+		actor="JAP"
+		receiver="CSX"
+	}
+	war_goal=
+	{
+		casus_belli=conquer
+		actor="JAP"
+		receiver="CSC"
+	}
+	war_goal=
+	{
+		casus_belli=conquer
+		actor="JAP"
+		receiver="CGX"
+	}
+	war_goal=
+	{
+		casus_belli=conquer
+		actor="JAP"
+		receiver="CQM"
+	}
+	war_goal=
+	{
+		casus_belli=conquer
+		actor="JAP"
+		receiver="CYN"
+	}
+		war_goal=
+	{
+		casus_belli=puppet
+		actor="JAP"
+		receiver="CHI"
+	}
+}
+1937.12.14 = {
+	add_attacker = CHB
+	rem_attacker = CJD
+	war_goal=
+	{
+		casus_belli=conquer
+		actor="CHC"
+		receiver="CHB"
+	}
+}
+1937.12.13 = {
+	add_attacker = CJS
+	war_goal=
+	{
+		casus_belli=conquer
+		actor="CHC"
+		receiver="CJS"
+	}
+	war_goal=
+	{
+		casus_belli=conquer
+		actor="CHI"
+		receiver="CJS"
+	}
+}
+1937.12.15 = {
+	add_attacker = CJB
+	war_goal=
+	{
+		casus_belli=conquer
+		actor="CHC"
+		receiver="CJB"
+	}
+	war_goal=
+	{
+		casus_belli=conquer
+		actor="CHI"
+		receiver="CJB"
+	}
+}
+
+1940.3.30 = {
+	add_attacker = WJW
+	rem_attacker = CHB
+	rem_attacker = CJS
+	war_goal=
+	{
+		casus_belli=conquer
+		actor="CHC"
+		receiver="WJW"
+	}
+	war_goal=
+	{
+		casus_belli=conquer
+		actor="CHI"
+		receiver="WJW"
+	}
+}
+#中华民国对日宣战
+1941.12.9 = {
+	war_goal=
+	{
+		casus_belli=conquer
+		actor="CHI"
+		receiver="JAP"
+	}
+	war_goal=
+	{
+		casus_belli=conquer
+		actor="CHI"
+		receiver="MAN"
+	}
+	war_goal=
+	{
+		casus_belli=conquer
+		actor="CHI"
+		receiver="MEB"
+	}
+}
+#日本投降
+1945.9.9 = {
+	rem_attacker = JAP
+	rem_attacker = MAN
+	rem_attacker = MEB
+	rem_defender = CHC
+	rem_defender = CXB
+	rem_defender = CSX
+	rem_defender = CGX
+	rem_defender = CHI
+	rem_defender = CYN
+}
+

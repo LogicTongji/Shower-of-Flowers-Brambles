@@ -1,0 +1,194 @@
+
+country_event = {
+        major = yes
+        fire_only_once = yes
+	id = 80010
+	title = "21title"
+	desc = "21decs"
+	picture = "Event3000083"
+	trigger = {		
+                tag = USA
+		year = 1943
+                exists = CHI
+				exists = ENG
+				exists = FRA
+				exists = SOV
+				not = {
+				has_global_flag = JAP_Lost
+				has_global_flag = GER_Lost
+				}
+                has_global_flag = JAPsouthing
+                CHI = { controls = 9478 }
+                 SOV = { controls = 1409 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "4option1"
+                create_alliance = CHI
+                create_alliance = SOV
+                create_alliance = ENG
+		set_global_flag = Event80
+		 set_global_flag = against_germany
+                JAP = { country_event = 80011 }
+                CHI = { country_event = 80012 }
+		ai_chance = { factor = 100 }
+       	}
+}
+country_event = {
+	id = 80011
+       	is_triggered_only = yes
+	title = "801title"
+	desc = "801decs"
+	picture = "Event1100101"
+	option = {
+		name = "801OOP"	
+                dissent = 10
+		relation = { who = USA value = -100 }
+	}
+}
+country_event = {
+	id = 80012
+       	is_triggered_only = yes
+	title = "21title"
+	desc = "21decs"
+	picture = "Event1100101"
+	option = {
+		name = "21OOP"
+                national_unity = 20
+                dissent = -10	
+		relation = { who = USA value = 100 }
+	}
+}
+country_event = {
+        fire_only_once = yes
+	id = 80013
+	title = "31title"
+	desc = "31decs"
+	picture = "Event3000083"
+	trigger = {		
+                exists = CHI
+                exists = SOV
+				has_global_flag = GER_Lost
+		not = {
+				has_global_flag = JAP_Lost
+				}
+                has_global_flag = JAPsouthing
+                CHI = { controls = 9478 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "4option1"
+		ai_chance = { factor = 100 }
+       	}
+}
+country_event = {
+	id = 80016
+	major = yes
+	fire_only_once = yes
+	title = "Event44444title"
+	desc = "Event44444desc"
+	picture = "Event1100101"
+	trigger = {
+		or = {
+			tag = SOV
+                	tag = JAP
+		}
+		NOT = { has_global_flag = Xaction_East_eroup_gizui2 }
+                has_global_flag = JAPsouthing 
+		CHI = { war_with = JAP }
+                exists = CHI
+    not = { year = 1943 }
+	}
+	option = {
+		name = "Event44444opt"
+                non_aggression_pact = JAP
+                relation = { who = CHI value = -100 }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+        major = yes
+		fire_only_once = yes
+	id = 80017
+	title = "61title"
+	desc = "61decs"
+	picture = "Event3000083"
+	trigger = {		
+                tag = SOV
+                exists = CHI
+                has_global_flag = Event80
+				has_global_flag = Yaert
+				has_global_flag = GER_Lost
+				not = {
+				has_global_flag = JAP_Lost
+				}
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "61oop"
+                SOV = { war = { target = JAP } }
+                create_alliance = USA
+                create_alliance = ENG
+                create_alliance = CHI
+                JAP = { country_event = 80018 }
+		ai_chance = { factor = 100 }
+       	}
+}
+country_event = {
+	id = 800018
+	title = "61title2"
+	desc = "61decs"
+	picture = "Event1100101"
+	is_triggered_only = yes
+	option = {
+		name = "61oop2"
+                national_unity = -95
+                dissent = 30
+	}
+}
+#Å¦Â×±¤·¨Í¥ÏÜÕÂ
+country_event = {
+	id = 20203170
+	title = "MS09title"
+	desc = "MS09decs"
+	picture = "Event3000083"
+	trigger = {		
+              has_global_flag = GER_Lost 
+			  not = { has_global_flag = EventMCD  }
+
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "NLB"
+    set_global_flag = EventMCD  
+		ai_chance = { factor = 100 }
+       	}
+}
+#Ô¶¶«¾üÊÂ·¨Í¥
+country_event = {
+	id = 20203171
+	title = "MS091title"
+	desc = "MS091decs"
+	picture = "Event3000083"
+	trigger = {		
+               	has_global_flag = JAP_Lost
+				 has_global_flag = GER_Lost 
+			  not = { has_global_flag = east_asian_law  }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "4option1"
+    set_global_flag = east_asian_law
+		ai_chance = { factor = 100 }
+       	}
+}

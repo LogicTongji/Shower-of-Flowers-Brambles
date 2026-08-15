@@ -1,0 +1,25 @@
+owner = CHI
+
+controller = CHI
+land_fort = 1
+add_core = CHI
+add_core = CHC
+energy = 15.00
+industry = 1
+infra = 6
+points = 1
+manpower = 4.00
+leadership = 0.20
+1935.5.29 = {
+	owner = CDB
+
+controller = CDB
+add_core = CDB 
+}
+1937.1.2 = {
+	owner = CHI
+}
+1949.10.1 = {
+	owner = PRC
+	controller = PRC
+}

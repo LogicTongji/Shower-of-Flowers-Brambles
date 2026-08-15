@@ -6,13 +6,13 @@
 #include <string>
 #include <string_view>
 
-#include "gui_plugin_manifest_macos.h"
-#include "gui_plugin_registry_macos.h"
+#include "gui_plugin_manifest.h"
+#include "gui_plugin_registry.h"
 
 namespace
 {
 
-class ProbePlugin final : public IGuiMacPlugin
+class ProbePlugin final : public IGuiPlugin
 {
 public:
     ProbePlugin(
@@ -38,7 +38,7 @@ public:
         return windowTitle_;
     }
 
-    bool Initialize(const GuiMacPluginInitContext&, std::string&) override
+    bool Initialize(const GuiPluginInitContext&, std::string&) override
     {
         return true;
     }
@@ -125,10 +125,10 @@ int main()
             << "}\n";
     }
 
-    GuiMacPluginRegistry registry;
+    GuiPluginRegistry registry;
     if (!registry.RegisterFactory(
             "declarative_gui",
-            [](const GuiMacPluginCreateContext& context)
+            [](const GuiPluginCreateContext& context)
             {
                 return std::make_unique<ProbePlugin>(
                     context.Option("window"),
@@ -146,7 +146,7 @@ int main()
 
     std::size_t loadedCount = 0;
     std::string error;
-    if (!LoadGuiMacPluginManifestDirectory(
+    if (!LoadGuiPluginManifestDirectory(
             manifestRoot,
             registry,
             loadedCount,
@@ -158,15 +158,15 @@ int main()
         return 1;
     }
 
-    GuiMacPluginCreateContext context;
+    GuiPluginCreateContext context;
     context.root = root;
     context.options["DATA"] = "override_data";
-    std::unique_ptr<IGuiMacPlugin> plugin = registry.Create(
+    std::unique_ptr<IGuiPlugin> plugin = registry.Create(
         "PROBE_PLUGIN",
         context
     );
     ProbePlugin* probe = dynamic_cast<ProbePlugin*>(plugin.get());
-    const GuiMacPluginDescriptor* descriptor = registry.Find(
+    const GuiPluginDescriptor* descriptor = registry.Find(
         "probe_plugin"
     );
     const bool valid = probe

@@ -1,0 +1,18 @@
+owner = FRA
+controller = FRA
+add_core = FRA
+add_core = CGD
+add_core = CHI
+add_core = CHC
+
+
+infra = 4
+naval_base = 5
+
+1943.2.1 = {	
+	controller = JAP
+}
+1946.2.1 = {	
+	owner = CHI
+	remove_core = FRA
+}

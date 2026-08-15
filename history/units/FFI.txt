@@ -1,0 +1,100 @@
+theatre = {
+	name = "全国解放运动委员会"
+	location = 2870#Brussels#2255
+	regiment = { type = hq_brigade name = "全国解放运动委员会" historical_model = 0 }
+		division = {
+			name = "第1师"
+			location = 2870
+			regiment = { type = infantry_brigade historical_model = 0 }
+			regiment = { type = infantry_brigade historical_model = 0 }
+			regiment = { type = infantry_brigade historical_model = 0 }
+		}
+		division= {
+			name = "第2师"
+			location = 2870#correc
+			regiment = { type = infantry_brigade historical_model = 0 }
+			regiment = { type = infantry_brigade historical_model = 0 }
+			regiment = { type = infantry_brigade historical_model = 0 }
+		}
+		division = {
+			name = "第3师"
+			location = 2870 #Diest (Hasselt) - 1940 position
+			is_reserve = yes
+			regiment = { type = infantry_brigade historical_model = 0 }
+			regiment = { type = infantry_brigade historical_model = 0 }
+			regiment = { type = infantry_brigade historical_model = 0 }
+		}
+	division= {
+			name = "第4师"
+			location = 2870
+			is_reserve = yes
+			regiment = { type = infantry_brigade historical_model = 0 }
+			regiment = { type = infantry_brigade historical_model = 0 }
+			regiment = { type = infantry_brigade historical_model = 0 }
+	 }
+		division= {
+			name = "第5师"
+			location = 2870#antwerp correct#2312
+			is_reserve = yes
+			regiment = { type = infantry_brigade historical_model = 0 }
+			regiment = { type = infantry_brigade historical_model = 0 }
+			regiment = { type = infantry_brigade historical_model = 0 }
+		}
+		division= {
+			name = "第6师"
+			location = 2870#correct
+			is_reserve = yes
+			regiment = { type = infantry_brigade historical_model = 0 }
+			regiment = { type = infantry_brigade historical_model = 0 }
+			regiment = { type = infantry_brigade historical_model = 0 }
+		}
+division = {
+	name = "R1抵抗区"
+	location = 3968
+	regiment = { type = partisan_bergsjaeger experience = 15 historical_model = 1 }
+	regiment = { type = partisan_bergsjaeger experience = 15 historical_model = 1 }
+}
+division = {
+	name = "R2抵抗区"
+	location = 3824
+	regiment = { type = partisan_bergsjaeger experience = 15 historical_model = 1 }
+	regiment = { type = partisan_bergsjaeger experience = 15 historical_model = 1 }
+}
+division = {
+	name = "R3抵抗区"
+	location = 4034
+	regiment = { type = partisan_bergsjaeger experience = 15 historical_model = 1 }
+}
+division = {
+	name = "	R4抵抗区"
+	location = 4099
+	regiment = { type = partisan_bergsjaeger experience = 15 historical_model = 1 }
+	regiment = { type = partisan_bergsjaeger experience = 15 historical_model = 1 }
+}
+
+division = {
+	name = "R5抵抗区"
+	location = 3483
+	regiment = { type = partisan_bergsjaeger experience = 15 historical_model = 1 }
+	regiment = { type = partisan_bergsjaeger experience = 15 historical_model = 1 }
+}
+division = {
+	name = "R6抵抗区"
+	location = 3212
+	regiment = { type = partisan_bergsjaeger experience = 15 historical_model = 1 }
+}
+division = {
+	name = "A抵抗区"
+	location = 2615
+	regiment = { type = partisan_bergsjaeger experience = 15 historical_model = 1 }
+}
+division = {
+	name = "C抵抗区"
+	location = 2617
+	regiment = { type = partisan_bergsjaeger experience = 15 historical_model = 1 }
+}
+division = {
+	name = "B抵抗区"
+	location = 3413
+	regiment = { type = partisan_bergsjaeger experience = 15 historical_model = 1 }
+}

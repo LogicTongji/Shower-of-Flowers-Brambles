@@ -1,0 +1,33 @@
+
+division = {
+	name = "苏南抗日游击队"
+	location = 5473
+	regiment = { type = partisan_bergsjaeger experience = 15 historical_model = 1 }
+	regiment = { type = partisan_bergsjaeger experience = 15 historical_model = 1 }
+}
+division = {
+	name = "苏南抗日游击队"
+	location = 5473
+	regiment = { type = partisan_bergsjaeger experience = 45 historical_model = 1 }
+}
+division = {
+	name = "淮北抗日游击队"
+	location = 5473
+	regiment = { type = partisan_bergsjaeger experience = 35 historical_model = 1 }
+}
+division = {
+	name = "淮北抗日游击队"
+	location = 5473
+	regiment = { type = partisan_bergsjaeger experience = 45 historical_model = 1 }
+	regiment = { type = partisan_bergsjaeger experience = 45 historical_model = 1 }
+}1
+division = {
+	name = "淮南抗日游击队"
+	location = 5470
+	regiment = { type = partisan_bergsjaeger experience = 45 historical_model = 1 }
+}
+division = {
+	name = "淮南抗日游击队"
+	location = 5437
+	regiment = { type = partisan_bergsjaeger experience = 45 historical_model = 1 }
+}

@@ -1,0 +1,45 @@
+##################
+#   长征决议组   #
+##################
+
+diplomatic_decisions = {
+	FrontArmy_chc = {
+		potential = {
+			tag = CHC
+			war_with = CHI
+			has_country_flag = FrontArmy_go_back_Shannxi
+			not = { has_country_flag = FrontArmy_chc } 
+			date = 1936.10.7
+			not = { year = 1937 } 
+			ai = no
+		}
+		allow = {
+			CHC = { controls = 9233 }
+		}
+		effect = {
+			set_country_flag = FrontArmy_chc
+			country_event = 1000082
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	FrontArmy_chc_ai = {
+		potential = {
+			tag = CHC
+			war_with = CHI
+			has_country_flag = FrontArmy_go_back_Shannxi
+			not = { has_country_flag = FrontArmy_chc } 
+			date = 1936.10.7
+			not = { year = 1937 } 
+			ai = yes
+		}
+		effect = {
+			set_country_flag = FrontArmy_chc
+			country_event = 1000082
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

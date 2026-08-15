@@ -1,0 +1,82 @@
+corps = {
+	name = "第23军"
+	location = 9352
+	regiment = { type = hq_brigade name = "第23军司令部" historical_model = 0 }
+	regiment = { type = infantry_brigade name = "第1独立旅" strength = 80 historical_model = 0 }
+	regiment = { type = infantry_brigade name = "第2独立旅" strength = 80 historical_model = 0 }
+	division= {
+		name = "第1师"
+		location = 9352
+		regiment = { type = infantry_brigade name = "第1旅" strength = 80 historical_model = 0 }
+		regiment = { type = militia_brigade name = "第2旅" strength = 80 historical_model = 0 }
+	}
+	division= {
+		name = "第2师"
+		location = 9352
+		regiment = { type = infantry_brigade name = "第3旅" strength = 80 historical_model = 0 }
+		regiment = { type = militia_brigade name = "第4旅" strength = 80 historical_model = 0 }
+	}
+	division= {
+		name = "第3师"
+		location = 9352
+		regiment = { type = infantry_brigade name = "第5旅" strength = 80 historical_model = 0 }
+		regiment = { type = militia_brigade name = "第6旅" strength = 80 historical_model = 0 }
+	}
+}
+corps = {
+	name = "第29军"
+	location = 9352
+	regiment = { type = hq_brigade name = "第29军司令部" historical_model = 0 }
+	regiment = { type = infantry_brigade name = "直属旅" strength = 80 historical_model = 0 }
+	regiment = { type = 川西北屯殖军name = "直属旅" strength = 80 historical_model = 0 }
+	division= {
+		name = "第1师"
+		location = 9352
+		regiment = { type = infantry_brigade name = "第1旅" strength = 80 historical_model = 0 }
+		regiment = { type = militia_brigade name = "第2旅" strength = 80 historical_model = 0 }
+	}
+	division= {
+		name = "第2师"
+		location = 9352
+		regiment = { type = infantry_brigade name = "第3旅" strength = 80 historical_model = 0 }
+		regiment = { type = militia_brigade name = "第4旅" strength = 80 historical_model = 0 }
+	}
+	division= {
+		name = "第3师"
+		location = 9352
+		regiment = { type = infantry_brigade name = "第5旅" strength = 80 historical_model = 0 }
+		regiment = { type = militia_brigade name = "第6旅" strength = 80 historical_model = 0 }
+	}
+	division= {
+		name = "第4师"
+		location = 9352
+		regiment = { type = infantry_brigade name = "第7旅" strength = 80 historical_model = 0 }
+		regiment = { type = militia_brigade name = "第8旅" strength = 80 historical_model = 0 }
+	}
+	division= {
+		name = "第5师"
+		location = 9352
+		regiment = { type = infantry_brigade name = "第9旅" strength = 80 historical_model = 0 }
+		regiment = { type = militia_brigade name = "第10旅" strength = 80 historical_model = 0 }
+	}
+division= {
+	name = "第1路军"
+	location = 9352
+	regiment = { type = militia_brigade strength = 80 historical_model = 0 }
+	}
+division= {
+	name = "第2路军"
+	location = 9352
+	regiment = { type = militia_brigade strength = 80 historical_model = 0 }
+	}
+division= {
+	name = "第3路军"
+	location = 9352
+	regiment = { type = militia_brigade strength = 80 historical_model = 0 }
+	}
+division= {
+	name = "第4路军"
+	location = 9352
+	regiment = { type = militia_brigade strength = 80 historical_model = 0 }
+	}
+}

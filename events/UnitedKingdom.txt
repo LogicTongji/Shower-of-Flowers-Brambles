@@ -1,0 +1,182 @@
+###################################
+# Destruction of the French Fleet #
+###################################
+country_event = {
+	
+	id = 2601
+
+	is_triggered_only = yes
+	
+	title = "EVTNAME2601"
+	desc = "EVTDESC2601"
+	#picture = "naval_reinforcements"
+
+	option = {
+		name = "EVTOPTA2601"			# How dare they!
+		relation = { who = ENG value = -10 }
+	}
+}
+
+#############################
+# King George V passes away #
+#############################
+country_event = {
+	
+	id = 2602
+
+	trigger = {
+		tag = ENG
+		head_of_state = 1001 
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	title = "EVTNAME2602"
+	desc = "EVTDESC2602"
+	#picture = "news_paper"
+
+	option = {
+		name = "EVTOPTA2602"
+		head_of_state = 1031
+		remove_minister = 1001          	
+	}
+}
+
+#########################
+# Edward VIII abdicates #
+#########################
+country_event = {
+	
+	id = 2603
+
+	trigger = {
+		tag = ENG
+		head_of_state = 1031
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	title = "EVTNAME2603"
+	desc = "EVTDESC2603"
+	#picture = "minister_resign"
+
+	option = {
+		name = "EVTOPTA2603"
+		head_of_state = 1033			# George VI
+		remove_minister = 1031	         	
+	}
+}
+
+############################
+# Stanley Baldwin resigns  #
+############################
+country_event = {
+	
+	id = 2604
+
+	trigger = {
+		tag = ENG
+		year = 1937
+		head_of_government = 1002
+		head_of_state = 1033
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	title = "EVTNAME2604"
+	desc = "EVTDESC2604"
+	#picture = "minister_resign"
+
+	option = {
+		name = "EVTOPTA2604"
+		head_of_government = 1003         
+		armament_minister = 1005
+		minister_of_security = 1083
+		remove_minister = 1002		
+	}
+}
+
+#####################
+# The Norway Debate #
+#####################
+
+country_event = {
+	
+	id = 2605
+
+	trigger = {
+		tag = ENG
+		head_of_government = 1003          	
+		war_with = GER
+		OR = {
+			GER = { controls = 2613 }
+			GER = { controls = 812 }
+		}
+
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	title = "EVTNAME2605"
+	desc = "EVTDESC2605"
+	#picture = "minister_resign"
+
+	option = {
+		name = "EVTOPTA2605"
+		ai_chance = { factor = 100 }
+		country_event = 2606
+	}
+	option = {
+		name = "EVTOPTB2605"
+		ai_chance = { factor = 0 }
+		country_event = 2607
+	}
+}
+
+############################
+# The King Calls Churchill #
+############################
+country_event = {
+	
+	id = 2606
+
+	is_triggered_only = yes
+	
+	title = "EVTNAME2606"
+	desc = "EVTDESC2606"
+	#picture = "minister_resign"
+
+	option = {
+		name = "EVTOPTA2606"
+		head_of_government = 1004          	
+		remove_minister = 1003             	
+	}
+}
+
+##########################
+# The King Calls Halifax #
+##########################
+country_event = {
+	
+	id = 2607
+
+	is_triggered_only = yes
+	
+	title = "EVTNAME2607"
+	desc = "EVTDESC2607"
+	#picture = "minister_resign"
+
+	option = {
+		name = "EVTOPTA2607"
+		head_of_government = 1045
+		remove_minister = 1003			
+	}
+}

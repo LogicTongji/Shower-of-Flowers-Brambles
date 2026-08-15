@@ -1,0 +1,55 @@
+#ÍþÉªÑÝÏ°ÐÐ¶¯
+diplomatic_decisions = {
+	    Xaction_Northren_eroup = {
+		major = yes
+		potential = {
+			tag = GER
+			not = { has_country_flag = Xaction_Northren_eroup } 
+			exists = DEN
+			exists = NOR
+		}
+		allow = {
+				GER = { 	
+		  controls = 1928
+			controls = 1626
+		      }
+		      not = { war_with = NOR
+		      war_with = DEN
+		      }
+		}
+		effect = {
+			set_country_flag = Xaction_Northren_eroup	
+			GER = { 
+			war = { target = NOR }
+			war = { target = DEN }
+			     }			
+		    }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#ENG
+	Xaction_Northren_eroup2 = {
+		major = yes
+		potential = {
+			tag = ENG
+			not = { has_country_flag = Xaction_Northren_eroup2 } 
+			exists = NOR
+			GER = { 	
+		  controls = 812
+		      }
+		}
+		allow = {
+		      not = { war_with = NOR
+		      war_with = DEN
+		      }
+		}
+		effect = {
+			set_country_flag = Xaction_Northren_eroup2	
+		  load_oob = "ENG_NOR.txt"		
+		    }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

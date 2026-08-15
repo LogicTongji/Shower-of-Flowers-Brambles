@@ -1,0 +1,97 @@
+# covert operation missions
+
+sabotage_strategic_resource = {
+	cost = 10
+
+	is_valid = {
+		has_strategic_resource = yes
+	}
+	
+	is_selectable = {
+		NOT = {
+			has_province_modifier = covertopsmod_damage_resource
+		}
+	}
+	
+	effect = {
+		add_province_modifier = { 
+			name = covertopsmod_damage_resource
+			duration = 30 
+		}
+	}
+}
+
+steal_battle_plans = {
+	cost = 10
+
+	is_valid = {
+	}
+	
+	is_selectable = {
+	}
+	
+	effect = {
+		local_intel_boost = 60   # local_intel_boost within this distance
+	}
+}
+
+scout_area = {
+	cost = 15
+
+	is_valid = {
+	}
+	
+	is_selectable = {
+		NOT = {
+			has_province_modifier = covertopsmod_scout
+		}
+	}
+	
+	effect = {
+		any_nearby_province = {
+			distance = 60
+
+			limit = {
+				NOT = {
+					has_province_modifier = covertopsmod_scout
+				}
+			}
+
+			add_province_modifier = { 
+				name = covertopsmod_scout
+				duration = 30 
+			}
+		}
+	}
+}
+
+sabotage_area = {
+	cost = 15
+
+	is_valid = {
+
+	}
+	
+	is_selectable = {
+		NOT = {
+			has_province_modifier = covertopsmod_sabotage
+		}
+	}
+	
+	effect = {
+		any_nearby_province = {
+			distance = 60
+
+			limit = {
+				NOT = {
+					has_province_modifier = covertopsmod_sabotage
+				}
+			}
+
+			add_province_modifier = { 
+				name = covertopsmod_sabotage
+				duration = 30 
+			}
+		}
+	}
+}

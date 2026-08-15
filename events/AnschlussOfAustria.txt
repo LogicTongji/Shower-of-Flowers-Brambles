@@ -1,0 +1,102 @@
+########################
+# Anschluss of Austria #
+########################
+# Austria - Reaction event
+country_event = {
+
+	id = 1101
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME1101"
+	desc = "EVTDESC1101"
+	#picture = "anchsluss"
+
+	option = {
+		name = "EVTOPTA1101"			# Become a part of the Greater Reich
+		ai_chance = { factor = 100 }
+		GER = { country_event = 1102 }
+		GER = { set_country_flag = flag_AnschlussAustria }
+	}
+	option = {
+		name = "EVTOPTB1101"			# Join the Axis
+		join_faction = axis
+		military_access = GER
+		dissent = 10
+		relation = { who = ITA value = 15 }
+		head_of_state = 23050
+		head_of_government = 23060
+		foreign_minister = 23071
+		armament_minister = 23085
+		minister_of_security = 11189
+		minister_of_intelligence = 23096
+		chief_of_staff = 23106
+		chief_of_army = 23117
+		chief_of_navy = 23125
+		chief_of_air = 23010
+		GER = { country_event = 1103 }
+	}
+	option = {
+		name = "EVTOPTC1101"			# Austria shall remain independent
+		dissent = 40
+		relation = { who = GER value = -125 }
+		relation = { who = ITA value = 15 }
+		relation = { who = ENG value = 5 }
+		relation = { who = FRA value = 5 }
+		AUS = {	war = {	target = GER } }
+		GER = { country_event = 1104 }
+	}
+}
+
+# Response to Germany - Annexation
+country_event = {
+
+	id = 1102
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME1102"
+	desc = "EVTDESC1102"
+	#picture = "anchsluss"
+
+	option = {
+		name = "EVTOPTA1102"			# Good
+		inherit = AUS
+		manpower = 450
+		load_oob = "AnschlussOOB.txt"
+	}
+}
+
+# Response to Germany - Alliance
+country_event = {
+
+	id = 1103
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME1103"
+	desc = "EVTDESC1103"
+	#picture = "Austria_Alliance"
+
+	option = {
+		name = "EVTOPTA1103"			# Ok
+		relation = { who = AUS value = 100 }
+		military_access = AUS
+	}
+}
+
+# Response to Germany - War
+country_event = {
+
+	id = 1104
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME1104"
+	desc = "EVTDESC1104"
+	#picture = "anchsluss"
+
+	option = {
+		name = "EVTOPTA1104"			# War it is then
+	}
+}

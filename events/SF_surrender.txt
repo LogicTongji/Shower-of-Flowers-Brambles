@@ -1,0 +1,1522 @@
+##################
+#   投降事件组   #
+##################
+#抗日战争相持阶段
+country_event = {
+	id = 520
+	is_triggered_only = yes
+	major = yes
+	title = "EVTNAME520"
+	subtitle = "EVTNAME520_subtitle"
+	desc = "EVTDESC520" 
+	picture = "CHI_Flag"
+	trigger = {
+		tag = CHI
+		FROM = { TAG = JAP }
+		has_country_flag = CHI_Kangzhan
+		not = { has_global_flag = Event10000272 }
+		not = { has_country_flag = jap_seizes_coast_chi }
+	}
+	option = {
+		name = "EVTOPTA520"
+		CHI = {
+			chahar_region = { secede_province = JAP }
+			hebei_region = { secede_province = JAP }
+			shandong_region = { secede_province = JAP }
+			jiangsu_region = { secede_province = JAP }
+			anhui_region = { secede_province = JAP }
+			sino_jap_peace_region = { secede_province = JAP }
+			any_owned = { limit = { province_id = 5946 } secede_province = JAP }
+			set_country_flag = jap_seizes_coast_chi
+			national_unity = 60
+		}
+		JAP = {
+			set_country_flag = jap_seizes_coast
+			end_war = CHI
+			war = {	
+				target = CHI
+				attacker_goal = { casus_belli = conquer }
+			} 
+		}
+		    9478 = {
+						   province_event = 190023
+						   }
+			5315 = {
+						   province_event = 190030
+						   }
+	}
+}
+#西征成功
+country_event = {
+	id = 1000088
+	is_triggered_only = yes
+	trigger = {
+		TAG = CNM
+		FROM = { TAG = CHC }
+		has_global_flag = Event1000084
+	}
+	title = "Event1000088title"
+	desc = "Event1000088desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000088option"
+		  cir_global_flag = Event1000084
+		  CHC = { split_troops = 0.6 }
+		  SF_china_region = { remove_core = CNM }
+		  CNM = { SF_china_region = { secede_province = CHC } }
+		  CHC = { country_event = 1000089 }
+		  ai_chance = { factor = 100 }
+	}
+}
+#两广事变-开战
+country_event = {
+	id = 1000102
+	is_triggered_only = yes
+	trigger = {
+		TAG = CGX
+		FROM = { TAG = CHI }
+		has_global_flag = Event10000973
+	}
+	title = "Event1000102title"
+	desc = "Event1000102desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000102option"
+		  cir_global_flag = Event10000973
+		  CHI = { split_troops = 0.3 }
+		  CHI = { country_event = 1000104 }
+		  SF_china_region = { remove_core = CGX }
+		  CGX = { SF_china_region = { secede_province = CHI } }
+		  ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000103
+	is_triggered_only = yes
+	trigger = {
+		TAG = CGD
+		FROM = { TAG = CHI }
+		has_global_flag = Event10000974
+	}
+	title = "Event1000102title"
+	desc = "Event1000102desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000102option"
+		  cir_global_flag = Event10000974
+		  CHI = { split_troops = 0.3 }
+		  CHI = { country_event = 1000104 }
+		  SF_china_region = { remove_core = CGD }
+		  CGD = { SF_china_region = { secede_province = CHI } }
+		  ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000105
+	is_triggered_only = yes
+	trigger = {
+		TAG = CHI
+		or = {
+			FROM = { TAG = CGX }
+			FROM = { TAG = CGD }
+		}
+		or = {
+			has_global_flag = Event10000973
+			has_global_flag = Event10000974
+		}
+		exists = CGX
+		exists = CGD
+	}
+	title = "Event1000105title"
+	desc = "Event1000105desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000105option"
+		  CGX = { split_troops = 0.4 }
+		  CGD = { split_troops = 0.4 }
+		  SF_china_region = { remove_core = CHI }
+		  CHI = { henan_region = { secede_province = CGX } }
+		  CHI = { hubei_region = { secede_province = CGX } }
+		  CHI = { hunan_region = { secede_province = CGX } }
+		  CHI = { guizhou_region = { secede_province = CGX } }
+		  CHI = { jiangsu_region = { secede_province = CGD } }
+		  CHI = { jiangxi_region = { secede_province = CGD } }
+		  CHI = { chekiang_region = { secede_province = CGD } }
+		  CHI = { anhui_region = { secede_province = CGD } }
+		  CHI = { fujian_region = { secede_province = CGD } }
+		  CGD = { country_event = 1000106 }
+		  CGX = { country_event = 1000106 }
+		  ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000161
+	is_triggered_only = yes
+	trigger = {
+		TAG = CHI
+		FROM = { TAG = CGX }
+		has_global_flag = Event10000973
+		exists = CGX
+		not = { exists = CGD }
+	}
+	title = "Event1000105title"
+	desc = "Event1000105desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000105option"
+		  CGX = { split_troops = 0.6 }
+		  SF_china_region = { remove_core = CHI }
+		  CHI = { SF_china_region = { secede_province = CGX } }
+		  CGX = { country_event = 1000106 }
+		  ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000162
+	is_triggered_only = yes
+	trigger = {
+		TAG = CHI
+		FROM = { TAG = CGD }
+		has_global_flag = Event10000974
+		exists = CGD
+		not = { exists = CGX }
+	}
+	title = "Event1000105title"
+	desc = "Event1000105desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000105option"
+		  CGD = { split_troops = 0.6 }
+		  SF_china_region = { remove_core = CHI }
+		  CHI = { SF_china_region = { secede_province = CGD } }
+		  CGD = { country_event = 1000106 }
+		  ai_chance = { factor = 100 }
+	}
+}
+#军阀投降CHI
+country_event = {
+	id = 1000108
+	is_triggered_only = yes
+	title = "Event1000108title"
+	desc = "Event1000108desc"
+	picture = "CHI_Flag"
+	option = {
+		  name = "Event1000108option"
+		  ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000107
+	is_triggered_only = yes
+	trigger = {
+		or = { TAG = CGD TAG = CGX }
+		FROM = { TAG = CHI }
+		not = { has_global_flag = Event10000973 }
+		not = { has_global_flag = Event10000974 }
+	}
+	title = "Event1000107title"
+	desc = "Event1000107desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000107option"
+		  ai_chance = { factor = 100 }
+		  CHI = { split_troops = 0.3 }
+		  SF_china_region = { remove_core = THIS }
+		  THIS = { any_owned = { secede_province = CHI } }
+		  CHI = { country_event = 1000108 }
+	}
+}
+country_event = {
+	id = 1000109
+	is_triggered_only = yes
+	trigger = {
+		or = { TAG = CYN TAG = CXK TAG = CSC TAG = CDB TAG = CQM TAG = CNM TAG = CSX TAG = CSY TAG = CSD TAG = CJC TAG = SIK TAG = TIB TAG = CXM TAG = CWJ TAG = CDX TAG = CTS TAG = CYS TAG = CJY TAG = CQS TAG = CHA TAG = CRH TAG = CCH TAG = CTY }
+		FROM = { TAG = CHI }
+	}
+	title = "Event1000107title"
+	desc = "Event1000107desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000107option"
+		  ai_chance = { factor = 100 }
+		  CHI = { split_troops = 0.3 }
+		  SF_china_region = { remove_core = THIS }
+		  THIS = { any_owned = { secede_province = CHI } }
+		  CHI = { country_event = 1000108 }
+	}
+}
+#军阀投降CHC
+country_event = {
+	id = 1000110
+	is_triggered_only = yes
+	title = "Event1000110title"
+	desc = "Event1000110desc"
+	picture = "CHC_Flag"
+	option = {
+		  name = "Event1000110option"
+		  ai_chance = { factor = 100 }
+		  national_unity = 2
+	}
+}
+country_event = {
+	id = 1000111
+	is_triggered_only = yes
+	trigger = {
+		or = { TAG = CYN TAG = CXK TAG = CSC TAG = CDB TAG = CQM TAG = CNM TAG = CSX TAG = CSY TAG = CSD TAG = CJC TAG = CGD TAG = CGX TAG = SIK TAG = TIB TAG = CXM TAG = CWJ TAG = CDX TAG = CTS TAG = CYS TAG = CJY TAG = CQS TAG = CHA TAG = CRH TAG = CCH TAG = CTY }
+		FROM = { TAG = CHC }
+	}
+	title = "Event1000111title"
+	desc = "Event1000111desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000111option"
+		  ai_chance = { factor = 100 }
+		  CHC = { split_troops = 0.3 }
+		  SF_china_region = { remove_core = THIS }
+		  THIS = { any_owned = { secede_province = CHC } }
+		  CHC = { country_event = 1000110 }
+	}
+}
+#军阀投降PRC
+country_event = {
+	id = 202592
+	is_triggered_only = yes
+	title = "Event1000110title"
+	desc = "Event1000110desc"
+	picture = "PRC_Flag"
+	option = {
+		  name = "Event1000110option"
+		  ai_chance = { factor = 100 }
+		  national_unity = 2
+	}
+}
+country_event = {
+	id = 202593
+	is_triggered_only = yes
+	trigger = {
+			or = { TAG = CYN TAG = CXK TAG = CSC TAG = CDB TAG = CQM TAG = CNM TAG = CSX TAG = CSY TAG = CSD TAG = CJC TAG = CGD TAG = CGX TAG = SIK TAG = CXM TAG = CWJ TAG = CDX TAG = CTS TAG = CYS TAG = CJY TAG = CQS TAG = CHA TAG = CRH TAG = CCH TAG = CTY }
+		FROM = { TAG = PRC }
+	}
+	title = "Event1000111title"
+	desc = "Event1000111desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000111option"
+		  ai_chance = { factor = 100 }
+		  PRC = { split_troops = 0.3 }
+		  SF_china_region = { remove_core = THIS }
+		  THIS = { any_owned = { secede_province = PRC } }
+		  PRC = { country_event = 202592 }
+	}
+}
+
+#军阀投降CXB
+country_event = {
+	id = 1000112
+	is_triggered_only = yes
+	title = "Event1000112title"
+	desc = "Event1000112desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000112option"
+		  ai_chance = { factor = 100 }
+		  national_unity = 2
+	}
+}
+country_event = {
+	id = 1000113
+	is_triggered_only = yes
+	trigger = {
+		or = { TAG = CYN TAG = CQM TAG = CNM TAG = CSX TAG = CSD TAG = CGD TAG = CGX TAG = SIK TAG = TIB TAG = CXM TAG = CWJ TAG = CDX TAG = CTS TAG = CYS TAG = CJY TAG = CQS TAG = CHA TAG = CRH TAG = CCH TAG = CTY }
+		FROM = { TAG = CXB }
+	}
+	title = "Event1000113title"
+	desc = "Event1000113desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000113option"
+		  ai_chance = { factor = 100 }
+		  CXB = { split_troops = 0.6 }
+		  SF_china_region = { remove_core = THIS }
+		  THIS = { any_owned = { secede_province = CXB } }
+		  CXB = { country_event = 1000112 }
+	}
+}
+#军阀投降军阀
+country_event = {
+	id = 1000114
+	is_triggered_only = yes
+	title = "Event1000114title"
+	desc = "Event1000114desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000114option"
+		  ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000115
+	is_triggered_only = yes
+	trigger = {
+		or = { TAG = CYN TAG = CXK TAG = CSC TAG = CDB TAG = CQM TAG = CNM TAG = CSX TAG = CSY TAG = CSD TAG = CJC TAG = CGD TAG = CGX TAG = SIK TAG = TIB TAG = CXM TAG = CWJ TAG = CDX TAG = CTS TAG = CYS TAG = CJY TAG = CQS TAG = CHA TAG = CRH TAG = CCH TAG = CTY }
+		or = { FROM = { TAG = SIK } FROM = { TAG = TIB } FROM = { TAG = CYN } FROM = { TAG = CXK } FROM = { TAG = CSC } FROM = { TAG = CDB } FROM = { TAG = CQM } FROM = { TAG = CNM } FROM = { TAG = CSX } FROM = { TAG = CSY } FROM = { TAG = CSD } FROM = { TAG = CJC } FROM = { TAG = CGD } FROM = { TAG = CGX } FROM = { TAG = CXM } FROM = { TAG = CWJ } FROM = { TAG = CDX } FROM = { TAG = CTS } FROM = { TAG = CYS } FROM = { TAG = CJY } FROM = { TAG = CQS } FROM = { TAG = CHA } FROM = { TAG = CRH } FROM = { TAG = CCH } FROM = { TAG = CTY } }
+	}
+	title = "Event1000115title"
+	desc = "Event1000115desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000115option"
+		  ai_chance = { factor = 100 }
+		  FROM = { split_troops = 0.6 }
+		  SF_china_region = { remove_core = THIS }
+		  THIS = { any_owned = { secede_province = FROM } }
+		  FROM = { country_event = 1000114 }
+	}
+}
+#CHC投降军阀
+country_event = {
+	id = 1000116
+	is_triggered_only = yes
+	title = "Event1000116title"
+	desc = "Event1000116desc"
+	picture = "CHI_Flag"
+	option = {
+		  name = "Event1000116option"
+		  ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000117
+	is_triggered_only = yes
+	trigger = {
+		TAG = CHC
+		or = { FROM = { TAG = SIK } FROM = { TAG = TIB } FROM = { TAG = CYN } FROM = { TAG = CXK } FROM = { TAG = CSC } FROM = { TAG = CDB } FROM = { TAG = CQM } FROM = { TAG = CNM } FROM = { TAG = CSX } FROM = { TAG = CSY } FROM = { TAG = CSD } FROM = { TAG = CJC } FROM = { TAG = CGD } FROM = { TAG = CGX } FROM = { TAG = CHI } FROM = { TAG = CXM } FROM = { TAG = CWJ } FROM = { TAG = CDX } FROM = { TAG = CTS } FROM = { TAG = CYS } FROM = { TAG = CJY } FROM = { TAG = CQS }  FROM = { TAG = CHA } FROM = { TAG = CRH } FROM = { TAG = CCH } FROM = { TAG = CTY } }
+	}
+	title = "Event1000117title"
+	desc = "Event1000117desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000117option"
+		  ai_chance = { factor = 100 }
+		  SF_china_region = { remove_core = CHC }
+		  CHC = { any_owned = { secede_province = FROM } }
+		  FROM = { country_event = 1000116 }
+	}
+}
+#CHI投降军阀
+country_event = {
+	id = 1000118
+	is_triggered_only = yes
+	title = "Event1000118title"
+	desc = "Event1000118desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000118option"
+		  ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000119
+	is_triggered_only = yes
+	trigger = {
+		TAG = CHI
+		or = { FROM = { TAG = SIK } FROM = { TAG = TIB } FROM = { TAG = CYN } FROM = { TAG = CXK } FROM = { TAG = CSC } FROM = { TAG = CDB } FROM = { TAG = CQM } FROM = { TAG = CNM } FROM = { TAG = CSX } FROM = { TAG = CSY } FROM = { TAG = CSD } FROM = { TAG = CJC } FROM = { TAG = CDX } FROM = { TAG = CTS } FROM = { TAG = CYS } FROM = { TAG = CJY } FROM = { TAG = CQS } FROM = { TAG = CXM } FROM = { TAG = CWJ }  FROM = { TAG = CHA } FROM = { TAG = CRH } FROM = { TAG = CCH } FROM = { TAG = CTY } and = { FROM = { TAG = CGX }  not = { has_global_flag = Event10000973 } } and = { FROM = { TAG = CGD } not = { has_global_flag = Event10000974 } } }
+	}
+	title = "Event1000119title"
+	desc = "Event1000119desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000119option"
+		  ai_chance = { factor = 100 }
+		  FROM = { split_troops = 0.6 }
+		  SF_china_region = { remove_core = CHI }
+		  CHI = { any_owned = { secede_province = FROM } }
+		  FROM = { country_event = 1000118 }
+	}
+}
+#CHI投降CHC
+country_event = {
+	id = 1000120
+	is_triggered_only = yes
+	title = "Event1000120title"
+	desc = "Event1000120desc"
+	picture = "CHC_Flag"
+	option = {
+		  name = "Event1000120option"
+		  ai_chance = { factor = 100 }
+		  national_unity = 2
+	}
+}
+country_event = {
+	id = 1000121
+	is_triggered_only = yes
+	trigger = {
+		TAG = CHI
+		FROM = { TAG = CHC }
+	}
+	title = "Event1000121title"
+	desc = "Event1000121desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000121option"
+		  ai_chance = { factor = 100 }
+		  FROM = { split_troops = 0.4 }
+		  SF_china_region = { remove_core = CHI }
+		  CHI = { any_owned = { secede_province = FROM } }
+		  FROM = { country_event = 1000120 }
+	}
+}
+#CHI投降CXB
+country_event = {
+	id = 1000122
+	is_triggered_only = yes
+	title = "Event1000122title"
+	desc = "Event1000122desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000122option"
+		  ai_chance = { factor = 100 }
+		  national_unity = 2
+	}
+}
+country_event = {
+	id = 1000123
+	is_triggered_only = yes
+	trigger = {
+		TAG = CHI
+		FROM = { TAG = CXB }
+	}
+	title = "Event1000123title"
+	desc = "Event1000123desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000123option"
+		  ai_chance = { factor = 100 }
+		  FROM = { split_troops = 0.6 }
+		  SF_china_region = { remove_core = CHI }
+		  any_owned = { limit = { controlled_by = JAP } secede_province = CXB change_controller = JAP }
+		  any_owned = { limit = { not = { controlled_by = JAP } } secede_province = CXB }
+		  FROM = { country_event = 1000122 }
+	}
+}
+#CXB投降CHI
+country_event = {
+	id = 1000124
+	is_triggered_only = yes
+	title = "Event1000124title"
+	desc = "Event1000124desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000124option"
+		  ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000125
+	is_triggered_only = yes
+	trigger = {
+		TAG = CXB
+		FROM = { TAG = CHI }
+	}
+	title = "Event1000125title"
+	desc = "Event1000125desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000125option"
+		  ai_chance = { factor = 100 }
+		  SF_china_region = { remove_core = CXB }
+		  any_owned = { limit = { controlled_by = JAP } secede_province = CHI change_controller = JAP }
+		  any_owned = { limit = { not = { controlled_by = JAP } } secede_province = CHI }
+		  FROM = { country_event = 1000124 }
+		  JAP = { set_country_flag = Event10001662 }
+	}
+}
+#CXB投降军阀
+country_event = {
+	id = 1000126
+	is_triggered_only = yes
+	title = "Event1000126title"
+	desc = "Event1000126desc"
+	picture = "CHI_Flag"
+	option = {
+		  name = "Event1000126option"
+		  ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000127
+	is_triggered_only = yes
+	trigger = {
+		TAG = CXB
+		or = { FROM = { TAG = SIK } FROM = { TAG = TIB } FROM = { TAG = CYN } FROM = { TAG = CQM } FROM = { TAG = CNM } FROM = { TAG = CSX } FROM = { TAG = CSD } FROM = { TAG = CGD } FROM = { TAG = CGX }  FROM = { TAG = CXM } FROM = { TAG = CWJ } FROM = { TAG = CDX } FROM = { TAG = CTS } FROM = { TAG = CYS } FROM = { TAG = CJY } FROM = { TAG = CQS } FROM = { TAG = CHA } FROM = { TAG = CRH } FROM = { TAG = CCH } FROM = { TAG = CTY } }
+	}
+	title = "Event1000127title"
+	desc = "Event1000127desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000127option"
+		  ai_chance = { factor = 100 }
+		  SF_china_region = { remove_core = CXB }
+		  CXB = { any_owned = { secede_province = FROM } }
+		  FROM = { country_event = 1000126 }
+	}
+}
+#JAP投降中国
+country_event = {
+	id = 1000128
+	major = yes
+	is_triggered_only = yes
+	title = "Event1000128title"
+	desc = "Event1000128desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000128option"
+		  ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000129
+	is_triggered_only = yes
+	trigger = {
+		TAG = JAP
+		or = { FROM = { TAG = SIK } FROM = { TAG = TIB } FROM = { TAG = CXB } FROM = { TAG = CHC } FROM = { TAG = CYN } FROM = { TAG = CXK } FROM = { TAG = CSC } FROM = { TAG = CDB } FROM = { TAG = CQM } FROM = { TAG = CNM } FROM = { TAG = CSX } FROM = { TAG = CSY } FROM = { TAG = CSD } FROM = { TAG = CJC } FROM = { TAG = CGD } FROM = { TAG = CGX } FROM = { TAG = CHI }  FROM = { TAG = CXM } FROM = { TAG = CDX } FROM = { TAG = CTS } FROM = { TAG = CYS } FROM = { TAG = CJY } FROM = { TAG = CQS } FROM = { TAG = CHA } FROM = { TAG = CRH } FROM = { TAG = CCH } FROM = { TAG = CTY } }
+		has_global_flag = SF_anti_japanese_war
+	}
+	title = "Event1000129title"
+	desc = "Event1000129desc"
+	picture = "JAP_Flag"
+	option = {
+		  name = "Event1000129option"
+		  ai_chance = { factor = 100 }
+		  cir_global_flag = SF_anti_japanese_war
+		  any_owned = { remove_core = JAP }
+		  JAP = { any_owned = { secede_province = FROM } }
+		  FROM = { country_event = 1000128 }
+	}
+}
+#中国投降JAP
+country_event = {
+	id = 1000130
+	is_triggered_only = yes
+	title = "Event1000130title"
+	desc = "Event1000130desc"
+	picture = "JAP_Flag"
+	option = {
+		  name = "Event1000130option"
+		  ai_chance = { factor = 100 }
+		  dissent = -5
+	}
+}
+country_event = {
+	id = 1000131
+	is_triggered_only = yes
+	trigger = {
+		or = { TAG = CYN TAG = CXK TAG = CSC TAG = CDB TAG = CQM TAG = CNM TAG = CSD TAG = CJC TAG = CGD TAG = CGX TAG = SIK TAG = TIB TAG = CXM TAG = CWJ TAG = CDX TAG = CTS TAG = CYS TAG = CJY TAG = CQS }
+		FROM = { TAG = JAP }
+		and = { exists = CHI CHI = { war_with = JAP } }
+		or = { not = { exists = CXB } not = { CXB = { war_with = JAP } } }
+		has_global_flag = SF_anti_japanese_war
+	}
+	title = "Event1000131title"
+	desc = "Event1000131desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000131option"
+		  ai_chance = { factor = 100 }
+		  CHI = { split_troops = 1.0 }
+		  SF_china_region = { remove_core = THIS }
+		  any_owned = { limit = { controlled_by = JAP } secede_province = CHI change_controller = JAP }
+		  any_owned = { limit = { not = { controlled_by = JAP } } secede_province = CHI }
+		  JAP = { country_event = 1000130 }
+	}
+}
+country_event = {
+	id = 1000132
+	is_triggered_only = yes
+	trigger = {
+		or = { TAG = CYN TAG = CXK TAG = CSC TAG = CDB TAG = CQM TAG = CNM TAG = CSX TAG = CSY TAG = CSD TAG = CJC TAG = CGD TAG = CGX TAG = SIK TAG = TIB TAG = CXM TAG = CWJ TAG = CDX TAG = CTS TAG = CYS TAG = CJY TAG = CQS }
+		FROM = { TAG = JAP }
+		and = { exists = CXB CXB = { war_with = JAP } }
+		has_global_flag = SF_anti_japanese_war
+	}
+	title = "Event1000131title"
+	desc = "Event1000131desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000131option"
+		  ai_chance = { factor = 100 }
+		  CXB = { split_troops = 1.0 }
+		  SF_china_region = { remove_core = THIS }
+		  any_owned = { limit = { controlled_by = JAP } secede_province = CXB change_controller = JAP }
+		  any_owned = { limit = { not = { controlled_by = JAP } } secede_province = CXB }
+		  JAP = { country_event = 1000130 }
+	}
+}
+country_event = {
+	id = 1000133
+	is_triggered_only = yes
+	trigger = {
+		or = {
+			and = {
+				or = { TAG = CYN TAG = CXK TAG = CSC TAG = CDB TAG = CQM TAG = CNM TAG = CSX TAG = CSY TAG = CSD TAG = CJC TAG = CGD TAG = CGX TAG = SIK TAG = TIB TAG = CXM TAG = CWJ TAG = CDX TAG = CTS TAG = CYS TAG = CJY TAG = CQS }
+				FROM = { TAG = JAP }
+				CHC = { has_country_flag = CHC_Kangzhan }
+				or = { not = { exists = CXB } not = { CXB = { war_with = JAP } } }
+				or = { not = { exists = CHI } not = { CHI = { war_with = JAP } } }
+				and = { exists = CHC CHC = { war_with = JAP } }
+			}
+			and = {
+				or = { TAG = CSX TAG = CSY }
+				FROM = { TAG = JAP }
+				or = { not = { exists = CXB } not = { CXB = { war_with = JAP } } }
+				and = { exists = CHC CHC = { war_with = JAP } }
+			}
+		}
+		has_global_flag = SF_anti_japanese_war
+	}
+	title = "Event1000131title"
+	desc = "Event1000131desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000131option"
+		  ai_chance = { factor = 100 }
+		  CHC = { split_troops = 1.0 }
+		  SF_china_region = { remove_core = THIS }
+		  any_owned = { limit = { controlled_by = JAP } secede_province = CHC change_controller = JAP }
+		  any_owned = { limit = { not = { controlled_by = JAP } } secede_province = CHC }
+		  JAP = { country_event = 1000130 }
+	}
+}
+country_event = {
+	id = 1000134
+	is_triggered_only = yes
+	trigger = {
+		or = {
+			and = {
+				or = { TAG = CYN TAG = CXK TAG = CSC TAG = CDB TAG = CQM TAG = CNM TAG = CSX TAG = CSY TAG = CSD TAG = CJC TAG = CGD TAG = CGX TAG = SIK TAG = TIB TAG = CXM TAG = CWJ TAG = CDX TAG = CTS TAG = CYS TAG = CJY TAG = CQS }
+				FROM = { TAG = JAP }
+				or = { not = { exists = CXB } not = { CXB = { war_with = JAP } } }
+				or = { not = { exists = CHI } not = { CHI = { war_with = JAP } } }
+				or = { not = { exists = CHC } not = { CHC = { war_with = JAP } } not = { CHC = { has_country_flag = CHC_Kangzhan } } }
+			}
+			and = {
+				or = { TAG = CSX TAG = CSY }
+				FROM = { TAG = JAP }
+				or = { not = { exists = CXB } not = { CXB = { war_with = JAP } } }
+				or = { not = { exists = CHC } not = { CHC = { war_with = JAP } } }
+			}
+		}
+		has_global_flag = SF_anti_japanese_war
+	}
+	title = "Event1000131title"
+	desc = "Event1000131desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000131option"
+		  ai_chance = { factor = 100 }
+		  SF_china_region = { remove_core = THIS }
+		  any_owned = { secede_province = JAP }
+		  JAP = { country_event = 1000130 }
+	}
+}
+country_event = {
+	id = 1000135
+	major = yes
+	is_triggered_only = yes
+	trigger = {
+		TAG = CHI
+		FROM = { TAG = JAP }
+		and = { exists = CHC CHC = { war_with = JAP } }
+		has_global_flag = SF_anti_japanese_war
+		has_country_flag = jap_seizes_coast_chi
+	}
+	title = "Event1000131title"
+	desc = "Event1000131desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000131option"
+		  ai_chance = { factor = 100 }
+		  CHC = { split_troops = 0.8 }
+		  SF_china_region = { remove_core = THIS }
+		  any_owned = { limit = { controlled_by = JAP } secede_province = CHC change_controller = JAP }
+		  any_owned = { limit = { not = { controlled_by = JAP } } secede_province = CHC }
+		  JAP = { country_event = 1000130 }
+	}
+}
+country_event = {
+	id = 1000136
+	major = yes
+	is_triggered_only = yes
+	trigger = {
+		TAG = CHI
+		FROM = { TAG = JAP }
+		and = { exists = CXB CXB = { war_with = JAP } }
+		has_global_flag = SF_anti_japanese_war
+	}
+	title = "Event1000131title"
+	desc = "Event1000131desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000131option"
+		  ai_chance = { factor = 100 }
+		  CXB = { split_troops = 0.8 }
+		  SF_china_region = { remove_core = THIS }
+		  any_owned = { limit = { controlled_by = JAP } secede_province = CXB change_controller = JAP }
+		  any_owned = { limit = { not = { controlled_by = JAP } } secede_province = CXB }
+		  JAP = { country_event = 1000130 }
+	}
+}
+country_event = {
+	id = 1000137
+	major = yes
+	is_triggered_only = yes
+	trigger = {
+		TAG = CHI
+		FROM = { TAG = JAP }
+		or = { not = { exists = CHC } not = { CHC = { war_with = JAP } } }
+		or = { not = { exists = CXB } not = { CXB = { war_with = JAP } } }
+		has_global_flag = SF_anti_japanese_war
+		has_country_flag = jap_seizes_coast_chi
+	}
+	title = "Event1000131title"
+	desc = "Event1000131desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000131option"
+		  ai_chance = { factor = 100 }
+		  SF_china_region = { remove_core = THIS }
+		  any_owned = { secede_province = JAP }
+		  JAP = { country_event = 1000130 }
+	}
+}
+country_event = {
+	id = 1000138
+	major = yes
+	is_triggered_only = yes
+	trigger = {
+		TAG = CHC
+		FROM = { TAG = JAP }
+	}
+	title = "Event1000138title"
+	desc = "Event1000138desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000138option"
+		  ai_chance = { factor = 100 }
+		  SF_china_region = { remove_core = THIS }
+		  any_owned = { secede_province = JAP }
+		  JAP = { country_event = 1000130 }
+	}
+}
+country_event = {
+	id = 1000139
+	major = yes
+	is_triggered_only = yes
+	trigger = {
+		TAG = CXB
+		FROM = { TAG = JAP }
+		has_global_flag = SF_anti_japanese_war
+	}
+	title = "Event1000139title"
+	desc = "Event1000139desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000139option"
+		  ai_chance = { factor = 100 }
+		  SF_china_region = { remove_core = THIS }
+		  any_owned = { secede_province = JAP }
+		  JAP = { country_event = 1000130 set_country_flag = Event10001662 }
+	}
+}
+#铲除汉奸政权
+country_event = {
+	id = 1000142
+	is_triggered_only = yes
+	title = "Event1000142title"
+	desc = "Event1000142desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000142option"
+		  ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000143
+	is_triggered_only = yes
+	trigger = {
+		or = {
+			and = {
+				or = { TAG = MEB TAG = CJD TAG = CHB TAG = CJS TAG = WJW TAG = CJB }
+				or = { FROM = { TAG = SIK } FROM = { TAG = TIB } FROM = { TAG = CXB } FROM = { TAG = CHC } FROM = { TAG = CYN } FROM = { TAG = CXK } FROM = { TAG = CSC } FROM = { TAG = CDB } FROM = { TAG = CQM } FROM = { TAG = CNM } FROM = { TAG = CSX } FROM = { TAG = CSY } FROM = { TAG = CSD } FROM = { TAG = CJC } FROM = { TAG = CGD } FROM = { TAG = CGX } FROM = { TAG = CHI } FROM = { TAG = CXM } FROM = { TAG = CWJ } FROM = { TAG = CDX } FROM = { TAG = CTS } FROM = { TAG = CYS } FROM = { TAG = CJY } FROM = { TAG = CQS } FROM = { TAG = CHA } }
+			}
+			and = {
+				TAG = MEA
+				or = { FROM = { TAG = SIK } FROM = { TAG = TIB } FROM = { TAG = CXB } FROM = { TAG = CHC } FROM = { TAG = CYN } FROM = { TAG = CXK } FROM = { TAG = CSC } FROM = { TAG = CDB } FROM = { TAG = CQM } FROM = { TAG = CNM } FROM = { TAG = CSX } FROM = { TAG = CSD } FROM = { TAG = CJC } FROM = { TAG = CGD } FROM = { TAG = CGX } FROM = { TAG = CHI } FROM = { TAG = CXM } FROM = { TAG = CWJ } FROM = { TAG = CDX } FROM = { TAG = CTS } FROM = { TAG = CYS } FROM = { TAG = CJY } FROM = { TAG = CQS } FROM = { TAG = CHA } }
+			}
+		}
+	}
+	title = "Event1000119title"
+	desc = "Event1000119desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000119option"
+		  ai_chance = { factor = 100 }
+		  SF_china_region = { remove_core = THIS }
+		  THIS = { any_owned = { limit = { controlled_by = CHC } secede_province = CHC } }
+		  THIS = { any_owned = { limit = { controlled_by = CHI } secede_province = CHI } }
+		  THIS = { any_owned = { limit = { controlled_by = SIK } secede_province = SIK } }
+		  THIS = { any_owned = { limit = { controlled_by = TIB } secede_province = TIB } }
+		  THIS = { any_owned = { limit = { controlled_by = CXB } secede_province = CXB } }
+		  THIS = { any_owned = { limit = { controlled_by = CYN } secede_province = CYN } }
+		  THIS = { any_owned = { limit = { controlled_by = CXK } secede_province = CXK } }
+		  THIS = { any_owned = { limit = { controlled_by = CSC } secede_province = CSC } }
+		  THIS = { any_owned = { limit = { controlled_by = CDB } secede_province = CDB } }
+		  THIS = { any_owned = { limit = { controlled_by = CJC } secede_province = CJC } }
+		  THIS = { any_owned = { limit = { controlled_by = CQM } secede_province = CQM } }
+		  THIS = { any_owned = { limit = { controlled_by = CNM } secede_province = CNM } }
+		  THIS = { any_owned = { limit = { controlled_by = CSD } secede_province = CSD } }
+		  THIS = { any_owned = { limit = { controlled_by = CSX } secede_province = CSX } }
+		  THIS = { any_owned = { limit = { controlled_by = CSY } secede_province = CSY } }
+		  THIS = { any_owned = { limit = { controlled_by = CGD } secede_province = CGD } }
+		  THIS = { any_owned = { limit = { controlled_by = CGX } secede_province = CGX } }
+		  THIS = { any_owned = { limit = { controlled_by = CWJ } secede_province = CWJ } }
+		  THIS = { any_owned = { limit = { controlled_by = CXM } secede_province = CXM } }
+		  THIS = { any_owned = { secede_province = FROM } }
+		  FROM = { country_event = 1000142 }
+	}
+}
+country_event = {
+	id = 1000148
+	is_triggered_only = yes
+	trigger = {
+		TAG = MAN
+		or = { FROM = { TAG = SIK } FROM = { TAG = TIB } FROM = { TAG = CXB } FROM = { TAG = CHC } FROM = { TAG = CYN } FROM = { TAG = CXK } FROM = { TAG = CSC } FROM = { TAG = CDB } FROM = { TAG = CQM } FROM = { TAG = CNM } FROM = { TAG = CSX } FROM = { TAG = CSY } FROM = { TAG = CSD } FROM = { TAG = CJC } FROM = { TAG = CGD } FROM = { TAG = CGX } FROM = { TAG = CHI } FROM = { TAG = CXM } FROM = { TAG = CWJ } FROM = { TAG = CDX } FROM = { TAG = CTS } FROM = { TAG = CYS } FROM = { TAG = CJY } FROM = { TAG = CQS } FROM = { TAG = CHA } }
+	}
+	title = "Event1000119title"
+	desc = "Event1000119desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000119option"
+                                  set_global_flag = man_seizes_lost
+		  ai_chance = { factor = 100 }
+		  SF_china_region = { remove_core = THIS }
+		  THIS = { any_owned = { limit = { controlled_by = CHC } secede_province = CHC } }
+		  THIS = { any_owned = { limit = { controlled_by = CHI } secede_province = CHI } }
+		  THIS = { any_owned = { limit = { controlled_by = SIK } secede_province = SIK } }
+		  THIS = { any_owned = { limit = { controlled_by = TIB } secede_province = TIB } }
+		  THIS = { any_owned = { limit = { controlled_by = CXB } secede_province = CXB } }
+		  THIS = { any_owned = { limit = { controlled_by = CYN } secede_province = CYN } }
+		  THIS = { any_owned = { limit = { controlled_by = CXK } secede_province = CXK } }
+		  THIS = { any_owned = { limit = { controlled_by = CSC } secede_province = CSC } }
+		  THIS = { any_owned = { limit = { controlled_by = CDB } secede_province = CDB } }
+		  THIS = { any_owned = { limit = { controlled_by = CJC } secede_province = CJC } }
+		  THIS = { any_owned = { limit = { controlled_by = CQM } secede_province = CQM } }
+		  THIS = { any_owned = { limit = { controlled_by = CNM } secede_province = CNM } }
+		  THIS = { any_owned = { limit = { controlled_by = CSD } secede_province = CSD } }
+		  THIS = { any_owned = { limit = { controlled_by = CSX } secede_province = CSX } }
+		  THIS = { any_owned = { limit = { controlled_by = CSY } secede_province = CSY } }
+		  THIS = { any_owned = { limit = { controlled_by = CGD } secede_province = CGD } }
+		  THIS = { any_owned = { limit = { controlled_by = CGX } secede_province = CGX } }
+		  THIS = { any_owned = { limit = { controlled_by = CWJ } secede_province = CWJ } }
+		  THIS = { any_owned = { limit = { controlled_by = CXM } secede_province = CXM } }
+		  THIS = { any_owned = { secede_province = FROM } }
+		  FROM = { country_event = 1000142 }
+	}
+}
+#普通灭国事件
+country_event = {
+	id = 1000140
+	is_triggered_only = yes
+	title = "Event1000141title"
+	desc = "Event1000141desc"
+	picture = "Event1000140"
+	option = {
+		  name = "Event1000141option"
+		  ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000141
+	is_triggered_only = yes
+	trigger = {
+		#中国内战
+		not = {
+			and = {
+				or = { TAG = PRC TAG = CHC TAG = CHI TAG = CXB TAG = CYN TAG = CXK TAG = CSC TAG = CDB TAG = CQM TAG = CNM TAG = CSX TAG = CSY TAG = CSD TAG = CJC TAG = CGD TAG = CGX TAG = SIK TAG = TIB TAG = CXM TAG = CWJ TAG = CDX TAG = CTS TAG = CYS TAG = CJY TAG = CQS TAG = CHA  }
+				or = { FROM = { TAG = PRC } FROM = { TAG = CHC } FROM = { TAG = CHI } FROM = { TAG = CXB } FROM = { TAG = SIK } FROM = { TAG = TIB } FROM = { TAG = CYN } FROM = { TAG = CXK } FROM = { TAG = CSC } FROM = { TAG = CDB } FROM = { TAG = CQM } FROM = { TAG = CNM } FROM = { TAG = CSX } FROM = { TAG = CSY } FROM = { TAG = CSD } FROM = { TAG = CJC } FROM = { TAG = CGD } FROM = { TAG = CGX } FROM = { TAG = CXM } FROM = { TAG = CWJ } FROM = { TAG = CDX } FROM = { TAG = CTS } FROM = { TAG = CYS } FROM = { TAG = CJY } FROM = { TAG = CQS } FROM = { TAG = CHA } }
+			}
+		}
+		#抗日战争
+		not = {
+			and = {
+				has_global_flag = SF_anti_japanese_war
+				tag = JAP
+				or = { FROM = { TAG = CHI } FROM = { TAG = CXB } FROM = { TAG = SIK } FROM = { TAG = TIB } FROM = { TAG = CYN } FROM = { TAG = CXK } FROM = { TAG = CSC } FROM = { TAG = CDB } FROM = { TAG = CQM } FROM = { TAG = CNM } FROM = { TAG = CSX } FROM = { TAG = CSY } FROM = { TAG = CSD } FROM = { TAG = CJC } FROM = { TAG = CGD } FROM = { TAG = CGX } FROM = { TAG = CWJ } FROM = { TAG = CXM } FROM = { TAG = CDX } FROM = { TAG = CTS } FROM = { TAG = CYS } FROM = { TAG = CJY } FROM = { TAG = CQS } FROM = { TAG = CHA } }
+			}
+		}
+		not = {
+			and = {
+				or = { TAG = MEA TAG = MAN TAG = MEB TAG = CJD TAG = CHB TAG = CJS TAG = WJW TAG = CJB }
+				or = { FROM = { TAG = CHC } FROM = { TAG = CHI } FROM = { TAG = CXB } FROM = { TAG = SIK } FROM = { TAG = TIB } FROM = { TAG = CYN } FROM = { TAG = CXK } FROM = { TAG = CSC } FROM = { TAG = CDB } FROM = { TAG = CQM } FROM = { TAG = CNM } FROM = { TAG = CSX } FROM = { TAG = CSY } FROM = { TAG = CSD } FROM = { TAG = CJC } FROM = { TAG = CGD } FROM = { TAG = CGX } FROM = { TAG = CWJ } FROM = { TAG = CXM } FROM = { TAG = CDX } FROM = { TAG = CTS } FROM = { TAG = CYS } FROM = { TAG = CJY } FROM = { TAG = CQS } FROM = { TAG = CHA } }
+			}
+		}
+		not = {
+			and = {
+				has_global_flag = SF_anti_japanese_war
+				or = { TAG = CHI TAG = CXB TAG = CYN TAG = CXK TAG = CSC TAG = CDB TAG = CQM TAG = CNM TAG = CSX TAG = CSY TAG = CSD TAG = CJC TAG = CGD TAG = CGX TAG = SIK TAG = TIB TAG = CWJ TAG = CXM TAG = CDX TAG = CTS TAG = CYS TAG = CJY TAG = CQS TAG = CHA  }
+				FROM = { TAG = JAP }
+			}
+		}
+		not = {
+			and = {
+				TAG = CHC
+				FROM = { TAG = JAP }
+			}
+		}
+		not = {
+			and = {
+				TAG = JAP
+				FROM = { TAG = CHC }
+			}
+		}
+	}
+	title = "Event1000140title"
+	desc = "Event1000140desc"
+	picture = "Event1000141"
+	option = {
+		name = "Event1000140option1"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.0
+				AND = {
+					is_in_any_faction = yes
+					num_in_faction = 2
+				}
+			}
+			modifier = {
+				factor = 0.0
+				OR = {
+					is_in_any_faction = no
+					NOT = { num_in_faction = 2 }
+				}
+			}
+		}
+		THIS = { any_owned = { change_controller = FROM } }
+		form_government_in_exile = yes
+		FROM = { country_event = 1000140 }
+	}
+	option = {
+		name = "Event1000140option2"
+		ai_chance = {
+			factor = 50
+		}
+		THIS = { any_owned = { secede_province = FROM } }
+		FROM = { country_event = 1000140 }
+	}
+}
+#绥远抗战
+country_event = {
+	id = 1000092
+	major = yes
+	is_triggered_only = yes
+	trigger = {
+		TAG = CSY
+		FROM = { TAG = MEA }
+		has_global_flag = suiyuan
+	}
+	title = "Event1000092title"
+	desc = "Event1000092desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000092option"
+		  cir_global_flag = suiyuan
+		  MEA = { country_event = 1000093 }
+		  mengkukuo_region = { remove_core = CSY }
+		  CSY = { mengkukuo_region = { secede_province = MEA } }
+		  ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000094
+	is_triggered_only = yes
+	trigger = {
+		TAG = MEA
+		FROM = { TAG = CSY }
+		has_global_flag = suiyuan
+	}
+	title = "Event1000094title"
+	desc = "Event1000094desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000094option"
+		  cir_global_flag = suiyuan
+		  CSY = { country_event = 1000095 }
+		  CHI = { country_event = 1000095 }
+		  CHC = { country_event = 1000095 }
+		  JAP = { country_event = 390310 }
+		  MEA = { mengkukuo_region = { secede_province = MEA } }
+		  MEA = {
+				       any_owned = { limit = { province_id = 4980 } secede_province = CSY } 
+                   any_owned = { limit = { province_id = 7337 } secede_province = CSY }
+				   any_owned = { limit = { province_id = 7349 } secede_province = CSY }
+				   }
+		  ai_chance = { factor = 100 }
+	}
+}
+#热河抗战
+country_event = {
+	id = 100160
+	is_triggered_only = yes
+	trigger = {
+		TAG = CTY
+		OR = { FROM = { TAG = MAN } FROM = { TAG = JAP } }
+		has_global_flag = the_war_attack_rehe
+	}
+	title = "Event100160title"
+	desc = "Event100160desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000092option"
+		 rehe_region = { remove_core = CRH }
+		  JAP = { rehe_region = { secede_province = MAN } }
+		   CHI ={
+				   country_event = 390059
+				   }
+		  CRH ={
+				   country_event = 390059
+				   }
+				    ai_chance = { factor = 100 }
+	}
+}
+#长城抗战
+country_event = {
+	id = 100161
+	is_triggered_only = yes
+	trigger = {
+		TAG = CRH
+		OR = { FROM = { TAG = MAN } FROM = { TAG = JAP } }
+		has_global_flag = the_war_attack_rehe
+		has_global_flag = the_war_attack_great_wall
+	}
+	title = "Event100161title"
+	desc = "Event100161desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000092option"
+		  JAP = {
+		  end_war = CRH
+		  end_war = CHI
+		  end_war = CSX
+		  end_war = CSY
+		  hebei_region = { limit = { controlled_by = JAP } secede_province = CRH change_controller = CRH }
+		  hebei_region = { limit = { not = { controlled_by = JAP } } secede_province = CRH }
+		  chahar_region = { limit = { controlled_by = JAP } secede_province = CRH change_controller = CRH }
+		  chahar_region = { limit = { not = { controlled_by = JAP } } secede_province = CRH }
+		  }
+		   CHI = {
+				   country_event = 12211
+				   }
+				    ai_chance = { factor = 100 }
+	}
+}
+#察哈尔抗战
+country_event = {
+	id = 100162
+	is_triggered_only = yes
+	trigger = {
+		TAG = CHA
+		OR = { FROM = { TAG = MAN } FROM = { TAG = JAP } }
+		has_global_flag = the_war_attack_rehe
+		has_global_flag = Anti_jap_front_great_wall_loss
+	}
+	title = "Event100162title"
+	desc = "Event100162desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000092option"
+		 chahar_region = { remove_core = CHA }
+		  JAP = { 
+		  chahar_region = { limit = { controlled_by = JAP } secede_province = CCH change_controller = CCH }
+		  chahar_region = { limit = { not = { controlled_by = JAP } } secede_province = CCH }
+		  }
+		   CHI ={
+				   country_event = 390052
+				   }
+				    ai_chance = { factor = 100 }
+	}
+}
+#闽变
+country_event = {
+	id = 100163
+	is_triggered_only = yes
+	trigger = {
+		TAG = CFJ
+		OR = { FROM = { TAG = CHI } }
+	}
+	title = "Event100163title"
+	desc = "Event100163desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000092option"
+		 fujian_region = { remove_core = CFJ }
+		  CHI = { 
+		  fujian_region = { limit = { controlled_by = CFJ } secede_province = CHI change_controller = CHI }
+		  fujian_region = { limit = { not = { controlled_by = CFJ } } secede_province = CHI }
+		  }
+		   CHI ={
+				   country_event = 12232
+				   load_oob = "19A.txt"
+				   }
+		   CHC ={
+				   country_event = 12232
+				   }
+				    ai_chance = { factor = 100 }
+	}
+}
+#围剿战争
+country_event = {
+	id = 100164
+	is_triggered_only = yes
+	trigger = {
+		or = { TAG = CSC TAG = CTS TAG = CYS  TAG = CDX }
+		FROM = { TAG = CHC } 
+		has_global_flag = Nanking_war_JiangXi_Commist
+		CHC = {
+		     not = { 
+			       has_country_flag = Postpone_war_ShanXi_Commist  
+		      }
+		}
+	}
+	title = "Event1000092title"
+	desc = "Event1000092desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000092option"
+		  SF_china_region = { remove_core = THIS }
+		  THIS = { any_owned = { secede_province = CSC } }
+         }
+}
+country_event = {
+	id = 100165
+	is_triggered_only = yes
+	trigger = {
+		TAG = CXK
+		FROM = { TAG = CHC } 
+		has_global_flag = Nanking_war_JiangXi_Commist
+		CHC = {
+		     not = { 
+			       has_country_flag = Postpone_war_ShanXi_Commist  
+		      }
+		}
+	}
+	title = "Event1000092title"
+	desc = "Event1000092desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000092option"
+		  CHC = {
+		  any_owned = { limit = { province_id = 9477 } secede_province = CSC } 
+          any_owned = { limit = { province_id = 9415 } secede_province = CSC } 
+          any_owned = { limit = { province_id = 9381 } secede_province = CSC } 
+          any_owned = { limit = { province_id = 9350 } secede_province = CSC } 
+          any_owned = { limit = { province_id = 9324 } secede_province = CSC } 
+		  any_owned = { limit = { province_id = 9501 } secede_province = CXK } 
+          any_owned = { limit = { province_id = 9444 } secede_province = CXK } 
+          any_owned = { limit = { province_id = 9414 } secede_province = CXK } 
+          any_owned = { limit = { province_id = 9476 } secede_province = CXK } 
+          any_owned = { limit = { province_id = 9380 } secede_province = CXK }
+		  any_owned = { limit = { province_id = 9322 } secede_province = CXK }
+		  }
+		  CXK = { end_war = CHC }
+          }
+}
+country_event = {
+	id = 100166
+	is_triggered_only = yes
+	trigger = {
+		TAG = CQS
+		FROM = { TAG = CHC } 
+		has_global_flag = Nanking_war_JiangXi_Commist
+		CHC = {
+		     not = { 
+			       has_country_flag = Postpone_war_ShanXi_Commist  
+		      }
+		}
+	}
+	title = "Event1000092title"
+	desc = "Event1000092desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000092option"
+		  SF_china_region = { remove_core = THIS }
+		  THIS = { any_owned = { secede_province = CHI } }
+		  set_country_flag = Intagrate_China_GuiZhou
+         }
+}
+country_event = {
+	id = 100167
+	is_triggered_only = yes
+	trigger = {
+		TAG = CHN
+		FROM = { TAG = CHC } 
+		has_global_flag = Nanking_war_JiangXi_Commist
+		CHC = {
+		     not = { 
+			       has_country_flag = Postpone_war_ShanXi_Commist  
+		      }
+		}
+	}
+	title = "Event1000092title"
+	desc = "Event1000092desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000092option"
+		  SF_china_region = { remove_core = THIS }
+		  THIS = { any_owned = { secede_province = CHI } }
+		  set_country_flag = Enter_into_Hunan_province
+          }
+}
+country_event = {
+	id = 100168
+	is_triggered_only = yes
+	trigger = {
+		TAG = CHC
+		OR = { FROM = { TAG = CHI } FROM = { TAG = CSC }  FROM = { TAG = CYN } FROM = { TAG = CXK } FROM = { TAG = CHN } FROM = { TAG = CDX } FROM = { TAG = CTS } FROM = { TAG = CYS } FROM = { TAG = CQS } }
+		has_global_flag = Nanking_war_JiangXi_Commist
+		CHC = {
+		     not = { 
+			       has_country_flag = Postpone_war_ShanXi_Commist  
+		      }
+		}
+	}
+	title = "Event1000092title"
+	desc = "Event1000092desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000092option"
+		  CHI = {
+		  end_war = CHC
+		  any_owned = { limit = { province_id = 7391 } secede_province = CHC } 
+          any_owned = { limit = { province_id = 7398 } secede_province = CHC } 
+          any_owned = { limit = { province_id = 5241 } secede_province = CHC } 
+		  any_owned = { limit = { province_id = 7410 } secede_province = CHC } 
+          any_owned = { limit = { province_id = 5335 } secede_province = CHC } 
+          any_owned = { limit = { province_id = 9202 } secede_province = CHC } 
+		  any_owned = { limit = { province_id = 5177 } secede_province = CHC } 
+          any_owned = { limit = { province_id = 4517 } secede_province = CHC } 
+			war = {	
+				target = CHC
+				attacker_goal = { casus_belli = conquer }
+			} 
+		}
+		CHC = { 
+		    any_owned = { limit = { province_id = 5734 } secede_province = CHI } 
+            any_owned = { limit = { province_id = 5715 } secede_province = CHI }  
+            any_owned = { limit = { province_id = 5708 } secede_province = CHI } 
+            any_owned = { limit = { province_id = 5716 } secede_province = CHI } 
+            any_owned = { limit = { province_id = 5725 } secede_province = CHI } 
+            any_owned = { limit = { province_id = 5712 } secede_province = CHI } 
+            any_owned = { limit = { province_id = 5724 } secede_province = CHI } 
+            any_owned = { limit = { province_id = 5733 } secede_province = CHI } 
+            any_owned = { limit = { province_id = 5744 } secede_province = CHI } 
+            any_owned = { limit = { province_id = 4739 } secede_province = CSC } 
+            any_owned = { limit = { province_id = 9445 } secede_province = CSC }   
+		    load_oob = "CHC_1936.txt" 
+		}
+		          CTS = { end_war = CHC }
+                  CQS = { end_war = CHC }
+                  CYN = { end_war = CHC }
+                  CXK = { end_war = CHC }
+                  CYS = { end_war = CHC }
+                  CHN = { end_war = CHC }
+                  CDX = { end_war = CHC }
+                  CSC = { end_war = CHC }
+        }
+}
+#西藏解放
+country_event = {
+	id = 100169
+	is_triggered_only = yes
+	trigger = {
+		TAG = TIB
+		FROM = { TAG = PRC }
+	}
+	title = "Event1000111title"
+	desc = "Event1000111desc"
+	picture = "china_surrendered"
+	option = {
+		  name = "Event1000111option"
+		  ai_chance = { factor = 100 }
+		  PRC = { split_troops = 0.3 }
+		  SF_china_region = { remove_core = THIS }
+		  THIS = { any_owned = { secede_province = PRC } }
+		  PRC = { country_event = 1000174 }
+	}
+}
+#欧战及太平洋
+#德国分区占领
+country_event = {
+	id = 100170
+	is_triggered_only = yes
+	major = yes
+	title = "GER_LOST"
+	desc = "GER_LOSTD" 
+	picture = "CH_Flag"
+	trigger = {
+		tag = GER
+		OR = {
+		FROM = { 
+		faction = allies 
+		   }
+		   FROM = { 
+		comintern
+		   }
+		}
+		not = { has_global_flag = GER_Lost }
+	}
+	option = {
+		name = "EVTOPTA524"
+		GER = {
+			SF_DDR_region = { secede_province = SOV }
+			SF_BRD_region = { secede_province = USA }
+			austria_region = { secede_province = ENG }
+			set_global_flag = GER_Lost
+		}
+	}
+}
+#日本战败
+country_event = {
+	id = 100171
+	is_triggered_only = yes
+	major = yes
+	title = "JAP_LOST"
+	desc = "JAP_LSTD" 
+	picture = "JAP_Flag"
+	trigger = {
+		TAG = JAP
+		OR = {
+		FROM = { 
+		faction = allies 
+		   }
+		   FROM = { 
+		comintern
+		   }
+		}
+		not = { has_global_flag = JAP_Lost }
+	}
+	option = {
+		name = "EVTOPTA524"
+		JAP = {
+		    japanese_pacific_bases_region = { secede_province = USA }
+			taiwan_region = { secede_province = CHI }
+			hokkaido_region = { secede_province = JPN }
+			kanto_region = { secede_province = JPN }
+			tohoku_region = { secede_province = JPN }
+            chubu_region = { secede_province = JPN }
+			kansai_region = { secede_province = JPN }
+			chugoku_region = { secede_province = JPN }
+            shikoku_region = { secede_province = JPN }
+			kyushu_region = { secede_province = JPN }	
+			SF_KOR_region = { secede_province = USA }	
+			SF_PRK_region = { secede_province = SOV }
+			}
+		any_owned = { 	
+		    heihe_region = { secede_province = SOV }
+			songjiang_region = { secede_province = SOV }
+			heilongjiang_region = { secede_province = SOV }
+			nenjiang_region = { secede_province = SOV }
+			xingan_region,  = { secede_province = SOV }
+			jilin_region = { secede_province = SOV }
+			fengtian_region = { secede_province = SOV }
+			liaonning_region = { secede_province = SOV }
+			jiandao_region = { secede_province = SOV }
+			andong_region = { secede_province = SOV }
+			}
+			set_global_flag = JAP_Lost
+	}
+}
+#对支议和
+country_event = {
+	id = 2021292
+	is_triggered_only = yes
+	major = yes
+	title = "JAP_LOSTF"
+	desc = "JAP_LSTDF" 
+	picture = "JAP_Flag"
+	trigger = {
+		tag = JAP
+		 has_global_flag = man_seizes_lost
+                                NOT = {
+                                JAP = {
+				controls = 5115
+				controls = 5147
+				controls = 5341
+				controls = 4896
+			}    
+                                     has_global_flag = jap_sei_lost                                              
+		}                                                          
+	}
+	option = {
+		name = "EVTOPTA525"
+		JAP = {
+			end_war = CHI  
+                                                add_country_modifier = {
+			name = "JapLostByChina_modifier"
+			duration = 3650
+          }
+                                   set_global_flag = jap_sei_lost
+		}
+	}
+}
+#朝鲜半岛问题(中国单挑日本取胜)
+country_event = {
+	id = 1000149
+	is_triggered_only = yes
+	title = "Event1000149title"
+	desc = "Event1000149desc"
+	picture = "Event1000149"
+	option = {
+		name = "Event1000149option"
+	}
+}
+country_event = {
+	id = 1000150
+	is_triggered_only = yes
+	title = "Event1000150title"
+	desc = "Event1000150desc"
+	picture = "Event1000149"
+	option = {
+		name = "Event1000150option1"
+		SF_Korean_region = { remove_core = JAP }
+		JAP = { SF_Korean_region = { secede_province = THIS } }
+		ai_chance = { factor = 40 }
+	}
+	option = {
+		name = "Event1000150option2"
+		SF_Korean_region = { remove_core = JAP add_core = KOR }
+		JAP = { SF_Korean_region = { secede_province = KOR } }
+		KOR = { head_of_state = 578001 head_of_government = 578002 relation = { who = THIS value = 200 } }
+		ai_chance = { factor = 60 }
+	}
+}
+country_event = {
+	id = 1000151
+	is_triggered_only = yes
+	title = "Event1000150title"
+	desc = "Event1000150desc"
+	picture = "Event1000149"
+	option = {
+		name = "Event1000150option1"
+		SF_Korean_region = { remove_core = JAP }
+		JAP = { SF_Korean_region = { secede_province = THIS } }
+		ai_chance = { factor = 40 }
+	}
+	option = {
+		name = "Event1000150option2"
+		SF_Korean_region = { remove_core = JAP add_core = PRK }
+		JAP = { SF_Korean_region = { secede_province = PRK } }
+		PRK = { head_of_state = 579001 head_of_government = 579001 relation = { who = THIS value = 200 } }
+		ai_chance = { factor = 60 }
+	}
+}

@@ -1,0 +1,40 @@
+corps = {
+	name = "东进军"
+	location = 7417
+	regiment = { type = hq_brigade name = "东进军司令部"  experience = 75 historical_model = 1 }
+	division = {
+		name = "东进军第1纵队"
+		location = 7417
+		regiment = { type = infantry_brigade  experience = 75 historical_model = 1  }
+		regiment = { type = infantry_brigade  experience = 75 historical_model = 1  }
+		regiment = { type = infantry_brigade  experience = 75 historical_model = 1  }
+	}
+	division = {
+		name = "东进军第2纵队"
+		location = 7417
+		regiment = { type = infantry_brigade  experience = 75 historical_model = 1  }
+		regiment = { type = infantry_brigade  experience = 75 historical_model = 1  }
+		regiment = { type = infantry_brigade  experience = 75 historical_model = 1  }
+	}
+	division = {
+		name = "东进军第3纵队"
+		location = 7417
+		regiment = { type = infantry_brigade  experience = 75 historical_model = 1  }
+		regiment = { type = infantry_brigade  experience = 75 historical_model = 1  }
+		regiment = { type = infantry_brigade  experience = 75 historical_model = 1  }
+	}
+	division = {
+		name = "东进军第4纵队"
+		location = 7417
+		regiment = { type = infantry_brigade  experience = 75 historical_model = 1  }
+		regiment = { type = infantry_brigade  experience = 75 historical_model = 1  }
+		regiment = { type = infantry_brigade  experience = 75 historical_model = 1  }
+	}
+	division = {
+		name = "东进军第5纵队"
+		location = 7417
+		regiment = { type = infantry_brigade  experience = 75 historical_model = 1  }
+		regiment = { type = infantry_brigade  experience = 75 historical_model = 1  }
+		regiment = { type = infantry_brigade  experience = 75 historical_model = 1  }
+	}
+}

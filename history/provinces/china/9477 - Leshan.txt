@@ -1,0 +1,16 @@
+owner = CXK
+controller = CXK
+add_core = CSC
+add_core = CXK
+add_core = CHC
+add_core = CHI
+infra = 3
+1936.1.1 = {
+	owner = CSC
+         controller = CSC
+}
+
+1938.2.1 = {
+	owner = CHI
+}
+

@@ -1,0 +1,21 @@
+owner = CQM
+controller = CQM
+add_core = CQM
+add_core = CHC
+add_core = CHI
+
+
+
+
+points = 1
+metal = 5.00
+energy = 10.00
+rare_materials = 3.00
+industry = 5
+infra = 3
+manpower = 5.00
+leadership = 0.50
+1949.10.1 = {
+	owner = PRC
+	controller = PRC
+}

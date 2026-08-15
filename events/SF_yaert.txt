@@ -1,0 +1,75 @@
+
+country_event = {
+        major = yes
+        fire_only_once = yes
+	id = 8001
+	title = "yaerttitle"
+	desc = "yaertadecs"
+	picture = "Event3000083"
+	trigger = {		
+                tag = SOV
+		year = 1943
+                exists = SOV
+                exists = ENG
+                exists = USA
+                has_global_flag = against_germany
+                has_global_flag = JAPsouthing
+                has_global_flag = EventMCD 
+                SOV = { 
+                controls = 1409
+                controls = 1928
+                controls = 1178
+                controls = 906
+                controls = 1694
+                controls = 3581
+                }
+                not = {
+                GER = { 
+                controls = 2613
+                controls = 2422
+                controls = 2482
+                }
+              }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "4option1"
+    country_event = 7200
+		ai_chance = { factor = 100 }
+       	}
+}
+country_event = {
+	id = 7200
+	is_triggered_only = yes
+	title = "YaertrT"
+	desc = "YaertrD" 
+
+	picture = "CHI_Flag"
+	option = {
+		name = "EVTOPTA520"
+    set_global_flag = Yaert
+	}
+}
+
+country_event = {
+	id = 7201
+                 fire_only_once = yes
+	title = "JAP_LOST2"
+	desc = "JAP_LSTD2" 
+	picture = "JAP_Flag"
+	trigger = {
+		tag = JPN
+		exists = JPN
+		year = 1945
+		 has_global_flag = Yaert
+         has_global_flag = EventMCD  
+		   }
+	option = {
+		name = "EVTOPTA520"
+			set_global_flag = JAP_Lost
+			set_global_flag = GER_Lost
+		}
+	}
+}

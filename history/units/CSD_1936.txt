@@ -1,0 +1,49 @@
+theatre = {
+	name = "第三路军"
+	location = 5275
+	regiment = { type = hq_brigade name = "济南指挥部" historical_model = 0 }
+	corps = {
+		name = "第6军"
+		location = 5275
+		regiment = { type = hq_brigade name = "第6军司令部" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "手枪旅" historical_model = 1 }
+		regiment = { type = artillery_brigade name = "重炮旅" historical_model = 1 }
+		division= {
+			name = "第22师"
+			location = 5276
+			regiment = { type = infantry_brigade name = "第64旅" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第66旅" historical_model = 0 }
+		}
+		division= {
+			name = "第29师"
+			location = 5275
+			regiment = { type = infantry_brigade name = "第85旅" strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第86旅" strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第87旅" strength = 20 historical_model = 0 }
+		}
+		division= {
+			name = "第74师"
+			location = 5275
+			regiment = { type = infantry_brigade name = "第220旅" strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第221旅" strength = 20 historical_model = 0 }
+		}
+	}
+	corps = {
+		name = "第12军"
+		location = 5336
+		regiment = { type = hq_brigade name = "第12军司令部" historical_model = 0 }
+		division= {
+			name = "第20师"
+			location = 5336
+			regiment = { type = infantry_brigade name = "第58旅" strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第59旅" strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第60旅" strength = 20 historical_model = 0 }
+		}
+		division= {
+			name = "第81师"
+			location = 5305
+			regiment = { type = infantry_brigade name = "第241旅" strength = 20 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第243旅" strength = 20 historical_model = 0 }
+		}
+	}
+}

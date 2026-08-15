@@ -1,0 +1,24 @@
+name = "中国人民抗日战争"
+
+limited_war = yes
+
+1944.4.16 = {
+	add_attacker = JAP
+	add_defender = ROC
+	war_goal=
+	{
+		casus_belli=conquer
+		actor="ROC"
+		receiver="JAP"
+	}
+	war_goal=
+	{
+		casus_belli=conquer
+		actor="JAP"
+		receiver="ROC"
+	}
+}
+1944.12.10 = {
+	rem_attacker = JAP
+	rem_defender = ROC
+}

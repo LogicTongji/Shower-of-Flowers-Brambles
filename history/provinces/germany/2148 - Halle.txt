@@ -1,0 +1,17 @@
+owner = GER
+controller = GER
+add_core = GER
+
+infra = 10
+industry = 2
+1945.6.7 = {
+	controller = SOV
+	owner = SOV
+	add_core = DDR
+	remove_core  = GER
+}
+
+1949.10.7 = {
+	controller = DDR
+	owner = DDR
+}

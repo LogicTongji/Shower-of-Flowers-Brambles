@@ -1,0 +1,262 @@
+############################
+#   反围剿决议组  #
+############################
+diplomatic_decisions = {
+         NanChang_war_JiangXi_Commist = {
+		potential = {
+			tag = CHI
+			not = { has_global_flag = NanChang_war_JiangXi_Commist }
+			not = { year = 1935 } 
+                             not = {	
+			controls = 5725
+                        }
+			exists = CHC		
+		}
+		allow = {
+			CHI = {
+				not = { vassal_of = JAP }
+			}
+			not = { has_global_flag = Long_March }
+			date = 1933.4.16
+		}
+		effect = {
+			set_global_flag = NanChang_war_JiangXi_Commist
+			end_war = CHC
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Nanking_war_JiangXi_Commist = {
+                   major = yes
+		potential = {
+			tag = CHI
+			not = { has_global_flag = Nanking_war_JiangXi_Commist }
+                             has_global_flag = NanChang_war_JiangXi_Commist
+			not = { year = 1935 } 
+			exists = CHC		
+			not = {
+				war_with = JAP
+			}
+		}
+		allow = {
+			CHI = {
+				not = { vassal_of = JAP }
+			}
+			and = {
+				date = 1933.10.16
+			}
+		}
+		effect = {
+			set_global_flag = Nanking_war_JiangXi_Commist
+			war = {
+                                        target = CHC
+                                                           }
+                             5732 = { land_fort = 1 }
+			5743 = { land_fort = 1 }
+			5755 = { land_fort = 1 }
+			5767 = { land_fort = 1 }
+			5756 = { land_fort = 1 }
+			5745 = { land_fort = 1 }
+			5726 = { land_fort = 1 }
+			5717 = { land_fort = 1 }
+			5700 = { land_fort = 1 }
+			5692 = { land_fort = 1 }
+			5699 = { land_fort = 1 }
+			5698 = { land_fort = 1 }
+                    country_event = 202312
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	RuiJin_war_JiangXi_KouMingTang = {
+		major = yes
+		potential = {
+			tag = CHC
+			not = { has_global_flag = RuiJin_war_JiangXi_KouMingTang }
+			exists = CHC
+			has_global_flag = Nanking_war_JiangXi_Commist
+		}
+		allow = {
+			CHC = {
+				war_with = CHI
+			}
+		}
+		effect = {
+			set_global_flag = RuiJin_war_JiangXi_KouMingTang
+		          5715 = { land_fort = 1 }
+			5725 = { land_fort = 1 }
+			5724 = { land_fort = 1 }
+                             5716 = { land_fort = 1 }
+                             5733 = { land_fort = 1 }
+                   CYN = { war = { target = CHC } }
+                   CYS = { war = { target = CHC } }
+				   CDX = { war = { target = CHC } }
+                   CTS = { war = { target = CHC } }
+                   CSC = { war = { target = CHC } }
+                   CHN = { war = { target = CHC } }
+                   CXK = { war = { target = CHC } }
+                   CQS = { war = { target = CHC } }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+                  Long_March = {
+		major = yes
+		potential = {
+			tag = CHC
+			not = { has_global_flag = Long_March }
+			or = {
+			CHI = { has_country_flag = attack_commist_chi }
+			has_global_flag = RuiJin_war_JiangXi_KouMingTang
+			has_global_flag = Nanking_war_JiangXi_Commist
+			}
+			not = { has_country_flag = Recover_MaoZedong_guideline }
+			  CHI = { 	
+			                 controls = 5725
+                             controls = 5716
+                             controls = 5733
+		          } 
+			    CHC = { 	
+					         war_with = CHI
+			                 controls = 5241
+                             controls = 7398
+		          } 
+		}
+		allow = {
+			 exists = CHC
+		}
+		effect = {
+			set_global_flag = Long_March
+			5725 = { province_event = 190019 }
+			       CYN = { war = { target = CHC } }
+                   CYS = { war = { target = CHC } }
+				   CDX = { war = { target = CHC } }
+                   CTS = { war = { target = CHC } }
+                   CSC = { war = { target = CHC } }
+                   CHN = { war = { target = CHC } }
+                   CXK = { war = { target = CHC } }
+                   CQS = { war = { target = CHC } }
+                             manpower = -160
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+         China_Commist_Party_ZhunYi_Conference = {
+		potential = {
+			tag = CHC
+			not = { has_country_flag = Recover_MaoZedong_guideline }
+			exists = CHC
+			or = {
+                             has_global_flag = Long_March
+                             has_global_flag = RuiJin_war_JiangXi_KouMingTang
+			has_global_flag = Nanking_war_JiangXi_Commist
+			}
+		}
+		allow = {
+	       OR = { CHC = {
+				war_with = CHI
+                                      controls = 7535
+			} 
+			year = 1935
+			}
+			not = { year = 1936}
+			  
+		}
+		effect = {
+			set_country_flag = Recover_MaoZedong_guideline 
+                            country_event = 12212
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+         Postpone_war_ShanXi_Commist = {
+		major = yes
+		potential = {
+			tag = CHC
+			not = { has_country_flag = Postpone_war_ShanXi_Commist }
+			exists = CHI
+			or = {
+                             has_global_flag = Long_March
+                             has_global_flag = RuiJin_war_JiangXi_KouMingTang
+			has_global_flag = Nanking_war_JiangXi_Commist
+			}
+		}
+		allow = {
+			CHC = {
+				war_with = CHI
+                                      controls = 7391
+                                      controls = 7398
+			}    
+                              CHI = { 	
+			controls = 5725
+                             controls = 5716
+                             controls = 5733
+		          } 
+                             date = 1935.4.1
+		}
+		effect = {
+			set_country_flag = Postpone_war_ShanXi_Commist    
+                            any_owned = { limit = { province_id = 5734 } secede_province = CHI } 
+ any_owned = { limit = { province_id = 5715 } secede_province = CHI }  
+                            any_owned = { limit = { province_id = 5708 } secede_province = CHI } 
+ any_owned = { limit = { province_id = 5716 } secede_province = CHI } 
+ any_owned = { limit = { province_id = 5725 } secede_province = CHI } 
+ any_owned = { limit = { province_id = 5712 } secede_province = CHI } 
+ any_owned = { limit = { province_id = 5724 } secede_province = CHI } 
+ any_owned = { limit = { province_id = 5733 } secede_province = CHI } 
+ any_owned = { limit = { province_id = 5744 } secede_province = CHI } 
+ any_owned = { limit = { province_id = 4739 } secede_province = CSC } 
+ any_owned = { limit = { province_id = 9445 } secede_province = CSC }   
+  5732 = { land_fort = -1 }
+			5743 = { land_fort = -1 }
+			5755 = { land_fort = -1 }
+			5767 = { land_fort = -1 }
+			5756 = { land_fort = -1 }
+			5745 = { land_fort = -1 }
+			5726 = { land_fort = -1 }
+			5717 = { land_fort = -1 }
+			5700 = { land_fort = -1 }
+			5692 = { land_fort = -1 }
+			5699 = { land_fort = -1 }
+			5698 = { land_fort = -1 }
+                             end_war = CHI      
+                            manpower = 160
+                            country_event = 12215
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+         Xian_war_ShanXi_Commist = {
+		major = yes
+		potential = {
+			tag = CHI
+			not = { has_country_flag = Xian_war_ShanXi_Commist }
+			exists = CHC
+			or = {
+                             has_global_flag = Long_March
+                             has_global_flag = RuiJin_war_JiangXi_KouMingTang
+			has_global_flag = Nanking_war_JiangXi_Commist
+			}
+			CHC = { has_country_flag = Postpone_war_ShanXi_Commist }
+		}
+		allow = {
+			CHC = {
+                                      controls = 7391
+                                      controls = 7398
+			}                             
+		}
+		effect = {
+			set_country_flag = Xian_war_ShanXi_Commist          
+                            country_event = 12213
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

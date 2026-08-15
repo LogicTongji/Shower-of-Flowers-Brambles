@@ -1,0 +1,366 @@
+##################################################;;;;;;;;;;;X
+# Leader Ranks;;;;;;;;;;;X
+##################################################;;;;;;;;;;;X
+INACTIVE;(非活动的);;;;;;;;;;X
+LAND_RANK1;陆军少将 ;;;;;;;;;;X
+LAND_RANK2;陆军中将 ;;;;;;;;;;X
+LAND_RANK3;陆军上将 ;;;;;;;;;;X
+LAND_RANK4;陆军元帅 ;;;;;;;;;;X
+SEA_RANK1;海军中校 ;;;;;;;;;;X
+SEA_RANK2;海军少将 ;;;;;;;;;;X
+SEA_RANK3;海军中将 ;;;;;;;;;;X
+SEA_RANK4;海军上将 ;;;;;;;;;;X
+AIR_RANK1;空军少将 ;;;;;;;;;;X
+AIR_RANK2;空军中将 ;;;;;;;;;;X
+AIR_RANK3;空军上将 ;;;;;;;;;;X
+AIR_RANK4;空军元帅 ;;;;;;;;;;X
+LEADER_SKILL;技能 ;;;;;;;;;;X
+LEADER_XP;经验 ;;;;;;;;;;X
+######################################;;;;;;;;;;;X
+# Trait Names;;;;;;;;;;;X
+######################################;;;;;;;;;;;X
+old_guard;保守派 ;;;;;;;;;;X
+trickster;奇袭专家 ;;;;;;;;;;X
+logistics_wizard;后勤专家 ;;;;;;;;;;X
+defensive_doctrine;防御专家 ;;;;;;;;;;X
+offensive_doctrine;进攻专家 ;;;;;;;;;;X
+winter_specialist;冬季专家;;;;;;;;;;X
+engineer;工程专家 ;;;;;;;;;;X
+fortress_buster;攻坚专家 ;;;;;;;;;;X
+commando;特战专家 ;;;;;;;;;;X
+desert_fox;沙漠之狐 ;;;;;;;;;;X
+jungle_expert;丛林之鼠 ;;;;;;;;;;X
+urban_fighter;城市之鹰 ;;;;;;;;;;X
+forest_fighter;森林之虎 ;;;;;;;;;;X
+mountain_expert;山地之猿 ;;;;;;;;;;X
+hills_fighter;丘陵之狼 ;;;;;;;;;;X
+seawolf;海狼专家 ;;;;;;;;;;X
+blockade_runner;封锁专家 ;;;;;;;;;;X
+superior_tactician;高级战术专家 ;;;;;;;;;;X
+spotter;侦查专家 ;;;;;;;;;;X
+tank_buster;坦克猎杀专家 ;;;;;;;;;;X
+carpet_bomber;地毯轰炸专家 ;;;;;;;;;;X
+night_flyer;夜航专家 ;;;;;;;;;;X
+fleet_destroyer;舰队破坏专家 ;;;;;;;;;;X
+##################################################;;;;;;;;;;;X
+# Unit Names;;;;;;;;;;;X
+##################################################;;;;;;;;;;;X
+infantry_brigade;步兵;;;;;;;;;;X
+artillery_brigade;炮兵;;;;;;;;;;X
+battleship;战列舰;;;;;;;;;;X
+armored_car_brigade;装甲车;;;;;;;;;;X
+anti_tank_brigade;反坦克炮;;;;;;;;;;X
+flying_bomb;飞弹;;;;;;;;;;X
+armor_brigade;装甲;;;;;;;;;;X
+anti_air_brigade;防空炮;;;;;;;;;;X
+bergsjaeger_brigade;山地步兵;;;;;;;;;;X
+carrier;航空母舰;;;;;;;;;;X
+cag;舰载战斗机;;;;;;;;;;X
+shipborne_bomber;舰载轰炸机;;;;;;;;;;X
+shipborne_attack;舰载攻击机;;;;;;;;;;X
+seaplane;水上侦察机;;;;;;;;;;X
+cas;俯冲轰炸机;;;;;;;;;;X
+destroyer;驱逐舰;;;;;;;;;;X
+torpedo_boat;鱼雷艇;;;;;;;;;;X
+sea_defence_ship;海防舰;;;;;;;;;;X
+monitor;浅水重炮舰;;;;;;;;;;X
+escort_carrier;护航航母;;;;;;;;;;X
+seaplane_carrier;水上飞机母舰;;;;;;;;;;X
+cavalry_brigade;骑兵;;;;;;;;;;X
+engineer_brigade;工程兵;;;;;;;;;;X
+battlecruiser;战列巡洋舰;;;;;;;;;;X
+flying_rocket;导弹;;;;;;;;;;X
+hq_brigade;指挥部;;;;;;;;;;X
+heavy_cruiser;重巡洋舰;;;;;;;;;;X
+light_armor_brigade;轻装甲;;;;;;;;;;X
+mechanized_brigade;机械化步兵;;;;;;;;;;X
+motorized_brigade;摩托化步兵;;;;;;;;;;X
+militia_brigade;民兵;;;;;;;;;;X
+multi_role;战斗机;;;;;;;;;;X
+light_cruiser;轻巡洋舰;;;;;;;;;;X
+interceptor;截击机;;;;;;;;;;X
+biplane;飞艇;;;;;;;;;;X
+rocket_interceptor;喷气式截击机;;;;;;;;;;X
+heavy_armor_brigade;重装甲;;;;;;;;;;X
+garrison_brigade;卫戍部队;;;;;;;;;;X
+naval_bomber;海军轰炸机;;;;;;;;;;X
+nuclear_submarine;核潜艇;;;;;;;;;;X
+police_brigade;宪兵部队;;;;;;;;;;X
+paratrooper_brigade;伞兵部队;;;;;;;;;;X
+rocket_artillery_brigade;火箭炮兵;;;;;;;;;;X
+sp_rct_artillery_brigade;自行火箭炮兵;;;;;;;;;;X
+submarine;潜艇;;;;;;;;;;X
+aip_submarine;AIP潜艇;;;;;;;;;;X
+seaplane_carrier;潜水空母;;;;;;;;;;X
+super_heavy_armor_brigade;超重装甲;;;;;;;;;;X
+super_heavy_battleship;超重战列舰;;;;;;;;;;X
+tactical_bomber;战术轰炸机;;;;;;;;;;X
+tank_destroyer_brigade;自行反坦克炮兵;;;;;;;;;;X
+transport_ship;运输船;;;;;;;;;;X
+strategic_bomber;战略轰炸机;;;;;;;;;;X
+sp_artillery_brigade;自行火炮兵;;;;;;;;;;X
+transport_plane;运输机;;;;;;;;;;X
+marine_brigade;海军陆战部队;;;;;;;;;;X
+marine_brigade_short;海战;;;;;;;;;;X
+infantry_brigade_short;步兵;;;;;;;;;;X
+artillery_brigade_short;炮兵;;;;;;;;;;X
+battleship_short;战列;;;;;;;;;;X
+armored_car_brigade_short;装甲车;;;;;;;;;;X
+anti_tank_brigade_short;反坦;;;;;;;;;;X
+flying_bomb_short;飞弹;;;;;;;;;;X
+armor_brigade_short;装甲;;;;;;;;;;X
+anti_air_brigade_short;防空;;;;;;;;;;X
+bergsjaeger_brigade_short;山地;;;;;;;;;;X
+carrier_short;航母;;;;;;;;;;X
+biplane_short;飞艇;;;;;;;;;;X
+cag_short;舰战;;;;;;;;;;X
+shipborne_bomber_short;舰爆;;;;;;;;;;X
+shipborne_attack_short;舰攻;;;;;;;;;;X
+seaplane_short;水侦;;;;;;;;;;X
+cas_short;俯冲;;;;;;;;;;X
+destroyer_short;驱逐;;;;;;;;;;X
+torpedo_boat_short;鱼雷艇;;;;;;;;;;X
+sea_defence_ship_short;海防;;;;;;;;;;X
+monitor_short;浅水重炮;;;;;;;;;;X
+escort_carrier_short;轻型航母;;;;;;;;;;X
+seaplane_carrier_short;水上飞机母舰;;;;;;;;;;X
+cavalry_brigade_short;骑兵;;;;;;;;;;X
+engineer_brigade_short;工兵;;;;;;;;;;X
+battlecruiser_short;战巡;;;;;;;;;;X
+flying_rocket_short;导弹;;;;;;;;;;X
+hq_brigade_short;指挥部;;;;;;;;;;X
+heavy_cruiser_short;重巡;;;;;;;;;;X
+light_armor_brigade_short;轻装甲;;;;;;;;;;X
+mechanized_brigade_short;机步;;;;;;;;;;X
+motorized_brigade_short;摩步;;;;;;;;;;X
+militia_brigade_short;民兵;;;;;;;;;;X
+multi_role_short;战斗机;;;;;;;;;;X
+light_cruiser_short;轻巡;;;;;;;;;;X
+interceptor_short;截击机;;;;;;;;;;X
+rocket_interceptor_short;喷气截击;;;;;;;;;;X
+heavy_armor_brigade_short;重装甲;;;;;;;;;;X
+garrison_brigade_short;卫戍;;;;;;;;;;X
+naval_bomber_short;海轰;;;;;;;;;;X
+nuclear_submarine_short;核潜艇;;;;;;;;;;X
+police_brigade_short;宪兵;;;;;;;;;;X
+paratrooper_brigade_short;伞兵;;;;;;;;;;X
+rocket_artillery_brigade_short;火箭炮;;;;;;;;;;X
+sp_rct_artillery_brigade_short;自行火箭;;;;;;;;;;X
+submarine_short;潜艇;;;;;;;;;;X
+aip_submarine_short;AIP潜艇;;;;;;;;;;X
+seaplane_carrier_short;潜母;;;;;;;;;;X
+super_heavy_armor_brigade_short;超重装甲;;;;;;;;;;X
+super_heavy_battleship_short;超重战列;;;;;;;;;;X
+tactical_bomber_short;战术;;;;;;;;;;X
+tank_destroyer_brigade_short;自行反坦;;;;;;;;;;X
+transport_ship_short;运输船;;;;;;;;;;X
+strategic_bomber_short;战略;;;;;;;;;;X
+sp_artillery_brigade_short;自行火炮;;;;;;;;;;X
+transport_plane_short;运输机;;;;;;;;;;X
+partisan_brigade;游击队;;;;;;;;;;X
+partisan_brigade_short;游击;;;;;;;;;;X
+alpine_artillery_brigade;山地炮兵;;;;;;;;;;X
+alpine_artillery_brigade_short;山炮;;;;;;;;;;X
+##################################################;;;;;;;;;;;X
+# Naming Conventions;;;;;;;;;;;X
+##################################################;;;;;;;;;;;X
+REGIMENT_NAME;$ORDER$$NUM$$TYPE$旅;;;;;;;;;;X
+SUBUNIT_NAME;$ORDER$$NUM$$TYPE$;;;;;;;;;;X
+ARMY_NAME;$ORDER$$NUM$集团军;;;;;;;;;;X
+ARMYGROUP_NAME;$ORDER$$NUM$集群;;;;;;;;;;X
+THEATRE_NAME;$ORDER$$NUM$战区;;;;;;;;;;X
+CORPS_NAME;$ORDER$$NUM$军;;;;;;;;;;X
+DIVISION_NAME;$ORDER$$NUM$$TYPE$师;;;;;;;;;;X
+NAVY_NAME;$ORDER$$NUM$舰队;;;;;;;;;;X
+AIR_NAME;$ORDER$$NUM$空军联队;;;;;;;;;;X
+ST;第;;;;;;;;;;X
+ND;第;;;;;;;;;;X
+TH;第;;;;;;;;;;X
+RD;第;;;;;;;;;;X
+##################################################;;;;;;;;;;;X
+# Combat;;;;;;;;;;;X
+##################################################;;;;;;;;;;;X
+BATTLE_ATTACKMOD;攻击效率 ;;;;;;;;;;X
+BATTLE_DEFENDMOD;防守效率 ;;;;;;;;;;X
+BM_DISSENT;异议惩罚 ;;;;;;;;;;X
+BM_LEADER_BONUS;将领技能加成 ;;;;;;;;;;X
+BM_DIFFICULTY;难度修正 ;;;;;;;;;;X
+BM_ENCIRCLEMENT_PENALTY;围攻惩罚 ;;;;;;;;;;X
+BM_ENVELOPMENT_PENALTY;夹攻惩罚 ;;;;;;;;;;X
+BM_DIVISION_PENALTY;叠加惩罚 ;;;;;;;;;;X
+BM_EXPERIENCE;经验加成 ;;;;;;;;;;X
+BM_MISSION_EFFICIENCY;任务效率 ;;;;;;;;;;X
+BM_DUGIN_MODIFIER;战壕加成 ;;;;;;;;;;X
+BM_AMPH_PENALTY;登陆惩罚 ;;;;;;;;;;X
+BM_FORT_MODIFIER;工事修正 ;;;;;;;;;;X
+BM_HQ_NEARBY;HQ邻近加成 ;;;;;;;;;;X
+BM_PARATROOP_PENALTY;空降惩罚 ;;;;;;;;;;X
+BM_RIVER_PENALTY;跨河惩罚 ;;;;;;;;;;X
+BM_SHORE_BOMBARD;舰队支援修正 ;;;;;;;;;;X
+BM_LACK_OF_SUPPLIES;断粮惩罚 ;;;;;;;;;;X
+BM_MULTIPLE;多任务惩罚 ;;;;;;;;;;X
+BM_COMBINED_ARMS;多兵种加成 ;;;;;;;;;;X
+BM_BASE_PROXIMITY;基地临近加成 ;;;;;;;;;;X
+BM_RADAR_STATION;雷达站修正 ;;;;;;;;;;X
+BM_INTERCEPT;拦截加成 ;;;;;;;;;;X
+BM_AIRCOMBAT;空战修正 ;;;;;;;;;;X
+BM_TERRAIN;地形修正 ;;;;;;;;;;X
+BM_WEATHER;天气修正 ;;;;;;;;;;X
+BM_NIGHT_MODIFIER;夜战修正 ;;;;;;;;;;X
+BM_SURPRISE_PENALTY;奇袭惩罚 ;;;;;;;;;;X
+BM_TERRITORIAL_PRIDE;领土修正 ;;;;;;;;;;X
+BM_RADIO;无线电 ;;;;;;;;;;X
+BM_DISSENT_desc;因为家中缺乏消费品，部队会担忧其家人，导致作战效率降低。 ;;;;;;;;;;X
+BM_LEADER_BONUS_desc;如果指挥太多的部队，指挥官的能力就会下降。 ;;;;;;;;;;X
+BM_DIFFICULTY_desc;在高难度下游戏，你在战斗中会遭到高难度惩??;;;;;;;;;;X
+BM_ENCIRCLEMENT_PENALTY_desc;一支被包围的部队在进行防御时，战斗力将会下降。 ;;;;;;;;;;X
+BM_ENVELOPMENT_PENALTY_desc;从多个方向进行攻击将会带给攻击方带来额外的好处。 ;;;;;;;;;;X
+BM_DIVISION_PENALTY_desc;指挥的旅越多，效率越低。 ;;;;;;;;;;X
+BM_EXPERIENCE_desc;有经验的部队在作战中的表现更好。 ;;;;;;;;;;X
+BM_MISSION_EFFICIENCY_desc;学说可以增加特定任务的效率。 ;;;;;;;;;;X
+BM_DUGIN_MODIFIER_desc;如果一支部队挖了战壕，那么它在进行防御时会得到额外加成。 ;;;;;;;;;;X
+BM_AMPH_PENALTY_desc;遭受埋伏的部队将受到一定惩罚，使其变得更为脆弱。 . This is due to the limited number of possible landing sites, which allow the defender to focus his efforts there.;;;;;;;;;;X
+BM_FORT_MODIFIER_desc;如果修建了防御工事，那么它在进行防御时会得到额外加成。 ;;;;;;;;;;X
+BM_HQ_NEARBY_desc;接近指挥中心会对部队产生积极作用。 ;;;;;;;;;;X
+BM_PARATROOP_PENALTY_desc;伞降是件非常危险的事情。 ;;;;;;;;;;X
+BM_RIVER_PENALTY_desc;跨河进攻会对进攻部队造成很大影响，特別是没有随军工程兵的兵团。 ;;;;;;;;;;X
+BM_SHORE_BOMBARD_desc;舰队的对岸炮击能够降低对方的作战效率。 ;;;;;;;;;;X
+BM_LACK_OF_SUPPLIES_desc;缺乏补给的部队在作战中将处于极大劣势。 ;;;;;;;;;;X
+BM_MULTIPLE_desc;在大规模战斗中侧翼受到攻击的部队更加脆弱。 ;;;;;;;;;;X
+BM_COMBINED_ARMS_desc;同时拥有装甲和步兵的师表现得更好。 ;;;;;;;;;;X
+BM_BASE_PROXIMITY_desc;如果航空部队与空军基地在接近，可以提高战机的载弹量，获得更高的作战效率。 ;;;;;;;;;;X
+BM_RADAR_STATION_desc;雷达会提供临近敌军飞机的信息，使得空战效率更高。 ;;;;;;;;;;X
+BM_INTERCEPT_desc;截击机在对付轰炸机的空战中将得到战斗加成。 ;;;;;;;;;;X
+BM_AIRCOMBAT_desc;敌军飞机会阻碍该单位投弹的能力，降低其效率。 ;;;;;;;;;;X
+BM_TERRAIN_desc;该省的地形会影响战斗。;;;;;;;;;;X
+BM_WEATHER_desc;该省的天气会影响战斗。;;;;;;;;;;X
+BM_NIGHT_MODIFIER_desc;夜间将使瞄准变得困难，极大地影响进了攻方的战斗力。 ;;;;;;;;;;X
+BM_SURPRISE_PENALTY_desc;遭受奇袭的部队将受到一定惩罚，使其变得更为脆弱。 ;;;;;;;;;;X
+BM_TERRITORIAL_PRIDE_desc;轴心国单位为领土而战，战斗意志更坚定。 ;;;;;;;;;;X
+BM_RADIO_desc;高级无线电技术可以承载更复杂的通信，提高作战效率。 ;;;;;;;;;;X
+BATTLE_REINFORCE_CHANCE;增援几率 ;;;;;;;;;;X
+CURR_COMB_STR;兵力 ;;;;;;;;;;X
+CURR_COMB_ORG;组织度 ;;;;;;;;;;X
+COMMITED_LABEL;$COUNT$个师，战术宽度$WIDTH$。 ;;;;;;;;;;X
+RESERVES_LABEL;$COUNT$个后备师。 ;;;;;;;;;;X
+SHIPS_LABEL;艘舰船 ;;;;;;;;;;X
+PLANES_LABEL;个空军联队 ;;;;;;;;;;X
+NO_LEADER_FOR_THIS_1;该师没有指挥官。 ;;;;;;;;;;X
+NO_LEADER_FOR_THIS_2;单独的旅不能配备指挥官。 ;;;;;;;;;;X
+LEADER_COMMAND_INFO;由$NAME$指挥(技能：$SKILL$)\n;;;;;;;;;;X
+BOMB_PROD_OFF;生产 ;;;;;;;;;;X
+BOMB_POOL_OFF;储备 ;;;;;;;;;;X
+##################################################;;;;;;;;;;;X
+# Combat Events;;;;;;;;;;;X
+##################################################;;;;;;;;;;;X
+nullCombatEvent;正常 ;;;;;;;;;;X
+assault;突袭 ;;;;;;;;;;X
+encirclement;围攻 ;;;;;;;;;;X
+delay;迟滞 ;;;;;;;;;;X
+shock;冲击 ;;;;;;;;;;X
+counterattack;反击 ;;;;;;;;;;X
+tactical_withdrawal;战术撤退 ;;;;;;;;;;X
+breakthrough;突破 ;;;;;;;;;;X
+ambush;伏击 ;;;;;;;;;;X
+COMEV_COMBATWIDTH;战术宽度 ;;;;;;;;;;X
+COMEV_ATTACKER;攻击加成 ;;;;;;;;;;X
+COMEV_DEFENDER;防守加成 ;;;;;;;;;;X
+COMEV_MOVEMENTSPEED;攻击速度 ;;;;;;;;;;X
+##################################################;;;;;;;;;;;X
+# Trait Abilities;;;;;;;;;;;X
+##################################################;;;;;;;;;;;X
+TRAIT_XP_GAIN;获得经验 ;;;;;;;;;;X
+TRAIT_SURPRISE_CHANCE;奇袭几率 ;;;;;;;;;;X
+TRAIT_SUPPLY_CONSUMPTION;补给消耗 ;;;;;;;;;;X
+TRAIT_DEFENCE_MODIFIER;防守 ;;;;;;;;;;X
+TRAIT_OFFENCE_MODIFIER;进攻 ;;;;;;;;;;X
+TRAIT_COMBAT_MOVE_SPEED;攻击速度 ;;;;;;;;;;X
+TRAIT_WINTER_ATTRITION;冬季损耗 ;;;;;;;;;;X
+TRAIT_RIVER_ATTACK;跨河攻击 ;;;;;;;;;;X
+TRAIT_FORT_ATTACK;攻击要塞 ;;;;;;;;;;X
+TRAIT_COMBINED_ARMS_BONUS;多兵种协同 ;;;;;;;;;;X
+TRAIT_OUT_OF_SUPPLY_MODIFIER;缺乏补给修正 ;;;;;;;;;;X
+TRAIT_SUBMARINE_ATTACK;潜艇攻击 ;;;;;;;;;;X
+TRAIT_DISENGAGE_TIMER;脱离时间 ;;;;;;;;;;X
+TRAIT_SPREAD_OUT;舰队集中 ;;;;;;;;;;X
+TRAIT_SPOTTING_CHANCE;侦查几率 ;;;;;;;;;;X
+TRAIT_DEFENDER_SOFTNESS;目标非装甲度 ;;;;;;;;;;X
+TRAIT_STRATEGIC_ATTACK;战略攻击 ;;;;;;;;;;X
+TRAIT_NAVAL_ATTACK;对海攻击 ;;;;;;;;;;X
+TRAIT_NIGHT_ATTACK;夜间攻击 ;;;;;;;;;;X
+TRAIT_TACTICAL_ATTACK;战术攻击 ;;;;;;;;;;X
+TRAIT_DISSENT_IMPACT;不满度影响 ;;;;;;;;;;X
+TRAIT_ENCIRCLEMENT_BONUS;包围加成 ;;;;;;;;;;X
+TRAIT_ENVELOPMENT_BONUS;夹攻加成 ;;;;;;;;;;X
+TRAIT_EXPERIENCE_BONUS;经验加成 ;;;;;;;;;;X
+TRAIT_FORT_DEFENCE;工事防御 ;;;;;;;;;;X
+TRAIT_AMPH_ATTACK;两栖攻击 ;;;;;;;;;;X
+TRAIT_DIGIN_BONUS;战壕加成 ;;;;;;;;;;X
+EXPED_OWNER;收到来自$COUNTRY$的远征军 ;;;;;;;;;;X
+EXPED_EXPIRE;在$DATE$将远征军归还 ;;;;;;;;;;X
+##################################################;;;;;;;;;;;X
+# Templates;;;;;;;;;;;X
+##################################################;;;;;;;;;;;X
+ENG_infantry;步兵师 ;;;;;;;;;;X
+ENG_motorized;摩步师 ;;;;;;;;;;X
+ENG_armoured_1936;1936型装甲师 ;;;;;;;;;;X
+ENG_armoured_1940;1940型装甲师 ;;;;;;;;;;X
+ENG_armoured_me;ME型装甲师 ;;;;;;;;;;X
+ENG_airborne;空降师 ;;;;;;;;;;X
+FRA_infantry;步兵师 ;;;;;;;;;;X
+FRA_cavalry;骑兵师 ;;;;;;;;;;X
+FRA_motorized;摩步师 ;;;;;;;;;;X
+FRA_light_mechanised;轻机械化师 ;;;;;;;;;;X
+FRA_reserve_tank;后备装甲师 ;;;;;;;;;;X
+GER_panzer_1936;1936型装甲师 ;;;;;;;;;;X
+GER_Infantry_1936;1936型步兵师 ;;;;;;;;;;X
+GER_bergsjaeger;山地师 ;;;;;;;;;;X
+GER_airlanding;空降师 ;;;;;;;;;;X
+GER_volksgrenadier;国民突击队 ;;;;;;;;;;X
+GER_motorised;摩步师 ;;;;;;;;;;X
+GER_panzergrenadier;装甲掷弹兵师 ;;;;;;;;;;X
+GER_Infantry_1942;1942型步兵师 ;;;;;;;;;;X
+GER_panzer_1941;1941型装甲师 ;;;;;;;;;;X
+GER_panzer_1943;1943型装甲师 ;;;;;;;;;;X
+ITA_infantry;步兵师 ;;;;;;;;;;X
+ITA_allpina;山地师 ;;;;;;;;;;X
+ITA_celere;Celere;;;;;;;;;;X
+ITA_motorised;摩托化师 ;;;;;;;;;;X
+ITA_armour;装甲师 ;;;;;;;;;;X
+ITA_trukmovable;轻摩托化师 ;;;;;;;;;;X
+ITA_ccnn;CCNN;;;;;;;;;;X
+ITA_allpina_russian;东线山地师 ;;;;;;;;;;X
+ITA_motorised_1942;1942型摩托化师 ;;;;;;;;;;X
+ITA_armour_1942;1942型装甲师 ;;;;;;;;;;X
+JAP_triangular;三单位制师团;;;;;;;;;;X
+JAP_square;四单位制师团;;;;;;;;;;X
+JAP_mixed_brigade;混成旅团 ;;;;;;;;;;X
+JAP_cavalry;骑兵师 ;;;;;;;;;;X
+JAP_guards;守备队 ;;;;;;;;;;X
+JAP_motorised;摩步师 ;;;;;;;;;;X
+JAP_border_guards;边境守备队 ;;;;;;;;;;X
+JAP_snlf;海军特别陆战队(SNLF) ;;;;;;;;;;X
+JAP_airborne;空降师 ;;;;;;;;;;X
+SOV_rifle;步兵师 ;;;;;;;;;;X
+SOV_motorized;摩步师 ;;;;;;;;;;X
+SOV_armoured;坦克师 ;;;;;;;;;;X
+SOV_guards_armoured;近卫坦克师 ;;;;;;;;;;X
+SOV_cavalry;骑兵师 ;;;;;;;;;;X
+SOV_mountain;山地师 ;;;;;;;;;;X
+SOV_mechanised;机械化师 ;;;;;;;;;;X
+USA_infantry;步兵师 ;;;;;;;;;;X
+USA_national_guard;国民警卫队 ;;;;;;;;;;X
+USA_cavalry;骑兵师 ;;;;;;;;;;X
+USA_armour_1940;1940型装甲师;;;;;;;;;;X
+USA_motorised;摩托化师 ;;;;;;;;;;X
+USA_armour_1942;1942型装甲师 ;;;;;;;;;;X
+USA_airborne;空降师 ;;;;;;;;;;X
+USA_marine;海军陆战师 ;;;;;;;;;;X
+binary_infantry;步兵师 ;;;;;;;;;;X
+binary_milita;民兵师 ;;;;;;;;;;X
+binary_armoured;装甲师 ;;;;;;;;;;X
+binary_cavalry;骑兵师 ;;;;;;;;;;X
+generic_infantry;步兵师 ;;;;;;;;;;X
+generic_milita;民兵师 ;;;;;;;;;;X
+generic_armoured;装甲师 ;;;;;;;;;;X
+generic_cavalry;骑兵师 ;;;;;;;;;;X

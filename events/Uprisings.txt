@@ -1,0 +1,228 @@
+#Prague Uprising
+province_event = {
+	id = 6701
+	title = "EVTNAME6701"
+	desc = "EVTDESC6701"
+
+	trigger = {
+		region = czechoslovakia_region
+		controller = {
+			faction = axis
+		}
+		num_of_revolts = 1
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = {
+			factor = 0.5
+			num_of_revolts = 2
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6701"
+		add_province_modifier = {
+			name = prague_revolts
+			duration = 60
+		}
+	}
+}
+
+#Texel Uprising
+province_event = {
+	id = 6702
+	title = "EVTNAME6702"
+	desc = "EVTDESC6702"
+
+	trigger = {
+		region = the_netherlands_region
+		controller = {
+			faction = axis
+		}
+		num_of_revolts = 1
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = {
+			factor = 0.5
+			num_of_revolts = 2
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6701"
+		add_province_modifier = {
+			name = texel_revolts
+			duration = 60
+		}
+	}
+}
+
+#Four Days of Napoli
+province_event = {
+	id = 6703
+	title = "EVTNAME6703"
+	desc = "EVTDESC6703"
+
+	trigger = {
+		OR = {
+			region = northern_italy_region
+			TAG = ITA
+		}
+		num_of_revolts = 1
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = {
+			factor = 0.5
+			num_of_revolts = 2
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6701"
+		add_province_modifier = {
+			name = napoli_revolts
+			duration = 60
+		}
+	}
+}
+
+#Warszawa Ghetto Uprising
+province_event = {
+	id = 6704
+	title = "EVTNAME6704"
+	desc = "EVTDESC6704"
+
+	trigger = {
+		OR = {
+			region = poland_region
+			region = western_poland_region
+			region = eastern_poland
+		}
+		num_of_revolts = 2
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = {
+			factor = 0.5
+			num_of_revolts = 2
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6701"
+		set_province_flag = warszawa_ghetto_uprising
+		add_province_modifier = {
+			name = warszawaghetto_revolts
+			duration = 60
+		}
+	}
+}
+
+#Warszawa Uprising
+province_event = {
+	id = 6705
+	title = "EVTNAME6705"
+	desc = "EVTDESC6705"
+
+	trigger = {
+		has_province_flag = warszawa_ghetto_uprising
+		OR = {
+			region = poland_region
+			region = western_poland_region
+			region = eastern_poland
+		}
+		num_of_revolts = 3
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = {
+			factor = 0.5
+			num_of_revolts = 2
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6701"
+		clr_province_flag = warszawa_ghetto_uprising
+		add_province_modifier = {
+			name = warszawa_revolts
+			duration = 60
+		}
+	}
+}
+
+#June Uprising
+province_event = {
+	id = 6706
+	title = "EVTNAME6706"
+	desc = "EVTDESC6706"
+
+	trigger = {
+		OR = {
+			region = LIT_1395
+			region = LIT_1577
+			region = LIT_1531
+			region = LIT_1355
+			region = LIT_1308
+		}
+		num_of_revolts = 1
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = {
+			factor = 0.5
+			num_of_revolts = 2
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6701"
+		add_province_modifier = {
+			name = june_revolts
+			duration = 60
+		}
+	}
+}
+
+#Yugoslavian Uproar
+province_event = {
+	id = 6707
+	title = "EVTNAME6707"
+	desc = "EVTDESC6707"
+
+	trigger = {
+		region = yugoslavia_region
+		num_of_revolts = 1
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = {
+			factor = 0.5
+			num_of_revolts = 2
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA6701"
+		add_province_modifier = {
+			name = yugoslavia_revolts
+			duration = 60
+		}
+	}
+}

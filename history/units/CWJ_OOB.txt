@@ -1,0 +1,49 @@
+theatre = {
+	name = "民族军"
+	location = 8887
+	regiment = { type = hq_brigade name = "民族军司令部" historical_model = 1 }
+		regiment = { type = artillery_brigade name = "直属炮兵团" experience = 15 builder = SOV historical_model = 1 }
+	division= {
+		name = "第1旅"
+		location = 8909
+		regiment = { type = militia_brigade experience = 15 strength = 20 builder = SOV historical_model = 1 }
+		regiment = { type = militia_brigade experience = 15 strength = 20 builder = SOV historical_model = 1 }
+	}
+	division= {
+		name = "第2旅"
+		location = 8978
+		regiment = { type = militia_brigade experience = 15 strength = 20 builder = SOV historical_model = 1 }
+		regiment = { type = militia_brigade experience = 15 strength = 20 builder = SOV historical_model = 1 }
+	}
+	division= {
+		name = "第3旅"
+		location = 8953
+		regiment = { type = militia_brigade experience = 15 strength = 20 builder = SOV historical_model = 1 }
+		regiment = { type = militia_brigade experience = 15 strength = 20 builder = SOV historical_model = 1 }
+	}
+	division= {
+		name = "第4旅"
+		location = 8954
+		regiment = { type = militia_brigade experience = 15 strength = 20 builder = SOV historical_model = 1 }
+		regiment = { type = militia_brigade experience = 15 strength = 20 builder = SOV historical_model = 1 }
+	}
+	division= {
+		name = "第5旅"
+		location = 8887
+		regiment = { type = militia_brigade experience = 15 strength = 20 builder = SOV historical_model = 1 }
+		regiment = { type = militia_brigade experience = 15 strength = 20 builder = SOV historical_model = 1 }
+	}
+	division= {
+		name = "第6旅"
+		location = 8954
+		regiment = { type = militia_brigade experience = 15 strength = 20 builder = SOV historical_model = 1 }
+		regiment = { type = militia_brigade experience = 15 strength = 20 builder = SOV historical_model = 1 }
+	}
+		division= {
+				name = "骑兵集团"
+				location = 8953
+				regiment = { type = cavalry_brigade experience = 30 builder = SOV  historical_model = 0 }
+				regiment = { type = cavalry_brigade experience = 30 builder = SOV  historical_model = 0 }
+			 regiment = { type = cavalry_brigade  experience = 30 builder = SOV  historical_model = 0 }
+				regiment = { type = cavalry_brigade experience = 30 builder = SOV  historical_model = 0 }
+}

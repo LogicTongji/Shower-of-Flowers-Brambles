@@ -1,0 +1,130 @@
+#北方面军
+diplomatic_decisions = {
+	    Sov_northern_army = {
+		potential = {
+			tag = SOV
+			not = { has_country_flag = Sov_northern_army }
+			 has_global_flag = Xaction_East_eroup_gizui2
+			 			SOV = { controls = 782
+			 			        controls = 1409 }
+		}
+		allow = {
+			 war_with = GER
+		}
+		effect = {
+			set_country_flag = Sov_northern_army
+			load_oob = "SOV_the_army_of_notthern.txt"
+		    }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#西方面军
+	Sov_Eastern_army = {
+		potential = {
+			tag = SOV
+			has_global_flag = Xaction_East_eroup_gizui2 
+			exists = GER
+		}
+		allow = {
+		not = { year = 1942 }	
+        not = { has_country_flag = Sov_Western_army }
+        	SOV = { controls = 782
+			 			      controls = 1409 }
+		}
+		effect = {
+			set_country_flag = Sov_Western_army
+			load_oob = "SOV_the_army_of_Western.txt"
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#预备方面军
+	SOV_the _amry_isprapering_of_waring = {
+		potential = {
+			tag = SOV
+			not = { has_global_flag = SOV_the _amry_isprapering_of_waring }  
+			war_with = GER
+		}
+		allow = {
+       has_global_flag = Xaction_East_eroup_gizui2 
+      SOV = { controls = 782
+			 			      controls = 1409 }
+			 		date = 1941.8.1
+			 		not = { year = 1942 }	
+		}
+		effect = {
+			set_global_flag = SOV_the _amry_isprapering_of_waring
+						load_oob = "SOV_the _amry_isprapering_of_waring.txt"	
+    }  	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#乌克兰方面军
+	SOV_the_army_of_Unklin = {
+		potential = {
+			tag = SOV
+			not = { has_global_flag = SOV_the_army_of_Unklin }  
+      war_with = GER
+       GER = { controls = 2223
+        	controls = 3309
+        	controls = 2843
+			 		controls = 1819 }
+		}
+		allow = {
+       has_global_flag = Xaction_East_eroup_gizui2 
+       year = 1942
+       not = { year = 1944 }	
+		}
+		effect = {
+			set_global_flag = SOV_the_army_of_Unklin
+			load_oob =  "SOV_the_army_of_Unklin.txt"   
+    }  	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#白俄罗斯方面军
+	SOV_the_army_of_center = {
+		potential = {
+			tag = SOV
+			not = { has_global_flag = SOV_the_army_of_center }  
+			has_global_flag = against_germany
+			war_with = GER
+			GER = { controls = 2857
+        	controls = 2170
+        	controls = 1409 }
+		}
+		allow = {
+       has_global_flag = Xaction_East_eroup_gizui2 
+		}
+		effect = {
+			set_global_flag = SOV_the_army_of_center
+load_oob = "SOV_the_army_of_center.txt"
+    }  	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#外高加索方面军
+	SOV_the_army_in_goikasouse = {
+	potential = {
+			tag = SOV
+			not = { has_global_flag = SOV_the_army_in_goikasouse }  
+			war_with = GER
+			date = 1941.8.13
+		}
+		allow = {
+       has_global_flag = SOV_the_army_in_goikasouse 
+		}
+		effect = {
+			set_global_flag = SOV_the_army_in_goikasouse
+load_oob = "SOV_the_army_in_goikasouse.txt"
+	}
+	ai_will_do = {
+			factor = 1
+		}
+}
+}

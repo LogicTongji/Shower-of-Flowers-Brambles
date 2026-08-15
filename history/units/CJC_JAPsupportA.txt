@@ -1,0 +1,42 @@
+corps = {
+	name = "讨逆军"
+	location = 4979
+	regiment = { type = hq_brigade name = "讨逆军长官部" historical_model = 3 }
+        regiment = { type = artillery_brigade name = "重炮旅" historical_model = 1 }
+	division = {
+		name = "讨逆军第1支队"
+		location = 4979
+		regiment = { type = infantry_brigade historical_model = 3 }
+		regiment = { type = infantry_brigade historical_model = 3 }
+		regiment = { type = militia_brigade historical_model = 3 }
+		regiment = { type = militia_brigade historical_model = 3 }
+	}
+	division = {
+		name = "讨逆军第2支队"
+		location = 5018
+		regiment = { type = infantry_brigade historical_model = 3 }
+		regiment = { type = infantry_brigade historical_model = 3 }
+		regiment = { type = militia_brigade historical_model = 3 }
+	}
+	division = {
+		name = "讨逆军第3支队"
+		location = 4979
+		regiment = { type = infantry_brigade historical_model = 3 }
+		regiment = { type = infantry_brigade historical_model = 3 }
+		regiment = { type = militia_brigade historical_model = 3 }
+	}
+	division = {
+		name = "讨逆军第4支队"
+		location = 5086
+		regiment = { type = infantry_brigade historical_model = 3 }
+		regiment = { type = infantry_brigade historical_model = 3 }
+		regiment = { type = infantry_brigade historical_model = 3 }
+	}
+	division = {
+		name = "讨逆军第5支队"
+		location = 5085
+		regiment = { type = militia_brigade historical_model = 3 }
+		regiment = { type = infantry_brigade historical_model = 3 }
+		regiment = { type = militia_brigade historical_model = 3 }
+	}
+}

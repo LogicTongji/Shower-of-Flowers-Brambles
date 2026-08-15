@@ -1,0 +1,208 @@
+armygroup = {
+		name = "第七战区"
+		location = 5435
+		regiment = { type = hq_brigade name = "第七战区长官部" historical_model = 0 }
+army = {
+	name = "川军第二十二集团军"     
+       leader = 4000097   
+	location = 7507
+        expeditionary_owner = CSC
+	regiment = { type = hq_brigade name = "川军第二十二集团军总指部" historical_model = 0 }
+corps = {
+	name = "第四十一军"
+            leader = 4000096 
+	location = 7507
+        expeditionary_owner = CSC
+	regiment = { type = hq_brigade name = "川军第四十一军总指部" historical_model = 0 }
+	division= {
+		name = "第一二二师"
+                  leader = 50322
+		location = 7507
+                expeditionary_owner = CSC
+		regiment = { type = militia_brigade name = "三六四旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "三六六旅" historical_model = 0 }
+	}
+	division= {
+		name = "第一二三师"
+                 leader = 
+		location = 7507
+                expeditionary_owner = CSC
+		regiment = { type = militia_brigade name = "三六七旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "三六九旅" historical_model = 0 }
+	}
+	division= {
+		name = "第一二四师"
+                       leader = 
+		location = 7507
+                expeditionary_owner = CSC
+		regiment = { type = militia_brigade name = "三七零旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "三七二旅" historical_model = 0 }
+	}
+}
+corps = {
+	name = "第四十五军"
+	location = 7507
+        expeditionary_owner = CSC
+	regiment = { type = hq_brigade name = "川军第四十五军总指部" historical_model = 0 }
+	division= {
+		name = "第一二五师"
+                      leader = 4000087
+		location = 7507
+                expeditionary_owner = CSC
+		regiment = { type = militia_brigade name = "三七三旅·" historical_model = 0 }
+		regiment = { type = militia_brigade name = "三七四团" historical_model = 0 }
+		regiment = { type = militia_brigade name = "三七五旅" historical_model = 0 }
+	}
+        division= {
+		name = "第一二六师"
+                   leader = 4000086
+		location = 7507
+                expeditionary_owner = CSC
+		regiment = { type = militia_brigade name = "三七六旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "三七八旅" historical_model = 0 }
+	}
+	division= {
+		name = "第一二七师"
+                    leader = 4000103
+		location = 7507
+                expeditionary_owner = CSC
+		regiment = { type = militia_brigade name = "三七九旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "三八一旅" historical_model = 0 }
+	}
+        	division= {
+		name = "独立第17旅"
+		location = 7507
+                expeditionary_owner = CSC
+		regiment = { type = militia_brigade historical_model = 0 }
+	}
+        	division= {
+		name = "独立第18旅"
+		location = 7507
+                expeditionary_owner = CSC
+		regiment = { type = militia_brigade historical_model = 0 }
+	}
+}
+corps = {
+	name = "第四十七军"
+        leader = 4000100 
+	location = 7507
+        expeditionary_owner = CSC
+	regiment = { type = hq_brigade name = "川军第四十七军总指部" historical_model = 0 }
+	division= {
+		name = "第一零四师"
+                  leader = 4000080
+		location = 7507
+                expeditionary_owner = CSC
+		regiment = { type = militia_brigade name = "三零一旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "三一二旅" historical_model = 0 }
+	}
+        division= {
+		name = "第一七八师"
+		location = 7507
+                expeditionary_owner = CSC
+		regiment = { type = militia_brigade name = "一零六一团兼一零六二团" historical_model = 0 }
+		regiment = { type = militia_brigade name = "一零六三团" historical_model = 0 }
+	}
+}
+}
+army = {
+	name = "川军第二十三集团军"
+        leader = 4000095
+	location = 7507
+        expeditionary_owner = CSC
+	regiment = { type = hq_brigade name = "川军第二十三集团军总指部" historical_model = 0 }
+corps = {
+	name = "第二十一军"
+          leader = 4000076
+	location = 7507
+        expeditionary_owner = CSC
+	regiment = { type = hq_brigade name = "川军第二十一军总指部" historical_model = 0 }
+	division= {
+		name = "第一四五师"
+                 leader = 4000082
+		location = 7507
+                expeditionary_owner = CSC
+		regiment = { type = militia_brigade name = "第一旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "第二旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "第三旅" historical_model = 0 }
+	}
+	division= {
+		name = "第一四六师"
+                leader = 4000084
+		location = 7507
+                expeditionary_owner = CSC
+		regiment = { type = militia_brigade name = "438旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "439旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "440旅" historical_model = 0 }
+	}
+	division= {
+		name = "第一六二师"
+		location = 7507
+                expeditionary_owner = CSC
+		regiment = { type = militia_brigade name = "第一旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "第二旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "第三旅" historical_model = 0 }
+	}
+}
+corps = {
+	name = "第二十三军"
+             leader = 4000077
+	location = 7507
+        expeditionary_owner = CSC
+	regiment = { type = hq_brigade name = "川军第二十三军总指部" historical_model = 0 }
+	division= {
+		name = "第一四四师"
+		location = 7507
+                expeditionary_owner = CSC
+		regiment = { type = militia_brigade name = "第一旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "第二旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "第三旅" historical_model = 0 }
+	}
+	division= {
+		name = "第一四八师"
+		location = 7507
+                expeditionary_owner = CSC
+		regiment = { type = militia_brigade name = "十三旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "十四旅" historical_model = 0 }
+	}
+	division= {
+		name = "边防第二路"
+		location = 7507
+                expeditionary_owner = CSC
+		regiment = { type = militia_brigade historical_model = 0 }
+	}
+        }
+}
+
+corps = {
+	name = "第二十军"
+             leader = 50343
+	location = 7507
+        expeditionary_owner = CSC
+	regiment = { type = hq_brigade name = "川军第二十三军总指部" historical_model = 0 }
+	division= {
+		name = "第一三三师"
+                 leader = 4000093
+		location = 7507
+                expeditionary_owner = CSC
+		regiment = { type = militia_brigade name = "第一旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "第二旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "第三旅" historical_model = 0 }
+	}
+	division= {
+		name = "第一三四师"
+		location = 7507
+                expeditionary_owner = CSC
+		regiment = { type = militia_brigade name = "十三旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "十四旅" historical_model = 0 }
+	}
+	division= {
+		name = "第一三五师"
+		location = 7507
+                expeditionary_owner = CSC
+		expeditionary_owner = CSC
+		regiment = { type = militia_brigade name = "十三旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "十四旅" historical_model = 0 }
+	}
+}
+}

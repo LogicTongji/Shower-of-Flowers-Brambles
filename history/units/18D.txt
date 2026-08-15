@@ -1,0 +1,42 @@
+army = {
+			name = "第4路军"
+			location = 7520
+			regiment = { type = hq_brigade name = "第4路军司令部" historical_model = 0 }
+division= {
+			name = "第15师"
+			location = 7520
+			regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
+			regiment = { type = infantry_brigade experience = 10 historical_model = 0 }
+		}
+division= {
+					name = "第16师"
+					location = 7520
+					regiment = { type = infantry_brigade name = "第46旅" historical_model = 0 }
+					regiment = { type = militia_brigade name = "第47旅" historical_model = 0 }
+				}
+division= {
+					name = "第19师"
+					location = 7520
+					regiment = { type = infantry_brigade name = "第55旅" historical_model = 0 }
+					regiment = { type = militia_brigade name = "第57旅" historical_model = 0 }
+				}
+division= {
+					name = "第62师"
+					location = 7519
+					regiment = { type = infantry_brigade name = "第185旅" historical_model = 0 }
+					regiment = { type = militia_brigade name = "第186旅" historical_model = 0 }
+				}
+division= {
+			name = "第63师"
+			location = 14177
+			regiment = { type = infantry_brigade name = "第187旅" strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade name = "第189旅" strength = 20 historical_model = 0 }
+		}
+division= {
+			name = "湖南保安团"
+			location = 7520
+			regiment = { type = militia_brigade strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade strength = 20 historical_model = 0 }
+			regiment = { type = militia_brigade strength = 20 historical_model = 0 }
+		}
+}

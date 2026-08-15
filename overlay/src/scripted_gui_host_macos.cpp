@@ -5,14 +5,14 @@
 #include <string_view>
 #include <vector>
 
-#include "gui_builtin_plugins_macos.h"
+#include "gui_builtin_plugins.h"
 #include "gui_data_bridge.h"
 #include "gui_file_data_provider.h"
 #include "gui_host_macos.h"
 #include "gui_memory_data_bridge.h"
 #include "gui_lua_bridge.h"
-#include "gui_plugin_manifest_macos.h"
-#include "gui_plugin_registry_macos.h"
+#include "gui_plugin_manifest.h"
+#include "gui_plugin_registry.h"
 #include "gui_sequence_data_provider.h"
 
 namespace
@@ -38,10 +38,10 @@ void PrintUsage(std::string_view executable)
         << "       " << executable << " --list-plugins\n";
 }
 
-void PrintPlugins(const GuiMacPluginRegistry& registry)
+void PrintPlugins(const GuiPluginRegistry& registry)
 {
     std::cout << "Available scripted GUI plugins:\n";
-    for (const GuiMacPluginDescriptor& descriptor : registry.Descriptors())
+    for (const GuiPluginDescriptor& descriptor : registry.Descriptors())
     {
         std::cout
             << "  " << descriptor.id
@@ -191,8 +191,8 @@ int main(int argc, char** argv)
         return 1;
     }
 
-    GuiMacPluginRegistry registry;
-    if (!RegisterBuiltinGuiMacPluginFactories(registry))
+    GuiPluginRegistry registry;
+    if (!RegisterBuiltinGuiPluginFactories(registry))
     {
         std::cerr << "Failed to register built-in GUI plugins\n";
         return 1;
@@ -209,7 +209,7 @@ int main(int argc, char** argv)
 
     std::size_t loadedCount = 0;
     std::string manifestError;
-    if (!LoadGuiMacPluginManifestDirectory(
+    if (!LoadGuiPluginManifestDirectory(
             manifestRoot,
             registry,
             loadedCount,
@@ -237,7 +237,7 @@ int main(int argc, char** argv)
     std::vector<std::string> selectedPluginIds = options.pluginIds;
     if (selectedPluginIds.empty())
     {
-        for (const GuiMacPluginDescriptor& descriptor
+        for (const GuiPluginDescriptor& descriptor
             : registry.Descriptors())
         {
             if (descriptor.startup)
@@ -252,7 +252,7 @@ int main(int argc, char** argv)
         return 1;
     }
 
-    GuiMacPluginCreateContext createContext;
+    GuiPluginCreateContext createContext;
     createContext.root = options.root;
     createContext.dataProviders = &dataProviders;
     if (!options.dataPath.empty())
@@ -260,14 +260,14 @@ int main(int argc, char** argv)
         createContext.options["data"] = options.dataPath.string();
     }
 
-    std::vector<std::unique_ptr<IGuiMacPlugin>> plugins;
-    std::vector<GuiMacPluginLaunch> launches;
+    std::vector<std::unique_ptr<IGuiPlugin>> plugins;
+    std::vector<GuiPluginLaunch> launches;
     plugins.reserve(selectedPluginIds.size());
     launches.reserve(selectedPluginIds.size());
     for (const std::string& pluginId : selectedPluginIds)
     {
-        const GuiMacPluginDescriptor* descriptor = registry.Find(pluginId);
-        std::unique_ptr<IGuiMacPlugin> plugin = registry.Create(
+        const GuiPluginDescriptor* descriptor = registry.Find(pluginId);
+        std::unique_ptr<IGuiPlugin> plugin = registry.Create(
             pluginId,
             createContext
         );
@@ -280,7 +280,7 @@ int main(int argc, char** argv)
             return 1;
         }
 
-        IGuiMacPlugin* pluginPointer = plugin.get();
+        IGuiPlugin* pluginPointer = plugin.get();
         plugins.push_back(std::move(plugin));
         launches.push_back({
             descriptor->id,

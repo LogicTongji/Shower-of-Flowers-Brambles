@@ -1,0 +1,30 @@
+owner = EST
+controller = EST
+add_core = EST
+
+
+infra = 8
+naval_base = 2
+1940.5.10 = {
+	owner = SOV
+	controller = SOV
+
+	add_core = SOV
+}
+
+1941.6.22 = {
+	owner = SOV
+	controller = SOV
+
+	add_core = SOV
+}
+1941.12.7 = {
+	controller = GER
+
+}
+1944.6.20 = {
+	land_fort = 2
+}
+1945.6.7 = {
+	controller = SOV
+}

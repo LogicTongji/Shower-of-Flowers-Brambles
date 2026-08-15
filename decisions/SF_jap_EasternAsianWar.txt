@@ -1,0 +1,127 @@
+######################
+#   日本扩张议决组   #
+######################
+diplomatic_decisions = {
+   JAP_invasion_indochina = {
+	   major = yes
+		potential = {
+			tag = JAP
+			war_with = CHI
+			not = { has_global_flag = JAP_invasion_indochina } 
+			has_country_flag = jap_seizes_coast
+		}
+		allow = {
+			FRA = { has_country_flag = fr_signs_peace }
+                               
+		}
+		effect = {
+			set_global_flag = JAP_invasion_indochina
+						   country_event = 390095
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	   JAP_southing = {
+	   major = yes
+		potential = {
+			tag = JAP
+                        exists = CHI
+                        exists = USA
+                        exists = ENG
+			war_with = CHI
+			has_global_flag = JAPsouthing_army
+			not = { has_global_flag = JAPsouthing } 
+		}
+		allow = {
+			JAP = { controls = 5916 }
+			has_country_flag = jap_seizes_coast
+                               
+		}
+		effect = {
+			set_global_flag = JAPsouthing
+                        JAP = { war = { target = ENG } 
+                                war = { target = USA } 
+								}
+								5315 = {
+						   province_event = 190028
+						   }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	         JAP_SA = {
+		potential = {
+			tag = JAP
+                        exists = CHI
+                        exists = USA
+                        exists = ENG                 
+		        has_global_flag = JAP_invasion_indochina  
+		        not = { has_global_flag = JAPsouthing_army }
+		}
+		allow = {
+			JAP = { controls = 5916
+			        controls = 5965 
+			        controls = 5994 }
+		}
+		effect = {
+			country_event = 390090
+			set_global_flag = JAPsouthing_army
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+     Japan_north_into = {
+     major = yes
+		potential = {
+			tag = JAP
+                        exists = CHI
+                        exists = SOV
+			war_with = CHI
+                        GER = { war_with = SOV }
+			not = { has_global_flag = Japan_north_into } 
+                        not = { war_with = SOV }
+			not = { year = 1942 } 
+			ai = no
+		}
+		allow = {
+			JAP = { crude_oil = 25000 }
+			has_country_flag = jap_seizes_coast
+			not = { has_global_flag = JAPsouthing }
+		}
+		effect = {
+			set_global_flag =  Japan_north_into
+			country_event = 390091
+                        JAP = { war = { target = SOV } }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#一号作战
+	  JAP_first_war_project = {
+	   major = yes
+		potential = {
+			tag = JAP
+                        exists = CHI
+                        exists = USA
+                        exists = ENG
+			war_with = CHI
+			not = { has_global_flag = JAP_first_war_project } 
+		}
+		allow = {
+			JAP = { controls = 5916 }
+			has_country_flag = jap_seizes_coast
+                               
+		}
+		effect = {
+			set_global_flag = JAP_first_war_project
+			country_event = 390096
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

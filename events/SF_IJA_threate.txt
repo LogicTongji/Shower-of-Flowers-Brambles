@@ -1,0 +1,145 @@
+######################
+#   日本集群事件组   #
+######################
+country_event = {
+        is_triggered_only = yes
+	id = 300110
+	title = "HBT"
+	desc = "HBTDECS"
+	picture = "JAP_flag"
+	option = {
+		name = "HBTOP"
+		load_oob = "JAP_HBA.txt"
+		JAP = {
+			remove_brigade = "工兵第16联队"
+			remove_brigade = "野炮兵第22联队"
+			remove_brigade = "骑兵第20联队"
+			remove_brigade = "步兵第92联队"
+			remove_brigade = "步兵第20联队"
+			remove_brigade = "步兵第33联队"
+			remove_brigade = "工兵第14联队"
+                        remove_brigade = "野炮兵第20联队"
+			remove_brigade = "骑兵第18联队"
+			remove_brigade = "步兵第2联队"
+			remove_brigade = "步兵第59联队"
+			remove_brigade = "步兵第15联队"
+			remove_brigade = "步兵第50联队"
+			remove_brigade = "野炮兵第26联队"
+			remove_brigade = "骑兵第28联队"
+			remove_brigade = "步兵第77联队"
+                        remove_brigade = "步兵第78联队"
+			remove_brigade = "步兵第79联队"
+			remove_brigade = "步兵第80联队"
+			remove_brigade = "工兵第5联队"
+			remove_brigade = "野炮兵第5联队"
+			remove_brigade = "骑兵第5联队"
+			remove_brigade = "步兵第11联队"
+                        remove_brigade = "步兵第41联队"
+			remove_brigade = "步兵第21联队"
+			remove_brigade = "步兵第42联队"
+			remove_brigade = "步兵第39联队"
+			remove_brigade = "步兵第40联队"
+			remove_brigade = "步兵第10联队"
+                        remove_brigade = "步兵第63联队"
+			remove_brigade = "山炮兵第10联队"
+			remove_brigade = "骑兵第10联队"
+			remove_brigade = "工兵第10联队"
+	                  }
+                }
+}
+country_event = {
+        is_triggered_only = yes
+	id = 300111
+	title = "HZT"
+	desc = "HZTDECS"
+	picture = "JAP_flag"
+	option = {
+		name = "HZTOP"
+		load_oob = "JAP_HZA.txt"
+		JAP = {
+			remove_brigade = "工兵第3联队"
+			remove_brigade = "独立山炮第1联队"
+			remove_brigade = "野炮兵第三联队"
+			remove_brigade = "步兵第58联队"
+			remove_brigade = "步兵第65联队"
+			remove_brigade = "步兵第104联队"
+			remove_brigade = "高射炮第1联队"
+                        remove_brigade = "野炮兵第20联队"
+			remove_brigade = "步兵第6联队"
+			remove_brigade = "步兵第68联队"
+			remove_brigade = "步兵第18联队"
+			remove_brigade = "步兵第34联队"
+			remove_brigade = "骑兵第3联队"
+			remove_brigade = "骑兵第25联队"
+			remove_brigade = "骑兵第26联队"
+			remove_brigade = "野战重炮兵第2联队"
+                        remove_brigade = "野战重炮兵第3联队"
+			remove_brigade = "山炮兵第9联队"
+			remove_brigade = "骑兵第9联队"
+			remove_brigade = "工兵第9联队"
+                        remove_brigade = "工兵第11联队"
+			remove_brigade = "山炮兵第11联队"
+			remove_brigade = "骑兵第11联队"
+			remove_brigade = "步兵第7联队"
+                        remove_brigade = "步兵第35联队"
+			remove_brigade = "步兵第19联队"
+			remove_brigade = "步兵第36联队"
+			remove_brigade = "步兵第12联队"
+			remove_brigade = "步兵第22联队"
+			remove_brigade = "步兵第43联队"
+                        remove_brigade = "步兵第44联队"
+			remove_brigade = "山炮兵第10联队"
+			remove_brigade = "骑兵第10联队"
+			remove_brigade = "工兵第10联队"
+	                  }
+                }
+}
+country_event = {
+        is_triggered_only = yes
+	id = 300112
+	title = "WRQT"
+	desc = "WRQD"
+	picture = "JAP_flag"
+	option = {
+		name = "WRQOP"
+                4834 = { infra = -3 } 
+                7312 = { infra = -3 }
+                7326 = { infra = -3 }
+                7313 = { infra = -3 }
+                7296 = { infra = -3 }
+                4833 = { infra = -3 }
+                4933 = { infra = -3 }
+                4886 = { infra = -4 }
+                4785 = { infra = -4 }
+                4934 = { infra = -3 }
+                4935 = { infra = -2 }
+                 4887 = { infra = -4 }
+                4784 = { infra = -4 }
+                CHI = { country_event = 40191 }
+                CGX = { country_event = 40191 }
+                CYN = { country_event = 40191 }
+                CSY = { country_event = 40191 }
+                CHC = { country_event = 40191 }                                         
+                }
+}
+country_event = {
+                is_triggered_only = yes
+	id = 40191
+	title = "WRQ_title"
+	desc = "WRQ_desc"
+	picture = "Event110010"
+        option = {
+		name = "WRQOP2"                        
+	}
+}
+country_event = {
+        is_triggered_only = yes
+	id = 300111
+	title = "CHER"
+	desc = "CHERDECS"
+	picture = "JAP_flag"
+	option = {
+		name = "CHEROP"
+		load_oob = "JAP_CHER.txt"
+	  }
+}

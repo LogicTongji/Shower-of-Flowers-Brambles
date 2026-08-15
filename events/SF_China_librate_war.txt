@@ -1,0 +1,436 @@
+
+country_event = {
+	id = 390022
+	fire_only_once = yes
+	title = "China_librate_war1title"
+	desc = "China_librate_war1decs"
+	picture = "China_librate_war1picture"
+	trigger = {
+		tag = USA
+		has_global_flag = China_CivilWar
+		has_global_flag = Chongqing_negotiations   
+     not = { year = 1947 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+    }
+	option = {
+		name = "China_librate_war1option1"
+	CHI = { country_event = 1000175 }
+	CHC = { country_event = 1000175 }
+		ai_chance = { factor = 100 }
+       	}
+	option = { 
+		name = "China_librate_war1option2"
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = 1000175
+		is_triggered_only = yes
+	title = "China_librate_war2title"
+	desc = "China_librate_war2decs"
+	picture = "China_librate_war2picture"
+	option = {
+		name = "China_librate_war2option1"
+ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 390020
+	major = yes
+	fire_only_once = yes
+	title = "China_librate_war3title"
+	desc = "China_librate_war3decs"
+	picture = "China_librate_war3picture"
+	trigger = {
+		tag = USA
+		has_global_flag = China_CivilWar
+		has_global_flag = CHINA_CIVIL_WAR 
+		has_global_flag = Chongqing_negotiations   
+    date = 1946.9.16
+    not = { year = 1947 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+    }
+	option = {
+		name = "China_librate_war3option1"
+		set_global_flag = banning_gun_to_China
+	relation = { who = CHI value = -150 }
+		ai_chance = { factor = 100 }
+
+	}
+}
+country_event = {
+	id = 390021
+	fire_only_once = yes
+	title = "China_librate_war4title"
+	desc = "China_librate_war4decs"
+	picture = "China_librate_war4picture"
+	trigger = {
+		tag = CHI
+		has_global_flag = China_CivilWar
+		has_global_flag = Chongqing_negotiations   
+    has_global_flag = banning_gun_to_Chin
+    not = { year = 1947 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+    }
+	option = {
+		name = "China_librate_war4option1"
+	relation = { who = USA value = -150 }
+	CHC = { country_event = 390033 }
+	dissent = 5
+		ai_chance = { factor = 100 }
+
+	}
+}
+country_event = {
+	id = 390033
+		is_triggered_only = yes
+			major = yes
+	title = "China_librate_war4title"
+	desc = "China_librate_war4decs"
+	picture = "China_librate_war4picture"
+	option = {
+		name = "China_librate_war4option1"
+ai_chance = { factor = 100 }
+	}
+}
+#解放大西南
+country_event = {
+	id = 1000171
+	is_triggered_only = yes
+	major = yes
+	title = "Event1000171title"
+	subtitle = "Event1000171subtitle"
+	desc = "Event1000171desc"
+	picture = "Event1000171"
+	option = {
+		name = "Event1000171option"
+		ai_chance = { factor = 100 }
+		SF_china_region = { 
+		                    remove_core = CHC
+		                    remove_core = CQM
+							remove_core = CSD
+							remove_core = SIK
+							remove_core = CSX
+							remove_core = CNM
+							remove_core = CSY
+							remove_core = CJC
+							remove_core = CRH
+							remove_core = MAN
+							remove_core = CSC
+							remove_core = CDB
+							remove_core = CGD
+							remove_core = WJW
+							remove_core = MEN
+							}
+		SF_china_region = { add_core = PRC }
+		taiwan_region = { add_core = PRC }
+		CHI = { SF_china_region = { limit = { controlled_by = CHI } secede_province = PRC change_controller = CHI } }
+		
+	}
+}
+#进军西藏
+country_event = {
+	id = 1000172
+	is_triggered_only = yes
+	major = yes
+	title = "Event1000172title"
+	subtitle = "Event1000172subtitle"
+	desc = "Event1000172desc"
+	picture = "Event1000172"
+	option = {
+		name = "Event1000172option"
+		PRC = { war = { target = TIB } }
+		}
+}
+#西藏和平解放
+country_event = {
+	id = 1000174
+	major = yes
+	is_triggered_only = yes
+	title = "Event1000174title"
+	subtitle = "Event1000174subtitle"
+	desc = "Event1000174desc"
+	picture = "Event1000174"
+	option = {
+		name = "Event1000174option"
+		PRC = {
+		utang_region = { any_owned = { limit = { controlled_by = PRC } } secede_province = CTB change_controller = CTB }
+		xikang_region = { any_owned = { limit = { controlled_by = PRC } } secede_province = PRC Change_controller = PRC }
+		utang_region = { any_owned = { limit = { controlled_by = PRC } } secede_province = CTB change_controller = CTB }
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+#解放海南
+country_event = {
+	id = 1000173
+	fire_only_once = yes
+	title = "Event1000173title"
+	subtitle = "Event1000173subtitle"
+	desc = "Event1000173desc"
+	picture = "Event1000173"
+	trigger = {
+		tag = PRC
+		PRC = {
+				controls = 4932
+				controls = 5984 
+				controls = 5994 
+				controls = 5975 
+				controls = 5985 
+				controls = 5965 
+				controls = 5976 
+				controls = 14184
+			}
+		has_country_flag = Uaction_Hainan
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "Event1000173option"
+		PRC = { end_war = CHI }
+		PRC = { 
+		set_country_flag = China_mainland_libration
+		set_variable = { which = "PrepareLibrateTaiwan" value = 1 } 
+		} 
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000176
+		is_triggered_only = yes
+	title = "China_librate_war5title"
+	subtitle = "China_librate_war5subtitle"
+	desc = "China_librate_war5decs"
+	picture = "China_librate_war5picture"
+	option = {
+		name = "China_librate_war5option1"
+ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000177
+		is_triggered_only = yes
+	title = "China_librate_war6title"
+	desc = "China_librate_war6decs"
+	picture = "China_librate_war6picture"
+	option = {
+		name = "China_librate_war6option1"
+ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000178
+		is_triggered_only = yes
+	title = "China_librate_war7title"
+	desc = "China_librate_war7decs"
+	picture = "China_librate_war7picture"
+	option = {
+		name = "China_librate_war7option1"
+ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000179
+		is_triggered_only = yes
+	title = "China_librate_war8title"
+	desc = "China_librate_war8decs"
+	picture = "China_librate_war7picture"
+	option = {
+		name = "China_librate_war8option1"
+ai_chance = { factor = 100 }
+        country_event = 1000178 
+	}
+}
+country_event = {
+	id = 1000180
+		is_triggered_only = yes
+	title = "China_librate_war9title"
+	desc = "China_librate_war9decs"
+	picture = "China_librate_war8picture"
+	option = {
+		name = "China_librate_war9option1"
+ai_chance = { factor = 100 }
+	}
+}
+#解放台湾1
+country_event = {
+	id = 1000181
+	fire_only_once = yes
+	title = "China_librate_war10title"
+	desc = "China_librate_war10decs"
+	picture = "China_librate_war10picture"
+	trigger = {
+		tag = PRC
+		PRC = {
+				controls = 4932
+				controls = 5984 
+				controls = 5994 
+				controls = 5975 
+				controls = 5985 
+				controls = 5965 
+				controls = 5976 
+				controls = 14184
+				not = { war_with = CHI }
+			}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "China_librate_war10option1"
+		PRC = { change_variable = { which = "PrepareLibrateTaiwan" value = 1 } }
+		ai_chance = { factor = 100 }
+	}
+}
+#解放台湾2(增兵东南)
+country_event = {
+	id = 1000182
+	fire_only_once = yes
+	title = "China_librate_war11title"
+	desc = "China_librate_war11decs"
+	picture = "China_librate_war11picture"
+	trigger = {
+		tag = PRC
+		PRC = {
+					5728 = {
+						units_in_province = 10
+					}
+					5757 = {
+						units_in_province = 10
+					}
+					5746 = {
+						units_in_province = 10
+					}
+					5719 = {
+						units_in_province = 10
+					}
+			}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "China_librate_war11option1"
+		PRC = { change_variable = { which = "PrepareLibrateTaiwan" value = 2 } }
+		ai_chance = { factor = 100 }
+	}
+}
+#解放台湾3（发展海军）
+country_event = {
+	id = 1000183
+	fire_only_once = yes
+	title = "China_librate_war12title"
+	desc = "China_librate_war12decs"
+	picture = "China_librate_war12picture"
+	trigger = {
+		tag = PRC
+		total_amount_of_ships = 35
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "China_librate_war12option1"
+		PRC = { change_variable = { which = "PrepareLibrateTaiwan" value = 4 } }
+		ai_chance = { factor = 100 }
+	}
+}
+#解放台湾4（发展空军）
+country_event = {
+	id = 1000184
+	fire_only_once = yes
+	title = "China_librate_war13title"
+	desc = "China_librate_war13decs"
+	picture = "China_librate_war13picture"
+	trigger = {
+		tag = PRC
+		total_amount_of_planes = 15
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "China_librate_war13option1"
+		PRC = { change_variable = { which = "PrepareLibrateTaiwan" value = 3 } }
+		ai_chance = { factor = 100 }
+	}
+}
+#解放台湾5（调配工业）
+country_event = {
+	id = 1000185
+	fire_only_once = yes
+	title = "China_librate_war14title"
+	desc = "China_librate_war14decs"
+	picture = "China_librate_war14picture"
+	trigger = {
+		tag = PRC
+		total_ic = 300
+		supplies = 20000
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "China_librate_war14option1"
+		PRC = { change_variable = { which = "PrepareLibrateTaiwan" value = 5 } }
+		ai_chance = { factor = 100 }
+	}
+}
+#解放台湾6
+country_event = {
+	id = 1000188
+	fire_only_once = yes
+	title = "China_librate_war17title"
+	desc = "China_librate_war17decs"
+	picture = "China_librate_war17picture"
+	trigger = {
+		tag = PRC
+		PRC = { 
+            check_variable = {
+						which = PrepareLibrateTaiwan
+						value = 15
+					}
+              }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "China_librate_war17option1"
+		set_country_flag = Uaction_Taiwan_prepare
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000186
+		is_triggered_only = yes
+	title = "China_librate_war15title"
+	subtitle = "China_librate_war15subtitle"
+	desc = "China_librate_war15decs"
+	picture = "China_librate_war15picture"
+	option = {
+		name = "China_librate_war15option1"
+		country_event = 1000187
+ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000187
+	major = yes
+	is_triggered_only = yes
+	title = "China_librate_war16title"
+	subtitle = "China_librate_war16subtitle"
+	desc = "China_librate_war16decs"
+	picture = "China_librate_war16picture"
+	option = {
+		name = "China_librate_war16option1"
+ai_chance = { factor = 100 }
+	}
+}

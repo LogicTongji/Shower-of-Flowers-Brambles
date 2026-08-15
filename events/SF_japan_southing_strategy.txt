@@ -1,0 +1,94 @@
+######################
+#   日本扩张事件组   #
+######################
+#成立南方军
+country_event = {
+          id = 390090
+          is_triggered_only = yes
+          title = "JAP_Event_title300"
+          desc = "JAP_Event_decs300"
+          picture = "JAP_Flag"
+          option = {
+           name = "JAP_Event_decs300option"
+               add_country_modifier = {
+			name = "Event300_modifier"
+			duration = 365
+          }
+              national_unity = 5
+              load_oob = "JAP_SA.txt"
+         }
+} 
+#攻陷仰光
+country_event = {
+	id = 390092
+	major = yes
+fire_only_once = yes
+	title = "JAP_Event_title299"
+	desc = "JAP_Event_decs299"
+	picture = "JAP_Flag"
+	trigger = {
+		tag = JAP
+                war_with = ENG 
+                JAP = { controls = 6070 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "JAP_Event_decs299option"
+		ENG = { country_event= 390094 }
+                national_unity = 5
+	}
+}  
+#攻陷东枝
+country_event = {
+	id = 390093
+	major = yes
+fire_only_once = yes
+	title = "JAP_Event_title298"
+	desc = "JAP_Event_decs298"
+	picture = "JAP_Flag"
+	trigger = {
+		tag = JAP
+                war_with = ENG 
+                JAP = { controls = 9640 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "JAP_Event_decs298option"
+                national_unity = 5
+	}
+}   
+#进驻印支
+country_event = {
+	id = 390095
+	major = yes
+    is_triggered_only = yes
+	title = "JAP_Event_title390095"
+	desc = "JAP_Event_decs390095"
+	picture = "JAP_Flag"
+	option = {
+		name = "JAP_Event_decs390095option"
+   FRA = { laos_region = { any_owned = { limit = { controlled_by = FRA } } secede_province = JAP  change_controller = JAP }
+   FRA = { cambodia_region = { any_owned = { limit = { controlled_by = FRA } } secede_province = JAP  change_controller = JAP }
+   FRA = { tonkin_region = { any_owned = { limit = { controlled_by = FRA } } secede_province = JAP  change_controller = JAP }
+   FRA = { annam_region = { any_owned = { limit = { controlled_by = FRA } } secede_province = JAP  change_controller = JAP }
+   FRA = { cochinchina_region = { any_owned = { limit = { controlled_by = FRA } } secede_province = JAP change_controller = JAP }
+   JAP = {
+any_owned = { limit = { province_id = 7643 } secede_province = SIA } 
+any_owned = { limit = { province_id = 7668 } secede_province = SIA }
+any_owned = { limit = { province_id = 7651 } secede_province = SIA }
+any_owned = { limit = { province_id = 7678 } secede_province = SIA }
+any_owned = { limit = { province_id = 7709 } secede_province = SIA }
+any_owned = { limit = { province_id = 6178 } secede_province = SIA }
+any_owned = { limit = { province_id = 6186 } secede_province = SIA }
+any_owned = { limit = { province_id = 7714 } secede_province = SIA }
+any_owned = { limit = { province_id = 7718 } secede_province = SIA }
+any_owned = { limit = { province_id = 7712 } secede_province = SIA }
+any_owned = { limit = { province_id = 7715 } secede_province = SIA }
+}
+          national_unity = 5
+	}
+}  

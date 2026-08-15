@@ -1,0 +1,164 @@
+#####################
+#  抗日惨案事件组   #
+#####################
+country_event = {
+	id = 12300
+	fire_only_once = yes
+	title = "22222title"
+	desc = "22222decs"
+	picture = "massacre_in_war1"
+	trigger = {
+		tag = CHI
+		war_with = JAP
+                JAP = { controls = 7435 }
+                CHI = { controls = 7520 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "2221option2"
+                 add_country_modifier = {
+			name = "Event2221_modifier"
+			duration = 120
+		}
+                CGX = { country_event = 22223 }
+                CYN = { country_event = 22223 }
+                CSY = { country_event = 22223 }
+                CHC = { country_event = 22223 }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 12301
+	fire_only_once = yes
+		major = yes
+	title = "2224title"
+	desc = "2224decs"
+	picture = "massacre_in_war2"
+	trigger = {
+		tag = CHI
+		war_with = JAP
+		not = { has_country_flag = fall_mouth }
+		or = {
+			 JAP = { controls = 5419 }
+			CHB = { controls = 5419 } 
+	}
+}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "2224option1"
+                5432 = { infra = -3 } 
+                5417 = { infra = -3 }
+                5432 = { infra = -3 }
+                5448 = { infra = -3 }
+                5468 = { infra = -3 }
+                5433 = { infra = -3 }
+                5432 = { infra = -3 }
+                5469 = { infra = -4 }
+                5492 = { infra = -4 }
+                5537 = { infra = -3 }
+                5450 = { infra = -2 }
+                5470 = { infra = -2 }
+                5436 = { infra = -2 }
+                5420 = { infra = -1 }
+                5421 = { infra = -2 }
+                5405 = { infra = -1 }
+                7487 = { infra = -3 }
+                5362 = { infra = -3 }
+                5569 = { infra = -3 }
+                5516 = { infra = -3 } 
+                5517 = { infra = -3 }   
+                5401 = { infra = -4 }
+                CHI = { country_event = 22222 }
+                CGX = { country_event = 22222 }
+                CYN = { country_event = 22222 }
+                CSY = { country_event = 22222 }
+                CHC = { country_event = 22222 }   
+                set_country_flag = fall_mouth
+	}
+}
+country_event = {
+          id = 22222
+          is_triggered_only = yes
+          title = "2224title"
+          desc = "2224decs"
+          picture = "massacre_in_war2"
+          option = {
+          name = "2224option"       
+         }
+} 
+country_event = {
+          id = 22223
+          is_triggered_only = yes
+          title = "22223title"
+          desc = "22222decs"
+          picture = "massacre_in_war1"
+          option = {
+          name = "2221option2"        
+         }
+}
+country_event = {
+	id = 12302
+	fire_only_once = yes
+		major = yes
+	title = "2225title"
+	desc = "2225decs"
+	picture = "massacre_in_war3"
+	trigger = {
+		tag = CJD
+			 JAP = { war_with = CJC }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "2225option"
+		CJC = { load_oob = "Amry_in_jd.txt" }
+	}
+}
+country_event = {
+	id = 12303
+	fire_only_once = yes
+	title = "Event12303title"
+	subtitle = "Event12303subtitle"
+	desc = "Event12303decs"
+	picture = "massacre_in_war4"
+	trigger = {
+		tag = CHI
+		year = 1939
+		war_with = JAP
+        has_country_flag = jap_seizes_coast_chi
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "Event12303option"
+         9478 = { 
+			add_province_modifier = {
+				name = "Boom_ChongQing_modifier"
+				duration = -1
+			}
+		}
+                CGX = { country_event = 12304 }
+                CYN = { country_event = 12304 }
+                CSY = { country_event = 12304 }
+                CHC = { country_event = 12304 }
+		ai_chance = { factor = 100 }
+       	}
+}
+country_event = {
+	id = 12304
+	is_triggered_only = yes
+	title = "Event12303title"
+	subtitle = "Event12303subtitle"
+	desc = "Event12303decs"
+	picture = "massacre_in_war4"
+	option = {
+		name = "Event12303option"
+		ai_chance = { factor = 100 }
+       	}
+}

@@ -1,0 +1,103 @@
+theatre = {
+	name = "印度尼西亚战区"
+	location = 6507
+	regiment = { type = hq_brigade name = "印度尼西亚战区" historical_model = 5 }
+
+	army = {
+
+		name = "皇家荷兰东印度陆军"
+		location = 6507 # Batavia
+		leader = 7819 # ter Poorten
+		regiment = { type = hq_brigade name = "皇家荷兰东印度陆军指挥部" historical_model = 4 }
+		division= {
+			name = "第1师"
+			location = 6507 # Batavia
+			regiment = { type = infantry_brigade name = "第1步兵团" historical_model = 3 }
+			regiment = { type = infantry_brigade name = "第2步兵团"  historical_model = 3 }
+			regiment = { type = armored_car_brigade name = "摩托化步兵团" historical_model = 2 }
+		}
+		division= {
+			name = "第2师"
+			location = 6531 # Tjilatjap
+			leader = 7804 # Cox
+			regiment = { type = infantry_brigade name = "第4步兵团"  historical_model = 1 }
+			regiment = { type = infantry_brigade name = "步兵团" historical_model = 1 }
+		}
+		division= {
+			name = "第3师"
+			location = 7793 # Soerabaja
+			leader = 7812 # Ilgen
+			regiment = { type = infantry_brigade name = "第6步兵团"  historical_model = 3 }
+			regiment = { type = infantry_brigade name = "VBS旅" historical_model = 3 }
+		}	
+	}
+	division= {
+		name = "安本师"
+		location = 7780 #Ambon
+		regiment = { type = garrison_brigade name = "莫洛肯旅" experience = 60 historical_model = 3 }
+	}
+	division= {
+			name = " '南苏门答腊'集团"
+			location = 6500 # Oosthaven
+			regiment = { type = garrison_brigade name = " '南苏门答腊'集团" experience = 60 historical_model = 3 }
+	} 
+	division= {
+			name = "'巨港'集团"
+			location = 6459 # Palembang
+			regiment = { type = garrison_brigade name = "'巨港'集团" experience = 60 historical_model = 3 }
+	} 
+	division= {
+			name = "'塔拉卡恩'集团"
+			location = 6380 # Tarakan
+			regiment = { type = garrison_brigade name = "'塔拉卡恩'集团" experience = 60 historical_model = 3 }
+	} 
+	division= {
+		name = "'巴厘巴板'集团"
+		location = 6434 # Balikpapan
+		regiment = { type = garrison_brigade name = "'巴厘巴板'集团" experience = 60 historical_model = 3 }
+	}
+	navy = {
+		name = "第1潜艇大队"
+		base = 7793 # Soerabaja
+		location = 7793 # Soerabaja
+		leader = 7832 # Bussemaker
+		ship = { type = submarine name = "第1潜艇大队" historical_model = 0 }
+		ship = { type = submarine name = "第2潜艇大队" historical_model = 1 }
+		ship = { type = submarine name = "第3潜艇大队" historical_model = 2 }
+		ship = { type = submarine name = "第4潜艇大队" historical_model = 2 }
+	}
+	air = {
+		name = "军用航空队"
+		base = 6507
+		location = 6507
+		leader = 7859 # van Oyen
+		wing = { type = interceptor name = "第3战斗机大队" historical_model = 1 }
+		wing = { type = tactical_bomber name = "第1轰炸机大队" historical_model = 1 }
+	}
+	air = {
+		name = "海军航空兵"
+		base = 6507 # Batavia
+		location = 6507 # Batavia
+		wing = { type = naval_bomber name = "第2海军轰炸机大队" historical_model = 1 }
+	}
+	navy = {
+		name = "荷兰东印度中队"
+		base = 7793 # Soerabaja
+		leader = 7836 # Doorman
+		location = 7793 # Soerabaja
+		ship = { type = light_cruiser name = "HrMs 德鲁特尔" historical_model = 2 pride = yes } #commissioned on 3 October 1936. 6,545 tons (biggest ship)
+		ship = { type = light_cruiser name = "HrMs 长鼻" historical_model = 2 }
+		ship = { type = light_cruiser name = "HrMs 雅克布凡赫姆斯客" historical_model = 2 }
+		ship = { type = light_cruiser name = "HrMs 爪哇" historical_model = 1 }
+		ship = { type = light_cruiser name = "HrMs 苏门答腊" historical_model = 1 }
+		ship = { type = light_cruiser name = "苏腊巴亚号" historical_model = 0 } #commisioned on ctober 6 1910. 6,510 tons
+		ship = { type = destroyer name = "第1驱逐舰大队" historical_model = 1 }
+		ship = { type = destroyer name = "第2驱逐舰大队" historical_model = 1 }
+		ship = { type = destroyer name = "第3驱逐舰大队" historical_model = 2 }
+		ship = { type = transport_ship name = "第1运输大队" historical_model = 0 }
+		ship = { type = transport_ship name = "第2运输大队" historical_model = 0 }
+		ship = { type = transport_ship name = "第3运输大队" historical_model = 0 }
+		ship = { type = transport_ship name = "第4运输大队" historical_model = 0 }
+	}
+
+}

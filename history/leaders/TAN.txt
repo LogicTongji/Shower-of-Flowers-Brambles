@@ -1,0 +1,230 @@
+4000184 = {
+	name = "阿拉韦尔多夫"
+	country = TAN
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 1.00
+	picture = L340000
+	add_trait = logistics_wizard
+	history = {
+		1938.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 2 }
+		1947.1.1 = { rank = 0 }
+	}
+}
+4000185 = {
+	name = "博盖楚克"
+	country = TAN
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 1.00
+	picture = L340001
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1938.1.1 = { rank = 3 }
+		1943.1.1 = { rank = 0 }
+	}
+}
+4000186 = {
+	name = "科尔帕克奇"
+	country = TAN
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+	picture = L340002
+	add_trait = offensive_doctrine
+	history = {
+		1943.1.1 = { rank = 1 }
+	}
+}
+4000187 = {
+	name = "康斯坦丁诺夫"
+	country = TAN
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 1.00
+	picture = L340003
+	add_trait = panzer_leader
+	history = {
+		1930.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+	}
+}
+4000188 = {
+	name = "克赖泽尔"
+	country = TAN
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+	picture = L340004
+	add_trait = fortress_buster
+	history = {
+		1941.1.1 = { rank = 1 }
+	}
+}
+4000189 = {
+	name = "库利科夫斯基"
+	country = TAN
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+	picture = L340005
+	add_trait = commando
+	history = {
+		1940.1.1 = { rank = 1 }
+	}
+}
+4000190 = {
+	name = "纳内希维利"
+	country = TAN
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+	picture = L340006
+	add_trait = engineer
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1945.1.1 = { rank = 0 }
+	}
+}
+4000191 = {
+	name = "列平"
+	country = TAN
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+	picture = L340007
+	add_trait = defensive_doctrine
+	history = {
+		1943.1.1 = { rank = 1 }
+	}
+}
+4000192 = {
+	name = "舍尔斯秋克"
+	country = TAN
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+	picture = L340008
+	history = {
+		1938.1.1 = { rank = 1 }
+	}
+}
+4000193 = {
+	name = "肖马"
+	country = TAN
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L340009
+	add_trait = trickster
+	history = {
+		1930.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+	}
+}
+4000194 = {
+	name = "托瓦里希泰"
+	country = TAN
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L340010
+	add_trait = trickster
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1939.1.1 = { rank = 3 }
+	}
+}
+4000195 = {
+	name = "图尔伯迪耶夫"
+	country = TAN
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+	picture = L340011
+	add_trait = commando
+	history = {
+		1930.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 0 }
+	}
+}
+4000196 = {
+	name = "库利科夫斯基"
+	country = TAN
+	type = sea
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+	picture = L340012
+	history = {
+		1940.1.1 = { rank = 1 }
+	}
+}
+4000197 = {
+	name = "托瓦里希泰"
+	country = TAN
+	type = sea
+	skill = 0
+	max_skill = 1
+	loyalty = 0.00
+	picture = L340013
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+	}
+}
+4000198 = {
+	name = "格林奇克"
+	country = TAN
+	type = air
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+	picture = L340014
+	add_trait = superior_air_tactician
+	history = {
+		1937.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 0 }
+	}
+}
+4000199 = {
+	name = "鲁加林斯基"
+	country = TAN
+	type = air
+	skill = 1
+	max_skill = 2
+	loyalty = 1.00
+	picture = L340015
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 2 }
+	}
+}
+4000200 = {
+	name = "鲁任科"
+	country = TAN
+	type = air
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+	picture = L340016
+	history = {
+		1944.1.1 = { rank = 1 }
+	}
+}

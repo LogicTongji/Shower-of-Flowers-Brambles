@@ -1,0 +1,26 @@
+owner = CRH
+
+controller = CRH
+
+add_core = CHC
+add_core = CRH
+add_core = CHI
+
+
+infra = 5
+1935.1.1 = {
+	owner = MAN
+	controller = MAN
+	add_core = MAN
+	remove_core = CRH
+}
+1945.9.28 = {
+	owner = CHC
+	controller = CHC
+	add_core = CHI
+	remove_core = MAN
+}
+1949.10.1 = {
+	owner = PRC
+	controller = PRC
+}

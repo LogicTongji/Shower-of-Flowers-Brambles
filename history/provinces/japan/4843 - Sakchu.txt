@@ -1,0 +1,17 @@
+owner = JAP
+controller = JAP
+add_core = JAP
+add_core = PRK
+infra = 3
+
+
+1945.9.3 = {
+	owner = SOV
+	controller = SOV
+	remove_core = JAP
+}
+
+1948.9.9 = {
+	owner = PRK
+	controller = PRK
+}

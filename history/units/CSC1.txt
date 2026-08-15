@@ -1,0 +1,133 @@
+army = {
+	name = "川军第二十二集团军"
+	location = 9415
+	regiment = { type = hq_brigade name = "川军第二十二集团军总指部" historical_model = 0 }
+corps = {
+	name = "第四十一军"
+	location = 9415
+	regiment = { type = hq_brigade name = "川军第四十一军总指部" historical_model = 0 }
+	division= {
+		name = "第一二二师"
+		location = 9415
+		regiment = { type = militia_brigade name = "三六四旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "三六六旅" historical_model = 0 }
+	}
+	division= {
+		name = "第一二三师"
+		location = 9415
+		regiment = { type = militia_brigade name = "三六七旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "三六九旅" historical_model = 0 }
+	}
+	division= {
+		name = "第一二四师"
+		location = 9415
+		regiment = { type = militia_brigade name = "三七零旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "三七二旅" historical_model = 0 }
+	}
+}
+corps = {
+	name = "第四十五军"
+	location = 9415
+	regiment = { type = hq_brigade name = "川军第四十五军总指部" historical_model = 0 }
+	division= {
+		name = "第一二五师"
+		location = 9415
+		regiment = { type = militia_brigade name = "三七三旅·" historical_model = 0 }
+		regiment = { type = militia_brigade name = "三七四团" historical_model = 0 }
+		regiment = { type = militia_brigade name = "三七五旅" historical_model = 0 }
+	}
+        division= {
+		name = "第一二六师"
+		location = 9415
+		regiment = { type = militia_brigade name = "三七六旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "三七八旅" historical_model = 0 }
+	}
+	division= {
+		name = "第一二七师"
+		location = 9415
+		regiment = { type = militia_brigade name = "三七九旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "三八一旅" historical_model = 0 }
+	}
+        	division= {
+		name = "独立第17旅"
+		location = 9415
+		regiment = { type = militia_brigade historical_model = 0 }
+	}
+        	division= {
+		name = "独立第18旅"
+		location = 9415
+		regiment = { type = militia_brigade historical_model = 0 }
+	}
+}
+corps = {
+	name = "第四十七军"
+	location = 9415
+	regiment = { type = hq_brigade name = "川军第四十七军总指部" historical_model = 0 }
+	division= {
+		name = "第一零四师"
+		location = 9415
+		regiment = { type = militia_brigade name = "三零一旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "三一二旅" historical_model = 0 }
+	}
+        division= {
+		name = "第一七八师"
+		location = 9415
+		regiment = { type = militia_brigade name = "一零六一团兼一零六二团" historical_model = 0 }
+		regiment = { type = militia_brigade name = "一零六三团" historical_model = 0 }
+	}
+}
+}
+army = {
+	name = "川军第二十三集团军"
+	location = 9415
+	regiment = { type = hq_brigade name = "川军第二十三集团军总指部" historical_model = 0 }
+corps = {
+	name = "第二十一军"
+	location = 9415
+	regiment = { type = hq_brigade name = "川军第二十一军总指部" historical_model = 0 }
+	division= {
+		name = "第一四五师"
+		location = 9415
+		regiment = { type = militia_brigade name = "第一旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "第二旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "第三旅" historical_model = 0 }
+	}
+	division= {
+		name = "第一四六师"
+		location = 9415
+		regiment = { type = militia_brigade name = "第一旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "第二旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "第三旅" historical_model = 0 }
+	}
+	division= {
+		name = "第一六二师"
+		location = 9415
+		regiment = { type = militia_brigade name = "第一旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "第二旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "第三旅" historical_model = 0 }
+	}
+}
+corps = {
+	name = "第二十三军"
+	location = 9415
+	regiment = { type = hq_brigade name = "川军第二十三军总指部" historical_model = 0 }
+	division= {
+		name = "第一四四师"
+		location = 9415
+		regiment = { type = militia_brigade name = "第一旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "第二旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "第三旅" historical_model = 0 }
+	}
+	division= {
+		name = "第一四八师"
+		location = 9415
+		regiment = { type = militia_brigade name = "十三旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "十四旅" historical_model = 0 }
+	}
+	division= {
+		name = "边防第二路"
+		location = 9415
+		regiment = { type = militia_brigade historical_model = 0 }
+	}
+}
+}

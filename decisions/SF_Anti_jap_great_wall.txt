@@ -1,0 +1,126 @@
+############################
+#   长城抗战  #
+############################
+diplomatic_decisions = {
+	Jap_war_rehe_front = {
+                   major = yes
+		potential = {
+			tag = JAP
+			not = { has_global_flag = the_war_attack_rehe }
+			not = { year = 1934 } 
+			exists = CRH		
+			not = {
+				war_with = CHI
+			}
+		}
+		allow = {
+			CRH = {
+				not = { vassal_of = JAP }
+			}
+			and = {
+				date = 1933.1.6
+			}
+		}
+		effect = {
+			set_global_flag = the_war_attack_rehe
+                  country_event = 12209    
+					 
+			}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Jap_war_greatwall_front = {
+                   major = yes
+		potential = {
+			tag = JAP
+			not = { has_global_flag = the_war_attack_great_wall }
+			has_global_flag = the_war_attack_rehe
+			has_global_flag = japthe_war_attack_rehe_win
+			not = { year = 1934 } 
+			exists = CHI	
+			exists = CRH
+			not = {
+				war_with = CHI
+			}
+		}
+		allow = {
+			CHI = {
+				not = { vassal_of = JAP }
+			}
+			OR = {
+			rehe_region = { controlled_by = JAP }
+			rehe_region = { controlled_by = MAN }
+			}
+		}
+		effect = {
+			set_global_flag = the_war_attack_great_wall
+                             war = {
+                                        target = CRH 
+                                                           }
+				5315 = {
+						   province_event = 190029
+						   }
+			CHI = { leave_alliance = CRH }
+			}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Anti_jap_front_great_wall = {
+		major = yes
+		potential = {
+			tag = CHI
+			not = { has_global_flag = Anti_jap_front_great_wall }
+			exists = JAP
+			has_global_flag = the_war_attack_great_wall
+		}
+		allow = {
+			CHI = {
+				not = { vassal_of = JAP }
+			}
+		}
+		effect = {
+			set_global_flag = Anti_jap_front_great_wall
+                            country_event = 12210
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Anti_jap_front_great_wall_win = {
+		major = yes
+		potential = {
+			tag = CHI
+			not = { has_global_flag = Anti_jap_front_great_wall_win
+			has_global_flag = Anti_jap_front_great_wall_loss
+			}
+			exists = CHI
+			exists = JAP
+			has_global_flag = the_war_attack_great_wall
+		}
+		allow = {
+			CHI = {
+				not = { 
+				       vassal_of = JAP 
+				                } 
+                controls = 5019
+		        controls = 4886
+                controls = 4934
+                controls = 4935
+                controls = 5055
+                controls = 4981
+           } 
+			date = 1933.7.6
+		}
+		effect = {
+			set_global_flag = Anti_jap_front_great_wall_win
+						CSY = { end_war = JAP }
+						CSX = { end_war = JAP }
+						CHI = { end_war = JAP }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,144 @@
+######################
+#   汪伪政权事件组   #
+######################
+#汪精卫叛逃
+country_event = {
+	id = 1000004
+	fire_only_once = yes
+	title = "wangjingwei_defect"
+	subtitle = "wangjingwei_defectsubtitle"
+	desc = "wangjingwei_defect_descf"
+	picture = "SF_ChinesePuppet1"
+	trigger = {
+		tag = CHI
+		war_with = JAP
+		has_country_flag = jap_seizes_coast_chi
+	}
+	mean_time_to_happen =  {
+		days = 1
+	}
+	option = {
+		name = "wangjingwei_defect_option"
+		remove_minister = 52025
+		set_global_flag = wangjingwei_message
+		CHC = { country_event = 193901 }
+		country_event = 193902
+		ai_chance = { factor = 100 }
+	}
+}
+#汪伪政权建立-CHIandCHC
+country_event = {
+	id = 1000005
+	fire_only_once = yes
+	title = "wangweizf_built"
+	subtitle = "wangweizf_builtsubtitle"
+	desc = "wangweizf_built_desc_chi"
+	picture = "SF_ChinesePuppet2"
+	mean_time_to_happen =  {
+		days = 1
+	}
+	trigger = {
+		tag = CHI
+		war_with = JAP
+		has_global_flag = wangweizf
+		exists = WJW
+	}
+	option = {
+		name = "wangweizf_built_option_chi"
+		national_unity = 5
+		remove_minister = 52085
+		remove_minister = 52059
+		remove_minister = 52074
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000006
+	fire_only_once = yes
+	title = "wangweizf_built"
+	subtitle = "wangweizf_builtsubtitle"
+	desc = "wangweizf_built_desc_chc"
+	picture = "SF_ChinesePuppet2"
+	mean_time_to_happen =  {
+		days = 1
+	}
+	trigger = {
+		tag = CHC
+		war_with = JAP
+		has_global_flag = wangweizf
+		exists = WJW
+	}
+	option = {
+		name = "wangweizf_built_option_chc"
+		ai_chance = { factor = 100 }
+	}
+}
+#部分国民党军政要员变节投降
+country_event = {
+	id = 1001117
+	fire_only_once = yes
+	title = "CHI_event_1000007_title"
+	subtitle = "CHI_event_1000007_subtitle"
+	desc = "CHI_event_1000007_descf"
+	picture = "SF_ChinesePuppet3"
+	mean_time_to_happen =  {
+		days = 1
+	}
+	trigger = {
+		tag = CHI
+		war_with = JAP
+		has_global_flag = wangweizf
+		exists = WJW
+	}
+	option = {
+		name = "CHI_event_1000007_option"
+		national_unity = 10
+		manpower = -350
+		CHC = { country_event = 193903 }
+		country_event = 193904
+		WJW = { load_oob = "WJW_OOB.txt" }
+		ai_chance = { factor = 100 }
+	}
+}
+#CJD嗝屁
+country_event = {
+	id = 1000034
+	is_triggered_only = yes
+	title = "CJD_Event_1000034"
+	desc = "CJD_Event_1000034_desc"
+	picture = "SF_ChinesePuppet4"
+	option = {
+		name = "CJD_Event_1000034_option"
+		ai_chance = { factor = 100 }
+		CHB = { split_troops = 1.00 }
+		CHB = { inherit = CJD }
+	}
+}
+#CJS嗝屁
+country_event = {
+	id = 1000036
+	is_triggered_only = yes
+	title = "CJS_Event_1000036"
+	desc = "CJS_Event_1000036_desc"
+	picture = "SF_ChinesePuppet4"
+	option = {
+		name = "CJS_Event_1000036_option"
+		ai_chance = { factor = 100 }
+		WJW = { split_troops = 1.00 }
+		WJW = { inherit = CJS }
+	}
+}   
+#CJB嗝屁
+country_event = {
+	id = 1000039
+	is_triggered_only = yes
+	title = "CJB_Event_1000036"
+	desc = "CJB_Event_1000036_desc"
+	picture = "SF_ChinesePuppet4"
+	option = {
+		name = "CJB_Event_1000036_option"
+		ai_chance = { factor = 100 }
+		MEB = { split_troops = 1.00 }
+		MEB = { inherit = CJB }
+	}
+}                

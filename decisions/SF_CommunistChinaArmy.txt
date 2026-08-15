@@ -1,0 +1,248 @@
+######################
+#   中共建军决议组   #
+######################
+diplomatic_decisions = {
+	#中央军委关于八路军主力进入山西四角的部署
+	ERA_placing = {
+		potential = {
+			tag = CHC
+			war_with = JAP
+			not = { has_country_flag = eighth_route_army_majority }
+			not = { CHI = { has_country_flag = jap_seizes_coast_chi } }
+			has_global_flag = luochuan_meeting_2
+		}
+		allow = {
+			not = { CSX = { controls = 4977 } }
+			not = { CSX = { controls = 5175 } }
+			and = {
+				7391 = { units_in_province = 1 }
+				5241 = { units_in_province = 1 }
+				7417 = { units_in_province = 1 }
+			}
+		}
+		effect = {
+			set_country_flag = eighth_route_army_majority
+			country_event = 1000043
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#新四军
+	new_fourth_army = {
+		potential = {
+			tag = CHC
+			war_with = JAP
+			not = { has_country_flag = new_fourth_army }
+			not = { war_with = CHI }
+			has_global_flag = luochuan_meeting
+		}
+		allow = {
+			alliance_with = CHI
+			not = { CHI = { controls = 5515 } }
+			not = { CHI = { controls = 5494 } }
+			not = { CHI = { controls = 5435 } }
+		}
+		effect = {
+			set_country_flag = new_fourth_army
+			country_event = 1000037
+			country_event = 1000038
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#山西新军决死队
+	shanxi_new_army = {
+		potential = {
+			tag = CSX
+			war_with = JAP
+			not = { has_country_flag = the_shanxi_new_army }
+			exists = CHC
+			not = { war_with = CHC }
+			has_global_flag = luochuan_meeting
+		}
+		allow = {
+			alliance_with = CHC
+			not = { CHI = { has_country_flag = jap_seizes_coast_chi } }
+			not = { vassal_of = JAP }
+			not = { controls = 4977 }
+		}
+		effect = {
+			set_country_flag = the_shanxi_new_army
+			CHC = { country_event = 1000040 }
+			CHC = { country_event = 1000041 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#山东纵队
+	shandong_chc_army = {
+		potential = {
+			tag = CHC
+			war_with = JAP
+			not = { has_country_flag = shandong_chc_army }
+			not = { CHI = { has_country_flag = jap_seizes_coast_chi } }
+			not = { war_with = CHI }
+			has_global_flag = luochuan_meeting_2
+			has_global_flag = chc_jinchaji
+		}
+		allow = {
+			not = { CHI = { controls = 5383 } }
+			not = { CHI = { controls = 5275 } }
+			not = { CHI = { controls = 5419 } }
+			not = { CHI = { controls = 5515 } }
+		}
+		effect = {
+			set_country_flag = shandong_chc_army
+			country_event = 1000042
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#晋察冀根据地
+	chc_jinchaji = {
+		potential = {
+			tag = CHC
+			war_with = JAP
+			not = { has_global_flag = chc_jinchaji }
+			not = { war_with = CHI }
+			has_country_flag = eighth_route_army_majority
+		}
+		allow = {
+		    not = { CHI = { has_country_flag = jap_seizes_coast_chi } }
+			not = { CHI = { controls = 5084 } }
+			not = { CHI = { controls = 5112 } }
+			not = { CHI = { controls = 5085 } }
+			not = { CSX = { controls = 5141 } }
+		}
+		effect = {
+			set_global_flag = chc_jinchaji
+			country_event = 1000044
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#晋西北、晋西南根据地
+	chc_jinsui = {
+		potential = {
+			tag = CHC
+			war_with = JAP
+			not = { has_country_flag = chc_jinsui }
+			not = { war_with = CHI }
+			has_country_flag = eighth_route_army_majority
+		}
+		allow = {
+		    not = { CHI = { has_country_flag = jap_seizes_coast_chi } }
+			not = { CSX = { controls = 7384 } }
+			not = { CSX = { controls = 7385 } }
+			not = { CSX = { controls = 7405 } }
+		}
+		effect = {
+			set_country_flag = chc_jinsui
+			country_event = 1000045
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#晋冀豫根据地
+	chc_jinjiyu = {
+		potential = {
+			tag = CHC
+			war_with = JAP
+			not = { has_country_flag = chc_jinjiyu }
+			not = { war_with = CHI }
+			has_country_flag = eighth_route_army_majority
+		}
+		allow = {
+		    not = { CHI = { has_country_flag = jap_seizes_coast_chi } }
+			not = { CSX = { controls = 5272 } }
+			not = { CSX = { controls = 5333 } }
+			not = { CSX = { controls = 7418 } }
+			not = { CHI = { controls = 5334 } }
+			not = { CHI = { controls = 5273 } }
+			not = { CHI = { controls = 5448 } }
+		}
+		effect = {
+			set_country_flag = chc_jinjiyu
+			country_event = 1000046
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#冀热察根据地
+	chc_jirecha = {
+		potential = {
+			tag = CHC
+			war_with = JAP
+			not = { has_country_flag = chc_jirecha }
+			not = { war_with = CHI }
+			has_global_flag = chc_jinchaji
+			has_country_flag = jidong_uprising
+		}
+		allow = {
+			5085 = { units_in_province = 4 }
+		}
+		effect = {
+			set_country_flag = chc_jirecha
+			country_event = 1000048
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#大青山根据地
+	chc_daqingshan = {
+		potential = {
+			tag = CHC
+			war_with = JAP
+			has_country_flag = chc_jinsui
+			not = { has_country_flag = chc_daqingshan }
+			not = { war_with = CHI }
+		}
+		allow = {
+			not = { CSX = { controls = 7349 } }
+			not = { CSX = { controls = 7338 } }
+			not = { CHI = { controls = 7349 } }
+			not = { CHI = { controls = 7338 } }
+			and = {
+				7378 = { units_in_province = 1 }
+				7385 = { units_in_province = 2 }
+			}
+		}
+		effect = {
+			set_country_flag = chc_daqingshan
+			country_event = 1000050
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#东进抗日挺进纵队
+	chc_jilubian = {
+		potential = {
+			tag = CHC
+			war_with = JAP
+			not = { has_country_flag = chc_jilubian }
+			not = { war_with = CHI }
+			has_country_flag = chc_jinjiyu
+		}
+		allow = {
+			not = { CHI = { controls = 5209 } }
+			not = { CHI = { controls = 5242 } }
+			5362 = { units_in_province = 3 }
+		}
+		effect = {
+			set_country_flag = chc_jilubian
+			country_event = 1000051
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

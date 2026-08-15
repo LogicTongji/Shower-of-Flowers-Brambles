@@ -1,0 +1,39 @@
+#######################
+# Ultimatum to Greece #
+#######################
+diplomatic_decisions = {
+
+	the_future_of_greece = {
+		potential = {
+			tag = ITA
+			exists = GRE
+			faction = axis
+			is_subject = no
+			has_country_flag = the_annexation_of_albania
+			not = { has_country_flag = ultimatum_to_greece }
+			not = { war_with = GRE }
+			GRE = {
+				not = { vassal_of = GER }
+				not = { vassal_of = ITA }
+				not = { alliance_with = GER }
+				not = { alliance_with = ITA }
+				not = { faction = axis }
+				government_in_exile = no
+			}			
+			year = 1940		
+		}
+		allow = {
+			ALB_4608 = { controlled_by = this }
+			ALB_4716 = { controlled_by = this } 
+		}
+		effect = {
+			set_country_flag = ultimatum_to_greece
+			national_unity = 2
+			neutrality = -3
+			GRE = { country_event = 3201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

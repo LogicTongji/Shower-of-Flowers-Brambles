@@ -1,0 +1,1205 @@
+color = { 0  28  88 }
+graphical_culture = Japanese
+
+default_templates = {
+	binary_infantry = {
+		infantry_brigade
+		infantry_brigade
+	}
+	binary_milita = {
+		militia_brigade
+		militia_brigade
+	}
+	binary_armoured = {
+		armor_brigade
+		motorized_brigade
+	}
+	binary_cavalry = {
+		cavalry_brigade
+		cavalry_brigade
+	}
+}
+unit_names = {
+	infantry_brigade = {
+		"整编第1师" "整编第2师" "整编第3师" "整编第4师" "整编第5师" "整编第6师" "整编第7师" "整编第8师" "整编第9师" "整编第10师" "整编第11师" 
+		"整编第12师" "整编第13师" "整编第14师" "整编第15师" "整编第16师" "整编第17师" "整编第18师" "整编第19师" "整编第20师" "整编第21师" "整编第22师" 
+		"整编第23师" "整编第24师" "整编第25师" "整编第26师" "整编第27师" "整编第28师" "整编第29师" "整编第30师" "整编第31师" "整编第32师" "整编第33师" 
+		"整编第34师" "整编第35师" "整编第36师" "整编第37师" "整编第38师" "整编第39师" "整编第40师" "整编第41师" "整编第42师" "整编第43师" "整编第44师" 
+		"整编第45师" "整编第46师" "整编第47师" "整编第48师" "整编第49师" "整编第50师" "整编第51师" "整编第52师" "整编第53师" "整编第54师" "整编第55师" 
+		"整编第56师" "整编第57师" "整编第58师" "整编第59师" "整编第60师" "整编第61师" "整编第62师" "整编第63师" "整编第64师" "整编第65师" "整编第66师" 
+		"整编第67师" "整编第68师" "整编第69师" "整编第70师" "整编第71师" "整编第72师" "整编第73师" "整编第74师" "整编第75师" "整编第76师" "整编第77师" 
+		"整编第78师" "整编第79师" "整编第80师" "整编第81师" "整编第82师" "整编第83师" "整编第84师" "整编第85师" "整编第86师" "整编第87师" "整编第88师" 
+		"整编第89师" "整编第90师" "整编第91师" "整编第92师" "整编第93师" "整编第94师" "整编第95师" "整编第96师" "整编第97师" "整编第98师" "整编第99师" 
+		"整编第100师" "整编第101师" "整编第102师" "整编第103师" "整编第104师" "整编第105师" "整编第106师" "整编第107师" "整编第108师" "整编第109师" "整编第110师" 
+		"整编第111师" "整编第112师" "整编第113师" "整编第114师" "整编第115师" "整编第116师" "整编第117师" "整编第118师" "整编第119师" "整编第120师" "整编第121师" 
+		"整编第122师" "整编第123师" "整编第124师" "整编第125师" "整编第126师" "整编第127师" "整编第128师" "整编第129师" "整编第130师" "整编第131师" "整编第132师" 
+		"整编第133师" "整编第134师" "整编第135师" "整编第136师" "整编第137师" "整编第138师" "整编第139师" "整编第140师" "整编第141师" "整编第142师" "整编第143师" 
+		"整编第144师" "整编第145师" "整编第146师" "整编第147师" "整编第148师" "整编第149师" "整编第150师" "整编第151师" "整编第152师" "整编第153师" "整编第154师" 
+		"整编第155师" "整编第156师" "整编第157师" "整编第158师" "整编第159师" "整编第160师" "整编第161师" "整编第162师" "整编第163师" "整编第164师" "整编第165师" 
+		"整编第166师" "整编第167师" "整编第168师" "整编第169师" "整编第170师" "整编第171师" "整编第172师" "整编第173师" "整编第174师" "整编第175师" "整编第176师" 
+		"整编第177师" "整编第178师" "整编第179师" "整编第180师" "整编第181师" "整编第182师" "整编第183师" "整编第184师" "整编第185师" "整编第186师" "整编第187师" 
+		"整编第188师" "整编第189师" "整编第190师" "整编第191师" "整编第192师" "整编第193师" "整编第194师" "整编第195师" "整编第196师" "整编第197师" "整编第198师" 
+		"整编第199师" "整编第200师" "整编第201师" "整编第202师" "整编第203师" "整编第204师" "整编第205师" "整编第206师" "整编第207师" "整编第208师" "整编第209师" 
+		"整编第210师" "整编第211师" "整编第212师" "整编第213师" "整编第214师" "整编第215师" "整编第216师" "整编第217师" "整编第218师" "整编第219师" "整编第220师" 
+		"整编第221师" "整编第222师" "整编第223师" "整编第224师" "整编第225师" "整编第226师" "整编第227师" "整编第228师" "整编第229师" "整编第230师" "整编第231师" 
+		"整编第232师" "整编第233师" "整编第234师" "整编第235师" "整编第236师" "整编第237师" "整编第238师" "整编第239师" "整编第240师" "整编第241师" "整编第242师" 
+		"整编第243师" "整编第244师" "整编第245师" "整编第246师" "整编第247师" "整编第248师" "整编第249师" "整编第250师" "整编第251师" "整编第252师" "整编第253师" 
+		"整编第254师" "整编第255师" "整编第256师" "整编第257师" "整编第258师" "整编第259师" "整编第260师" "整编第261师" "整编第262师" "整编第263师" "整编第264师" 
+		"整编第265师" "整编第266师" "整编第267师" "整编第268师" "整编第269师" "整编第270师" "整编第271师" "整编第272师" "整编第273师" "整编第274师" "整编第275师" 
+		"整编第276师" "整编第277师" "整编第278师" "整编第279师" "整编第280师" "整编第281师" "整编第282师" "整编第283师" "整编第284师" "整编第285师" "整编第286师" 
+		"整编第287师" "整编第288师" "整编第289师" "整编第290师" "整编第291师" "整编第292师" "整编第293师" "整编第294师" "整编第295师" "整编第296师" "整编第297师" 
+		"整编第298师" "整编第299师" 
+	}
+	cavalry_brigade = {
+		"整编骑兵第1师" "整编骑兵第2师" "整编骑兵第3师" "整编骑兵第4师" "整编骑兵第5师" "整编骑兵第6师" "整编骑兵第7师" "整编骑兵第8师" "整编骑兵第9师" "整编骑兵第10师" "整编骑兵第11师" 
+		"整编骑兵第12师" "整编骑兵第13师" "整编骑兵第14师" "整编骑兵第15师" "整编骑兵第16师" "整编骑兵第17师" "整编骑兵第18师" "整编骑兵第19师" "整编骑兵第20师" "整编骑兵第21师" "整编骑兵第22师" 
+		"整编骑兵第23师" "整编骑兵第24师" "整编骑兵第25师" "整编骑兵第26师" "整编骑兵第27师" "整编骑兵第28师" "整编骑兵第29师" "整编骑兵第30师" 
+	}
+	motorized_brigade = {
+		"第1快速纵队" "第2快速纵队" "第3快速纵队" "第4快速纵队" "第5快速纵队" "第6快速纵队" "第7快速纵队" "第8快速纵队" "第9快速纵队" "第10快速纵队" "第11快速纵队" 
+		"第12快速纵队" "第13快速纵队" "第14快速纵队" "第15快速纵队" "第16快速纵队" "第17快速纵队" "第18快速纵队" "第19快速纵队" "第20快速纵队" "第21快速纵队" "第22快速纵队" 
+		"第23快速纵队" "第24快速纵队" "第25快速纵队" "第26快速纵队" "第27快速纵队" "第28快速纵队" "第29快速纵队" "第30快速纵队" "第31快速纵队" "第32快速纵队" "第33快速纵队" 
+		"第34快速纵队" "第35快速纵队" "第36快速纵队" "第37快速纵队" "第38快速纵队" "第39快速纵队" "第40快速纵队" 
+	}
+	mechanized_brigade = {
+		"整编第1师" "整编第2师" "整编第3师" "整编第4师" "整编第5师" "整编第6师" "整编第7师" "整编第8师" "整编第9师" "整编第10师" "整编第11师" 
+		"整编第12师" "整编第13师" "整编第14师" "整编第15师" "整编第16师" "整编第17师" "整编第18师" "整编第19师" "整编第20师" "整编第21师" "整编第22师" 
+		"整编第23师" "整编第24师" "整编第25师" "整编第26师" "整编第27师" "整编第28师" "整编第29师" "整编第30师" "整编第31师" "整编第32师" "整编第33师" 
+		"整编第34师" "整编第35师" "整编第36师" "整编第37师" "整编第38师" "整编第39师" "整编第40师" "整编第41师" "整编第42师" "整编第43师" "整编第44师" 
+		"整编第45师" "整编第46师" "整编第47师" "整编第48师" "整编第49师" "整编第50师" "整编第51师" "整编第52师" "整编第53师" "整编第54师" "整编第55师" 
+		"整编第56师" "整编第57师" "整编第58师" "整编第59师" "整编第60师" "整编第61师" "整编第62师" "整编第63师" "整编第64师" "整编第65师" "整编第66师" 
+		"整编第67师" "整编第68师" "整编第69师" "整编第70师" "整编第71师" "整编第72师" "整编第73师" "整编第74师" "整编第75师" "整编第76师" "整编第77师" 
+		"整编第78师" "整编第79师" "整编第80师" "整编第81师" "整编第82师" "整编第83师" "整编第84师" "整编第85师" "整编第86师" "整编第87师" "整编第88师" 
+		"整编第89师" "整编第90师" "整编第91师" "整编第92师" "整编第93师" "整编第94师" "整编第95师" "整编第96师" "整编第97师" "整编第98师" "整编第99师" 
+		"整编第100师" "整编第101师" "整编第102师" "整编第103师" "整编第104师" "整编第105师" "整编第106师" "整编第107师" "整编第108师" "整编第109师" "整编第110师" 
+		"整编第111师" "整编第112师" "整编第113师" "整编第114师" "整编第115师" "整编第116师" "整编第117师" "整编第118师" "整编第119师" "整编第120师" "整编第121师" 
+		"整编第122师" "整编第123师" "整编第124师" "整编第125师" "整编第126师" "整编第127师" "整编第128师" "整编第129师" "整编第130师" "整编第131师" "整编第132师" 
+		"整编第133师" "整编第134师" "整编第135师" "整编第136师" "整编第137师" "整编第138师" "整编第139师" "整编第140师" "整编第141师" "整编第142师" "整编第143师" 
+		"整编第144师" "整编第145师" "整编第146师" "整编第147师" "整编第148师" "整编第149师" "整编第150师" "整编第151师" "整编第152师" "整编第153师" "整编第154师" 
+		"整编第155师" "整编第156师" "整编第157师" "整编第158师" "整编第159师" "整编第160师" "整编第161师" "整编第162师" "整编第163师" "整编第164师" "整编第165师" 
+		"整编第166师" "整编第167师" "整编第168师" "整编第169师" "整编第170师" "整编第171师" "整编第172师" "整编第173师" "整编第174师" "整编第175师" "整编第176师" 
+		"整编第177师" "整编第178师" "整编第179师" "整编第180师" "整编第181师" "整编第182师" "整编第183师" "整编第184师" "整编第185师" "整编第186师" "整编第187师" 
+		"整编第188师" "整编第189师" "整编第190师" "整编第191师" "整编第192师" "整编第193师" "整编第194师" "整编第195师" "整编第196师" "整编第197师" "整编第198师" 
+		"整编第199师" "整编第200师" "整编第201师" "整编第202师" "整编第203师" "整编第204师" "整编第205师" "整编第206师" "整编第207师" "整编第208师" "整编第209师" 
+		"整编第210师" "整编第211师" "整编第212师" "整编第213师" "整编第214师" "整编第215师" "整编第216师" "整编第217师" "整编第218师" "整编第219师" "整编第220师" 
+		"整编第221师" "整编第222师" "整编第223师" "整编第224师" "整编第225师" "整编第226师" "整编第227师" "整编第228师" "整编第229师" "整编第230师" "整编第231师" 
+		"整编第232师" "整编第233师" "整编第234师" "整编第235师" "整编第236师" "整编第237师" "整编第238师" "整编第239师" "整编第240师" "整编第241师" "整编第242师" 
+		"整编第243师" "整编第244师" "整编第245师" "整编第246师" "整编第247师" "整编第248师" "整编第249师" "整编第250师" "整编第251师" "整编第252师" "整编第253师" 
+		"整编第254师" "整编第255师" "整编第256师" "整编第257师" "整编第258师" "整编第259师" "整编第260师" "整编第261师" "整编第262师" "整编第263师" "整编第264师" 
+		"整编第265师" "整编第266师" "整编第267师" "整编第268师" "整编第269师" "整编第270师" "整编第271师" "整编第272师" "整编第273师" "整编第274师" "整编第275师" 
+		"整编第276师" "整编第277师" "整编第278师" "整编第279师" "整编第280师" "整编第281师" "整编第282师" "整编第283师" "整编第284师" "整编第285师" "整编第286师" 
+		"整编第287师" "整编第288师" "整编第289师" "整编第290师" "整编第291师" "整编第292师" "整编第293师" "整编第294师" "整编第295师" "整编第296师" "整编第297师" 
+		"整编第298师" "整编第299师" 
+	}
+	light_armor_brigade = {
+		"战车第1群" "战车第2群" "战车第3群" "战车第4群" "战车第5群" "战车第6群" "战车第7群" "战车第8群" "战车第9群" "战车第10群" "战车第11群" 
+		"战车第12群" "战车第13群" "战车第14群" "战车第15群" "战车第16群" "战车第17群" "战车第18群" "战车第19群" "战车第20群" "战车第21群" "战车第22群" 
+		"战车第23群" "战车第24群" "战车第25群" "战车第26群" "战车第27群" "战车第28群" "战车第29群" "战车第30群" "第1装甲兵团" "第2装甲兵团" "第3装甲兵团" 
+		"第4装甲兵团" "第5装甲兵团" "第6装甲兵团" "第7装甲兵团" "第8装甲兵团" "第9装甲兵团" "第10装甲兵团" "第11装甲兵团" "第12装甲兵团" "第13装甲兵团" "第14装甲兵团" 
+		"第15装甲兵团" "第16装甲兵团" "第17装甲兵团" "第18装甲兵团" "第19装甲兵团" "第20装甲兵团" "第21装甲兵团" "第22装甲兵团" "第23装甲兵团" "第24装甲兵团" "第25装甲兵团" 
+		"第26装甲兵团" "第27装甲兵团" "第28装甲兵团" "第29装甲兵团" "第30装甲兵团" 
+	}
+	armor_brigade = {
+		"战车第1群" "战车第2群" "战车第3群" "战车第4群" "战车第5群" "战车第6群" "战车第7群" "战车第8群" "战车第9群" "战车第10群" "战车第11群" 
+		"战车第12群" "战车第13群" "战车第14群" "战车第15群" "战车第16群" "战车第17群" "战车第18群" "战车第19群" "战车第20群" "战车第21群" "战车第22群" 
+		"战车第23群" "战车第24群" "战车第25群" "战车第26群" "战车第27群" "战车第28群" "战车第29群" "战车第30群" "第1装甲兵团" "第2装甲兵团" "第3装甲兵团" 
+		"第4装甲兵团" "第5装甲兵团" "第6装甲兵团" "第7装甲兵团" "第8装甲兵团" "第9装甲兵团" "第10装甲兵团" "第11装甲兵团" "第12装甲兵团" "第13装甲兵团" "第14装甲兵团" 
+		"第15装甲兵团" "第16装甲兵团" "第17装甲兵团" "第18装甲兵团" "第19装甲兵团" "第20装甲兵团" "第21装甲兵团" "第22装甲兵团" "第23装甲兵团" "第24装甲兵团" "第25装甲兵团" 
+		"第26装甲兵团" "第27装甲兵团" "第28装甲兵团" "第29装甲兵团" "第30装甲兵团" 
+	}
+	paratrooper_brigade = {
+		"整编第1师" "整编第2师" "整编第3师" "整编第4师" "整编第5师" "整编第6师" "整编第7师" "整编第8师" "整编第9师" "整编第10师" "整编第11师" 
+		"整编第12师" "整编第13师" "整编第14师" "整编第15师" "整编第16师" "整编第17师" "整编第18师" "整编第19师" "整编第20师" "整编第21师" "整编第22师" 
+		"整编第23师" "整编第24师" "整编第25师" "整编第26师" "整编第27师" "整编第28师" "整编第29师" "整编第30师" "整编第31师" "整编第32师" "整编第33师" 
+		"整编第34师" "整编第35师" "整编第36师" "整编第37师" "整编第38师" "整编第39师" "整编第40师" "整编第41师" "整编第42师" "整编第43师" "整编第44师" 
+		"整编第45师" "整编第46师" "整编第47师" "整编第48师" "整编第49师" "整编第50师" "整编第51师" "整编第52师" "整编第53师" "整编第54师" "整编第55师" 
+		"整编第56师" "整编第57师" "整编第58师" "整编第59师" "整编第60师" "整编第61师" "整编第62师" "整编第63师" "整编第64师" "整编第65师" "整编第66师" 
+		"整编第67师" "整编第68师" "整编第69师" "整编第70师" "整编第71师" "整编第72师" "整编第73师" "整编第74师" "整编第75师" "整编第76师" "整编第77师" 
+		"整编第78师" "整编第79师" "整编第80师" "整编第81师" "整编第82师" "整编第83师" "整编第84师" "整编第85师" "整编第86师" "整编第87师" "整编第88师" 
+		"整编第89师" "整编第90师" "整编第91师" "整编第92师" "整编第93师" "整编第94师" "整编第95师" "整编第96师" "整编第97师" "整编第98师" "整编第99师" 
+		"整编第100师" "整编第101师" "整编第102师" "整编第103师" "整编第104师" "整编第105师" "整编第106师" "整编第107师" "整编第108师" "整编第109师" "整编第110师" 
+		"整编第111师" "整编第112师" "整编第113师" "整编第114师" "整编第115师" "整编第116师" "整编第117师" "整编第118师" "整编第119师" "整编第120师" "整编第121师" 
+		"整编第122师" "整编第123师" "整编第124师" "整编第125师" "整编第126师" "整编第127师" "整编第128师" "整编第129师" "整编第130师" "整编第131师" "整编第132师" 
+		"整编第133师" "整编第134师" "整编第135师" "整编第136师" "整编第137师" "整编第138师" "整编第139师" "整编第140师" "整编第141师" "整编第142师" "整编第143师" 
+		"整编第144师" "整编第145师" "整编第146师" "整编第147师" "整编第148师" "整编第149师" "整编第150师" "整编第151师" "整编第152师" "整编第153师" "整编第154师" 
+		"整编第155师" "整编第156师" "整编第157师" "整编第158师" "整编第159师" "整编第160师" "整编第161师" "整编第162师" "整编第163师" "整编第164师" "整编第165师" 
+		"整编第166师" "整编第167师" "整编第168师" "整编第169师" "整编第170师" "整编第171师" "整编第172师" "整编第173师" "整编第174师" "整编第175师" "整编第176师" 
+		"整编第177师" "整编第178师" "整编第179师" "整编第180师" "整编第181师" "整编第182师" "整编第183师" "整编第184师" "整编第185师" "整编第186师" "整编第187师" 
+		"整编第188师" "整编第189师" "整编第190师" "整编第191师" "整编第192师" "整编第193师" "整编第194师" "整编第195师" "整编第196师" "整编第197师" "整编第198师" 
+		"整编第199师" "整编第200师" "整编第201师" "整编第202师" "整编第203师" "整编第204师" "整编第205师" "整编第206师" "整编第207师" "整编第208师" "整编第209师" 
+		"整编第210师" "整编第211师" "整编第212师" "整编第213师" "整编第214师" "整编第215师" "整编第216师" "整编第217师" "整编第218师" "整编第219师" "整编第220师" 
+		"整编第221师" "整编第222师" "整编第223师" "整编第224师" "整编第225师" "整编第226师" "整编第227师" "整编第228师" "整编第229师" "整编第230师" "整编第231师" 
+		"整编第232师" "整编第233师" "整编第234师" "整编第235师" "整编第236师" "整编第237师" "整编第238师" "整编第239师" "整编第240师" "整编第241师" "整编第242师" 
+		"整编第243师" "整编第244师" "整编第245师" "整编第246师" "整编第247师" "整编第248师" "整编第249师" "整编第250师" "整编第251师" "整编第252师" "整编第253师" 
+		"整编第254师" "整编第255师" "整编第256师" "整编第257师" "整编第258师" "整编第259师" "整编第260师" "整编第261师" "整编第262师" "整编第263师" "整编第264师" 
+		"整编第265师" "整编第266师" "整编第267师" "整编第268师" "整编第269师" "整编第270师" "整编第271师" "整编第272师" "整编第273师" "整编第274师" "整编第275师" 
+		"整编第276师" "整编第277师" "整编第278师" "整编第279师" "整编第280师" "整编第281师" "整编第282师" "整编第283师" "整编第284师" "整编第285师" "整编第286师" 
+		"整编第287师" "整编第288师" "整编第289师" "整编第290师" "整编第291师" "整编第292师" "整编第293师" "整编第294师" "整编第295师" "整编第296师" "整编第297师" 
+		"整编第298师" "整编第299师" 
+	}
+	bergsjaeger_brigade = {
+		"整编第1师" "整编第2师" "整编第3师" "整编第4师" "整编第5师" "整编第6师" "整编第7师" "整编第8师" "整编第9师" "整编第10师" "整编第11师" 
+		"整编第12师" "整编第13师" "整编第14师" "整编第15师" "整编第16师" "整编第17师" "整编第18师" "整编第19师" "整编第20师" "整编第21师" "整编第22师" 
+		"整编第23师" "整编第24师" "整编第25师" "整编第26师" "整编第27师" "整编第28师" "整编第29师" "整编第30师" "整编第31师" "整编第32师" "整编第33师" 
+		"整编第34师" "整编第35师" "整编第36师" "整编第37师" "整编第38师" "整编第39师" "整编第40师" "整编第41师" "整编第42师" "整编第43师" "整编第44师" 
+		"整编第45师" "整编第46师" "整编第47师" "整编第48师" "整编第49师" "整编第50师" "整编第51师" "整编第52师" "整编第53师" "整编第54师" "整编第55师" 
+		"整编第56师" "整编第57师" "整编第58师" "整编第59师" "整编第60师" "整编第61师" "整编第62师" "整编第63师" "整编第64师" "整编第65师" "整编第66师" 
+		"整编第67师" "整编第68师" "整编第69师" "整编第70师" "整编第71师" "整编第72师" "整编第73师" "整编第74师" "整编第75师" "整编第76师" "整编第77师" 
+		"整编第78师" "整编第79师" "整编第80师" "整编第81师" "整编第82师" "整编第83师" "整编第84师" "整编第85师" "整编第86师" "整编第87师" "整编第88师" 
+		"整编第89师" "整编第90师" "整编第91师" "整编第92师" "整编第93师" "整编第94师" "整编第95师" "整编第96师" "整编第97师" "整编第98师" "整编第99师" 
+		"整编第100师" "整编第101师" "整编第102师" "整编第103师" "整编第104师" "整编第105师" "整编第106师" "整编第107师" "整编第108师" "整编第109师" "整编第110师" 
+		"整编第111师" "整编第112师" "整编第113师" "整编第114师" "整编第115师" "整编第116师" "整编第117师" "整编第118师" "整编第119师" "整编第120师" "整编第121师" 
+		"整编第122师" "整编第123师" "整编第124师" "整编第125师" "整编第126师" "整编第127师" "整编第128师" "整编第129师" "整编第130师" "整编第131师" "整编第132师" 
+		"整编第133师" "整编第134师" "整编第135师" "整编第136师" "整编第137师" "整编第138师" "整编第139师" "整编第140师" "整编第141师" "整编第142师" "整编第143师" 
+		"整编第144师" "整编第145师" "整编第146师" "整编第147师" "整编第148师" "整编第149师" "整编第150师" "整编第151师" "整编第152师" "整编第153师" "整编第154师" 
+		"整编第155师" "整编第156师" "整编第157师" "整编第158师" "整编第159师" "整编第160师" "整编第161师" "整编第162师" "整编第163师" "整编第164师" "整编第165师" 
+		"整编第166师" "整编第167师" "整编第168师" "整编第169师" "整编第170师" "整编第171师" "整编第172师" "整编第173师" "整编第174师" "整编第175师" "整编第176师" 
+		"整编第177师" "整编第178师" "整编第179师" "整编第180师" "整编第181师" "整编第182师" "整编第183师" "整编第184师" "整编第185师" "整编第186师" "整编第187师" 
+		"整编第188师" "整编第189师" "整编第190师" "整编第191师" "整编第192师" "整编第193师" "整编第194师" "整编第195师" "整编第196师" "整编第197师" "整编第198师" 
+		"整编第199师" "整编第200师" "整编第201师" "整编第202师" "整编第203师" "整编第204师" "整编第205师" "整编第206师" "整编第207师" "整编第208师" "整编第209师" 
+		"整编第210师" "整编第211师" "整编第212师" "整编第213师" "整编第214师" "整编第215师" "整编第216师" "整编第217师" "整编第218师" "整编第219师" "整编第220师" 
+		"整编第221师" "整编第222师" "整编第223师" "整编第224师" "整编第225师" "整编第226师" "整编第227师" "整编第228师" "整编第229师" "整编第230师" "整编第231师" 
+		"整编第232师" "整编第233师" "整编第234师" "整编第235师" "整编第236师" "整编第237师" "整编第238师" "整编第239师" "整编第240师" "整编第241师" "整编第242师" 
+		"整编第243师" "整编第244师" "整编第245师" "整编第246师" "整编第247师" "整编第248师" "整编第249师" "整编第250师" "整编第251师" "整编第252师" "整编第253师" 
+		"整编第254师" "整编第255师" "整编第256师" "整编第257师" "整编第258师" "整编第259师" "整编第260师" "整编第261师" "整编第262师" "整编第263师" "整编第264师" 
+		"整编第265师" "整编第266师" "整编第267师" "整编第268师" "整编第269师" "整编第270师" "整编第271师" "整编第272师" "整编第273师" "整编第274师" "整编第275师" 
+		"整编第276师" "整编第277师" "整编第278师" "整编第279师" "整编第280师" "整编第281师" "整编第282师" "整编第283师" "整编第284师" "整编第285师" "整编第286师" 
+		"整编第287师" "整编第288师" "整编第289师" "整编第290师" "整编第291师" "整编第292师" "整编第293师" "整编第294师" "整编第295师" "整编第296师" "整编第297师" 
+		"整编第298师" "整编第299师" 
+	}
+	marine_brigade = {
+		"海军陆战队第1师" "海军陆战队第2师" "海军陆战队第3师" "海军陆战队第4师" "海军陆战队第5师" "海军陆战队第6师" "海军陆战队第7师" "海军陆战队第8师" "海军陆战队第9师" "海军陆战队第10师" "海军陆战队第11师" 
+		"海军陆战队第12师" "海军陆战队第13师" "海军陆战队第14师" "海军陆战队第15师" "海军陆战队第16师" "海军陆战队第17师" "海军陆战队第18师" "海军陆战队第19师" "海军陆战队第20师" 
+	}
+	garrison_brigade = {
+		"江苏省保安总队" "浙江省保安总队" "福建省保安总队" "安徽省保安总队" "河南省保安总队" "湖北省保安总队" "江西省保安总队" "湖南省保安总队" "陕西省保安总队" "贵州省保安总队" "四川省保安总队" 
+		"江苏省警察总队" "浙江省警察总队" "福建省警察总队" "安徽省警察总队" "河南省警察总队" "湖北省警察总队" "江西省警察总队" "湖南省警察纵队" "陕西省警察纵队" "贵州省警察纵队" "四川省警察纵队" 
+		"江苏省民防总队" "浙江省民防总队" "福建省民防总队" "安徽省民防总队" "河南省民防总队" "湖北省民防总队" "江西省民防总队" "湖南省民防总队" "陕西省民防总队" "贵州省民防总队" "四川省民防总队" 
+	}
+	militia_brigade = {
+		"暂编第1师" "暂编第2师" "暂编第3师" "暂编第4师" "暂编第5师" "暂编第6师" "暂编第7师" "暂编第8师" "暂编第9师" "暂编第10师" "暂编第11师" 
+		"暂编第12师" "暂编第13师" "暂编第14师" "暂编第15师" "暂编第16师" "暂编第17师" "暂编第18师" "暂编第19师" "暂编第20师" "暂编第21师" "暂编第22师" 
+		"暂编第23师" "暂编第24师" "暂编第25师" "暂编第26师" "暂编第27师" "暂编第28师" "暂编第29师" "暂编第30师" "暂编第31师" "暂编第32师" "暂编第33师" 
+		"暂编第34师" "暂编第35师" "暂编第36师" "暂编第37师" "暂编第38师" "暂编第39师" "暂编第40师" "暂编第41师" "暂编第42师" "暂编第43师" "暂编第44师" 
+		"暂编第45师" "暂编第46师" "暂编第47师" "暂编第48师" "暂编第49师" "暂编第50师" "暂编第51师" "暂编第52师" "暂编第53师" "暂编第54师" "暂编第55师" 
+		"暂编第56师" "暂编第57师" "暂编第58师" "暂编第59师" "暂编第60师" "暂编第61师" "暂编第62师" "暂编第63师" "暂编第64师" "暂编第65师" "暂编第66师" 
+		"暂编第67师" "暂编第68师" "暂编第69师" "暂编第70师" "暂编第71师" "暂编第72师" "暂编第73师" "暂编第74师" "暂编第75师" "暂编第76师" "暂编第77师" 
+		"暂编第78师" "暂编第79师" "暂编第80师" "暂编第81师" "暂编第82师" "暂编第83师" "暂编第84师" "暂编第85师" "暂编第86师" "暂编第87师" "暂编第88师" 
+		"暂编第89师" "暂编第90师" "暂编第91师" "暂编第92师" "暂编第93师" "暂编第94师" "暂编第95师" "暂编第96师" "暂编第97师" "暂编第98师" "暂编第99师" 
+		"暂编第100师" "暂编第101师" "暂编第102师" "暂编第103师" "暂编第104师" "暂编第105师" "暂编第106师" "暂编第107师" "暂编第108师" "暂编第109师" "暂编第110师" 
+		"暂编第111师" "暂编第112师" "暂编第113师" "暂编第114师" "暂编第115师" "暂编第116师" "暂编第117师" "暂编第118师" "暂编第119师" "暂编第120师" "暂编第121师" 
+		"暂编第122师" "暂编第123师" "暂编第124师" "暂编第125师" "暂编第126师" "暂编第127师" "暂编第128师" "暂编第129师" "暂编第130师" "暂编第131师" "暂编第132师" 
+		"暂编第133师" "暂编第134师" "暂编第135师" "暂编第136师" "暂编第137师" "暂编第138师" "暂编第139师" "暂编第140师" "暂编第141师" "暂编第142师" "暂编第143师" 
+		"暂编第144师" "暂编第145师" "暂编第146师" "暂编第147师" "暂编第148师" "暂编第149师" "暂编第150师" "暂编第151师" "暂编第152师" "暂编第153师" "暂编第154师" 
+		"暂编第155师" "暂编第156师" "暂编第157师" "暂编第158师" "暂编第159师" "暂编第160师" "暂编第161师" "暂编第162师" "暂编第163师" "暂编第164师" "暂编第165师" 
+		"暂编第166师" "暂编第167师" "暂编第168师" "暂编第169师" "暂编第170师" "暂编第171师" "暂编第172师" "暂编第173师" "暂编第174师" "暂编第175师" "暂编第176师" 
+		"暂编第177师" "暂编第178师" "暂编第179师" "暂编第180师" "暂编第181师" "暂编第182师" "暂编第183师" "暂编第184师" "暂编第185师" "暂编第186师" "暂编第187师" 
+		"暂编第188师" "暂编第189师" "暂编第190师" "暂编第191师" "暂编第192师" "暂编第193师" "暂编第194师" "暂编第195师" "暂编第196师" "暂编第197师" "暂编第198师" 
+		"暂编第199师" "暂编第200师" "暂编第201师" "暂编第202师" "暂编第203师" "暂编第204师" "暂编第205师" "暂编第206师" "暂编第207师" "暂编第208师" "暂编第209师" 
+		"暂编第210师" "暂编第211师" "暂编第212师" "暂编第213师" "暂编第214师" "暂编第215师" "暂编第216师" "暂编第217师" "暂编第218师" "暂编第219师" "暂编第220师" 
+		"暂编第221师" "暂编第222师" "暂编第223师" "暂编第224师" "暂编第225师" "暂编第226师" "暂编第227师" "暂编第228师" "暂编第229师" "暂编第230师" "暂编第231师" 
+		"暂编第232师" "暂编第233师" "暂编第234师" "暂编第235师" "暂编第236师" "暂编第237师" "暂编第238师" "暂编第239师" "暂编第240师" "暂编第241师" "暂编第242师" 
+		"暂编第243师" "暂编第244师" "暂编第245师" "暂编第246师" "暂编第247师" "暂编第248师" "暂编第249师" "暂编第250师" "暂编第251师" "暂编第252师" "暂编第253师" 
+		"暂编第254师" "暂编第255师" "暂编第256师" "暂编第257师" "暂编第258师" "暂编第259师" "暂编第260师" "暂编第261师" "暂编第262师" "暂编第263师" "暂编第264师" 
+		"暂编第265师" "暂编第266师" "暂编第267师" "暂编第268师" "暂编第269师" "暂编第270师" "暂编第271师" "暂编第272师" "暂编第273师" "暂编第274师" "暂编第275师" 
+		"暂编第276师" "暂编第277师" "暂编第278师" "暂编第279师" "暂编第280师" "暂编第281师" "暂编第282师" "暂编第283师" "暂编第284师" "暂编第285师" "暂编第286师" 
+		"暂编第287师" "暂编第288师" "暂编第289师" "暂编第290师" "暂编第291师" "暂编第292师" "暂编第293师" "暂编第294师" "暂编第295师" "暂编第296师" "暂编第297师" 
+		"暂编第298师" "暂编第299师" 
+	}
+	chi_star_destroyer = {
+		"整编第1师" "整编第2师" "整编第3师" "整编第4师" "整编第5师" "整编第6师" "整编第7师" "整编第8师" "整编第9师" "整编第10师" "整编第11师" 
+		"整编第12师" "整编第13师" "整编第14师" "整编第15师" "整编第16师" "整编第17师" "整编第18师" "整编第19师" "整编第20师" "整编第21师" "整编第22师" 
+		"整编第23师" "整编第24师" "整编第25师" "整编第26师" "整编第27师" "整编第28师" "整编第29师" "整编第30师" "整编第31师" "整编第32师" "整编第33师" 
+		"整编第34师" "整编第35师" "整编第36师" "整编第37师" "整编第38师" "整编第39师" "整编第40师" "整编第41师" "整编第42师" "整编第43师" "整编第44师" 
+		"整编第45师" "整编第46师" "整编第47师" "整编第48师" "整编第49师" "整编第50师" "整编第51师" "整编第52师" "整编第53师" "整编第54师" "整编第55师" 
+		"整编第56师" "整编第57师" "整编第58师" "整编第59师" "整编第60师" "整编第61师" "整编第62师" "整编第63师" "整编第64师" "整编第65师" "整编第66师" 
+		"整编第67师" "整编第68师" "整编第69师" "整编第70师" "整编第71师" "整编第72师" "整编第73师" "整编第74师" "整编第75师" "整编第76师" "整编第77师" 
+		"整编第78师" "整编第79师" "整编第80师" "整编第81师" "整编第82师" "整编第83师" "整编第84师" "整编第85师" "整编第86师" "整编第87师" "整编第88师" 
+		"整编第89师" "整编第90师" "整编第91师" "整编第92师" "整编第93师" "整编第94师" "整编第95师" "整编第96师" "整编第97师" "整编第98师" "整编第99师" 
+		"整编第100师" "整编第101师" "整编第102师" "整编第103师" "整编第104师" "整编第105师" "整编第106师" "整编第107师" "整编第108师" "整编第109师" "整编第110师" 
+		"整编第111师" "整编第112师" "整编第113师" "整编第114师" "整编第115师" "整编第116师" "整编第117师" "整编第118师" "整编第119师" "整编第120师" "整编第121师" 
+		"整编第122师" "整编第123师" "整编第124师" "整编第125师" "整编第126师" "整编第127师" "整编第128师" "整编第129师" "整编第130师" "整编第131师" "整编第132师" 
+		"整编第133师" "整编第134师" "整编第135师" "整编第136师" "整编第137师" "整编第138师" "整编第139师" "整编第140师" "整编第141师" "整编第142师" "整编第143师" 
+		"整编第144师" "整编第145师" "整编第146师" "整编第147师" "整编第148师" "整编第149师" "整编第150师" "整编第151师" "整编第152师" "整编第153师" "整编第154师" 
+		"整编第155师" "整编第156师" "整编第157师" "整编第158师" "整编第159师" "整编第160师" "整编第161师" "整编第162师" "整编第163师" "整编第164师" "整编第165师" 
+		"整编第166师" "整编第167师" "整编第168师" "整编第169师" "整编第170师" "整编第171师" "整编第172师" "整编第173师" "整编第174师" "整编第175师" "整编第176师" 
+		"整编第177师" "整编第178师" "整编第179师" "整编第180师" "整编第181师" "整编第182师" "整编第183师" "整编第184师" "整编第185师" "整编第186师" "整编第187师" 
+		"整编第188师" "整编第189师" "整编第190师" "整编第191师" "整编第192师" "整编第193师" "整编第194师" "整编第195师" "整编第196师" "整编第197师" "整编第198师" 
+		"整编第199师" "整编第200师" "整编第201师" "整编第202师" "整编第203师" "整编第204师" "整编第205师" "整编第206师" "整编第207师" "整编第208师" "整编第209师" 
+		"整编第210师" "整编第211师" "整编第212师" "整编第213师" "整编第214师" "整编第215师" "整编第216师" "整编第217师" "整编第218师" "整编第219师" "整编第220师" 
+		"整编第221师" "整编第222师" "整编第223师" "整编第224师" "整编第225师" "整编第226师" "整编第227师" "整编第228师" "整编第229师" "整编第230师" "整编第231师" 
+		"整编第232师" "整编第233师" "整编第234师" "整编第235师" "整编第236师" "整编第237师" "整编第238师" "整编第239师" "整编第240师" "整编第241师" "整编第242师" 
+		"整编第243师" "整编第244师" "整编第245师" "整编第246师" "整编第247师" "整编第248师" "整编第249师" "整编第250师" "整编第251师" "整编第252师" "整编第253师" 
+		"整编第254师" "整编第255师" "整编第256师" "整编第257师" "整编第258师" "整编第259师" "整编第260师" "整编第261师" "整编第262师" "整编第263师" "整编第264师" 
+		"整编第265师" "整编第266师" "整编第267师" "整编第268师" "整编第269师" "整编第270师" "整编第271师" "整编第272师" "整编第273师" "整编第274师" "整编第275师" 
+		"整编第276师" "整编第277师" "整编第278师" "整编第279师" "整编第280师" "整编第281师" "整编第282师" "整编第283师" "整编第284师" "整编第285师" "整编第286师" 
+		"整编第287师" "整编第288师" "整编第289师" "整编第290师" "整编第291师" "整编第292师" "整编第293师" "整编第294师" "整编第295师" "整编第296师" "整编第297师" 
+		"整编第298师" "整编第299师" 
+	}
+}
+Ministers = {
+	504001 = {
+		name = "蒋介石"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M52002
+		head_of_state = powerful_imperium
+		head_of_government = backroom_backstabber
+		start_date = 1936.1.1
+	}
+	504002 = {
+		name = "张群"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M52003
+		foreign_minister = great_compromiser
+		head_of_government = happy_amateur
+		start_date = 1936.1.1
+	}
+	504003 = {
+		name = "陈果夫"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M52005
+		minister_of_security = crooked_kleptocrat
+		foreign_minister = great_compromiser
+		armament_minister = laissez_faires_capitalist
+		start_date = 1936.1.1
+	}
+	504004 = {
+		name = "陈立夫"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M52006
+		minister_of_intelligence = political_specialist
+		minister_of_security = back_stabber
+		start_date = 1936.1.1
+	}
+	504005 = {
+		name = "陈绍宽"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M52009
+		chief_of_navy = indirect_approach_doctrine
+		armament_minister = battle_fleet_proponent
+		start_date = 1936.1.1
+	}
+	504006 = {
+		name = "周至柔"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M52010
+		chief_of_air = army_aviation_doctrine
+		start_date = 1936.1.1
+	}
+	504007 = {
+		name = "宋子文"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M52024
+		head_of_state = autocratic_charmer
+		head_of_government = political_protege
+		foreign_minister = the_cloak_n_dagger_schemer
+		start_date = 1936.1.1
+	}
+	504008 = {
+		name = "王宠惠"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M52026
+		head_of_government = flamboyant_tough_guy
+		foreign_minister = ideological_crusader
+		start_date = 1936.1.1
+	}
+	504009 = {
+		name = "孔祥熙"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M52030
+		head_of_government = silent_workhorse
+		minister_of_security = man_of_the_people
+		start_date = 1936.1.1
+	}
+	504010 = {
+		name = "林蔚"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M52035
+		foreign_minister = general_staffer
+		chief_of_staff = school_of_manoeuvre
+		start_date = 1936.1.1
+	}
+	504011 = {
+		name = "沈醉"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M52036
+		foreign_minister = apologetic_clerk
+		start_date = 1936.1.1
+	}
+	504012 = {
+		name = "王世杰"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M52038
+		foreign_minister = iron_fisted_brute
+		start_date = 1936.1.1
+	}
+	504013 = {
+		name = "杨鲁昌"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M52043
+		foreign_minister = great_compromiser
+		armament_minister = resource_industrialist
+		start_date = 1936.1.1
+	}
+	504014 = {
+		name = "白崇禧"
+		ideology = paternal_autocrat
+		loyalty = 0.50
+		picture = M52045
+		armament_minister = resource_industrialist
+		chief_of_staff = school_of_manoeuvre
+		start_date = 1936.1.1
+	}
+	504015 = {
+		name = "黄辰左"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M52047
+		armament_minister = military_entrepreneur
+		chief_of_air = air_superiority_doctrine
+		start_date = 1936.1.1
+	}
+	504016 = {
+		name = "何应钦"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M52048
+		head_of_state = power_hungry_demagogue
+		armament_minister = air_superiority_proponent
+		armament_minister = infantry_proponent
+		chief_of_army = elastic_defence_doctrine
+		start_date = 1936.1.1
+	}
+	504017 = {
+		name = "蔡文治"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M52050
+		armament_minister = tank_proponent
+		start_date = 1936.1.1
+	}
+	504018 = {
+		name = "贺国光"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M52051
+		armament_minister = air_to_ground_proponent
+		start_date = 1936.1.1
+	}
+	504019 = {
+		name = "于飞鹏"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M52053
+		armament_minister = infantry_proponent
+		start_date = 1936.1.1
+	}
+	504020 = {
+		name = "王树铭"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M52054
+		armament_minister = air_to_sea_proponent
+		chief_of_air = vertical_envelopment_doctrine
+		start_date = 1936.1.1
+	}
+	504021 = {
+		name = "蒋经国"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M52055
+		armament_minister = administrative_genius
+		minister_of_security = man_of_the_people
+		start_date = 1936.1.1
+	}
+	504022 = {
+		name = "杜建时"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M52056
+		armament_minister = strategic_air_proponent
+		start_date = 1936.1.1
+	}
+	504023 = {
+		name = "翁文灏"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M52057
+		armament_minister = laissez_faires_capitalist
+		start_date = 1936.1.1
+	}
+	504024 = {
+		name = "陈公博"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M52014
+		armament_minister = laissez_faires_capitalist
+		start_date = 1936.1.1
+	}
+	504025 = {
+		name = "陈策"
+		ideology = fascistic
+		loyalty = 1.00
+		picture = M52061
+		armament_minister = submarine_proponent
+		start_date = 1936.1.1
+	}
+	504026 = {
+		name = "戴笠"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M52063
+		minister_of_security = crime_fighter
+		minister_of_intelligence = political_specialist
+		start_date = 1936.1.1
+	}
+	504027 = {
+		name = "瓦尔特·斯滕内斯"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M52064
+		minister_of_security = back_stabber
+		start_date = 1936.1.1
+	}
+	504028 = {
+		name = "吴忠信"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M52065
+		minister_of_security = compassionate_gentleman
+		start_date = 1936.1.1
+	}
+	504029 = {
+		name = "黄慕松"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M52066
+		minister_of_security = efficient_sociopath
+		start_date = 1936.1.1
+	}
+	504030 = {
+		name = "谷正伦"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M52067
+		minister_of_security = crime_fighter
+		start_date = 1936.1.1
+	}
+	504031 = {
+		name = "刘斐"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M52068
+		minister_of_security = silent_lawyer
+		start_date = 1936.1.1
+	}
+	504032 = {
+		name = "康泽"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M52072
+		minister_of_security = prince_of_terror
+		start_date = 1936.1.1
+	}
+	504033 = {
+		name = "蔡元培"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M52073
+		minister_of_security = compassionate_gentleman
+		start_date = 1936.1.1
+	}
+	504034 = {
+		name = "丁默邨"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M52015
+		minister_of_security = crooked_kleptocrat
+		start_date = 1936.1.1
+	}
+	504035 = {
+		name = "陈宏山"
+		ideology = fascistic
+		loyalty = 1.00
+		picture = M52076
+		minister_of_security = prince_of_terror
+		start_date = 1936.1.1
+	}
+	504036 = {
+		name = "陈飞克"
+		ideology = fascistic
+		loyalty = 1.00
+		picture = M52077
+		minister_of_security = efficient_sociopath
+		minister_of_intelligence = research_specialist
+		start_date = 1936.1.1
+	}
+	504037 = {
+		name = "贺耀祖"
+		ideology = paternal_autocrat
+		loyalty = 0.50
+		picture = M52079
+		minister_of_intelligence = industrial_specialist
+		start_date = 1936.1.1
+	}
+	504038 = {
+		name = "毛人凤"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M52080
+		minister_of_intelligence = research_specialist
+		start_date = 1936.1.1
+	}
+	504039 = {
+		name = "蒋一英"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M52064
+		minister_of_intelligence = dismal_enigma
+		start_date = 1936.1.1
+	}
+	504040 = {
+		name = "杨玄城"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M52082
+		minister_of_intelligence = naval_intelligence_specialist
+		start_date = 1936.1.1
+	}
+	504041 = {
+		name = "郑介民"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M52083
+		minister_of_intelligence = technical_specialist
+		start_date = 1936.1.1
+	}
+	504042 = {
+		name = "李士群"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M52016
+		minister_of_intelligence = political_specialist
+		start_date = 1936.1.1
+	}
+	504043 = {
+		name = "陈诚"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M52105
+		chief_of_staff = school_of_psychology
+		chief_of_army = guns_and_butter_doctrine
+		chief_of_navy = power_projection_doctrine
+		head_of_government = political_protege
+		start_date = 1936.1.1
+	}
+	504044 = {
+		name = "徐庭瑶"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M52098
+		chief_of_army = armoured_spearhead_doctrine
+		start_date = 1936.1.1
+	}
+	504045 = {
+		name = "顾祝同"
+		ideology = paternal_autocrat
+		loyalty = 0.50
+		picture = M52097
+		chief_of_army = decisive_battle_doctrine
+		start_date = 1936.1.1
+	}
+	504046 = {
+		name = "鲍文樾"
+		ideology = fascistic
+		loyalty = 0.50
+		picture = M52018
+		chief_of_army = static_defence_doctrine
+		start_date = 1936.1.1
+	}
+	504047 = {
+		name = "欧阳格"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M52101
+		chief_of_navy = open_seas_doctrine
+		start_date = 1936.1.1
+	}
+	504048 = {
+		name = "曾以鼎"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M52102
+		chief_of_navy = base_control_doctrine
+		start_date = 1936.1.1
+	}
+	504049 = {
+		name = "陈季良"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M52103
+		chief_of_navy = indirect_approach_doctrine
+		start_date = 1936.1.1
+	}
+	504050 = {
+		name = "桂永清"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M52104
+		chief_of_navy = decisive_naval_battle_doctrine
+		start_date = 1936.1.1
+	}
+	504051 = {
+		name = "任寿旭"
+		ideology = social_conservative
+		loyalty = 0.50
+		picture = M52106
+		chief_of_navy = open_seas_doctrine
+		start_date = 1936.1.1
+	}
+	504052 = {
+		name = "沈鸿烈"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M52109
+		chief_of_air = naval_aviation_doctrine
+		start_date = 1936.1.1
+	}
+	504053 = {
+		name = "陈昌祖"
+		ideology = fascistic
+		loyalty = 0.50
+		picture = M52020
+		chief_of_air = army_aviation_doctrine
+		start_date = 1936.1.1
+	}
+	504054 = {
+		name = "刘文辉"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M501004
+		head_of_state = power_hungry_demagogue
+		head_of_government = silent_workhorse
+		foreign_minister = biased_intellectual
+		armament_minister = military_entrepreneur
+		chief_of_army = guns_and_butter_doctrine
+		start_date = 1936.1.1
+	}
+	504055 = {
+		name = "冷寅东"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M504025
+		minister_of_security = man_of_the_people
+		minister_of_intelligence = industrial_specialist
+		start_date = 1936.1.1
+	}
+	504056 = {
+		name = "夏首勋"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M504026
+		chief_of_staff = general_staffer
+		start_date = 1936.1.1
+	}
+	504057 = {
+		name = "刘湘"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M504027
+		head_of_state = resigned_generalissimo
+		start_date = 1936.1.1
+	}
+	504058 = {
+		name = "杨森"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M504028
+		armament_minister = corrupt_kleptocrat
+		minister_of_intelligence = efficient_sociopath
+		start_date = 1936.1.1
+	}
+	504059 = {
+		name = "邓锡侯"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M504029
+		head_of_state = resigned_generalissimo
+		head_of_government = insignificant_layman
+		chief_of_staff = back_stabber
+		armament_minister = military_entrepreneur
+		start_date = 1936.1.1
+	}
+	504060 = {
+		name = "孙震"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M504030
+		minister_of_security = benevolent_gentleman
+		start_date = 1936.1.1
+	}
+	504061 = {
+		name = "贺国光"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M504031
+		foreign_minister = apologetic_clerk
+		chief_of_army = school_of_defence
+		start_date = 1936.1.1
+	}
+	504062 = {
+		name = "王陵基"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M504032
+		head_of_government = pig_headed_isolationist
+		start_date = 1936.1.1
+	}
+	504063 = {
+		name = "刘存厚"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M504033
+		minister_of_security = back_stabber
+		start_date = 1936.1.1
+	}
+	504064 = {
+		name = "李家钰"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M504034
+		chief_of_army = school_of_fire_support
+		start_date = 1936.1.1
+	}
+	504065 = {
+		name = "萧毅肃"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M52092
+		chief_of_staff = school_of_fire_support
+		start_date = 1936.1.1
+	}
+	504066 = {
+		name = "马步芳"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M504009
+		head_of_state = ruthless_powermonger
+		minister_of_security = prince_of_terror
+		minister_of_intelligence = dismal_enigma
+		foreign_minister = the_cloak_n_dagger_schemer
+		start_date = 1936.1.1
+	}
+	504067 = {
+		name = "马步青"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M504007
+		chief_of_staff = the_cloak_n_dagger_schemer
+		armament_minister = guns_and_butter_doctrine
+		start_date = 1936.1.1
+	}
+	504068 = {
+		name = "马继援"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M504054
+		head_of_government = military_entrepreneur
+		chief_of_staff = school_of_psychology
+		start_date = 1936.1.1
+	}
+	504069 = {
+		name = "马步銮"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = L4000181
+		minister_of_security = silent_lawyer
+		chief_of_army = infantry_proponent
+		start_date = 1936.1.1
+	}
+	504070 = {
+		name = "马鸿宾"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = L50236
+		head_of_government = compassionate_gentleman
+		foreign_minister = apologetic_clerk
+		start_date = 1936.1.1
+	}
+	504071 = {
+		name = "马鸿逵"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = L50235
+		head_of_state = power_hungry_demagogue
+		chief_of_army = old_general
+		armament_minister = administrative_genius
+		minister_of_intelligence = research_specialist
+		start_date = 1936.1.1
+	}
+	504072 = {
+		name = "马敦静"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = L4000172
+		chief_of_staff = corrupt_kleptocrat
+		start_date = 1936.1.1
+	}
+	504073 = {
+		name = "卢忠良"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = L4000171
+		minister_of_security = silent_lawyer
+		start_date = 1936.1.1
+	}
+	504074 = {
+		name = "龙云"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = L4000101
+		head_of_state = die_hard_reformer
+		head_of_government = political_protege
+		foreign_minister = apologetic_clerk
+		start_date = 1936.1.1
+	}
+	504075 = {
+		name = "高荫槐"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = L4000111
+		chief_of_staff = school_of_psychology
+		start_date = 1936.1.1
+	}
+	504076 = {
+		name = "张冲"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = L4000108
+		armament_minister = administrative_genius
+		start_date = 1936.1.1
+	}
+	504077 = {
+		name = "卢汉"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = L4000102
+		minister_of_security = crime_fighter
+		minister_of_intelligence = political_specialist
+		chief_of_army = guns_and_butter_doctrine
+		start_date = 1936.1.1
+	}
+	504078 = {
+		name = "余汉谋"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M502004
+		chief_of_staff = school_of_mass_combat
+		armament_minister = infantry_proponent
+		start_date = 1936.1.1
+	}
+	504079 = {
+		name = "陈济棠"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M502008
+		head_of_state = power_hungry_demagogue
+		head_of_government = ambitious_union_boss
+		chief_of_army = guns_and_butter_doctrine
+		foreign_minister = ideological_crusader
+		start_date = 1936.1.1
+	}
+	504080 = {
+		name = "林翼中"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M504035
+		minister_of_intelligence = political_specialist
+		start_date = 1936.1.1
+	}
+	504081 = {
+		name = "香翰屏"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M504036
+		minister_of_security = silent_lawyer
+		start_date = 1936.1.1
+	}
+	504082 = {
+		name = "黄光锐"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M504037
+		chief_of_air = army_aviation_doctrine
+		start_date = 1936.1.1
+	}
+	504083 = {
+		name = "黄绍竑"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = L50132
+		head_of_government = silent_workhorse
+		start_date = 1936.1.1
+	}
+	504084 = {
+		name = "李宗仁"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = L50186
+		head_of_state = die_hard_reformer
+		foreign_minister = biased_intellectual
+		chief_of_army = static_defence_doctrine
+		start_date = 1936.1.1
+	}
+	504085 = {
+		name = "黄旭初"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M502003
+		minister_of_security = efficient_sociopath
+		start_date = 1936.1.1
+	}
+	504086 = {
+		name = "李品仙"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = L50182
+		foreign_minister = infantry_proponent
+		start_date = 1936.1.1
+	}
+	504087 = {
+		name = "廖磊"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = L50193
+		chief_of_army = static_defence_doctrine
+		start_date = 1936.1.1
+	}
+	504088 = {
+		name = "王公度"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M504042
+		minister_of_intelligence = political_specialist
+		start_date = 1936.1.1
+	}
+	504089 = {
+		name = "韩复渠"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = L50087
+		head_of_state = resigned_generalissimo
+		head_of_government = naive_optimist
+		chief_of_army = guns_and_butter_doctrine
+		foreign_minister = general_staffer
+		start_date = 1936.1.1
+	}
+	504090 = {
+		name = "何思源"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M504039
+		armament_minister = infantry_proponent
+		minister_of_intelligence = technical_specialist
+		minister_of_security = silent_lawyer
+		start_date = 1936.1.1
+	}
+	504091 = {
+		name = "孙桐萱"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = L50269
+		chief_of_staff = school_of_defence
+		start_date = 1936.1.1
+	}
+	504092 = {
+		name = "张学良"
+		ideology = paternal_autocrat
+		loyalty = 0.50
+		picture = M52008
+		head_of_state = die_hard_reformer
+		start_date = 1936.1.1
+	}
+	504093 = {
+		name = "杨虎城"
+		ideology = paternal_autocrat
+		loyalty = 0.50
+		picture = L50340
+		head_of_government = silent_workhorse
+		armament_minister = military_entrepreneur
+		start_date = 1936.1.1
+	}
+	504094 = {
+		name = "邵力子"
+		ideology = paternal_autocrat
+		loyalty = 0.50
+		picture = M504048
+		foreign_minister = ideological_crusader
+		start_date = 1936.1.1
+	}
+	504095 = {
+		name = "邓宝珊"
+		ideology = paternal_autocrat
+		loyalty = 0.50
+		picture = L50285
+		minister_of_security = man_of_the_people
+		start_date = 1936.1.1
+	}
+	504096 = {
+		name = "王以哲"
+		ideology = paternal_autocrat
+		loyalty = 0.50
+		picture = L50319
+		minister_of_intelligence = technical_specialist
+		chief_of_staff = school_of_fire_support
+		start_date = 1936.1.1
+	}
+	504097 = {
+		name = "于学忠"
+		ideology = paternal_autocrat
+		loyalty = 0.50
+		picture = L503018
+		chief_of_army = guns_and_butter_doctrine
+		start_date = 1936.1.1
+	}
+	504098 = {
+		name = "徐永昌"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M52046
+		head_of_government = flamboyant_tough_guy
+		start_date = 1936.1.1
+	}
+	504099 = {
+		name = "傅作义"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = L50085
+		head_of_state = weary_stiff_neck
+		foreign_minister = apologetic_clerk
+		chief_of_army = decisive_battle_doctrine
+		start_date = 1936.1.1
+	}
+	504100 = {
+		name = "董其武"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = L50300
+		minister_of_security = man_of_the_people
+		minister_of_intelligence = undistinguished_suit
+		start_date = 1936.1.1
+	}
+	504101 = {
+		name = "孙兰峰"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = L4000159
+		chief_of_staff = school_of_manoeuvre
+		start_date = 1936.1.1
+	}
+	504102 = {
+		name = "鲁英麟"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = L4000158
+		armament_minister = infantry_proponent
+		start_date = 1936.1.1
+	}
+	504103 = {
+		name = "阎锡山"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = L50348
+		head_of_state = ruthless_powermonger
+		chief_of_army = guns_and_butter_doctrine
+		minister_of_intelligence = dismal_enigma
+		start_date = 1936.1.1
+	}
+	504104 = {
+		name = "赵承绶"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = L50021
+		foreign_minister = great_compromiser
+		start_date = 1936.1.1
+	}
+	504105 = {
+		name = "杨爱源"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = L50337
+		minister_of_security = corrupt_kleptocrat
+		start_date = 1936.1.1
+	}
+	504106 = {
+		name = "商震"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M503006
+		chief_of_staff = school_of_fire_support
+		start_date = 1936.1.1
+	}
+	504107 = {
+		name = "宋哲元"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = L50272
+		head_of_state = weary_stiff_neck
+		start_date = 1936.1.1
+	}
+	504108 = {
+		name = "秦德纯"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = L50293
+		head_of_government = political_protege
+		minister_of_intelligence = dismal_enigma
+		start_date = 1936.1.1
+	}
+	504109 = {
+		name = "佟麟阁"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = L50301
+		chief_of_army = static_defence_doctrine
+		start_date = 1936.1.1
+	}
+	504110 = {
+		name = "张自忠"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = L50004
+		foreign_minister = great_compromiser
+		chief_of_staff = school_of_defence
+		start_date = 1936.1.1
+	}
+	504111 = {
+		name = "冯治安"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = L50080
+		armament_minister = infantry_proponent
+		start_date = 1936.1.1
+	}
+	504112 = {
+		name = "刘汝明"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = L50209
+		minister_of_security = man_of_the_people
+		start_date = 1936.1.1
+	}
+}

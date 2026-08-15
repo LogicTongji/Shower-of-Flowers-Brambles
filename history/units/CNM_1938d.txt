@@ -1,0 +1,16 @@
+army = {
+		name = "第17集团军"
+		location = 9142
+		regiment = { type = hq_brigade name = "第17集团军指挥部" historical_model = 1 }	
+		corps = {
+			name = "第81军"
+			location = 7493
+			regiment = { type = hq_brigade name = "第81军指挥部" experience = 60  historical_model = 1 }
+			division= {
+				name = "第168师"
+				location = 9089
+				regiment = { type = militia_brigade experience = 60  historical_model = 0 }
+				regiment = { type = militia_brigade experience = 60  historical_model = 0 }		
+			}
+
+		}

@@ -1,0 +1,113 @@
+###########################
+# Japan Demands Indochine #
+###########################
+# Vichy France - Reaction Event
+country_event = {
+
+	id = 1801
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME1801"
+	desc = "EVTDESC1801"
+	#picture = "indochina_demand"
+
+	option = {
+		name = "EVTOPTA1801"			# Accept
+		ai_chance = { factor = 100 }
+		relation = { who = JAP value = 35 }
+		relation = { who = GER value = 10 }
+		relation = { who = FRA value = -30 }
+		relation = { who = ENG value = -25 }
+		relation = { who = USA value = -15 }
+		french_indochine_region = { secede_province = JAP }
+		6178 = { secede_province = JAP }
+		6186 = { secede_province = JAP }
+		7705 = { secede_province = JAP }
+		7712 = { secede_province = JAP }
+		7709 = { secede_province = JAP }
+		7714 = { secede_province = JAP }
+		7715 = { secede_province = JAP }
+		7718 = { secede_province = JAP }
+		JAP = { country_event = 1803 }		
+		USA = { country_event = 1802 }
+	}
+	option = {
+		name = "EVTOPTB1801"			# Refuse
+		JAP = { country_event = 1804 }
+		USA = { country_event = 1802 }
+	}
+}
+
+# Informs the United States
+country_event = {
+
+	id = 1802
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME1802"
+	desc = "EVTDESC1802"
+	#picture = "indochina_demand"
+
+	option = {
+		name = "EVTOPTA1802"			# The Japs are getting dangerous
+		relation = { who = JAP value = -5 }
+	}
+}
+
+# Response to Japan - Vichy France Accepts
+country_event = {
+
+	id = 1803
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME1803"
+	desc = "EVTDESC1803"
+	#picture = "indochina_demand"
+
+	option = {
+		name = "EVTOPTA1803"			# Very Good!		
+		# Saigon
+		6236 = { garrison_brigade = current }
+		6236 = { garrison_brigade = current }
+		
+		# Hanoi
+		5916 = { garrison_brigade = current }
+		5916 = { garrison_brigade = current }
+		
+		# Quang Ngai
+		6108 = { garrison_brigade = current }
+		6108 = { garrison_brigade = current }
+		
+		# Haiphong
+		5945 = { infantry_brigade = current }
+		5945 = { infantry_brigade = current }
+		5945 = { infantry_brigade = current }
+		
+		# Thai Nguyên
+		5897 = { infantry_brigade = current }
+		5897 = { infantry_brigade = current }
+		5897 = { infantry_brigade = current }
+
+	}
+}
+
+# Response to Japan - Vichy France Refuses
+country_event = {
+
+	id = 1804
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME1804"
+	desc = "EVTDESC1804"
+	#picture = "indochina_demand"
+
+	option = {
+		name = "EVTOPTA1804"			# Curses
+		dissent = 3
+	}
+}
+

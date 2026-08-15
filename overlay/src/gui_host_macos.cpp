@@ -2,9 +2,7 @@
 
 #include <algorithm>
 #include <cctype>
-#include <functional>
 #include <iostream>
-#include <optional>
 #include <unordered_map>
 #include <unordered_set>
 #include <utility>
@@ -22,6 +20,7 @@
 #include "gui_text_renderer_macos.h"
 #include "gui_texture_loader_macos.h"
 #include "gui_tick.h"
+#include "gui_window_session.h"
 
 namespace fs = std::filesystem;
 
@@ -235,34 +234,6 @@ uint64_t TextureBytes(SDL_Texture* texture)
         * static_cast<uint64_t>(bytesPerPixel);
 }
 
-void CollectListDefinitions(
-    const gui::WidgetDefinition& widget,
-    std::vector<std::string>& listNames,
-    std::unordered_set<std::string>& templateNames
-)
-{
-    if (widget.type == gui::WidgetType::ListBox)
-    {
-        if (!widget.name.empty())
-        {
-            listNames.push_back(widget.name);
-        }
-        if (!widget.templateName.empty())
-        {
-            templateNames.insert(widget.templateName);
-        }
-    }
-
-    for (const gui::WidgetDefinition& child : widget.children)
-    {
-        CollectListDefinitions(
-            child,
-            listNames,
-            templateNames
-        );
-    }
-}
-
 GuiImageScaleMode ResolveScaleMode(
     const std::string& value
 )
@@ -295,18 +266,6 @@ SDL_Color ToColor(const float color[3])
         ),
         SDL_ALPHA_OPAQUE
     };
-}
-
-bool PointInside(
-    const gui::GuiRect& rect,
-    int x,
-    int y
-)
-{
-    return x >= rect.x
-        && x < rect.x + rect.width
-        && y >= rect.y
-        && y < rect.y + rect.height;
 }
 
 const gui::WidgetDefinition* FindWidgetDefinition(
@@ -373,35 +332,68 @@ uint32_t EventWindowId(const SDL_Event& event)
     }
 }
 
-class GuiMacWindowSession final : public IGuiApplicationEndpoint
+class GuiMacWindowSession final
 {
 public:
-    using ApplicationActionInvoker = std::function<bool(
-        std::string_view,
-        const GuiActionContext&
-    )>;
+    using ApplicationActionInvoker =
+        GuiWindowSessionController::ApplicationActionInvoker;
 
     GuiMacWindowSession(
         fs::path root,
-        const GuiMacPluginLaunch& launch,
+        const GuiPluginLaunch& launch,
         const gui::GuiInterpreter& interpreter,
         const GuiBehaviorRegistry* behaviorRegistry,
         const GuiMacFontSet& fonts,
         const GuiLocalizationRegistry& localization,
         ApplicationActionInvoker applicationActionInvoker
     )
-        : root_(std::move(root)),
-          id_(launch.id),
-          visibleWhen_(launch.visibleWhen),
-          plugin_(*launch.plugin),
-          interpreter_(interpreter),
-          behaviorRegistry_(behaviorRegistry),
-          fonts_(fonts),
+        : fonts_(fonts),
           localization_(localization),
-          applicationActionInvoker_(
-              std::move(applicationActionInvoker)
+          controller_(
+              std::move(root),
+              launch,
+              interpreter,
+              behaviorRegistry
           )
     {
+        controller_.SetLocalizationResolver(
+            [this](std::string_view key)
+            {
+                return localization_.Resolve(key);
+            }
+        );
+        controller_.SetApplicationActionInvoker(
+            std::move(applicationActionInvoker)
+        );
+        controller_.SetDataChangedCallback(
+            [this]()
+            {
+                RefreshPlatformData();
+            }
+        );
+        controller_.SetVisibilityChangedCallback(
+            [this](bool visible)
+            {
+                if (!window_)
+                {
+                    return;
+                }
+                if (visible)
+                {
+                    SDL_ShowWindow(window_);
+                }
+                else
+                {
+                    SDL_HideWindow(window_);
+                }
+            }
+        );
+        controller_.SetEventResolver(
+            [this](std::vector<GuiActionEvent>& events)
+            {
+                indexedMaps_.AttachItemIds(events);
+            }
+        );
     }
 
     ~GuiMacWindowSession()
@@ -411,18 +403,13 @@ public:
 
     bool Initialize(std::string& error)
     {
-        if (!windowRuntime_.Bind(
-            interpreter_,
-            plugin_.WindowName()
-        ))
+        if (!controller_.Bind(error))
         {
-            error = "GUI window not found: "
-                + std::string(plugin_.WindowName());
             return false;
         }
 
         const gui::WindowDefinition* definition =
-            windowRuntime_.Definition();
+            controller_.Runtime().Definition();
         const int windowWidth = definition
             && definition->rect.width > 0
             ? definition->rect.width
@@ -432,11 +419,11 @@ public:
             ? definition->rect.height
             : 720;
 
-        const Uint32 windowFlags = visibleWhen_.empty()
+        const Uint32 windowFlags = !controller_.HasVisibilityCondition()
             ? SDL_WINDOW_SHOWN
             : SDL_WINDOW_HIDDEN;
         window_ = SDL_CreateWindow(
-            std::string(plugin_.WindowTitle()).c_str(),
+            std::string(controller_.Plugin().WindowTitle()).c_str(),
             SDL_WINDOWPOS_CENTERED,
             SDL_WINDOWPOS_CENTERED,
             windowWidth,
@@ -449,9 +436,6 @@ public:
                 + std::string(SDL_GetError());
             return false;
         }
-        open_ = true;
-        visible_ = visibleWhen_.empty();
-
         renderer_ = SDL_CreateRenderer(
             window_,
             -1,
@@ -474,31 +458,16 @@ public:
 
         LoadWindowSprites(
             renderer_,
-            root_,
-            windowRuntime_,
+            controller_.Root(),
+            controller_.Runtime(),
             images_
         );
 
-        if (!plugin_.Initialize(
-            GuiMacPluginInitContext{
-                root_,
-                renderer_,
-                interpreter_,
-                windowRuntime_
-            },
-            error
-        ))
-        {
-            return false;
-        }
-        pluginInitialized_ = true;
-        plugin_.RegisterCustomWidgets(customWidgets_);
-
         if (definition
             && !indexedMaps_.Initialize(
-                root_,
+                controller_.Root(),
                 renderer_,
-                interpreter_,
+                controller_.Interpreter(),
                 *definition,
                 error
             ))
@@ -515,48 +484,17 @@ public:
             }
         );
 
-        if (definition)
-        {
-            CollectListDefinitions(
-                *definition,
-                listNames_,
-                listTemplateNames_
-            );
-        }
-
-        SetupActionBridge();
-        tickScheduler_.SetInterval(
-            plugin_.TickIntervalMilliseconds()
-        );
-        tickScheduler_.Register(
-            "plugin",
-            [this](const GuiTickContext& context)
-            {
-                return plugin_.Tick(context.nowMilliseconds);
-            }
-        );
-        RefreshData();
-        return true;
+        return controller_.Initialize(renderer_, error);
     }
 
     void Tick(uint64_t nowMilliseconds)
     {
-        if (!open_)
-        {
-            return;
-        }
-        const GuiTickResult tickResult = tickScheduler_.Tick(
-            nowMilliseconds
-        );
-        if (tickResult.changed)
-        {
-            RefreshData();
-        }
+        controller_.Tick(nowMilliseconds);
     }
 
     bool HandleEvent(const SDL_Event& event)
     {
-        if (!open_)
+        if (!controller_.IsOpen())
         {
             return false;
         }
@@ -576,7 +514,7 @@ public:
 
     bool Draw()
     {
-        if (!open_ || !visible_)
+        if (!controller_.IsOpen() || !controller_.IsVisible())
         {
             return false;
         }
@@ -591,60 +529,17 @@ public:
 
     bool IsOpen() const
     {
-        return open_;
+        return controller_.IsOpen();
     }
 
-    std::string_view PluginId() const override
+    IGuiApplicationEndpoint* Endpoint()
     {
-        return id_;
-    }
-
-    std::string_view WindowName() const override
-    {
-        return plugin_.WindowName();
-    }
-
-    bool IsVisible() const override
-    {
-        return visible_;
-    }
-
-    void SetVisibilityMode(
-        GuiWindowVisibilityMode mode
-    ) override
-    {
-        if (mode == GuiWindowVisibilityMode::Automatic)
-        {
-            visibilityOverride_.reset();
-        }
-        else
-        {
-            visibilityOverride_ =
-                mode == GuiWindowVisibilityMode::Shown;
-        }
-        UpdateWindowVisibility();
-    }
-
-    void CloseWindow() override
-    {
-        open_ = false;
-    }
-
-    bool DispatchPluginAction(
-        const GuiActionContext& context
-    ) override
-    {
-        const bool handled = plugin_.HandleAction(context);
-        if (handled)
-        {
-            RefreshData();
-        }
-        return handled;
+        return &controller_;
     }
 
     void Close()
     {
-        CloseWindow();
+        controller_.CloseWindow();
     }
 
     void SetCascadeOffset(int offset)
@@ -702,11 +597,11 @@ public:
         hostTextureBytes += markerStats.textureBytes;
         hostCpuBytes += markerStats.cpuBytes;
 
-        const GuiMacPluginResourceStats pluginStats =
-            plugin_.ResourceStats();
+        const GuiPluginResourceStats pluginStats =
+            controller_.Plugin().ResourceStats();
         std::cout
-            << "[GUI resources] plugin=" << id_
-            << " window=" << plugin_.WindowName()
+            << "[GUI resources] plugin=" << controller_.PluginId()
+            << " window=" << controller_.WindowName()
             << " host_textures=" << hostTextureCount
             << " plugin_textures=" << pluginStats.textureCount
             << " texture_bytes_approx="
@@ -736,18 +631,12 @@ private:
         indexedMaps_.Shutdown();
         DestroyImages(images_);
 
-        if (pluginInitialized_)
-        {
-            plugin_.Shutdown();
-            pluginInitialized_ = false;
-        }
+        controller_.Shutdown();
 
         SDL_DestroyRenderer(renderer_);
         renderer_ = nullptr;
         SDL_DestroyWindow(window_);
         window_ = nullptr;
-        open_ = false;
-        visible_ = false;
     }
 
     SDL_Texture* CreateStreamingTexture(
@@ -788,138 +677,27 @@ private:
         }
         LoadSprite(
             renderer_,
-            root_,
-            interpreter_,
+            controller_.Root(),
+            controller_.Interpreter(),
             std::string(name),
             images_
         );
         return FindTexture(images_, name);
     }
 
-    void SetupActionBridge()
+    void RefreshPlatformData()
     {
-        if (behaviorRegistry_)
-        {
-            actionBridge_.SetBehaviorRegistry(behaviorRegistry_);
-        }
-        actionBridge_.SetConditionEvaluator(
-            [this](std::string_view expression)
-            {
-                return !layoutContext_.conditionEvaluator
-                    || layoutContext_.conditionEvaluator(expression);
-            }
-        );
-        actionBridge_.SetListItemIdResolver(
-            [this](
-                std::string_view listName,
-                int listIndex,
-                uint64_t& itemId
-            )
-            {
-                const auto iterator = listViews_.find(
-                    std::string(listName)
-                );
-                if (iterator == listViews_.end()
-                    || listIndex < 0
-                    || listIndex >= static_cast<int>(
-                        iterator->second.model.size()
-                    ))
-                {
-                    return false;
-                }
-                itemId = iterator->second.model.items[listIndex].id;
-                return true;
-            }
-        );
-        actionBridge_.SetFallbackInvoker(
-            [this](const GuiActionContext& context)
-            {
-                bool handled = false;
-                if ((context.fallbackOperation == "select_list_item"
-                    || context.fallbackOperation == "select_item")
-                    && context.hasListItemId
-                    && !context.listName.empty())
-                {
-                    listRuntimeStore_.Get(
-                        context.listName
-                    ).selectedItemId = context.listItemId;
-                    handled = true;
-                }
-                if (applicationActionInvoker_
-                    && applicationActionInvoker_(id_, context))
-                {
-                    return true;
-                }
-                return plugin_.HandleAction(context) || handled;
-            }
-        );
-    }
+        markerLayers_.SetData(controller_.DataRegistry());
+        indexedMaps_.Refresh(controller_.LayoutContext());
 
-    void RefreshData()
-    {
-        dataRegistry_ = plugin_.BuildDataRegistry();
-        if (!dataRegistry_)
-        {
-            dataRegistry_ = std::make_shared<GuiDataRegistry>();
-        }
-        layoutContext_ = dataRegistry_->MakeLayoutContext();
-        layoutContext_.localizationResolver = [this](
-            std::string_view key
-        )
-        {
-            return localization_.Resolve(key);
-        };
-        markerLayers_.SetData(dataRegistry_);
-        indexedMaps_.Refresh(layoutContext_);
-
-        for (const std::string& listName : listNames_)
+        for (const std::string& listName : controller_.ListNames())
         {
             GuiMacListView& view = listViews_[listName];
-            const GuiListModel* model = dataRegistry_->FindList(listName);
+            const GuiListModel* model = controller_.FindListModel(listName);
             view.model = model ? *model : GuiListModel{};
-
-            GuiListRuntimeState& runtime =
-                listRuntimeStore_.Get(listName);
-            const auto selected = std::find_if(
-                view.model.items.begin(),
-                view.model.items.end(),
-                [&runtime](const GuiListItem& item)
-                {
-                    return item.id == runtime.selectedItemId;
-                }
-            );
-            if (selected == view.model.items.end())
-            {
-                runtime.selectedItemId = 0;
-            }
-
             UpdateListText(listName, view);
         }
         textDirty_ = true;
-        UpdateWindowVisibility();
-    }
-
-    void UpdateWindowVisibility()
-    {
-        const bool conditionVisible = visibleWhen_.empty()
-            || (dataRegistry_
-                && dataRegistry_->EvaluateCondition(visibleWhen_));
-        const bool shouldBeVisible = visibilityOverride_.value_or(
-            conditionVisible
-        );
-        if (shouldBeVisible == visible_ || !window_)
-        {
-            return;
-        }
-        visible_ = shouldBeVisible;
-        if (visible_)
-        {
-            SDL_ShowWindow(window_);
-        }
-        else
-        {
-            SDL_HideWindow(window_);
-        }
     }
 
     void UpdateListText(
@@ -927,21 +705,8 @@ private:
         GuiMacListView& view
     )
     {
-        GuiListRuntimeState& runtime =
-            listRuntimeStore_.Get(listName);
         const GuiListRuntimeLayout layout =
-            windowRuntime_.BuildListRuntimeLayout(
-                listName,
-                view.model,
-                runtime,
-                inputState_,
-                layoutContext_
-            );
-        listRuntimeStore_.ScrollBy(
-            listName,
-            0,
-            layout.maximumScroll
-        );
+            controller_.BuildListRuntimeLayout(listName);
 
         const int width = layout.viewport.width;
         const int height = std::max(
@@ -979,59 +744,17 @@ private:
         UpdateGuiListTextTexture(
             view.labels,
             view.labelPixels,
-            windowRuntime_,
+            controller_.Runtime(),
             listName,
             layout,
             fonts_,
-            layoutContext_
+            controller_.LayoutContext()
         );
     }
 
     std::vector<gui::GuiResolvedWidget> ResolveInteractiveWidgets()
     {
-        std::vector<gui::GuiResolvedWidget> widgets =
-            windowRuntime_.ResolveLayout(layoutContext_);
-        for (const std::string& listName : listNames_)
-        {
-            const auto view = listViews_.find(listName);
-            if (view == listViews_.end())
-            {
-                continue;
-            }
-            const GuiListRuntimeState& runtime =
-                listRuntimeStore_.Get(listName);
-			const GuiListRuntimeLayout listLayout =
-				windowRuntime_.BuildListRuntimeLayout(
-					listName,
-					view->second.model,
-					runtime,
-					inputState_,
-					layoutContext_
-				);
-			std::vector<gui::GuiResolvedWidget> listWidgets;
-			listWidgets.reserve(listLayout.items.size());
-			for (const GuiListItemRuntimeLayout& item : listLayout.items)
-			{
-				gui::GuiResolvedWidget widget;
-				widget.definition = item.definition;
-				widget.rect = item.rect;
-				widget.rect.y -= listLayout.scrollOffset;
-				widget.visible = item.visible;
-				widget.enabled = item.enabled;
-				widget.zOrder = item.definition
-					? item.definition->zOrder : 0;
-				widget.order = item.itemIndex;
-				widget.listName = listName;
-				widget.listIndex = static_cast<int>(item.itemIndex);
-				listWidgets.push_back(std::move(widget));
-			}
-            widgets.insert(
-                widgets.end(),
-                listWidgets.begin(),
-                listWidgets.end()
-            );
-        }
-        return widgets;
+        return controller_.ResolveInteractiveWidgets();
     }
 
     std::size_t DispatchEvents(
@@ -1040,46 +763,11 @@ private:
         int mouseY
     )
     {
-        std::vector<GuiActionEvent> resolvedEvents = events;
-        for (GuiActionEvent& event : resolvedEvents)
-        {
-            if (!event.widget
-                || event.widget->listName.empty()
-                || event.widget->listIndex < 0)
-            {
-                continue;
-            }
-            const auto view = listViews_.find(
-                event.widget->listName
-            );
-            if (view == listViews_.end()
-                || event.widget->listIndex >= static_cast<int>(
-                    view->second.model.items.size()
-                ))
-            {
-                continue;
-            }
-            const GuiListItem& item = view->second.model.items[
-                event.widget->listIndex
-            ];
-            for (const auto& field : item.fields)
-            {
-                event.parameters[field.first] =
-                    GuiDataValueToText(field.second);
-            }
-        }
-        indexedMaps_.AttachItemIds(resolvedEvents);
-        const std::size_t dispatched = actionBridge_.DispatchEvents(
-            windowRuntime_.Name(),
-            resolvedEvents,
+        return controller_.DispatchEvents(
+            events,
             mouseX,
             mouseY
         );
-        if (dispatched > 0)
-        {
-            RefreshData();
-        }
-        return dispatched;
     }
 
     bool HandleCustomInput(
@@ -1090,10 +778,12 @@ private:
     {
         const gui::GuiCustomWidgetContext context{
             renderer_,
-            plugin_.CustomWidgetContext()
+            controller_.Plugin().CustomWidgetContext()
         };
-        return customWidgets_.HandleInput(
-            windowRuntime_.ResolveLayout(layoutContext_),
+        return controller_.CustomWidgets().HandleInput(
+            controller_.Runtime().ResolveLayout(
+                controller_.LayoutContext()
+            ),
             context,
             phase,
             mouseX,
@@ -1103,12 +793,7 @@ private:
 
     bool PressTargetsCustomInput() const
     {
-        const gui::WidgetDefinition* definition =
-            inputState_.pressedSnapshot.definition;
-        return inputState_.pressedKey.empty()
-            || (definition
-                && (definition->type == gui::WidgetType::Custom
-                    || definition->type == gui::WidgetType::Window));
+        return controller_.PressTargetsCustomInput();
     }
 
     bool ProcessEvent(const SDL_Event& event)
@@ -1136,17 +821,13 @@ private:
 
             const std::vector<gui::GuiResolvedWidget> widgets =
                 ResolveInteractiveWidgets();
-			if (!inputState_.pressedKey.empty()
-				&& inputState_.pressedSnapshot.definition
-				&& inputState_.pressedSnapshot.definition->draggable)
+			if (!controller_.InputState().pressedKey.empty()
+				&& controller_.InputState().pressedSnapshot.definition
+				&& controller_.InputState()
+					.pressedSnapshot.definition->draggable)
 			{
-				DispatchEvents(
-					eventRouter_.ProcessDragMove(
-						widgets,
-						inputState_,
-						event.motion.x,
-						event.motion.y
-					),
+				controller_.DispatchDragMove(
+					widgets,
 					event.motion.x,
 					event.motion.y
 				);
@@ -1170,15 +851,10 @@ private:
             if (markerResult.consumed)
             {
                 indexedMaps_.HandleMove(widgets, -1, -1);
-                DispatchEvents(
-                    eventRouter_.ProcessMove(
-                        widgets,
-                        inputState_,
-                        -1,
-                        -1
-                    ),
-                    event.motion.x,
-                    event.motion.y
+                controller_.DispatchMove(
+                    widgets,
+                    -1,
+                    -1
                 );
                 return true;
             }
@@ -1192,13 +868,8 @@ private:
                 event.motion.x,
                 event.motion.y
             );
-            DispatchEvents(
-                eventRouter_.ProcessMove(
-                    widgets,
-                    inputState_,
-                    event.motion.x,
-                    event.motion.y
-                ),
+            controller_.DispatchMove(
+                widgets,
                 event.motion.x,
                 event.motion.y
             );
@@ -1210,32 +881,11 @@ private:
             int mouseX = 0;
             int mouseY = 0;
             SDL_GetMouseState(&mouseX, &mouseY);
-            for (const std::string& listName : listNames_)
-            {
-                const auto view = listViews_.find(listName);
-                if (view == listViews_.end())
-                {
-                    continue;
-                }
-                const GuiListRuntimeLayout layout =
-                    windowRuntime_.BuildListRuntimeLayout(
-                        listName,
-                        view->second.model,
-                        listRuntimeStore_.Get(listName),
-                        inputState_,
-                        layoutContext_
-                    );
-                if (!PointInside(layout.viewport, mouseX, mouseY))
-                {
-                    continue;
-                }
-                listRuntimeStore_.ScrollBy(
-                    listName,
-                    -event.wheel.y * layout.rowStep,
-                    layout.maximumScroll
-                );
-                break;
-            }
+            controller_.ScrollListAt(
+                mouseX,
+                mouseY,
+                -event.wheel.y
+            );
             return true;
         }
 
@@ -1244,22 +894,10 @@ private:
         {
 			const std::vector<gui::GuiResolvedWidget> widgets =
 				ResolveInteractiveWidgets();
-			const gui::GuiResolvedWidget* directTarget =
-				gui::HitTestGuiWidgets(
-					widgets,
-					event.button.x,
-					event.button.y
-				);
-			const bool targetsDraggableControl = directTarget
-				&& directTarget->definition
-				&& directTarget->definition->draggable;
-            const gui::WindowDefinition* definition =
-                windowRuntime_.Definition();
-            if (definition
-                && definition->moveable
-                && definition->dragHeight > 0
-                && event.button.y < definition->dragHeight
-				&& !targetsDraggableControl)
+            if (controller_.IsWindowDragRegion(
+                    event.button.x,
+                    event.button.y
+                ))
             {
                 SDL_GetGlobalMouseState(
                     &dragStartGlobalX_,
@@ -1298,13 +936,8 @@ private:
                 event.button.x,
                 event.button.y
             );
-            DispatchEvents(
-                eventRouter_.ProcessPress(
-                    widgets,
-                    inputState_,
-                    event.button.x,
-                    event.button.y
-                ),
+            controller_.DispatchPress(
+                widgets,
                 event.button.x,
                 event.button.y
             );
@@ -1356,13 +989,8 @@ private:
                 event.button.x,
                 event.button.y
             );
-            DispatchEvents(
-                eventRouter_.ProcessRelease(
-                    widgets,
-                    inputState_,
-                    event.button.x,
-                    event.button.y
-                ),
+            controller_.DispatchRelease(
+                widgets,
                 event.button.x,
                 event.button.y
             );
@@ -1373,7 +1001,7 @@ private:
                     event.button.y
                 ))
             {
-                RefreshData();
+                controller_.RefreshData();
             }
             return true;
         }
@@ -1423,8 +1051,10 @@ private:
         {
             return;
         }
-        const bool pressed = !inputState_.pressedKey.empty()
-            && inputState_.pressedSnapshot.definition == definition;
+        const bool pressed =
+            !controller_.InputState().pressedKey.empty()
+            && controller_.InputState()
+                .pressedSnapshot.definition == definition;
         DrawGuiButton(
             renderer_,
             SDL_Rect{
@@ -1472,7 +1102,7 @@ private:
             return;
         }
         const gui::ProgressBarResource* resource =
-            interpreter_.FindProgressBar(
+            controller_.Interpreter().FindProgressBar(
                 definition->progressResourceName
             );
         if (!resource)
@@ -1486,8 +1116,10 @@ private:
         const float value = definition->valueSource.empty()
             ? definition->value
             : static_cast<float>(
-                layoutContext_.valueResolver
-                ? layoutContext_.valueResolver(definition->valueSource)
+                controller_.LayoutContext().valueResolver
+                ? controller_.LayoutContext().valueResolver(
+                    definition->valueSource
+                )
                 : 0.0
             );
         DrawGuiProgressBar(
@@ -1525,7 +1157,7 @@ private:
         }
 
         const gui::WindowDefinition* window =
-            windowRuntime_.Definition();
+            controller_.Runtime().Definition();
         const gui::WidgetDefinition* listDefinition = window
             ? FindWidgetDefinition(*window, listName)
             : nullptr;
@@ -1546,13 +1178,7 @@ private:
 
         DrawGuiListWidget(
             renderer_,
-            windowRuntime_.BuildListRuntimeLayout(
-                listName,
-                view->second.model,
-                listRuntimeStore_.Get(listName),
-                inputState_,
-                layoutContext_
-            ),
+            controller_.BuildListRuntimeLayout(listName),
             GuiListWidgetResources{
                 [this](std::string_view spriteName) -> SDL_Texture*
                 {
@@ -1586,9 +1212,10 @@ private:
                             : std::string{};
                     }
                     else if (!source.empty()
-                        && layoutContext_.textResolver)
+                        && controller_.LayoutContext().textResolver)
                     {
-                        spriteName = layoutContext_.textResolver(source);
+                        spriteName = controller_.LayoutContext()
+                            .textResolver(source);
                     }
                     SDL_Texture* texture = ResolveSprite(spriteName);
                     if (!texture)
@@ -1634,7 +1261,9 @@ private:
 
         std::unordered_set<const gui::WidgetDefinition*> active;
         const std::vector<gui::GuiTextCommand> commands =
-            windowRuntime_.BuildTextCommands(layoutContext_);
+            controller_.Runtime().BuildTextCommands(
+                controller_.LayoutContext()
+            );
         for (const gui::GuiTextCommand& command : commands)
         {
             if (!command.definition
@@ -1712,7 +1341,7 @@ private:
     void DrawWindowFrame()
     {
         const gui::WindowDefinition* definition =
-            windowRuntime_.Definition();
+            controller_.Runtime().Definition();
         if (!definition || definition->frameSpriteName.empty())
         {
             return;
@@ -1732,9 +1361,14 @@ private:
     {
         UpdateTextTextures();
         const std::vector<gui::GuiResolvedWidget> widgets =
-            windowRuntime_.ResolveLayout(layoutContext_);
+            controller_.Runtime().ResolveLayout(
+                controller_.LayoutContext()
+            );
         const std::vector<GuiRenderCommand> queue =
-            BuildGuiRenderQueue(widgets, listTemplateNames_);
+            BuildGuiRenderQueue(
+                widgets,
+                controller_.ListTemplateNames()
+            );
 
         SDL_SetRenderDrawColor(
             renderer_,
@@ -1747,7 +1381,7 @@ private:
 
         const gui::GuiCustomWidgetContext customContext{
             renderer_,
-            plugin_.CustomWidgetContext()
+            controller_.Plugin().CustomWidgetContext()
         };
         for (const GuiRenderCommand& command : queue)
         {
@@ -1768,7 +1402,7 @@ private:
                 );
                 break;
             case GuiRenderCommandType::Custom:
-                customWidgets_.DrawWidget(
+                controller_.CustomWidgets().DrawWidget(
                     *command.widget,
                     customContext
                 );
@@ -1799,42 +1433,21 @@ private:
         SDL_RenderPresent(renderer_);
     }
 
-    fs::path root_;
-    std::string id_;
-    std::string visibleWhen_;
-    IGuiMacPlugin& plugin_;
-    const gui::GuiInterpreter& interpreter_;
-    const GuiBehaviorRegistry* behaviorRegistry_ = nullptr;
     const GuiMacFontSet& fonts_;
     const GuiLocalizationRegistry& localization_;
-    ApplicationActionInvoker applicationActionInvoker_;
-    GuiWindowRuntime windowRuntime_;
+    GuiWindowSessionController controller_;
     SDL_Window* window_ = nullptr;
     SDL_Renderer* renderer_ = nullptr;
-    bool pluginInitialized_ = false;
-    bool open_ = false;
-    bool visible_ = false;
     GuiMacImageSet images_;
     std::unordered_map<
         const gui::WidgetDefinition*,
         GuiMacTextView
     > textViews_;
-    std::shared_ptr<GuiDataRegistry> dataRegistry_;
-    gui::GuiLayoutContext layoutContext_;
-    std::vector<std::string> listNames_;
-    std::unordered_set<std::string> listTemplateNames_;
     std::unordered_map<std::string, GuiMacListView> listViews_;
-    GuiListRuntimeStore listRuntimeStore_;
-    GuiEventRouter eventRouter_;
-    GuiRuntimeInputState inputState_;
-    GuiLuaActionBridge actionBridge_;
     GuiIndexedMapMacRuntime indexedMaps_;
     GuiMarkerLayerMacRuntime markerLayers_;
-    gui::GuiCustomWidgetRegistry customWidgets_;
-    GuiTickScheduler tickScheduler_;
     bool textDirty_ = true;
     bool draggingWindow_ = false;
-    std::optional<bool> visibilityOverride_;
     int dragStartGlobalX_ = 0;
     int dragStartGlobalY_ = 0;
     int dragStartWindowX_ = 0;
@@ -1846,7 +1459,7 @@ class GuiMacHostApplication
 public:
     GuiMacHostApplication(
         fs::path root,
-        std::vector<GuiMacPluginLaunch> launches,
+        std::vector<GuiPluginLaunch> launches,
         GuiMacHostOptions options
     )
         : root_(std::move(root)),
@@ -2005,7 +1618,7 @@ private:
         SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "nearest");
 
         int sessionIndex = 0;
-        for (const GuiMacPluginLaunch& launch : launches_)
+        for (const GuiPluginLaunch& launch : launches_)
         {
             if (!launch.plugin)
             {
@@ -2060,7 +1673,7 @@ private:
         endpoints.reserve(sessions_.size());
         for (const auto& session : sessions_)
         {
-            endpoints.push_back(session.get());
+            endpoints.push_back(session->Endpoint());
         }
         actionBus_.SetEndpoints(std::move(endpoints));
     }
@@ -2078,7 +1691,7 @@ private:
     }
 
     fs::path root_;
-    std::vector<GuiMacPluginLaunch> launches_;
+    std::vector<GuiPluginLaunch> launches_;
     GuiMacHostOptions options_;
     gui::GuiInterpreter interpreter_;
     GuiBehaviorRegistry behaviorRegistry_;
@@ -2094,7 +1707,7 @@ private:
 
 int RunGuiMacHostApplication(
     const std::filesystem::path& root,
-    const std::vector<GuiMacPluginLaunch>& launches,
+    const std::vector<GuiPluginLaunch>& launches,
     const GuiMacHostOptions& options
 )
 {
@@ -2104,11 +1717,11 @@ int RunGuiMacHostApplication(
 
 int RunGuiMacHost(
     const std::filesystem::path& root,
-    IGuiMacPlugin& plugin
+    IGuiPlugin& plugin
 )
 {
     return RunGuiMacHostApplication(
         root,
-        {GuiMacPluginLaunch{"", "", &plugin}}
+        {GuiPluginLaunch{"", "", &plugin}}
     );
 }

@@ -1,0 +1,5876 @@
+340001 = {
+	name = "ÕÅéô"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50001
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340002 = {
+	name = "ÕÅÕò"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50002
+	history = {
+		1930.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 2 }
+	}
+}
+340003 = {
+	name = "ÕÅ³Ú"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50003
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340004 = {
+	name = "ÕÅ·¢¿ü"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50006
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+	}
+}
+340005 = {
+	name = "ÕÅîÕ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50007
+	history = {
+		1930.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 0 }
+	}
+}
+340006 = {
+	name = "ÕÅĞ÷×Ì"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50009
+	add_trait = commando
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340007 = {
+	name = "ÕÅÑ©ÖĞ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50010
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340008 = {
+	name = "ÕÅÁé¸¦"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50014
+	add_trait = offensive_doctrine
+	add_trait = believed_general
+	history = {
+		1930.1.1 = { rank = 1 }
+		1940.1.1 = { rank = 2 }
+	}
+}
+340009 = {
+	name = "ÕÅÊÀÏ£"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50015
+	history = {
+		1930.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 0 }
+	}
+}
+340010 = {
+	name = "ÕÅóÆÂ×"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50017
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 0 }
+	}
+}
+340011 = {
+	name = "ÕÅÑ×"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50018
+	add_trait = offensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340012 = {
+	name = "ÕÅÒ«Ã÷"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50019
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340013 = {
+	name = "ÕÔ¼Òæø"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50022
+	history = {
+		1936.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 0 }
+	}
+}
+340014 = {
+	name = "ÕÔ¹úÆÁ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50025
+	history = {
+		1930.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 0 }
+	}
+}
+340015 = {
+	name = "³Â°²±¦"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50028
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 2 }
+	}
+}
+340016 = {
+	name = "³Â³Ï"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50030
+	add_trait = engineer
+	add_trait = believed_general
+	add_trait = tactical_genius
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+	}
+}
+340017 = {
+	name = "³Â¹«ÏÀ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50033
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340018 = {
+	name = "³ÂÃ÷ÈÊ"
+	country = ROC
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50034
+	add_trait = defense_army
+	add_trait = tactical_genius
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340019 = {
+	name = "³Â´óÇì"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50035
+	history = {
+		1930.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 2 }
+		1943.1.1 = { rank = 0 }
+	}
+}
+340020 = {
+	name = "³ÂÌú"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50036
+	history = {
+		1930.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 0 }
+	}
+}
+340021 = {
+	name = "³ÂÍòØğ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50037
+	history = {
+		1936.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 2 }
+	}
+}
+340022 = {
+	name = "Ö£Í¢óÅ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50040
+	add_trait = trickster
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 2 }
+	}
+}
+340023 = {
+	name = "³ÌÇ±"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50041
+	add_trait = fortress_buster
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1938.1.1 = { rank = 3 }
+	}
+}
+340024 = {
+	name = "Ö£¶´¹ú"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50043
+	add_trait = defensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340025 = {
+	name = "¼ªÕÂ¼ò"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50044
+	add_trait = commando
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340026 = {
+	name = "½¯ ½éÊ¯"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 0.00
+	picture = L50048
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1930.1.1 = { rank = 4 }
+	}
+}
+340027 = {
+	name = "½¯¶¦ÎÄ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50050
+	history = {
+		1930.1.1 = { rank = 1 }
+		1938.1.1 = { rank = 2 }
+		1940.1.1 = { rank = 3 }
+	}
+}
+340028 = {
+	name = "½â·½"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50052
+	add_trait = logistics_wizard
+	history = {
+		1936.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 2 }
+	}
+}
+340029 = {
+	name = "ñûÒìÖ®"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50054
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340030 = {
+	name = "ÖÜ¼Î±ò"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50055
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340031 = {
+	name = "ÖÜÖ¾µÀ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50056
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340032 = {
+	name = "ÖÜÇìÏé"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50057
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 0 }
+	}
+}
+340033 = {
+	name = "ÖÜìµ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50060
+	add_trait = trickster
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1942.1.1 = { rank = 0 }
+	}
+}
+340034 = {
+	name = "ÖÜÑÒ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50061
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 0 }
+	}
+}
+340035 = {
+	name = "ÖìÖÂÒ»"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50062
+	history = {
+		1936.1.1 = { rank = 1 }
+		1944.1.1 = { rank = 2 }
+	}
+}
+340036 = {
+	name = "Öì»³±ù"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50064
+	add_trait = friction_specialist
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340037 = {
+	name = "×£ÉÜÖÜ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50065
+	history = {
+		1930.1.1 = { rank = 1 }
+		1938.1.1 = { rank = 2 }
+		1946.1.1 = { rank = 0 }
+	}
+}
+340038 = {
+	name = "ÖìÉÜÁ¼"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50066
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1939.1.1 = { rank = 3 }
+	}
+}
+340039 = {
+	name = "Öì¶¦Çä"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50067
+	history = {
+		1930.1.1 = { rank = 1 }
+		1938.1.1 = { rank = 0 }
+	}
+}
+340040 = {
+	name = "ÖìÆæ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50068
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340041 = {
+	name = "ÇñÇåÈª"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50069
+	add_trait = offensive_doctrine
+	add_trait = tactical_genius
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 2 }
+	}
+}
+340042 = {
+	name = "Çñ¿ª»ù"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50070
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340043 = {
+	name = "ÖÓËÉ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 5
+	add_trait = tactical_genius
+	loyalty = 0.00
+	picture = L50071
+	history = {
+		1936.1.1 = { rank = 1 }
+		1945.1.1 = { rank = 0 }
+	}
+}
+340044 = {
+	name = "·¶ºº½Ü"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50074
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+	}
+}
+340045 = {
+	name = "·½¾¸"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50075
+	add_trait = defensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340046 = {
+	name = "·½ÏÈ¾õ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50076
+	add_trait = sincere_seeker
+	add_trait = defense_army
+	add_trait = serious_general
+	history = {
+		1936.1.1 = { rank = 1 }
+		1944.4.16 = { rank = 2 }
+		1944.4.16 = { rank = 3 }
+		1944.4.16 = { rank = 4 }
+		1944.4.17 = { rank = 2 }
+	}
+}
+340047 = {
+	name = "·½Ìì"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50078
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340048 = {
+	name = "³Ø·å³Ç"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50053
+	history = {
+		1930.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 0 }
+	}
+}
+340049 = {
+	name = "·ëÊ¥·¨"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50081
+	history = {
+		1936.1.1 = { rank = 1 }
+		1944.1.1 = { rank = 2 }
+	}
+}
+340050 = {
+	name = "·ëÓñÏé"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50083
+	add_trait = logistics_wizard
+	add_trait = sincere_seeker
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1937.1.1 = { rank = 4 }
+	}
+}
+340051 = {
+	name = "¸µ±üÑ«"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50084
+	history = {
+		1936.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 0 }
+	}
+}
+340052 = {
+	name = "º«¿£"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50086
+	history = {
+		1930.1.1 = { rank = 1 }
+		1940.1.1 = { rank = 0 }
+	}
+}
+340053 = {
+	name = "º«Á·³É"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50088
+	history = {
+		1936.1.1 = { rank = 1 }
+		1945.1.1 = { rank = 2 }
+	}
+}
+340054 = {
+	name = "ºØ¹ú¹â"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50092
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+	}
+}
+340055 = {
+	name = "ºÎÉÜÖÜ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50093
+	history = {
+		1936.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 0 }
+	}
+}
+340056 = {
+	name = "ºÎÎÄ¶¦"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50095
+	history = {
+		1930.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 0 }
+	}
+}
+340057 = {
+	name = "ºØÒ«×æ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50096
+	history = {
+		1930.1.1 = { rank = 1 }
+		1938.1.1 = { rank = 2 }
+	}
+}
+340058 = {
+	name = "ºÎÓ¦ÇÕ"
+	country = ROC
+	type = land
+	skill = 2
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50097
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1938.1.1 = { rank = 2 }
+		1939.1.1 = { rank = 3 }
+		1942.1.1 = { rank = 4 }
+	}
+}
+340059 = {
+	name = "ºî¾µÈç"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50098
+	history = {
+		1930.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 0 }
+	}
+}
+340060 = {
+	name = "ÏÄ³şÖĞ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50099
+	history = {
+		1936.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+	}
+}
+340061 = {
+	name = "Ïò·ïÎä"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50102
+	add_trait = winter_specialist
+	add_trait = trickster
+	history = {
+		1936.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 2 }
+	}
+}
+340062 = {
+	name = "Ïô¼½Ãã"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50103
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340063 = {
+	name = "Ğ¤Ö¾³ş"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50104
+	add_trait = logistics_wizard
+	history = {
+		1936.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 2 }
+	}
+}
+340064 = {
+	name = "Ğì»ıè°"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50106
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340065 = {
+	name = "Ğì¾°ÌÆ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50107
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+	}
+}
+340066 = {
+	name = "ĞìÈê³Ï"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50108
+	history = {
+		1930.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 0 }
+	}
+}
+340067 = {
+	name = "ĞìÍ¥Ñş"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50110
+	add_trait = engineer
+	history = {
+		1936.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+	}
+}
+340068 = {
+	name = "Ğì×æêİ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50111
+	add_trait = logistics_wizard
+	history = {
+		1936.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+		1946.1.1 = { rank = 0 }
+	}
+}
+340069 = {
+	name = "ĞìÔ´Èª"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50112
+	add_trait = commando
+	add_trait = old_guard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1947.1.1 = { rank = 0 }
+	}
+}
+340070 = {
+	name = "ĞûÌúÎá"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50114
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340071 = {
+	name = "Ñ¦ÔÀ"
+	country = ROC
+	type = land
+	skill = 3
+	max_skill = 7
+	loyalty = 0.00
+	picture = L50115
+	add_trait = defensive_doctrine
+	add_trait = mao_army_1
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+	}
+}
+340072 = {
+	name = "ºú³¤Çà"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50116
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340073 = {
+	name = "ºúÈôÓŞ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50119
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 0 }
+	}
+}
+340074 = {
+	name = "ºúçö"
+	country = ROC
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50120
+	add_trait = logistics_wizard
+	add_trait = offensive_doctrine
+	add_trait = believed_general
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340075 = {
+	name = "ºúËØ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50121
+	history = {
+		1930.1.1 = { rank = 1 }
+		1947.1.1 = { rank = 0 }
+	}
+}
+340076 = {
+	name = "ºú×ÚÄÏ"
+	country = ROC
+	type = land
+	skill = 3
+	max_skill = 5
+	add_trait = offensive_doctrine
+	add_trait = believed_general
+	loyalty = 0.00
+	picture = L50122
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+	}
+}
+340077 = {
+	name = "ºúçø"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50123
+	history = {
+		1930.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 0 }
+	}
+}
+340078 = {
+	name = "»ÆÕäÎá"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50124
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340079 = {
+	name = "»Æ½Ü"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50125
+	add_trait = logistics_wizard
+	history = {
+		1936.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+	}
+}
+340080 = {
+	name = "»Æç÷Ïè"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50126
+	history = {
+		1936.1.1 = { rank = 1 }
+		1945.1.1 = { rank = 2 }
+	}
+}
+340081 = {
+	name = "»Æ¹úÁº"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50128
+	history = {
+		1936.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+	}
+}
+340082 = {
+	name = "»Æ°ËÃÃ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50130
+	add_trait = trickster
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340083 = {
+	name = "»Æ²®èº"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50131
+	add_trait = defensive_doctrine
+	add_trait = offensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1940.1.1 = { rank = 0 }
+	}
+}
+340084 = {
+	name = "»ÆéÔËÉ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50134
+	history = {
+		1930.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 0 }
+	}
+}
+340085 = {
+	name = "»ÆÎ¬"
+	country = ROC
+	type = land
+	skill = 3
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50135
+	add_trait = defensive_doctrine
+	add_trait = believed_general
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340086 = {
+	name = "»ÆÓÀ°²"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50136
+	add_trait = offensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+		1940.1.1 = { rank = 2 }
+	}
+}
+340087 = {
+	name = "»ôŞñÕÃ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50137
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1939.1.1 = { rank = 0 }
+	}
+}
+340088 = {
+	name = "½ğÖÙ´º"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50139
+	add_trait = trickster
+	history = {
+		1936.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+	}
+}
+340089 = {
+	name = "ÈÙÏé"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50140
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1941.1.1 = { rank = 0 }
+	}
+}
+340090 = {
+	name = "ÈİÓĞÂÔ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50141
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340091 = {
+	name = "¸ÊÀö³õ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50142
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1942.1.1 = { rank = 0 }
+	}
+}
+340092 = {
+	name = "¸ß¿ıÔª"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50146
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340093 = {
+	name = "¸ßË«³Ç"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50148
+	add_trait = winter_specialist
+	history = {
+		1936.1.1 = { rank = 1 }
+		1940.1.1 = { rank = 2 }
+	}
+}
+340094 = {
+	name = "¸ğÏÈ²Å"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50149
+	history = {
+		1936.1.1 = { rank = 1 }
+		1944.1.1 = { rank = 0 }
+	}
+}
+340095 = {
+	name = "½ğÑ§¿ü"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50150
+	add_trait = trickster
+	history = {
+		1936.1.1 = { rank = 1 }
+		1946.1.1 = { rank = 0 }
+	}
+}
+340096 = {
+	name = "¹ÈÕıÂ×"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50151
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1941.1.1 = { rank = 0 }
+	}
+}
+340097 = {
+	name = "¹Ë×£Í¬"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 0.00
+	picture = L50152
+	add_trait = old_guard
+	add_trait = believed_general
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1944.1.1 = { rank = 0 }
+	}
+}
+340098 = {
+	name = "¹Å¶¦»ª"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50153
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340099 = {
+	name = "¹Ø÷ëÕ÷"
+	country = ROC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50154
+	add_trait = serious_general
+	add_trait = believed_general
+	history = {
+		1936.1.1 = { rank = 1 }
+		1940.1.1 = { rank = 2 }
+	}
+}
+340100 = {
+	name = "¹ğÔó×¼"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+	picture = L50155
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1941.1.1 = { rank = 0 }
+	}
+}
+340101 = {
+	name = "¹ğÓÀÇå"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50156
+	add_trait = commando
+	history = {
+		1936.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 2 }
+	}
+}
+340102 = {
+	name = "¹ù¼Äá½"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50159
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1943.1.1 = { rank = 0 }
+	}
+}
+340103 = {
+	name = "¹ùÂÄÖŞ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50163
+	add_trait = commando
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340104 = {
+	name = "Àî·¶Š]"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50166
+	add_trait = trickster
+	history = {
+		1936.1.1 = { rank = 1 }
+		1945.1.1 = { rank = 0 }
+	}
+}
+340105 = {
+	name = "ÀäĞÀ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50168
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340106 = {
+	name = "ÀîÕñ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50169
+	add_trait = defensive_doctrine
+	add_trait = old_guard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1940.1.1 = { rank = 0 }
+	}
+}
+340107 = {
+	name = "ÀîÕñÇò"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50170
+	history = {
+		1936.1.1 = { rank = 1 }
+		1946.1.1 = { rank = 2 }
+	}
+}
+340108 = {
+	name = "Àî¾õ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50172
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+	}
+}
+340109 = {
+	name = "Àî´ºÅ¨"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50173
+	add_trait = logistics_wizard
+	add_trait = old_guard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1942.1.1 = { rank = 0 }
+	}
+}
+340110 = {
+	name = "ÀîÏÉÖŞ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50176
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340111 = {
+	name = "ÀîÒÔ„Á"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50177
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340112 = {
+	name = "ÀîÃÖ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50178
+	add_trait = fortress_buster
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340113 = {
+	name = "ÀîÃ÷å°"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50179
+	history = {
+		1930.1.1 = { rank = 1 }
+		1940.1.1 = { rank = 0 }
+	}
+}
+340114 = {
+	name = "ÀîÄ¬âÖ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50180
+	history = {
+		1936.1.1 = { rank = 1 }
+		1940.1.1 = { rank = 2 }
+	}
+}
+340115 = {
+	name = "ÀîÌÎ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50183
+	add_trait = logistics_wizard
+	history = {
+		1936.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 2 }
+	}
+}
+340116 = {
+	name = "ÀîÌìÏ¼"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50184
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340117 = {
+	name = "ÀîÔò·Ò"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50185
+	add_trait = logistics_wizard
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340118 = {
+	name = "ÀîÎÄ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50187
+	history = {
+		1936.1.1 = { rank = 1 }
+		1946.1.1 = { rank = 0 }
+	}
+}
+340119 = {
+	name = "ÀîÎÄÌï"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50188
+	history = {
+		1936.1.1 = { rank = 1 }
+		1944.1.1 = { rank = 2 }
+	}
+}
+340120 = {
+	name = "ÀîÑÓÄê"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50189
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1942.1.1 = { rank = 0 }
+	}
+}
+340121 = {
+	name = "ÀîÓñÌÃ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50190
+	history = {
+		1936.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 2 }
+	}
+}
+340122 = {
+	name = "Áº¾µÕ«"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50191
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340123 = {
+	name = "ÁÎÁäÆæ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50194
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 2 }
+		1947.1.1 = { rank = 0 }
+	}
+}
+340124 = {
+	name = "ÁÎÒ«Ïæ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 6
+	loyalty = 0.00
+	picture = L50195
+	add_trait = defensive_doctrine
+	add_trait = offensive_doctrine
+	add_trait = serious_general
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340125 = {
+	name = "ÁÎÔËÖÜ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50196
+	history = {
+		1930.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 0 }
+	}
+}
+340126 = {
+	name = "ÁÎÔËÔó"
+	country = ROC
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50197
+	history = {
+		1930.1.1 = { rank = 1 }
+		1938.1.1 = { rank = 2 }
+		1942.1.1 = { rank = 3 }
+	}
+}
+340127 = {
+	name = "ÁÖÎµ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50198
+	add_trait = defensive_doctrine
+	add_trait = engineer
+	history = {
+		1930.1.1 = { rank = 1 }
+		1946.1.1 = { rank = 0 }
+	}
+}
+340128 = {
+	name = "Áõ°²ì÷"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50199
+	add_trait = offensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340129 = {
+	name = "ÁõÕ×Ş¼"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50200
+	history = {
+		1936.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 2 }
+	}
+}
+340130 = {
+	name = "Áõ¼Òæë"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50202
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340131 = {
+	name = "Áõ¼ÎÊ÷"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50203
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340132 = {
+	name = "Áõ½¨Ğ÷"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50204
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1942.1.1 = { rank = 3 }
+	}
+}
+340133 = {
+	name = "ÁõÖÅ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 1
+	loyalty = 0.00
+	picture = L50205
+	add_trait = logistics_wizard
+	add_trait = old_guard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1946.1.1 = { rank = 0 }
+	}
+}
+340134 = {
+	name = "ÁõºÍ¶¦"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50206
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1942.1.1 = { rank = 0 }
+	}
+}
+340135 = {
+	name = "ÁõĞË"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50208
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1947.1.1 = { rank = 0 }
+	}
+}
+340136 = {
+	name = "Áõê¬"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50210
+	history = {
+		1936.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 2 }
+	}
+}
+340137 = {
+	name = "Áõ¹ã¼Ã"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50211
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340138 = {
+	name = "ÁõÁ®Ò»"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50213
+	history = {
+		1936.1.1 = { rank = 1 }
+		1946.1.1 = { rank = 0 }
+	}
+}
+340139 = {
+	name = "ÁõÃ¯¶÷"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50214
+	history = {
+		1936.1.1 = { rank = 1 }
+		1940.1.1 = { rank = 2 }
+	}
+}
+340140 = {
+	name = "Áõì¿"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50217
+	add_trait = commando
+	history = {
+		1936.1.1 = { rank = 1 }
+		1945.1.1 = { rank = 2 }
+	}
+}
+340141 = {
+	name = "ÂŞ×¿Ó¢"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50219
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1938.1.1 = { rank = 2 }
+		1938.1.1 = { rank = 0 }
+	}
+}
+340142 = {
+	name = "ÂŞ¹ãÎÄ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50220
+	add_trait = defensive_doctrine
+	add_trait = winter_specialist
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340143 = {
+	name = "ÂŞÁĞ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50221
+	history = {
+		1945.1.1 = { rank = 1 }
+	}
+}
+340144 = {
+	name = "ÂŞÀúÈÖ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50222
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340145 = {
+	name = "ÂŞË¡ÈË"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50223
+	add_trait = panzer_leader
+	history = {
+		1930.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 0 }
+	}
+}
+340146 = {
+	name = "Â¬¿£Èª"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50226
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340147 = {
+	name = "Â¹ÖÓ÷ë"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50227
+	add_trait = logistics_wizard
+	add_trait = friction_specialist
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1938.1.1 = { rank = 3 }
+	}
+}
+340148 = {
+	name = "ÁúÌìÎä"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50231
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340149 = {
+	name = "Âí³çÁù"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50234
+	add_trait = engineer
+	history = {
+		1936.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 2 }
+	}
+}
+340150 = {
+	name = "ÂíÊ¦¹§"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50238
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340151 = {
+	name = "ÂíÓ¢"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50239
+	history = {
+		1936.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 2 }
+	}
+}
+340152 = {
+	name = "Ã«±üÎÄ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50241
+	add_trait = logistics_wizard
+	history = {
+		1936.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 2 }
+	}
+}
+340153 = {
+	name = "Å·Õğ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50244
+	history = {
+		1936.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 2 }
+	}
+}
+340154 = {
+	name = "°ÍÔÆÓ¢"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50246
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340155 = {
+	name = "ÅÓ±şÑ«"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50250
+	add_trait = logistics_wizard
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+	}
+}
+340156 = {
+	name = "Åá²ı»á"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50251
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340157 = {
+	name = "ÉÏ¹ÙÔÆÏà"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50254
+	history = {
+		1936.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+		1945.1.1 = { rank = 0 }
+	}
+}
+340158 = {
+	name = "ÉÛ°Ù²ı"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50255
+	add_trait = offensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 2 }
+	}
+}
+340159 = {
+	name = "Ê¢ÎÄ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50257
+	add_trait = trickster
+	history = {
+		1936.1.1 = { rank = 1 }
+		1946.1.1 = { rank = 0 }
+	}
+}
+340160 = {
+	name = "Ê¯¾´Í¤"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50258
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1945.1.1 = { rank = 0 }
+	}
+}
+340161 = {
+	name = "Ê¯×æµÂ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50259
+	add_trait = logistics_wizard
+	history = {
+		1936.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 2 }
+	}
+}
+340162 = {
+	name = "ËïÕğ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50263
+	history = {
+		1936.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 2 }
+	}
+}
+340163 = {
+	name = "ËïÁ¢ÈË"
+	country = ROC
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 0.00
+	picture = L50265
+	add_trait = panzer_leader
+	add_trait = sincere_seeker
+	add_trait = serious_general
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340164 = {
+	name = "ËïÁ¬ÖÙ"
+	country = ROC
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50266
+	history = {
+		1936.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+		1943.1.1 = { rank = 3 }
+	}
+}
+340165 = {
+	name = "ËïÔªÁ¼"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50271
+	add_trait = defensive_doctrine
+	add_trait = serious_general
+	history = {
+		1936.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 2 }
+	}
+}
+340166 = {
+	name = "ËÎÏ£å¥"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50273
+	add_trait = defensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340167 = {
+	name = "´÷ÖÅ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50275
+	history = {
+		1936.1.1 = { rank = 1 }
+		1945.1.1 = { rank = 0 }
+	}
+}
+340168 = {
+	name = "´÷óÒ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50276
+	add_trait = commando
+	history = {
+		1930.1.1 = { rank = 1 }
+		1940.1.1 = { rank = 2 }
+	}
+}
+340169 = {
+	name = "ÌÀ¶÷²®"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50278
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+	}
+}
+340170 = {
+	name = "ÌÆÉúÖÇ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50280
+	add_trait = trickster
+	add_trait = old_guard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1930.1.1 = { rank = 4 }
+		1945.1.1 = { rank = 0 }
+	}
+}
+340171 = {
+	name = "ÌÕÖÅÔÀ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50282
+	history = {
+		1936.1.1 = { rank = 1 }
+		1944.1.1 = { rank = 2 }
+		1946.1.1 = { rank = 0 }
+	}
+}
+340172 = {
+	name = "ÌÕ¹ã"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50283
+	history = {
+		1936.1.1 = { rank = 1 }
+		1940.1.1 = { rank = 2 }
+	}
+}
+340173 = {
+	name = "µË¶¨Ô¶"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50286
+	history = {
+		1936.1.1 = { rank = 1 }
+		1940.1.1 = { rank = 2 }
+	}
+}
+340174 = {
+	name = "ÌïÕòÄÏ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50287
+	history = {
+		1930.1.1 = { rank = 1 }
+		1940.1.1 = { rank = 2 }
+	}
+}
+340175 = {
+	name = "¶¡ÖÎÅÍ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50288
+	add_trait = offensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340176 = {
+	name = "²ÌÃÏ¼á"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50289
+	add_trait = trickster
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340177 = {
+	name = "×Ş×÷»ª"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50295
+	add_trait = offensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 2 }
+	}
+}
+340178 = {
+	name = "¶Åí²Ã÷"
+	country = ROC
+	type = land
+	skill = 3
+	max_skill = 6
+	loyalty = 0.00
+	picture = L50298
+	add_trait = offensive_doctrine
+	add_trait = sincere_seeker
+	add_trait = believed_general
+	history = {
+		1936.1.1 = { rank = 1 }
+		1945.1.1 = { rank = 0 }
+	}
+}
+340179 = {
+	name = "¶Î›V"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50299
+	add_trait = offensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+		1945.1.1 = { rank = 2 }
+	}
+}
+340180 = {
+	name = "¶­´ÓÉÆ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50302
+	add_trait = logistics_wizard
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340181 = {
+	name = "ÎÚ¾²±ò"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50303
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 0 }
+	}
+}
+340182 = {
+	name = "ÍòÊ½¾¼"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50306
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340183 = {
+	name = "ÍòÒ«»Í"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50307
+	history = {
+		1936.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 2 }
+		1946.1.1 = { rank = 0 }
+	}
+}
+340184 = {
+	name = "ÍõÕØÖÇ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50308
+	history = {
+		1930.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 0 }
+	}
+}
+340185 = {
+	name = "ÍõÖÎÎõ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50311
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340186 = {
+	name = "Íõ¾´¾Ã"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50312
+	history = {
+		1936.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 2 }
+	}
+}
+340187 = {
+	name = "Íõ¾¸Ö®"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50313
+	history = {
+		1936.1.1 = { rank = 1 }
+		1944.1.1 = { rank = 0 }
+	}
+}
+340189 = {
+	name = "Íõ¿¡"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50316
+	add_trait = logistics_wizard
+	history = {
+		1936.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 2 }
+	}
+}
+340190 = {
+	name = "Íõ´ºêÍ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50317
+	add_trait = commando
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340191 = {
+	name = "ÍõÁèÔÆ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50321
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340192 = {
+	name = "Íõ¶«Ô­"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50324
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+	}
+}
+340193 = {
+	name = "ÍõÍòÁä"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50325
+	history = {
+		1930.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 0 }
+	}
+}
+340194 = {
+	name = "ÍõÒ«Îä"
+	country = ROC
+	type = land
+	skill = 3
+	max_skill = 6
+	loyalty = 0.00
+	picture = L50326
+	add_trait = serious_general
+	add_trait = believed_general
+	add_trait = offensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340195 = {
+	name = "ÍõÒã"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50327
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1945.1.1 = { rank = 0 }
+	}
+}
+340196 = {
+	name = "ÎºÕò"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50328
+	history = {
+		1936.1.1 = { rank = 1 }
+		1945.1.1 = { rank = 2 }
+	}
+}
+340197 = {
+	name = "ÎÀÁ¢»Í"
+	country = ROC
+	type = land
+	skill = 2
+	max_skill = 6
+	loyalty = 0.00
+	picture = L50329
+	add_trait = offensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+		1940.1.1 = { rank = 2 }
+		1941.1.1 = { rank = 3 }
+	}
+}
+340198 = {
+	name = "ÎÄÇ¿"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50330
+	add_trait = commando
+	history = {
+		1936.1.1 = { rank = 1 }
+		1947.1.1 = { rank = 0 }
+	}
+}
+340199 = {
+	name = "ÎâÆæÎ°"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50332
+	history = {
+		1936.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+	}
+}
+340200 = {
+	name = "Îâ´¹À¥"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50333
+	history = {
+		1936.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 2 }
+	}
+}
+340201 = {
+	name = "ÎâÅåæÚ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50334
+	add_trait = logistics_wizard
+	add_trait = old_guard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1939.1.1 = { rank = 0 }
+	}
+}
+340202 = {
+	name = "ÎâÉÜÖÜ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50335
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340203 = {
+	name = "Ñî»¢"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50339
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340204 = {
+	name = "Ñî²®ÌÎ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50341
+	add_trait = offensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1947.1.1 = { rank = 0 }
+	}
+}
+340205 = {
+	name = "Ñî²½·É"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50342
+	add_trait = panzer_leader
+	history = {
+		1936.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+	}
+}
+340206 = {
+	name = "ÑîÎµ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50344
+	add_trait = commando
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340207 = {
+	name = "Ò¶³É"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50346
+	history = {
+		1930.1.1 = { rank = 1 }
+		1946.1.1 = { rank = 0 }
+	}
+}
+340208 = {
+	name = "Ò¶Åå¸ß"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50347
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340209 = {
+	name = "Óà³ÌÍò"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50351
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340210 = {
+	name = "Óá¼ÃÊ±"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50352
+	add_trait = offensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 2 }
+		1946.1.1 = { rank = 0 }
+	}
+}
+340211 = {
+	name = "³Â²ß"
+	country = ROC
+	type = sea
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50354
+	add_trait = blockade_runner
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+	}
+}
+340212 = {
+	name = "³Â¼¾Á¼"
+	country = ROC
+	type = sea
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50355
+	history = {
+		1936.1.1 = { rank = 1 }
+		1940.1.1 = { rank = 2 }
+	}
+}
+340213 = {
+	name = "³ÂÉÜ¿í"
+	country = ROC
+	type = sea
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50356
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1930.1.1 = { rank = 4 }
+	}
+}
+340214 = {
+	name = "¼ªÕÂ¼ò"
+	country = ROC
+	type = sea
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50357
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340215 = {
+	name = "Ğì×æÉÆ"
+	country = ROC
+	type = sea
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50358
+	history = {
+		1930.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 0 }
+	}
+}
+340216 = {
+	name = "¸ßÏÜÉê"
+	country = ROC
+	type = sea
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50359
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340217 = {
+	name = "¹ğÓÀÇå"
+	country = ROC
+	type = sea
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50360
+	history = {
+		1936.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 2 }
+	}
+}
+340218 = {
+	name = "ÁõÓÀÚ¾"
+	country = ROC
+	type = sea
+	skill = 1
+	max_skill = 6
+	loyalty = 0.00
+	picture = L50361
+	add_trait = old_guard
+	add_trait = seawolf
+	history = {
+		1930.1.1 = { rank = 1 }
+		1938.1.1 = { rank = 2 }
+	}
+}
+340219 = {
+	name = "Å·Ñô¸ñ"
+	country = ROC
+	type = sea
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50362
+	history = {
+		1936.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 2 }
+	}
+}
+340220 = {
+	name = "ÉòºèÁÒ"
+	country = ROC
+	type = sea
+	skill = 2
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50364
+	history = {
+		1936.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+		1943.1.1 = { rank = 3 }
+	}
+}
+340221 = {
+	name = "ÔøÒÔ¶¦"
+	country = ROC
+	type = sea
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50365
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340222 = {
+	name = "ÍõÊÙÍ¢"
+	country = ROC
+	type = sea
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50366
+	add_trait = old_guard
+	add_trait = superior_tactician
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340223 = {
+	name = "ÕÅÍ¢ÃÏ"
+	country = ROC
+	type = air
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50367
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340224 = {
+	name = "³ÂÆÜÏ¼"
+	country = ROC
+	type = air
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50368
+	add_trait = night_flyer
+	history = {
+		1936.1.1 = { rank = 1 }
+		1946.1.1 = { rank = 0 }
+	}
+}
+340225 = {
+	name = "³ÂÇìÔÆ"
+	country = ROC
+	type = air
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50369
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340226 = {
+	name = "³ÂÈğîä"
+	country = ROC
+	type = air
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50371
+	history = {
+		1930.1.1 = { rank = 1 }
+		1943.1.1 = { rank = 0 }
+	}
+}
+340227 = {
+	name = "ÖÜÖÁÈá"
+	country = ROC
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50372
+	history = {
+		1936.1.1 = { rank = 1 }
+		1940.1.1 = { rank = 2 }
+		1946.1.1 = { rank = 0 }
+	}
+}
+340228 = {
+	name = "Ğì»ÀÉı"
+	country = ROC
+	type = air
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50373
+	add_trait = carpet_bomber
+	history = {
+		1936.1.1 = { rank = 1 }
+		1940.1.1 = { rank = 2 }
+	}
+}
+340229 = {
+	name = "»Æ±üºâ"
+	country = ROC
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50375
+	history = {
+		1936.1.1 = { rank = 1 }
+		1944.1.1 = { rank = 2 }
+	}
+}
+340230 = {
+	name = "Àî¹ğµ¤"
+	country = ROC
+	type = air
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50378
+	history = {
+		1930.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 0 }
+	}
+}
+340231 = {
+	name = "ÁºÌí³É"
+	country = ROC
+	type = air
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50379
+	add_trait = superior_air_tactician
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 2 }
+	}
+}
+340232 = {
+	name = "Áõ¹úÔË"
+	country = ROC
+	type = air
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50380
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340233 = {
+	name = "ÁõÄÁÈº"
+	country = ROC
+	type = air
+	skill = 0
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50381
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340234 = {
+	name = "ÁøÕÜÉú"
+	country = ROC
+	type = air
+	skill = 0
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50382
+	add_trait = superior_air_tactician
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340235 = {
+	name = "Áõ´â¸Õ"
+	country = ROC
+	type = air
+	skill = 0
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50383
+	add_trait = superior_tactician
+	history = {
+		1930.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 0 }
+	}
+}
+340236 = {
+	name = "Ã«°î³õ"
+	country = ROC
+	type = air
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50384
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340237 = {
+	name = "Ç®´ó¾û"
+	country = ROC
+	type = air
+	skill = 2
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50385
+	history = {
+		1936.1.1 = { rank = 1 }
+		1938.1.1 = { rank = 2 }
+		1941.1.1 = { rank = 3 }
+	}
+}
+340238 = {
+	name = "Íõ¹â¸´"
+	country = ROC
+	type = air
+	skill = 0
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50386
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340239 = {
+	name = "ÍõÌìÏé"
+	country = ROC
+	type = air
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50387
+	add_trait = spotter
+	history = {
+		1930.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 0 }
+	}
+}
+340240 = {
+	name = "ÀÖÒÔÇÙ"
+	country = ROC
+	type = air
+	skill = 1
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50388
+	add_trait = fleet_destroyer
+	history = {
+		1936.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+	}
+}
+340241 = {
+	name = "ÀîÊÀ¼×"
+	country = ROC
+	type = sea
+	skill = 1
+	max_skill = 3
+	loyalty = 1.00
+	picture = L50389
+	add_trait = superior_tactician
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 2 }
+	}
+}
+340242 = {
+	name = "·®áÂ¸¦"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000153
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340243 = {
+	name = "ÁúÔÆ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000101
+	add_trait = logistics_wizard
+	add_trait = serious_general
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+		1936.1.1 = { rank = 3 }
+		1936.1.1 = { rank = 4 }
+	}
+}
+340244 = {
+	name = "Â¬ºº"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+	picture = L4000102
+	add_trait = tactical_genius
+	add_trait = defensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340245 = {
+	name = "ÔøÔóÉú"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000103
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340246 = {
+	name = "Ëï¶É"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 1.00
+	picture = L4000104
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340247 = {
+	name = "ÕÅ³å"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000108
+	add_trait = logistics_wizard
+	add_trait = sincere_seeker
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+}
+340248 = {
+	name = "Â³µÀÔ´"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000109
+	add_trait = offensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340249 = {
+	name = "°²¶÷äß"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000110
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340250 = {
+	name = "¸ßÒñ»±"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000111
+	add_trait = defensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340251 = {
+	name = "Óà½¨Ñ«"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000113
+	add_trait = offensive_doctrine
+	add_trait = defensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340252 = {
+	name = "Ïô±¾Ôª"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+	picture = L4000114
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340253 = {
+	name = "ÀîÊÀÁú"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+	picture = L4000115
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340254 = {
+	name = "ÔøÍòïñ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+	picture = L4000116
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340255 = {
+	name = "ËÕ±şÎÄ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50261
+	add_trait = winter_specialist
+	history = {
+		1930.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 2 }
+		1962.1.1 = { rank = 0 }
+	}
+}
+340256 = {
+	name = "Ä²ÖĞçñ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50243
+	history = {
+		1930.1.1 = { rank = 1 }
+		1944.1.1 = { rank = 0 }
+	}
+}
+340257 = {
+	name = "³£¶÷¶à"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50005
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340258 = {
+	name = "ÖÜ¸£³É"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50059
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340259 = {
+	name = "ºÎÖù¹ú"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50091
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1943.1.1 = { rank = 0 }
+	}
+}
+340260 = {
+	name = "Íò¸£÷ë"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50305
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+	}
+}
+340261 = {
+	name = "·ëÇÕÔÕ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50082
+	history = {
+		1930.1.1 = { rank = 1 }
+		1942.1.1 = { rank = 0 }
+	}
+}
+340262 = {
+	name = "ËïÎµÈç"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50270
+	history = {
+		1936.1.1 = { rank = 1 }
+		1938.1.1 = { rank = 2 }
+		1946.1.1 = { rank = 0 }
+	}
+}
+340263 = {
+	name = "ÕÔÊÙÉ½"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50026
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340264 = {
+	name = "¿×´ÓÖÜ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50157
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340265 = {
+	name = "¸ß¹ğ×Ì"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50145
+	history = {
+		1936.1.1 = { rank = 1 }
+		1940.1.1 = { rank = 2 }
+	}
+}
+340266 = {
+	name = "µË±¦Éº"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50285
+	history = {
+		1936.1.1 = { rank = 1 }
+		1941.1.1 = { rank = 2 }
+	}
+}
+340267 = {
+	name = "¹ùÏ£Åô"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+	picture = L503006
+	add_trait = commando
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340268 = {
+	name = "Ì´×ÔĞÂ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 0.00
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340269 = {
+	name = "Éò¿Ë"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340270 = {
+	name = "ÕÅÎÄÇå"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340271 = {
+	name = "ÀîÕñÌÆ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 1.00
+	history = {
+		1930.1.1 = { rank = 1 }
+
+	}
+}
+340272 = {
+	name = "Áõº²¶«"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 1.00
+	picture = L503015
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340273 = {
+	name = "ÕÔÒã"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 1.00
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340274 = {
+	name = "ÓÚÑ§ÖÒ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L503018
+	add_trait = offensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+	}
+}
+340275 = {
+	name = "çÑ³ÎÁ÷"
+	country = ROC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50207
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+	}
+}
+340276 = {
+	name = "ÁõÆôÎÄ"
+	country = ROC
+	type = land
+	skill = 2
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50269
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340277 = {
+	name = "·ëÕ¼º£"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50279
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340278 = {
+	name = "ÖÜ¹âÁÒ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+	}
+}
+340279 = {
+	name = "»ôÊØÒå"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50291
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340280 = {
+	name = "ÖìºèÑ«"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	add_trait = trickster
+	loyalty = 0.00
+	picture = L50309
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+}
+340281 = {
+	name = "ÁõÎÄ»Ô"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 1.00
+	picture = M501004
+	add_trait = defensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+		1936.1.1 = { rank = 3 }
+		1936.1.1 = { rank = 4 }
+	}
+}
+340282 = {
+	name = "³Â¹âÔå"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+	picture = L4000065
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+}
+340283 = {
+	name = "ÑîÑ§¶Ë"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+	picture = L4000066
+	add_trait = old_guard
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+}
+340284 = {
+	name = "ÁõÔª¬u"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000067
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340285 = {
+	name = "ÁõÔªè©"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 1
+	loyalty = 1.00
+	picture = L4000068
+	add_trait = old_guard
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340286 = {
+	name = "ÌÆÓ¢"
+	country = ROC
+	type = land
+	skill = 2
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000070
+	add_trait = old_guard
+	add_trait = trickster
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+}
+340287 = {
+	name = "ÕÅÙãÖĞ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+	picture = L4000071
+	add_trait = old_guard
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+} 
+340288 = {
+	name = "ÁõÔªçı"
+	country = ROC
+	type = land
+	skill = 2
+	max_skill = 2
+	loyalty = 1.00
+	picture = L4000072
+	add_trait = old_guard
+	add_trait = fortress_buster
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+} 
+340289 = {
+	name = "ÓàËÉÁÕ"
+	country = ROC
+	type = land
+	skill = 2
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000073
+	add_trait = old_guard
+	add_trait = trickster
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+} 
+340290 = {
+	name = "¸µ×÷Òå"
+	country = ROC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50085
+	add_trait = serious_general
+	add_trait = mao_army_4
+	add_trait = winter_specialist
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1930.1.1 = { rank = 4 }
+	}
+}
+340291 = {
+	name = "¶­ÆäÎä"
+	country = ROC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50300
+	add_trait = serious_general
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340292 = {
+	name = "¹ù¾°ÔÆ"
+	country = ROC
+	type = land
+	skill = 2
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50160
+	add_trait = logistics_wizard
+	history = {
+		1936.1.1 = { rank = 1 }
+		1945.1.1 = { rank = 0 }
+	}
+}
+340293 = {
+	name = "Â³Ó¢÷ë"
+	country = ROC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 0.00
+	picture = L4000158
+	add_trait = defense_army
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340294 = {
+	name = "ËïÀ¼·å"
+	country = ROC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 0.00
+	picture = L4000159
+	add_trait = offensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340295 = {
+	name = "ÍõÔŞ³¼"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340296 = {
+	name = "Óô´«Òå"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	add_trait = offensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340297 = {
+	name = "°²´ºÉ½"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000162
+	add_trait = defensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340298 = {
+	name = "Ô¬ÇìÈÙ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	add_trait = offensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340299 = {
+	name = "Áõ´º·½"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 0.00
+	add_trait = fortress_buster
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340300 = {
+	name = "»Æ´¿ÁÒ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	add_trait = offensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340301 = {
+	name = "ÑîÎ¬Ô«"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340302 = {
+	name = "Öì´ó´¿"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000167
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340303 = {
+	name = "ÎÀ¾°ÁÖ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000168
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340304 = {
+	name = "ÉÌÕğ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 1.00
+	picture = L503007
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1938.1.1 = { rank = 2 }
+	}
+}
+340305 = {
+	name = "Ê·Ôó²¨"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 1.00
+	picture = L503008
+	history = {
+		1930.1.1 = { rank = 1 }
+		1938.1.1 = { rank = 2 }
+	}
+}
+340306 = {
+	name = "Íõ¾¸¹ú"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 0.00
+	picture = L50314
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1943.1.1 = { rank = 0 }
+	}
+}
+340307 = {
+	name = "ÑÖÎıÉ½"
+	country = ROC
+	type = land
+	skill = 2
+	max_skill = 3
+	loyalty = 1.00
+	picture = L50348
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1930.1.1 = { rank = 4 }
+	}
+}
+340308 = {
+	name = "ĞìÓÀ²ı"
+	country = ROC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50113
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1941.1.1 = { rank = 3 }
+	}
+}
+340309 = {
+	name = "ÕÅÒñÎà"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 0.00
+	picture = L50020
+	add_trait = friction_specialist
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340310 = {
+	name = "ÕÔ³Ğç·"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50021
+	history = {
+		1930.1.1 = { rank = 1 }
+		1945.1.1 = { rank = 0 }
+	}
+}
+340311 = {
+	name = "Ñî°®Ô´"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50337
+	add_trait = offensive_doctrine
+	add_trait = old_guard
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340312 = {
+	name = "Ëï³ş"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50264
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340313 = {
+	name = "³Â³¤½İ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50029
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340314 = {
+	name = "¹ù×Ú·Ú"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50164
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340315 = {
+	name = "ÖÜçé"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 0.00
+	picture = L503001
+	add_trait = panzer_leader
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340316 = {
+	name = "³şÏª´º"
+	country = ROC
+	type = land
+	skill = 2
+	max_skill = 3
+	loyalty = 1.00
+	picture = L503000
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340317 = {
+	name = "Ñî³ÎÔ´"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 1.00
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340318 = {
+	name = "ÑîĞ§Å·"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+	picture = L503002
+	history = {
+		1930.1.1 = { rank = 1 }
+		1937.5.31 = { rank = 0 }
+	}
+}
+340319 = {
+	name = "¶Å´ºÒÊ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340320 = {
+	name = "ËïÍ©İæ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	add_trait = defensive_doctrine
+	loyalty = 0.00
+	picture = L50269
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+	}
+}
+340321 = {
+	name = "Õ¹ÊéÌÃ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 2
+	add_trait = offensive_doctrine
+	loyalty = 0.00
+	picture = L4000135
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340322 = {
+	name = "²Ü¸£ÁÖ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 0.00
+	picture = L4000136
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340323 = {
+	name = "Îâ»¯ÎÄ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 0.00
+	picture = L4000137
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340324 = {
+	name = "¹ÈÁ¼Ãñ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 0.00
+	picture = L4000138
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340325 = {
+	name = "ÀîººÕÂ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 0.00
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340326 = {
+	name = "ÏôÒãËà"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50105
+	add_trait = offensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+		1945.1.1 = { rank = 2 }
+	}
+}
+340327 = {
+	name = "¹ùÈê¶°"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50162
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+	}
+}
+340328 = {
+	name = "¹ùÑ«ì÷"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50161
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 2 }
+	}
+}
+340329 = {
+	name = "ÍõçÚĞ÷"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000074
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340330 = {
+	name = "ÌïËÌÒ¢"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000075
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+}
+340331 = {
+	name = "ÌÆÊ½×ñ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000076
+	add_trait = fortress_buster
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+}
+340332 = {
+	name = "ÅËÎÄ»ª"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000077
+	add_trait = old_guard
+	add_trait = fortress_buster
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+		1936.1.1 = { rank = 3 }
+	}
+}
+340333 = {
+	name = "ºÎ¹âÁÒ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000078
+	add_trait = old_guard
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340334 = {
+	name = "·ëµÂÕ«"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000079
+	add_trait = old_guard
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340335 = {
+	name = "ÂŞÔóÖŞ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000080
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+}
+340336 = {
+	name = "ÈÄ¹ú»ª"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000082
+	add_trait = sincere_seeker
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340337 = {
+	name = "¶­ËÎçñ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000083
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340338 = {
+	name = "·¶ÉÜÔö"
+  country = ROC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000084
+	add_trait = sincere_seeker
+	add_trait = defensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+		1940.11.1 = { rank = 3 }
+	}
+}
+340339 = {
+	name = "ÂíØ¹ÖÇ"
+  country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000085
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+}
+340340 = {
+	name = "»ÆÒş"
+  country = ROC
+	type = land
+	skill = 2
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000086
+	add_trait = offensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+}
+340341 = {
+	name = "³Â¶¦Ñ«"
+  country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000087
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+}
+340342 = {
+	name = "Ñî¹úìõ"
+  country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000088
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340343 = {
+	name = "³ÂÍòØğ"
+  country = ROC
+	type = land
+	skill = 2
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000089
+	add_trait = defensive_doctrine
+	add_trait = sincere_seeker
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+		1937.10.1 = { rank = 3 }
+	}
+}
+340344 = {
+	name = "¹ù²ıÃ÷"
+  country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000090
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+}
+340345 = {
+	name = "ÁÎÕğ"
+  country = ROC
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L4000091
+	add_trait = winter_specialist
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+}
+340346 = {
+	name = "³ÂÀ¼Í¤"
+  country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000092
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340347 = {
+	name = "ÑîººÓò"
+  country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000093
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+}
+340348 = {
+	name = "ÏÄ¾¼"
+  country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000094
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+}
+340349 = {
+	name = "ËïÕğ"
+  country = ROC
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = M3000030
+	add_trait = trickster
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+}
+340350 = {
+	name = "µËÎıºî"
+  country = ROC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = M3000031
+	add_trait = logistics_wizard
+	add_trait = old_guard
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+}
+340351 = {
+	name = "ÍõÁê»ù"
+  country = ROC
+	type = land
+	skill = 3
+	max_skill = 3
+	loyalty = 1.00
+	picture = M3000032
+	add_trait = old_guard
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+		1936.1.1 = { rank = 3 }
+	}
+}
+340352 = {
+	name = "Áõ´æºñ"
+  country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+	picture = M3000033
+	add_trait = old_guard
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+}
+340353 = {
+	name = "Âí²½·¼"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50237
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1939.1.1 = { rank = 0 }
+	}
+}
+340354 = {
+	name = "ÂíÔªÏé"
+	country = CNM
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+	picture = L4000174
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 1 }
+	}
+}
+340355 = {
+	name = "Âí²½Çà"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 1.00
+	picture = L504007
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+	}
+}
+340356 = {
+	name = "Âí±üÖÒ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000175
+	add_trait = defensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 1 }
+	}
+}
+
+340357 = {
+	name = "Âí³ÊÏé"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+	picture = L4000176
+	add_trait = defensive_doctrine
+	history = {
+		1936.1.1 = { rank = 2 }
+		1943.12.1 = { rank = 3 }
+	}
+}
+340358 = {
+	name = "Âí³ÉÏÍ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+	picture = L4000177
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340359 = {
+	name = "Âí±ë"
+	country = ROC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 1.00
+	picture = L4000178
+	add_trait = defensive_doctrine
+	add_trait = trickster
+	history = {
+		1932.2.1 = { rank = 1 }
+		1937.8.1 = { rank = 2 }
+	}
+}
+340360 = {
+	name = "ÂíÂ»"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000179
+	add_trait = trickster
+	history = {
+		1935.1.1 = { rank = 1 }
+		1938.8.1 = { rank = 2 }
+	}
+}
+340361 = {
+	name = "º«Æğ¹¦"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+	picture = L4000180
+	history = {
+		1927.10.1 = { rank = 1 }
+		1940.2.3 = { rank = 2 }
+	}
+}
+340362 = {
+	name = "Âí²½öÇ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+	picture = L4000181
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340363 = {
+	name = "ÕÔËì"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 1.00
+	picture = L4000182
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 1 }
+	}
+}
+340364 = {
+	name = "ÂíÈ«Òå"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 1.00
+	picture = L4000183
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 1 }
+	}
+}
+340365 = {
+	name = "ÂíºèåÓ"
+	country = ROC
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 1.00
+	picture = L50235
+	add_trait = old_guard
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+}
+340366 = {
+	name = "Âí¹â×Ú"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 2
+	loyalty = 1.00
+	picture = L4000169
+	add_trait = old_guard
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340367 = {
+	name = "Âí±¦ÁÕ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000170
+	add_trait = offensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 1 }
+	}
+}
+340368 = {
+	name = "Â¬ÖÒÁ¼"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000171
+	add_trait = defensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+		1939.12.1 = { rank = 2 }
+	}
+}
+340369 = {
+	name = "Âí¶Ø¾²"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 1.00
+	picture = L4000172
+	add_trait = offensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+}
+340370 = {
+	name = "Âíºè±ö"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50236
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1942.1.1 = { rank = 0 }
+	}
+}
+340371 = {
+	name = "ÂíÈ«Á¼"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000173
+	history = {
+		1929.6.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1931.1.1 = { rank = 3 }
+	}
+}
+340372 = {
+	name = "ÇØµÂ´¿"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50293
+	add_trait = old_guard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+	}
+}
+340373 = {
+	name = "ÕÅ¿ËÏÀ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50013
+	add_trait = fortress_buster
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340374 = {
+	name = "·ëÖÎ°²"
+	country = ROC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50080
+	add_trait = defensive_doctrine
+	add_trait = offensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340375 = {
+	name = "ºÎ»ùãã"
+	country = ROC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50090
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340376 = {
+	name = "¼ªĞÇÎÄ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50045
+	add_trait = trickster
+	add_trait = defensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340377 = {
+	name = "ÁõÈêÃ÷"
+	country = ROC
+	type = land
+	skill = 2
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50209
+	add_trait = winter_specialist
+	add_trait = offensive_doctrine
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340378 = {
+	name = "Ê¯ÓÑÈı"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50260
+	add_trait = old_guard
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340379 = {
+	name = "Áõ×ÔÕä"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	add_trait = defensive_doctrine
+	loyalty = 0.00
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340380 = {
+	name = "ÁõÕñÈı"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	add_trait = offensive_doctrine
+	loyalty = 0.00
+	picture = L4000142
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340381 = {
+	name = "ÈîĞşÎä"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	add_trait = offensive_doctrine
+	loyalty = 0.00
+	picture = L4000143
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340382 = {
+	name = "Ö£´óÕÂ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000144
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340383 = {
+	name = "°×³çìû"
+	country = ROC
+	type = land
+	skill = 3
+	max_skill = 8
+	loyalty = 0.00
+	picture = L50000
+	add_trait = trickster
+	add_trait = tactical_genius
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+	}
+}
+340384 = {
+	name = "ÕÅäÆ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50012
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340385 = {
+	name = "ºØÎ¬Õä"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50094
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340386 = {
+	name = "ÏÄÍş"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50101
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+	}
+}
+340387 = {
+	name = "»ÆÉÜ¸f"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50132
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+	}
+}
+340388 = {
+	name = "¹ùâã"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50158
+	add_trait = engineer
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340389 = {
+	name = "ÀîÆ·ÏÉ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50182
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340390 = {
+	name = "Àî×ÚÈÊ"
+	country = ROC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50186
+	add_trait = offensive_doctrine
+	add_trait = serious_general
+	add_trait = sincere_seeker
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1930.1.1 = { rank = 4 }
+	}
+}
+340391 = {
+	name = "ÁÎÀÚ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50193
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+	}
+}
+340392 = {
+	name = "ÁõÊ¿Òã"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50215
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340393 = {
+	name = "ÇøÊÙÄê"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50245
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340394 = {
+	name = "ËÕ×æÜ°"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50262
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340395 = {
+	name = "ĞìÆôÃ÷"
+	country = ROC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 0.00
+	picture = L4000145
+	add_trait = offensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340396 = {
+	name = "Ñî¿¡²ı"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	add_trait = offensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340397 = {
+	name = "³ÌÊ÷"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340398 = {
+	name = "ÍõÔŞ±ó"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 0.00
+	picture = L4000148
+	add_trait = fortress_buster
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340399 = {
+	name = "ÄªÊ÷½Ü"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000149
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340400 = {
+	name = "ñûÁ¬·¼"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000150
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340401 = {
+	name = "ÁèÑ¹Î÷"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000151
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340402 = {
+	name = "»Æ¹Ì"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340403 = {
+	name = "¸ßÖÂáÔ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000154
+	add_trait = offensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340404 = {
+	name = "ÄªµÂºê"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000155
+	add_trait = offensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340405 = {
+	name = "ÌÆÈçÈå"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000156
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340406 = {
+	name = "Ì·ºÎÒ×"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	add_trait = logistics_wizard
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340407 = {
+	name = "³Â¼Ã»¸"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50032
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 2 }
+	}
+}
+340408 = {
+	name = "»Æ¹âÈñ"
+	country = ROC
+	type = air
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50374
+	history = {
+		1936.7.15 = { rank = 1 }
+	}
+}
+340409 = {
+	name = "ÓàººÄ±"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = CGDL0001
+	history = {
+		1936.7.15 = { rank = 1 }
+		1936.7.15 = { rank = 2 }
+	}
+}
+340410 = {
+	name = "çÑÅàÄÏ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50242
+	history = {
+		1936.7.15 = { rank = 1 }
+		1936.7.15 = { rank = 2 }
+	}
+}
+340411 = {
+	name = "ÄªÏ£µÂ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 0.00
+	picture = CGDL0003
+	history = {
+		1936.7.15 = { rank = 1 }
+	}
+}
+340412 = {
+	name = "³ÂÕÂ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 0.00
+	picture = CGDL0004
+	history = {
+		1936.7.15 = { rank = 1 }
+	}
+}
+340413 = {
+	name = "ÕÅÈğ¹ó"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 0.00
+	history = {
+		1936.7.15 = { rank = 1 }
+	}
+}
+340414 = {
+	name = "Î×½£ĞÛ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 0.00
+	picture = CGDL0005
+	history = {
+		1936.7.15 = { rank = 1 }
+	}
+}
+340415 = {
+	name = "Àîºº»ê"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50175
+	history = {
+		1936.7.15 = { rank = 1 }
+	}
+}
+340416 = {
+	name = "µËÁú¹â"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 0.00
+	picture = CGDL0006
+	history = {
+		1936.7.15 = { rank = 1 }
+	}
+}
+340417 = {
+	name = "»ÆÌÎ"
+	country = ROC
+	type = land
+	skill = 0
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50133
+	add_trait = engineer
+	history = {
+		1936.7.15 = { rank = 1 }
+	}
+}
+340418 = {
+	name = "ÔøÓÑÈÊ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 0.00
+	history = {
+		1936.7.15 = { rank = 1 }
+	}
+}
+340419 = {
+	name = "Ì·åä"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 0.00
+	history = {
+		1936.7.15 = { rank = 1 }
+	}
+}
+340420 = {
+	name = "Ò¶ÕØ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 0.00
+	history = {
+		1936.7.15 = { rank = 1 }
+	}
+}
+340421 = {
+	name = "º«¸´Çş"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L50087
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+	}
+}
+340422 = {
+	name = "ÕÅÑ§Á¼"
+	country = ROC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50011
+	add_trait = offensive_doctrine
+	add_trait = sincere_seeker
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1930.1.1 = { rank = 4 }
+	}
+}
+340423 = {
+	name = "ÂíÕ¼É½"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50233
+	add_trait = winter_specialist
+	add_trait = trickster
+	history = {
+		1936.1.1 = { rank = 1 }
+		1944.1.1 = { rank = 2 }
+	}
+}
+340424 = {
+	name = "Ñî»¢³Ç"
+	country = ROC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 0.00
+	picture = L50340
+	add_trait = sincere_seeker
+	history = {
+		1930.1.1 = { rank = 1 }
+		1930.1.1 = { rank = 2 }
+		1930.1.1 = { rank = 3 }
+		1930.1.1 = { rank = 4 }
+	}
+}
+340425 = {
+	name = "³ÂÎ¬ÖÜ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 0.00
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340426 = {
+	name = "³Â¼ÃÌÄ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 2
+	picture = M502008
+	loyalty = 0.00
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+	}
+}
+340427 = {
+	name = "ÕÅ×ÔÖÒ"
+	country = ROC
+	type = land
+	skill = 3
+	max_skill = 5
+	add_trait = sincere_seeker
+	add_trait = serious_general
+	loyalty = 0.00
+	picture = L50004
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340428 = {
+	name = "ËÎÕÜÔª"
+	country = ROC
+	type = land
+	skill = 3
+	max_skill = 6
+	loyalty = 0.00
+	picture = L50272
+	add_trait = serious_general
+	add_trait = logistics_wizard
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+		1936.1.1 = { rank = 3 }
+		1936.1.1 = { rank = 4 }
+	}
+}
+340429 = {
+	name = "¸ßÊ÷Ñ«"
+	country = ROC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50147
+	add_trait = sincere_seeker
+	history = {
+		1930.1.1 = { rank = 1 }
+	}
+}
+340430 = {
+	name = "ÁõÏæ"
+  country = ROC
+	type = land
+	skill = 1
+	max_skill = 5
+	loyalty = 1.00
+	picture = M3000027
+	add_trait = sincere_seeker
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+		1936.1.1 = { rank = 3 }
+		1936.1.1 = { rank = 4 }
+	}
+}
+340431 = {
+	name = "Ñîºê¹â"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000754
+	history = {
+		1936.1.1 = { rank = 1 }
+		1937.1.1 = { rank = 2 }
+	}
+}
+340432 = {
+	name = "Íõ¾¢ĞŞ"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000772
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 2 }
+	}
+}
+340433 = {
+	name = "ÏôÖ®³ş"
+	country = ROC
+	type = land
+	skill = 2
+	max_skill = 4
+	loyalty = 0.00
+	picture = L4000781
+	add_trait = defensive_doctrine
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 2 }
+	}
+}
+340434 = {
+	name = "³ÂÅæ"
+	country = ROC
+	type = land
+	skill = 2
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000784
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 2 }
+	}
+}
+340435 = {
+	name = "ÅíÎ»ÈÊ"
+	country = ROC
+	type = land
+	skill = 2
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000788
+	history = {
+		1930.1.1 = { rank = 1 }
+		1939.1.1 = { rank = 2 }
+	}
+}
+340436 = {
+	name = "¹ùÈê¹å"
+	country = ROC
+	type = land
+	skill = 3
+	max_skill = 4
+	picture = L4000791
+	loyalty = 0.00
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340437 = {
+	name = "ÁºººÃ÷"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 2
+	loyalty = 0.00
+	picture = L4000795
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340438 = {
+	name = "ÎÂÃù½£"
+	country = ROC
+	type = land
+	skill = 3
+	max_skill = 4
+	picture = L4000797
+	loyalty = 0.00
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340439 = {
+	name = "Ñî¸É²Å"
+	country = ROC
+	type = land
+	skill = 2
+	max_skill = 3
+	loyalty = 0.00
+	picture = L4000761
+	history = {
+		1936.1.1 = { rank = 1 }
+	}
+}
+340440 = {
+	name = "ÑîÉ­"
+	country = ROC
+	type = land
+	skill = 1
+	max_skill = 4
+	loyalty = 0.00
+	picture = L50343
+	history = {
+		1936.1.1 = { rank = 1 }
+		1936.1.1 = { rank = 2 }
+		1936.1.1 = { rank = 3 }
+	}
+}
+340441 = {
+	name = "ÏÄÊ×Ñ«"
+	country = ROC
+	type = land
+	skill = 2
+	max_skill = 3
+	loyalty = 1.00
+	picture = M3000026
+	history = {
+		1937.1.1 = { rank = 1 }
+		1937.1.1 = { rank = 2 }
+	}
+} 
+340442 = {
+	name = "ÂÀ¹«Á¼"
+	country = ROC
+	type = land
+	skill = 3
+	max_skill = 5
+	loyalty = 1.00
+	picture = L340442
+	add_trait = sincere_seeker
+	add_trait = defense_army
+	add_trait = serious_general
+	history = {
+		1937.1.1 = { rank = 1 }
+	}
+} 

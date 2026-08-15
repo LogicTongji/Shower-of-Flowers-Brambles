@@ -1,0 +1,93 @@
+###############         
+# 宣言事件组  #
+###############
+#祭黄帝陵
+country_event = {
+	id = 20190712
+	major = yes
+	fire_only_once = yes
+	trigger = {
+                tag = CHC
+                not = { war_with = CHI }
+                not = { year = 1938 } 
+                date = 1937.4.5                           
+	}
+	title = "HDLW"
+	desc = "HDLWD"
+	picture = "CHC_flag"
+	option = {
+		name = "HDLWOP"
+    dissent = -10
+	}		
+}
+country_event = {
+	id = 7121
+	major = yes
+	fire_only_once = yes
+	trigger = {
+                tag = CHI
+                not = { war_with = CHC } 
+                not = { year = 1938 }
+                date = 1937.4.5 
+	}
+	title = "HDLWK"
+	desc = "HDLWKD"
+	picture = "CHI_flag"
+	option = {
+		name = "KMTOP"
+    dissent = -20
+	}		
+}
+#国共合作
+country_event = {
+	id = 390030
+	major = yes
+	is_triggered_only = yes
+	title = "TKT"
+	desc = "TKD"
+	picture = "CHI_flag"
+	option = {
+		name = "TKOP"
+    dissent = -20
+	}		
+}
+#十大纲领
+country_event = {
+	id = 390038
+	major = yes
+	fire_only_once = yes
+	trigger = {
+                tag = CHC
+                war_with = JAP
+                not = { year = 1938 }
+                has_global_flag = luochuan_meeting                           
+	}
+	title = "KRJGT"
+	desc = "KRJGD"
+	picture = "CHC_flag"
+	option = {
+		name = "TKOP"
+    national_unity = 5
+    dissent = -10
+    stalinist_PRC = { popularity = 5 } 
+	}		
+}
+#庐山讲话全文
+country_event = {
+	id = 390039
+	major = yes
+	fire_only_once = yes
+	trigger = {
+                tag = CHI
+                not = { year = 1938 }
+                date = 1937.7.20        
+	}
+	title = "CKST"
+	desc = "CKSD"
+	picture = "SF_Japan_Invasions4"
+	option = {
+		name = "CKSOP"
+    dissent = -10
+    paternal_autocrat_CHI = { popularity = 10 } 
+	}		
+}

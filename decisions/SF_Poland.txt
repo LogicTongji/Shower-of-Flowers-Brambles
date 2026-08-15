@@ -1,0 +1,146 @@
+##################
+#   波兰议决组   #
+##################
+#救国军
+diplomatic_decisions = {
+	Save_country_army_pol = {            
+		potential = {
+			tag = POL             
+			government_in_exile = yes
+			FRA = { government_in_exile = yes }
+			exists = GER
+			war_with = GER
+		}
+		allow = {
+			GER = { 	
+		  controls = 1928
+			controls = 1626
+			controls = 2040
+			controls = 2445
+			controls = 2509	
+		  controls = 2613
+		  }
+		not = { 
+		has_country_flag = Save_country_army 
+		GER = { 	
+		  controls = 1964
+		  controls = 2613
+		      }
+		    }
+		}
+		effect = {
+			set_country_flag = Save_country_army
+			POL = { load_oob = "POL_save.txt" }
+       	}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+            #西方军团
+	    Save_country_army_pol2 = {             
+		potential = {
+			tag = POL             
+			government_in_exile = yes
+			exists = GER
+			war_with = GER
+			not = { 
+			FRA = { 
+			government_in_exile = yes 
+			}
+			}
+			FRA = { war_with = GER }
+			not = { 
+			GER = { 	
+		  controls = 1964
+		  controls = 2613
+		            }
+		      }
+		}
+		allow = {
+			GER = { 	
+		  controls = 1928
+			controls = 1626
+			controls = 2040
+			controls = 2445
+			controls = 2509
+		}
+		not = { has_country_flag = Save_country_army2 }
+		}
+		effect = {
+			set_country_flag = Save_country_army2
+    	POL = { load_oob = "POL_WEST.txt" }	
+    		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+        #华沙起义
+	Save_country_army_pol3 = {  
+	major = yes             
+		potential = {
+			potential = {
+			tag = POL             
+			government_in_exile = yes
+			exists = GER
+			war_with = GER
+			FRA = { war_with = GER }
+			not = { GER = { 	
+		  controls = 1964
+		        }
+		}
+			has_country_flag = Save_country_army
+		}
+		allow = {
+			GER = { 	
+		  controls = 1928
+			controls = 1626
+			controls = 2040
+			controls = 2445
+			controls = 2509
+		}
+		SOV = { 
+		  controls = 1536
+			controls = 1534
+			controls = 1819
+			controls = 782
+		}
+		not = { has_country_flag = Save_country_army3 }
+		}
+		effect = {
+			set_country_flag = Save_country_army3
+				POL = { load_oob = "POL_WAS.txt" }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#海军和空军
+	    Save_country_army_pol4 = {             
+		potential = {
+			tag = POL             
+			government_in_exile = yes
+			exists = GER
+			war_with = GER
+			FRA = { war_with = GER }
+			ENG = { war_with = GER }
+			year = 1940
+		}
+		allow = {
+			GER = { 	
+		  controls = 2613
+		}
+		not = { GER = { 	
+		  controls = 1964
+		        }
+		}
+		not = { has_country_flag = Save_country_army4 }
+		}
+		effect = {
+			set_country_flag = Save_country_army4
+				POL = { load_oob = "POL_Nave.txt" }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,68 @@
+theatre = {
+	name = "陕西绥靖公署"
+	location = 7435
+	regiment = { type = hq_brigade name = "西安指挥部" historical_model = 0 }
+		army = {
+			name = "第17路军"
+			location = 7425
+			regiment = { type = hq_brigade name = "第17路军司令部"  historical_model = 0 }
+			regiment = { type = chi_star_destroyer name = "教导团" historical_model = 0 }
+			regiment = { type = cavalry_brigade name = "骑兵团" stren historical_model = 0 }
+			corps = {
+				name = "第7军"
+				location = 7425
+				regiment = { type = hq_brigade name = "第7军司令部" historical_model = 0 }
+				division= {
+					name = "第42师"
+					location = 7425
+					regiment = { type = infantry_brigade name = "第124旅" experience = 15 historical_model = 0 }
+					regiment = { type = infantry_brigade name = "第126旅" experience = 15 historical_model = 0 }
+				}
+			}
+			corps = {
+				name = "第38军"
+				location = 7425
+				regiment = { type = hq_brigade name = "第38军司令部" historical_model = 0 }
+				division= {
+					name = "第17师"
+					location = 7425
+					regiment = { type = infantry_brigade name = "第49旅" experience = 15 historical_model = 0 }
+					regiment = { type = infantry_brigade name = "第51旅" experience = 15 historical_model = 0 }
+					regiment = { type = militia_brigade name = "补充旅" historical_model = 0 }
+				}
+			}
+			corps = {
+				name = "陕西警备部队"
+				location = 7209
+				regiment = { type = hq_brigade name = "陕西警备司令部" historical_model = 0 }
+				division= {
+					name = "陕西警备第1旅"
+					location = 7209
+					regiment = { type = militia_brigade name = "陕西警备第1团" historical_model = 0 }
+					regiment = { type = militia_brigade name = "陕西警备第2团" historical_model = 0 }
+					regiment = { type = garrison_brigade name = "陕西警备第3团" historical_model = 0 }
+					}
+				division= {
+					name = "陕西警备第2旅"
+					location = 7209
+					regiment = { type = militia_brigade name = "陕西警备第4团" historical_model = 0 }
+					regiment = { type = militia_brigade name = "陕西警备第5团" historical_model = 0 }
+					regiment = { type = garrison_brigade name = "陕西警备第6团" historical_model = 0 }
+					}
+				division= {
+					name = "陕西警备第3旅"
+					location = 7209
+					regiment = { type = militia_brigade name = "陕西警备第7团" historical_model = 0 }
+					regiment = { type = militia_brigade name = "陕西警备第8团" historical_model = 0 }
+					regiment = { type = garrison_brigade name = "陕西警备第9团" historical_model = 0 }
+					}
+				}
+			division= {
+				name = "西安绥署特务部队"
+				location = 7425
+				regiment = { type = police_brigade name = "西安绥署特务第1团" istorical_model = 0 }
+				regiment = { type = police_brigade name = "西安绥署特务第2团" istorical_model = 0 }
+				regiment = { type = police_brigade name = "西安绥署特务第3团" istorical_model = 0 }
+			}
+		}
+}

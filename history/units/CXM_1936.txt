@@ -1,0 +1,24 @@
+theatre = {
+	name = "新编第36师"
+	location = 9111
+	regiment = { type = hq_brigade name = "第36师司令部" historical_model = 1 }
+	division= {
+		name = "第1旅"
+		location = 9111
+		regiment = { type = infantry_brigade experience = 15 strength = 20 historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 15 strength = 20 historical_model = 1 }
+	}
+	division= {
+		name = "第2旅"
+		location = 9111
+		regiment = { type = infantry_brigade experience = 15 strength = 20 historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 15 strength = 20 historical_model = 1 }
+	}
+		division= {
+				name = "回民骑兵"
+				location = 9111
+				regiment = { type = cavalry_brigade experience = 30  historical_model = 0 }
+				regiment = { type = cavalry_brigade experience = 30  historical_model = 0 }
+			 regiment = { type = cavalry_brigade  experience = 30  historical_model = 0 }
+				regiment = { type = cavalry_brigade experience = 30  historical_model = 0 }
+}

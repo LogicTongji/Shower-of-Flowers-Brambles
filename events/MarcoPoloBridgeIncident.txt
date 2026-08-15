@@ -1,0 +1,19 @@
+##################################
+# The Marco Polo Bridge Incident #
+##################################
+# China - Reaction Event
+country_event = {
+	
+	id = 1701
+
+	is_triggered_only = yes
+
+	title = "EVTNAME1701"
+	desc = "EVTDESC1701"
+	picture = "Marco_Polo"
+
+	option = {
+		name = "EVTOPTA1701"			# We must defend our nation
+		neutrality = -2
+	}
+}

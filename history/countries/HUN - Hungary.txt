@@ -1,0 +1,247 @@
+capital = 3164
+government = right_wing_republic
+ideology = paternal_autocrat
+head_of_state = 21001
+head_of_government = 21002
+foreign_minister = 21003
+armament_minister = 21004
+minister_of_security = 21005
+minister_of_intelligence = 21002
+chief_of_staff = 21007
+chief_of_army = 21008
+chief_of_navy = 21001
+chief_of_air = 21010
+alignment = { x = 120 y = 113.5 }
+neutrality = 50
+national_unity = 70
+
+oob = "HUN_1936.txt"
+
+infantry_theory = 2.5
+infantry_practical = 2.5
+militia_theory = 5
+militia_practical = 5
+mobile_theory = 1
+mobile_practical = 1
+artillery_theory = 2 
+artillery_practical = 2
+rocket_science = 0
+rocket_practical = 0 
+naval_engineering = 0
+destroyer_practical = 0
+cruiser_practical = 0
+capitalship_practical = 0
+carrier_practical = 0 
+submarine_engineering = 0
+submarine_practical = 0
+electornicegineering_theory = 0 
+electornicegineering_practical = 0
+automotive_theory = 0 
+armour_practical = 0
+aeronautic_engineering = 2.5
+single_engine_aircraft_practical = 2.5
+twin_engine_aircraft_practical = 0
+four_engine_aircraft_practical = 0
+spearhead_theory = 0 
+superior_firepower_theory = 2.5
+grand_battleplan_theory = 0
+human_wave_theory = 0 
+land_doctrine_practical= 0 
+naval_doctrine_practical = 1 #Horthy is an Admiral afterall
+base_strike_doctrine = 0
+fleet_in_being_doctrine = 0
+sealane_interdiction_doctrine = 0
+air_doctrine_practical = 0 
+fighter_focus = 2.5
+cas_focus = 2.5 
+tac_focus = 0
+nav_focus = 0 
+strategic_air_focus = 0 
+mechanicalengineering_theory = 5
+chemical_engineering = 2.5
+jetengine_theory = 0 
+jetengine_practical = 0 
+nuclear_physics = 0
+nuclear_bomb = 0 
+transport_practical = 0
+
+cavalry_smallarms = 1
+cavalry_support = 1
+cavalry_guns = 1
+cavalry_at = 1
+militia_smallarms = 1
+militia_support = 1
+militia_guns = 1
+militia_at = 1
+infantry_activation = 1
+single_engine_aircraft_design = 1
+smallarms_technology = 1
+infantry_support = 1
+infantry_guns = 1
+infantry_at = 1
+lighttank_brigade = 1
+art_barrell_ammo = 1
+art_carriage_sights = 1
+infantry_warfare = 1
+mass_assault = 1
+assault_concentration = 1
+peoples_army = 1
+
+popularity = { 
+	national_socialist = 0
+	fascistic = 5
+	paternal_autocrat = 4
+	social_conservative = 52
+	market_liberal = 0
+	social_liberal = 5
+	social_democrat = 17
+	left_wing_radical = 6
+	leninist = 11
+	stalinist = 0
+}
+
+organization = { 
+	national_socialist = 0
+	fascistic = 35
+	paternal_autocrat = 15
+	social_conservative = 65
+	market_liberal = 0
+	social_liberal = 25
+	social_democrat = 40
+	left_wing_radical = 30
+	leninist = 30
+	stalinist = 0
+}
+
+training_laws = basic_training
+press_laws = censored_press
+industrial_policy_laws = mixed_industry
+education_investment_law = average_education_investment
+economic_law = full_civilian_economy
+conscription_law = volunteer_army
+civil_law = legalistic_restrictions
+
+1938.9.1 = {
+	head_of_state = 21001
+	head_of_government = 21064
+	foreign_minister = 21076
+	armament_minister = 21084
+	minister_of_security = 21053
+	minister_of_intelligence = 21117
+	chief_of_staff = 21060
+	chief_of_army = 21142
+	chief_of_navy = 21001
+	chief_of_air = 21161
+	oob = "HUN_1938.txt"
+}
+1939.9.1 = {
+	head_of_state = 21001
+	head_of_government = 21055
+	foreign_minister = 21070
+	armament_minister = 21084
+	minister_of_security = 21055
+	minister_of_intelligence = 21118
+	chief_of_staff = 21060
+	chief_of_army = 21142
+	chief_of_navy = 21001
+	chief_of_air = 21161
+	oob = "HUN_1939.txt"
+	threat = 5
+	infantry_warfare = 2
+	assault_concentration = 2
+	mass_assault = 2
+}
+1940.5.10 = {
+	head_of_state = 21001
+	head_of_government = 21055
+	foreign_minister = 21070
+	armament_minister = 21084
+	minister_of_security = 21055
+	minister_of_intelligence = 21118
+	chief_of_staff = 21060
+	chief_of_army = 21142
+	chief_of_navy = 21001
+	chief_of_air = 21161
+	oob = "HUN_1940.txt"
+	threat = 5
+	infantry_warfare = 2
+	assault_concentration = 2
+	mass_assault = 2
+}
+1940.11.20 = {
+	alignment = { x = 160 y = 165.4 }
+	join_faction = axis
+	neutrality = 25
+} # Hungary joins the Tripartite Pact
+1940.8.30 = { neutrality = 20 } # The Second Vienna Award
+1941.6.22 = {
+	head_of_state = 21001
+	head_of_government = 21056
+	foreign_minister = 21056
+	armament_minister = 21084
+	minister_of_security = 21100
+	minister_of_intelligence = 21119
+	chief_of_staff = 21060
+	chief_of_army = 21142
+	chief_of_navy = 21001
+	chief_of_air = 21162
+	oob = "HUN_1941.txt"
+	neutrality = 0
+	threat = 15
+	full_occupation = YUG
+	infantry_warfare = 3
+	mass_assault = 3
+	peoples_army = 2
+}
+1941.12.7 = { oob = "HUN_DayOfInfamy.txt" }
+1943.2.1 = {
+	oob = "HUN_TheTideHasTurned.txt"
+	blitzkrieg = 2
+	mechanized_offensive = 2
+	central_planning = 2	
+}
+1944.6.20 = {
+	head_of_state = 21001
+	head_of_government = 21052
+	foreign_minister = 21051
+	armament_minister = 21052
+	minister_of_security = 21096
+	minister_of_intelligence = 21095
+	chief_of_staff = 21129
+	chief_of_army = 21129
+	chief_of_navy = 21151
+	chief_of_air = 21041
+	oob = "HUN_1944.txt"
+}
+1944.10.15 = {
+	government = fascist_republic
+	ideology = fascistic
+	alignment = { x = 200 y = 200.0 }
+	popularity = { 
+		national_socialist = 0
+		fascistic = 70
+		paternal_autocrat = 0
+		social_conservative = 25
+		market_liberal = 0
+		social_liberal = 0
+		social_democrat = 3
+		left_wing_radical = 2
+		leninist = 0
+		stalinist = 0
+	}
+
+	organization = { 
+		national_socialist = 0
+		fascistic = 85
+		paternal_autocrat = 0
+		social_conservative = 40
+		market_liberal = 0
+		social_liberal = 0
+		social_democrat = 20
+		left_wing_radical = 10
+		leninist = 0
+		stalinist = 0
+	}
+}
+1945.9.23 = { oob = "empty.txt" leave_faction = axis }
+1945.10.23 = { join_faction = comintern }

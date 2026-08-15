@@ -1,0 +1,188 @@
+#里宾特洛甫协定
+diplomatic_decisions = {
+	    Xaction_East_eroup = {
+		potential = {
+			tag = GER
+			not = { has_country_flag = Xaction_East_eroup_gizui } 
+			exists = POL
+		}
+		allow = {
+			 SOV = { has_country_flag = Believe_Germany }
+		}
+		effect = {
+			set_country_flag = Xaction_East_eroup_gizui	
+			non_aggression_pact = SOV
+		    }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#巴巴罗萨
+	Xaction_East_eroup2 = {
+		major = yes
+		potential = {
+			tag = GER
+			not = { has_global_flag = Xaction_East_eroup_gizui2 } 
+			total_amount_of_divisions = 1000
+			exists = SOV
+		}
+		allow = {
+				GER = { 	
+		  controls = 2613
+		      }
+		  has_global_flag = France_lose   
+		}
+		effect = {
+			set_global_flag = Xaction_East_eroup_gizui2
+			GER = { war = { target = SOV } }  	
+	}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#东方战线
+	Xaction_East_eroup3 = {
+		major = yes
+		potential = {
+			tag = SOV
+			not = { has_global_flag = Xaction_East_eroup_gizui3 }  
+			exists = POL
+			exists = FIN
+			exists = LIT
+			exists = LAT
+			exists = EST
+		}
+		allow = {
+				year = 1936
+		}
+		effect = {
+			set_global_flag = Xaction_East_eroup_gizui3
+			SOV = { threat = { 
+			who = FIN value = 20 
+     who = POL value = 20 
+     who = LIT value = 20 
+     who = LAT value = 20 
+     who = EST value = 20 
+      who = ROM value = 20 }
+    }  	
+}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#继续战争
+	Xaction_East_eroup4 = {
+		major = yes
+		potential = {
+			tag = FIN
+			not = { has_global_flag = Xaction_East_eroup_gizui4 }  
+			has_global_flag = Xaction_East_eroup_gizui2
+			SOV { war_with = GER }
+		}
+		allow = {
+			exists = FIN
+		}
+		effect = {
+			set_global_flag = Xaction_East_eroup_gizui4
+			SOV = { war = { target = FIN } }
+			FIN = { join_faction = axis } 	
+}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#调整
+	Xaction_East_eroup5 = {
+		potential = {
+			tag = SOV
+			not = { has_global_flag = War_in_East_eroup_gizui5 }  
+			war_with = GER
+		}
+		allow = {
+         has_global_flag = Xaction_East_eroup_gizui2
+		}
+		effect = {
+			set_global_flag = War_in_East_eroup_gizui5
+			load_oob = "sov_first_join_army.txt"
+}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#租借法案
+	Xaction_Amrican_eroup5 = {
+		potential = {
+			tag = USA
+			ENG = { war_with = GER }
+			FRA = { war_with = GER }
+			CHI = { war_with = JAP }
+			date = 1941.3.11
+			OR = {
+			JAP = { controls = 4979
+        	controls = 5018
+        	controls = 5494 }
+      WJW = { controls = 4979
+        	controls = 5018
+        	controls = 5494 }       	
+     NOT = { CHI = { controls = 4979
+        	controls = 5018
+        	controls = 5494 }
+        	}
+		    }
+		    GER = { controls = 2613 }
+		    			exists = GER
+		    			FRA = { government_in_exile = yes }
+		}
+		allow = {
+       			not = { has_global_flag = War_in_East_eroup_gizuiAmriac }  
+		}
+		effect = {
+			set_global_flag = War_in_East_eroup_gizuiAmriac
+}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#工业援助
+	provide_ic_to_euroup = {
+		potential = {
+		tag = USA
+    has_global_flag = Nothern_most 
+    has_global_flag = War_in_East_eroup_gizuiAmriac 
+		}
+		allow = {
+       			not = { has_global_flag = provide_ic_to_euroup }  
+		}
+		effect = {
+			set_global_flag = provide_ic_to_euroup
+}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#反攻
+	Xaction_against_germany = {
+		potential = {
+			tag = SOV
+			not = { has_global_flag = against_germany }  
+						total_amount_of_divisions = 2100
+						total_amount_of_planes = 120
+						manpower = 2500
+						total_ic = 250
+			war_with = GER
+		}
+		allow = {
+		capital = 1409
+		lost_national = 0.3
+		officers_ratio = 0.90
+    has_global_flag = Xaction_East_eroup_gizui2
+		}
+		effect = {
+			set_global_flag = against_germany
+			load_oob = "sov_second_join_army.txt"
+}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,38 @@
+corps = {
+	name = "红2方面军"
+	location = 9233
+	regiment = { type = hq_brigade name = "红2方面军指挥部" strength = 5 experience = 80 historical_model = 0 }
+	division= {
+		name = "第2军"
+		location = 9233
+		regiment = { type = infantry_brigade name = "第4师" experience = 70 strength = 15 historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第6师" experience = 70 strength = 15 historical_model = 0 }
+	}
+	division= {
+		name = "第6军"
+		location = 9233
+		regiment = { type = infantry_brigade name = "第16师" experience = 70 strength = 15 historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第17师" experience = 70 strength = 15 historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第18师" experience = 70 strength = 15 historical_model = 0 }
+	}
+	division= {
+		name = "第32军"
+		location = 9233
+		regiment = { type = infantry_brigade name = "第94师" experience = 70 strength = 15 historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第96师" experience = 70 strength = 15 historical_model = 0 }
+	}
+}
+division= {
+	name = "第4军"
+	location = 9233
+	regiment = { type = infantry_brigade name = "第10师" experience = 70 strength = 15 historical_model = 0 }
+	regiment = { type = infantry_brigade name = "第11师" experience = 70 strength = 15 historical_model = 0 }
+	regiment = { type = infantry_brigade name = "第12师" experience = 70 strength = 15 historical_model = 0 }
+	regiment = { type = infantry_brigade name = "独立师" experience = 70 strength = 15 historical_model = 0 }
+}
+division= {
+	name = "第31军"
+	location = 9233
+	regiment = { type = infantry_brigade name = "第91师" experience = 70 strength = 15 historical_model = 0 }
+	regiment = { type = infantry_brigade name = "第93师" experience = 70 strength = 15 historical_model = 0 }
+}

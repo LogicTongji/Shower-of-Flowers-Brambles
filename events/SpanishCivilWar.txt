@@ -1,0 +1,484 @@
+#######################
+# Spanish Civil War - #
+#######################
+# Republican Spain
+country_event = {
+
+	id = 2001
+
+	major = yes
+
+	trigger = {
+		tag = SPR
+		not = { exists = SPA }
+		war = no
+		not = { government = national_socialism }
+		not = { government = fascist_republic }
+		not = { government = germanic_fascist_republic }
+		not = { government = right_wing_republic }
+		not = { government = hungarian_right_wing_republic }
+		not = { government = right_wing_autocrat }
+		not = { government = absolute_monarchy }
+		not = { government = imperial }
+		not = { has_country_flag = spanish_civil_war }
+                   year = 1936 
+	}
+
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	title = "EVTNAME2001"
+	desc = "EVTDESC2001"
+	#picture = "SCW"
+
+	option = {
+		name = "EVTOPTA2001"		# En la Defensa de la Democracia!
+		set_country_flag = spanish_civil_war
+		andalucia_region = { add_core = SPA }
+		aragon_region = { add_core = SPA }
+		asturias_region = { add_core = SPA }
+		islas_baleares_region = { add_core = SPA }
+		castilla_la_nueva_region = { add_core = SPA }
+		castilla_la_vieja_region = { add_core = SPA }
+		cataluña_region = { add_core = SPA }
+		extremadura_region = { add_core = SPA }
+		galicia_region = { add_core = SPA }
+		reino_de_leon_region = { add_core = SPA }
+		reino_de_murcia_region = { add_core = SPA }
+		navarra_region = { add_core = SPA }
+		reino_de_valencia_region = { add_core = SPA }
+		SPR_3884 = { add_core = SPA }					#Vascongadas
+		protectorado_espanol_de_marruecos_region = { add_core = SPA }
+		SPR_10729 = { add_core = SPA }					#Islas Canarias
+		sahara_espanol_region = { add_core = SPA }
+		SPR_10002 = { add_core = SPA }					#Guinea Española
+		
+		navarra_region = { secede_province = SPA }			# Navarra Nationalist Spain
+		protectorado_espanol_de_marruecos_region = { secede_province = SPA }	#Protectorado Español de Marruecos
+		SPR_10729 = { secede_province = SPA }				#Islas Canarias
+		sahara_espanol_region = { secede_province = SPA }		#Sahara Español
+		5129 = { secede_province = SPA }				#Granada
+		5097 = { secede_province = SPA }				#Jerez de la Frontera
+		5125 = { secede_province = SPA }				#Cádiz
+		5156 = { secede_province = SPA }				#Algeciras
+		4856 = { secede_province = SPA }				#Medina-Sidonia
+		5030 = { secede_province = SPA }				#Sevilla
+		4995 = { secede_province = SPA }				#Córdoba
+		4543 = { secede_province = SPA }				#Molina de Aragón
+		4413 = { secede_province = SPA }				#Sigüenza
+		4473 = { secede_province = SPA }				#Valverde del Fresno
+		4474 = { secede_province = SPA }				#Cabezuela del Valle
+		4538 = { secede_province = SPA }				#Jaraíz de la Vera
+		4592 = { secede_province = SPA }				#Valencia de Alcántara
+		4537 = { secede_province = SPA }				#Coria
+		4600 = { secede_province = SPA }				#Montalbán
+		4654 = { secede_province = SPA }				#Calamocha
+		4223 = { secede_province = SPA }				#Ejea de los Caballeros
+		4292 = { secede_province = SPA }				#Alagón
+		4353 = { secede_province = SPA }				#Zaragoza
+		4352 = { secede_province = SPA }				#Tarazona
+		4415 = { secede_province = SPA }				#Cariñena
+		4414 = { secede_province = SPA }				#Calatayud
+		4480 = { secede_province = SPA }				#Daroca
+		4159 = { secede_province = SPA }				#Jaca
+		4293 = { secede_province = SPA }				#Huesca
+		SPR_4094 = { secede_province = SPA }				#Logroño region
+		3956 = { secede_province = SPA }				#Vitoria
+		3746 = { secede_province = SPA }				#Oviedo
+		SPR_4348 = { secede_province = SPA }				#Segovia region
+		4475 = { secede_province = SPA }				#Piedrahíta
+		4346 = { secede_province = SPA }				#Arévalo
+		4410 = { secede_province = SPA }				#Ávila
+		SPR_4408 = { secede_province = SPA }				#Salamanca region
+		SPR_4351 = { secede_province = SPA }				#Soria region
+		SPR_4153 = { secede_province = SPA }				#Valladolid region
+		3954 = { secede_province = SPA }				#Herrera de Pisuerga
+		4022 = { secede_province = SPA }				#Palencia
+		4092 = { secede_province = SPA }				#Carrión de los Condes
+		4023 = { secede_province = SPA }				#Villadiego
+		4024 = { secede_province = SPA }				#Miranda de Ebro
+		4093 = { secede_province = SPA }				#Lerma
+		4155 = { secede_province = SPA }				#Burgos
+		4220 = { secede_province = SPA }				#Salas de los Infantes
+		4219 = { secede_province = SPA }				#Aranda de Duero
+		SPR_4089 = { secede_province = SPA }				#Zamora region
+		3952 = { secede_province = SPA }				#León
+		4019 = { secede_province = SPA }				#Ponferrada
+		3951 = { secede_province = SPA }				#La Bañeza
+		3881 = { secede_province = SPA }				#Astorga
+		4021 = { secede_province = SPA }				#Sahagún
+		SPR_3676 = { secede_province = SPA }				#La Coruña region
+		SPR_3878 = { secede_province = SPA }				#Orense region
+		SPR_3742 = { secede_province = SPA }				#Pontevedra region
+		3611 = { secede_province = SPA }				#Vivero
+		3744 = { secede_province = SPA }				#Lugo
+		4597 = { secede_province = SPA }				#Villalba
+		3810 = { secede_province = SPA }				#Sarria
+		3809 = { secede_province = SPA }				#Monforte de Lemos
+		4913 = { secede_province = SPA }				#Mallorca
+		5002 = { secede_province = SPA }				#Ibiza
+		head_of_state = 11033			# Azaña
+		head_of_government = 11039		# Largo Caballero
+		foreign_minister = 11034		# Barcia Trelles
+		armament_minister = 11144		# Giner de los Rios
+		minister_of_security = 11189		# Azcarate
+		minister_of_intelligence = 11217	# Balboa
+		chief_of_staff = 11007			# Miaja
+		chief_of_army = 11007			# Miaja
+		chief_of_navy = 11067			# Giral
+		chief_of_air = 11321			# Hidalgo de Cisneros
+		relation = { who = ENG value = 10 }
+		relation = { who = FRA value = 10 }
+		relation = { who = SOV value = 5 }
+		relation = { who = USA value = 5 }
+		relation = { who = GER value = -15 }
+		relation = { who = ITA value = -10 }
+		relation = { who = POR value = -10 }
+		dissent = 15
+		SPR = {	war = {	
+					target = SPA 
+					attacker_goal = { casus_belli = civil_war }
+					defender_goal = { casus_belli = civil_war }
+					} 
+				}
+		SPA = { split_troops = 0.55 }
+		4540 = { infantry_brigade = current }				#Madrid
+		4540 = { infantry_brigade = current }				#Madrid
+		threat = { who = all value = -150 }
+		national_unity = 50
+		SPA = {
+			set_country_flag = spanish_civil_war
+			capital = 4155						#Burgos
+			country_event = 2002
+		}
+	}
+}
+
+# Spanish Civil War - Nationalist Spain
+country_event = {
+
+	id = 2002
+
+	is_triggered_only = yes
+
+	title = "EVTNAME2002"
+	desc = "EVTDESC2002"
+	#picture = "SPA_fascist"
+
+	option = {
+		name = "EVTOPTA2002"		# Anarchism and Communism must fall!
+		national_unity = 50
+		head_of_state = 10001
+		head_of_government = 10002
+		foreign_minister = 10003
+		armament_minister = 10004
+		minister_of_security = 10005
+		minister_of_intelligence = 10006
+		chief_of_staff = 10008
+		chief_of_army = 10008
+		chief_of_navy = 10009
+		chief_of_air = 10010
+		rare_materials = 2000
+		crude_oil = 4000
+		supplies = 10000
+		energy = 5000
+		metal = 5000
+		money = 400
+		government = right_wing_autocrat
+		set_country_flag = new_units
+		manpower = 100
+
+		# Burgos
+		4155 = { infantry_brigade = current }
+		4155 = { infantry_brigade = current }
+		4155 = { infantry_brigade = current }
+		4155 = { infantry_brigade = current }
+		
+		# Zaragoza
+		4353 = { infantry_brigade = current }
+		4353 = { infantry_brigade = current }
+		4353 = { infantry_brigade = current }
+		4353 = { infantry_brigade = current }
+		
+		# Cáceres
+		4593 = { infantry_brigade = current }
+		4593 = { infantry_brigade = current }
+		
+		# Cádiz
+		5125 = { infantry_brigade = current }
+		5125 = { infantry_brigade = current }
+		
+		# Santa Cruz de Tenerife
+		10729 = { infantry_brigade = current }
+		
+		# Zaragoza
+		4353 = { infantry_brigade = current }
+		4353 = { infantry_brigade = current }
+		4353 = { infantry_brigade = current }
+
+		# Tetuán
+		5319 = { infantry_brigade = current }
+		
+		# Mallorca
+		4913 =  { infantry_brigade = current }
+	}
+}
+
+
+# Troops Defect
+country_event = {
+
+	id = 2005
+
+	is_triggered_only = yes
+
+	title = "EVTNAME2005"
+	desc = "EVTDESC2005"
+	#picture = "SCW"
+
+	option = {
+		name = "EVTOPTA2005"			# OK
+		
+		SPR = {
+			split_troops = 0.45
+			4540 = { infantry_brigade = current }
+			4540 = { infantry_brigade = current }
+			4540 = { infantry_brigade = current }
+		}
+		
+		# Burgos
+		4155 = { infantry_brigade = current }
+		4155 = { infantry_brigade = current }
+		4155 = { infantry_brigade = current }
+		4155 = { infantry_brigade = current }
+		
+		# Zaragoza
+		4353 = { infantry_brigade = current }
+		4353 = { infantry_brigade = current }
+		4353 = { infantry_brigade = current }
+		4353 = { infantry_brigade = current }
+		
+		# Cáceres
+		4593 = { infantry_brigade = current }
+		4593 = { infantry_brigade = current }
+		
+		# Cádiz
+		5125 = { infantry_brigade = current }
+		5125 = { infantry_brigade = current }
+		
+		# Tenerife
+		10729 = { infantry_brigade = current }
+
+		# Tetuán
+		5319 = { infantry_brigade = current }
+		
+		# Mallorca
+		4913 =  { infantry_brigade = current }
+	}
+}
+
+# Troops defect
+country_event = {
+
+	id = 2006
+
+	trigger = {
+		exists = SPA
+		exists = SPR
+		or = {
+			tag = SPA
+			tag = SPR
+		}
+		SPA = { war_with = SPR }
+		not = { has_country_flag = new_units }	
+	}
+
+	mean_time_to_happen = {
+		months = 5
+	}
+
+	title = "EVTNAME2006"
+	desc = "EVTDESC2006"
+	#picture = "SCW"
+
+	option = {
+		name = "EVTOPTA2006"			# Just in time!
+		set_country_flag = new_units
+		random_owned = {
+			infantry_brigade = current
+			infantry_brigade = current
+		}
+		random_owned = {
+			infantry_brigade = current
+			infantry_brigade = current
+		}
+	}
+}
+
+# Spanish Civil War - French Intervention
+country_event = {
+
+	id = 2007
+
+	is_triggered_only = yes
+
+	title = "EVTNAME2007"
+	desc = "EVTDESC2007"
+	#picture = "SCW"
+
+	option = {
+		name = "EVTOPTA2007"
+		capital_scope = {
+			infantry_brigade = current
+			infantry_brigade = current
+			infantry_brigade = current
+		}
+	}
+}
+
+# Spanish Civil War - British Intervention
+country_event = {
+
+	id = 2008
+
+	is_triggered_only = yes
+
+	title = "EVTNAME2008"
+	desc = "EVTDESC2007"
+	#picture = "SCW"
+
+	option = {
+		name = "EVTOPTA2007"
+		capital_scope = {
+			infantry_brigade = current
+			infantry_brigade = current
+			infantry_brigade = current
+		}
+	}
+}
+
+# Spanish Civil War - Soviet Intervention
+country_event = {
+
+	id = 2009
+
+	is_triggered_only = yes
+
+	title = "EVTNAME2009"
+	desc = "EVTDESC2007"
+	#picture = "SCW"
+
+	option = {
+		name = "EVTOPTA2007"
+		capital_scope = {
+			infantry_brigade = current
+			infantry_brigade = current
+			infantry_brigade = current
+		}
+	}
+}
+
+# Spanish Civil War - German Intervention
+country_event = {
+
+	id = 2010
+
+	is_triggered_only = yes
+
+	title = "EVTNAME2010"
+	desc = "EVTDESC2007"
+	#picture = "SCW"
+
+	option = {
+		name = "EVTOPTA2007"
+		capital_scope = {
+			infantry_brigade = current
+			infantry_brigade = current
+			infantry_brigade = current
+		}
+	}
+}
+
+# Spanish Civil War - Italian Intervention
+country_event = {
+
+	id = 2011
+
+	is_triggered_only = yes
+
+	title = "EVTNAME2011"
+	desc = "EVTDESC2007"
+	#picture = "SCW"
+
+	option = {
+		name = "EVTOPTA2007"
+		capital_scope = {
+			infantry_brigade = current
+			infantry_brigade = current
+			infantry_brigade = current
+		}
+	}
+}
+
+# Spanish Civil War - Victory
+country_event = {
+	
+	id = 505
+	
+	trigger = {
+		TAG = SPA
+		SPR = { exists = no }
+		NOT = { has_country_flag = spanish_civil_war_over }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	title = "SCWVIC"
+	desc = "SCWVICDESC"
+	#picture = "SPA_Victory"
+
+	option = {
+		name = "EVTOPTA1406"
+		capital = 4540
+		andalucia_region = { add_core = SPA }
+		aragon_region = { add_core = SPA }
+		asturias_region = { add_core = SPA }
+		islas_baleares_region = { add_core = SPA }
+		castilla_la_nueva_region = { add_core = SPA }
+		castilla_la_vieja_region = { add_core = SPA }
+		cataluña_region = { add_core = SPA }
+		extremadura_region = { add_core = SPA }
+		galicia_region = { add_core = SPA }
+		reino_de_leon_region = { add_core = SPA }
+		reino_de_murcia_region = { add_core = SPA }
+		navarra_region = { add_core = SPA }
+		reino_de_valencia_region = { add_core = SPA }
+		SPR_3884 = { add_core = SPA }					#Vascongadas
+		protectorado_espanol_de_marruecos_region = { add_core = SPA }
+		SPR_10729 = { add_core = SPA }					#Islas Canarias
+		sahara_espanol_region = { add_core = SPA }
+		SPR_10002 = { add_core = SPA }					#Guinea Española
+		andalucia_region = { remove_core = SPR }
+		aragon_region = { remove_core = SPR }
+		asturias_region = { remove_core = SPR }
+		islas_baleares_region = { remove_core = SPR }
+		castilla_la_nueva_region = { remove_core = SPR }
+		castilla_la_vieja_region = { remove_core = SPR }
+		cataluña_region = { remove_core = SPR }
+		extremadura_region = { remove_core = SPR }
+		galicia_region = { remove_core = SPR }
+		reino_de_leon_region = { remove_core = SPR }
+		reino_de_murcia_region = { remove_core = SPR }
+		navarra_region = { remove_core = SPR }
+		reino_de_valencia_region = { remove_core = SPR }
+		SPR_3884 = { remove_core = SPR }				#Vascongadas
+		protectorado_espanol_de_marruecos_region = { remove_core = SPR }
+		SPR_10729 = { remove_core = SPR }				#Islas Canarias
+		sahara_espanol_region = { remove_core = SPR }
+		SPR_10002 = { remove_core = SPR }				#Guinea Española
+		set_country_flag = spanish_civil_war_over
+	}
+}

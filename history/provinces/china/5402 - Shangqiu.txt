@@ -1,0 +1,24 @@
+owner = CSD controller = CSD
+
+
+add_core = CHC
+add_core = CSD
+add_core = CHI
+infra = 6
+
+1938.7.1 = {
+	controller = JAP
+}
+1940.3.1 = {
+owner = WJW
+controller = WJW
+add_core = WJW
+}
+1946.1.1 = {
+	owner = CHC
+	controller = CHC
+}
+1949.10.1 = { 
+owner = PRC
+controller = PRC
+}

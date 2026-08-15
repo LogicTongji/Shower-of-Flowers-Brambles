@@ -1,0 +1,66 @@
+capital = 5315
+government = social_conservatism
+ideology = social_conservative
+head_of_state = 5001
+head_of_government = 5001
+alignment = { x = -60 y = -7.6 }
+neutrality = 100
+national_unity = 75
+schwerpunkt = 0
+blitzkrieg = 0
+mobile_warfare = 0
+elastic_defence = 0
+operational_level_command_structure = 0
+tactical_command_structure = 0
+mechanized_offensive = 0
+delay_doctrine = 0
+integrated_support_doctrine = 0
+infantry_warfare = 1
+special_forces = 0
+assault_concentration = 1
+central_planning = 0
+mass_assault = 1
+peoples_army = 1
+large_front = 0
+guerilla_warfare = 0
+operational_level_organisation = 0
+oob = "empty.txt"
+
+popularity = { 
+	national_socialist = 0
+	fascistic = 0
+	paternal_autocrat = 2
+	social_conservative = 54
+	market_liberal = 10
+	social_liberal = 9
+	social_democrat = 7
+	left_wing_radical = 18
+	leninist = 0
+	stalinist = 0
+}
+
+organization = { 
+	national_socialist = 0
+	fascistic = 0
+	paternal_autocrat = 15
+	social_conservative = 65
+	market_liberal = 30
+	social_liberal = 25
+	social_democrat = 30
+	left_wing_radical = 40
+	leninist = 0
+	stalinist = 0
+}
+
+training_laws = basic_training
+press_laws = free_press
+industrial_policy_laws = mixed_industry
+education_investment_law = medium_large_education_investment
+economic_law = full_civilian_economy
+conscription_law = volunteer_army
+civil_law = open_society
+
+1946.1.1 = { 
+	alignment = { x = 0 y = -146 } 
+	join_faction = allies
+}

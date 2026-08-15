@@ -1,0 +1,12 @@
+division = {
+	name = "大青山支队"
+	location = 7338
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 2 }
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 2 }
+}
+division = {
+	name = "大青山独立支队"
+	location = 7349
+	regiment = { type = partisan_bergsjaeger historical_model = 0 }
+	regiment = { type = partisan_bergsjaeger historical_model = 0 }
+}

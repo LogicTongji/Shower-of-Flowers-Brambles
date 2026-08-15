@@ -140,11 +140,11 @@ int main(int argc, char** argv)
 
     gui::GuiInterpreter interpreter;
     if (!interpreter.LoadFile(
-            root / "interface" / "china_anti_jap.gfx",
+            root / "interface" / "china_anti_jap.sgfx",
             error
         )
         || !interpreter.LoadFile(
-            root / "interface" / "china_anti_jap.gui",
+            root / "interface" / "china_anti_jap.sgui",
             error
         ))
     {

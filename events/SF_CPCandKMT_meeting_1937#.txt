@@ -1,0 +1,184 @@
+#####################
+#  庐山会谈事件组   #
+#####################
+country_event = {
+	id = 390023
+        major = yes
+	title = "200title"
+	desc = "200decs"
+	picture = "CHI_Flag"
+	trigger = {
+		tag = CHI
+		date = 1937.6.4
+		not = { year = 1938 }
+                not = { has_country_flag = Event200 }            
+                CHI = { controls = 5494 }
+				has_country_flag = Xian_conversation
+	}
+        mean_time_to_happen =  {
+	        days = 1
+        }
+	option = {
+		name = "200option1"
+		set_country_flag = Event200
+                dissent = -5
+		CHC = { country_event = 390024 }
+		ai_chance = { factor = 10 }
+       	}
+	option = {
+		name = "200option2"
+		set_country_flag = Event200
+                dissent = 5
+		national_unity = -10
+                CHC = { country_event = 390025 }
+		ai_chance = { factor = 90 }
+	        }
+      }
+country_event = {
+	id = 390024
+       	is_triggered_only = yes
+	title = "201title"
+	desc = "201decs"
+	picture = "CHC_flag"
+	option = {
+		name = "201option"
+                load_oob = "CHC_14.txt"
+	        }
+     }
+country_event = {
+	id = 390025
+       	is_triggered_only = yes
+	title = "202title"
+	desc = "202decs"
+	picture = "CHC_flag"
+	option = {
+		name = "202option"
+                CHI = {country_event = 390026 }	
+		relation = { who = CHI value = -100 }
+		ai_chance = { factor = 100 }
+        }
+        option = {
+		name = "202option2"
+                CHI = { inherit = CHC }	
+		relation = { who = CHI value = 100 }
+		ai_chance = { factor = 0 }
+	       }
+    }
+country_event = {
+	id = 390026
+       	is_triggered_only = yes
+	title = "203title"
+	desc = "203decs"
+	picture = "CHI_flag"
+	option = {
+		name = "203option"	
+		relation = { who = CHC value = -100 }
+	}
+}
+#第二次庐山会谈
+country_event = {
+	id = 390027
+	major = yes
+	fire_only_once = yes
+	trigger = {
+                tag = CHI
+                not = { year = 1938 }
+                date = 1937.7.13    
+				has_country_flag = Event200
+				has_country_flag = Xian_conversation
+	}
+	title = "204title"
+	desc = "204decs"
+	picture = "CHI_flag"
+	option = {
+		name = "204option"
+    dissent = -80
+   CHC = { country_event = 390028 }
+	}		
+}
+country_event = {
+	id = 390028
+       	is_triggered_only = yes
+	title = "205title"
+	desc = "205decs"
+	picture = "CHC_flag"
+	option = {
+		name = "205option"	
+		 national_unity = 1
+    dissent = -10
+		relation = { who = CHI value = 100 }
+	}
+}
+#西安谈判
+country_event = {
+	id = 390029
+	major = yes
+	fire_only_once = yes
+	trigger = {
+                tag = CHI
+                not = { war_with = CHC }
+                not = { exists = CXB }
+                not = { year = 1938 }
+				exists = CHC
+                date = 1937.2.11                           
+	}
+	title = "206title"
+	desc = "206decs"
+	picture = "CHI_flag"
+	option = {
+		name = "206option1"
+    dissent = -10
+       set_country_flag = Xian_conversation
+   CHC = { country_event = 390030 }
+   ai_chance = { factor = 100 }
+	}	
+}
+country_event = {
+	id = 390030
+       	is_triggered_only = yes
+	title = "207title"
+	desc = "207decs"
+	picture = "CHC_flag"
+	option = {
+		name = "207option"	
+		 national_unity = 1
+    dissent = -10
+    set_country_flag = Xian_conversation2
+		relation = { who = CHI value = 100 }
+	}
+}
+country_event = {
+	id = 390031
+	major = yes
+	fire_only_once = yes
+	trigger = {
+                tag = CHI
+                not = { war_with = CHC }
+                not = { exists = CXB }
+                not = { year = 1938 }
+                CHC = { has_country_flag = Xian_conversation2 }                          
+	}
+	title = "208title"
+	desc = "208decs"
+	picture = "CHI_flag"
+	option = {
+		name = "208option1"
+    national_unity = 1
+    dissent = -20
+   CHC = { country_event = 390032 }
+   ai_chance = { factor = 100 }
+	}	
+}
+country_event = {
+	id = 390032
+       	is_triggered_only = yes
+	title = "209title"
+	desc = "209decs"
+	picture = "CHC_flag"
+	option = {
+		name = "209option"	
+		 national_unity = 1
+    dissent = -10
+		relation = { who = CHI value = 100 }
+	}
+}

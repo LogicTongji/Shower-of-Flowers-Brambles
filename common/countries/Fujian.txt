@@ -1,0 +1,51 @@
+color = { 235  190  43 }
+graphical_culture = Japanese
+
+default_templates = {
+	binary_infantry = {
+		infantry_brigade
+		infantry_brigade
+	}
+	binary_milita = {
+		militia_brigade
+		militia_brigade
+	}
+	binary_armoured = {
+		armor_brigade
+		motorized_brigade
+	}
+	binary_cavalry = {
+		cavalry_brigade
+		cavalry_brigade
+	}
+}
+
+
+ministers = {
+	3111129 = {
+		name = "李济深"
+		ideology = leninist
+		loyalty = 1.00
+		picture = M3000129
+		head_of_state = biased_intellectual
+		foreign_minister = apologetic_clerk
+		start_date = 1930.1.1
+	}
+	3111130 = {
+		name = "蒋光鼐"
+		ideology = leninist
+		loyalty = 1.00
+		picture = M3111130
+		chief_of_army = school_of_mass_combat
+		start_date = 1930.1.1
+	}
+	3111131 = {
+		name = "蔡廷锴"
+		ideology = leninist
+		loyalty = 1.00
+		picture = M3111131
+		chief_of_staff = school_of_mass_combat
+		start_date = 1930.1.1
+	}
+}
+

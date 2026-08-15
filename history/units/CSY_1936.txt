@@ -1,0 +1,34 @@
+CSX = { military_access = yes }
+theatre = {
+	name = "第35军"
+	location = 5017
+	regiment = { type = hq_brigade name = "第35军司令部" historical_model = 1 }
+	division= {
+		name = "第72师"
+		location = 5017
+		regiment = { type = infantry_brigade experience = 15 name = "第208旅" strength = 20 historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 15 name = "第217旅" strength = 20 historical_model = 1 }
+	}
+	division= {
+		name = "第73师"
+		location = 5017
+		regiment = { type = infantry_brigade experience = 15 name = "第197旅" strength = 20 historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 15 name = "第212旅" strength = 20 historical_model = 1 }
+	}
+	division = {
+		name = "绥远警备"
+		location = 5017
+		regiment = { type = militia_brigade historical_model = 1 }
+		regiment = { type = militia_brigade historical_model = 1 }
+		regiment = { type = militia_brigade historical_model = 1 }
+		regiment = { type = militia_brigade historical_model = 1 }
+	}
+	division = {
+		name = "绥远警备"
+		location = 5017
+		regiment = { type = militia_brigade historical_model = 1 }
+		regiment = { type = militia_brigade historical_model = 1 }
+		regiment = { type = militia_brigade historical_model = 1 }
+		regiment = { type = militia_brigade historical_model = 1 }
+	}
+}

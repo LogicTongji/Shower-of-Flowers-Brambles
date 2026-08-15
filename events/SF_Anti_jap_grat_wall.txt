@@ -1,0 +1,399 @@
+######################
+#   长城抗战事件组  #
+######################
+country_event = {
+	id = 12209
+         major = yes
+	is_triggered_only = yes
+	title = "japrehe0"
+	desc = "japrehe0desc"
+	picture = "Anti_jap_front_great_wall6"
+	option = {
+		name = "japrehe0_option"
+                    national_unity = 15             
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 12208
+          fire_only_once = yes
+	title = "japrehe1"
+	desc = "japrehe1desc"
+	picture = "Anti_jap_front_great_wall2"
+	trigger = {
+		tag = CRH
+		rehe_region = { controlled_by = CRH }
+		OR = {
+		rehe_region = {
+			any_neighbor_province = {
+				units_in_province = JAP
+			}
+		  }
+		  rehe_region = {
+			any_neighbor_province = {
+				units_in_province = MAN
+			}
+		  }
+		}
+		not = {
+		war_with = JAP 
+                   }
+		has_global_flag = the_war_attack_rehe
+	}
+	mean_time_to_happen =  {
+		days = 1
+	}
+	option = {
+		name = "japrehe1_option"
+				   CHI ={
+				   country_event = 390057
+				   }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 12207
+          fire_only_once = yes
+	title = "japrehe2"
+	desc = "japrehe2desc"
+	picture = "Anti_jap_front_great_wall7"
+	trigger = {
+		tag = CRH
+		rehe_region = { controlled_by = CRH }
+		date = 1933.2.1
+		not = {
+		war_with = JAP 
+                   }
+		has_global_flag = the_war_attack_rehe
+	}
+	mean_time_to_happen =  {
+		days = 1
+	}
+	option = {
+		name = "japrehe2_option"
+				   CHI ={
+				   country_event = 390058
+				   }
+				   CRH = {	
+				rehe_region = { secede_province = CTY }
+				}
+			CTY = { load_oob = "CTY_1933.txt" }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 12206
+          fire_only_once = yes
+		  major = yes
+	title = "japrehe3"
+	desc = "japrehe3desc"
+	picture = "Anti_jap_front_great_wall2"
+	trigger = {
+		tag = JAP
+		OR = {
+		rehe_region = { controlled_by = CRH }
+		rehe_region = { controlled_by = CTY }
+		}
+		date = 1933.2.17
+		not = {
+		war_with = CRH
+                   }
+		has_global_flag = the_war_attack_rehe
+	}
+	mean_time_to_happen =  {
+		days = 1
+	}
+	option = {
+		name = "japrehe3_option"
+	  JAP = { war = {	target = CTY } attacker_goal = { casus_belli = conquer } defender_goal = { casus_belli = conquer } }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 12210
+         major = yes
+	is_triggered_only = yes
+	title = "rehe0"
+	desc = "rehe0desc"
+	picture = "Anti_jap_front_great_wall1"
+	option = {
+		name = "rehe0_option"
+                    national_unity = 15
+						CRH = {
+			 add_country_modifier = {
+			name = "Anti_jap_front_modifier"
+			duration = 30
+		}
+	}
+						   5494 = {
+						   province_event = 190020
+						   }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 390050
+          fire_only_once = yes
+          major = yes
+	title = "rehe1"
+	desc = "rehe1desc"
+	picture = "Anti_jap_front_great_wall2"
+	trigger = {
+		tag = CHI
+		CRH = { war_with = JAP }
+		not = {
+		        OR = {
+		                              CRH = { 
+                                           controls = 5019
+		                                   controls = 4886
+                                           controls = 4934
+                                           controls = 4935
+                                           controls = 5055
+                                           controls = 4981
+                                        } 
+										CHI = { 
+                                           controls = 5019
+		                                   controls = 4886
+                                           controls = 4934
+                                           controls = 4935
+                                           controls = 5055
+                                           controls = 4981
+                                        } 
+		                      }
+                              
+                                year = 1936
+                   }
+	}
+	mean_time_to_happen =  {
+		days = 1
+	}
+	option = {
+		name = "rehename"
+                   country_event = 12211
+				   JAP ={
+				   country_event = 390056
+				   }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 12211
+         major = yes
+	is_triggered_only = yes
+	title = "reheconversation"
+	desc = "reheconversationdesc"
+	picture = "Anti_jap_front_great_wall3"
+	option = {
+		name = "reheoption"    
+CRH = {
+ any_owned = { limit = { province_id = 4886 } secede_province = MAN } 
+any_owned = { limit = { province_id = 4934 } secede_province = MAN }
+any_owned = { limit = { province_id = 4935 } secede_province = MAN }
+any_owned = { limit = { province_id = 5019 } secede_province = MAN }
+any_owned = { limit = { province_id = 5055 } secede_province = MAN }
+any_owned = { limit = { province_id = 4981 } secede_province = MAN }
+}
+                    end_war = JAP
+                    CSX = { end_war = JAP }
+					CRH = { end_war = JAP }
+                    CSY = { end_war = JAP }
+					CHI = { end_war = CJD }
+                    leave_alliance = CSX
+                    leave_alliance = CSY
+					CRH = {
+					leave_alliance = CSX
+                    leave_alliance = CSY
+					}
+                    add_country_modifier = {
+			name = "TangGu_Conference_modifier"
+			duration = 180
+		}   
+		set_global_flag = Anti_jap_front_great_wall_loss
+		 CHI ={
+				   country_event = 390061
+				   }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 390051
+          fire_only_once = yes
+	title = "rehe2"
+	desc = "rehe2desc"
+	picture = "Anti_jap_front_great_wall4"
+	trigger = {
+		tag = CHI
+                   has_global_flag = Anti_jap_front_great_wall_loss 
+				   date = 1933.5.1
+		not = { war_with = JAP }
+		not = {
+		                        exists = CHA
+                                year = 1934
+                   }
+	}
+	mean_time_to_happen =  {
+		days = 1
+	}
+	option = {
+		name = "rehename1"
+		CRH = {	
+				chahar_region = { any_owned = { limit = { controlled_by = CRH } }  secede_province = CHA remove_core = CRH add_core = CHA change_controller = CHA }
+			}
+                    CHA = {  war = {
+                                        target = JAP
+                                                           }
+				 CHA = { load_oob = "CHA.txt" }  
+                  }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 390052
+	is_triggered_only = yes
+	title = "rehe3"
+	desc = "rehe3desc"
+	picture = "Anti_jap_front_great_wall5"
+	option = {
+		name = "rehename2"
+                  add_country_modifier = {
+			name = "NanChang_Conference_modifier"
+			duration = 180
+		}
+                  CHA = { end_war = JAP }
+				   CCH = { 
+				   load_oob = "CJC_1936.txt" 
+				   create_alliance = CRH
+				   } 
+		ai_chance = { factor = 100 }
+	}
+}
+#文本事件
+country_event = {
+	id = 390053
+	fire_only_once = yes
+	title = "rehe4"
+	desc = "rehe4desc"
+	picture = "Great_Wall_store1"
+	trigger = {
+		tag = CHI
+    date = 1933.1.10
+	has_global_flag = Anti_jap_front_great_wall
+	not = { year = 1935 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+    }
+	option = {
+		name = "rehename3"
+		ai_chance = { factor = 100 }
+       	}
+}
+country_event = {
+	id = 390054
+	fire_only_once = yes
+	title = "rehe5"
+	desc = "rehe5desc"
+	picture = "Great_Wall_store2"
+	trigger = {
+		tag = CHI
+    date = 1933.1.20
+	has_global_flag = Anti_jap_front_great_wall
+	not = { year = 1935 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+    }
+	option = {
+		name = "rehename4"
+		ai_chance = { factor = 100 }
+       	}
+}
+country_event = {
+	id = 390055
+	fire_only_once = yes
+	title = "rehe7"
+	desc = "rehe7desc"
+	picture = "Great_Wall_store3"
+	trigger = {
+		tag = CHI
+	has_global_flag = Anti_jap_front_great_wall_loss
+	not = { year = 1935 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+    }
+	option = {
+		name = "rehename6"
+		ai_chance = { factor = 100 }
+       	}
+}
+country_event = {
+	id = 390056
+         major = yes
+	is_triggered_only = yes
+	title = "Great_wall_win_japtitle"
+	desc = "Great_wall_win_japtitledesc"
+	picture = "Anti_jap_front_great_wall8"
+	option = {
+		name = "Great_wall_win_japtitleoption"
+        national_unity = 5
+        dissent = -15
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 390057
+	is_triggered_only = yes
+	title = "japrehe1"
+	desc = "japrehe1desc"
+	picture = "Anti_jap_front_great_wall2"
+	option = {
+		name = "japrehe1_option"
+        national_unity = -2
+        dissent = 1
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 390058
+	is_triggered_only = yes
+	title = "japrehe2"
+	desc = "japrehe2desc"
+	picture = "Anti_jap_front_great_wall7"
+	option = {
+		name = "japrehe2_option"
+        national_unity = -2
+        dissent = 1
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 390059
+	is_triggered_only = yes
+	major = yes
+	title = "japrehe22"
+	desc = "japrehe22desc"
+	picture = "Anti_jap_front_great_wall9"
+	option = {
+		name = "japrehe22_option"
+        national_unity = -5
+		set_global_flag = japthe_war_attack_rehe_win
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 390061
+	is_triggered_only = yes
+	major = yes
+	      major = yes
+	title = "rehe1"
+	desc = "rehe1desc"
+	picture = "Anti_jap_front_great_wall2"
+	option = {
+	name = "rehename"
+				   JAP ={
+				   country_event = 390056
+				   }
+	ai_chance = { factor = 100 }
+	}
+}

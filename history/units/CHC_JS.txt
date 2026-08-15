@@ -1,0 +1,44 @@
+division = {
+	name = "山西抗日游击队"
+	location = 7411
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 1 }
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 1 }
+}
+division = {
+	name = "山西抗日游击队"
+	location = 7418
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 0 }
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 0 }
+}
+division = {
+	name = "山西抗日游击队"
+	location =5083
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 0 }
+}
+division = {
+	name = "太行抗日游击队"
+	location =5175
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 0 }
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 0 }
+}
+division = {
+	name = "太行抗日游击队"
+	location =5175
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 0 }
+}
+division = {
+	name = "太北抗日游击队"
+	location = 5239
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 1 }
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 1 }
+}
+division = {
+	name = "太北抗日游击队"
+	location = 5239
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 1 }
+}
+division = {
+	name = "太岳抗日游击队"
+	location = 5300
+	regiment = { type = partisan_bergsjaeger experience = 40 historical_model = 0 }
+}

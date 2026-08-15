@@ -1,0 +1,549 @@
+xxxx;;;;;;;;;;;;;;x
+MINISTER_MESSAGE_ENTRY;$TITLE$ $NAME$;$TITLE$ $NAME$;$TITLE$ $NAME$;;$TITLE$ $NAME$;;;;;;;;;X
+#;;;;;;;;;;;;;;x
+MINISTER_DEATH_SETUP;当一名部长死亡;Lorsqu'un ministre meurt.;Wenn ein Minister stirbt.;;Cuando un ministro muere.;;;;;;;;;x
+MINISTER_DEATH_HEADER;死亡;Mort;Tod;;Muerte;;;;;;;;;x
+MINISTER_DEATH_1;$NAME$;$NAME$ est mort.;$NAME$;;$NAME$;;;;;;;;;x
+MINISTER_DEATH_2;死了. $NAME$永远离开我们的内阁了。;est mort. $NAME$ ne peut plus faire partie de notre cabinet.;ist gestorben. Wir k鰊nen $NAME$ nicht l鋘ger als Kabinettmitglied einsetzen.;;ha muerto. Ya no tenemos la posibilidad de que $NAME$ forme parte de nuestro gabinete.;;;;;;;;;x
+MINISTER_DEATH_3;*;*;*;;*;;;;;;;;;x
+MINISTER_DEATH_4;*;*;*;;*;;;;;;;;;x
+MINISTER_DEATH_5;*;*;*;;*;;;;;;;;;x
+MINISTER_DEATH_6;*;*;*;;*;;;;;;;;;x
+MINISTER_DEATH_LOG;$MINISTERNAME$死了。;$MINISTERNAME$ est mort.;$MINISTERNAME$ ist gestorben.;;$MINISTERNAME$ ha muerto.;;;;;;;;;x
+MINISTER_DEATH_BTN1;好的;OK;OK;;Aceptar;;;;;;;;;x
+MINISTER_DEATH_BTN2;好的;OK;OK;;Aceptar;;;;;;;;;x
+MINISTER_DEATH_BTN3;详情;D閠ails;Details;;Detalles;;;;;;;;;x
+MINISTER_DEATH_MAP;*;*;*;;*;;;;;;;;;x
+MINISTER_APPOINTED_SETUP;当任命一位新部长;Lorsqu'un nouveau ministre est nomm?Wenn ein neuer Minister eingesetzt wird;;Cuando se elige un nuevo ministro;;;;;;;;;x
+MINISTER_APPOINTED_HEADER;一位新部长;Le nouveau ministre;Ein neuer Minister,;;Un nuevo ministro;;;;;;;;;x
+MINISTER_APPOINTED_1;$MINISTERNAME$;$MINISTERNAME$;$MINISTERNAME$,;;$MINISTERNAME$;;;;;;;;;x
+MINISTER_APPOINTED_2;被任命为$POSITION$;a 閠?nomm?au poste de $POSITION$.;wurde als $POSITION$ eingesetzt;;ha sido elegido para ocupar el cargo de $POSITION$;;;;;;;;;x
+MINISTER_APPOINTED_3;$PERSONALITY_DESC$;*;$PERSONALITY_DESC$;;$PERSONALITY_DESC$;;;;;;;;;x
+MINISTER_APPOINTED_4;*;*;*;;*;;;;;;;;;x
+MINISTER_APPOINTED_5;*;*;*;;*;;;;;;;;;x
+MINISTER_APPOINTED_6;*;*;*;;*;;;;;;;;;x
+MINISTER_APPOINTED_LOG;$MINISTERNAME$被任命为$POSITION$.;$MINISTERNAME$ a 閠?d閟ign?comme $POSITION$.;$MINISTERNAME$ wurde als $POSITION$ eingesetzt.;;$MINISTERNAME$ ha sido elegido como $POSITION$.;;;;;;;;;x
+MINISTER_APPOINTED_BTN1;好的;OK;OK;;Aceptar;;;;;;;;;x
+MINISTER_APPOINTED_BTN2;好的;OK;OK;;Aceptar;;;;;;;;;x
+MINISTER_APPOINTED_BTN3;详情;D閠ails;Details;;Detalles;;;;;;;;;x
+MINISTER_APPOINTED_MAP;*;*;*;;*;;;;;;;;;x
+ELECTIONRESULTS_SETUP;当大选进行;Lorsque des 閘ections ont lieu.;Wenn eine Wahl abgehalten wird;;Cuando se celebren elecciones;;;;;;;;;x
+ELECTIONRESULTS_HEADER;$ELECTION_YEAR$年大选;蒷ections de $ELECTION_YEAR$;Wahl $ELECTION_YEAR$;;Elecciones $ELECTION_YEAR$;;;;;;;;;x
+ELECTIONRESULTS_1;$WINNING_PARTY$;$WINNING_PARTY$;$WINNING_PARTY$;;$WINNING_PARTY$;;;;;;;;;x
+ELECTIONRESULTS_2;赢得大选;a gagn?les 閘ections;Gewann die Wahl;;Gan?las elecciones;;;;;;;;;x
+ELECTIONRESULTS_3;*;*;*;;*;;;;;;;;;x
+ELECTIONRESULTS_4;*;*;*;;*;;;;;;;;;x
+ELECTIONRESULTS_5;*;*;*;;*;;;;;;;;;x
+ELECTIONRESULTS_6;*;*;*;;*;;;;;;;;;x
+ELECTIONRESULTS_LOG;$WINNING_PARTY$赢得了$ELECTION_YEAR$年大选。;Le $WINNING_PARTY$ a remport?les 閘ections de $ELECTION_YEAR$.;$WINNING_PARTY$ gewann die Wahl von $ELECTION_YEAR$.;;$WINNING_PARTY$ gan?las elecciones de $ELECTION_YEAR$.;;;;;;;;;x
+ELECTIONRESULTS_BTN1;好的;OK;OK;;Aceptar;;;;;;;;;x
+ELECTIONRESULTS_BTN2;好的;OK;OK;;Aceptar;;;;;;;;;x
+ELECTIONRESULTS_BTN3;详情;D閠ails;Details;;Detalles;;;;;;;;;x
+ELECTIONRESULTS_MAP;*;*;*;;*;;;;;;;;;x
+EVENTHAPPENOTHEROPTION_SETUP;当一个多选项的历史事件在他国发生;Lorsqu'un 関閚ement historique ?choix multiple se produit dans un autre pays.;Wenn sich in einem anderen Land ein historisches Ereignis mit mehreren Auswahlm鰃lichkeiten ereignet.;Kiedy w innym pa駍twie ma miejsce zdarzenie historyczne;Cuando a otro pa韘 le ocurra un suceso hist髍ico con m鷏tiples opciones.;Quando un evento storico a scelta multipla si verifica in un altro paese.;Mikor egy t鰎t閚elmi esem閚y t鯾b lehet鮯間et k韓醠 egy m醩ik nemzetnek;Kdy?v jin?zemi dojde k historick?ud醠osti s v韈e volbami.;;;;;;x
+EVENTHAPPENOTHEROPTION_HEADER;$foreign_minister$报告;$foreign_minister$ a r閐ig?un rapport concernant :;;;$foreign_minister$ informa sobre;;;;;;;;;x
+EVENTHAPPENOTHEROPTION_1;$COUNTRY$;$COUNTRY$.;$COUNTRY$;$COUNTRY$;$COUNTRY$;$COUNTRY$;$COUNTRY$;$COUNTRY$;;;;;;x
+EVENTHAPPENOTHEROPTION_2;他们表示在;Ils nous ont parl?de;Sie erz鋒len uns 黚er das Ereignis;informuje nas o wydarzeniu:;Nos informan de los eventos de;Ci parlano dei seguenti eventi:;A k鰒etkez?esem閚yekr鮨 sz醡olt be:;Sd靗uj?n醡 informace o ud醠ostech;;;;;;x
+EVENTHAPPENOTHEROPTION_3;$EVENT$;$EVENT$;$EVENT$;$EVENT$.;$EVENT$;$EVENT$,;$EVENT$;$EVENT$;;;;;;x
+EVENTHAPPENOTHEROPTION_4;事件所有可能的选项中, 他们选择了;o?ils ont choisi de;wobei sie von den m鰃lichen Optionen;Spo渞骴 wszystkich mo縧iwo渃i wybrano;d髇de, entre otras opciones, decidieron;dove, tra le diverse opzioni possibili, hanno scelto;閟 a t鯾b lehet鮯間 k鰖黮 a k鰒etkez鮰 v醠asztotta:;z dostupn齝h mo瀗ost?si vybrali;;;;;;x
+EVENTHAPPENOTHEROPTION_5;$OPTION$.;$OPTION$;$OPTION$;$OPTION$;$OPTION$;$OPTION$;$OPTION$;$OPTION$;;;;;;x
+EVENTHAPPENOTHEROPTION_6;*;comme action ?entreprendre parmi les options possibles.;gew鋒lt haben..;jako opcj?dzia砤nia.;como curso de la de acci髇.;.;閟 cselekedett is.;jako svoji volbu.;;;;;;x
+EVENTHAPPENOTHEROPTION_LOG;事件：$COUNTRY$在'$EVENT$'中选择了'$OPTION$'.;蓈閚ement : $COUNTRY$ a d閏id?de '$OPTION$' pendant '$EVENT$'.;Ereignis: $OPTION$ in $EVENT$ f黵 $COUNTRY$.;$COUNTRY$. $EVENT$. $OPTION$;Suceso: '$OPTION$' en '$EVENT$' para $COUNTRY$.;Evento: $OPTION$ per $EVENT$ in $COUNTRY$.;Esem閚y: $COUNTRY$ nemzete a/az $OPTION$ lehet鮯間et v醠asztotta erre az esem閚yre v醠aszolva: $EVENT$.;Ud醠ost: $OPTION$ v $EVENT$ pro $COUNTRY$.;;;;;;x
+EVENTHAPPENOTHEROPTION_BTN1;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+EVENTHAPPENOTHEROPTION_BTN2;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+EVENTHAPPENOTHEROPTION_BTN3;查看;ALLER ?GOTO;ID?DO;Ir all?ANDARE;Menj ide:;P谽J蚑 NA;;;;;;x
+EVENTHAPPENOTHEROPTION_MAP;*;*;*;*;*;*;*;;;;;;;x
+EVENTHAPPENOTHER_SETUP;当一个单选项的历史事件在他国发生;Lorsqu'un 関閚ement historique ?choix unique a lieu dans un autre pays.;Wenn sich in einem anderen Land etwas Historisches mit nur einer Auswahlm鰃lichkeit ereignet ?;Kiedy w innym kraju ma miejsce historyczne wydarzenie z jedyn?mo縧iw?opcj?wyboru;Cuando a otro pa韘 le ocurra un suceso hist髍ico con una 鷑ica opci髇.;Quando un evento storico a scelta singola si verifica in un altro paese.;Mikor egy t鰎t閚elmi esem閚y k鰒etkezm閚yek閚t csak egy v醠aszt醩i lehet鮯間e van egy m醩ik orsz醙nak.;Kdy?v jin?zemi dojde k historick?ud醠osti s jednou volbou.;;;;;;x
+EVENTHAPPENOTHER_HEADER;$foreign_minister$报告;$foreign_minister$ a r閐ig?un rapport concernant :;;;$foreign_minister$ informa sobre;;;;;;;;;x
+EVENTHAPPENOTHER_1;$COUNTRY$;$COUNTRY$.;$COUNTRY$;$COUNTRY$;$COUNTRY$;$COUNTRY$;$COUNTRY$;$COUNTRY$;;;;;;x
+EVENTHAPPENOTHER_2;他们表示最近发生了;Ils nous ont parl?de;Sie erz鋒len uns 黚er das Ereignis;informuje nas o wydarzeniu:;Nos informan de los eventos de;Ci parlano dei seguenti eventi:;A k鰒etkez?esem閚yekr鮨 sz醡olt be:;Sd靗uj?n醡 informace o ud醠ostech;;;;;;x
+EVENTHAPPENOTHER_3;$EVENT$;$EVENT$;$EVENT$;$EVENT$;$EVENT$;$EVENT$,;$EVENT$;$EVENT$;;;;;;x
+EVENTHAPPENOTHER_4;事件。;qui a r閏emment eu lieu dans ce pays.;das sich neulich in ihrem Land ereignet hat.;, kt髍e mia硂 miejsce niedawno w ich pa駍twie.;que han ocurrido recientemente en su pa韘.;verificatisi nel loro paese di recente.;ami nemr間 t鰎t閚t az orsz醙ukban.;kter?se pr醰?odehr醠y v jejich zemi.;;;;;;x
+EVENTHAPPENOTHER_5;*;*;*;*;*;*;*;;;;;;;x
+EVENTHAPPENOTHER_6;*;*;*;*;*;*;*;;;;;;;x
+EVENTHAPPENOTHER_LOG;事件：$COUNTRY$发生了'$EVENT$'。;蓈閚ement : '$EVENT$', $COUNTRY$.;Ereignis: $EVENT$ in $COUNTRY$.;$COUNTRY$. $EVENT$.;Suceso: '$EVENT$' en $COUNTRY$.;Evento: $EVENT$ in $COUNTRY$.;Esem閚y: $EVENT$ $COUNTRY$ nemzet閚閘.;Ud醠ost: $EVENT$ v $COUNTRY$.;;;;;;x
+EVENTHAPPENOTHER_BTN1;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+EVENTHAPPENOTHER_BTN2;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+EVENTHAPPENOTHER_BTN3;*;*;*;*;*;*;*;;;;;;;x
+EVENTHAPPENOTHER_MAP;*;*;*;*;*;*;*;;;;;;;x
+EVENTHAPPENUS_SETUP;当一个历史事件在我国发生;Lorsqu'un 関閚ement historique se produit pour nous.;Wenn sich bei uns ein historisches Ereignis abspielt.;Kiedy wydarzenie historyczne ma miejsce w naszym pa駍twie;Cuando nos ocurra un suceso hist髍ico.;Quando un evento storico si verifica da noi.;Mikor egy t鰎t閚elmi esem閚y n醠unk k鰒etkezik be;Kdy?se u n醩 odehraje historick?ud醠ost.;;;;;;x
+EVENTHAPPENUS_HEADER;$foreign_minister$报告;$foreign_minister$ a r閐ig?un rapport concernant;;;$foreign_minister$ informa sobre;;;;;;;;;x
+EVENTHAPPENUS_1;$EVENT$;$EVENT$;$EVENT$;$EVENT$;$EVENT$;$EVENT$;$EVENT$;$EVENT$;;;;;;x
+EVENTHAPPENUS_2;在我国;qui s'est produit;das uns; - to zdarzy硂 si?que nos ha sucedido;si ?verificato;t鰎t閚t;stalo se;;;;;;x
+EVENTHAPPENUS_3;发生了。;pour nous.;widerfahren ist.;u nas.;.;a noi.;n醠unk.;n醡.;;;;;;x
+EVENTHAPPENUS_4;*;*;*;*;*;*;*;;;;;;;x
+EVENTHAPPENUS_5;*;*;*;*;*;*;*;;;;;;;x
+EVENTHAPPENUS_6;*;*;*;*;*;*;*;;;;;;;x
+EVENTHAPPENUS_LOG;事件：玩家发生'$EVENT$'。;蓈閚ement : '$EVENT$' pour le joueur.;Ereignis: $EVENT$ f黵 Spieler.;Wydarzenie: $EVENT$ dla gracza.;Evento: '$EVENT$' para el jugador.;Evento: $EVENT$ per il giocatore.;Esem閚y: $EVENT$ a j醫閗osn醠.;Ud醠ost: $EVENT$ pro hr徼e.;;;;;;x
+EVENTHAPPENUS_BTN1;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+EVENTHAPPENUS_BTN2;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+EVENTHAPPENUS_BTN3;*;*;*;*;*;*;*;;;;;;;x
+EVENTHAPPENUS_MAP;*;*;*;*;*;*;*;;;;;;;x
+DECISIONOTHER_SETUP;当他国执行了一项决议;Lorsqu'un autre pays applique une d閏ision.;Wenn ein anderes Land eine Entscheidung ausf黨rt.;;Cuando otro pa韘 ejecuta una decisi髇.;;;;;;;;;x
+DECISIONOTHER_HEADER;$foreign_minister$报告;$foreign_minister$ a r閐ig?un rapport concernant :;;;$foreign_minister$ informa sobre;;;;;;;;;x
+DECISIONOTHER_1;$COUNTRY$;$COUNTRY$.;$COUNTRY$;$COUNTRY$;$COUNTRY$;$COUNTRY$;$COUNTRY$;$COUNTRY$;;;;;;x
+DECISIONOTHER_2;他们决定;Ils ont d閏id?de;Sie berichten uns von;;an decidido;;;;;;;;;x
+DECISIONOTHER_3;$EVENT$!;$EVENT$ !;$EVENT$;$EVENT$!;$EVENT$!;$EVENT$!;$EVENT$!;$EVENT$!;;;;;;x
+DECISIONOTHER_4;$DESC$;$DESC$;das in ihrem Reich k黵zlich entschieden wurde.;$DESC$;$DESC$;$DESC$;$DESC$;;;;;;;x
+DECISIONOTHER_5;*;*;*;*;*;*;*;;;;;;;x
+DECISIONOTHER_6;*;*;*;*;*;*;*;;;;;;;x
+DECISIONOTHER_LOG;决议：$COUNTRY$执行了$EVENT$。;D閏ision : $COUNTRY$ a d閏id?de $EVENT$.;Entscheidung: $EVENT$ in $COUNTRY$.;;Decisi髇: $EVENT$ en $COUNTRY$.;;;;;;;;;x
+DECISIONOTHER_BTN1;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+DECISIONOTHER_BTN2;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+DECISIONOTHER_BTN3;*;*;*;*;*;*;*;;;;;;;x
+DECISIONOTHER_MAP;*;*;*;*;*;*;*;;;;;;;x
+DECISIONUS_SETUP;当我们执行了一项决议;Lorsque nous appliquons une d閏ision.;Wenn wir eine Entscheidung ausf黨ren.;;Cuando ejecutamos una decisi髇.;;;;;;;;;x
+DECISIONUS_HEADER;$foreign_minister$报告;$foreign_minister$ a r閐ig?un rapport concernant;;;?foreign_minister$ informa sobre;;;;;;;;;x
+DECISIONUS_1;$EVENT$!;$EVENT$ !;$EVENT$!;$EVENT$!;$EVENT$!;$EVENT$!;$EVENT$!;$EVENT$!;;;;;;x
+DECISIONUS_2;$DESC$;$DESC$;$DESC$;;$DESC$;;;;;;;;;x
+DECISIONUS_3;*;*;*;*;*;*;*;;;;;;;x
+DECISIONUS_4;*;*;*;*;*;*;*;;;;;;;x
+DECISIONUS_5;*;*;*;*;*;*;*;;;;;;;x
+DECISIONUS_6;*;*;*;*;*;*;*;;;;;;;x
+DECISIONUS_LOG;决议：玩家执行了$EVENT$。;D閏ision : $EVENT$ pour le joueur.;Entscheidung: $EVENT$ f黵 Spieler.;;Decisi髇: $EVENT$ para el jugador.;;;;;;;;;x
+DECISIONUS_BTN1;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+DECISIONUS_BTN2;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+DECISIONUS_BTN3;*;*;*;*;*;*;*;;;;;;;x
+DECISIONUS_MAP;*;*;*;*;*;*;*;;;;;;;x
+LAW_APPOINTED_SETUP;当一个新法案被通过;Lorsqu'une nouvelle loi entre en vigueur.;Wenn ein neues Gesetz verabschiedet wird.;;Cuando se promulga una nueva ley.;;;;;;;;;x
+LAW_APPOINTED_HEADER;新法案被通过;Nouvelle loi en vigueur;Neues Gesetz verabschiedet;;Nueva ley promulgada;;;;;;;;;x
+LAW_APPOINTED_1;$LAWNAME$;$LAWNAME$;$LAWNAME$;;$LAWNAME$;;;;;;;;;x
+LAW_APPOINTED_2;被通过而成为我们新的$POSITION$;a 閠?d閏r閠閑 nouvelle $POSITION$;wurde als neues Gesetz f黵 $POSITION$ verabschiedet;;se ha promulgado como nuestra nueva $POSITION$;;;;;;;;;x
+LAW_APPOINTED_3;*;*;*;;*;;;;;;;;;x
+LAW_APPOINTED_4;$EFFECT$\n$DESC$;$EFFECT$\n$DESC$;$EFFECT$\n$DESC$;;$EFFECT$\n$DESC$;;;;;;;;;x
+LAW_APPOINTED_5;*;*;*;;*;;;;;;;;;x
+LAW_APPOINTED_6;*;*;*;;*;;;;;;;;;x
+LAW_APPOINTED_LOG;我们通过了$LAWNAME$作为我们的$POSITION$。;Nous avons d閏r閞?$LAWNAME$ comme 閠ant notre $POSITION$.;Wir haben $LAWNAME$ als neues Gesetz f黵 $POSITION$ verabschiedet.;;Hemos promulgado $LAWNAME$ como nuestra $POSITION$.;;;;;;;;;x
+LAW_APPOINTED_BTN1;好的;OK;OK;;Aceptar;;;;;;;;;x
+LAW_APPOINTED_BTN2;好的;OK;OK;;Aceptar;;;;;;;;;x
+LAW_APPOINTED_BTN3;详情;D閠ails;Details;;Detalles;;;;;;;;;x
+LAW_APPOINTED_MAP;*;*;*;;*;;;;;;;;;x
+TECH_ONCE_SETUP;当一个科技研究完毕;Lorsqu'une technologie importante a 閠?閠udi閑.;Wenn eine Schl黶seltechnologie erforscht wurde.;;Cuando se haya desarrollado una tecnolog韆 principal.;;;;;;;;;x
+TECH_ONCE_HEADER;科技研究完毕.;Une technologie majeure a 閠?閠udi閑.;Schl黶seltechnologie erforscht.;;Tecnolog韆 principal desarrollada.;;;;;;;;;x
+TECH_ONCE_1;$TYPE$;$TYPE$;$TYPE$;;$TYPE$;;;;;;;;;x
+TECH_ONCE_2;$TITLE$，我们完成了$TYPE$的研究，它将为我们带来以下好处：;$TITLE$, nous avons termin?la recherche de : $TYPE$, ce qui nous donnera les avantages suivants.;$TITLE$, wir haben die Erforschung von $TYPE$ abgeschlossen, die uns die folgenden Vorz黦e bietet.;;$TITLE$, hemos finalizado la investigaci髇 sobre $TYPE$ que nos proporcionar?los siguientes beneficios.;;;;;;;;;x
+TECH_ONCE_3;$EFFECT$;$EFFECT$;$EFFECT$;;$EFFECT$;;;;;;;;;x
+TECH_ONCE_4;*;*;*;;*;;;;;;;;;x
+TECH_ONCE_5;*;*;*;;*;;;;;;;;;x
+TECH_ONCE_6;*;*;*;;*;;;;;;;;;x
+TECH_ONCE_LOG;$TYPE$研究完毕。;La recherche de $TYPE$ est termin閑.;Forschung an $TYPE$ abgeschlossen.;;Investigaci髇 sobre $TYPE$ finalizada.;;;;;;;;;x
+TECH_ONCE_BTN1;好的;OK;OK;;Aceptar;;;;;;;;;x
+TECH_ONCE_BTN2;好的;OK;OK;;Aceptar;;;;;;;;;x
+TECH_ONCE_BTN3;详情;D閠ails;Details;;Detalles;;;;;;;;;x
+TECH_ONCE_MAP;*;*;*;;*;;;;;;;;;x
+TECH_REPEAT_SETUP;当你提升了科技等级;Lorsque vos comp閠ences technologiques augmentent.;Wenn Sie Ihre technologische F鋒igkeiten verbessert haben.;;Cuando aumente tu habilidad tecnol骻ica.;;;;;;;;;x
+TECH_REPEAT_HEADER;科技;Am閘ioration de la technologie;Technologieverbesserung;;Mejoras tecnol骻icas;;;;;;;;;x
+TECH_REPEAT_1;$TYPE$升级了!;$TYPE$ am閘ior閟 !;$TYPE$ verbessert!;;vances en $TYPE$!;;;;;;;;;x
+TECH_REPEAT_2;$TITLE$，我们将$TYPE$\n提升到了等级$LEVEL$，\n它将为我们带来以下好处：\n;$TITLE$, nos comp閠ences $TYPE$ se sont am閘ior閑s et sont maintenant de niveau $LEVEL$, ce qui nous donne l'avantage suivant.;$TITLE$, wir haben unsere F鋒igkeiten in $TYPE$ auf Stufe $LEVEL$ erh鰄t, was uns nun die folgenden Vorz黦e bietet.;;$TITLE$, hemos mejorado nuestras habilidades en $TYPE$ hasta el nivel $LEVEL$, lo que nos da los siguientes beneficios.;;;;;;;;;x
+TECH_REPEAT_3;$EFFECT$;$EFFECT$;$EFFECT$;;$EFFECT$;;;;;;;;;x
+TECH_REPEAT_4;*;*;*;;*;;;;;;;;;x
+TECH_REPEAT_5;*;*;*;;*;;;;;;;;;x
+TECH_REPEAT_6;*;*;*;;*;;;;;;;;;x
+TECH_REPEAT_LOG;$TYPE$升级为$LEVEL$;$TYPE$ augment閟 ?$LEVEL$;$TYPE$ erh鰄t auf $LEVEL$;;$TYPE$ ha aumentado hasta $LEVEL$;;;;;;;;;x
+TECH_REPEAT_BTN1;好的;OK;OK;;Aceptar;;;;;;;;;x
+TECH_REPEAT_BTN2;好的;OK;OK;;Aceptar;;;;;;;;;x
+TECH_REPEAT_BTN3;详情;D閠ails;Details;;Detalles;;;;;;;;;x
+TECH_REPEAT_MAP;*;*;*;;*;;;;;;;;;x
+WE_NUKE_SETUP;当我们在敌人的一个地区投放了原子弹;Lorsque nous larguons une bombe sur une province ennemie.;Wenn wir eine Atombombe auf eine feindliche Provinz abwerfen.;;Cuando lancemos un ataque nuclear sobre una provincia enemiga.;;;;;;;;;x
+WE_NUKE_HEADER;我们扔下了一颗原子弹;Nous avons largu?une;Wir haben eine;;Hemos lanzado una;;;;;;;;;x
+WE_NUKE_1;核攻击$PROV$!;bombe atomique sur la province : $PROV$;Atombombe auf $PROV$ abgeworfen;;bomba nuclear sobre $PROV$;;;;;;;;;x
+WE_NUKE_2;$TITLE$\n我们在\n$PROV$\n成功地投放了一颗原子弹，\n摧毁了该地区绝大多数的工业及大量人口。;$TITLE$, nous vous signalons la r閡ssite du largage d'une bombe atomique sur la province : $PROV$. Ceci a d閠ruit la plupart de l'industrie et a fait de nombreuses victimes.;$TITLE$, wir k鰊nen vermelden, erfolgreich eine Atombombe auf $PROV$ abgeworfen zu haben. Diese hat den gr鲞ten Teil der Industrie zerst鰎t und viele Menschen get鰐et.;;$TITLE$, podemos informar de que hemos lanzado una bomba nuclear con 閤ito sobre $PROV$. Esto ha destruido la mayor韆 de la industria y ha matado a mucha gente.;;;;;;;;;x
+WE_NUKE_3;$TARGET$的国家凝聚力下降了$IMPACT$。;L'unit?nationale de : $TARGET$ a chut?de $IMPACT$.;Der nationale Zusammenhalt von $TARGET$ ist um $IMPACT$ gesunken.;;La unidad nacional de $TARGET$ ha ca韉o en $IMPACT$.;;;;;;;;;x
+WE_NUKE_4;*;*;*;;*;;;;;;;;;x
+WE_NUKE_5;*;*;*;;*;;;;;;;;;x
+WE_NUKE_6;*;*;*;;*;;;;;;;;;x
+WE_NUKE_LOG;我们核打击了$PROV$，$TARGET$的国家凝聚力下降了$IMPACT$。;Nous avons atomis?la province : $PROV$, ce qui a r閐uit l'unit?nationale de : $TARGET$ de $IMPACT$.;Wir haben eine Atombombe auf $PROV$ abgeworfen und damit $TARGET$s nationalen Zusammenhalt um $IMPACT$ gesenkt.;;Hemos lanzado un ataque nuclear sobre $PROV$, reduciendo la unidad nacional de $TARGET$ en $IMPACT$.;;;;;;;;;x
+WE_NUKE_BTN1;好的;OK;OK;;Aceptar;;;;;;;;;x
+WE_NUKE_BTN2;好的;OK;OK;;Aceptar;;;;;;;;;x
+WE_NUKE_BTN3;详情;D閠ails;Details;;Detalles;;;;;;;;;x
+WE_NUKE_MAP;核弹攻击!;*;*;;*;;;;;;;;;x
+NUKE_ON_US_SETUP;当他国在我们的一个地区投放了原子弹;Lorsque quelqu'un largue une bombe atomique sur l'une de nos provinces.;Wenn jemand eine Atombombe auf eine unserer Provinzen abwirft.;;Cuando alguien lanza un ataque nuclear sobre una de nuestras provincias.;;;;;;;;;x
+NUKE_ON_US_HEADER;$EVIL$扔下了一颗原子弹;$EVIL$ a largu?une;$EVIL$ hat eine;;$EVIL$ ha lanzado una;;;;;;;;;x
+NUKE_ON_US_1;$PROV$遭到核攻击!;bombe atomique sur la province : $PROV$;Atombombe auf $PROV$ abgeworfen;;bomba nuclear sobre $PROV$;;;;;;;;;x
+NUKE_ON_US_2;$TITLE$\n我们不幸地告知您，\n$EVIL$在\n$PROV$\n投放了一颗原子弹，\n摧毁了该地区绝大多数的工业及大量人口。;$TITLE$, nous sommes navr閟 de vous apprendre que $EVIL$ a largu?une bombe atomique sur $PROV$. Ceci a d閠ruit la plupart de l'industrie et a fait de nombreuses victimes.;$TITLE$, wir m黶sen leider berichten, dass $EVIL$ eine Atombombe auf $PROV$ abgeworfen hat. Diese hat den gr鲞ten Teil der Industrie zerst鰎t und viele Menschen get鰐et.;;$TITLE$, nos entristece informar que $EVIL$ ha lanzado una bomba nuclear sobre $PROV$. Esto ha destruido la mayor韆 de la industria y ha matado a mucha gente.;;;;;;;;;x
+NUKE_ON_US_3;我们的国家凝聚力下降了$IMPACT$。;Notre unit?nationale a chut?de $IMPACT$.;Unser nationaler Zusammenhalt ist um $IMPACT$ gesunken.;;Nuestra unidad nacional ha ca韉o en $IMPACT$.;;;;;;;;;x
+NUKE_ON_US_4;*;*;*;;*;;;;;;;;;x
+NUKE_ON_US_5;*;*;*;;*;;;;;;;;;x
+NUKE_ON_US_6;*;*;*;;*;;;;;;;;;x
+NUKE_ON_US_LOG;$EVIL$核打击了$PROV$，我们的国家凝聚力下降了$IMPACT$。;$EVIL$ a atomis?$PROV$, ce qui a r閐uit notre unit?nationale de $IMPACT$.;$EVIL$ hat eine Atombombe auf $PROV$ abgeworfen, was unseren nationalen Zusammenhalt um $IMPACT$ gesenkt hat.;;$EVIL$ lanz?un ataque nuclear sobre $PROV$, reduciendo nuestra unidad nacional en $IMPACT$.;;;;;;;;;x
+NUKE_ON_US_BTN1;好的;OK;OK;;Aceptar;;;;;;;;;x
+NUKE_ON_US_BTN2;好的;OK;OK;;Aceptar;;;;;;;;;x
+NUKE_ON_US_BTN3;详情;D閠ails;Details;;Detalles;;;;;;;;;x
+NUKE_ON_US_MAP;核弹攻击!;*;*;;*;;;;;;;;;x
+NUKE_ON_OTHER_SETUP;当他国在敌国的一个地区投放了原子弹;Lorsque quelqu'un d'autre largue une bombe atomique sur une province ennemie.;Wenn jemand anderes eine Atombombe auf eine feindliche Provinz abwirft.;;Cuando alguien lance un ataque nuclear sobre una provincia enemiga.;;;;;;;;;x
+NUKE_ON_OTHER_HEADER;$EVIL$扔下了一颗原子弹;$EVIL$ a largu?une;$EVIL$ hat eine;;$EVIL$ ha lanzado una;;;;;;;;;x
+NUKE_ON_OTHER_1;核攻击$PROV$;bombe atomique sur $PROV$;Atombombe auf $PROV$ abgeworfen;;bomba nuclear sobre $PROV$;;;;;;;;;x
+NUKE_ON_OTHER_2;$TITLE$\n$EVIL$在\n$PROV$\n投放了一颗原子弹，\n摧毁了该地区绝大多数的工业及大量人口。;$TITLE$, nous vous informons que $EVIL$ a largu?une bombe atomique sur $PROV$. Ceci a d閠ruit la plupart de l'industrie et a fait de nombreuses victimes.;$TITLE$, wir berichten, dass $EVIL$ eine Atombombe auf $PROV$ abgeworfen hat. Diese hat den gr鲞ten Teil der Industrie zerst鰎t und viele Menschen get鰐et.;;$TITLE$, podemos informar que $EVIL$ ha lanzado una bomba nuclear sobre $PROV$. Esto ha destruido la mayor韆 de la industria y ha matado a mucha gente.;;;;;;;;;x
+NUKE_ON_OTHER_3;$TARGET$的国家凝聚力下降了$IMPACT$。;L'unit?nationale de $TARGET$ a chut?de $IMPACT$.;Der nationale Zusammenhalt von $TARGET$ ist um $IMPACT$ gesunken.;;La unidad nacional de $TARGET$ ha ca韉o en $IMPACT$.;;;;;;;;;x
+NUKE_ON_OTHER_4;*;*;*;;*;;;;;;;;;x
+NUKE_ON_OTHER_5;*;*;*;;*;;;;;;;;;x
+NUKE_ON_OTHER_6;*;*;*;;*;;;;;;;;;x
+NUKE_ON_OTHER_LOG;$EVIL$核打击了$PROV$，$TARGET$的国家凝聚力下降了$IMPACT$。;$EVIL$ a atomis?$PROV$, ce qui a r閐uit de $MPACT$ l'unit?nationale de $TARGET$.;$EVIL$ hat eine Atombombe auf $PROV$ abgeworfen und damit $TARGET$s nationalen Zusammenhalt um $IMPACT$ gesenkt.;;$EVIL$ ha lanzado un ataque nuclear sobre $PROV$, reduciendo la unidad nacional de $TARGET$ en $IMPACT$.;;;;;;;;;x
+NUKE_ON_OTHER_BTN1;好的;OK;OK;;Aceptar;;;;;;;;;x
+NUKE_ON_OTHER_BTN2;好的;OK;OK;;Aceptar;;;;;;;;;x
+NUKE_ON_OTHER_BTN3;详情;D閠ails;Details;;Detalles;;;;;;;;;x
+NUKE_ON_OTHER_MAP;核弹攻击!;*;*;;*;;;;;;;;;x
+WE_ATTACK_CONVOY_SETUP;当我们攻击一支护航舰队;Lorsque nous attaquons un convoi.;Wenn wir einen Konvoi angreifen.;;Cuando atacamos un convoy.;;;;;;;;;x
+WE_ATTACK_CONVOY_HEADER;我们的护航袭击舰队在如下海域发现了一支护航舰队并发起了进攻;Nos intercepteurs ont surpris un convoi et l'ont attaqu?dans la province :;Unsere Handelszerst鰎er haben einen Konvoi in;;Nuestros atacantes a convoyes han atrapado uno y lo han atacado en;;;;;;;;;x
+WE_ATTACK_CONVOY_1;$PROV$;$PROV$.;$PROV$ gestellt und angegriffen;;$PROV$;;;;;;;;;x
+WE_ATTACK_CONVOY_2;$TITLE$，我们击沉了;$TITLE$, nous vous informons que nous avons r閡ssi ?couler;$TITLE$, wir k鰊nen vermelden, dass wir;;$TITLE$, podemos informar que hemos logrado hundir;;;;;;;;;x
+WE_ATTACK_CONVOY_3;$TRANSPORTS$艘运输舰和$ESCORTS$艘护航舰。;$TRANSPORTS$ navire(s) de transport et $ESCORTS$ escorte(s).;$TRANSPORTS$ Transporter und $ESCORTS$ Geleitschiff(e) versenken konnten.;;$TRANSPORTS$ transporte(s) y $ESCORTS$ escolta(s).;;;;;;;;;x
+WE_ATTACK_CONVOY_4;这次袭击发生在$CONVOY$航线上。;Ce convoi a crois?la route de : $CONVOY$.;Dieser Konvoi war auf der $CONVOY$-Route.;;Este convoy estaba en la ruta $CONVOY$.;;;;;;;;;x
+WE_ATTACK_CONVOY_5;*;*;*;;*;;;;;;;;;x
+WE_ATTACK_CONVOY_6;*;*;*;;*;;;;;;;;;x
+WE_ATTACK_CONVOY_LOG;我们在$CONVOY$输送线上的$PROV$击沉了$TRANSPORTS$艘输送船和$ESCORTS$艘护航舰。;Nous avons coul?$TRANSPORTS$ navire(s) de transport et $ESCORTS$ escorte(s) du convoi : $CONVOY$ dans la province : $PROV$.;Wir versenken $TRANSPORTS$ Transporter und $ESCORTS$ Geleitschiff(e) des $CONVOY$ Konvoi in $PROV$.;;Hundimos $TRANSPORTS$ transporte(s) y $ESCORTS$ escolta(s) en $PROV$ en el convoy $CONVOY$.;;;;;;;;;x
+WE_ATTACK_CONVOY_BTN1;好的;OK;OK;;Aceptar;;;;;;;;;x
+WE_ATTACK_CONVOY_BTN2;好的;OK;OK;;Aceptar;;;;;;;;;x
+WE_ATTACK_CONVOY_BTN3;Goto;D閠ails;Details;;Detalles;;;;;;;;;x
+WE_ATTACK_CONVOY_MAP;与输送船队交战!;*;*;;*;;;;;;;;;x
+CONVOY_ATTACK_ON_US_SETUP;当我们的一支输送船队被攻击;Lorsque l'un de nos convois subit une attaque.;Wenn einer unserer Konvois angegriffen wird;;Cuando una de nuestros convoyes est?siendo atacado.;;;;;;;;;x
+CONVOY_ATTACK_ON_US_HEADER;输送船队在如下海域被攻击;Un convoi a 閠?attaqu?dans la province :;Konvoi wird angegriffen in;;Convoy bajo ataque en;;;;;;;;;x
+CONVOY_ATTACK_ON_US_1;$PROV$;$PROV$.;$PROV$;;$PROV$;;;;;;;;;x
+CONVOY_ATTACK_ON_US_2;$TITLE$，我们的$CONVOY$输送船队遭到攻击并损失了;$TITLE$, nous vous informons que notre convoi $CONVOY$ a 閠?attaqu?et que;$TITLE$, wir m黶sen leider melden, dass unser $CONVOY$ Konvoi angegriffen wurde und;;$TITLE$, podemos informar que nuestro convoy $CONVOY$ ha sido atacado y se han perdido;;;;;;;;;x
+CONVOY_ATTACK_ON_US_3;$TRANSPORTS$艘输送船和$ESCORTS$艘护航舰。;$TRANSPORTS$ navire(s) de transport et $ESCORTS$ escorte(s) ont 閠?perdue(s).;$TRANSPORTS$ Transporter und $ESCORTS$ Geleitschiff(e) verlor.;;$TRANSPORTS$ transporte(s) y $ESCORTS$ escolta(s).;;;;;;;;;x
+CONVOY_ATTACK_ON_US_4;*;*;*;;*;;;;;;;;;x
+CONVOY_ATTACK_ON_US_5;*;*;*;;*;;;;;;;;;x
+CONVOY_ATTACK_ON_US_6;*;*;*;;*;;;;;;;;;x
+CONVOY_ATTACK_ON_US_LOG;$CONVOY$输送船队在$PROV$损失了$TRANSPORTS$艘输送船和$ESCORTS$艘护航舰。;$TRANSPORTS$ navire(s) de transport et $ESCORTS$ escorte(s) ont 閠?perdus dans la province : $PROV$.;Der $CONVOY$ Konvoi verlor $TRANSPORTS$ Transporter und $ESCORTS$ Geleitschiff(e) in $PROV$.;;El convoy $CONVOY$ perdi?$TRANSPORTS$ transporte(s) y $ESCORTS$ escolta(s) en $PROV$.;;;;;;;;;x
+CONVOY_ATTACK_ON_US_BTN1;好的;OK;OK;;Aceptar;;;;;;;;;x
+CONVOY_ATTACK_ON_US_BTN2;好的;OK;OK;;Aceptar;;;;;;;;;x
+CONVOY_ATTACK_ON_US_BTN3;查看;D閠ails;Details;;Detalles;;;;;;;;;x
+CONVOY_ATTACK_ON_US_MAP;输送船队被袭击!;Convoi attaqu?!;Konvoi wird angegriffen!;;onvoy bajo ataque!;;;;;;;;;x
+WE_MOBILIZE_SETUP;当我们进行战争动员;Lorsque nous mobilisons pour pr閜arer une guerre.;Wenn wir f黵 den Krieg mobilisieren.;;Cuando nos movilizamos en preparaci髇 de una guerra.;;;;;;;;;x
+WE_MOBILIZE_HEADER;我们已经;Nous avons d閏lench?la;Wir haben die;;Hemos empezado a;;;;;;;;;x
+WE_MOBILIZE_1;动员;MOBILISATION;MOBILISIERUNG;;MOBILIZE;;;;;;;;;x
+WE_MOBILIZE_2;我们动员了我们的军队，\n很快我们将有一支强大的军队被投入战场。\n我们潜在的敌人会将此视为威胁。;de nos forces arm閑s et nous serons bient魌 en mesure de r閡nir une arm閑 puissante. Cela sera cependant consid閞?comme un geste mena鏰nt par nos ennemis potentiels.;unserer Streitkr鋐te beschlossen und werden bald eine starke Armee aufgestellt haben. Dies wird allerdings von unseren m鰃lichen Feinden als Bedrohung angesehen werden.;;nuestras fuerzas armadas y pronto seremos capaces de desplegar un poderoso ej閞cito. Desgraciadamente, esto ser?visto como un movimiento amenazador por nuestros enemigos potenciales.;;;;;;;;;x
+WE_MOBILIZE_3;*;*;*;;*;;;;;;;;;x
+WE_MOBILIZE_4;*;*;*;;*;;;;;;;;;x
+WE_MOBILIZE_5;*;*;*;;*;;;;;;;;;x
+WE_MOBILIZE_6;*;*;*;;*;;;;;;;;;x
+WE_MOBILIZE_LOG;我们开始动员预备役。;Nous avons commenc??mobiliser nos r閟erves.;Wir haben begonnen, unsere Reserven zu mobilisieren.;;Hemos comenzado a movilizar nuestras reservas.;;;;;;;;;x
+WE_MOBILIZE_BTN1;好的;OK;OK;;Aceptar;;;;;;;;;x
+WE_MOBILIZE_BTN2;好的;OK;OK;;Aceptar;;;;;;;;;x
+WE_MOBILIZE_BTN3;详情;D閠ails;Details;;Detalles;;;;;;;;;x
+WE_MOBILIZE_MAP;*;*;*;;*;;;;;;;;;x
+WE_DEMOBILIZE_SETUP;当我们解除动员;Lorsque nous d閏idons de d閙obiliser.;Wenn wir die Demobilisierung beschlie遝n.;;Cuando decidimos desmovilizarnos.;;;;;;;;;x
+WE_DEMOBILIZE_HEADER;我们决定;Nous avons d閏id?de;Wir haben die;;emos decidido;;;;;;;;;x
+WE_DEMOBILIZE_1;部队复员;D蒑OBILISER;DEMOBILISIERUNG;;DEMOBILIZE;;;;;;;;;x
+WE_DEMOBILIZE_2;我们的部队现在解除了战备。;nos forces arm閑s et nos troupes sont au repos.;unserer Streitkr鋐te beschlossen, und unsere Truppen sind nun inaktiv.;;nuestras fuerzas armadas y nuestras tropas est醤 ahora detenidas.;;;;;;;;;x
+WE_DEMOBILIZE_3;*;*;*;;*;;;;;;;;;x
+WE_DEMOBILIZE_4;*;*;*;;*;;;;;;;;;x
+WE_DEMOBILIZE_5;*;*;*;;*;;;;;;;;;x
+WE_DEMOBILIZE_6;*;*;*;;*;;;;;;;;;x
+WE_DEMOBILIZE_LOG;我们决定部队复员。;Nous avons ordonn?la d閙obilisation de nos r閟erves.;Wir haben Befehl gegeben, unsere Reserven zu demobilisieren.;;Hemos dado 髍denes para desmovilizar nuestras reservas.;;;;;;;;;x
+WE_DEMOBILIZE_BTN1;好的;OK;OK;;Aceptar;;;;;;;;;x
+WE_DEMOBILIZE_BTN2;好的;OK;OK;;Aceptar;;;;;;;;;x
+WE_DEMOBILIZE_BTN3;详情;D閠ails;Details;;Detalles;;;;;;;;;x
+WE_DEMOBILIZE_MAP;*;*;*;;*;;;;;;;;;x
+OTHER_MOBILIZE_SETUP;当他国进行战争动员;Lorsque quelqu'un d'autre mobilise pour pr閜arer une guerre.;Wenn ein anderes Land f黵 den Krieg mobilisiert.;;Cuando otro se moviliza en preparaci髇 de una guerra.;;;;;;;;;x
+OTHER_MOBILIZE_HEADER;$minister_of_intelligence$报告;$minister_of_intelligence$ nous signale que;$minister_of_intelligence$ berichtet, dass;;$minister_of_intelligence$ nos informa de que;;;;;;;;;x
+OTHER_MOBILIZE_1;$COUNTRY$正在动员;$COUNTRY$ mobilise actuellement;$COUNTRY$;;$COUNTRY$ esta movilizando;;;;;;;;;x
+OTHER_MOBILIZE_2;他们的军队，很快他们将有一支强大的军队被投入战场。;ses forces arm閑s et que ce pays sera bient魌 en mesure de r閡nir une arm閑 puissante. ;seine Streitkr鋐te mobilisiert und bald in eine starke Armee aufgestellt haben wird.;;sus fuerzas armadas y pronto ser醤 capaces de desplegar un fuerte ej閞cito. ;;;;;;;;;x
+OTHER_MOBILIZE_3;*;*;*;;*;;;;;;;;;x
+OTHER_MOBILIZE_4;*;*;*;;*;;;;;;;;;x
+OTHER_MOBILIZE_5;*;*;*;;*;;;;;;;;;x
+OTHER_MOBILIZE_6;*;*;*;;*;;;;;;;;;x
+OTHER_MOBILIZE_LOG;$COUNTRY$开始动员预备役。;$COUNTRY$ a commenc??mobiliser ses r閟erves.;$COUNTRY$ hat begonnen, ihre Reserven zu mobilisieren.;;$COUNTRY$ ha comenzado a movilizar sus reservas.;;;;;;;;;x
+OTHER_MOBILIZE_BTN1;好的;OK;OK;;Aceptar;;;;;;;;;x
+OTHER_MOBILIZE_BTN2;好的;OK;OK;;Aceptar;;;;;;;;;x
+OTHER_MOBILIZE_BTN3;详情;D閠ails;Details;;Detalles;;;;;;;;;x
+OTHER_MOBILIZE_MAP;*;*;*;;*;;;;;;;;;x
+OTHER_DEMOBILIZE_SETUP;当他国解除动员;Lorsqu'un autre pays d閏ide de d閙obiliser.;Wenn ein anderes Land die Demobilisierung beschlie遲.;;Cuando otro pa韘 decide desmovilizarse.;;;;;;;;;x
+OTHER_DEMOBILIZE_HEADER;我们收到报告;Des rapports font 閠at que;Es liegen Berichte vor, dass;;Hay informes que indican que;;;;;;;;;x
+OTHER_DEMOBILIZE_1;$COUNTRY$正在复员;$COUNTRY$ d閙obilise actuellement;$COUNTRY$ seine;;$COUNTRY$ est?desmovilizando;;;;;;;;;x
+OTHER_DEMOBILIZE_2;他们的部队现在解除了战备。;ses forces arm閑s et que leurs troupes sont maintenant au repos.;Streitkr鋐te demobilisiert hat und ihre Truppen nun inaktiv sind.;;sus fuerzas armadas y sus tropas est醤 ahora detenidas.;;;;;;;;;x
+OTHER_DEMOBILIZE_3;*;*;*;;*;;;;;;;;;x
+OTHER_DEMOBILIZE_4;*;*;*;;*;;;;;;;;;x
+OTHER_DEMOBILIZE_5;*;*;*;;*;;;;;;;;;x
+OTHER_DEMOBILIZE_6;*;*;*;;*;;;;;;;;;x
+OTHER_DEMOBILIZE_LOG;$COUNTRY$决定部队复员。;$COUNTRY$ a ordonn?la d閙obilisation de ses r閟erves.;$COUNTRY$ hat den Befehl gegeben, ihre Reserven zu demobilisieren.;;$COUNTRY$ ha dado 髍denes para desmovilizar sus reservas.;;;;;;;;;x
+OTHER_DEMOBILIZE_BTN1;好的;OK;OK;;Aceptar;;;;;;;;;x
+OTHER_DEMOBILIZE_BTN2;好的;OK;OK;;Aceptar;;;;;;;;;x
+OTHER_DEMOBILIZE_BTN3;详情;D閠ails;Details;;Detalles;;;;;;;;;x
+OTHER_DEMOBILIZE_MAP;*;*;*;;*;;;;;;;;;x
+WEDEFECT_SETUP;当我们的一个省份叛逃;Quand une de nos provinces se s閜are de nous.;Wenn sich eine unserer Provinzen abspaltet.;Kiedy jedna z naszych prowincji od彻cza si?Cuando una de nuestras provincias cambie de bando.;Quando una delle nostre province ci abbandona;Mikor az egyik tartom醤yunk elp醨tol t鮨黱k.;Kdy?jednu ze sv齝h provinci?ztrat韒e.;;;;;;x
+WEDEFECT_HEADER;叛逃!;D閒ection !;Sezession!;Zdrada!;raici髇!;Defezione!;Elp醨tol醩;Ztr醫a!;;;;;;x
+WEDEFECT_1;如下省份：;La province :;Die Provinz;Prowincja;La provincia de;La provincia di;A k鰒etkez?tartom醤y:;Provincie;;;;;;x
+WEDEFECT_2;$PROV$;$PROV$;$PROV$;$PROV$;$PROV$;$PROV$;$PROV$;$PROV$;;;;;;x
+WEDEFECT_3;已经叛逃到了;appartient maintenant au pays :;spaltete sich ab und ging zu;przesz砤 na stron?pa駍twa;se ha pasado al bando de;?passata a:;a k鰒etkez鮤鰖 p醨tolt:;p鴈歭a k zemi;;;;;;x
+WEDEFECT_4;$COUNTRY$;$COUNTRY$.;$COUNTRY$;$COUNTRY$.;$COUNTRY$;$COUNTRY$;$COUNTRY$;$COUNTRY$;;;;;;x
+WEDEFECT_5;*;*;*;*;*;*;*;;;;;;;x
+WEDEFECT_6;一群傻瓜!我们可不会对这种愚蠢的事情视而不见!;Imb閏iles ! Nous ne tol閞erons pas cette mascarade !;Ihr Narren, diese Dummheit werden wir nicht hinnehmen!;Durnie! Nie zniesiemy takiej g硊poty!;ecios! o toleraremos esta estupidez!;sciocchi, non sopporteremo tanta stupidit?;Bolondok! Nem t鹯hetj黭 ezt a bolonds醙ot!;Bl醶ni! Tuhle bl醜ovost nebudeme tolerovat!;;;;;;x
+WEDEFECT_LOG;$PROV$ 叛逃到了 $COUNTRY$。;$PROV$ appartient maintenant au pays : $COUNTRY$.;$PROV$ hat sich $COUNTRY$ angeschlossen.;Prowincja $PROV$ przesz砤 na stron?pa駍twa $COUNTRY$.;$PROV$ se ha pasado al bando de $COUNTRY$.;$PROV$ ?passata a: $COUNTRY$.;$PROV$ $COUNTRY$ nemzet閔ez p醨tolt.;$PROV$ p鴈歭a k $COUNTRY$.;;;;;;x
+WEDEFECT_BTN1;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+WEDEFECT_BTN2;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+WEDEFECT_BTN3;查看;ALLER ?GOTO;ID?DO;Ir all?ANDARE;Menj ide:;P谽J蚑 NA;;;;;;x
+WEDEFECT_MAP;叛逃!;D閒ection !;Sezession!;Zdrada!;raici髇!;Defezione!;Elp醨tol醩!;Ztr醫a!;;;;;;x
+THEYDEFECT_SETUP;当别国的一个省份叛逃到我国;Lorsque l'une de leurs provinces nous rejoint.;Wenn sich eine ihrer Provinzen uns anschlie遲.;Kiedy jedna z obcych prowincji przechodzi na nasz?stron?Cuando una de sus provincias se pasa a nuestro bando.;Quando una delle loro province passa a noi;Mikor az egyik tartom醤yunk hozz醤k p醨tol.;Kdy?jedna z jejich provinci?p鴈jde k n醡.;;;;;;x
+THEYDEFECT_HEADER;一个新的省份!;Nouvelle province !;Eine neue Provinz!;Nowa prowincja!;na nueva provincia!;Una nuova provincia!;Egy 鷍 tartom醤y!;Nov?provincie!;;;;;;x
+THEYDEFECT_1;如下省份;La province :;Die Provinz;Prowincja;La provincia de;La provincia di;A k鰒etkez?tartom醤y:;Provincie;;;;;;x
+THEYDEFECT_2;$PROV$;$PROV$;$PROV$;$PROV$;$PROV$;$PROV$;$PROV$;$PROV$;;;;;;x
+THEYDEFECT_3;已经叛逃到了我国。;nous a rejoint.;ist zu uns 黚ergelaufen;przesz砤 na nasz?stron?;se ha pasado a nuestro bando.;?passata a noi.;hozz醤k p醨tolt.;p鴈歭a k n醡.;;;;;;x
+THEYDEFECT_4;他们明智地信奉了我们的文明规则;Avec une grande sagesse, ils ont d閏id?de rejoindre notre r間ime 閏lair?;Sie haben sich klugerweise dazu entschlossen, unsere erleuchtete Herrschaft zu begren;M筪rze zdecydowali, 縠 podporz筪kuj?si?naszej o渨ieconej w砤dzy.;Sabiamente, han decidido aceptar nuestro ilustrado gobierno.;Hanno deciso saggiamente di seguire la nostra guida illuminata.;B鰈csen 鷊y d鰊t鰐tek, hogy a mi felvil醙osult nemzet黱k mellett k鰐elezik el magukat.;Moud鴈 se rozhodli pro na歩 osv韈enou vl醖u;;;;;;x
+THEYDEFECT_5;*;*;*;*;*;*;*;;;;;;;x
+THEYDEFECT_6;*;*;*;*;*;*;*;;;;;;;x
+THEYDEFECT_LOG;$PROV$ 叛逃到了我国。;$PROV$ nous a rejoint.;$PROV$ hat sich uns angeschlossen.;Prowincja $PROV$ przesz砤 na nasz?stron?;$PROV$ se ha pasado a nuestro bando.;$PROV$ ?passata a noi.;$PROV$ mell閚k p醨tolt.;$PROV$ p鴈歭a k n醡.;;;;;;x
+THEYDEFECT_BTN1;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+THEYDEFECT_BTN2;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+THEYDEFECT_BTN3;查看;ALLER ?GOTO;ID?DO;Ir all?ANDARE;Menj ide:;P谽J蚑 NA;;;;;;x
+THEYDEFECT_MAP;叛逃!;D閒ection !;Sezession!;Zdrada!;raici髇!;Defezione!;Elp醨tol醩!;Ztr醫a!;;;;;;x
+OTHERDEFECT_SETUP;当别国的一个省份叛逃到了第三国;Lorsque l'une des provinces d'une nation passe ?une autre (except??la n魌re).;Wenn sich eine Provinz eines Landes einem anderen anschlie遲 (keines von beiden sind wir).;Kiedy prowincja jednego z pa駍tw przechodzi na stron?innego kraju (nie dotyczy naszego kraju);Cuando una provincia de una naci髇 cambia al bando de otra (ninguna somos nosotros).;Quando la provincia di una nazione passa a un'altra (e noi non siamo nessuna delle due);Mikor egy nemzet 鷊y d鰊t, hogy egy m醩ik nemzethez p醨tol (de nem hozz醤k).;Kdy?provincie jednoho n醨oda p鴈jde k jin閙u n醨odu (nejedn?se o n醩).;;;;;;x
+OTHERDEFECT_HEADER;叛逃!;D閒ection !;Sezession!;Zdrada!;raici髇!;Defezione!;Elp醨tol醩!;Ztr醫a!;;;;;;x
+OTHERDEFECT_1;如下省份;La province :;Die Provinz;Prowincja;La provincia de;La provincia di;A k鰒etkez?tartom醤y:;Provincie;;;;;;x
+OTHERDEFECT_2;$PROV$;$PROV$;$PROV$;$PROV$;$PROV$;$PROV$;$PROV$;$PROV$;;;;;;x
+OTHERDEFECT_3;叛逃到了;appartient maintenant au pays :;spaltete sich ab und ging zu;przesz砤 na stron?pa駍twa;se pasa al bando de;?passata a:;a k鰒etkez?mell?p醨tolt:;p鴈歭a k;;;;;;x
+OTHERDEFECT_4;$COUNTRY$;$COUNTRY$.;$COUNTRY$;$COUNTRY$.;$COUNTRY$;$COUNTRY$.;$COUNTRY$;$COUNTRY$;;;;;;x
+OTHERDEFECT_5;*;*;*;*;*;*;*;;;;;;;x
+OTHERDEFECT_6;*;*;*;*;*;*;*;;;;;;;x
+OTHERDEFECT_LOG;$PROV$ 叛逃到了 $COUNTRY$。;$PROV$ est pass閑 ?$COUNTRY$.;$PROV$ hat sich $COUNTRY$ angeschlossen.;Prowincja $PROV$ przesz砤 na stron?pa駍twa $COUNTRY$.;$PROV$ se ha pasado al bando de $COUNTRY$.;$PROV$ ?passata a: $COUNTRY$.;$PROV$ $COUNTRY$ nemzet閔ez p醨tolt.;$PROV$ p鴈歭a k $COUNTRY$.;;;;;;x
+OTHERDEFECT_BTN1;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+OTHERDEFECT_BTN2;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+OTHERDEFECT_BTN3;查看;ALLER ?GOTO;ID?DO;Ir all?ANDARE;Menj ide:;P谽J蚑 NA;;;;;;x
+OTHERDEFECT_MAP;叛逃!;D閒ection !;Sezession!;Zdrada!;raici髇!;Defezione!;Elp醨tol醩!;Ztr醫a!;;;;;;x
+SHATTERED_SETUP;当我们的一支部队溃散;L'une de nos divisions a 閠?dispers閑.;Wenn eine unserer Divisionen zusammenbricht.;;Cuando una de nuestras divisiones ha sido derrotada.;;;;;;;;;x
+SHATTERED_HEADER;$chief_of_army$ 报告;$chief_of_army$ nous informe que;$chief_of_army$ berichtet das Zusammenbrechen von;;?chief_of_army$ nos informa de;;;;;;;;;x
+SHATTERED_1;$UNIT$ 已经溃散!;l'unit?: $UNIT$ a 閠?dispers閑 !;$UNIT$!;;la derrota de $UNIT$!;;;;;;;;;x
+SHATTERED_2;$MONARCHTITLE$, $UNIT$ 的部队达到了崩溃点所以已经溃散。;$MONARCHTITLE$, nos troupes de $UNIT$ ont atteint leur point de rupture et ont 閠?dispers閑s.;$MONARCHTITLE$, unsere Truppen in $UNIT$ haben ihre Belastungsgrenze erreicht und sind zusammengebrochen.;;$MONARCHTITLE$, nuestras tropas de $UNIT$ se han desmoronado y han sido derrotadas.;;;;;;;;;x
+SHATTERED_3;$LOCATION$;$LOCATION$;$LOCATION$;;$LOCATION$;;;;;;;;;x
+SHATTERED_4;我们利用处于休假期和在医院疗养的骨干在 $NEWHOME$ 重组了部队。;Nous avons reform?cette division ?$NEWHOME$ en nous basant sur le personnel qui 閠ait en permission ou hospitalis?;Wir haben diese Division in $NEWHOME$ mit Soldaten wieder aufgestellt, die auf Fronturlaub oder im Krankenhaus waren.;;Hemos reformado esta divisi髇 en $NEWHOME$ utilizando un n鷆leo de personal que estaba de servicio o en el hospital.;;;;;;;;;x
+SHATTERED_5;*;;*;;*;;;;;;;;;x
+SHATTERED_6;*;;*;;*;;;;;;;;;x
+SHATTERED_LOG;$UNIT$ 在 $LOCATION$ 溃散了。;$UNIT$ ont 閠?dispers閑s ?$LOCATION$.;$UNIT$ in $LOCATION$ auseinandergebrochen;;Derrota de $UNIT$ en $LOCATION$.;;;;;;;;;x
+SHATTERED_BTN1;好的;OK;OK;;Aceptar;;;;;;;;;x
+SHATTERED_BTN2;好的;OK;OK;;Aceptar;;;;;;;;;x
+SHATTERED_BTN3;查看;ALLER ?Goto;;Ir all?;;;;;;;;x
+SHATTERED_MAP;$UNIT$ 溃散了!;;*;;*;;;;;;;;;x
+SHIPSUNK_SETUP;当我们的一艘舰船由于损耗而沉没;Lorsqu'un de vos navires coule ?cause de l'attrition.;Wenn eines Ihrer Schiffe aufgrund seiner Verlustquote sinkt;Kiedy jeden z twoich okr阾體 idzie na dno z powodu zu縴cia;Cuando uno de nuestros buques se hunde debido al desgaste;Quando una delle tue navi affonda per logoramento;Egyik haj骴 els黮lyedt az elhaszn醠骴醩 miatt;Kdy?se jedna z na歩ch lod?potop?;;;;;x
+SHIPSUNK_HEADER;$chief_of_navy$ 报告;$chief_of_navy$ nous signale;;;?chief_of_navy$ nos informa de que;;;;;;;;;x
+SHIPSUNK_1;失去舰船!;qu'un navire a 閠?perdu !;Schiff gesunken!;Stracili渕y okr阾!;hemos perdido un buque!;Una nave ?perduta!;Elveszett egy haj?;Lo?je ztracena!;;;;;;x
+SHIPSUNK_2;我们的舰船;$MONARCHTITLE$, l'un de nos vaisseaux a 閠?$MONARCHTITLE$, eines unserer Schiffe ist;Jeden z naszych okr阾體;$MONARCHTITLE$, no de nuestros buques se ha;$MONARCHTITLE$, uno dei nostri vascelli ?Az egyik haj髇k;$MONARCHTITLE$, jedno z na歩ch plavidel;;;;;;x
+SHIPSUNK_3;$MONARCHTITLE$;PERDU;GESUNKEN!;ZATON;PERDIDO!;PERDUTO!;ELVESZETT!;SE POTOPILO;;;;;;x
+SHIPSUNK_4;在穿越位于$PROV$的危险水域时;en traversant les eaux p閞illeuses de la province de :;Es befuhr die gef鋒rlichen Gew鋝ser von;pokonuj筩 niebezpieczne wody;mientras navegaba por las peligrosas aguas de;mentre navigava nelle perigliose acque di:;mik鰖ben;p鴌 plavb?v nebezpe鑞齝h vod醕h;;;;;;x
+SHIPSUNK_5;沉没了;$PROV$;$PROV$;$PROV$.;$PROV$;$PROV$;$PROV$ vesz閘yes vizein haj髗ott.;$PROV$;;;;;;x
+SHIPSUNK_6;*;*;*;*;*;*;*;;;;;;;x
+SHIPSUNK_LOG;一艘舰船在 $PROV$ 沉没;Un navire a 閠?perdu dans la province de : $PROV$.;Ein Schiff ging in $PROV$ verloren.;Stracili渕y okr阾 w prowincji $PROV$.;Se ha perdido un buque en $PROV$;Abbiamo perso una nave in $PROV$.;Egy haj?elveszett $PROV$ provinci醤醠;V $PROV$ se potopila lo?;;;;;x
+SHIPSUNK_BTN1;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+SHIPSUNK_BTN2;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+SHIPSUNK_BTN3;查看;ALLER ?Goto;Id?do;Ir all?Andare;Ugr醩;P鴈j韙 na;;;;;;x
+SHIPSUNK_MAP;失去舰船!;Nous avons perdu un navire !;Schiff gesunken!;Okr阾 zaton钩!;e ha perdido un buque!;Una nave ?perduta!;Egy haj?elveszett;Lo?je ztracena!;;;;;;x
+DISBAND_SETUP;当一支部队被裁减;Lorsqu'une unit?est d閙antel閑;Wenn eine Einheit aufgel鰏t wird;Kiedy jednostka zostaje rozwi箊ana;Cuando se desbanda una unidad;Quando un'unit?viene sciolta;Mikor egy egys間et sz閠oszlatnak;Kdy?je rozpu歵靚a jednotka;;;;;;x
+DISBAND_HEADER;$chief_of_staff$ 报告;$chief_of_staff$ signale que;$chief_of_staff$ berichtet die Angliederung von;;$chief_of_staff$ informa de que;;;;;;;;;x
+DISBAND_1;裁减部队。;Unit?d閙antel閑.;Einheit aufgel鰏t.;Jednostka rozwi箊ana;Unidad desbandada.;Unit?sciolta.;Egys間 sz閠oszlatva;Jednotka byla rozpu歵靚a.;;;;;;x
+DISBAND_2;$MONARCHTITLE$,我们已经裁减了如下部队;$MONARCHTITLE$, nous avons d閙antel?l'unit?:;$MONARCHTITLE$;Rozwi箊ali渕y;$MONARCHTITLE$, hemos desbandado;$MONARCHTITLE$, abbiamo sciolto l'unit?;Sz閠oszlattuk a k鰒etkez鮰:;$MONARCHTITLE$, rozpustili jsme;;;;;;x
+DISBAND_3;$UNIT$;$UNIT$;$UNIT$;$UNIT$.;$UNIT$;$UNIT$.;$UNIT$;$UNIT$;;;;;;x
+DISBAND_4;毫无疑问;Il ne fait aucun doute que la racaille qui compose nos troupes va aller d閜enser sa solde plus que g閚閞euse dans les tavernes.;Das Gesocks, das in unseren Armeen dient, wird seinen mehr als gro遺黦igen Sold zweifelsohne in den Schenken verprassen.;Bez w箃pienia ci 砤jdacy, kt髍zy s硊抗 w naszej armii roztrwoni?sw骿 bardziej ni?poka焠y 縪砫 w tawernach.;Sin duda, la escoria de la tierra que compone nuestros ej閞citos dilapidar?su m醩 que generosa paga en las tabernas...;Non c'?dubbio che quella feccia di cui ?fatto il nostro esercito sperperer?la nostra generosissima paga alla taverna.;Semmi k閠s間, hogy az s鰌red閗, amib鮨 a sereg黱k 醠lt m間 t鯾b p閚zt fog elk鰈teni a kocsm醟ban.;Nen?pochyb, 瀍 ti mizerov?byli k ni鑕mu a sv鵭 v韈e ne?歵靌r?瀘ld jen prop韏eli v tavern醕h.;;;;;;x
+DISBAND_5;我们的军队里的这些废物;*;*;*;*;*;*;;;;;;;x
+DISBAND_6;只会把资源慷慨地浪费在酒吧里。;*;*;*;*;*;*;;;;;;;x
+DISBAND_LOG;$UNIT$ 已经被裁减。;$UNIT$ : unit?d閙antel閑.;$UNIT$ wurde aufgel鰏t.;Jednostka $UNIT$ zosta砤 rozwi箊ana.;Se ha desbandado $UNIT$.;L'unit? $UNIT$ ?stata sciolta.;$UNIT$ feloszlatva.;$UNIT$ byla rozpu歵靚a.;;;;;;x
+DISBAND_BTN1;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+DISBAND_BTN2;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+DISBAND_BTN3;查看;ALLER ?GOTO;Id?do;Ir all?Andare;Ugr醩;P鴈j韙 na;;;;;;x
+DISBAND_MAP;*;*;*;*;*;*;*;;;;;;;x
+CONVOY_TOO_STRONG_SETUP;当我们发现一支护航舰队，但作为攻击目标它又太强大;Lorsque nous localisons un convoi mais qu'il est trop puissant pour 阾re attaqu?;Wenn wir einen Konvoi finden, der zu stark ist, um ihn anzugreifen.;;Cuando encontramos un convoy pero es demasiado grande para atacarlo.;;;;;;;;;x
+CONVOY_TOO_STRONG_HEADER;$chief_of_navy$ 报告;$chief_of_navy$ signale;$chief_of_navy$ berichtet, dass;;$chief_of_navy$ nos informa que;;;;;;;;;x
+CONVOY_TOO_STRONG_1;在 $LOCATION$ 发现护航舰队;qu'un convoi a 閠?rep閞??$LOCATION$.;ein Konvoi bei $LOCATION$ gesichtet wurde;;se ha avistado un convoy en $LOCATION$;;;;;;;;;x
+CONVOY_TOO_STRONG_2;$MONARCHTITLE$，$UNIT$ 报告他们在 $LOCATION$ 发现了一支护航舰队，但它由 $EVIL$ 护航所以无法尝试攻击。他们猜想这支护航舰队位于;$MONARCHTITLE$, les $UNIT$ nous informent qu'un convoi a 閠?rep閞??$LOCATION$ mais qu'il est trop lourdement escort?par $EVIL$ pour que nous puissions ne serait-ce qu'envisager de les attaquer. Ils soup鏾nnent que ce convoi est sur la route;$MONARCHTITLE$, $UNIT$ berichtet, dass sie einen Konvoi bei $LOCATION$ sichteten. Leider fuhr er mit einem Geleitschutz von $EVIL$, was einen Angriffsversuch unsinnig machte. Sie vermuten, dass der Konvoi auf der;;$MONARCHTITLE$, $UNIT$ informa de que ha avistado un convoy en $LOCATION$, pero $EVIL$ le hab韆 asignado una escolta demasiado fuerte como para intentar un ataque. Sospechan que el convoy estaba en la;;;;;;;;;x
+CONVOY_TOO_STRONG_3;$CONVOY$;du $CONVOY$.;$CONVOY$;;$CONVOY$;;;;;;;;;x
+CONVOY_TOO_STRONG_4;航线上。;*;Route war.;;ruta.;;;;;;;;;x
+CONVOY_TOO_STRONG_5;*;;*;;*;;;;;;;;;x
+CONVOY_TOO_STRONG_6;*;;*;;*;;;;;;;;;x
+CONVOY_TOO_STRONG_LOG; $UNIT$ 在 $LOCATION$ 发现了 $CONVOY$ 。;$CONVOY$ a 閠?rep閞?par l'unit?$UNIT$ ?$LOCATION$.;$CONVOY$ von $UNIT$ bei $LOCATION$ gesichtet.;;$CONVOY$ avistado por $UNIT$ en $LOCATION$.;;;;;;;;;x
+CONVOY_TOO_STRONG_BTN1;好的;OK;OK;;Aceptar;;;;;;;;;x
+CONVOY_TOO_STRONG_BTN2;好的;OK;OK;;Aceptar;;;;;;;;;x
+CONVOY_TOO_STRONG_BTN3;查看;Aller ?Goto;;Ir all?;;;;;;;;x
+CONVOY_TOO_STRONG_MAP;护航舰队受到保护!;;*;;*;;;;;;;;;x
+ATTACHEDUNIT_SETUP;当我们将部队配属到不同层级;Lorsque nous rattachons une unit??une autre dans la hi閞archie.;Wenn wir eine Einheit an eine andere in der Befehlskette angliedern.;;Cuando vinculamos una unidad a otra en la jerarqu韆.;;;;;;;;;x
+ATTACHEDUNIT_HEADER;$chief_of_staff$ 报告;$chief_of_staff$ signale que;$chief_of_staff$ berichtet die Angliederung von;;$chief_of_staff$ informa de que;;;;;;;;;x
+ATTACHEDUNIT_1;$UNIT$;l'unit?$UNIT$;$UNIT$;;$UNIT$;;;;;;;;;x
+ATTACHEDUNIT_2;现在已经配属到如下单位;est maintenant rattach閑 ?:;an;;se ha vinculado a;;;;;;;;;x
+ATTACHEDUNIT_3;$PARENT$;$PARENT$.;$PARENT$;;$PARENT$;;;;;;;;;x
+ATTACHEDUNIT_4;*;*;*;;*;;;;;;;;;x
+ATTACHEDUNIT_5;*;*;*;;*;;;;;;;;;x
+ATTACHEDUNIT_6;*;*;*;;*;;;;;;;;;x
+ATTACHEDUNIT_LOG;$UNIT$ 已经被配属到 $PARENT$。;L'unit?$UNIT$ est maintenant rattach閑 ?$PARENT$.;$UNIT$ ist nun an $PARENT$ angegliedert.;;$UNIT$ se ha vinculado ahora a $PARENT$.;;;;;;;;;x
+ATTACHEDUNIT_BTN1;好的;OK;OK;;Aceptar;;;;;;;;;x
+ATTACHEDUNIT_BTN2;好的;OK;OK;;Aceptar;;;;;;;;;x
+ATTACHEDUNIT_BTN3;查看;Aller ?Goto;;Ir all?;;;;;;;;x
+ATTACHEDUNIT_MAP;$UNIT$ 已经配属。;*;*;;*;;;;;;;;;x
+DETACHEDUNIT_SETUP;当我们将部队从原有层级分离;Lorsque nous d閠achons une unit?du commandement.;Wenn wir eine Einheit aus der Befehlskette ausgliedern.;;Cuando desvinculamos una unidad de la jerarqu韆.;;;;;;;;;x
+DETACHEDUNIT_HEADER;$chief_of_staff$ 报告;$chief_of_staff$ signale que;$chief_of_staff$ berichtet, dass;;$chief_of_staff$ informa que;;;;;;;;;x
+DETACHEDUNIT_1;$UNIT$;l'unit?$UNIT$;$UNIT$;;$UNIT$;;;;;;;;;x
+DETACHEDUNIT_2;已经从原先的层级;est maintenant;nun aus der Befehlskette;;se ha;;;;;;;;;x
+DETACHEDUNIT_3;分离;D蒚ACH蒃;AUSGEGLIEDERT;;DESVINCULADO;;;;;;;;;x
+DETACHEDUNIT_4;*;du commandement.;wurde.;;de la jerarqu韆.;;;;;;;;;x
+DETACHEDUNIT_5;*;*;*;;*;;;;;;;;;x
+DETACHEDUNIT_6;*;*;*;;*;;;;;;;;;x
+DETACHEDUNIT_LOG;$UNIT$ 已经从原先的层级分离。;L'unit?$UNIT$ a 閠?d閠ach閑 du commandement des unit閟.;$UNIT$ aus der Einheitenbefehlskette ausgegliedert.;;$UNIT$ se ha desvinculado de la jerarqu韆 de unidades.;;;;;;;;;x
+DETACHEDUNIT_BTN1;好的;OK;OK;;Aceptar;;;;;;;;;x
+DETACHEDUNIT_BTN2;好的;OK;OK;;Aceptar;;;;;;;;;x
+DETACHEDUNIT_BTN3;查看;Aller ?Goto;;Ir all?;;;;;;;;x
+DETACHEDUNIT_MAP;已经分离!;*;*;;*;;;;;;;;;x
+TRANSFEREDSUBUNIT_SETUP;当一艘舰船，一架飞机或一个师被重新分配时;Lorsqu'un navire, un d閠achement ou une division est transf閞?d'une unit??une autre.;Wenn ein Schiff, Geschwader oder eine Division von einer Einheit zu einer anderen transferiert wird.;;Cuando un buque, ala o divisi髇 se transfiere de una unidad a otra.;;;;;;;;;x
+TRANSFEREDSUBUNIT_HEADER;$chief_of_staff$ 报告;$chief_of_staff$ signale que;$chief_of_staff$ berichtet, dass;;?chief_of_staff$ informa que;;;;;;;;;x
+TRANSFEREDSUBUNIT_1;$SUB$ 已经重新分配!;$SUB$ r閍ffect閑 !;$SUB$ transferiert wurde!;;se ha reasignado $SUB$!;;;;;;;;;x
+TRANSFEREDSUBUNIT_2;$MONARCHTITLE$,我们已经将 $SUB$ 从 $OLD$ 调配到了;$MONARCHTITLE$, nous avons r閍ffect?l'unit?$SUB$ de l'unit?$OLD$ ?l'unit?$MONARCHTITLE$, wir haben $SUB$ von $OLD$ nach;;$MONARCHTITLE$, hemos reasignado $SUB$ de $OLD$ a;;;;;;;;;x
+TRANSFEREDSUBUNIT_3;$NEW$;$NEW$;$NEW$ transferiert;;$NEW$;;;;;;;;;x
+TRANSFEREDSUBUNIT_4;*;*;*;;*;;;;;;;;;x
+TRANSFEREDSUBUNIT_5;*;*;*;;*;;;;;;;;;x
+TRANSFEREDSUBUNIT_6;*;*;*;;*;;;;;;;;;x
+TRANSFEREDSUBUNIT_LOG;$SUB$ 已经被分配到了 $NEW$。;L'unit?$SUB$ a 閠?transf閞閑 ?l'unit?$NEW$.;$SUB$ wurde $NEW$ angegliedert.;;Se ha asignado $SUB$ a $NEW$.;;;;;;;;;x
+TRANSFEREDSUBUNIT_BTN1;好的;OK;OK;;Aceptar;;;;;;;;;x
+TRANSFEREDSUBUNIT_BTN2;好的;OK;OK;;Aceptar;;;;;;;;;x
+TRANSFEREDSUBUNIT_BTN3;查看;Aller ?Goto;;Ir all?;;;;;;;;x
+TRANSFEREDSUBUNIT_MAP;*;*;*;;*;;;;;;;;;x
+UNITDEPLOYED_SETUP;当我们在地图上配置一个新的单位;Lorsque nous d閜loyons une nouvelle unit?sur la carte.;Wenn wir eine neue Einheit auf der Karte einsetzen.;;Cuando desplegamos una nueva unidad en el mapa.;;;;;;;;;x
+UNITDEPLOYED_HEADER;$chief_of_staff$ 报告;$chief_of_staff$ nous informe que;$chief_of_staff$ berichtet, dass;;$chief_of_staff$ informa de que;;;;;;;;;x
+UNITDEPLOYED_1;$UNIT$ 已经配置;l'unit?$UNIT$ a 閠?d閜loy閑;$UNIT$ im Einsatz ist.;;se ha desplegado $UNIT$;;;;;;;;;x
+UNITDEPLOYED_2;$MONARCHTITLE$, $UNIT$ 已经做好行动准备并被配置到了如下地区;$MONARCHTITLE$, l'unit?$UNIT$ est maintenant d閜loy閑;$MONARCHTITLE$, $UNIT$ ist nun bereit zum Einsatz in;;$MONARCHTITLE$, $UNIT$ se encuentra en estado operativo y se ha desplegado en;;;;;;;;;x
+UNITDEPLOYED_3;$LOCATION$;?$LOCATION$ et pr阾e au combat.;$LOCATION$;;$LOCATION$;;;;;;;;;x
+UNITDEPLOYED_4;*;*;*;;*;;;;;;;;;x
+UNITDEPLOYED_5;*;*;*;;*;;;;;;;;;x
+UNITDEPLOYED_6;*;*;*;;*;;;;;;;;;x
+UNITDEPLOYED_LOG;$UNIT$ 配置到了 $LOCATION$。;L'unit?$UNIT$ a 閠?d閜loy閑 ?$LOCATION$.;$UNIT$ abkommandiert nach $LOCATION$.;;$UNIT$ se ha desplegado en $LOCATION$.;;;;;;;;;x
+UNITDEPLOYED_BTN1;好的;OK;OK;;Aceptar;;;;;;;;;x
+UNITDEPLOYED_BTN2;好的;OK;OK;;Aceptar;;;;;;;;;x
+UNITDEPLOYED_BTN3;查看;Aller ?Goto;;Ir all?;;;;;;;;x
+UNITDEPLOYED_MAP;$UNIT$ 已经配置.;*;*;;*;;;;;;;;;x
+WE_RETURN_EXILE_SETUP;当我们解放了一个国家并恢复了他们的政府;Lorsque nous lib閞ons un pays et r閠ablissons son gouvernement.;Wenn wir ein Land befreien und seine Regierung wieder einsetzen.;;Cuando liberamos un pa韘 y restauramos su Gobierno.;;;;;;;;;x
+WE_RETURN_EXILE_HEADER;我们解放了;Nous avons lib閞?le pays :;Wir haben;;Hemos liberado;;;;;;;;;x
+WE_RETURN_EXILE_1;$FREE$;$FREE$.;$FREE$ befreit;;$FREE$;;;;;;;;;x
+WE_RETURN_EXILE_2;$TITLE$，对 $FREE$ \n的解放取得了巨大的成功。\n在今天欢乐的庆典中，n\部队列队穿过了\n $FCAPITAL$ 。;$TITLE$, nous vous informons que notre tentative de lib閞ation de $FREE$ a 閠?couronn閑 de succ鑣. Aujourd'hui, les troupes ont d閒il?avec enthousiasme dans $FCAPITAL$ pour f阾er la victoire.;$TITLE$, wir k鰊nen vermelden, dass unsere Befreiung von $FREE$ ein gro遝r Erfolg war. Heute ist eine Milit鋜parade triumphierend durch $FCAPITAL$ marschiert.;;$TITLE$, podemos informar de que nuestra liberaci髇 de $FREE$ ha sido un 閤ito rotundo. Hoy, un desfile de tropas ha marchado sobre $FCAPITAL$ en alegre celebraci髇.;;;;;;;;;x
+WE_RETURN_EXILE_3;*;*;*;;*;;;;;;;;;x
+WE_RETURN_EXILE_4;*;*;*;;*;;;;;;;;;x
+WE_RETURN_EXILE_5;*;*;*;;*;;;;;;;;;x
+WE_RETURN_EXILE_6;*;*;*;;*;;;;;;;;;x
+WE_RETURN_EXILE_LOG;我们解放了 $FREE$，他们的政府已于 $FCAPITAL$ 恢复。;Nous avons lib閞?$FREE$ et r閠abli son gouvernement dans la capitale $FCAPITAL$.;Wir haben $FREE$ befreit und seine Regierung in $FCAPITAL$ wiederhergestellt.;;Hemos liberado $FREE$ y se ha restaurado su Gobierno en $FCAPITAL$.;;;;;;;;;x
+WE_RETURN_EXILE_BTN1;好的;OK;OK;;Aceptar;;;;;;;;;x
+WE_RETURN_EXILE_BTN2;好的;OK;OK;;Aceptar;;;;;;;;;x
+WE_RETURN_EXILE_BTN3;详细;D閠ails;Details;;Detalles;;;;;;;;;x
+WE_RETURN_EXILE_MAP;*;*;*;;*;;;;;;;;;x
+RETURN_EXILE_US_SETUP;当我们的政府在盟国帮助下得以恢复;Lorsque notre gouvernement est r閠abli par nos alli閟.;Wenn unsere Regierung von unseren Verb黱bdeten wieder eingesetzt wurde.;;Cuando nuestro Gobierno ha sido restaurado por nuestros aliados.;;;;;;;;;x
+RETURN_EXILE_US_HEADER;我们已被如下国家解放;Nous avons 閠?lib閞閟 par;Wir wurden befreit von;;Hemos sido liberados por;;;;;;;;;x
+RETURN_EXILE_US_1;$FROM$;$FROM$.;$FROM$;;$FROM$;;;;;;;;;x
+RETURN_EXILE_US_2;$TITLE$，$FCAPITAL$ 已被解放，我们的政府也已经正式回归。整个城市充满了欢呼以庆祝这伟大的一天。我们永远赞美 $FROM$ 为拯救我们国家所做的一切。;$TITLE$, nous vous informons que $FCAPITAL$ a 閠?lib閞閑 et que le gouvernement a officiellement 閠?remis en place. La ville grouille d'une foule festive c閘閎rant ce grand jour. Nous serons 閠ernellement reconnaissants envers $FROM$ pour ses faits d'ar;$TITLE$, wir k鰊nen vermelden, dass $FCAPITAL$ befreit wurde und unsere Regierung nun offiziell wieder zur點kgekehrt ist. Die Stadt ist voller jubelnder Menschen die diesen gro遝n Tag feiern. Wir sind $FROM$ auf ewig f黵 ihre Befreiung unseres Landes dankbar.;;$TITLE$, podemos informar de que se ha liberado $FCAPITAL$ y se ha producido el regreso oficial de nuestro Gobierno. La ciudad est?llena de personas celebrando este gran d韆. $FROM$ tiene nuestra gratitud eterna por su actuaci髇 al salvar a nuestra naci髇.;;;;;;;;;x
+RETURN_EXILE_US_3;*;*;*;;*;;;;;;;;;x
+RETURN_EXILE_US_4;*;*;*;;*;;;;;;;;;x
+RETURN_EXILE_US_5;*;*;*;;*;;;;;;;;;x
+RETURN_EXILE_US_6;*;*;*;;*;;;;;;;;;x
+RETURN_EXILE_US_LOG;我们的政府已经在 $FCAPITAL$ 恢复，感谢 $FROM$ 的帮助。;Notre gouvernement a 閠?restaur?dans la capitale $FCAPITAL$ gr鈉e ?l'aide de $FROM$.;Unsere Regierung wurde in $FCAPITAL$ wieder eingesetzt, dank der Hilfe aus $FROM$.;;Nuestro gobierno ha sido restaurado en $FCAPITAL$, gracias a la ayuda de $FROM$.;;;;;;;;;x
+RETURN_EXILE_US_BTN1;好的;OK;OK;;Aceptar;;;;;;;;;x
+RETURN_EXILE_US_BTN2;好的;OK;OK;;Aceptar;;;;;;;;;x
+RETURN_EXILE_US_BTN3;详情;D閠ails;Details;;Detalles;;;;;;;;;x
+RETURN_EXILE_US_MAP;*;*;*;;*;;;;;;;;;x
+RETURN_EXILE_SETUP;当一个国家恢复了自己的政府;Lorsque le gouvernement d'un autre pays a 閠?r閠abli.;Wenn die Regierung eines anderen Landes wieder eingesetzt wird.;;Cuando restablecen el gobierno de otro pa韘.;;;;;;;;;x
+RETURN_EXILE_HEADER;$foreign_minister$ 报告;$foreign_minister$ nous a signal?$foreign_minister$ berichtet, dass;;?foreign_minister$ informa que;;;;;;;;;x
+RETURN_EXILE_1;$FREE$ 已经被解放!;la lib閞ation de $FREE$ !;$FREE$ befreit wurde!;;han liberado $FREE$!;;;;;;;;;x
+RETURN_EXILE_2;$TITLE$，$FREE$ 已经被 $FROM$ 解放。他们的政府已经于 $FCAPITAL$ 恢复，因此他们已经不再是流亡政府了。;$TITLE$, nous vous signalons que $FREE$ a 閠?lib閞?par $FROM$. Le gouvernement a 閠?restaur?dans capitale $FCAPITAL$ et n'est plus en exil.;$TITLE$, wir k鰊nen vermelden, dass $FREE$ von $FROM$ befreit wurde. Die Regierung wurde wieder in $FCAPITAL$ eingesetzt, sie befindet sich nun nicht mehr im Exil.;;$TITLE$, podemos informar que $FROM$ ha liberado $FREE$. Su Gobierno se ha restaurado en $FCAPITAL$ y ya no est?en el exilio.;;;;;;;;;x
+RETURN_EXILE_3;*;*;*;;*;;;;;;;;;x
+RETURN_EXILE_4;*;*;*;;*;;;;;;;;;x
+RETURN_EXILE_5;*;*;*;;*;;;;;;;;;x
+RETURN_EXILE_6;*;*;*;;*;;;;;;;;;x
+RETURN_EXILE_LOG;$FREE$ 已经被解放，他们的政府在已经于 $FCAPITAL$ 恢复。;$FREE$ a 閠?lib閞?et leur gouvernement a 閠?restaur?dans capitale $FCAPITAL$.;$FREE$ wurde befreit und die Regierung in $FCAPITAL$ wiederhergestellt.;;Se ha liberado $FREE$ y se ha restaurado su Gobierno en $FCAPITAL$.;;;;;;;;;x
+RETURN_EXILE_BTN1;好的;OK;OK;;Aceptar;;;;;;;;;x
+RETURN_EXILE_BTN2;好的;OK;OK;;Aceptar;;;;;;;;;x
+RETURN_EXILE_BTN3;详情;D閠ails;Details;;Detalles;;;;;;;;;x
+RETURN_EXILE_MAP;*;*;*;;*;;;;;;;;;x
+REVOLT_SETUP;当你的一个省份发生了叛乱;Lorsqu'une insurrection 閏late dans l'une de vos provinces.;Wenn ein Aufstand in einer Ihrer Provinzen ausbricht;;Cuando haya una insurrecci髇 en una de tus provincias;;;;;;;;;x
+REVOLT_HEADER;$minister_of_security$ 报告;$minister_of_security$ signale qu'un;$minister_of_security$ berichtet;;?minister_of_security$ informa de una;;;;;;;;;x
+REVOLT_1;叛乱!;soul鑦ement a 閏lat?!;Aufstand!;;insurrecci髇!;;;;;;;;;x
+REVOLT_2;$MONARCHTITLE$，$REBELS$ 已于如下省份出现;$MONARCHTITLE$, une insurrection rebelle des $REBELS$ a eu lieu dans la province :;$MONARCHTITLE$, $REBELS$ haben sich erhoben in;;$MONARCHTITLE$, ?REBELS$ se han alzado en;;;;;;;;;x
+REVOLT_3;$PROV$!;$PROV$ !;$PROV$!;;$PROV$;;;;;;;;;x
+REVOLT_4;$REBELDESC$;$REBELDESC$;$REBELDESC$;;$REBELDESC$;;;;;;;;;x
+REVOLT_5;*;*;*;;*;;;;;;;;;x
+REVOLT_6;*;*;*;;*;;;;;;;;;x
+REVOLT_LOG;$REBELS$ 在 $PROV$ 发起了叛乱!;Des $REBELS$ se r関oltent dans la province de : $PROV$ !;$REBELS$ erheben sich in $PROV$!;;na insurrecci髇 de $REBELS$ en $PROV$!;;;;;;;;;x
+REVOLT_BTN1;好的;OK;OK;;Aceptar;;;;;;;;;x
+REVOLT_BTN2;好的;OK;OK;;Aceptar;;;;;;;;;x
+REVOLT_BTN3;查看;Aller ?Goto;;Ir all?;;;;;;;;x
+REVOLT_MAP;叛乱!;R関olte !;Revolte!;;evuelta!;;;;;;;;;x
+PARTISANS_SETUP;当我们控制的游击队发动了起义;Lorsque les partisans s'insurgent contre notre oppresseur.;Wenn wir einen Partisanenaufstand unter Kontrolle bringen m黶sen;;Cuando hay un levantamiento partisano en nuestro favor;;;;;;;;;x
+PARTISANS_HEADER;$minister_of_intelligence$ 报告;$minister_of_intelligence$ signale que;$minister_of_intelligence$ berichtet, dass;;$minister_of_intelligence$ nos informa que;;;;;;;;;x
+PARTISANS_1;反抗 $EVIL$ 的游击队已经于如下省份起义;se sont insurg閟 contre $EVIL$ dans la province :;sich Partisanen erheben gegen $EVIL$ in;;los partisanos se han levantado contra $EVIL$ en;;;;;;;;;x
+PARTISANS_2;$PROV$;$PROV$.;$PROV$;;$PROV$;;;;;;;;;x
+PARTISANS_3; $PROV$ 的爱国者已经拿起了武器集合成为一支作战部队试图恢复我们祖国的领土。;Des citoyens patriotes ont pris les armes dans la province $PROV$ et ont r閡ni des forces arm閑s pour tenter de reprendre notre m鑢e patrie.;Patriotische B黵ger greifen in $PROV$ zu den Waffen und organisieren eine k鋗pfende Truppe, um unser Heimatgebiet zur點k zu erobern.;;Unos ciudadanos patriotas han tomado las armas en $PROV$ y han organizado una fuerza de combate con la intenci髇 de retomar nuestro territorio.;;;;;;;;;x
+PARTISANS_4;*;*;*;;*;;;;;;;;;x
+PARTISANS_5;*;*;*;;*;;;;;;;;;x
+PARTISANS_6;*;*;*;;*;;;;;;;;;x
+PARTISANS_LOG;我们的游击队已经于 $PROV$ 起义。;Des partisans se sont r関olt閟 au nom de notre patrie dans la province : $PROV$.;Partisanen erheben sich f黵 uns in $PROV$.;;Levantamiento partisano en nuestro favor en $PROV$.;;;;;;;;;x
+PARTISANS_BTN1;好的;OK;OK;;Aceptar;;;;;;;;;x
+PARTISANS_BTN2;好的;OK;OK;;Aceptar;;;;;;;;;x
+PARTISANS_BTN3;查看;Aller ?Goto;;Ir all?;;;;;;;;x
+PARTISANS_MAP;游击队!;Partisans !;Partisanen!;;artisanos!;;;;;;;;;x
+MAJOREVENTHAPPENOTHEROPTION_SETUP;当别国发生了多选项的重大事件;Lorsqu'un 関閚ement ?choix multiple majeur se produit pour un autre pays.;Wenn ein wichtiges Ereignis mit mehreren Auswahlm鰃lichkeiten f黵 ein anderes Land eintritt.;;Cuando a otro pa韘 le ocurra un suceso importante con m鷏tiples opciones.;;;;;;;;;x
+MAJOREVENTHAPPENOTHEROPTION_HEADER;$foreign_minister$ 报告;$foreign_minister$ a r閐ig?un rapport concernant :;;;$foreign_minister$ nos informa sobre;;;;;;;;;x
+MAJOREVENTHAPPENOTHEROPTION_1;$COUNTRY$;$COUNTRY$.;$COUNTRY$;$COUNTRY$;$COUNTRY$;$COUNTRY$;$COUNTRY$;$COUNTRY$;;;;;;x
+MAJOREVENTHAPPENOTHEROPTION_2;我们的外交人员听说有如下事件;Notre ambassade a appris que lorsque;;;Nuestra embajada se ha enterado de que ha ocurrido;;;;;;;;;x
+MAJOREVENTHAPPENOTHEROPTION_3;$EVENT$;$EVENT$;$EVENT$;$EVENT$.;$EVENT$;$EVENT$,;$EVENT$;$EVENT$;;;;;;x
+MAJOREVENTHAPPENOTHEROPTION_4;在该国发生了，而他们在此事件中选择了;avait eu lieu, ils avaient choisi de;;;y han escogido;;;;;;;;;x
+MAJOREVENTHAPPENOTHEROPTION_5;$OPTION$;$OPTION$;$OPTION$;$OPTION$;$OPTION$;$OPTION$;$OPTION$;$OPTION$;;;;;;x
+MAJOREVENTHAPPENOTHEROPTION_6;作为他们的行动;parmi les choix qui leur 閠aient offerts.;gew鋒lt haben..;jako opcj?dzia砤nia.;como curso de acci髇.;.;閟 cselekedett is.;jako svoji volbu.;;;;;;x
+MAJOREVENTHAPPENOTHEROPTION_LOG;重大事件：$COUNTRY$ 在 $EVENT$ 中选择了 $OPTION$ 。;蓈閚ement majeur : $COUNTRY$ a choisi de $OPTION$ lors de $EVENT$.;Ereignis: $OPTION$ in $EVENT$ f黵 $COUNTRY$.;$COUNTRY$. $EVENT$. $OPTION$;Suceso importante: $OPTION$ en $EVENT$ para $COUNTRY$.;Evento: $OPTION$ per $EVENT$ in $COUNTRY$.;Esem閚y: $COUNTRY$ nemzete a/az $OPTION$ lehet鮯間et v醠asztotta erre az esem閚yre v醠aszolva: $EVENT$.;Ud醠ost: $OPTION$ v $EVENT$ pro $COUNTRY$.;;;;;;x
+MAJOREVENTHAPPENOTHEROPTION_BTN1;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+MAJOREVENTHAPPENOTHEROPTION_BTN2;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+MAJOREVENTHAPPENOTHEROPTION_BTN3;查看;ALLER ?GOTO;ID?DO;Ir all?ANDARE;Menj ide:;P谽J蚑 NA;;;;;;x
+MAJOREVENTHAPPENOTHEROPTION_MAP;*;*;*;*;*;*;*;;;;;;;x
+MAJOREVENTHAPPENOTHER_SETUP;当别国发生了单选项的重大事件;Lorsqu'un 関閚ement ?choix unique se produit pour un autre pays.;Wenn ein wichtiges Ereignis mit nur einer Auswahlm鰃lichkeit f黵 ein anderes Land eintritt.;;Cuando a otro pa韘 le ocurra un suceso importante con una 鷑ica opci髇.;;;;;;;;;x
+MAJOREVENTHAPPENOTHER_HEADER;$foreign_minister$ 报告;Selon les rapports de $foreign_minister$ concernant;;;$foreign_minister$ informa sobre;;;;;;;;;x
+MAJOREVENTHAPPENOTHER_1;$COUNTRY$;$COUNTRY$,;$COUNTRY$;$COUNTRY$;$COUNTRY$;$COUNTRY$;$COUNTRY$;$COUNTRY$;;;;;;x
+MAJOREVENTHAPPENOTHER_2;似乎有如下事件;il semble que;;;Parece que;;;;;;;;;x
+MAJOREVENTHAPPENOTHER_3;$EVENT$;$EVENT$;$EVENT$;$EVENT$;$EVENT$;$EVENT$,;$EVENT$;$EVENT$;;;;;;x
+MAJOREVENTHAPPENOTHER_4;$EVENTDESC$;$EVENTDESC$;$EVENTDESC$;$EVENTDESC$;$EVENTDESC$;$EVENTDESC$;$EVENTDESC$;;;;;;;x
+MAJOREVENTHAPPENOTHER_5;在该国发生了;ai concern?leur pays.;;;les ha sucedido;;;;;;;;;x
+MAJOREVENTHAPPENOTHER_6;*;*;*;*;*;*;*;;;;;;;x
+MAJOREVENTHAPPENOTHER_LOG;重大事件：$COUNTRY$ 发生了 $EVENT$ 。;蓈閚ement majeur : $EVENT$ a eu lieu pour $COUNTRY$.;Ereignis: $EVENT$ in $COUNTRY$.;$COUNTRY$. $EVENT$.;Suceso importante: $EVENT$ en $COUNTRY$.;Evento: $EVENT$ in $COUNTRY$.;Esem閚y: $EVENT$ $COUNTRY$ nemzet閚閘.;Ud醠ost: $EVENT$ v $COUNTRY$.;;;;;;x
+MAJOREVENTHAPPENOTHER_BTN1;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+MAJOREVENTHAPPENOTHER_BTN2;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+MAJOREVENTHAPPENOTHER_BTN3;*;*;*;*;*;*;*;;;;;;;x
+MAJOREVENTHAPPENOTHER_MAP;*;*;*;*;*;*;*;;;;;;;x
+BUILDING_DONE_SETUP;当建设完成;Lorsque la construction est termin閑.;Wenn ein Geb鋟de vollendet wird.;Kiedy budowa jest zako馽zona.;Cuando se finalice un edificio.;Quando un edificio ?stato completato;Mikor egy 閜韙kez閟 befejez鮠ik.;Kdy?je dokon鑕na budova.;;;;;;x
+BUILDING_DONE_HEADER;建设完成;Construction termin閑.;Geb鋟de ist fertig.;Uko馽zono budow?;Edificio completado.;Edificio completato.;蓀韙m閚y elk閟z黮t.;Budova je dokon鑕na.;;;;;;x
+BUILDING_DONE_1;$NAME$;La construction de $NAME$;$NAME$;Budynek $NAME$;$NAME$;$NAME$;A/az $NAME$;$NAME$;;;;;;x
+BUILDING_DONE_2;在如下省份;dans la province;in der Provinz;w prowincji;en la provincia;nella provincia di;elk閟z黮t a/az;v provincii;;;;;;x
+BUILDING_DONE_3;$PROV$;$PROV$;$PROV$;$PROV$;$PROV$;$PROV$;$PROV$;$PROV$;;;;;;x
+BUILDING_DONE_4;已经完成建设。;est achev閑.;ist fertig.;zosta?uko馽zony.;se ha completado.;?stato completato.;nev?tartom醤yodban.;je hotova.;;;;;;x
+BUILDING_DONE_5;*;*;*;*;*;*;*;;;;;;;x
+BUILDING_DONE_6;*;*;*;*;*;*;*;;;;;;;x
+BUILDING_DONE_LOG;$NAME$ 已经在 $PROV$ 建设完成。;$NAME$ a 閠?construit dans la province : $PROV$.;$NAME$ wurde in $PROV$ gebaut.;Zbudowano $NAME$ w prowincji $PROV$.;Se ha construido $NAME$ en $PROV$.;$NAME$: costruito in $PROV$.;$NAME$ 閜黮t $PROV$ nev?tartom醤yodban.;$NAME$ byla postavena v $PROV$.;;;;;;x
+BUILDING_DONE_BTN1;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+BUILDING_DONE_BTN2;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+BUILDING_DONE_BTN3;查看;ALLER ?GOTO;ID?DO;Ir all?ANDARE;Menj ide:;P谽J蚑 NA;;;;;;x
+BUILDING_DONE_MAP;$NAME$ 已经在 $PROV$ 完成建设。;$NAME$ a 閠?construit dans la province : $PROV$.;$NAME$ wurde in $PROV$ gebaut.;Zbudowano $NAME$ w prowincji $PROV$.;Se ha construido $NAME$ en $PROV$.;$NAME$: costruito in $PROV$.;$NAME$ 閜黮t $PROV$ nev?tartom醤yodban.;$NAME$ byla postavena v $PROV$.;;;;;;x
+TRIGMOD_SETUP;当你受到一个修正因素的影响(如厄勒海峡通行税);Quand vous 阾es affect?par un modificateur activable (ex p閍ge maritime).;Wenn Sie von einem ausgel鰏ten Modifikator betroffen werden (z. B. Sundzoll);Kiedy modyfikator zwi箊any z okre渓onym wydarzeniem wp硑wa na twoje pa駍two (np. c硂 narzucone przez pa駍two trzecie);Cuando te veas afectado por un modificador desencadenado (como el sonido de peaje);Quando subisci l'influenza di un modificatore condizionato (ad es. il Pedaggio sullo Stretto);Mikor valami esem閚y m骴osul醩a van r醖 hat醩sal (kor醔bi hang-v醡);Kdy?jste subjektem trojn醩obn閔o modifik醫oru;;;;;;x
+TRIGMOD_HEADER;$head_of_government$ 报告;$head_of_government$ signale;;;$head_of_government$ informa de;;;;;;;;;x
+TRIGMOD_1;$NAME$;que $NAME$ s'est produit.;$NAME$;$NAME$;$NAME$;$NAME$;$NAME$;$NAME$;;;;;;x
+TRIGMOD_2;$MONARCHTITLE$，我国发生了 $NAME$ 。;$MONARCHTITLE$, $NAME$ s'est produit pour notre pays.;$MONARCHTITLE$;$NAME$;$MONARCHTITLE$, nos ha ocurrido $NAME$.;$MONARCHTITLE$, si ?verificato: $NAME$.;$NAME$ t鰎t閚t vel黱k.;$MONARCHTITLE$, $NAME$ se n醡 p鴌hodilo.;;;;;;x
+TRIGMOD_3;*;*;*;*;*;*;*;;;;;;;x
+TRIGMOD_4;*;*;*;*;*;*;*;;;;;;;x
+TRIGMOD_5;效果:;Effet :;Effekt:;Efekt:;Efecto:;Effetto:;Hat醩:;Efekt:;;;;;;x
+TRIGMOD_6;$EFFECT$;$EFFECT$;$EFFECT$;$EFFECT$;$EFFECT$;$EFFECT$;$EFFECT$;$EFFECT$;;;;;;x
+TRIGMOD_LOG;我国发生了 $NAME$ 。;$NAME$ nous est arriv?;Uns ist ein $NAME$ widerfahren.;$NAME$;Nos ha ocurrido $NAME$.;Si ?verificato $NAME$.;$NAME$ t鰎t閚t vel黱k.;P鴌hodilo se n醡 $NAME$.;;;;;;x
+TRIGMOD_BTN1;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+TRIGMOD_BTN2;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+TRIGMOD_BTN3;详情;D閠ails;Details;Szczeg蟪y;Detalles;Dettagli;R閟zletek;Detaily;;;;;;x
+TRIGMOD_MAP;*;*;*;*;*;*;*;;;;;;;x
+TRIGMODLOST_SETUP;当一个修正因素的影响已经终止(如厄勒海峡通行税);Lorsqu'un modificateur activable ne fait plus effet (ex p閍ge maritime).;Wenn der Effekt eines ausgel鰏ten Modifikators endet (z. B. Sundzoll);Kiedy modyfikator zwi箊any z okre渓onym wydarzeniem przestaje oddzia硑wa?na twoje pa駍two (np. c硂 narzucone przez pa駍two trzecie);Cuando cese el efecto de un modificador desencadenado (como el sonido de peaje).;Quando l'effetto di un modificatore condizionato (ad es. il Pedaggio sullo Stretto) cessa;Mikor egy m骴os韙醩t okoz?esem閚y befejez鮠ik (kor醔bi hang-v醡);Kdy?jste subjektem trojn醩obn閔o modifik醫oru.;;;;;;x
+TRIGMODLOST_HEADER;$head_of_government$ 报告;$head_of_government$ nous informe que;;;$head_of_government$ informa de;;;;;;;;;x
+TRIGMODLOST_1;$NAME$;$NAME$ a eu lieu.;$NAME$;$NAME$;$NAME$;$NAME$;$NAME$;$NAME$;;;;;;x
+TRIGMODLOST_2;我们已经失去了 $NAME$ 带来的效果;$NAME$ n'a plus aucun effet sur nous.;;Koniec $NAME$.;Hemos perdido los efectos de $NAME$;$EXPLANATION$;$EXPLANATION$;Kdy?ztrat韒e efekty $NAME$;;;;;;x
+TRIGMODLOST_3;*;*;*;*;*;*;*;;;;;;;x
+TRIGMODLOST_4;*;*;*;*;*;*;*;;;;;;;x
+TRIGMODLOST_5;效果:;Effet :;Effekt:;Efekt:;Efecto:;Effetto:;Hat醩:;Efekt:;;;;;;x
+TRIGMODLOST_6;$EFFECT$;$EFFECT$;$EFFECT$;$EFFECT$;$EFFECT$;$EFFECT$;$EFFECT$;$EFFECT$;;;;;;x
+TRIGMODLOST_LOG;$NAME$ 已经不再影响我们。;$NAME$ ne nous affecte plus.;$NAME$ beeinflusst uns nicht mehr.;$NAME$ nie ma ju?na nas wp硑wu.;$NAME$ ya no nos afecta.;$NAME$ non ha pi?alcuna influenza su di noi.;A/az $NAME$ m醨 nincs r醤k hat醩sal.;$NAME$ se u?na n醩 nevztahuje.;;;;;;x
+TRIGMODLOST_BTN1;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+TRIGMODLOST_BTN2;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+TRIGMODLOST_BTN3;详情;D閠ails;Details;Szczeg蟪y;Detalles;Dettagli;R閟zletek;Detaily;;;;;;x
+TRIGMODLOST_MAP;*;*;*;*;*;*;*;;;;;;;x
+LEADERDIED_SETUP;当我们的一个指挥官去世;Lorsque l'un de nos leaders meurt.;Wenn einer unserer Anf黨rer stirbt;Kiedy jeden z naszych dow骴c體 umiera;Cuando muere uno de nuestros l韉eres;Quando muore uno dei nostri leader;Ha az egyik vez閞黱k meghal;Kdy?jeden z na歩ch v鵧c?zem鴈;;;;;;x
+LEADERDIED_HEADER;$MESSENGER$;$MESSENGER$;$MESSENGER$;$MESSENGER$;$MESSENGER$;$MESSENGER$;$MESSENGER$;$MESSENGER$;;;;;;x
+LEADERDIED_1;一位军事将领去世!;Un de nos leaders militaires est mort !;Ein Kommandauer ist gestorben!;Dow骴ca umar?;a muerto un l韉er militar!;Un condottiero ?morto!;Egy katonai vezet鮪k elesett!;Vojensk?velitel zem鴈l!;;;;;;x
+LEADERDIED_2;$MONARCHTITLE$，我们收到了不幸的消息;$MONARCHTITLE$, nous avons en effet de tristes nouvelles.;$MONARCHTITLE$, wir haben wahrlich schlechte Nachrichten:;Mamy smutne wie渃i - ;$MONARCHTITLE$, tenemos malas noticias;$MONARCHTITLE$, abbiamo pessime notizie.;Rossz h韗eket hoztunk?$MONARCHTITLE$, p鴌n釟韒e 歱atn?zpr醰y;;;;;;x
+LEADERDIED_3;$TYPE$ $NAME$ 已经去世!;$TYPE$ $NAME$ est mort !;$TYPE$ $NAME$ ist tot!;$TYPE$ $NAME$ nie 縴je!;?TYPE$ $NAME$ ha muerto!;$TYPE$ $NAME$ ?morto!;$NAME$, a nagyszer?$TYPE$ halott!;$TYPE$ $NAME$ je mrtev!;;;;;;x
+LEADERDIED_4;他为我们提供了忠诚而良好的服务。最有最好的葬礼才配得上这位战场上的巨人。;Il nous a servi avec loyaut?et comp閠ence. Un tel titan du champ de bataille m閞ite les plus belles fun閞ailles.;Er hat uns treu und gut gedient. F黵 solch einen Koloss des Schlachtfelds ist nur das glorreichste Begr鋌nis gut genug.;S硊縴?nam dobrze i wiernie. Posta?tego formatu zas硊guje na najwspanialszy pogrzeb. ;Nos sirvi?con eficacia y lealtad. Solo el mejor funeral ser?apropiado para tal coloso de la batalla.;Ci ha servito bene e fedelmente, sar?necessario allestire una solenne commemorazione funebre per onorare un simile eroe.;H鹲間gel 閟 becs黮ettel szolg醠t minket, kij醨 neki a legpomp醶atosabb temet閟!;Slou瀒l n醡 v靣n?a dob鴈, takov?velik醤 bitevn韈h pol?si zaslou烅 jen ten nejd鵶tojn靔氻 poh鴈b.;;;;;;x
+LEADERDIED_5;*;*;*;*;*;*;*;;;;;;;x
+LEADERDIED_6;*;*;*;*;*;*;*;;;;;;;x
+LEADERDIED_LOG;$TYPE$ $NAME$ 已经去世。;$TYPE$ $NAME$ est mort.;$TYPE$ $NAME$ ist gestorben.;$TYPE$ $NAME$ umiera.;$TYPE$ $NAME$ ha muerto.;$TYPE$ $NAME$ ?morto.;$NAME$ $TYPE$ elesett.;$TYPE$ $NAME$ zem鴈l.;;;;;;x
+LEADERDIED_BTN1;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+LEADERDIED_BTN2;好的;OK;OK;OK;Aceptar;OK;Rendben;OK;;;;;;x
+LEADERDIED_BTN3;查看;Aller ?GOTO;Id?do;Ir all?Andare;Ugr醩;P鴈j韙 na;;;;;;x
+LEADERDIED_MAP;*;*;*;*;*;*;*;;;;;;;x

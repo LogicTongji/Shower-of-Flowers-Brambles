@@ -1,0 +1,67 @@
+theatre ={
+	name = "山西绥靖公署"
+	location = 5174
+	leader = 503001
+	regiment = { type = hq_brigade name = "绥署长官部" experience = 25 historical_model = 3 }
+	regiment = { type = infantry_brigade name = "直属警卫旅" experience = 25 historical_model = 3 }
+	regiment = { type = artillery_brigade name = "直属炮兵团" experience = 25 historical_model = 2 }
+		division= {		
+				name = "太原卫戌部队"	
+				location = 5174
+				regiment = { type = garrison_brigade name = "卫戌部队" experience = 10 historical_model = 3 }
+				regiment = { type = garrison_brigade name = "卫戌部队" experience = 10 historical_model = 3 }
+				regiment = { type = garrison_brigade name = "卫戌部队" experience = 10 historical_model = 3 }
+				regiment = { type = garrison_brigade name = "卫戌部队" experience = 10 historical_model = 3 }
+				}
+    division= {		
+				name = "太原卫戌部队"	
+				location = 5174
+				regiment = { type = garrison_brigade name = "卫戌部队" experience = 10 historical_model = 3 }
+				regiment = { type = garrison_brigade name = "卫戌部队" experience = 10 historical_model = 3 }
+				regiment = { type = garrison_brigade name = "卫戌部队" experience = 10 historical_model = 3 }
+				regiment = { type = garrison_brigade name = "卫戌部队" experience = 10 historical_model = 3 }
+				}
+				corps = {
+	name = "陆军第101军"
+	location = 5174
+	regiment = { type = hq_brigade name = "陆军第101师长官部" historical_model = 0 }
+			division= {
+			name = "陆军第271师"
+			location = 5174
+			regiment = { type = infantry_brigade experience = 10 historical_model = 3 }
+			regiment = { type = infantry_brigade experience = 10 historical_model = 3 }
+			}
+				division= {
+			name = "陆军第272师"
+			location = 5174
+			regiment = { type = infantry_brigade experience = 10 historical_model = 3 }
+			regiment = { type = infantry_brigade experience = 10 historical_model = 3 }
+			}
+				division= {
+			name = "陆军第273师"
+			location = 5174
+			regiment = { type = infantry_brigade experience = 10 historical_model = 3 }
+			regiment = { type = infantry_brigade experience = 10 historical_model = 3 }
+			}
+		}
+	army = {
+		name = "晋陕绥边区警备司令部"
+		location = 7411
+		leader = 503026
+		regiment = { type = hq_brigade name = "晋陕绥边区警备司令部" experience = 10 historical_model = 2 }
+		regiment = { type = infantry_brigade name = "直属保安团" experience = 10 historical_model = 2 }
+		division= {
+			name = "第22军"
+			location = 7411
+			leader = 503025
+			regiment = { type = infantry_brigade name = "第86师" experience = 10 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "新11旅" experience = 5 historical_model = 2 }
+			}
+		division= {
+			name = "晋陕绥边区保安团"
+			location = 7411
+			regiment = { type = infantry_brigade experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade experience = 5 historical_model = 2 }
+			}
+		}
+	}

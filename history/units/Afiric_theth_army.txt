@@ -1,0 +1,120 @@
+army = {
+		name = "第10军团"
+		location = 5611
+		regiment = { type = hq_brigade name = "第X军团指挥部" historical_model = 4 }
+corps = {
+		name = "第30军"
+		location = 5611
+		leader = 60361 #Walker W.H.
+		regiment = { type = hq_brigade name = "第30军指挥部" historical_model = 4 }
+		division= {
+			expeditionary_owner = AST
+			name = "澳大利亚第9师"
+			location = 5611
+			regiment = { type = infantry_brigade name = "第26旅" historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第27旅" historical_model = 4 }
+				regiment = { type = engineer_brigade historical_model = 4 }
+				regiment = { type = artillery_brigade historical_model = 4 }
+		}
+		division= {
+			name = "苏格兰第51高地师"
+			location = 5611
+			regiment = { type = infantry_brigade experience = 50  historical_model = 5 }
+			regiment = { type = infantry_brigade historical_model = 4 }
+			regiment = { type = infantry_brigade experience = 50  historical_model = 5 }	
+		}
+		division= {
+			expeditionary_owner = NZL
+			name = "新西兰师"
+			location = 5611
+			regiment = { type = infantry_brigade name = "第4步兵旅" historical_model = 1 }
+				regiment = { type = infantry_brigade name = "第5步兵旅" historical_model = 1 }
+				regiment = { type = infantry_brigade name = "第6步兵旅" historical_model = 1 }
+	
+		}
+		division= {
+			expeditionary_owner = SAF
+			name = "南非第1师"
+			location = 5611
+			regiment = { type = infantry_brigade experience = 50  historical_model = 5 }
+			regiment = { type = infantry_brigade historical_model = 4 }
+			regiment = { type = infantry_brigade experience = 50  historical_model = 5 }
+			
+		}
+}
+corps = {
+		name = "第13军"
+		location = 5611
+		leader = 60361 #Walker W.H.
+		regiment = { type = hq_brigade name = "第13军指挥部" historical_model = 4 }
+		division= {
+				name = "第7装甲师"
+				location = 5611
+				regiment = { type = light_armor_brigade name = "第4轻装甲旅" historical_model = 2 }
+				regiment = { type = light_armor_brigade name = "第7轻装甲旅" historical_model = 2 }
+				regiment = { type = infantry_brigade name = "第22警卫旅" historical_model = 1 }
+				regiment = { type = motorized_brigade name = "第7支援大队" historical_model = 2 }
+			}
+division= {
+			name = "第50诺森伯兰师"
+			location = 5611
+			leader = 1256 # Ramsden
+			regiment = { type = motorized_brigade name = "第69步兵旅" historical_model = 2 }
+			regiment = { type = motorized_brigade name = "第151步兵旅" historical_model = 2 }
+		}
+		division= {
+			name = "第44师"
+			location = 5611
+			leader= 1101 # Morgan
+			regiment = { type = motorized_brigade name = "第131步兵旅" historical_model = 2 }
+			regiment = { type = motorized_brigade name = "第132步兵旅" historical_model = 2 }
+			regiment = { type = motorized_brigade name = "第133步兵旅" historical_model = 2 }
+		}
+}
+corps = {
+		name = "第10军"
+		location = 5611
+		leader = 60361 #Walker W.H.
+		regiment = { type = hq_brigade name = "第10军指挥部" historical_model = 4 }
+		division= {
+			name = "第1装甲师"
+			location = 5611
+			regiment = { type = armor_brigade name = "第1装甲旅" historical_model = 2 }
+			regiment = { type = armor_brigade name = "第2装甲旅" historical_model = 2 }
+			regiment = { type = motorized_brigade name = "第1支援大队" historical_model = 2 }
+		}
+		division= {
+			name = "第9装甲师"
+			location = 5611
+			regiment = { type = armor_brigade name = "第27装甲旅" historical_model = 2 }
+			regiment = { type = armor_brigade name = "第28装甲旅" historical_model = 2 }
+			regiment = { type = motorized_brigade name = "第9支援大队" historical_model = 2 }
+		}
+		division= {
+			name = "第6装甲师"
+			location = 5611
+			regiment = { type = light_armor_brigade name = "第17轻装甲旅" historical_model = 2 }
+			regiment = { type = light_armor_brigade name = "第18轻装甲旅" historical_model = 2 }
+			regiment = { type = motorized_brigade name = "第6支援大队" historical_model = 2 }
+		}
+division= {
+			name = "第152步兵旅"
+			location = 5611
+			leader = 1256 # Ramsden
+			regiment = { type = motorized_brigade historical_model = 2 }
+		}
+			division= {
+					name = "第201近卫旅"
+					location = 5611 # Gazala
+					leader = 6243 # Bitossi
+					regiment = { type = imperial_brigade historical_model = 1 }
+		}
+		division= {
+					name = "第4印度步兵师"
+					location = 5611
+					regiment = { type = infantry_brigade historical_model  = 4 }
+					regiment = { type = infantry_brigade historical_model = 4 }
+					regiment = { type = infantry_brigade historical_model = 4 }
+				}
+}
+}

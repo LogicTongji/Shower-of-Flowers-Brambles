@@ -1,0 +1,88 @@
+country_event = {
+	id = 20183311
+	trigger = {
+		ideology_group = fascism
+		or = {
+			chemical_warfare_agents = 1
+			biological_warfare_agent = 1
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	only_fire_once = yes
+	title = "event20183311_title"
+	desc = "event20183311_desc"
+	picture = "SF_chemical_weapon"
+	option = {
+		name = "event20183311_op"
+		dissent = -1
+	}
+}
+
+country_event = {
+	id = 20183312
+	trigger = {
+		ideology_group = democracy
+		or = {
+			chemical_warfare_agents = 1
+			biological_warfare_agent = 1
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	only_fire_once = yes
+	title = "event20183312_title"
+	desc = "event20183312_desc"
+	picture = "SF_chemical_weapon"
+	option = {
+		name = "event20183312_op"
+		dissent = -2
+	}
+}
+
+country_event = {
+	id = 20183313
+	trigger = {
+		ideology_group = communism
+		or = {
+			chemical_warfare_agents = 1
+			biological_warfare_agent = 1
+		}
+	}
+	mean_time_to_happen = {
+		years = 4
+	}
+	only_fire_once = yes
+	title = "event20183313_title"
+	desc = "event20183313_desc"
+	picture = "SF_chemical_weapon"
+	option = {
+		name = "event20183313_op"
+		dissent = -10
+	}
+}
+
+country_event = {
+	id = 20183314
+	trigger = {
+		or = {
+			chemical_warfare_agents = 1
+			biological_warfare_agent = 1
+		}
+	}
+	mean_time_to_happen = {
+		years = 4
+	}
+	only_fire_once = yes
+	title = "event20183314_title"
+	desc = "event20183314_desc"
+	picture = "SF_chemical_weapon"
+	option = {
+		name = "event20183314_op"
+		dissent = 20
+		popularity = -10
+		organisation = -10
+	}
+}

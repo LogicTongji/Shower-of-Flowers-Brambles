@@ -1,0 +1,154 @@
+##########################
+#   长征·西路军事件组   #
+##########################
+#取消第二中央
+country_event = {
+	id = 193617
+	major = yes
+		fire_only_once = yes
+	title = "Event193617title"	
+	subtitle = "Event193617subtitle"
+	desc = "Event193617desc"
+	picture = "Event193614"
+	trigger = {
+		tag = CHC	 
+		not = { year = 1937 }     
+		date = 1936.6.6
+	}
+	option = {
+		name = "Event193617option" 
+                stalinist_PRC = { popularity = 5 } 
+                 set_country_flag = FrontArmy_go_back_Shannxi
+                dissent = -5
+		national_unity = 10                    
+		
+	}
+}
+#会宁会师
+country_event = {
+	id = 1000082
+	is_triggered_only = yes
+	title = "Event1000082title"
+	subtitle = "Event1000082subtitle"
+	desc = "Event1000082desc"
+	picture = "Event1000082"
+	option = {
+		name = "Event1000082option"
+		load_oob = "CHC_Front_Army.txt"
+		national_unity = 5
+		manpower = 10
+		ai_chance = { factor = 100 }
+	}
+}
+#西路军
+country_event = {
+	id = 1000084
+	title = "Event1000084title"
+	subtitle = "Event1000084subtitle"
+	desc = "Event1000084desc"
+	picture = "Event10000842"
+	trigger = {
+		tag = CHC
+		war_with = CHI
+		not = { has_global_flag = Event1000084 }
+		not = { has_country_flag = Event10000842 }
+		not = { has_country_flag = xi_an_incident }
+		has_country_flag = FrontArmy_chc
+		date = 1936.11.1
+		not = { year = 1937 }
+	}
+	option = {
+		name = "Event1000084option"
+		load_oob = "CHC_West_Army.txt"
+		set_global_flag = Event1000084
+		set_country_flag = Event10000842
+		CQM = { war = { target = CHC } }
+		CNM = { war = { target = CHC } }
+		CQM = { country_event = 1000085 }
+		CQM = { any_owned = { limit = { province_id = 9115 } secede_province = CHC }}
+		CQM = { any_owned = { limit = { province_id = 9141 } secede_province = CHC }}
+		CNM = { country_event = 1000086 }
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000085
+	is_triggered_only = yes
+	title = "Event1000085title"
+	desc = "Event1000085desc"
+	picture = "CHI_Flag"
+	option = {
+		name = "Event1000085option"
+		create_alliance = CNM
+		create_alliance = CHI
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000086
+	is_triggered_only = yes
+	title = "Event1000085title"
+	desc = "Event1000085desc"
+	picture = "CHI_Flag"
+	option = {
+		name = "Event1000085option"
+		create_alliance = CQM
+		create_alliance = CHI
+		ai_chance = { factor = 100 }
+	}
+}
+#西征失败
+country_event = {
+	id = 1000087
+	title = "Event1000087title"
+	desc = "Event1000087desc"
+	picture = "Event1000087"
+	trigger = {
+		tag = CHC
+		has_global_flag = Event1000084
+		not = { CHC = { controls = 9115 }}
+		not = { CHC = { controls = 9141 }}
+		not = { has_country_flag = Event1000087 }
+	}
+	option = {
+		name = "Event1000087option"
+		cir_global_flag = Event1000084
+		set_country_flag = Event1000087
+		remove_brigade = "西路军总指挥部"
+		remove_brigade = "红4方面军指挥部"
+		remove_brigade = "第25师"
+		remove_brigade = "第27师"
+		remove_brigade = "第88师"
+		remove_brigade = "第89师"
+		remove_brigade = "第13师"
+		remove_brigade = "第15师"
+		manpower = 25
+		CQM = { leave_alliance = CNM leave_alliance = CHI }
+		CNM = { leave_alliance = CQM leave_alliance = CHI }
+		CHC = { any_owned = { limit = { province_id = 9115 } secede_province = CQM }}
+		CHC = { any_owned = { limit = { province_id = 9141 } secede_province = CQM }}
+		end_war = CQM
+		end_war = CNM
+		ai_chance = { factor = 100 }
+	}
+}
+#西征成功
+country_event = {
+	id = 1000089
+	major = yes
+	is_triggered_only = yes
+	title = "Event1000089title"
+	desc = "Event1000089desc"
+	picture = "Event1000084"
+	option = {
+		  name = "Event1000089option"
+		remove_brigade = "西路军总指挥部"
+		remove_brigade = "红4方面军指挥部"
+		  dissent = -5
+		  CQM = { leave_alliance = CNM leave_alliance = CHI }
+		  end_war = CQM
+		  load_oob = "CHC_Soviet_Support.txt"
+		  9143 = { industry = 1 }
+		  ai_chance = { factor = 100 }
+	}
+}

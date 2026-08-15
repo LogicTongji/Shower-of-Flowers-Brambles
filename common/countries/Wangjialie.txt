@@ -1,0 +1,36 @@
+color = { 221  178  83 }
+graphical_culture = Japanese
+
+
+default_templates = {
+	binary_infantry = {
+		infantry_brigade
+		infantry_brigade
+	}
+	binary_milita = {
+		militia_brigade
+		militia_brigade
+	}
+	binary_armoured = {
+		armor_brigade
+		motorized_brigade
+	}
+	binary_cavalry = {
+		cavalry_brigade
+		cavalry_brigade
+	}
+}
+unit_names = {
+}
+ministers = {
+	20211241 = {
+		name = "Íõ¼ÒÁÒ"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M20211241
+		head_of_state = stern_imperialist
+		head_of_state = benevolent_gentleman
+		head_of_state = benevolent_gentleman
+		start_date = 1930.1.1
+	}
+}

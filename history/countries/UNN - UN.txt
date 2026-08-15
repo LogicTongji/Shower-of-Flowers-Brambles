@@ -1,0 +1,45 @@
+capital = 4342
+government = social_liberalism
+ideology = social_liberal
+head_of_state = 990
+head_of_government = 990
+foreign_minister = 990
+armament_minister = 990
+minister_of_security = 990
+minister_of_intelligence = 990
+chief_of_staff = 991
+chief_of_army = 991
+chief_of_navy = 991
+chief_of_air = 991
+alignment = { x = 200 y = 200.0 }
+neutrality = 100
+national_unity = 100
+money = 1
+
+popularity = { 
+	national_socialist = 0
+	fascistic = 0
+	paternal_autocrat = 0
+	social_conservative = 0
+	market_liberal = 0
+	social_liberal = 100
+	social_democrat = 0
+	left_wing_radical = 0
+	leninist = 0
+	stalinist = 0
+}
+
+organization = { 
+	national_socialist = 0
+	fascistic = 0
+	paternal_autocrat = 10
+	social_conservative = 40
+	market_liberal = 0
+	social_liberal = 100
+	social_democrat = 10
+	left_wing_radical = 40
+	leninist = 55
+	stalinist = 90
+}
+
+conscription_law = two_year_draft

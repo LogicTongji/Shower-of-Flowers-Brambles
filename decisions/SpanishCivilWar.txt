@@ -1,0 +1,197 @@
+####################
+# Republican Spain #
+####################
+diplomatic_decisions = {
+
+	# France
+	spanish_civil_war_french_intervention = {
+		potential = {
+			tag = FRA
+			not = { has_country_flag = french_intervention_spanish_civil_war }
+			exists = SPA
+			exists = SPR
+			SPA = { war_with = SPR }
+			not = { alliance_with = SPA }
+			SPR = { not = { faction = axis } }
+			SPA = { not = { faction = allies } }
+		}
+		allow = {
+			not = { government = national_socialism }
+			not = { government = fascist_republic }
+			not = { government = germanic_fascist_republic }
+			not = { government = right_wing_republic }
+			not = { government = hungarian_right_wing_republic }
+			not = { government = right_wing_autocrat }
+			not = { government = absolute_monarchy }
+			not = { government = imperial }
+			not = { dissent = 1 }
+			popularity = 50
+			organisation = 50
+			not = { war_with = SPR }
+			not = { war_with = SOV }
+			not = { war_with = ENG }
+			not = { war_with = USA }
+		}
+		effect = {
+			set_country_flag = french_intervention_spanish_civil_war
+			relation = { who = SPR value = 20 }
+			relation = { who = SPA value = -15 }
+			SPR = { country_event = 2007 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	# United Kingdom
+	spanish_civil_war_british_intervention = {
+		potential = {
+			tag = ENG
+			not = { has_country_flag = british_intervention_spanish_civil_war }
+			exists = SPA
+			exists = SPR
+			SPA = { war_with = SPR }
+			not = { alliance_with = SPA }
+			SPR = { not = { faction = axis } }
+			SPA = { not = { faction = allies } }
+		}
+		allow = {
+			not = { government = national_socialism }
+			not = { government = fascist_republic }
+			not = { government = germanic_fascist_republic }
+			not = { government = right_wing_republic }
+			not = { government = hungarian_right_wing_republic }
+			not = { government = right_wing_autocrat }
+			not = { government = absolute_monarchy }
+			not = { government = imperial }
+			not = { dissent = 1 }
+			popularity = 50
+			organisation = 50
+			not = { war_with = SPR }
+			not = { war_with = SOV }
+			not = { war_with = FRA }
+			not = { war_with = USA }
+		}
+		effect = {
+			set_country_flag = british_intervention_spanish_civil_war
+			relation = { who = SPR value = 20 }
+			relation = { who = SPA value = -15 }
+			SPR = { country_event = 2008 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Soviet
+	spanish_civil_war_russian_intervention = {
+		potential = {
+			tag = SOV
+			not = { has_country_flag = russian_intervention_spanish_civil_war }
+			exists = SPA
+			exists = SPR
+			SPA = { war_with = SPR }
+			not = { alliance_with = SPA }
+			SPR = { not = { faction = axis } }
+			SPA = { not = { faction = allies } }
+		}
+		allow = {
+			not = { government = national_socialism }
+			not = { government = fascist_republic }
+			not = { government = germanic_fascist_republic }
+			not = { government = right_wing_republic }
+			not = { government = hungarian_right_wing_republic }
+			not = { government = right_wing_autocrat }
+			not = { government = absolute_monarchy }
+			not = { government = imperial }
+			not = { war_with = SPR }
+			not = { war_with = ENG }
+			not = { war_with = FRA }
+			not = { war_with = USA }
+		}
+		effect = {
+			set_country_flag = russian_intervention_spanish_civil_war
+			relation = { who = SPR value = 20 }
+			relation = { who = SPA value = -15 }
+			SPR = { country_event = 2009 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#####################
+	# Nationalist Spain #
+	#####################
+	# Germany
+	spanish_civil_war_german_intervention = {
+		potential = {
+			tag = GER
+			not = { has_country_flag = german_intervention_spanish_civil_war }
+			exists = SPA
+			exists = SPR
+			SPA = { war_with = SPR }
+			not = { alliance_with = SPR }
+			SPR = { not = { faction = axis } }
+			SPA = { not = { faction = allies } }
+		}
+		allow = {
+			or = {
+				government = national_socialism
+				government = fascist_republic
+				government = germanic_fascist_republic
+				government = right_wing_republic
+				government = hungarian_right_wing_republic
+				government = right_wing_autocrat
+				government = absolute_monarchy
+				government = imperial
+			}
+			not = { war_with = SPA }
+		}
+		effect = {
+			set_country_flag = german_intervention_spanish_civil_war
+			relation = { who = SPA value = 20 }
+			relation = { who = SPR value = -15 }
+			SPA = { country_event = 2010 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	# Italy
+	spanish_civil_war_italian_intervention = {
+		potential = {
+			tag = ITA
+			not = { has_country_flag = italian_intervention_spanish_civil_war }
+			exists = SPA
+			exists = SPR
+			SPA = { war_with = SPR }
+			not = { alliance_with = SPR }
+			SPR = { not = { faction = axis } }
+			SPA = { not = { faction = allies } }
+		}
+		allow = {
+			or = {
+				government = national_socialism
+				government = fascist_republic
+				government = germanic_fascist_republic
+				government = right_wing_republic
+				government = hungarian_right_wing_republic
+				government = right_wing_autocrat
+				government = absolute_monarchy
+				government = imperial
+			}
+			not = { war_with = SPA }
+		}
+		effect = {
+			set_country_flag = italian_intervention_spanish_civil_war
+			relation = { who = SPA value = 20 }
+			relation = { who = SPR value = -15 }
+			SPA = { country_event = 2011 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

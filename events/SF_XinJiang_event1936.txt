@@ -1,0 +1,101 @@
+#新疆事件组
+country_event = {
+	id = 7180
+ is_triggered_only = yes
+	title = "CXM_1"
+	desc = "CXM_2DCS"
+	picture = "CXM_flag"
+	option = {
+		name = "CXMOP"
+		CXM = { war = { target = SIK } }
+		load_oob = "CXM_KDS.txt"
+	}		
+}
+country_event = {
+	id = 7181
+ is_triggered_only = yes
+	title = "SIAT"
+	desc = "SIADCS"
+	picture = "SIK_flag"
+	option = {
+		name = "CXMOP"
+		     add_country_modifier = {
+			name = "SIAWAR_modifier"
+			duration = 70
+	}		
+  }
+}
+country_event = {
+	id = 7183
+ is_triggered_only = yes
+	title = "SOVP"
+	desc = "SOVPDCS"
+	picture = "SOV_flag"
+	option = {
+		name = "SOVOP"
+		SIK = { country_event = 7184 } 
+		ai_chance = { factor = 100 }
+	}
+		option = { 		
+		name = "SOV2POP"
+		 relation = { who = SIK value = -350 }
+		ai_chance = { factor = 0 }
+	}				
+}
+country_event = {
+	id = 7184
+ is_triggered_only = yes
+	title = "SIKP"
+	desc = "SIKDCS"
+	picture = "SIK_flag"
+	option = {
+		name = "CXMOP"
+		load_oob = "SOV_YZHUB.txt"
+		ai_chance = { factor = 100 }
+	}				
+}
+country_event = {
+	id = 7185
+ is_triggered_only = yes
+	title = "SIKP"
+	desc = "SIKDCS"
+	picture = "SIK_flag"
+	option = {
+		name = "CXMOP"
+		create_alliance = SIK
+		load_oob = "SOV_GHAmry.txt"
+		ai_chance = { factor = 100 }
+	}				
+}
+country_event = {
+	id = 7187
+ is_triggered_only = yes
+	title = "CLP"
+	desc = "CLDCS"
+	picture = "SIK_flag"
+	option = {
+		name = "CLEANOP"
+		    add_country_modifier = {
+			name = "SIACLA_modifier"
+			duration = 70
+			}
+ relation = { who = CHI value = -150 }
+	}				
+}
+country_event = {
+	id = 7188
+	major = yes
+ is_triggered_only = yes
+	title = "CLP2"
+	desc = "CLDCS2"
+	picture = "SIK_flag"
+	option = {
+		name = "CLEANOP1"
+		    add_country_modifier = {
+			name = "SIACLA2_modifier"
+			duration = 700
+			}
+ relation = { who = CHC value = -150
+ who = SOV value = -150 }
+	}				
+}

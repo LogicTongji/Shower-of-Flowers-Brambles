@@ -1,0 +1,78 @@
+######################
+#   中国统一事件组   #
+######################
+
+country_event = {
+	id = 1000167
+	is_triggered_only = yes
+	title = "Event1000167title"
+	desc = "Event1000167desc"
+	picture = "PRC_Flag"
+	option = {
+		name = "Event1000167option"
+		ai_chance = { factor = 100 }
+		CHC = { any_owned = { limit = { province_id = 4979 } secede_province = PRC }}
+		any_owned = { add_core = PRC remove_core = CHC }
+		PRC = { split_troops = 1.0 }
+	}
+}
+country_event = {
+	id = 1000168
+	is_triggered_only = yes
+	major = yes
+	title = "Event1000168title"
+	subtitle = "Event1000168subtitle"
+	desc = "Event1000168desc"
+	picture = "Event1000168"
+	option = {
+		name = "Event1000168option"
+		ai_chance = { factor = 100 }
+		inherit = CHC
+		4979 = { change_province_name = "北京" }
+		5017 = { change_province_name = "呼和浩特" }
+		8955 = { change_province_name = "乌鲁木齐" }
+		4685 = { change_province_name = "沈阳" }
+		4452 = { change_province_name = "长春" }
+	}
+}
+country_event = {
+	id = 1000169
+	is_triggered_only = yes
+	title = "Event1000169title"
+	desc = "Event1000169desc"
+	picture = "ROC_Flag"
+	option = {
+		name = "Event1000169option"
+		ai_chance = { factor = 100 }
+		any_owned = { add_core = ROC remove_core = THIS }
+		ROC = { split_troops = 1.0 }
+	}
+}
+country_event = {
+	id = 1000170
+	is_triggered_only = yes
+	major = yes
+	title = "Event1000170title"
+	desc = "Event1000170desc"
+	picture = "ROC_Flag"
+	option = {
+		name = "Event1000170option"
+		ai_chance = { factor = 100 }
+		inherit = CHI
+		inherit = CXK
+		inherit = CSC
+		inherit = CSX
+		inherit = CSY
+		inherit = CSD
+		inherit = CJC
+		inherit = CQM
+		inherit = CNM
+		inherit = CDB
+		inherit = CYN
+		inherit = CGX
+		inherit = CGD
+		4685 = { change_province_name = "沈阳" }
+		4452 = { change_province_name = "长春" }
+	}
+}
+

@@ -1,0 +1,84 @@
+theatre = {					
+	name = "广州行营"				
+	location = 5801		
+	regiment = { type = hq_brigade name = "行营长官部" experience = 20  historical_model = 4 }
+	regiment = { type = artillery_brigade name = "直属炮兵部队" experience = 30 builder = USA historical_model = 3 }
+army = {		
+			name = "第三兵团"				
+			location = 5801
+			leader = 502023 #张淦		
+			regiment = { type = hq_brigade name = "第三兵团司令部" experience = 20 historical_model = 3 }	
+			regiment = { type = infantry_brigade name = "警卫旅" experience = 20 historical_model = 4 }
+			regiment = { type = artillery_brigade name = "直属重炮团" experience = 20 historical_model = 3 }
+			corps = {		
+				name = "第7军" #桂系钢7军		
+				location = 5801
+				regiment = { type = hq_brigade name = "第7军指挥部" experience = 25 historical_model = 4 }
+				division = {			
+					name = "第171师"	
+					location = 5802
+					regiment = { type = bergsjaeger_brigade name = "第512旅" experience = 25 historical_model = 4 }
+					regiment = { type = bergsjaeger_brigade name = "第513旅" experience = 25 historical_model = 4 }
+					regiment = { type = artillery_brigade name = "第171炮兵团" experience = 25 historical_model = 3 }
+				}
+				division = {			
+					name = "第172师"	
+					location = 5802
+					regiment = { type = bergsjaeger_brigade name = "第515旅" experience = 25 historical_model = 4 }
+					regiment = { type = bergsjaeger_brigade name = "第516旅" experience = 25 historical_model = 4 }
+					regiment = { type = artillery_brigade name = "第172炮兵团" experience = 25 historical_model = 3 }
+				}
+				division = {			
+					name = "第224师"	
+					location = 5802
+					regiment = { type = bergsjaeger_brigade name = "第671旅" experience = 15 historical_model = 3 }
+					regiment = { type = bergsjaeger_brigade name = "第672旅" experience = 15 historical_model = 3 }
+				}
+			}
+			corps = {				
+				name = "第48军" #桂系		
+				location = 5773
+				regiment = { type = hq_brigade name = "第48军指挥部" experience = 15 historical_model = 3 }
+				division = {			
+					name = "第138师"	
+					location = 5773
+					regiment = { type = infantry_brigade name = "第413旅" experience = 15 historical_model = 3 }
+					regiment = { type = infantry_brigade name = "第414旅" experience = 15 historical_model = 3 }
+				}
+				division = {			
+					name = "第175师"	
+					location = 7554
+					regiment = { type = infantry_brigade name = "第524旅" experience = 15 historical_model = 3 }
+					regiment = { type = infantry_brigade name = "第525旅" experience = 15 historical_model = 3 }
+				}
+				division = {			
+					name = "第176师"	
+					location = 5789
+					regiment = { type = infantry_brigade name = "第527旅" experience = 15 historical_model = 3 }
+					regiment = { type = infantry_brigade name = "第528旅" experience = 15 historical_model = 3 }
+				}
+			}
+			corps = {				
+				name = "第58军" #桂系	
+				location = 7543
+				regiment = { type = hq_brigade name = "第58军指挥部" experience = 15 historical_model = 3 }
+				division = {			
+					name = "第26师"	
+					location = 7543
+					regiment = { type = infantry_brigade name = "第77旅" experience = 15 historical_model = 3 }
+					regiment = { type = infantry_brigade name = "第78旅" experience = 15 historical_model = 3 }
+				}
+				division = {			
+					name = "第183师"	
+					location = 7529
+					regiment = { type = infantry_brigade name = "第548旅" experience = 15 historical_model = 3 }
+					regiment = { type = infantry_brigade name = "第549旅" experience = 15 historical_model = 3 }
+				}
+				division = {			
+					name = "第265师"	
+					location = 7529
+					regiment = { type = infantry_brigade name = "第794旅" experience = 15 historical_model = 3 }
+					regiment = { type = infantry_brigade name = "第795旅" experience = 15 historical_model = 3 }
+				}
+			}
+		}

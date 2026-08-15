@@ -1,0 +1,109 @@
+country_event = {
+	id = 202021
+	fire_only_once = yes
+	major = yes
+	title = "YDtitle"
+	desc = "YDRdecs"
+	picture = "EFU"
+	trigger = {
+		tag = ENG
+		GER = { has_country_flag = the_treaty_of_munich_sudetenland }
+     not = { year = 1940 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+    }
+	option = {
+		name = "YDoption1"
+	national_unity = -5
+	dissent = 5
+		ai_chance = { factor = 100 }
+       	}
+}
+country_event = {
+	id = 202022
+	fire_only_once = yes
+	major = yes
+	title = "YFtitle"
+	desc = "YFRdecs"
+	picture = "EFU"
+	trigger = {
+		tag = FRA
+		GER = { has_country_flag = the_treaty_of_munich_sudetenland }
+     not = { year = 1940 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+    }
+	option = {
+		name = "YDoption1"
+	non_aggression_pact = CHI
+	dissent = 5
+	national_unity = -5
+		ai_chance = { factor = 100 }
+       	}
+	option = { 
+		name = "YDoption2"
+		 add_country_modifier = {
+			name = "FRA_ENG_modifier"
+			duration = 240
+			}
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+	id = 202023
+	fire_only_once = yes
+	major = yes
+	title = "GItitle"
+	desc = "GIRdecs"
+	picture = "MIC"
+	trigger = {
+	  OR = {
+		tag = GER
+		tag = ITA
+		}
+		GER = { has_country_flag = the_treaty_of_munich_sudetenland }
+     not = { year = 1940 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+    }
+	option = { 
+		name = "TCoop"
+		ITA = { guarantee = GER }
+	}
+}
+country_event = {
+	id = 202024
+	fire_only_once = yes
+	major = yes
+	title = "TCtitle"
+	desc = "TCRdecs"
+	picture = "Asix_set_up"
+	trigger = {
+	  OR = {
+		tag = GER
+		tag = ITA
+		tag = JAP
+		}
+		GER = { has_country_flag = the_treaty_of_munich_sudetenland }
+     not = { year = 1940 }
+	}
+        mean_time_to_happen =  {
+	        days = 1
+    }
+	option = { 
+		name = "TCoop"
+		GER = { guarantee = ITA
+		        guarantee = JAP
+		        }
+		JAP = { guarantee = ITA
+		        guarantee = GER
+		        } 
+		ITA = { guarantee = GER
+		        guarantee = JAP
+		        }               
+	}
+}

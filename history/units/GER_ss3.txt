@@ -1,0 +1,18 @@
+#第二波党卫军
+	division= {
+		name = "党卫军第5“维京”装甲师"
+		location = 1572
+		regiment = { type = GER_ss name = "第9装甲掷弹兵团" experience = 55  historical_model = 2 }			
+		regiment = { type = GER_ss name = "第10装甲掷弹兵团" experience = 55  historical_model = 2 }		
+		regiment = { type = light_armor_brigade experience = 55 name = "第5装甲兵团" historical_model = 2 }
+		regiment = { type = artillery_brigade experience = 55 name = "第5装甲炮兵团" historical_model = 2 }
+		regiment = { type = engineer_brigade name = "后勤部队" experience = 20 historical_model = 1 }
+	}
+		division= {
+		name = "党卫军第6“北方”山地师"
+		location = 33
+		 regiment = { type = bergsjaeger_brigade name = "第11山地掷弹兵团" experience = 40 historical_model = 1 }
+		 regiment = { type = bergsjaeger_brigade name = "第12山地掷弹兵团" experience = 40 historical_model = 1 }
+		regiment = { type = artillery_brigade experience = 55 name = "第6炮兵团" historical_model = 2 }	
+		regiment = { type = engineer_brigade name = "后勤部队" experience = 20 historical_model = 1 }
+	}

@@ -1,0 +1,33 @@
+owner = CRH
+
+controller = CRH
+
+add_core = CHC
+add_core = CRH
+add_core = CHI
+points = 0
+metal = 0
+energy = 1.00
+rare_materials = 1.00
+infra = 1
+industry = 0
+land_fort = 0
+1936.1.1 = {
+	owner = MEC
+	controller = MEC
+}
+1939.4.28 = {
+owner = MEB
+controller = MEB
+add_core = MEB
+}
+1945.9.3 = {
+remove_core = MEB
+}
+1946.1.1 = {
+	owner = CHC
+}
+1949.10.1 = {
+	owner = PRC
+	controller = PRC
+}

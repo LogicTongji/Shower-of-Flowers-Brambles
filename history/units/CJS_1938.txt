@@ -1,0 +1,41 @@
+corps = {
+	name = "忠义救国军"
+	location = 5494
+	regiment = { type = hq_brigade name = "游击总指挥部" historical_model = 0 }
+	division = {
+		name = "忠义救国军第1支队"
+		location = 5494
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+	}
+	division = {
+		name = "忠义救国军第2支队"
+		location = 5494
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+	}
+	division = {
+		name = "忠义救国军第3支队"
+		location = 5494
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+	}
+	division = {
+		name = "忠义救国军第4支队"
+		location = 5494
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+	}
+	division = {
+		name = "忠义救国军第5支队"
+		location = 5494
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+	}
+}

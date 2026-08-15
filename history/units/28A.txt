@@ -1,0 +1,54 @@
+corps = {
+	name = "第28军"
+	location = 9351
+	regiment = { type = hq_brigade name = "第28军司令部" historical_model = 0 }
+	regiment = { type = infantry_brigade name = "直属旅" strength = 20 historical_model = 0 }
+	division= {
+		name = "第1师"
+		location = 9351
+		regiment = { type = infantry_brigade name = "第1旅"  strength = 80 historical_model = 0 }
+		regiment = { type = militia_brigade name = "第2旅"  strength = 80 historical_model = 0 }
+	}
+	division= {
+		name = "第2师"
+		location = 9351
+		regiment = { type = infantry_brigade name = "第3旅"  strength = 80 historical_model = 0 }
+		regiment = { type = militia_brigade name = "第4旅"  strength = 80 historical_model = 0 }
+	}
+	division= {
+		name = "第3师"
+		location = 9351
+		regiment = { type = infantry_brigade name = "第7旅"  strength = 80 historical_model = 0 }
+		regiment = { type = militia_brigade name = "第8旅"  strength = 80 historical_model = 0 }
+	}
+	division= {
+		name = "教导师"
+		location = 9351
+		regiment = { type = infantry_brigade name = "第1旅" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第2旅" historical_model = 0 }
+	}
+	division= {
+		name = "模范师"
+		location = 9351
+		regiment = { type = infantry_brigade name = "第1模范旅" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第2模范旅" historical_model = 0 }
+	}
+}
+	division= {
+		name = "新编第6师" 
+		location = 9351
+		regiment = { type = infantry_brigade name = "第1旅" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第2旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "第2旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "第2旅" historical_model = 0 }
+	}
+	division= {
+		name = "新编第23师" 
+		location = 9351
+		regiment = { type = infantry_brigade name = "第1旅" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第1旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "第2旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "第2旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "第2旅" historical_model = 0 }
+		regiment = { type = militia_brigade name = "第2旅" historical_model = 0 }
+	}

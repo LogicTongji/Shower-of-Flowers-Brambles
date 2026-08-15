@@ -1,0 +1,271 @@
+#二次大战抵抗运动
+#618演说
+diplomatic_decisions = {
+	         FreeFra = {
+		major = yes
+		potential = {
+			tag = FRA
+			not = { has_country_flag = FreeFra_in_africa } 
+			war_with = GER
+		}
+		allow = {
+		      OR = {
+			FRA = { government_in_exile = yes }
+			has_country_flag = fr_signs_peace
+			}
+		}
+		effect = {
+			set_country_flag = FreeFra_in_africa	
+		  national_unity = 40
+			     }			
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#殖民军
+	         FreeFra2 = {
+		potential = {
+			tag = FRA
+			not = { has_global_flag = FreeFra_in_africa2 } 
+			OR = {
+			FRA = { government_in_exile = yes }
+			has_country_flag = fr_signs_peace
+			}
+			has_country_flag = FreeFra_in_africa
+		}
+		allow = {
+		      war_with = GER
+		}
+		effect = {
+			set_global_flag = FreeFra_in_africa2
+		 FRA = { load_oob = "Afiric_army.txt" }
+		  war = { target = VIC }
+			     }			
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#全国抵抗运动委员会
+ FreeFra3 = {
+		major = yes
+		potential = {
+			tag = FRA
+			not = { has_country_flag = FreeFra1 } 
+			has_global_flag = against_germany
+			OR = {
+			FRA = { government_in_exile = yes }
+			has_country_flag = FreeFra_in_africa
+			} 	
+		 1964 = {
+				controller = {
+					faction = allies
+			}
+		}
+			5445 = {
+				controller = {
+					faction = allies
+			}
+		}
+			5233 = {
+				controller = {
+					faction = allies
+			}
+		}
+		  5134 = {
+				controller = {
+					faction = allies
+			}
+		}
+		      }     
+		allow = {	
+		  2613 = {
+					controller = {
+						faction = axis
+			}
+			}
+			3687 = {
+					controller = {
+						faction = axis
+			}
+			}
+			4229 = {
+					controller = {
+						faction = axis
+			}
+			}
+		      not = {
+		  1409 = {
+					controller = {
+						faction = axis
+			}
+			}
+		  782 = {
+					controller = {
+						faction = axis
+			}
+			}
+			2857 = {
+					controller = {
+						faction = axis
+			}
+			}
+			2401 = {
+					controller = {
+						faction = axis
+			}
+			}
+			2170 = {
+					controller = {
+						faction = axis
+			}
+			}
+			}
+		      war_with = GER
+		}
+		effect = {
+			set_country_flag = FreeFra1
+			     }			
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#抵抗运动——内务部队
+ FreeFra8 = {
+		major = yes
+		potential = {
+			tag = FRA
+			not = { has_country_flag = FreeFra2 } 
+			SOV = { has_country_flag = Fra_be_fft }
+			has_country_flag = FreeFra1
+			has_country_flag = Set_up_Ora
+			has_country_flag = Set_up_AS
+			OR = {
+			FRA = { government_in_exile = yes }
+			has_country_flag = FreeFra_in_africa
+			}
+		 2442 = {
+				controller = {
+					faction = allies
+			}
+		}
+			 2481 = {
+				controller = {
+					faction = allies
+			}
+		}
+			2482 = {
+				controller = {
+					faction = allies
+			}
+		}
+		      }
+		allow = {
+		  2613 = {
+				controller = {
+					faction = axis
+			}
+		}
+			3687 = {
+			controller = {
+					faction = axis
+			}
+		}
+			4229 = {
+			controller = {
+					faction = axis
+			}
+		}
+		      war_with = GER
+		      has_global_flag = FreeFra_in_africa
+		}
+		effect = {
+			set_country_flag = FreeFra2
+		 	FRA = { load_oob = "FFI.txt" }
+			     }			
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#英国预备队
+ FreeFra4 = {
+		potential = {
+			tag = ENG
+			not = { has_country_flag = ENG_Allity_unity } 
+			OR = {
+			FRA = { government_in_exile = yes }
+			FRA = { 
+			has_country_flag = FreeFra1
+			has_country_flag = fr_signs_peace }
+			}
+		      war_with = GER
+		      has_global_flag = FreeFra_in_africa
+		}
+		effect = {
+			set_country_flag = ENG_Allity_unity
+		  load_oob = "allitv_unity.txt"
+			     }			
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#美国战略情报局和战时情报局
+ FreeFra5 = {
+		major = yes
+		potential = {
+			tag = USA
+			FRA = { 
+			has_country_flag = FreeFra1
+			has_country_flag = fr_signs_peace }
+			not = { has_global_flag = USA_OSS_OIW } 
+		   }
+		   allow = {
+	       war = no
+		     SOV = { war_with = GER }
+		      has_global_flag = FreeFra_in_africa
+		}
+		effect = {
+			set_global_flag = USA_OSS_OIW
+			     }			
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#特别行动处
+ FreeFra6 = {
+		potential = {
+			tag = ENG
+			FRA = { 
+			has_country_flag = FreeFra1
+			has_country_flag = fr_signs_peace }
+			not = { has_global_flag = ENG_soe } 
+			war_with = GER 
+		   }
+		   allow = {
+	       war = yes
+		      has_global_flag = FreeFra_in_africa
+		}
+		effect = {
+			set_global_flag = ENG_soe
+			     }			
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#中央情报局
+ FreeFra7 = {
+		major = yes
+		potential = {
+			tag = USA
+		 has_global_flag = GER_Lost
+			not = { has_country_flag = CIA } 
+			has_global_flag = USA_OSS_OIW
+	       war = no
+		}
+		effect = {
+			set_country_flag = CIA
+			     }			
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

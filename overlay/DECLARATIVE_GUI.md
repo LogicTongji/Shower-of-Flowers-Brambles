@@ -3,6 +3,21 @@
 A pure 2D window can use the `declarative_gui` factory without adding a
 window-specific C++ plugin.
 
+The plugin contract, registry, manifest loader, and declarative plugin are
+platform independent. `IGuiPlugin` receives an opaque graphics context only
+when a reusable custom control needs platform rendering. The macOS SDL host
+and the Windows Direct3D host therefore share plugin discovery, data-provider
+lifecycle, ticking, actions, and window metadata.
+
+`GuiWindowSessionController` is the platform-independent runtime for one
+plugin window. It binds the parsed window, owns its data snapshot, list models,
+selection and scroll state, input router, behavior/action bridge, visibility
+condition, and tick scheduler. A platform host supplies only a graphics
+context plus callbacks for resource refresh and native-window visibility, then
+renders the controller's resolved widgets. The SDL macOS host is already an
+adapter around this controller; a Direct3D 9 host can reuse the same session
+without duplicating plugin, list, condition, or event logic.
+
 ## Indexed maps
 
 An indexed map is a built-in declarative control. Its renderer, color updates,
@@ -47,7 +62,7 @@ nonzero IDs to groups found in `sourceGroupFile`; `texturefile` and `indexfile`
 select the outputs consumed by the runtime. Any new indexed map therefore needs
 only a `.gfx` resource block and its source map files.
 
-Place the control in any `.gui` window:
+Place the control in any `.gui` or injected-only `.sgui` window:
 
 ```text
 indexedMapType = {

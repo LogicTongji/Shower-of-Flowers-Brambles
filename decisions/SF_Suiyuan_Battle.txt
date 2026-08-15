@@ -1,0 +1,24 @@
+######################
+#   绥远抗战决议组   #
+######################
+
+diplomatic_decisions = {
+	Sattack_MEA = {
+		potential = {
+			tag = MEA
+			not = { has_country_flag = Sattack_MEA } 
+		}
+		allow = {
+			date = 1936.11.15
+			not = { date = 1937.7.7 } 
+		}
+		effect = {
+			set_country_flag = Sattack_MEA
+			MEA = {	war = {	target = CSY } attacker_goal = { casus_belli = conquer } defender_goal = { casus_belli = conquer } }
+			CSY = { country_event = 1000090 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

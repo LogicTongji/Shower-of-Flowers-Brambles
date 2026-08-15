@@ -1,0 +1,699 @@
+diplomatic_decisions = {
+	our_finest_hour = {
+		major = yes
+		potential = {
+			tag = ENG
+			NOT =  {
+				has_country_flag = our_finest_hour
+			}
+		}
+		allow = {
+			ENG = {
+				war_with = GER
+			}
+			OR = {
+				FRA = {
+					government_in_exile = yes
+				}
+				NOT = {
+					exists = FRA
+				}
+			}
+			NOT = {
+				USA = {
+					war_with = GER
+				}
+				SOV = {
+					war_with = GER
+				}
+			}
+		}
+
+		effect = {
+			set_country_flag = our_finest_hour
+			add_country_modifier = {
+				name = "the_finest_hour"
+				duration = 300
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	the_united_nations = {
+		major = yes
+		potential = {
+			tag = ENG
+			NOT = {
+				has_country_flag = united_nations
+			}
+		}
+
+		allow = {
+			ENG = {
+				war_with = GER
+				war_with = JAP
+			}
+			USA = {
+				war_with = GER
+				war_with = JAP
+			}
+		}
+
+		effect = {
+			set_country_flag = united_nations
+			national_unity = 10 
+			popularity = 20
+
+		}
+	}
+
+
+	the_end_of_the_begining = {
+		major = yes
+		potential = {
+			tag = ENG
+			NOT =  {
+				has_country_flag = the_end_of_the_begining
+			}
+		}
+		allow = {
+			ENG = {
+				war_with = GER
+			}
+			USA = {
+				war_with = GER
+			}
+			ENG = {
+				controls = 5445
+				controls = 5483
+				controls = 5484
+				#controls = 9942
+			}
+			9942 = {
+				controller = {
+				faction = THIS
+				}
+			}
+			GER = {
+				controls = 1861
+			}
+		}
+
+		effect = {
+			set_country_flag = the_end_of_the_begining
+			add_country_modifier = {
+				name = "end_of_the_begining"
+				duration = 300
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	blitzkrieg_decision = {
+		major = yes
+		potential = {
+			tag = GER
+			NOT = {
+				has_country_flag = blitzkrieg
+			}
+		}
+		allow = {
+			GER = {
+				OR = {
+					war_with = FRA  
+					war_with = POL
+				}
+                NOT = { GER = { controls = 2613 } }   #NEW, Paris
+				NOT = {
+					war_with = SOV
+				}
+			}
+		}
+
+		effect = {
+			set_country_flag = blitzkrieg
+			neutrality = -20
+			manpower = 200
+			add_country_modifier = {
+				name = "revenge" 
+				duration = 300
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	destiny = {
+		major = yes
+		potential = {
+			tag = GER
+			NOT = {
+				has_country_flag = destiny
+			}
+			NOT = { has_country_modifier = revenge }
+		}
+		allow = {
+			GER = {
+				war_with = SOV
+			}
+		}
+
+		effect = {
+			set_country_flag = destiny
+			add_country_modifier = {
+				name = "german_destiny"
+				duration = 150
+			}
+			manpower = 300
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	defence = {
+		major = yes
+		potential = {
+			tag = GER
+			NOT = {
+				has_country_flag = defence
+			}
+		}
+		allow = {
+			year = 1943
+			GER = {
+				war_with = SOV
+				war_with = USA
+				controls = 1861
+			}
+			OR = {
+				NOT = { GER = { controls = 1964 } }
+				NOT = { GER = { controls = 782 } }
+				NOT = { GER = { controls = 1409 } }
+				NOT = { GER = { controls = 2857 } }
+			} 
+		}
+
+		effect = {
+			set_country_flag = defence
+			manpower = 100
+			add_country_modifier = {
+				name = "german_defence"
+				duration = 300
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	for_the_mother_land = {
+		major = yes
+		potential = {
+			tag = SOV
+			NOT = {
+				has_country_flag = for_the_mother_land
+			}
+		}
+		allow = {
+			SOV = {
+				war_with = GER
+			}
+		}
+
+		effect = {
+			set_country_flag = for_the_mother_land
+			add_country_modifier = {
+				name = "rodina"
+				duration = 150
+			}
+
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	great_patriotic_war = {
+		major = yes
+		potential = {
+			tag = SOV
+			NOT = {
+				has_country_flag = great_patrotic_war
+			}
+		}
+		allow = {
+			SOV = {
+				war_with = GER
+			}
+			surrender_progress = 20 #20%
+			
+		}
+
+		effect = {
+			set_country_flag = great_patrotic_war
+			manpower = 3500
+			add_country_modifier = {
+				name = "patrotic_war"
+				duration = 360
+			}
+
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	dissolution_of_the_third_international = {
+		major = yes
+		potential = {
+			tag = SOV
+			NOT = {
+				has_country_flag = communism_rules
+			}
+		}
+		allow = {
+			SOV = {
+				war_with = GER
+			}
+			ENG = {
+				war_with = GER
+			}
+			year = 1943
+		}
+
+		effect = {
+			set_country_flag = communism_rules
+			BUL = {
+				stalinist ={
+					popularity = 10 
+					organisation = 10 
+				}
+			}
+			FRA = {
+				stalinist ={
+					popularity = 10 
+					organisation = 10 
+				}
+			}
+			HUN = {
+				stalinist ={
+					popularity = 10 
+					organisation = 10 
+				}
+			}
+			ITA = {
+				stalinist ={
+					popularity = 10 
+					organisation = 10 
+				}
+			}
+			POL = {
+				stalinist ={
+					popularity = 10 
+					organisation = 10 
+				}
+			}
+			ROM = {
+				stalinist ={
+					popularity = 10 
+					organisation = 10 
+				}
+			}
+			SOV = {
+				stalinist ={
+					popularity = 10 
+					organisation = 10 
+				}
+			}
+			YUG = {
+				stalinist ={
+					popularity = 10 
+					organisation = 10 
+				}
+			}
+		}
+	}
+	
+	stab_in_the_back = {
+		major = yes
+		potential = {
+			tag = USA
+			NOT = {
+				has_country_flag = stab_in_the_back
+			}
+		}
+		allow = {
+			ITA = {	
+				war_with = ENG
+			}
+		}
+
+		effect = {
+			set_country_flag = stab_in_the_back
+			neutrality = -5
+			add_country_modifier= {
+				name = "love_of_freedom"
+				duration = 360
+			}
+		}
+	}
+		
+
+	unlimted_national_emergency = {
+		major = yes
+		potential = {
+			tag = USA
+			NOT = {
+				has_country_flag = unlimted_national_emergency
+			}
+		}
+		allow = {
+			OR = {
+				FRA = {
+					NOT = {
+					 controls = 2613
+					}			
+				}
+				FRA = { faction = axis }
+			}
+			OR = {
+				ENG = {
+					surrender_progress = 10
+				}
+				YUG = {
+					OR = {
+						government_in_exile = yes
+						faction = axis
+						exists = no
+					}
+				}
+			}
+		}
+
+		effect = {
+			set_country_flag = unlimted_national_emergency
+			neutrality = -5
+			add_country_modifier= {
+				name = "the_nation_expects"
+				duration = 360
+			}
+		}
+	}
+
+	day_of_infamy = {
+		major = yes
+		potential = {
+			tag = USA
+			NOT = {
+				has_country_flag = day_of_infamy
+			}
+		}	
+		allow = {
+			USA = {
+				war = yes
+			}
+		}
+		
+		effect = {
+			set_country_flag = day_of_infamy
+			national_unity = 5
+			neutrality = -50
+			manpower = 500
+			add_country_modifier = {
+				name = "infamous_day"
+				duration = 1380
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		
+	popular_front = {
+		major = yes
+		potential = {
+			tag = FRA
+			NOT = {
+				has_country_flag = popular_front
+			}
+		}
+		allow = {
+			year = 1936
+			month = 5
+		}
+
+		effect = {
+			set_country_flag = popular_front
+			national_unity = 5
+			money = 35
+		}
+	}
+	
+	shame_of_defeat = {
+		major = yes
+		potential = {
+			tag = FRA
+			NOT = {
+				has_country_flag = shame
+			}
+		}	
+		allow = {
+			government_in_exile = yes	
+		}
+		
+		effect = {
+			set_country_flag = shame
+			manpower = 10
+			add_country_modifier = {
+				name = "shamed"
+				duration = 300
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	liberation = {
+		major = yes
+		potential = {
+			tag = FRA
+			NOT = {
+				has_country_flag = liberation
+			}
+		}
+	
+		allow = {
+			government_in_exile = yes
+			GER = {
+				controls = 2613
+				NOT = {
+					controls = 2612
+					controls = 2547
+					controls = 2678
+					controls = 2744
+					controls = 2874
+					controls = 2743
+				}
+			}
+		}
+		
+
+		effect = {
+			set_country_flag = liberation
+			manpower = 20
+			add_country_modifier = {
+				name = "liberation_soon"
+				duration = 200
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	its_our_time = {
+		major = yes
+		potential = {
+			tag = ITA 
+			NOT = {
+				has_country_flag = its_our_time
+			}
+		}
+		allow = {
+			war_with = ENG
+		}
+		
+		effect = {
+			set_country_flag = its_our_time
+			add_country_modifier = {
+				name = "our_time"
+				duration = 100
+			}
+		}
+	}
+				
+
+	eight_million_bayonets = {
+		major = yes
+		potential = {
+			tag = ITA
+			NOT = {
+				has_country_flag = eight_million_bayonets
+			}
+		}
+		allow = {
+			war = yes
+			ITA = {
+				NOT = {
+					controls = 5445
+					controls = 5483
+					controls = 5484
+					controls = 5511
+				}
+			}
+		}
+		
+		effect = {
+			set_country_flag = eight_million_bayonets
+			add_country_modifier = {
+				name = "millions_of_bayonets"
+				duration = 100
+			}
+		}
+	}		
+
+	trains_run_on_time = {
+		major = yes
+		potential = {
+			tag = ITA
+			NOT = {
+				has_country_flag = trains
+			}
+		}
+		allow = {
+			war = yes
+			NOT = { 
+				
+				popularity = 40 
+			}
+		}
+
+		effect = {
+			set_country_flag = trains
+			popularity = 10
+			add_country_modifier = {
+				name = "the_trains"
+				duration = 100
+			}
+		}
+	}
+
+	tora_tora = {
+		major = yes
+		potential = {
+			tag = JAP
+			NOT = {
+				has_country_flag = tora_tora
+			}
+		}
+		allow = {
+			war_with = USA
+		}
+
+		effect  = {
+			set_country_flag = tora_tora
+			add_country_modifier = {
+				name = "tora"
+				duration = 200
+			}
+		}
+	}
+	
+	kamikaze = {
+		major = yes
+		potential = {
+			tag = JAP
+			NOT = {
+				has_country_flag = divine_wind
+			}
+		}
+
+		allow = {
+			war_with = USA
+			NOT = {
+				controls = 10642
+			}
+		}
+
+		effect = {
+			set_country_flag = divine_wind
+			add_country_modifier = {
+				name = "divine_wind"
+				duration = 300
+		}
+	}	
+}	
+great_patriotic_war2 = {
+		major = yes
+		potential = {
+			tag = SOV
+			tag = GER ##this is impossible, only set from history
+		}
+		allow = {
+			
+		}
+
+		effect = {
+			remove_country_modifier = patrotic_war
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	prepare_for_war = {
+		potential = {
+			government_in_exile = no
+			AI = no
+			not = { tag = CHI }
+			not = { tag = CHC }
+			war = no
+			NOT =  {
+				has_country_flag = prepare_for_war
+			}
+			NOT =  {
+				total_ic = 30
+			}
+		}
+		allow = {
+			
+		}
+
+		effect = {
+			set_country_flag = prepare_for_war
+			add_country_modifier = {
+				name = "prepare_for_war"
+				duration = 300
+			}
+		}
+	}
+}

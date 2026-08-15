@@ -1,0 +1,480 @@
+capital = 5494
+government = chinese_warlord
+ideology = paternal_autocrat
+head_of_state = 52002
+head_of_government = 52025
+foreign_minister = 52003
+armament_minister = 52004
+minister_of_security = 52005
+minister_of_intelligence = 52006
+chief_of_staff = 52045
+chief_of_army = 52048
+chief_of_navy = 52009
+chief_of_air = 52010
+alignment = { x = 0 y = 0 }
+neutrality = 100
+national_unity = 50
+
+oob = "CHI_1933.txt"
+
+infantry_theory = 5
+infantry_practical = 5
+militia_theory = 5
+militia_practical = 5
+mobile_theory = 1
+mobile_practical = 1
+artillery_theory = 0.5
+artillery_practical = 0.5
+rocket_science = 0
+rocket_practical = 0 
+naval_engineering = 0
+destroyer_practical = 0
+cruiser_practical = 0
+capitalship_practical = 0
+carrier_practical = 0 
+submarine_engineering = 0
+submarine_practical = 0
+electornicegineering_theory = 0 
+electornicegineering_practical = 0
+automotive_theory = 0 
+armour_practical = 0
+aeronautic_engineering = 0
+single_engine_aircraft_practical = 1
+twin_engine_aircraft_practical = 0
+four_engine_aircraft_practical = 0
+spearhead_theory = 0 
+superior_firepower_theory = 0 
+grand_battleplan_theory = 2 
+human_wave_theory = 0 
+land_doctrine_practical= 0 
+naval_doctrine_practical = 0 
+base_strike_doctrine = 0
+fleet_in_being_doctrine = 0 
+sealane_interdiction_doctrine = 0
+air_doctrine_practical = 0 
+fighter_focus = 0
+cas_focus = 0
+tac_focus = 0
+nav_focus = 0 
+strategic_air_focus = 0 
+mechanicalengineering_theory = 0
+chemical_engineering = 0
+jetengine_theory = 0 
+jetengine_practical = 0 
+nuclear_physics = 0
+nuclear_bomb = 0 
+transport_practical = 0
+officers_ratio = 0.60
+
+militia_smallarms = 1
+militia_support = 1
+militia_guns = 1
+militia_at = 1
+infantry_activation = 1
+schwerpunkt = 0
+blitzkrieg = 0
+mobile_warfare = 0
+elastic_defence = 0
+operational_level_command_structure = 0
+tactical_command_structure = 0
+mechanized_offensive = 0
+delay_doctrine = 0
+integrated_support_doctrine = 0
+infantry_warfare = 0
+special_forces = 0
+assault_concentration = 0
+central_planning = 0
+mass_assault = 0
+peoples_army = 1
+large_front = 0
+guerilla_warfare = 1
+operational_level_organisation = 0
+
+popularity = { 
+	national_socialist = 0
+	fascistic = 0
+	paternal_autocrat = 62
+	social_conservative = 27
+	market_liberal = 11
+	social_liberal = 0
+	social_democrat = 0
+	left_wing_radical = 0
+	leninist = 0
+	stalinist = 0
+}
+
+organization = { 
+	national_socialist = 0
+	fascistic = 0
+	paternal_autocrat = 65
+	social_conservative = 40
+	market_liberal = 15
+	social_liberal = 0
+	social_democrat = 0
+	left_wing_radical = 0
+	leninist = 0
+	stalinist = 0
+}
+
+training_laws = minimal_training
+press_laws = propaganda_press
+industrial_policy_laws = mixed_industry
+education_investment_law = minimal_education_investment
+economic_law = full_civilian_economy
+conscription_law = service_by_requirement
+civil_law = totalitarian_system
+
+1932.6.1 = {
+set_country_flag = attack_commist_chi
+}
+1933.6.1 = {
+set_global_flag = Anti_jap_front_great_wall_loss
+set_country_flag = GersupportA_chi
+}
+1934.4.1 = {
+set_country_flag = chi_newdailylife_revolution
+ }
+1935.6.1 = {
+set_country_flag = Xian_war_ShanXi_Commist 
+set_global_flag = Anti_jap_front_great_wall
+}
+
+1935.12.1 = {
+capital = 5494
+government = chinese_warlord
+ideology = paternal_autocrat
+head_of_state = 52002
+head_of_government = 52030
+foreign_minister = 52003
+armament_minister = 52004
+minister_of_security = 52005
+minister_of_intelligence = 52006
+chief_of_staff = 52045
+chief_of_army = 52048
+chief_of_navy = 52009
+chief_of_air = 52010
+alignment = { x = 0 y = 0 }
+neutrality = 100
+national_unity = 50
+
+oob = "CHI_1936.txt"
+
+infantry_theory = 6
+infantry_practical = 6
+militia_theory = 6
+militia_practical = 6
+
+popularity = { 
+	national_socialist = 0
+	fascistic = 0
+	paternal_autocrat = 62
+	social_conservative = 27
+	market_liberal = 11
+	social_liberal = 0
+	social_democrat = 0
+	left_wing_radical = 0
+	leninist = 0
+	stalinist = 0
+}
+
+organization = { 
+	national_socialist = 0
+	fascistic = 0
+	paternal_autocrat = 65
+	social_conservative = 40
+	market_liberal = 15
+	social_liberal = 0
+	social_democrat = 0
+	left_wing_radical = 0
+	leninist = 0
+	stalinist = 0
+}
+
+training_laws = minimal_training
+press_laws = propaganda_press
+industrial_policy_laws = mixed_industry
+education_investment_law = minimal_education_investment
+economic_law = full_civilian_economy
+conscription_law = service_by_requirement
+civil_law = totalitarian_system
+
+}
+1935.12.25 = {
+set_country_flag = 129yundong
+set_country_flag = Intagrate_China_SiChuan
+}
+1937.2.13 ={
+set_country_flag = Xian_conversation
+set_country_flag = Event9111100
+}
+1937.8.15 = {
+set_country_flag = CHI_Kangzhan
+set_country_flag = HeGuoguang_goto_SiChuan
+set_country_flag = Chinese_Defence
+set_country_flag = CHI_Passive_defense
+}
+
+1938.1.1 = {
+capital = 9478
+government = right_wing_autocrat
+officers_ratio = 1.2
+ideology = paternal_autocrat
+head_of_state = 52002
+head_of_government = 52001
+foreign_minister = 52003
+armament_minister = 52004
+minister_of_security = 52005
+minister_of_intelligence = 52006
+chief_of_staff = 52045
+chief_of_army = 52048
+chief_of_navy = 52009
+chief_of_air = 52010
+alignment = { x = 0 y = 0 }
+neutrality = 100
+national_unity = 100
+
+oob = "CHI_1938d.txt"
+
+set_country_flag =  The_Migration_Period_WuHan 
+set_country_flag = The_Migration_Period_education
+set_country_flag = The_Migration_Period_education4
+set_country_flag = Event9111102
+set_global_flag = Event2000073
+set_country_flag = Event2000077
+set_global_flag = soviet_help_anti_japan 
+set_country_flag = Event2018417	
+}
+1938.1.21 = {
+set_global_flag = Event1000101
+}
+1938.9.1 = {
+set_country_flag = jap_seizes_coast_chi
+set_country_flag = defence_wuhan
+set_country_flag = fall_mouth
+set_country_flag = The_Migration_Period_ChongQing
+capital = 9478
+government = right_wing_autocrat
+officers_ratio = 0.75
+ideology = paternal_autocrat
+head_of_state = 52002
+head_of_government = 52001
+foreign_minister = 52003
+armament_minister = 52004
+minister_of_security = 52005
+minister_of_intelligence = 52006
+chief_of_staff = 52045
+chief_of_army = 52048
+chief_of_navy = 52009
+chief_of_air = 52010
+alignment = { x = 0 y = 0 }
+neutrality = 100
+national_unity = 90
+
+oob = "CHI_1938.txt"
+
+infantry_theory = 6
+infantry_practical = 6
+militia_theory = 8
+militia_practical = 8
+mobile_theory = 1
+mobile_practical = 1
+artillery_theory = 1 
+artillery_practical = 1
+rocket_science = 0
+rocket_practical = 0 
+naval_engineering = 0
+destroyer_practical = 0
+cruiser_practical = 0
+capitalship_practical = 0
+carrier_practical = 0 
+submarine_engineering = 0
+submarine_practical = 0
+electornicegineering_theory = 0 
+electornicegineering_practical = 0
+automotive_theory = 0 
+armour_practical = 0
+aeronautic_engineering = 0
+single_engine_aircraft_practical = 1 
+twin_engine_aircraft_practical = 0
+four_engine_aircraft_practical = 0
+spearhead_theory = 0 
+superior_firepower_theory = 0 
+grand_battleplan_theory = 2 
+human_wave_theory = 0 
+land_doctrine_practical= 0 
+naval_doctrine_practical = 0 
+base_strike_doctrine = 0
+fleet_in_being_doctrine = 0 
+sealane_interdiction_doctrine = 0
+air_doctrine_practical = 0 
+fighter_focus = 0
+cas_focus = 1 
+tac_focus = 0
+nav_focus = 0 
+strategic_air_focus = 0 
+mechanicalengineering_theory = 1
+chemical_engineering = 0
+jetengine_theory = 0 
+jetengine_practical = 0 
+nuclear_physics = 0
+nuclear_bomb = 0 
+transport_practical = 0
+officers_ratio = 0.60
+
+militia_smallarms = 1
+militia_support = 1
+militia_guns = 1
+militia_at = 1
+infantry_activation = 1
+schwerpunkt = 0
+blitzkrieg = 0
+mobile_warfare = 0
+elastic_defence = 0
+operational_level_command_structure = 0
+tactical_command_structure = 0
+mechanized_offensive = 0
+delay_doctrine = 0
+integrated_support_doctrine = 0
+infantry_warfare = 0
+special_forces = 0
+assault_concentration = 0
+central_planning = 0
+mass_assault = 0
+peoples_army = 1
+large_front = 0
+guerilla_warfare = 1
+operational_level_organisation = 0
+}
+1940.1.1 = { 
+set_country_flag = KMT_Amry_excise
+set_global_flag = Winter_WAR
+national_unity = 100 
+}
+1940.6.1 ={
+set_global_flag = CHI_defence_war
+set_country_flag = The_Migration_Period_education5
+}
+1941.2.1 ={
+         set_global_flag = Event700001
+		 set_country_flag = Event9111103
+}
+1941.12.7 = {
+oob = "CHI_DayOfInfamy.txt"
+}
+1942.2.1 = {
+set_country_flag = CHI_warto_jap
+set_global_flag = Event1000087
+set_country_flag = USA_allice_CHI
+set_country_flag = china_yuanzhengjun
+}
+1944.6.7 = {
+oob = "CHI_1944.txt"
+}
+1945.9.3 = {
+set_global_flag = JAP_Lost
+}
+1945.10.10 = {
+set_global_flag = Chongqing_negotiations
+}
+1946.5.1 = {
+capital = 9478
+
+
+oob = "CHI_1946.txt"
+minister_of_intelligence = 52080
+
+officers_ratio = 1.4
+
+infantry_theory = 9
+infantry_practical = 9
+militia_theory = 10
+militia_practical = 10
+mobile_theory = 1
+mobile_practical = 1
+artillery_theory = 1 
+artillery_practical = 1
+rocket_science = 0
+rocket_practical = 0 
+naval_engineering = 0
+destroyer_practical = 0
+cruiser_practical = 0
+capitalship_practical = 0
+carrier_practical = 0 
+submarine_engineering = 0
+submarine_practical = 0
+electornicegineering_theory = 0 
+electornicegineering_practical = 0
+automotive_theory = 0 
+armour_practical = 0
+aeronautic_engineering = 0
+single_engine_aircraft_practical = 1 
+twin_engine_aircraft_practical = 0
+four_engine_aircraft_practical = 0
+spearhead_theory = 0 
+superior_firepower_theory = 0 
+grand_battleplan_theory = 2 
+human_wave_theory = 0 
+land_doctrine_practical= 0 
+naval_doctrine_practical = 0 
+base_strike_doctrine = 0
+fleet_in_being_doctrine = 0 
+sealane_interdiction_doctrine = 0
+air_doctrine_practical = 0 
+fighter_focus = 1
+cas_focus = 0
+tac_focus = 0
+nav_focus = 0 
+strategic_air_focus = 0 
+mechanicalengineering_theory = 2
+chemical_engineering = 0
+jetengine_theory = 0 
+jetengine_practical = 0 
+nuclear_physics = 0
+nuclear_bomb = 0 
+transport_practical = 0
+officers_ratio = 0.60
+
+militia_smallarms = 1
+militia_support = 1
+militia_guns = 1
+militia_at = 1
+infantry_activation = 1
+schwerpunkt = 0
+blitzkrieg = 0
+mobile_warfare = 0
+elastic_defence = 0
+operational_level_command_structure = 0
+tactical_command_structure = 0
+mechanized_offensive = 0
+delay_doctrine = 0
+integrated_support_doctrine = 0
+infantry_warfare = 0
+special_forces = 0
+assault_concentration = 0
+central_planning = 0
+mass_assault = 0
+peoples_army = 1
+large_front = 0
+guerilla_warfare = 1
+operational_level_organisation = 0
+
+
+
+
+}
+1946.6.2 = {
+set_global_flag = JUNE_negotiations 
+}
+1946.7.1 = { set_global_flag = China_CivilWar
+set_global_flag = CHINA_CIVIL_WAR
+}
+1948.5.22 = {
+head_of_government = 52002
+oob = "CHI_1948.txt"
+}
+1949.1.1 = {
+set_global_flag = China_CivilWar4 
+}
+1949.5.22 = {
+oob = "CHI_1949.txt"
+}

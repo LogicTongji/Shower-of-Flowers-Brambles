@@ -1,0 +1,17 @@
+owner = CZE
+controller = CZE
+add_core = CZE
+add_core = HUN
+
+infra = 8
+1939.3.16 = {
+	owner = HUN
+	controller = HUN
+	add_core = HUN
+}
+1945.6.7 = {
+	controller = CZE
+	owner = CZE
+	add_core = CZE
+	remove_core  = GER
+}

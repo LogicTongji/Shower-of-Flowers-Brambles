@@ -1,0 +1,88 @@
+division= {					
+	name = "蒙疆骑兵军"				
+	location = 4885
+	regiment = { type = cavalry_brigade name = "第1蒙疆骑兵旅" historical_model = 3 }				
+	regiment = { type = cavalry_brigade name = "第2蒙疆骑兵旅" historical_model = 3 }				
+}					
+division = {					
+	name = "第1蒙疆平定旅 "				
+	location = 4885
+	regiment = { type = cavalry_brigade name = "第1旅" historical_model = 3 }				
+	regiment = { type = cavalry_brigade name = "第2旅" historical_model = 3 }				
+}					
+division = {					
+	name = "第2蒙疆平定旅 "				
+	location = 4885
+	regiment = { type = cavalry_brigade name = "第3旅" historical_model = 3 }				
+	regiment = { type = cavalry_brigade name = "第4旅" historical_model = 3 }				
+}					
+division = {
+	name = "第1保安队"
+	location = 4885
+	regiment = { type = militia_brigade historical_model = 1 }
+	regiment = { type = militia_brigade historical_model = 1 }
+	regiment = { type = militia_brigade historical_model = 1 }
+}
+division = {
+	name = "第2保安队"
+	location = 4885
+	regiment = { type = militia_brigade historical_model = 1 }
+	regiment = { type = militia_brigade historical_model = 1 }
+	regiment = { type = militia_brigade historical_model = 1 }
+}
+division = {
+	name = "第3保安队"
+	location = 4885
+	regiment = { type = militia_brigade historical_model = 1 }
+	regiment = { type = militia_brigade historical_model = 1 }
+	regiment = { type = militia_brigade historical_model = 1 }
+}
+division = {
+	name = "第4保安队"
+	location = 4885
+	regiment = { type = militia_brigade historical_model = 1 }
+	regiment = { type = militia_brigade historical_model = 1 }
+	regiment = { type = militia_brigade historical_model = 1 }
+}
+division = {
+	name = "第5保安队"
+	location = 4885
+	regiment = { type = militia_brigade historical_model = 1 }
+	regiment = { type = militia_brigade historical_model = 1 }
+	regiment = { type = militia_brigade historical_model = 1 }
+}
+division = {
+	name = "第6保安队"
+	location = 4885
+	regiment = { type = militia_brigade historical_model = 1 }
+	regiment = { type = militia_brigade historical_model = 1 }
+	regiment = { type = militia_brigade historical_model = 1 }
+}
+division = {
+	name = "第7保安队"
+	location = 4885
+	regiment = { type = militia_brigade historical_model = 1 }
+	regiment = { type = militia_brigade historical_model = 1 }
+	regiment = { type = militia_brigade historical_model = 1 }
+}
+division = {
+	name = "第8保安队"
+	location = 4885
+	regiment = { type = militia_brigade historical_model = 1 }
+	regiment = { type = militia_brigade historical_model = 1 }
+	regiment = { type = militia_brigade historical_model = 1 }
+}
+division = {
+	name = "第9保安队"
+	location = 4885
+	regiment = { type = militia_brigade historical_model = 1 }
+	regiment = { type = militia_brigade historical_model = 1 }
+	regiment = { type = militia_brigade historical_model = 1 }
+}
+division = {
+	name = "第10保安队"
+	location = 4885
+	regiment = { type = militia_brigade historical_model = 1 }
+	regiment = { type = militia_brigade historical_model = 1 }
+	regiment = { type = militia_brigade historical_model = 1 }
+}

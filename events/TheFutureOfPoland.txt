@@ -1,0 +1,143 @@
+########################
+# The Future of Poland #
+########################
+# Poland - Reaction Event
+country_event = {
+	
+	id = 1401
+
+	is_triggered_only = yes
+
+	title = "EVTNAME1401"
+	desc = "EVTDESC1401"
+	#picture = "guarantee_POL"
+
+	option = {
+		name = "EVTOPTA1401"			# Accept
+		ai_chance = { factor = 100 }
+		relation = { who = ENG value = 10 }
+		relation = { who = FRA value = 10 }
+		relation = { who = GER value = -15 }
+		relation = { who = SOV value = -10 }
+		ENG = { country_event = 1402 }
+	}
+
+	option = {
+		name = "EVTOPTB1401"			# Decline
+		relation = { who = ENG value = -5 }
+		relation = { who = FRA value = -5 }
+		relation = { who = GER value = 5 }
+		relation = { who = SOV value = 5 }
+		ENG = { country_event = 1403 }
+	}
+}
+
+# Response to the UK - Poland Accepts
+country_event = {
+
+	id = 1402
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME1402"
+	desc = "EVTDESC1402"
+	#picture = "chameberlain"
+
+	option = {
+		name = "EVTOPTA1402"			# Great!
+		POL = { join_faction = allies }
+	}
+}
+
+# Response to the UK - Poland Declines
+country_event = {
+
+	id = 1403
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME1403"
+	desc = "EVTDESC1403"
+	#picture = "poland"
+
+	option = {
+		name = "EVTOPTA1403"			# Their loss
+	}
+}
+
+#################
+# Danzig or War #
+#################
+# Poland - Reaction Event
+country_event = {
+
+	id = 1404
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME1404"
+	desc = "EVTDESC1404"
+	#picture = "Danzig"
+
+	option = {
+		name = "EVTOPTA1404"			# Then it is War
+		ai_chance = { factor = 100 }
+		relation = { who = SOV value = 5 }
+		relation = { who = ENG value = 10 }
+		relation = { who = FRA value = 10 }
+		dissent = -5
+		GER = { country_event = 1405 }
+	}
+	option = {
+		name = "EVTOPTB1404"			# Fold
+		relation = { who = GER value = 10 }
+		relation = { who = SOV value = -5 }
+		relation = { who = ENG value = -5 }
+		relation = { who = FRA value = -5 }
+		dissent = 5
+		1626 = { secede_province = GER }	# Danzig
+		GER = { country_event = 1406 }
+	}
+}
+
+# Response to Germany - War
+country_event = {
+
+	id = 1405
+
+	is_triggered_only = yes
+
+	title = "EVTNAME1405"
+	desc = "EVTDESC1405"
+	#picture = "Danzig"
+
+	option = {
+		name = "EVTOPTA1405"			# Fortune will grant us victory!
+		ai_chance = { factor = 100 }
+		GER = {	war = {	
+					target = POL
+					attacker_goal = { casus_belli = conquer }
+					attacker_goal = { casus_belli = aquire_all_cores }
+					} 
+				}
+	}
+}
+
+# Response to Germany - Fold
+country_event = {
+
+	id = 1406
+
+	is_triggered_only = yes
+
+	title = "EVTNAME1406"
+	desc = "EVTDESC1406"
+	#picture = "Danzig"
+
+	option = {
+		name = "EVTOPTA1406"			# Excellent
+		ai_chance = { factor = 100 }
+		dissent = -10
+		relation = { who = POL value = 5 }
+	}
+}

@@ -1,0 +1,252 @@
+color = { 216  108  75 }
+graphical_culture = Japanese
+
+default_templates = {
+	generic_infantry = {
+		infantry_brigade
+		infantry_brigade
+		infantry_brigade
+	}
+	generic_milita = {
+		militia_brigade
+		militia_brigade
+		militia_brigade
+	}
+	generic_armoured = {
+		armor_brigade
+		motorized_brigade
+		motorized_brigade
+	}
+	generic_cavalry = {
+		cavalry_brigade
+		cavalry_brigade
+	}
+}
+
+unit_names = {
+        infantry_brigade = {
+		"朝鲜第1步兵师" "朝鲜第2步兵师" "朝鲜第3步兵师" "朝鲜第4步兵师" "朝鲜第5步兵师" "朝鲜第6步兵师" "朝鲜第7步兵师" "朝鲜第8步兵师" "朝鲜第9步兵师" "朝鲜第10步兵师" "朝鲜朝鲜第11步兵师" "朝鲜第12步兵师"
+		"朝鲜第13步兵师" "朝鲜第14步兵师" "朝鲜第15步兵师" "朝鲜第16步兵师" "朝鲜第17步兵师" "朝鲜第18步兵师" "朝鲜第19步兵师" "朝鲜第20步兵师" 
+	}
+	cavalry_brigade = {
+		"朝鲜第1骑兵师" "朝鲜第2骑兵师" "朝鲜第3骑兵师" "朝鲜第4骑兵师" "朝鲜第5骑兵师" "朝鲜第6骑兵师" "朝鲜第7骑兵师" "朝鲜第8骑兵师" "朝鲜第9骑兵师" "朝鲜第10骑兵师" "朝鲜第11骑兵师" 
+		"朝鲜第12骑兵师" "朝鲜第13骑兵师" "朝鲜第14骑兵师" "朝鲜第15骑兵师" 
+	}
+	motorized_brigade = {
+		"朝鲜第1摩步师" "朝鲜第2摩步师" "朝鲜第3摩步师" "朝鲜第4摩步师" "朝鲜第5摩步师" "朝鲜第6摩步师" "朝鲜第7摩步师" "朝鲜第8摩步师" "朝鲜第9摩步师" "朝鲜第10摩步师"  
+		"朝鲜第12摩步师" "朝鲜第13摩步师" "朝鲜第14摩步师" "朝鲜第15摩步师" "朝鲜第16摩步师" "朝鲜第17摩步师" "朝鲜第18摩步师" "朝鲜第19摩步师" "朝鲜第20摩步师"
+	}
+	mechanized_brigade = {
+		"朝鲜第1机步师" "朝鲜第2机步师" "朝鲜第3机步师" "朝鲜第4机步师" "朝鲜第5机步师" "朝鲜第6机步师" "朝鲜第7机步师" "朝鲜第8机步师" "朝鲜第9机步师" "朝鲜第10机步师" "朝鲜第12机步师" 
+		"朝鲜第13机步师" "朝鲜第14机步师" "朝鲜第15机步师" "朝鲜第16机步师" "朝鲜第17机步师" "朝鲜第18机步师" "朝鲜第19机步师" "朝鲜第20机步师" 
+	}
+	light_armor_brigade = {
+		"朝鲜第1轻装甲师" "朝鲜第2轻装甲师" "朝鲜第3轻装甲师" "朝鲜第4轻装甲师" "朝鲜第5轻装甲师" "朝鲜第6轻装甲师" "朝鲜第7轻装甲师" "朝鲜第8轻装甲师" "朝鲜第9轻装甲师" "朝鲜第10轻装甲师"
+	armor_brigade = {
+		"朝鲜第1装甲师" "朝鲜第2装甲师" "朝鲜第3装甲师" "朝鲜第4装甲师" "朝鲜第5装甲师" "朝鲜第6装甲师" "朝鲜第7坦克师" "朝鲜第8装甲师" "朝鲜第9装甲师" "朝鲜第10装甲师" 
+	}
+	paratrooper_brigade = {
+		"朝鲜第21空降师" "朝鲜第22空降师" "朝鲜第23空降师" "朝鲜第24空降师" "朝鲜第25空降师" "朝鲜第26空降师" "朝鲜第27空降师" "朝鲜第28空降师" "朝鲜第29空降师" "朝鲜第30空降师" "朝鲜第31空降师" 
+			}
+	marine_brigade = {
+		"朝鲜第20海军陆战师" "朝鲜第21海军陆战师" "朝鲜第22海军陆战师" "朝鲜第23海军陆战师" "朝鲜第24海军陆战师" "朝鲜第25海军陆战师" "朝鲜第26海军陆战师" "朝鲜第27海军陆战师" "朝鲜第28海军陆战师" "朝鲜第29海军陆战师" "朝鲜第30海军陆战师" 
+			}
+	bergsjaeger_brigade = {
+		"朝鲜第20山地师" "朝鲜第21山地师" "朝鲜第22山地师" "朝鲜第23山地师" "朝鲜第24山地师" "朝鲜第25山地师" "朝鲜第26山地师" "朝鲜第27山地师" "朝鲜第28山地师" "朝鲜第29山地师" "朝鲜第30山地师" 
+			}
+	garrison_brigade = {
+		"朝鲜第1卫戍师" "朝鲜第2卫戍师" "朝鲜第3卫戍师" "朝鲜第4卫戍师" "朝鲜第5卫戍师" "朝鲜第6卫戍师" "朝鲜第7卫戍师" "朝鲜第8卫戍师" "朝鲜第9卫戍师" "朝鲜第10卫戍师" "朝鲜第12卫戍师" 
+		"朝鲜第13卫戍师" "朝鲜第14卫戍师" "朝鲜第15卫戍师" "朝鲜第16卫戍师" "朝鲜第17卫戍师" "朝鲜第18卫戍师" "朝鲜第19卫戍师" "朝鲜第20卫戍师" 
+	}
+	hq_brigade = {
+		"朝鲜第1军" "朝鲜第2军" "朝鲜第3军" "朝鲜第4军" "朝鲜第5军" 
+	}
+	militia_brigade = {
+		"朝鲜第1民兵师" "朝鲜第2民兵师" "朝鲜第3民兵师" "朝鲜第4民兵师" "朝鲜第5民兵师" "朝鲜第6民兵师" "朝鲜第7民兵师" "朝鲜第8民兵师" "朝鲜第9民兵师" "朝鲜第10民兵师" "朝鲜第11民兵师" 
+		"朝鲜第12民兵师" "朝鲜第13民兵师" "朝鲜第14民兵师" "朝鲜第15民兵师" "朝鲜第16民兵师" "朝鲜第17民兵师" "朝鲜第18民兵师" "朝鲜第19民兵师" "朝鲜第20民兵师" "朝鲜第21民兵师" "朝鲜第22民兵师" 
+		"朝鲜第23民兵师" "朝鲜第24民兵师" "朝鲜第25民兵" 
+	}
+	multi_role = {
+		"朝鲜第1通用战斗机大队 " "朝鲜第2通用战斗机大队" "朝鲜第3通用战斗机大队" "朝鲜第4通用战斗机大队" "朝鲜第5通用战斗机大队" "朝鲜第6通用战斗机大队" "朝鲜第7通用战斗机大队" "朝鲜第8通用战斗机大队" "朝鲜第9通用战斗机大队" 
+	}
+	interceptor = {
+		"朝鲜第1截击机大队" "朝鲜第2截击机大队" "朝鲜第3截击机大队" "朝鲜第4截击机大队" "朝鲜第5截击机大队" "朝鲜第6截击机大队" "朝鲜第7截击机大队" "朝鲜第8截击机大队" "朝鲜第9截击机大队" "朝鲜第10截击机大队" "朝鲜第11截击机大队" 
+		"朝鲜第12截击机大队" "朝鲜第13截击机大队" "朝鲜第14截击机大队" "朝鲜第15截击机大队" "朝鲜第16截击机大队" "朝鲜第17截击机大队" "朝鲜第18截击机大队" "朝鲜第19截击机大队" "朝鲜第20截击机大队" 
+	}
+	strategic_bomber = {
+		"朝鲜第1战略轰炸机大队" "朝鲜第2战略轰炸机大队" "朝鲜第3战略轰炸机大队" "朝鲜第4战略轰炸机大队" "朝鲜第5战略轰炸机大队" "朝鲜第6战略轰炸机大队" 
+	}
+	tactical_bomber = {
+		"朝鲜第1战术轰炸机大队" "朝鲜第2战术轰炸机大队" "朝鲜第3战术轰炸机大队" "朝鲜第4战术轰炸机大队" "朝鲜第5战术轰炸机大队" "朝鲜第6战术轰炸机大队" 
+	}
+	naval_bomber = {
+		"朝鲜第4海军轰炸机大队" "朝鲜第2海军轰炸机大队" "朝鲜第3海军轰炸机大队" "朝鲜第4海军轰炸机大队" "朝鲜第5海军轰炸机大队" "朝鲜第6海军轰炸机大队" "朝鲜第52海军轰炸机大队" "朝鲜第53海军轰炸机大队" "朝鲜第54海军轰炸机大队" "朝鲜第55海军轰炸机大队" "朝鲜第56海军轰炸机大队" 
+			}
+	cas = {
+		"朝鲜第1俯冲大队" "朝鲜第2俯冲大队" "朝鲜第3俯冲大队" "朝鲜第4俯冲大队" "朝鲜第5俯冲大队" "朝鲜第6俯冲大队" "朝鲜第7俯冲大队" "朝鲜第8俯冲大队" "朝鲜第9俯冲大队" "朝鲜第10俯冲大队" "朝鲜第11俯冲大队" 
+                "朝鲜第12俯冲大队" "朝鲜第13俯冲大队" "朝鲜第14俯冲大队" "朝鲜第15俯冲大队" "朝鲜第16俯冲大队" "朝鲜第17俯冲大队" "朝鲜第18俯冲大队" "朝鲜第19俯冲大队" "朝鲜第20俯冲大队" 
+	}
+	transport_plane = {
+		"朝鲜第1运输机大队" "朝鲜第2运输机大队" "朝鲜第3运输机大队" "朝鲜第4运输机大队" "朝鲜第5运输机大队" 
+	}
+	battleship = {
+		"'独立'号战舰" "'自由'号战舰" "'解放'号战舰" "'胜利'号战舰" 
+	}
+	light_cruiser = {
+		"'独立'号轻巡" "'自由'号轻巡" "'解放'号轻巡" "'胜利'号轻巡"
+	}
+	heavy_cruiser = {
+		"'独立'号重巡" "'自由'号重巡" "'解放'号重巡" "'胜利'号重巡"
+        }
+	battlecruiser = {
+		"'独立'号战巡" "'自由'号战巡" "'解放'号战巡" "'胜利'号战巡"
+	}
+	destroyer = {
+		"朝鲜第1驱逐大队" "朝鲜第2驱逐大队" "朝鲜第3驱逐大队" "朝鲜第4驱逐大队" "朝鲜第5驱逐大队" "朝鲜第6驱逐大队" "朝鲜第7驱逐大队" "朝鲜第8驱逐大队" "朝鲜第9驱逐大队" "朝鲜第10驱逐大队"
+	}
+	carrier = {
+		"'独立'号航母" "'自由'号航母" "'解放'号航母" "'胜利'号航母"
+	}
+	submarine = {
+		"朝鲜第1潜艇大队" "朝鲜第2潜艇大队" "朝鲜第3潜艇大队" "朝鲜第4潜艇大队" "朝鲜第5潜艇大队" "朝鲜第6潜艇大队" "朝鲜第7潜艇大队" "朝鲜第8潜艇大队" "朝鲜第9潜艇大队" "朝鲜第10潜艇大队" 
+	}
+	transport_ship = {
+		"朝鲜第1运输大队" "朝鲜第2运输大队" "朝鲜第3运输大队" "朝鲜第4运输大队" "朝鲜第5运输大队" "朝鲜第6运输大队" "朝鲜第7运输大队" "朝鲜第8运输大队" "朝鲜第9运输大队" "朝鲜第10运输大队" 
+	}
+
+}
+
+ministers = {
+	579001 = {
+		name = "金日成"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M579001
+		head_of_state = power_hungry_demagogue
+		head_of_government = backroom_backstabber
+		minister_of_security = prince_of_terror
+		chief_of_army = decisive_battle_doctrine
+		start_date = 1936.1.1
+	}
+	579003 = {
+		name = "南日"
+		ideology = stalinist
+		loyalty = 0.75
+		picture = M579003
+		foreign_minister = general_staffer
+		chief_of_staff = school_of_defence
+		start_date = 1936.1.1
+	}
+	579004 = {
+		name = "曹晚植"
+		ideology = stalinist
+		loyalty = 0.75
+		picture = M578005
+		armament_minister = laissez_faires_capitalist
+		start_date = 1936.1.1
+	}
+	579006 = {
+		name = "肖劲光"
+		ideology = stalinist
+		loyalty = 0.25
+		picture = M579006
+		minister_of_intelligence = research_specialist
+		start_date = 1936.1.1
+	}
+	579007 = {
+		name = "宋时轮"
+		ideology = stalinist
+		loyalty = 0.75
+		picture = M579007
+		chief_of_staff = school_of_fire_support
+		start_date = 1936.1.1
+	}
+	579009 = {
+		name = "刘西元"
+		ideology = stalinist
+		loyalty = 0.75
+		picture = M579009
+		chief_of_navy = indirect_approach_doctrine
+		start_date = 1936.1.1
+	}
+	579010 = {
+		name = "李克农"
+		ideology = stalinist
+		loyalty = 0.75
+		picture = M579010
+		chief_of_air = carpet_bombing_doctrine
+		start_date = 1936.1.1
+	}
+	579011 = {
+		name = "李东辉"
+		ideology = social_democrat
+		loyalty = 1.00
+		picture = M578014
+		head_of_state = barking_buffoon
+		start_date = 1936.1.1
+	}
+	579012 = {
+		name = "金长金"
+		ideology = social_democrat
+		loyalty = 1.00
+		picture = M578016
+		head_of_government = flamboyant_tough_guy
+		start_date = 1936.1.1
+	}
+	579013 = {
+		name = "金永妁"
+		ideology = social_democrat
+		loyalty = 0.75
+		picture = M579013
+		foreign_minister = great_compromiser
+		start_date = 1936.1.1
+	}
+	579014 = {
+		name = "朴宪永"
+		ideology = social_democrat
+		loyalty = 0.75
+		picture = M578012
+		armament_minister = resource_industrialist
+		start_date = 1936.1.1
+	}
+	579015 = {
+		name = "朴中西"
+		ideology = social_democrat
+		loyalty = 1.00
+		picture = M578017
+		minister_of_security = compassionate_gentleman
+		start_date = 1936.1.1
+	}
+	579016 = {
+		name = "崔永波"
+		ideology = stalinist
+		loyalty = 0.25
+		picture = M579016
+		minister_of_intelligence = technical_specialist
+		start_date = 1936.1.1
+	}
+	579018 = {
+		name = "金益铉"
+		ideology = social_democrat
+		loyalty = 0.75
+		picture = M579018
+		chief_of_army = guns_and_butter_doctrine
+		start_date = 1936.1.1
+	}
+	579019 = {
+		name = "罗金普"
+		ideology = social_democrat
+		loyalty = 0.75
+		picture = M579019
+		chief_of_navy = decisive_naval_battle_doctrine
+		start_date = 1936.1.1
+	}
+	579020 = {
+		name = "朴智昌"
+		ideology = social_democrat
+		loyalty = 0.75
+		picture = M579020
+		chief_of_air = naval_aviation_doctrine
+		start_date = 1936.1.1
+	}
+}
