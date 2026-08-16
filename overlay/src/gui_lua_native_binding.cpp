@@ -9,6 +9,7 @@
 #include <limits>
 #include <mutex>
 #include <string>
+#include <string_view>
 #include <unordered_map>
 #include <unordered_set>
 #include <utility>
@@ -1039,6 +1040,58 @@ int GuiLuaNativeBinding::PublishUpdate(
                         + std::to_string(update.values.size())
                         + ", lists="
                         + std::to_string(update.lists.size())
+                    );
+                    std::size_t regionValueCount = 0;
+                    std::size_t nonzeroRegionCount = 0;
+                    double maximumRegionValue = 0.0;
+                    std::string maximumRegionName;
+                    constexpr std::string_view regionPrefix = "regions.";
+                    constexpr std::string_view regionSuffix =
+                        ".controlledpercentage";
+                    for (const auto& [name, value] : update.values)
+                    {
+                        if (name.size()
+                                <= regionPrefix.size()
+                                    + regionSuffix.size()
+                            || name.compare(
+                                0,
+                                regionPrefix.size(),
+                                regionPrefix
+                            ) != 0
+                            || name.compare(
+                                name.size() - regionSuffix.size(),
+                                regionSuffix.size(),
+                                regionSuffix
+                            ) != 0)
+                        {
+                            continue;
+                        }
+                        ++regionValueCount;
+                        const double percentage =
+                            GuiDataValueToNumber(value);
+                        if (percentage > 0.0)
+                        {
+                            ++nonzeroRegionCount;
+                        }
+                        if (percentage > maximumRegionValue)
+                        {
+                            maximumRegionValue = percentage;
+                            maximumRegionName = name;
+                        }
+                    }
+                    WriteGuiDiagnostic(
+                        "First Lua GUI Region values: channel="
+                        + channel
+                        + ", count="
+                        + std::to_string(regionValueCount)
+                        + ", nonzero="
+                        + std::to_string(nonzeroRegionCount)
+                        + ", maximum="
+                        + std::to_string(maximumRegionValue)
+                        + ", maximumKey="
+                        + (maximumRegionName.empty()
+                            ? std::string("<none>")
+                            : maximumRegionName)
                     );
                 }
                 const uint64_t revision = update.revision;

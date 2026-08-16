@@ -2772,6 +2772,10 @@ const GuiResolvedWidget* HitTestGuiWidgets(
 		}
 
 		const WidgetType type = iterator->definition->type;
+		if (type == WidgetType::MarkerLayer)
+		{
+			continue;
+		}
 		if (!iterator->definition->draggable
 			&& type != WidgetType::Window
 			&& type != WidgetType::Button

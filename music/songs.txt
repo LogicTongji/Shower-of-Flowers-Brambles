@@ -1,0 +1,715 @@
+
+song = {
+	name = "alliesdoinggood.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			ENG = { 
+				faction = allies
+				faction_progress = 33
+			}
+		}
+		modifier = {
+			factor = 0
+			ENG = { 
+				faction = allies
+				NOT = { faction_progress = 20 }
+			}
+		}		
+	}
+}
+
+song = {
+	name = "axis_marchofdominance.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			GER = { 
+				faction = axis
+				faction_progress = 33
+			}
+		}
+		modifier = {
+			factor = 0
+			GER = { 
+				faction = axis
+				NOT = { faction_progress = 20 }
+			}
+		}		
+	}
+}
+
+song = {
+	name = "sovietvictory.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			SOV = { 
+				faction = comintern
+				faction_progress = 33
+			}
+		}	
+		modifier = {
+			factor = 0
+			SOV = { 
+				faction = comintern
+				NOT = { faction_progress = 20 }
+			}
+		}		
+		
+	}
+}
+
+song = {
+	name = "bigairforce.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			total_amount_of_planes = 20
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				total_amount_of_planes = 5
+			}
+		}
+		
+	}
+}
+
+song = {
+	name = "bigarmy.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			total_amount_of_divisions = 200
+		}
+		modifier = {
+			factor = 0
+			NOT = { total_amount_of_divisions = 100 }
+		}
+		
+	}
+}
+
+song = {
+	name = "bigfleet.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			total_amount_of_ships = 20
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				total_amount_of_ships = 5
+			}
+		}
+	}
+}
+
+song = {
+	name = "bombingthem.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			total_we_bomb = 10
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				total_amount_of_ships = 2
+			}
+		}
+	}
+}
+
+song = {
+	name = "bombingus.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			strat_bomb_impact = 0
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				strat_bomb_impact = -0.1
+			}
+		}
+	}
+}
+
+song = {
+	name = "convoys.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			num_of_convoys = 10
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				num_of_convoys = 1
+			}
+		}
+	}
+}
+
+song = {
+	name = "convoysgetsunk.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			strat_convoy_impact = 0
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				strat_convoy_impact = -0.1
+			}
+		}
+	}
+}
+
+song = {
+	name = "dangeroustoothers.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			neutrality = 80
+		}
+		modifier = {
+			factor = 2
+			NOT = { neutrality = 40 }
+		}
+	}
+}
+
+song = {
+	name = "defensive.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			total_defensives = 5
+		}
+		modifier = {
+			factor = 0
+			total_offensives = 5
+		}
+	}
+}
+
+song = {
+	name = "dissent.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { dissent = 1 }
+		}		
+
+		modifier = {
+			factor = 2
+			dissent = 10
+		}
+	}
+}
+
+song = {
+	name = "faction_allies_setfordeparture.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { faction = allies }
+		}
+		modifier = {
+			factor = 2
+			faction = allies
+		}
+	}
+}
+
+song = {
+	name = "gen_allies_unitednations.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { faction = allies }
+		}
+		modifier = {
+			factor = 2
+			faction = allies
+		}
+	}
+}
+
+
+song = {
+	name = "faction_axis_roadfromberlin.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { faction = axis }
+		}
+		modifier = {
+			factor = 2
+			faction = axis
+		}
+	}
+}
+
+
+song = {
+	name = "gen_axis_landoftherisingsun.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { tag = JAP }
+		}
+		modifier = {
+			factor = 2
+			tag = JAP
+		}
+	}
+}
+
+
+
+
+song = {
+	name = "genaxis1_luftwaffe.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { faction = axis }
+		}
+		modifier = {
+			factor = 2
+			faction = axis
+		}
+	}
+}
+
+
+song = {
+	name = "faction_com.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { faction = comintern }
+		}
+		modifier = {
+			factor = 2
+			faction = comintern
+		}
+	}
+}
+
+song = {
+	name = "gen_com_leningrad.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { faction = comintern }
+		}
+		modifier = {
+			factor = 2
+			faction = comintern
+		}
+	}
+}
+
+
+
+song = {
+	name = "gencom1_risemycomrades.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { faction = comintern }
+		}
+		modifier = {
+			factor = 2
+			faction = comintern
+		}
+	}
+}
+
+
+song = {
+	name = "genpeace_thepacific.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			war = yes
+		}
+		modifier = {
+			factor = 2
+			war = no
+		}		
+	}
+}
+
+song = {
+	name = "gen_peace_wearefree.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			war = yes
+		}
+		modifier = {
+			factor = 2
+			war = no
+		}		
+	}
+}
+
+
+song = {
+	name = "genpeace_lettersfromhome.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			war = yes
+		}
+		modifier = {
+			factor = 2
+			war = no
+		}		
+	}
+}
+
+
+song = {
+	name = "gen_peace_1.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			war = yes
+		}
+		modifier = {
+			factor = 2
+			war = no
+		}
+	}
+}
+
+song = {
+	name = "gen_peace_2.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			war = yes
+		}
+		modifier = {
+			factor = 2
+			war = no
+		}
+	}
+}
+
+song = {
+	name = "gen_war_balletofwar.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			war = no
+		}
+		modifier = {
+			factor = 2
+			war = yes
+		}
+	}
+}
+
+song = {
+	name = "gen_war_worldatwar.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			war = no
+		}
+		modifier = {
+			factor = 2
+			war = yes
+		}
+	}
+}
+
+
+song = {
+	name = "gen_war_omahabeach.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			war = no
+		}
+		modifier = {
+			factor = 2
+			war = yes
+		}
+	}
+}
+
+
+song = {
+	name = "hymnfortheoneslostatsea.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			total_of_ours_sunk = 5
+			war = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = { total_of_ours_sunk = 1 }
+		}
+	}
+}
+
+song = {
+	name = "landactions.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			total_offensives = 10
+		}
+		modifier = {
+			factor = 0
+			NOT = { total_offensives = 5 }
+		}
+	}
+}
+
+song = {
+	name = "loosealotofbattles.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			total_defensives = 10
+		}
+		modifier = {
+			factor = 0
+			NOT = { total_defensives = 5 }
+		}
+	}
+}
+
+song = {
+	name = "lotsofbattles_welloiledwarmachine.mp3"
+	
+	chance = {
+
+		modifier = {
+			factor = 2
+			OR = {
+				total_offensives = 10
+				total_defensives = 10
+			}
+		}
+		modifier = {
+			factor = 0
+			war = no
+		}
+	}
+}
+
+song = {
+	name = "lowonmanpower.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			manpower_percentage = 2.0
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { manpower_percentage = 0.5 }
+		}
+
+	}
+}
+
+song = {
+	name = "manyarmiesmoving.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			total_offensives = 20
+			total_amount_of_divisions = 100
+		}
+		modifier = {
+			factor = 0
+			NOT = { total_offensives = 5 }
+		}
+	}
+}
+
+song = {
+	name = "offensive.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			total_offensives = 5
+		}
+		modifier = {
+			factor = 0
+			total_defensives = 5
+		}
+	}
+}
+
+song = {
+	name = "seaactions.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 2.0
+			total_sea_battles = 2
+		}
+		modifier = {
+			factor = 0
+			NOT = { total_sea_battles = 1 }
+		}
+	}
+}
+
+
+
+song = {
+	name = "tanksalot.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 2.0
+			armor_brigade = 30
+		}
+		modifier = {
+			factor = 0
+			NOT = { armor_brigade = 10 }
+		}
+	}
+}
+
+song = {
+	name = "unitylow.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			national_unity = 70
+		}
+		modifier = {
+			factor = 2
+			NOT = { national_unity = 50 }
+		}
+	}
+}
+
+song = {
+	name = "winalotofbattles.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			total_offensives = 5
+		}
+		modifier = {
+			factor = 0
+			NOT = { total_offensives = 1 }
+		}
+	}
+}
+
+
+
+song = {
+	name = "epicbattle.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			OR = { 
+				total_offensives = 10
+				total_defensives = 10
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { total_offensives = 5 }
+		}
+	}
+}
+
+
+song = {
+	name = "diplomaticsuccess.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			is_in_any_faction = yes
+			num_in_faction = 10
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				is_in_any_faction = no
+				NOT = { num_in_faction = 5 }
+			}
+		}
+	}
+}
+
+
+song = {
+	name = "threatenedwhileatpeace.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			is_threatend = 60
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				war = yes
+				NOT = { is_threatend = 30 }
+			}
+		}
+	}
+}

@@ -1,0 +1,99 @@
+theatre = {
+	name = "太平洋战区"
+	location = 5825
+	regiment = { type = hq_brigade name = "太平洋战区指挥部" historical_model = 0 }
+	division= {
+		name = "中途岛第1守备"
+		location = 10669
+		regiment = { name = "中途岛第1步兵团" type = garrison_brigade experience = 50 historical_model = 2 }
+		regiment = { name = "中途岛第2步兵团" type = garrison_brigade experience = 50 historical_model = 2 }
+		regiment = { name = "中途岛第3步兵团" type = garrison_brigade experience = 50 historical_model = 2 }
+	division= {
+		name = "中途岛第2守备"
+		location = 10669
+		regiment = { name = "中途岛第4步兵团" type = marine_brigade experience = 50 historical_model = 2 }
+		regiment = { name = "中途岛第5步兵团" type = marine_brigade experience = 50 historical_model = 2 }
+		regiment = { name = "中途岛第6步兵团" type = marine_brigade experience = 50 historical_model = 2 }
+	}
+	division= {
+		name = "阿图岛守备"
+		location = 10684
+		regiment = { name = "阿图岛第1步兵团" type = garrison_brigade experience = 50 historical_model = 2 }
+		regiment = { name = "阿图岛第2步兵团" type = garrison_brigade experience = 50 historical_model = 2 }
+		regiment = { name = "阿图岛第3步兵团" type = garrison_brigade experience = 50 historical_model = 2 }
+	}
+	division= {
+		name = "基斯卡岛守备"
+		location = 14165
+		regiment = { name = "基斯卡岛第1步兵团" type = garrison_brigade experience = 50 historical_model = 2 }
+		regiment = { name = "基斯卡岛第2步兵团" type = garrison_brigade experience = 50 historical_model = 2 }
+		regiment = { name = "基斯卡岛第3步兵团" type = garrison_brigade experience = 50 historical_model = 2 }
+	}
+	navy = {
+		name = "第17特混舰队"
+		leader = 60404
+		base = 5825
+		location = 13561
+		ship = { type = carrier experience = 50 name = "约克城号" historical_model = 2 air = { name = "VF-3" location = 13561 wing = { type = cag experience = 50 historical_model = 4 } } air = { name = "VB-3" location = 13561 wing = { type = shipborne_attack experience = 50 historical_model = 4 } } }
+		ship = { type = heavy_cruiser experience = 50 name = "阿斯托利亚号" historical_model = 1 }
+		ship = { type = heavy_cruiser experience = 50 name = "波特兰号" historical_model = 1 }
+		ship = { type = destroyer experience = 50 name = "哈曼号&休斯号" historical_model = 2 }
+		ship = { type = destroyer experience = 50 name = "莫里斯号&安德森号" historical_model = 2 }
+		ship = { type = destroyer experience = 50 name = "拉塞尔号&格温号" historical_model = 2 }
+	}
+	navy = { 
+		name = "第16特混舰队"
+		leader = 
+60469
+		base = 5825
+		location = 13561
+		ship = { type = carrier experience = 50 name = "企业号" historical_model = 2 air = { name = "VF-6" location = 13561 wing = { type = cag experience = 50 historical_model = 4 } } air = { name = "VB-6" location = 13561 wing = { type = shipborne_attack experience = 50 historical_model = 4 } } }
+		ship = { type = carrier experience = 50 name = "大黄蜂号" historical_model = 2 air = { name = "VB-8" location = 13561 wing = { type = shipborne_attack experience = 50 historical_model = 4 } } air = { name = "VF-8" location = 13561 wing = { type = cag experience = 50 historical_model = 4 } } }
+		ship = { type = heavy_cruiser experience = 50 name = "新奥尔良号" historical_model = 2 }
+		ship = { type = heavy_cruiser experience = 50 name = "明尼阿波利斯号" historical_model = 2 }
+		ship = { type = heavy_cruiser experience = 50 name = "文森斯号" historical_model = 2 }
+		ship = { type = heavy_cruiser experience = 50 name = "北安普敦号" historical_model = 1 }
+		ship = { type = heavy_cruiser experience = 50 name = "彭萨科拉号" historical_model = 1 }
+		ship = { type = light_cruiser experience = 50 name = "亚特兰大号" historical_model = 3 }
+		ship = { type = destroyer experience = 50 name = "鲍奇号&科宁厄姆号" historical_model = 2 }
+		ship = { type = destroyer experience = 50 name = "贝纳姆号&埃利特号" historical_model = 2 }
+		ship = { type = destroyer experience = 50 name = "莫里号" historical_model = 2 }
+		ship = { type = destroyer experience = 50 name = "菲尔普斯号&沃尔登号" historical_model = 1 }
+		ship = { type = destroyer experience = 50 name = "莫纳汉号&艾尔文号" historical_model = 1 }
+		ship = { type = destroyer experience = 50 name = "杜威号&蒙森号" historical_model = 1 }
+	}
+	navy = {
+		name = "第7.1大队"
+		base = 5825
+		location = 13561
+		ship = { type = submarine experience = 50 name = "鹦鹉螺号&海豚号&抹香鲸号" historical_model = 2 }
+		ship = { type = submarine experience = 50 name = "石斑鱼号&鳟鱼号&河鳟号" historical_model = 2 }
+		ship = { type = submarine experience = 50 name = "白杨鱼号&小鲨鱼号&飞鱼号" historical_model = 2 }
+	}
+	navy = {
+		name = "第7.2大队"
+		base = 5825
+		location = 13561
+		ship = { type = submarine experience = 50 name = "一角鲸号&活塞号&扳机号" historical_model = 2 }
+	}
+	navy = {
+		name = "第7.3大队"
+		base = 5825
+		location = 13561
+		ship = { type = submarine experience = 50 name = "梭子鱼号&大海鲢号&长须鲸号" historical_model = 2 }
+	}
+                navy = {
+		name = "舰队运输船"
+		base = 5825
+		location = 13561
+		ship = { type = transport_ship name = "第1运输舰分队" historical_model = 0 }
+		ship = { type = transport_ship name = "第2运输舰分队" historical_model = 0 } 
+	}
+	air = {
+		name = "中途岛空军指挥部"
+		base = 10669
+		location = 10669
+		wing = { type = strategic_bomber experience = 50 name = "中途岛轰炸支队" historical_model = 0 }
+		wing = { type = strategic_bomber experience = 50 name = "中途岛俯冲支队" historical_model = 0 }
+	}
+}

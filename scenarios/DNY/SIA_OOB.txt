@@ -1,0 +1,144 @@
+corps = {
+	name = "曼谷军团"
+	location = 6148
+	regiment = { type = hq_brigade name = "曼谷军团指挥部" historical_model = 0 }
+	division= {
+		name = "'碧武里'步兵师"
+		location = 6148
+		is_reserve = yes
+		regiment = { type = infantry_brigade historical_model = 1 }
+		regiment = { type = infantry_brigade historical_model = 1 }
+		regiment = { type = infantry_brigade historical_model = 1 }
+	}
+	division= {
+		name = "'萨拉布里'步兵师"
+		location = 6148
+		is_reserve = yes
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
+	}
+	division= {
+		name = "'吞武里'步兵师"
+		location = 6148
+		is_reserve = yes
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
+	}
+}
+corps = {
+	name = "'巴真武里'军团"
+	location = 6148
+	regiment = { type = hq_brigade name = "'巴真武里'军团指挥部" historical_model = 0 }
+	division= {
+		name = "'巴真武里'步兵师"
+		location = 6148
+		is_reserve = yes
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
+	}
+	division= {
+		name = "'庄他武里'步兵师"
+		location = 6148
+		is_reserve = yes
+		regiment = { type = infantry_brigade historical_model = 1 }
+		regiment = { type = infantry_brigade historical_model = 1 }
+		regiment = { type = infantry_brigade historical_model = 1 }
+	}
+	division= {
+		name = "'华富里'步兵师"
+		location = 6148
+		is_reserve = yes
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
+	}
+	division= {
+		name = "'瓦特那那空'步兵师"
+		location = 6148
+		is_reserve = yes
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
+	}
+	division= {
+		name = "'亚兰'混编师"
+		location = 6148
+		is_reserve = yes
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = cavalry_brigade historical_model = 0 }
+	}
+}
+division = {
+	name = "'那空撒温'师"
+	location = 6148
+	is_reserve = yes
+	regiment = { type = infantry_brigade historical_model = 0 }
+	regiment = { type = infantry_brigade historical_model = 0 }
+	regiment = { type = infantry_brigade historical_model = 0 }
+}
+division = {
+	name = "'那空撒温'师"
+	location = 6148
+	is_reserve = yes
+	regiment = { type = infantry_brigade historical_model = 0 }
+	regiment = { type = infantry_brigade historical_model = 0 }
+	regiment = { type = infantry_brigade historical_model = 0 }
+}
+division = {
+	name = "'碧武里'师"
+	location = 6148
+	is_reserve = yes
+	regiment = { type = infantry_brigade historical_model = 0 }
+	regiment = { type = infantry_brigade historical_model = 0 }
+	regiment = { type = infantry_brigade historical_model = 0 }
+}
+corps = {
+	name = "'那空斯里兰卡坤'军团"
+	location = 6148
+	regiment = { type = hq_brigade name = "'那空斯里兰卡坤'军团指挥部" historical_model = 0 }
+	division= {
+		name = "'那空斯里兰卡坤'步兵师"
+		location = 6148
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第17步兵团" historical_model = 1 }
+		regiment = { type = infantry_brigade name = "第39步兵团" historical_model = 1 }
+	}
+	division= {
+		name = "'宋卡府'步兵师"
+		location = 6148
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第5步兵团" historical_model = 1 }
+		regiment = { type = infantry_brigade name = "第41步兵团" historical_model = 1 }
+	}
+	division= {
+		name = "'北塔尼'步兵师"
+		location = 6148
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第42步兵团" historical_model = 1 }
+	}
+	division= {
+		name = "'春蓬'步兵师"
+		location = 6148
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第38步兵团" historical_model = 1 }
+	}
+}
+navy = {
+	name = "泰国皇家海军"
+	base = 6175
+	location = 6175
+	ship = { type = light_cruiser name = "RTNS 斯里阿育西号" historical_model = 0 }
+	ship = { type = destroyer name = "'帕如昂'支队" historical_model = 0 }
+	ship = { type = submarine name = "'新赛姆德'支队" historical_model = 0 }
+}
+air = {
+	name = "泰国皇家空军"
+	base = 6175
+	location = 6175
+	wing = { type = interceptor name = "第1泰国皇家截击机编队" historical_model = 0 }
+	wing = { type = tactical_bomber name = "第1泰国皇家轰炸机编队" historical_model = 0 }
+}

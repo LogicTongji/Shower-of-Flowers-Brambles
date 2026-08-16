@@ -1,0 +1,181 @@
+country_event = {
+
+	id = 2
+	
+	fire_only_once = yes
+	trigger = {
+		 tag = CHI
+                war_with = JAP
+	}
+	
+	title = "SH_title"
+	desc = "SH_chi"
+	picture = "CHI_Flag"
+	option = {
+		name = "BTintroduction_chc_option"
+		manpower = 1500
+                    supplies = 50000
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+
+	id = 3
+	
+	fire_only_once = yes
+	trigger = {
+		 tag = JAP
+                war_with = CHI
+	}
+	
+	title = "SH_titlejap"
+	desc = "SH_title_jap"
+	picture = "JAP_Flag"
+	option = {
+		name = "BTintroduction_chc_option"
+		manpower = 1500
+		                supplies = 50000
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+
+	id = 4
+	
+	fire_only_once = yes
+	trigger = {
+		 tag = JAP
+                war_with = CHI
+                date = 1937.8.14
+	}
+	
+	title = "SH_titlejap1"
+	desc = "SH_title_jap1"
+	picture = "JAP_Flag"
+	option = {
+		name = "太好了"
+		load_oob = "scenarios/Songhu/JAP1.txt"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+
+	id = 5
+	
+	fire_only_once = yes
+	trigger = {
+		 tag = CHI
+                war_with = JAP
+                date = 1937.8.14
+	}
+	
+	title = "SH_titleCHI1"
+	desc = "SH_title_CHI1"
+	picture = "CHI_Flag"
+	option = {
+		name = "太好了"
+		load_oob = "scenarios/Songhu/CHI1.txt"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+
+	id = 6
+	
+	fire_only_once = yes
+	trigger = {
+		 tag = JAP
+                war_with = CHI
+                date = 1937.8.16
+	}
+	
+	title = "SH_titleJAP2"
+	desc = "SH_title_JAP2"
+	picture = "JAP_Flag"
+	option = {
+		name = "太好了"
+		load_oob = "scenarios/Songhu/JAP2.txt"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+
+	id = 7
+	
+	fire_only_once = yes
+	trigger = {
+		 tag = CHI
+                war_with = JAP
+                date = 1937.8.21
+	}
+	
+	title = "SH_titleCHI2"
+	desc = "SH_title_CHI2"
+	picture = "CHI_Flag"
+	option = {
+		name = "太好了"
+		load_oob = "scenarios/Songhu/CHI2.txt"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+
+	id = 8
+	
+	fire_only_once = yes
+	trigger = {
+		 tag = JAP
+                war_with = CHI
+                date = 1937.8.22
+	}
+	
+	title = "SH_titleJAP3"
+	desc = "SH_title_JAP3"
+	picture = "JAP_Flag"
+	option = {
+		name = "太好了"
+		load_oob = "scenarios/Songhu/JAP3.txt"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+
+	id = 9
+	
+	fire_only_once = yes
+	trigger = {
+		 tag = JAP
+                war_with = CHI
+                date = 1937.10.20
+	}
+	
+	title = "SH_titleJAP4"
+	desc = "SH_title_JAP4"
+	picture = "JAP_Flag"
+	option = {
+		name = "太好了"
+		load_oob = "scenarios/Songhu/JAP4.txt"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+
+	id = 10
+	
+	fire_only_once = yes
+	trigger = {
+		 tag = CHI
+                war_with = JAP
+                date = 1937.9.11
+	}
+	
+	title = "SH_titleCHI4"
+	desc = "SH_title_CHI4"
+	picture = "CHI_Flag"
+	option = {
+		name = "太好了"
+		load_oob = "scenarios/Songhu/CHI4.txt"
+		ai_chance = { factor = 100 }
+	}
+}

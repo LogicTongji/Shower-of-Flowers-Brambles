@@ -6,5 +6,6 @@ guiBehaviors = {
 		enabledWhen = "state.visible"
 		fallback = "select_item"
 		target = "selected.id"
+		persist = yes
 	}
 }

@@ -1,0 +1,44 @@
+##############
+# JAP
+##############
+axis = {
+	BOF_Axis = {
+		trigger = {
+			and = {
+				10669 = {
+					controller = {
+						faction = axis
+					}
+				}
+				10684 = {
+					controller = {
+						faction = axis
+					}
+				}
+				14165 = {
+					controller = {
+						faction = axis
+					}
+				}
+			}
+		}
+		primary = yes
+	}
+}
+
+##############
+# USA
+##############
+allies	= {
+	BOF_Allies = {
+		trigger = {
+			10669 = {
+				controller = {
+					faction = allies
+				}
+			}
+			date = 1942.9.3
+		}
+		primary = yes
+	}
+}		

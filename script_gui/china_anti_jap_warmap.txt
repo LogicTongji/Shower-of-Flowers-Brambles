@@ -1,5 +1,29 @@
 guiBehaviors = {
 	behavior = {
+		name = "open_china_anti_jap_warmap"
+		function = "open_china_anti_jap_warmap"
+		phases = { click }
+		enabledWhen = "state.visible && state.active && !state.windowopen"
+		fallback = "set_value"
+		target = "state.windowopen"
+		value = yes
+		type = "bool"
+		persist = yes
+	}
+
+	behavior = {
+		name = "close_china_anti_jap_warmap"
+		function = "close_china_anti_jap_warmap"
+		phases = { click }
+		enabledWhen = "state.visible && state.active && state.windowopen"
+		fallback = "set_value"
+		target = "state.windowopen"
+		value = no
+		type = "bool"
+		persist = yes
+	}
+
+	behavior = {
 		name = "select_combat_region"
 		function = "select_combat_region"
 		phases = { click }

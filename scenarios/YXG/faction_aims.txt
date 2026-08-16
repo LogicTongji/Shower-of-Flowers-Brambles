@@ -1,0 +1,149 @@
+##############
+# CHI
+##############
+allies = {
+	保卫河南 = {
+		trigger = {
+			5383 = {
+				controller = {
+					faction = allies
+				}
+			}
+		}
+		primary = yes
+	}
+	守卫长沙 = {
+		trigger = {
+			7520 = {
+				controller = {
+					faction = allies
+				}
+			}
+		}
+		primary = yes
+	}
+	保卫广西 = {
+		trigger = {
+			7586 = {
+				controller = {
+					faction = allies
+				}
+			}
+			5862 = {
+				controller = {
+					faction = allies
+				}
+			}
+			7553 = {
+				controller = {
+					faction = allies
+				}
+			}
+			7575 = {
+				controller = {
+					faction = allies
+				}
+			}
+		}
+		primary = yes
+	}
+	夺取武汉 = {
+		trigger = {
+			7508 = {
+				controller = {
+					faction = allies
+				}
+			}
+		}
+	}
+}
+
+##############
+# JAP
+##############
+axis = {
+	打通河南 = {
+		trigger = {
+			5383 = {
+				controller = {
+					faction = axis
+				}
+			}
+			5401 = {
+				controller = {
+					faction = axis
+				}
+			}
+		}
+		primary = yes
+	}
+	保护武汉 = {
+		trigger = {
+			7508 = {
+				controller = {
+					faction = axis
+				}
+			}
+		}
+		primary = yes
+	}
+	占领常德 = {
+		trigger = {
+			7523 = {
+				controller = {
+					faction = axis
+				}
+			}
+		}
+	}
+	夺取长衡 = {
+		trigger = {
+			7520 = {
+				controller = {
+					faction = axis
+				}
+			}
+			7537 = {
+				controller = {
+					faction = axis
+				}
+			}
+		}
+		primary = yes
+	}
+	打通广西 = {
+		trigger = {
+			7586 = {
+				controller = {
+					faction = axis
+				}
+			}
+			5862 = {
+				controller = {
+					faction = axis
+				}
+			}
+			7553 = {
+				controller = {
+					faction = axis
+				}
+			}
+			7575 = {
+				controller = {
+					faction = axis
+				}
+			}
+		}
+		primary = yes
+	}
+	占领贵阳 = {
+		trigger = {
+			7541 = {
+				controller = {
+					faction = axis
+				}
+			}
+		}
+	}
+}
+	

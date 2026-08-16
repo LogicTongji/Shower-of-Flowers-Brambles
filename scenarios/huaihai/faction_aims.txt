@@ -1,0 +1,87 @@
+
+##############
+# Comintern
+##############
+comintern = {
+	HuaiHai_Tg = {
+		trigger = {
+			not = { CHI = { total_amount_of_brigades = 70 } }
+		}
+		primary = yes
+	}
+
+
+
+
+		HuaiHai_Tg_TWO = {
+		trigger = {
+			5494 = {
+				controller = {
+					faction = comintern
+				}
+			}
+			
+					}
+		primary = yes
+	}
+}
+##############
+# ALLIES
+##############
+allies = {
+
+	HuaiHai_KMT_ONE = {
+		trigger = {
+
+			
+			5491 = {
+				controller = {
+					faction = allies
+				}
+			}
+			5514 = {
+				controller = {
+					faction = allies
+				}
+			}
+			5492 = {
+				controller = {
+					faction = allies
+				}
+			}
+			5470 = {
+				controller = {
+					faction = allies
+				}
+			}
+			5436 = {
+				controller = {
+					faction = allies
+				}
+			}
+			5421 = {
+				controller = {
+					faction = allies
+				}
+			}
+			5406 = {
+				controller = {
+					faction = allies
+				}
+			}
+               date = 1949.9.1
+		}
+
+		primary = yes
+	}
+
+
+
+	HuaiHai_KMT_TWO = {
+		trigger = {
+			not = { CHC = { total_amount_of_brigades = 125 } }
+		}
+		primary = yes
+	}
+
+}

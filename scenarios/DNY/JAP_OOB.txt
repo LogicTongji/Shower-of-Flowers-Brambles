@@ -1,0 +1,196 @@
+theatre = {			
+		name = "南方军"			
+		location = 6070			
+		regiment = { type = hq_brigade name = "南方军总指挥部" historical_model = 3 }	
+    division= {		
+				name = "缅甸人民独立义勇军"	
+				location = 6070
+				regiment = { type = infantry_brigade experience = 45 historical_model = 3 }	
+				}
+		}
+		army = {  			
+			name = "第二十五军"		
+			location = 6070
+			regiment = { type = hq_brigade name = "第二十五军总指挥部" historical_model = 3 }	
+				division= {				
+				name = "近卫师团"	
+				location = 6148		
+				regiment = { type = imperial_brigade name = "近卫步兵第3联队" experience = 45 historical_model = 3 }	
+				regiment = { type = imperial_brigade name = "近卫步兵第4联队" experience = 45 historical_model = 3 }	
+				regiment = { type = imperial_brigade name = "近卫步兵第5联队" experience = 45 historical_model = 3 }
+				regiment = { type = artillery_brigade name = "近卫野炮兵第2联队" experience = 45 historical_model = 3 }	
+			}		
+			division= {		
+				name = "第十八师团"	
+				location = 7667
+				regiment = { type = infantry_brigade name = "步兵第55联队" experience = 45 historical_model = 3 }	
+				regiment = { type = infantry_brigade name = "步兵第56联队" experience = 45 historical_model = 3 }	
+				regiment = { type = infantry_brigade name = "步兵第114联队" experience = 45 historical_model = 3 }
+				regiment = { type = artillery_brigade name = "山炮兵第18联队" experience = 45 historical_model = 3 }		
+			}			
+			division= {		
+				name = "第五十六师团"	
+				location = 6070		
+				regiment = { type = infantry_brigade name = "步兵第113联队" experience = 45 historical_model = 3 }	
+				regiment = { type = infantry_brigade name = "步兵第146联队" experience = 45 historical_model = 3 }	
+				regiment = { type = infantry_brigade name = "步兵第148联队" experience = 45 historical_model = 3 }
+				regiment = { type = artillery_brigade name = "野炮兵第56联队" experience = 45 historical_model = 3 }		
+			}
+       division= {		
+				name = "川口支队"	
+				location = 6045	
+				regiment = { type = infantry_brigade name = "步兵第35旅团" experience = 45 historical_model = 3 }	
+			}
+		}
+	    corps = {    
+			name = "第五师团"		
+			location = 7657
+			regiment = { type = hq_brigade name = "第五师团指挥部" historical_model = 3 }		
+			division= {		
+				name = "步兵第9旅团"	
+				location = 7654	
+				regiment = { type = infantry_brigade name = "步兵第11联队" experience = 45 historical_model = 3 }	
+				regiment = { type = infantry_brigade name = "步兵第41联队" experience = 45 historical_model = 3 }
+				regiment = { type = artillery_brigade name = "野炮兵第5联队" experience = 45 historical_model = 3 }		
+			}		
+			division= {		
+				name = "步兵第21旅团"	
+				location = 7657	
+				regiment = { type = infantry_brigade name = "步兵第21联队" experience = 45 historical_model = 3 }	
+				regiment = { type = infantry_brigade name = "步兵第42联队" experience = 45 historical_model = 3 }	
+				regiment = { type = artillery_brigade name = "野炮兵第5联队" experience = 45 historical_model = 3 }	
+			       }					
+        }
+		        army = {			
+			name = "第十四军"		
+			location = 6148	
+			regiment = { type = hq_brigade name = "第十四军军指挥部" historical_model = 3 }		
+			division= {		
+				name = "第十六师团"	
+				location = 6148		
+				regiment = { type = infantry_brigade name = "步兵第9联队" experience = 45 historical_model = 3 }	
+				regiment = { type = infantry_brigade name = "步兵第20联队" experience = 45 historical_model = 3 }	
+				regiment = { type = infantry_brigade name = "步兵第33联队" experience = 45 historical_model = 3 }
+				regiment = { type = artillery_brigade name = "野炮兵第22联队" experience = 45 historical_model = 3 }
+			}		
+			division= {		
+				name = "第四十八师团"	
+				location = 6148		
+				regiment = { type = infantry_brigade name = "台湾步兵第1联队" experience = 45 historical_model = 3 }	
+				regiment = { type = infantry_brigade name = "台湾步兵第2联队" experience = 45 historical_model = 3 }	
+				regiment = { type = infantry_brigade name = "步兵第47联队" experience = 45 historical_model = 3 }
+				regiment = { type = alpine_artillery_brigade name = "山炮兵第48联队" experience = 45 historical_model = 3 }	
+			}			
+			division= {		
+				name = "第五十六旅团"	
+				location = 5425		
+				regiment = { type = infantry_brigade experience = 45 historical_model = 3 }	
+				regiment = { type = infantry_brigade experience = 45 historical_model = 3 }		
+                    }	
+		}
+		       army = {			
+			name = "第十五军"		
+			location = 6070
+			regiment = { type = hq_brigade name = "第十五军指挥部" historical_model = 3 }		
+			division= {		
+				name = "第三十三师团"	
+				location = 6031		
+				regiment = { type = infantry_brigade name = "步兵第213联队" experience = 45 historical_model = 3 }	
+				regiment = { type = infantry_brigade name = "步兵第214联队" experience = 45 historical_model = 3 }	
+				regiment = { type = infantry_brigade name = "步兵第215联队" experience = 45 historical_model = 3 }	
+				regiment = { type = alpine_artillery_brigade name = "山炮兵第33联队" experience = 45 historical_model = 3 }
+			}		
+			division= {		
+				name = "第五十五师团"	
+				location = 6019
+				regiment = { type = infantry_brigade name = "步兵第112联队" experience = 45 historical_model = 3 }	
+				regiment = { type = infantry_brigade name = "宇野支队" experience = 45 historical_model = 3 }	
+				regiment = { type = alpine_artillery_brigade name = "山炮兵第55联队" experience = 45 historical_model = 3 }
+				regiment = { type = alpine_artillery_brigade name = "144联队山炮兵第55联队" experience = 45 historical_model = 3 }
+			}			
+		}
+		        army = {			
+			name = "第十六军"		
+			location = 6055	
+			regiment = { type = hq_brigade name = "第十六军指挥部" historical_model = 3 }		
+			division= {		
+				name = "第二师团"	
+				location = 6044	
+				regiment = { type = infantry_brigade name = "步兵第4联队" experience = 45 historical_model = 3 }	
+				regiment = { type = infantry_brigade name = "步兵第16联队" experience = 45 historical_model = 3 }	
+				regiment = { type = infantry_brigade name = "步兵第29联队" experience = 45 historical_model = 3 }
+				regiment = { type = artillery_brigade name = "野炮兵第2联队" experience = 45 historical_model = 3 }	
+			}		
+			division= {		
+				name = "第三十八师团"	
+				location = 6056
+				regiment = { type = infantry_brigade name = "步兵第228联队" experience = 45 historical_model = 3 }	
+				regiment = { type = infantry_brigade name = "步兵第229联队" experience = 45 historical_model = 3 }	
+				regiment = { type = infantry_brigade name = "步兵第230联队" experience = 45 historical_model = 3 }
+				regiment = { type = alpine_artillery_brigade name = "山炮兵第38联队" experience = 45 historical_model = 3 }	
+			}			
+			division= {		
+				name = "混成第五十六步兵旅团"	
+				location = 6055		
+				regiment = { type = infantry_brigade experience = 45 historical_model = 3 }
+				regiment = { type = artillery_brigade experience = 45 historical_model = 3 }	
+			}					
+		      	division= {		
+				name = "第二十一师团"	
+				location = 6032	
+				regiment = { type = infantry_brigade name = "步兵第62联队" experience = 45 historical_model = 3 }	
+				regiment = { type = infantry_brigade name = "步兵第82联队" experience = 45 historical_model = 3 }	
+				regiment = { type = infantry_brigade name = "步兵第83联队" experience = 45 historical_model = 3 }
+				regiment = { type = artillery_brigade name = "野炮兵第51联队" experience = 45 historical_model = 3 }	
+			}
+			division= {		
+				name = "第二十一独立混成旅团"	
+				location = 6070		
+				regiment = { type = infantry_brigade experience = 45 historical_model = 3 }		
+				regiment = { type = artillery_brigade experience = 45 historical_model = 3 }	
+			}	
+		        division= {		
+				name = "第四独立混成联队"	
+				location = 6045	
+				regiment = { type = infantry_brigade experience = 45 historical_model = 3 }	
+			}			
+air = {
+	name = "第三飞行集团"
+	base = 6175
+	location = 6175
+	wing = { type = multi_role name = "第3飞行团" historical_model = 3 }
+	wing = { type = multi_role name = "第7飞行团" historical_model = 3 }
+	wing = { type = multi_role name = "第10飞行团" historical_model = 3 }
+	wing = { type = multi_role name = "第12飞行团" historical_model = 3 }
+}
+
+air = {
+	name = "第三飞行集团轰炸队"
+	base = 6175
+	location = 6175
+	wing = { type = tactical_bomber name = "独立第15飞行队" historical_model = 3 }
+	wing = { type = tactical_bomber name = "第81战队" historical_model = 3 }
+}
+
+air = {
+	name = "第五飞行集团"
+	base = 6175
+	location = 6175
+	wing = { type = multi_role name = "第4飞行团" historical_model = 3 }
+	wing = { type = multi_role name = "第4飞行团" historical_model = 3 }
+}
+
+air = {
+	name = "第五飞行集团轰炸队"
+	base = 6175
+	location = 6175
+	wing = { type = tactical_bomber name = "第10独立飞行队" historical_model = 3 }
+	wing = { type = tactical_bomber name = "第24飞行战队" historical_model = 3 }
+}
+
+air = {
+	name = "第五飞行集团运输队"
+	base = 6175
+	location = 6175
+	wing = { type = transport_plane name = "第11运输飞行队" historical_model = 3 }
+}

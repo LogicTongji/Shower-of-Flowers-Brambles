@@ -229,6 +229,25 @@ int main(int argc, char** argv)
 		return 1;
 	}
 
+	gui::WidgetDefinition coveredButton;
+	coveredButton.type = gui::WidgetType::Button;
+	coveredButton.name = "covered_button";
+	gui::WidgetDefinition markerLayer;
+	markerLayer.type = gui::WidgetType::MarkerLayer;
+	markerLayer.name = "marker_layer";
+	markerLayer.draggable = true;
+	const std::vector<gui::GuiResolvedWidget> markerLayout = {
+		{&coveredButton, {10, 10, 80, 40}, true, true},
+		{&markerLayer, {0, 0, 200, 200}, true, true}
+	};
+	const gui::GuiResolvedWidget* markerHit =
+		gui::HitTestGuiWidgets(markerLayout, 20, 20);
+	if (!markerHit || markerHit->definition != &coveredButton)
+	{
+		std::cerr << "Marker layer blocked generic input routing\n";
+		return 1;
+	}
+
     GuiWindowRuntime runtime;
     if (!runtime.Bind(interpreter, "probe_window")
         || runtime.FindFirstWidgetName(gui::WidgetType::ListBox)
@@ -276,6 +295,7 @@ int main(int argc, char** argv)
         << "List items: " << listItems.size() << '\n'
 		<< "Polar items: " << polarItems.size() << '\n'
 		<< "Continuous drag: passed\n"
+		<< "Marker input pass-through: passed\n"
         << "Behaviors: " << behaviors.Size() << '\n';
     return 0;
 }

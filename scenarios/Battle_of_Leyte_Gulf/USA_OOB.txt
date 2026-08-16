@@ -1,0 +1,306 @@
+theatre = {
+	name = "太平洋战区"
+	location = 6119
+	regiment = { type = hq_brigade name = "太平洋战区指挥部" historical_model = 0 }
+
+	corps = {
+		name = "第X军团"
+		location = 6119
+	               regiment = { type = hq_brigade name = "第X军团指挥部" historical_model = 0 }
+	division = {
+		name = "第24'胜利'师"
+		location = 6119
+		regiment = { type = light_armor_brigade experience = 50  historical_model = 5 }
+		regiment = { type = mechanized_brigade experience = 50  historical_model = 4 }
+		regiment = { type = motorized_brigade name = "第19步兵团" historical_model = 4 }
+		regiment = { type = motorized_brigade name = "第21步兵团" historical_model = 4 }
+		regiment = { type = motorized_brigade name = "第34步兵团" historical_model = 4 }
+		regiment = { type = engineer_brigade experience = 25  historical_model = 3 }
+		regiment = { type = motorized_artillery_brigade historical_model = 3 }
+		regiment = { type = motorized_anti_air_brigade historical_model = 3 }
+	}
+	division= {		
+		name = "骑兵第1师"
+		location = 6119
+			regiment = { type = armor_brigade experience = 50  historical_model = 3 }
+			regiment = { type = mechanized_brigade name = "第5骑兵团"  experience = 50  historical_model = 3 }
+			regiment = { type = mechanized_brigade name = "第7骑兵团"  experience = 50  historical_model = 3 }
+			regiment = { type = mechanized_brigade name = "第8骑兵团"  experience = 50  historical_model = 3 }
+			regiment = { type = mechanized_brigade name = "第12骑兵团"  experience = 50  historical_model = 3 }
+			regiment = { type = sp_artillery_brigade experience = 25  historical_model = 4 }
+			regiment = { type = tank_destroyer_brigade experience = 25  historical_model = 4 }
+			regiment = { type = engineer_brigade experience = 25  historical_model = 4 }
+		}
+             }
+
+	corps = {
+		name = "第XXIV军团"
+		location = 6119
+	               regiment = { type = hq_brigade name = "第XXIV军团指挥部" historical_model = 0 }
+	division = {
+			name = "第7'刺刀'师"
+			location = 6119
+			regiment = { type = light_armor_brigade experience = 50  historical_model = 5 }
+			regiment = { type = mechanized_brigade experience = 50  historical_model = 3 }
+			regiment = { type = motorized_brigade name = "第17步兵团" historical_model = 4 }
+			regiment = { type = motorized_brigade name = "第32步兵团" historical_model = 4 }
+			regiment = { type = motorized_brigade name = "第53步兵团" historical_model = 4 }
+			regiment = { type = engineer_brigade experience = 25  historical_model = 3 }
+			regiment = { type = motorized_artillery_brigade historical_model = 3 }
+			regiment = { type = motorized_anti_air_brigade historical_model = 3 }
+	                }
+
+		division = {
+			name = "第96'死神之眼'师"
+			location = 6119
+			regiment = { type = light_armor_brigade experience = 50  historical_model = 5 }
+			regiment = { type = mechanized_brigade experience = 50  historical_model = 3 }
+			regiment = { type = motorized_brigade name = "第381步兵团" historical_model = 4 }
+			regiment = { type = motorized_brigade name = "第382步兵团" historical_model = 4 }
+			regiment = { type = motorized_brigade name = "第383步兵团" historical_model = 4 }
+			regiment = { type = engineer_brigade experience = 25  historical_model = 3 }
+			regiment = { type = motorized_artillery_brigade historical_model = 3 }
+			regiment = { type = motorized_anti_air_brigade historical_model = 3 }
+		}
+             }
+
+	corps = {
+		name = "贝里琉登陆部队"
+		location = 6291
+	               regiment = { type = hq_brigade name = "贝里琉登陆部队" historical_model = 0 }
+	
+	division = {
+		name = "第1'老猎犬'海军陆战师"
+		location = 6291
+		regiment = { type = armor_brigade experience = 50  historical_model = 5 }
+		regiment = { type = marine_brigade experience = 50 historical_model = 4 }
+		regiment = { type = marine_brigade experience = 50 historical_model = 4 }
+		regiment = { type = marine_brigade experience = 50 historical_model = 4 }
+		regiment = { type = motorized_artillery_brigade historical_model = 3 }
+		regiment = { type = motorized_artillery_brigade historical_model = 3 }
+		regiment = { type = engineer_brigade experience = 25  historical_model = 3 }
+	}
+
+		division = {
+			name = "第81'野猫'国民警卫师"
+			location = 6291
+			regiment = { type = light_armor_brigade experience = 50  historical_model = 5 }
+			regiment = { type = mechanized_brigade experience = 50  historical_model = 3 }
+			regiment = { type = motorized_brigade name = "第321步兵团" historical_model = 4 }
+			regiment = { type = motorized_brigade name = "第322步兵团" historical_model = 4 }
+			regiment = { type = motorized_brigade name = "第323步兵团" historical_model = 4 }
+			regiment = { type = engineer_brigade experience = 25  historical_model = 3 }
+			regiment = { type = motorized_artillery_brigade historical_model = 3 }
+			regiment = { type = motorized_anti_air_brigade historical_model = 3 }
+		}
+             }
+
+	navy = {
+		name = "第38特混舰队第1战斗群"
+		base = 6119
+		location = 11182
+		ship = { type = carrier experience = 50 name = "大黄蜂号" historical_model = 4 air = { location = 11182 wing = { type = cag experience = 50 historical_model = 5 } } air = { location = 11182 wing = { type = cag experience = 50 historical_model = 5 } } }
+		ship = { type = carrier experience = 50 name = "胡蜂号" historical_model = 4 air = { location = 11182 wing = { type = cag experience = 50 historical_model = 5 } } air = { location = 11182 wing = { type = cag experience = 50 historical_model = 5 } } }
+		ship = { type = carrier experience = 50 name = "汉考克号" historical_model = 4 air = { location = 11182 wing = { type = cag experience = 50 historical_model = 5 } } air = { location = 11182 wing = { type = cag experience = 50 historical_model = 5 } } }
+		ship = { type = escort_carrier name = "科本斯号" air = {  location = 11182 wing = { type = cag historical_model = 4 } } historical_model = 4 }
+		ship = { type = escort_carrier name = "蒙特利号" air = {  location = 11182 wing = { type = cag historical_model = 4 } } historical_model = 4 }
+		ship = { type = heavy_cruiser experience = 50 name = "柴斯特号" historical_model = 2 }
+		ship = { type = heavy_cruiser experience = 50 name = "盐湖城号" historical_model = 2 }
+		ship = { type = heavy_cruiser experience = 50 name = "潘萨克拉号" historical_model = 2 }
+		ship = { type = heavy_cruiser experience = 50 name = "威奇塔号" historical_model = 2 }
+		ship = { type = heavy_cruiser experience = 50 name = "波士顿号" historical_model = 2 }
+		ship = { type = light_cruiser experience = 50 name = "圣迭戈号" historical_model = 3 }
+		ship = { type = light_cruiser experience = 50 name = "奥克兰号" historical_model = 3 }
+		ship = { type = destroyer experience = 50 name = "第46.1驱逐舰支队" historical_model = 4 }
+		ship = { type = destroyer experience = 50 name = "第46.2驱逐舰支队" historical_model = 4 }
+		ship = { type = destroyer experience = 50 name = "第46.3驱逐舰支队" historical_model = 4 }
+		ship = { type = destroyer experience = 50 name = "第12驱逐舰支队" historical_model = 4 }
+		ship = { type = destroyer experience = 50 name = "第4驱逐舰支队" historical_model = 4 }
+	}
+
+
+	navy = {
+		name = "第38特混舰队第2战斗群"
+		base = 6119
+		location = 11182
+		ship = { type = carrier experience = 50 name = "无畏号" historical_model = 3 air = { location = 11182 wing = { type = cag experience = 50 historical_model = 5 } } air = { location = 11182 wing = { type = cag experience = 50 historical_model = 5 } } }
+		ship = { type = carrier experience = 50 name = "碉堡山号" historical_model = 3 air = { location = 11182 wing = { type = cag experience = 50 historical_model = 5 } } air = { location = 11182 wing = { type = cag experience = 50 historical_model = 5 } } }
+		ship = { type = escort_carrier name = "独立号" air = {  location = 11182 wing = { type = cag historical_model = 3 } } historical_model = 3 }
+		ship = { type = escort_carrier name = "卡伯特号" air = {  location = 11182 wing = { type = cag historical_model = 3 } } historical_model = 3 }
+		ship = { type = battleship experience = 50 name = "爱荷华号" historical_model = 1 }
+		ship = { type = battleship experience = 50 name = "新泽西号" historical_model = 1 }
+		ship = { type = light_cruiser experience = 50 name = "文森号" historical_model = 3 }
+		ship = { type = light_cruiser experience = 50 name = "迈阿密号" historical_model = 3 }
+		ship = { type = light_cruiser experience = 50 name = "比洛克西号" historical_model = 3 }
+		ship = { type = destroyer experience = 50 name = "第52驱逐舰支队" historical_model = 2 }
+		ship = { type = destroyer experience = 50 name = "第50驱逐舰支队" historical_model = 2 }
+		ship = { type = destroyer experience = 50 name = "第104驱逐舰支队" historical_model = 2 }
+		ship = { type = destroyer experience = 50 name = "第106驱逐舰支队" historical_model = 2 }
+	}
+
+
+	navy = {
+		name = "第38特混舰队第3战斗群"
+		base = 6119
+		location = 11182
+		ship = { type = carrier experience = 50 name = "埃塞克斯号" historical_model = 3 air = { location = 11182 wing = { type = cag experience = 50 historical_model = 5 } } air = { location = 11182 wing = { type = cag experience = 50 historical_model = 5 } } }
+		ship = { type = carrier experience = 50 name = "列克辛顿号" historical_model = 3 air = { location = 11182 wing = { type = cag experience = 50 historical_model = 5 } } air = { location = 11182 wing = { type = cag experience = 50 historical_model = 5 } } }
+		ship = { type = escort_carrier name = "普林斯顿号" air = {  location = 13608 wing = { type = cag historical_model = 3 } } historical_model = 3 }
+		ship = { type = escort_carrier name = "兰利号" air = {  location = 13608 wing = { type = cag historical_model = 3 } } historical_model = 0 }
+		ship = { type = battleship experience = 50 name = "华盛顿号" historical_model = 1 }
+		ship = { type = battleship experience = 50 name = "麻萨诸塞号" historical_model = 1 }
+		ship = { type = battleship experience = 50 name = "南达科塔号" historical_model = 1 }
+		ship = { type = battleship experience = 50 name = "阿拉巴马号" historical_model = 1 }
+		ship = { type = light_cruiser experience = 50 name = "圣达菲号" historical_model = 3 }
+		ship = { type = light_cruiser experience = 50 name = "机动号" historical_model = 3 }
+		ship = { type = light_cruiser experience = 50 name = "雷诺号" historical_model = 3 }
+		ship = { type = light_cruiser experience = 50 name = "伯明翰号" historical_model = 3 }
+		ship = { type = destroyer experience = 50 name = "第50驱逐舰支队" historical_model = 2 }
+		ship = { type = destroyer experience = 50 name = "第55驱逐舰支队" historical_model = 2 }
+		ship = { type = destroyer experience = 50 name = "第110驱逐舰支队" historical_model = 2 }
+	}
+
+	navy = {
+		name = "第38特混舰队第4战斗群"
+		base = 6119
+		location = 11182
+		ship = { type = carrier experience = 50 name = "富兰克林号" historical_model = 3 air = { location = 11182 wing = { type = cag experience = 50 historical_model = 5 } } air = { location = 11182 wing = { type = cag experience = 50 historical_model = 5 } } }
+		ship = { type = carrier experience = 50 name = "企业号" historical_model = 1 air = { location = 11182 wing = { type = cag experience = 50 historical_model = 5 } } air = { location = 11182 wing = { type = cag experience = 50 historical_model = 5 } } }
+		ship = { type = escort_carrier name = "贝劳伍德号" air = {  location = 11182 wing = { type = cag historical_model = 3 } } historical_model = 2 }
+		ship = { type = escort_carrier name = "圣哈辛托号" air = {  location = 11182 wing = { type = cag historical_model = 3 } } historical_model = 3 }
+		ship = { type = heavy_cruiser experience = 50 name = "新奥尔良号" historical_model = 1 }
+		ship = { type = destroyer experience = 50 name = "第6驱逐舰支队" historical_model = 4 }
+		ship = { type = destroyer experience = 50 name = "第12驱逐舰支队" historical_model = 4 }
+		ship = { type = destroyer experience = 50 name = "第24驱逐舰支队" historical_model = 4 }
+	}
+
+	navy = {
+		name = "第77特混舰队第2战斗群"
+		base = 6119
+		location = 11182
+		ship = { type = battleship experience = 50 name = "密西西比号" historical_model = 0 }
+		ship = { type = battleship experience = 50 name = "马里兰号" historical_model = 0 }
+		ship = { type = battleship experience = 50 name = "西弗吉尼亚号" historical_model = 0 }
+		ship = { type = battleship experience = 50 name = "田纳西号" historical_model = 0 }
+		ship = { type = battleship experience = 50 name = "加利福尼亚号" historical_model = 0 }
+		ship = { type = battleship experience = 50 name = "宾夕法尼亚号" historical_model = 0 }
+		ship = { type = heavy_cruiser experience = 50 name = "路易斯维尔号" historical_model = 1 }
+		ship = { type = heavy_cruiser experience = 50 name = "波特兰号" historical_model = 1 }
+		ship = { type = heavy_cruiser experience = 50 name = "明尼安纳波利斯号" historical_model = 1 }
+		ship = { type = light_cruiser experience = 50 name = "丹佛号" historical_model = 3 }
+		ship = { type = light_cruiser experience = 50 name = "哥伦比亚号" historical_model = 3 }
+		ship = { type = destroyer experience = 50 name = "X射线驱逐舰支队" historical_model = 4 }
+		ship = { type = destroyer experience = 50 name = "第56.1驱逐舰支队" historical_model = 4 }
+		ship = { type = destroyer experience = 50 name = "第56.2驱逐舰支队" historical_model = 4 }
+		ship = { type = destroyer experience = 50 name = "第112驱逐舰支队" historical_model = 4 }
+	}
+
+	navy = {
+		name = "第17特混舰队"
+		base = 6119
+		location = 11182
+		ship = { type = submarine experience = 50 historical_model = 4 }
+		ship = { type = submarine experience = 50 historical_model = 4 }
+		ship = { type = submarine experience = 50 historical_model = 4 }
+		ship = { type = submarine experience = 50 historical_model = 4 }
+	}
+
+	navy = {
+		name = "第77特混舰队第4战斗群第1分遣舰队"
+		base = 6119
+		location = 11741
+		ship = { type = escort_carrier name = "桑加蒙号" air = {  location = 11741 wing = { type = cag historical_model = 3 } } historical_model = 3 }
+		ship = { type = escort_carrier name = "桑蒂号" air = {  location = 11741 wing = { type = cag historical_model = 3 } } historical_model = 3 }
+		ship = { type = escort_carrier name = "萨旺尼号" air = {  location = 11741 wing = { type = cag historical_model = 3 } } historical_model = 2 }
+		ship = { type = escort_carrier name = "希南戈号" air = {  location = 11741 wing = { type = cag historical_model = 3 } } historical_model = 2 }
+		ship = { type = escort_carrier name = "彼得罗夫湾号" air = {  location = 11741 wing = { type = cag historical_model = 3 } } historical_model = 1 }
+		ship = { type = escort_carrier name = "萨吉诺湾" air = {  location = 11741 wing = { type = cag historical_model = 3 } } historical_model = 1 }
+		ship = { type = destroyer experience = 50 name = "护卫驱逐舰支队" historical_model = 2 }
+	}
+
+	navy = {
+		name = "第77特混舰队第4战斗群第2分遣舰队"
+		base = 6119
+		location = 11741
+		ship = { type = escort_carrier name = "卡达珊湾号" air = {  location = 11741 wing = { type = cag historical_model = 3 } } historical_model = 3 }
+		ship = { type = escort_carrier name = "萨沃岛号" air = {  location = 11741 wing = { type = cag historical_model = 3 } } historical_model = 3 }
+		ship = { type = escort_carrier name = "奥曼尼湾号" air = {  location = 11741 wing = { type = cag historical_model = 3 } } historical_model = 3 }
+		ship = { type = escort_carrier name = "马库斯岛号" air = {  location = 11741 wing = { type = cag historical_model = 3 } } historical_model = 3 }
+		ship = { type = escort_carrier name = "马尼拉湾号" air = {  location = 11741 wing = { type = cag historical_model = 3 } } historical_model = 3 }
+		ship = { type = escort_carrier name = "纳托马湾号" air = {  location = 11741 wing = { type = cag historical_model = 3 } } historical_model = 1 }
+		ship = { type = destroyer experience = 50 name = "第60驱逐舰支队" historical_model = 2 }
+	}
+	navy = {
+		name = "第77特混舰队第4战斗群第3分遣舰队"
+		base = 6119
+		location = 11741
+		ship = { type = escort_carrier name = "范肖湾号号" air = {  location = 11741 wing = { type = cag historical_model = 3 } } historical_model = 3 }
+		ship = { type = escort_carrier name = "白原号" air = {  location = 11741 wing = { type = cag historical_model = 3 } } historical_model = 3 }
+		ship = { type = escort_carrier name = "加里宁湾号" air = {  location = 11741 wing = { type = cag historical_model = 3 } } historical_model = 3 }
+		ship = { type = escort_carrier name = "圣罗号" air = {  location = 11741 wing = { type = cag historical_model = 3 } } historical_model = 3 }
+		ship = { type = escort_carrier name = "基昆湾号" air = {  location = 11741 wing = { type = cag historical_model = 3 } } historical_model = 3 }
+		ship = { type = escort_carrier name = "甘比尔湾号" air = {  location = 11741 wing = { type = cag historical_model = 3 } } historical_model = 3 }
+		ship = { type = destroyer experience = 50 name = "护卫驱逐舰支队" historical_model = 2 }
+		ship = { type = destroyer experience = 50 name = "护卫驱逐舰支队" historical_model = 2 }
+	}
+                navy = {
+		name = "舰队运输船第1分队"
+		base = 6119
+		location = 6119
+		ship = { type = assault_ship name = "第1运输舰分队" historical_model = 0 }
+		ship = { type = assault_ship name = "第2运输舰分队" historical_model = 0 } 
+		ship = { type = assault_ship name = "第3运输舰分队" historical_model = 0 } 
+		ship = { type = assault_ship name = "第4运输舰分队" historical_model = 0 } 
+		ship = { type = assault_ship name = "第5运输舰分队" historical_model = 0 } 
+		ship = { type = assault_ship name = "第6运输舰分队" historical_model = 0 }
+		ship = { type = assault_ship name = "第7运输舰分队" historical_model = 0 } 
+		ship = { type = assault_ship name = "第8运输舰分队" historical_model = 0 } 
+		ship = { type = assault_ship name = "第9运输舰分队" historical_model = 0 } 
+		ship = { type = assault_ship name = "第10运输舰分队" historical_model = 0 } 
+	}
+                navy = {
+		name = "舰队运输船第2分队"
+		base = 6119
+		location = 6119
+		ship = { type = assault_ship name = "第11运输舰分队" historical_model = 0 }
+		ship = { type = assault_ship name = "第12运输舰分队" historical_model = 0 } 
+		ship = { type = assault_ship name = "第13运输舰分队" historical_model = 0 } 
+		ship = { type = assault_ship name = "第14运输舰分队" historical_model = 0 } 
+		ship = { type = assault_ship name = "第15运输舰分队" historical_model = 0 } 
+		ship = { type = assault_ship name = "第16运输舰分队" historical_model = 0 }
+		ship = { type = assault_ship name = "第17运输舰分队" historical_model = 0 } 
+		ship = { type = assault_ship name = "第18运输舰分队" historical_model = 0 } 
+		ship = { type = assault_ship name = "第19运输舰分队" historical_model = 0 } 
+		ship = { type = assault_ship name = "第20运输舰分队" historical_model = 0 } 
+	}
+                navy = {
+		name = "舰队运输船第3分队"
+		base = 6119
+		location = 6119
+		ship = { type = assault_ship name = "第21运输舰分队" historical_model = 0 }
+		ship = { type = assault_ship name = "第22运输舰分队" historical_model = 0 } 
+		ship = { type = assault_ship name = "第23运输舰分队" historical_model = 0 } 
+		ship = { type = assault_ship name = "第24运输舰分队" historical_model = 0 } 
+		ship = { type = assault_ship name = "第25运输舰分队" historical_model = 0 } 
+		ship = { type = assault_ship name = "第26运输舰分队" historical_model = 0 }
+		ship = { type = assault_ship name = "第27运输舰分队" historical_model = 0 } 
+		ship = { type = assault_ship name = "第28运输舰分队" historical_model = 0 } 
+		ship = { type = assault_ship name = "第29运输舰分队" historical_model = 0 } 
+		ship = { type = assault_ship name = "第30运输舰分队" historical_model = 0 } 
+	}
+                navy = {
+		name = "舰队运输船第4分队"
+		base = 6119
+		location = 6119
+		ship = { type = assault_ship name = "第41运输舰分队" historical_model = 0 }
+		ship = { type = assault_ship name = "第42运输舰分队" historical_model = 0 } 
+		ship = { type = assault_ship name = "第43运输舰分队" historical_model = 0 } 
+		ship = { type = assault_ship name = "第44运输舰分队" historical_model = 0 } 
+		ship = { type = assault_ship name = "第45运输舰分队" historical_model = 0 } 
+		ship = { type = assault_ship name = "第46运输舰分队" historical_model = 0 }
+		ship = { type = assault_ship name = "第47运输舰分队" historical_model = 0 } 
+		ship = { type = assault_ship name = "第48运输舰分队" historical_model = 0 } 
+		ship = { type = assault_ship name = "第49运输舰分队" historical_model = 0 } 
+		ship = { type = assault_ship name = "第50运输舰分队" historical_model = 0 } 
+	}
+}

@@ -1,0 +1,26 @@
+owner = CGD
+controller = CGD
+
+add_core = CGD
+
+add_core = CHC
+add_core = CHI
+points = 5
+metal = 10.00
+energy = 20.00
+rare_materials = 5.00
+industry = 3
+infra = 7
+air_base = 3
+naval_base = 8
+land_fort = 7
+manpower = 17.00
+leadership = 0.70
+
+
+1936.7.15 = { 
+		owner = CHI
+	controller = CHI  } 
+1938.10.12 = { 	owner = JAP
+	controller = JAP
+	add_core = JAP }

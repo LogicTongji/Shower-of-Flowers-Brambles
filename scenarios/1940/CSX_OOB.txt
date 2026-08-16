@@ -1,0 +1,93 @@
+armygroup = { 
+		name = "第二战区"
+		location = 7435
+		regiment = { type = hq_brigade name = "第二战区总指挥部" historical_model = 0 }
+	army = {
+		name = "前敌总司"
+		location = 7435
+		regiment = { type = hq_brigade name = "前敌总司令部" historical_model = 1 }	
+		corps = {
+			name = "第14军"                                              
+			location = 5404
+			regiment = { type = hq_brigade name = "第14军指挥部" historical_model = 0 }
+			division= {
+				name = "第10师"
+				location = 7435
+				regiment = { type = infantry_brigade historical_model = 0 }
+				regiment = { type = infantry_brigade historical_model = 0 }
+			}
+			division= {
+				name = "第83师"
+				location = 7435
+				regiment = { type = infantry_brigade historical_model = 0 }
+				regiment = { type = infantry_brigade historical_model = 0 }
+			}
+			division= {
+				name = "第94师"
+				location = 7209
+				regiment = { type = militia_brigade historical_model = 0 }
+				regiment = { type = infantry_brigade historical_model = 0 }
+			}
+			division= {
+				name = "第85师"
+				location = 7209
+				regiment = { type = militia_brigade historical_model = 0 }
+				regiment = { type = infantry_brigade historical_model = 0 }
+			}
+
+			}
+		corps = {
+			name = "第17军"
+			location = 7209
+			regiment = { type = hq_brigade name = "第17军指挥部" historical_model = 0 }
+			division= {
+				name = "第17师"
+				location = 7209
+				regiment = { type = militia_brigade historical_model = 0 }
+				regiment = { type = infantry_brigade historical_model = 0 }
+			}
+			division= {
+				name = "第84师"
+				location = 7209
+				regiment = { type = militia_brigade historical_model = 0 }
+				regiment = { type = infantry_brigade historical_model = 0 }
+			}
+			division= {
+				name = "第47师"
+				location = 7209
+				regiment = { type = infantry_brigade historical_model = 0 }
+				regiment = { type = infantry_brigade historical_model = 0 }
+			}
+
+			}
+	army = {
+                expeditionary_owner = CHI
+		name = "第2集团军"
+		location = 7435
+		regiment = { type = hq_brigade name = "第2集团军指挥部" historical_model = 1 }	
+		corps = {
+			name = "第1军团"
+			location = 7435
+			regiment = { type = hq_brigade name = "第1军团指挥部" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "独立44旅" historical_model = 0 }
+			division= {
+				name = "第27师"
+				location = 5404
+				regiment = { type = militia_brigadee historical_model = 0 }
+				regiment = { type = infantry_brigade historical_model = 0 }
+			}
+			division= {
+				name = "第30师"
+				location = 5404
+				regiment = { type = militia_brigade historical_model = 0 }
+				regiment = { type = infantry_brigade historical_model = 0 }
+
+			}
+			division= {
+				name = "第31师"
+				location = 5404
+				regiment = { type = militia_brigade historical_model = 0 }
+				regiment = { type = infantry_brigade historical_model = 0 }
+
+			}
+		}

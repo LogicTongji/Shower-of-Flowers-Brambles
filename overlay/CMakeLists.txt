@@ -163,6 +163,7 @@ if(WIN32)
         src/gui_indexed_map_core.cpp
         src/gui_inprocess_application.cpp
         src/gui_window_session.cpp
+        src/gui_declarative_data.cpp
         src/gui_plugin_registry.cpp
         src/gui_plugin_manifest.cpp
         src/gui_builtin_plugins.cpp
@@ -214,6 +215,7 @@ if(WIN32)
         src/gui_indexed_map_core.cpp
         src/gui_inprocess_application.cpp
         src/gui_window_session.cpp
+        src/gui_declarative_data.cpp
         src/gui_plugin_registry.cpp
         src/gui_plugin_manifest.cpp
         src/gui_builtin_plugins.cpp
@@ -320,6 +322,7 @@ add_executable(
     gui_window_session_probe
     src/gui_window_session_probe.cpp
     src/gui_window_session.cpp
+    src/gui_declarative_data.cpp
     src/gui_interpreter.cpp
     src/gui_behavior.cpp
     src/gui_action_bridge.cpp
@@ -340,6 +343,7 @@ add_executable(
     src/gui_inprocess_application_probe.cpp
     src/gui_inprocess_application.cpp
     src/gui_window_session.cpp
+    src/gui_declarative_data.cpp
     src/gui_plugin_registry.cpp
     src/gui_plugin_manifest.cpp
     src/gui_builtin_plugins.cpp

@@ -3,8 +3,84 @@
 #include <algorithm>
 #include <cstdint>
 #include <cstdlib>
+#include <cwctype>
 #include <cstring>
 #include <gdiplus.h>
+
+namespace
+{
+
+using D3DXCreateTextureFromFileWFunction = HRESULT (WINAPI*)(
+    IDirect3DDevice9*,
+    LPCWSTR,
+    IDirect3DTexture9**
+);
+
+D3DXCreateTextureFromFileWFunction ResolveDdsTextureLoader()
+{
+    static D3DXCreateTextureFromFileWFunction function = []()
+    {
+        for (int version = 43; version >= 24; --version)
+        {
+            const std::wstring name = L"d3dx9_"
+                + std::to_wstring(version) + L".dll";
+            HMODULE module = LoadLibraryW(name.c_str());
+            if (!module)
+            {
+                continue;
+            }
+            const auto resolved = reinterpret_cast<
+                D3DXCreateTextureFromFileWFunction
+            >(GetProcAddress(module, "D3DXCreateTextureFromFileW"));
+            if (resolved)
+            {
+                return resolved;
+            }
+            FreeLibrary(module);
+        }
+        return D3DXCreateTextureFromFileWFunction{};
+    }();
+    return function;
+}
+
+bool LoadDdsTexture(
+    IDirect3DDevice9* device,
+    const std::filesystem::path& path,
+    GuiD3D9Texture& output,
+    std::string& error
+)
+{
+    const D3DXCreateTextureFromFileWFunction loadTexture =
+        ResolveDdsTextureLoader();
+    if (!loadTexture)
+    {
+        error = "DirectX 9 DDS texture loader is unavailable: "
+            + path.string();
+        return false;
+    }
+
+    IDirect3DTexture9* texture = nullptr;
+    if (FAILED(loadTexture(device, path.wstring().c_str(), &texture))
+        || !texture)
+    {
+        error = "Failed to decode DDS GUI texture: " + path.string();
+        return false;
+    }
+    D3DSURFACE_DESC description{};
+    if (FAILED(texture->GetLevelDesc(0, &description)))
+    {
+        texture->Release();
+        error = "Failed to inspect DDS GUI texture: " + path.string();
+        return false;
+    }
+    output.texture = texture;
+    output.width = static_cast<int>(description.Width);
+    output.height = static_cast<int>(description.Height);
+    error.clear();
+    return true;
+}
+
+}
 
 GuiD3D9Texture::~GuiD3D9Texture()
 {
@@ -64,6 +140,21 @@ bool LoadGuiD3D9Texture(
     {
         error = "D3D9 texture request is invalid";
         return false;
+    }
+
+    std::wstring extension = path.extension().wstring();
+    std::transform(
+        extension.begin(),
+        extension.end(),
+        extension.begin(),
+        [](wchar_t character)
+        {
+            return static_cast<wchar_t>(std::towlower(character));
+        }
+    );
+    if (extension == L".dds")
+    {
+        return LoadDdsTexture(device, path, output, error);
     }
 
     Gdiplus::Bitmap bitmap(path.wstring().c_str(), FALSE);

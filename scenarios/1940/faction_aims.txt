@@ -1,0 +1,70 @@
+##############
+# JAP
+##############
+axis = {
+	BT2_Axis = {
+		trigger = {
+				5174 = {
+					controller = {
+						faction = axis
+			}
+			}
+		}
+		primary = yes
+	}
+	BT3_Axis = {
+		trigger = {
+				4977 = {
+					controller = {
+						faction = axis
+			}
+			}
+		}
+		primary = yes
+	}
+  BT4_Axis = {
+		trigger = {
+				4979 = {
+					controller = {
+						faction = axis
+		}
+			}
+		}
+		primary = yes
+	}
+BT5_Axis = {
+		trigger = {
+				5018 = {
+					controller = {
+						faction = axis
+		}
+			}
+		}
+		primary = yes
+	}
+}
+##############
+# CHC
+##############
+allies	= {
+	BT1_Allies = {
+		trigger = {
+			7417 = {
+				controller = {
+					faction = allies
+			}
+		}
+		primary = yes
+	}
+}		
+	BT2_Allies = {
+		trigger = {
+			5174 = {
+				controller = {
+					faction = allies
+			}
+		}
+		}
+		primary = yes
+	}
+}		

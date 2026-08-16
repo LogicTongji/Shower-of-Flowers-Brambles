@@ -1,0 +1,39 @@
+
+
+song = {
+	name = "hoilero.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { war = yes }
+		}
+		modifier = {
+			factor = 1.5
+			tag = USA
+		}
+	}
+}
+
+song = {
+	name = "hoisuiteno1.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { war = yes }
+		}
+	}
+}
+
+
+song = {
+	name = "thefront.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { war = yes }
+		}
+	}
+}

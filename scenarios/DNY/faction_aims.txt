@@ -1,0 +1,70 @@
+##############
+# JAP
+##############
+axis = {
+	DNY2_Axis = {
+		trigger = {
+				7610 = {
+					controller = {
+						faction = axis
+			}
+			}
+		}
+		primary = yes
+	}
+	DNY3_Axis = {
+		trigger = {
+				9442 = {
+					controller = {
+						faction = axis
+			}
+			}
+		}
+		primary = yes
+	}
+  DNY4_Axis = {
+		trigger = {
+				9545 = {
+					controller = {
+						faction = axis
+		}
+			}
+		}
+		primary = yes
+	}
+DNY5_Axis = {
+		trigger = {
+				9406 = {
+					controller = {
+						faction = axis
+		}
+			}
+		}
+		primary = yes
+	}
+}
+##############
+# ENG CHI
+##############
+allies	= {
+	DNY_Allies = {
+		trigger = {
+			9406 = {
+				controller = {
+					faction = allies
+			}
+		}
+		primary = yes
+	}
+}		
+DNY_Allies2 = {
+		trigger = {
+			6070 = {
+				controller = {
+					faction = allies
+				}
+			}
+		}
+		primary = yes
+	}
+}		

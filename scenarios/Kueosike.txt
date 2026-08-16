@@ -1,0 +1,33 @@
+name = "SCENARIO_KE_NAME"
+desc = "SCENARIO_KE_DESC"
+icon = "GFX_select_fallblau"
+startdate = 1943.3.1
+enddate = 1943.8.27
+
+camera_height = 240
+camera_center = { x = 3302 y = 1717 }                              
+camera_min_x = 3010
+camera_min_y = 1300
+camera_max_x = 4600
+camera_max_y = 2100
+
+victory_conditions = "scenarios/Kueosike/faction_aims.txt"
+victory_conditions_to_win = 2
+number_of_victory_conditions = 2
+events = "scenarios/Kueosike/events.txt"
+
+
+
+reinforcement = 30
+
+# will load any history files with scenarios/Kueosike/<tag>.txt
+selectable_country = GER
+selectable_country = SOV
+# visible provinces & regions
+provinces = {
+
+}
+
+regions = {	
+SF_sov_2170
+}

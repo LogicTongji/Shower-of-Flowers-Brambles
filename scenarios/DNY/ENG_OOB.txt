@@ -1,0 +1,111 @@
+theatre = {
+	name = "印缅战区"
+	location = 5859
+	regiment = { type = hq_brigade name = "印缅战区指挥部" historical_model = 1 }
+		army = { 
+		name = "印度殖民军"
+		location = 5859
+		regiment = { type = hq_brigade name = "英印军指挥部" historical_model = 0 }	
+		division = {
+			name = "英印军第7师"
+			location = 5859
+			regiment = { type = infantry_brigade name = "第33旅" historical_model =2 }
+			regiment = { type = infantry_brigade name = "第89旅" historical_model = 2 }
+			regiment = { type = infantry_brigade name = "第114旅" historical_model = 2 }
+		}
+		division = {
+			name = "英印军第8师"
+			location = 7582
+			regiment = { type = infantry_brigade name = "第17旅" historical_model = 3 }
+			regiment = { type = infantry_brigade name = "第18旅" historical_model = 3 }
+			regiment = { type = infantry_brigade name = "第19旅" historical_model = 3 }
+		}
+		division = {
+			name = "英印军第14师"
+			location = 7559
+			regiment = { type = infantry_brigade name = "第47旅" historical_model = 3 }
+			regiment = { type = infantry_brigade name = "第55旅" historical_model = 3 }
+			regiment = { type = infantry_brigade name = "第88旅" historical_model = 3 }
+		}
+	}	            
+	       army = {
+		name = "缅甸西路军"
+		location = 9545
+		regiment = { type = hq_brigade name = "英缅军指挥部" experience = 40 historical_model = 0 }
+	            corps = {
+			name = "英缅军第I军"
+			location = 9545
+			regiment = { type = hq_brigade name = "第I军指挥部部" experience = 60 historical_model = 0 }
+				regiment = { type = artillery_brigade name = "炮兵团" experience = 60 historical_model = 2 }
+			division = {
+				name = "英缅军1师"
+				location = 9545
+				regiment = { type = infantry_brigade experience = 60 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 60 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 60 historical_model = 3 }
+				}
+				division = {
+				name = "英印军17师"
+				location = 6016
+				regiment = { type = infantry_brigade experience = 60 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 60 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 60 historical_model = 3 }
+		       }
+		            }
+		         corps = {
+			name = "英缅军第II军"
+			location = 9545
+			regiment = { type = hq_brigade name = "第II军指挥部" experience = 40 historical_model = 0 }
+			division = {
+				name = "英缅军第36师"
+				location = 9545
+				regiment = { type = infantry_brigade experience = 40 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 40 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 40 historical_model = 3 }
+			}
+			division = {
+				name = "英缅军第63旅"
+				location = 6009
+				regiment = { type = infantry_brigade experience = 40 historical_model = 3 }          
+			}
+			division = {
+				name = "英缅军第7装甲旅"
+				location = 7613
+				regiment = { type = armor_brigade experience = 40 historical_model = 3 }
+			}
+			air = {
+	name = "印度空军司令部"
+	base = 9545
+	location = 9545
+	wing = { type = tactical_bomber name = "印度空军编队" historical_model = 3 }
+  }
+air = {
+	name = "远东空军司令部"
+	base = 9545
+	location = 9545
+	wing = { type = tactical_bomber name = "1/远东编队" historical_model = 3 }
+	wing = { type = interceptor name = "2/远东编队" historical_model = 4 }
+}
+navy = {
+	name = "远东舰队I"
+	base = 5875
+	location = 5875
+	ship = { type = battleship name = "HMS 君权号" historical_model = 1 }
+	ship = { type = battleship name = "HMS 复仇号" historical_model = 1 }
+	ship = { type = escort_carrier name = "HMS 竞技神号" historical_model = 0 air = { location = 6320 wing = { type = cag historical_model = 1 } } }
+	ship = { type = light_cruiser name = "HMS 企业号" historical_model = 1 }
+	ship = { type = light_cruiser name = "HMS 科伦坡号" historical_model = 0 }
+	ship = { type = heavy_cruiser name = "HMS 康沃尔号" historical_model = 1 }
+	ship = { type = destroyer name = "第25驱逐支队" historical_model = 0 }
+}
+navy = {
+	name = "远东舰队II"
+	base = 5875
+	location = 5875
+	ship = { type = light_cruiser name = "HMS 翡翠号" historical_model = 1 }
+	ship = { type = light_cruiser name = "HMS 谷神星号" historical_model = 0 }
+	ship = { type = light_cruiser name = "HMS 卡利登号" historical_model = 0 }
+	ship = { type = light_cruiser name = "HMS 格拉斯哥号" historical_model = 3 }
+	ship = { type = light_cruiser name = "HMS 毛里求斯号" historical_model = 3 }
+	ship = { type = destroyer name = "第26驱逐支队" historical_model = 0 }
+}

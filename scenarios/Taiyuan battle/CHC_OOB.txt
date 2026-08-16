@@ -1,0 +1,64 @@
+armygroup = {				
+		 name = "国民革命军第十八集团军"			
+		 location = 7417			
+		 leader = 76312   Zhu De			
+		 regiment = { type = hq_brigade name = "第十八集团军总司令部" experience = 40 historical_model = 1 }			
+		 regiment = { type = chc_gundam name = "八路军总部特务团" experience = 30 historical_model = 1 }
+		 regiment = { type = artillery_brigade name = "八路军总部炮团" experience = 30 historical_model = 1 }
+		 corps = {			
+			 name = "第115师"		
+			 location = 7398		
+			 regiment = { type = hq_brigade name = "第115师" experience = 65 historical_model = 0 }	
+			 regiment = { type = militia_brigade name = "独立团" experience = 65 historical_model = 0 }		
+			 division= {		
+				 name = "第343旅"	
+				 location = 7391	
+				 regiment = { type = bergsjaeger_brigade name = "第658团" historical_model = 1 }	
+				 regiment = { type = bergsjaeger_brigade name = "第686团" historical_model = 1 }	
+			}		
+			 division= {		
+				 name = "第344旅"	
+				 location = 7391	
+				 regiment = { type = militia_brigade name = "第687团" experience = 65 historical_model = 0 }	
+				 regiment = { type = militia_brigade name = "第519团" experience = 65 historical_model = 0 }	
+				 regiment = { type = militia_brigade name = "第688团" experience = 65 historical_model = 0 }	
+			}		
+		}			
+		 corps = {			
+			 name = "第120师"		
+			 location = 7418		
+			 regiment = { type = hq_brigade name = "第120师" experience = 65 historical_model = 0 }
+			 regiment = { type = militia_brigade name = "教导团" experience = 65 historical_model = 0 }			
+			 division= {		
+				 name = "第358旅"	
+				 location = 7418	
+				 regiment = { type = bergsjaeger_brigade name = "第715团" historical_model = 1 }	
+				 regiment = { type = bergsjaeger_brigade name = "第716团" historical_model = 1 }	
+			}		
+			 division= {		
+				 name = "第359旅"	
+				 location = 5385	
+				 regiment = { type = militia_brigade name = "第717团" experience = 65 historical_model = 0 }	
+				 regiment = { type = militia_brigade name = "第718团" experience = 65 historical_model = 0 }	
+			}		
+		}			
+		 corps = {			
+			 name = "第129师"		
+			 location = 7411		
+			 regiment = { type = hq_brigade name = "第129师" experience = 65 historical_model = 0 }	
+			 division= {		
+				 name = "第385旅"	
+				 location = 7405	
+				 regiment = { type = bergsjaeger_brigade name = "第769团" historical_model = 1 }	
+				 regiment = { type = bergsjaeger_brigade name = "第770团" historical_model = 1 }	
+			}		
+			 division= {		
+				 name = "第386旅"	
+				 location = 7411	
+				 regiment = { type = bergsjaeger_brigade name = "第771团" historical_model = 1 }	
+				 regiment = { type = bergsjaeger_brigade name = "第772团" historical_model = 1 }	
+                                
+				 regiment = { type = bergsjaeger_brigade name = "独立团" historical_model = 1 }	
+			}			
+		}			
+	}		

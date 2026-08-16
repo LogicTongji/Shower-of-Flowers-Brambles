@@ -6,7 +6,7 @@ partisan_bergsjaeger = {
 	
 	#Size Definitions
 	max_strength = 20
-	default_organisation = 50
+	default_organisation = 35
 	default_morale = 0.45
 	officers = 75
 
@@ -17,7 +17,7 @@ partisan_bergsjaeger = {
 	repair_cost_multiplier = 0.05
 
 	#Misc Abilities
-	maximum_speed = 7
+	maximum_speed = 5.50
 	transport_weight = 5.00
 	supply_consumption = 0.0
 	fuel_consumption = 0.00

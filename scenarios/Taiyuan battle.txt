@@ -1,0 +1,79 @@
+name = "SCENARIO_TY_NAME"
+desc = "SCENARIO_TY_DESC"
+icon = "GFX_select_southernq"
+startdate = 1937.8.10
+enddate = 1937.12.10
+
+camera_height = 240
+camera_center = { x = 4553 y = 1382 }                              
+camera_min_x = 4550
+camera_min_y = 1380
+camera_max_x = 4600
+camera_max_y = 1450
+
+victory_conditions = "scenarios/Taiyuan battle/faction_aims.txt"
+victory_conditions_to_win = 1
+number_of_victory_conditions = 2
+events = "scenarios/Taiyuan battle/events.txt"
+
+
+
+reinforcement = 30
+
+# will load any history files with scenarios/CCW/<tag>.txt
+selectable_country = CHC
+selectable_country = JAP
+selectable_country = CSX
+# visible provinces & regions
+provinces = {
+4979
+5112
+5084
+5085
+5143
+5176
+5207
+5272
+5239
+5175
+5141
+5111
+5051
+4977
+5083
+5050
+7385
+7360
+4978
+4932
+4933
+7378
+7368
+7384
+7391
+5241
+7398
+7410
+7417
+7446
+7405
+7399
+5110
+7411
+5385
+7418
+7436
+5333
+5300
+5272
+5271
+5206
+5016
+5015
+5301
+5334
+}
+
+regions = {	
+shanxi_region
+}

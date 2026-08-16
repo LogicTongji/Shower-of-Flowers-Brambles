@@ -620,6 +620,15 @@ GuiDeclarativeDataStore::Registry() const
     return registry_;
 }
 
+void GuiDeclarativeDataStore::SetRegistry(
+    std::shared_ptr<GuiDataRegistry> registry
+)
+{
+    registry_ = registry
+        ? std::move(registry)
+        : std::make_shared<GuiDataRegistry>();
+}
+
 bool GuiDeclarativeDataStore::SetFromText(
     std::string_view name,
     std::string_view value,

@@ -1,0 +1,42 @@
+
+
+
+song = {
+	name = "lullabyofwar.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { war = yes }
+		}
+		modifier = {
+			factor = 1.5
+			tag = ENG
+		}
+	}
+}
+
+
+song = {
+	name = "overture.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { war = yes }
+		}
+	}
+}
+
+
+
+song = {
+	name = "war.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { war = yes }
+		}
+	}
+}

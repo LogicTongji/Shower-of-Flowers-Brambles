@@ -1,0 +1,76 @@
+
+##############
+# Comintern
+##############
+comintern = {
+	TGF = {
+		trigger = {
+			4685 = {
+				controller = {
+					faction = comintern
+				}
+			}
+			
+					}
+		primary = yes
+	}
+	TGS = {
+		trigger = {
+			4452 = {
+				controller = {
+					faction = comintern
+				}
+			}
+					}
+		primary = yes
+}
+	TGT = {
+		trigger = {
+			4788 = {
+				controller = {
+					faction = comintern
+				}
+			}
+					}
+		primary = yes
+}
+}
+
+##############
+# ALLIES
+##############
+allies = {
+	KMTF = {
+		trigger = {
+			4685 = {
+				controller = {
+					faction = allies
+				}
+			}
+                date = 1948.7.1
+					}
+		primary = yes
+	}
+	KMTS = {
+		trigger = {
+			 4452 = {
+				controller = {
+					faction = allies
+				}
+			}
+                date = 1948.7.1
+					}
+		primary = yes
+	}
+	KMTT = {
+		trigger = {
+			 4788 = {
+				controller = {
+					faction = allies
+				}
+			}
+                date = 1948.7.1
+					}
+		primary = yes
+	}
+}

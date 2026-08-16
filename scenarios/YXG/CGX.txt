@@ -1,0 +1,130 @@
+capital = 7553
+government = chinese_warlord
+ideology = paternal_autocrat
+head_of_state = 502002
+head_of_government = 502001
+foreign_minister = 502002
+armament_minister = 502005
+minister_of_security = 502003
+minister_of_intelligence = 3000042
+chief_of_staff = 502007
+chief_of_army = 3000041
+alignment = { x = 0 y = 0 }
+neutrality = 70
+national_unity = 60
+
+infantry_theory = 2.5
+infantry_practical = 2.5
+militia_theory = 2.5
+militia_practical = 2.5
+mobile_theory = 1
+mobile_practical = 1
+artillery_theory = 1 
+artillery_practical = 1
+rocket_science = 0
+rocket_practical = 0 
+naval_engineering = 0
+destroyer_practical = 0
+cruiser_practical = 0
+capitalship_practical = 0
+carrier_practical = 0 
+submarine_engineering = 0
+submarine_practical = 0
+electornicegineering_theory = 0 
+electornicegineering_practical = 0
+automotive_theory = 0 
+armour_practical = 0
+aeronautic_engineering = 1
+single_engine_aircraft_practical = 1 
+twin_engine_aircraft_practical = 0
+four_engine_aircraft_practical = 0
+spearhead_theory = 0 
+superior_firepower_theory = 0 
+grand_battleplan_theory = 2 
+human_wave_theory = 0 
+land_doctrine_practical= 0 
+naval_doctrine_practical = 0 
+base_strike_doctrine = 0
+fleet_in_being_doctrine = 0 
+sealane_interdiction_doctrine = 0
+air_doctrine_practical = 0 
+fighter_focus = 1
+cas_focus = 1 
+tac_focus = 0
+nav_focus = 0 
+strategic_air_focus = 0 
+mechanicalengineering_theory = 2
+chemical_engineering = 1
+jetengine_theory = 0 
+jetengine_practical = 0 
+nuclear_physics = 0
+nuclear_bomb = 0 
+transport_practical = 0
+officers_ratio = 1.20
+
+militia_smallarms = 1
+militia_support = 1
+militia_guns = 1
+militia_at = 1
+infantry_activation = 1
+schwerpunkt = 0
+blitzkrieg = 0
+mobile_warfare = 0
+elastic_defence = 0
+operational_level_command_structure = 0
+tactical_command_structure = 0
+mechanized_offensive = 0
+delay_doctrine = 0
+integrated_support_doctrine = 0
+infantry_warfare = 0
+special_forces = 0
+assault_concentration = 0
+central_planning = 0
+mass_assault = 0
+peoples_army = 1
+large_front = 0
+guerilla_warfare = 1
+operational_level_organisation = 0
+
+
+oob = "CGX_1936.txt"
+
+popularity = { 
+	national_socialist = 0
+	fascistic = 0
+	paternal_autocrat = 65
+	social_conservative = 25
+	market_liberal = 10
+	social_liberal = 0
+	social_democrat = 0
+	left_wing_radical = 0
+	leninist = 0
+	stalinist = 0
+}
+
+organization = { 
+	national_socialist = 0
+	fascistic = 0
+	paternal_autocrat = 70
+	social_conservative = 40
+	market_liberal = 30
+	social_liberal = 0
+	social_democrat = 0
+	left_wing_radical = 0
+	leninist = 0
+	stalinist = 0
+}
+
+training_laws = basic_training
+press_laws = propaganda_press
+industrial_policy_laws = mixed_industry
+education_investment_law = minimal_education_investment
+economic_law = full_civilian_economy
+conscription_law = volunteer_army
+civil_law = totalitarian_system
+
+1944.4.16 = {
+oob = "scenarios/YXG/CGX_OOB.txt"
+join_faction = allies
+national_unity = 95
+}

@@ -1,0 +1,355 @@
+###贾汪起义
+country_event = {
+	
+	id = 1
+
+        trigger = {
+                tag = CHC
+                not = { has_country_flag = c_betray } 
+		date = 1948.11.10
+	}
+	
+        mean_time_to_happen = { days = 1 }
+	
+        title = "贾汪起义"
+	desc = "潜伏于蒋军中的我地下党员张克侠，何基沣二同志已经准备率部起义，此举定将大大打击蒋匪军士气。"
+        picture = "espionage"
+	option = {
+		name = "好，在贾汪起义"
+                5435 = { change_controller = CHC }
+                load_oob = "scenarios/huaihai/betray_a.txt"
+                set_country_flag = c_betray
+                ai_chance = { factor = 20 }
+                CHI = { country_event = 2 }
+
+}
+	option = {
+		name = "好，在邳州起义"
+                5420 = { change_controller = CHC }
+                load_oob = "scenarios/huaihai/betray_b.txt"
+                set_country_flag = c_betray
+                ai_chance = { factor = 50 }
+                CHI = { country_event = 2 }
+
+}
+	option = {
+		name = "好，回到后方"
+
+                load_oob = "scenarios/huaihai/betray_c.txt"
+                set_country_flag = c_betray
+                ai_chance = { factor = 30 }
+                CHI = { country_event = 2 }
+
+}
+				
+}
+
+country_event = {
+	
+	id = 2
+        
+        title = "我军一部发生叛变"
+        tag = CHI
+        is_triggered_only = yes
+	
+        desc = "大事不好。张克侠，何基沣二贼率第三绥靖区一部已投靠共匪。"
+        picture = "Malaya"
+	option = {
+		name = "可恶"
+		add_country_modifier = {
+				name = "士气低落"
+				duration = 20
+			}
+
+                
+}
+				
+}
+###廖运周起义
+country_event = {
+	
+	id = 3
+
+        trigger = {
+                tag = CHC
+                not = { has_country_flag = l_betray } 
+		date = 1948.12.3
+	}
+	
+        mean_time_to_happen = { days = 1 }
+	
+        title = "廖运周部起义"
+	desc = "潜伏于蒋军中的我地下党员廖运周同志已经准备率110师起义，此举定将大大打击蒋匪军士气。"
+        picture = "espionage"
+	option = {
+		name = "好，在霍邱起义"
+                5469 = { change_controller = CHC }
+                load_oob = "scenarios/huaihai/betray_d.txt"  
+                set_country_flag = l_betray
+                ai_chance = { factor = 50 }
+
+
+}
+
+	option = {
+		name = "好，回到后方"
+
+                load_oob = "scenarios/huaihai/betray_e.txt"
+                set_country_flag = l_betray
+                ai_chance = { factor = 50 }
+                CHI = { country_event = 4 }
+
+}
+				
+}
+country_event = {
+	
+	id = 4
+        
+        title = "我军一部发生叛变"
+        tag = CHI
+        is_triggered_only = yes
+	
+        desc = "大事不好。廖运周率110师已投靠共匪。"
+        picture = "Malaya"
+	option = {
+		name = "可恶"
+		add_country_modifier = {
+				name = "士气低落"
+				duration = 20
+			}
+
+                
+}
+				
+}
+
+country_event = {
+	
+	id = 5
+
+        trigger = {
+                tag = CHI
+                 not = { has_country_flag = zhengzhou_cap }                
+		
+			5383 = {
+				controller = {
+					faction = allies
+				}
+			}
+
+	}
+	
+        mean_time_to_happen = { days = 1 }
+	
+        title = "郑州光复"
+        desc = "郑州在惨遭共匪蹂躏后终于回到了国民政府的怀抱。"
+	option = {
+		name = "乘胜进击"
+		add_country_modifier = {
+			name = 乘胜进击
+			duration = 20
+		}
+                set_country_flag = zhengzhou_cap
+
+}
+				
+}
+
+country_event = {
+	
+	id = 6
+
+        trigger = {
+                tag = CHI
+                 not = { has_country_flag = jinan_cap }                
+		
+			5275 = {
+				controller = {
+					faction = allies
+				}
+			}
+
+	}
+	
+        mean_time_to_happen = { days = 1 }
+	
+        title = "济南光复"
+        desc = "济南在惨遭共匪蹂躏后终于回到了国民政府的怀抱。"
+
+	option = {
+		name = "乘胜进击"
+		add_country_modifier = {
+			name = 乘胜进击
+			duration = 20
+		}
+                set_country_flag = jinan_cap
+
+}
+				
+}
+
+country_event = {
+
+	id = 7
+
+	title = "战局稳定"
+	desc = "共匪作乱徐蚌数月却未得逞，全赖诸君勤勉勇毅。若我等精诚团结，同仇敌忾，不予奸匪以分化挑拨之机，戡平匪乱指日可待。"
+
+        picture = "nra"
+	trigger = {
+                tag = CHI
+		date = 1949.1.30
+		not = { month = 4 }
+
+
+		not = { has_country_flag = war_situ }
+                CHI = { total_amount_of_brigades = 170 }
+			
+			5491 = {
+				controller = {
+					faction = allies
+				}
+			}
+			5514 = {
+				controller = {
+					faction = allies
+				}
+			}
+			5492 = {
+				controller = {
+					faction = allies
+				}
+			}
+			5470 = {
+				controller = {
+					faction = allies
+				}
+			}
+			5436 = {
+				controller = {
+					faction = allies
+				}
+			}
+			5421 = {
+				controller = {
+					faction = allies
+				}
+			}
+			5406 = {
+				controller = {
+					faction = allies
+				}
+			}
+
+	}
+       mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = "是"
+		set_country_flag = war_situ
+		add_country_modifier = {
+				name = "士气回升"
+				duration = 30
+			}
+	}
+}
+
+country_event = {
+	
+	id = 8
+
+        trigger = {
+                tag = CHC
+                 not = { has_country_flag = amethyst_incident }                
+		 CHI = { controls = 5542 }
+                 OR = { 
+
+                        CHC = { controls = 5595 } 
+                        CHC = { controls = 5570 } 
+                        CHC = { controls = 5539 } 
+                        CHC = { controls = 5517 } 
+                        CHC = { controls = 5495 } 
+                        CHC = { controls = 5473 } 
+                        CHC = { controls = 5496 } 
+}
+                 
+	
+        mean_time_to_happen = { days = 1 }
+	
+        title = "紫石英号事件"
+	desc = "蒋匪的主子，万恶的英帝国主义亡我之心不死，竟以军舰阻挡我军南下并炮击我阵地。"
+        picture = "Matapan"
+	option = {
+		name = "强烈抗议，坚决还击"
+                national_unity = 2
+		add_country_modifier = {
+				name = "士气回升"
+				duration = 20
+			}
+                
+        random = {
+			chance = 40
+			
+                        ENG ={ war = { 
+                             target = CHC 
+                         attacker_goal = { casus_belli = conquer } }
+                        CHI = { country_event = 9 }
+
+
+}
+ 
+		}
+                set_country_flag = amethyst_incident
+                ai_chance = { factor = 70 }
+	}
+
+	option = {
+		name = "暂忍一时，避免摩擦"
+                dissent = 5
+		add_country_modifier = {
+				name = "敌舰阻挠"
+				duration = 20
+			}
+                
+                set_country_flag = amethyst_incident
+                ai_chance = { factor = 30 }
+	}
+                
+
+
+				
+}
+
+
+country_event = {
+	
+	id = 9
+        
+        title = "英国远征军到达上海"
+        picture = "hongkong"
+        tag = CHI
+        is_triggered_only = yes
+	
+    
+	option = {
+		name = "好"
+                load_oob = "scenarios/huaihai/ENG_rein.txt"
+		add_country_modifier = {
+				name = "英国援助"
+				duration = 45
+			}
+
+
+} 
+}
+
+
+
+
+
+
+
+                
+
+				

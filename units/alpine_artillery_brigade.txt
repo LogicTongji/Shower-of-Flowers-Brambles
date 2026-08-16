@@ -2,6 +2,7 @@ alpine_artillery_brigade = {
 	type = land
 	sprite = Infantry
 	active = no
+	unit_group = infantry_unit_type
 
 	#Size Definitions
 	max_strength = 5

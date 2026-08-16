@@ -1,0 +1,52 @@
+country_event = {
+	id = 1000181
+	trigger = {
+		tag = JAP
+		controls = 5401
+	}
+	fire_only_once = yes
+	title = "YXG1title"
+	desc = "YXG1desc"
+	picture = "Xuchang"
+	option = {
+		name = "YXG1option"
+		CHI = { country_event = 1000182 }
+	}
+}
+country_event = {
+	id = 1000182
+	is_triggered_only = yes
+	title = "YXG2title"
+	desc = "YXG2desc"
+	picture = "Lv"
+	option = {
+		name = "YXG2option"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = 1000183
+	trigger = {
+		tag = JAP
+		controls = 7537
+	}
+	fire_only_once = yes
+	title = "YXG3title"
+	desc = "YXG3desc"
+	picture = "Hengyang"
+	option = {
+		name = "YXG3option"
+		CHI = { country_event = 1000184 }
+	}
+}
+country_event = {
+	id = 1000184
+	is_triggered_only = yes
+	title = "YXG4title"
+	desc = "YXG4desc"
+	picture = "Hengyang"
+	option = {
+		name = "YXG4option"
+		ai_chance = { factor = 100 }
+	}
+}

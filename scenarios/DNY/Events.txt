@@ -1,0 +1,125 @@
+
+country_event = {
+         id = 1     
+         fire_only_once = yes
+         tirgger = {
+               tag = CHI  
+               JAP = { controls = 6070 
+                      controls = 7610 
+                      controls = 9640 
+                      controls = 7666 
+                      }            
+          }
+         title = "建立美械师"
+         desc = "CHI_Event_552_decs"
+         picture = "CHI_flag"
+         option = {
+                 name = "组建"
+                 load_oob = "CHI_USA_SupportA.txt"
+        }
+}
+country_event = {
+         id = 2  
+         fire_only_once = yes
+         tirgger = {
+               tag = CHI
+               JAP = { controls = 6070 
+                      controls = 7610 
+                      controls = 9640 
+                      controls = 7666 
+                      }              
+          }           
+         title = "建立Y部队"
+         desc = "CHI_Event_3019_decs"
+         picture = "CHI_flag"
+         option = {
+                 name = "组建"
+                       remove_brigade = "远征军第一路军司令部"
+	        remove_brigade = "远征军第5军司令部"
+	        remove_brigade = "第200师"
+	        remove_brigade = "第200师"
+	        remove_brigade = "第200师"
+	        remove_brigade = "第200师" 
+                remove_brigade = "新编第22师"
+	        remove_brigade = "新编第22师" 
+                remove_brigade = "新编第22师"
+	        remove_brigade = "新编第22师"
+	        remove_brigade = "新编第22师" 
+	        remove_brigade = "新编第96师" 
+ 	        remove_brigade = "新编第96师" 
+                remove_brigade = "新编第96师"
+	        remove_brigade = "新编第96师"
+	        remove_brigade = "远征军第6军司令部"
+	        remove_brigade = "远征军第66军司令部"
+	        remove_brigade = "第49师"
+	        remove_brigade = "第49师" 
+                remove_brigade = "第49师"
+	        remove_brigade = "第49师" 
+                remove_brigade = "第93师"
+	        remove_brigade = "第93师"
+	        remove_brigade = "第93师" 
+	        remove_brigade = "第93师"  
+	         remove_brigade = "暂编第55师"
+	        remove_brigade = "暂编第55师" 
+                remove_brigade = "暂编第55师"
+	        remove_brigade = "暂编第55师" 
+                remove_brigade = "新编第38师"
+	        remove_brigade = "新编第38师"
+	        remove_brigade = "新编第38师" 
+	        remove_brigade = "新编第38师"  
+	          remove_brigade = "新编第28师"
+	        remove_brigade = "新编第28师" 
+                remove_brigade = "新编第28师"
+	        remove_brigade = "新编第28师" 
+	         remove_brigade = "新编第29师"
+	        remove_brigade = "新编第29师" 
+                remove_brigade = "新编第29师"
+	        remove_brigade = "新编第29师" 
+	         remove_brigade = "第36师"
+	        remove_brigade = "第36师" 
+                remove_brigade = "第36师"
+	        remove_brigade = "第36师"      
+                 load_oob = "CHI_Y.txt"
+        }
+}
+country_event = {
+         id = 3   
+         fire_only_once = yes
+         tirgger = {
+               tag = JAP         
+               JAP = { controls = 6070 
+                      controls = 7610 
+                      controls = 9640 
+                      controls = 7666 
+                      }              
+          }         
+          fire_only_once = yes
+           title = "支援缅甸方面"
+         desc = "JAP_Event_3019_decs"
+         picture = "JAP_flag"
+         option = {
+                 name = "增援"
+                 set_country_flag = EventJAP30190019 
+                 load_oob = "JAP_SA1944.txt"
+        }
+}
+country_enent = {
+         id = 4  
+         fire_only_once = yes
+         tirgger = {
+               tag = ENG        
+               JAP = { controls = 6070 
+                      controls = 7610 
+                      controls = 9640 
+                      controls = 7666 
+                      }               
+          }          
+           fire_only_once = yes
+         title = "支援缅甸方面"
+         desc = "ENG_Event_3019_decs"
+         picture = "China_Event_1000020"
+         option = {
+                 name = "增援"
+                 load_oob = "ENG_YD.txt"
+        }
+}

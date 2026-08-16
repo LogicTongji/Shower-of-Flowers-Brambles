@@ -1,0 +1,140 @@
+name = "SCENARIO_CX_NAME"
+desc = "SCENARIO_CX_DESC"
+icon = "GFX_select_downfall"
+startdate = 1950.10.2
+enddate = 1953.7.27
+
+camera_height = 500
+camera_center = { x = 4771 y = 1414 }
+camera_min_x = 3090
+camera_min_y = 32
+camera_max_x = 6000
+camera_max_y = 1403
+
+# enable_strategic_resources = no
+
+victory_conditions = "scenarios/1950China/faction_aims.txt"
+victory_conditions_to_win = 1
+number_of_victory_conditions = 6
+
+
+
+reinforcement = 30
+
+# will load any history files with scenarios/1950China/<tag>.txt
+selectable_country = PRC
+selectable_country = USA
+country = KOR
+country = PRK
+events = "scenarios/DNY/Events.txt"
+
+
+provinces = {
+4522 
+4580 
+4635 
+4636 
+4691 
+4692 
+4742 
+4743 
+4744 
+4745 
+4797 
+4843 
+4844 
+4845 
+4846 
+4893 
+4894 
+4895 
+4896 
+4939 
+4940 
+4941 
+4942 
+4983
+4984 
+4985 
+5022 
+5023 
+5056 
+5057 
+5087 
+5088 
+5089 
+5114 
+5115 
+5146
+5058 
+5059 
+5090 
+5116 
+5117 
+5147 
+5148 
+5149 
+5182 
+5183 
+5184 
+5214 
+5215 
+5216 
+5217 
+5247 
+5248 
+5249 
+5250 
+5279 
+5280 
+5281 
+5307 
+5308
+5309 
+5339 
+5340 
+5341 
+5366 
+5388 
+5389
+4892
+4824
+4793
+4741
+4794
+4795 
+4796
+4842
+4793
+4741
+4740
+4792
+4387
+4454
+4455
+4519
+4520
+4521
+4579
+4633
+4634
+4688
+4689
+4690
+4740
+4741
+4793
+#water
+11932
+11228
+11931
+11225
+11923
+11221
+11919
+}
+
+regions = {	
+SF_PRK_region
+SF_KOR_region
+}

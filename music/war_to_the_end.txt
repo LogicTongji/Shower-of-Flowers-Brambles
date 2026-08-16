@@ -1,0 +1,59 @@
+song = {
+	name = "achtungpanzer.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { war = yes }
+		}
+		modifier = {
+			factor = 1.5
+			tag = GER
+		}
+	}
+}
+
+
+
+song = {
+	name = "japanesespirit.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { war = yes }
+		}
+		modifier = {
+			factor = 1.5
+			tag = JAP
+		}
+	}
+}
+
+song = {
+	name = "kriegsgewitter.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { war = yes }
+		}
+		modifier = {
+			factor = 1.5
+			tag = GER
+		}
+	}
+}
+
+
+
+song = {
+	name = "riseandfallofevil.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { war = yes }
+		}
+	}
+}

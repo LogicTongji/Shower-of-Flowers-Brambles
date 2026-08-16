@@ -1,0 +1,52 @@
+army = {
+
+	name = "Anti-Communism Expeditionary Force"
+	location = 5542
+
+
+	regiment = { type = hq_brigade name = "Anti-Communism Expeditionary Force HQ" historical_model = 0 }
+	
+		division= {
+
+			name = "1st Marine Division"
+			location = 5542
+			regiment = { type = marine_brigade historical_model = 3 }
+			regiment = { type = marine_brigade historical_model = 3 }
+			regiment = { type = marine_brigade historical_model = 3 }
+		}
+
+		division= {
+
+			name = "2nd Marine Division"
+
+			location = 5542
+			regiment = { type = marine_brigade historical_model = 3 }
+			regiment = { type = marine_brigade historical_model = 3 }
+			regiment = { type = marine_brigade historical_model = 3 }
+		}
+
+		division= {
+
+			name = "3rd Marine Division"
+
+			location = 5542
+			regiment = { type = marine_brigade historical_model = 3 }
+			regiment = { type = marine_brigade historical_model = 3 }
+			regiment = { type = marine_brigade historical_model = 3 }
+		}
+
+
+
+
+air = {
+
+	name = "10 Group"
+
+	base = 5542
+	location = 5542
+
+	wing = { type = tactical_bomber name = "No.464 Squadron RAAF " historical_model = 3 }
+}
+
+
+}

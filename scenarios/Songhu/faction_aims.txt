@@ -1,0 +1,74 @@
+##############
+# JAP
+##############
+axis = {
+	SH1_Axis = {
+		trigger = {
+		and = {
+				5542 = {
+					controller = {
+						faction = axis
+			}
+			}
+			14185 = {
+					controller = {
+						faction = axis
+			}
+			}
+			14182 = {
+					controller = {
+						faction = axis
+			}
+			}
+			14181 = {
+					controller = {
+						faction = axis
+			}
+			}
+		}
+		primary = yes
+	}
+	SH2_Axis = {
+		trigger = {
+				5494 = {
+					controller = {
+						faction = axis
+			}
+			}
+		}
+		primary = yes
+	}
+}
+##############
+# CHI
+##############
+allies	= {
+	SH1_Allies = {
+		trigger = {
+		 and = {
+			5542 = {
+				controller = {
+					faction = allies
+			}
+		}
+		14185 = {
+				controller = {
+					faction = allies
+			}
+		}
+		}
+		date = 1937.11.12
+		}
+		primary = yes
+	}
+	SH2_Allies = {
+		trigger = {
+			5494 = {
+				controller = {
+					faction = allies
+			}
+		}
+		}
+		primary = yes
+	}
+}		

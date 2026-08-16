@@ -1,0 +1,23 @@
+##############
+# JAP
+##############
+axis = {
+	BOL_Axis = {
+                  trigger = {
+		not = { JAP = { total_amount_of_brigades = 35 } }
+		primary = yes
+                  }
+	}
+}
+
+##############
+# USA
+##############
+allies = {
+	BOL_Allies = {
+                       trigger = {
+		not = { USA = { total_amount_of_brigades = 45 } }
+		primary = yes
+                       }
+	}
+}		

@@ -1,0 +1,17 @@
+owner = JAP
+controller = JAP
+add_core = JAP 
+
+add_core = CHI
+add_core = CHC
+
+infra = 5
+
+
+1947.1.1 = {
+	owner = CHC 	controller = CHC
+}
+
+1947.2.2 = {
+	owner = CHI 	controller = CHI
+}

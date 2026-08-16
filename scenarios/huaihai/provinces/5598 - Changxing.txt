@@ -1,0 +1,12 @@
+owner = CHI
+controller = CHI
+add_core = CHI
+add_core = CHC
+infra = 4
+
+1947.1.1 = {
+	owner = CHC 	controller = CHC
+}
+1947.12.1 = {
+	owner = CHI 	controller = CHI
+}

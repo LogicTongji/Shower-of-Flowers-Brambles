@@ -10,6 +10,7 @@ P.LastDay = nil
 P.LastSnapshot = nil
 P.SelectedRegionId = 0
 P.SelectedRegionSource = "none"
+P.WindowOpen = false
 P.Revision = 0
 P.ChannelName = "china_anti_jap"
 P.LeaderAssignments = {}
@@ -29,6 +30,16 @@ P.Leaders = {
 		portrait = "GFX_warmap_leader_li_zongren",
 		nameKey = "WARMAP_LEADER_LI_ZONGREN",
 		descriptionKey = "WARMAP_LEADER_LI_ZONGREN_DESC"
+	},
+	{
+		id = 2,
+		leaderId = "ju_zheng",
+		leaderType = P.LeaderTypes.ADMINISTRATIVE,
+		role = P.LeaderTypes.ADMINISTRATIVE,
+		textKey = "WARMAP_LEADER_LIST_JU_ZHENG",
+		portrait = "GFX_warmap_officer_ju_zheng",
+		nameKey = "WARMAP_LEADER_JU_ZHENG",
+		descriptionKey = "WARMAP_LEADER_JU_ZHENG_DESC"
 	}
 }
 
@@ -379,6 +390,27 @@ GuiActionBridge.Register("assign_war_map_leader", AssignLeader)
 GuiActionBridge.Register("move_war_map_leader", MoveLeader)
 GuiActionBridge.Register("step_down_war_map_leader", StepDownLeader)
 
+local function OpenWarMap()
+	P.WindowOpen = true
+	P.LastDay = nil
+	return true
+end
+
+local function CloseWarMap()
+	P.WindowOpen = false
+	P.LastDay = nil
+	return true
+end
+
+GuiActionBridge.Register(
+	"open_china_anti_jap_warmap",
+	OpenWarMap
+)
+GuiActionBridge.Register(
+	"close_china_anti_jap_warmap",
+	CloseWarMap
+)
+
 function P.BuildSnapshot()
 	local state = ChinaWarMap.Tick()
 	local viewerTag = state.playerTag or ""
@@ -423,6 +455,7 @@ function P.BuildSnapshot()
 	snapshot.values["state.active"] = snapshot.active
 	snapshot.values["state.viewertag"] = viewerTag
 	snapshot.values["state.date"] = snapshot.date
+	snapshot.values["state.windowopen"] = P.WindowOpen
 	snapshot.values["selectedregion.id"] = P.SelectedRegionId
 	snapshot.values["selectedregion.source"] = P.SelectedRegionSource
 	snapshot.values["warProgress.known"] =

@@ -1,0 +1,78 @@
+name = "SCENARIO_YXG"
+desc = "SCENARIO_YXG_DESC"
+icon = "GFX_select_southernq"
+startdate = 1944.4.16
+enddate = 1944.12.10
+
+camera_height = 240
+camera_center = { x = 4650 y = 1325 }
+camera_min_x = 4350
+camera_min_y = 1100
+camera_max_x = 4855
+camera_max_y = 1700
+
+victory_conditions = "scenarios/YXG/faction_aims.txt"
+victory_conditions_to_win = 6
+number_of_victory_conditions = 6
+events = "scenarios/YXG/events.txt"
+
+
+
+reinforcement = 30
+
+# will load any history files with scenarios/CCW/<tag>.txt
+selectable_country = CHI
+selectable_country = JAP
+country = ROC
+country = CQM
+country = CSC
+country = CDB
+country = CJC
+country = CGX
+country = CYN
+# visible provinces & regions
+provinces = {
+5404
+7436
+5333
+5648
+5660
+5681
+        #water
+	11226
+	11932
+	11227
+	11930
+        11228
+11931
+11225
+11923
+11221
+11919
+11229
+11929
+12013
+12014
+11238
+12011
+12010
+11925
+11926
+11927
+11933
+11184
+	
+}
+
+regions = {	
+hebei_region
+shandong_region
+jiangsu_region
+henan_region
+anhui_region
+hubei_region
+guangxi_region
+guizhou_region
+hunan_region
+guangdong_region
+}

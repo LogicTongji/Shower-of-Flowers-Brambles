@@ -1,0 +1,38 @@
+theatre = {
+	name = "第10军"
+	location = 7537
+	leader = 340046
+	regiment = { type = hq_brigade name = "第10军司令部" historical_model = 1 }
+division = {
+	name = "新编第29师"
+	location = 5401
+	leader = 340442
+	regiment = { type = partisan_brigade experience = 80 historical_model = 1 }
+	regiment = { type = partisan_brigade experience = 80 historical_model = 1 }
+	regiment = { type = partisan_brigade experience = 80 historical_model = 1 }
+}
+	division = {
+		name = "第3师"
+		location = 7537
+		leader = 340032
+		regiment = { type = partisan_brigade experience = 80 historical_model = 1 }
+		regiment = { type = partisan_brigade experience = 80 historical_model = 1 }
+		regiment = { type = partisan_brigade experience = 80 historical_model = 1 }
+	}
+	division = {
+		name = "第190师"
+		location = 7537
+		leader = 340090
+		regiment = { type = partisan_brigade experience = 80 historical_model = 1 }
+		regiment = { type = partisan_brigade experience = 80 historical_model = 1 }
+		regiment = { type = partisan_brigade experience = 80 historical_model = 1 }
+	}
+	division = {
+		name = "预备第10师"
+		location = 7537
+		leader = 340094
+		regiment = { type = partisan_brigade experience = 80 historical_model = 1 }
+		regiment = { type = partisan_brigade experience = 80 historical_model = 1 }
+		regiment = { type = partisan_brigade experience = 80 historical_model = 1 }
+	}
+}

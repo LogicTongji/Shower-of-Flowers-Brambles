@@ -1,0 +1,56 @@
+name = "SCENARIO_XZ_NAME"
+desc = "SCENARIO_XZ_DESC"
+icon = "GFX_select_southernq"
+startdate = 1938.1.1
+enddate = 1938.5.1
+
+camera_height = 240
+camera_center = { x=4655 y=1350 }                              
+camera_min_x = 4200
+camera_min_y = 1200
+camera_max_x = 4800
+camera_max_y = 1450
+
+victory_conditions = "scenarios/XuZhou_battle/faction_aims.txt"
+victory_conditions_to_win = 1
+number_of_victory_conditions = 3
+events = "scenarios/XuZhou_battle/events.txt"
+
+
+
+reinforcement = 30
+
+# will load any history files with scenarios/CCW/<tag>.txt
+selectable_country = CHI
+selectable_country = JAP
+country = CSD
+# visible provinces & regions
+provinces = {
+5419
+5387
+5405
+5420
+5418
+5449
+5450
+5436
+5421
+5406
+5362
+5361
+5333
+7436
+5334
+11932
+11226
+11227
+11930
+
+}
+
+regions = {	
+shandong_region
+henan_region
+jiangsu_region
+anhui_region
+}

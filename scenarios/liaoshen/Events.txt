@@ -1,0 +1,150 @@
+#the white death
+country_event = {
+
+	id = 1
+	
+	fire_only_once = yes
+	trigger = {
+		tag = CHC
+		date = 1947.12.31
+
+	}
+
+        mean_time_to_happen = { days = 1 }
+
+	
+	title = "大练兵的成果"
+        desc = "秋季攻势结束后，东北野战军以林彪的六个战术原则为指导进行了大规模的军事训练。从不久后的战事来看，这次大练兵的效果可谓立竿见影。"
+	
+
+
+	option = {
+		name = "好"	
+		add_country_modifier = {
+				name = "revenge"
+				duration = 300
+			}
+	}
+}
+
+
+###艰难的抉择
+country_event = {
+	
+	id = 2
+        fire_only_once = yes
+        title = "艰难的抉择"
+
+        trigger = {
+		tag = CHI
+		date = 1947.12.31
+                ai = no
+	}
+        
+	
+        mean_time_to_happen = { days = 1 }
+	
+       	desc = "时间到了1948年，国军在东北的形势愈发不利。这时出现了两种意见，一种认为应该集中主力固守沈阳，任共匪打到什么地方守军部队长如何告急都不为所动。而另一种则认为应着眼于锦州，守住这个东北的大门。"
+
+	option = {
+		name = "固守锦州"
+                4788 = { land_fort = 2 } 
+                4736 = { land_fort = 1 }
+                4735 = { land_fort = 1 }
+                ai_chance = { factor = 60 }
+
+}
+     	option = {
+		name = "固守沈阳"
+                4685 = { land_fort = 2 }
+                ai_chance = { factor = 40 }
+
+}
+				
+}
+
+###艰难的抉择
+country_event = {
+	
+	id = 3
+        fire_only_once = yes
+        title = "艰难抉择"
+
+        trigger = {
+		tag = CHI
+		date = 1947.12.31
+                ai = yes
+	}
+        
+	
+        mean_time_to_happen = { days = 1 }
+	
+       	desc = "时间到了1948年，国军在东北的形势愈发不利。这时出现了两种意见，一种认为应该集中主力固守沈阳，任共匪打到什么地方守军部队长如何告急都不为所动。而另一种则认为应着眼于锦州，守住这个东北的大门。"
+
+	option = {
+		name = "固守"
+                4788 = { land_fort = 4 } 
+                4736 = { land_fort = 3 }
+                4735 = { land_fort = 3 }
+                4685 = { land_fort = 5 }
+
+
+}
+
+				
+}
+###美械援军
+country_event = {
+	
+	id = 4
+        fire_only_once = yes
+        title = "美械援军"
+        
+        trigger = {
+		tag = CHI
+		date = 1948.2.7
+                ai = yes
+                4685 = { controlled_by = CHI }              
+	}
+        
+	
+        mean_time_to_happen = { days = 1 }
+	
+
+
+	option = {
+		name = "好"
+                load_oob = "scenarios/liaoshen/reinforce.txt"
+                ai_chance = { factor = 100 }
+}
+				
+}
+
+#5
+country_event = {
+
+	id = 5
+	
+	fire_only_once = yes
+	trigger = {
+		tag = CHC
+		date = 1948.3.1
+                ai = yes
+	}
+
+        mean_time_to_happen = { days = 1 }
+
+	
+	title = "ai_bonus"
+        
+	
+
+
+	option = {
+		name = "好"	
+		add_country_modifier = {
+				name = "ENG_Aid"
+				duration = 300
+			}
+	}
+}

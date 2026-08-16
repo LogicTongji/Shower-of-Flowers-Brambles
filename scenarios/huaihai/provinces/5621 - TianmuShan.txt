@@ -1,0 +1,14 @@
+owner = CHI
+controller = CHI
+add_core = CHI
+add_core = CHC
+infra = 5
+land_fort = 2
+naval_base = 4
+
+1947.1.1 = {
+	owner = CHC 	controller = CHC
+}
+1947.12.1 = {
+	owner = CHI 	controller = CHI
+}

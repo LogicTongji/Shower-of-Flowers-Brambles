@@ -1,0 +1,15 @@
+owner =  CGD
+
+controller = CGD
+
+add_core = CGD
+
+add_core = CHC
+add_core = CHI
+infra = 3
+industry = 2
+1936.7.15 = { owner = CHI controller = CHI} 
+1944.6.20 = {
+		owner = JAP
+	controller = JAP
+	add_core = JAP }

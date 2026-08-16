@@ -1,0 +1,77 @@
+
+
+song = {
+	name = "happymarch.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { war = yes }
+		}
+	}
+}
+
+
+
+song = {
+	name = "russianadagio.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { war = yes }
+		}
+		modifier = {
+			factor = 1.5
+			tag = SOV
+		}
+	}
+}
+
+
+song = {
+	name = "russianvariations.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { war = yes }
+		}
+		modifier = {
+			factor = 1.5
+			tag = SOV
+		}
+	}
+}
+
+
+
+song = {
+	name = "stateofgrace.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { war = yes }
+		}
+		modifier = {
+			factor = 1.5
+			tag = USA
+		}
+	}
+}
+
+song = {
+	name = "suiteno2.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { war = yes }
+		}
+		modifier = {
+			factor = 1.5
+			tag = FRA
+		}
+	}
+}

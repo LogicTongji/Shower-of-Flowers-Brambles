@@ -1,0 +1,81 @@
+name = "Liaoshen"
+desc = "LiaoshenDesc"
+icon = "GFX_select_spanishcivilwar"
+startdate = 1948.1.1
+enddate = 1948.7.1
+
+camera_height = 375
+camera_center = { x = 4700 y = 1500 }
+camera_min_x = 4350
+camera_min_y = 1250
+camera_max_x = 4855
+camera_max_y = 1700
+
+victory_conditions = "scenarios/liaoshen/faction_aims.txt"
+victory_conditions_to_win = 3
+number_of_victory_conditions = 3
+events = "scenarios/liaoshen/Events.txt"
+
+
+reinforcement = 20
+
+# will load any history files with scenarios/liaoshen/<tag>.txt
+selectable_country = CHI
+selectable_country = CHC
+
+
+
+
+
+
+# visible provinces & regions
+provinces = {
+        7094
+        7115
+        7136
+        7160
+        7184
+        4686
+        7261
+        4571
+        4514
+        7234
+        7260
+        7287
+        4684
+        7278
+        4627
+        4683
+        4572
+        4573
+        8750
+        8803
+        8670
+        8723
+        4981
+        4935
+        4934
+        4886
+        4933
+        4981
+
+
+        #water
+	11226
+	11932
+	
+}
+
+regions = {
+	
+	rehe_region
+        fengtian_region
+        liaonning_region
+        andong_region
+	nenjiang_region
+        heilongjiang_region
+        jiandao_region
+        jilin_region
+        songjiang_region
+      
+}

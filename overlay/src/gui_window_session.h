@@ -12,6 +12,7 @@
 
 #include "gui_application_bus.h"
 #include "gui_behavior.h"
+#include "gui_declarative_data.h"
 #include "gui_plugin.h"
 #include "gui_tick.h"
 
@@ -151,6 +152,9 @@ private:
     GuiEventRouter eventRouter_;
     GuiRuntimeInputState inputState_;
     GuiLuaActionBridge actionBridge_;
+    GuiDeclarativeDataStore optimisticDataStore_;
+    std::unordered_map<std::string, GuiDataValue> persistentValues_;
+    std::unordered_map<std::string, GuiListModel> persistentLists_;
     gui::GuiCustomWidgetRegistry customWidgets_;
     GuiTickScheduler tickScheduler_;
     bool pluginInitialized_ = false;

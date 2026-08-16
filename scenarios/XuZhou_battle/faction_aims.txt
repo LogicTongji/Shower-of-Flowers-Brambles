@@ -1,0 +1,59 @@
+##############
+# JAP
+##############
+axis = {
+	XZ2_Axis = {
+		trigger = {
+				5435 = {
+					controller = {
+						faction = axis
+			}
+			}
+		}
+		primary = yes
+	}
+	XZ3_Axis = {
+		trigger = {
+				5383 = {
+					controller = {
+						faction = axis
+			}
+			}
+		}
+		primary = yes
+	}
+  XZ4_Axis = {
+		trigger = {
+				5401 = {
+					controller = {
+						faction = axis
+		}
+			}
+		}
+		primary = yes
+	}
+}
+##############
+# CHI
+##############
+allies	= {
+	XZ1_Allies = {
+		trigger = {
+			5435 = {
+				controller = {
+					faction = allies
+			}
+		}
+		primary = yes
+	}
+	XZ2_Allies = {
+		trigger = {
+			5383 = {
+				controller = {
+					faction = allies
+			}
+		}
+		}
+		primary = yes
+	}
+}		

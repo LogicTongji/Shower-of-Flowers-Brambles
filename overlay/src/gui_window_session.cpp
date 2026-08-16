@@ -1,6 +1,7 @@
 #include "gui_window_session.h"
 
 #include <algorithm>
+#include <cctype>
 #include <utility>
 
 namespace
@@ -36,6 +37,43 @@ bool PointInside(const gui::GuiRect& rect, int x, int y)
         && y >= rect.y
         && x < rect.x + rect.width
         && y < rect.y + rect.height;
+}
+
+std::string Lower(std::string value)
+{
+    std::transform(
+        value.begin(),
+        value.end(),
+        value.begin(),
+        [](unsigned char character)
+        {
+            return static_cast<char>(std::tolower(character));
+        }
+    );
+    return value;
+}
+
+std::string FindParameter(
+    const GuiActionContext& context,
+    std::string_view name
+)
+{
+    const auto found = context.parameters.find(
+        Lower(std::string(name))
+    );
+    return found == context.parameters.end()
+        ? std::string{}
+        : found->second;
+}
+
+bool ParseBoolean(std::string value)
+{
+    value = Lower(std::move(value));
+    return !value.empty()
+        && value != "no"
+        && value != "false"
+        && value != "off"
+        && value != "0";
 }
 
 }
@@ -176,6 +214,8 @@ void GuiWindowSessionController::Shutdown()
     layoutContext_ = {};
     listModels_.clear();
     listRuntimeStore_.Clear();
+    persistentValues_.clear();
+    persistentLists_.clear();
     inputState_ = {};
 }
 
@@ -204,6 +244,15 @@ void GuiWindowSessionController::RefreshData()
     {
         dataRegistry_ = std::make_shared<GuiDataRegistry>();
     }
+    for (const auto& entry : persistentValues_)
+    {
+        dataRegistry_->Set(entry.first, entry.second);
+    }
+    for (const auto& entry : persistentLists_)
+    {
+        dataRegistry_->SetList(entry.first, entry.second);
+    }
+    optimisticDataStore_.SetRegistry(dataRegistry_);
     layoutContext_ = dataRegistry_->MakeLayoutContext();
     layoutContext_.localizationResolver = localizationResolver_;
 
@@ -598,17 +647,6 @@ bool GuiWindowSessionController::IsWindowDragRegion(
     int mouseY
 ) const
 {
-    const gui::WindowDefinition* definition =
-        windowRuntime_.Definition();
-    if (!definition
-        || !definition->moveable
-        || definition->dragHeight <= 0
-        || mouseY < 0
-        || mouseY >= definition->dragHeight)
-    {
-        return false;
-    }
-
     const std::vector<gui::GuiResolvedWidget> widgets =
         ResolveInteractiveWidgets();
     const gui::GuiResolvedWidget* target = gui::HitTestGuiWidgets(
@@ -616,9 +654,41 @@ bool GuiWindowSessionController::IsWindowDragRegion(
         mouseX,
         mouseY
     );
-    return !target
-        || !target->definition
-        || !target->definition->draggable;
+    if (target && target->definition)
+    {
+        const gui::WidgetDefinition& definition = *target->definition;
+        const gui::GuiActionBinding& actions = definition.actions;
+        if (definition.type == gui::WidgetType::Button
+            || definition.type == gui::WidgetType::IndexedMap
+            || definition.type == gui::WidgetType::MarkerLayer
+            || definition.type == gui::WidgetType::Custom
+            || (definition.draggable
+                && definition.type != gui::WidgetType::Window)
+            || !actions.onClick.empty()
+            || !actions.onPress.empty()
+            || !actions.onRelease.empty())
+        {
+            return false;
+        }
+    }
+
+    for (auto iterator = widgets.rbegin();
+        iterator != widgets.rend();
+        ++iterator)
+    {
+        if (!iterator->visible
+            || !iterator->definition
+            || iterator->definition->type != gui::WidgetType::Window
+            || !iterator->definition->moveable
+            || iterator->definition->dragHeight <= 0
+            || !PointInside(iterator->rect, mouseX, mouseY))
+        {
+            continue;
+        }
+        return mouseY < iterator->rect.y
+            + iterator->definition->dragHeight;
+    }
+    return false;
 }
 
 bool GuiWindowSessionController::PressTargetsCustomInput() const
@@ -675,6 +745,49 @@ void GuiWindowSessionController::SetupActionBridge()
                     context.listName
                 ).selectedItemId = context.listItemId;
                 handled = true;
+            }
+            const bool dataChanged =
+                optimisticDataStore_.ApplyAction(context);
+            if (dataChanged)
+            {
+                handled = true;
+            }
+            if (dataChanged
+                && ParseBoolean(FindParameter(context, "persist")))
+            {
+                const std::string target = FindParameter(
+                    context,
+                    "target"
+                );
+                if (!target.empty())
+                {
+                    if (const GuiDataValue* value =
+                        dataRegistry_->Find(target))
+                    {
+                        persistentValues_[Lower(target)] = *value;
+                    }
+                    if (const GuiListModel* list =
+                        dataRegistry_->FindList(target))
+                    {
+                        persistentLists_[Lower(target)] = *list;
+                    }
+                }
+                for (const auto& parameter : context.parameters)
+                {
+                    constexpr std::string_view prefix = "set.";
+                    if (parameter.first.rfind(prefix, 0) != 0)
+                    {
+                        continue;
+                    }
+                    const std::string name = parameter.first.substr(
+                        prefix.size()
+                    );
+                    if (const GuiDataValue* value =
+                        dataRegistry_->Find(name))
+                    {
+                        persistentValues_[Lower(name)] = *value;
+                    }
+                }
             }
             if (applicationActionInvoker_
                 && applicationActionInvoker_(id_, context))

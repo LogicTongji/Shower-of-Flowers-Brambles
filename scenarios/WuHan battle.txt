@@ -1,0 +1,44 @@
+name = "SCENARIO_WH_NAME"
+desc = "SCENARIO_WH_DESC"
+icon = "GFX_select_southernq"
+startdate = 1938.6.1
+enddate = 1938.12.1
+
+camera_height = 240
+camera_center = { x=4624	y=1293 }                              
+camera_min_x = 4200
+camera_min_y = 1000
+camera_max_x = 5200
+camera_max_y = 1600
+
+victory_conditions = "scenarios/WuHan_battle/faction_aims.txt"
+victory_conditions_to_win = 2
+number_of_victory_conditions = 2
+events = "scenarios/WuHan_battle/events.txt"
+
+
+
+reinforcement = 30
+
+# will load any history files with scenarios/WuHan_battle/<tag>.txt
+selectable_country = CHI
+selectable_country = JAP
+# visible provinces & regions
+provinces = {
+5361
+5333
+5362
+9446
+9478
+}
+
+regions = {	
+henan_region
+jiangsu_region
+anhui_region
+hubei_region
+hunan_region
+jiangxi_region
+chekiang_region
+shandong_region
+}

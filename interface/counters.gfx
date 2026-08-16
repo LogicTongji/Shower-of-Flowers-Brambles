@@ -1708,6 +1708,13 @@ spriteType = {
 }
 spriteType = {
 	norefcount = yes
+	  name = "GFX_map_counter_foring_brigade"
+	  texturefile = "gfx/mapitems/mapcounters/foring_brigade.dds"
+	  noOfFrames = 1
+	  norefcount = yes
+}
+spriteType = {
+	norefcount = yes
 	  name = "GFX_map_counter_sp_anti_air_brigade"
 	  texturefile = "gfx/mapitems/mapcounters/sp_anti_air_brigade.dds"
 	  noOfFrames = 1

@@ -1,12 +1,66 @@
 guiTypes = {
 	windowType = {
 		name = "china_anti_jap"
-		borderSprite = "GFX_china_war_border"
 		position = { x = 0 y = 0 }
 		size = { x = 1600 y = 800 }
-		moveable = yes
-		dragHeight = 72
 		fullScreen = no
+
+		guiButtonType = {
+			name = "china_war_launcher_chi"
+			quadTextureSprite = "GFX_china_war_launcher_chi"
+			pressedTextureSprite = "GFX_china_war_launcher_chi"
+			onClick = "open_china_anti_jap_warmap"
+			enabledWhen = "state.visible && state.active"
+			visibleWhen = "state.visible && state.active && !state.windowopen && state.viewertag == CHI"
+			position = { x = 1480 y = 96 }
+			size = { x = 95 y = 85 }
+			zOrder = 1000200
+		}
+
+		guiButtonType = {
+			name = "china_war_launcher_chc"
+			quadTextureSprite = "GFX_china_war_launcher_chc"
+			pressedTextureSprite = "GFX_china_war_launcher_chc"
+			onClick = "open_china_anti_jap_warmap"
+			enabledWhen = "state.visible && state.active"
+			visibleWhen = "state.visible && state.active && !state.windowopen && state.viewertag == CHC"
+			position = { x = 1480 y = 96 }
+			size = { x = 95 y = 85 }
+			zOrder = 1000200
+		}
+
+		guiButtonType = {
+			name = "china_war_launcher_jap"
+			quadTextureSprite = "GFX_china_war_launcher_jap"
+			pressedTextureSprite = "GFX_china_war_launcher_jap"
+			onClick = "open_china_anti_jap_warmap"
+			enabledWhen = "state.visible && state.active"
+			visibleWhen = "state.visible && state.active && !state.windowopen && state.viewertag == JAP"
+			position = { x = 1480 y = 96 }
+			size = { x = 95 y = 85 }
+			zOrder = 1000200
+		}
+
+		windowType = {
+			name = "china_anti_jap_panel"
+			borderSprite = "GFX_china_war_border"
+			frameZOrder = -1000
+			position = { x = 0 y = 0 }
+			size = { x = 1600 y = 800 }
+			moveable = yes
+			dragHeight = 72
+			visibleWhen = "state.visible && state.active && state.windowopen"
+
+			guiButtonType = {
+				name = "china_war_close"
+				quadTextureSprite = "GFX_china_war_close"
+				pressedTextureSprite = "GFX_china_war_close"
+				onClick = "close_china_anti_jap_warmap"
+				enabledWhen = "state.visible && state.active && state.windowopen"
+				position = { x = 1540 y = 18 }
+				size = { x = 40 y = 32 }
+				zOrder = 1000200
+			}
 
 		iconType = {
 			name = "china_war_sidebar"
@@ -467,7 +521,7 @@ guiTypes = {
 			track = "combat_region_scroll_track"
 		}
 
-			guiButtonType = {
+		guiButtonType = {
 				name = "combat_region_button"
 				quadTextureSprite = "GFX_china_war_combat_button_normal"
 				pressedTextureSprite = "GFX_china_war_combat_button_pressed"
@@ -481,5 +535,6 @@ guiTypes = {
 			size = { x = 136 y = 30 }
 		}
 
+		}
 	}
 }

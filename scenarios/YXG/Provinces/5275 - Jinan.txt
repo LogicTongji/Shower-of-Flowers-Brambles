@@ -1,0 +1,28 @@
+owner = CSD
+
+controller = CSD
+add_core = CHC
+add_core = CSD
+add_core = CHI
+points = 3
+metal = 12.00
+energy = 9.00
+industry = 2
+land_fort = 1
+anti_air = 2
+infra = 7
+air_base = 4
+manpower = 25.00
+leadership = 1.60
+
+1937.12.27 = {
+	controller = JAP land_fort = 7
+}
+
+
+1944.4.1 = {
+
+	owner = JAP
+	controller = JAP
+	add_core = JAP
+}

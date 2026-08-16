@@ -1,0 +1,21 @@
+name = "国共内战"
+
+1947.12.31 = {
+	add_attacker = CHC
+        add_defender = CHI
+
+	war_goal=
+	{
+		casus_belli=conquer
+		actor="CHC"
+		receiver="CHI"
+	}
+	war_goal=
+	{
+		casus_belli=conquer
+		actor="CHI"
+		receiver="CHC"
+}
+
+}
+

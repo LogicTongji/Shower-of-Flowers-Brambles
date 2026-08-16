@@ -10,6 +10,7 @@
 #include <limits>
 #include <mutex>
 #include <string>
+#include <type_traits>
 #include <unordered_map>
 
 #include "gui_diagnostics.h"
@@ -107,7 +108,7 @@ struct HookState
     WNDPROC originalWindowProcedure = nullptr;
     bool installed = false;
     std::atomic<IDirect3DDevice9*> presentationDevice{nullptr};
-    std::atomic<bool> renderedSincePresent{false};
+    std::atomic<bool> activeDeviceVTableOwned{false};
     std::atomic<uint64_t> endSceneCalls{0};
     std::atomic<uint64_t> presentCalls{0};
     std::atomic<uint64_t> swapChainPresentCalls{0};
@@ -694,7 +695,7 @@ void SelectPresentationDevice(IDirect3DDevice9* device)
         device->Release();
         return;
     }
-    state.renderedSincePresent.store(
+    state.activeDeviceVTableOwned.store(
         false,
         std::memory_order_release
     );
@@ -711,15 +712,12 @@ void SelectPresentationDevice(IDirect3DDevice9* device)
 
 void RenderBeforePresent(IDirect3DDevice9* device)
 {
-    HookState& state = State();
     SelectPresentationDevice(device);
-    if (!state.renderedSincePresent.exchange(
-            false,
-            std::memory_order_acq_rel
-        ))
+    EnsureWindowHook(device);
+    if (SUCCEEDED(device->BeginScene()))
     {
-        EnsureWindowHook(device);
         ScriptedGui_OnEndScene(device);
+        device->EndScene();
     }
 }
 
@@ -727,17 +725,6 @@ HRESULT WINAPI HookedEndScene(IDirect3DDevice9* device)
 {
     State().endSceneCalls.fetch_add(1, std::memory_order_relaxed);
     const DeviceFunctions functions = FindDeviceFunctions(device);
-    HookState& state = State();
-    if (state.presentationDevice.load(std::memory_order_acquire)
-        == device)
-    {
-        EnsureWindowHook(device);
-        ScriptedGui_OnEndScene(device);
-        state.renderedSincePresent.store(
-            true,
-            std::memory_order_release
-        );
-    }
     return functions.endScene ? functions.endScene(device) : D3D_OK;
 }
 
@@ -893,8 +880,79 @@ bool HookDevice(IDirect3DDevice9* device, std::string& error)
 
     HookState& state = State();
     std::lock_guard<std::mutex> lock(state.mutex);
-    if (state.deviceFunctions.find(vtable) != state.deviceFunctions.end())
+    const auto existing = state.deviceFunctions.find(vtable);
+    if (existing != state.deviceFunctions.end())
     {
+        DeviceFunctions& functions = existing->second;
+        bool refreshed = false;
+        const auto ensureOwned = [&refreshed, &error](
+            void** slot,
+            void* replacement,
+            auto& original,
+            const char* method
+        ) -> bool
+        {
+            if (!IsReadablePointerSlot(slot))
+            {
+                error = std::string("Active D3D9 vtable slot is invalid: ")
+                    + method;
+                return false;
+            }
+            if (*slot == replacement)
+            {
+                return true;
+            }
+            void* previous = nullptr;
+            if (!ReplacePointer(slot, replacement, previous))
+            {
+                error = std::string("Failed to refresh active D3D9 method: ")
+                    + method;
+                return false;
+            }
+            original = reinterpret_cast<
+                std::remove_reference_t<decltype(original)>
+            >(previous);
+            refreshed = true;
+            return true;
+        };
+        const bool owned = ensureOwned(
+                &vtable[DeviceQueryInterfaceVTableIndex],
+                reinterpret_cast<void*>(HookedDeviceQueryInterface),
+                functions.queryInterface,
+                "QueryInterface"
+            )
+            && ensureOwned(
+                &vtable[ResetVTableIndex],
+                reinterpret_cast<void*>(HookedReset),
+                functions.reset,
+                "Reset"
+            )
+            && ensureOwned(
+                &vtable[PresentVTableIndex],
+                reinterpret_cast<void*>(HookedPresent),
+                functions.present,
+                "Present"
+            )
+            && ensureOwned(
+                &vtable[EndSceneVTableIndex],
+                reinterpret_cast<void*>(HookedEndScene),
+                functions.endScene,
+                "EndScene"
+            );
+        state.activeDeviceVTableOwned.store(
+            owned,
+            std::memory_order_release
+        );
+        if (!owned)
+        {
+            return false;
+        }
+        if (refreshed)
+        {
+            WriteGuiDiagnostic(
+                "HOI3 active D3D9 device vtable hooks refreshed"
+            );
+        }
         error.clear();
         return true;
     }
@@ -979,6 +1037,10 @@ bool HookDevice(IDirect3DDevice9* device, std::string& error)
     functions.present = reinterpret_cast<PresentFunction>(previousPresent);
     functions.endScene = reinterpret_cast<EndSceneFunction>(previousEndScene);
     state.deviceFunctions.emplace(vtable, functions);
+    state.activeDeviceVTableOwned.store(
+        true,
+        std::memory_order_release
+    );
     error.clear();
     WriteGuiDiagnostic("HOI3 actual D3D9 device hooked");
     return true;
@@ -1265,7 +1327,7 @@ void UninstallGuiD3D9Hooks()
             nullptr,
             std::memory_order_acq_rel
         );
-    state.renderedSincePresent.store(false, std::memory_order_release);
+    state.activeDeviceVTableOwned.store(false, std::memory_order_release);
     state.installed = false;
     if (presentationDevice)
     {
@@ -1398,6 +1460,12 @@ void MaintainGuiD3D9Hooks()
             )
             + "), EngineCallsites="
             + engineCallsites
+            + ", ActiveVTableOwned="
+            + (state.activeDeviceVTableOwned.load(
+                    std::memory_order_acquire
+                )
+                ? "yes"
+                : "no")
         );
         state.lastDiagnosticMilliseconds = now;
         state.lastDiagnosticEndSceneCalls = endSceneCalls;

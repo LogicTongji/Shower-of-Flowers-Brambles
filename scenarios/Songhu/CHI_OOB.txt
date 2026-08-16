@@ -1,0 +1,49 @@
+army = {
+		name = "第9集团军"
+		location = 5542
+		regiment = { type = hq_brigade name = "第9集团军指挥部" historical_model = 0 }	
+		corps = {
+			name = "第72军"
+			location = 14185
+			regiment = { type = hq_brigade name = "第72军指挥部" historical_model = 0 }
+			division = {
+       name = "国民革命军第88师"
+       location = 14185
+       regiment = { type = chi_star_destroyer name = "第262旅" experience = 55 strength = 20 builder = GER historical_model = 1 }
+       regiment = { type = chi_star_destroyer name = "第264旅" experience = 55 strength = 20 builder = GER historical_model = 1 }
+       regiment = { type = infantry_brigade name = "88师补充团" experience = 25 strength = 20 builder = GER historical_model = 1 }
+       	regiment = { type = artillery_brigadeB name = "炮兵团" experience = 55 historical_model = 1 }
+}
+division= {
+				name = "上海保安团、独立201旅第一团"
+				location = 5542
+				regiment = { type = militia_brigade experience = 15 historical_model = 2 }				
+			}
+}
+corps = {
+			name = "第78军"
+			location = 14181
+			regiment = { type = hq_brigade name = "第78军指挥部" historical_model = 0 }
+			division = {
+       name = "国民革命军第36师"
+       location = 14181
+       regiment = { type = chi_star_destroyer name = "第106旅" experience = 35 strength = 20 builder = GER historical_model = 1 }
+       regiment = { type = chi_star_destroyer name = "第108旅" experience = 35 strength = 20 builder = GER historical_model = 1 }
+       regiment = { type = infantry_brigade name = "36师补充团" experience = 25 strength = 20 builder = GER historical_model = 1 }
+       	regiment = { type = artillery_brigadeB name = "炮兵团" experience = 55 historical_model = 1 }
+}
+}
+corps = {
+			name = "第71军"
+			location = 14181
+			regiment = { type = hq_brigade name = "第78军指挥部" historical_model = 0 }
+division = {
+       name = "国民革命军第87师"
+       location = 14181
+       regiment = { type = chi_star_destroyer name = "第259旅" experience = 35 strength = 20 builder = GER historical_model = 1 }
+       regiment = { type = chi_star_destroyer name = "第261旅" experience = 35 strength = 20 builder = GER historical_model = 1 }
+       regiment = { type = infantry_brigade name = "87师补充团" experience = 25 strength = 20 builder = GER historical_model = 1 }
+       	regiment = { type = artillery_brigadeB name = "炮兵团" experience = 55 historical_model = 1 }
+}
+}
+}

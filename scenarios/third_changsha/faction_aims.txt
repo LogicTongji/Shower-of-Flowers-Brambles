@@ -1,0 +1,32 @@
+##############
+# CHI
+##############
+allies = {
+	守卫长沙 = {
+		trigger = {
+			7520 = {
+				controller = {
+					faction = allies
+				}
+			}
+		}
+		primary = yes
+	}
+}
+
+##############
+# JAP
+##############
+axis = {
+	占领长沙 = {
+		trigger = {
+			7520 = {
+				controller = {
+					faction = axis
+				}
+			}
+		}
+		primary = yes
+	}
+}
+	

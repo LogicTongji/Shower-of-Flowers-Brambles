@@ -1,0 +1,36 @@
+	army = {
+		name = "机械化兵团"
+		location = 4685
+
+
+		regiment = { type = hq_brigade name = "指挥部" historical_model = 0 }		
+                        division= {
+
+				name = "第1机械化师"
+				location = 4685
+				
+				regiment = { type = mechanized_brigade name = "13th Infantry Regiment" experience = 15 historical_model = 2 }
+				regiment = { type = mechanized_brigade name = "28th Infantry Regiment" experience = 15 historical_model = 2 }
+				regiment = { type = mechanized_brigade name = "121st Infantry Regiment" experience = 15 historical_model = 2 }
+			}
+		}
+			division= {
+
+				name = "第2机械化师"
+				location = 4685
+
+				regiment = { type = mechanized_brigade name = "2nd Infantry Regiment" experience = 15 historical_model = 2 }
+				regiment = { type = mechanized_brigade name = "10th Infantry Regiment" experience = 15 historical_model = 2 }
+				regiment = { type = mechanized_brigade name = "11th Infantry Regiment" experience = 15 historical_model = 2 }
+			}
+
+
+air = {
+	name = "R_Airforce"
+	base = 4685
+	location = 4685
+	wing = { type = tactical_bomber name = "2. Hongzhaji" historical_model = 0 } wing = { type = tactical_bomber name = "3. Hongzhaji" historical_model = 0 } 
+
+}
+
+}

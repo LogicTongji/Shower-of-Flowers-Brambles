@@ -1,0 +1,177 @@
+theatre = {
+	name = "朝鲜人民军"
+	location = 4893
+	regiment = { type = hq_brigade name = "朝鲜人民军司令部" historical_model = 1 }
+	regiment = { type = artillery_brigade name = "直属炮兵团" experience = 30 historical_model = 1 }
+      corps = {
+			name = "人民军第1军团"
+			location = 4893
+			regiment = { type = hq_brigade name = "第1军团司令部" experience = 15 historical_model = 0 }				
+			division = {
+				name = "人民军第46师"
+				location = 4941
+				regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+			}
+			division = {
+				name = "人民军第47师"
+				location = 4941
+				regiment = { type = infantry_brigade experience = 50 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 50 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 50 historical_model = 3 }
+		       }
+		division = {
+				name = "人民军第105坦克师"
+				location = 4895
+				regiment = { type = light_armor_brigade experience = 10 historical_model = 2 }
+				regiment = { type = light_armor_brigade experience = 10 historical_model = 2 }
+}
+division = {
+				name = "人民军第17坦克旅"
+				location = 4895
+				regiment = { type = light_armor_brigade experience = 10 historical_model = 2 }
+        }
+}
+   corps = {
+			name = "人民军第3军团"
+			location = 4743
+			regiment = { type = hq_brigade name = "第3军团司令部" experience = 15 historical_model = 0 }				
+			division = {
+				name = "人民军第1师"
+				location = 4796
+				regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+			}
+			division = {
+				name = "人民军第3师"
+				location = 4580
+				regiment = { type = infantry_brigade experience = 50 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 50 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 50 historical_model = 3 }
+		       }
+	 	division = {
+		name = "人民军第8师"
+				location = 4940
+				regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+			}
+			division = {
+				name = "人民军第12师"
+				location = 4940
+				regiment = { type = infantry_brigade experience = 50 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 50 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 50 historical_model = 3 }
+			}
+				division = {
+		 	name = "人民军第13师"
+				location = 4844
+				regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+			}
+			division = {
+				name = "人民军第19师"
+				location = 4844
+				regiment = { type = infantry_brigade experience = 50 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 50 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 50 historical_model = 3 }
+        }
+}
+corps = {
+			name = "人民军第4军团"
+			location = 4745
+			regiment = { type = hq_brigade name = "第4军团司令部" experience = 15 historical_model = 0 }				
+			division = {
+				name = "人民军第41师"
+				location = 4745
+				regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+		}
+			division = {
+				name = "海防第一旅"
+				location = 4745
+				regiment = { type = infantry_brigade experience = 50 historical_model = 3 }
+        }
+}
+corps = {
+			name = "人民军第6军团"
+			location = 4636
+			regiment = { type = hq_brigade name = "第6军团司令部" experience = 15 historical_model = 0 }				
+			division = {
+				name = "人民军第18师"
+				location = 4636
+				regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+			}
+			division = {
+				name = "人民军第36师"
+				location = 4691
+				regiment = { type = infantry_brigade experience = 50 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 50 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 50 historical_model = 3 }
+		       }
+	 	division = {
+		name = "人民军第68师"
+				location = 4691
+				regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+        }
+}
+corps = {
+			name = "人民军第7军团"
+			location = 4940
+			regiment = { type = hq_brigade name = "第7军团司令部" experience = 15 historical_model = 0 }				
+			division = {
+				name = "人民军第32师"
+				location = 4940
+				regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+			}
+			division = {
+				name = "人民军第37师"
+				location = 4940
+				regiment = { type = infantry_brigade experience = 50 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 50 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 50 historical_model = 3 }
+		       }
+	 	division = {
+		name = "人民军第38师"
+				location = 4940
+				regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+        }
+}
+corps = {
+			name = "人民军第8军团"
+			location = 4794
+			regiment = { type = hq_brigade name = "第8军团司令部" experience = 15 historical_model = 0 }				
+			division = {
+				name = "人民军第42师"
+				location = 4794
+				regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+			}
+			division = {
+				name = "人民军第45师"
+				location = 4794
+				regiment = { type = infantry_brigade experience = 50 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 50 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 50 historical_model = 3 }
+		       }
+	 	division = {
+		name = "人民军第76师"
+				location = 4794
+				regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+				regiment = { type = infantry_brigade experience = 15 historical_model = 3 }
+                   }
+        }
+}

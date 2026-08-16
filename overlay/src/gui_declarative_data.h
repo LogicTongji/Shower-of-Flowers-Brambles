@@ -27,6 +27,7 @@ public:
     void Clear();
 
     std::shared_ptr<GuiDataRegistry> Registry() const;
+    void SetRegistry(std::shared_ptr<GuiDataRegistry> registry);
 
     bool ApplyAction(const GuiActionContext& context);
 

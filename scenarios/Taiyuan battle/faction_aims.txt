@@ -1,0 +1,50 @@
+##############
+# JAP
+##############
+axis = {
+	TY_Axis = {
+		trigger = {
+				5174 = {
+					controller = {
+						faction = axis
+			}
+			}
+		}
+		primary = yes
+	}
+	TY1_Axis = {
+		trigger = {
+				4977 = {
+					controller = {
+						faction = axis
+			}
+			}
+		}
+		primary = yes
+	}
+}
+##############
+# CHC CSX
+##############
+allies	= {
+	TY1_Allies = {
+		trigger = {
+			7417 = {
+				controller = {
+					faction = allies
+			}
+		}
+		primary = yes
+	}
+}		
+	TY_Allies = {
+		trigger = {
+			5174 = {
+				controller = {
+					faction = allies
+			}
+		}
+		}
+		primary = yes
+	}
+}		

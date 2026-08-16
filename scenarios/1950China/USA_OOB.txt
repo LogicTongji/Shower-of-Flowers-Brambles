@@ -1,0 +1,131 @@
+theatre = {
+	name = "联合国军"
+	location = 5341
+	regiment = { type = hq_brigade name = "联合国军总司令部" historical_model = 1 }
+	regiment = { type = artillery_brigade name = "直属炮兵团" experience = 30 historical_model = 1 }
+	regiment = { type = artillery_brigade name = "新西兰炮兵团" experience = 30 historical_model = 1 }
+      corps = {
+			name = "美国陆军第10军"
+			location = 5116
+			regiment = { type = hq_brigade name = "第10军指挥部" experience = 60 historical_model = 0 }		
+			regiment = { type = artillery_brigade name = "直属炮兵团" experience = 30 historical_model = 3 }		
+			division = {
+				name = "第3步兵师"
+				location = 4984
+				regiment = { type = motorized_brigade experience = 60 historical_model = 4 }
+				regiment = { type = mechanized_brigade experience = 60 historical_model = 4 }
+				regiment = { type = mechanized_brigade experience = 60 historical_model = 4 }
+			}
+			division = {
+				name = "第7步兵师"
+				location = 4983
+				regiment = { type = motorized_brigade experience = 50 historical_model = 4 }
+				regiment = { type = mechanized_brigade experience = 50 historical_model = 4 }
+				regiment = { type = mechanized_brigade experience = 50 historical_model = 4 }
+				regiment = { type = light_armor_brigade experience = 60 name = "第2坦克团" historical_model = 2 }
+		       }
+	division = {
+	name = "海军陆战队第1师"
+	location = 4983
+	regiment = { type = marine_brigade experience = 70 historical_model = 4 }
+	regiment = { type = marine_brigade experience = 70 historical_model = 4 }
+	regiment = { type = marine_brigade experience = 70 historical_model = 4 }
+        }
+}              
+	       army = {
+		name = "美国陆军第8集团军"
+		location = 5087
+		regiment = { type = hq_brigade name = "集团军司令部" experience = 60 historical_model = 0 }
+		regiment = { type = artillery_brigade name = "直属炮兵团" experience = 30 historical_model = 3 }
+		regiment = { type = artillery_brigade name = "直属炮兵团" experience = 30 historical_model = 3 }
+		regiment = { type = artillery_brigade name = "直属炮兵团" experience = 30 historical_model = 3 }
+		corps = {
+			name = "美国陆军第1军"
+			location = 5087
+			regiment = { type = hq_brigade name = "第1军指挥部" experience = 40 historical_model = 0 }
+			regiment = { type = artillery_brigade name = "直属炮兵团" experience = 30 historical_model = 3 }
+			division = {
+				name = "第24步兵师"
+				location = 5087
+				regiment = { type = mechanized_brigade experience = 60 historical_model = 4 }
+				regiment = { type = mechanized_brigade experience = 60 historical_model = 4 }
+				regiment = { type = mechanized_brigade experience = 60 historical_model = 4 }
+				regiment = { type = light_armor_brigade experience = 60 name = "第2坦克团" historical_model = 2 }
+			}
+}     
+corps = {
+			name = "美国陆军第9军"
+			location = 5023
+			regiment = { type = hq_brigade name = "第9军指挥部" experience = 40 historical_model = 0 }
+			regiment = { type = artillery_brigade name = "直属炮兵团" experience = 30 historical_model = 3 }
+			division = {
+				name = "第2步兵师"
+				location = 5023
+				regiment = { type = mechanized_brigade experience = 60 historical_model = 4 }
+				regiment = { type = mechanized_brigade experience = 60 historical_model = 4 }
+				regiment = { type = mechanized_brigade experience = 60 historical_model = 4 }
+				regiment = { type = armor_brigade experience = 80 historical_model = 2 }
+			}
+			division = {
+				name = "第25步兵师"
+				location = 5023
+				regiment = { type = motorized_brigade experience = 50 historical_model = 4 }
+				regiment = { type = motorized_brigade experience = 50 historical_model = 4 }
+				regiment = { type = motorized_brigade experience = 50 historical_model = 4 }
+				regiment = { type = armor_brigade experience = 80 historical_model = 2 }
+		       }
+		division = {
+				name = "第1骑兵师"
+				location = 5023
+				regiment = { type = cavalry_brigade experience = 50 historical_model = 4 }
+				regiment = { type = cavalry_brigade experience = 50 historical_model = 4 }
+				regiment = { type = cavalry_brigade experience = 50 historical_model = 4 }
+	     }
+}     
+			division = {
+				name = "英联邦师"
+				location = 5116
+				expeditionary_owner = ENG
+				regiment = { type = mechanized_brigade name = "第27旅" experience = 50 historical_model = 4 }
+				regiment = { type = mechanized_brigade name = "第29旅" experience = 50 historical_model = 4 }
+		       }
+		division = {
+				name = "其他国家参战部队"
+				location = 5116
+				expeditionary_owner = FRA
+				regiment = { type = infantry_brigade name = "加拿大第25旅" experience = 10 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "澳大利亚第3步兵营、法国营、荷兰营、泰国步兵团" experience = 10 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "土耳其旅" experience = 10 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "希腊营、菲律宾第10步兵营、比利时营" experience = 10 historical_model = 4 }
+	     }
+	air = {
+		name = "第5航空军"
+		base = 5341
+		location = 5341
+		wing = { type = tactical_bomber name = "第5航空军" historical_model = 4 }
+	}
+ 	air = {
+		name = "法国飞行中队"
+		base = 5341
+		location = 5341
+		wing = { type = tactical_bomber historical_model = 4 }
+	}
+		air = {
+		name = "南非飞行中队"
+		base = 5341
+		location = 5341
+		wing = { type = tactical_bomber historical_model = 2 }
+	}
+	air = {
+		name = "澳大利亚飞行中队"
+		base = 5341
+		location = 5341
+		wing = { type = tactical_bomber historical_model = 2 }
+	}
+	air = {
+		name = "加拿大飞行中队"
+		base = 5341
+		location = 5341
+		wing = { type = tactical_bomber historical_model = 2 }
+	}
+}

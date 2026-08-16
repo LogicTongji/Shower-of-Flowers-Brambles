@@ -1,0 +1,18 @@
+owner = JAP
+controller = JAP
+add_core = JAP
+industry = 1
+infra = 6
+manpower = 1.00
+leadership = 0.20
+naval_base = 8
+1945.9.2 = {
+owner = SOV
+controller = SOV
+remove_core = JAP
+}
+1948.9.9 = {
+owner = PRK
+controller = PRK
+add_core = PRK
+}

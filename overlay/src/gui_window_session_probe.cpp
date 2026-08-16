@@ -239,6 +239,7 @@ int main(int argc, char** argv)
         session.ListRuntimeStore().Find("probe_list");
     if (!listState
         || listState->selectedItemId != 101
+        || session.DataRegistry()->ResolveNumber("selected.id") != 101
         || plugin.actionCount != 1
         || plugin.lastAction.action != "activate_item"
         || plugin.lastAction.functionName != "ProbeGui.ActivateItem"
@@ -277,7 +278,8 @@ int main(int argc, char** argv)
     if (!session.Tick(1000)
         || plugin.tickCount != 1
         || plugin.buildCount <= previousBuildCount
-        || session.DataRegistry()->ResolveNumber("progress") != 0.75)
+        || session.DataRegistry()->ResolveNumber("progress") != 0.75
+        || session.DataRegistry()->ResolveNumber("selected.id") != 101)
     {
         std::cerr << "Session tick refresh failed\n";
         return 1;

@@ -1,0 +1,158 @@
+theatre = {
+	name = "联合舰队"
+	location = 10664
+	regiment = { type = hq_brigade name = "联合舰队司令部" historical_model = 0 }
+	division= { 
+		name = "第二联合特别陆战队" 
+		location = 10664
+		regiment = { type = marine_brigade historical_model = 2 } 
+		regiment = { type = marine_brigade historical_model = 2 } 
+		regiment = { type = marine_brigade historical_model = 2 } 
+	} 
+	division= { 
+		name = "陆军一木支队" 
+		location = 10664
+		leader = 
+101052
+		regiment = { type = infantry_brigade historical_model = 2 } 
+		regiment = { type = infantry_brigade historical_model = 2 } 
+		regiment = { type = infantry_brigade historical_model = 2 } 
+	}  
+	division= { 
+		name = "陆军北海支队" 
+		location = 10664
+		regiment = { type = infantry_brigade historical_model = 2 } 
+		regiment = { type = infantry_brigade historical_model = 2 } 
+		regiment = { type = infantry_brigade historical_model = 2 } 
+	}  
+	division= { 
+		name = "舞鹤镇守府第三特别陆战队" 
+		location = 10664
+		regiment = { type = marine_brigade historical_model = 2 } 
+		regiment = { type = marine_brigade historical_model = 2 } 
+		regiment = { type = marine_brigade historical_model = 2 } 
+	} 
+	navy = {
+		name = "第二舰队运输船团"
+		leader = 
+101287
+		base = 10664
+		location = 10664
+		ship = { type = transport_ship name = "第1运输舰分队" historical_model = 0 }
+		ship = { type = transport_ship name = "第2运输舰分队" historical_model = 0 } 
+	}
+	navy = {
+		name = "阿图岛攻略部队"
+		base = 10664
+		location = 10664
+		ship = { type = transport_ship name = "衣笠丸号" historical_model = 0 }
+	}
+	navy = {
+		name = "基斯卡岛攻略部队"
+		base = 10664
+		location = 10664
+		ship = { type = transport_ship name = "白山丸号" historical_model = 0 }
+	}
+	navy = {
+		name = "联合舰队直属"
+		leader = 101296
+		base = 10664
+		location = 13623
+		ship = { type = super_heavy_battleship name = "大和号" historical_model = 0 }
+		ship = { type = battleship name = "长门号" historical_model = 2 }
+		ship = { type = battleship name = "陆奥号" historical_model = 2 }
+		ship = { type = battleship name = "日向号" historical_model = 1 }
+		ship = { type = battleship name = "伊势号" historical_model = 1 }
+		ship = { type = battleship name = "扶桑号" historical_model = 1 }
+		ship = { type = battleship name = "山城号" historical_model = 1 }
+		ship = { type = escort_carrier name = "凤翔号" air = {	name = "凤翔号飞行战队" location = 13623 wing = { type = shipborne_bomber historical_model = 3 } } historical_model = 0 }
+		ship = { type = seaplane_carrier name = "千代田号" air = { name = "千代田号水侦" location = 13623 wing = { type = seaplane historical_model = 1 } } historical_model = 1 }
+		ship = { type = seaplane_carrier name = "日进号" air = { name = "日进号水侦" location = 13623 wing = { type = seaplane historical_model = 1 } } historical_model = 1 }
+		ship = { type = light_cruiser name = "川内号" historical_model = 1 }
+		ship = { type = light_cruiser name = "北上号" historical_model = 1 }
+		ship = { type = light_cruiser name = "大井号" historical_model = 1 }
+		ship = { type = destroyer name = "第十一驱逐舰分队" historical_model = 1 }
+		ship = { type = destroyer name = "第十九驱逐舰分队" historical_model = 1 }
+		ship = { type = destroyer name = "第二十驱逐舰分队" historical_model = 1 }
+		ship = { type = destroyer name = "第二四驱逐舰分队" historical_model = 1 }
+		ship = { type = destroyer name = "第二七驱逐舰分队" historical_model = 1 }
+	}
+	navy = {
+		name = "第一航空舰队"
+		leader = 101259
+		base = 10664
+		location = 13612
+		ship = { type = carrier name = "加贺号" air = { name = "加贺号第1飞行战队" location = 10995 wing = { type = shipborne_bomber historical_model = 3 } } air = { name = "加贺号第2飞行战队" location = 10995 wing = { type = shipborne_bomber historical_model = 3 } } historical_model = 1 }
+		ship = { type = carrier name = "赤城号" air = { name = "赤城号第1飞行战队" location = 10995 wing = { type = shipborne_bomber historical_model = 3 } } air = { name = "赤城号第2飞行战队" location = 10995 wing = { type = shipborne_bomber historical_model = 3 } } historical_model = 1 }
+		ship = { type = carrier name = "飞龙号" air = { name = "飞龙号第1飞行战队" location = 10995 wing = { type = cag historical_model = 3 } } air = { name = "飞龙号第2飞行战队" location = 10995 wing = { type = shipborne_attack historical_model = 3 } } historical_model = 2 }
+		ship = { type = carrier name = "苍龙号" air = { name = "苍龙号第1飞行战队" location = 10995 wing = { type = cag historical_model = 3 } } air = { name = "苍龙号第2飞行战队" location = 10995 wing = { type = shipborne_attack historical_model = 3 } } historical_model = 2 }
+		ship = { type = heavy_cruiser name = "利根号" historical_model = 2 }
+		ship = { type = heavy_cruiser name = "筑摩号" historical_model = 2 }
+		ship = { type = battlecruiser name = "榛名号" historical_model = 1 }
+		ship = { type = battlecruiser name = "雾岛号" historical_model = 1 }
+		ship = { type = light_cruiser name = "长良号" historical_model = 1 }
+		ship = { type = destroyer name = "第四驱逐舰分队" historical_model = 1 }
+		ship = { type = destroyer name = "第十驱逐舰分队" historical_model = 1 }
+		ship = { type = destroyer name = "第十七驱逐舰分队" historical_model = 1 }
+	}
+	navy = {
+		name = "第二舰队"
+		leader = 
+101318
+		base = 10664
+		location = 13608
+		ship = { type = escort_carrier name = "瑞凤号" air = {	name = "瑞凤号飞行战队" location = 13608 wing = { type = shipborne_bomber historical_model = 3 } } historical_model = 1 }
+		ship = { type = seaplane_carrier name = "千岁号" air = { name = "千岁号水侦" location = 13608 wing = { type = seaplane historical_model = 1 } } historical_model = 1 }
+		ship = { type = seaplane_carrier name = "神川丸号" air = { name = "神川丸号水侦" location = 13608 wing = { type = seaplane historical_model = 1 } } historical_model = 1 }
+		ship = { type = battlecruiser name = "金刚号" historical_model = 1 }
+		ship = { type = battlecruiser name = "比睿号" historical_model = 1 }
+		ship = { type = heavy_cruiser name = "爱宕号" historical_model = 2 }
+		ship = { type = heavy_cruiser name = "鸟海号" historical_model = 2 }
+		ship = { type = heavy_cruiser name = "羽黑号" historical_model = 2 }
+		ship = { type = heavy_cruiser name = "妙高号" historical_model = 2 }
+		ship = { type = heavy_cruiser name = "熊野号" historical_model = 2 }
+		ship = { type = heavy_cruiser name = "三隈号" historical_model = 2 }
+		ship = { type = heavy_cruiser name = "最上号" historical_model = 2 }
+		ship = { type = heavy_cruiser name = "铃谷号" historical_model = 2 }
+		ship = { type = light_cruiser name = "由良号" historical_model = 1 }
+		ship = { type = light_cruiser name = "神通号" historical_model = 1 }
+		ship = { type = destroyer name = "第二驱逐舰分队" historical_model = 1 }
+		ship = { type = destroyer name = "第九驱逐舰分队" historical_model = 1 }
+		ship = { type = destroyer name = "第八驱逐舰分队" historical_model = 1 }
+		ship = { type = destroyer name = "第十五驱逐舰分队" historical_model = 1 }
+		ship = { type = destroyer name = "第十六驱逐舰分队" historical_model = 1 }
+		ship = { type = destroyer name = "第十八驱逐舰分队" historical_model = 1 }
+	}
+	navy = {
+		name = "第五舰队"
+		leader = 
+101231
+		base = 10664
+		location = 11805
+		ship = { type = carrier name = "龙骧号" air = { name = "龙骧号第1飞行战队" location = 11805 wing = { type = cag historical_model = 3 } } air = { name = "龙骧号第2飞行战队" location = 11805 wing = { type = shipborne_bomber historical_model = 3 } } historical_model = 2 }
+		ship = { type = carrier name = "隼鹰号" air = { name = "隼鹰号第1飞行战队" location = 11805 wing = { type = cag historical_model = 3 } } air = { name = "隼鹰号第2飞行战队" location = 11805 wing = { type = shipborne_bomber historical_model = 3 } } historical_model = 1 }
+		ship = { type = seaplane_carrier name = "若宫号" air = { name = "若宫号水侦" location = 11805 wing = { type = seaplane historical_model = 1 } } historical_model = 1 }
+		ship = { type = heavy_cruiser name = "那智号" historical_model = 2 }
+		ship = { type = heavy_cruiser name = "摩耶号" historical_model = 2 }
+		ship = { type = heavy_cruiser name = "高雄号" historical_model = 2 }
+		ship = { type = light_cruiser name = "阿武隈号" historical_model = 1 }
+		ship = { type = light_cruiser name = "多摩号" historical_model = 1 }
+		ship = { type = light_cruiser name = "木曾号" historical_model = 1 }
+		ship = { type = destroyer name = "第七驱逐舰分队" historical_model = 1 }
+		ship = { type = destroyer name = "第二十一驱逐舰分队" historical_model = 1 }
+		ship = { type = destroyer name = "第六驱逐舰分队" historical_model = 1 }
+		ship = { type = submarine name = "第二潜艇分队" historical_model = 2 }
+		ship = { type = submarine name = "第四潜艇分队" historical_model = 2 }
+	}
+	navy = {
+		name = "第六舰队"
+		leader = 101246
+		base = 10664
+		location = 10995
+		ship = { type = light_cruiser name = "香取号" historical_model = 1 }
+		ship = { type = submarine name = "第十九潜艇分队" historical_model = 3 }
+		ship = { type = submarine name = "第三十潜艇分队" historical_model = 3 }
+		ship = { type = submarine name = "第十一潜艇分队" historical_model = 3 }
+		ship = { type = submarine name = "第十二潜艇分队" historical_model = 3 }
+	}
+}

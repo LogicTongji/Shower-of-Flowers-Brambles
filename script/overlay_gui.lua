@@ -118,11 +118,70 @@ local function China_war_with_japan()
     japTag:GetRelation(CCountryDataBase.GetTag('CHC')):HasWar()
 end
 
+local function openRegionFile(path)
+	local candidates = {}
+	local seen = {}
+
+	local function addCandidate(candidate)
+		if candidate and candidate ~= "" and not seen[candidate] then
+			seen[candidate] = true
+			table.insert(candidates, candidate)
+		end
+	end
+
+	local isAbsolute = path
+		and (
+			path:match("^%a:[/\\]")
+			or path:match("^[/\\]")
+		)
+
+	if isAbsolute then
+		addCandidate(path)
+	end
+
+	if CAI
+		and CAI.HasUserExtension
+		and CAI.HasUserExtension() then
+		local modDirectory = tostring(CAI.GetModDirectory())
+		modDirectory = modDirectory:gsub("[/\\]+$", "")
+		addCandidate(
+			modDirectory .. "\\..\\map\\region.txt"
+		)
+		addCandidate(
+			modDirectory .. "\\map\\region.txt"
+		)
+	end
+
+	if os and os.getenv then
+		local scriptedGuiRoot =
+			os.getenv("SCRIPTED_GUI_ROOT")
+		if scriptedGuiRoot and scriptedGuiRoot ~= "" then
+			addCandidate(
+				scriptedGuiRoot .. "\\map\\region.txt"
+			)
+		end
+	end
+
+	if not isAbsolute then
+		addCandidate(path)
+	end
+
+	for _, candidate in ipairs(candidates) do
+		local file = io.open(candidate, "r")
+		if file then
+			return file, candidate
+		end
+	end
+
+	return nil, nil
+end
+
 local function parseRegionFile(path)
-	local file = io.open(path, "r")
+	local file, resolvedPath = openRegionFile(path)
     if not file then
         return nil,"region_file_not_found"
     end
+	P.resolvedregionfilepath = resolvedPath
     local region = {}
     local current_analysis_region = nil
     for rawLine in file:lines() do

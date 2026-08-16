@@ -1,0 +1,182 @@
+theatre = {
+	name = "联合舰队"
+	location = 5543
+	regiment = { type = hq_brigade name = "联合舰队司令部" historical_model = 0 }
+	division= { 
+		name = "第16师团" 
+		location = 6261
+		regiment = { type = imperial_brigade name = "歩兵第33联队" experience = 60 historical_model = 3 }
+		regiment = { type = imperial_brigade name = "歩兵第38联队" experience = 60 historical_model = 3 }
+		regiment = { type = imperial_brigade name = "歩兵第92联队" experience = 60 historical_model = 3 }
+		regiment = { type = imperial_brigade name = "歩兵第20联队" experience = 60 historical_model = 3 }
+		regiment = { type = engineer_brigade name = "工兵第16联队" experience = 60 historical_model = 2 }
+		regiment = { type = artillery_brigade name = "野炮兵第22联队" experience = 60 historical_model = 2 }
+		regiment = { type = cavalry_brigade name = "骑兵第20联队" experience = 60 historical_model = 3 }
+	} 
+
+	division= { 
+		name = "第14宇都宫甲种师团'照" 
+		location = 6319
+		regiment = { type = imperial_brigade name = "歩兵第2联队" experience = 60 historical_model = 3 }
+		regiment = { type = imperial_brigade name = "歩兵第59联队" experience = 60 historical_model = 3 }
+		regiment = { type = imperial_brigade name = "歩兵第15联队" experience = 60 historical_model = 3 }
+		regiment = { type = imperial_brigade name = "歩兵第50联队" experience = 60 historical_model = 3 }
+		regiment = { type = engineer_brigade name = "工兵第14联队" experience = 60 historical_model = 2 }
+		regiment = { type = artillery_brigade name = "野炮兵第20联队" experience = 60 historical_model = 2 }
+		regiment = { type = cavalry_brigade name = "骑兵第18联队" experience = 60 historical_model = 3 }
+	} 
+
+
+   corps = {
+              name = "第一遊撃部隊"
+              leader = 101296
+              location = 6355
+              regiment = { type = hq_brigade name = "第一遊撃部隊司令部" historical_model = 0 }
+	navy = {
+		name = "第一部隊"
+		leader = 101248
+		base = 6355
+		location = 6355
+		ship = { type = super_heavy_battleship name = "大和" historical_model = 0 }
+		ship = { type = super_heavy_battleship name = "武藏" historical_model = 0 }
+		ship = { type = battleship name = "長門" historical_model = 2 }
+		ship = { type = heavy_cruiser name = "愛宕" historical_model = 0 }
+		ship = { type = heavy_cruiser name = "高雄" historical_model = 0 }
+		ship = { type = heavy_cruiser name = "摩耶" historical_model = 0 }
+		ship = { type = heavy_cruiser name = "鳥海" historical_model = 0 }
+		ship = { type = heavy_cruiser name = "妙高 historical_model = 0 }
+		ship = { type = heavy_cruiser name = "羽黒" historical_model = 0 }
+		ship = { type = light_cruiser name = "能代" historical_model = 3 }
+		ship = { type = destroyer name = "島風" historical_model = 4 }
+		ship = { type = destroyer name = "第二駆逐隊" historical_model = 1 }
+		ship = { type = destroyer name = "第三十一駆逐隊" historical_model = 4 }
+		ship = { type = destroyer name = "第三十二駆逐隊" historical_model = 4 }
+	}
+	navy = {
+		name = "第二部隊"
+		base = 6355
+		location = 6355
+		ship = { type = battleship name = "金剛" historical_model = 0 }
+		ship = { type = battleship name = "榛名" historical_model = 0 }
+		ship = { type = heavy_cruiser name = "鈴谷" historical_model = 2 }
+		ship = { type = heavy_cruiser name = "熊野" historical_model = 2 }
+		ship = { type = heavy_cruiser name = "利根" historical_model = 2 }
+		ship = { type = heavy_cruiser name = "筑摩" historical_model = 2 }
+		ship = { type = light_cruiser name = "矢矧" historical_model = 4 }
+		ship = { type = destroyer name = "第十七駆逐隊" historical_model = 3 }
+		ship = { type = destroyer name = "第三隊臨時編成" historical_model = 1 }
+	}
+	navy = {
+		name = "第三部隊"
+		leader = 101264
+		base = 6355
+		location = 6355
+		ship = { type = battleship name = "山城" historical_model = 0 }
+		ship = { type = battleship name = "扶桑" historical_model = 0 }
+		ship = { type = heavy_cruiser name = "最上" historical_model = 1 }
+		ship = { type = destroyer name = "時雨" historical_model = 2 }
+		ship = { type = destroyer name = "第四駆逐隊" historical_model = 2 }
+	}
+}
+
+
+
+ corps = {
+              name = "機動部隊本隊"
+              location = 5543
+              regiment = { type = hq_brigade name = "機動部隊本隊司令部" historical_model = 0 }
+	navy = {
+		name = "第三航空戦隊"
+		leader = 101324
+		leader = 101296
+		base = 5543
+		location = 5543
+		ship = { type = carrier name = "瑞鶴" air = {  location = 11805 wing = { type = cag historical_model = 4 } } air = {  location = 11805 wing = { type = shipborne_bomber historical_model = 4 } } historical_model = 3 }
+		ship = { type = escort_carrier name = "千代田" air = {  location = 13608 wing = { type = shipborne_bomber historical_model = 3 } } historical_model = 2 }
+		ship = { type = escort_carrier name = "千歳" air = {  location = 13608 wing = { type = shipborne_bomber historical_model = 3 } } historical_model = 1 }
+		ship = { type = escort_carrier name = "瑞鳳" air = {  location = 13608 wing = { type = shipborne_bomber historical_model = 3 } } historical_model = 2 }
+	}
+	navy = {
+		name = "第四航空戦隊"
+		leader = 101296
+		base = 5543
+		location = 5543
+		ship = { type = seaplane_carrier name = "伊勢" air = { name = "伊勢号水侦" location = 13608 wing = { type = seaplane historical_model = 3 } } historical_model = 3 }
+		ship = { type = seaplane_carrier name = "日向" air = { name = "日向号水侦" location = 13608 wing = { type = seaplane historical_model = 3 } } historical_model = 3 }
+		ship = { type = light_cruiser name = "多摩" historical_model = 0 }
+		ship = { type = light_cruiser name = "五十鈴" historical_model = 0 }
+		ship = { type = destroyer name = "第一駆逐連隊" historical_model = 3 }
+		ship = { type = destroyer name = "第二駆逐連隊" historical_model = 3 }
+	}
+	navy = {
+		name = "先遣部隊"
+		leader = 101958
+		base = 5543
+		location = 5543
+		ship = { type = submarine name = "甲潜水部隊" historical_model = 4 }
+		ship = { type = submarine name = "乙潜水部隊" historical_model = 4 }
+		ship = { type = submarine name = "丙潜水部隊" historical_model = 4 }
+	}
+}
+
+
+ corps = {
+              name = "第二遊撃部隊"
+              leader = 101296
+              location = 5809
+              regiment = { type = hq_brigade name = "第一遊撃部隊司令部" historical_model = 0 }
+	navy = {
+		name = "第二遊撃部隊"
+		leader = 101296
+		base = 5809
+		location = 5809
+		ship = { type = heavy_cruiser name = "那智" historical_model = 0 }
+		ship = { type = heavy_cruiser name = "足柄" historical_model = 0 }
+		ship = { type = light_cruiser name = "阿武隈" historical_model = 0 }
+		ship = { type = destroyer name = "第七駆逐隊" historical_model = 1 }
+		ship = { type = destroyer name = "第十八駆逐隊" historical_model = 1 }
+		ship = { type = destroyer name = "第二十一駆逐隊" historical_model = 1 }
+	}
+}
+
+
+air = {
+	name = "第二二一海軍航空隊"
+	base = 6142
+	location = 6142
+	wing = { type = interceptor name = "戦闘308飛行隊" historical_model = 3 }
+	wing = { type = interceptor name = "戦闘312飛行隊" historical_model = 3 }
+	wing = { type = cas name = "戦闘407飛行隊" historical_model = 3 }
+}
+
+air = {
+	name = "第六五三海軍航空隊"
+	base = 6142
+	location = 6142
+	wing = { type = interceptor  historical_model = 3 }
+	wing = { type = interceptor  historical_model = 3 }
+}
+
+air = {
+	name = "第三四一航空隊"
+	base = 6326
+	location = 6326
+	wing = { type = interceptor  historical_model = 4 }
+}
+
+air = {
+	name = "第七六二海軍航空隊"
+	base = 6326
+	location = 6326
+	wing = { type = cag historical_model = 3 }
+}
+
+air = {
+	name = "第七〇一航空隊"
+	base = 6326
+	location = 6326
+	wing = { type = naval_bomber historical_model = 3 }
+	wing = { type = tactical_bomber historical_model = 3 }
+}
+
+}

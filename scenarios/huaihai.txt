@@ -1,0 +1,74 @@
+name = "huaihai"
+desc = "ccivil_1948"
+icon = "GFX_select_winterwar"
+startdate = 1948.11.1
+enddate = 1949.9.1
+
+camera_height = 240
+camera_center = { x = 4650 y = 1325 }
+camera_min_x = 4350
+camera_min_y = 1100
+camera_max_x = 4855
+camera_max_y = 1700
+
+victory_conditions = "scenarios/huaihai/faction_aims.txt"
+victory_conditions_to_win = 2
+number_of_victory_conditions = 2
+events = "scenarios/huaihai/Events.txt"
+
+
+
+reinforcement = 30
+
+# will load any history files with scenarios/huaihai/<tag>.txt
+selectable_country = CHI
+selectable_country = CHC
+
+
+
+
+
+
+
+
+
+# visible provinces & regions
+provinces = {
+
+5362
+5302
+5273
+5240
+7498 
+5661
+5618
+5617
+5598
+5638
+5649
+5660
+5621
+5650
+5648
+
+
+11227
+11932
+11930
+
+
+	
+}
+
+regions = {
+	
+
+        shandong_region
+        jiangsu_region
+        henan_region
+        anhui_region
+
+
+
+              
+}

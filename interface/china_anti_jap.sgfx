@@ -98,6 +98,34 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_china_war_launcher_chi"
+		texturefile = "gfx\\war_map\\china_anti_jap\\map_bottom_chi.dds"
+		noOfFrames = 1
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_china_war_launcher_chc"
+		texturefile = "gfx\\war_map\\china_anti_jap\\map_bottom_chc.dds"
+		noOfFrames = 1
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_china_war_launcher_jap"
+		texturefile = "gfx\\war_map\\china_anti_jap\\map_bottom_jap.dds"
+		noOfFrames = 1
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_china_war_close"
+		texturefile = "gfx\\war_map\\china_anti_jap\\cancel_bottom.dds"
+		noOfFrames = 1
+		loadType = "INGAME"
+	}
+
+	spriteType = {
 		name = "GFX_china_war_legend"
 		texturefile = "gfx\\war_map\\china_anti_jap\\legend.png"
 		noOfFrames = 1

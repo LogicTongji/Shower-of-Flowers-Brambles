@@ -1,0 +1,51 @@
+##############
+# JAP
+##############
+axis = {
+	WH2_Axis = {
+		trigger = {
+				7508 = {
+					controller = {
+						faction = axis
+			}
+			}
+		}
+		primary = yes
+	}
+	WH3_Axis = {
+		trigger = {
+				7493 = {
+					controller = {
+						faction = axis
+			}
+			}
+		}
+		primary = yes
+	}
+}
+##############
+# CHI
+##############
+allies	= {
+	WH1_Allies = {
+		trigger = {
+			7508 = {
+				controller = {
+					faction = allies
+			}
+		}
+		date = 1938.9.3
+		}
+		primary = yes
+	}
+	WH2_Allies = {
+		trigger = {
+			7507 = {
+				controller = {
+					faction = allies
+			}
+		}
+		}
+		primary = yes
+	}
+}		

@@ -1,0 +1,103 @@
+theatre = {
+	name = "大韩民国国防部"
+	location = 5116
+	regiment = { type = hq_brigade name = "国防部" historical_model = 1 }
+	regiment = { type = artillery_brigade experience = 30 historical_model = 1 }			
+			division = {
+				name = "国防军第1师"
+				location = 5023
+				regiment = { type = infantry_brigade experience = 20 historical_model = 4 }
+				regiment = { type = infantry_brigade experience = 20 historical_model = 4 }
+				regiment = { type = infantry_brigade experience = 20 historical_model = 4 }
+			}
+			division = {
+				name = "国防军第9师"
+				location = 4942
+				regiment = { type = infantry_brigade experience = 10 historical_model = 4 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 4 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 4 }
+	}			
+			division = {
+				name = "国防军第10师"
+				location = 4896
+				regiment = { type = infantry_brigade experience = 20 historical_model = 4 }
+				regiment = { type = infantry_brigade experience = 20 historical_model = 4 }
+				regiment = { type = infantry_brigade experience = 20 historical_model = 4 }
+			}
+			division = {
+				name = "国防军第11师"
+				location = 5056
+				regiment = { type = infantry_brigade experience = 10 historical_model = 4 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 4 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 4 }
+		       }
+corps = {
+			name = "韩国第1军"
+			location = 5056
+			regiment = { type = hq_brigade name = "第1军司令部" experience = 20 historical_model = 0 }
+			division = {
+				name = "国防军第3师"
+				location = 5056
+				regiment = { type = infantry_brigade experience = 10 historical_model = 4 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 4 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 4 }
+		       }				
+			division = {
+				name = "首都步兵师"
+				location = 5022
+				regiment = { type = motorized_brigade experience = 20 historical_model = 4 }
+				regiment = { type = motorized_brigade experience = 20 historical_model = 4 }
+        }
+}
+corps = {
+			name = "韩国第2军"
+			location = 5023
+			regiment = { type = hq_brigade name = "第2军司令部" experience = 20 historical_model = 0 }
+			division = {
+				name = "国防军第6师"
+				location = 5023
+				regiment = { type = infantry_brigade experience = 10 historical_model = 4 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 4 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 4 }
+		       }				
+			division = {
+				name = "国防军第7师"
+				location = 5023
+				regiment = { type = infantry_brigade experience = 10 historical_model = 4 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 4 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 4 }
+		       }	
+		 division = {
+				name = "国防军第8师"
+				location = 5023
+				regiment = { type = infantry_brigade experience = 10 historical_model = 4 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 4 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 4 }		     		       		    
+        }
+}
+corps = {
+			name = "韩国第3军"
+			location = 4985
+			regiment = { type = hq_brigade name = "第3军司令部" experience = 20 historical_model = 0 }
+			division = {
+				name = "国防军第2师"
+				location = 4942
+				regiment = { type = infantry_brigade experience = 10 historical_model = 4 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 4 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 4 }
+		       }				
+			division = {
+				name = "国防军第5师"
+				location = 4942
+				regiment = { type = infantry_brigade experience = 10 historical_model = 4 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 4 }
+				regiment = { type = infantry_brigade experience = 10 historical_model = 4 }
+		       }	
+		 division = {
+				name = "海军陆战队"
+				location = 4985
+				regiment = { type = marine_brigade experience = 70 historical_model = 4 }
+	      regiment = { type = marine_brigade experience = 70 historical_model = 4 }		     		       		          
+                   }
+        }
+}

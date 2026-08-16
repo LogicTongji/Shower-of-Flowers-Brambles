@@ -1,0 +1,73 @@
+name = "SCENARIO_THIRD_CHANGSHA_NAME"
+desc = "SCENARIO_THIRD_CHANGSHA_DESC"
+icon = "GFX_select_bulge"
+startdate = 1941.12.24
+enddate = 1942.2.15
+
+camera_height = 240
+camera_center = { x = 4650 y = 1325 }
+camera_min_x = 4350
+camera_min_y = 1100
+camera_max_x = 4855
+camera_max_y = 1700
+
+victory_conditions = "scenarios/third_changsha/faction_aims.txt"
+victory_conditions_to_win = 1
+number_of_victory_conditions = 1
+
+
+
+reinforcement = 30
+
+# will load any history files with scenarios/third_changsha/<tag>.txt
+selectable_country = CHI
+selectable_country = JAP
+country = CYN
+country = CSC
+events = "scenarios/third_changsha/events.txt"
+
+
+
+# visible provinces & regions
+provinces = {
+5620
+5681
+5709
+7508
+7511
+7512
+7516
+7517
+7518
+7520
+14169
+14170
+14171
+14172
+14173
+14174
+14175
+14176
+14177
+14178
+14179
+7519
+7529
+7537
+7543
+5754
+7554
+7544
+7530
+7524
+5731
+5741
+5706
+5723
+5732
+5742
+5753
+}
+
+regions = {
+}

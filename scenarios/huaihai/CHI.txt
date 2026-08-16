@@ -1,0 +1,247 @@
+capital = 5494
+government = right_wing_autocrat
+ideology = paternal_autocrat
+head_of_state = 52001
+head_of_government = 52002
+foreign_minister = 52003
+armament_minister = 52004
+minister_of_security = 52005
+minister_of_intelligence = 52006
+chief_of_staff = 52002
+chief_of_army = 52008
+chief_of_navy = 52009
+chief_of_air = 52010
+alignment = { x = 60 y = 61.6 }
+neutrality = 80
+national_unity = 70
+
+oob = "CHI_1936.txt"
+
+infantry_theory = 5
+infantry_practical = 5
+militia_theory = 10
+militia_practical = 10
+mobile_theory = 1
+mobile_practical = 1
+artillery_theory = 3
+artillery_practical = 3
+rocket_science = 0
+rocket_practical = 0 
+naval_engineering = 2.5
+destroyer_practical = 2.5
+cruiser_practical = 0
+capitalship_practical = 0
+carrier_practical = 0 
+submarine_engineering = 0
+submarine_practical = 0
+electornicegineering_theory = 0 
+electornicegineering_practical = 0
+automotive_theory = 0 
+armour_practical = 0
+aeronautic_engineering = 1
+single_engine_aircraft_practical = 0
+twin_engine_aircraft_practical = 0
+four_engine_aircraft_practical = 0
+spearhead_theory = 0 
+superior_firepower_theory = 0
+grand_battleplan_theory = 0
+human_wave_theory = 5 
+land_doctrine_practical= 5 
+naval_doctrine_practical = 0 
+base_strike_doctrine = 0
+fleet_in_being_doctrine = 2.5
+sealane_interdiction_doctrine = 0
+air_doctrine_practical = 0 
+fighter_focus = 1
+cas_focus = 0 
+tac_focus = 0
+nav_focus = 0 
+strategic_air_focus = 0 
+mechanicalengineering_theory = 2.5
+chemical_engineering = 1
+jetengine_theory = 0 
+jetengine_practical = 0 
+nuclear_physics = 0
+nuclear_bomb = 0 
+transport_practical = 2.5
+officers_ratio = 0.5
+
+militia_smallarms = 1
+militia_support = 1
+militia_guns = 1
+militia_at = 1
+infantry_activation = 1
+single_engine_aircraft_design = 1
+twin_engine_aircraft_design = 1
+destroyer_technology = 1
+lightcruiser_technology = 1
+schwerpunkt = 0
+blitzkrieg = 0
+mobile_warfare = 0
+elastic_defence = 0
+operational_level_command_structure = 0
+tactical_command_structure = 0
+mechanized_offensive = 0
+delay_doctrine = 0
+integrated_support_doctrine = 0
+infantry_warfare = 1
+special_forces = 0
+assault_concentration = 0
+central_planning = 0
+mass_assault = 0
+peoples_army = 1
+large_front = 1
+guerilla_warfare = 1
+operational_level_organisation = 0
+supply_production = 2
+
+
+popularity = { 
+	national_socialist = 0
+	fascistic = 0
+	paternal_autocrat = 62
+	social_conservative = 27
+	market_liberal = 11
+	social_liberal = 0
+	social_democrat = 0
+	left_wing_radical = 0
+	leninist = 0
+	stalinist = 0
+}
+
+organization = { 
+	national_socialist = 0
+	fascistic = 0
+	paternal_autocrat = 65
+	social_conservative = 40
+	market_liberal = 15
+	social_liberal = 0
+	social_democrat = 0
+	left_wing_radical = 0
+	leninist = 0
+	stalinist = 0
+}
+
+training_laws = basic_training
+press_laws = censored_press
+industrial_policy_laws = mixed_industry
+education_investment_law = minimal_education_investment
+conscription_law = volunteer_army
+civil_law = legalistic_restrictions
+
+1937.11.21 = { capital = 9478 # Chongqing
+	set_country_flag = hu_hanmin
+	set_country_flag = chinese_ic_transfer
+
+} 
+1938.9.1 = {
+	head_of_state = 52001
+	head_of_government = 52026
+	foreign_minister = 52026
+	armament_minister = 52046
+	minister_of_security = 52063
+	minister_of_intelligence = 52063
+	chief_of_staff = 52045
+	chief_of_army = 52089
+	chief_of_navy = 52101
+	chief_of_air = 52047
+	oob = "CHI_1938.txt"
+	officers_ratio = 0.55
+}
+1939.9.1 = {
+	head_of_state = 52001
+	head_of_government = 52003
+	foreign_minister = 52035
+	armament_minister = 52047
+	minister_of_security = 52066
+	minister_of_intelligence = 52079
+	chief_of_staff = 52089
+	chief_of_army = 52097
+	chief_of_navy = 52102
+	chief_of_air = 52047
+	oob = "CHI_1939.txt"
+	officers_ratio = 0.60
+	peoples_army = 2
+	guerilla_warfare = 2
+}
+1940.5.10 = { 
+	officers_ratio = 0.65 
+	head_of_state = 52001
+	head_of_government = 52003
+	foreign_minister = 52035
+	armament_minister = 52047
+	minister_of_security = 52066
+	minister_of_intelligence = 52079
+	chief_of_staff = 52089
+	chief_of_army = 52097
+	chief_of_navy = 52102
+	chief_of_air = 52047
+	oob = "CHI_1940.txt"
+	officers_ratio = 0.60
+	peoples_army = 2
+	guerilla_warfare = 2
+}
+1941.6.22 = {
+	head_of_state = 52001
+	head_of_government = 52003
+	foreign_minister = 52036
+	armament_minister = 52050
+	minister_of_security = 52068
+	minister_of_intelligence = 52080
+	chief_of_staff = 52090
+	chief_of_army = 52097
+	chief_of_navy = 52102
+	chief_of_air = 52109
+	oob = "CHI_1941.txt"
+	officers_ratio = 0.70
+	peoples_army = 3
+	guerilla_warfare = 3
+	national_unity = 90
+}
+1941.12.7 = { oob = "CHI_DayOfInfamy.txt" 
+	officers_ratio = 0.75
+}
+1941.12.9 = {
+	join_faction = allies
+	neutrality = 0
+}
+1942.6.4 = {
+	officers_ratio = 0.80
+}
+1943.2.1 = { oob = "CHI_TheTideHasTurned.txt"
+	officers_ratio = 0.85
+	infantry_warfare = 2
+}
+1944.6.20 = {
+	head_of_state = 52002
+	head_of_government = 52002
+	foreign_minister = 52005
+	armament_minister = 52054
+	minister_of_security = 52055
+	minister_of_intelligence = 52083
+	chief_of_staff = 52035
+	chief_of_army = 52098
+	chief_of_navy = 52103
+	chief_of_air = 52010
+	oob = "CHI_1944.txt"
+}
+1947.1.1 = {
+	officers_ratio = 0.77
+        oob = "scenarios/huaihai/CHI_oob.txt"
+        capital = 5494
+        mechanized_offensive = 2
+        infantry_warfare = 2
+        lighttank_gun = 1
+	lighttank_engine = 1
+	lighttank_armour = 1
+	lighttank_reliability = 1
+        supplies = 60000
+        rare_materials = 10000
+        energy = 20000
+        metal = 10000
+        fuel = 5000
+        decision = ins_conflict
+        economic_law = war_economy
+        dissent = 20
+        national_unity = 66
+}

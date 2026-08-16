@@ -1,0 +1,31 @@
+##############
+# SOV
+##############
+comintern = {
+	KE_comintern = {
+		trigger = {
+				2170 = {
+					controller = {
+						faction = comintern
+						date = 1943.8.27
+			}
+			}
+		}
+		primary = yes
+	}
+}
+##############
+# GER
+##############
+axis	= {
+	KE_Axis = {
+		trigger = {
+			2170 = {
+				controller = {
+					faction = axis
+			}
+		}
+		}
+		primary = yes
+	}
+}	

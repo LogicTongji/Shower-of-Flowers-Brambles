@@ -1,0 +1,59 @@
+song = {
+	name = "airborne.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { war = yes }
+		}
+		modifier = {
+			factor = 1.5
+			tag = USA
+		}
+	}
+}
+
+
+
+song = {
+	name = "leavingshore.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { war = yes }
+		}
+		modifier = {
+			factor = 1.5
+			tag = USA
+		}
+	}
+}
+
+
+song = {
+	name = "montgomerysmarch.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { war = yes }
+		}
+		modifier = {
+			factor = 1.5
+			tag = ENG
+		}
+	}
+}
+
+
+song = {
+	name = "theraf.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { war = yes }
+		}
+	}
+}

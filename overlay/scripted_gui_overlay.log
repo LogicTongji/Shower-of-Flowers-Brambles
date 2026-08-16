@@ -1,109 +1,77 @@
-[3:12:46.478][thread=30988] Scripted GUI hook worker started
-[3:12:46.478][thread=30988] HOI3 engine frame callsite probes installed
-[3:12:46.478][thread=30988] HOI3 Direct3DCreate9 import hooked
-[3:12:46.478][thread=30988] D3D9 and Lua 5.1 hooks installed
-[3:12:47.605][thread=25644] HOI3 IDirect3D9::CreateDevice hooked
-[3:12:47.759][thread=25644] HOI3 actual D3D9 device hooked
-[3:12:47.759][thread=25644] HOI3 D3D9 swap-chain Present hooked
-[3:12:47.907][thread=25644] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[3:12:47.908][thread=25644] D3D9 hook heartbeat: EndScene=0 (+0), Present=0 (+0), SwapChainPresent=0 (+0), EngineCallsites=[0=0 (+0), 1=0 (+0), 2=0 (+0), 3=0 (+0)]
-[3:12:47.908][thread=25644] Lua 5.1 state attached to ScriptedGuiNative
-[3:12:49.448][thread=25644] HOI3 actual D3D9 device hooked
-[3:12:49.451][thread=25644] HOI3 D3D9 presentation device selected
-[3:12:49.451][thread=25644] HOI3 window procedure hooked
-[3:12:50.830][thread=25644] D3D9 Scripted GUI host initialized
-[3:12:50.831][thread=25644] GUI session visibility: id=china_anti_jap, open=true, visible=false, state.visible=false, state.active=false, viewer=
-[3:15:53.488][thread=25644] D3D9 hook heartbeat: EndScene=1 (+1), Present=1 (+1), SwapChainPresent=0 (+0), EngineCallsites=[0=1 (+1), 1=0 (+0), 2=0 (+0), 3=0 (+0)]
-[3:16:0.658][thread=31092] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[3:16:0.659][thread=31092] Lua 5.1 state attached to ScriptedGuiNative
-[3:16:0.684][thread=4904] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[3:16:0.684][thread=4904] Lua 5.1 state attached to ScriptedGuiNative
-[3:16:0.712][thread=35276] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[3:16:0.712][thread=35276] Lua 5.1 state attached to ScriptedGuiNative
-[3:16:0.740][thread=27344] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[3:16:0.740][thread=27344] Lua 5.1 state attached to ScriptedGuiNative
-[3:16:0.768][thread=34152] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[3:16:0.768][thread=34152] Lua 5.1 state attached to ScriptedGuiNative
-[3:16:3.733][thread=35808] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[3:16:3.734][thread=35808] Lua 5.1 state attached to ScriptedGuiNative
-[3:16:3.760][thread=31148] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[3:16:3.760][thread=31148] Lua 5.1 state attached to ScriptedGuiNative
-[3:16:3.788][thread=17016] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[3:16:3.788][thread=17016] Lua 5.1 state attached to ScriptedGuiNative
-[3:16:3.815][thread=17028] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[3:16:3.815][thread=17028] Lua 5.1 state attached to ScriptedGuiNative
-[3:16:3.831][thread=17016] First Lua GUI snapshot decode started: channel=china_anti_jap
-[3:16:3.834][thread=17016] First Lua GUI snapshot state: channel=china_anti_jap, visible=true, active=true, viewer=CHI, values=542, lists=3
-[3:16:3.834][thread=17016] First Lua GUI snapshot received: channel=china_anti_jap, revision=1
-[3:16:3.843][thread=5584] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[3:16:3.844][thread=5584] Lua 5.1 state attached to ScriptedGuiNative
-[3:16:3.869][thread=11568] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[3:16:3.869][thread=11568] Lua 5.1 state attached to ScriptedGuiNative
-[3:16:4.114][thread=33060] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[3:16:4.114][thread=33060] Lua 5.1 state attached to ScriptedGuiNative
-[3:16:4.142][thread=33412] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[3:16:4.142][thread=33412] Lua 5.1 state attached to ScriptedGuiNative
-[3:16:4.169][thread=11596] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[3:16:4.169][thread=11596] Lua 5.1 state attached to ScriptedGuiNative
-[3:16:4.196][thread=2456] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[3:16:4.197][thread=2456] Lua 5.1 state attached to ScriptedGuiNative
-[3:16:4.223][thread=9908] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[3:16:4.223][thread=9908] Lua 5.1 state attached to ScriptedGuiNative
-[3:16:4.252][thread=36500] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[3:16:4.252][thread=36500] Lua 5.1 state attached to ScriptedGuiNative
-[3:16:4.775][thread=34388] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[3:16:4.776][thread=34388] Lua 5.1 state attached to ScriptedGuiNative
-[3:16:4.801][thread=24956] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[3:16:4.801][thread=24956] Lua 5.1 state attached to ScriptedGuiNative
-[3:16:4.827][thread=16188] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[3:16:4.828][thread=16188] Lua 5.1 state attached to ScriptedGuiNative
-[3:16:4.855][thread=33944] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[3:16:4.855][thread=33944] Lua 5.1 state attached to ScriptedGuiNative
-[3:16:4.882][thread=32808] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[3:16:4.882][thread=32808] Lua 5.1 state attached to ScriptedGuiNative
-[3:16:4.911][thread=1252] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[3:16:4.911][thread=1252] Lua 5.1 state attached to ScriptedGuiNative
-[3:16:5.458][thread=31756] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[3:16:5.459][thread=31756] Lua 5.1 state attached to ScriptedGuiNative
-[3:16:5.488][thread=688] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[3:16:5.488][thread=688] Lua 5.1 state attached to ScriptedGuiNative
-[3:16:5.516][thread=23740] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[3:16:5.516][thread=23740] Lua 5.1 state attached to ScriptedGuiNative
-[3:16:5.552][thread=20868] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[3:16:5.552][thread=20868] Lua 5.1 state attached to ScriptedGuiNative
-[3:16:5.802][thread=28760] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[3:16:5.802][thread=28760] Lua 5.1 state attached to ScriptedGuiNative
-[3:16:6.89][thread=9848] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[3:16:6.90][thread=9848] Lua 5.1 state attached to ScriptedGuiNative
-[3:16:6.851][thread=32672] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[3:16:6.852][thread=32672] Lua 5.1 state attached to ScriptedGuiNative
-[3:16:7.9][thread=32760] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[3:16:7.10][thread=32760] Lua 5.1 state attached to ScriptedGuiNative
-[3:16:7.292][thread=31092] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
-[3:16:7.742][thread=17016] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
-[3:16:8.386][thread=20868] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
-[3:16:8.561][thread=31148] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
-[3:16:10.350][thread=11596] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
-[3:16:10.980][thread=35276] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
-[3:16:12.192][thread=9848] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
-[3:16:12.192][thread=11568] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
-[3:16:13.923][thread=31148] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
-[3:16:13.923][thread=11568] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
-[3:16:14.424][thread=31092] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
-[3:16:15.536][thread=35276] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
-[3:16:16.57][thread=9848] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
-[3:16:16.513][thread=31148] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
-[3:16:17.966][thread=32672] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
-[3:16:19.254][thread=1252] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
-[3:16:19.438][thread=32672] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
-[3:16:19.753][thread=688] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
-[3:16:19.908][thread=688] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
-[3:16:20.871][thread=35808] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
-[3:16:21.13][thread=1252] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
-[3:16:21.890][thread=1252] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
-[3:16:22.63][thread=11568] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
-[3:16:23.244][thread=17016] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
-[3:16:23.244][thread=5584] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
-[3:16:23.658][thread=11596] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
-[3:16:23.816][thread=4904] D3D9 hook heartbeat: EndScene=1 (+0), Present=1 (+0), SwapChainPresent=0 (+0), EngineCallsites=[0=1 (+0), 1=0 (+0), 2=0 (+0), 3=0 (+0)]
-[3:16:24.406][thread=35276] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
+[1:42:36.415][thread=40384] Scripted GUI hook worker started
+[1:42:36.416][thread=40384] HOI3 engine frame callsite probes installed
+[1:42:36.416][thread=40384] HOI3 Direct3DCreate9 import hooked
+[1:42:36.416][thread=40384] D3D9 and Lua 5.1 hooks installed
+[1:42:37.528][thread=39660] HOI3 IDirect3D9::CreateDevice hooked
+[1:42:37.659][thread=39660] HOI3 actual D3D9 device hooked
+[1:42:37.659][thread=39660] HOI3 D3D9 swap-chain Present hooked
+[1:42:37.783][thread=39660] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[1:42:37.783][thread=39660] D3D9 hook heartbeat: EndScene=0 (+0), Present=0 (+0), SwapChainPresent=0 (+0), EngineCallsites=[0=0 (+0), 1=0 (+0), 2=0 (+0), 3=0 (+0)], ActiveVTableOwned=yes
+[1:42:37.784][thread=39660] Lua 5.1 state attached to ScriptedGuiNative
+[1:42:38.36][thread=39660] HOI3 actual D3D9 device hooked
+[1:42:38.37][thread=39660] HOI3 D3D9 presentation device selected
+[1:42:38.37][thread=39660] HOI3 window procedure hooked
+[1:42:40.486][thread=39660] D3D9 Scripted GUI host initialized
+[1:42:40.486][thread=39660] GUI session visibility: id=china_anti_jap, open=true, visible=false, state.visible=false, state.active=false, viewer=
+[1:43:51.74][thread=39660] HOI3 active D3D9 device vtable hooks refreshed
+[1:43:51.75][thread=39660] D3D9 hook heartbeat: EndScene=2 (+2), Present=1 (+1), SwapChainPresent=0 (+0), EngineCallsites=[0=1 (+1), 1=0 (+0), 2=0 (+0), 3=0 (+0)], ActiveVTableOwned=yes
+[1:43:51.304][thread=39660] HOI3 queried D3D9 device interface hooked
+[1:43:51.304][thread=39660] HOI3 queried D3D9 device interface hooked
+[1:43:57.535][thread=33084] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[1:43:57.535][thread=33084] HOI3 active D3D9 device vtable hooks refreshed
+[1:43:57.535][thread=33084] Lua 5.1 state attached to ScriptedGuiNative
+[1:43:57.561][thread=40676] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[1:43:57.561][thread=40676] Lua 5.1 state attached to ScriptedGuiNative
+[1:44:3.856][thread=39660] HOI3 active D3D9 device vtable hooks refreshed
+[1:44:3.858][thread=39816] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[1:44:3.858][thread=39816] Lua 5.1 state attached to ScriptedGuiNative
+[1:44:3.891][thread=40144] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[1:44:3.891][thread=40144] Lua 5.1 state attached to ScriptedGuiNative
+[1:44:3.917][thread=34436] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[1:44:3.917][thread=34436] Lua 5.1 state attached to ScriptedGuiNative
+[1:44:3.945][thread=34056] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[1:44:3.946][thread=34056] Lua 5.1 state attached to ScriptedGuiNative
+[1:44:4.27][thread=40888] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[1:44:4.28][thread=40888] Lua 5.1 state attached to ScriptedGuiNative
+[1:44:4.55][thread=36424] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[1:44:4.55][thread=36424] Lua 5.1 state attached to ScriptedGuiNative
+[1:44:4.81][thread=15472] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[1:44:4.81][thread=15472] Lua 5.1 state attached to ScriptedGuiNative
+[1:44:4.108][thread=13020] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[1:44:4.108][thread=13020] Lua 5.1 state attached to ScriptedGuiNative
+[1:44:4.134][thread=2716] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[1:44:4.135][thread=2716] Lua 5.1 state attached to ScriptedGuiNative
+[1:44:4.161][thread=26980] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[1:44:4.161][thread=26980] Lua 5.1 state attached to ScriptedGuiNative
+[1:44:4.441][thread=38220] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[1:44:4.441][thread=38220] Lua 5.1 state attached to ScriptedGuiNative
+[1:44:4.467][thread=39112] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[1:44:4.467][thread=39112] Lua 5.1 state attached to ScriptedGuiNative
+[1:44:4.491][thread=40196] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[1:44:4.491][thread=40196] Lua 5.1 state attached to ScriptedGuiNative
+[1:44:4.512][thread=39112] First Lua GUI snapshot decode started: channel=china_anti_jap
+[1:44:4.515][thread=39112] First Lua GUI snapshot state: channel=china_anti_jap, visible=true, active=true, viewer=CHI, values=543, lists=3
+[1:44:4.515][thread=39112] First Lua GUI Region values: channel=china_anti_jap, count=41, nonzero=29, maximum=100.000000, maximumKey=regions.40.controlledpercentage
+[1:44:4.515][thread=39112] First Lua GUI snapshot received: channel=china_anti_jap, revision=1
+[1:44:4.520][thread=40192] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[1:44:4.520][thread=40192] Lua 5.1 state attached to ScriptedGuiNative
+[1:44:4.546][thread=41192] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[1:44:4.546][thread=41192] Lua 5.1 state attached to ScriptedGuiNative
+[1:44:4.571][thread=39436] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[1:44:4.572][thread=39436] Lua 5.1 state attached to ScriptedGuiNative
+[1:44:4.899][thread=39660] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHI
+[1:44:4.902][thread=39660] First GUI session draw: id=china_anti_jap, widgets=48, commands=1
+[1:44:5.477][thread=40432] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[1:44:5.477][thread=40432] Lua 5.1 state attached to ScriptedGuiNative
+[1:44:5.504][thread=26364] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[1:44:5.505][thread=26364] Lua 5.1 state attached to ScriptedGuiNative
+[1:44:6.795][thread=39660] GUI pointer down: plugin=china_anti_jap, window=(945,215), canvas=(1535,113), target=china_war_launcher_chi
+[1:44:25.0][thread=39660] GUI pointer down: plugin=china_anti_jap, window=(92,373), canvas=(86,382), target=combat_region_button
+[1:44:26.175][thread=39660] GUI pointer down: plugin=china_anti_jap, window=(152,512), canvas=(188,618), target=leader_candidate_button
+[1:44:27.919][thread=39660] GUI pointer down: plugin=china_anti_jap, window=(625,489), canvas=(991,579), target=china_region_map
+[1:44:29.719][thread=39660] GUI pointer down: plugin=china_anti_jap, window=(184,436), canvas=(242,489), target=combat_region_button
+[1:44:30.509][thread=39660] GUI pointer down: plugin=china_anti_jap, window=(187,549), canvas=(247,681), target=leader_candidate_button
+[1:44:31.904][thread=39660] GUI pointer down: plugin=china_anti_jap, window=(684,456), canvas=(1092,523), target=china_region_map
+[1:45:3.261][thread=39660] GUI pointer down: plugin=china_anti_jap, window=(958,166), canvas=(1557,30), target=china_war_close
+[1:45:13.38][thread=39660] GUI pointer down: plugin=china_anti_jap, window=(937,221), canvas=(1522,123), target=china_war_launcher_chi
+[1:45:18.694][thread=39660] GUI pointer down: plugin=china_anti_jap, window=(959,167), canvas=(1559,32), target=china_war_close

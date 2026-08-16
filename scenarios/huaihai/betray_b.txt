@@ -1,0 +1,43 @@
+              corps = {			
+			name = "第59军"		
+			location = 5420		
+			regiment = { type = hq_brigade name = "司令部" historical_model = 0 }		
+			division= {		
+				name = "第38师"	
+				location = 5420	
+				regiment = { type = militia_brigade   historical_model = 1 }	
+				regiment = { type = militia_brigade   historical_model = 1 }	
+				regiment = { type = militia_brigade   historical_model = 1 }
+			}		
+			division= {		
+				name = "第180师"	
+				location = 5420	
+				regiment = { type = militia_brigade   historical_model = 1 }	
+				regiment = { type = militia_brigade   historical_model = 1 }	
+				regiment = { type = militia_brigade   historical_model = 1 }
+	
+			}
+
+}
+              corps = {			
+			name = "第77军"		
+			location = 5420		
+			regiment = { type = hq_brigade name = "司令部" historical_model = 0 }		
+			division= {		
+				name = "第37师"	
+				location = 5420	
+				regiment = { type = militia_brigade   historical_model = 1 }	
+				regiment = { type = militia_brigade   historical_model = 1 }	
+				regiment = { type = militia_brigade   historical_model = 1 }
+			}		
+			division= {		
+				name = "第132师"	
+				location = 5420	
+				regiment = { type = militia_brigade   historical_model = 1 }	
+				regiment = { type = militia_brigade   historical_model = 1 }	
+				regiment = { type = militia_brigade   historical_model = 1 }
+	
+			}
+
+}
+ 

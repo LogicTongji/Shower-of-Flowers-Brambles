@@ -1,0 +1,101 @@
+name = "SCENARIO_CXBT_NAME"
+desc = "SCENARIO_CXBT_DESC"
+icon = "GFX_select_southernq"
+startdate = 1940.8.20
+enddate = 1940.12.10
+
+camera_height = 240
+camera_center = { x = 4553 y = 1382 }                              
+camera_min_x = 4550
+camera_min_y = 1380
+camera_max_x = 4600
+camera_max_y = 1450
+
+victory_conditions = "scenarios/1940/faction_aims.txt"
+victory_conditions_to_win = 6
+number_of_victory_conditions = 6
+events = "scenarios/1940/events.txt"
+
+
+
+reinforcement = 30
+
+# will load any history files with scenarios/CCW/<tag>.txt
+selectable_country = CHC
+selectable_country = JAP
+country = CSX
+# visible provinces & regions
+provinces = {
+5177
+4517
+7425
+7417
+9202
+7410
+5241
+7398
+9233
+9266
+9234
+7446
+7405
+7411
+5404
+7391
+7436
+5333
+5361
+5334
+5301
+5272
+5300
+7418
+5383
+5217
+5239
+5175
+5206
+5174
+5110
+5141
+5111
+5083
+5051
+4977
+5362
+5273
+5240
+5207
+5176
+5208
+5209
+5144
+5178
+5054
+5086
+5143
+5142
+5085
+5084
+5053
+5018
+4979
+4933
+5112
+5016
+5015
+7360
+7368
+5050
+7385
+7378
+7384
+7390
+7470
+}
+
+regions = {	
+hebei_region
+shanxi_region
+shandong_region
+}

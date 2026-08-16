@@ -1,0 +1,80 @@
+##############
+# PRC
+##############
+comintern = {
+	CX_comintern = {
+		trigger = {
+				4892 = {
+					controller = {
+						faction = comintern
+			}
+			}
+		}
+		primary = yes
+	}
+	CX3_comintern = {
+		trigger = {
+				5056 = {
+					controller = {
+						faction = comintern
+			}
+			}
+		}
+		primary = yes
+	}
+  CX4_comintern = {
+		trigger = {
+				4796 = {
+					controller = {
+						faction = comintern
+		}
+			}
+		}
+		primary = yes
+	}
+ CX4_comintern1 = {
+		trigger = {
+				5116 = {
+					controller = {
+						faction = comintern
+		}
+			}
+		}
+		primary = yes
+	}
+CX5_comintern = {
+		trigger = {
+				4896 = {
+					controller = {
+						faction = comintern
+		}
+			}
+		}
+		primary = yes
+	}
+}
+##############
+# USA
+##############
+allies	= {
+	CX_Allies = {
+		trigger = {
+			5116 = {
+				controller = {
+					faction = allies
+					}
+			}
+		}
+		primary = yes
+	}
+CX_Allies2 = {
+		trigger = {
+			4522 = {
+				controller = {
+					faction = allies
+				}
+			}
+		}
+		primary = yes
+	}
+}		

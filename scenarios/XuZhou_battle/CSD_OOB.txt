@@ -1,0 +1,68 @@
+army = {
+		name = "第3集团军"
+		location = 5275
+		regiment = { type = hq_brigade name = "第1集团军指挥部" historical_model = 1 }	
+		corps = {
+			name = "第12军"
+			location = 5275
+			regiment = { type = hq_brigade name = "第59军指挥部" experience = 60  historical_model = 1 }
+			division= {
+				name = "第20师"
+				location = 5275
+				regiment = { type = militia_brigade experience = 60  historical_model = 0 }
+				regiment = { type = infantry_brigade experience = 60  historical_model = 0 }		
+			}                    
+                        division= {
+				name = "第81师"
+				location = 5275
+				regiment = { type = militia_brigade experience = 60  historical_model = 0 }
+				regiment = { type = infantry_brigade experience = 60  historical_model = 0 }	
+                            }                  
+                   }
+                   corps = {
+                        expeditionary_owner = CHI
+			name = "第51军"
+			location = 5246
+			regiment = { type = hq_brigade name = "第59军指挥部" experience = 60  historical_model = 1 }
+			division= {
+				name = "第113师"
+				location = 5246
+				regiment = { type = militia_brigade experience = 60  historical_model = 0 }
+				regiment = { type = infantry_brigade experience = 60  historical_model = 0 }		
+			}
+                        division= {
+				name = "第114师"
+				location = 5246
+				regiment = { type = militia_brigade experience = 60  historical_model = 0 }
+				regiment = { type = infantry_brigade experience = 60  historical_model = 0 }		
+                                 }                  
+                   }
+                   corps = {
+                        expeditionary_owner = CHI
+			name = "第55军"
+			location = 5275
+			regiment = { type = hq_brigade name = "第59军指挥部" experience = 60  historical_model = 1 }
+			division= {
+				name = "第29师"
+				location = 5275
+				regiment = { type = militia_brigade experience = 60  historical_model = 0 }
+				regiment = { type = infantry_brigade experience = 60  historical_model = 0 }		
+			}
+                        division= {
+				name = "第74师"
+				location = 5246
+				regiment = { type = militia_brigade experience = 60  historical_model = 0 }
+				regiment = { type = infantry_brigade experience = 60  historical_model = 0 }		
+                                       }                  
+                   }
+                   corps = {
+                        expeditionary_owner = CHI
+			name = "第56军"
+			location = 5246
+                        division= {
+				name = "第81师"
+				location = 5181
+				regiment = { type = militia_brigade experience = 60  historical_model = 0 }
+				regiment = { type = infantry_brigade experience = 60  historical_model = 0 }	
+　　　　｝
+｝				    

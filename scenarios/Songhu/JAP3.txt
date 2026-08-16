@@ -1,0 +1,11 @@
+
+        navy = {
+	name = "海军第3舰队"
+	base = 14182
+	location = 11930
+	ship = { type = heavy_cruiser name = "出云号" experience = 80 historical_model = 3 }
+        ship = { type = destroyer name = "第1驱逐舰支队" experience = 80 historical_model = 3 }
+	ship = { type = destroyer name = "第2驱逐舰支队" experience = 80 historical_model = 3 }
+	ship = { type = destroyer name = "第3驱逐舰支队" experience = 80 historical_model = 3 }
+        ship = { type = submarine name = "第1潜艇分队" experience = 80 historical_model = 3 } 
+}

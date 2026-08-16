@@ -1,0 +1,374 @@
+armygroup = { 
+		name = "第二战区"
+		location = 5174
+		regiment = { type = hq_brigade name = "第二战区长官部" historical_model = 0 }
+	army = {
+		name = "前敌总司"
+		location = 5174
+		regiment = { type = hq_brigade name = "前敌总司令部" historical_model = 0 }	
+		corps = {
+			name = "第14军"                                              
+			location = 5110
+			regiment = { type = hq_brigade name = "第14军指挥部" historical_model = 0 }
+			division= {
+				name = "第10师"
+				location = 5110
+				regiment = { type = infantry_brigade experience = 20 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 20 historical_model = 1 }
+			}
+			division= {
+				name = "第83师"
+				location = 5110
+				regiment = { type = infantry_brigade experience = 20 historical_model = 2 }
+				regiment = { type = infantry_brigade experience = 20 historical_model = 1 }
+			}
+			division= {
+				name = "第94师"
+				location = 5110
+				regiment = { type = militia_brigade experience = 20 historical_model = 0 }
+				regiment = { type = infantry_brigade experience = 20 historical_model = 1 }
+			}
+			division= {
+				name = "第85师"
+				location = 5110
+				regiment = { type = militia_brigade experience = 20 historical_model = 0 }
+				regiment = { type = infantry_brigade experience = 20 historical_model = 2 }
+			}
+		}
+		corps = {
+			name = "第17军"
+			location = 5141
+			regiment = { type = hq_brigade name = "第17军指挥部" historical_model = 0 }
+			division= {
+				name = "第17师"
+				location = 5141
+				regiment = { type = militia_brigade experience = 20 historical_model = 0 }
+				regiment = { type = infantry_brigade experience = 20 historical_model = 2 }
+			}
+			division= {
+				name = "第84师"
+				location = 5141
+				regiment = { type = militia_brigade experience = 5 historical_model = 0 }
+				regiment = { type = infantry_brigade experience = 20 historical_model = 1 }
+			}
+			division= {
+				name = "第47师"
+				location = 5141
+				regiment = { type = infantry_brigade experience = 20 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 20 historical_model = 2 }
+		}
+
+	}
+}
+	  army = {
+		name = "第2集团军"
+		location = 5175
+		regiment = { type = hq_brigade name = "第2集团军指挥部" historical_model = 0 }	
+		corps = {
+			name = "第1军团"
+			location = 5175
+			regiment = { type = hq_brigade name = "第1军团指挥部" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "独立44旅" historical_model = 2 }
+			division= {
+				name = "第27师"
+				location = 5175
+				regiment = { type = militia_brigade experience = 10 historical_model = 0 }
+				regiment = { type = infantry_brigade experience = 20 historical_model = 1 }
+			}
+			division= {
+				name = "第30师"
+				location = 5175
+				regiment = { type = militia_brigade experience = 10 historical_model = 0 }
+				regiment = { type = infantry_brigade experience = 20 historical_model = 1 }
+
+			}
+			division= {
+				name = "第31师"
+				location = 7418
+				regiment = { type = militia_brigade experience = 5 historical_model = 0 }
+				regiment = { type = infantry_brigade experience = 20 historical_model = 2 }
+			}
+		}
+		corps = {                      
+			name = "第3军"
+			location = 5239
+			regiment = { type = hq_brigade name = "第3军指挥部" historical_model = 0 }
+			division= {
+				name = "第7师"
+				location = 5239
+				regiment = { type = infantry_brigade experience = 20 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 20 historical_model = 1 }
+			}
+			division= {
+				name = "第12师"
+				location = 5239
+				regiment = { type = infantry_brigade experience = 20 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 20 historical_model = 2 }
+			}
+
+		}
+		corps = {
+			name = "第15军"
+			location = 5141
+			regiment = { type = hq_brigade name = "第15军指挥部" historical_model = 0 }
+			division= {
+				name = "第64师"
+				location = 5141
+				regiment = { type = militia_brigade historical_model = 0 }
+				regiment = { type = militia_brigade historical_model = 0 }
+			}
+			division= {
+				name = "第65师"
+				location = 5141
+				regiment = { type = militia_brigade historical_model = 0 }
+				regiment = { type = militia_brigade historical_model = 0 }
+			}
+		}
+		corps = {
+       			name = "第34军"
+			location = 5051
+			regiment = { type = hq_brigade name = "第34军指挥部" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "新编5旅" historical_model = 2 }
+			regiment = { type = infantry_brigade name = "新编6旅" historical_model = 2 }
+			division= {
+				name = "新编2师"
+				location = 5051
+				regiment = { type = militia_brigade historical_model = 0 }
+				regiment = { type = infantry_brigade experience = 20 historical_model = 2 }
+			}
+			division= {
+				name = "第66师"
+				location = 5111
+				regiment = { type = militia_brigade historical_model = 0 }
+				regiment = { type = infantry_brigade experience = 20 historical_model = 1 }
+			}
+			division= {
+				name = "第71师"
+				location = 5051
+				regiment = { type = militia_brigade historical_model = 0 }
+				regiment = { type = infantry_brigade experience = 20 historical_model = 1 }
+			}
+		}
+	}	
+	# army = {				
+		# name = "第十八集团军"			
+		# location = 7417			
+		# leader = 76312 # Zhu De			
+		# regiment = { type = hq_brigade name = "第十八集团军总司令部" historical_model = 2 }			
+		# regiment = { type = special_guard_brigade name = "八路军总部特务团" experience = 30 historical_model = 1 }
+		# regiment = { type = special_guard_brigade name = "八路军总部炮团" experience = 30 historical_model = 1 }
+		# corps = {			
+			# name = "第115师"		
+			# location = 7398		
+			# regiment = { type = hq_brigade name = "第115师" historical_model = 2 }	
+			# regiment = { type = militia_brigade name = "独立团" historical_model = 2 }		
+			# division= {		
+				# name = "第343旅"	
+				# location = 7391	
+				# regiment = { type = bergsjaeger_brigade name = "第658团" historical_model = 1 }	
+				# regiment = { type = bergsjaeger_brigade name = "第686团" historical_model = 1 }	
+			}		
+			# division= {		
+				# name = "第344旅"	
+				# location = 7391	
+				# regiment = { type = militia_brigade name = "第687团" historical_model = 2 }	
+				# regiment = { type = militia_brigade name = "第519团" historical_model = 2 }	
+				# regiment = { type = militia_brigade name = "第688团" historical_model = 2 }	
+			}		
+		}			
+		# corps = {			
+			# name = "第120师"		
+			# location = 7418		
+			# regiment = { type = hq_brigade name = "第120师" historical_model = 2 }
+			# regiment = { type = militia_brigade name = "教导团" historical_model = 2 }			
+			# division= {		
+				# name = "第358旅"	
+				# location = 7418	
+				# regiment = { type = bergsjaeger_brigade name = "第715团" historical_model = 1 }	
+				# regiment = { type = bergsjaeger_brigade name = "第716团" historical_model = 1 }	
+			}		
+			# division= {		
+				# name = "第359旅"	
+				# location = 5385	
+				# regiment = { type = militia_brigade name = "第717团" historical_model = 2 }	
+				# regiment = { type = militia_brigade name = "第718团" historical_model = 2 }	
+			}		
+		}			
+		# corps = {			
+			# name = "第129师"		
+			# location = 7411		
+			# regiment = { type = hq_brigade name = "第129师" historical_model = 2 }	
+			# division= {		
+				# name = "第385旅"	
+				# location = 7405	
+				# regiment = { type = bergsjaeger_brigade name = "第769团" historical_model = 1 }	
+				# regiment = { type = bergsjaeger_brigade name = "第770团" historical_model = 1 }	
+			}		
+			# division= {		
+				# name = "第386旅"	
+				# location = 7411	
+				# regiment = { type = bergsjaeger_brigade name = "第771团" historical_model = 1 }	
+				# regiment = { type = bergsjaeger_brigade name = "第772团" historical_model = 1 }	
+                                
+				# regiment = { type = bergsjaeger_brigade name = "独立团" historical_model = 1 }	
+			}			
+		}			
+	}				
+	army = {
+		name = "第19集团军"
+		location = 7399
+		regiment = { type = hq_brigade name = "第19集团军指挥部" historical_model = 0 }	
+		corps = {
+			name = "第19军"
+			location = 7399
+			regiment = { type = hq_brigade name = "第19军指挥部" historical_model = 0 }
+			division= {
+				name = "第68师"
+				location = 7399
+				regiment = { type = militia_brigade historical_model = 0 }
+				regiment = { type = infantry_brigade experience = 20 historical_model = 2 }
+			}
+			division= {
+				name = "第70师"
+				location = 7399
+				regiment = { type = militia_brigade historical_model = 0 }
+				regiment = { type = infantry_brigade experience = 20 historical_model = 2 }
+
+			}
+		}
+		corps = {
+			name = "第61军"
+			location = 7399
+			regiment = { type = hq_brigade name = "第61军指挥部" historical_model = 0 }
+			division= {
+				name = "第69师"
+				location = 7399
+				regiment = { type = militia_brigade historical_model = 0 }
+				regiment = { type = infantry_brigade experience = 20 historical_model = 1 }
+			}
+			division= {
+				name = "第72师"
+				location = 7399
+				regiment = { type = infantry_brigade experience = 20 historical_model = 2 }
+				regiment = { type = infantry_brigade experience = 20 historical_model = 1 }
+
+			}
+		}
+	}
+	corps = {
+			name = "第14军团"
+			location = 5174
+			regiment = { type = hq_brigade name = "第14军团指挥部" historical_model = 0 }
+			division= {
+				name = "第42师"
+				location = 5174
+				regiment = { type = infantry_brigade experience = 20 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 20 historical_model = 0 }
+			}
+			division= {
+				name = "第69师"
+				location = 5174
+				regiment = { type = infantry_brigade experience = 20 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 20 historical_model = 0 }
+
+			}
+		}
+		corps = {
+			name = "第9军"
+			location = 5174
+			regiment = { type = hq_brigade name = "第9军指挥部" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "独立5旅" historical_model = 2 }
+			division= {
+				name = "第54师"
+				location = 5174
+				regiment = { type = infantry_brigade experience = 20 historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 20 historical_model = 1 }
+			}
+		}
+	corps = {
+			name = "第35军"
+			location = 5174
+			regiment = { type = hq_brigade name = "第35军指挥部" historical_model = 0 }
+			division= {
+				name = "第101师"
+				location = 5174
+				regiment = { type = militia_brigade historical_model = 1 }
+				regiment = { type = militia_brigade historical_model = 1 }
+			}
+			division= {
+				name = "第73师"
+				location = 5174
+				regiment = { type = militia_brigade historical_model = 1 }
+				regiment = { type = infantry_brigade experience = 20 historical_model = 2 }
+
+			}
+		}
+	corps = {
+			name = "第47军"
+			location = 5174
+			regiment = { type = hq_brigade name = "第47军指挥部" historical_model = 0 }
+			division= {
+				name = "第104师"
+				location = 5174
+				regiment = { type = militia_brigade historical_model = 1 }
+				regiment = { type = militia_brigade historical_model = 1 }
+			}
+			division= {
+				name = "第178师"
+				location = 5174
+				regiment = { type = militia_brigade historical_model = 2 }
+				regiment = { type = militia_brigade historical_model = 1 }
+
+			}
+		}
+	corps = {
+			name = "骑兵第6军"
+			location = 5174
+			regiment = { type = hq_brigade name = "骑兵第6军指挥部" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "新编第5旅" historical_model = 2 }
+			regiment = { type = infantry_brigade name = "绥保1旅" historical_model = 2 }
+			division= {
+				name = "骑兵第7师"
+				location = 5174
+				regiment = { type = cavalry_brigade experience = 15 historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 15 historical_model = 0 }
+			}
+			division= {
+				name = "新编骑兵第4师"
+				location = 5174
+				regiment = { type = cavalry_brigade experience = 15 historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 15 historical_model = 0 }
+
+			}
+		}
+	corps = {
+			name = "挺进军"
+			location = 5110
+			regiment = { type = hq_brigade name = "挺进军指挥部" historical_model = 0 }
+			regiment = { type = cavalry_brigade name = "暂编骑兵第1旅" historical_model = 2 }
+			division= {
+				name = "骑兵第6师"
+				location = 5110
+				regiment = { type = cavalry_brigade experience = 20 historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 20 historical_model = 0 }
+			}
+			division= {
+				name = "新编骑兵第3师"
+				location = 5110
+				regiment = { type = cavalry_brigade experience = 20 historical_model = 1 }
+				regiment = { type = cavalry_brigade experience = 20 historical_model = 0 }
+
+                   		}
+		}
+	corps = {
+			name = "游击军"
+			location = 7474
+			regiment = { type = hq_brigade name = "游击军指挥部" historical_model = 0 }
+			division= {
+				name = "游击1军"
+				location = 5174
+				regiment = { type = cavalry_brigade historical_model = 1 }
+				regiment = { type = cavalry_brigade historical_model = 0 }
+		}
+	}
+}

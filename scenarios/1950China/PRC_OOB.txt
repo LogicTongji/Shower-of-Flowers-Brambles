@@ -1,0 +1,307 @@
+theatre = {
+	name = "中国人民志愿军"
+	location = 4892
+	regiment = { type = hq_brigade name = "中国人民志愿军司令部" historical_model = 1 }
+	regiment = { type = chc_gundam name = "志愿军总政治部" experience = 90 historical_model = 0 }
+	regiment = { type = artillery_brigade name = "直属炮兵团" experience = 30 historical_model = 1 }
+      corps = {
+			name = "志愿军第38军"
+			location = 4892
+			regiment = { type = hq_brigade name = "第38军司令部" experience = 60 historical_model = 0 }				
+			division = {
+				name = "志愿军第112师"
+				location = 4892
+				regiment = { type = infantry_brigade name = "第334团" experience = 60 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第335团" experience = 60 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第336团" experience = 60 historical_model = 4 }
+			}
+			division = {
+				name = "志愿军第113师"
+				location = 4892
+				regiment = { type = infantry_brigade name = "第337团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第338团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第339团" experience = 50 historical_model = 4 }
+		       }
+		division = {
+				name = "志愿军第112师"
+				location = 4892
+				regiment = { type = infantry_brigade name = "第340团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第341团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第342团" experience = 50 historical_model = 4 }
+		}
+}
+	 corps = {
+			name = "志愿军第39军"
+			location = 4892
+			regiment = { type = hq_brigade name = "第39军司令部" experience = 40 historical_model = 0 }
+			division = {
+				name = "志愿军第115师"
+				location = 4892
+				regiment = { type = infantry_brigade name = "第343团" experience = 60 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第344团" experience = 60 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第345团" experience = 60 historical_model = 4 }
+			}
+			division = {
+				name = "志愿军第116师"
+				location = 4892
+				regiment = { type = infantry_brigade name = "第346团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第347团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第348团" experience = 50 historical_model = 4 }
+		       }
+		division = {
+				name = "志愿军第117师"
+				location = 4892
+				regiment = { type = infantry_brigade name = "第349团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第350团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第351团" experience = 50 historical_model = 4 }
+	     }
+}    
+ corps = {
+			name = "志愿军第40军"
+			location = 4892
+			regiment = { type = hq_brigade name = "第40军司令部" experience = 40 historical_model = 0 }
+			division = {
+				name = "志愿军第118师"
+				location = 4892
+				regiment = { type = infantry_brigade name = "第352团" experience = 60 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第353团" experience = 60 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第354团" experience = 60 historical_model = 4 }
+			}
+			division = {
+				name = "志愿军第119师"
+				location = 4892
+				regiment = { type = infantry_brigade name = "第355团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第356团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第357团" experience = 50 historical_model = 4 }
+		       }
+		division = {
+				name = "志愿军第120师"
+				location = 4892
+				regiment = { type = infantry_brigade name = "第358团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第359团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第360团" experience = 50 historical_model = 4 }
+	     }
+}   
+ corps = {
+			name = "志愿军第42军"
+			location = 4892
+			regiment = { type = hq_brigade name = "第42军司令部" experience = 40 historical_model = 0 }
+			division = {
+				name = "志愿军第124师"
+				location = 4892
+				regiment = { type = infantry_brigade name = "第370团" experience = 60 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第371团" experience = 60 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第372团" experience = 60 historical_model = 4 }
+			}
+			division = {
+				name = "志愿军第125师"
+				location = 4892
+				regiment = { type = infantry_brigade name = "第373团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第374团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第375团" experience = 50 historical_model = 4 }
+		       }
+		division = {
+				name = "志愿军第126师"
+				location = 4892
+				regiment = { type = infantry_brigade name = "第376团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第377团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第378团" experience = 50 historical_model = 4 }
+	     }
+}     
+corps = {
+			name = "志愿军第50军"
+			location = 4892
+			regiment = { type = hq_brigade name = "第39军司令部" experience = 40 historical_model = 0 }
+			division = {
+				name = "志愿军第148师"
+				location = 4892
+				regiment = { type = infantry_brigade name = "第442团" experience = 60 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第443团" experience = 60 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第444团" experience = 60 historical_model = 4 }
+			}
+			division = {
+				name = "志愿军第149师"
+				location = 4892
+				regiment = { type = infantry_brigade name = "第445团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第446团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第447团" experience = 50 historical_model = 4 }
+		       }
+		division = {
+				name = "志愿军第150师"
+				location = 4892
+				regiment = { type = infantry_brigade name = "第448团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第449团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第450团" experience = 50 historical_model = 4 }
+	     }
+}    
+corps = {
+			name = "志愿军第66军"
+			location = 4892
+			regiment = { type = hq_brigade name = "第39军司令部" experience = 40 historical_model = 0 }
+			division = {
+				name = "志愿军第196师"
+				location = 4892
+				regiment = { type = infantry_brigade name = "第586团" experience = 60 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第587团" experience = 60 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第588团" experience = 60 historical_model = 4 }
+			}
+			division = {
+				name = "志愿军第197师"
+				location = 4892
+				regiment = { type = infantry_brigade name = "第589团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第590团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第591团" experience = 50 historical_model = 4 }
+		       }
+		division = {
+				name = "志愿军第198师"
+				location = 4892
+				regiment = { type = infantry_brigade name = "第592团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第593团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第594团" experience = 50 historical_model = 4 }
+	     }
+}     
+corps = {
+			name = "炮兵司令部"
+			location = 4892
+			regiment = { type = hq_brigade name = "炮兵司令部" experience = 40 historical_model = 0 }
+			division = {
+				name = "炮兵第1师"
+				location = 4892
+				regiment = { type = artillery_brigade experience = 30 historical_model = 3 }
+				regiment = { type = artillery_brigade experience = 30 historical_model = 3 }
+			}
+			division = {
+				name = "炮兵第2师"
+				location = 4892
+				regiment = { type = artillery_brigade experience = 30 historical_model = 3 }
+			  regiment = { type = artillery_brigade experience = 30 historical_model = 3 }
+		       }
+		division = {
+				name = "炮兵第8师"
+				location = 4892
+				regiment = { type = artillery_brigade experience = 30 historical_model = 3 }
+			  regiment = { type = artillery_brigade experience = 30 historical_model = 3 }
+	     }
+}       
+corps = {
+			name = "工兵司令部"
+			location = 4892
+			regiment = { type = hq_brigade name = "工兵司令部" experience = 40 historical_model = 0 }
+			division = {
+				name = "工兵第4、5师"
+				location = 4892
+			  regiment = { type = engineer_brigade experience = 60 historical_model = 1 }	
+			}
+			division = {
+				name = "工兵第6、8师"
+				location = 4892
+				regiment = { type = engineer_brigade experience = 60 historical_model = 1 }	
+		       }
+}                                
+	       army = {
+		name = "志愿军第9兵团"
+		location = 4892
+		regiment = { type = hq_brigade name = "兵团司令部" experience = 60 historical_model = 0 }
+		regiment = { type = chc_gundam name = "兵团总政治部" experience = 90 historical_model = 0 }
+		regiment = { type = artillery_brigade name = "直属炮兵团" experience = 30 historical_model = 3 }
+		corps = {
+			name = "志愿军第20军"
+			location = 4892
+			regiment = { type = hq_brigade name = "第20军司令部" experience = 40 historical_model = 0 }
+			division = {
+				name = "志愿军第58师"
+				location = 4892
+				regiment = { type = infantry_brigade name = "第172团" experience = 60 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第173团" experience = 60 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第174团" experience = 60 historical_model = 4 }
+			}
+			division = {
+				name = "志愿军第59师"
+				location = 4892
+				regiment = { type = infantry_brigade name = "第175团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第176团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第177团" experience = 50 historical_model = 4 }
+		       }
+		division = {
+				name = "志愿军第60师"
+				location = 4892
+				regiment = { type = infantry_brigade name = "第178团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第179团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第180团" experience = 50 historical_model = 4 }
+	     }
+	  division = {
+				name = "志愿军第89师"
+				location = 4892
+				regiment = { type = infantry_brigade name = "第265团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第266团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第267团" experience = 50 historical_model = 4 }
+	     }
+}     
+corps = {
+			name = "志愿军第26军"
+			location = 4892
+			regiment = { type = hq_brigade name = "第26军司令部" experience = 40 historical_model = 0 }
+			division = {
+				name = "志愿军第76师"
+				location = 4892
+				regiment = { type = infantry_brigade name = "第226团" experience = 60 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第227团" experience = 60 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第228团" experience = 60 historical_model = 4 }
+			}
+			division = {
+				name = "志愿军第77师"
+				location = 4892
+				regiment = { type = infantry_brigade name = "第229团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第230团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第231团" experience = 50 historical_model = 4 }
+		       }
+		division = {
+				name = "志愿军第78师"
+				location = 4892
+				regiment = { type = infantry_brigade name = "第232团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第233团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第234团" experience = 50 historical_model = 4 }
+	     }
+	  division = {
+				name = "志愿军第88师"
+				location = 4892
+				regiment = { type = infantry_brigade name = "第262团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第263团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第264团" experience = 50 historical_model = 4 }
+	     }
+}     
+corps = {
+			name = "志愿军第27军"
+			location = 4892
+			regiment = { type = hq_brigade name = "第26军司令部" experience = 40 historical_model = 0 }
+			division = {
+				name = "志愿军第79师"
+				location = 4892
+				regiment = { type = infantry_brigade name = "第235团" experience = 60 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第236团" experience = 60 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第237团" experience = 60 historical_model = 4 }
+			}
+			division = {
+				name = "志愿军第80师"
+				location = 4892
+				regiment = { type = infantry_brigade name = "第238团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第239团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第240团" experience = 50 historical_model = 4 }
+		       }
+		division = {
+				name = "志愿军第81师"
+				location = 4892
+				regiment = { type = infantry_brigade name = "第241团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第242团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第243团" experience = 50 historical_model = 4 }
+	     }
+	  division = {
+				name = "志愿军第94师"
+				location = 4892
+				regiment = { type = infantry_brigade name = "第280团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第281团" experience = 50 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "第282团" experience = 50 historical_model = 4 }
+	                                    }
+                       }     
+           }
+}

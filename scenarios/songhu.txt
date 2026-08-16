@@ -1,0 +1,50 @@
+name = "SCENARIO_Sonnghu_NAME"
+desc = "SCENARIO_Songhu_DESC"
+icon = "GFX_select_bulge"
+startdate = 1937.8.13
+enddate = 1937.11.12
+
+camera_height = 320
+camera_center = { x = 4722 y = 1310 }
+camera_min_x = 4350
+camera_min_y = 1100
+camera_max_x = 4855
+camera_max_y = 1700
+
+victory_conditions = "scenarios/Songhu/faction_aims.txt"
+victory_conditions_to_win = 2
+number_of_victory_conditions = 2
+
+
+
+reinforcement = 30
+
+# will load any history files with scenarios/Songhu/<tag>.txt
+selectable_country = CHI
+selectable_country = JAP
+country = CYN
+country = CSC
+events = "scenarios/Songhu/events.txt"
+
+
+
+# visible provinces & regions
+provinces = {
+5573
+5519
+5541
+5518
+5540
+5494
+5598
+5572
+5571
+5599
+5621
+11229
+11930
+}
+
+regions = {
+SF_Shanghai
+}

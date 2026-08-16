@@ -9,6 +9,7 @@
 #include <memory>
 #include <string_view>
 #include <unordered_map>
+#include <unordered_set>
 #include <utility>
 #include <vector>
 
@@ -61,24 +62,6 @@ D3DCOLOR ToD3DColor(
     );
 }
 
-void OffsetRect(gui::GuiRect& rect, int x, int y)
-{
-    rect.x += x;
-    rect.y += y;
-}
-
-void OffsetWidgets(
-    std::vector<gui::GuiResolvedWidget>& widgets,
-    int x,
-    int y
-)
-{
-    for (gui::GuiResolvedWidget& widget : widgets)
-    {
-        OffsetRect(widget.rect, x, y);
-    }
-}
-
 bool PointInside(const gui::GuiRect& rect, int x, int y)
 {
     return x >= rect.x
@@ -98,6 +81,36 @@ bool RectanglesIntersect(
         && first.y + first.height > second.y;
 }
 
+void IncludeRect(
+    gui::GuiRect& bounds,
+    bool& hasBounds,
+    const gui::GuiRect& rect
+)
+{
+    if (rect.width <= 0 || rect.height <= 0)
+    {
+        return;
+    }
+    if (!hasBounds)
+    {
+        bounds = rect;
+        hasBounds = true;
+        return;
+    }
+    const int right = std::max(
+        bounds.x + bounds.width,
+        rect.x + rect.width
+    );
+    const int bottom = std::max(
+        bounds.y + bounds.height,
+        rect.y + rect.height
+    );
+    bounds.x = std::min(bounds.x, rect.x);
+    bounds.y = std::min(bounds.y, rect.y);
+    bounds.width = right - bounds.x;
+    bounds.height = bottom - bounds.y;
+}
+
 class GuiD3D9TextureCache
 {
 public:
@@ -113,6 +126,10 @@ public:
             return nullptr;
         }
         const std::string key(spriteName);
+        if (failedTextures_.find(key) != failedTextures_.end())
+        {
+            return nullptr;
+        }
         const auto existing = textures_.find(key);
         if (existing != textures_.end())
         {
@@ -131,6 +148,11 @@ public:
         std::string error;
         if (!LoadGuiD3D9Texture(device, path, texture, error))
         {
+            failedTextures_.insert(key);
+            WriteGuiDiagnostic(
+                "GUI texture load failed: sprite=" + key
+                + ", error=" + error
+            );
             return nullptr;
         }
         const auto inserted = textures_.emplace(
@@ -143,13 +165,18 @@ public:
     void Clear()
     {
         textures_.clear();
+        failedTextures_.clear();
     }
 
 private:
     std::unordered_map<std::string, GuiD3D9Texture> textures_;
+    std::unordered_set<std::string> failedTextures_;
 };
 
-void ConfigureOverlayState(IDirect3DDevice9* device)
+void ConfigureOverlayState(
+    IDirect3DDevice9* device,
+    bool premultipliedSource = false
+)
 {
     device->SetVertexShader(nullptr);
     device->SetPixelShader(nullptr);
@@ -159,8 +186,14 @@ void ConfigureOverlayState(IDirect3DDevice9* device)
     device->SetRenderState(D3DRS_CULLMODE, D3DCULL_NONE);
     device->SetRenderState(D3DRS_LIGHTING, FALSE);
     device->SetRenderState(D3DRS_ALPHABLENDENABLE, TRUE);
-    device->SetRenderState(D3DRS_SRCBLEND, D3DBLEND_SRCALPHA);
+    device->SetRenderState(
+        D3DRS_SRCBLEND,
+        premultipliedSource ? D3DBLEND_ONE : D3DBLEND_SRCALPHA
+    );
     device->SetRenderState(D3DRS_DESTBLEND, D3DBLEND_INVSRCALPHA);
+    device->SetRenderState(D3DRS_SEPARATEALPHABLENDENABLE, TRUE);
+    device->SetRenderState(D3DRS_SRCBLENDALPHA, D3DBLEND_ONE);
+    device->SetRenderState(D3DRS_DESTBLENDALPHA, D3DBLEND_INVSRCALPHA);
     device->SetRenderState(D3DRS_SCISSORTESTENABLE, FALSE);
     device->SetTextureStageState(
         0,
@@ -199,11 +232,15 @@ void ConfigureOverlayState(IDirect3DDevice9* device)
     device->SetSamplerState(0, D3DSAMP_ADDRESSV, D3DTADDRESS_CLAMP);
 }
 
-void DrawQuad(
+void DrawQuadRegion(
     IDirect3DDevice9* device,
     const gui::GuiRect& rect,
     IDirect3DTexture9* texture,
-    D3DCOLOR color = D3DCOLOR_ARGB(255, 255, 255, 255)
+    D3DCOLOR color,
+    float u0,
+    float v0,
+    float u1,
+    float v1
 )
 {
     if (!device || rect.width <= 0 || rect.height <= 0)
@@ -215,10 +252,10 @@ void DrawQuad(
     const float right = static_cast<float>(rect.x + rect.width) - 0.5f;
     const float bottom = static_cast<float>(rect.y + rect.height) - 0.5f;
     const OverlayVertex vertices[4] = {
-        {left, top, 0.0f, 1.0f, color, 0.0f, 0.0f},
-        {right, top, 0.0f, 1.0f, color, 1.0f, 0.0f},
-        {left, bottom, 0.0f, 1.0f, color, 0.0f, 1.0f},
-        {right, bottom, 0.0f, 1.0f, color, 1.0f, 1.0f}
+        {left, top, 0.0f, 1.0f, color, u0, v0},
+        {right, top, 0.0f, 1.0f, color, u1, v0},
+        {left, bottom, 0.0f, 1.0f, color, u0, v1},
+        {right, bottom, 0.0f, 1.0f, color, u1, v1}
     };
     device->SetTexture(0, texture);
     if (!texture)
@@ -239,6 +276,25 @@ void DrawQuad(
     }
 }
 
+void DrawQuad(
+    IDirect3DDevice9* device,
+    const gui::GuiRect& rect,
+    IDirect3DTexture9* texture,
+    D3DCOLOR color = D3DCOLOR_ARGB(255, 255, 255, 255)
+)
+{
+    DrawQuadRegion(
+        device,
+        rect,
+        texture,
+        color,
+        0.0f,
+        0.0f,
+        1.0f,
+        1.0f
+    );
+}
+
 void DrawTextureQuad(
     IDirect3DDevice9* device,
     const gui::GuiRect& rect,
@@ -250,6 +306,35 @@ void DrawTextureQuad(
     {
         DrawQuad(device, rect, texture, color);
     }
+}
+
+void DrawTextureRegion(
+    IDirect3DDevice9* device,
+    const gui::GuiRect& destination,
+    IDirect3DTexture9* texture,
+    const gui::GuiRect& source,
+    int textureWidth,
+    int textureHeight
+)
+{
+    if (!texture
+        || source.width <= 0
+        || source.height <= 0
+        || textureWidth <= 0
+        || textureHeight <= 0)
+    {
+        return;
+    }
+    DrawQuadRegion(
+        device,
+        destination,
+        texture,
+        D3DCOLOR_ARGB(255, 255, 255, 255),
+        static_cast<float>(source.x) / textureWidth,
+        static_cast<float>(source.y) / textureHeight,
+        static_cast<float>(source.x + source.width) / textureWidth,
+        static_cast<float>(source.y + source.height) / textureHeight
+    );
 }
 
 gui::GuiRect CalculateScrollbarThumb(
@@ -308,23 +393,23 @@ struct GuiD3D9Host::Impl
         std::unique_ptr<GuiWindowSessionController> controller;
         GuiIndexedMapD3D9Runtime indexedMaps;
         GuiMarkerLayerD3D9Runtime markerLayers;
-        int offsetX = 0;
-        int offsetY = 0;
+        gui::GuiRect sourceRect;
+        gui::GuiRect presentationRect;
+        int windowOffsetX = 0;
+        int windowOffsetY = 0;
         bool draggingWindow = false;
         int dragMouseX = 0;
         int dragMouseY = 0;
         int dragOffsetX = 0;
         int dragOffsetY = 0;
+        bool expanded = false;
         bool visibilityObserved = false;
         bool lastVisible = false;
         bool firstDrawLogged = false;
 
         std::vector<gui::GuiResolvedWidget> InteractiveWidgets() const
         {
-            std::vector<gui::GuiResolvedWidget> widgets =
-                controller->ResolveInteractiveWidgets();
-            OffsetWidgets(widgets, offsetX, offsetY);
-            return widgets;
+            return controller->ResolveInteractiveWidgets();
         }
     };
 
@@ -336,8 +421,208 @@ struct GuiD3D9Host::Impl
     std::vector<std::unique_ptr<SessionView>> sessions;
     IDirect3DDevice9* device = nullptr;
     HWND targetWindow = nullptr;
+    IDirect3DTexture9* canvasTexture = nullptr;
+    IDirect3DSurface9* canvasSurface = nullptr;
+    int canvasWidth = 0;
+    int canvasHeight = 0;
     ULONG_PTR gdiplusToken = 0;
     bool initialized = false;
+
+    void ReleaseCanvas()
+    {
+        if (canvasSurface)
+        {
+            canvasSurface->Release();
+            canvasSurface = nullptr;
+        }
+        if (canvasTexture)
+        {
+            canvasTexture->Release();
+            canvasTexture = nullptr;
+        }
+    }
+
+    bool CreateCanvas(std::string& error)
+    {
+        ReleaseCanvas();
+        if (!device || canvasWidth <= 0 || canvasHeight <= 0)
+        {
+            error = "D3D9 GUI canvas dimensions are invalid";
+            return false;
+        }
+        const HRESULT textureResult = device->CreateTexture(
+            static_cast<UINT>(canvasWidth),
+            static_cast<UINT>(canvasHeight),
+            1,
+            D3DUSAGE_RENDERTARGET,
+            D3DFMT_A8R8G8B8,
+            D3DPOOL_DEFAULT,
+            &canvasTexture,
+            nullptr
+        );
+        if (FAILED(textureResult) || !canvasTexture)
+        {
+            error = "Failed to create D3D9 GUI render canvas";
+            ReleaseCanvas();
+            return false;
+        }
+        if (FAILED(canvasTexture->GetSurfaceLevel(0, &canvasSurface))
+            || !canvasSurface)
+        {
+            error = "Failed to resolve D3D9 GUI canvas surface";
+            ReleaseCanvas();
+            return false;
+        }
+        error.clear();
+        return true;
+    }
+
+    double CanvasScale(const D3DVIEWPORT9& viewport) const
+    {
+        if (canvasWidth <= 0
+            || canvasHeight <= 0
+            || viewport.Width == 0
+            || viewport.Height == 0)
+        {
+            return 0.0;
+        }
+        const double maximumWidth = viewport.Width * 0.92;
+        const double maximumHeight = viewport.Height * 0.90;
+        return std::min({
+            1.0,
+            maximumWidth / canvasWidth,
+            maximumHeight / canvasHeight
+        });
+    }
+
+    gui::GuiRect CalculateSourceRect(SessionView& view)
+    {
+        const std::vector<gui::GuiResolvedWidget> widgets =
+            view.controller->Runtime().ResolveLayout(
+                view.controller->LayoutContext()
+            );
+        const std::vector<GuiRenderCommand> queue =
+            BuildGuiRenderQueue(
+                widgets,
+                view.controller->ListTemplateNames()
+            );
+        gui::GuiRect bounds;
+        bool hasBounds = false;
+        view.expanded = false;
+        for (const gui::GuiResolvedWidget& widget : widgets)
+        {
+            if (widget.visible
+                && widget.definition
+                && widget.definition->type == gui::WidgetType::Window
+                && widget.definition->moveable)
+            {
+                view.expanded = true;
+                break;
+            }
+        }
+        for (const GuiRenderCommand& command : queue)
+        {
+            if (!command.widget
+                || command.type == GuiRenderCommandType::Custom)
+            {
+                continue;
+            }
+            IncludeRect(bounds, hasBounds, command.widget->rect);
+        }
+        if (!hasBounds)
+        {
+            return {};
+        }
+        const int left = std::clamp(bounds.x, 0, canvasWidth);
+        const int top = std::clamp(bounds.y, 0, canvasHeight);
+        const int right = std::clamp(
+            bounds.x + bounds.width,
+            0,
+            canvasWidth
+        );
+        const int bottom = std::clamp(
+            bounds.y + bounds.height,
+            0,
+            canvasHeight
+        );
+        return {
+            left,
+            top,
+            std::max(0, right - left),
+            std::max(0, bottom - top)
+        };
+    }
+
+    void UpdatePresentationRect(
+        SessionView& view,
+        const D3DVIEWPORT9& viewport
+    )
+    {
+        view.sourceRect = CalculateSourceRect(view);
+        const double scale = CanvasScale(viewport);
+        if (view.sourceRect.width <= 0
+            || view.sourceRect.height <= 0
+            || scale <= 0.0)
+        {
+            view.presentationRect = {};
+            return;
+        }
+        const int rootWidth = static_cast<int>(std::lround(
+            canvasWidth * scale
+        ));
+        const int rootHeight = static_cast<int>(std::lround(
+            canvasHeight * scale
+        ));
+        const int rootX = static_cast<int>(viewport.X)
+            + (static_cast<int>(viewport.Width) - rootWidth) / 2;
+        const int rootY = static_cast<int>(viewport.Y)
+            + (static_cast<int>(viewport.Height) - rootHeight) / 2;
+        view.presentationRect = {
+            rootX + static_cast<int>(std::lround(
+                view.sourceRect.x * scale
+            )) + (view.expanded ? view.windowOffsetX : 0),
+            rootY + static_cast<int>(std::lround(
+                view.sourceRect.y * scale
+            )) + (view.expanded ? view.windowOffsetY : 0),
+            std::max(1, static_cast<int>(std::lround(
+                view.sourceRect.width * scale
+            ))),
+            std::max(1, static_cast<int>(std::lround(
+                view.sourceRect.height * scale
+            )))
+        };
+    }
+
+    bool MapWindowPoint(
+        const SessionView& view,
+        int windowX,
+        int windowY,
+        int& canvasX,
+        int& canvasY
+    ) const
+    {
+        if (view.presentationRect.width <= 0
+            || view.presentationRect.height <= 0
+            || view.sourceRect.width <= 0
+            || view.sourceRect.height <= 0
+            || !PointInside(view.presentationRect, windowX, windowY))
+        {
+            return false;
+        }
+        canvasX = view.sourceRect.x
+            + static_cast<int>(std::floor(
+                static_cast<double>(windowX - view.presentationRect.x)
+                    * view.sourceRect.width
+                    / view.presentationRect.width
+            ));
+        canvasY = view.sourceRect.y
+            + static_cast<int>(std::floor(
+                static_cast<double>(windowY - view.presentationRect.y)
+                    * view.sourceRect.height
+                    / view.presentationRect.height
+            ));
+        return true;
+    }
 
     bool Initialize(
         const std::filesystem::path& root,
@@ -397,8 +682,8 @@ struct GuiD3D9Host::Impl
         for (const GuiPluginLaunch& launch : application.Launches())
         {
             auto view = std::make_unique<SessionView>();
-            view->offsetX = cascade * 24;
-            view->offsetY = cascade * 24;
+            view->windowOffsetX = cascade * 24;
+            view->windowOffsetY = cascade * 24;
             view->controller =
                 std::make_unique<GuiWindowSessionController>(
                     application.Root(),
@@ -472,6 +757,14 @@ struct GuiD3D9Host::Impl
                 Shutdown();
                 return false;
             }
+            canvasWidth = std::max(
+                canvasWidth,
+                definition->rect.x + definition->rect.width
+            );
+            canvasHeight = std::max(
+                canvasHeight,
+                definition->rect.y + definition->rect.height
+            );
             view->markerLayers.SetData(
                 view->controller->DataRegistry()
             );
@@ -480,6 +773,12 @@ struct GuiD3D9Host::Impl
             );
             sessions.push_back(std::move(view));
             ++cascade;
+        }
+
+        if (!CreateCanvas(error))
+        {
+            Shutdown();
+            return false;
         }
 
         RebuildActionBus();
@@ -511,6 +810,9 @@ struct GuiD3D9Host::Impl
         textRenderer.Shutdown();
         textures.Clear();
         application.Shutdown();
+        ReleaseCanvas();
+        canvasWidth = 0;
+        canvasHeight = 0;
         device = nullptr;
         targetWindow = nullptr;
         initialized = false;
@@ -553,15 +855,92 @@ struct GuiD3D9Host::Impl
         DrawQuad(device, rect, texture->texture, color);
     }
 
+    std::string ResolveListItemSprite(
+        const gui::WidgetDefinition& definition,
+        const GuiListItem& item,
+        const gui::GuiLayoutContext& context
+    ) const
+    {
+        std::string sprite = definition.spriteSource;
+        constexpr std::string_view itemPrefix = "item.";
+        if (sprite.rfind(itemPrefix, 0) == 0)
+        {
+            const GuiDataValue* value = item.Find(
+                sprite.substr(itemPrefix.size())
+            );
+            sprite = value ? GuiDataValueToText(*value) : std::string{};
+        }
+        else if (!sprite.empty() && context.textResolver)
+        {
+            const std::string resolved = context.textResolver(sprite);
+            if (!resolved.empty())
+            {
+                sprite = resolved;
+            }
+        }
+        if (sprite.empty())
+        {
+            sprite = definition.spriteName;
+        }
+        return definition.spriteValuePrefix.empty()
+            ? sprite
+            : definition.spriteValuePrefix + sprite;
+    }
+
+    void DrawListTemplateImages(
+        const gui::WidgetDefinition& parent,
+        const gui::GuiRect& parentRect,
+        const GuiListItem& item,
+        const gui::GuiRect& viewport,
+        const gui::GuiLayoutContext& context,
+        D3DCOLOR color
+    )
+    {
+        for (const gui::WidgetDefinition& child : parent.children)
+        {
+            const bool visible = child.visible
+                && (child.visibleWhen.empty()
+                    || !context.conditionEvaluator
+                    || context.conditionEvaluator(child.visibleWhen));
+            if (!visible)
+            {
+                continue;
+            }
+            const gui::GuiRect childRect{
+                parentRect.x + child.rect.x,
+                parentRect.y + child.rect.y,
+                child.rect.width,
+                child.rect.height
+            };
+            if (child.type == gui::WidgetType::Image
+                && RectanglesIntersect(childRect, viewport))
+            {
+                DrawSprite(
+                    ResolveListItemSprite(child, item, context),
+                    childRect,
+                    color
+                );
+            }
+            DrawListTemplateImages(
+                child,
+                childRect,
+                item,
+                viewport,
+                context,
+                color
+            );
+        }
+    }
+
     void DrawList(SessionView& view, std::string_view listName)
     {
         GuiListRuntimeLayout layout =
             view.controller->BuildListRuntimeLayout(listName);
-        OffsetRect(layout.viewport, view.offsetX, view.offsetY);
-        OffsetRect(layout.scrollbar, view.offsetX, view.offsetY);
+        const GuiListModel* model = view.controller->FindListModel(
+            listName
+        );
         for (GuiListItemRuntimeLayout& item : layout.items)
         {
-            OffsetRect(item.rect, view.offsetX, view.offsetY);
             item.rect.y -= layout.scrollOffset;
             if (!item.visible
                 || !RectanglesIntersect(item.rect, layout.viewport))
@@ -577,6 +956,21 @@ struct GuiD3D9Host::Impl
                     ? D3DCOLOR_ARGB(255, 255, 255, 255)
                     : D3DCOLOR_ARGB(150, 150, 150, 150)
             );
+            if (model
+                && item.definition
+                && item.itemIndex < model->items.size())
+            {
+                DrawListTemplateImages(
+                    *item.definition,
+                    item.rect,
+                    model->items[item.itemIndex],
+                    layout.viewport,
+                    view.controller->LayoutContext(),
+                    item.enabled
+                        ? D3DCOLOR_ARGB(255, 255, 255, 255)
+                        : D3DCOLOR_ARGB(150, 150, 150, 150)
+                );
+            }
         }
         if (layout.maximumScroll > 0)
         {
@@ -597,7 +991,6 @@ struct GuiD3D9Host::Impl
             ++index)
         {
             gui::GuiTextCommand& command = textCommands[index];
-            OffsetRect(command.rect, view.offsetX, view.offsetY);
             command.rect.y -= layout.scrollOffset;
             if (!RectanglesIntersect(command.rect, layout.viewport))
             {
@@ -621,7 +1014,6 @@ struct GuiD3D9Host::Impl
             view.controller->Runtime().ResolveLayout(
                 view.controller->LayoutContext()
             );
-        OffsetWidgets(widgets, view.offsetX, view.offsetY);
         const std::vector<GuiRenderCommand> queue =
             BuildGuiRenderQueue(
                 widgets,
@@ -648,7 +1040,6 @@ struct GuiD3D9Host::Impl
                 view.controller->LayoutContext()
             ))
         {
-            OffsetRect(command.rect, view.offsetX, view.offsetY);
             textCommands[command.definition] = std::move(command);
         }
 
@@ -845,18 +1236,103 @@ struct GuiD3D9Host::Impl
         {
             return;
         }
-        stateBlock->Capture();
-        ConfigureOverlayState(device);
+        if (FAILED(stateBlock->Capture())
+            || !canvasTexture
+            || !canvasSurface)
+        {
+            stateBlock->Release();
+            return;
+        }
+
+        IDirect3DSurface9* previousRenderTarget = nullptr;
+        IDirect3DSurface9* previousDepthStencil = nullptr;
+        D3DVIEWPORT9 previousViewport{};
+        const bool hasRenderTarget = SUCCEEDED(
+            device->GetRenderTarget(0, &previousRenderTarget)
+        ) && previousRenderTarget;
+        device->GetDepthStencilSurface(&previousDepthStencil);
+        const bool hasViewport = SUCCEEDED(
+            device->GetViewport(&previousViewport)
+        );
+        if (!hasRenderTarget || !hasViewport)
+        {
+            if (previousDepthStencil)
+            {
+                previousDepthStencil->Release();
+            }
+            if (previousRenderTarget)
+            {
+                previousRenderTarget->Release();
+            }
+            stateBlock->Release();
+            return;
+        }
+
+        const D3DVIEWPORT9 canvasViewport{
+            0,
+            0,
+            static_cast<DWORD>(canvasWidth),
+            static_cast<DWORD>(canvasHeight),
+            0.0f,
+            1.0f
+        };
         textRenderer.BeginFrame();
         for (const auto& session : sessions)
         {
-            if (session->controller->IsOpen()
-                && session->controller->IsVisible())
+            if (!session->controller->IsOpen()
+                || !session->controller->IsVisible())
             {
-                DrawSession(*session);
+                session->sourceRect = {};
+                session->presentationRect = {};
+                continue;
             }
+            UpdatePresentationRect(*session, previousViewport);
+            if (session->presentationRect.width <= 0
+                || session->presentationRect.height <= 0)
+            {
+                continue;
+            }
+
+            device->SetDepthStencilSurface(nullptr);
+            if (FAILED(device->SetRenderTarget(0, canvasSurface)))
+            {
+                device->SetRenderTarget(0, previousRenderTarget);
+                device->SetDepthStencilSurface(previousDepthStencil);
+                device->SetViewport(&previousViewport);
+                continue;
+            }
+            device->SetViewport(&canvasViewport);
+            device->Clear(
+                0,
+                nullptr,
+                D3DCLEAR_TARGET,
+                D3DCOLOR_ARGB(0, 0, 0, 0),
+                1.0f,
+                0
+            );
+            ConfigureOverlayState(device);
+            DrawSession(*session);
+
+            device->SetRenderTarget(0, previousRenderTarget);
+            device->SetDepthStencilSurface(previousDepthStencil);
+            device->SetViewport(&previousViewport);
+            ConfigureOverlayState(device, true);
+            DrawTextureRegion(
+                device,
+                session->presentationRect,
+                canvasTexture,
+                session->sourceRect,
+                canvasWidth,
+                canvasHeight
+            );
         }
         textRenderer.EndFrame();
+
+        if (previousDepthStencil)
+        {
+            previousDepthStencil->Release();
+        }
+        previousRenderTarget->Release();
         stateBlock->Apply();
         stateBlock->Release();
     }
@@ -880,6 +1356,8 @@ struct GuiD3D9Host::Impl
             mouseX = point.x;
             mouseY = point.y;
         }
+        const int windowMouseX = mouseX;
+        const int windowMouseY = mouseY;
 
         for (auto iterator = sessions.rbegin();
             iterator != sessions.rend();
@@ -893,32 +1371,67 @@ struct GuiD3D9Host::Impl
             }
             if (message == WM_MOUSEMOVE && view.draggingWindow)
             {
-                view.offsetX = view.dragOffsetX
-                    + mouseX - view.dragMouseX;
-                view.offsetY = view.dragOffsetY
-                    + mouseY - view.dragMouseY;
+                view.windowOffsetX = view.dragOffsetX
+                    + windowMouseX - view.dragMouseX;
+                view.windowOffsetY = view.dragOffsetY
+                    + windowMouseY - view.dragMouseY;
                 return true;
+            }
+            if (message == WM_LBUTTONUP && view.draggingWindow)
+            {
+                view.draggingWindow = false;
+                return true;
+            }
+
+            int canvasMouseX = 0;
+            int canvasMouseY = 0;
+            if (!MapWindowPoint(
+                    view,
+                    windowMouseX,
+                    windowMouseY,
+                    canvasMouseX,
+                    canvasMouseY
+                ))
+            {
+                if (message == WM_MOUSEMOVE)
+                {
+                    std::vector<gui::GuiResolvedWidget> widgets =
+                        view.InteractiveWidgets();
+                    view.markerLayers.HandleMove(
+                        widgets,
+                        view.indexedMaps,
+                        -1,
+                        -1
+                    );
+                    view.indexedMaps.HandleMove(widgets, -1, -1);
+                    view.controller->DispatchMove(widgets, -1, -1);
+                }
+                continue;
             }
 
             std::vector<gui::GuiResolvedWidget> widgets =
                 view.InteractiveWidgets();
             const gui::GuiResolvedWidget* target =
-                gui::HitTestGuiWidgets(widgets, mouseX, mouseY);
+                gui::HitTestGuiWidgets(
+                    widgets,
+                    canvasMouseX,
+                    canvasMouseY
+                );
             if (message == WM_MOUSEMOVE)
             {
                 GuiMarkerLayerD3D9InputResult markerResult =
                     view.markerLayers.HandleMove(
                         widgets,
                         view.indexedMaps,
-                        mouseX,
-                        mouseY
+                        canvasMouseX,
+                        canvasMouseY
                     );
                 if (!markerResult.events.empty())
                 {
                     view.controller->DispatchEvents(
                         markerResult.events,
-                        mouseX,
-                        mouseY
+                        canvasMouseX,
+                        canvasMouseY
                     );
                 }
                 if (markerResult.consumed)
@@ -927,15 +1440,23 @@ struct GuiD3D9Host::Impl
                     view.controller->DispatchMove(widgets, -1, -1);
                     return true;
                 }
-                view.indexedMaps.HandleMove(widgets, mouseX, mouseY);
-                view.controller->DispatchMove(widgets, mouseX, mouseY);
+                view.indexedMaps.HandleMove(
+                    widgets,
+                    canvasMouseX,
+                    canvasMouseY
+                );
+                view.controller->DispatchMove(
+                    widgets,
+                    canvasMouseX,
+                    canvasMouseY
+                );
                 continue;
             }
             if (message == WM_MOUSEWHEEL)
             {
                 if (view.controller->ScrollListAt(
-                        mouseX - view.offsetX,
-                        mouseY - view.offsetY,
+                        canvasMouseX,
+                        canvasMouseY,
                         -GET_WHEEL_DELTA_WPARAM(wParam) / WHEEL_DELTA
                     ))
                 {
@@ -945,19 +1466,33 @@ struct GuiD3D9Host::Impl
             }
             if (message == WM_LBUTTONDOWN)
             {
+                WriteGuiDiagnostic(
+                    "GUI pointer down: plugin="
+                    + std::string(view.controller->PluginId())
+                    + ", window=("
+                    + std::to_string(windowMouseX) + ","
+                    + std::to_string(windowMouseY) + ")"
+                    + ", canvas=("
+                    + std::to_string(canvasMouseX) + ","
+                    + std::to_string(canvasMouseY) + ")"
+                    + ", target="
+                    + (target && target->definition
+                        ? target->definition->name
+                        : std::string("none"))
+                );
                 GuiMarkerLayerD3D9InputResult markerResult =
                     view.markerLayers.HandlePress(
                         widgets,
                         view.indexedMaps,
-                        mouseX,
-                        mouseY
+                        canvasMouseX,
+                        canvasMouseY
                     );
                 if (!markerResult.events.empty())
                 {
                     view.controller->DispatchEvents(
                         markerResult.events,
-                        mouseX,
-                        mouseY
+                        canvasMouseX,
+                        canvasMouseY
                     );
                 }
                 if (markerResult.consumed)
@@ -965,19 +1500,27 @@ struct GuiD3D9Host::Impl
                     return true;
                 }
                 if (view.controller->IsWindowDragRegion(
-                        mouseX - view.offsetX,
-                        mouseY - view.offsetY
+                        canvasMouseX,
+                        canvasMouseY
                     ))
                 {
                     view.draggingWindow = true;
-                    view.dragMouseX = mouseX;
-                    view.dragMouseY = mouseY;
-                    view.dragOffsetX = view.offsetX;
-                    view.dragOffsetY = view.offsetY;
+                    view.dragMouseX = windowMouseX;
+                    view.dragMouseY = windowMouseY;
+                    view.dragOffsetX = view.windowOffsetX;
+                    view.dragOffsetY = view.windowOffsetY;
                     return true;
                 }
-                view.indexedMaps.HandlePress(widgets, mouseX, mouseY);
-                view.controller->DispatchPress(widgets, mouseX, mouseY);
+                view.indexedMaps.HandlePress(
+                    widgets,
+                    canvasMouseX,
+                    canvasMouseY
+                );
+                view.controller->DispatchPress(
+                    widgets,
+                    canvasMouseX,
+                    canvasMouseY
+                );
                 if (IsInteractiveTarget(target))
                 {
                     return true;
@@ -985,37 +1528,36 @@ struct GuiD3D9Host::Impl
             }
             if (message == WM_LBUTTONUP)
             {
-                if (view.draggingWindow)
-                {
-                    view.draggingWindow = false;
-                    return true;
-                }
                 GuiMarkerLayerD3D9InputResult markerResult =
                     view.markerLayers.HandleRelease(
                         widgets,
                         view.indexedMaps,
-                        mouseX,
-                        mouseY
+                        canvasMouseX,
+                        canvasMouseY
                     );
                 if (!markerResult.events.empty())
                 {
                     view.controller->DispatchEvents(
                         markerResult.events,
-                        mouseX,
-                        mouseY
+                        canvasMouseX,
+                        canvasMouseY
                     );
                 }
                 if (markerResult.consumed)
                 {
                     return true;
                 }
-                view.indexedMaps.HandleRelease(widgets, mouseX, mouseY);
+                view.indexedMaps.HandleRelease(
+                    widgets,
+                    canvasMouseX,
+                    canvasMouseY
+                );
                 const bool interactive = IsInteractiveTarget(target)
                     || !view.controller->InputState().pressedKey.empty();
                 view.controller->DispatchRelease(
                     widgets,
-                    mouseX,
-                    mouseY
+                    canvasMouseX,
+                    canvasMouseY
                 );
                 if (interactive)
                 {
@@ -1058,6 +1600,7 @@ void GuiD3D9Host::TickAndRender(IDirect3DDevice9* device)
 
 void GuiD3D9Host::BeforeDeviceReset()
 {
+    impl_->ReleaseCanvas();
 }
 
 bool GuiD3D9Host::AfterDeviceReset(
@@ -1080,8 +1623,7 @@ bool GuiD3D9Host::AfterDeviceReset(
         error = "Reset D3D9 device does not own the GUI host";
         return false;
     }
-    error.clear();
-    return true;
+    return impl_->CreateCanvas(error);
 }
 
 bool GuiD3D9Host::HandleWindowMessage(

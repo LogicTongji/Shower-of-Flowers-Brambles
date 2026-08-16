@@ -1,0 +1,93 @@
+name = "SCENARIO_BATTLE_OF_LEYTE_GULF_NAME"
+desc = "SCENARIO_BATTLE_OF_LEYTE_GULF__DESC"
+icon = "GFX_select_downfall"
+startdate = 1944.10.17
+enddate = 1944.10.30
+
+camera_height = 500
+camera_center = { x = 4722 y = 1089 }                             
+camera_min_x = 4780
+camera_min_y = 983
+camera_max_x = 4711
+camera_max_y = 991
+
+victory_conditions = "scenarios/Battle_of_Leyte_Gulf/faction_aims.txt"
+victory_conditions_to_win = 1
+number_of_victory_conditions = 1
+
+
+
+reinforcement = 30
+
+# will load any history files with scenarios/Battle_of_Leyte_Gulf/<tag>.txt
+selectable_country = USA
+selectable_country = JAP
+events = "scenarios/Battle_of_Leyte_Gulf/events.txt"
+
+
+
+# visible provinces & regions
+provinces = {
+5809
+6261
+12013
+11230
+12011
+11235
+11928
+11929
+11935
+11936
+11182
+11941
+11939
+11937
+11938
+11942
+11993
+11937
+11232
+11738
+11940
+11943
+11945
+11946
+11234
+11179
+11180
+11736
+6355
+11927
+11924
+5543
+6142
+6326
+11740
+11741
+11750
+11748
+6291
+6319
+6119
+11181
+11182
+12015
+11948
+11233
+11739
+11945
+11944
+11236
+11177
+11746
+11752
+11163
+11609
+11751
+11749
+11755
+11178
+11756
+11176
+11747
+}

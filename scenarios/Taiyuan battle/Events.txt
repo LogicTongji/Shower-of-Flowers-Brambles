@@ -1,0 +1,77 @@
+#山西新军决死队
+country_event = {
+	id = 1
+  fire_only_once = yes
+	title = "shanxi_army"
+	subtitle = "shanxi_army_subtitle"
+	desc = "shanxi_army_desc"
+	picture = "shanxi_army"
+	trigger = {
+		 tag = CHC
+		 date = 1937.8.10
+                war_with = JAP
+                exists = CXS 
+	}
+	option = {
+		name = "shanxi_army_option"
+		load_oob = "CHC_9.txt"
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+
+	id = 2
+	
+	fire_only_once = yes
+	trigger = {
+		 tag = CHC
+                war_with = JAP
+	}
+	
+	title = "TYintroduction_chc_title"
+	desc = "TYintroduction_chc"
+	picture = "CHC_Flag"
+	option = {
+		name = "BTintroduction_chc_option"
+		manpower = 1500
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+
+	id = 3
+	
+	fire_only_once = yes
+	trigger = {
+		 tag = JAP
+                war_with = CHC
+	}
+	
+	title = "TYintroduction_chc_title"
+	desc = "TYntroduction_jap"
+	picture = "JAP_Flag"
+	option = {
+		name = "BTintroduction_chc_option"
+		manpower = 1500
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+
+	id = 4
+	
+	fire_only_once = yes
+	trigger = {
+		 tag = CSX
+                war_with = JAP
+	}
+	
+	title = "TYintroduction_chc_title"
+	desc = "TYintroduction_chc"
+	picture = "CSX_Flag"
+	option = {
+		name = "BTintroduction_chc_option"
+		manpower = 1500
+		ai_chance = { factor = 100 }
+	}
+}

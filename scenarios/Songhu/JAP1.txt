@@ -1,0 +1,10 @@
+	division = {
+	name = "海军第1特别陆战队"
+	location = 14182
+	regiment = { type = marine_brigade experience = 5 historical_model = 0 }
+	regiment = { type = marine_brigade experience = 5 historical_model = 0 }
+	regiment = { type = marine_brigade experience = 5 historical_model = 0 }
+				regiment = { type = artillery_brigade name = "野炮兵第5联队" experience = 55 historical_model = 2 }
+					regiment = { type = engineer_brigade name = "工兵第5联队" experience = 55 historical_model = 2 }	
+				regiment = { type = cavalry_brigade name = "骑兵第5联队" experience = 55 historical_model = 2 }
+                           }	
