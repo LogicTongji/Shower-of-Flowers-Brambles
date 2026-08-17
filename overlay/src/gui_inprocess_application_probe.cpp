@@ -21,10 +21,18 @@ int main(int argc, char** argv)
         std::cerr << error << '\n';
         return 1;
     }
-    if (application.Launches().size() != 1
-        || application.Launches().front().id != "china_anti_jap")
+    if (application.Launches().size() != 2
+        || application.Launches()[0].id != "china_anti_jap"
+        || !application.Launches()[0].openInitially
+        || application.Launches()[1].id != "parliament"
+        || application.Launches()[1].openInitially)
     {
-        std::cerr << "Live startup plugin selection failed\n";
+        std::cerr << "GUI plugin lifecycle selection failed\n";
+        for (const GuiConfigurationIssue& issue : application.Issues())
+        {
+            std::cerr << issue.pluginId << " [" << issue.stage
+                      << "]: " << issue.message << '\n';
+        }
         return 1;
     }
 
@@ -59,6 +67,30 @@ int main(int argc, char** argv)
         return 1;
     }
 
+    GuiWindowSessionController dormantSession(
+        application.Root(),
+        application.Launches()[1],
+        application.Interpreter(),
+        application.Behaviors()
+    );
+    if (!dormantSession.Bind(error)
+        || !dormantSession.Initialize(nullptr, error)
+        || dormantSession.IsOpen()
+        || dormantSession.IsVisible())
+    {
+        std::cerr << "Dormant session initialization failed: "
+                  << error << '\n';
+        return 1;
+    }
+    dormantSession.OpenWindow();
+    dormantSession.SetVisibilityMode(GuiWindowVisibilityMode::Shown);
+    if (!dormantSession.IsOpen() || !dormantSession.IsVisible())
+    {
+        std::cerr << "Dormant session open failed\n";
+        return 1;
+    }
+
+    dormantSession.Shutdown();
     session.Shutdown();
     application.Shutdown();
     std::cout << "In-process live plugin bootstrap: passed\n";

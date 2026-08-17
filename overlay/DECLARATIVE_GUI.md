@@ -102,6 +102,24 @@ guiPlugin = {
 `data_provider` selects a factory from the application-wide
 `GuiDataProviderRegistry`. The built-in `file` provider resolves `data` or
 `data_path` relative to the game root and watches its modification time.
+`startup = yes` opens the window when the host starts; `startup = no` still
+registers and initializes the plugin in a closed state so `open_window`,
+`show_window`, or `toggle_window` can open it later.
+
+The in-process host supports the same providers as the offline host. Any
+option prefixed with `inprocess_` overrides its unprefixed option only inside
+the injected DLL. This keeps an offline sequence and the live Lua source in
+one manifest without tying data-provider choice to `startup`:
+
+```text
+options = {
+	data_provider = "sequence"
+	data = "snapshots/example"
+	inprocess_data_provider = "bridge"
+	inprocess_channel = "lua"
+	inprocess_bridge_name = "example"
+}
+```
 
 The generic `sequence` provider is the Mac offline fallback. It merges an
 optional common file with one sorted frame file at a time:
@@ -158,11 +176,15 @@ GuiDataBridge.PublishDelta("example", {
 GuiDataBridge.DispatchActions("example", 64)
 ```
 
-The future Windows Lua binding only needs to expose
+The Windows Lua binding exposes
 `ScriptedGuiNative.PublishUpdate(channelName, updateTable)` and
 `ScriptedGuiNative.TryPopAction(channelName)`. The generic C++ endpoint,
 revision validation, queues, data provider, action payload, and Lua callback
-dispatch are platform independent and already implemented.
+dispatch are platform independent. A Lua state reserves the channel before it
+publishes. A higher-priority state may always preempt the current publisher; an
+equal-priority fallback may do so after ten seconds of publisher silence, while
+a lower-priority state cannot displace a stale higher-priority owner. Competing
+states cannot publish or consume the owner's actions.
 
 An `onClick`, `onPress`, or hover action may directly contain the registered
 Lua action name. A separate behavior block is optional and is only needed for
@@ -325,19 +347,23 @@ loads its next frame. Event placeholders include `$list_item_id`, `$list_index`,
 `$mouse_x`, `$mouse_y`, `$widget`, and `$list`.
 
 Application-level fallback operations can target another plugin or window with
-the `window` parameter. Supported operations are `show_window`, `hide_window`,
-`toggle_window`, `reset_window_visibility`, `close_window`, `send_action`,
-`set_window_value`, `toggle_window_value`, `add_window_value`, and
-`reload_window_data`.
+the `window` parameter. Supported operations are `open_window`, `show_window`,
+`hide_window`, `toggle_window`, `reset_window_visibility`, `close_window`,
+`send_action`, `set_window_value`, `toggle_window_value`, `add_window_value`,
+and `reload_window_data`.
 
 ## Global Z order
 
-Every drawable control is converted to one render command. Commands from
-indexed maps, custom widgets, images, buttons, color boxes, progress bars,
-lists, text, and the window frame are sorted together by inherited `zOrder`.
-Lexical declaration order breaks ties. Child `zOrder` values are added to the
-parent value. `frameZOrder` controls the frame offset and defaults to `1000000`
-to preserve the usual topmost border:
+Every drawable control is converted to a render command. List templates are
+instantiated as ordinary button, image, and text nodes instead of being drawn
+through a list-specific bypass. Commands from indexed maps, marker layers,
+custom widgets, images, buttons, scrollbars, color boxes, progress bars, text,
+and the window frame are sorted together by inherited `zOrder`. Lexical
+declaration order breaks ties. Child `zOrder` values are added to the parent
+value. `frameZOrder` controls the frame offset and defaults to `1000000` to
+preserve the usual topmost border. Set `clipChildren = yes` on a container to
+clip both rendering and hit testing to its rectangle; list items are always
+clipped to their list viewport.
 
 ```text
 windowType = {
@@ -348,6 +374,75 @@ windowType = {
 	textBoxType = { name = "title" zOrder = 20 }
 }
 ```
+
+Control `zOrder` remains local to one declarative window. Plugin manifests
+provide the application-wide window band with `windowZOrder`; pointer focus
+reorders windows only inside the same band. `modal = yes` renders that window
+above non-modal windows and restricts Scripted GUI input to the topmost active
+modal window.
+
+```text
+guiPlugin = {
+	id = "example"
+	startup = yes
+	windowZOrder = 20
+	modal = no
+}
+```
+
+The global window manager keeps rendering and input order in one registry.
+Clicking or dragging a visible window focuses it, hidden or closed windows are
+removed from hit testing, and a closed window continues polling its provider so
+an application action or a new game session can reopen it.
+
+## Lua scheduling and ownership
+
+`script/scripted_gui_runtime.lua` is the only AI callback entry point for Lua
+GUI plugins. `script/scripted_gui_plugins.lua` registers modules and channels.
+The runtime reserves each native channel by priority, pumps actions separately
+from data refreshes, isolates plugin failures with a cooldown, and calls these
+optional module callbacks:
+
+- `ShouldTick(context)` and `PumpActions(context, budget)`
+- `ShouldRefresh(context)` and `BuildUpdate(context)`
+- `PublishUpdate(update, context)` and `OnUpdatePublished(update, context)`
+- `OnPublisherAcquired(context)` and `OnPublisherLost(context)`
+- `RestoreState(context)`, `PersistState(context)`, and `Shutdown()`
+
+The player-country Lua state uses the higher channel priority. A fallback AI
+state may publish while it is unavailable, but native ownership prevents two
+states from scanning and publishing the same GUI simultaneously. Publisher
+takeover resets local revisions while the native bridge preserves one global,
+monotonic channel revision.
+
+## Session and save persistence
+
+A live snapshot may publish two independent identities:
+
+- `state.sessionid` identifies one logical gameplay UI session. It remains
+  stable across equivalent Lua publisher handoffs and changes when the Lua
+  adapter detects that a different or older save state has been loaded. A
+  change clears hover, press, list, visibility override, and other transient
+  window state.
+- `state.persistencekey` identifies the game/save profile. Values changed by a
+  behavior with `persist = yes`, plus list selection and scroll state, are
+  restored only for that profile.
+
+The C++ sidecar uses a versioned binary format, bounded collection sizes,
+profile verification, corruption isolation, and temporary-file replacement.
+On Windows it defaults to
+`%LOCALAPPDATA%\HOI3 Scripted GUI\state`; set
+`SCRIPTED_GUI_STATE_ROOT` to override it for tests or portable installs.
+
+Gameplay state must still live in the HOI3 save. The generic
+`script/scripted_gui_persistence.lua` adapter reads `CVariables` and posts
+`CSetVariableCommand` updates. The China war-map adapter uses it for its stable
+profile token, selected Region, panel state, leader assignments, assignment
+order, normalized marker positions, and a commit revision written after the
+payload. Every publisher targets the player country's variables, including a
+fallback AI Lua state. A profile or revision rollback therefore detects an
+in-process save load even when HOI3 keeps the same Lua state alive. The native
+sidecar stores presentation state only and never replaces save-game variables.
 
 Run the Mac host with `--resource-stats` to print approximate per-window host
 texture bytes, plugin texture bytes, CPU buffer bytes, and the size of the

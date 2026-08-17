@@ -5,6 +5,7 @@
 #include <string_view>
 #include <unordered_map>
 #include <unordered_set>
+#include <vector>
 
 struct GuiBehaviorDefinition
 {
@@ -25,7 +26,8 @@ class GuiBehaviorRegistry
 public:
     bool LoadDirectory(
         const std::filesystem::path& root,
-        std::string& error
+        std::string& error,
+        std::vector<std::string>* diagnostics = nullptr
     );
 
     bool LoadFile(

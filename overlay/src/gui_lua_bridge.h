@@ -1,6 +1,7 @@
 #pragma once
 
 #include <cstddef>
+#include <cstdint>
 #include <memory>
 #include <string>
 #include <string_view>
@@ -18,6 +19,21 @@ struct GuiLuaBridgeStats
     std::size_t pendingUpdates = 0;
     std::size_t pendingActions = 0;
     bool consumerOpen = false;
+};
+
+enum class GuiGameplayLifecycleState
+{
+    Unknown,
+    Frontend,
+    Gameplay
+};
+
+struct GuiGameplayLifecycleSnapshot
+{
+    GuiGameplayLifecycleState state =
+        GuiGameplayLifecycleState::Unknown;
+    uint64_t generation = 0;
+    std::string playerTag;
 };
 
 class GuiLuaBridgeService
@@ -41,6 +57,10 @@ public:
     );
 
     GuiLuaBridgeStats Stats(std::string_view channelName) const;
+
+    bool ReportGameplayPlayerTag(std::string_view playerTag);
+    GuiGameplayLifecycleSnapshot GameplayLifecycle() const;
+    void ResetGameplayLifecycle();
 
     void Reset(std::string_view channelName);
     void ResetAll();

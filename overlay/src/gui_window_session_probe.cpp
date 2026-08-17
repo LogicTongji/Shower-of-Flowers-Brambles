@@ -1,6 +1,7 @@
 #include "gui_window_session.h"
 
 #include <algorithm>
+#include <chrono>
 #include <filesystem>
 #include <iostream>
 #include <memory>
@@ -72,6 +73,13 @@ public:
         ++buildCount;
         auto data = std::make_shared<GuiDataRegistry>();
         data->Set("state.visible", visible);
+        data->Set("state.sessionid", sessionId);
+        data->Set("state.persistencekey", persistenceKey);
+        data->Set(
+            "state.persistenceavailable",
+            authoritativePersistence
+        );
+        data->Set("selected.id", selectedId);
         data->Set("title", "Session Probe");
         data->Set("progress", progress);
         data->Set("probe.drag.value", 5.0);
@@ -84,7 +92,16 @@ public:
             item.text = "Item " + std::to_string(itemId);
             item.fields["region"] =
                 std::string("region_") + std::to_string(itemId);
+            item.fields["sprite"] = "GFX_probe_panel";
             list.items.push_back(std::move(item));
+            data->Set(
+                "items." + std::to_string(100 + itemId) + ".label",
+                "Resolved " + std::to_string(100 + itemId)
+            );
+            data->Set(
+                "items." + std::to_string(100 + itemId) + ".visible",
+                true
+            );
         }
         data->SetList("probe_list", std::move(list));
 
@@ -117,6 +134,10 @@ public:
     int shutdownCount = 0;
     bool initialized = false;
     bool visible = true;
+    bool authoritativePersistence = false;
+    double selectedId = 0.0;
+    std::string sessionId = "probe_session_1";
+    std::string persistenceKey = "probe_save_1";
     double progress = 0.25;
     GuiActionContext lastAction;
 };
@@ -131,7 +152,28 @@ const gui::GuiResolvedWidget* FindFirstListItem(
         [](const gui::GuiResolvedWidget& widget)
         {
             return widget.listName == "probe_list"
-                && widget.listIndex == 0;
+                && widget.listIndex == 0
+                && widget.definition
+                && widget.definition->name == "probe_list_item";
+        }
+    );
+    return found == widgets.end() ? nullptr : &*found;
+}
+
+const gui::GuiResolvedWidget* FindListWidget(
+    const std::vector<gui::GuiResolvedWidget>& widgets,
+    std::string_view name,
+    int listIndex
+)
+{
+    const auto found = std::find_if(
+        widgets.begin(),
+        widgets.end(),
+        [name, listIndex](const gui::GuiResolvedWidget& widget)
+        {
+            return widget.listIndex == listIndex
+                && widget.definition
+                && widget.definition->name == name;
         }
     );
     return found == widgets.end() ? nullptr : &*found;
@@ -165,14 +207,30 @@ int main(int argc, char** argv)
         interpreter,
         &behaviors
     );
+    const std::filesystem::path persistenceRoot =
+        std::filesystem::temp_directory_path()
+        / ("gui_window_session_probe_" + std::to_string(
+            std::chrono::steady_clock::now()
+                .time_since_epoch().count()
+        ));
+    session.SetPersistenceStore(
+        std::make_shared<GuiPersistenceStore>(persistenceRoot)
+    );
 
     int dataChangedCount = 0;
+    int sessionChangedCount = 0;
     int eventResolveCount = 0;
     std::vector<bool> visibilityChanges;
     session.SetDataChangedCallback(
         [&dataChangedCount]()
         {
             ++dataChangedCount;
+        }
+    );
+    session.SetSessionChangedCallback(
+        [&sessionChangedCount](std::string_view, std::string_view)
+        {
+            ++sessionChangedCount;
         }
     );
     session.SetVisibilityChangedCallback(
@@ -221,9 +279,38 @@ int main(int argc, char** argv)
         session.ResolveInteractiveWidgets();
     const gui::GuiResolvedWidget* firstItem =
         FindFirstListItem(widgets);
-    if (!firstItem)
+    const gui::GuiResolvedWidget* firstIcon = FindListWidget(
+        widgets,
+        "probe_list_icon",
+        0
+    );
+    const gui::GuiResolvedWidget* firstLabel = FindListWidget(
+        widgets,
+        "probe_list_label",
+        0
+    );
+    const gui::GuiResolvedWidget* firstNested = FindListWidget(
+        widgets,
+        "probe_list_nested",
+        0
+    );
+    gui::GuiTextCommand labelText;
+    if (!firstItem
+        || !firstIcon
+        || !firstLabel
+        || !firstNested
+        || firstLabel->rect.x != firstItem->rect.x + 28
+        || firstNested->rect.y != firstItem->rect.y + 4
+        || !firstLabel->hasClipRect
+        || firstLabel->clipRect.x != listLayout.viewport.x
+        || firstLabel->clipRect.y != listLayout.viewport.y
+        || firstLabel->clipRect.width != listLayout.viewport.width
+        || firstLabel->clipRect.height != listLayout.viewport.height
+        || session.ResolveWidgetSprite(*firstIcon) != "GFX_probe_panel"
+        || !session.ResolveWidgetText(*firstLabel, labelText)
+        || labelText.text != "Resolved 101")
     {
-        std::cerr << "Resolved list item is missing\n";
+        std::cerr << "Resolved list template scene failed\n";
         return 1;
     }
     const int clickX = firstItem->rect.x + 2;
@@ -251,6 +338,39 @@ int main(int argc, char** argv)
         || eventResolveCount != 1)
     {
         std::cerr << "Session list action context failed\n";
+        return 1;
+    }
+
+    const int nestedX = firstNested->rect.x + 2;
+    const int nestedY = firstNested->rect.y + 2;
+    session.DispatchPress(widgets, nestedX, nestedY);
+    if (session.DispatchRelease(widgets, nestedX, nestedY) != 1
+        || plugin.actionCount != 2
+        || plugin.lastAction.widgetName != "probe_list_nested"
+        || plugin.lastAction.listItemId != 101)
+    {
+        std::cerr << "Nested list control dispatch failed\n";
+        return 1;
+    }
+
+    const gui::GuiResolvedWidget* clippedItem = FindListWidget(
+        widgets,
+        "probe_list_item",
+        4
+    );
+    if (!clippedItem)
+    {
+        std::cerr << "Partially clipped list item is missing\n";
+        return 1;
+    }
+    const gui::GuiResolvedWidget* clippedHit = gui::HitTestGuiWidgets(
+        widgets,
+        clippedItem->rect.x + 2,
+        listLayout.viewport.y + listLayout.viewport.height + 1
+    );
+    if (clippedHit && clippedHit->listIndex == 4)
+    {
+        std::cerr << "List viewport clipping failed\n";
         return 1;
     }
 
@@ -286,9 +406,73 @@ int main(int argc, char** argv)
     }
 
     session.CloseWindow();
-    if (session.IsOpen())
+    const int closedTickCount = plugin.tickCount;
+    if (session.IsOpen()
+        || session.IsVisible()
+        || !session.Tick(2000)
+        || plugin.tickCount != closedTickCount + 1
+        || session.IsOpen()
+        || session.IsVisible())
     {
         std::cerr << "Session close failed\n";
+        return 1;
+    }
+    session.OpenWindow();
+    if (!session.IsOpen()
+        || !session.IsVisible()
+        || session.DataRegistry()->ResolveNumber("selected.id") != 101)
+    {
+        std::cerr << "Session reopen persistence failed\n";
+        return 1;
+    }
+
+    plugin.sessionId = "probe_session_2";
+    plugin.persistenceKey = "probe_save_2";
+    session.RefreshData();
+    const GuiListRuntimeState* resetListState =
+        session.ListRuntimeStore().Find("probe_list");
+    if (session.SessionId() != "probe_session_2"
+        || sessionChangedCount != 1
+        || session.DataRegistry()->ResolveNumber("selected.id") != 0
+        || (resetListState && resetListState->selectedItemId != 0))
+    {
+        std::cerr << "Session generation reset failed\n";
+        return 1;
+    }
+
+    plugin.sessionId = "probe_session_3";
+    plugin.persistenceKey = "probe_save_1";
+    session.RefreshData();
+    const GuiListRuntimeState* restoredListState =
+        session.ListRuntimeStore().Find("probe_list");
+    if (session.DataRegistry()->ResolveNumber("selected.id") != 101
+        || !restoredListState
+        || restoredListState->selectedItemId != 101
+        || restoredListState->scrollOffset <= 0
+        || !session.PersistenceError().empty())
+    {
+        std::cerr << "Session save-profile restore failed: "
+                  << session.PersistenceError() << '\n';
+        return 1;
+    }
+
+    plugin.authoritativePersistence = true;
+    plugin.selectedId = 404;
+    plugin.sessionId = "probe_session_4";
+    session.RefreshData();
+    if (session.DataRegistry()->ResolveNumber("selected.id") != 404)
+    {
+        std::cerr << "Authoritative persistence override failed\n";
+        return 1;
+    }
+
+    plugin.authoritativePersistence = false;
+    plugin.selectedId = 505;
+    plugin.sessionId = "probe_session_5";
+    session.RefreshData();
+    if (session.DataRegistry()->ResolveNumber("selected.id") != 505)
+    {
+        std::cerr << "Authoritative persistence cleanup failed\n";
         return 1;
     }
     session.Shutdown();
@@ -297,6 +481,8 @@ int main(int argc, char** argv)
         std::cerr << "Session shutdown failed\n";
         return 1;
     }
+    std::error_code cleanupError;
+    std::filesystem::remove_all(persistenceRoot, cleanupError);
 
     std::cout
         << "Session data refreshes: " << dataChangedCount << '\n'

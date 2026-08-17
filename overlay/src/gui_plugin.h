@@ -75,4 +75,7 @@ struct GuiPluginLaunch
     std::string id;
     std::string visibleWhen;
     IGuiPlugin* plugin = nullptr;
+    bool openInitially = true;
+    int windowZOrder = 0;
+    bool modal = false;
 };

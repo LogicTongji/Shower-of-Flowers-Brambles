@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <atomic>
 #include <cctype>
+#include <chrono>
 #include <cmath>
 #include <cstdint>
 #include <exception>
@@ -32,6 +33,7 @@ constexpr std::size_t MaximumValues = 65536;
 constexpr std::size_t MaximumLists = 1024;
 constexpr std::size_t MaximumItemsPerList = 65536;
 constexpr std::size_t MaximumFieldsPerItem = 1024;
+constexpr auto PublisherLease = std::chrono::seconds(10);
 
 std::atomic<GuiLuaNativeBinding*> ActiveBinding{nullptr};
 
@@ -696,12 +698,18 @@ bool HasNativeTable(
         return false;
     }
     const int tableIndex = AbsoluteIndex(state, api, -1);
+    api.getField(state, tableIndex, "TryAcquireChannel");
+    const bool hasAcquire = api.type(state, -1) == LuaTypeFunction;
+    Pop(state, api);
+    api.getField(state, tableIndex, "ReleaseChannel");
+    const bool hasRelease = api.type(state, -1) == LuaTypeFunction;
+    Pop(state, api);
     api.getField(state, tableIndex, "PublishUpdate");
     const bool hasPublish = api.type(state, -1) == LuaTypeFunction;
     Pop(state, api);
     api.getField(state, tableIndex, "TryPopAction");
     const bool hasActions = api.type(state, -1) == LuaTypeFunction;
-    return hasPublish && hasActions;
+    return hasAcquire && hasRelease && hasPublish && hasActions;
 }
 
 }
@@ -713,6 +721,55 @@ struct GuiLuaNativeBinding::Impl
         ScriptedGuiLuaState* state = nullptr;
         ScriptedGuiLua51ApiV1 api{};
         GuiLuaBridgeService* service = nullptr;
+        uint64_t ordinal = 0;
+        std::chrono::steady_clock::time_point lastSeen;
+    };
+
+    struct ChannelPublisher
+    {
+        StateBinding* binding = nullptr;
+        uint64_t priority = 0;
+        std::chrono::steady_clock::time_point lastHeartbeat;
+        std::chrono::steady_clock::time_point lastPublish;
+        uint64_t localRevision = 0;
+        uint64_t globalRevision = 0;
+        bool hasSnapshot = false;
+    };
+
+    enum class PublishOwnership
+    {
+        Rejected,
+        Owned,
+        Claimed,
+        TakenOver
+    };
+
+    struct PublishOutcome
+    {
+        bool accepted = false;
+        bool firstRejection = false;
+        uint64_t stateOrdinal = 0;
+        uint64_t ownerOrdinal = 0;
+        PublishOwnership ownership = PublishOwnership::Rejected;
+    };
+
+    struct AcquireOutcome
+    {
+        bool acquired = false;
+        bool firstRejection = false;
+        uint64_t stateOrdinal = 0;
+        uint64_t ownerOrdinal = 0;
+        uint64_t ownerPriority = 0;
+        PublishOwnership ownership = PublishOwnership::Rejected;
+    };
+
+    struct DetachOutcome
+    {
+        bool detached = false;
+        uint64_t stateOrdinal = 0;
+        std::size_t releasedChannels = 0;
+        GuiLuaBridgeService* service = nullptr;
+        bool releasedLastServicePublisher = false;
     };
 
     StateBinding* Find(ScriptedGuiLuaState* state)
@@ -746,9 +803,122 @@ struct GuiLuaNativeBinding::Impl
         binding->state = state;
         binding->api = api;
         binding->service = &service;
+        binding->ordinal = nextStateOrdinal++;
+        binding->lastSeen = std::chrono::steady_clock::now();
         StateBinding* pointer = binding.get();
         states.emplace(state, std::move(binding));
         return pointer;
+    }
+
+    DetachOutcome Remove(ScriptedGuiLuaState* state)
+    {
+        std::lock_guard<std::mutex> lock(mutex);
+        DetachOutcome outcome;
+        const auto found = states.find(state);
+        if (found == states.end())
+        {
+            return outcome;
+        }
+
+        StateBinding* binding = found->second.get();
+        outcome.detached = true;
+        outcome.stateOrdinal = binding->ordinal;
+        outcome.service = binding->service;
+        for (auto publisher = channelPublishers.begin();
+            publisher != channelPublishers.end();)
+        {
+            if (publisher->second.binding == binding)
+            {
+                publisher = channelPublishers.erase(publisher);
+                ++outcome.releasedChannels;
+            }
+            else
+            {
+                ++publisher;
+            }
+        }
+        if (outcome.releasedChannels > 0)
+        {
+            outcome.releasedLastServicePublisher = std::none_of(
+                channelPublishers.begin(),
+                channelPublishers.end(),
+                [binding](const auto& publisher)
+                {
+                    return publisher.second.binding->service
+                        == binding->service;
+                }
+            );
+        }
+        states.erase(found);
+        rejectedPublishers.clear();
+        if (states.empty())
+        {
+            sharedApi = {};
+        }
+        return outcome;
+    }
+
+    std::size_t Count() const
+    {
+        std::lock_guard<std::mutex> lock(mutex);
+        return states.size();
+    }
+
+    bool Touch(ScriptedGuiLuaState* state)
+    {
+        std::lock_guard<std::mutex> lock(mutex);
+        const auto found = states.find(state);
+        if (found == states.end())
+        {
+            return false;
+        }
+        found->second->lastSeen = std::chrono::steady_clock::now();
+        return true;
+    }
+
+    std::vector<ScriptedGuiLuaState*> Prune(
+        uint64_t maximumIdleMilliseconds
+    )
+    {
+        std::lock_guard<std::mutex> lock(mutex);
+        std::vector<ScriptedGuiLuaState*> removed;
+        const auto now = std::chrono::steady_clock::now();
+        const auto maximumIdle = std::chrono::milliseconds(
+            std::max<uint64_t>(1, maximumIdleMilliseconds)
+        );
+        for (auto state = states.begin(); state != states.end();)
+        {
+            if (now - state->second->lastSeen < maximumIdle)
+            {
+                ++state;
+                continue;
+            }
+
+            StateBinding* binding = state->second.get();
+            for (auto publisher = channelPublishers.begin();
+                publisher != channelPublishers.end();)
+            {
+                if (publisher->second.binding == binding)
+                {
+                    publisher = channelPublishers.erase(publisher);
+                }
+                else
+                {
+                    ++publisher;
+                }
+            }
+            removed.push_back(state->first);
+            state = states.erase(state);
+        }
+        if (!removed.empty())
+        {
+            rejectedPublishers.clear();
+        }
+        if (states.empty())
+        {
+            sharedApi = {};
+        }
+        return removed;
     }
 
     StateBinding* ResolveCallbackBinding(
@@ -782,9 +952,22 @@ struct GuiLuaNativeBinding::Impl
     {
         std::lock_guard<std::mutex> lock(mutex);
         states.clear();
+        channelPublishers.clear();
+        channelRevisions.clear();
+        rejectedPublishers.clear();
         attemptedChannels.clear();
         publishedChannels.clear();
+        nextStateOrdinal = 1;
         sharedApi = {};
+    }
+
+    void ResetChannelOwnership()
+    {
+        std::lock_guard<std::mutex> lock(mutex);
+        channelPublishers.clear();
+        rejectedPublishers.clear();
+        attemptedChannels.clear();
+        publishedChannels.clear();
     }
 
     bool Empty() const
@@ -805,14 +988,261 @@ struct GuiLuaNativeBinding::Impl
         return attemptedChannels.insert(channel).second;
     }
 
+    AcquireOutcome TryAcquireAuthorized(
+        ScriptedGuiLuaState* state,
+        const std::string& channel,
+        uint64_t priority,
+        GuiLuaBridgeService& service
+    )
+    {
+        std::lock_guard<std::mutex> lock(mutex);
+        AcquireOutcome outcome;
+        const auto stateIterator = states.find(state);
+        if (stateIterator == states.end()
+            || stateIterator->second->service != &service)
+        {
+            return outcome;
+        }
+
+        StateBinding* binding = stateIterator->second.get();
+        outcome.stateOrdinal = binding->ordinal;
+        const auto now = std::chrono::steady_clock::now();
+        auto publisher = channelPublishers.find(channel);
+        if (publisher == channelPublishers.end())
+        {
+            channelPublishers[channel] = {
+                binding,
+                priority,
+                now,
+                {},
+                0,
+                channelRevisions[channel],
+                false
+            };
+            outcome.acquired = true;
+            outcome.ownership = PublishOwnership::Claimed;
+            return outcome;
+        }
+
+        if (publisher->second.binding == binding)
+        {
+            publisher->second.priority = priority;
+            publisher->second.lastHeartbeat = now;
+            outcome.acquired = true;
+            outcome.ownerPriority = priority;
+            outcome.ownership = PublishOwnership::Owned;
+            return outcome;
+        }
+
+        outcome.ownerOrdinal = publisher->second.binding->ordinal;
+        outcome.ownerPriority = publisher->second.priority;
+        const bool stale = now - publisher->second.lastHeartbeat
+            >= PublisherLease;
+        if (priority > publisher->second.priority
+            || (stale && priority == publisher->second.priority))
+        {
+            publisher->second = {
+                binding,
+                priority,
+                now,
+                {},
+                0,
+                channelRevisions[channel],
+                false
+            };
+            outcome.acquired = true;
+            outcome.ownership = PublishOwnership::TakenOver;
+            rejectedPublishers.clear();
+            return outcome;
+        }
+
+        outcome.firstRejection = rejectedPublishers.insert(
+            "acquire#" + channel + "#"
+                + std::to_string(binding->ordinal)
+        ).second;
+        return outcome;
+    }
+
+    bool ReleaseAuthorized(
+        ScriptedGuiLuaState* state,
+        const std::string& channel,
+        GuiLuaBridgeService& service,
+        uint64_t& stateOrdinal
+    )
+    {
+        std::lock_guard<std::mutex> lock(mutex);
+        const auto stateIterator = states.find(state);
+        const auto publisher = channelPublishers.find(channel);
+        if (stateIterator == states.end()
+            || stateIterator->second->service != &service
+            || publisher == channelPublishers.end()
+            || publisher->second.binding != stateIterator->second.get())
+        {
+            return false;
+        }
+        stateOrdinal = stateIterator->second->ordinal;
+        channelPublishers.erase(publisher);
+        rejectedPublishers.clear();
+        return true;
+    }
+
+    PublishOutcome PublishAuthorized(
+        ScriptedGuiLuaState* state,
+        const std::string& channel,
+        GuiDataBridgeUpdate update,
+        GuiLuaBridgeService& service,
+        std::string& error
+    )
+    {
+        std::lock_guard<std::mutex> lock(mutex);
+        PublishOutcome outcome;
+        const auto stateIterator = states.find(state);
+        if (stateIterator == states.end()
+            || stateIterator->second->service != &service)
+        {
+            error = "lua_channel_publisher_state_unknown";
+            return outcome;
+        }
+
+        StateBinding* binding = stateIterator->second.get();
+        outcome.stateOrdinal = binding->ordinal;
+        const auto now = std::chrono::steady_clock::now();
+        auto publisher = channelPublishers.find(channel);
+        const bool unowned = publisher == channelPublishers.end();
+        const bool owned = !unowned
+            && publisher->second.binding == binding;
+        const bool stale = !unowned
+            && now - publisher->second.lastHeartbeat >= PublisherLease;
+        const bool canClaim = unowned && update.fullSnapshot;
+        const bool canTakeOver = !unowned
+            && !owned
+            && stale
+            && update.fullSnapshot;
+        if (!owned && !canClaim && !canTakeOver)
+        {
+            outcome.ownerOrdinal = unowned
+                ? 0
+                : publisher->second.binding->ordinal;
+            outcome.firstRejection = rejectedPublishers.insert(
+                channel + "#" + std::to_string(binding->ordinal)
+            ).second;
+            error = unowned
+                ? "lua_channel_first_snapshot_must_be_full"
+                : "lua_channel_publisher_not_owner";
+            return outcome;
+        }
+
+        ChannelPublisher candidate;
+        ChannelPublisher* activePublisher = nullptr;
+        if (owned)
+        {
+            activePublisher = &publisher->second;
+        }
+        else
+        {
+            candidate.binding = binding;
+            candidate.priority = 0;
+            candidate.lastHeartbeat = now;
+            candidate.globalRevision = channelRevisions[channel];
+            activePublisher = &candidate;
+        }
+
+        const uint64_t localRevision = update.revision;
+        const uint64_t nextGlobalRevision = channelRevisions[channel] + 1;
+        if (nextGlobalRevision == 0)
+        {
+            error = "lua_channel_revision_overflow";
+            return outcome;
+        }
+        if (!update.fullSnapshot)
+        {
+            if (!activePublisher->hasSnapshot)
+            {
+                error = "lua_channel_delta_requires_owned_snapshot";
+                return outcome;
+            }
+            if (update.baseRevision != activePublisher->localRevision
+                || update.revision <= update.baseRevision)
+            {
+                error = "lua_channel_local_revision_gap";
+                return outcome;
+            }
+            update.baseRevision = activePublisher->globalRevision;
+        }
+        else
+        {
+            update.baseRevision = 0;
+        }
+        update.revision = nextGlobalRevision;
+
+        outcome.accepted = service.PublishUpdate(
+            channel,
+            std::move(update),
+            error
+        );
+        if (!outcome.accepted)
+        {
+            return outcome;
+        }
+
+        activePublisher->binding = binding;
+        activePublisher->lastHeartbeat = now;
+        activePublisher->lastPublish = now;
+        activePublisher->localRevision = localRevision;
+        activePublisher->globalRevision = nextGlobalRevision;
+        activePublisher->hasSnapshot = true;
+        channelRevisions[channel] = nextGlobalRevision;
+
+        if (canClaim)
+        {
+            channelPublishers[channel] = candidate;
+            outcome.ownership = PublishOwnership::Claimed;
+            rejectedPublishers.clear();
+        }
+        else if (canTakeOver)
+        {
+            outcome.ownerOrdinal = publisher->second.binding->ordinal;
+            publisher->second = candidate;
+            outcome.ownership = PublishOwnership::TakenOver;
+            rejectedPublishers.clear();
+        }
+        else
+        {
+            outcome.ownership = PublishOwnership::Owned;
+        }
+        return outcome;
+    }
+
+    bool TryPopAuthorizedAction(
+        ScriptedGuiLuaState* state,
+        const std::string& channel,
+        GuiLuaBridgeService& service,
+        GuiActionContext& context
+    )
+    {
+        std::lock_guard<std::mutex> lock(mutex);
+        const auto stateIterator = states.find(state);
+        const auto publisher = channelPublishers.find(channel);
+        return stateIterator != states.end()
+            && stateIterator->second->service == &service
+            && publisher != channelPublishers.end()
+            && publisher->second.binding == stateIterator->second.get()
+            && service.TryPopAction(channel, context);
+    }
+
     mutable std::mutex mutex;
     ScriptedGuiLua51ApiV1 sharedApi{};
     std::unordered_map<
         ScriptedGuiLuaState*,
         std::unique_ptr<StateBinding>
     > states;
+    std::unordered_map<std::string, ChannelPublisher>
+        channelPublishers;
+    std::unordered_map<std::string, uint64_t> channelRevisions;
+    std::unordered_set<std::string> rejectedPublishers;
     std::unordered_set<std::string> attemptedChannels;
     std::unordered_set<std::string> publishedChannels;
+    uint64_t nextStateOrdinal = 1;
 };
 
 GuiLuaNativeBinding::GuiLuaNativeBinding()
@@ -842,11 +1272,7 @@ bool GuiLuaNativeBinding::Install(
         error.clear();
         return true;
     }
-    if (HasNativeTable(state, api))
-    {
-        error.clear();
-        return true;
-    }
+    const bool replacingStaleTable = HasNativeTable(state, api);
     Impl::StateBinding* bindingPointer = impl_->Add(
         state,
         api,
@@ -855,8 +1281,14 @@ bool GuiLuaNativeBinding::Install(
     ActiveBinding.store(this, std::memory_order_release);
 
     LuaStackGuard guard(state, api);
-    api.createTable(state, 0, 2);
+    api.createTable(state, 0, 4);
     const int nativeTable = AbsoluteIndex(state, api, -1);
+    api.pushLightUserdata(state, bindingPointer);
+    api.pushCClosure(state, &TryAcquireChannelThunk, 1);
+    api.setField(state, nativeTable, "TryAcquireChannel");
+    api.pushLightUserdata(state, bindingPointer);
+    api.pushCClosure(state, &ReleaseChannelThunk, 1);
+    api.setField(state, nativeTable, "ReleaseChannel");
     api.pushLightUserdata(state, bindingPointer);
     api.pushCClosure(state, &PublishUpdateThunk, 1);
     api.setField(state, nativeTable, "PublishUpdate");
@@ -864,8 +1296,78 @@ bool GuiLuaNativeBinding::Install(
     api.pushCClosure(state, &TryPopActionThunk, 1);
     api.setField(state, nativeTable, "TryPopAction");
     api.setField(state, LuaGlobalsIndex, "ScriptedGuiNative");
+    if (replacingStaleTable)
+    {
+        WriteGuiDiagnostic(
+            "Replaced stale ScriptedGuiNative Lua table"
+        );
+    }
     error.clear();
     return true;
+}
+
+bool GuiLuaNativeBinding::DetachState(ScriptedGuiLuaState* state)
+{
+    const Impl::DetachOutcome outcome = impl_->Remove(state);
+    if (!outcome.detached)
+    {
+        return false;
+    }
+    WriteGuiDiagnostic(
+        "Lua 5.1 state detached from ScriptedGuiNative: state="
+        + std::to_string(outcome.stateOrdinal)
+        + ", releasedChannels="
+        + std::to_string(outcome.releasedChannels)
+    );
+    if (outcome.releasedLastServicePublisher && outcome.service)
+    {
+        outcome.service->ReportGameplayPlayerTag("---");
+        WriteGuiDiagnostic(
+            "Lua lifecycle changed by publisher detach: state=frontend"
+        );
+    }
+    if (impl_->Empty())
+    {
+        GuiLuaNativeBinding* expected = this;
+        ActiveBinding.compare_exchange_strong(
+            expected,
+            nullptr,
+            std::memory_order_acq_rel
+        );
+    }
+    return true;
+}
+
+bool GuiLuaNativeBinding::TouchState(ScriptedGuiLuaState* state)
+{
+    return impl_->Touch(state);
+}
+
+std::vector<ScriptedGuiLuaState*>
+GuiLuaNativeBinding::PruneInactiveStates(
+    uint64_t maximumIdleMilliseconds
+)
+{
+    std::vector<ScriptedGuiLuaState*> removed = impl_->Prune(
+        maximumIdleMilliseconds
+    );
+    if (!removed.empty())
+    {
+        WriteGuiDiagnostic(
+            "Pruned inactive Lua 5.1 states: count="
+            + std::to_string(removed.size())
+        );
+    }
+    if (impl_->Empty())
+    {
+        GuiLuaNativeBinding* expected = this;
+        ActiveBinding.compare_exchange_strong(
+            expected,
+            nullptr,
+            std::memory_order_acq_rel
+        );
+    }
+    return removed;
 }
 
 void GuiLuaNativeBinding::DetachAll()
@@ -879,6 +1381,12 @@ void GuiLuaNativeBinding::DetachAll()
     impl_->Clear();
 }
 
+void GuiLuaNativeBinding::ResetChannelOwnership()
+{
+    impl_->ResetChannelOwnership();
+    WriteGuiDiagnostic("Lua GUI channel ownership reset");
+}
+
 bool GuiLuaNativeBinding::IsInstalled() const
 {
     return !impl_->Empty();
@@ -889,6 +1397,112 @@ bool GuiLuaNativeBinding::IsStateInstalled(
 ) const
 {
     return impl_->Find(state) != nullptr;
+}
+
+std::size_t GuiLuaNativeBinding::StateCount() const
+{
+    return impl_->Count();
+}
+
+int __cdecl GuiLuaNativeBinding::TryAcquireChannelThunk(
+    ScriptedGuiLuaState* state
+)
+{
+    GuiLuaNativeBinding* owner = ActiveBinding.load(
+        std::memory_order_acquire
+    );
+    Impl::StateBinding* binding = owner
+        ? owner->impl_->ResolveCallbackBinding(state)
+        : nullptr;
+    if (!binding || !binding->service)
+    {
+        return 0;
+    }
+    try
+    {
+        return owner->TryAcquireChannel(
+            state,
+            binding->api,
+            *binding->service
+        );
+    }
+    catch (const std::exception& exception)
+    {
+        try
+        {
+            WriteGuiDiagnostic(
+                std::string("Lua TryAcquireChannel exception: ")
+                + exception.what()
+            );
+        }
+        catch (...)
+        {
+        }
+    }
+    catch (...)
+    {
+        try
+        {
+            WriteGuiDiagnostic(
+                "Lua TryAcquireChannel unknown exception"
+            );
+        }
+        catch (...)
+        {
+        }
+    }
+    binding->api.pushBoolean(state, 0);
+    PushString(state, binding->api, "exception");
+    return 2;
+}
+
+int __cdecl GuiLuaNativeBinding::ReleaseChannelThunk(
+    ScriptedGuiLuaState* state
+)
+{
+    GuiLuaNativeBinding* owner = ActiveBinding.load(
+        std::memory_order_acquire
+    );
+    Impl::StateBinding* binding = owner
+        ? owner->impl_->ResolveCallbackBinding(state)
+        : nullptr;
+    if (!binding || !binding->service)
+    {
+        return 0;
+    }
+    try
+    {
+        return owner->ReleaseChannel(
+            state,
+            binding->api,
+            *binding->service
+        );
+    }
+    catch (const std::exception& exception)
+    {
+        try
+        {
+            WriteGuiDiagnostic(
+                std::string("Lua ReleaseChannel exception: ")
+                + exception.what()
+            );
+        }
+        catch (...)
+        {
+        }
+    }
+    catch (...)
+    {
+        try
+        {
+            WriteGuiDiagnostic("Lua ReleaseChannel unknown exception");
+        }
+        catch (...)
+        {
+        }
+    }
+    binding->api.pushBoolean(state, 0);
+    return 1;
 }
 
 int __cdecl GuiLuaNativeBinding::PublishUpdateThunk(
@@ -991,6 +1605,100 @@ int __cdecl GuiLuaNativeBinding::TryPopActionThunk(
     return 1;
 }
 
+int GuiLuaNativeBinding::TryAcquireChannel(
+    ScriptedGuiLuaState* state,
+    const ScriptedGuiLua51ApiV1& api,
+    GuiLuaBridgeService& service
+)
+{
+    std::string channel;
+    uint64_t priority = 0;
+    if (api.getTop(state) < 1
+        || !ReadString(state, api, 1, channel)
+        || channel.empty()
+        || (api.getTop(state) >= 2
+            && !ReadUnsigned(state, api, 2, priority)))
+    {
+        api.pushBoolean(state, 0);
+        PushString(state, api, "invalid");
+        return 2;
+    }
+
+    channel = NormalizeName(std::move(channel));
+    const Impl::AcquireOutcome outcome = impl_->TryAcquireAuthorized(
+        state,
+        channel,
+        priority,
+        service
+    );
+    std::string_view status = "rejected";
+    if (outcome.ownership == Impl::PublishOwnership::Claimed)
+    {
+        status = "claimed";
+        WriteGuiDiagnostic(
+            "Lua GUI channel publisher reserved: channel="
+            + channel
+            + ", state=" + std::to_string(outcome.stateOrdinal)
+            + ", priority=" + std::to_string(priority)
+        );
+    }
+    else if (outcome.ownership == Impl::PublishOwnership::TakenOver)
+    {
+        status = "taken_over";
+        WriteGuiDiagnostic(
+            "Lua GUI channel publisher preempted: channel="
+            + channel
+            + ", previousState="
+            + std::to_string(outcome.ownerOrdinal)
+            + ", previousPriority="
+            + std::to_string(outcome.ownerPriority)
+            + ", state=" + std::to_string(outcome.stateOrdinal)
+            + ", priority=" + std::to_string(priority)
+        );
+    }
+    else if (outcome.ownership == Impl::PublishOwnership::Owned)
+    {
+        status = "owned";
+    }
+
+    api.pushBoolean(state, outcome.acquired ? 1 : 0);
+    PushString(state, api, status);
+    api.pushNumber(
+        state,
+        static_cast<double>(outcome.stateOrdinal)
+    );
+    return 3;
+}
+
+int GuiLuaNativeBinding::ReleaseChannel(
+    ScriptedGuiLuaState* state,
+    const ScriptedGuiLua51ApiV1& api,
+    GuiLuaBridgeService& service
+)
+{
+    std::string channel;
+    uint64_t stateOrdinal = 0;
+    const bool released = api.getTop(state) >= 1
+        && ReadString(state, api, 1, channel)
+        && !channel.empty()
+        && impl_->ReleaseAuthorized(
+            state,
+            NormalizeName(channel),
+            service,
+            stateOrdinal
+        );
+    if (released)
+    {
+        WriteGuiDiagnostic(
+            "Lua GUI channel publisher released: channel="
+            + NormalizeName(std::move(channel))
+            + ", state=" + std::to_string(stateOrdinal)
+        );
+    }
+    api.pushBoolean(state, released ? 1 : 0);
+    return 1;
+}
+
 int GuiLuaNativeBinding::PublishUpdate(
     ScriptedGuiLuaState* state,
     const ScriptedGuiLua51ApiV1& api,
@@ -1005,6 +1713,8 @@ int GuiLuaNativeBinding::PublishUpdate(
         std::string error;
         if (ReadString(state, api, 1, channel) && !channel.empty())
         {
+            channel = NormalizeName(std::move(channel));
+            std::string lifecyclePlayerTag;
             const bool firstAttempt =
                 impl_->MarkChannelAttempted(channel);
             if (firstAttempt)
@@ -1016,6 +1726,13 @@ int GuiLuaNativeBinding::PublishUpdate(
             }
             if (DecodeUpdate(state, api, 2, update, error))
             {
+                const auto viewer = update.values.find("state.viewertag");
+                if (viewer != update.values.end())
+                {
+                    lifecyclePlayerTag = GuiDataValueToText(
+                        viewer->second
+                    );
+                }
                 if (firstAttempt)
                 {
                     const auto valueText = [&update](
@@ -1095,11 +1812,66 @@ int GuiLuaNativeBinding::PublishUpdate(
                     );
                 }
                 const uint64_t revision = update.revision;
-                accepted = service.PublishUpdate(
-                    channel,
-                    std::move(update),
-                    error
-                );
+                const Impl::PublishOutcome outcome =
+                    impl_->PublishAuthorized(
+                        state,
+                        channel,
+                        std::move(update),
+                        service,
+                        error
+                    );
+                accepted = outcome.accepted;
+                if (outcome.ownership
+                    == Impl::PublishOwnership::Claimed)
+                {
+                    WriteGuiDiagnostic(
+                        "Lua GUI channel publisher claimed: channel="
+                        + channel
+                        + ", state="
+                        + std::to_string(outcome.stateOrdinal)
+                    );
+                }
+                else if (outcome.ownership
+                    == Impl::PublishOwnership::TakenOver)
+                {
+                    WriteGuiDiagnostic(
+                        "Lua GUI channel publisher changed: channel="
+                        + channel
+                        + ", previousState="
+                        + std::to_string(outcome.ownerOrdinal)
+                        + ", state="
+                        + std::to_string(outcome.stateOrdinal)
+                    );
+                }
+                else if (!accepted && outcome.firstRejection)
+                {
+                    WriteGuiDiagnostic(
+                        "Lua GUI channel publisher rejected: channel="
+                        + channel
+                        + ", state="
+                        + std::to_string(outcome.stateOrdinal)
+                        + ", ownerState="
+                        + std::to_string(outcome.ownerOrdinal)
+                        + ", error="
+                        + error
+                    );
+                }
+                if (accepted
+                    && !lifecyclePlayerTag.empty()
+                    && lifecyclePlayerTag != "---"
+                    && service.ReportGameplayPlayerTag(
+                        lifecyclePlayerTag
+                    ))
+                {
+                    const GuiGameplayLifecycleSnapshot lifecycle =
+                        service.GameplayLifecycle();
+                    WriteGuiDiagnostic(
+                        "Lua lifecycle changed by snapshot: player="
+                        + lifecycle.playerTag
+                        + ", state=gameplay, generation="
+                        + std::to_string(lifecycle.generation)
+                    );
+                }
                 if (accepted && impl_->MarkChannelPublished(channel))
                 {
                     WriteGuiDiagnostic(
@@ -1136,7 +1908,12 @@ int GuiLuaNativeBinding::TryPopAction(
     if (api.getTop(state) < 1
         || !ReadString(state, api, 1, channel)
         || channel.empty()
-        || !service.TryPopAction(channel, context))
+        || !impl_->TryPopAuthorizedAction(
+            state,
+            NormalizeName(std::move(channel)),
+            service,
+            context
+        ))
     {
         api.pushNil(state);
         return 1;

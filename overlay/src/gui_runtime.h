@@ -88,6 +88,7 @@ struct GuiListItemRuntimeLayout
     bool visible = true;
     bool enabled = true;
     bool pressed = false;
+	int zOrder = 0;
 	std::string normalSpriteName;
 	std::string pressedSpriteName;
 };

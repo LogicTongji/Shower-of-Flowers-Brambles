@@ -33,8 +33,9 @@ bool ResolveCommandType(
     {
         return false;
     }
-    if (listTemplateDefinitions.find(widget.definition)
-        != listTemplateDefinitions.end())
+    if (widget.listIndex < 0
+        && listTemplateDefinitions.find(widget.definition)
+            != listTemplateDefinitions.end())
     {
         return false;
     }
@@ -62,8 +63,7 @@ bool ResolveCommandType(
         type = GuiRenderCommandType::Button;
         return true;
     case gui::WidgetType::ListBox:
-        type = GuiRenderCommandType::List;
-        return true;
+        return false;
     case gui::WidgetType::ProgressBar:
         type = GuiRenderCommandType::ProgressBar;
         return true;
@@ -80,10 +80,47 @@ bool ResolveCommandType(
         type = GuiRenderCommandType::Custom;
         return true;
     case gui::WidgetType::ScrollBar:
+        type = GuiRenderCommandType::ScrollBar;
+        return true;
     case gui::WidgetType::Unknown:
         return false;
     }
     return false;
+}
+
+bool HasTextDescendant(const gui::WidgetDefinition& definition)
+{
+    for (const gui::WidgetDefinition& child : definition.children)
+    {
+        if (child.type == gui::WidgetType::Text
+            || HasTextDescendant(child))
+        {
+            return true;
+        }
+    }
+    return false;
+}
+
+bool NeedsButtonText(
+    const gui::GuiResolvedWidget& widget,
+    const std::unordered_set<std::string>& listTemplateNames
+)
+{
+    if (!widget.definition
+        || widget.definition->type != gui::WidgetType::Button
+        || HasTextDescendant(*widget.definition))
+    {
+        return false;
+    }
+    const gui::WidgetDefinition& definition = *widget.definition;
+    const bool listTemplateRoot = widget.listIndex >= 0
+        && listTemplateNames.find(definition.name)
+            != listTemplateNames.end();
+    return listTemplateRoot
+        || !definition.font.empty()
+        || !definition.text.empty()
+        || !definition.textSource.empty()
+        || !definition.localizationKey.empty();
 }
 
 }
@@ -94,7 +131,7 @@ std::vector<GuiRenderCommand> BuildGuiRenderQueue(
 )
 {
     std::vector<GuiRenderCommand> commands;
-    commands.reserve(widgets.size());
+    commands.reserve(widgets.size() * 2);
 
     std::unordered_set<const gui::WidgetDefinition*>
         listTemplateDefinitions;
@@ -110,6 +147,7 @@ std::vector<GuiRenderCommand> BuildGuiRenderQueue(
     for (const gui::GuiResolvedWidget& widget : widgets)
     {
         if (widget.definition
+            && widget.listIndex < 0
             && listTemplateNames.find(widget.definition->name)
                 != listTemplateNames.end())
         {
@@ -152,6 +190,15 @@ std::vector<GuiRenderCommand> BuildGuiRenderQueue(
         }
 
         commands.push_back({type, &widget, zOrder, order});
+        if (NeedsButtonText(widget, listTemplateNames))
+        {
+            commands.push_back({
+                GuiRenderCommandType::Text,
+                &widget,
+                zOrder,
+                order
+            });
+        }
     }
 
     std::stable_sort(

@@ -109,6 +109,54 @@ function P.Reset(channelName)
 	return true
 end
 
+function P.TryAcquireChannel(channelName, priority)
+	local native = GetNative()
+	if not IsChannelName(channelName)
+		or not native
+		or type(native.TryAcquireChannel) ~= "function" then
+		return false, "native_acquire_unavailable", 0
+	end
+
+	priority = math.max(
+		0,
+		math.floor(tonumber(priority) or 0)
+	)
+	local success, acquired, status, stateOrdinal = pcall(
+		native.TryAcquireChannel,
+		channelName,
+		priority
+	)
+	if not success or acquired ~= true then
+		return false, tostring(status or "rejected"),
+			tonumber(stateOrdinal) or 0
+	end
+
+	status = tostring(status or "owned")
+	if status == "claimed" or status == "taken_over" then
+		GetChannel(channelName).revision = 0
+	end
+	return true, status, tonumber(stateOrdinal) or 0
+end
+
+function P.ReleaseChannel(channelName)
+	local native = GetNative()
+	if not IsChannelName(channelName)
+		or not native
+		or type(native.ReleaseChannel) ~= "function" then
+		return false
+	end
+
+	local success, released = pcall(
+		native.ReleaseChannel,
+		channelName
+	)
+	if success and released == true then
+		P.Reset(channelName)
+		return true
+	end
+	return false
+end
+
 function P.PublishUpdate(channelName, update)
 	local normalized = NormalizeUpdate(channelName, update)
 	local native = GetNative()

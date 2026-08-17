@@ -14,6 +14,7 @@
 #include "gui_behavior.h"
 #include "gui_declarative_data.h"
 #include "gui_plugin.h"
+#include "gui_persistence.h"
 #include "gui_tick.h"
 
 class GuiWindowSessionController final : public IGuiApplicationEndpoint
@@ -27,6 +28,10 @@ public:
         std::string_view
     )>;
     using DataChangedCallback = std::function<void()>;
+    using SessionChangedCallback = std::function<void(
+        std::string_view,
+        std::string_view
+    )>;
     using VisibilityChangedCallback = std::function<void(bool)>;
     using EventResolver = std::function<void(
         std::vector<GuiActionEvent>&
@@ -50,6 +55,12 @@ public:
     void SetDataChangedCallback(
         DataChangedCallback callback
     );
+    void SetSessionChangedCallback(
+        SessionChangedCallback callback
+    );
+    void SetPersistenceStore(
+        std::shared_ptr<GuiPersistenceStore> store
+    );
     void SetVisibilityChangedCallback(
         VisibilityChangedCallback callback
     );
@@ -62,12 +73,13 @@ public:
     bool Tick(uint64_t nowMilliseconds);
     void RefreshData();
 
-    bool IsOpen() const;
+    bool IsOpen() const override;
     bool HasVisibilityCondition() const;
 
     std::string_view PluginId() const override;
     std::string_view WindowName() const override;
     bool IsVisible() const override;
+    void OpenWindow() override;
     void SetVisibilityMode(GuiWindowVisibilityMode mode) override;
     void CloseWindow() override;
     bool DispatchPluginAction(
@@ -80,6 +92,9 @@ public:
     GuiWindowRuntime& Runtime();
     const GuiWindowRuntime& Runtime() const;
     const std::shared_ptr<GuiDataRegistry>& DataRegistry() const;
+    std::string_view SessionId() const;
+    std::string_view PersistenceKey() const;
+    std::string_view PersistenceError() const;
     gui::GuiLayoutContext& LayoutContext();
     const gui::GuiLayoutContext& LayoutContext() const;
     GuiListRuntimeStore& ListRuntimeStore();
@@ -95,7 +110,19 @@ public:
     GuiListRuntimeLayout BuildListRuntimeLayout(
         std::string_view listName
     ) const;
+    std::vector<gui::GuiResolvedWidget> ResolveSceneWidgets() const;
     std::vector<gui::GuiResolvedWidget> ResolveInteractiveWidgets() const;
+    std::string ResolveWidgetSprite(
+        const gui::GuiResolvedWidget& widget,
+        bool pressed = false
+    ) const;
+    bool ResolveWidgetText(
+        const gui::GuiResolvedWidget& widget,
+        gui::GuiTextCommand& command
+    ) const;
+    bool IsWidgetPressed(
+        const gui::GuiResolvedWidget& widget
+    ) const;
 
     std::size_t DispatchEvents(
         const std::vector<GuiActionEvent>& events,
@@ -129,17 +156,26 @@ public:
 
 private:
     void SetupActionBridge();
+    void ApplySessionBoundary(
+        const std::shared_ptr<GuiDataRegistry>& registry
+    );
+    void LoadPersistentState();
+    void SavePersistentState();
+    void ResetTransientState();
     void UpdateVisibility();
 
     std::filesystem::path root_;
     std::string id_;
     std::string visibleWhen_;
+    bool initiallyOpen_ = true;
     IGuiPlugin* plugin_ = nullptr;
     const gui::GuiInterpreter& interpreter_;
     const GuiBehaviorRegistry* behaviorRegistry_ = nullptr;
     ApplicationActionInvoker applicationActionInvoker_;
     LocalizationResolver localizationResolver_;
     DataChangedCallback dataChangedCallback_;
+    SessionChangedCallback sessionChangedCallback_;
+    std::shared_ptr<GuiPersistenceStore> persistenceStore_;
     VisibilityChangedCallback visibilityChangedCallback_;
     EventResolver eventResolver_;
     GuiWindowRuntime windowRuntime_;
@@ -147,6 +183,9 @@ private:
     gui::GuiLayoutContext layoutContext_;
     std::vector<std::string> listNames_;
     std::unordered_set<std::string> listTemplateNames_;
+    std::unordered_set<
+        const gui::WidgetDefinition*
+    > listTemplateDefinitions_;
     std::unordered_map<std::string, GuiListModel> listModels_;
     GuiListRuntimeStore listRuntimeStore_;
     GuiEventRouter eventRouter_;
@@ -162,4 +201,10 @@ private:
     bool visible_ = false;
     bool hasVisibilityOverride_ = false;
     bool visibilityOverride_ = false;
+    bool sessionObserved_ = false;
+    std::string sessionId_;
+    std::string persistenceKey_;
+    std::string persistenceError_;
+    bool persistenceLoaded_ = false;
+    bool persistentStateDirty_ = false;
 };

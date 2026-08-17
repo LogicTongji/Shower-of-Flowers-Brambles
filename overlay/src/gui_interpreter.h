@@ -242,6 +242,7 @@ struct WidgetDefinition
     bool localizeTooltip = false;
 	bool avoidTooltipOverlap = false;
 	bool dragInverted = false;
+    bool clipChildren = false;
     bool moveable = false;
     int dragHeight = 0;
     std::vector<WidgetDefinition> children;
@@ -269,8 +270,11 @@ struct GuiResolvedWidget
     int depth = 0;
 	int zOrder = 0;
 	std::size_t order = 0;
+	GuiRect clipRect;
+	bool hasClipRect = false;
 	std::string listName;
 	int listIndex = -1;
+	uint64_t listItemId = 0;
 };
 
 struct GuiListItemLayout
@@ -369,6 +373,11 @@ public:
 		return documents_;
 	}
 
+	const std::vector<std::string>& LoadDiagnostics() const
+	{
+		return loadDiagnostics_;
+	}
+
 	const std::unordered_map<std::string, SpriteResource>& Sprites() const
 	{
 		return sprites_;
@@ -443,6 +452,7 @@ private:
 	void RegisterLayouts(const GuiObject& object);
 
 	std::vector<GuiDocument> documents_;
+	std::vector<std::string> loadDiagnostics_;
 	std::unordered_map<std::string, SpriteResource> sprites_;
 	std::unordered_map<std::string, ProgressBarResource> progressBars_;
 	std::unordered_map<std::string, IndexedMapResource> indexedMaps_;

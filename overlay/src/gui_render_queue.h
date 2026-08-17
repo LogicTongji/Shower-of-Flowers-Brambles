@@ -14,7 +14,7 @@ enum class GuiRenderCommandType
     Button,
     ColorBox,
     ProgressBar,
-    List,
+    ScrollBar,
     Text,
     WindowFrame
 };

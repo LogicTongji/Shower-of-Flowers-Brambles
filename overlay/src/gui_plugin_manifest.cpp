@@ -2,6 +2,8 @@
 
 #include <algorithm>
 #include <cctype>
+#include <cstdlib>
+#include <limits>
 #include <string_view>
 #include <utility>
 #include <vector>
@@ -93,6 +95,31 @@ bool IsFalse(std::string value)
         || value == "0";
 }
 
+bool IsTrue(std::string value)
+{
+    return !value.empty() && !IsFalse(std::move(value));
+}
+
+int ParseInteger(std::string_view value, int fallback = 0)
+{
+    if (value.empty())
+    {
+        return fallback;
+    }
+    std::string text(value);
+    char* end = nullptr;
+    const long parsed = std::strtol(text.c_str(), &end, 10);
+    if (end == text.c_str() || *end != '\0')
+    {
+        return fallback;
+    }
+    return static_cast<int>(std::clamp(
+        parsed,
+        static_cast<long>(std::numeric_limits<int>::min()),
+        static_cast<long>(std::numeric_limits<int>::max())
+    ));
+}
+
 void CollectPluginBlocks(
     const gui::GuiObject& object,
     std::vector<const gui::GuiObject*>& output
@@ -154,6 +181,13 @@ bool BuildDescriptor(
     descriptor.visibleWhen = FindScalar(object, "visibleWhen");
     const std::string startup = FindScalar(object, "startup");
     descriptor.startup = startup.empty() || !IsFalse(startup);
+    std::string windowZOrder = FindScalar(object, "windowZOrder");
+    if (windowZOrder.empty())
+    {
+        windowZOrder = FindScalar(object, "zOrder");
+    }
+    descriptor.windowZOrder = ParseInteger(windowZOrder);
+    descriptor.modal = IsTrue(FindScalar(object, "modal"));
 
     if (descriptor.id.empty())
     {
@@ -204,7 +238,8 @@ bool LoadGuiPluginManifestDirectory(
     const std::filesystem::path& root,
     GuiPluginRegistry& registry,
     std::size_t& loadedCount,
-    std::string& error
+    std::string& error,
+    std::vector<std::string>* diagnostics
 )
 {
     loadedCount = 0;
@@ -239,8 +274,13 @@ bool LoadGuiPluginManifestDirectory(
         std::string parseError;
         if (!parser.LoadFile(path, parseError))
         {
-            error = "plugin_manifest_parse_failed: " + parseError;
-            return false;
+            const std::string issue =
+                "plugin_manifest_parse_failed: " + parseError;
+            if (diagnostics)
+            {
+                diagnostics->push_back(issue);
+            }
+            continue;
         }
 
         for (const gui::GuiDocument& document : parser.Documents())
@@ -260,24 +300,36 @@ bool LoadGuiPluginManifestDirectory(
                 {
                     if (!descriptorError.empty())
                     {
-                        error = descriptorError;
-                        return false;
+                        if (diagnostics)
+                        {
+                            diagnostics->push_back(descriptorError);
+                        }
                     }
                     continue;
                 }
 
                 if (!registry.HasFactory(descriptor.factoryType))
                 {
-                    error = "plugin_factory_not_registered: "
+                    const std::string issue =
+                        "plugin_factory_not_registered: "
                         + descriptor.factoryType
                         + ": " + document.path.string();
-                    return false;
+                    if (diagnostics)
+                    {
+                        diagnostics->push_back(issue);
+                    }
+                    continue;
                 }
                 if (!registry.Register(std::move(descriptor)))
                 {
-                    error = "plugin_registration_failed: "
+                    const std::string issue =
+                        "plugin_registration_failed: "
                         + document.path.string();
-                    return false;
+                    if (diagnostics)
+                    {
+                        diagnostics->push_back(issue);
+                    }
+                    continue;
                 }
                 ++loadedCount;
             }
@@ -289,5 +341,6 @@ bool LoadGuiPluginManifestDirectory(
         error = "no_plugin_manifests_found: " + root.string();
         return false;
     }
+    error.clear();
     return true;
 }

@@ -94,6 +94,10 @@ int main(int argc, char** argv)
     list.items.push_back({11, "First"});
     list.items.push_back({22, "Second"});
     data.SetList("probe_list", list);
+	data.Set("items.11.label", "Resolved 11");
+	data.Set("items.22.label", "Resolved 22");
+	data.Set("items.11.visible", true);
+	data.Set("items.22.visible", true);
 	GuiListModel polarList;
 	for (uint64_t itemId = 1; itemId <= 6; ++itemId)
 	{

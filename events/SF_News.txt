@@ -1,7 +1,7 @@
 ######################
-#   ¾üÕþÐÂÎÅÊÂ¼þ×é   #
+#   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½   #
 ######################
-#½ðÊ÷ÈÊÏÂÒ°
+#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò°
 country_event = {
 	id = 390297
 	fire_only_once = yes
@@ -22,7 +22,7 @@ country_event = {
 		ai_chance = { factor = 100 }
 	}
 }
-#ÖÐÉ½Ë®±ø°¸
+#ï¿½ï¿½É½Ë®ï¿½ï¿½ï¿½ï¿½
 country_event = {
 	id = 390298
 	major = yes
@@ -43,7 +43,7 @@ country_event = {
 		ai_chance = { factor = 100 }
 	}
 }
-#ËÄÂí¾ÜËï
+#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 country_event = {
 	id = 390308
 	fire_only_once = yes
@@ -62,7 +62,7 @@ country_event = {
 		ai_chance = { factor = 100 }
 	}
 }
-#Ëï·ïÃù´ÌÍô
+#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 country_event = {
 	id = 390299
 	major = yes
@@ -82,7 +82,7 @@ country_event = {
 		ai_chance = { factor = 100 }
 	}
 }
-#Â³Ñ¸ÊÅÊÀ
+#Â³Ñ¸ï¿½ï¿½ï¿½ï¿½
 country_event = {
 	id = 390300
 	major = yes
@@ -100,7 +100,7 @@ country_event = {
 		ai_chance = { factor = 100 }
 	}
 }
-#ÖÐ¹²Í¨µçÍ£Ö¹ÄÚÕ½Ò»ÖÂ¿¹ÈÕ
+#ï¿½Ð¹ï¿½Í¨ï¿½ï¿½Í£Ö¹ï¿½ï¿½Õ½Ò»ï¿½Â¿ï¿½ï¿½ï¿½
 country_event = {
 	id = 390301
 	fire_only_once = yes
@@ -118,7 +118,7 @@ country_event = {
                 threat = { who = CHI value = -5 }
 	}
 }
-#½¯½éÊ¯Ñ²ÊÓ
+#ï¿½ï¿½ï¿½ï¿½Ê¯Ñ²ï¿½ï¿½
 country_event = {
 	id = 390302
 	fire_only_once = yes
@@ -137,7 +137,7 @@ country_event = {
 		ai_chance = { factor = 0 }
 	}
 }
-#°×Çó¶÷À´»ª
+#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 country_event = {
 	id = 390303
 	fire_only_once = yes
@@ -155,7 +155,7 @@ country_event = {
 		ai_chance = { factor = 100 }
 	}
 }
-#ÕÅ¹úìâÅÑÌÓ
+#ï¿½Å¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 country_event = {
 	id = 390304
 	fire_only_once = yes
@@ -175,7 +175,7 @@ country_event = {
 		ai_chance = { factor = 100 }
 	}
 }
-#ÖÐÈÕÎäºº¿ÕÕ½
+#ï¿½ï¿½ï¿½ï¿½ï¿½äººï¿½ï¿½Õ½
 country_event = {
 	id = 390305
 	fire_only_once = yes
@@ -193,7 +193,7 @@ country_event = {
 		ai_chance = { factor = 100 }
 	}
 }
-#ÈÕ¾ü¶¾ÆøÕ½
+#ï¿½Õ¾ï¿½ï¿½ï¿½ï¿½ï¿½Õ½
 country_event = {
 	id = 390309
 	fire_only_once = yes
@@ -211,7 +211,7 @@ country_event = {
 		ai_chance = { factor = 100 }
 	}
 }
-#Æß¾ý×ÓÊÂ¼þ
+#ï¿½ß¾ï¿½ï¿½ï¿½ï¿½Â¼ï¿½
 country_event = {
 	id = 1100081
 	major = yes
@@ -235,7 +235,7 @@ country_event = {
 		national_unity = -5
 	}
 }
-#ÎåÎåÏÜ²Ý
+#ï¿½ï¿½ï¿½ï¿½ï¿½Ü²ï¿½
 country_event = {
 	id = 1100083
 	title = "Event1000083title"
@@ -255,7 +255,7 @@ country_event = {
 		government = right_wing_autocrat
 	}
 }
-#ÁõÏæÖ®ËÀ
+#ï¿½ï¿½ï¿½ï¿½Ö®ï¿½ï¿½
 country_event = {
 	id = 1000101
         major = yes
@@ -295,7 +295,7 @@ country_event = {
                 national_unity = 5
         }
 }
-#Ç©Êð¡¶ÖÐÃÀµÖ¿¹ÇÖÂÔ»¥ÖúÐ­¶¨¡·
+#Ç©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¿ï¿½ï¿½ï¿½ï¿½Ô»ï¿½ï¿½ï¿½Ð­ï¿½ï¿½ï¿½ï¿½
 country_event = {
 	id = 1200001
 	major = yes
@@ -322,7 +322,7 @@ country_event = {
 		ai_chance = { factor = 100 }
 	}
 }
-#12.9ÔË¶¯
+#12.9ï¿½Ë¶ï¿½
 country_event = {
 	id = 193512
 	major = yes
@@ -348,7 +348,7 @@ country_event = {
                 ai_chance = { factor = 100 }
 	}
 }
-#Æ½½òÑ§Éú×é³ÉÄÏÏÂ¿¹ÈÕÐû´«ÍÅ
+#Æ½ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 country_event = {
 	id = 19361
 	major = yes
@@ -374,7 +374,7 @@ country_event = {
                 ai_chance = { factor = 100 }
 	}
 }
-#Ã«Ôó¶«Ìî´Ê¡¶ÇßÔ°´º¡¤Ñ©¡·
+#Ã«ï¿½ï¿½ï¿½ï¿½Ê¡ï¿½ï¿½ï¿½Ô°ï¿½ï¿½ï¿½ï¿½Ñ©ï¿½ï¿½
 country_event = {
 	id = 19363
           fire_only_once = yes
@@ -396,7 +396,7 @@ country_event = {
                 dissent = -5
 	}
 }
-#¼ÓÃ×Ê©-ÅÁëø»ùÐË¶¬¼¾°ÂÔË»áÔÚµÂ¹ú¼ÓÃ×Ê©-ÅÁÌÚ»ùÐË¾ÙÐÐ
+#ï¿½ï¿½ï¿½ï¿½Ê©-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë»ï¿½ï¿½ÚµÂ¹ï¿½ï¿½ï¿½ï¿½ï¿½Ê©-ï¿½ï¿½ï¿½Ú»ï¿½ï¿½Ë¾ï¿½ï¿½ï¿½
 country_event = {
 	id = 19364
 	major = yes
@@ -415,7 +415,7 @@ country_event = {
                 dissent = -5
 	}
 }
-#ÏÜ±øÑ§Ð£½¨Ð£
+#ï¿½Ü±ï¿½Ñ§Ð£ï¿½ï¿½Ð£
 country_event = {
 	id = 19365
           fire_only_once = yes
@@ -437,7 +437,7 @@ country_event = {
                 dissent = -5
 	}
 }
-#°¢²¿¶¨ÊÂ¼þ
+#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½
 country_event = {
 	id = 19367	
           fire_only_once = yes
@@ -453,7 +453,7 @@ country_event = {
 		name = "newsop3"                       
 	}
 }
-#Ìá³öÍ¼Áé»úÄ£ÐÍ
+#ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½Ä£ï¿½ï¿½
 country_event = {
 	id = 19368
         major = yes	
@@ -470,7 +470,7 @@ country_event = {
 		name = "Event19368option"                       
 	}
 }
-#³ÉÁ¢È«¹ú¸÷½ç¾È¹úÁªºÏ»á
+#ï¿½ï¿½ï¿½ï¿½È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¹ï¿½ï¿½ï¿½ï¿½Ï»ï¿½
 country_event = {
 	id = 19369
           fire_only_once = yes
@@ -489,7 +489,7 @@ country_event = {
 		name = "newsop"                   
         }
 }
-#Ë¹Åµµ½À´
+#Ë¹Åµï¿½ï¿½ï¿½ï¿½
 country_event = {
 	id = 193610
         major = yes	
@@ -506,7 +506,7 @@ country_event = {
 		name = "Event193610option"                       
 	}
 }
-#ÍõÑÇéÔÊÂ¼þ
+#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½
 country_event = {
 	id = 193611	
          fire_only_once = yes
@@ -522,7 +522,7 @@ country_event = {
 		name = "newsop1"        
 	}
 }
-#ÖÐÑë×÷³ö¡¶¹ØÓÚÇàÄê¹¤×÷µÄ¾ö¶¨¡·
+#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê¹¤ï¿½ï¿½ï¿½Ä¾ï¿½ï¿½ï¿½ï¿½ï¿½
 country_event = {
 	id = 193612	
 	title = "Event193612title"	
@@ -540,9 +540,10 @@ country_event = {
 		set_country_flag = Event193612
 	}
 }
-#Íô¾«ÎÀ²¡Íö
+#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 country_event = {
 	id = 194401
+	fire_only_once = yes
 	title = "Event194401title"	
 	desc = "Event194401desc"
 	picture = "news_picture11"

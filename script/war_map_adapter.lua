@@ -3,8 +3,9 @@ local P = {}
 local ChinaWarMap = require('overlay_gui')
 local GuiActionBridge = require('gui_action_bridge')
 local GuiDataBridge = require('gui_data_bridge')
+local GuiPersistence = require('scripted_gui_persistence')
 
-P.Version = 7
+P.Version = 8
 P.RegionNames = {}
 P.LastDay = nil
 P.LastSnapshot = nil
@@ -13,6 +14,21 @@ P.SelectedRegionSource = "none"
 P.WindowOpen = false
 P.Revision = 0
 P.ChannelName = "china_anti_jap"
+P.SessionId = ""
+P.PersistenceKey = ""
+P.PersistenceNamespace = "china_war"
+P.RuntimeContext = nil
+P.PersistenceAvailable = false
+P.PersistenceRevision = 0
+P.LastPersistedRevision = 0
+P.LastObservedGameDay = nil
+P.PendingPersistenceRevision = nil
+P.PendingProfileToken = nil
+P.PendingProfileTicks = 0
+P.PersistenceDirty = false
+P.PublisherOrdinal = ""
+P.SessionGeneration = 0
+P.PersistenceAckTimeoutTicks = 8
 P.LeaderAssignments = {}
 P.NextAssignmentOrder = 1
 P.LeaderTypes = {
@@ -455,6 +471,30 @@ function P.BuildSnapshot()
 	snapshot.values["state.active"] = snapshot.active
 	snapshot.values["state.viewertag"] = viewerTag
 	snapshot.values["state.date"] = snapshot.date
+	snapshot.values["state.sessionid"] = P.SessionId
+	snapshot.values["state.persistencekey"] = P.PersistenceKey
+	snapshot.values["state.persistenceavailable"] =
+		P.PersistenceAvailable
+	snapshot.values["state.persistenceerror"] =
+		GuiPersistence.GetLastError()
+	snapshot.values["state.persistencerevision"] =
+		P.PersistenceRevision
+	snapshot.values["state.persistedrevision"] =
+		P.LastPersistedRevision
+	snapshot.values["state.persistencependingrevision"] =
+		P.PendingPersistenceRevision
+		and P.PendingPersistenceRevision.next or 0
+	snapshot.values["state.persistencependingticks"] =
+		P.PendingPersistenceRevision
+		and P.PendingPersistenceRevision.ticks or 0
+	snapshot.values["state.persistenceobservedday"] =
+		P.LastObservedGameDay or -1
+	for _, leader in ipairs(P.Leaders) do
+		local assignment = P.LeaderAssignments[leader.id]
+		snapshot.values[
+			"state.leader" .. tostring(leader.id) .. "region"
+		] = assignment and assignment.regionId or 0
+	end
 	snapshot.values["state.windowopen"] = P.WindowOpen
 	snapshot.values["selectedregion.id"] = P.SelectedRegionId
 	snapshot.values["selectedregion.source"] = P.SelectedRegionSource
@@ -619,17 +659,422 @@ function P.PublishSnapshot(snapshot)
 	)
 end
 
-function P.Tick()
-	GuiDataBridge.DispatchActions(P.ChannelName, 64)
+local function NormalizePersistenceRevision(value)
+	return math.max(0, math.floor(tonumber(value) or 0))
+end
 
-	local currentDay = CCurrentGameState.GetCurrentDate():GetTotalDays()
+local function AdvanceSession()
+	P.SessionGeneration = P.SessionGeneration + 1
+	P.SessionId = (P.PersistenceKey ~= ""
+		and P.PersistenceKey or "unbound")
+		.. ":reload:" .. tostring(P.SessionGeneration)
+end
 
-	if P.LastSnapshot and P.LastDay == currentDay then
-		return P.LastSnapshot
+local function PreparePersistenceContext(context)
+	if type(context) ~= "table" then
+		return context
+	end
+	if context.persistenceTagObject and context.persistenceCountry then
+		return context
 	end
 
-	P.LastDay = currentDay
+	local playerTagObject = context.playerTagObject
+	local success, playerCountry = pcall(function()
+		return playerTagObject:GetCountry()
+	end)
+	if not success then
+		success, playerTagObject, playerCountry = pcall(function()
+			local tag = CCountryDataBase.GetTag(context.playerTag)
+			return tag, tag:GetCountry()
+		end)
+	end
+	if success and playerTagObject and playerCountry then
+		context.persistenceTagObject = playerTagObject
+		context.persistenceCountry = playerCountry
+	end
+	return context
+end
+
+local function SynchronizePersistence(context)
+	context = PreparePersistenceContext(context)
+	if type(context) ~= "table" or P.PersistenceKey == "" then
+		return false
+	end
+
+	local currentDay = math.floor(
+		tonumber(context.currentDay) or 0
+	)
+	local dayRolledBack = P.LastObservedGameDay ~= nil
+		and currentDay < P.LastObservedGameDay
+	P.LastObservedGameDay = currentDay
+
+	local profileKey, profileAvailable, profileToken =
+		GuiPersistence.ReadProfileKey(
+			context,
+			P.PersistenceNamespace
+		)
+	local persistedRevision, revisionAvailable =
+		GuiPersistence.ReadNumber(
+			context,
+			P.PersistenceNamespace,
+			"revision",
+			0
+		)
+	if not profileAvailable or not revisionAvailable then
+		P.PersistenceAvailable = false
+		return false
+	end
+
+	P.PersistenceAvailable = true
+	persistedRevision = NormalizePersistenceRevision(
+		persistedRevision
+	)
+	P.LastPersistedRevision = persistedRevision
+	if dayRolledBack then
+		P.PendingProfileToken = nil
+		P.PendingProfileTicks = 0
+		P.PendingPersistenceRevision = nil
+	end
+	if P.PendingProfileToken then
+		if profileToken == P.PendingProfileToken then
+			P.PendingProfileToken = nil
+			P.PendingProfileTicks = 0
+		elseif profileToken <= 0 then
+			P.PendingProfileTicks = P.PendingProfileTicks + 1
+			if P.PendingProfileTicks
+				< P.PersistenceAckTimeoutTicks then
+				return false
+			end
+			P.PendingProfileToken = nil
+		else
+			P.PendingProfileToken = nil
+			P.PendingProfileTicks = 0
+		end
+	end
+
+	local externalState = dayRolledBack
+		or profileKey ~= P.PersistenceKey
+	local pendingRevision = P.PendingPersistenceRevision
+	if not externalState and pendingRevision then
+		if persistedRevision == pendingRevision.next then
+			P.PersistenceRevision = pendingRevision.next
+			P.PendingPersistenceRevision = nil
+		elseif persistedRevision == pendingRevision.previous then
+			pendingRevision.ticks = pendingRevision.ticks + 1
+			if pendingRevision.ticks
+				< P.PersistenceAckTimeoutTicks then
+				return false
+			end
+			externalState = true
+		else
+			externalState = true
+		end
+	elseif not externalState
+		and persistedRevision ~= P.PersistenceRevision then
+		externalState = true
+	end
+
+	if not externalState then
+		return false
+	end
+
+	GuiPersistence.ResetWriteCache()
+	local restored = P.RestoreState(context)
+	if restored then
+		AdvanceSession()
+	end
+	return restored
+end
+
+function P.PumpActions(context, maximumActions)
+	P.RuntimeContext = PreparePersistenceContext(
+		context or P.RuntimeContext
+	)
+	local restored = SynchronizePersistence(P.RuntimeContext)
+	if restored
+		and type(P.RuntimeContext) == "table"
+		and type(P.RuntimeContext.requestRefresh) == "function" then
+		P.RuntimeContext.requestRefresh()
+	end
+
+	local dispatched = GuiDataBridge.DispatchActions(
+		P.ChannelName,
+		maximumActions or 64
+	)
+	if dispatched > 0 then
+		P.PersistenceDirty = true
+	end
+	if P.PersistenceDirty and not P.PendingPersistenceRevision then
+		P.PersistState(P.RuntimeContext)
+	end
+	return dispatched
+end
+
+function P.RestoreState(context)
+	context = PreparePersistenceContext(context)
+	if type(context) ~= "table" then
+		return false
+	end
+	P.RuntimeContext = context
+	local profileKey, profileToken, profileCreated,
+		profileWritten = GuiPersistence.EnsureProfileKey(
+		context,
+		P.PersistenceNamespace
+	)
+	P.PersistenceKey = profileKey
+	if P.SessionId == "" then
+		P.SessionId = P.PersistenceKey
+	end
+	P.PendingProfileToken = profileCreated and profileWritten
+		and profileToken or nil
+	P.PendingProfileTicks = 0
+	local windowOpen, persistenceAvailable =
+		GuiPersistence.ReadBoolean(
+		context,
+		P.PersistenceNamespace,
+		"window_open",
+		false
+	)
+	P.WindowOpen = windowOpen
+	local persistedRevision, revisionAvailable =
+		GuiPersistence.ReadNumber(
+			context,
+			P.PersistenceNamespace,
+			"revision",
+			0
+		)
+	P.PersistenceRevision = NormalizePersistenceRevision(
+		persistedRevision
+	)
+	P.LastPersistedRevision = P.PersistenceRevision
+	P.LastObservedGameDay = math.floor(
+		tonumber(context.currentDay) or 0
+	)
+	P.PendingPersistenceRevision = nil
+	P.PersistenceDirty = false
+	P.PersistenceAvailable = persistenceAvailable
+		and revisionAvailable
+		and (not profileCreated or profileWritten)
+	P.SelectedRegionId = math.max(0, math.floor(
+		GuiPersistence.ReadNumber(
+			context,
+			P.PersistenceNamespace,
+			"selected_region",
+			0
+		)
+	))
+	local sourceCode = math.floor(GuiPersistence.ReadNumber(
+		context,
+		P.PersistenceNamespace,
+		"selected_source",
+		0
+	))
+	P.SelectedRegionSource = sourceCode == 1 and "combat"
+		or sourceCode == 2 and "map" or "none"
+	P.LeaderAssignments = {}
+	P.NextAssignmentOrder = 1
+	for _, leader in ipairs(P.Leaders) do
+		local prefix = "leader_" .. tostring(leader.id) .. "_"
+		local regionId = math.floor(GuiPersistence.ReadNumber(
+			context,
+			P.PersistenceNamespace,
+			prefix .. "region",
+			0
+		))
+		if regionId > 0 and regionId <= #P.RegionNames then
+			local assignmentOrder = math.max(1, math.floor(
+				GuiPersistence.ReadNumber(
+					context,
+					P.PersistenceNamespace,
+					prefix .. "order",
+					P.NextAssignmentOrder
+				)
+			))
+			P.LeaderAssignments[leader.id] = {
+				leaderId = leader.leaderId,
+				leaderType = leader.leaderType or leader.role,
+				regionId = regionId,
+				assignmentOrder = assignmentOrder,
+				x = GuiPersistence.ReadNumber(
+					context,
+					P.PersistenceNamespace,
+					prefix .. "x",
+					-10000
+				) / 10000,
+				y = GuiPersistence.ReadNumber(
+					context,
+					P.PersistenceNamespace,
+					prefix .. "y",
+					-10000
+				) / 10000
+			}
+			P.NextAssignmentOrder = math.max(
+				P.NextAssignmentOrder,
+				assignmentOrder + 1
+			)
+		end
+	end
+	P.LastDay = nil
+	P.LastSnapshot = nil
+	return true
+end
+
+function P.PersistState(context)
+	context = PreparePersistenceContext(
+		context or P.RuntimeContext
+	)
+	if type(context) ~= "table" then
+		return false
+	end
+	P.RuntimeContext = context
+	if not P.PersistenceDirty then
+		return true
+	end
+	if P.PendingPersistenceRevision then
+		return true
+	end
+	if P.PersistenceKey == "" then
+		local profileKey, profileToken, profileCreated,
+			profileWritten = GuiPersistence.EnsureProfileKey(
+			context,
+			P.PersistenceNamespace
+		)
+		P.PersistenceKey = profileKey
+		P.PendingProfileToken = profileCreated and profileWritten
+			and profileToken or nil
+		P.PendingProfileTicks = 0
+	end
+	local success = true
+	success = GuiPersistence.WriteBoolean(
+		context,
+		P.PersistenceNamespace,
+		"window_open",
+		P.WindowOpen
+	) and success
+	success = GuiPersistence.WriteNumber(
+		context,
+		P.PersistenceNamespace,
+		"selected_region",
+		P.SelectedRegionId
+	) and success
+	local sourceCode = P.SelectedRegionSource == "combat" and 1
+		or P.SelectedRegionSource == "map" and 2 or 0
+	success = GuiPersistence.WriteNumber(
+		context,
+		P.PersistenceNamespace,
+		"selected_source",
+		sourceCode
+	) and success
+	for _, leader in ipairs(P.Leaders) do
+		local assignment = P.LeaderAssignments[leader.id]
+		local prefix = "leader_" .. tostring(leader.id) .. "_"
+		success = GuiPersistence.WriteNumber(
+			context,
+			P.PersistenceNamespace,
+			prefix .. "region",
+			assignment and assignment.regionId or 0
+		) and success
+		success = GuiPersistence.WriteNumber(
+			context,
+			P.PersistenceNamespace,
+			prefix .. "order",
+			assignment and assignment.assignmentOrder or 0
+		) and success
+		success = GuiPersistence.WriteNumber(
+			context,
+			P.PersistenceNamespace,
+			prefix .. "x",
+			assignment and math.floor((assignment.x or -1) * 10000)
+				or -10000
+		) and success
+		success = GuiPersistence.WriteNumber(
+			context,
+			P.PersistenceNamespace,
+			prefix .. "y",
+			assignment and math.floor((assignment.y or -1) * 10000)
+				or -10000
+		) and success
+	end
+	local previousRevision = P.PersistenceRevision
+	local nextRevision = previousRevision % 999999 + 1
+	if success then
+		success = GuiPersistence.WriteNumber(
+			context,
+			P.PersistenceNamespace,
+			"revision",
+			nextRevision
+		)
+	end
+	if success then
+		P.PendingPersistenceRevision = {
+			previous = previousRevision,
+			next = nextRevision,
+			ticks = 0
+		}
+		P.PersistenceDirty = false
+	end
+	P.PersistenceAvailable = success
+	return success
+end
+
+function P.ShouldRefresh(context)
+	local currentDay = context and context.currentDay
+		or CCurrentGameState.GetCurrentDate():GetTotalDays()
+	return not P.LastSnapshot or P.LastDay ~= currentDay
+end
+
+function P.BuildUpdate(context)
+	P.RuntimeContext = context or P.RuntimeContext
+	if P.PersistenceKey == "" and P.RuntimeContext then
+		P.PersistenceKey = GuiPersistence.EnsureProfileKey(
+			P.RuntimeContext,
+			P.PersistenceNamespace
+		)
+		if P.SessionId == "" then
+			P.SessionId = P.PersistenceKey
+		end
+	end
+	P.LastDay = context and context.currentDay
+		or CCurrentGameState.GetCurrentDate():GetTotalDays()
 	P.LastSnapshot = P.BuildSnapshot()
+	return P.LastSnapshot
+end
+
+function P.OnPublisherAcquired(context)
+	GuiPersistence.ResetWriteCache()
+	P.PublisherOrdinal = tostring(
+		context and context.publisherStateOrdinal or ""
+	)
+	P.SessionGeneration = 0
+	P.SessionId = ""
+	P.PersistenceKey = ""
+	P.PersistenceRevision = 0
+	P.LastPersistedRevision = 0
+	P.LastObservedGameDay = nil
+	P.PendingPersistenceRevision = nil
+	P.PendingProfileToken = nil
+	P.PendingProfileTicks = 0
+	P.PersistenceDirty = false
+	P.RuntimeContext = context
+	P.LastDay = nil
+	P.LastSnapshot = nil
+	return true
+end
+
+function P.OnPublisherLost(context)
+	P.RuntimeContext = context or P.RuntimeContext
+	return true
+end
+
+function P.Tick()
+	local dispatched = P.PumpActions(P.RuntimeContext, 64)
+	local context = {
+		currentDay = CCurrentGameState.GetCurrentDate():GetTotalDays()
+	}
+	if not P.ShouldRefresh(context) then
+		return P.LastSnapshot
+	end
+	P.BuildUpdate(context)
 	P.PublishSnapshot(P.LastSnapshot)
 
 	return P.LastSnapshot

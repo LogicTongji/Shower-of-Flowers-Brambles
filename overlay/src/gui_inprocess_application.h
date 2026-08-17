@@ -11,6 +11,14 @@
 #include "gui_interpreter.h"
 #include "gui_plugin.h"
 #include "gui_plugin_registry.h"
+#include "gui_persistence.h"
+
+struct GuiConfigurationIssue
+{
+    std::string pluginId;
+    std::string stage;
+    std::string message;
+};
 
 class GuiInProcessApplication
 {
@@ -29,6 +37,8 @@ public:
     const gui::GuiInterpreter& Interpreter() const;
     const GuiBehaviorRegistry* Behaviors() const;
     const std::vector<GuiPluginLaunch>& Launches() const;
+    const std::vector<GuiConfigurationIssue>& Issues() const;
+    const std::shared_ptr<GuiPersistenceStore>& PersistenceStore() const;
 
 private:
     std::filesystem::path root_;
@@ -39,6 +49,8 @@ private:
     GuiBehaviorRegistry behaviors_;
     std::vector<std::unique_ptr<IGuiPlugin>> plugins_;
     std::vector<GuiPluginLaunch> launches_;
+    std::vector<GuiConfigurationIssue> issues_;
+    std::shared_ptr<GuiPersistenceStore> persistenceStore_;
     bool behaviorsLoaded_ = false;
     bool initialized_ = false;
 };

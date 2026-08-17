@@ -34,6 +34,8 @@ struct GuiPluginDescriptor
     std::unordered_map<std::string, std::string> defaultOptions;
     std::string visibleWhen;
     bool startup = true;
+    int windowZOrder = 0;
+    bool modal = false;
 };
 
 class GuiPluginRegistry

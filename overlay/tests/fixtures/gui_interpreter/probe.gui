@@ -47,6 +47,7 @@ guiTypes = {
 			name = "probe_list"
 			position = { x = 20 y = 88 }
 			size = { x = 160 y = 140 }
+			clipChildren = yes
 			itemTemplate = "probe_list_item"
 			scrollbarType = "probe_scrollbar"
 			spacing = 4
@@ -70,6 +71,31 @@ guiTypes = {
 			alignment = "center"
 			position = { x = 0 y = 0 }
 			size = { x = 150 y = 28 }
+
+			iconType = {
+				name = "probe_list_icon"
+				spriteSource = "item.sprite"
+				position = { x = 4 y = 4 }
+				size = { x = 20 y = 20 }
+			}
+
+			textBoxType = {
+				name = "probe_list_label"
+				font = "probe_font"
+				fontSize = 12
+				textSource = "items.{id}.label"
+				visibleWhen = "items.{id}.visible"
+				position = { x = 28 y = 4 }
+				size = { x = 92 y = 20 }
+			}
+
+			guiButtonType = {
+				name = "probe_list_nested"
+				quadTextureSprite = "GFX_probe_panel"
+				onClick = "activate_item"
+				position = { x = 126 y = 4 }
+				size = { x = 20 y = 20 }
+			}
 		}
 
 		listBoxType = {

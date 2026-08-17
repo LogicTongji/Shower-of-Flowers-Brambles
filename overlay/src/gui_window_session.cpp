@@ -31,12 +31,77 @@ void CollectListDefinitions(
     }
 }
 
+void CollectTemplateDefinitions(
+    const gui::WidgetDefinition& widget,
+    const std::unordered_set<std::string>& templateNames,
+    std::unordered_set<const gui::WidgetDefinition*>& definitions,
+    bool insideTemplate = false
+)
+{
+    insideTemplate = insideTemplate
+        || templateNames.find(widget.name) != templateNames.end();
+    if (insideTemplate)
+    {
+        definitions.insert(&widget);
+    }
+    for (const gui::WidgetDefinition& child : widget.children)
+    {
+        CollectTemplateDefinitions(
+            child,
+            templateNames,
+            definitions,
+            insideTemplate
+        );
+    }
+}
+
 bool PointInside(const gui::GuiRect& rect, int x, int y)
 {
     return x >= rect.x
         && y >= rect.y
         && x < rect.x + rect.width
         && y < rect.y + rect.height;
+}
+
+bool IntersectRects(
+    const gui::GuiRect& first,
+    const gui::GuiRect& second,
+    gui::GuiRect& output
+)
+{
+    const int left = std::max(first.x, second.x);
+    const int top = std::max(first.y, second.y);
+    const int right = std::min(
+        first.x + first.width,
+        second.x + second.width
+    );
+    const int bottom = std::min(
+        first.y + first.height,
+        second.y + second.height
+    );
+    output = {
+        left,
+        top,
+        std::max(0, right - left),
+        std::max(0, bottom - top)
+    };
+    return output.width > 0 && output.height > 0;
+}
+
+std::string ReplaceItemId(std::string value, uint64_t itemId)
+{
+    constexpr std::string_view placeholder = "{id}";
+    const std::string replacement = std::to_string(itemId);
+    std::size_t position = value.find(placeholder);
+    while (position != std::string::npos)
+    {
+        value.replace(position, placeholder.size(), replacement);
+        position = value.find(
+            placeholder,
+            position + replacement.size()
+        );
+    }
+    return value;
 }
 
 std::string Lower(std::string value)
@@ -87,6 +152,7 @@ GuiWindowSessionController::GuiWindowSessionController(
     : root_(std::move(root)),
       id_(launch.id),
       visibleWhen_(launch.visibleWhen),
+      initiallyOpen_(launch.openInitially),
       plugin_(launch.plugin),
       interpreter_(interpreter),
       behaviorRegistry_(behaviorRegistry)
@@ -119,6 +185,21 @@ void GuiWindowSessionController::SetDataChangedCallback(
     dataChangedCallback_ = std::move(callback);
 }
 
+void GuiWindowSessionController::SetSessionChangedCallback(
+    SessionChangedCallback callback
+)
+{
+    sessionChangedCallback_ = std::move(callback);
+}
+
+void GuiWindowSessionController::SetPersistenceStore(
+    std::shared_ptr<GuiPersistenceStore> store
+)
+{
+    persistenceStore_ = std::move(store);
+    persistenceLoaded_ = false;
+}
+
 void GuiWindowSessionController::SetVisibilityChangedCallback(
     VisibilityChangedCallback callback
 )
@@ -149,6 +230,7 @@ bool GuiWindowSessionController::Bind(std::string& error)
 
     listNames_.clear();
     listTemplateNames_.clear();
+    listTemplateDefinitions_.clear();
     if (const gui::WindowDefinition* definition =
             windowRuntime_.Definition())
     {
@@ -156,6 +238,11 @@ bool GuiWindowSessionController::Bind(std::string& error)
             *definition,
             listNames_,
             listTemplateNames_
+        );
+        CollectTemplateDefinitions(
+            *definition,
+            listTemplateNames_,
+            listTemplateDefinitions_
         );
     }
     return true;
@@ -185,7 +272,7 @@ bool GuiWindowSessionController::Initialize(
     }
 
     pluginInitialized_ = true;
-    open_ = true;
+    open_ = initiallyOpen_;
     plugin_->RegisterCustomWidgets(customWidgets_);
     SetupActionBridge();
     tickScheduler_.SetInterval(plugin_->TickIntervalMilliseconds());
@@ -202,6 +289,7 @@ bool GuiWindowSessionController::Initialize(
 
 void GuiWindowSessionController::Shutdown()
 {
+    SavePersistentState();
     tickScheduler_.Clear();
     if (pluginInitialized_ && plugin_)
     {
@@ -217,11 +305,17 @@ void GuiWindowSessionController::Shutdown()
     persistentValues_.clear();
     persistentLists_.clear();
     inputState_ = {};
+    sessionObserved_ = false;
+    sessionId_.clear();
+    persistenceKey_.clear();
+    persistenceError_.clear();
+    persistenceLoaded_ = false;
+    persistentStateDirty_ = false;
 }
 
 bool GuiWindowSessionController::Tick(uint64_t nowMilliseconds)
 {
-    if (!open_)
+    if (!pluginInitialized_)
     {
         return false;
     }
@@ -244,13 +338,28 @@ void GuiWindowSessionController::RefreshData()
     {
         dataRegistry_ = std::make_shared<GuiDataRegistry>();
     }
-    for (const auto& entry : persistentValues_)
+    ApplySessionBoundary(dataRegistry_);
+    const bool authoritativePersistence =
+        dataRegistry_->ResolveBool("state.persistenceavailable");
+    if (authoritativePersistence)
     {
-        dataRegistry_->Set(entry.first, entry.second);
+        if (!persistentValues_.empty() || !persistentLists_.empty())
+        {
+            persistentValues_.clear();
+            persistentLists_.clear();
+            persistentStateDirty_ = true;
+        }
     }
-    for (const auto& entry : persistentLists_)
+    else
     {
-        dataRegistry_->SetList(entry.first, entry.second);
+        for (const auto& entry : persistentValues_)
+        {
+            dataRegistry_->Set(entry.first, entry.second);
+        }
+        for (const auto& entry : persistentLists_)
+        {
+            dataRegistry_->SetList(entry.first, entry.second);
+        }
     }
     optimisticDataStore_.SetRegistry(dataRegistry_);
     layoutContext_ = dataRegistry_->MakeLayoutContext();
@@ -283,6 +392,11 @@ void GuiWindowSessionController::RefreshData()
             0,
             layout.maximumScroll
         );
+        if (!persistenceKey_.empty())
+        {
+            persistentStateDirty_ = true;
+            SavePersistentState();
+        }
     }
 
     if (dataChangedCallback_)
@@ -317,6 +431,16 @@ bool GuiWindowSessionController::IsVisible() const
     return visible_;
 }
 
+void GuiWindowSessionController::OpenWindow()
+{
+    if (!pluginInitialized_ || open_)
+    {
+        return;
+    }
+    open_ = true;
+    RefreshData();
+}
+
 void GuiWindowSessionController::SetVisibilityMode(
     GuiWindowVisibilityMode mode
 )
@@ -329,7 +453,12 @@ void GuiWindowSessionController::SetVisibilityMode(
 
 void GuiWindowSessionController::CloseWindow()
 {
+    if (!open_)
+    {
+        return;
+    }
     open_ = false;
+    UpdateVisibility();
 }
 
 bool GuiWindowSessionController::DispatchPluginAction(
@@ -378,6 +507,21 @@ const std::shared_ptr<GuiDataRegistry>&
 GuiWindowSessionController::DataRegistry() const
 {
     return dataRegistry_;
+}
+
+std::string_view GuiWindowSessionController::SessionId() const
+{
+    return sessionId_;
+}
+
+std::string_view GuiWindowSessionController::PersistenceKey() const
+{
+    return persistenceKey_;
+}
+
+std::string_view GuiWindowSessionController::PersistenceError() const
+{
+    return persistenceError_;
 }
 
 gui::GuiLayoutContext& GuiWindowSessionController::LayoutContext()
@@ -465,31 +609,348 @@ GuiWindowSessionController::BuildListRuntimeLayout(
 }
 
 std::vector<gui::GuiResolvedWidget>
-GuiWindowSessionController::ResolveInteractiveWidgets() const
+GuiWindowSessionController::ResolveSceneWidgets() const
 {
-    std::vector<gui::GuiResolvedWidget> widgets =
+    const std::vector<gui::GuiResolvedWidget> baseWidgets =
         windowRuntime_.ResolveLayout(layoutContext_);
+    std::vector<gui::GuiResolvedWidget> widgets;
+    widgets.reserve(baseWidgets.size());
+    std::size_t nextOrder = 0;
+    for (const gui::GuiResolvedWidget& widget : baseWidgets)
+    {
+        nextOrder = std::max(nextOrder, widget.order + 1);
+        if (widget.definition
+            && listTemplateDefinitions_.find(widget.definition)
+                != listTemplateDefinitions_.end())
+        {
+            continue;
+        }
+        widgets.push_back(widget);
+    }
+
     for (const std::string& listName : listNames_)
     {
         const GuiListRuntimeLayout layout =
             BuildListRuntimeLayout(listName);
+        const GuiListModel* model = FindListModel(listName);
+        const gui::GuiResolvedWidget* listWidget = nullptr;
+        for (const gui::GuiResolvedWidget& widget : baseWidgets)
+        {
+            if (widget.definition
+                && widget.definition->type == gui::WidgetType::ListBox
+                && widget.definition->name == listName)
+            {
+                listWidget = &widget;
+                break;
+            }
+        }
+        if (!model || !listWidget || !listWidget->visible)
+        {
+            continue;
+        }
+
+        gui::GuiRect listClip = layout.viewport;
+        if (listWidget->hasClipRect
+            && !IntersectRects(
+                listClip,
+                listWidget->clipRect,
+                listClip
+            ))
+        {
+            continue;
+        }
+
         for (const GuiListItemRuntimeLayout& item : layout.items)
         {
-            gui::GuiResolvedWidget widget;
-            widget.definition = item.definition;
-            widget.rect = item.rect;
-            widget.rect.y -= layout.scrollOffset;
-            widget.visible = item.visible;
-            widget.enabled = item.enabled;
-            widget.zOrder = item.definition
-                ? item.definition->zOrder : 0;
-            widget.order = item.itemIndex;
-            widget.listName = listName;
-            widget.listIndex = static_cast<int>(item.itemIndex);
-            widgets.push_back(std::move(widget));
+            if (!item.definition
+                || item.itemIndex >= model->items.size())
+            {
+                continue;
+            }
+            gui::GuiResolvedWidget root;
+            root.definition = item.definition;
+            root.rect = item.rect;
+            root.rect.y -= layout.scrollOffset;
+            root.visible = item.visible;
+            root.enabled = item.enabled;
+            root.depth = listWidget->depth + 1;
+            root.zOrder = item.zOrder;
+            root.order = nextOrder++;
+            root.clipRect = listClip;
+            root.hasClipRect = true;
+            root.listName = listName;
+            root.listIndex = static_cast<int>(item.itemIndex);
+            root.listItemId = item.itemId;
+
+            gui::GuiRect visibleItem;
+            if (!root.visible
+                || !IntersectRects(root.rect, listClip, visibleItem))
+            {
+                continue;
+            }
+            widgets.push_back(root);
+
+            std::function<void(
+                const gui::WidgetDefinition&,
+                const gui::GuiResolvedWidget&
+            )> appendChildren;
+            appendChildren = [&](const gui::WidgetDefinition& parent,
+                                 const gui::GuiResolvedWidget& resolvedParent)
+            {
+                for (const gui::WidgetDefinition& child : parent.children)
+                {
+                    gui::GuiResolvedWidget resolved;
+                    resolved.definition = &child;
+                    resolved.rect = {
+                        resolvedParent.rect.x + child.rect.x,
+                        resolvedParent.rect.y + child.rect.y,
+                        child.rect.width,
+                        child.rect.height
+                    };
+                    resolved.visible = resolvedParent.visible
+                        && child.visible
+                        && (child.visibleWhen.empty()
+                            || !layoutContext_.conditionEvaluator
+                            || layoutContext_.conditionEvaluator(
+                                ReplaceItemId(
+                                    child.visibleWhen,
+                                    root.listItemId
+                                )
+                            ));
+                    resolved.enabled = resolvedParent.enabled
+                        && child.enabled
+                        && (child.enabledWhen.empty()
+                            || !layoutContext_.conditionEvaluator
+                            || layoutContext_.conditionEvaluator(
+                                ReplaceItemId(
+                                    child.enabledWhen,
+                                    root.listItemId
+                                )
+                            ));
+                    resolved.depth = resolvedParent.depth + 1;
+                    resolved.zOrder = resolvedParent.zOrder
+                        + child.zOrder;
+                    resolved.order = nextOrder++;
+                    resolved.clipRect = resolvedParent.clipRect;
+                    resolved.hasClipRect = resolvedParent.hasClipRect;
+                    if (parent.clipChildren)
+                    {
+                        if (resolved.hasClipRect)
+                        {
+                            IntersectRects(
+                                resolved.clipRect,
+                                resolvedParent.rect,
+                                resolved.clipRect
+                            );
+                        }
+                        else
+                        {
+                            resolved.clipRect = resolvedParent.rect;
+                            resolved.hasClipRect = true;
+                        }
+                    }
+                    resolved.listName = listName;
+                    resolved.listIndex = root.listIndex;
+                    resolved.listItemId = root.listItemId;
+                    if (resolved.visible)
+                    {
+                        widgets.push_back(resolved);
+                    }
+                    appendChildren(child, resolved);
+                }
+            };
+            appendChildren(*item.definition, root);
         }
     }
+
+    std::stable_sort(
+        widgets.begin(),
+        widgets.end(),
+        [](const gui::GuiResolvedWidget& first,
+           const gui::GuiResolvedWidget& second)
+        {
+            return first.zOrder != second.zOrder
+                ? first.zOrder < second.zOrder
+                : first.order < second.order;
+        }
+    );
     return widgets;
+}
+
+std::vector<gui::GuiResolvedWidget>
+GuiWindowSessionController::ResolveInteractiveWidgets() const
+{
+    return ResolveSceneWidgets();
+}
+
+std::string GuiWindowSessionController::ResolveWidgetSprite(
+    const gui::GuiResolvedWidget& widget,
+    bool pressed
+) const
+{
+    if (!widget.definition)
+    {
+        return {};
+    }
+    const gui::WidgetDefinition& definition = *widget.definition;
+    std::string source = pressed
+        ? definition.pressedSpriteSource
+        : definition.spriteSource;
+    std::string fallback = pressed
+        ? definition.pressedSpriteName
+        : definition.spriteName;
+    if (pressed && source.empty() && fallback.empty())
+    {
+        source = definition.spriteSource;
+        fallback = definition.spriteName;
+    }
+
+    const GuiListItem* item = nullptr;
+    if (!widget.listName.empty())
+    {
+        const GuiListModel* model = FindListModel(widget.listName);
+        if (model
+            && widget.listIndex >= 0
+            && widget.listIndex < static_cast<int>(model->items.size()))
+        {
+            item = &model->items[widget.listIndex];
+        }
+    }
+
+    bool usedSource = !source.empty();
+    constexpr std::string_view itemPrefix = "item.";
+    if (item && source.rfind(itemPrefix, 0) == 0)
+    {
+        const GuiDataValue* value = item->Find(
+            source.substr(itemPrefix.size())
+        );
+        source = value ? GuiDataValueToText(*value) : std::string{};
+    }
+    else if (!source.empty())
+    {
+        source = ReplaceItemId(source, widget.listItemId);
+        if (layoutContext_.textResolver)
+        {
+            const std::string resolved =
+                layoutContext_.textResolver(source);
+            if (!resolved.empty())
+            {
+                source = resolved;
+            }
+        }
+    }
+    if (source.empty())
+    {
+        source = fallback;
+        usedSource = false;
+    }
+    return usedSource && !definition.spriteValuePrefix.empty()
+        ? definition.spriteValuePrefix + source
+        : source;
+}
+
+bool GuiWindowSessionController::ResolveWidgetText(
+    const gui::GuiResolvedWidget& widget,
+    gui::GuiTextCommand& command
+) const
+{
+    if (!widget.definition)
+    {
+        return false;
+    }
+    const gui::WidgetDefinition& definition = *widget.definition;
+    const GuiListItem* item = nullptr;
+    if (!widget.listName.empty())
+    {
+        const GuiListModel* model = FindListModel(widget.listName);
+        if (model
+            && widget.listIndex >= 0
+            && widget.listIndex < static_cast<int>(model->items.size()))
+        {
+            item = &model->items[widget.listIndex];
+        }
+    }
+
+    std::string text = definition.text;
+    constexpr std::string_view itemPrefix = "item.";
+    if (item && definition.textSource.rfind(itemPrefix, 0) == 0)
+    {
+        const GuiDataValue* value = item->Find(
+            definition.textSource.substr(itemPrefix.size())
+        );
+        text = value ? GuiDataValueToText(*value) : std::string{};
+    }
+    else if (!definition.textSource.empty()
+        && layoutContext_.textResolver)
+    {
+        text = layoutContext_.textResolver(ReplaceItemId(
+            definition.textSource,
+            widget.listItemId
+        ));
+    }
+    else if (item && text.empty())
+    {
+        text = item->text;
+    }
+    if (!definition.localizationKey.empty()
+        && layoutContext_.localizationResolver)
+    {
+        text = layoutContext_.localizationResolver(
+            ReplaceItemId(
+                definition.localizationKey,
+                widget.listItemId
+            )
+        );
+    }
+    else if (definition.localized
+        && layoutContext_.localizationResolver)
+    {
+        text = layoutContext_.localizationResolver(text);
+    }
+    if (text.empty())
+    {
+        return false;
+    }
+
+    command = {};
+    command.definition = &definition;
+    command.rect = widget.rect;
+    command.text = std::move(text);
+    command.font = definition.font;
+    const std::string alignment = Lower(definition.alignment);
+    if (alignment == "center" || alignment == "centre")
+    {
+        command.alignment = gui::GuiTextAlignment::Center;
+    }
+    else if (alignment == "right")
+    {
+        command.alignment = gui::GuiTextAlignment::Right;
+    }
+    command.fontSize = definition.fontSize > 0
+        ? definition.fontSize
+        : std::max(12, widget.rect.height * 2 / 3);
+    command.color[0] = definition.textColor[0];
+    command.color[1] = definition.textColor[1];
+    command.color[2] = definition.textColor[2];
+    command.zOrder = widget.zOrder;
+    command.lineSpacing = definition.lineSpacing;
+    command.wrap = definition.wrap;
+    return true;
+}
+
+bool GuiWindowSessionController::IsWidgetPressed(
+    const gui::GuiResolvedWidget& widget
+) const
+{
+    if (inputState_.pressedKey.empty()
+        || !inputState_.pressedSnapshot.definition)
+    {
+        return false;
+    }
+    const gui::GuiResolvedWidget& pressed = inputState_.pressedSnapshot;
+    return pressed.definition == widget.definition
+        && pressed.listName == widget.listName
+        && pressed.listIndex == widget.listIndex;
 }
 
 std::size_t GuiWindowSessionController::DispatchEvents(
@@ -755,39 +1216,53 @@ void GuiWindowSessionController::SetupActionBridge()
             if (dataChanged
                 && ParseBoolean(FindParameter(context, "persist")))
             {
-                const std::string target = FindParameter(
-                    context,
-                    "target"
-                );
-                if (!target.empty())
-                {
-                    if (const GuiDataValue* value =
-                        dataRegistry_->Find(target))
-                    {
-                        persistentValues_[Lower(target)] = *value;
-                    }
-                    if (const GuiListModel* list =
-                        dataRegistry_->FindList(target))
-                    {
-                        persistentLists_[Lower(target)] = *list;
-                    }
-                }
-                for (const auto& parameter : context.parameters)
-                {
-                    constexpr std::string_view prefix = "set.";
-                    if (parameter.first.rfind(prefix, 0) != 0)
-                    {
-                        continue;
-                    }
-                    const std::string name = parameter.first.substr(
-                        prefix.size()
+                const bool authoritativePersistence =
+                    dataRegistry_->ResolveBool(
+                        "state.persistenceavailable"
                     );
-                    if (const GuiDataValue* value =
-                        dataRegistry_->Find(name))
+                if (!authoritativePersistence)
+                {
+                    const std::string target = FindParameter(
+                        context,
+                        "target"
+                    );
+                    if (!target.empty())
                     {
-                        persistentValues_[Lower(name)] = *value;
+                        if (const GuiDataValue* value =
+                            dataRegistry_->Find(target))
+                        {
+                            persistentValues_[Lower(target)] = *value;
+                        }
+                        if (const GuiListModel* list =
+                            dataRegistry_->FindList(target))
+                        {
+                            persistentLists_[Lower(target)] = *list;
+                        }
+                    }
+                    for (const auto& parameter : context.parameters)
+                    {
+                        constexpr std::string_view prefix = "set.";
+                        if (parameter.first.rfind(prefix, 0) != 0)
+                        {
+                            continue;
+                        }
+                        const std::string name = parameter.first.substr(
+                            prefix.size()
+                        );
+                        if (const GuiDataValue* value =
+                            dataRegistry_->Find(name))
+                        {
+                            persistentValues_[Lower(name)] = *value;
+                        }
                     }
                 }
+                else
+                {
+                    persistentValues_.clear();
+                    persistentLists_.clear();
+                }
+                persistentStateDirty_ = true;
+                SavePersistentState();
             }
             if (applicationActionInvoker_
                 && applicationActionInvoker_(id_, context))
@@ -800,14 +1275,147 @@ void GuiWindowSessionController::SetupActionBridge()
     );
 }
 
+void GuiWindowSessionController::ApplySessionBoundary(
+    const std::shared_ptr<GuiDataRegistry>& registry
+)
+{
+    if (!registry)
+    {
+        return;
+    }
+    const std::string nextSessionId = registry->ResolveText(
+        "state.sessionid"
+    );
+    bool sessionChanged = false;
+    std::string previousSessionId;
+    if (!nextSessionId.empty())
+    {
+        if (!sessionObserved_)
+        {
+            sessionObserved_ = true;
+            sessionId_ = nextSessionId;
+        }
+        else if (nextSessionId != sessionId_)
+        {
+            previousSessionId = sessionId_;
+            sessionId_ = nextSessionId;
+            sessionChanged = true;
+        }
+    }
+
+    const std::string nextPersistenceKey = registry->ResolveText(
+        "state.persistencekey"
+    );
+    const bool persistenceChanged =
+        nextPersistenceKey != persistenceKey_;
+    if (sessionChanged || persistenceChanged)
+    {
+        SavePersistentState();
+        ResetTransientState();
+        persistenceKey_ = nextPersistenceKey;
+        LoadPersistentState();
+    }
+    else if (!persistenceKey_.empty()
+        && persistenceStore_
+        && !persistenceLoaded_)
+    {
+        LoadPersistentState();
+    }
+
+    if (sessionChanged && sessionChangedCallback_)
+    {
+        sessionChangedCallback_(previousSessionId, sessionId_);
+    }
+}
+
+void GuiWindowSessionController::LoadPersistentState()
+{
+    persistenceLoaded_ = true;
+    persistentStateDirty_ = false;
+    persistenceError_.clear();
+    if (!persistenceStore_ || persistenceKey_.empty())
+    {
+        return;
+    }
+    GuiPersistentState state;
+    if (!persistenceStore_->Load(
+            persistenceKey_,
+            id_,
+            state,
+            persistenceError_
+        ))
+    {
+        return;
+    }
+    if (!dataRegistry_
+        || !dataRegistry_->ResolveBool("state.persistenceavailable"))
+    {
+        persistentValues_ = std::move(state.values);
+        persistentLists_ = std::move(state.lists);
+    }
+    for (const auto& entry : state.listRuntime)
+    {
+        GuiListRuntimeState& runtime = listRuntimeStore_.Get(entry.first);
+        runtime.scrollOffset = entry.second.scrollOffset;
+        runtime.selectedItemId = entry.second.selectedItemId;
+    }
+}
+
+void GuiWindowSessionController::SavePersistentState()
+{
+    if (!persistentStateDirty_
+        || !persistenceStore_
+        || persistenceKey_.empty())
+    {
+        return;
+    }
+    GuiPersistentState state;
+    state.values = persistentValues_;
+    state.lists = persistentLists_;
+    for (const std::string& listName : listNames_)
+    {
+        if (const GuiListRuntimeState* runtime =
+            listRuntimeStore_.Find(listName))
+        {
+            state.listRuntime[listName] = {
+                runtime->scrollOffset,
+                runtime->selectedItemId
+            };
+        }
+    }
+    if (persistenceStore_->Save(
+            persistenceKey_,
+            id_,
+            state,
+            persistenceError_
+        ))
+    {
+        persistentStateDirty_ = false;
+    }
+}
+
+void GuiWindowSessionController::ResetTransientState()
+{
+    persistentValues_.clear();
+    persistentLists_.clear();
+    persistentStateDirty_ = false;
+    listModels_.clear();
+    listRuntimeStore_.Clear();
+    inputState_ = {};
+    hasVisibilityOverride_ = false;
+    visibilityOverride_ = false;
+    open_ = initiallyOpen_;
+}
+
 void GuiWindowSessionController::UpdateVisibility()
 {
     const bool conditionVisible = visibleWhen_.empty()
         || (dataRegistry_
             && dataRegistry_->EvaluateCondition(visibleWhen_));
-    const bool shouldBeVisible = hasVisibilityOverride_
-        ? visibilityOverride_
-        : conditionVisible;
+    const bool shouldBeVisible = open_
+        && (hasVisibilityOverride_
+            ? visibilityOverride_
+            : conditionVisible);
     if (shouldBeVisible == visible_)
     {
         return;

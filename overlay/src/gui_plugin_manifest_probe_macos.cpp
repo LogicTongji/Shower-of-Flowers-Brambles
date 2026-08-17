@@ -5,6 +5,7 @@
 #include <memory>
 #include <string>
 #include <string_view>
+#include <vector>
 
 #include "gui_plugin_manifest.h"
 #include "gui_plugin_registry.h"
@@ -114,6 +115,8 @@ int main()
             << "    displayName = \"Probe Plugin\"\n"
             << "    factory = \"declarative_gui\"\n"
             << "    startup = yes\n"
+            << "    windowZOrder = 40\n"
+            << "    modal = yes\n"
             << "    visibleWhen = \"state.visible\"\n"
             << "    options = {\n"
             << "      window = \"probe_window\"\n"
@@ -123,6 +126,10 @@ int main()
             << "    }\n"
             << "  }\n"
             << "}\n";
+    }
+    {
+        std::ofstream output(manifestRoot / "broken.txt");
+        output << "guiPlugins = { guiPlugin = { id = \"broken\"\n";
     }
 
     GuiPluginRegistry registry;
@@ -146,11 +153,13 @@ int main()
 
     std::size_t loadedCount = 0;
     std::string error;
+    std::vector<std::string> diagnostics;
     if (!LoadGuiPluginManifestDirectory(
             manifestRoot,
             registry,
             loadedCount,
-            error
+            error,
+            &diagnostics
         ))
     {
         std::cerr << error << '\n';
@@ -178,7 +187,10 @@ int main()
         && loadedCount == 1
         && registry.DefaultPluginId() == "probe_plugin"
         && descriptor->startup
-        && descriptor->visibleWhen == "state.visible";
+        && descriptor->visibleWhen == "state.visible"
+        && descriptor->windowZOrder == 40
+        && descriptor->modal
+        && !diagnostics.empty();
 
     if (!valid)
     {

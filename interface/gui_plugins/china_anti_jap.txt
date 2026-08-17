@@ -4,6 +4,8 @@ guiPlugins = {
 		displayName = "China Anti-Japanese War Map"
 		factory = "declarative_gui"
 		startup = yes
+		windowZOrder = 0
+		modal = no
 		visibleWhen = "state.visible && state.active"
 		options = {
 			window = "china_anti_jap"
@@ -11,6 +13,9 @@ guiPlugins = {
 			data_provider = "sequence"
 			data = "snapshots/china_war_gui/01_static.txt"
 			base_data = "script_gui/data/china_anti_jap_common.txt"
+			inprocess_data_provider = "bridge"
+			inprocess_channel = "lua"
+			inprocess_bridge_name = "china_anti_jap"
 			tick_interval = 100
 		}
 	}

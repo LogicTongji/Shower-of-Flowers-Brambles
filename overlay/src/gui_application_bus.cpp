@@ -108,8 +108,15 @@ bool GuiApplicationActionBus::Dispatch(
         return false;
     }
 
+    if (operation == "open_window")
+    {
+        endpoint->OpenWindow();
+        endpoint->SetVisibilityMode(GuiWindowVisibilityMode::Automatic);
+        return true;
+    }
     if (operation == "show_window")
     {
+        endpoint->OpenWindow();
         endpoint->SetVisibilityMode(GuiWindowVisibilityMode::Shown);
         return true;
     }
@@ -120,6 +127,12 @@ bool GuiApplicationActionBus::Dispatch(
     }
     if (operation == "toggle_window")
     {
+        if (!endpoint->IsOpen())
+        {
+            endpoint->OpenWindow();
+            endpoint->SetVisibilityMode(GuiWindowVisibilityMode::Shown);
+            return true;
+        }
         endpoint->SetVisibilityMode(
             endpoint->IsVisible()
                 ? GuiWindowVisibilityMode::Hidden

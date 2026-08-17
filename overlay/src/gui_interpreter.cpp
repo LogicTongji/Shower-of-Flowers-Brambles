@@ -497,6 +497,22 @@ std::string ToLower(std::string value)
 	return value;
 }
 
+std::string ReplaceItemId(std::string value, uint64_t itemId)
+{
+	constexpr std::string_view placeholder = "{id}";
+	const std::string replacement = std::to_string(itemId);
+	std::size_t position = value.find(placeholder);
+	while (position != std::string::npos)
+	{
+		value.replace(position, placeholder.size(), replacement);
+		position = value.find(
+			placeholder,
+			position + replacement.size()
+		);
+	}
+	return value;
+}
+
 int GetInteger(
 	const GuiObject& object,
 	const std::string& name,
@@ -1165,6 +1181,15 @@ WidgetDefinition BuildWidgetDefinition(
 		"frameZOrder",
 		1000000
 	);
+	widget.clipChildren = GetBoolean(
+		object,
+		"clipChildren",
+		GetBoolean(
+			object,
+			"clip_children",
+			GetBoolean(object, "clip", false)
+		)
+	);
 	widget.value = GetFloat(object, "value", 0.0f);
 	widget.fillFromEnd = GetBoolean(
 		object,
@@ -1581,6 +1606,7 @@ bool GuiInterpreter::LoadDirectory(
 		std::string fileError;
 		if (!LoadFile(entry.path(), fileError))
 		{
+			loadDiagnostics_.push_back(fileError);
 			if (firstError.empty())
 			{
 				firstError = fileError;
@@ -1784,6 +1810,30 @@ std::vector<GuiResolvedWidget> GuiInterpreter::ResolveWindowLayout(
 		return context.conditionEvaluator(condition);
 	};
 
+	auto intersectRects = [](
+		const GuiRect& first,
+		const GuiRect& second,
+		GuiRect& output
+	)
+	{
+		const int left = std::max(first.x, second.x);
+		const int top = std::max(first.y, second.y);
+		const int right = std::min(
+			first.x + first.width,
+			second.x + second.width
+		);
+		const int bottom = std::min(
+			first.y + first.height,
+			second.y + second.height
+		);
+		output = {
+			left,
+			top,
+			std::max(0, right - left),
+			std::max(0, bottom - top)
+		};
+	};
+
 	std::function<void(std::size_t)> resolve = [&](
 		std::size_t index
 	)
@@ -1817,6 +1867,8 @@ std::vector<GuiResolvedWidget> GuiInterpreter::ResolveWindowLayout(
 			entry.resolved.depth = 0;
 			entry.resolved.zOrder =
 				entry.definition->zOrder;
+			entry.resolved.clipRect = {};
+			entry.resolved.hasClipRect = false;
 		}
 		else
 		{
@@ -1852,6 +1904,24 @@ std::vector<GuiResolvedWidget> GuiInterpreter::ResolveWindowLayout(
 			entry.resolved.depth = parent.depth + 1;
 			entry.resolved.zOrder =
 				parent.zOrder + definition.zOrder;
+			entry.resolved.clipRect = parent.clipRect;
+			entry.resolved.hasClipRect = parent.hasClipRect;
+			if (entries[entry.parent].definition->clipChildren)
+			{
+				if (entry.resolved.hasClipRect)
+				{
+					intersectRects(
+						entry.resolved.clipRect,
+						parent.rect,
+						entry.resolved.clipRect
+					);
+				}
+				else
+				{
+					entry.resolved.clipRect = parent.rect;
+					entry.resolved.hasClipRect = true;
+				}
+			}
 		}
 
 		entry.resolving = false;
@@ -2618,13 +2688,19 @@ std::vector<GuiTextCommand> GuiInterpreter::BuildListTextCommands(
 			}
 			else if (!source.empty() && context.textResolver)
 			{
-				text = context.textResolver(source);
+				text = context.textResolver(ReplaceItemId(
+					std::move(source),
+					item.id
+				));
 			}
 			if (!textDefinition->localizationKey.empty()
 				&& context.localizationResolver)
 			{
 				text = context.localizationResolver(
-					textDefinition->localizationKey
+					ReplaceItemId(
+						textDefinition->localizationKey,
+						item.id
+					)
 				);
 			}
 			else if (textDefinition->localized
@@ -2788,6 +2864,16 @@ const GuiResolvedWidget* HitTestGuiWidgets(
 		}
 
 		const GuiRect& rect = iterator->rect;
+		if (iterator->hasClipRect
+			&& (mouseX < iterator->clipRect.x
+				|| mouseX >= iterator->clipRect.x
+					+ iterator->clipRect.width
+				|| mouseY < iterator->clipRect.y
+				|| mouseY >= iterator->clipRect.y
+					+ iterator->clipRect.height))
+		{
+			continue;
+		}
 		if (mouseX >= rect.x
 			&& mouseX < rect.x + rect.width
 			&& mouseY >= rect.y

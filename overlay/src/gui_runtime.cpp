@@ -24,7 +24,9 @@ std::string WidgetKey(const GuiResolvedWidget* widget)
     {
         return widget->listName
             + "#"
-            + std::to_string(widget->listIndex);
+            + std::to_string(widget->listIndex)
+            + "#"
+            + widget->definition->name;
     }
 
     return widget->definition->name;
@@ -662,6 +664,7 @@ GuiListRuntimeLayout BuildGuiListRuntimeLayout(
                     && inputState.pressedSnapshot.listName == list
                     && inputState.pressedSnapshot.listIndex
                         == static_cast<int>(item.index)),
+			item.zOrder,
 			normalSprite,
 			pressedSprite
         });

@@ -15,14 +15,18 @@
 
 #include "gui_application_bus.h"
 #include "gui_diagnostics.h"
+#include "gui_hoi3_lifecycle.h"
 #include "gui_indexed_map_d3d9.h"
 #include "gui_inprocess_application.h"
 #include "gui_localization.h"
+#include "gui_lua_bridge.h"
+#include "gui_lua_native_binding.h"
 #include "gui_marker_layer_d3d9.h"
 #include "gui_render_queue.h"
 #include "gui_text_renderer_d3d9.h"
 #include "gui_texture_loader_d3d9.h"
 #include "gui_window_session.h"
+#include "gui_window_manager.h"
 
 namespace
 {
@@ -40,6 +44,7 @@ struct OverlayVertex
 
 constexpr DWORD OverlayVertexFormat =
     D3DFVF_XYZRHW | D3DFVF_DIFFUSE | D3DFVF_TEX1;
+constexpr uint64_t Hoi3LifecycleProbeIntervalMilliseconds = 100;
 
 D3DCOLOR ToD3DColor(
     float red,
@@ -70,15 +75,29 @@ bool PointInside(const gui::GuiRect& rect, int x, int y)
         && y < rect.y + rect.height;
 }
 
-bool RectanglesIntersect(
+bool IntersectRects(
     const gui::GuiRect& first,
-    const gui::GuiRect& second
+    const gui::GuiRect& second,
+    gui::GuiRect& output
 )
 {
-    return first.x < second.x + second.width
-        && first.x + first.width > second.x
-        && first.y < second.y + second.height
-        && first.y + first.height > second.y;
+    const int left = std::max(first.x, second.x);
+    const int top = std::max(first.y, second.y);
+    const int right = std::min(
+        first.x + first.width,
+        second.x + second.width
+    );
+    const int bottom = std::min(
+        first.y + first.height,
+        second.y + second.height
+    );
+    output = {
+        left,
+        top,
+        std::max(0, right - left),
+        std::max(0, bottom - top)
+    };
+    return output.width > 0 && output.height > 0;
 }
 
 void IncludeRect(
@@ -397,6 +416,8 @@ struct GuiD3D9Host::Impl
         gui::GuiRect presentationRect;
         int windowOffsetX = 0;
         int windowOffsetY = 0;
+        int initialWindowOffsetX = 0;
+        int initialWindowOffsetY = 0;
         bool draggingWindow = false;
         int dragMouseX = 0;
         int dragMouseY = 0;
@@ -406,6 +427,10 @@ struct GuiD3D9Host::Impl
         bool visibilityObserved = false;
         bool lastVisible = false;
         bool firstDrawLogged = false;
+        bool effectiveVisible = false;
+        bool awaitingGameplaySnapshot = false;
+        uint64_t lifecycleGeneration = 0;
+        std::string persistenceSignature;
 
         std::vector<gui::GuiResolvedWidget> InteractiveWidgets() const
         {
@@ -418,6 +443,7 @@ struct GuiD3D9Host::Impl
     GuiLocalizationRegistry localization;
     GuiD3D9TextureCache textures;
     GuiTextRendererD3D9 textRenderer;
+    GuiWindowManager windowManager;
     std::vector<std::unique_ptr<SessionView>> sessions;
     IDirect3DDevice9* device = nullptr;
     HWND targetWindow = nullptr;
@@ -427,6 +453,92 @@ struct GuiD3D9Host::Impl
     int canvasHeight = 0;
     ULONG_PTR gdiplusToken = 0;
     bool initialized = false;
+    uint64_t nextHoi3LifecycleProbeMilliseconds = 0;
+    bool hoi3LifecycleUnsupportedLogged = false;
+
+    void RefreshHoi3Lifecycle(uint64_t now)
+    {
+        if (now < nextHoi3LifecycleProbeMilliseconds)
+        {
+            return;
+        }
+        nextHoi3LifecycleProbeMilliseconds = now
+            + Hoi3LifecycleProbeIntervalMilliseconds;
+
+        const GuiHoi3LifecycleProbeResult probe =
+            ProbeGuiHoi3Lifecycle();
+        if (probe.status
+            == GuiHoi3LifecycleProbeStatus::UnsupportedExecutable)
+        {
+            if (!hoi3LifecycleUnsupportedLogged)
+            {
+                hoi3LifecycleUnsupportedLogged = true;
+                WriteGuiDiagnostic(
+                    "HOI3 read-only lifecycle probe unavailable: "
+                    "unsupported executable"
+                );
+            }
+            return;
+        }
+        if (probe.status == GuiHoi3LifecycleProbeStatus::Unavailable)
+        {
+            return;
+        }
+
+        GuiLuaBridgeService& service = GetGuiLuaBridgeService();
+        const GuiGameplayLifecycleSnapshot previous =
+            service.GameplayLifecycle();
+        if (probe.status == GuiHoi3LifecycleProbeStatus::Frontend
+            && previous.state != GuiGameplayLifecycleState::Frontend)
+        {
+            GetGuiLuaNativeBinding().ResetChannelOwnership();
+        }
+        if (!service.ReportGameplayPlayerTag(probe.playerTag))
+        {
+            return;
+        }
+        const GuiGameplayLifecycleSnapshot lifecycle =
+            service.GameplayLifecycle();
+        WriteGuiDiagnostic(
+            "HOI3 lifecycle changed by read-only player tag: player="
+            + lifecycle.playerTag
+            + ", state="
+            + (lifecycle.state == GuiGameplayLifecycleState::Gameplay
+                ? "gameplay" : "frontend")
+            + ", generation="
+            + std::to_string(lifecycle.generation)
+        );
+    }
+
+    SessionView* FindSession(std::string_view id) const
+    {
+        const auto found = std::find_if(
+            sessions.begin(),
+            sessions.end(),
+            [id](const std::unique_ptr<SessionView>& session)
+            {
+                return session->controller->PluginId() == id;
+            }
+        );
+        return found == sessions.end() ? nullptr : found->get();
+    }
+
+    std::vector<SessionView*> OrderedSessions(bool forInput) const
+    {
+        const std::vector<std::string> order = forInput
+            ? windowManager.InputOrder()
+            : windowManager.RenderOrder();
+        std::vector<SessionView*> result;
+        result.reserve(order.size());
+        for (const std::string& id : order)
+        {
+            if (SessionView* session = FindSession(id))
+            {
+                result.push_back(session);
+            }
+        }
+        return result;
+    }
 
     void ReleaseCanvas()
     {
@@ -498,9 +610,7 @@ struct GuiD3D9Host::Impl
     gui::GuiRect CalculateSourceRect(SessionView& view)
     {
         const std::vector<gui::GuiResolvedWidget> widgets =
-            view.controller->Runtime().ResolveLayout(
-                view.controller->LayoutContext()
-            );
+            view.controller->ResolveSceneWidgets();
         const std::vector<GuiRenderCommand> queue =
             BuildGuiRenderQueue(
                 widgets,
@@ -527,7 +637,17 @@ struct GuiD3D9Host::Impl
             {
                 continue;
             }
-            IncludeRect(bounds, hasBounds, command.widget->rect);
+            gui::GuiRect visibleRect = command.widget->rect;
+            if (command.widget->hasClipRect
+                && !IntersectRects(
+                    visibleRect,
+                    command.widget->clipRect,
+                    visibleRect
+                ))
+            {
+                continue;
+            }
+            IncludeRect(bounds, hasBounds, visibleRect);
         }
         if (!hasBounds)
         {
@@ -662,6 +782,17 @@ struct GuiD3D9Host::Impl
             Shutdown();
             return false;
         }
+        for (const GuiConfigurationIssue& issue : application.Issues())
+        {
+            WriteGuiDiagnostic(
+                "GUI configuration issue: plugin="
+                + (issue.pluginId.empty()
+                    ? std::string("<global>")
+                    : issue.pluginId)
+                + ", stage=" + issue.stage
+                + ", error=" + issue.message
+            );
+        }
 
         std::string localizationError;
         localization.LoadDirectory(
@@ -684,6 +815,8 @@ struct GuiD3D9Host::Impl
             auto view = std::make_unique<SessionView>();
             view->windowOffsetX = cascade * 24;
             view->windowOffsetY = cascade * 24;
+            view->initialWindowOffsetX = view->windowOffsetX;
+            view->initialWindowOffsetY = view->windowOffsetY;
             view->controller =
                 std::make_unique<GuiWindowSessionController>(
                     application.Root(),
@@ -708,6 +841,9 @@ struct GuiD3D9Host::Impl
                     return localization.Resolve(key);
                 }
             );
+            view->controller->SetPersistenceStore(
+                application.PersistenceStore()
+            );
             view->controller->SetApplicationActionInvoker(
                 [this](
                     std::string_view sourcePluginId,
@@ -731,16 +867,34 @@ struct GuiD3D9Host::Impl
                     );
                 }
             );
+            view->controller->SetSessionChangedCallback(
+                [viewPointer](std::string_view, std::string_view)
+                {
+                    viewPointer->windowOffsetX =
+                        viewPointer->initialWindowOffsetX;
+                    viewPointer->windowOffsetY =
+                        viewPointer->initialWindowOffsetY;
+                    viewPointer->draggingWindow = false;
+                    viewPointer->dragMouseX = 0;
+                    viewPointer->dragMouseY = 0;
+                    viewPointer->dragOffsetX = 0;
+                    viewPointer->dragOffsetY = 0;
+                }
+            );
             view->controller->SetEventResolver(
                 [viewPointer](std::vector<GuiActionEvent>& events)
                 {
                     viewPointer->indexedMaps.AttachItemIds(events);
                 }
             );
-            if (!view->controller->Bind(error))
+            std::string sessionError;
+            if (!view->controller->Bind(sessionError))
             {
-                Shutdown();
-                return false;
+                WriteGuiDiagnostic(
+                    "GUI plugin disabled during bind: id="
+                    + launch.id + ", error=" + sessionError
+                );
+                continue;
             }
             const gui::WindowDefinition* definition =
                 view->controller->Runtime().Definition();
@@ -750,12 +904,21 @@ struct GuiD3D9Host::Impl
                     device,
                     application.Interpreter(),
                     *definition,
-                    error
+                    sessionError
                 )
-                || !view->controller->Initialize(device, error))
+                || !view->controller->Initialize(
+                    device,
+                    sessionError
+                ))
             {
-                Shutdown();
-                return false;
+                view->controller->Shutdown();
+                view->indexedMaps.Shutdown();
+                view->markerLayers.Shutdown();
+                WriteGuiDiagnostic(
+                    "GUI plugin disabled during initialization: id="
+                    + launch.id + ", error=" + sessionError
+                );
+                continue;
             }
             canvasWidth = std::max(
                 canvasWidth,
@@ -771,8 +934,37 @@ struct GuiD3D9Host::Impl
             view->indexedMaps.Refresh(
                 view->controller->LayoutContext()
             );
+            if (!windowManager.Register({
+                    launch.id,
+                    launch.windowZOrder,
+                    launch.modal
+                }))
+            {
+                view->controller->Shutdown();
+                view->indexedMaps.Shutdown();
+                view->markerLayers.Shutdown();
+                WriteGuiDiagnostic(
+                    "GUI plugin disabled during window registration: id="
+                    + launch.id
+                );
+                continue;
+            }
+            windowManager.SetState(
+                launch.id,
+                view->controller->IsOpen(),
+                GetGuiLuaBridgeService().GameplayLifecycle().state
+                        != GuiGameplayLifecycleState::Frontend
+                    && view->controller->IsVisible()
+            );
             sessions.push_back(std::move(view));
             ++cascade;
+        }
+
+        if (sessions.empty())
+        {
+            error = "No valid GUI sessions could be initialized";
+            Shutdown();
+            return false;
         }
 
         if (!CreateCanvas(error))
@@ -807,6 +999,7 @@ struct GuiD3D9Host::Impl
             session->indexedMaps.Shutdown();
         }
         sessions.clear();
+        windowManager.Clear();
         textRenderer.Shutdown();
         textures.Clear();
         application.Shutdown();
@@ -816,6 +1009,8 @@ struct GuiD3D9Host::Impl
         device = nullptr;
         targetWindow = nullptr;
         initialized = false;
+        nextHoi3LifecycleProbeMilliseconds = 0;
+        hoi3LifecycleUnsupportedLogged = false;
         if (gdiplusToken != 0)
         {
             Gdiplus::GdiplusShutdown(gdiplusToken);
@@ -855,165 +1050,85 @@ struct GuiD3D9Host::Impl
         DrawQuad(device, rect, texture->texture, color);
     }
 
-    std::string ResolveListItemSprite(
-        const gui::WidgetDefinition& definition,
-        const GuiListItem& item,
-        const gui::GuiLayoutContext& context
-    ) const
+    bool ApplyWidgetClip(const gui::GuiResolvedWidget& widget)
     {
-        std::string sprite = definition.spriteSource;
-        constexpr std::string_view itemPrefix = "item.";
-        if (sprite.rfind(itemPrefix, 0) == 0)
+        if (!widget.hasClipRect)
         {
-            const GuiDataValue* value = item.Find(
-                sprite.substr(itemPrefix.size())
-            );
-            sprite = value ? GuiDataValueToText(*value) : std::string{};
+            device->SetRenderState(D3DRS_SCISSORTESTENABLE, FALSE);
+            return true;
         }
-        else if (!sprite.empty() && context.textResolver)
+        const int left = std::clamp(
+            widget.clipRect.x,
+            0,
+            canvasWidth
+        );
+        const int top = std::clamp(
+            widget.clipRect.y,
+            0,
+            canvasHeight
+        );
+        const int right = std::clamp(
+            widget.clipRect.x + widget.clipRect.width,
+            0,
+            canvasWidth
+        );
+        const int bottom = std::clamp(
+            widget.clipRect.y + widget.clipRect.height,
+            0,
+            canvasHeight
+        );
+        if (right <= left || bottom <= top)
         {
-            const std::string resolved = context.textResolver(sprite);
-            if (!resolved.empty())
-            {
-                sprite = resolved;
-            }
+            return false;
         }
-        if (sprite.empty())
+        const RECT rect{left, top, right, bottom};
+        if (FAILED(device->SetScissorRect(&rect)))
         {
-            sprite = definition.spriteName;
+            return false;
         }
-        return definition.spriteValuePrefix.empty()
-            ? sprite
-            : definition.spriteValuePrefix + sprite;
+        device->SetRenderState(D3DRS_SCISSORTESTENABLE, TRUE);
+        return true;
     }
 
-    void DrawListTemplateImages(
-        const gui::WidgetDefinition& parent,
-        const gui::GuiRect& parentRect,
-        const GuiListItem& item,
-        const gui::GuiRect& viewport,
-        const gui::GuiLayoutContext& context,
-        D3DCOLOR color
+    void DrawScrollbar(
+        SessionView& view,
+        std::string_view scrollbarName
     )
     {
-        for (const gui::WidgetDefinition& child : parent.children)
+        for (const std::string& listName
+            : view.controller->ListNames())
         {
-            const bool visible = child.visible
-                && (child.visibleWhen.empty()
-                    || !context.conditionEvaluator
-                    || context.conditionEvaluator(child.visibleWhen));
-            if (!visible)
+            gui::GuiListBinding binding;
+            if (!view.controller->Runtime().ResolveListBinding(
+                    listName,
+                    binding,
+                    view.controller->LayoutContext()
+                )
+                || binding.scrollbarName != scrollbarName)
             {
                 continue;
             }
-            const gui::GuiRect childRect{
-                parentRect.x + child.rect.x,
-                parentRect.y + child.rect.y,
-                child.rect.width,
-                child.rect.height
-            };
-            if (child.type == gui::WidgetType::Image
-                && RectanglesIntersect(childRect, viewport))
+            const GuiListRuntimeLayout layout =
+                view.controller->BuildListRuntimeLayout(listName);
+            if (layout.maximumScroll > 0)
             {
                 DrawSprite(
-                    ResolveListItemSprite(child, item, context),
-                    childRect,
-                    color
+                    layout.scrollbarTrackSprite,
+                    layout.scrollbar
+                );
+                DrawSprite(
+                    layout.scrollbarThumbSprite,
+                    CalculateScrollbarThumb(layout)
                 );
             }
-            DrawListTemplateImages(
-                child,
-                childRect,
-                item,
-                viewport,
-                context,
-                color
-            );
-        }
-    }
-
-    void DrawList(SessionView& view, std::string_view listName)
-    {
-        GuiListRuntimeLayout layout =
-            view.controller->BuildListRuntimeLayout(listName);
-        const GuiListModel* model = view.controller->FindListModel(
-            listName
-        );
-        for (GuiListItemRuntimeLayout& item : layout.items)
-        {
-            item.rect.y -= layout.scrollOffset;
-            if (!item.visible
-                || !RectanglesIntersect(item.rect, layout.viewport))
-            {
-                continue;
-            }
-            DrawSprite(
-                item.pressed
-                    ? item.pressedSpriteName
-                    : item.normalSpriteName,
-                item.rect,
-                item.enabled
-                    ? D3DCOLOR_ARGB(255, 255, 255, 255)
-                    : D3DCOLOR_ARGB(150, 150, 150, 150)
-            );
-            if (model
-                && item.definition
-                && item.itemIndex < model->items.size())
-            {
-                DrawListTemplateImages(
-                    *item.definition,
-                    item.rect,
-                    model->items[item.itemIndex],
-                    layout.viewport,
-                    view.controller->LayoutContext(),
-                    item.enabled
-                        ? D3DCOLOR_ARGB(255, 255, 255, 255)
-                        : D3DCOLOR_ARGB(150, 150, 150, 150)
-                );
-            }
-        }
-        if (layout.maximumScroll > 0)
-        {
-            DrawSprite(layout.scrollbarTrackSprite, layout.scrollbar);
-            DrawSprite(
-                layout.scrollbarThumbSprite,
-                CalculateScrollbarThumb(layout)
-            );
-        }
-
-        std::vector<gui::GuiTextCommand> textCommands =
-            view.controller->Runtime().BuildListTextCommands(
-                listName,
-                view.controller->LayoutContext()
-            );
-        for (std::size_t index = 0;
-            index < textCommands.size();
-            ++index)
-        {
-            gui::GuiTextCommand& command = textCommands[index];
-            command.rect.y -= layout.scrollOffset;
-            if (!RectanglesIntersect(command.rect, layout.viewport))
-            {
-                continue;
-            }
-            const std::string slot = std::string(
-                view.controller->PluginId()
-            ) + ":list:" + std::string(listName)
-                + ":" + std::to_string(index);
-            DrawTextureQuad(
-                device,
-                command.rect,
-                textRenderer.Resolve(std::move(slot), command)
-            );
+            return;
         }
     }
 
     void DrawSession(SessionView& view)
     {
         std::vector<gui::GuiResolvedWidget> widgets =
-            view.controller->Runtime().ResolveLayout(
-                view.controller->LayoutContext()
-            );
+            view.controller->ResolveSceneWidgets();
         const std::vector<GuiRenderCommand> queue =
             BuildGuiRenderQueue(
                 widgets,
@@ -1031,21 +1146,13 @@ struct GuiD3D9Host::Impl
             );
             view.firstDrawLogged = true;
         }
-        std::unordered_map<
-            const gui::WidgetDefinition*,
-            gui::GuiTextCommand
-        > textCommands;
-        for (gui::GuiTextCommand command
-            : view.controller->Runtime().BuildTextCommands(
-                view.controller->LayoutContext()
-            ))
-        {
-            textCommands[command.definition] = std::move(command);
-        }
-
         for (const GuiRenderCommand& command : queue)
         {
             if (!command.widget || !command.widget->definition)
+            {
+                continue;
+            }
+            if (!ApplyWidgetClip(*command.widget))
             {
                 continue;
             }
@@ -1057,18 +1164,23 @@ struct GuiD3D9Host::Impl
                 DrawSprite(definition.frameSpriteName, command.widget->rect);
                 break;
             case GuiRenderCommandType::Image:
-                DrawSprite(definition.spriteName, command.widget->rect);
+                DrawSprite(
+                    view.controller->ResolveWidgetSprite(
+                        *command.widget
+                    ),
+                    command.widget->rect
+                );
                 break;
             case GuiRenderCommandType::Button:
             {
-                const bool pressed =
-                    !view.controller->InputState().pressedKey.empty()
-                    && view.controller->InputState()
-                        .pressedSnapshot.definition == &definition;
+                const bool pressed = view.controller->IsWidgetPressed(
+                    *command.widget
+                );
                 DrawSprite(
-                    pressed && !definition.pressedSpriteName.empty()
-                        ? definition.pressedSpriteName
-                        : definition.spriteName,
+                    view.controller->ResolveWidgetSprite(
+                        *command.widget,
+                        pressed
+                    ),
                     command.widget->rect,
                     command.widget->enabled
                         ? D3DCOLOR_ARGB(255, 255, 255, 255)
@@ -1141,8 +1253,8 @@ struct GuiD3D9Host::Impl
                 );
                 break;
             }
-            case GuiRenderCommandType::List:
-                DrawList(view, definition.name);
+            case GuiRenderCommandType::ScrollBar:
+                DrawScrollbar(view, definition.name);
                 break;
             case GuiRenderCommandType::IndexedMap:
             {
@@ -1161,8 +1273,11 @@ struct GuiD3D9Host::Impl
             }
             case GuiRenderCommandType::Text:
             {
-                const auto text = textCommands.find(&definition);
-                if (text == textCommands.end())
+                gui::GuiTextCommand text;
+                if (!view.controller->ResolveWidgetText(
+                        *command.widget,
+                        text
+                    ))
                 {
                     break;
                 }
@@ -1170,11 +1285,14 @@ struct GuiD3D9Host::Impl
                     view.controller->PluginId()
                 ) + ":text:" + std::to_string(
                     reinterpret_cast<std::uintptr_t>(&definition)
-                );
+                ) + ":" + command.widget->listName
+                    + ":" + std::to_string(
+                        command.widget->listIndex
+                    );
                 DrawTextureQuad(
                     device,
-                    text->second.rect,
-                    textRenderer.Resolve(slot, text->second)
+                    text.rect,
+                    textRenderer.Resolve(slot, text)
                 );
                 break;
             }
@@ -1189,6 +1307,7 @@ struct GuiD3D9Host::Impl
                 break;
             }
         }
+        device->SetRenderState(D3DRS_SCISSORTESTENABLE, FALSE);
     }
 
     void TickAndRender(IDirect3DDevice9* nextDevice)
@@ -1198,15 +1317,62 @@ struct GuiD3D9Host::Impl
             return;
         }
         const uint64_t now = GetTickCount64();
+        RefreshHoi3Lifecycle(now);
+        const GuiGameplayLifecycleSnapshot lifecycle =
+            GetGuiLuaBridgeService().GameplayLifecycle();
         for (const auto& session : sessions)
         {
-            session->controller->Tick(now);
-            const bool visible = session->controller->IsVisible();
-            if (!session->visibilityObserved
-                || session->lastVisible != visible)
+            const bool dataChanged = lifecycle.state
+                    == GuiGameplayLifecycleState::Frontend
+                ? false : session->controller->Tick(now);
+            if (session->lifecycleGeneration != lifecycle.generation)
             {
-                const std::shared_ptr<GuiDataRegistry>& data =
-                    session->controller->DataRegistry();
+                session->lifecycleGeneration = lifecycle.generation;
+                session->awaitingGameplaySnapshot =
+                    lifecycle.state
+                    == GuiGameplayLifecycleState::Gameplay;
+                session->draggingWindow = false;
+            }
+            if (lifecycle.state == GuiGameplayLifecycleState::Gameplay
+                && dataChanged)
+            {
+                session->awaitingGameplaySnapshot = false;
+            }
+            if (lifecycle.state == GuiGameplayLifecycleState::Unknown)
+            {
+                session->awaitingGameplaySnapshot = false;
+            }
+            const bool visible = session->controller->IsVisible()
+                && lifecycle.state
+                    != GuiGameplayLifecycleState::Frontend
+                && !session->awaitingGameplaySnapshot;
+            session->effectiveVisible = visible;
+            windowManager.SetState(
+                session->controller->PluginId(),
+                session->controller->IsOpen(),
+                visible
+            );
+            const std::shared_ptr<GuiDataRegistry>& data =
+                session->controller->DataRegistry();
+            const std::string persistenceSignature = data
+                ? data->ResolveText("state.sessionid") + "|"
+                    + data->ResolveText("state.persistencekey") + "|"
+                    + data->ResolveText("state.persistencerevision") + "|"
+                    + data->ResolveText("state.persistedrevision") + "|"
+                    + data->ResolveText(
+                        "state.persistencependingrevision"
+                    ) + "|"
+                    + data->ResolveText("state.persistencependingticks")
+                    + "|"
+                    + data->ResolveText("state.persistenceobservedday")
+                    + "|" + data->ResolveText("state.leader1region")
+                    + "|" + data->ResolveText("state.leader2region")
+                : std::string();
+            if (!session->visibilityObserved
+                || session->lastVisible != visible
+                || session->persistenceSignature
+                    != persistenceSignature)
+            {
                 WriteGuiDiagnostic(
                     "GUI session visibility: id="
                     + std::string(session->controller->PluginId())
@@ -1224,9 +1390,70 @@ struct GuiD3D9Host::Impl
                     + (data
                         ? data->ResolveText("state.viewertag")
                         : std::string())
+                    + ", persistence="
+                    + (data
+                        && data->ResolveBool("state.persistenceavailable")
+                        ? "available" : "unavailable")
+                    + ", persistence_key="
+                    + (data
+                        ? data->ResolveText("state.persistencekey")
+                        : std::string())
+                    + ", persistence_error="
+                    + (data
+                        ? data->ResolveText("state.persistenceerror")
+                        : std::string())
+                    + ", session="
+                    + (data
+                        ? data->ResolveText("state.sessionid")
+                        : std::string())
+                    + ", memory_revision="
+                    + (data
+                        ? data->ResolveText(
+                            "state.persistencerevision"
+                        ) : std::string())
+                    + ", stored_revision="
+                    + (data
+                        ? data->ResolveText("state.persistedrevision")
+                        : std::string())
+                    + ", pending_revision="
+                    + (data
+                        ? data->ResolveText(
+                            "state.persistencependingrevision"
+                        ) : std::string())
+                    + ", pending_ticks="
+                    + (data
+                        ? data->ResolveText(
+                            "state.persistencependingticks"
+                        ) : std::string())
+                    + ", observed_day="
+                    + (data
+                        ? data->ResolveText(
+                            "state.persistenceobservedday"
+                        ) : std::string())
+                    + ", leader1_region="
+                    + (data
+                        ? data->ResolveText("state.leader1region")
+                        : std::string())
+                    + ", leader2_region="
+                    + (data
+                        ? data->ResolveText("state.leader2region")
+                        : std::string())
+                    + ", lifecycle="
+                    + (lifecycle.state
+                            == GuiGameplayLifecycleState::Gameplay
+                        ? "gameplay"
+                        : lifecycle.state
+                                == GuiGameplayLifecycleState::Frontend
+                            ? "frontend" : "unknown")
+                    + ", lifecycle_generation="
+                    + std::to_string(lifecycle.generation)
+                    + ", lifecycle_player="
+                    + lifecycle.playerTag
                 );
                 session->visibilityObserved = true;
                 session->lastVisible = visible;
+                session->persistenceSignature =
+                    persistenceSignature;
             }
         }
 
@@ -1280,12 +1507,14 @@ struct GuiD3D9Host::Impl
         for (const auto& session : sessions)
         {
             if (!session->controller->IsOpen()
-                || !session->controller->IsVisible())
+                || !session->effectiveVisible)
             {
                 session->sourceRect = {};
                 session->presentationRect = {};
-                continue;
             }
+        }
+        for (SessionView* session : OrderedSessions(false))
+        {
             UpdatePresentationRect(*session, previousViewport);
             if (session->presentationRect.width <= 0
                 || session->presentationRect.height <= 0)
@@ -1347,6 +1576,11 @@ struct GuiD3D9Host::Impl
         {
             return false;
         }
+        if (GetGuiLuaBridgeService().GameplayLifecycle().state
+            == GuiGameplayLifecycleState::Frontend)
+        {
+            return false;
+        }
         int mouseX = GET_X_LPARAM(lParam);
         int mouseY = GET_Y_LPARAM(lParam);
         if (message == WM_MOUSEWHEEL)
@@ -1359,13 +1593,11 @@ struct GuiD3D9Host::Impl
         const int windowMouseX = mouseX;
         const int windowMouseY = mouseY;
 
-        for (auto iterator = sessions.rbegin();
-            iterator != sessions.rend();
-            ++iterator)
+        for (SessionView* session : OrderedSessions(true))
         {
-            SessionView& view = **iterator;
+            SessionView& view = *session;
             if (!view.controller->IsOpen()
-                || !view.controller->IsVisible())
+                || !view.effectiveVisible)
             {
                 continue;
             }
@@ -1407,6 +1639,10 @@ struct GuiD3D9Host::Impl
                     view.controller->DispatchMove(widgets, -1, -1);
                 }
                 continue;
+            }
+            if (message == WM_LBUTTONDOWN)
+            {
+                windowManager.Focus(view.controller->PluginId());
             }
 
             std::vector<gui::GuiResolvedWidget> widgets =
@@ -1564,6 +1800,15 @@ struct GuiD3D9Host::Impl
                     return true;
                 }
             }
+        }
+        if (windowManager.HasActiveModal()
+            && (message == WM_LBUTTONDOWN
+                || message == WM_LBUTTONUP
+                || message == WM_RBUTTONDOWN
+                || message == WM_RBUTTONUP
+                || message == WM_MOUSEWHEEL))
+        {
+            return true;
         }
         return false;
     }

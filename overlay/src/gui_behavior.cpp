@@ -126,7 +126,8 @@ bool GuiBehaviorDefinition::AcceptsPhase(
 
 bool GuiBehaviorRegistry::LoadDirectory(
     const std::filesystem::path& root,
-    std::string& error
+    std::string& error,
+    std::vector<std::string>* diagnostics
 )
 {
     if (!std::filesystem::exists(root)
@@ -136,6 +137,7 @@ bool GuiBehaviorRegistry::LoadDirectory(
         return false;
     }
 
+    std::vector<std::filesystem::path> paths;
     for (const std::filesystem::directory_entry& entry
         : std::filesystem::recursive_directory_iterator(root))
     {
@@ -145,12 +147,23 @@ bool GuiBehaviorRegistry::LoadDirectory(
             continue;
         }
 
-        if (!LoadFile(entry.path(), error))
+        paths.push_back(entry.path());
+    }
+    std::sort(paths.begin(), paths.end());
+
+    for (const std::filesystem::path& path : paths)
+    {
+        std::string fileError;
+        if (!LoadFile(path, fileError))
         {
-            return false;
+            if (diagnostics)
+            {
+                diagnostics->push_back(fileError);
+            }
         }
     }
 
+    error.clear();
     return true;
 }
 
@@ -167,6 +180,8 @@ bool GuiBehaviorRegistry::LoadFile(
     }
 
     GuiBehaviorDefinition current;
+    std::vector<GuiBehaviorDefinition> pending;
+    std::unordered_set<std::string> pendingNames;
     bool inBehavior = false;
     int depth = 0;
     int lineNumber = 0;
@@ -258,7 +273,15 @@ bool GuiBehaviorRegistry::LoadFile(
                 current.functionName = current.name;
             }
 
-            definitions_[current.name] = std::move(current);
+            if (definitions_.find(current.name) != definitions_.end()
+                || !pendingNames.insert(current.name).second)
+            {
+                error = "behavior_name_duplicate: "
+                    + current.name + ": " + path.string()
+                    + ":" + std::to_string(lineNumber);
+                return false;
+            }
+            pending.push_back(std::move(current));
             inBehavior = false;
             depth = 0;
         }
@@ -270,6 +293,15 @@ bool GuiBehaviorRegistry::LoadFile(
         return false;
     }
 
+    for (GuiBehaviorDefinition& definition : pending)
+    {
+        definitions_.emplace(
+            definition.name,
+            std::move(definition)
+        );
+    }
+
+    error.clear();
     return true;
 }
 

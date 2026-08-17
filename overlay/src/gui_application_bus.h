@@ -19,7 +19,10 @@ public:
 
     virtual std::string_view PluginId() const = 0;
     virtual std::string_view WindowName() const = 0;
+    virtual bool IsOpen() const = 0;
     virtual bool IsVisible() const = 0;
+
+    virtual void OpenWindow() = 0;
 
     virtual void SetVisibilityMode(
         GuiWindowVisibilityMode mode

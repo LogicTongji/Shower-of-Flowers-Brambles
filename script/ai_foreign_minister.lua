@@ -1,8 +1,8 @@
 require('ai_diplomacy')
-local ChinaWarMapAdapter = require('war_map_adapter')
+local ScriptedGuiRuntime = require('scripted_gui_runtime')
 
-local function UpdateChinaWarMapOncePerDay()
-	ChinaWarMapAdapter.Tick()
+local function UpdateScriptedGuiRuntime(minister)
+	pcall(ScriptedGuiRuntime.Tick, minister)
 end
 
 local ForeignMinisterData = {}
@@ -77,7 +77,7 @@ end
 -- # Called by the EXE
 -- #####################################
 function ForeignMinister_Tick(minister)
-	UpdateChinaWarMapOncePerDay()
+	UpdateScriptedGuiRuntime(minister)
 
 	-- Execute Decisions
 	minister:ExecuteDiploDecisions()

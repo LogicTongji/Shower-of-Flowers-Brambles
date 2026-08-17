@@ -6,6 +6,7 @@
 #include <mutex>
 #include <unordered_map>
 #include <utility>
+#include <vector>
 
 namespace
 {
@@ -41,6 +42,21 @@ std::string NormalizeChannelName(std::string_view name)
         [](unsigned char character)
         {
             return static_cast<char>(std::tolower(character));
+        }
+    );
+    return normalized;
+}
+
+std::string NormalizePlayerTag(std::string_view name)
+{
+    std::string normalized = NormalizeChannelName(name);
+    std::transform(
+        normalized.begin(),
+        normalized.end(),
+        normalized.begin(),
+        [](unsigned char character)
+        {
+            return static_cast<char>(std::toupper(character));
         }
     );
     return normalized;
@@ -229,6 +245,10 @@ struct GuiLuaBridgeService::Impl
         std::string,
         std::shared_ptr<GuiLuaBridgeEndpoint>
     > endpoints;
+    GuiGameplayLifecycleState lifecycleState =
+        GuiGameplayLifecycleState::Unknown;
+    uint64_t lifecycleGeneration = 0;
+    std::string lifecyclePlayerTag;
 };
 
 GuiLuaBridgeService::GuiLuaBridgeService()
@@ -303,6 +323,63 @@ GuiLuaBridgeStats GuiLuaBridgeService::Stats(
         endpoint->actions.size(),
         endpoint->consumerOpen
     };
+}
+
+bool GuiLuaBridgeService::ReportGameplayPlayerTag(
+    std::string_view playerTag
+)
+{
+    const std::string normalizedTag = NormalizePlayerTag(playerTag);
+    const GuiGameplayLifecycleState nextState =
+        normalizedTag.empty() || normalizedTag == "---"
+            ? GuiGameplayLifecycleState::Frontend
+            : GuiGameplayLifecycleState::Gameplay;
+    std::vector<std::shared_ptr<GuiLuaBridgeEndpoint>> endpoints;
+    {
+        std::lock_guard<std::mutex> lock(impl_->mutex);
+        if (impl_->lifecycleState == nextState
+            && impl_->lifecyclePlayerTag == normalizedTag)
+        {
+            return false;
+        }
+        impl_->lifecycleState = nextState;
+        impl_->lifecyclePlayerTag = normalizedTag;
+        ++impl_->lifecycleGeneration;
+        if (nextState == GuiGameplayLifecycleState::Frontend)
+        {
+            endpoints.reserve(impl_->endpoints.size());
+            for (const auto& entry : impl_->endpoints)
+            {
+                endpoints.push_back(entry.second);
+            }
+        }
+    }
+    for (const auto& endpoint : endpoints)
+    {
+        std::lock_guard<std::mutex> lock(endpoint->mutex);
+        endpoint->updates.clear();
+        endpoint->actions.clear();
+    }
+    return true;
+}
+
+GuiGameplayLifecycleSnapshot
+GuiLuaBridgeService::GameplayLifecycle() const
+{
+    std::lock_guard<std::mutex> lock(impl_->mutex);
+    return {
+        impl_->lifecycleState,
+        impl_->lifecycleGeneration,
+        impl_->lifecyclePlayerTag
+    };
+}
+
+void GuiLuaBridgeService::ResetGameplayLifecycle()
+{
+    std::lock_guard<std::mutex> lock(impl_->mutex);
+    impl_->lifecycleState = GuiGameplayLifecycleState::Unknown;
+    impl_->lifecyclePlayerTag.clear();
+    ++impl_->lifecycleGeneration;
 }
 
 void GuiLuaBridgeService::Reset(std::string_view channelName)

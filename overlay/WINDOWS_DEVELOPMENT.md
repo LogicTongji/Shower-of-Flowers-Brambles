@@ -25,6 +25,23 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\overlay\build_windows.
 
 The script configures the `windows-x86` preset, builds all cross-platform targets, and runs the offline probe suite. Use `-SkipTests` only when a build-only iteration is needed.
 
+The portable probes cover Lua channel ownership, independent action/data
+scheduling, state detachment, global window focus/modal ordering, session
+generation resets, persistence round trips, save-profile isolation, and
+corrupt-state rejection. The native Lua 5.1 probe also verifies that fallback
+publishers persist into the player country's save variables and that rolling
+back the persisted revision creates a fresh GUI session. The D3D9 smoke probe
+returns `77` when no usable windowed device is available, which CTest records
+as skipped.
+
+Presentation persistence defaults to
+`%LOCALAPPDATA%\HOI3 Scripted GUI\state`. Redirect it for a portable or test
+run with:
+
+```powershell
+$env:SCRIPTED_GUI_STATE_ROOT = "$PWD\overlay\build-win\probe-state"
+```
+
 VS Code also exposes the same commands through `Terminal > Run Build Task`.
 
 ## In-process DLL
@@ -37,9 +54,12 @@ overlay\build-win\Debug\scripted_gui_injector.exe
 ```
 
 The DLL contains only the platform-independent Scripted GUI runtime and the
-Win32/Direct3D 9 backend. It does not link SDL or any macOS host code. Startup
-plugins are always created with the live `lua` bridge; manifest `file` and
-`sequence` providers remain development-only executables.
+Win32/Direct3D 9 backend. It does not link SDL or any macOS host code. The
+in-process host registers `file`, `sequence`, and `bridge` providers and creates
+every enabled manifest plugin. `startup` controls only whether its window opens
+initially. Manifest options prefixed with `inprocess_` override the corresponding
+provider option in the DLL, allowing one GUI to use sequence snapshots offline
+and a named Lua bridge in HOI3.
 
 The DLL installs its D3D9 hooks from a worker scheduled by `DllMain`. The
 installer patches the shared `IDirect3DDevice9` vtable for `EndScene` and
@@ -65,15 +85,14 @@ The hook layer and external diagnostics use these stable exports:
 `ScriptedGui_AttachLua51` must run on the thread that owns the supplied Lua
 state. Its versioned function table is declared in
 `src/scripted_gui_overlay_api.h`; this keeps the Scripted GUI core independent
-of a particular Lua import library or hard-coded game address. The remaining
-HOI3-specific integration step is to locate the game's live `lua_State` and
-Lua 5.1 C API addresses, then call this export once for that state. The data
-conversion, update queue, action queue and global-table registration are
-already implemented in the DLL.
+of hard-coded game addresses. The automatic Lua 5.1 import hooks attach every
+observed state, prune inactive generations, and detach a state immediately
+when an imported `lua_close` is available.
 
 For the HOI3 4.02/TFH binaries, the game imports Lua 5.1 through `lua51.dll`.
-The DLL therefore also installs a narrow IAT hook on the main executable's
-`lua_pcall` import. The hook preserves the Lua stack, registers
+The DLL therefore installs narrow IAT hooks on the main executable's
+`luaL_newstate` and `lua_pcall` imports, with an optional `lua_close` hook. The
+hook preserves the Lua stack, registers
 `ScriptedGuiNative` the first time each active Lua context is observed, then
 immediately delegates to the original `lua_pcall`. Lua API addresses are
 resolved by exported names from `lua51.dll`; no fixed executable addresses are

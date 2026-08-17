@@ -9,6 +9,35 @@
 int main()
 {
     GuiLuaBridgeService service;
+    const GuiGameplayLifecycleSnapshot initialLifecycle =
+        service.GameplayLifecycle();
+    if (initialLifecycle.state
+            != GuiGameplayLifecycleState::Unknown
+        || !service.ReportGameplayPlayerTag("---"))
+    {
+        std::cerr << "Lua bridge frontend lifecycle failed\n";
+        return 1;
+    }
+    const GuiGameplayLifecycleSnapshot frontendLifecycle =
+        service.GameplayLifecycle();
+    if (frontendLifecycle.state
+            != GuiGameplayLifecycleState::Frontend
+        || !service.ReportGameplayPlayerTag("chi"))
+    {
+        std::cerr << "Lua bridge gameplay lifecycle failed\n";
+        return 1;
+    }
+    const GuiGameplayLifecycleSnapshot gameplayLifecycle =
+        service.GameplayLifecycle();
+    if (gameplayLifecycle.state
+            != GuiGameplayLifecycleState::Gameplay
+        || gameplayLifecycle.playerTag != "CHI"
+        || gameplayLifecycle.generation
+            <= frontendLifecycle.generation)
+    {
+        std::cerr << "Lua bridge lifecycle snapshot failed\n";
+        return 1;
+    }
     GuiDataBridgeChannelRegistry channels;
     GuiDataProviderRegistry providers;
     if (!RegisterGuiLuaDataBridgeChannel(channels, service)

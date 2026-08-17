@@ -70,6 +70,8 @@ if(APPLE)
         src/gui_runtime.cpp
         src/gui_tick.cpp
         src/gui_window_session.cpp
+        src/gui_window_manager.cpp
+        src/gui_persistence.cpp
         src/gui_text_renderer_macos.cpp
         src/gui_texture_loader_macos.cpp
         src/gui_indexed_map_core.cpp
@@ -155,6 +157,7 @@ if(WIN32)
         src/scripted_gui_overlay_dll.cpp
         src/gui_d3d9_hook.cpp
         src/gui_diagnostics.cpp
+        src/gui_hoi3_lifecycle.cpp
         src/gui_host_d3d9.cpp
         src/gui_texture_loader_d3d9.cpp
         src/gui_text_renderer_d3d9.cpp
@@ -163,6 +166,8 @@ if(WIN32)
         src/gui_indexed_map_core.cpp
         src/gui_inprocess_application.cpp
         src/gui_window_session.cpp
+        src/gui_window_manager.cpp
+        src/gui_persistence.cpp
         src/gui_declarative_data.cpp
         src/gui_plugin_registry.cpp
         src/gui_plugin_manifest.cpp
@@ -170,6 +175,8 @@ if(WIN32)
         src/declarative_gui_plugin.cpp
         src/gui_data_provider.cpp
         src/gui_data_bridge.cpp
+        src/gui_file_data_provider.cpp
+        src/gui_sequence_data_provider.cpp
         src/gui_lua_bridge.cpp
         src/gui_lua51_hook.cpp
         src/gui_lua_native_binding.cpp
@@ -208,6 +215,7 @@ if(WIN32)
         src/gui_host_d3d9_probe.cpp
         src/gui_host_d3d9.cpp
         src/gui_diagnostics.cpp
+        src/gui_hoi3_lifecycle.cpp
         src/gui_texture_loader_d3d9.cpp
         src/gui_text_renderer_d3d9.cpp
         src/gui_marker_layer_d3d9.cpp
@@ -215,6 +223,8 @@ if(WIN32)
         src/gui_indexed_map_core.cpp
         src/gui_inprocess_application.cpp
         src/gui_window_session.cpp
+        src/gui_window_manager.cpp
+        src/gui_persistence.cpp
         src/gui_declarative_data.cpp
         src/gui_plugin_registry.cpp
         src/gui_plugin_manifest.cpp
@@ -222,7 +232,10 @@ if(WIN32)
         src/declarative_gui_plugin.cpp
         src/gui_data_provider.cpp
         src/gui_data_bridge.cpp
+        src/gui_file_data_provider.cpp
+        src/gui_sequence_data_provider.cpp
         src/gui_lua_bridge.cpp
+        src/gui_lua_native_binding.cpp
         src/gui_interpreter.cpp
         src/gui_behavior.cpp
         src/gui_action_bridge.cpp
@@ -269,6 +282,22 @@ if(WIN32)
 
     target_compile_definitions(
         gui_lua51_native_probe
+        PRIVATE WIN32_LEAN_AND_MEAN NOMINMAX
+    )
+
+    add_executable(
+        gui_hoi3_lifecycle_probe
+        src/gui_hoi3_lifecycle_probe.cpp
+        src/gui_hoi3_lifecycle.cpp
+    )
+
+    target_compile_features(
+        gui_hoi3_lifecycle_probe
+        PRIVATE cxx_std_17
+    )
+
+    target_compile_definitions(
+        gui_hoi3_lifecycle_probe
         PRIVATE WIN32_LEAN_AND_MEAN NOMINMAX
     )
 
@@ -322,6 +351,7 @@ add_executable(
     gui_window_session_probe
     src/gui_window_session_probe.cpp
     src/gui_window_session.cpp
+    src/gui_persistence.cpp
     src/gui_declarative_data.cpp
     src/gui_interpreter.cpp
     src/gui_behavior.cpp
@@ -343,6 +373,7 @@ add_executable(
     src/gui_inprocess_application_probe.cpp
     src/gui_inprocess_application.cpp
     src/gui_window_session.cpp
+    src/gui_persistence.cpp
     src/gui_declarative_data.cpp
     src/gui_plugin_registry.cpp
     src/gui_plugin_manifest.cpp
@@ -350,6 +381,8 @@ add_executable(
     src/declarative_gui_plugin.cpp
     src/gui_data_provider.cpp
     src/gui_data_bridge.cpp
+    src/gui_file_data_provider.cpp
+    src/gui_sequence_data_provider.cpp
     src/gui_lua_bridge.cpp
     src/gui_interpreter.cpp
     src/gui_behavior.cpp
@@ -512,6 +545,28 @@ target_compile_features(
     PRIVATE cxx_std_17
 )
 
+add_executable(
+    gui_window_manager_probe
+    src/gui_window_manager_probe.cpp
+    src/gui_window_manager.cpp
+)
+
+add_executable(
+    gui_persistence_probe
+    src/gui_persistence_probe.cpp
+    src/gui_persistence.cpp
+)
+
+target_compile_features(
+    gui_persistence_probe
+    PRIVATE cxx_std_17
+)
+
+target_compile_features(
+    gui_window_manager_probe
+    PRIVATE cxx_std_17
+)
+
 if(BUILD_TESTING)
     set(
         SCRIPTED_GUI_PROBE_TARGETS
@@ -519,6 +574,8 @@ if(BUILD_TESTING)
         gui_interpreter_probe
         gui_declarative_data_probe
         gui_application_bus_probe
+        gui_window_manager_probe
+        gui_persistence_probe
         gui_data_provider_probe
         gui_data_bridge_probe
         gui_data_bridge_codec_probe
@@ -541,6 +598,15 @@ if(BUILD_TESTING)
     endforeach()
 
     if(WIN32)
+        add_test(
+            NAME gui_hoi3_lifecycle_probe
+            COMMAND gui_hoi3_lifecycle_probe
+        )
+        set_tests_properties(
+            gui_hoi3_lifecycle_probe
+            PROPERTIES
+                WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/.."
+        )
         add_test(NAME gui_host_d3d9_probe COMMAND gui_host_d3d9_probe)
         set_tests_properties(
             gui_host_d3d9_probe

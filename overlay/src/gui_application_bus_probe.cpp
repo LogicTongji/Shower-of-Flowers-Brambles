@@ -30,6 +30,17 @@ public:
         return visible_;
     }
 
+    bool IsOpen() const override
+    {
+        return open_;
+    }
+
+    void OpenWindow() override
+    {
+        open_ = true;
+        ++openCount_;
+    }
+
     void SetVisibilityMode(GuiWindowVisibilityMode mode) override
     {
         visibilityMode_ = mode;
@@ -49,6 +60,8 @@ public:
 
     void CloseWindow() override
     {
+        open_ = false;
+        visible_ = false;
         closed_ = true;
     }
 
@@ -59,6 +72,8 @@ public:
     }
 
     bool closed_ = false;
+    bool open_ = true;
+    int openCount_ = 0;
     bool visible_ = true;
     bool automaticVisibility_ = true;
     GuiWindowVisibilityMode visibilityMode_ =
@@ -132,9 +147,19 @@ int main()
     }
 
     if (!bus.Dispatch("first", MakeAction("close_window", "second"))
-        || !second.closed_)
+        || !second.closed_
+        || second.IsOpen())
     {
         std::cerr << "Window close routing failed\n";
+        return 1;
+    }
+
+    if (!bus.Dispatch("first", MakeAction("show_window", "second"))
+        || !second.IsOpen()
+        || !second.IsVisible()
+        || second.openCount_ != 1)
+    {
+        std::cerr << "Closed window reopen routing failed\n";
         return 1;
     }
 
