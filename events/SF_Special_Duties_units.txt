@@ -43,7 +43,7 @@ country_event = {
 			name = "Event2244_modifier"
 			duration = 120
 		}
-		load_oob = FTT.txt
+		load_oob = "FTT.txt"
 		ai_chance = { factor = 100 }
 	}
 }
@@ -76,7 +76,7 @@ country_event = {
 	trigger = {
 		tag = CHI		
 		date = 1941.1.1
-		not = { year = 1945 }
+		not = { year = 1942 }
 	}
         mean_time_to_happen =  {
 	        days = 1

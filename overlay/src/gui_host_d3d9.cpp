@@ -12,6 +12,8 @@
 #include <unordered_set>
 #include <utility>
 #include <vector>
+#include <cctype>
+#include <string>
 
 #include "gui_application_bus.h"
 #include "gui_diagnostics.h"
@@ -30,6 +32,96 @@
 
 namespace
 {
+
+enum class GuiImageScaleMode
+{
+    Stretch,
+    Contain,
+    Center
+};
+
+GuiImageScaleMode ResolveImageScaleMode(
+    std::string_view value
+)
+{
+    std::string normalized(value);
+
+    std::transform(
+        normalized.begin(),
+        normalized.end(),
+        normalized.begin(),
+        [](unsigned char character)
+        {
+            return static_cast<char>(
+                std::tolower(character)
+            );
+        }
+    );
+
+    if (
+        normalized == "center"
+        || normalized == "none"
+    )
+    {
+        return GuiImageScaleMode::Center;
+    }
+
+    if (
+        normalized == "contain"
+        || normalized == "preserve"
+        || normalized == "preserveaspect"
+        || normalized == "aspect"
+    )
+    {
+        return GuiImageScaleMode::Contain;
+    }
+
+    return GuiImageScaleMode::Stretch;
+}
+gui::GuiRect CalculateContainRect(
+    const gui::GuiRect& target,
+    int sourceWidth,
+    int sourceHeight
+)
+{
+    if (
+        target.width <= 0
+        || target.height <= 0
+        || sourceWidth <= 0
+        || sourceHeight <= 0
+    )
+    {
+        return target;
+    }
+
+    const double scale = std::min(
+        static_cast<double>(target.width)
+            / static_cast<double>(sourceWidth),
+        static_cast<double>(target.height)
+            / static_cast<double>(sourceHeight)
+    );
+
+    const int width = std::max(
+        1,
+        static_cast<int>(
+            std::lround(sourceWidth * scale)
+        )
+    );
+
+    const int height = std::max(
+        1,
+        static_cast<int>(
+            std::lround(sourceHeight * scale)
+        )
+    );
+
+    return {
+        target.x + (target.width - width) / 2,
+        target.y + (target.height - height) / 2,
+        width,
+        height
+    };
+}
 
 struct OverlayVertex
 {
@@ -333,10 +425,13 @@ void DrawTextureRegion(
     IDirect3DTexture9* texture,
     const gui::GuiRect& source,
     int textureWidth,
-    int textureHeight
+    int textureHeight,
+    D3DCOLOR color = D3DCOLOR_ARGB(255,255,255,255)
 )
 {
     if (!texture
+        || destination.width <= 0
+        || destination.height <= 0
         || source.width <= 0
         || source.height <= 0
         || textureWidth <= 0
@@ -348,12 +443,310 @@ void DrawTextureRegion(
         device,
         destination,
         texture,
-        D3DCOLOR_ARGB(255, 255, 255, 255),
+        color,
         static_cast<float>(source.x) / textureWidth,
         static_cast<float>(source.y) / textureHeight,
         static_cast<float>(source.x + source.width) / textureWidth,
         static_cast<float>(source.y + source.height) / textureHeight
     );
+}
+
+void FitSlicePair(
+    int total,
+    int requestedFirst,
+    int requestedSecond,
+    int& first,
+    int& second
+)
+{
+    requestedFirst =
+        std::max(
+            0,
+            requestedFirst
+        );
+
+    requestedSecond =
+        std::max(
+            0,
+            requestedSecond
+        );
+
+    if (total <= 0)
+    {
+        first = 0;
+        second = 0;
+        return;
+    }
+
+    const int requestedTotal =
+        requestedFirst
+        + requestedSecond;
+    /*
+        两侧边距没有超过可用尺寸：
+        直接保持原尺寸。
+    */
+    if (requestedTotal <= total)
+    {
+        first =
+            requestedFirst;
+
+        second =
+            requestedSecond;
+
+        return;
+    }
+    /*
+        两侧边距超过目标尺寸。
+    */
+    if (requestedTotal <= 0)
+    {
+        first = 0;
+        second = 0;
+        return;
+    }
+
+    const double scale =
+        static_cast<double>(
+            total
+        )
+        /
+        static_cast<double>(
+            requestedTotal
+        );
+
+    first =
+        static_cast<int>(
+            std::lround(
+                requestedFirst
+                * scale
+            )
+        );
+
+    first =
+        std::clamp(
+            first,
+            0,
+            total
+        );
+    /*
+    不会因为浮点取整产生 1 像素缺口。
+    */
+    second =
+        total - first;
+}
+
+void DrawNineSlice(
+    IDirect3DDevice9* device,
+    const GuiD3D9Texture& texture,
+    const gui::GuiRect& target,
+    const gui::GuiNineSliceInsets& requestedInsets,
+    D3DCOLOR color
+)
+{
+    if (
+        !device
+        || !texture.texture
+        || texture.width <= 0
+        || texture.height <= 0
+        || target.width <= 0
+        || target.height <= 0
+    )
+    {
+        return;
+    }
+    /*
+    ===========================================================================
+    1. 计算 Source 九宫格边距
+    ===========================================================================
+    */
+    int sourceLeft = 0;
+    int sourceRight = 0;
+
+    int sourceTop = 0;
+    int sourceBottom = 0;
+
+    FitSlicePair(
+        texture.width,
+        requestedInsets.left,
+        requestedInsets.right,
+        sourceLeft,
+        sourceRight
+    );
+
+    FitSlicePair(
+        texture.height,
+        requestedInsets.top,
+        requestedInsets.bottom,
+        sourceTop,
+        sourceBottom
+    );
+
+    /*
+    ===========================================================================
+    2. 计算 Destination 九宫格边距
+    ===========================================================================
+    */
+    int destinationLeft = 0;
+    int destinationRight = 0;
+
+    int destinationTop = 0;
+    int destinationBottom = 0;
+
+    FitSlicePair(
+        target.width,
+        sourceLeft,
+        sourceRight,
+        destinationLeft,
+        destinationRight
+    );
+
+    FitSlicePair(
+        target.height,
+        sourceTop,
+        sourceBottom,
+        destinationTop,
+        destinationBottom
+    );
+    /*
+    ===========================================================================
+    3. Source 四条 X/Y 分割线
+    ===========================================================================
+
+              sourceLeft            sourceRight
+                ↓                       ↓
+
+        x0        x1            x2       x3
+        │         │             │        │
+        0      left       width-right   width
+    */
+    const int sourceX[4] =
+    {
+        0,
+
+        sourceLeft,
+
+        texture.width
+            - sourceRight,
+
+        texture.width
+    };
+
+    const int sourceY[4] =
+    {
+        0,
+
+        sourceTop,
+
+        texture.height
+            - sourceBottom,
+
+        texture.height
+    };
+    /*
+    ===========================================================================
+    4. Destination 四条 X/Y 分割线
+    ===========================================================================
+    */
+    const int destinationX[4] =
+    {
+        target.x,
+
+        target.x
+            + destinationLeft,
+
+        target.x
+            + target.width
+            - destinationRight,
+
+        target.x
+            + target.width
+    };
+
+    const int destinationY[4] =
+    {
+        target.y,
+
+        target.y
+            + destinationTop,
+
+        target.y
+            + target.height
+            - destinationBottom,
+
+        target.y
+            + target.height
+    };
+    /*
+    ===========================================================================
+    5. 绘制 3 × 3 共九个区域
+    ===========================================================================
+        ┌─────────┬─────────────┬─────────┐
+        │   TL    │     TOP     │   TR    │
+        ├─────────┼─────────────┼─────────┤
+        │  LEFT   │   CENTER    │  RIGHT  │
+        ├─────────┼─────────────┼─────────┤
+        │   BL    │   BOTTOM    │   BR    │
+        └─────────┴─────────────┴─────────┘
+    */
+    for (
+        int row = 0;
+        row < 3;
+        ++row
+    )
+    {
+        for (
+            int column = 0;
+            column < 3;
+            ++column
+        )
+        {
+            const gui::GuiRect source
+            {
+                sourceX[column],
+                sourceY[row],
+
+                sourceX[column + 1]
+                    - sourceX[column],
+
+                sourceY[row + 1]
+                    - sourceY[row]
+            };
+
+            const gui::GuiRect destination
+            {
+                destinationX[column],
+                destinationY[row],
+
+                destinationX[column + 1]
+                    - destinationX[column],
+
+                destinationY[row + 1]
+                    - destinationY[row]
+            };
+            /*
+                某些极小尺寸情况下：直接跳过即可。
+            */
+            if (
+                source.width <= 0
+                || source.height <= 0
+                || destination.width <= 0
+                || destination.height <= 0
+            )
+            {
+                continue;
+            }
+
+            DrawTextureRegion(
+                device,
+                destination,
+                texture.texture,
+                source,
+                texture.width,
+                texture.height,
+                color
+            );
+        }
+    }
 }
 
 gui::GuiRect CalculateScrollbarThumb(
@@ -1031,7 +1424,9 @@ struct GuiD3D9Host::Impl
     void DrawSprite(
         std::string_view name,
         gui::GuiRect rect,
-        D3DCOLOR color = D3DCOLOR_ARGB(255, 255, 255, 255)
+        D3DCOLOR color = D3DCOLOR_ARGB(255, 255, 255, 255),
+        GuiImageScaleMode scaleMode = GuiImageScaleMode::Stretch,
+        const gui::GuiNineSliceInsets* nineSlice = nullptr
     )
     {
         GuiD3D9Texture* texture = ResolveSprite(name);
@@ -1047,9 +1442,79 @@ struct GuiD3D9Host::Impl
         {
             rect.height = texture->height;
         }
-        DrawQuad(device, rect, texture->texture, color);
+        /*
+    nineSlice 优先于 scaleMode。
+    只要定义了有效的 nineSlice，
+    就进入九宫格绘制。
+    scaleMode 此时不再参与。
+       */
+        if (
+            nineSlice
+            && nineSlice->Enabled()
+           )
+        {
+            DrawNineSlice(device,*texture,rect,*nineSlice,color);
+            return;
+        }
+        switch (scaleMode)
+        {
+    case GuiImageScaleMode::Contain:
+    {
+        const gui::GuiRect destination =
+             CalculateContainRect(rect,texture->width,texture->height);
+             DrawQuad(device,destination,texture->texture,color);
+        break;
     }
-
+    case GuiImageScaleMode::Center:
+    {
+    const int visibleWidth = std::min(rect.width,texture->width);
+    const int visibleHeight = std::min(rect.height,texture->height);
+    if (
+        visibleWidth <= 0
+        || visibleHeight <= 0
+    )
+    {
+        return;
+    }
+    // 纹理比控件大时，从纹理中央裁切。
+    const gui::GuiRect source{
+        std::max(
+            0,
+            (texture->width - visibleWidth) / 2
+        ),
+        std::max(
+            0,
+            (texture->height - visibleHeight) / 2
+        ),
+        visibleWidth,
+        visibleHeight
+    };
+    // 纹理比控件小时，在控件中居中。
+    const gui::GuiRect destination{
+        rect.x
+            + std::max(
+                0,
+                (rect.width - visibleWidth) / 2
+            ),
+        rect.y
+            + std::max(
+                0,
+                (rect.height - visibleHeight) / 2
+            ),
+        visibleWidth,
+        visibleHeight
+    };
+    DrawTextureRegion(device,destination,texture->texture,source,texture->width,texture->height,color);
+    break;
+    }
+     case GuiImageScaleMode::Stretch:
+          default:
+        {
+           DrawQuad(device,rect,texture->texture,color);
+        break;
+        }
+        }
+    }
     bool ApplyWidgetClip(const gui::GuiResolvedWidget& widget)
     {
         if (!widget.hasClipRect)
@@ -1092,9 +1557,11 @@ struct GuiD3D9Host::Impl
 
     void DrawScrollbar(
         SessionView& view,
-        std::string_view scrollbarName
+        std::string_view scrollbarName,
+        float opacity
     )
     {
+        const D3DCOLOR color = ToD3DColor(1.0f,1.0f,1.0f,opacity);
         for (const std::string& listName
             : view.controller->ListNames())
         {
@@ -1114,11 +1581,13 @@ struct GuiD3D9Host::Impl
             {
                 DrawSprite(
                     layout.scrollbarTrackSprite,
-                    layout.scrollbar
+                    layout.scrollbar,
+                    color
                 );
                 DrawSprite(
                     layout.scrollbarThumbSprite,
-                    CalculateScrollbarThumb(layout)
+                    CalculateScrollbarThumb(layout),
+                    color
                 );
             }
             return;
@@ -1161,14 +1630,19 @@ struct GuiD3D9Host::Impl
             switch (command.type)
             {
             case GuiRenderCommandType::WindowFrame:
-                DrawSprite(definition.frameSpriteName, command.widget->rect);
+                DrawSprite(definition.frameSpriteName, command.widget->rect,
+                     ToD3DColor(1.0f,1.0f,1.0f,command.widget->opacity)
+                );
                 break;
             case GuiRenderCommandType::Image:
                 DrawSprite(
                     view.controller->ResolveWidgetSprite(
                         *command.widget
                     ),
-                    command.widget->rect
+                    command.widget->rect,
+                    ToD3DColor(1.0f,1.0f,1.0f,command.widget->opacity),
+                    ResolveImageScaleMode(definition.scaleMode),
+                    &definition.nineSlice
                 );
                 break;
             case GuiRenderCommandType::Button:
@@ -1176,15 +1650,25 @@ struct GuiD3D9Host::Impl
                 const bool pressed = view.controller->IsWidgetPressed(
                     *command.widget
                 );
+                const float disabledFactor = 150.0f / 255.0f;
+                const float brightness = 
+                     command.widget->enabled
+                     ? 1.0f
+                     : disabledFactor;
+                const float alpha =
+                     command.widget->opacity
+                     * (
+                       command.widget->enabled
+                       ? 1.0f
+                       : disabledFactor
+                       );
                 DrawSprite(
                     view.controller->ResolveWidgetSprite(
                         *command.widget,
                         pressed
                     ),
                     command.widget->rect,
-                    command.widget->enabled
-                        ? D3DCOLOR_ARGB(255, 255, 255, 255)
-                        : D3DCOLOR_ARGB(150, 150, 150, 150)
+                    ToD3DColor(brightness,brightness,brightness,alpha)
                 );
                 break;
             }
@@ -1196,7 +1680,8 @@ struct GuiD3D9Host::Impl
                     ToD3DColor(
                         definition.textColor[0],
                         definition.textColor[1],
-                        definition.textColor[2]
+                        definition.textColor[2],
+                        command.widget->opacity
                     )
                 );
                 break;
@@ -1249,25 +1734,26 @@ struct GuiD3D9Host::Impl
                     device,
                     fill,
                     nullptr,
-                    ToD3DColor(color[0], color[1], color[2])
+                    ToD3DColor(color[0], color[1], color[2],command.widget->opacity)
                 );
                 break;
             }
             case GuiRenderCommandType::ScrollBar:
-                DrawScrollbar(view, definition.name);
+                DrawScrollbar(view, definition.name,command.widget->opacity);
                 break;
             case GuiRenderCommandType::IndexedMap:
             {
+                const D3DCOLOR mapColor = ToD3DColor(1.0f,1.0f,1.0f,command.widget->opacity);
                 GuiIndexedMapD3D9DrawLayers layers;
                 if (view.indexedMaps.ResolveDrawLayers(
                         *command.widget,
                         layers
                     ))
                 {
-                    DrawTextureQuad(device, layers.rect, layers.base);
-                    DrawTextureQuad(device, layers.rect, layers.overlay);
-                    DrawTextureQuad(device, layers.rect, layers.boundary);
-                    DrawTextureQuad(device, layers.rect, layers.hover);
+                    DrawTextureQuad(device, layers.rect, layers.base,mapColor);
+                    DrawTextureQuad(device, layers.rect, layers.overlay,mapColor);
+                    DrawTextureQuad(device, layers.rect, layers.boundary,mapColor);
+                    DrawTextureQuad(device, layers.rect, layers.hover,mapColor);
                 }
                 break;
             }
@@ -1292,7 +1778,8 @@ struct GuiD3D9Host::Impl
                 DrawTextureQuad(
                     device,
                     text.rect,
-                    textRenderer.Resolve(slot, text)
+                    textRenderer.Resolve(slot, text),
+                    ToD3DColor(1.0f,1.0f,1.0f,command.widget->opacity)
                 );
                 break;
             }

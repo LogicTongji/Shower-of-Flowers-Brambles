@@ -1,11 +1,11 @@
-# HOI3 Scripted GUI 系统现状与 SGUI/SGFX 语法手册
+# HOI3 Scripted GUI 系统简介与 SGUI/SGFX 通用语法手册
 
-本文档以当前仓库源码为准，覆盖：
+**本文档以当前仓库源码为准，覆盖：**
 
 - Scripted GUI 解释器的核心源码分类与职责；
-- 当前核心能力的完成度和验收边界；
+- 当前核心能力的完成度和验收条件；
 - `.sgui`、`.sgfx` 已实现的全部控件、资源和字段；
-- 当前文件尚未使用、但解释器已经实现的语句；
+- 当前 `.sgui`、`.sgfx`尚未使用、但解释器已经实现的语句；
 - 已被解析但暂时没有运行时效果，以及当前配置中存在但会被忽略的语句。
 
 ## 1. 状态标记
@@ -48,7 +48,7 @@
 - `overlay/src/gui_custom_widget.h/.cpp`：为无法由内置控件表达的特殊控件提供 C++ 扩展注册点。
 - `overlay/src/gui_list_model.h`：通用动态列表和列表项数据结构。
 
-### 2.4 数据驱动、Lua 桥与发布者
+### 2.4 数据驱动、Lua 桥与统一发布者
 
 - `overlay/src/gui_data.h/.cpp`：通用 `GuiDataRegistry`；保存布尔、整数、浮点、字符串和列表；解析数据路径、条件表达式和 `{变量}` 插值。
 - `overlay/src/gui_data_provider.h/.cpp`：通用数据提供器接口和注册表。
@@ -72,8 +72,8 @@
 - `overlay/src/gui_indexed_map_d3d9.h/.cpp`：Windows 索引地图渲染、悬停和点击 Region。
 - `overlay/src/gui_marker_layer_d3d9.h/.cpp`：Windows 地图 Marker、头像、连线、堆叠、提示、拖动和附属动作。
 - `overlay/src/gui_indexed_map_make.cpp`：根据地图源文件离线生成底图和 Region ID 二进制图。
-- `overlay/src/gui_host_macos.*`、`gui_*_macos.*`、`scripted_gui_host_macos.cpp`：macOS 原型和离线验证宿主，不进入 Windows 注入 DLL。
-- `overlay/src/gui_control_renderer.*`：SDL/macOS 原型使用的通用 2D 控件绘制辅助。
+- `overlay/src/gui_host_macos.*`、`gui_*_macos.*`、`scripted_gui_host_macos.cpp`：程序原型和离线验证，不进入DLL 注入进程。
+- `overlay/src/gui_control_renderer.*`：程序原型使用的通用 2D 控件绘制辅助。
 
 ### 2.6 注入、游戏生命周期与持久化
 
@@ -83,9 +83,9 @@
 - `overlay/src/gui_persistence.h/.cpp`：按插件、会话和存档边界保存/恢复 GUI 状态。
 - `overlay/src/*_probe*.cpp`：离线、集成和回归测试程序，不是最终 DLL 的业务模块。
 
-## 3. 当前完成度结论
+## 3. 系统完成度
 
-### 3.1 已形成闭环的核心能力
+### 3.1 已形成闭环的核心功能
 
 - `.sgui/.sgfx` 解析、资源注册和插件清单加载；
 - 窗口、图片、文字、按钮、色块、进度条、列表、滚动条；
@@ -99,9 +99,9 @@
 - D3D9 游戏内绘制、自适应缩放、输入区域收缩和底层游戏点击穿透；
 - 通用索引地图和 Marker 图层。中国战争地图是第一个完整实例，议会半圆席位图是第二个纯声明式实例。
 
-### 3.2 “核心功能是否完全补齐”的准确答案
+### 3.2 系统待补充的核心功能
 
-- **若目标定义为 V1：支持由 Lua 数据驱动的通用 2D 游戏内 GUI，核心闭环已经补齐。**
+- **若目标定义为支持由 Lua 数据驱动的通用 2D 游戏内 GUI，则当前基本能力已经补齐。**
 - **若目标定义为完整复刻 HOI3/HOI4 全部 GUI 能力，尚未完全补齐。**
 
 仍存在的主要缺口：
@@ -115,9 +115,9 @@
 7. 通用 3D 模型控件尚未实现。
 8. `customWidgetType` 仍要求 C++ 注册对应 Handler；它是扩展点，不是纯配置控件。
 
-### 3.3 “只改 interface/font/gfx 就能添加新 GUI”的验收结论
+### 3.3 系统的初步验收结论
 
-严格按字面要求，**目前还没有完全达到**。
+“只改 interface/font/gfx/lua 就能添加新 GUI”的严格验收标准**目前还没有完全达到**。
 
 - 纯静态或文件数据驱动的 2D GUI：不需要新增 C++，但除 `.sgui/.sgfx` 和素材外，至少还要在 `interface/gui_plugins` 添加插件清单；通常还需要 `script_gui/data` 数据文件。
 - 读取游戏实时状态、修改游戏状态或响应复杂动作的 GUI：不需要新增 C++ 的前提是现有 Lua/HOI3 接口足够，但仍需新增 Lua 数据模块、动作函数，并在 `script/scripted_gui_plugins.lua` 注册。
@@ -127,7 +127,7 @@
 
 > 对现有内置控件能够表达的 2D GUI，可以通过 `.sgui + .sgfx + 插件清单 + 数据/行为 Lua + 素材/字体` 完成，不再为每个 GUI 新写一个专用 C++ 程序。
 
-## 4. 基础语法
+## 4. 系统基础语法
 
 ```text
 # 注释方式一
@@ -266,8 +266,8 @@ property = { child = value }
 | 现用 | `borderSprite = "GFX_name"` | 窗口框 Sprite；也作为 `frameSprite` 的首选别名。 |
 | 现用 | `frameSprite = "GFX_name"` | `borderSprite` 的别名；Marker 中用于每个 Marker 的框。 |
 | 已实现未用 | `windowFrame = "GFX_name"` | `borderSprite` 的别名。 |
-| 部分实现 | `scaleMode = "stretch|contain|preserveaspect|aspect|center|none"` | macOS 图片支持拉伸、保持比例或居中；Windows D3D9 当前仍统一拉伸。 |
-| 部分实现 | `scale` / `fit` | `scaleMode` 的别名，同样仅在 macOS 图片路径生效。 |
+| 部分实现 | `scaleMode = "stretch/contain/preserve/aspect aspect/center/none"` | macOS原型程序图片支持拉伸、保持比例或居中；Windows D3D9 当前仍统一拉伸。 |
+| 部分实现 | `scale` / `fit` | `scaleMode` 的别名，同样仅在 macOS原型程序中生效。 |
 
 ### 7.2 窗口与按钮
 
@@ -292,7 +292,7 @@ property = { child = value }
 | 现用 | `font = "file_stem"` | 选择字体；值对应 `font` 目录下 `.ttf/.otf` 文件名去掉扩展名后的名称，不区分大小写。 |
 | 现用 | `fontSize = 20` | 像素字号；未设置时默认取 `max(12, 控件高度 × 2/3)`。 |
 | 已实现未用 | `textSize = 20` | `fontSize` 的别名。 |
-| 现用 | `alignment = "left|center|centre|right"` | 水平对齐；未知值回退左对齐。 |
+| 现用 | `alignment = "left/center/centre/right"` | 水平对齐；未知值回退左对齐。 |
 | 已实现未用 | `textAlignment` / `align` | `alignment` 的别名。 |
 | 现用 | `color = { r g b }` | 文字 RGB，分量范围通常为 `0.0` 到 `1.0`。 |
 | 现用 | `wrap = yes` | 在文字矩形内换行。 |
@@ -310,7 +310,7 @@ property = { child = value }
 | 状态 | 语句 | 作用 |
 |---|---|---|
 | 现用 | `draggable = yes` | 启用通用控件拖动。 |
-| 现用 | `dragAxis = "horizontal|x|vertical|y"` | 拖动轴；除 `vertical/y` 外默认按水平处理。 |
+| 现用 | `dragAxis = "horizontal/x & vertical/y"` | 拖动轴；除 `vertical/y` 外默认按水平处理。 |
 | 已实现未用 | `dragOrientation` | `dragAxis` 的别名。 |
 | 现用 | `dragTrack = "widget_name"` | 用具名控件矩形作为拖动范围。未设置时使用控件自身矩形。 |
 | 已实现未用 | `dragBounds` / `trackWidget` | `dragTrack` 的别名。 |
@@ -378,7 +378,7 @@ property = { child = value }
 | 现用 | `track = "GFX_track"` | 滚动条轨道 Sprite。 |
 | 现用 | `position`、`size` | 滚动条轨道区域；滑块高度和位置按内容长度自动计算。 |
 
-只有列表内容超出视口时，Windows 宿主才绘制滚动条。
+只有列表内容超出视口时，系统才绘制滚动条。
 
 ## 11. SGUI 进度条与色块字段
 
@@ -391,8 +391,8 @@ property = { child = value }
 | 现用 | `valueSource = "data.path"` | 读取 `0.0` 到 `1.0` 的动态进度；运行时会夹紧到该范围。 |
 | 已实现未用 | `valueBinding` / `progressSource` | `valueSource` 的别名。 |
 | 已实现未用 | `value = 0.5` | 不使用 `valueSource` 时的静态进度。 |
-| 现用 | `progressColor = 0|1` | `0` 使用资源 `color`，`1` 使用 `colortwo`。 |
-| 已实现未用 | `colorIndex = 0|1` | `progressColor` 的别名。 |
+| 现用 | `progressColor = 0/1` | `0` 使用资源 `color`，`1` 使用 `colortwo`。 |
+| 已实现未用 | `colorIndex = 0/1` | `progressColor` 的别名。 |
 | 现用 | `fillFromEnd = yes` | 从右侧或底部反向填充。 |
 | 已实现未用 | `reverse = yes` | `fillFromEnd` 的别名。 |
 | 现用 | `drawBackground = yes/no` | 字段已实现；macOS 原型会控制背景绘制。当前 Windows D3D9 路径只绘制彩色填充，因此背景图片通常由独立 `iconType` 提供。 |
@@ -443,7 +443,7 @@ property = { child = value }
 | 现用 | `markerSize = { x = 68 y = 84 }` | Marker 总尺寸；默认 `68×84`。 |
 | 现用 | `portraitPosition = { x = 2 y = 2 }` | 头像在 Marker 内的相对位置。 |
 | 现用 | `portraitSize = { x = 64 y = 80 }` | 头像尺寸；未设置时回退 Marker 尺寸。 |
-| 现用 | `lineColor = { r g b a }` | Region 锚点到 Marker 的连线颜色。 |
+| 现用 | `lineColor = { r g b a }` | 锚点到 Marker 的连线颜色。 |
 | 现用 | `lineWidth = 3` | 连线宽度，最小为 1。 |
 
 ### 13.3 堆叠
@@ -454,7 +454,7 @@ property = { child = value }
 | 已实现未用 | `markerStackSource` / `stackGroupSource` | `stackSource` 的别名。 |
 | 现用 | `stackOrderSource = "item.order"` | 同组内排序值。 |
 | 已实现未用 | `markerStackOrderSource` | `stackOrderSource` 的别名。 |
-| 现用 | `stackDirection = "vertical|horizontal"` | `horizontal` 横向堆叠，其他值按纵向处理。 |
+| 现用 | `stackDirection = "vertical/horizontal"` | `horizontal` 横向堆叠，其他值按纵向处理。 |
 | 已实现未用 | `markerStackDirection` | `stackDirection` 的别名。 |
 | 现用 | `stackSpacing = 4` | 相邻 Marker 额外间距。 |
 | 已实现未用 | `markerStackSpacing` | `stackSpacing` 的别名。 |
@@ -502,7 +502,7 @@ property = { child = value }
 | 部分实现 | `customType = "handler_name"` | 选择 C++ `GuiCustomWidgetRegistry` 中的 Handler。 |
 | 部分实现 | `type = "handler_name"` | `customType` 的别名。 |
 
-如果没有注册匹配 Handler，自定义控件既不会绘制，也不会处理输入。因此它不能满足“只写 `.sgui` 就添加全新控件语义”的目标。
+**注意，如果没有注册匹配 Handler，自定义控件既不会绘制，也不会处理输入。本系统目前暂不满足不满足“只写 `.sgui` 就添加全新控件语义”的目标。**
 
 ## 15. SGFX 资源类型
 
@@ -513,7 +513,7 @@ property = { child = value }
 | 现用 | `progressBarType = { ... }` | 进度条样式资源；类型名不区分大小写，因此 `progressbartype` 等价。 |
 | 现用 | `indexedMapResourceType = { ... }` | 索引地图资源及其离线生成参数、运行时着色参数。 |
 
-当前没有实现 `.sgfx` 的 `fontType`。字体由宿主直接扫描 `font` 目录，不需要也不能通过 `fontType` 注册。
+**注意，当前本系统没有实现 `.sgfx` 的 `fontType`。字体由宿主直接扫描 `font` 目录，不需要也不能通过 `fontType` 注册。**
 
 ## 16. SGFX `spriteType`
 
@@ -533,7 +533,7 @@ spriteType = {
 | 已实现未用 | `textureFile = "path"` | `texturefile` 的大小写兼容形式；字段匹配本身不区分大小写。 |
 | 仅解析 | `effectFile = "gfx\\FX\\...fx"` | 会保存，但当前自定义 D3D9 渲染器不加载 HOI3 Effect。 |
 | 现用但仅解析 | `loadType = "INGAME"` | 当前文件已写入，字段会保存，但不会改变加载时机或资源生命周期。 |
-| 现用但仅解析 | `noOfFrames = 1` | 会保存帧数且最小为 1，但当前渲染器没有帧索引和动画逻辑。 |
+| 现用但仅解析 | `noOfFrames = 1` | 会保存帧数且最小为 1，但当前渲染器还未写入帧索引和动画逻辑。 |
 | 已实现未用但仅解析 | `norefcount = yes` | 会保存，但当前纹理缓存不使用该标志。 |
 
 支持的实际图片格式由平台纹理加载器决定。当前 Windows 路径通过 GDI+/D3D9 处理项目已使用的 PNG、BMP、DDS 等资源。
@@ -613,12 +613,12 @@ progressBarType = {
 | `item.textkey` | 在列表模板或 Marker 中直接读取当前列表项字段。 |
 | `spriteValuePrefix + 动态值` | 将紧凑数据值转换成完整 Sprite 名，例如 `1` 变成 `GFX_party_1`。 |
 
-## 20. 新增 GUI 的最小文件集合
+## 20. 使用本系统新增 GUI 的最小文件集合
 
 ### 20.1 纯 2D 静态或文件数据 GUI
 
 1. `interface/<gui_name>.sgui`：窗口、控件、坐标、条件和动作名。
-2. `interface/<gui_name>.sgfx`：图片、进度条或索引地图资源。
+2. `interface/<gui_name>.sgfx`：图片、进度条\其他索引资源或索引地图资源。
 3. `interface/gui_plugins/<gui_name>.txt`：注册插件、窗口名、启动方式、数据提供器和窗口层级。
 4. `gfx/<gui_name>/...`：图片资源。
 5. `font/<font_name>.ttf` 或 `.otf`：可选；`.sgui` 中使用文件名 stem。
@@ -634,7 +634,7 @@ progressBarType = {
 
 只要功能可由本文档中的内置控件和现有 Lua/HOI3 接口表达，就无需新增 C++。
 
-## 21. 当前最容易误用的字段
+## 21. 易误用字段
 
 1. `fullScreen`：当前完全忽略。
 2. `width`、`height`（SGFX 进度条资源）：当前完全忽略，改用 `size = { x = ... y = ... }`。
@@ -646,7 +646,7 @@ progressBarType = {
 8. `renderMode = "custom"`：只抑制通用文字绘制，不会自动获得自定义绘制。
 9. `customWidgetType`：必须有 C++ Handler，不能仅靠配置创造全新控件语义。
 
-## 22. 推荐的后续核心补足顺序
+## 22. 本系统后续核心能力补足及优化方向
 
 1. 为 `.sgui/.sgfx` 建立严格 Schema、字段类型校验和“未知字段”诊断。
 2. 补齐 Windows D3D9 的 `scaleMode`、通用透明度和九宫格。
@@ -654,3 +654,11 @@ progressBarType = {
 4. 明确实现或正式废弃 `fullScreen`、`positionType`、`orientation` 等兼容字段。
 5. 增加 Sprite 帧选择、动画与可选进度条贴图。
 6. 最后再设计独立的 3D Model 控件与渲染生命周期。
+尚未从cpp中完全解耦的问题:
+Windows Custom Widget 没接入 Draw/Input              
+Host 中 `leader1region/leader2region`                
+Lua Native Bridge 解析 `regions.*.controlledpercentage` 
+MarkerLayer fallback 写死业务字段                           
+Marker 68×84、Tooltip 280×140、字体等                      
+92%/90%、24px cascade、18px scrollbar                   
+默认颜色、padding、frameZOrder                              

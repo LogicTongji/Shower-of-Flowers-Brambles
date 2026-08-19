@@ -26,7 +26,7 @@ diplomatic_decisions = {
 	         FreeFra2 = {
 		potential = {
 			tag = FRA
-			not = { has_global_flag = FreeFra_in_africa2 } 
+			not = { has_country_flag = FreeFra_in_africa2 } 
 			OR = {
 			FRA = { government_in_exile = yes }
 			has_country_flag = fr_signs_peace
@@ -37,7 +37,7 @@ diplomatic_decisions = {
 		      war_with = GER
 		}
 		effect = {
-			set_global_flag = FreeFra_in_africa2
+			set_country_flag = FreeFra_in_africa2
 		 FRA = { load_oob = "Afiric_army.txt" }
 		  war = { target = VIC }
 			     }			

@@ -770,6 +770,77 @@ void ReadRect(
 	ReadSize(object, "size", rect.width, rect.height);
 }
 
+void ReadNineSlice(
+    const GuiObject& object,
+    GuiNineSliceInsets& output
+)
+{
+    const GuiValue* value =
+        FindValue(
+            object,
+            "nineSlice"
+        );
+
+    // 顺便兼容 nine_slice 写法。
+    if (!value)
+    {
+        value =
+            FindValue(
+                object,
+                "nine_slice"
+            );
+    }
+
+    if (
+        !value
+        || value->kind != ValueKind::Block
+        || !value->block
+    )
+    {
+        return;
+    }
+
+    output.left =
+        std::max(
+            0,
+            GetInteger(
+                *value->block,
+                "left",
+                0
+            )
+        );
+
+    output.top =
+        std::max(
+            0,
+            GetInteger(
+                *value->block,
+                "top",
+                0
+            )
+        );
+
+    output.right =
+        std::max(
+            0,
+            GetInteger(
+                *value->block,
+                "right",
+                0
+            )
+        );
+
+    output.bottom =
+        std::max(
+            0,
+            GetInteger(
+                *value->block,
+                "bottom",
+                0
+            )
+        );
+}
+
 WidgetType GetWidgetType(const std::string& name)
 {
 	const std::string type = ToLower(name);
@@ -939,9 +1010,26 @@ WidgetDefinition BuildWidgetDefinition(
 		"progressColor",
 		GetInteger(object, "colorIndex", 0)
 	);
+	/*
+		scaleMode:
+
+		stretch
+		contain
+		preserve
+		preserveAspect
+		aspect
+		center
+		none
+
+		Windows D3D9 renderer 会在 DrawSprite() 中解释这些值。
+	*/
 	widget.scaleMode = GetFirstScalar(
 		object,
 		{"scaleMode", "scale", "fit"}
+	);
+	ReadNineSlice(
+    object,
+    widget.nineSlice
 	);
 	widget.alignment = GetFirstScalar(
 		object,
@@ -1191,6 +1279,22 @@ WidgetDefinition BuildWidgetDefinition(
 		)
 	);
 	widget.value = GetFloat(object, "value", 0.0f);
+	/*
+		通用透明度。
+
+		标准写法：
+		    opacity = 0.5
+
+		alpha 暂时保留为兼容别名：
+		    alpha = 0.5
+
+		最终始终限制在 0.0 ~ 1.0。
+	*/
+	widget.opacity = std::clamp(
+		GetFloat(object,"opacity",GetFloat(object,"alpha",1.0f)),
+		0.0f,
+		1.0f
+	);
 	widget.fillFromEnd = GetBoolean(
 		object,
 		"fillFromEnd",
@@ -1864,6 +1968,11 @@ std::vector<GuiResolvedWidget> GuiInterpreter::ResolveWindowLayout(
 				&& evaluateCondition(
 					entry.definition->enabledWhen
 				);
+			entry.resolved.opacity = std::clamp(
+                entry.definition->opacity,
+                 0.0f,
+                 1.0f
+                );
 			entry.resolved.depth = 0;
 			entry.resolved.zOrder =
 				entry.definition->zOrder;
@@ -1901,6 +2010,11 @@ std::vector<GuiResolvedWidget> GuiInterpreter::ResolveWindowLayout(
 				&& evaluateCondition(
 					definition.enabledWhen
 				);
+			entry.resolved.opacity = std::clamp(
+                parent.opacity * definition.opacity,
+                0.0f,
+                1.0f
+                );
 			entry.resolved.depth = parent.depth + 1;
 			entry.resolved.zOrder =
 				parent.zOrder + definition.zOrder;

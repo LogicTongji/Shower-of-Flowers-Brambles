@@ -36,13 +36,34 @@ uint8_t ToByte(float value)
     ));
 }
 
-D3DCOLOR ToD3DColor(const gui::GuiRgbaColor& color)
+D3DCOLOR ToD3DColor(const gui::GuiRgbaColor& color,float opacity = 1.0f)
 {
     return D3DCOLOR_ARGB(
-        ToByte(color.a),
+        ToByte(color.a
+            * std::clamp(
+                opacity,
+                0.0f,
+                1.0f
+            )
+        ),
         ToByte(color.r),
         ToByte(color.g),
         ToByte(color.b)
+    );
+}
+D3DCOLOR WhiteWithOpacity(float opacity)
+{
+    return D3DCOLOR_ARGB(
+        ToByte(
+            std::clamp(
+                opacity,
+                0.0f,
+                1.0f
+            )
+        ),
+        255,
+        255,
+        255
     );
 }
 
@@ -784,7 +805,8 @@ struct GuiMarkerLayerD3D9Runtime::Impl
 
     void DrawLine(
         const gui::WidgetDefinition& definition,
-        const MarkerView& view
+        const MarkerView& view,
+        float opacity
     ) const
     {
         DrawThickLine(
@@ -798,13 +820,14 @@ struct GuiMarkerLayerD3D9Runtime::Impl
             static_cast<float>(view.anchorX),
             static_cast<float>(view.anchorY),
             static_cast<float>(std::max(1, definition.lineWidth)),
-            ToD3DColor(definition.lineColor)
+            ToD3DColor(definition.lineColor,opacity)
         );
     }
 
     void DrawMarker(
         const gui::WidgetDefinition& definition,
-        const MarkerView& view
+        const MarkerView& view,
+        float opacity
     ) const
     {
         const gui::GuiRect& portraitRect = definition.portraitRect;
@@ -834,7 +857,8 @@ struct GuiMarkerLayerD3D9Runtime::Impl
     void DrawTooltip(
         const gui::WidgetDefinition& definition,
         const MarkerView& view,
-        const std::vector<MarkerView>& views
+        const std::vector<MarkerView>& views,
+        float opacity
     )
     {
         const gui::GuiRect rect = ResolveTooltipRect(
@@ -842,7 +866,7 @@ struct GuiMarkerLayerD3D9Runtime::Impl
             view,
             views
         );
-        DrawQuad(device, rect, nullptr, ToD3DColor(definition.tooltipColor));
+        DrawQuad(device, rect, nullptr, ToD3DColor(definition.tooltipColor, opacity));
         const int padding = std::max(0, definition.tooltipPadding);
         gui::GuiTextCommand command;
         command.rect = {
@@ -877,7 +901,8 @@ struct GuiMarkerLayerD3D9Runtime::Impl
 
     void DrawMarkerAction(
         const gui::WidgetDefinition& definition,
-        const MarkerView& view
+        const MarkerView& view,
+        float opacity
     )
     {
         if (definition.markerActionSpriteName.empty()
@@ -987,11 +1012,11 @@ bool GuiMarkerLayerD3D9Runtime::DrawWidget(
     );
     for (const Impl::MarkerView& view : views)
     {
-        impl_->DrawLine(*layer.definition, view);
+        impl_->DrawLine(*layer.definition, view,layer.opacity);
     }
     for (const Impl::MarkerView& view : views)
     {
-        impl_->DrawMarker(*layer.definition, view);
+        impl_->DrawMarker(*layer.definition, view,layer.opacity);
     }
     const Impl::LayerState& state = impl_->layers[layer.definition];
     const uint64_t tooltipId = state.hoveredId != 0
@@ -1002,14 +1027,14 @@ bool GuiMarkerLayerD3D9Runtime::DrawWidget(
             tooltipId
         ))
     {
-        impl_->DrawTooltip(*layer.definition, *tooltip, views);
+        impl_->DrawTooltip(*layer.definition, *tooltip, views,layer.opacity);
     }
     if (const Impl::MarkerView* selected = impl_->FindById(
             views,
             state.selectedId
         ))
     {
-        impl_->DrawMarkerAction(*layer.definition, *selected);
+        impl_->DrawMarkerAction(*layer.definition, *selected,layer.opacity);
     }
     return true;
 }

@@ -6,7 +6,10 @@ diplomatic_decisions = {
 	FrontArmy_chc = {
 		potential = {
 			tag = CHC
+			or = {
 			war_with = CHI
+			war_with = CDB
+			}
 			has_country_flag = FrontArmy_go_back_Shannxi
 			not = { has_country_flag = FrontArmy_chc } 
 			date = 1936.10.7
@@ -27,7 +30,10 @@ diplomatic_decisions = {
 	FrontArmy_chc_ai = {
 		potential = {
 			tag = CHC
+			or = {
 			war_with = CHI
+			war_with = CDB
+			}
 			has_country_flag = FrontArmy_go_back_Shannxi
 			not = { has_country_flag = FrontArmy_chc } 
 			date = 1936.10.7

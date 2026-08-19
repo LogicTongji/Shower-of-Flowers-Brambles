@@ -37,18 +37,18 @@ int main()
     nestedButton.name = "nested_action";
 
     std::vector<gui::GuiResolvedWidget> widgets(9);
-    widgets[0] = {&frame, {}, true, true, 0, 0, 0};
-    widgets[1] = {&image, {}, true, true, 0, 5, 4};
-    widgets[2] = {&text, {}, true, true, 0, -2, 5};
-    widgets[3] = {&map, {}, true, true, 0, 5, 2};
-    widgets[4] = {&list, {}, true, true, 0, 3, 3};
-    widgets[5] = {&templateButton, {}, true, true, 0, 1, 1};
-    widgets[6] = {&scrollbar, {}, true, true, 0, 2, 6};
-    widgets[7] = {&templateButton, {}, true, true, 0, 1, 7};
+    widgets[0] = {&frame, {}, true, true, 1.0f, 0, 0, 0};
+    widgets[1] = {&image, {}, true, true, 1.0f, 0, 5, 4};
+    widgets[2] = {&text, {}, true, true, 1.0f, 0, -2, 5};
+    widgets[3] = {&map, {}, true, true, 1.0f, 0, 5, 2};
+    widgets[4] = {&list, {}, true, true, 1.0f, 0, 3, 3};
+    widgets[5] = {&templateButton, {}, true, true, 1.0f, 0, 1, 1};
+    widgets[6] = {&scrollbar, {}, true, true, 1.0f, 0, 2, 6};
+    widgets[7] = {&templateButton, {}, true, true, 1.0f, 0, 1, 7};
     widgets[7].listName = "probe_list";
     widgets[7].listIndex = 0;
     widgets[7].listItemId = 101;
-    widgets[8] = {&nestedButton, {}, true, true, 0, 1, 8};
+    widgets[8] = {&nestedButton, {}, true, true, 1.0f, 0, 1, 8};
     widgets[8].listName = "probe_list";
     widgets[8].listIndex = 0;
     widgets[8].listItemId = 101;

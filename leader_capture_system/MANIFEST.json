@@ -1,0 +1,44 @@
+{
+  "artifact": "HOI3_LEADER_CAPTURE_RC1_7_WINDOWS_BUILD_FIXED",
+  "status": "REVIEW / BUILD-READY / NOT-RUNTIME-ACCEPTED",
+  "change_scope": "Build wrapper only; exact R06B mechanism source unchanged from RC1.6",
+  "windows_batch_format": {
+    "encoding": "ASCII",
+    "line_endings": "CRLF"
+  },
+  "default_process": "hoi3_tfh.exe",
+  "legacy_game_name_in_active_launcher_source": false,
+  "d328_hash_gate_in_active_launcher_source": false,
+  "files": [
+    {
+      "path": "BUILD_RC1_7.bat",
+      "sha256": "1ce1b19b253c9d44a7ddfbed7c16145dc115029d8db89882fee2ec6f54e8a7c4",
+      "size": 3353
+    },
+    {
+      "path": "README_CN.txt",
+      "sha256": "0d017f773757c71eb275534d85686cedd7a5d182b3fc4bee24d8c1ed59665c7d",
+      "size": 901
+    },
+    {
+      "path": "START_LEADER_CAPTURE.bat",
+      "sha256": "17054841fb2d9483f6675765d07d552bef29b3fff318c1214941237362263cf6",
+      "size": 588
+    },
+    {
+      "path": "leader_capture.ini",
+      "sha256": "7f48c88e07c0a98870abb82f34f858223072e69dfc22b7fcfeab8eff5dfb7ad9",
+      "size": 557
+    },
+    {
+      "path": "src/launcher_rc1_6_clean.cpp",
+      "sha256": "4c8de0bb977408224765c230e64c6d38a4343df1fd4ba2d50c7de6a11815392f",
+      "size": 13492
+    },
+    {
+      "path": "src/leader_capture_auto_transfer_r06b.cpp",
+      "sha256": "d2be2784b55dc9d475c523cae2a6069fb7fc1b1ac80129e432e92aca7fa79947",
+      "size": 45205
+    }
+  ]
+}

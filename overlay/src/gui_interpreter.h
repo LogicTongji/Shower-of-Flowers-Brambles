@@ -144,6 +144,22 @@ struct GuiActionBinding
     std::string onDragEnd;
 };
 
+struct GuiNineSliceInsets
+{
+    int left = 0;
+    int top = 0;
+    int right = 0;
+    int bottom = 0;
+
+    bool Enabled() const
+    {
+        return left > 0
+            || top > 0
+            || right > 0
+            || bottom > 0;
+    }
+};
+
 struct WidgetDefinition
 {
 	WidgetType type = WidgetType::Unknown;
@@ -183,6 +199,7 @@ struct WidgetDefinition
 	std::string layoutMode;
     std::string positionType;
     std::string scaleMode;
+    GuiNineSliceInsets nineSlice;
     std::string alignment;
     std::string renderMode;
     std::string valueSource;
@@ -225,6 +242,14 @@ struct WidgetDefinition
 	int markerActionFontSize = 0;
 	int markerStackSpacing = 0;
 	int dragSteps = 0;
+	float opacity = 1.0f;
+		// 控件自身透明度。
+	// 0.0 = 完全透明
+	// 1.0 = 完全不透明
+	//
+	// 注意：
+	// 这里存储的是 definition 自身的 opacity，
+	// 真正渲染时使用的是 GuiResolvedWidget::opacity。
 	float value = 0.0f;
 	float polarStartAngle = 180.0f;
 	float polarEndAngle = 360.0f;
@@ -267,6 +292,14 @@ struct GuiResolvedWidget
     GuiRect rect;
     bool visible = true;
     bool enabled = true;
+	// 最终有效透明度。
+	//
+	// root:
+	//     definition.opacity
+	//
+	// child:
+	//     parent.opacity * definition.opacity
+	float opacity = 1.0f;
     int depth = 0;
 	int zOrder = 0;
 	std::size_t order = 0;

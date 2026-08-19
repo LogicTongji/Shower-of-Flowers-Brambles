@@ -117,6 +117,8 @@ country_event = {
     trigger = {
 		tag = CHI
         has_country_flag = The_Migration_Period_education4
+        not = { has_country_flag = jap_seizes_coast_chi }
+        war_with = JAP
 	}
 
 	mean_time_to_happen = {

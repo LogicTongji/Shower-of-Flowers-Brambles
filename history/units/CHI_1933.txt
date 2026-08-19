@@ -111,28 +111,28 @@ theatre = {
 	}
 	corps = {
 		name = "第4军"
-		location = 5542
+		location = 5621
 		regiment = { type = hq_brigade name = "第4军军部" historical_model = 1 }
 		division= {
 			name = "第4师"
-			location = 5542
+			location = 5621
 			regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
 			regiment = { type = infantry_brigade experience = 10 historical_model = 0 }
 		}
 	}
 	corps = {
 		name = "第5军"
-		location = 5542
+		location = 5621
 		regiment = { type = hq_brigade name = "第5军军部" historical_model = 1 }
 		division= {
 			name = "第52师"
-			location = 5542
+			location = 5621
 			regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
 			regiment = { type = infantry_brigade experience = 10 historical_model = 0 }
 		}
 		division= {
 			name = "第59师"
-			location = 5542
+			location = 5621
 			regiment = { type = infantry_brigade experience = 10 historical_model = 1 }
 			regiment = { type = infantry_brigade experience = 10 historical_model = 0 }
 		}
@@ -998,8 +998,8 @@ theatre = {
 }
 	navy = {
 		name = "第1舰队"
-		base = 5542
-		location = 5542
+		base = 5621
+		location = 5621
 		ship = { type = light_cruiser name = "宁海" historical_model = 0 }
 		ship = { type = light_cruiser name = "海容" historical_model = 0 }
 		ship = { type = light_cruiser name = "海筹" historical_model = 0 }
@@ -1008,8 +1008,8 @@ theatre = {
 	}
 	navy = {
 		name = "第2舰队"
-		base = 5542
-		location = 5542
+		base = 5621
+		location = 5621
 		ship = { type = light_cruiser name = "应瑞" historical_model = 0 }
 		ship = { type = light_cruiser name = "肇和" historical_model = 0 }
 		ship = { type = light_cruiser name = "海琛" historical_model = 0 }

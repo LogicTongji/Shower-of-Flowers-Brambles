@@ -1,116 +1,378 @@
-[0:3:20.102][thread=33400] Scripted GUI hook worker started
-[0:3:20.102][thread=33400] HOI3 engine frame callsite probes installed
-[0:3:20.102][thread=33400] HOI3 Direct3DCreate9 import hooked
-[0:3:20.102][thread=33400] Lua lifecycle initialized from publisher activity: state=frontend
-[0:3:20.102][thread=33400] D3D9 and Lua 5.1 hooks installed
-[0:3:21.212][thread=38936] HOI3 IDirect3D9::CreateDevice hooked
-[0:3:21.337][thread=38936] HOI3 actual D3D9 device hooked
-[0:3:21.337][thread=38936] HOI3 D3D9 swap-chain Present hooked
-[0:3:21.454][thread=38936] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[0:3:21.454][thread=38936] D3D9 hook heartbeat: EndScene=0 (+0), Present=0 (+0), SwapChainPresent=0 (+0), EngineCallsites=[0=0 (+0), 1=0 (+0), 2=0 (+0), 3=0 (+0)], ActiveVTableOwned=yes
-[0:3:21.454][thread=38936] Lua 5.1 state attached to ScriptedGuiNative
-[0:3:21.719][thread=38936] HOI3 actual D3D9 device hooked
-[0:3:21.720][thread=38936] HOI3 D3D9 presentation device selected
-[0:3:21.720][thread=38936] HOI3 window procedure hooked
-[0:3:21.783][thread=38936] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\arrows.gfx: line 11: expected '=' inside block
-[0:3:21.783][thread=38936] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\chatfonts.gfx: line 9: expected '=' inside block
-[0:3:21.783][thread=38936] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\core.gfx: line 734: expected '=' inside block
-[0:3:21.783][thread=38936] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\eu3dialog.gfx: line 180: expected property name inside block
-[0:3:21.859][thread=38936] D3D9 Scripted GUI host initialized
-[0:3:21.860][thread=38936] GUI session visibility: id=china_anti_jap, open=true, visible=false, state.visible=false, state.active=false, viewer=, persistence=unavailable, persistence_key=, persistence_error=, session=, memory_revision=, stored_revision=, pending_revision=, pending_ticks=, observed_day=, leader1_region=, leader2_region=, lifecycle=frontend, lifecycle_generation=1, lifecycle_player=---
-[0:3:21.860][thread=38936] GUI session visibility: id=parliament, open=false, visible=false, state.visible=true, state.active=true, viewer=, persistence=unavailable, persistence_key=, persistence_error=, session=, memory_revision=, stored_revision=, pending_revision=, pending_ticks=, observed_day=, leader1_region=, leader2_region=, lifecycle=frontend, lifecycle_generation=1, lifecycle_player=---
-[0:4:17.342][thread=38936] HOI3 active D3D9 device vtable hooks refreshed
-[0:4:17.342][thread=38936] D3D9 hook heartbeat: EndScene=2 (+2), Present=1 (+1), SwapChainPresent=0 (+0), EngineCallsites=[0=1 (+1), 1=0 (+0), 2=0 (+0), 3=0 (+0)], ActiveVTableOwned=yes
-[0:4:17.502][thread=38936] HOI3 queried D3D9 device interface hooked
-[0:4:17.502][thread=38936] HOI3 queried D3D9 device interface hooked
-[0:4:17.700][thread=38936] HOI3 lifecycle changed by read-only player tag: player=CHI, state=gameplay, generation=2
-[0:4:20.934][thread=38936] HOI3 active D3D9 device vtable hooks refreshed
-[0:4:21.98][thread=45016] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[0:4:21.98][thread=45016] Lua 5.1 state attached to ScriptedGuiNative
-[0:4:21.127][thread=28296] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[0:4:21.127][thread=28296] Lua 5.1 state attached to ScriptedGuiNative
-[0:4:21.157][thread=41156] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[0:4:21.157][thread=41156] Lua 5.1 state attached to ScriptedGuiNative
-[0:4:21.183][thread=27220] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[0:4:21.183][thread=27220] Lua 5.1 state attached to ScriptedGuiNative
-[0:4:21.207][thread=27220] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
-[0:4:21.208][thread=33348] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[0:4:21.208][thread=33348] Lua 5.1 state attached to ScriptedGuiNative
-[0:4:21.234][thread=36316] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[0:4:21.234][thread=36316] Lua 5.1 state attached to ScriptedGuiNative
-[0:4:21.259][thread=39940] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[0:4:21.259][thread=39940] Lua 5.1 state attached to ScriptedGuiNative
-[0:4:21.285][thread=40372] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[0:4:21.285][thread=40372] Lua 5.1 state attached to ScriptedGuiNative
-[0:4:21.310][thread=8800] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[0:4:21.311][thread=8800] Lua 5.1 state attached to ScriptedGuiNative
-[0:4:28.647][thread=38936] HOI3 active D3D9 device vtable hooks refreshed
-[0:4:28.711][thread=43268] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[0:4:28.711][thread=41156] Lua GUI channel publisher reserved: channel=china_anti_jap, state=4, priority=0
-[0:4:28.711][thread=43268] Lua 5.1 state attached to ScriptedGuiNative
-[0:4:28.740][thread=41168] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[0:4:28.740][thread=41168] Lua 5.1 state attached to ScriptedGuiNative
-[0:4:28.741][thread=41156] First Lua GUI snapshot decode started: channel=china_anti_jap
-[0:4:28.741][thread=41156] First Lua GUI snapshot state: channel=china_anti_jap, visible=true, active=true, viewer=CHI, values=554, lists=3
-[0:4:28.742][thread=41156] First Lua GUI Region values: channel=china_anti_jap, count=41, nonzero=30, maximum=100.000000, maximumKey=regions.40.controlledpercentage
-[0:4:28.742][thread=41156] First Lua GUI snapshot received: channel=china_anti_jap, revision=1
-[0:4:28.765][thread=32356] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[0:4:28.766][thread=32356] Lua 5.1 state attached to ScriptedGuiNative
-[0:4:28.791][thread=38124] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[0:4:28.791][thread=38124] Lua 5.1 state attached to ScriptedGuiNative
-[0:4:28.816][thread=36216] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[0:4:28.816][thread=36216] Lua 5.1 state attached to ScriptedGuiNative
-[0:4:28.842][thread=43560] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[0:4:28.843][thread=43560] Lua 5.1 state attached to ScriptedGuiNative
-[0:4:28.868][thread=38380] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[0:4:28.868][thread=38380] Lua 5.1 state attached to ScriptedGuiNative
-[0:4:28.894][thread=46004] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[0:4:28.894][thread=46004] Lua 5.1 state attached to ScriptedGuiNative
-[0:4:28.920][thread=7632] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[0:4:28.920][thread=7632] Lua 5.1 state attached to ScriptedGuiNative
-[0:4:28.946][thread=36952] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[0:4:28.947][thread=36952] Lua 5.1 state attached to ScriptedGuiNative
-[0:4:28.994][thread=38936] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHI, persistence=available, persistence_key=CHI:456193, persistence_error=, session=CHI:456193, memory_revision=4, stored_revision=4, pending_revision=0, pending_ticks=0, observed_day=709740, leader1_region=3, leader2_region=3, lifecycle=gameplay, lifecycle_generation=2, lifecycle_player=CHI
-[0:4:28.995][thread=38936] First GUI session draw: id=china_anti_jap, widgets=44, commands=1
-[0:4:29.126][thread=34500] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[0:4:29.127][thread=34500] Lua 5.1 state attached to ScriptedGuiNative
-[0:4:29.153][thread=31420] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[0:4:29.153][thread=31420] Lua 5.1 state attached to ScriptedGuiNative
-[0:4:29.180][thread=4408] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[0:4:29.180][thread=4408] Lua 5.1 state attached to ScriptedGuiNative
-[0:4:29.205][thread=44336] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[0:4:29.205][thread=44336] Lua 5.1 state attached to ScriptedGuiNative
-[0:4:29.582][thread=43868] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[0:4:29.582][thread=43868] Lua 5.1 state attached to ScriptedGuiNative
-[0:4:29.666][thread=1168] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[0:4:29.666][thread=1168] Lua 5.1 state attached to ScriptedGuiNative
-[0:4:29.692][thread=31660] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[0:4:29.693][thread=31660] Lua 5.1 state attached to ScriptedGuiNative
-[0:4:30.137][thread=39384] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[0:4:30.137][thread=39384] Lua 5.1 state attached to ScriptedGuiNative
-[0:4:30.165][thread=43256] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[0:4:30.165][thread=43256] Lua 5.1 state attached to ScriptedGuiNative
-[0:4:30.191][thread=33044] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[0:4:30.191][thread=33044] Lua 5.1 state attached to ScriptedGuiNative
-[0:4:30.647][thread=37984] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[0:4:30.647][thread=37984] Lua 5.1 state attached to ScriptedGuiNative
-[0:4:30.819][thread=30112] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
-[0:4:30.820][thread=30112] Lua 5.1 state attached to ScriptedGuiNative
-[0:4:31.220][thread=8800] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
-[0:4:31.522][thread=43868] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
-[0:4:32.818][thread=43560] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
-[0:4:34.53][thread=41168] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
-[0:4:34.89][thread=38936] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHI, persistence=available, persistence_key=CHI:456193, persistence_error=, session=CHI:456193, memory_revision=4, stored_revision=4, pending_revision=0, pending_ticks=0, observed_day=709741, leader1_region=3, leader2_region=3, lifecycle=gameplay, lifecycle_generation=2, lifecycle_player=CHI
-[0:4:34.345][thread=33348] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
-[0:4:34.514][thread=38936] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
-[0:4:34.809][thread=41156] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
-[0:4:35.779][thread=31420] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
-[0:4:37.853][thread=38936] HOI3 active D3D9 device vtable hooks refreshed
-[0:4:37.874][thread=38936] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHI, persistence=available, persistence_key=CHI:456193, persistence_error=, session=CHI:456193, memory_revision=4, stored_revision=4, pending_revision=0, pending_ticks=0, observed_day=709742, leader1_region=3, leader2_region=3, lifecycle=gameplay, lifecycle_generation=2, lifecycle_player=CHI
-[0:4:38.349][thread=34500] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
-[0:4:38.848][thread=41168] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
-[0:4:42.880][thread=39384] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
-[0:4:42.880][thread=45016] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
-[0:4:43.311][thread=38936] GUI pointer down: plugin=china_anti_jap, window=(939,219), canvas=(1525,119), target=china_war_launcher_chi
-[0:4:44.509][thread=38936] GUI pointer down: plugin=china_anti_jap, window=(956,164), canvas=(1554,27), target=china_war_close
-[0:4:44.872][thread=36316] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:37:27.315][thread=24696] Scripted GUI hook worker started
+[17:37:27.315][thread=24696] HOI3 engine frame callsite probes installed
+[17:37:27.316][thread=24696] HOI3 Direct3DCreate9 import hooked
+[17:37:27.316][thread=24696] Lua lifecycle initialized from publisher activity: state=frontend
+[17:37:27.316][thread=24696] D3D9 and Lua 5.1 hooks installed
+[17:37:28.431][thread=49880] HOI3 IDirect3D9::CreateDevice hooked
+[17:37:28.558][thread=49880] HOI3 actual D3D9 device hooked
+[17:37:28.559][thread=49880] HOI3 D3D9 swap-chain Present hooked
+[17:37:28.673][thread=49880] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[17:37:28.673][thread=49880] D3D9 hook heartbeat: EndScene=0 (+0), Present=0 (+0), SwapChainPresent=0 (+0), EngineCallsites=[0=0 (+0), 1=0 (+0), 2=0 (+0), 3=0 (+0)], ActiveVTableOwned=yes
+[17:37:28.673][thread=49880] Lua 5.1 state attached to ScriptedGuiNative
+[17:37:28.931][thread=49880] HOI3 actual D3D9 device hooked
+[17:37:28.931][thread=49880] HOI3 D3D9 presentation device selected
+[17:37:28.932][thread=49880] HOI3 window procedure hooked
+[17:37:30.265][thread=49880] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\arrows.gfx: line 11: expected '=' inside block
+[17:37:30.265][thread=49880] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\chatfonts.gfx: line 9: expected '=' inside block
+[17:37:30.265][thread=49880] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\core.gfx: line 734: expected '=' inside block
+[17:37:30.265][thread=49880] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\eu3dialog.gfx: line 180: expected property name inside block
+[17:37:31.341][thread=49880] D3D9 Scripted GUI host initialized
+[17:37:31.342][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=false, state.visible=false, state.active=false, viewer=, persistence=unavailable, persistence_key=, persistence_error=, session=, memory_revision=, stored_revision=, pending_revision=, pending_ticks=, observed_day=, leader1_region=, leader2_region=, lifecycle=frontend, lifecycle_generation=1, lifecycle_player=---
+[17:37:31.342][thread=49880] GUI session visibility: id=parliament, open=false, visible=false, state.visible=true, state.active=true, viewer=, persistence=unavailable, persistence_key=, persistence_error=, session=, memory_revision=, stored_revision=, pending_revision=, pending_ticks=, observed_day=, leader1_region=, leader2_region=, lifecycle=frontend, lifecycle_generation=1, lifecycle_player=---
+[17:38:41.250][thread=49880] HOI3 active D3D9 device vtable hooks refreshed
+[17:38:41.251][thread=49880] D3D9 hook heartbeat: EndScene=2 (+2), Present=1 (+1), SwapChainPresent=0 (+0), EngineCallsites=[0=1 (+1), 1=0 (+0), 2=0 (+0), 3=0 (+0)], ActiveVTableOwned=yes
+[17:38:41.541][thread=49880] HOI3 queried D3D9 device interface hooked
+[17:38:41.542][thread=49880] HOI3 queried D3D9 device interface hooked
+[17:38:41.730][thread=49880] HOI3 lifecycle changed by read-only player tag: player=CHI, state=gameplay, generation=2
+[17:38:47.934][thread=12304] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[17:38:47.934][thread=12304] HOI3 active D3D9 device vtable hooks refreshed
+[17:38:47.934][thread=12304] Lua 5.1 state attached to ScriptedGuiNative
+[17:38:47.960][thread=32492] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[17:38:47.960][thread=32492] Lua 5.1 state attached to ScriptedGuiNative
+[17:38:47.986][thread=36172] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[17:38:47.986][thread=36172] Lua 5.1 state attached to ScriptedGuiNative
+[17:38:48.12][thread=47016] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[17:38:48.12][thread=47016] Lua 5.1 state attached to ScriptedGuiNative
+[17:38:48.38][thread=47452] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[17:38:48.38][thread=47452] Lua 5.1 state attached to ScriptedGuiNative
+[17:38:55.626][thread=49880] HOI3 active D3D9 device vtable hooks refreshed
+[17:38:55.697][thread=49708] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[17:38:55.697][thread=49708] Lua 5.1 state attached to ScriptedGuiNative
+[17:38:55.722][thread=48368] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[17:38:55.722][thread=48368] Lua 5.1 state attached to ScriptedGuiNative
+[17:38:55.749][thread=52756] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[17:38:55.749][thread=52756] Lua 5.1 state attached to ScriptedGuiNative
+[17:38:55.775][thread=45508] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[17:38:55.775][thread=52756] Lua GUI channel publisher reserved: channel=china_anti_jap, state=9, priority=0
+[17:38:55.776][thread=45508] Lua 5.1 state attached to ScriptedGuiNative
+[17:38:55.802][thread=32876] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[17:38:55.803][thread=32876] Lua 5.1 state attached to ScriptedGuiNative
+[17:38:55.810][thread=52756] First Lua GUI snapshot decode started: channel=china_anti_jap
+[17:38:55.814][thread=52756] First Lua GUI snapshot state: channel=china_anti_jap, visible=true, active=true, viewer=CHI, values=554, lists=3
+[17:38:55.814][thread=52756] First Lua GUI Region values: channel=china_anti_jap, count=41, nonzero=29, maximum=100.000000, maximumKey=regions.40.controlledpercentage
+[17:38:55.814][thread=52756] First Lua GUI snapshot received: channel=china_anti_jap, revision=1
+[17:38:55.830][thread=44656] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[17:38:55.831][thread=44656] Lua 5.1 state attached to ScriptedGuiNative
+[17:38:55.858][thread=54116] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[17:38:55.858][thread=54116] Lua 5.1 state attached to ScriptedGuiNative
+[17:38:55.885][thread=38864] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[17:38:55.885][thread=38864] Lua 5.1 state attached to ScriptedGuiNative
+[17:38:55.910][thread=46932] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[17:38:55.911][thread=46932] Lua 5.1 state attached to ScriptedGuiNative
+[17:38:55.937][thread=45740] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[17:38:55.937][thread=45740] Lua 5.1 state attached to ScriptedGuiNative
+[17:38:55.997][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHI, persistence=available, persistence_key=CHI:841665, persistence_error=, session=CHI:841665, memory_revision=0, stored_revision=0, pending_revision=0, pending_ticks=0, observed_day=709732, leader1_region=0, leader2_region=0, lifecycle=gameplay, lifecycle_generation=2, lifecycle_player=CHI
+[17:38:56.7][thread=49880] First GUI session draw: id=china_anti_jap, widgets=44, commands=1
+[17:38:56.261][thread=43796] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[17:38:56.261][thread=43796] Lua 5.1 state attached to ScriptedGuiNative
+[17:38:56.287][thread=49220] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[17:38:56.287][thread=49220] Lua 5.1 state attached to ScriptedGuiNative
+[17:38:56.313][thread=21852] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[17:38:56.313][thread=21852] Lua 5.1 state attached to ScriptedGuiNative
+[17:38:56.340][thread=42348] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[17:38:56.340][thread=42348] Lua 5.1 state attached to ScriptedGuiNative
+[17:38:56.365][thread=54152] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[17:38:56.366][thread=54152] Lua 5.1 state attached to ScriptedGuiNative
+[17:38:56.391][thread=52676] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[17:38:56.391][thread=52676] Lua 5.1 state attached to ScriptedGuiNative
+[17:38:56.416][thread=34656] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[17:38:56.417][thread=34656] Lua 5.1 state attached to ScriptedGuiNative
+[17:38:56.443][thread=13016] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[17:38:56.444][thread=13016] Lua 5.1 state attached to ScriptedGuiNative
+[17:38:57.224][thread=48592] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[17:38:57.226][thread=48592] Lua 5.1 state attached to ScriptedGuiNative
+[17:39:4.677][thread=48368] HOI3 active D3D9 device vtable hooks refreshed
+[17:39:4.679][thread=33784] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[17:39:4.679][thread=33784] Lua 5.1 state attached to ScriptedGuiNative
+[17:39:4.706][thread=35820] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[17:39:4.706][thread=35820] Lua 5.1 state attached to ScriptedGuiNative
+[17:39:4.732][thread=52580] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[17:39:4.732][thread=52580] Lua 5.1 state attached to ScriptedGuiNative
+[17:39:4.759][thread=12592] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[17:39:4.759][thread=12592] Lua 5.1 state attached to ScriptedGuiNative
+[17:39:5.542][thread=49880] GUI pointer down: plugin=china_anti_jap, window=(934,228), canvas=(1517,135), target=china_war_launcher_chi
+[17:39:5.724][thread=41432] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[17:39:5.724][thread=41432] Lua 5.1 state attached to ScriptedGuiNative
+[17:39:7.512][thread=49220] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=9, previousPriority=0, state=18, priority=0
+[17:39:7.514][thread=25188] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[17:39:7.514][thread=25188] Lua 5.1 state attached to ScriptedGuiNative
+[17:39:7.613][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHI, persistence=available, persistence_key=CHI:841665, persistence_error=, session=CHI:841665, memory_revision=0, stored_revision=0, pending_revision=1, pending_ticks=0, observed_day=709732, leader1_region=0, leader2_region=0, lifecycle=gameplay, lifecycle_generation=2, lifecycle_player=CHI
+[17:39:8.838][thread=49880] GUI pointer down: plugin=china_anti_jap, window=(376,365), canvas=(569,368), target=china_region_map
+[17:39:9.773][thread=49880] GUI pointer down: plugin=china_anti_jap, window=(103,372), canvas=(105,380), target=combat_region_button
+[17:39:10.712][thread=49880] GUI pointer down: plugin=china_anti_jap, window=(158,516), canvas=(198,625), target=leader_candidate_button
+[17:39:11.206][thread=49880] GUI pointer down: plugin=china_anti_jap, window=(166,555), canvas=(212,691), target=leader_candidate_button
+[17:39:12.163][thread=49880] GUI pointer down: plugin=china_anti_jap, window=(633,481), canvas=(1005,565), target=china_region_map
+[17:39:14.91][thread=49880] GUI pointer down: plugin=china_anti_jap, window=(959,160), canvas=(1559,20), target=china_war_close
+[17:39:23.429][thread=38864] D3D9 hook heartbeat: EndScene=1384 (+1382), Present=570 (+569), SwapChainPresent=0 (+0), EngineCallsites=[0=1 (+0), 1=0 (+0), 2=0 (+0), 3=0 (+0)], ActiveVTableOwned=yes
+[17:39:23.430][thread=21852] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=18, previousPriority=0, state=19, priority=0
+[17:39:23.430][thread=36172] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
+[17:39:23.431][thread=47756] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[17:39:23.431][thread=47756] Lua 5.1 state attached to ScriptedGuiNative
+[17:39:23.491][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHI, persistence=available, persistence_key=CHI:841665, persistence_error=, session=CHI:841665, memory_revision=1, stored_revision=1, pending_revision=2, pending_ticks=0, observed_day=709732, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=2, lifecycle_player=CHI
+[17:39:25.451][thread=12304] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
+[17:40:3.501][thread=49880] HOI3 active D3D9 device vtable hooks refreshed
+[17:40:3.502][thread=49880] D3D9 hook heartbeat: EndScene=2417 (+1033), Present=1066 (+496), SwapChainPresent=0 (+0), EngineCallsites=[0=1 (+0), 1=0 (+0), 2=0 (+0), 3=0 (+0)], ActiveVTableOwned=yes
+[17:40:3.571][thread=42348] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=19, previousPriority=0, state=20, priority=0
+[17:40:3.596][thread=42348] Lua lifecycle changed by snapshot: player=CHC, state=gameplay, generation=3
+[17:40:3.627][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234369, persistence_error=, session=CHC:234369, memory_revision=0, stored_revision=0, pending_revision=0, pending_ticks=0, observed_day=709732, leader1_region=0, leader2_region=0, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:40:4.913][thread=49880] GUI pointer down: plugin=china_anti_jap, window=(937,217), canvas=(1522,116), target=china_war_launcher_chc
+[17:40:7.20][thread=49880] GUI pointer down: plugin=china_anti_jap, window=(121,369), canvas=(135,375), target=combat_region_button
+[17:40:8.589][thread=49880] GUI pointer down: plugin=china_anti_jap, window=(952,166), canvas=(1547,30), target=china_war_close
+[17:40:9.904][thread=48592] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:40:9.949][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368:reload:1, memory_revision=0, stored_revision=0, pending_revision=1, pending_ticks=0, observed_day=709732, leader1_region=0, leader2_region=0, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:40:15.963][thread=12592] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=20, previousPriority=0, state=29, priority=100
+[17:40:16.14][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=1, stored_revision=1, pending_revision=0, pending_ticks=0, observed_day=709732, leader1_region=0, leader2_region=0, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:40:16.986][thread=54152] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:40:35.38][thread=49880] D3D9 hook heartbeat: EndScene=6383 (+3966), Present=2290 (+1224), SwapChainPresent=0 (+0), EngineCallsites=[0=1 (+0), 1=0 (+0), 2=0 (+0), 3=0 (+0)], ActiveVTableOwned=yes
+[17:40:47.300][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=1, stored_revision=1, pending_revision=0, pending_ticks=0, observed_day=709733, leader1_region=0, leader2_region=0, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:40:51.294][thread=47452] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
+[17:40:52.653][thread=49880] GUI pointer down: plugin=china_anti_jap, window=(945,223), canvas=(1535,126), target=china_war_launcher_chc
+[17:40:54.995][thread=49880] GUI pointer down: plugin=china_anti_jap, window=(160,517), canvas=(202,626), target=leader_candidate_button
+[17:40:55.614][thread=49880] GUI pointer down: plugin=china_anti_jap, window=(168,556), canvas=(215,692), target=leader_candidate_button
+[17:40:56.743][thread=49880] GUI pointer down: plugin=china_anti_jap, window=(626,494), canvas=(993,587), target=china_region_map
+[17:40:57.400][thread=42348] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=29, previousPriority=0, state=20, priority=0
+[17:40:57.758][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=1, stored_revision=1, pending_revision=2, pending_ticks=0, observed_day=709733, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:40:58.880][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=2, stored_revision=2, pending_revision=3, pending_ticks=0, observed_day=709733, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:40:59.76][thread=49880] GUI pointer down: plugin=china_anti_jap, window=(955,164), canvas=(1552,27), target=china_war_close
+[17:41:5.809][thread=49880] D3D9 hook heartbeat: EndScene=8920 (+2537), Present=3314 (+1024), SwapChainPresent=0 (+0), EngineCallsites=[0=1 (+0), 1=0 (+0), 2=0 (+0), 3=0 (+0)], ActiveVTableOwned=yes
+[17:41:6.325][thread=49880] GUI pointer down: plugin=china_anti_jap, window=(937,228), canvas=(1522,135), target=china_war_launcher_chc
+[17:41:6.903][thread=36172] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:41:7.925][thread=49880] GUI pointer down: plugin=china_anti_jap, window=(951,165), canvas=(1545,28), target=china_war_close
+[17:41:8.922][thread=35820] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
+[17:41:12.928][thread=52756] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:41:13.958][thread=46932] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:41:16.982][thread=54152] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:41:21.19][thread=12592] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:41:21.59][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=3, stored_revision=3, pending_revision=4, pending_ticks=0, observed_day=709734, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:41:23.45][thread=32876] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:41:32.129][thread=52580] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:41:33.128][thread=25188] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=20, previousPriority=0, state=31, priority=0
+[17:41:33.180][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=4, stored_revision=4, pending_revision=0, pending_ticks=0, observed_day=709735, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:41:35.150][thread=49220] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:41:36.172][thread=35820] D3D9 hook heartbeat: EndScene=11355 (+2435), Present=4452 (+1138), SwapChainPresent=0 (+0), EngineCallsites=[0=1 (+0), 1=0 (+0), 2=0 (+0), 3=0 (+0)], ActiveVTableOwned=yes
+[17:41:38.155][thread=49708] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:41:43.231][thread=42348] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:41:47.229][thread=33784] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=31, previousPriority=0, state=26, priority=100
+[17:41:47.229][thread=54116] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
+[17:41:49.357][thread=21852] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:41:50.301][thread=12304] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:41:54.324][thread=49880] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
+[17:41:57.353][thread=52580] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:41:58.367][thread=44656] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=26, previousPriority=0, state=12, priority=0
+[17:41:58.426][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=4, stored_revision=4, pending_revision=0, pending_ticks=0, observed_day=709736, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:42:0.752][thread=49880] GUI pointer down: plugin=china_anti_jap, window=(938,220), canvas=(1524,121), target=china_war_launcher_chc
+[17:42:1.931][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=4, stored_revision=4, pending_revision=5, pending_ticks=0, observed_day=709736, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:42:2.268][thread=49880] GUI pointer down: plugin=china_anti_jap, window=(954,162), canvas=(1550,23), target=china_war_close
+[17:42:2.536][thread=52756] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:42:4.97][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=5, stored_revision=5, pending_revision=6, pending_ticks=0, observed_day=709736, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:42:4.518][thread=48592] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:42:4.777][thread=45508] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:42:5.43][thread=45740] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=12, previousPriority=0, state=16, priority=100
+[17:42:5.94][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=6, stored_revision=6, pending_revision=0, pending_ticks=0, observed_day=709736, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:42:5.415][thread=54152] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:42:6.219][thread=32876] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
+[17:42:6.399][thread=49880] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
+[17:42:6.584][thread=49880] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:42:6.717][thread=33784] D3D9 hook heartbeat: EndScene=13737 (+2382), Present=5536 (+1084), SwapChainPresent=0 (+0), EngineCallsites=[0=1 (+0), 1=0 (+0), 2=0 (+0), 3=0 (+0)], ActiveVTableOwned=yes
+[17:42:6.871][thread=25188] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:42:7.709][thread=45508] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:42:7.840][thread=36172] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:42:8.479][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=6, stored_revision=6, pending_revision=0, pending_ticks=0, observed_day=709737, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:42:8.594][thread=42348] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=16, previousPriority=0, state=20, priority=100
+[17:42:9.110][thread=45508] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:42:9.405][thread=46932] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:42:9.695][thread=47756] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:42:9.741][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=6, stored_revision=6, pending_revision=0, pending_ticks=0, observed_day=709738, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:42:9.997][thread=49880] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:42:10.266][thread=21852] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
+[17:42:11.724][thread=44656] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:42:11.725][thread=45740] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:42:11.726][thread=52756] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:42:11.872][thread=43796] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:42:12.52][thread=52676] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
+[17:42:12.52][thread=12592] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:42:12.835][thread=38864] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
+[17:42:12.968][thread=32492] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:42:13.96][thread=44656] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:42:13.369][thread=13016] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
+[17:42:13.660][thread=25188] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
+[17:42:15.217][thread=44656] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:42:15.399][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=6, stored_revision=6, pending_revision=0, pending_ticks=0, observed_day=709739, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:42:15.511][thread=48592] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=20, previousPriority=0, state=25, priority=100
+[17:42:15.931][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=6, stored_revision=6, pending_revision=0, pending_ticks=0, observed_day=709740, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:42:16.315][thread=52756] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
+[17:42:16.702][thread=12304] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
+[17:42:17.560][thread=44656] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
+[17:42:17.845][thread=52756] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:42:18.517][thread=48592] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:42:18.661][thread=33784] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:42:19.61][thread=33784] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=25, previousPriority=0, state=26, priority=100
+[17:42:20.269][thread=54116] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
+[17:42:20.440][thread=54152] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
+[17:42:20.838][thread=52676] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:42:21.603][thread=49708] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:42:21.726][thread=49708] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:42:21.855][thread=47756] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:42:22.151][thread=45740] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:42:22.291][thread=42348] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
+[17:42:23.594][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=6, stored_revision=6, pending_revision=0, pending_ticks=0, observed_day=709742, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:42:23.863][thread=35820] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:42:24.138][thread=52580] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[17:42:26.32][thread=32492] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=26, previousPriority=0, state=3, priority=100
+[17:42:26.650][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=6, stored_revision=6, pending_revision=0, pending_ticks=0, observed_day=709743, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:42:29.798][thread=47016] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=3, previousPriority=0, state=5, priority=100
+[17:42:34.446][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=6, stored_revision=6, pending_revision=0, pending_ticks=0, observed_day=709745, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:42:36.779][thread=49880] D3D9 hook heartbeat: EndScene=14462 (+725), Present=5737 (+201), SwapChainPresent=0 (+0), EngineCallsites=[0=1 (+0), 1=0 (+0), 2=0 (+0), 3=0 (+0)], ActiveVTableOwned=yes
+[17:42:37.434][thread=45508] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=5, previousPriority=0, state=10, priority=100
+[17:42:39.865][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=6, stored_revision=6, pending_revision=0, pending_ticks=0, observed_day=709746, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:42:41.230][thread=42348] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=10, previousPriority=0, state=20, priority=100
+[17:42:42.837][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=6, stored_revision=6, pending_revision=0, pending_ticks=0, observed_day=709747, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:42:45.48][thread=43796] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=20, previousPriority=0, state=17, priority=100
+[17:42:46.152][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=6, stored_revision=6, pending_revision=0, pending_ticks=0, observed_day=709748, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:42:48.933][thread=47756] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=17, previousPriority=0, state=32, priority=100
+[17:42:50.5][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=6, stored_revision=6, pending_revision=0, pending_ticks=0, observed_day=709749, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:42:52.668][thread=45508] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=32, previousPriority=0, state=10, priority=100
+[17:42:53.118][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=6, stored_revision=6, pending_revision=0, pending_ticks=0, observed_day=709750, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:42:54.660][thread=49880] GUI pointer down: plugin=china_anti_jap, window=(941,222), canvas=(1529,124), target=china_war_launcher_chc
+[17:42:57.791][thread=46932] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=10, previousPriority=0, state=15, priority=100
+[17:42:57.859][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=6, stored_revision=6, pending_revision=7, pending_ticks=0, observed_day=709750, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:42:58.481][thread=49880] GUI pointer down: plugin=china_anti_jap, window=(959,162), canvas=(1559,23), target=china_war_close
+[17:42:59.11][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=7, stored_revision=7, pending_revision=8, pending_ticks=0, observed_day=709751, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:43:1.852][thread=12304] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=15, previousPriority=0, state=2, priority=100
+[17:43:1.906][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=8, stored_revision=8, pending_revision=0, pending_ticks=0, observed_day=709751, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:43:2.348][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=8, stored_revision=8, pending_revision=0, pending_ticks=0, observed_day=709752, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:43:5.599][thread=32492] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=2, previousPriority=0, state=3, priority=100
+[17:43:7.332][thread=49880] D3D9 hook heartbeat: EndScene=15116 (+654), Present=5920 (+183), SwapChainPresent=0 (+0), EngineCallsites=[0=1 (+0), 1=0 (+0), 2=0 (+0), 3=0 (+0)], ActiveVTableOwned=yes
+[17:43:10.830][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=8, stored_revision=8, pending_revision=0, pending_ticks=0, observed_day=709754, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:43:13.690][thread=49708] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=3, previousPriority=0, state=7, priority=100
+[17:43:17.719][thread=33784] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=7, previousPriority=0, state=26, priority=100
+[17:43:17.764][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=8, stored_revision=8, pending_revision=0, pending_ticks=0, observed_day=709755, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:43:18.577][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=8, stored_revision=8, pending_revision=0, pending_ticks=0, observed_day=709756, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:43:21.776][thread=46932] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=26, previousPriority=0, state=15, priority=100
+[17:43:23.529][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=8, stored_revision=8, pending_revision=0, pending_ticks=0, observed_day=709757, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:43:31.38][thread=41432] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=15, previousPriority=0, state=30, priority=100
+[17:43:32.198][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=8, stored_revision=8, pending_revision=0, pending_ticks=0, observed_day=709758, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:43:34.645][thread=45740] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=30, previousPriority=0, state=16, priority=100
+[17:43:37.8][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=8, stored_revision=8, pending_revision=0, pending_ticks=0, observed_day=709759, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:43:37.915][thread=45740] D3D9 hook heartbeat: EndScene=16231 (+1115), Present=6334 (+414), SwapChainPresent=0 (+0), EngineCallsites=[0=1 (+0), 1=0 (+0), 2=0 (+0), 3=0 (+0)], ActiveVTableOwned=yes
+[17:43:38.258][thread=42348] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=16, previousPriority=0, state=20, priority=100
+[17:43:38.705][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=8, stored_revision=8, pending_revision=0, pending_ticks=0, observed_day=709760, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:43:41.928][thread=48592] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=20, previousPriority=0, state=25, priority=100
+[17:43:46.212][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=8, stored_revision=8, pending_revision=0, pending_ticks=0, observed_day=709762, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:43:49.323][thread=52580] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=25, previousPriority=0, state=28, priority=100
+[17:43:50.197][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=8, stored_revision=8, pending_revision=0, pending_ticks=0, observed_day=709763, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:43:52.817][thread=54116] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=28, previousPriority=0, state=13, priority=100
+[17:43:53.668][thread=49880] GUI pointer down: plugin=china_anti_jap, window=(924,225), canvas=(1500,130), target=china_war_launcher_chc
+[17:43:53.819][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=8, stored_revision=8, pending_revision=0, pending_ticks=0, observed_day=709764, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:43:56.93][thread=49880] GUI pointer down: plugin=china_anti_jap, window=(957,161), canvas=(1555,22), target=china_war_close
+[17:43:57.471][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=8, stored_revision=8, pending_revision=9, pending_ticks=0, observed_day=709764, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:43:57.854][thread=52676] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=13, previousPriority=0, state=22, priority=100
+[17:43:57.912][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=9, stored_revision=9, pending_revision=0, pending_ticks=0, observed_day=709764, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:43:59.187][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=9, stored_revision=9, pending_revision=0, pending_ticks=0, observed_day=709765, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:44:1.371][thread=52580] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=22, previousPriority=0, state=28, priority=100
+[17:44:4.443][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=9, stored_revision=9, pending_revision=0, pending_ticks=0, observed_day=709766, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:44:4.817][thread=33784] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=28, previousPriority=0, state=26, priority=100
+[17:44:5.226][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=9, stored_revision=9, pending_revision=0, pending_ticks=0, observed_day=709767, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:44:8.324][thread=32876] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=26, previousPriority=0, state=11, priority=100
+[17:44:8.994][thread=54116] D3D9 hook heartbeat: EndScene=16926 (+695), Present=6532 (+198), SwapChainPresent=0 (+0), EngineCallsites=[0=1 (+0), 1=0 (+0), 2=0 (+0), 3=0 (+0)], ActiveVTableOwned=yes
+[17:44:11.495][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=9, stored_revision=9, pending_revision=0, pending_ticks=0, observed_day=709768, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:44:11.872][thread=54152] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=11, previousPriority=0, state=21, priority=100
+[17:44:12.729][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=9, stored_revision=9, pending_revision=0, pending_ticks=0, observed_day=709769, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:44:15.668][thread=44656] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=21, previousPriority=0, state=12, priority=100
+[17:44:17.427][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=9, stored_revision=9, pending_revision=0, pending_ticks=0, observed_day=709770, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:44:19.219][thread=52580] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=12, previousPriority=0, state=28, priority=100
+[17:44:20.779][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=9, stored_revision=9, pending_revision=0, pending_ticks=0, observed_day=709771, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:44:22.613][thread=43796] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=28, previousPriority=0, state=17, priority=100
+[17:44:23.74][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=9, stored_revision=9, pending_revision=0, pending_ticks=0, observed_day=709772, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:44:29.633][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=9, stored_revision=9, pending_revision=0, pending_ticks=0, observed_day=709773, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:44:29.754][thread=48368] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=17, previousPriority=0, state=8, priority=100
+[17:44:30.440][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=9, stored_revision=9, pending_revision=0, pending_ticks=0, observed_day=709774, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:44:33.626][thread=49220] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=8, previousPriority=0, state=18, priority=100
+[17:44:37.253][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=9, stored_revision=9, pending_revision=0, pending_ticks=0, observed_day=709775, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:44:37.375][thread=49708] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=18, previousPriority=0, state=7, priority=100
+[17:44:39.968][thread=49880] D3D9 hook heartbeat: EndScene=17623 (+697), Present=6737 (+205), SwapChainPresent=0 (+0), EngineCallsites=[0=1 (+0), 1=0 (+0), 2=0 (+0), 3=0 (+0)], ActiveVTableOwned=yes
+[17:44:40.146][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=9, stored_revision=9, pending_revision=0, pending_ticks=0, observed_day=709776, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:44:44.365][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=9, stored_revision=9, pending_revision=0, pending_ticks=0, observed_day=709777, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:44:44.632][thread=34656] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=7, previousPriority=0, state=23, priority=100
+[17:44:46.110][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=9, stored_revision=9, pending_revision=0, pending_ticks=0, observed_day=709778, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:44:48.225][thread=49220] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=23, previousPriority=0, state=18, priority=100
+[17:44:48.943][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=9, stored_revision=9, pending_revision=0, pending_ticks=0, observed_day=709779, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:44:51.837][thread=54116] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=18, previousPriority=0, state=13, priority=100
+[17:44:57.480][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=9, stored_revision=9, pending_revision=0, pending_ticks=0, observed_day=709781, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:44:59.554][thread=12592] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=13, previousPriority=0, state=29, priority=100
+[17:45:0.5][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=9, stored_revision=9, pending_revision=0, pending_ticks=0, observed_day=709782, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:45:11.591][thread=49880] D3D9 hook heartbeat: EndScene=19049 (+1426), Present=7317 (+580), SwapChainPresent=0 (+0), EngineCallsites=[0=1 (+0), 1=0 (+0), 2=0 (+0), 3=0 (+0)], ActiveVTableOwned=yes
+[17:45:11.656][thread=13016] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=29, previousPriority=0, state=24, priority=0
+[17:45:12.681][thread=52676] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=24, previousPriority=0, state=22, priority=100
+[17:45:13.961][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=9, stored_revision=9, pending_revision=0, pending_ticks=0, observed_day=709783, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:45:33.120][thread=21852] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=22, previousPriority=0, state=19, priority=0
+[17:45:34.341][thread=12592] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=19, previousPriority=0, state=29, priority=100
+[17:45:36.149][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=9, stored_revision=9, pending_revision=0, pending_ticks=0, observed_day=709784, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:45:38.181][thread=47452] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=29, previousPriority=0, state=6, priority=100
+[17:45:38.615][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=9, stored_revision=9, pending_revision=0, pending_ticks=0, observed_day=709785, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:45:41.668][thread=38864] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=6, previousPriority=0, state=14, priority=100
+[17:45:42.391][thread=49880] D3D9 hook heartbeat: EndScene=21143 (+2094), Present=8202 (+885), SwapChainPresent=0 (+0), EngineCallsites=[0=1 (+0), 1=0 (+0), 2=0 (+0), 3=0 (+0)], ActiveVTableOwned=yes
+[17:45:43.189][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=9, stored_revision=9, pending_revision=0, pending_ticks=0, observed_day=709786, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:45:45.77][thread=48368] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=14, previousPriority=0, state=8, priority=100
+[17:45:45.550][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=9, stored_revision=9, pending_revision=0, pending_ticks=0, observed_day=709787, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:45:48.651][thread=35820] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=8, previousPriority=0, state=27, priority=100
+[17:45:50.521][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=9, stored_revision=9, pending_revision=0, pending_ticks=0, observed_day=709788, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:45:52.205][thread=52676] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=27, previousPriority=0, state=22, priority=100
+[17:45:53.167][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=9, stored_revision=9, pending_revision=0, pending_ticks=0, observed_day=709789, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:45:54.300][thread=49880] GUI pointer down: plugin=china_anti_jap, window=(937,218), canvas=(1522,118), target=china_war_launcher_chc
+[17:45:56.269][thread=49880] GUI pointer down: plugin=china_anti_jap, window=(958,158), canvas=(1557,16), target=china_anti_jap_panel
+[17:45:56.599][thread=46932] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=22, previousPriority=0, state=15, priority=100
+[17:45:56.648][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=9, stored_revision=9, pending_revision=10, pending_ticks=0, observed_day=709789, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:45:58.340][thread=49880] GUI pointer down: plugin=china_anti_jap, window=(953,167), canvas=(1549,32), target=china_war_close
+[17:45:58.994][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=10, stored_revision=10, pending_revision=11, pending_ticks=0, observed_day=709790, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:45:59.780][thread=49880] GUI pointer down: plugin=china_anti_jap, window=(940,228), canvas=(1527,135), target=china_war_launcher_chc
+[17:46:0.434][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=11, stored_revision=11, pending_revision=12, pending_ticks=0, observed_day=709790, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:46:1.207][thread=12304] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=15, previousPriority=0, state=2, priority=100
+[17:46:1.255][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=12, stored_revision=12, pending_revision=0, pending_ticks=0, observed_day=709790, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:46:4.524][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=12, stored_revision=12, pending_revision=0, pending_ticks=0, observed_day=709791, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:46:4.610][thread=49880] GUI pointer down: plugin=china_anti_jap, window=(953,165), canvas=(1549,28), target=china_war_close
+[17:46:5.697][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=12, stored_revision=12, pending_revision=13, pending_ticks=0, observed_day=709791, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:46:6.482][thread=47016] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=2, previousPriority=0, state=5, priority=100
+[17:46:6.544][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=13, stored_revision=13, pending_revision=0, pending_ticks=0, observed_day=709791, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:46:9.681][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=13, stored_revision=13, pending_revision=0, pending_ticks=0, observed_day=709792, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:46:10.281][thread=38864] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=5, previousPriority=0, state=14, priority=100
+[17:46:13.380][thread=49880] GUI pointer down: plugin=china_anti_jap, window=(939,228), canvas=(1525,135), target=china_war_launcher_chc
+[17:46:17.22][thread=49880] GUI pointer down: plugin=china_anti_jap, window=(774,238), canvas=(1245,152), target=china_region_map
+[17:46:19.123][thread=54152] HOI3 active D3D9 device vtable hooks refreshed
+[17:46:19.124][thread=54152] D3D9 hook heartbeat: EndScene=22051 (+908), Present=8508 (+306), SwapChainPresent=0 (+0), EngineCallsites=[0=1 (+0), 1=0 (+0), 2=0 (+0), 3=0 (+0)], ActiveVTableOwned=yes
+[17:46:21.328][thread=49880] GUI pointer down: plugin=china_anti_jap, window=(957,167), canvas=(1555,32), target=china_war_close
+[17:46:21.863][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=13, stored_revision=13, pending_revision=14, pending_ticks=0, observed_day=709793, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:46:23.175][thread=43796] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=14, previousPriority=0, state=17, priority=100
+[17:46:23.214][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=14, stored_revision=14, pending_revision=0, pending_ticks=0, observed_day=709793, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:46:26.207][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=14, stored_revision=14, pending_revision=0, pending_ticks=0, observed_day=709794, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:46:26.909][thread=47016] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=17, previousPriority=0, state=5, priority=100
+[17:46:27.913][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=14, stored_revision=14, pending_revision=0, pending_ticks=0, observed_day=709795, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:46:30.578][thread=46932] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=5, previousPriority=0, state=15, priority=100
+[17:46:31.535][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=14, stored_revision=14, pending_revision=0, pending_ticks=0, observed_day=709796, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:46:34.410][thread=12592] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=15, previousPriority=0, state=29, priority=100
+[17:46:38.573][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=14, stored_revision=14, pending_revision=0, pending_ticks=0, observed_day=709798, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:46:41.769][thread=48368] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=29, previousPriority=0, state=8, priority=100
+[17:46:42.358][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=14, stored_revision=14, pending_revision=0, pending_ticks=0, observed_day=709799, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:46:45.373][thread=21852] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=8, previousPriority=0, state=19, priority=100
+[17:46:45.788][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=14, stored_revision=14, pending_revision=0, pending_ticks=0, observed_day=709800, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:46:48.961][thread=45740] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=19, previousPriority=0, state=16, priority=100
+[17:46:49.914][thread=52756] D3D9 hook heartbeat: EndScene=22722 (+671), Present=8702 (+194), SwapChainPresent=0 (+0), EngineCallsites=[0=1 (+0), 1=0 (+0), 2=0 (+0), 3=0 (+0)], ActiveVTableOwned=yes
+[17:46:52.39][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=14, stored_revision=14, pending_revision=0, pending_ticks=0, observed_day=709801, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:46:52.458][thread=49708] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=16, previousPriority=0, state=7, priority=100
+[17:46:54.84][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=14, stored_revision=14, pending_revision=0, pending_ticks=0, observed_day=709802, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:46:56.112][thread=34656] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=7, previousPriority=0, state=23, priority=100
+[17:46:57.451][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=14, stored_revision=14, pending_revision=0, pending_ticks=0, observed_day=709803, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:46:59.773][thread=43796] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=23, previousPriority=0, state=17, priority=100
+[17:47:0.417][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=14, stored_revision=14, pending_revision=0, pending_ticks=0, observed_day=709804, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:47:3.431][thread=42348] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=17, previousPriority=0, state=20, priority=100
+[17:47:7.937][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=14, stored_revision=14, pending_revision=0, pending_ticks=0, observed_day=709806, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:47:11.131][thread=48368] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=20, previousPriority=0, state=8, priority=100
+[17:47:11.748][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=14, stored_revision=14, pending_revision=0, pending_ticks=0, observed_day=709807, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:47:15.91][thread=33784] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=8, previousPriority=0, state=26, priority=100
+[17:47:20.430][thread=43796] D3D9 hook heartbeat: EndScene=23440 (+718), Present=8894 (+192), SwapChainPresent=0 (+0), EngineCallsites=[0=1 (+0), 1=0 (+0), 2=0 (+0), 3=0 (+0)], ActiveVTableOwned=yes
+[17:47:20.624][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=14, stored_revision=14, pending_revision=0, pending_ticks=0, observed_day=709809, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:47:23.360][thread=44656] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=26, previousPriority=0, state=12, priority=100
+[17:47:24.491][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=14, stored_revision=14, pending_revision=0, pending_ticks=0, observed_day=709810, leader1_region=1, leader2_region=1, lifecycle=gameplay, lifecycle_generation=3, lifecycle_player=CHC
+[17:47:45.356][thread=49880] Lua GUI channel ownership reset
+[17:47:45.356][thread=49880] HOI3 lifecycle changed by read-only player tag: player=---, state=frontend, generation=4
+[17:47:45.357][thread=49880] GUI session visibility: id=china_anti_jap, open=true, visible=false, state.visible=true, state.active=true, viewer=CHC, persistence=available, persistence_key=CHC:234368, persistence_error=, session=CHC:234368, memory_revision=14, stored_revision=14, pending_revision=0, pending_ticks=0, observed_day=709810, leader1_region=1, leader2_region=1, lifecycle=frontend, lifecycle_generation=4, lifecycle_player=---

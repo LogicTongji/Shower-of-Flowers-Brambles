@@ -1,18 +1,44 @@
 #里宾特洛甫协定
 diplomatic_decisions = {
-	    Xaction_East_eroup = {
+        molotov_ribbentrop_pact = {
+		major = yes
 		potential = {
 			tag = GER
-			not = { has_country_flag = Xaction_East_eroup_gizui } 
+			not = { has_country_flag = the_molotov_ribbentrop_pact }
+			not = { alliance_with = SOV }
+			exists = SOV
 			exists = POL
+			year = 1939	# Initial talks
+			not = { year = 1940 }
+			not = { war_with = SOV }
+			not = { war_with = POL }
+			not = { exists = AUS } # Anschluss of Austria
+			or = {
+				has_country_flag = first_vienna_award
+				controls = 2562 # Praha
+			}
 		}
 		allow = {
-			 SOV = { has_country_flag = Believe_Germany }
+			POL = {
+				not = { faction = axis }
+				not = { alliance_with = GER }
+			}
+			GER = { is_subject = no }
+			SOV = { is_subject = no }
+			POL = { is_subject = no }
 		}
 		effect = {
-			set_country_flag = Xaction_East_eroup_gizui	
+			set_country_flag = the_molotov_ribbentrop_pact
 			non_aggression_pact = SOV
-		    }
+			neutrality = -15
+			relation = { who = SOV value = 15 }
+			relation = { who = EST value = -75 }
+			relation = { who = LAT value = -75 }
+			relation = { who = LIT value = -75 }
+			SOV = { country_event = 1501 }
+			ENG = { neutrality = -5 }
+			FRA = { neutrality = -5 }
+		}
 		ai_will_do = {
 			factor = 1
 		}

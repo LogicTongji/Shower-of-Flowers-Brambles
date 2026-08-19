@@ -2198,7 +2198,7 @@ rvariety_warlords = {
         org_regain = -0.15	
         supply_consumption = 0.15
         ruling_party_support = -0.1 
-        land_organisation = -0.4
+        land_organisation = -0.50
         war_consumer_goods_demand =0.5
 	icon = 5
 }
@@ -2814,7 +2814,7 @@ dissent = 0.35
 global_resources = 0.25
 	icon = 5
 }
-#国军丢失东北
+#国军淮海战役失败
 ManChu_develop_chi = {
 
 	potential = {		
@@ -2834,6 +2834,11 @@ ManChu_develop_chi = {
 	        controls = 4738  
 	        controls = 4686   
 	        controls = 4685 
+			controls = 5515
+			controls = 5435
+			controls = 5275
+			controls = 5405
+			controls = 5383
 	        }
 	}
 global_ic = -0.4
@@ -2902,7 +2907,7 @@ dissent = -0.35
 global_resources = 0.25
 	icon = 5
 }
-#共军攻克东北
+#共军淮海战役胜利
 ManChu_CCP_chc = {
 
 	potential = {		
@@ -2926,6 +2931,11 @@ ManChu_CCP_chc = {
 	        controls = 7138
 	        controls = 7096
 	        controls = 4785
+			controls = 5515
+			controls = 5435
+			controls = 5275
+			controls = 5405
+			controls = 5383
 	        }
 	}
 global_ic = 0.65

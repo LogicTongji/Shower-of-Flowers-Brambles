@@ -673,6 +673,11 @@ GuiWindowSessionController::ResolveSceneWidgets() const
             root.rect.y -= layout.scrollOffset;
             root.visible = item.visible;
             root.enabled = item.enabled;
+            root.opacity = std::clamp(
+                 listWidget->opacity * item.definition->opacity,
+                 0.0f,
+                 1.0f
+            );
             root.depth = listWidget->depth + 1;
             root.zOrder = item.zOrder;
             root.order = nextOrder++;
@@ -727,6 +732,11 @@ GuiWindowSessionController::ResolveSceneWidgets() const
                                     root.listItemId
                                 )
                             ));
+                    resolved.opacity = std::clamp(
+                             resolvedParent.opacity * child.opacity,
+                             0.0f,
+                             1.0f
+                           );
                     resolved.depth = resolvedParent.depth + 1;
                     resolved.zOrder = resolvedParent.zOrder
                         + child.zOrder;

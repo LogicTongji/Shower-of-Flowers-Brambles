@@ -355,6 +355,16 @@ local UnitTypes = {
 			"Infantry",
 			"Motor",
 			"Armor"}},
+	anti_tank_brigade = {
+		Index = 86,
+		Type = "Land",
+		SubType = "Support",
+		SupportType = Utils.Set {
+			"Mountain",
+			"Marine",
+			"Infantry",
+			"Motor",
+			"Armor"}},
 		
 	-- Naval Units
 	battlecruiser = {
