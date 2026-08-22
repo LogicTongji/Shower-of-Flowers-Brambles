@@ -1,0 +1,51 @@
+[16:57:47.92][thread=34708] New Core hook worker started
+[16:57:47.92][thread=34708] New Core module runtime initialized
+[16:57:47.92][thread=34708] HOI3 engine frame callsite probes installed
+[16:57:47.92][thread=34708] HOI3 Direct3DCreate9 import hooked
+[16:57:47.92][thread=34708] Lua lifecycle initialized from publisher activity: state=frontend
+[16:57:47.113][thread=34708] Leader Capture hooks installed
+[16:57:47.113][thread=34708] All registered New Core hooks installed
+[16:57:48.195][thread=9944] HOI3 IDirect3D9::CreateDevice hooked
+[16:57:48.318][thread=9944] HOI3 actual D3D9 device hooked
+[16:57:48.318][thread=9944] HOI3 D3D9 swap-chain Present hooked
+[16:57:48.426][thread=9944] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[16:57:48.426][thread=9944] D3D9 hook heartbeat: EndScene=0 (+0), Present=0 (+0), SwapChainPresent=0 (+0), EngineCallsites=[0=0 (+0), 1=0 (+0), 2=0 (+0), 3=0 (+0)], ActiveVTableOwned=yes
+[16:57:48.426][thread=9944] New Core lifecycle changed: player=---, state=frontend, generation=2
+[16:57:48.430][thread=9944] Lua 5.1 state attached to ScriptedGuiNative
+[16:57:48.673][thread=9944] HOI3 actual D3D9 device hooked
+[16:57:48.673][thread=9944] HOI3 D3D9 presentation device selected
+[16:57:48.673][thread=9944] HOI3 window procedure hooked
+[16:57:50.312][thread=9944] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\arrows.gfx: line 11: expected '=' inside block
+[16:57:50.312][thread=9944] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\chatfonts.gfx: line 9: expected '=' inside block
+[16:57:50.312][thread=9944] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\combat.gui: widget 'combat_terrain' has unsupported scaleMode '0.5'; using stretch
+[16:57:50.312][thread=9944] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\core.gfx: line 734: expected '=' inside block
+[16:57:50.312][thread=9944] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_espionage.gui: widget 'photo' has unsupported scaleMode '0.75'; using stretch
+[16:57:50.312][thread=9944] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_politics.gui: widget 'political_popularity_chart' has unsupported scaleMode '0.5'; using stretch
+[16:57:50.312][thread=9944] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_politics.gui: widget 'country_icon' has unsupported scaleMode '0.5'; using stretch
+[16:57:50.313][thread=9944] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_technology.gui: widget 'photo' has unsupported scaleMode '0.46'; using stretch
+[16:57:50.313][thread=9944] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_technology.gui: widget 'photo' has unsupported scaleMode '0.46'; using stretch
+[16:57:50.313][thread=9944] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\eu3dialog.gfx: line 180: expected property name inside block
+[16:57:50.313][thread=9944] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[16:57:50.313][thread=9944] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[16:57:50.313][thread=9944] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[16:57:50.313][thread=9944] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'leader_types' has unsupported scaleMode '0.5'; using stretch
+[16:57:50.313][thread=9944] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'leader_photo' has unsupported scaleMode '1.0'; using stretch
+[16:57:50.313][thread=9944] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'selected_photo' has unsupported scaleMode '1.7'; using stretch
+[16:57:50.314][thread=9944] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[16:57:50.314][thread=9944] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[16:57:50.314][thread=9944] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[16:57:51.362][thread=9944] D3D9 Scripted GUI module initialized
+[16:57:51.362][thread=9944] GUI session visibility: id=china_anti_jap, open=true, visible=false, state.visible=false, state.active=false, viewer=, persistence=unavailable, persistence_key=, persistence_error=, session=, memory_revision=, stored_revision=, pending_revision=, pending_ticks=, observed_day=, lifecycle=frontend, lifecycle_generation=2, lifecycle_player=---
+[16:57:51.363][thread=9944] GUI session visibility: id=parliament, open=false, visible=false, state.visible=true, state.active=true, viewer=, persistence=unavailable, persistence_key=, persistence_error=, session=, memory_revision=, stored_revision=, pending_revision=, pending_ticks=, observed_day=, lifecycle=frontend, lifecycle_generation=2, lifecycle_player=---
+[16:58:41.678][thread=9944] HOI3 active D3D9 device vtable hooks refreshed
+[16:58:41.679][thread=9944] D3D9 hook heartbeat: EndScene=2 (+2), Present=1 (+1), SwapChainPresent=0 (+0), EngineCallsites=[0=1 (+1), 1=0 (+0), 2=0 (+0), 3=0 (+0)], ActiveVTableOwned=yes
+[16:58:41.679][thread=9944] New Core lifecycle changed: player=GER, state=gameplay, generation=3
+[16:58:41.957][thread=9944] HOI3 queried D3D9 device interface hooked
+[16:58:41.957][thread=9944] HOI3 queried D3D9 device interface hooked
+[16:58:48.46][thread=16000] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[16:58:48.46][thread=16000] HOI3 active D3D9 device vtable hooks refreshed
+[16:58:48.46][thread=16000] Lua 5.1 state attached to ScriptedGuiNative
+[16:58:48.72][thread=32720] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[16:58:48.72][thread=32720] Lua 5.1 state attached to ScriptedGuiNative
+[16:58:48.97][thread=18204] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[16:58:48.97][thread=18204] Lua 5.1 state attached to ScriptedGuiNative

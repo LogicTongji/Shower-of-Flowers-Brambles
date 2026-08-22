@@ -15,7 +15,7 @@ theatre = {
 			location = 7398	
 			leader = 76324 # Lin Biao	
 			regiment = { type = hq_brigade name = "中国人民抗日军政大学总校" historical_model = 1 }	
-			regiment = { type = bergsjaeger_brigade name = "独立团" historical_model = 1 }		
+			regiment = { type = light_bergsjaeger name = "独立团" historical_model = 1 }		
 			regiment = { type = chc_gundam name = "教导第1旅" historical_model = 3 }
 			regiment = { type = chc_gundam name = "教导第2旅" historical_model = 3 }
 			regiment = { type = chc_gundam name = "教导第4旅" historical_model = 3 }
@@ -26,8 +26,8 @@ theatre = {
 				location = 7391	
 				leader = 76309 # Chen Guang
 				regiment = { type = hq_brigade name = "三四三旅兼鲁西军区" historical_model = 1 }	
-				regiment = { type = bergsjaeger_brigade name = "第658团" historical_model = 1 }	
-				regiment = { type = bergsjaeger_brigade name = "第686团" historical_model = 1 }			
+				regiment = { type = light_bergsjaeger name = "第658团" historical_model = 1 }	
+				regiment = { type = light_bergsjaeger name = "第686团" historical_model = 1 }			
 				division= {			
 					name = "第一军分区"		
 					location = 7391	
@@ -55,14 +55,14 @@ theatre = {
 				division= {			
 					name = "教导第6旅兼鲁边军区"		
 					location = 7391	
-					regiment = { type = infantry_brigade name = "第一军分区" historical_model = 0 }	
+					regiment = { type = light_bergsjaeger name = "第一军分区" historical_model = 0 }	
 					regiment = { type = partisan_bergsjaeger name = "第二军分区" historical_model = 0 }
 					regiment = { type = partisan_bergsjaeger name = "第三军分区" historical_model = 0 }
 				}	
 				division= {			
 					name = "教导第7旅兼鲁南军区"		
 					location = 7391	
-					regiment = { type = infantry_brigade name = "第一军分区" historical_model = 0 }	
+					regiment = { type = light_bergsjaeger name = "第一军分区" historical_model = 0 }	
 					regiment = { type = partisan_bergsjaeger name = "第二军分区" historical_model = 0 }
 					regiment = { type = partisan_bergsjaeger name = "第三军分区" historical_model = 0 }
 					regiment = { type = partisan_bergsjaeger name = "第四军分区" historical_model = 0 }
@@ -73,8 +73,8 @@ theatre = {
 				location = 7391	
 				leader = 76315 # Xu Haidong
 				regiment = { type = hq_brigade name = "三四三旅部兼徐向前第一纵队司令部" historical_model = 1 }	
-				regiment = { type = infantry_brigade name = "第687团" historical_model = 0 }	
-				regiment = { type = infantry_brigade name = "第688团" historical_model = 0 }
+				regiment = { type = light_bergsjaeger name = "第687团" historical_model = 0 }	
+				regiment = { type = light_bergsjaeger name = "第688团" historical_model = 0 }
 				division= {			
 					name = "第1旅"		
 					location = 7391	
@@ -120,7 +120,7 @@ theatre = {
 				division= {			
 					name = "新编第2旅"		
 					location = 7391	
-					regiment = { type = infantry_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }
 				}	
 				division= {				
@@ -132,7 +132,7 @@ theatre = {
 				division= {			
 					name = "冀鲁豫军区"		
 					location = 7391	
-					regiment = { type = infantry_brigade name = "第一军分区" historical_model = 0 }	
+					regiment = { type = light_bergsjaeger name = "第一军分区" historical_model = 0 }	
 					regiment = { type = partisan_bergsjaeger name = "第二军分区" historical_model = 0 }
 					regiment = { type = partisan_bergsjaeger name = "第三军分区" historical_model = 0 }
 				}
@@ -157,7 +157,7 @@ theatre = {
 				division= {			
 					name = "第一军分区"		
 					location = 7391	
-					regiment = { type = infantry_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
 				}		
 				division= {			
@@ -169,7 +169,7 @@ theatre = {
 				division= {			
 					name = "第三军分区"		
 					location = 7391	
-					regiment = { type = infantry_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }	
 					regiment = { type = cavalry_brigade historical_model = 0 }		
 				}		
@@ -185,11 +185,11 @@ theatre = {
 				location = 7391	
 				leader = 76315 # Xu Haidong
 				regiment = { type = hq_brigade name = "第二纵队兼冀鲁豫军区司令部" historical_model = 1 }	
-				regiment = { type = infantry_brigade name = "第六军分区兼警备旅" historical_model = 0 }		
+				regiment = { type = light_bergsjaeger name = "第六军分区兼警备旅" historical_model = 0 }		
 				division= {			
 					name = "第七军分区"		
 					location = 7391	
-					regiment = { type = infantry_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
 				}		
 				division= {			
@@ -201,7 +201,7 @@ theatre = {
 				division= {			
 					name = "第九军分区"		
 					location = 7391	
-					regiment = { type = infantry_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }	
 					regiment = { type = cavalry_brigade historical_model = 0 }		
 				}		
@@ -224,8 +224,8 @@ theatre = {
 				location = 7418	
 				leader = 75022 # Zhang Zongxun
 				regiment = { type = hq_brigade name = "三五八旅兼第三军分区" historical_model = 0 }	
-				regiment = { type = infantry_brigade name = "第715团" historical_model = 1 }	
-				regiment = { type = infantry_brigade name = "第716团" historical_model = 1 }	
+				regiment = { type = light_bergsjaeger name = "第715团" historical_model = 1 }	
+				regiment = { type = light_bergsjaeger name = "第716团" historical_model = 1 }	
 				division= {			
 					name = "第二军分区"		
 					location = 7391	
@@ -251,8 +251,8 @@ theatre = {
 				location = 7417
 				leader = 75025 # Chen Bojun
 				regiment = { type = hq_brigade name = "三五九旅兼绥德警备司令部" historical_model = 0 }	
-				regiment = { type = infantry_brigade name = "第717团" historical_model = 0 }	
-				regiment = { type = infantry_brigade name = "第718团" historical_model = 0 }	
+				regiment = { type = light_bergsjaeger name = "第717团" historical_model = 0 }	
+				regiment = { type = light_bergsjaeger name = "第718团" historical_model = 0 }	
 			}		
 		}			
 		army = {			
@@ -265,7 +265,7 @@ theatre = {
 				name = "三八五旅"	
 				location = 7405	
 				leader = 75870 # Wang Hongkun
-				regiment = { type = infantry_brigade name = "第769团" historical_model = 1 }	
+				regiment = { type = light_bergsjaeger name = "第769团" historical_model = 1 }	
 				regiment = { type = partisan_bergsjaeger name = "第770团" historical_model = 1 }	
 			}
 			corps = {			
@@ -273,8 +273,8 @@ theatre = {
 				location = 7411	
 				leader = 76308 # Chen Geng
 				regiment = { type = hq_brigade name = "三八六旅并太岳军区" historical_model = 0 }	
-				regiment = { type = infantry_brigade name = "第771团" historical_model = 1 }	
-				regiment = { type = infantry_brigade name = "第772团" historical_model = 1 }
+				regiment = { type = light_bergsjaeger name = "第771团" historical_model = 1 }	
+				regiment = { type = light_bergsjaeger name = "第772团" historical_model = 1 }
 				division = {			
 					name = "第一军分区"		
 					location = 7391	
@@ -350,20 +350,20 @@ theatre = {
 	division = {
 		name = "两延河防司令部"
 		location = 7417
-		regiment = { type = infantry_brigade experience = 40 historical_model = 1 }
-		regiment = { type = infantry_brigade experience = 40 historical_model = 1 }
+		regiment = { type = light_bergsjaeger experience = 40 historical_model = 1 }
+		regiment = { type = light_bergsjaeger experience = 40 historical_model = 1 }
 	}
 	division = {
 		name = "五县河防司令部"
 		location = 5241
-		regiment = { type = infantry_brigade experience = 40 historical_model = 1 }
-		regiment = { type = infantry_brigade experience = 40 historical_model = 1 }
+		regiment = { type = light_bergsjaeger experience = 40 historical_model = 1 }
+		regiment = { type = light_bergsjaeger experience = 40 historical_model = 1 }
 	}
 	division = {
 		name = "神府河防司令部"
 		location = 7391
-		regiment = { type = infantry_brigade experience = 40 historical_model = 1 }
-		regiment = { type = infantry_brigade experience = 40 historical_model = 1 }
+		regiment = { type = light_bergsjaeger experience = 40 historical_model = 1 }
+		regiment = { type = light_bergsjaeger experience = 40 historical_model = 1 }
 	}
 }			
 }					
@@ -546,8 +546,8 @@ army = {
 				division= {
 				name = "新四军第1师"
 				location = 5436
-				regiment = { type = bergsjaeger_brigade name = "第1步兵旅" historical_model = 1 }
-				regiment = { type = infantry_brigade name = "第2步兵旅" historical_model = 2 	}
+				regiment = { type = light_bergsjaeger name = "第1步兵旅" historical_model = 1 }
+				regiment = { type = light_bergsjaeger name = "第2步兵旅" historical_model = 2 	}
 				regiment = { type = partisan_bergsjaeger name = "第3步兵旅" historical_model = 3 	}
 				regiment = { type = partisan_bergsjaeger name = "第4步兵旅" historical_model = 4 	}
 			}
@@ -564,14 +564,14 @@ army = {
 				division= {
 				name = "新四军第3师"
 				location = 5471
-				regiment = { type = infantry_brigade name = "第6步兵旅" historical_model = 1 }
-				regiment = { type = infantry_brigade name = "第7步兵旅" historical_model = 2 }
+				regiment = { type = light_bergsjaeger name = "第6步兵旅" historical_model = 1 }
+				regiment = { type = light_bergsjaeger name = "第7步兵旅" historical_model = 2 }
 				regiment = { type = militia_brigade name = "第8步兵旅" historical_model = 3 }
 			}
 				division= {
 				name = "新四军第4师"
 				location = 5471
-				regiment = { type = infantry_brigade name = "第9步兵旅" historical_model = 1 }
+				regiment = { type = light_bergsjaeger name = "第9步兵旅" historical_model = 1 }
 				regiment = { type = militia_brigade name = "第10步兵旅" historical_model = 2 }
 			}
 		}
@@ -592,7 +592,7 @@ army = {
 				division= {
 				name = "新四军第6师"
 				location = 5452
-					regiment = { type = infantry_brigade name = "第1旅" historical_model = 1 }		
+					regiment = { type = light_bergsjaeger name = "第1旅" historical_model = 1 }		
 					regiment = { type = partisan_bergsjaeger name = "第2旅" historical_model = 2 }
 				}
 				division= {

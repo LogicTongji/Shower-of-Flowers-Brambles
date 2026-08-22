@@ -1,0 +1,68 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_probe_panel"
+		texturefile = "probe\panel.png"
+		noOfFrames = 1
+	}
+
+	spriteType = {
+		name = "GFX_probe_animated"
+		texturefile = "probe\\animated.png"
+		noOfFrames = 6
+		frameLayout = "horizontal"
+		animation = {
+			enabled = yes
+			mode = "pingpong"
+			frameTime = 100
+			startFrame = 2
+			endFrame = 5
+		}
+	}
+
+	progressbartype = {
+		name = "probe_progress_resource"
+		size = { x = 160 y = 16 }
+		horizontal = yes
+		color = { 0.2 0.8 0.3 }
+		colortwo = { 0.8 0.2 0.3 }
+		textureFile1 = "probe\\progress_green.png"
+		textureFile2 = "probe\\progress_red.png"
+	}
+
+	effectType = {
+		name = "GFX_probe_pulse"
+		effect = "brightness_pulse"
+		color = { 0.8 0.6 0.4 0.5 }
+		minimum = 0.25
+		maximum = 0.75
+		speed = 1.0
+		phase = -90
+	}
+
+	indexedMapResourceType = {
+		name = "GFX_probe_indexed_map"
+		texturefile = "probe_map.bmp"
+		indexfile = "probe_map_ids.bin"
+		sourceDefinitionFile = "map\\definition.csv"
+		sourceProvinceFile = "map\\provinces.bmp"
+		sourceGroupFile = "map\\groups.txt"
+		cropPadding = 8
+		flipVertical = no
+		sourceFillColor = { 0.25 0.50 0.75 1.0 }
+		sourceBoundaryColor = { 0.10 0.20 0.30 1.0 }
+		boundaryColor = { 0.40 0.50 0.60 0.70 }
+		hoverColor = { 0.80 0.70 0.60 0.50 }
+		boundaryWidth = 3
+		drawBoundaries = yes
+		sourceItem = { id = 7 name = "first_group" }
+		sourceItem = { id = 8 name = "second_group" }
+		colorStop = {
+			minimum = 0
+			color = { 0.2 0.4 0.8 0.6 }
+		}
+		colorStop = {
+			minimum = 50
+			color = { 0.8 0.2 0.2 0.8 }
+		}
+	}
+}

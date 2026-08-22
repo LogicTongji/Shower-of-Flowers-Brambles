@@ -85,15 +85,15 @@ theatre = {
 				division= {
 					name = "中国工农红军第1师"
 					location = 5744
-					regiment = { type = bergsjaeger_brigade name = "第1团" experience = 70 strength = 7 historical_model = 0 }
-					regiment = { type = bergsjaeger_brigade name = "第2、3团" experience = 50 strength = 7 historical_model = 0 }
+					regiment = { type = light_bergsjaeger name = "第1团" experience = 70 strength = 7 historical_model = 0 }
+					regiment = { type = light_bergsjaeger name = "第2、3团" experience = 50 strength = 7 historical_model = 0 }
 			
 				}
 				division= {
 					name = "中国工农红军第2师"
 					location = 5724
-					regiment = { type = bergsjaeger_brigade name = "第4团" experience = 60 strength = 7 historical_model = 0 }
-					regiment = { type = bergsjaeger_brigade name = "第5、6团" experience = 60 strength = 7 historical_model = 0 }
+					regiment = { type = light_bergsjaeger name = "第4团" experience = 60 strength = 7 historical_model = 0 }
+					regiment = { type = light_bergsjaeger name = "第5、6团" experience = 60 strength = 7 historical_model = 0 }
 	
 				}
 				division= {
@@ -117,7 +117,7 @@ theatre = {
 				division= {
 					name = "中国工农红军第4师"
 					location = 5716
-					regiment = { type = bergsjaeger_brigade name = "第7团" strength = 10.5 experience = 70 historical_model = 0 }
+					regiment = { type = light_bergsjaeger name = "第7团" strength = 10.5 experience = 70 historical_model = 0 }
 					regiment = { type = partisan_bergsjaeger name = "第8、9团" strength = 10.5 experience = 70 historical_model = 0 }
 				}
 				division= {
@@ -140,8 +140,8 @@ theatre = {
 				division= {
 					name = "中国工农红军第13师"
 					location = 5708
-					regiment = { type = bergsjaeger_brigade name = "第27团" strength = 10.5 experience = 70 historical_model = 0 }
-					regiment = { type = bergsjaeger_brigade name = "第38、39团" strength = 10.5 experience = 70 historical_model = 0 }
+					regiment = { type = light_bergsjaeger name = "第27团" strength = 10.5 experience = 70 historical_model = 0 }
+					regiment = { type = light_bergsjaeger name = "第38、39团" strength = 10.5 experience = 70 historical_model = 0 }
 				}
 				division= {
 					name = "中国工农红军第14师"
@@ -228,8 +228,8 @@ armygroup = {
                                                division= {
 					name = "中国工农红军第91师"
 					location = 4739
-					regiment = { type = bergsjaeger_brigade experience = 80 strength = 7 historical_model = 0 }
-					regiment = { type = bergsjaeger_brigade experience = 80 strength = 7 historical_model = 0 }
+					regiment = { type = light_bergsjaeger experience = 80 strength = 7 historical_model = 0 }
+					regiment = { type = light_bergsjaeger experience = 80 strength = 7 historical_model = 0 }
 	
 				}
 				division= {

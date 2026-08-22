@@ -428,27 +428,27 @@ theatre ={
 				location = 5661
 				leader = 76402 #秦基伟
 				regiment = { type = hq_brigade name = "第15军指挥部" experience = 50 historical_model = 4 }
-				regiment = { type = bergsjaeger_brigade name = "警卫团" experience = 50 historical_model = 4 }
+				regiment = { type = light_bergsjaeger name = "警卫团" experience = 50 historical_model = 4 }
 				division= {
 					name = "中国人民解放军第43师"
 					location = 5661
 					regiment = { type = infantry_brigade name = "第127团" experience = 50 historical_model = 3 }
-					regiment = { type = bergsjaeger_brigade name = "第128团" experience = 50 historical_model = 3 }
-					regiment = { type = bergsjaeger_brigade name = "第129团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第128团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第129团" experience = 50 historical_model = 3 }
 				}
 				division= {
 					name = "中国人民解放军第44师"
 					location = 5661
-					regiment = { type = bergsjaeger_brigade name = "第130团" experience = 50 historical_model = 3 }
-					regiment = { type = bergsjaeger_brigade name = "第131团" experience = 50 historical_model = 3 }
-					regiment = { type = bergsjaeger_brigade name = "第132团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第130团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第131团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第132团" experience = 50 historical_model = 3 }
 				}
 				division= {
 					name = "中国人民解放军第45师"
 					location = 5661
-					regiment = { type = bergsjaeger_brigade name = "第133团" experience = 50 historical_model = 3 }
-					regiment = { type = bergsjaeger_brigade name = "第134团" experience = 50 historical_model = 3 }
-					regiment = { type = bergsjaeger_brigade name = "第135团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第133团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第134团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第135团" experience = 50 historical_model = 3 }
 				}
 			}
 		}
@@ -517,27 +517,27 @@ theatre ={
 				name = "中国人民解放军第18军"
 				location = 5617
 				regiment = { type = hq_brigade name = "第18军指挥部" experience = 50 historical_model = 4 }
-				regiment = { type = bergsjaeger_brigade name = "警卫团" experience = 50 historical_model = 4 }
+				regiment = { type = light_bergsjaeger name = "警卫团" experience = 50 historical_model = 4 }
 				division= {
 					name = "中国人民解放军第52师"
 					location = 5617
-					regiment = { type = bergsjaeger_brigade name = "第154团" experience = 50 historical_model = 3 }
-					regiment = { type = bergsjaeger_brigade name = "第155团" experience = 50 historical_model = 3 }
-					regiment = { type = bergsjaeger_brigade name = "第156团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第154团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第155团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第156团" experience = 50 historical_model = 3 }
 				}
 				division= {
 					name = "中国人民解放军第53师"
 					location = 5617
-					regiment = { type = bergsjaeger_brigade name = "第157团" experience = 50 historical_model = 3 }
-					regiment = { type = bergsjaeger_brigade name = "第158团" experience = 50 historical_model = 3 }
-					regiment = { type = bergsjaeger_brigade name = "第159团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第157团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第158团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第159团" experience = 50 historical_model = 3 }
 				}
 				division= {
 					name = "中国人民解放军第54师"
 					location = 5617
-					regiment = { type = bergsjaeger_brigade name = "第160团" experience = 50 historical_model = 3 }
-					regiment = { type = bergsjaeger_brigade name = "第161团" experience = 50 historical_model = 3 }
-					regiment = { type = bergsjaeger_brigade name = "第162团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第160团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第161团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第162团" experience = 50 historical_model = 3 }
 				}
 			}
 		}
@@ -1710,22 +1710,22 @@ theatre ={
 					name = "中国人民解放军第178师"
 					location = 5206
 					regiment = { type = infantry_brigade name = "第532团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第533团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第534团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第533团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第534团" experience = 50 historical_model = 3 }
 				}
 				division= {
 					name = "中国人民解放军第179师"
 					location = 5206
 					regiment = { type = infantry_brigade name = "第535团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第536团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第537团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第536团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第537团" experience = 50 historical_model = 3 }
 				}
 				division= {
 					name = "中国人民解放军第180师"
 					location = 5206
 					regiment = { type = infantry_brigade name = "第538团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第539团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第540团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第539团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第540团" experience = 50 historical_model = 3 }
 				}
 			}
 			corps  = {
@@ -1737,22 +1737,22 @@ theatre ={
 					name = "中国人民解放军第181师"
 					location = 7411
 					regiment = { type = infantry_brigade name = "第541团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第542团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第543团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第542团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第543团" experience = 50 historical_model = 3 }
 				}
 				division= {
 					name = "中国人民解放军第182师"
 					location = 7411
 					regiment = { type = infantry_brigade name = "第544团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第545团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第546团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第545团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第546团" experience = 50 historical_model = 3 }
 				}
 				division= {
 					name = "中国人民解放军第183师"
 					location = 7411
 					regiment = { type = infantry_brigade name = "第547团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第548团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第549团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第548团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第549团" experience = 50 historical_model = 3 }
 				}
 			}
 			corps  = {
@@ -1764,22 +1764,22 @@ theatre ={
 					name = "中国人民解放军第184师"
 					location = 5141
 					regiment = { type = infantry_brigade name = "第550团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第551团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第552团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第551团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第552团" experience = 50 historical_model = 3 }
 				}
 				division= {
 					name = "中国人民解放军第185师"
 					location = 5141
 					regiment = { type = infantry_brigade name = "第553团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第554团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第555团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第554团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第555团" experience = 50 historical_model = 3 }
 				}
 				division= {
 					name = "中国人民解放军第186师"
 					location = 5141
 					regiment = { type = infantry_brigade name = "第556团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第557团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第558团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第557团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第558团" experience = 50 historical_model = 3 }
 				}
 			}
 		}
@@ -1798,22 +1798,22 @@ theatre ={
 					name = "中国人民解放军第187师"
 					location = 4978
 					regiment = { type = infantry_brigade name = "第559团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第560团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第561团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第560团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第561团" experience = 50 historical_model = 3 }
 				}
 				division= {
 					name = "中国人民解放军第188师"
 					location = 4978
 					regiment = { type = infantry_brigade name = "第562团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第563团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第564团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第563团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第564团" experience = 50 historical_model = 3 }
 				}
 				division= {
 					name = "中国人民解放军第189师"
 					location = 4978
 					regiment = { type = infantry_brigade name = "第565团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第566团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第567团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第566团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第567团" experience = 50 historical_model = 3 }
 				}
 			}
 			corps  = {
@@ -1825,22 +1825,22 @@ theatre ={
 					name = "中国人民解放军第190师"
 					location = 5015
 					regiment = { type = infantry_brigade name = "第568团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第569团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第570团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第569团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第570团" experience = 50 historical_model = 3 }
 				}
 				division= {
 					name = "中国人民解放军第191师"
 					location = 5016
 					regiment = { type = infantry_brigade name = "第571团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第572团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第573团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第572团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第573团" experience = 50 historical_model = 3 }
 				}
 				division= {
 					name = "中国人民解放军第192师"
 					location = 5083
 					regiment = { type = infantry_brigade name = "第574团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第575团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第576团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第575团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第576团" experience = 50 historical_model = 3 }
 				}
 			}
 			corps  = {
@@ -1852,22 +1852,22 @@ theatre ={
 					name = "中国人民解放军第193师"
 					location = 5084
 					regiment = { type = infantry_brigade name = "第577团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第578团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第579团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第578团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第579团" experience = 50 historical_model = 3 }
 				}
 				division= {
 					name = "中国人民解放军第194师"
 					location = 5112
 					regiment = { type = infantry_brigade name = "第580团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第581团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第582团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第581团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第582团" experience = 50 historical_model = 3 }
 				}
 				division= {
 					name = "中国人民解放军第195师"
 					location = 5051
 					regiment = { type = infantry_brigade name = "第583团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第584团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第585团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第584团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第585团" experience = 50 historical_model = 3 }
 				}
 			}
 		}
@@ -1886,22 +1886,22 @@ theatre ={
 					name = "中国人民解放军第196师"
 					location = 7360
 					regiment = { type = infantry_brigade name = "第586团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第587团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第587团" experience = 50 historical_model = 3 }
 					regiment = { type = imilitia_brigade name = "第588团" experience = 50 historical_model = 3 }
 				}
 				division= {
 					name = "中国人民解放军第197师"
 					location = 7360
 					regiment = { type = infantry_brigade name = "第589团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第590团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第591团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第590团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第591团" experience = 50 historical_model = 3 }
 				}
 				division= {
 					name = "中国人民解放军第198师"
 					location = 7360
 					regiment = { type = infantry_brigade name = "第592团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第593团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第594团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第593团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第594团" experience = 50 historical_model = 3 }
 				}
 			}
 			corps  = {
@@ -1913,22 +1913,22 @@ theatre ={
 					name = "中国人民解放军第199师"
 					location = 7349
 					regiment = { type = infantry_brigade name = "第595团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第596团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第597团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第596团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第597团" experience = 50 historical_model = 3 }
 				}
 				division= {
 					name = "中国人民解放军第200师"
 					location = 4980
 					regiment = { type = infantry_brigade name = "第598团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第599团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第600团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第599团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第600团" experience = 50 historical_model = 3 }
 				}
 				division= {
 					name = "中国人民解放军第201师"
 					location = 7337
 					regiment = { type = infantry_brigade name = "第601团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第602团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第603团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第602团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第603团" experience = 50 historical_model = 3 }
 				}
 			}
 			corps  = {
@@ -1940,22 +1940,22 @@ theatre ={
 					name = "中国人民解放军第202师"
 					location = 7378
 					regiment = { type = infantry_brigade name = "第604团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第605团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第606团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第605团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第606团" experience = 50 historical_model = 3 }
 				}
 				division= {
 					name = "中国人民解放军第203师"
 					location = 7368
 					regiment = { type = infantry_brigade name = "第607团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第608团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第609团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第608团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第609团" experience = 50 historical_model = 3 }
 				}
 				division= {
 					name = "中国人民解放军第204师"
 					location = 7384
 					regiment = { type = infantry_brigade name = "第610团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第611团" experience = 50 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第612团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第611团" experience = 50 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第612团" experience = 50 historical_model = 3 }
 				}
 			}
 			corps  = {
@@ -2060,30 +2060,30 @@ theatre ={
 				location = 4685
 				is_reserve = yes
 				regiment = { type = hq_brigade name = "辽宁军区指挥部" experience = 30 historical_model = 3 }
-				regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+				regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				division= {
 					name = "辽宁军区第1师"
 					location = 4685
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 				division= {
 					name = "辽宁军区第2师"
 					location = 4839
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 				division= {
 					name = "辽宁军区第3师"
 					location = 4837
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 			}
 			corps  = {
@@ -2091,30 +2091,30 @@ theatre ={
 				location = 4452
 				is_reserve = yes
 				regiment = { type = hq_brigade name = "吉林军区指挥部" experience = 30 historical_model = 3 }
-				regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+				regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				division= {
 					name = "吉林军区第1师"
 					location = 4452
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 				division= {
 					name = "吉林军区第2师"
 					location = 4579
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 				division= {
 					name = "吉林军区第3师"
 					location = 4689
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 			}
 			corps  = {
@@ -2122,30 +2122,30 @@ theatre ={
 				location = 7139
 				is_reserve = yes
 				regiment = { type = hq_brigade name = "龙江军区指挥部" experience = 30 historical_model = 3 }
-				regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+				regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				division= {
 					name = "龙江军区第1师"
 					location = 7139
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 				division= {
 					name = "龙江军区第2师"
 					location = 7096
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 				division= {
 					name = "龙江军区第3师"
 					location = 7095
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 			}
 		}
@@ -2187,30 +2187,30 @@ theatre ={
 				location = 5176
 				is_reserve = yes
 				regiment = { type = hq_brigade name = "河北军区指挥部" experience = 30 historical_model = 3 }
-				regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+				regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				division= {
 					name = "河北军区第1师"
 					location = 5176
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 				division= {
 					name = "河北军区第2师"
 					location = 5143
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 				division= {
 					name = "河北军区第3师"
 					location = 5273
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 			}
 			corps  = {
@@ -2218,30 +2218,30 @@ theatre ={
 				location = 4785
 				is_reserve = yes
 				regiment = { type = hq_brigade name = "察热军区指挥部" experience = 30 historical_model = 3 }
-				regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+				regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				division= {
 					name = "察热军区第1师"
 					location = 4785
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 				division= {
 					name = "察热军区第2师"
 					location = 4978
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 				division= {
 					name = "察热军区第3师"
 					location = 4936
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 			}
 		}
@@ -2259,22 +2259,22 @@ theatre ={
 					name = "中国人民解放军第172师"
 					location = 5383
 					regiment = { type = infantry_brigade name = "第514团" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第515团" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第516团" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第515团" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第516团" experience = 30 historical_model = 3 }
 				}
 				division= {
 					name = "中国人民解放军第173师"
 					location = 5383
 					regiment = { type = infantry_brigade name = "第517团" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第518团" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第519团" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第518团" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第519团" experience = 30 historical_model = 3 }
 				}
 				division= {
 					name = "中国人民解放军第174师"
 					location = 5383
 					regiment = { type = infantry_brigade name = "第520团" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第521团" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "第522团" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第521团" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "第522团" experience = 30 historical_model = 3 }
 				}
 			}
 			corps  = {
@@ -2282,30 +2282,30 @@ theatre ={
 				location = 5383
 				is_reserve = yes
 				regiment = { type = hq_brigade name = "河南军区指挥部" experience = 30 historical_model = 3 }
-				regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+				regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				division= {
 					name = "河南军区第1师"
 					location = 5383
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 				division= {
 					name = "河南军区第2师"
 					location = 7447
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 				division= {
 					name = "河南军区第3师"
 					location = 5401
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 			}
 			corps  = {
@@ -2313,30 +2313,30 @@ theatre ={
 				location = 5470
 				is_reserve = yes
 				regiment = { type = hq_brigade name = "安徽军区指挥部" experience = 30 historical_model = 3 }
-				regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+				regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				division= {
 					name = "安徽军区第1师"
 					location = 5470
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 				division= {
 					name = "安徽军区第2师"
 					location = 5515
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 				division= {
 					name = "安徽军区第3师"
 					location = 5492
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 			}
 			corps  = {
@@ -2344,30 +2344,30 @@ theatre ={
 				location = 5661
 				is_reserve = yes
 				regiment = { type = hq_brigade name = "湖北军区指挥部" experience = 30 historical_model = 2 }
-				regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 2 }
+				regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 2 }
 				division= {
 					name = "湖北军区第1师"
 					location = 5661
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 				division= {
 					name = "湖北军区第2师"
 					location = 5618
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 				division= {
 					name = "湖北军区第3师"
 					location = 7503
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 			}
 		}
@@ -2408,30 +2408,30 @@ theatre ={
 				location = 5405
 				is_reserve = yes
 				regiment = { type = hq_brigade name = "苏北军区指挥部" experience = 30 historical_model = 3 }
-				regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+				regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				division= {
 					name = "江苏军区第1师"
 					location = 5405
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 				division= {
 					name = "江苏军区第2师"
 					location = 5435
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 				division= {
 					name = "江苏军区第3师"
 					location = 5421
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 			}
 			corps  = {
@@ -2440,30 +2440,30 @@ theatre ={
 				leader = 76391 #许世友
 				is_reserve = yes
 				regiment = { type = hq_brigade name = "山东军区指挥部" experience = 30 historical_model = 3 }
-				regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+				regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				division= {
 					name = "山东军区第1师"
 					location = 5275
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 				division= {
 					name = "山东军区第2师"
 					location = 5364
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 				division= {
 					name = "山东军区第3师"
 					location = 5305
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 			}
 		}
@@ -2478,30 +2478,30 @@ theatre ={
 				location = 7417
 				is_reserve = yes
 				regiment = { type = hq_brigade name = "陕西军区指挥部" experience = 30 historical_model = 3 }
-				regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+				regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				division= {
 					name = "陕西军区第1师"
 					location = 7417
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 				division= {
 					name = "陕西军区第2师"
 					location = 7425
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 				division= {
 					name = "陕西军区第3师"
 					location = 5335
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 			}
 			corps = {
@@ -2509,29 +2509,29 @@ theatre ={
 				location = 7411
 				is_reserve = yes
 				regiment = { type = hq_brigade name = "山西军区指挥部" experience = 30 historical_model = 3 }
-				regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+				regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				division= {
 					name = "山西军区第1师"
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 				division= {
 					name = "山西军区第2师"
 					location = 7418
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 				division= {
 					name = "山西军区第3师"
 					location = 7411
 					is_reserve = yes
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
-					regiment = { type = militia_brigade name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "民兵队" experience = 30 historical_model = 3 }
 				}
 			}
 		}

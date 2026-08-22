@@ -21,24 +21,24 @@ theatre = {
 				division= {
 					name = "第1纵队"
 					location = 5335
-					regiment = { type = bergsjaeger_brigade name = "第1纵队第1大队" experience = 80 strength = 7 historical_model = 0 }
-					regiment = { type = bergsjaeger_brigade name = "第1纵队第2大队" experience = 80 strength = 7 historical_model = 0 }
-					regiment = { type = bergsjaeger_brigade name = "第1纵队第3大队" experience = 80 strength = 7 historical_model = 0 }
-					regiment = { type = bergsjaeger_brigade name = "第1纵队第4大队" experience = 80 strength = 7 historical_model = 0 }
+					regiment = { type = light_bergsjaeger name = "第1纵队第1大队" experience = 80 strength = 7 historical_model = 0 }
+					regiment = { type = light_bergsjaeger name = "第1纵队第2大队" experience = 80 strength = 7 historical_model = 0 }
+					regiment = { type = light_bergsjaeger name = "第1纵队第3大队" experience = 80 strength = 7 historical_model = 0 }
+					regiment = { type = light_bergsjaeger name = "第1纵队第4大队" experience = 80 strength = 7 historical_model = 0 }
 				}
 				division= {
 					name = "第2纵队"
 					location = 5335
-					regiment = { type = bergsjaeger_brigade name = "第2纵队第1大队" experience = 80 strength = 7 historical_model = 0 }
-					regiment = { type = bergsjaeger_brigade name = "第2纵队第2大队" experience = 80 strength = 7 historical_model = 0 }
-					regiment = { type = bergsjaeger_brigade name = "第2纵队第3大队" experience = 80 strength = 7 historical_model = 0 }
+					regiment = { type = light_bergsjaeger name = "第2纵队第1大队" experience = 80 strength = 7 historical_model = 0 }
+					regiment = { type = light_bergsjaeger name = "第2纵队第2大队" experience = 80 strength = 7 historical_model = 0 }
+					regiment = { type = light_bergsjaeger name = "第2纵队第3大队" experience = 80 strength = 7 historical_model = 0 }
 				}
 				division= {
 					name = "第3纵队"
 					location = 5335
-					regiment = { type = bergsjaeger_brigade name = "第3纵队第1大队" experience = 80 strength = 7 historical_model = 0 }
-					regiment = { type = bergsjaeger_brigade name = "第3纵队第2大队" experience = 80 strength = 7 historical_model = 0 }
-					regiment = { type = bergsjaeger_brigade name = "第3纵队第3大队" experience = 80 strength = 7 historical_model = 0 }
+					regiment = { type = light_bergsjaeger name = "第3纵队第1大队" experience = 80 strength = 7 historical_model = 0 }
+					regiment = { type = light_bergsjaeger name = "第3纵队第2大队" experience = 80 strength = 7 historical_model = 0 }
+					regiment = { type = light_bergsjaeger name = "第3纵队第3大队" experience = 80 strength = 7 historical_model = 0 }
 				}
 			}
 			corps = {
@@ -48,36 +48,36 @@ theatre = {
 				division= {
 					name = "第75师"
 					location = 7410
-					regiment = { type = infantry_brigade name = "第223团" strength = 10.5 experience = 70 historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第225团" strength = 10.5 experience = 70 historical_model = 0 }
+					regiment = { type = partisan_bergsjaeger name = "第223团" strength = 10.5 experience = 70 historical_model = 0 }
+					regiment = { type = partisan_bergsjaeger name = "第225团" strength = 10.5 experience = 70 historical_model = 0 }
 				}
 				division= {
 					name = "第78师"
 					location = 7410
-					regiment = { type = infantry_brigade name = "第232团" strength = 10.5 experience = 70 historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第234团" strength = 10.5 experience = 70 historical_model = 0 }
+					regiment = { type = partisan_bergsjaeger name = "第232团" strength = 10.5 experience = 70 historical_model = 0 }
+					regiment = { type = partisan_bergsjaeger name = "第234团" strength = 10.5 experience = 70 historical_model = 0 }
 					regiment = { type = cavalry_brigade name = "骑兵团" strength = 11 experience = 70 historical_model = 0 }
 				}
 				division= {
 					name = "第81师"
 					location = 7410
-					regiment = { type = infantry_brigade name = "第241团" strength = 10.5 experience = 70 historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第243团" strength = 10.5 experience = 70 historical_model = 0 }
+					regiment = { type = partisan_bergsjaeger name = "第241团" strength = 10.5 experience = 70 historical_model = 0 }
+					regiment = { type = partisan_bergsjaeger name = "第243团" strength = 10.5 experience = 70 historical_model = 0 }
 				}
 			}
 			division= {
 				name = "第28军"
 				location = 5241
-				regiment = { type = infantry_brigade name = "第250团" strength = 5 experience = 25 historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第251团" strength = 5 experience = 25 historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第252团" strength = 5 experience = 25 historical_model = 0 }
+				regiment = { type = partisan_bergsjaeger name = "第250团" strength = 5 experience = 25 historical_model = 0 }
+				regiment = { type = partisan_bergsjaeger name = "第251团" strength = 5 experience = 25 historical_model = 0 }
+				regiment = { type = partisan_bergsjaeger name = "第252团" strength = 5 experience = 25 historical_model = 0 }
 			}
 			division= {
 				name = "第29军"
 				location = 5241
-				regiment = { type = infantry_brigade name = "第255团" strength = 5 experience = 25 historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第256团" strength = 5 experience = 25 historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第257团" strength = 5 experience = 25 historical_model = 0 }
+				regiment = { type = partisan_bergsjaeger name = "第255团" strength = 5 experience = 25 historical_model = 0 }
+				regiment = { type = partisan_bergsjaeger name = "第256团" strength = 5 experience = 25 historical_model = 0 }
+				regiment = { type = partisan_bergsjaeger name = "第257团" strength = 5 experience = 25 historical_model = 0 }
 			}
 		}
 	}

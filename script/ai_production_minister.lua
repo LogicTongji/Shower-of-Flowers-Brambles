@@ -355,7 +355,7 @@ local UnitTypes = {
 			"Infantry",
 			"Motor",
 			"Armor"}},
-	anti_tank_brigade = {
+	motorized_anti_tank_brigade = {
 		Index = 86,
 		Type = "Land",
 		SubType = "Support",
@@ -603,6 +603,15 @@ local UnitTypes = {
 		SubType = "Elite Infantry"},
 	foring_brigade = {
 		Index = 83,
+		Serial = 4,
+		Size = 3,
+		Support = 1,
+		SecondaryMain = "artillery_brigade",
+		SupportGroup = "Infantry",
+		Type = "Land",
+		SubType = "Elite Infantry"},
+	light_bergsjaeger = {
+		Index = 87,
 		Serial = 4,
 		Size = 3,
 		Support = 1,

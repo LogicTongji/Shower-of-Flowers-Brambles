@@ -26,8 +26,8 @@ theatre = {
 	  division= {
 					name = "警备第3旅（陇东警备区）"
 					location = 9202
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 35 historical_model = 2 }
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 35 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
 				}	
 		 division= {
 					name = "警备第1旅（关中警备区）"
@@ -44,8 +44,8 @@ theatre = {
 			 division= {
 					name = "新编第11旅（绥德警备区）"
 					location = 7405
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 35 historical_model = 2 }
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 35 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
 				}		
 		}		
 		army = {
@@ -57,10 +57,10 @@ theatre = {
 		  division= {
 					name = "晋绥野战军"
 					location = 5110
-				  regiment = { type = bergsjaeger_brigade name = "第358旅" strength = 80 experience = 35 historical_model = 3 }
-					regiment = { type = bergsjaeger_brigade name = "独立第1旅" strength = 80 experience = 35 historical_model = 3 }
-					regiment = { type = bergsjaeger_brigade name = "独立第2旅" strength = 80 experience = 35 historical_model = 3 }
-					regiment = { type = bergsjaeger_brigade name = "独立第3旅" strength = 80 experience = 35 historical_model = 3 }
+				  regiment = { type = light_bergsjaeger name = "第358旅" strength = 80 experience = 35 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "独立第1旅" strength = 80 experience = 35 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "独立第2旅" strength = 80 experience = 35 historical_model = 3 }
+					regiment = { type = light_bergsjaeger name = "独立第3旅" strength = 80 experience = 35 historical_model = 3 }
 				}	
 		corps = {
 				name = "吕梁军区"
@@ -74,15 +74,15 @@ theatre = {
 		division= {
 					name = "第8军分区"
 					location = 5175
-					regiment = { type = bergsjaeger_brigade name = "第1支队" strength = 80 experience = 35 historical_model = 2 }
+					regiment = { type = light_bergsjaeger name = "第1支队" strength = 80 experience = 35 historical_model = 2 }
 					regiment = { type = partisan_bergsjaeger name = "第2支队" strength = 80 experience = 35 historical_model = 2 }
 					regiment = { type = partisan_bergsjaeger name = "第6支队" strength = 80 experience = 35 historical_model = 2 }
 				}	
 	  division= {
 					name = "第9军分区"
 					location = 5240
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 35 historical_model = 2 }
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 35 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
 					regiment = { type = partisan_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
 					regiment = { type = partisan_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
 				}	
@@ -108,7 +108,7 @@ theatre = {
 					location = 5051
 					regiment = { type = partisan_bergsjaeger name = "第19团" strength = 80 experience = 35 historical_model = 2 }
 					regiment = { type = partisan_bergsjaeger name = "第20团" strength = 80 experience = 35 historical_model = 2 }
-					regiment = { type = bergsjaeger_brigade name = "第35团" strength = 80 experience = 35 historical_model = 2 }
+					regiment = { type = light_bergsjaeger name = "第35团" strength = 80 experience = 35 historical_model = 2 }
 				}	
 		}
 		corps = {
@@ -129,7 +129,7 @@ theatre = {
 			 division= {
 					name = "第11军分区"
 					location = 4980
-					regiment = { type = bergsjaeger_brigade name = "第1支队" strength = 80 experience = 35 historical_model = 2 }
+					regiment = { type = light_bergsjaeger name = "第1支队" strength = 80 experience = 35 historical_model = 2 }
 					regiment = { type = partisan_bergsjaeger name = "第2支队" strength = 80 experience = 35 historical_model = 2 }
 				}		
 		}
@@ -142,7 +142,7 @@ theatre = {
 		  division= {
 					name = "第2纵队"
 					location = 5301
-				  regiment = { type = bergsjaeger_brigade name = "第4旅" strength = 80 experience = 35 historical_model = 3 }
+				  regiment = { type = light_bergsjaeger name = "第4旅" strength = 80 experience = 35 historical_model = 3 }
 					regiment = { type = bergsjaeger_brigadee name = "第5旅" strength = 80 experience = 35 historical_model = 3 }
 					regiment = { type = partisan_bergsjaeger name = "第6旅" strength = 80 experience = 35 historical_model = 3 }
 				}	
@@ -172,7 +172,7 @@ theatre = {
 	  division= {
 					name = "第3军分区"
 					location = 5401
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 35 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
 					regiment = { type = partisan_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
 					regiment = { type = partisan_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
 				}	
@@ -185,14 +185,14 @@ theatre = {
 			 division= {
 					name = "第5军分区"
 					location = 5209
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 35 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
 					regiment = { type = partisan_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
 					regiment = { type = partisan_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
 				}	
 				division= {
 					name = "第6军分区"
 					location = 5210
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 35 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
 					regiment = { type = partisan_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
 					regiment = { type = partisan_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
 				}	
@@ -221,7 +221,7 @@ theatre = {
 	  division= {
 					name = "第3军分区"
 					location = 5144
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 35 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
 					regiment = { type = partisan_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
 					regiment = { type = partisan_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
 				}	
@@ -325,8 +325,8 @@ corps = {
 		division= {
 					name = "第1师"
 					location = 7457
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 20 historical_model = 2 }
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 20 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 20 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 20 historical_model = 2 }
 					regiment = { type = partisan_bergsjaeger strength = 80 experience = 40 historical_model = 2 }
 				}
 		division= {
@@ -351,9 +351,9 @@ corps = {
 		division= {
 					name = "第5师"
 					location = 7468
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 20 historical_model = 2 }
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 20 historical_model = 2 }
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 40 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 20 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 20 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 40 historical_model = 2 }
 				}
 			division= {
 					name = "第17师"
@@ -365,9 +365,9 @@ corps = {
 			division= {
 					name = "第55师"
 					location = 5434
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 20 historical_model = 2 }
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 20 historical_model = 2 }
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 40 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 20 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 20 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 40 historical_model = 2 }
 				       }	
 				}							
 	}	
@@ -379,23 +379,23 @@ corps = {
 		division= {
 					name = "第3纵队"
 					location = 7468
-					regiment = { type = bergsjaeger_brigade strength = 80 name = "第7旅" experience = 20 historical_model = 2 }
-					regiment = { type = bergsjaeger_brigade strength = 80 name = "第8旅" experience = 20 historical_model = 2 }
-					regiment = { type = bergsjaeger_brigade strength = 80 name = "第9旅" experience = 40 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 name = "第7旅" experience = 20 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 name = "第8旅" experience = 20 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 name = "第9旅" experience = 40 historical_model = 2 }
 				}
 		division= {
 					name = "第6纵队"
 					location = 7468
-					regiment = { type = bergsjaeger_brigade strength = 80 name = "第16旅" experience = 20 historical_model = 2 }
-					regiment = { type = bergsjaeger_brigade strength = 80 name = "第17旅" experience = 20 historical_model = 2 }
-					regiment = { type = bergsjaeger_brigade strength = 80 name = "第18旅" experience = 40 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 name = "第16旅" experience = 20 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 name = "第17旅" experience = 20 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 name = "第18旅" experience = 40 historical_model = 2 }
 				}
 			division= {
 					name = "第7纵队"
 					location = 5333
-					regiment = { type = bergsjaeger_brigade strength = 80 name = "第19旅" experience = 20 historical_model = 2 }
-					regiment = { type = bergsjaeger_brigade strength = 80 name = "第21旅" experience = 20 historical_model = 2 }
-					regiment = { type = bergsjaeger_brigade strength = 80 name = "第22旅" experience = 40 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 name = "第19旅" experience = 20 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 name = "第21旅" experience = 20 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 name = "第22旅" experience = 40 historical_model = 2 }
 				       }	
 				}					
 }
@@ -423,7 +423,7 @@ armygroup = {
 	  division= {
 					name = "警备旅"
 					location = 5244
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 35 historical_model = 2 }				
+					regiment = { type = light_bergsjaeger strength = 80 experience = 35 historical_model = 2 }				
 				}	
 	}
 	corps = {
@@ -461,7 +461,7 @@ armygroup = {
 					location = 5212
 					regiment = { type = partisan_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
 					regiment = { type = partisan_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 35 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
 				}	
 	   division= {
 					name = "第4军分区"
@@ -483,14 +483,14 @@ armygroup = {
 		 	division= {
 					name = "第1军分区"
 					location = 5145
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 55 historical_model = 2 }
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 55 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 55 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 55 historical_model = 2 }
 				}
 		division= {
 					name = "第2军分区"
 					location = 5244
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 35 historical_model = 2 }
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 35 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
 				}	
 	  division= {
 					name = "第3军分区"
@@ -509,7 +509,7 @@ armygroup = {
 				name = "鲁中军区"
 				location = 5336
 				regiment = { type = hq_brigade name = "鲁中军区指挥部" strength = 5 experience = 90 historical_model = 0 }
-				regiment = { type = bergsjaeger_brigade name = "警备旅" strength = 80 experience = 55 historical_model = 2 }
+				regiment = { type = light_bergsjaeger name = "警备旅" strength = 80 experience = 55 historical_model = 2 }
 		division= {
 					name = "第4师"
 					location = 5336
@@ -584,15 +584,15 @@ corps = {
 		division= {
 					name = "第1纵队"
 					location = 5305
-					regiment = { type = bergsjaeger_brigade name = "第1旅"  strength = 80 experience = 70 historical_model = 2 }
-					regiment = { type = bergsjaeger_brigade name = "第2旅"  strength = 80 experience = 70 historical_model = 2 }
-					regiment = { type = bergsjaeger_brigade name = "第3旅"  strength = 80 experience = 70 historical_model = 2 }
+					regiment = { type = light_bergsjaeger name = "第1旅"  strength = 80 experience = 70 historical_model = 2 }
+					regiment = { type = light_bergsjaeger name = "第2旅"  strength = 80 experience = 70 historical_model = 2 }
+					regiment = { type = light_bergsjaeger name = "第3旅"  strength = 80 experience = 70 historical_model = 2 }
 				}
 		division= {
 					name = "第2纵队"
 					location = 5387
-					regiment = { type = bergsjaeger_brigade name = "第4旅" strength = 80 experience = 35 historical_model = 2 }
-					regiment = { type = bergsjaeger_brigade name = "第9旅" strength = 80 experience = 35 historical_model = 2 }
+					regiment = { type = light_bergsjaeger name = "第4旅" strength = 80 experience = 35 historical_model = 2 }
+					regiment = { type = light_bergsjaeger name = "第9旅" strength = 80 experience = 35 historical_model = 2 }
 				}	
 	  division= {
 					name = "第7师"
@@ -656,7 +656,7 @@ corps = {
 		division= {
 					name = "第5旅"
 					location = 5422
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 55 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 55 historical_model = 2 }
 				}
 		division= {
 					name = "第3军分区"
@@ -684,21 +684,21 @@ corps = {
 		division= {
 					name = "第7纵队"
 					location = 5452
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 70 historical_model = 2 }
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 70 historical_model = 2 }
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 70 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 70 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 70 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 70 historical_model = 2 }
 				}
 		division= {
 					name = "第9纵队"
 					location = 5452
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 35 historical_model = 2 }
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 35 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
 				}	
 		division= {
 					name = "第10纵队"
 					location = 5419
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 35 historical_model = 2 }
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 35 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
 				}	
 	  division= {
 					name = "第1师"
@@ -763,8 +763,8 @@ corps = {
 			division= {
 					name = "第1军分区"
 					location = 4386
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 35 historical_model = 2 }
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 35 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
 				}	
 			 division= {
 					name = "第2军分区"
@@ -792,8 +792,8 @@ corps = {
 		division= {
 					name = "第1军分区"
 					location = 7161
-						regiment = { type = bergsjaeger_brigade strength = 80 experience = 35 historical_model = 2 }
-						regiment = { type = bergsjaeger_brigade strength = 80 experience = 35 historical_model = 2 }
+						regiment = { type = light_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
+						regiment = { type = light_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
 				}
 		division= {
 					name = "第2军分区"
@@ -810,8 +810,8 @@ corps = {
 			division= {
 					name = "第4军分区"
 					location = 7136
-						regiment = { type = bergsjaeger_brigade strength = 80 experience = 35 historical_model = 2 }
-						regiment = { type = bergsjaeger_brigade strength = 80 experience = 35 historical_model = 2 }
+						regiment = { type = light_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
+						regiment = { type = light_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
 				}							
 		}
 corps = {
@@ -979,17 +979,17 @@ army = {
 		division= {
 					name = "独立第19旅"
 					location = 4579
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 35 historical_model = 2 }					
+					regiment = { type = light_bergsjaeger strength = 80 experience = 35 historical_model = 2 }					
 				}	
 		division= {
 					name = "独立第20旅"
 					location = 4579
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 35 historical_model = 2 }					
+					regiment = { type = light_bergsjaeger strength = 80 experience = 35 historical_model = 2 }					
 				}	
 	division= {
 					name = "警备旅"
 					location = 4519
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 35 historical_model = 2 }					
+					regiment = { type = light_bergsjaeger strength = 80 experience = 35 historical_model = 2 }					
 				  }						
       }	
 }
@@ -1012,8 +1012,8 @@ army = {
 		division= {
 					name = "第1军分区"
 					location = 4627
-						regiment = { type = bergsjaeger_brigade strength = 80 experience = 35 historical_model = 2 }
-						regiment = { type = bergsjaeger_brigade strength = 80 experience = 35 historical_model = 2 }
+						regiment = { type = light_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
+						regiment = { type = light_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
 				}
 		division= {
 					name = "第2军分区"
@@ -1069,14 +1069,14 @@ armygroup = {
 					location = 4932
 					regiment = { type = infantry_brigade name = "第1旅" strength = 40 experience = 35 historical_model = 2 }
 					regiment = { type = infantry_brigade name = "第2旅" strength = 40 experience = 35 historical_model = 2 }
-					regiment = { type = bergsjaeger_brigade name = "第3旅" strength = 40 experience = 35 historical_model = 2 }
+					regiment = { type = light_bergsjaeger name = "第3旅" strength = 40 experience = 35 historical_model = 2 }
 				}
 		division= {
 					name = "第2纵队"
 					location = 4785
 					regiment = { type = infantry_brigade name = "第4旅" strength = 50 experience = 35 historical_model = 2 }
 					regiment = { type = infantry_brigade name = "第5旅" strength = 50 experience = 35 historical_model = 2 }
-						regiment = { type = bergsjaeger_brigade name = "第6旅" strength = 40 experience = 35 historical_model = 2 }
+						regiment = { type = light_bergsjaeger name = "第6旅" strength = 40 experience = 35 historical_model = 2 }
 				}	
 		division= {
 					name = "第3纵队"
@@ -1113,7 +1113,7 @@ armygroup = {
 		division= {
 					name = "第9军分区"
 					location = 5274
-										regiment = { type = bergsjaeger_brigade strength = 80 experience = 35 historical_model = 2 }
+										regiment = { type = light_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
 					regiment = { type = partisan_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
 				}	
 	  division= {
@@ -1146,14 +1146,14 @@ armygroup = {
 		 	division= {
 					name = "第1军分区"
 					location = 5240
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 55 historical_model = 2 }
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 55 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 55 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 55 historical_model = 2 }
 				}
 		division= {
 					name = "第2军分区"
 					location = 5301
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 35 historical_model = 2 }
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 35 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 35 historical_model = 2 }
 				}	
 	  division= {
 					name = "第3军分区"
@@ -1228,9 +1228,9 @@ corps = {
 				name = "冀东军区"
 				location = 5179
 				regiment = { type = hq_brigade name = "冀东军区山东野战军指挥部" strength = 5 experience = 90 historical_model = 0 }
-					regiment = { type = bergsjaeger_brigade name = "第10旅"  strength = 80 experience = 70 historical_model = 2 }
-					regiment = { type = bergsjaeger_brigade name = "第11旅"  strength = 80 experience = 70 historical_model = 2 }
-					regiment = { type = bergsjaeger_brigade name = "第12旅"  strength = 80 experience = 70 historical_model = 2 }
+					regiment = { type = light_bergsjaeger name = "第10旅"  strength = 80 experience = 70 historical_model = 2 }
+					regiment = { type = light_bergsjaeger name = "第11旅"  strength = 80 experience = 70 historical_model = 2 }
+					regiment = { type = light_bergsjaeger name = "第12旅"  strength = 80 experience = 70 historical_model = 2 }
 division= {
 					name = "第12军分区"
 					location = 5179
@@ -1282,12 +1282,12 @@ corps = {
 			division= {
 					name = "独立第13旅"
 					location = 4981
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 55 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 55 historical_model = 2 }
 				}
 			division= {
 					name = "独立第14旅"
 					location = 4981
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 55 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 55 historical_model = 2 }
 				}				
 }	
 corps = {
@@ -1297,12 +1297,12 @@ corps = {
 		division= {
 					name = "独立第16旅"
 					location = 4889
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 55 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 55 historical_model = 2 }
 				}
 		division= {
 					name = "独立第17旅"
 					location = 4889
-					regiment = { type = bergsjaeger_brigade strength = 80 experience = 55 historical_model = 2 }
+					regiment = { type = light_bergsjaeger strength = 80 experience = 55 historical_model = 2 }
 				}
 		division= {
 					name = "第19军分区"
@@ -1322,14 +1322,14 @@ army = {
 		name = "中原军区"
 		location = 7457
 		regiment = { type = hq_brigade name = "军区司令部" historical_model = 0 }
-		regiment = { type = bergsjaeger_brigade name = "第1旅" strength = 80 experience = 35 historical_model = 3 }
-		regiment = { type = bergsjaeger_brigade name = "第2旅" strength = 80 experience = 35 historical_model = 3 }
-		regiment = { type = bergsjaeger_brigade name = "第3旅" strength = 80 experience = 35 historical_model = 3 }
+		regiment = { type = light_bergsjaeger name = "第1旅" strength = 80 experience = 35 historical_model = 3 }
+		regiment = { type = light_bergsjaeger name = "第2旅" strength = 80 experience = 35 historical_model = 3 }
+		regiment = { type = light_bergsjaeger name = "第3旅" strength = 80 experience = 35 historical_model = 3 }
 		division= {
 					name = "第2纵队"
 					location = 5434
-					regiment = { type = bergsjaeger_brigade name = "第13旅" strength = 80 experience = 35 historical_model = 2 }
-					regiment = { type = bergsjaeger_brigade name = "第15旅" strength = 80 experience = 35 historical_model = 2 }
+					regiment = { type = light_bergsjaeger name = "第13旅" strength = 80 experience = 35 historical_model = 2 }
+					regiment = { type = light_bergsjaeger name = "第15旅" strength = 80 experience = 35 historical_model = 2 }
 					regiment = { type = partisan_bergsjaeger name = "第359旅" strength = 80 experience = 35 historical_model = 2 }
 					regiment = { type = chc_gundam name = "干部团" experience = 90 historical_model = 0 }
 				}	

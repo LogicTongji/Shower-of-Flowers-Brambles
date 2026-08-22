@@ -1,0 +1,239 @@
+guiTypes = {
+	windowType = {
+		name = "probe_window"
+		position = { x = 10 y = 20 }
+		size = { x = 480 y = 320 }
+		moveable = yes
+		dragHeight = 32
+		frameZOrder = 250
+		opacity = 0.8
+		styleDefaults = {
+			color = { 0.10 0.20 0.30 }
+			lineColor = { 0.20 0.40 0.60 0.80 }
+			tooltipColor = { 0.05 0.10 0.15 0.75 }
+			tooltipTextColor = { 0.90 0.80 0.70 }
+			tooltipSize = { x = 144 y = 48 }
+			tooltipOffset = { x = 8 y = 10 }
+			tooltipSprite = "GFX_probe_panel"
+			tooltipFont = "probe_font"
+			tooltipFontSize = 13
+			tooltipLineSpacing = 2
+			tooltipPlacement = "cursor"
+			tooltipScaleMode = "stretch"
+			tooltipNineSlice = { left = 3 top = 4 right = 5 bottom = 6 }
+			tooltipDelay = 25
+			tooltipWrap = yes
+			frameZOrder = -25
+			lineWidth = 4
+			tooltipPadding = 9
+			tooltipSearchStep = 7
+			minimumThumbSize = 13
+			disabledBrightness = 0.45
+			disabledOpacity = 0.55
+		}
+
+		dataValueType = {
+			name = "probe.static.title"
+			value = "Static Probe"
+		}
+
+		dataListType = {
+			name = "probe_static_list"
+			revision = 7
+			item = {
+				id = 41
+				text = "Static Item"
+				role = "probe"
+				enabled = yes
+			}
+		}
+
+		iconType = {
+			name = "probe_panel"
+			spriteType = "GFX_probe_panel"
+			scaleMode = "contain"
+			opacity = 0.5
+			nineSlice = {
+				left = 4
+				top = 5
+				right = 6
+				bottom = 7
+			}
+			position = { x = 0 y = 0 }
+			size = { x = 480 y = 320 }
+		}
+
+		textBoxType = {
+			name = "probe_title"
+			font = "probe_font"
+			fontSize = 18
+			alignment = "center"
+			textSource = "title"
+			position = { x = 20 y = 12 }
+			size = { x = 200 y = 24 }
+		}
+
+		progressBarType = {
+			name = "probe_progress"
+			progressBar = "probe_progress_resource"
+			valueSource = "progress"
+			visibleWhen = "state.visible"
+			position = { x = 20 y = 48 }
+			size = { x = 160 y = 16 }
+		}
+
+		indexedMapType = {
+			name = "probe_map"
+			mapResource = "GFX_probe_indexed_map"
+			valueSource = "items.{id}.value"
+			onClick = "select_item"
+			visibleWhen = "state.visible"
+			position = { x = 220 y = 48 }
+			size = { x = 220 y = 220 }
+		}
+
+		listBoxType = {
+			name = "probe_list"
+			position = { x = 20 y = 88 }
+			size = { x = 160 y = 140 }
+			clipChildren = yes
+			opacity = 0.5
+			itemTemplate = "probe_list_item"
+			scrollbarType = "probe_scrollbar"
+			itemFilterField = "tag"
+			itemFilterValueSource = "probe.filter"
+			spacing = 4
+		}
+
+		scrollbarType = {
+			name = "probe_scrollbar"
+			position = { x = 184 y = 88 }
+			size = { x = 8 y = 140 }
+			slider = "GFX_probe_thumb"
+			track = "GFX_probe_track"
+			scaleMode = "stretch"
+			nineSlice = { left = 2 top = 2 right = 2 bottom = 2 }
+		}
+
+		guiButtonType = {
+			name = "probe_list_item"
+			quadTextureSprite = "GFX_probe_panel"
+			tooltipSource = "item.region"
+			onClick = "activate_item"
+			enabledWhen = "state.visible"
+			opacity = 0.5
+			nineSlice = { left = 3 top = 3 right = 3 bottom = 3 }
+			font = "probe_font"
+			fontSize = 14
+			alignment = "center"
+			position = { x = 0 y = 0 }
+			size = { x = 150 y = 28 }
+
+			iconType = {
+				name = "probe_list_icon"
+				spriteSource = "item.sprite"
+				position = { x = 4 y = 4 }
+				size = { x = 20 y = 20 }
+			}
+
+			textBoxType = {
+				name = "probe_list_label"
+				font = "probe_font"
+				fontSize = 12
+				alpha = 0.5
+				textSource = "items.{id}.label"
+				visibleWhen = "items.{id}.visible"
+				position = { x = 28 y = 4 }
+				size = { x = 92 y = 20 }
+			}
+
+			guiButtonType = {
+				name = "probe_list_nested"
+				quadTextureSprite = "GFX_probe_panel"
+				onClick = "activate_item"
+				position = { x = 126 y = 4 }
+				size = { x = 20 y = 20 }
+			}
+		}
+
+		iconType = {
+			name = "probe_animated_icon"
+			spriteType = "GFX_probe_animated"
+			effectType = "GFX_probe_pulse"
+			effectTimeSource = "state.effect_time"
+			frame = 3
+			frameSource = "state.sprite_frame"
+			animate = yes
+			animationMode = "once"
+			animationFrameDuration = 50
+			animationStartFrame = 1
+			animationEndFrame = 4
+			animationOffset = 25
+			animationTimeSource = "state.animation_time"
+			rotation = 15
+			rotationSource = "state.rotation"
+			pivot = { x = 0.25 y = 0.75 }
+			transformScale = { x = 1.5 y = 0.5 }
+			scaleXSource = "state.scale_x"
+			scaleYSource = "state.scale_y"
+			flipX = yes
+			position = { x = 0 y = 0 }
+			size = { x = 20 y = 20 }
+			visible = no
+		}
+
+		listBoxType = {
+			name = "probe_polar_list"
+			position = { x = 220 y = 80 }
+			size = { x = 200 y = 100 }
+			itemTemplate = "probe_polar_item"
+			layout = "polar"
+			polarCenter = { x = 100 y = 90 }
+			polarInnerRadius = 70
+			polarRingItemCounts = { 6 }
+			polarStartAngle = 180
+			polarEndAngle = 360
+		}
+
+		guiButtonType = {
+			name = "probe_polar_item"
+			spriteType = "GFX_probe_panel"
+			position = { x = 0 y = 0 }
+			size = { x = 10 y = 10 }
+		}
+
+		iconType = {
+			name = "probe_invalid_scale"
+			spriteType = "GFX_probe_panel"
+			scaleMode = "invalid_mode"
+			visible = no
+			position = { x = 0 y = 0 }
+			size = { x = 1 y = 1 }
+		}
+
+		iconType = {
+			name = "probe_drag_track"
+			spriteType = "GFX_probe_panel"
+			position = { x = 20 y = 250 }
+			size = { x = 160 y = 10 }
+		}
+
+		iconType = {
+			name = "probe_drag_cursor"
+			spriteType = "GFX_probe_panel"
+			position = { x = 20 y = 250 }
+			size = { x = 10 y = 10 }
+			draggable = yes
+			dragAxis = "horizontal"
+			dragTrack = "probe_drag_track"
+			dragValueSource = "probe.drag.value"
+			dragMinimum = 0
+			dragMaximum = 10
+			dragSteps = 11
+			onPress = "probe_drag_press"
+			onDragStart = "probe_drag_start"
+			onDrag = "probe_drag"
+			onDragEnd = "probe_drag_end"
+		}
+	}
+}

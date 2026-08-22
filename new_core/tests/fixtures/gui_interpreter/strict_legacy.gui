@@ -1,0 +1,8 @@
+guiTypes = {
+	windowType = {
+		name = "strict_legacy_window"
+		position = { x = 0 y = 0 }
+		size = { x = 64 y = 64 }
+		legacyTypo = yes
+	}
+}

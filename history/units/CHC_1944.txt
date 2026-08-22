@@ -15,7 +15,7 @@ theatre = {
 			location = 7398	
 			regiment = { type = hq_brigade name = "山东军区" historical_model = 1 }	
 			regiment = { type = chc_gundam name = "特务团" historical_model = 1 }		
-			regiment = { type = bergsjaeger_brigade name = "教导第1团" historical_model = 3 }
+			regiment = { type = light_bergsjaeger name = "教导第1团" historical_model = 3 }
 			corps = {		
 				name = "滨海军区"	
 				location = 5278
@@ -24,7 +24,7 @@ theatre = {
 				regiment = { type = partisan_bergsjaeger name = "第6团" historical_model = 1 }	
 				regiment = { type = partisan_bergsjaeger name = "第13团" historical_model = 1 }
 				regiment = { type = partisan_bergsjaeger name = "第23团" historical_model = 1 }	
-			regiment = { type = bergsjaeger_brigade name = "警备团" historical_model = 1 }			
+			regiment = { type = light_bergsjaeger name = "警备团" historical_model = 1 }			
 				division= {			
 					name = "第一军分区"		
 					location = 5278
@@ -61,7 +61,7 @@ theatre = {
 				division= {			
 					name = "第一军分区"		
 					location = 5365
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
 				}
 				division= {			
@@ -73,7 +73,7 @@ theatre = {
 				division= {			
 					name = "第三军分区"		
 					location = 5305
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
 				}
 				division= {			
@@ -85,30 +85,30 @@ theatre = {
 				division= {			
 					name = "第五军分区"		
 					location = 5403
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
 				}	
 			}corps = {		
 				name = "鲁南军区"	
 				location = 5419
 				regiment = { type = hq_brigade name = "鲁南军区" historical_model = 1 }	
-			regiment = { type = bergsjaeger_brigade name = "警备团" historical_model = 1 }			
+			regiment = { type = light_bergsjaeger name = "警备团" historical_model = 1 }			
 				division= {			
 					name = "第一军分区"		
 					location = 5418
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
 				}		
 				division= {			
 					name = "第二军分区"		
 					location = 5419
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
 				}			
 				division= {			
 					name = "第三军分区"		
 					location = 5418
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
 				}
 			}
@@ -117,7 +117,7 @@ theatre = {
 				location = 5211
 				leader = 76315 # Xu Haidong
 				regiment = { type = hq_brigade name = "渤海军区" historical_model = 1 }	
-				regiment = { type = bergsjaeger_brigade name = "直属团" historical_model = 1 }
+				regiment = { type = light_bergsjaeger name = "直属团" historical_model = 1 }
 				division= {			
 					name = "第一军分区"		
 					location = 5243
@@ -133,7 +133,7 @@ theatre = {
 				division= {			
 					name = "第三军分区"		
 					location = 5178
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
 				}
 				division= {			
@@ -151,7 +151,7 @@ theatre = {
 				division= {				
 					name = "第六军分区"			
 					location = 5211
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }
 				}		
 			}
@@ -159,8 +159,8 @@ theatre = {
 				name = "胶东军区"	
 				location = 5181
 				regiment = { type = hq_brigade name = "胶东军区" historical_model = 1 }	
-				regiment = { type = bergsjaeger_brigade name = "第13团" historical_model = 1 }	
-				regiment = { type = bergsjaeger_brigade name = "第14团" historical_model = 1 }	
+				regiment = { type = light_bergsjaeger name = "第13团" historical_model = 1 }	
+				regiment = { type = light_bergsjaeger name = "第14团" historical_model = 1 }	
 				regiment = { type = partisan_bergsjaeger name = "第16团" historical_model = 1 }
 			regiment = { type = chc_gundam name = "教导第2团" historical_model = 3 }
 				division= {			
@@ -173,14 +173,14 @@ theatre = {
 					name = "北海军分区"		
 					location = 5180
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 				}
 	
 				division= {			
 					name = "西海军分区"		
 					location = 5145
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 				}
 				division= {			
 					name = "南海军分区"		
@@ -214,16 +214,16 @@ theatre = {
 				location = 4977
 				leader = 75022 # Zhang Zongxun
 				regiment = { type = hq_brigade name = "三五八旅兼第三军分区" historical_model = 0 }
-				regiment = { type = bergsjaeger_brigade name = "第8团" historical_model = 1 }	
-				regiment = { type = bergsjaeger_brigade name = "第17团" historical_model = 1 }
-				regiment = { type = bergsjaeger_brigade name = "第715团" historical_model = 1 }	
-				regiment = { type = bergsjaeger_brigade name = "第716团" historical_model = 1 }
+				regiment = { type = light_bergsjaeger name = "第8团" historical_model = 1 }	
+				regiment = { type = light_bergsjaeger name = "第17团" historical_model = 1 }
+				regiment = { type = light_bergsjaeger name = "第715团" historical_model = 1 }	
+				regiment = { type = light_bergsjaeger name = "第716团" historical_model = 1 }
 				regiment = { type = partisan_bergsjaeger name = "离石支队" historical_model = 0 }		
 				regiment = { type = partisan_bergsjaeger name = "临县支队" historical_model = 0 }		
 			division = {
 				name = "独立第一旅"
 				location = 5083
-				regiment = { type = bergsjaeger_brigade name = "第2团" experience = 40 historical_model = 1 }
+				regiment = { type = light_bergsjaeger name = "第2团" experience = 40 historical_model = 1 }
 				regiment = { type = partisan_bergsjaeger name = "第714团" experience = 40 historical_model = 1 }
 				regiment = { type = partisan_bergsjaeger name = "第32团" experience = 40 historical_model = 1 }
 			}
@@ -231,7 +231,7 @@ theatre = {
 				name = "独立第二旅兼第二军分区"
 				location = 5175
 				regiment = { type = partisan_bergsjaeger name = "偏清支队" experience = 40 historical_model = 1 }
-				regiment = { type = bergsjaeger_brigade name ="第36团 " experience = 40 historical_model = 1 }
+				regiment = { type = light_bergsjaeger name ="第36团 " experience = 40 historical_model = 1 }
 				regiment = { type = partisan_bergsjaeger name = "第9团" experience = 40 historical_model = 1 }
 			}
 				division= {			
@@ -243,7 +243,7 @@ theatre = {
 				division= {			
 					name = "第六军分区"		
 					location = 5083
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
 				}		
 				division= {			
@@ -256,15 +256,15 @@ theatre = {
 				division= {			
 					name = "塞北军分区"		
 					location = 7360
-					regiment = { type = bergsjaeger_brigade name = "第1团" experience = 40 historical_model = 1 }
-					regiment = { type = bergsjaeger_brigade name = "第2团" experience = 40 historical_model = 1 }
-					regiment = { type = bergsjaeger_brigade name = "第3团" experience = 40 historical_model = 1 }	
+					regiment = { type = light_bergsjaeger name = "第1团" experience = 40 historical_model = 1 }
+					regiment = { type = light_bergsjaeger name = "第2团" experience = 40 historical_model = 1 }
+					regiment = { type = light_bergsjaeger name = "第3团" experience = 40 historical_model = 1 }	
 				regiment = { type = partisan_bergsjaeger name = "雁北支队" historical_model = 1 }
 				}		
 				division= {			
 					name = "直属军分区"		
 					location = 5015
-					regiment = { type = bergsjaeger_brigade name = "第27团" experience = 40 historical_model = 1 }
+					regiment = { type = light_bergsjaeger name = "第27团" experience = 40 historical_model = 1 }
 					regiment = { type = partisan_bergsjaeger name = "兴岚支队" experience = 40 historical_model = 1 }	
 				}		
 				division = {
@@ -290,7 +290,7 @@ theatre = {
 				division= {			
 					name = "第一军分区"		
 					location = 5176
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
 				}		
 				division= {			
@@ -302,7 +302,7 @@ theatre = {
 				division= {			
 					name = "第三军分区"		
 					location = 5207
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
 				}		
 				division= {			
@@ -314,13 +314,13 @@ theatre = {
 				division= {			
 					name = "第五军分区"		
 					location = 5239
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
 				}		
 				division= {			
 					name = "第六军分区"		
 					location = 5272
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
 				}		
 				division= {			
@@ -332,7 +332,7 @@ theatre = {
 				division= {			
 					name = "第八军分区"		
 					location = 7418
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
 				}		
 			corps = {			
@@ -340,18 +340,18 @@ theatre = {
 				location = 5207
 				leader = 76308 # Chen Geng
 				regiment = { type = hq_brigade name = "三八六旅并太岳军区（纵队）" historical_model = 0 }	
-				regiment = { type = bergsjaeger_brigade name = "第771团" historical_model = 1 }	
-				regiment = { type = bergsjaeger_brigade name = "第772团" historical_model = 1 }
+				regiment = { type = light_bergsjaeger name = "第771团" historical_model = 1 }	
+				regiment = { type = light_bergsjaeger name = "第772团" historical_model = 1 }
 				division= {			
 					name = "第一军分区"		
 					location = 5207
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
 				}		
 				division= {			
 					name = "第二军分区"		
 					location = 5207	
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
 				}			
 				division= {			
@@ -363,13 +363,13 @@ theatre = {
 				division= {			
 					name = "第四军分区"		
 					location = 5176
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
 				}			
 				division= {			
 					name = "第五军分区"		
 					location = 5272
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
 				}		
 				division= {			
@@ -388,8 +388,8 @@ theatre = {
 				division= {			
 					name = "第一军分区"		
 					location = 5209
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }
+					regiment = { type = light_bergsjaeger historical_model = 0 }
+					regiment = { type = light_bergsjaeger historical_model = 0 }
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }
 				}		
 				division= {			
@@ -400,14 +400,14 @@ theatre = {
 				division= {			
 					name = "第三军分区"		
 					location = 5144	
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
 				}		
 				division= {			
 					name = "第四军分区"		
 					location = 5274
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }
+					regiment = { type = light_bergsjaeger historical_model = 0 }
 				}			
 				division= {			
 					name = "第五军分区"		
@@ -422,14 +422,14 @@ theatre = {
 				division= {			
 					name = "第七军分区"		
 					location = 5053
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }	
 				}		
 				division= {			
 					name = "第八军分区"		
 					location = 5086
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }	
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
@@ -438,14 +438,14 @@ theatre = {
 					name = "第九军分区"		
 					location = 4981
 					regiment = { type = cavalry_brigade historical_model = 0 }		
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }	
 				}		
 				division= {			
 					name = "第十军分区"		
 					location = 4981
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }	
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }	
@@ -454,7 +454,7 @@ theatre = {
 				division= {			
 					name = "第十一军分区"		
 					location = 5055
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }	
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }	
@@ -462,7 +462,7 @@ theatre = {
 				division= {			
 					name = "水东军分区"		
 					location = 5178
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
 				}		
 			}
@@ -509,14 +509,14 @@ theatre = {
 				division= {			
 					name = "第一军分区"		
 					location = 5053
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 				}
 				division= {			
 					name = "第十一军分区"		
 					location = 5175
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 				}	
 				division= {			
 					name = "第十二军分区"		
@@ -527,7 +527,7 @@ theatre = {
 				division= {
 					name = "第十三军分区"		
 					location = 5176
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }	
 					regiment = { type = cavalry_brigade historical_model = 0 }		
 				}
@@ -539,7 +539,7 @@ theatre = {
 				division= {			
 					name = "第一军分区"		
 					location = 5144
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
 				}		
 				division= {			
@@ -551,7 +551,7 @@ theatre = {
 				division= {			
 					name = "第三军分区"		
 					location = 5176
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }	
 					regiment = { type = cavalry_brigade historical_model = 0 }		
 				}		
@@ -569,7 +569,7 @@ theatre = {
 				division= {			
 					name = "第六军分区"		
 					location = 5209
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
 				}		
 				division= {			
@@ -587,7 +587,7 @@ theatre = {
 				division= {			
 					name = "第九军分区"		
 					location = 5209
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }	
 					regiment = { type = cavalry_brigade historical_model = 0 }		
 				}		
@@ -605,7 +605,7 @@ theatre = {
 				division= {			
 					name = "第十四军分区"		
 					location = 4886
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }		
 				}
 				division= {			
@@ -623,7 +623,7 @@ theatre = {
 				division= {
 					name = "第十七军分区"		
 					location = 4981
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }		
+					regiment = { type = light_bergsjaeger historical_model = 0 }		
 					regiment = { type = partisan_bergsjaeger historical_model = 0 }	
 					regiment = { type = cavalry_brigade historical_model = 0 }		
 				}
@@ -649,9 +649,9 @@ theatre = {
 				division= {
 				name = "新四军第1师"
 				location = 5436
-				regiment = { type = bergsjaeger_brigade name = "第1步兵旅" historical_model = 1 }
-				regiment = { type = bergsjaeger_brigade name = "第2步兵旅" historical_model = 2 	}
-				regiment = { type = bergsjaeger_brigade name = "第3步兵旅" historical_model = 3 	}
+				regiment = { type = light_bergsjaeger name = "第1步兵旅" historical_model = 1 }
+				regiment = { type = light_bergsjaeger name = "第2步兵旅" historical_model = 2 	}
+				regiment = { type = light_bergsjaeger name = "第3步兵旅" historical_model = 3 	}
 				regiment = { type = partisan_bergsjaeger name = "第4步兵旅" historical_model = 4 	}
 			}
 				division= {
@@ -682,7 +682,7 @@ theatre = {
 				name = "第3支队"
 				location = 5452
 		
-				regiment = { type = bergsjaeger_brigade name = "新四军第5师" historical_model = 1 }
+				regiment = { type = light_bergsjaeger name = "新四军第5师" historical_model = 1 }
 		
 				regiment = { type = partisan_bergsjaeger name = "新四军第5师" historical_model = 2 }
 		
@@ -695,7 +695,7 @@ theatre = {
 				division= {
 				name = "新四军第6师"
 				location = 5452
-					regiment = { type = bergsjaeger_brigade name = "第1旅" historical_model = 1 }		
+					regiment = { type = light_bergsjaeger name = "第1旅" historical_model = 1 }		
 					regiment = { type = partisan_bergsjaeger name = "第2旅" historical_model = 2 }
 				}
 				division= {
@@ -714,9 +714,9 @@ army = {
 				name = "三八五旅"	
 				location = 7405	
 				leader = 75870 # Wang Hongkun
-				regiment = { type = bergsjaeger_brigade name = "第4团" historical_model = 1 }	
-				regiment = { type = bergsjaeger_brigade name = "第5团" historical_model = 1 }	
-				regiment = { type = bergsjaeger_brigade name = "第770团" historical_model = 1 }
+				regiment = { type = light_bergsjaeger name = "第4团" historical_model = 1 }	
+				regiment = { type = light_bergsjaeger name = "第5团" historical_model = 1 }	
+				regiment = { type = light_bergsjaeger name = "第770团" historical_model = 1 }
 				division = {
 					name = "中国人民抗日军政大学总校"
 					location = 7417
@@ -738,9 +738,9 @@ army = {
 				leader = 75025 # Chen Bojun
 				regiment = { type = hq_brigade name = "三五九旅兼绥德警备司令部" historical_model = 0 }	
 				regiment = { type = chc_gundam name = "特务团" experience = 40 historical_model = 1 }
-				regiment = { type = bergsjaeger_brigade name = "第717团" historical_model = 0 }	
-				regiment = { type = bergsjaeger_brigade name = "第718团" historical_model = 0 }	
-				regiment = { type = bergsjaeger_brigade name = "第719团" historical_model = 0 }	
+				regiment = { type = light_bergsjaeger name = "第717团" historical_model = 0 }	
+				regiment = { type = light_bergsjaeger name = "第718团" historical_model = 0 }	
+				regiment = { type = light_bergsjaeger name = "第719团" historical_model = 0 }	
 				regiment = { type = partisan_bergsjaeger name = "第四支队" historical_model = 2 }
 			division = {
 				name = "警备第一旅"

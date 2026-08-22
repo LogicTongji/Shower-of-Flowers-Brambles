@@ -19,13 +19,13 @@ partisan_bergsjaeger = {
 	#Misc Abilities
 	maximum_speed = 5.50
 	transport_weight = 5.00
-	supply_consumption = 0.0
+	supply_consumption = 0.00
 	fuel_consumption = 0.00
 	radio_strength = 1
 
 	#Defensive Abilities
-	defensiveness = 4.28
-	toughness = 5.67
+	defensiveness = 3.00
+	toughness = 1.50
 	softness = 1.00
 	air_defence = 1.00
 
@@ -34,7 +34,7 @@ partisan_bergsjaeger = {
 	soft_attack = 1.05
 	hard_attack = 0.00
 	air_attack = 0.00
-	ap_attack = 0.5
+	ap_attack = 0.00
 
    	amphibious = { attack = 0.10 movement = 0.15 }
    	river = { attack = 0.10 movement = 0.15 }

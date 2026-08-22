@@ -5,7 +5,7 @@ local GuiActionBridge = require('gui_action_bridge')
 local GuiDataBridge = require('gui_data_bridge')
 local GuiPersistence = require('scripted_gui_persistence')
 
-P.Version = 8
+P.Version = 9
 P.RegionNames = {}
 P.LastDay = nil
 P.LastSnapshot = nil
@@ -31,44 +31,7 @@ P.SessionGeneration = 0
 P.PersistenceAckTimeoutTicks = 8
 P.LeaderAssignments = {}
 P.NextAssignmentOrder = 1
-P.LeaderTypes = {
-	MILITARY = "military",
-	ADMINISTRATIVE = "administrative"
-}
-
-P.Leaders = {
-	{
-		id = 1,
-		leaderId = "li_zongren",
-		leaderType = P.LeaderTypes.MILITARY,
-		role = P.LeaderTypes.MILITARY,
-		textKey = "WARMAP_LEADER_LIST_LI_ZONGREN",
-		portrait = "GFX_warmap_leader_li_zongren",
-		nameKey = "WARMAP_LEADER_LI_ZONGREN",
-		descriptionKey = "WARMAP_LEADER_LI_ZONGREN_DESC"
-	},
-	{
-		id = 2,
-		leaderId = "ju_zheng",
-		leaderType = P.LeaderTypes.ADMINISTRATIVE,
-		role = P.LeaderTypes.ADMINISTRATIVE,
-		textKey = "WARMAP_LEADER_LIST_JU_ZHENG",
-		portrait = "GFX_warmap_officer_ju_zheng",
-		nameKey = "WARMAP_LEADER_JU_ZHENG",
-		descriptionKey = "WARMAP_LEADER_JU_ZHENG_DESC"
-	}
-}
-
-P.LeaderButtonSprites = {
-	CHI = "GFX_warmap_leader_button_chi",
-	CHC = "GFX_warmap_leader_button_chc",
-	JAP = "GFX_warmap_leader_button_jap"
-}
-
-P.LeaderEnabledConditions = {
-	military = "selectedregion.source == combat && regions.{selectedregion.id}.combatmilitaryeligible || selectedregion.source == map && regions.{selectedregion.id}.mapmilitaryeligible",
-	administrative = "selectedregion.source == combat && regions.{selectedregion.id}.combatadministrativeeligible || selectedregion.source == map && regions.{selectedregion.id}.mapadministrativeeligible"
-}
+P.PersistedAssignmentSlots = 0
 
 P.RegionDisplayNames = {
 	guangdong_region = "广东省",
@@ -312,25 +275,50 @@ end
 local function GetLeader(payload)
 	payload = payload or {}
 	local parameters = payload.parameters or {}
-	local leaderId = tostring(
-		parameters.leaderid
-		or parameters.leaderId
-		or ""
-	)
-	local numericId = tonumber(
+	local numericId = math.floor(tonumber(
 		payload.listItemId
 		or payload.itemId
 		or parameters.id
-	)
-
-	for _, leader in ipairs(P.Leaders) do
-		if leader.leaderId == leaderId
-			or leader.id == numericId then
-			return leader
-		end
+		or 0
+	) or 0)
+	if numericId <= 0 then
+		return nil
 	end
+	local assignment = P.LeaderAssignments[numericId]
+	local leaderType = tostring(
+		parameters.leadertype
+		or parameters.role
+		or (assignment and assignment.leaderType)
+		or ""
+	)
+	if leaderType ~= "military"
+		and leaderType ~= "administrative" then
+		return nil
+	end
+	return {
+		id = numericId,
+		leaderType = leaderType,
+		role = leaderType
+	}
+end
 
-	return nil
+local function SortedAssignmentIds()
+	local ids = {}
+	for leaderId in pairs(P.LeaderAssignments) do
+		table.insert(ids, leaderId)
+	end
+	table.sort(ids)
+	return ids
+end
+
+local function LeaderTypeCode(leaderType)
+	return leaderType == "military" and 1
+		or leaderType == "administrative" and 2 or 0
+end
+
+local function LeaderTypeFromCode(code)
+	return code == 1 and "military"
+		or code == 2 and "administrative" or nil
 end
 
 local function AssignLeader(payload)
@@ -456,10 +444,6 @@ function P.BuildSnapshot()
 				revision = state.date or P.Revision,
 				items = {}
 			},
-			leader_candidate_list = {
-				revision = P.Revision,
-				items = {}
-			},
 			assigned_leader_list = {
 				revision = P.Revision,
 				items = {}
@@ -489,12 +473,6 @@ function P.BuildSnapshot()
 		and P.PendingPersistenceRevision.ticks or 0
 	snapshot.values["state.persistenceobservedday"] =
 		P.LastObservedGameDay or -1
-	for _, leader in ipairs(P.Leaders) do
-		local assignment = P.LeaderAssignments[leader.id]
-		snapshot.values[
-			"state.leader" .. tostring(leader.id) .. "region"
-		] = assignment and assignment.regionId or 0
-	end
 	snapshot.values["state.windowopen"] = P.WindowOpen
 	snapshot.values["selectedregion.id"] = P.SelectedRegionId
 	snapshot.values["selectedregion.source"] = P.SelectedRegionSource
@@ -605,41 +583,15 @@ function P.BuildSnapshot()
 		end
 	end
 
-	for _, leader in ipairs(P.Leaders) do
-		local leaderType = leader.leaderType or leader.role
-		local buttonSprite = P.LeaderButtonSprites[viewerTag]
-			or P.LeaderButtonSprites.CHI
-		table.insert(
-			snapshot.lists.leader_candidate_list.items,
-			{
-				id = leader.id,
-				text = leader.textKey,
-				textkey = leader.textKey,
-				leaderid = leader.leaderId,
-				role = leaderType,
-				leadertype = leaderType,
-				buttonsprite = buttonSprite,
-				enabledwhen = P.LeaderEnabledConditions[leaderType],
-				portrait = leader.portrait,
-				namekey = leader.nameKey,
-				descriptionkey = leader.descriptionKey
-			}
-		)
-
-		local assignment = P.LeaderAssignments[leader.id]
+	for _, leaderId in ipairs(SortedAssignmentIds()) do
+		local assignment = P.LeaderAssignments[leaderId]
 		if assignment then
 			table.insert(
 				snapshot.lists.assigned_leader_list.items,
 				{
-					id = leader.id,
-					text = leader.textKey,
-					textkey = leader.textKey,
-					leaderid = leader.leaderId,
+					id = leaderId,
 					role = assignment.leaderType,
 					leadertype = assignment.leaderType,
-					portrait = leader.portrait,
-					namekey = leader.nameKey,
-					descriptionkey = leader.descriptionKey,
 					regionid = assignment.regionId,
 					assignmentorder = assignment.assignmentOrder,
 					x = assignment.x or -1,
@@ -873,15 +825,39 @@ function P.RestoreState(context)
 		or sourceCode == 2 and "map" or "none"
 	P.LeaderAssignments = {}
 	P.NextAssignmentOrder = 1
-	for _, leader in ipairs(P.Leaders) do
-		local prefix = "leader_" .. tostring(leader.id) .. "_"
+	local assignmentCount = math.max(0, math.min(256, math.floor(
+		GuiPersistence.ReadNumber(
+			context,
+			P.PersistenceNamespace,
+			"leader_assignment_count",
+			0
+		)
+	)))
+	P.PersistedAssignmentSlots = assignmentCount
+	for slot = 1, assignmentCount do
+		local prefix = "leader_slot_" .. tostring(slot) .. "_"
+		local leaderId = math.floor(GuiPersistence.ReadNumber(
+			context,
+			P.PersistenceNamespace,
+			prefix .. "id",
+			0
+		))
+		local leaderType = LeaderTypeFromCode(math.floor(
+			GuiPersistence.ReadNumber(
+				context,
+				P.PersistenceNamespace,
+				prefix .. "type",
+				0
+			)
+		))
 		local regionId = math.floor(GuiPersistence.ReadNumber(
 			context,
 			P.PersistenceNamespace,
 			prefix .. "region",
 			0
 		))
-		if regionId > 0 and regionId <= #P.RegionNames then
+		if leaderId > 0 and leaderType
+			and regionId > 0 and regionId <= #P.RegionNames then
 			local assignmentOrder = math.max(1, math.floor(
 				GuiPersistence.ReadNumber(
 					context,
@@ -890,9 +866,8 @@ function P.RestoreState(context)
 					P.NextAssignmentOrder
 				)
 			))
-			P.LeaderAssignments[leader.id] = {
-				leaderId = leader.leaderId,
-				leaderType = leader.leaderType or leader.role,
+			P.LeaderAssignments[leaderId] = {
+				leaderType = leaderType,
 				regionId = regionId,
 				assignmentOrder = assignmentOrder,
 				x = GuiPersistence.ReadNumber(
@@ -965,9 +940,35 @@ function P.PersistState(context)
 		"selected_source",
 		sourceCode
 	) and success
-	for _, leader in ipairs(P.Leaders) do
-		local assignment = P.LeaderAssignments[leader.id]
-		local prefix = "leader_" .. tostring(leader.id) .. "_"
+	local assignmentIds = SortedAssignmentIds()
+	local assignmentCount = #assignmentIds
+	success = GuiPersistence.WriteNumber(
+		context,
+		P.PersistenceNamespace,
+		"leader_assignment_count",
+		assignmentCount
+	) and success
+	local slotsToWrite = math.max(
+		assignmentCount,
+		P.PersistedAssignmentSlots
+	)
+	for slot = 1, slotsToWrite do
+		local leaderId = assignmentIds[slot]
+		local assignment = leaderId
+			and P.LeaderAssignments[leaderId] or nil
+		local prefix = "leader_slot_" .. tostring(slot) .. "_"
+		success = GuiPersistence.WriteNumber(
+			context,
+			P.PersistenceNamespace,
+			prefix .. "id",
+			leaderId or 0
+		) and success
+		success = GuiPersistence.WriteNumber(
+			context,
+			P.PersistenceNamespace,
+			prefix .. "type",
+			assignment and LeaderTypeCode(assignment.leaderType) or 0
+		) and success
 		success = GuiPersistence.WriteNumber(
 			context,
 			P.PersistenceNamespace,
@@ -1011,6 +1012,7 @@ function P.PersistState(context)
 			next = nextRevision,
 			ticks = 0
 		}
+		P.PersistedAssignmentSlots = assignmentCount
 		P.PersistenceDirty = false
 	end
 	P.PersistenceAvailable = success
@@ -1055,6 +1057,7 @@ function P.OnPublisherAcquired(context)
 	P.PendingProfileToken = nil
 	P.PendingProfileTicks = 0
 	P.PersistenceDirty = false
+	P.PersistedAssignmentSlots = 0
 	P.RuntimeContext = context
 	P.LastDay = nil
 	P.LastSnapshot = nil

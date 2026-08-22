@@ -1932,5 +1932,26 @@ spriteType = {
 	  norefcount = yes
 }
 
+spriteType = {
+	norefcount = yes
+	  name = "GFX_counter_light_bergsjaeger"
+	  texturefile = "gfx/mapitems/counters/light_bergsjaeger.dds"
+	  noOfFrames = 1
+	  norefcount = yes
+}
+spriteType = {
+	norefcount = yes
+	  name = "GFX_small_counter_light_bergsjaeger"
+	  texturefile = "gfx/mapitems/smallcounters/light_bergsjaeger.dds"
+	  noOfFrames = 1
+	  norefcount = yes
+}
+spriteType = {
+	norefcount = yes
+	  name = "GFX_map_counter_light_bergsjaeger"
+	  texturefile = "gfx/mapitems/mapcounters/light_bergsjaeger.dds"
+	  noOfFrames = 1
+	  norefcount = yes
+}
 
 }

@@ -1,0 +1,13 @@
+guiData = {
+	bridge.base.label = "base data"
+
+	list = {
+		name = "base_catalog"
+		revision = 3
+		item = {
+			id = 7
+			text = "base item"
+			tag = "TEST"
+		}
+	}
+}

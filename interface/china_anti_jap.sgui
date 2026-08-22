@@ -4,6 +4,30 @@ guiTypes = {
 		position = { x = 0 y = 0 }
 		size = { x = 1600 y = 800 }
 		fullScreen = no
+		styleDefaults = {
+			frameZOrder = -1000
+			lineColor = { 0.04 0.25 0.70 1.0 }
+			lineWidth = 3
+			tooltipColor = { 0.0 0.0 0.0 0.76 }
+			tooltipPadding = 12
+			tooltipSearchStep = 12
+			minimumThumbSize = 18
+			disabledBrightness = 0.588235
+			disabledOpacity = 0.588235
+		}
+
+		dataValueType = {
+			name = "leaderbuttons.CHI"
+			value = "GFX_warmap_leader_button_chi"
+		}
+		dataValueType = {
+			name = "leaderbuttons.CHC"
+			value = "GFX_warmap_leader_button_chc"
+		}
+		dataValueType = {
+			name = "leaderbuttons.JAP"
+			value = "GFX_warmap_leader_button_jap"
+		}
 
 		guiButtonType = {
 			name = "china_war_launcher_chi"
@@ -44,7 +68,6 @@ guiTypes = {
 		windowType = {
 			name = "china_anti_jap_panel"
 			borderSprite = "GFX_china_war_border"
-			frameZOrder = -1000
 			position = { x = 0 y = 0 }
 			size = { x = 1600 y = 800 }
 			moveable = yes
@@ -125,6 +148,7 @@ guiTypes = {
 		markerLayerType = {
 			name = "china_war_leader_markers"
 			dataSource = "assigned_leader_list"
+			catalogSource = "leader_candidate_list"
 			mapWidget = "china_region_map"
 			frameSprite = "GFX_warmap_leader_panel"
 			portraitSource = "item.portrait"
@@ -145,10 +169,6 @@ guiTypes = {
 			tooltipSize = { x = 300 y = 150 }
 			tooltipPlacement = "right"
 			avoidTooltipOverlap = yes
-			tooltipPadding = 12
-			tooltipColor = { 0.0 0.0 0.0 0.76 }
-			lineColor = { 0.04 0.25 0.70 1.0 }
-			lineWidth = 3
 			font = "pixel_china"
 			fontSize = 15
 			lineSpacing = 4
@@ -468,6 +488,8 @@ guiTypes = {
 			size = { x = 300 y = 117 }
 			itemTemplate = "leader_candidate_button"
 			scrollbarType = "leader_candidate_scrollbar"
+			itemFilterField = "tag"
+			itemFilterValueSource = "state.viewertag"
 			disableItemsInList = "assigned_leader_list"
 			disableMatchingField = "leadertype"
 			disableFilterField = "regionid"
@@ -486,8 +508,8 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "leader_candidate_button"
-			spriteSource = "item.buttonsprite"
-			pressedSpriteSource = "item.buttonsprite"
+			spriteSource = "leaderbuttons.{state.viewertag}"
+			pressedSpriteSource = "leaderbuttons.{state.viewertag}"
 			onClick = "assign_war_map_leader"
 			enabledWhen = "state.visible && state.active && selectedregion.id != 0"
 			position = { x = 0 y = 0 }

@@ -1,0 +1,25 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_diagnostic_sprite"
+		texturefile = "diagnostic.png"
+		textureFil = "misspelled.png"
+		noOfFrames = 0
+		frameLayout = "diagonal"
+		animation = {
+			mode = "reverse"
+			fps = 0
+			frameTim = 25
+		}
+		norefcount = perhaps
+		loadType = "INGAME"
+	}
+
+	effectType = {
+		name = "GFX_invalid_effect"
+		effect = "external_shader"
+		minimum = 0.9
+		maximum = 0.1
+		speed = -1
+		effectFil = "unsafe.fx"
+	}
+}

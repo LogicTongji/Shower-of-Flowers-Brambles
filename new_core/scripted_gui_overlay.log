@@ -1,0 +1,385 @@
+[20:3:17.704][thread=16904] Scripted GUI hook worker started
+[20:3:17.706][thread=16904] HOI3 engine frame callsite probes installed
+[20:3:17.706][thread=16904] HOI3 Direct3DCreate9 import hooked
+[20:3:17.706][thread=16904] Lua lifecycle initialized from publisher activity: state=frontend
+[20:3:17.706][thread=16904] D3D9 and Lua 5.1 hooks installed
+[20:3:18.847][thread=29984] HOI3 IDirect3D9::CreateDevice hooked
+[20:3:18.966][thread=29984] HOI3 actual D3D9 device hooked
+[20:3:18.966][thread=29984] HOI3 D3D9 swap-chain Present hooked
+[20:3:19.84][thread=29984] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[20:3:19.85][thread=29984] D3D9 hook heartbeat: EndScene=0 (+0), Present=0 (+0), SwapChainPresent=0 (+0), EngineCallsites=[0=0 (+0), 1=0 (+0), 2=0 (+0), 3=0 (+0)], ActiveVTableOwned=yes
+[20:3:19.85][thread=29984] Lua 5.1 state attached to ScriptedGuiNative
+[20:3:19.800][thread=29984] HOI3 actual D3D9 device hooked
+[20:3:19.801][thread=29984] HOI3 D3D9 presentation device selected
+[20:3:19.801][thread=29984] HOI3 window procedure hooked
+[20:3:21.192][thread=29984] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\arrows.gfx: line 11: expected '=' inside block
+[20:3:21.192][thread=29984] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\chatfonts.gfx: line 9: expected '=' inside block
+[20:3:21.192][thread=29984] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\combat.gui: widget 'combat_terrain' has unsupported scaleMode '0.5'; using stretch
+[20:3:21.192][thread=29984] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\core.gfx: line 734: expected '=' inside block
+[20:3:21.192][thread=29984] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_espionage.gui: widget 'photo' has unsupported scaleMode '0.75'; using stretch
+[20:3:21.192][thread=29984] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_politics.gui: widget 'political_popularity_chart' has unsupported scaleMode '0.5'; using stretch
+[20:3:21.192][thread=29984] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_politics.gui: widget 'country_icon' has unsupported scaleMode '0.5'; using stretch
+[20:3:21.193][thread=29984] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_technology.gui: widget 'photo' has unsupported scaleMode '0.46'; using stretch
+[20:3:21.193][thread=29984] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_technology.gui: widget 'photo' has unsupported scaleMode '0.46'; using stretch
+[20:3:21.193][thread=29984] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\eu3dialog.gfx: line 180: expected property name inside block
+[20:3:21.193][thread=29984] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[20:3:21.193][thread=29984] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[20:3:21.193][thread=29984] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[20:3:21.193][thread=29984] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'leader_types' has unsupported scaleMode '0.5'; using stretch
+[20:3:21.193][thread=29984] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'leader_photo' has unsupported scaleMode '1.0'; using stretch
+[20:3:21.194][thread=29984] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'selected_photo' has unsupported scaleMode '1.7'; using stretch
+[20:3:21.194][thread=29984] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[20:3:21.194][thread=29984] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[20:3:21.194][thread=29984] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[20:3:22.356][thread=29984] D3D9 Scripted GUI host initialized
+[20:3:22.358][thread=29984] GUI session visibility: id=china_anti_jap, open=true, visible=false, state.visible=false, state.active=false, viewer=, persistence=unavailable, persistence_key=, persistence_error=, session=, memory_revision=, stored_revision=, pending_revision=, pending_ticks=, observed_day=, lifecycle=frontend, lifecycle_generation=1, lifecycle_player=---
+[20:3:22.358][thread=29984] GUI session visibility: id=parliament, open=false, visible=false, state.visible=true, state.active=true, viewer=, persistence=unavailable, persistence_key=, persistence_error=, session=, memory_revision=, stored_revision=, pending_revision=, pending_ticks=, observed_day=, lifecycle=frontend, lifecycle_generation=1, lifecycle_player=---
+[20:10:42.842][thread=29984] HOI3 active D3D9 device vtable hooks refreshed
+[20:10:42.842][thread=29984] D3D9 hook heartbeat: EndScene=2 (+2), Present=1 (+1), SwapChainPresent=0 (+0), EngineCallsites=[0=1 (+1), 1=0 (+0), 2=0 (+0), 3=0 (+0)], ActiveVTableOwned=yes
+[20:10:43.154][thread=29984] HOI3 queried D3D9 device interface hooked
+[20:10:43.155][thread=29984] HOI3 queried D3D9 device interface hooked
+[20:10:43.342][thread=29984] HOI3 lifecycle changed by read-only player tag: player=CHI, state=gameplay, generation=2
+[20:10:51.164][thread=27972] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[20:10:51.164][thread=27972] HOI3 active D3D9 device vtable hooks refreshed
+[20:10:51.164][thread=27972] Lua 5.1 state attached to ScriptedGuiNative
+[20:10:51.190][thread=3152] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[20:10:51.190][thread=3152] Lua 5.1 state attached to ScriptedGuiNative
+[20:10:58.199][thread=29984] HOI3 active D3D9 device vtable hooks refreshed
+[20:10:58.200][thread=28276] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[20:10:58.201][thread=28276] Lua 5.1 state attached to ScriptedGuiNative
+[20:10:58.293][thread=24848] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[20:10:58.293][thread=24848] Lua 5.1 state attached to ScriptedGuiNative
+[20:10:58.318][thread=9044] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[20:10:58.318][thread=9044] Lua 5.1 state attached to ScriptedGuiNative
+[20:10:58.342][thread=10388] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[20:10:58.343][thread=10388] Lua 5.1 state attached to ScriptedGuiNative
+[20:10:58.368][thread=25496] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[20:10:58.369][thread=25496] Lua 5.1 state attached to ScriptedGuiNative
+[20:10:58.395][thread=10900] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[20:10:58.396][thread=10900] Lua 5.1 state attached to ScriptedGuiNative
+[20:10:58.421][thread=14180] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[20:10:58.421][thread=14180] Lua 5.1 state attached to ScriptedGuiNative
+[20:10:58.446][thread=7144] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[20:10:58.446][thread=7144] Lua 5.1 state attached to ScriptedGuiNative
+[20:10:58.472][thread=9828] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[20:10:58.472][thread=9828] Lua 5.1 state attached to ScriptedGuiNative
+[20:10:58.755][thread=23680] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[20:10:58.755][thread=23680] Lua 5.1 state attached to ScriptedGuiNative
+[20:10:58.836][thread=22796] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[20:10:58.836][thread=3152] Lua GUI channel publisher reserved: channel=china_anti_jap, state=3, priority=0
+[20:10:58.836][thread=22796] Lua 5.1 state attached to ScriptedGuiNative
+[20:10:58.858][thread=3152] First Lua GUI snapshot decode started: channel=china_anti_jap
+[20:10:58.861][thread=3152] First Lua GUI snapshot state: channel=china_anti_jap, visible=true, active=true, viewer=CHI, values=552, lists=2
+[20:10:58.861][thread=3152] First Lua GUI snapshot received: channel=china_anti_jap, revision=1
+[20:10:58.863][thread=32628] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[20:10:58.863][thread=32628] Lua 5.1 state attached to ScriptedGuiNative
+[20:10:58.888][thread=3872] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[20:10:58.888][thread=3872] Lua 5.1 state attached to ScriptedGuiNative
+[20:10:58.915][thread=2816] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[20:10:58.915][thread=2816] Lua 5.1 state attached to ScriptedGuiNative
+[20:10:58.941][thread=30236] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[20:10:58.941][thread=30236] Lua 5.1 state attached to ScriptedGuiNative
+[20:10:58.966][thread=6976] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[20:10:58.967][thread=6976] Lua 5.1 state attached to ScriptedGuiNative
+[20:10:59.314][thread=29984] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHI, persistence=available, persistence_key=CHI:612993, persistence_error=, session=CHI:612993, memory_revision=0, stored_revision=0, pending_revision=0, pending_ticks=0, observed_day=709732, lifecycle=gameplay, lifecycle_generation=2, lifecycle_player=CHI
+[20:10:59.325][thread=29984] First GUI session draw: id=china_anti_jap, widgets=44, commands=1
+[20:10:59.843][thread=11312] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[20:10:59.844][thread=11312] Lua 5.1 state attached to ScriptedGuiNative
+[20:10:59.868][thread=12764] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[20:10:59.868][thread=12764] Lua 5.1 state attached to ScriptedGuiNative
+[20:11:1.999][thread=29984] GUI pointer down: plugin=china_anti_jap, window=(928,226), canvas=(1506,132), target=china_war_launcher_chi
+[20:11:3.313][thread=29984] GUI pointer down: plugin=china_anti_jap, window=(443,149), canvas=(682,1), target=china_anti_jap_panel
+[20:11:7.687][thread=29984] GUI pointer down: plugin=china_anti_jap, window=(914,313), canvas=(1552,27), target=china_war_close
+[20:11:8.534][thread=29984] GUI pointer down: plugin=china_anti_jap, window=(939,223), canvas=(1525,127), target=china_war_launcher_chi
+[20:11:9.940][thread=29984] GUI pointer down: plugin=china_anti_jap, window=(918,310), canvas=(1559,22), target=china_war_close
+[20:11:10.961][thread=29984] GUI pointer down: plugin=china_anti_jap, window=(941,227), canvas=(1528,134), target=china_war_launcher_chi
+[20:11:12.36][thread=29984] GUI pointer down: plugin=china_anti_jap, window=(500,299), canvas=(849,3), target=china_anti_jap_panel
+[20:11:13.358][thread=29984] GUI pointer down: plugin=china_anti_jap, window=(142,397), canvas=(118,380), target=combat_region_button
+[20:11:14.525][thread=29984] GUI pointer down: plugin=china_anti_jap, window=(200,544), canvas=(217,630), target=leader_candidate_button
+[20:11:15.759][thread=29984] GUI pointer down: plugin=china_anti_jap, window=(666,502), canvas=(1008,558), target=china_region_map
+[20:11:19.308][thread=29984] GUI pointer down: plugin=china_anti_jap, window=(990,182), canvas=(1559,15), target=china_anti_jap_panel
+[20:11:20.225][thread=29984] GUI pointer down: plugin=china_anti_jap, window=(986,188), canvas=(1552,25), target=china_war_close
+[20:11:22.328][thread=29984] HOI3 active D3D9 device vtable hooks refreshed
+[20:11:22.329][thread=29984] D3D9 hook heartbeat: EndScene=947 (+945), Present=406 (+405), SwapChainPresent=0 (+0), EngineCallsites=[0=1 (+0), 1=0 (+0), 2=0 (+0), 3=0 (+0)], ActiveVTableOwned=yes
+[20:11:22.396][thread=24660] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[20:11:22.396][thread=24660] Lua 5.1 state attached to ScriptedGuiNative
+[20:11:22.399][thread=10388] Lua GUI channel publisher preempted: channel=china_anti_jap, previousState=3, previousPriority=0, state=7, priority=0
+[20:11:22.431][thread=7516] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[20:11:22.431][thread=7516] Lua 5.1 state attached to ScriptedGuiNative
+[20:11:22.465][thread=3756] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[20:11:22.465][thread=3756] Lua 5.1 state attached to ScriptedGuiNative
+[20:11:22.519][thread=29984] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHI, persistence=available, persistence_key=CHI:612993, persistence_error=, session=CHI:612993, memory_revision=0, stored_revision=0, pending_revision=1, pending_ticks=0, observed_day=709732, lifecycle=gameplay, lifecycle_generation=2, lifecycle_player=CHI
+[20:11:23.445][thread=32008] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[20:11:23.445][thread=32008] Lua 5.1 state attached to ScriptedGuiNative
+[20:11:23.491][thread=27736] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[20:11:23.491][thread=27736] Lua 5.1 state attached to ScriptedGuiNative
+[20:11:24.470][thread=6284] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[20:11:24.471][thread=6284] Lua 5.1 state attached to ScriptedGuiNative
+[20:11:24.495][thread=3780] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[20:11:24.496][thread=3780] Lua 5.1 state attached to ScriptedGuiNative
+[20:11:24.530][thread=4708] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[20:11:24.531][thread=4708] Lua 5.1 state attached to ScriptedGuiNative
+[20:11:24.634][thread=29984] GUI pointer down: plugin=china_anti_jap, window=(935,232), canvas=(1518,142), target=china_war_launcher_chi
+[20:11:25.639][thread=3980] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[20:11:25.640][thread=3980] Lua 5.1 state attached to ScriptedGuiNative
+[20:11:25.666][thread=29984] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
+[20:11:25.675][thread=16564] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[20:11:25.675][thread=16564] Lua 5.1 state attached to ScriptedGuiNative
+[20:11:26.657][thread=10900] HOI3 active D3D9 device vtable hooks refreshed
+[20:11:26.683][thread=29984] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:310: table index is nil
+[20:11:27.570][thread=13100] Lua chunk loaded: script/autoexec.lua [Scripted GUI bootstrap found]
+[20:11:27.571][thread=13100] Lua 5.1 state attached to ScriptedGuiNative
+[20:11:28.615][thread=27972] HOI3 active D3D9 device vtable hooks refreshed
+[20:11:28.616][thread=27972] Lua pcall failed: [string "script/ai_intelligence_minister.lua"]:309: table index is nil
+[20:11:29.834][thread=29984] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHI, persistence=available, persistence_key=CHI:612993, persistence_error=, session=CHI:612993, memory_revision=1, stored_revision=1, pending_revision=2, pending_ticks=0, observed_day=709732, lifecycle=gameplay, lifecycle_generation=2, lifecycle_player=CHI
+[20:11:30.63][thread=29984] GUI pointer down: plugin=china_anti_jap, window=(762,175), canvas=(1171,3), target=china_anti_jap_panel
+[20:11:34.600][thread=29984] GUI pointer down: plugin=china_anti_jap, window=(921,183), canvas=(1564,27), target=china_war_close
+[20:11:35.720][thread=29984] GUI pointer down: plugin=china_anti_jap, window=(509,328), canvas=(794,305), target=none
+[20:11:36.184][thread=29984] GUI pointer down: plugin=china_anti_jap, window=(522,336), canvas=(816,319), target=none
+[20:11:36.679][thread=29984] GUI pointer down: plugin=china_anti_jap, window=(530,430), canvas=(830,478), target=none
+[20:11:37.258][thread=29984] GUI pointer down: plugin=china_anti_jap, window=(540,460), canvas=(847,529), target=none
+[20:11:49.998][thread=29984] GUI pointer down: plugin=china_anti_jap, window=(618,546), canvas=(980,676), target=none
+[20:11:50.795][thread=29984] GUI pointer down: plugin=china_anti_jap, window=(528,463), canvas=(827,535), target=none
+[20:11:58.492][thread=29984] GUI pointer down: plugin=china_anti_jap, window=(440,399), canvas=(677,426), target=none
+[20:12:1.463][thread=29984] GUI pointer down: plugin=china_anti_jap, window=(535,588), canvas=(839,747), target=none
+[20:12:2.317][thread=29984] GUI pointer down: plugin=china_anti_jap, window=(575,476), canvas=(907,557), target=none
+[20:42:38.107][thread=9504] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\arrows.gfx: line 11: expected '=' inside block
+[20:42:38.107][thread=9504] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\chatfonts.gfx: line 9: expected '=' inside block
+[20:42:38.107][thread=9504] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\combat.gui: widget 'combat_terrain' has unsupported scaleMode '0.5'; using stretch
+[20:42:38.107][thread=9504] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\core.gfx: line 734: expected '=' inside block
+[20:42:38.109][thread=9504] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_espionage.gui: widget 'photo' has unsupported scaleMode '0.75'; using stretch
+[20:42:38.109][thread=9504] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_politics.gui: widget 'political_popularity_chart' has unsupported scaleMode '0.5'; using stretch
+[20:42:38.109][thread=9504] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_politics.gui: widget 'country_icon' has unsupported scaleMode '0.5'; using stretch
+[20:42:38.110][thread=9504] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_technology.gui: widget 'photo' has unsupported scaleMode '0.46'; using stretch
+[20:42:38.110][thread=9504] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_technology.gui: widget 'photo' has unsupported scaleMode '0.46'; using stretch
+[20:42:38.110][thread=9504] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\eu3dialog.gfx: line 180: expected property name inside block
+[20:42:38.110][thread=9504] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[20:42:38.110][thread=9504] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[20:42:38.110][thread=9504] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[20:42:38.110][thread=9504] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'leader_types' has unsupported scaleMode '0.5'; using stretch
+[20:42:38.110][thread=9504] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'leader_photo' has unsupported scaleMode '1.0'; using stretch
+[20:42:38.110][thread=9504] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'selected_photo' has unsupported scaleMode '1.7'; using stretch
+[20:42:38.110][thread=9504] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[20:42:38.110][thread=9504] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[20:42:38.110][thread=9504] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[20:42:39.276][thread=9504] HOI3 read-only lifecycle probe unavailable: unsupported executable
+[20:42:39.284][thread=9504] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHI, persistence=unavailable, persistence_key=, persistence_error=, session=, memory_revision=, stored_revision=, pending_revision=, pending_ticks=, observed_day=, lifecycle=unknown, lifecycle_generation=0, lifecycle_player=
+[20:42:39.284][thread=9504] GUI session visibility: id=parliament, open=false, visible=false, state.visible=true, state.active=true, viewer=, persistence=unavailable, persistence_key=, persistence_error=, session=, memory_revision=, stored_revision=, pending_revision=, pending_ticks=, observed_day=, lifecycle=unknown, lifecycle_generation=0, lifecycle_player=
+[20:42:39.293][thread=9504] First GUI session draw: id=china_anti_jap, widgets=44, commands=1
+[20:42:39.305][thread=9504] GUI pointer down: plugin=china_anti_jap, window=(700,350), canvas=(688,344), target=none
+[20:58:26.692][thread=28864] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\arrows.gfx: line 11: expected '=' inside block
+[20:58:26.692][thread=28864] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\chatfonts.gfx: line 9: expected '=' inside block
+[20:58:26.692][thread=28864] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\combat.gui: widget 'combat_terrain' has unsupported scaleMode '0.5'; using stretch
+[20:58:26.692][thread=28864] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\core.gfx: line 734: expected '=' inside block
+[20:58:26.692][thread=28864] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_espionage.gui: widget 'photo' has unsupported scaleMode '0.75'; using stretch
+[20:58:26.692][thread=28864] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_politics.gui: widget 'political_popularity_chart' has unsupported scaleMode '0.5'; using stretch
+[20:58:26.692][thread=28864] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_politics.gui: widget 'country_icon' has unsupported scaleMode '0.5'; using stretch
+[20:58:26.692][thread=28864] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_technology.gui: widget 'photo' has unsupported scaleMode '0.46'; using stretch
+[20:58:26.692][thread=28864] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_technology.gui: widget 'photo' has unsupported scaleMode '0.46'; using stretch
+[20:58:26.692][thread=28864] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\eu3dialog.gfx: line 180: expected property name inside block
+[20:58:26.692][thread=28864] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[20:58:26.692][thread=28864] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[20:58:26.692][thread=28864] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[20:58:26.692][thread=28864] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'leader_types' has unsupported scaleMode '0.5'; using stretch
+[20:58:26.692][thread=28864] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'leader_photo' has unsupported scaleMode '1.0'; using stretch
+[20:58:26.692][thread=28864] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'selected_photo' has unsupported scaleMode '1.7'; using stretch
+[20:58:26.692][thread=28864] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[20:58:26.692][thread=28864] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[20:58:26.695][thread=28864] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[20:58:27.847][thread=28864] HOI3 read-only lifecycle probe unavailable: unsupported executable
+[20:58:27.851][thread=28864] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHI, persistence=unavailable, persistence_key=, persistence_error=, session=, memory_revision=, stored_revision=, pending_revision=, pending_ticks=, observed_day=, lifecycle=unknown, lifecycle_generation=0, lifecycle_player=
+[20:58:27.851][thread=28864] GUI session visibility: id=parliament, open=false, visible=false, state.visible=true, state.active=true, viewer=, persistence=unavailable, persistence_key=, persistence_error=, session=, memory_revision=, stored_revision=, pending_revision=, pending_ticks=, observed_day=, lifecycle=unknown, lifecycle_generation=0, lifecycle_player=
+[20:58:27.860][thread=28864] First GUI session draw: id=china_anti_jap, widgets=44, commands=1
+[20:58:27.868][thread=28864] GUI pointer down: plugin=china_anti_jap, window=(700,350), canvas=(688,344), target=none
+[21:38:43.133][thread=12348] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\arrows.gfx: line 11: expected '=' inside block
+[21:38:43.133][thread=12348] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\chatfonts.gfx: line 9: expected '=' inside block
+[21:38:43.133][thread=12348] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\combat.gui: widget 'combat_terrain' has unsupported scaleMode '0.5'; using stretch
+[21:38:43.133][thread=12348] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\core.gfx: line 734: expected '=' inside block
+[21:38:43.133][thread=12348] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_espionage.gui: widget 'photo' has unsupported scaleMode '0.75'; using stretch
+[21:38:43.133][thread=12348] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_politics.gui: widget 'political_popularity_chart' has unsupported scaleMode '0.5'; using stretch
+[21:38:43.133][thread=12348] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_politics.gui: widget 'country_icon' has unsupported scaleMode '0.5'; using stretch
+[21:38:43.133][thread=12348] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_technology.gui: widget 'photo' has unsupported scaleMode '0.46'; using stretch
+[21:38:43.133][thread=12348] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_technology.gui: widget 'photo' has unsupported scaleMode '0.46'; using stretch
+[21:38:43.133][thread=12348] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\eu3dialog.gfx: line 180: expected property name inside block
+[21:38:43.133][thread=12348] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[21:38:43.133][thread=12348] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[21:38:43.133][thread=12348] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[21:38:43.133][thread=12348] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'leader_types' has unsupported scaleMode '0.5'; using stretch
+[21:38:43.133][thread=12348] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'leader_photo' has unsupported scaleMode '1.0'; using stretch
+[21:38:43.133][thread=12348] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'selected_photo' has unsupported scaleMode '1.7'; using stretch
+[21:38:43.133][thread=12348] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[21:38:43.133][thread=12348] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[21:38:43.133][thread=12348] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[21:38:44.255][thread=12348] HOI3 read-only lifecycle probe unavailable: unsupported executable
+[21:38:44.264][thread=12348] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHI, persistence=unavailable, persistence_key=, persistence_error=, session=, memory_revision=, stored_revision=, pending_revision=, pending_ticks=, observed_day=, lifecycle=unknown, lifecycle_generation=0, lifecycle_player=
+[21:38:44.264][thread=12348] GUI session visibility: id=parliament, open=false, visible=false, state.visible=true, state.active=true, viewer=, persistence=unavailable, persistence_key=, persistence_error=, session=, memory_revision=, stored_revision=, pending_revision=, pending_ticks=, observed_day=, lifecycle=unknown, lifecycle_generation=0, lifecycle_player=
+[21:38:44.271][thread=12348] First GUI session draw: id=china_anti_jap, widgets=44, commands=1
+[21:38:44.275][thread=12348] GUI pointer down: plugin=china_anti_jap, window=(700,350), canvas=(688,344), target=none
+[21:40:54.759][thread=31976] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\arrows.gfx: line 11: expected '=' inside block
+[21:40:54.759][thread=31976] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\chatfonts.gfx: line 9: expected '=' inside block
+[21:40:54.759][thread=31976] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\combat.gui: widget 'combat_terrain' has unsupported scaleMode '0.5'; using stretch
+[21:40:54.759][thread=31976] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\core.gfx: line 734: expected '=' inside block
+[21:40:54.759][thread=31976] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_espionage.gui: widget 'photo' has unsupported scaleMode '0.75'; using stretch
+[21:40:54.759][thread=31976] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_politics.gui: widget 'political_popularity_chart' has unsupported scaleMode '0.5'; using stretch
+[21:40:54.759][thread=31976] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_politics.gui: widget 'country_icon' has unsupported scaleMode '0.5'; using stretch
+[21:40:54.759][thread=31976] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_technology.gui: widget 'photo' has unsupported scaleMode '0.46'; using stretch
+[21:40:54.759][thread=31976] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_technology.gui: widget 'photo' has unsupported scaleMode '0.46'; using stretch
+[21:40:54.759][thread=31976] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\eu3dialog.gfx: line 180: expected property name inside block
+[21:40:54.759][thread=31976] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[21:40:54.759][thread=31976] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[21:40:54.759][thread=31976] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[21:40:54.759][thread=31976] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'leader_types' has unsupported scaleMode '0.5'; using stretch
+[21:40:54.759][thread=31976] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'leader_photo' has unsupported scaleMode '1.0'; using stretch
+[21:40:54.759][thread=31976] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'selected_photo' has unsupported scaleMode '1.7'; using stretch
+[21:40:54.759][thread=31976] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[21:40:54.759][thread=31976] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[21:40:54.759][thread=31976] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[21:40:55.913][thread=31976] HOI3 read-only lifecycle probe unavailable: unsupported executable
+[21:40:55.921][thread=31976] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHI, persistence=unavailable, persistence_key=, persistence_error=, session=, memory_revision=, stored_revision=, pending_revision=, pending_ticks=, observed_day=, lifecycle=unknown, lifecycle_generation=0, lifecycle_player=
+[21:40:55.921][thread=31976] GUI session visibility: id=parliament, open=false, visible=false, state.visible=true, state.active=true, viewer=, persistence=unavailable, persistence_key=, persistence_error=, session=, memory_revision=, stored_revision=, pending_revision=, pending_ticks=, observed_day=, lifecycle=unknown, lifecycle_generation=0, lifecycle_player=
+[21:40:55.929][thread=31976] First GUI session draw: id=china_anti_jap, widgets=44, commands=1
+[21:40:55.934][thread=31976] GUI pointer down: plugin=china_anti_jap, window=(700,350), canvas=(688,344), target=none
+[22:11:57.863][thread=29232] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\arrows.gfx: line 11: expected '=' inside block
+[22:11:57.867][thread=29232] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\chatfonts.gfx: line 9: expected '=' inside block
+[22:11:57.867][thread=29232] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\combat.gui: widget 'combat_terrain' has unsupported scaleMode '0.5'; using stretch
+[22:11:57.867][thread=29232] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\core.gfx: line 734: expected '=' inside block
+[22:11:57.867][thread=29232] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_espionage.gui: widget 'photo' has unsupported scaleMode '0.75'; using stretch
+[22:11:57.867][thread=29232] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_politics.gui: widget 'political_popularity_chart' has unsupported scaleMode '0.5'; using stretch
+[22:11:57.867][thread=29232] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_politics.gui: widget 'country_icon' has unsupported scaleMode '0.5'; using stretch
+[22:11:57.867][thread=29232] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_technology.gui: widget 'photo' has unsupported scaleMode '0.46'; using stretch
+[22:11:57.867][thread=29232] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_technology.gui: widget 'photo' has unsupported scaleMode '0.46'; using stretch
+[22:11:57.867][thread=29232] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\eu3dialog.gfx: line 180: expected property name inside block
+[22:11:57.867][thread=29232] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[22:11:57.867][thread=29232] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[22:11:57.867][thread=29232] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[22:11:57.867][thread=29232] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'leader_types' has unsupported scaleMode '0.5'; using stretch
+[22:11:57.867][thread=29232] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'leader_photo' has unsupported scaleMode '1.0'; using stretch
+[22:11:57.867][thread=29232] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'selected_photo' has unsupported scaleMode '1.7'; using stretch
+[22:11:57.867][thread=29232] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[22:11:57.867][thread=29232] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[22:11:57.867][thread=29232] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[22:11:59.59][thread=29232] HOI3 read-only lifecycle probe unavailable: unsupported executable
+[22:11:59.67][thread=29232] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHI, persistence=unavailable, persistence_key=, persistence_error=, session=, memory_revision=, stored_revision=, pending_revision=, pending_ticks=, observed_day=, lifecycle=unknown, lifecycle_generation=0, lifecycle_player=
+[22:11:59.67][thread=29232] GUI session visibility: id=parliament, open=false, visible=false, state.visible=true, state.active=true, viewer=, persistence=unavailable, persistence_key=, persistence_error=, session=, memory_revision=, stored_revision=, pending_revision=, pending_ticks=, observed_day=, lifecycle=unknown, lifecycle_generation=0, lifecycle_player=
+[22:11:59.75][thread=29232] First GUI session draw: id=china_anti_jap, widgets=44, commands=1
+[22:11:59.79][thread=29232] GUI pointer down: plugin=china_anti_jap, window=(700,350), canvas=(688,344), target=none
+[22:15:59.127][thread=3256] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\arrows.gfx: line 11: expected '=' inside block
+[22:15:59.127][thread=3256] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\chatfonts.gfx: line 9: expected '=' inside block
+[22:15:59.127][thread=3256] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\combat.gui: widget 'combat_terrain' has unsupported scaleMode '0.5'; using stretch
+[22:15:59.127][thread=3256] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\core.gfx: line 734: expected '=' inside block
+[22:15:59.127][thread=3256] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_espionage.gui: widget 'photo' has unsupported scaleMode '0.75'; using stretch
+[22:15:59.127][thread=3256] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_politics.gui: widget 'political_popularity_chart' has unsupported scaleMode '0.5'; using stretch
+[22:15:59.127][thread=3256] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_politics.gui: widget 'country_icon' has unsupported scaleMode '0.5'; using stretch
+[22:15:59.127][thread=3256] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_technology.gui: widget 'photo' has unsupported scaleMode '0.46'; using stretch
+[22:15:59.127][thread=3256] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_technology.gui: widget 'photo' has unsupported scaleMode '0.46'; using stretch
+[22:15:59.131][thread=3256] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\eu3dialog.gfx: line 180: expected property name inside block
+[22:15:59.131][thread=3256] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[22:15:59.131][thread=3256] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[22:15:59.131][thread=3256] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[22:15:59.131][thread=3256] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'leader_types' has unsupported scaleMode '0.5'; using stretch
+[22:15:59.131][thread=3256] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'leader_photo' has unsupported scaleMode '1.0'; using stretch
+[22:15:59.131][thread=3256] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'selected_photo' has unsupported scaleMode '1.7'; using stretch
+[22:15:59.131][thread=3256] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[22:15:59.131][thread=3256] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[22:15:59.131][thread=3256] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[22:16:0.270][thread=3256] HOI3 read-only lifecycle probe unavailable: unsupported executable
+[22:16:0.277][thread=3256] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHI, persistence=unavailable, persistence_key=, persistence_error=, session=, memory_revision=, stored_revision=, pending_revision=, pending_ticks=, observed_day=, lifecycle=unknown, lifecycle_generation=0, lifecycle_player=
+[22:16:0.277][thread=3256] GUI session visibility: id=parliament, open=false, visible=false, state.visible=true, state.active=true, viewer=, persistence=unavailable, persistence_key=, persistence_error=, session=, memory_revision=, stored_revision=, pending_revision=, pending_ticks=, observed_day=, lifecycle=unknown, lifecycle_generation=0, lifecycle_player=
+[22:16:0.286][thread=3256] First GUI session draw: id=china_anti_jap, widgets=44, commands=1
+[22:16:0.290][thread=3256] GUI pointer down: plugin=china_anti_jap, window=(700,350), canvas=(688,344), target=none
+[22:17:25.113][thread=33000] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\arrows.gfx: line 11: expected '=' inside block
+[22:17:25.113][thread=33000] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\chatfonts.gfx: line 9: expected '=' inside block
+[22:17:25.113][thread=33000] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\combat.gui: widget 'combat_terrain' has unsupported scaleMode '0.5'; using stretch
+[22:17:25.113][thread=33000] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\core.gfx: line 734: expected '=' inside block
+[22:17:25.113][thread=33000] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_espionage.gui: widget 'photo' has unsupported scaleMode '0.75'; using stretch
+[22:17:25.113][thread=33000] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_politics.gui: widget 'political_popularity_chart' has unsupported scaleMode '0.5'; using stretch
+[22:17:25.113][thread=33000] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_politics.gui: widget 'country_icon' has unsupported scaleMode '0.5'; using stretch
+[22:17:25.113][thread=33000] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_technology.gui: widget 'photo' has unsupported scaleMode '0.46'; using stretch
+[22:17:25.113][thread=33000] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_technology.gui: widget 'photo' has unsupported scaleMode '0.46'; using stretch
+[22:17:25.117][thread=33000] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\eu3dialog.gfx: line 180: expected property name inside block
+[22:17:25.117][thread=33000] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[22:17:25.117][thread=33000] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[22:17:25.117][thread=33000] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[22:17:25.117][thread=33000] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'leader_types' has unsupported scaleMode '0.5'; using stretch
+[22:17:25.117][thread=33000] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'leader_photo' has unsupported scaleMode '1.0'; using stretch
+[22:17:25.117][thread=33000] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'selected_photo' has unsupported scaleMode '1.7'; using stretch
+[22:17:25.117][thread=33000] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[22:17:25.117][thread=33000] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[22:17:25.117][thread=33000] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[22:17:26.258][thread=33000] HOI3 read-only lifecycle probe unavailable: unsupported executable
+[22:17:26.267][thread=33000] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHI, persistence=unavailable, persistence_key=, persistence_error=, session=, memory_revision=, stored_revision=, pending_revision=, pending_ticks=, observed_day=, lifecycle=unknown, lifecycle_generation=0, lifecycle_player=
+[22:17:26.267][thread=33000] GUI session visibility: id=parliament, open=false, visible=false, state.visible=true, state.active=true, viewer=, persistence=unavailable, persistence_key=, persistence_error=, session=, memory_revision=, stored_revision=, pending_revision=, pending_ticks=, observed_day=, lifecycle=unknown, lifecycle_generation=0, lifecycle_player=
+[22:17:26.271][thread=33000] First GUI session draw: id=china_anti_jap, widgets=44, commands=1
+[22:17:26.277][thread=33000] GUI pointer down: plugin=china_anti_jap, window=(700,350), canvas=(688,344), target=none
+[23:0:58.407][thread=8236] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\arrows.gfx: line 11: expected '=' inside block
+[23:0:58.407][thread=8236] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\chatfonts.gfx: line 9: expected '=' inside block
+[23:0:58.407][thread=8236] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\combat.gui: widget 'combat_terrain' has unsupported scaleMode '0.5'; using stretch
+[23:0:58.407][thread=8236] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\core.gfx: line 734: expected '=' inside block
+[23:0:58.407][thread=8236] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_espionage.gui: widget 'photo' has unsupported scaleMode '0.75'; using stretch
+[23:0:58.407][thread=8236] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_politics.gui: widget 'political_popularity_chart' has unsupported scaleMode '0.5'; using stretch
+[23:0:58.407][thread=8236] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_politics.gui: widget 'country_icon' has unsupported scaleMode '0.5'; using stretch
+[23:0:58.407][thread=8236] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_technology.gui: widget 'photo' has unsupported scaleMode '0.46'; using stretch
+[23:0:58.407][thread=8236] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_technology.gui: widget 'photo' has unsupported scaleMode '0.46'; using stretch
+[23:0:58.407][thread=8236] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\eu3dialog.gfx: line 180: expected property name inside block
+[23:0:58.407][thread=8236] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[23:0:58.407][thread=8236] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[23:0:58.407][thread=8236] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[23:0:58.407][thread=8236] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'leader_types' has unsupported scaleMode '0.5'; using stretch
+[23:0:58.407][thread=8236] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'leader_photo' has unsupported scaleMode '1.0'; using stretch
+[23:0:58.407][thread=8236] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'selected_photo' has unsupported scaleMode '1.7'; using stretch
+[23:0:58.407][thread=8236] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[23:0:58.407][thread=8236] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[23:0:58.407][thread=8236] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[23:0:59.576][thread=8236] HOI3 read-only lifecycle probe unavailable: unsupported executable
+[23:0:59.584][thread=8236] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHI, persistence=unavailable, persistence_key=, persistence_error=, session=, memory_revision=, stored_revision=, pending_revision=, pending_ticks=, observed_day=, lifecycle=unknown, lifecycle_generation=0, lifecycle_player=
+[23:0:59.584][thread=8236] GUI session visibility: id=parliament, open=false, visible=false, state.visible=true, state.active=true, viewer=, persistence=unavailable, persistence_key=, persistence_error=, session=, memory_revision=, stored_revision=, pending_revision=, pending_ticks=, observed_day=, lifecycle=unknown, lifecycle_generation=0, lifecycle_player=
+[23:0:59.592][thread=8236] First GUI session draw: id=china_anti_jap, widgets=44, commands=1
+[23:0:59.596][thread=8236] GUI pointer down: plugin=china_anti_jap, window=(700,350), canvas=(688,344), target=none
+[23:3:25.591][thread=17040] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\arrows.gfx: line 11: expected '=' inside block
+[23:3:25.591][thread=17040] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\chatfonts.gfx: line 9: expected '=' inside block
+[23:3:25.591][thread=17040] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\combat.gui: widget 'combat_terrain' has unsupported scaleMode '0.5'; using stretch
+[23:3:25.591][thread=17040] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\core.gfx: line 734: expected '=' inside block
+[23:3:25.593][thread=17040] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_espionage.gui: widget 'photo' has unsupported scaleMode '0.75'; using stretch
+[23:3:25.593][thread=17040] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_politics.gui: widget 'political_popularity_chart' has unsupported scaleMode '0.5'; using stretch
+[23:3:25.593][thread=17040] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_politics.gui: widget 'country_icon' has unsupported scaleMode '0.5'; using stretch
+[23:3:25.593][thread=17040] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_technology.gui: widget 'photo' has unsupported scaleMode '0.46'; using stretch
+[23:3:25.593][thread=17040] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_technology.gui: widget 'photo' has unsupported scaleMode '0.46'; using stretch
+[23:3:25.593][thread=17040] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\eu3dialog.gfx: line 180: expected property name inside block
+[23:3:25.593][thread=17040] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[23:3:25.593][thread=17040] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[23:3:25.593][thread=17040] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[23:3:25.593][thread=17040] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'leader_types' has unsupported scaleMode '0.5'; using stretch
+[23:3:25.593][thread=17040] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'leader_photo' has unsupported scaleMode '1.0'; using stretch
+[23:3:25.593][thread=17040] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'selected_photo' has unsupported scaleMode '1.7'; using stretch
+[23:3:25.593][thread=17040] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[23:3:25.593][thread=17040] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[23:3:25.593][thread=17040] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[23:3:26.826][thread=17040] HOI3 read-only lifecycle probe unavailable: unsupported executable
+[23:3:26.839][thread=17040] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHI, persistence=unavailable, persistence_key=, persistence_error=, session=, memory_revision=, stored_revision=, pending_revision=, pending_ticks=, observed_day=, lifecycle=unknown, lifecycle_generation=0, lifecycle_player=
+[23:3:26.839][thread=17040] GUI session visibility: id=parliament, open=false, visible=false, state.visible=true, state.active=true, viewer=, persistence=unavailable, persistence_key=, persistence_error=, session=, memory_revision=, stored_revision=, pending_revision=, pending_ticks=, observed_day=, lifecycle=unknown, lifecycle_generation=0, lifecycle_player=
+[23:3:26.847][thread=17040] First GUI session draw: id=china_anti_jap, widgets=44, commands=1
+[23:3:26.864][thread=17040] GUI pointer down: plugin=china_anti_jap, window=(700,350), canvas=(688,344), target=none
+[23:24:59.896][thread=6540] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\arrows.gfx: line 11: expected '=' inside block
+[23:24:59.899][thread=6540] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\chatfonts.gfx: line 9: expected '=' inside block
+[23:24:59.899][thread=6540] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\combat.gui: widget 'combat_terrain' has unsupported scaleMode '0.5'; using stretch
+[23:24:59.899][thread=6540] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\core.gfx: line 734: expected '=' inside block
+[23:24:59.899][thread=6540] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_espionage.gui: widget 'photo' has unsupported scaleMode '0.75'; using stretch
+[23:24:59.899][thread=6540] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_politics.gui: widget 'political_popularity_chart' has unsupported scaleMode '0.5'; using stretch
+[23:24:59.899][thread=6540] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_politics.gui: widget 'country_icon' has unsupported scaleMode '0.5'; using stretch
+[23:24:59.899][thread=6540] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_technology.gui: widget 'photo' has unsupported scaleMode '0.46'; using stretch
+[23:24:59.899][thread=6540] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\country_technology.gui: widget 'photo' has unsupported scaleMode '0.46'; using stretch
+[23:24:59.900][thread=6540] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\eu3dialog.gfx: line 180: expected property name inside block
+[23:24:59.900][thread=6540] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[23:24:59.900][thread=6540] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[23:24:59.900][thread=6540] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\oobbrowser.gui: widget 'leader_photo' has unsupported scaleMode '0.7'; using stretch
+[23:24:59.900][thread=6540] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'leader_types' has unsupported scaleMode '0.5'; using stretch
+[23:24:59.900][thread=6540] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'leader_photo' has unsupported scaleMode '1.0'; using stretch
+[23:24:59.900][thread=6540] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'selected_photo' has unsupported scaleMode '1.7'; using stretch
+[23:24:59.900][thread=6540] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[23:24:59.900][thread=6540] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[23:24:59.900][thread=6540] GUI configuration issue: plugin=<global>, stage=interface_parse, error=D:\80th_special_version\Shower-of-Flowers-Brambles\interface\unitpanel.gui: widget 'photo' has unsupported scaleMode '0.7'; using stretch
+[23:25:1.138][thread=6540] HOI3 read-only lifecycle probe unavailable: unsupported executable
+[23:25:1.142][thread=6540] GUI session visibility: id=china_anti_jap, open=true, visible=true, state.visible=true, state.active=true, viewer=CHI, persistence=unavailable, persistence_key=, persistence_error=, session=, memory_revision=, stored_revision=, pending_revision=, pending_ticks=, observed_day=, lifecycle=unknown, lifecycle_generation=0, lifecycle_player=
+[23:25:1.146][thread=6540] GUI session visibility: id=parliament, open=false, visible=false, state.visible=true, state.active=true, viewer=, persistence=unavailable, persistence_key=, persistence_error=, session=, memory_revision=, stored_revision=, pending_revision=, pending_ticks=, observed_day=, lifecycle=unknown, lifecycle_generation=0, lifecycle_player=
+[23:25:1.150][thread=6540] First GUI session draw: id=china_anti_jap, widgets=44, commands=1
+[23:25:1.155][thread=6540] GUI pointer down: plugin=china_anti_jap, window=(700,350), canvas=(688,344), target=none

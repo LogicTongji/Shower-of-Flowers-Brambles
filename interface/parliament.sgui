@@ -6,6 +6,10 @@ guiTypes = {
 		moveable = yes
 		dragHeight = 32
 		fullScreen = no
+		styleDefaults = {
+			disabledBrightness = 0.588235
+			disabledOpacity = 0.588235
+		}
 
 		colorBoxType = {
 			name = "parliament_window_background"

@@ -6,6 +6,10 @@ guiPlugins = {
 		startup = yes
 		windowZOrder = 0
 		modal = no
+		maxViewportWidthRatio = 0.92
+		maxViewportHeightRatio = 0.90
+		cascadeOffsetX = 24
+		cascadeOffsetY = 24
 		visibleWhen = "state.visible && state.active"
 		options = {
 			window = "china_anti_jap"
@@ -16,6 +20,7 @@ guiPlugins = {
 			inprocess_data_provider = "bridge"
 			inprocess_channel = "lua"
 			inprocess_bridge_name = "china_anti_jap"
+			inprocess_base_data = "script_gui/data/china_anti_jap_common.txt"
 			tick_interval = 100
 		}
 	}
